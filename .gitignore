@@ -18,3 +18,4 @@ assets
 dfweb_docker/develop/dragonflyweb
 .DS_Store
 cabal.sandbox.config
+.deps
