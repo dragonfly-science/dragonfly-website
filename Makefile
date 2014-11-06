@@ -34,7 +34,10 @@ dfweb_docker/develop/.dockeri: .deps/debian/nz/latest dfweb_docker/buildcache/.d
 dfweb_docker/scripts/.dockeri: .deps/node/nz/latest assets/.dir_exists
 dfweb_docker/stylesheets/.dockeri: .deps/ruby/bourbon/latest assets/.dir_exists
 dfweb_docker/haskell-build/.dockeri: .deps/debian/hakyll/latest
-	
+dfweb_docker/cache/.dockeri: .deps/debian/nz/latest
+dfweb_docker/buildcache/.dockeri: .deps/debian/nz/latest
+
+
 .PHONY: editimage
 editimage: $(PULLS) content/dist/dragonflyweb \
 	content/assets/dragonfly.js \
@@ -97,7 +100,6 @@ content/assets/dragonfly.js: dfweb_docker/scripts/.dockeri content/assets/.dir_e
 	docker pull $(REGISTRY)/$*
 	make .deps/$*/latest
 
-.SECONDARY: $(addprefix .deps/,$(addsuffix /.dir_exists,$(DEPS)))
 .deps/%/latest: .deps/%/.dir_exists FORCE
 	$(if $(filter-out $(shell cat $@ 2>/dev/null),$(shell docker inspect --format='{{.Id}}' $(REGISTRY)/$* 2>/dev/null)), \
 		docker inspect --format='{{.Id}}' $(REGISTRY)/$* 2>/dev/null > $@)
