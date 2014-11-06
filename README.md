@@ -49,7 +49,7 @@ One big advantage with this approach comes from git and
 control and user management respectively.
 
 When code changes are pushed to the correct branch (ocean-hakyll) of the  
-[GitHub repo](https://www.github.com/dragonfly-science/dragonflyweb), our
+[GitHub repo](https://www.github.com/dragonfly-science/website), our
 deployhub will update the [staging site](https://www-staging.dragonfly.co.nz).
 This takes less than a minute. 
 
