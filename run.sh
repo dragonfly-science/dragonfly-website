@@ -7,10 +7,10 @@ case "$1" in
         echo I have not written any help.
         exit 0
         ;;
-    develop|edit|haskell|deploy)
+    develop|edit|ghci|deploy)
         ;;
     *)
-        echo $"Usage: $0 {develop|haskell|deploy|edit|help}"
+        echo $"Usage: $0 {develop|ghci|deploy|edit|help}"
         exit 1
 esac
 
@@ -47,56 +47,25 @@ case "$MODE" in
         docker kill $STYLESHEETS_WATCH
         docker kill $SCRIPTS_WATCH
         ;;
-    haskell)
+    ghci)
         CMD="ghci Site.hs"
         VOLS="-v `pwd`/haskell:/work"
-        ARGS=`getopt -o m --long make -n 'run.sh haskell' -- "$@"`
-        eval set -- "$ARGS"
-        while true; do
-            case "$1" in
-                --)
-                    shift; break;;
-                -m|--make)
-                    CMD=""
-                    VOLS="-v `pwd`/haskell:/work/haskell"
-                    shift
-                    ;;
-                *)
-                    shift
-                    ;;
-            esac
-        done
-        echo $CMD
         docker run --rm -it $VOLS \
             --volumes-from `cat dfweb_docker/buildcache/.dockerdc` \
             `cat dfweb_docker/haskell-build/.dockeri` $CMD
         ;;
     edit)
-        shift
-        while getopts ":f:d" opt; do
-          case $opt in
-            f)
-            case $OPTARG in
-                0|false|FALSE)
-                NOFETCHIMAGE=true
-                ;;
-            esac
-              ;;
-            d)
-                DESTROYCACHECONTAINER=true
-              ;;
-            \?)
-              echo "Usage $0 $MODE [-f true] [-d]" >&2
-              echo "  -f disables image fetch" >&2
-              echo "  -d destroys site cache" >&2
-              ;;
-          esac
-        done    
-        EDITIMAGE=docker.dragonfly.co.nz/dragonflyweb/edit
-        if [ ! $NOFETCHIMAGE ]; then
-            docker pull $EDITIMAGE
+        if [ "$(uname)" = "Darwin" ]; then
+            boot2docker up >/dev/null 2>&1 &&
+            $(boot2docker shellinit 2>/dev/null)
+            if [ "$OPENPAGE" != "false" ]; then
+                [[ "$CLEANCACHE" = true ]] && delay=15 || delay=3
+                sleep $delay && open http://$(boot2docker ip 2> /dev/null):8000 &
+            fi
         fi
-        if [ $DESTROYCACHECONTAINER ]; then
+        EDITIMAGE=docker.dragonfly.co.nz/dragonflyweb/edit
+        docker pull $EDITIMAGE
+        if [ "$CLEANCACHE" = "true" ]; then
             docker rm dragonflyweb-cache 2>/dev/null
         fi
         docker inspect dragonflyweb-cache >/dev/null 2>&1
