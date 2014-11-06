@@ -58,10 +58,6 @@ case "$MODE" in
         if [ "$(uname)" = "Darwin" ]; then
             boot2docker up >/dev/null 2>&1 &&
             $(boot2docker shellinit 2>/dev/null)
-            if [ "$OPENPAGE" != "false" ]; then
-                [[ "$CLEANCACHE" = true ]] && delay=15 || delay=3
-                sleep $delay && open http://$(boot2docker ip 2> /dev/null):8000 &
-            fi
         fi
         EDITIMAGE=docker.dragonfly.co.nz/dragonflyweb/edit
         docker pull $EDITIMAGE
@@ -71,6 +67,10 @@ case "$MODE" in
         docker inspect dragonflyweb-cache >/dev/null 2>&1
         if [ $? -ne 0 ]; then
             docker run --name dragonflyweb-cache -v /var/cache/dragonflyweb docker.dragonfly.co.nz/debian/nz
+        fi
+        if [ "$(uname)" = "Darwin" ] && [ "$OPENPAGE" != "false" ]; then
+            [[ "$CLEANCACHE" = true ]] && delay=15 || delay=3
+            sleep $delay && open http://$(boot2docker ip 2> /dev/null):8000 &
         fi
         docker run --rm -it -p 8000:8000 \
             --volumes-from dragonflyweb-cache \
