@@ -7,7 +7,6 @@ RUN apt-get update && \
 
 RUN mkdir /work && chown df:df /work
 
-COPY ./build.sh /
 COPY DragonflyWeb.cabal LICENSE Makefile /work/
 USER df:df
 WORKDIR /work
