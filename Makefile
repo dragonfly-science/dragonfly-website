@@ -22,7 +22,7 @@ clean:
 dfweb_docker/develop/dragonflyweb: dfweb_docker/haskell-build/.dockeri \
 	dfweb_docker/buildcache/.dockerdc \
 	haskell/**/*.hs haskell/*.hs
-	docker run --rm -it --volumes-from `cat dfweb_docker/buildcache/.dockerdc` \
+	docker run --rm --volumes-from `cat dfweb_docker/buildcache/.dockerdc` \
 		-v `pwd`/haskell:/work/haskell `cat $<`
 
 dfweb_docker/develop/.dockeri: dfweb_docker/buildcache/.dockerdc
@@ -51,10 +51,10 @@ deploy: editimage
 content/dist/dragonflyweb: dfweb_docker/haskell-build/.dockeri \
 	dfweb_docker/buildcache/.dockerdc \
 	haskell/**/*.hs haskell/*.hs
-	docker run --rm -it --volumes-from `cat dfweb_docker/buildcache/.dockerdc` \
+	docker run --rm --volumes-from `cat dfweb_docker/buildcache/.dockerdc` \
 		-v `pwd`/haskell:/work/haskell `cat $<`
 	chmod 775 content/dist
-	docker run --rm -it --volumes-from `cat dfweb_docker/buildcache/.dockerdc` \
+	docker run --rm --volumes-from `cat dfweb_docker/buildcache/.dockerdc` \
 		-v `pwd`/content/dist:/mount \
 		$(REGISTRY)/debian/nz bash -c \
 		"chown `id -u`:`id -g` /dist/build/dragonflyweb/dragonflyweb \
@@ -63,12 +63,12 @@ content/dist/dragonflyweb: dfweb_docker/haskell-build/.dockeri \
 
 ALL_SCSS := $(shell find content/stylesheets -name "*.scss")
 content/assets/dragonfly.css: dfweb_docker/stylesheets/.dockeri content/assets/.dir_exists $(ALL_SCSS)
-	docker run --rm -it -v `pwd`/content/stylesheets:/work/stylesheets \
+	docker run --rm -v `pwd`/content/stylesheets:/work/stylesheets \
 		-v `pwd`/content/assets:/work/assets `cat $<` build
 
 ALL_JS := $(shell find content/scripts -name "*.js")
 content/assets/dragonfly.js: dfweb_docker/scripts/.dockeri content/assets/.dir_exists $(ALL_JS)
-	docker run --rm -it -v `pwd`/content/scripts:/work/scripts \
+	docker run --rm -v `pwd`/content/scripts:/work/scripts \
 		-v `pwd`/content/assets:/work/assets `cat $<` build
 
 .SECONDARY: .dir_exists
