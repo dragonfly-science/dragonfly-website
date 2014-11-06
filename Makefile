@@ -39,7 +39,7 @@ editimage: content/dist/dragonflyweb \
 	docker push $(REGISTRY)/dragonflyweb/edit
 
 .PHONY: deploy
-deploy: editimage
+deploy: all editimage
 	$(eval TMPCONT := $(shell uuidgen))
 	docker run --name $(TMPCONT) $(REGISTRY)/dragonflyweb/edit build
 	mkdir /tmp/$(TMPCONT)
