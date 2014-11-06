@@ -1,0 +1,34 @@
+
+/* ensure that html5 elements are displayed */
+main {display: block;}
+address {display: block;} 
+header {display: block;}
+footer {display: block;}
+nav {display: block;}
+
+h1 {
+  @include media($clinical){
+    font-size: $font-size-h1-clinical; 
+  }
+  @include media($transient){
+    font-size: $font-size-h1-transient; 
+  }
+}
+
+main {
+    margin-top: em(82);
+}
+
+.container {
+    @include outer-container;
+}
+
+.content {
+    @include span-columns(8);
+    @include shift(2);
+    @include clearfix;
+    margin-top: $base-line-height;
+    position: relative;
+}
+
+

@@ -1,0 +1,22 @@
+<div class="hero" id="hero-$tag$"> 
+  <img src=$banner$ width="100%"/> 
+  <h1 id="title-$tag$">$title$</h2>
+</div>
+<div class="container">
+  <div class="content" id="content-$tag$">
+    $if(lead)$
+    <div class="lead">$lead$</div>
+    $endif$
+
+    $body$
+
+    $if(email)$
+    <p>Email <a href="mailto:$email$">$email$</a><p>
+    $endif$
+    
+    $if(phone)$
+    <p>Call $firstname$ on $phone$<p>
+    $endif$
+  </div>
+</div>
+

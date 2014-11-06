@@ -1,0 +1,82 @@
+$porthole-top-margin: em(80);
+$porthole-top-margin-small: em(21);
+$porthole-image-size: em(150);
+$porthole-image-size-small: em(100);
+$porthole-text-size: $base-font-size;
+$porthole-title-padding-bottom: 0.35em;
+$porthole-title-padding-top: em(20);
+$read-more-text-color: $light-gray;
+
+.porthole-grid {
+    @include span-columns(10);
+    @include shift(1);
+    font-size: $porthole-text-size;
+    @include media($transient) {
+        width: $small-screen;
+        font-size: $base-font-size * 0.875;
+    }
+
+    .porthole {
+        @include span-columns(4);
+        @include omega(3n);
+        margin-top: $porthole-top-margin;
+        text-align: center;
+
+        img {
+            border-radius: 50%;
+            width: $porthole-image-size;
+            height: $porthole-image-size;
+        }
+
+        p {
+            display: none;
+        }
+        p:nth-child(3) {
+            @include media($large-screen) {
+                display: block;
+            }
+        }
+
+        h4 {
+            color: $people-green;
+            padding-bottom: $porthole-title-padding-bottom;
+            padding-top: $porthole-title-padding-top;
+        }
+        h4 a {
+            color: $people-green;
+        }
+
+        a.read-more {
+            color: $read-more-text-color;
+            text-decoration: underline;
+        }
+
+        @include media($clinical) {
+            @include span-columns(6);
+            @include omega(2n);
+            .read-more {
+                display: none;
+            }
+        }
+
+        @include media($transient) {
+            @include span-columns(2);
+            @include omega(2n);
+            margin-top: $porthole-top-margin-small;
+
+            img {
+                width: $porthole-image-size-small;
+                height: $porthole-image-size-small;
+            }
+
+            h4 {
+                font-size: $base-font-size;
+                font-weight: 500;
+                letter-spacing: em(1);
+            }
+            a.read-more {
+                display: none;
+            }
+        }
+    }
+}

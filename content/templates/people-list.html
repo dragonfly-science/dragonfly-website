@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="porthole-grid">
+    <h1 class="title">People</h1>
+    $for(pages)$
+    <div class="porthole">
+      <img src="/$summaryImage$" />
+      <h4><a href="$url$">$title$</a></h4>
+      $summaryBody$
+      <a href="$url$" class="read-more">Read more</a>
+    </div>
+    $endfor$
+  </div>
+</div>

@@ -1,0 +1,95 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $unitless-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+  margin: 0;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  font-weight: 500;
+  color: $base-heading-color;
+
+  a {
+      text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+h5 {
+  font-size: $font-size-h5;
+}
+
+h6 {
+  font-size: $font-size-h6;
+}
+
+p {
+  margin: 0 0 ($base-line-height * .5);
+}
+
+a {
+  @include transition(color 0.1s linear);
+  color: $base-link-color;
+  text-decoration: underline;
+
+  &:hover {
+    color: $hover-link-color;
+    text-decoration: underline;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+    outline: none;
+    text-decoration: underline;
+  }
+}
+
+hr {
+  border-bottom: 1px solid $base-border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-line-height 0;
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: 2px solid $base-border-color;
+  color: lighten($base-font-color, 15);
+  margin: $base-line-height 0;
+  padding-left: $base-line-height / 2;
+}
+
+cite {
+  color: lighten($base-font-color, 25);
+  font-style: italic;
+
+  &:before {
+    content: '\2014 \00A0';
+  }
+}

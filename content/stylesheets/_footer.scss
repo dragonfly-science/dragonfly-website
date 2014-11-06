@@ -1,0 +1,133 @@
+
+.footer {
+    margin-top: em(100);
+    background: url('/images/footer-pattern.png');
+    background-size: cover;
+    line-height: 1.4em;
+    
+    @include media($transient) {
+        background: url('/images/footer-small.png');
+    }
+}
+
+.footer-outer {
+    padding-bottom: em(50);
+}
+
+#footer-outer-social {
+    @include media($clinical) {
+        background: #4D4D4D;
+        padding-top: em(20);
+    }
+}
+
+.footer-content {
+    @include span-columns(9);
+    @include shift(2);
+    
+    @include media($serendipity) {
+        @include span-columns(10);
+        @include shift(1);
+    }
+    
+    letter-spacing: em(1);
+    color: $lighter-gray;
+
+    p.heading {
+        float: left;
+        color: white;
+        margin-bottom: em(10);
+    }
+
+    .cell {
+        @include span-columns(4);
+        @include omega(3n);
+
+        @include media($serendipity) {
+            @include span-columns(6);
+            @include omega(2n);
+        }
+        
+        @include media($clinical) {
+            @include span-columns(12);
+            @include omega;
+        }
+    }
+
+    .cell > address {
+        font-style: normal;
+        padding-top: em(14);
+    }
+    
+    #footer-phone {
+        border-top: 1px solid $lighter-gray;
+    }
+    #footer-physical {
+        border-top: 1px solid $lighter-gray;
+        @include media($clinical) {
+            border-top: none;
+        }
+    }
+    #footer-postal {
+        border-top: 1px solid $lighter-gray;
+        @include media($serendipity) {
+            border-top: none;
+        }
+    }
+    
+
+    #footer-logo {
+        @include span-columns(8);
+        height: em(30);
+        
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+    }
+    
+    #footer-totop {
+        @include span-columns(4);
+        padding-top: em(10);
+        text-align: right;
+    }
+
+    .cell.social {
+        @include shift(8);
+        @include media($clinical) {
+            @include shift(0);
+        }
+    }
+    
+    .cell.social > p {
+        color: white;
+    }
+    
+    .cell.social > div {
+        border-top: 1px solid white;
+        padding-top: em(13);
+    }
+    
+    .cell.social > div > a {
+        padding: 0 em(15);
+    }
+
+}
+
+#footer-row-logo {
+    margin-top: em(60);
+}
+#footer-row-contact {
+    margin-top: em(20);
+}
+
+.footer-content a {
+        color: $lighter-gray;
+}
+    
+.footer-content a:hover {
+    color: lighten($lighter-gray, 20);
+}
+
+    

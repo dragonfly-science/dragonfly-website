@@ -1,0 +1,27 @@
+name:           Dragonfly-Website
+version:        0.1
+synopsis:       Dragonfly website.
+homepage:       http://dragonfly.co.nz
+license:        OtherLicense
+license-file:   LICENSE
+author:         Christopher Knox
+maintainer:     chris@dragonfly.co.nz
+category:       Web
+build-type:     Simple
+cabal-version:  >= 1.8
+description:
+  Statically generates the dragonfly website.
+  Depends on the `node-sass` tool for generating CSS
+    and `bower` for fetch client-side components
+
+executable dragonflyweb
+  main-is:         Site.hs
+  hs-source-dirs:  haskell
+  build-depends:   base == 4.7.*,
+                   containers == 0.5.*,
+                   filepath == 1.3.*,
+                   hakyll == 4.5.*,
+                   pandoc == 1.13.*,
+                   pandoc-citeproc == 0.4.*,
+                   blaze-html == 0.7.*
+  ghc-options:   -Wall

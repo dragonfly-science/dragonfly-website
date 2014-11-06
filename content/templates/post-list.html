@@ -1,0 +1,19 @@
+<div class="container">  
+  <div class="content">
+    $body$
+    <div class="post-list">
+      $for(posts)$
+      <div class="post">
+          <h4><a href="$url$">$title$</a></h4>
+          <p class="subheading">$published$ $if(author)$ . $author$ $endif$ </p>
+          <p>$teaser$ &nbsp;<a href="$url$" class="read-more">Read more</a></p>
+      </div>
+      <div class="postimage">
+          <img src="$teaserImage$" />
+      </div>
+      <hr />
+      $endfor$
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,25 @@
+.hero {
+    margin-top: $centered-navigation-height;
+    position: relative;
+}
+
+.hero h1 {
+    position:absolute; 
+    bottom:10%; 
+    left: 0px; 
+    color: white; 
+    background-color:rgba(0,0,0,0.6); 
+    padding: $base-line-height/10.0  $base-line-height/10.0 $base-line-height/10.0 $content-margin;
+
+    @include media($clinical) {
+        position: static;
+        background-color: transparent;
+        color: $base-heading-color;
+        padding: 0 $content-margin-clinical;
+    }
+    
+    @include media($transient) {
+        padding: 0 $content-margin-transient;
+    }
+}
+
