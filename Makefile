@@ -7,7 +7,8 @@ PULLS := $(addsuffix /pull,$(DEPS))
 .SECONDARY:
 
 .PHONY: all
-all: dfweb_docker/stylesheets/.dockeri \
+all: $(PULLS) \
+	dfweb_docker/stylesheets/.dockeri \
 	dfweb_docker/scripts/.dockeri \
 	dfweb_docker/haskell-build/.dockeri \
 	dfweb_docker/develop/.dockeri \
