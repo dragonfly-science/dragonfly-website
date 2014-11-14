@@ -37,7 +37,7 @@ main = hakyllWith config $ do
         compile $ do 
             ctx <- baseContext "index"
             scholmdCompiler 
-                >>= loadAndApplyTemplate "templates/basic.html" ctx
+                >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
