@@ -5,6 +5,7 @@ MODE="$1"
 case "$1" in
     help)
         echo I have not written any help.
+        echo But running ./run.sh develop help will give you some pointers
         exit 0
         ;;
     develop|edit|ghci|deploy)
@@ -18,7 +19,12 @@ HAKYLLCMD=${2:-watch}
 
 case "$MODE" in
     develop)
-        make -j4
+        echo "building dependencies"
+        MAKEOUT=$(make)
+        if [ $? != 0 ]; then
+            echo $MAKEOUT
+            exit 1
+        fi
 
         # Start the javascript watcher
         SCRIPTS_WATCH=$(docker run -dt -u `id -u`:`id -g` \
