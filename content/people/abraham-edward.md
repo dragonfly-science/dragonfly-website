@@ -8,7 +8,7 @@ title: Edward Abraham
 banner: abraham-edward/edward-abraham-letterbox.jpg
 ---
 
-iTest Edward has a PhD from Cambridge University, where he studied theoretical
+Edward has a PhD from Cambridge University, where he studied theoretical
 physics in the cosmology group led by Stephen Hawking.
 
 Returning to New Zealand, Edward worked as an oceanographer at
