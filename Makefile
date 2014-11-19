@@ -98,7 +98,7 @@ content/assets/dragonfly.js: dfweb_docker/scripts/.dockeri content/assets/.dir_e
 		docker inspect --format='{{.Id}}' $(IMAGE) > $@
 
 %/pull:
-	docker pull $(REGISTRY)/$*
+	@docker pull $(REGISTRY)/$*
 	make .deps/$*/latest
 
 .deps/%/latest: .deps/%/.dir_exists FORCE
