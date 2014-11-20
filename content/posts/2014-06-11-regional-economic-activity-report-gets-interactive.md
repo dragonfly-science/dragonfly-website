@@ -37,7 +37,7 @@ incorporated some sophisticated data management into the tool.
 databases, R-code for laying out the plots and figures and JavaScript
 to glue it all together.”
 
-![](../posts/2014-06-11-regional-economic-activity-report-gets-interactive/REAR-screen-shot.img.md)
+![](../posts/2014-06-11-regional-economic-activity-report-gets-interactive/REAR-screen-shot.jpg)
 
 Information is displayed in different ways in three places, including
 a map of New Zealand. “There’s a single source of data but it’s coded
