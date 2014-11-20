@@ -23,5 +23,6 @@ executable dragonflyweb
                    hakyll == 4.6.*,
                    pandoc == 1.13.*,
                    pandoc-citeproc == 0.4.*,
-                   blaze-html == 0.7.*
+                   blaze-html == 0.7.*,
+                   tagsoup == 0.13.*
   ghc-options:   -Wall

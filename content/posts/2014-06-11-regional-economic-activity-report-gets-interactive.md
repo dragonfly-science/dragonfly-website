@@ -11,6 +11,7 @@ in desktop and tablet versions, and an app is planned.
 
 <!--more-->
 
+
 Dragonfly has created an interactive web tool to present information
 on population, employment, GDP and annual household income across the
 country's 66 territorial authorities for the Ministry of Business,

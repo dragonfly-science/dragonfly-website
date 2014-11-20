@@ -6,9 +6,24 @@ module WebSite.Blog (
 import Data.Monoid ((<>))
 import System.FilePath
 import Hakyll
+import Text.HTML.TagSoup as TS
 
 import WebSite.Context
 import WebSite.Compilers
+
+imageCredits :: [Item String] -> Item String -> Compiler (Item String)
+imageCredits imgMeta item = do
+    return $ fmap (processFigures) item
+    where
+        processFigures :: String  -> String 
+        processFigures s = 
+            let tags = parseTags s
+                [figures] = sections (~== ("<figure>"::String)) tags
+                rv = case figures of
+                        [] -> s
+                        _ -> s
+            in rv
+
 
 rules :: Rules()
 rules = do
@@ -19,7 +34,7 @@ rules = do
         compile $ do 
             base <- baseContext "blog"
             let pages = listField "posts" postIndexCtx (recentFirst =<< loadAllSnapshots ("posts/*.md"  .&&. hasVersion "full") "content")
-            let ctx = base <> pages
+                ctx = base <> pages
             scholmdCompiler 
                 >>= loadAndApplyTemplate "templates/post-list.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -34,12 +49,14 @@ rules = do
         route $ setExtension "html"
         compile $ do 
             base <- baseContext "blog"
+            imageMeta <- loadAll ("**/*.img.md")
             let ctx = base <> actualbodyField "actualbody"
             -- it should be possible to avoid compiling this twice to load the output from
             -- the 'full' version.
             scholmdCompiler 
                 >>= loadAndApplyTemplate "templates/post.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= imageCredits imageMeta
                 >>= relativizeUrls
 
 
