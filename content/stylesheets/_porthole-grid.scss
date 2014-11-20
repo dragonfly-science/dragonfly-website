@@ -28,20 +28,12 @@ $read-more-text-color: $light-gray;
             height: $porthole-image-size;
         }
 
-        p {
-            display: none;
-        }
-        p:nth-child(3) {
-            @include media($large-screen) {
-                display: block;
-            }
-        }
-
         h4 {
             color: $people-green;
             padding-bottom: $porthole-title-padding-bottom;
             padding-top: $porthole-title-padding-top;
         }
+
         h4 a {
             color: $people-green;
         }
