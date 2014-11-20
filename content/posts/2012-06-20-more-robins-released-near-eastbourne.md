@@ -1,15 +1,18 @@
 ---
 title: More robins released near Eastbourne
-teaser: |    
-    More than 70 people were involved in the translocation of 40 North
-    Island robins from Kapiti Island to the hills behind Eastbourne in
-    April as part of the MIRO (Mainland Island Restoration Operation)
-    project run by volunteers.
-    
-    Yvan from Dragonfly Science was one of eight ‘catchers’ on Kapiti
-    Island. He studied robins during his PhD and became expert at catching
-    them, so was pleased to be able to help out.
 ---
+
+More than 70 people were involved in the translocation of 40 North
+Island robins from Kapiti Island to the hills behind Eastbourne in
+April as part of the MIRO (Mainland Island Restoration Operation)
+project run by volunteers.
+
+Yvan from Dragonfly Science was one of eight ‘catchers’ on Kapiti
+Island. He studied robins during his PhD and became expert at catching
+them, so was pleased to be able to help out.
+
+<!--more-->
+
 More than 70 people were involved in the translocation of 40 North
 Island robins from Kapiti Island to the hills behind Eastbourne in
 April as part of the MIRO (Mainland Island Restoration Operation)

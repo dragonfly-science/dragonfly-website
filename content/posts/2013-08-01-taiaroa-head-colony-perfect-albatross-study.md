@@ -1,16 +1,19 @@
 ---
 title: Taiaroa Head colony perfect for albatross study 
-teaser: |    
-    The northern royal albatross colony at Taiaroa Head has been used to
-    estimate the birds’ survival rates at different ages in a single
-    model. The new estimate by Dragonfly Science updates the survival rate
-    calculation from 1993, which was based on re-sighting data from
-    1937–1993.
-    
-    Since then, a number of things have changed – climate and marine
-    conditions, population size and the distribution of fishing effort –
-    and better analysis methods are available.
 ---
+
+The northern royal albatross colony at Taiaroa Head has been used to
+estimate the birds’ survival rates at different ages in a single
+model. The new estimate by Dragonfly Science updates the survival rate
+calculation from 1993, which was based on re-sighting data from
+1937–1993.
+
+Since then, a number of things have changed – climate and marine
+conditions, population size and the distribution of fishing effort –
+and better analysis methods are available.
+
+<!--more-->
+
 The northern royal albatross colony at Taiaroa Head has been used to
 estimate the birds’ survival rates at different ages in a single
 model. The new estimate by Dragonfly Science updates the survival rate

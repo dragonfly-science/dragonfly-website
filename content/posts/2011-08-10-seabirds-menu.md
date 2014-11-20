@@ -1,12 +1,13 @@
 ---
 title: Seabirds on the menu
-teaser: |    
-    Dragonfly Science staff attended the New Zealand Marine Sciences
-    Society conference, held in Oban on Stewart Island from 5-8 July.
-    
-    Getting to the island entailed travelling through Bluff, one of the
-    few places where sooty shearwater pies may be bought for lunch.
 ---
+Dragonfly Science staff attended the New Zealand Marine Sciences
+Society conference, held in Oban on Stewart Island from 5-8 July.
+
+Getting to the island entailed travelling through Bluff, one of the
+few places where sooty shearwater pies may be bought for lunch.
+
+<!--more-->
 
 Dragonfly Science staff attended the [New Zealand Marine Sciences
 Society](http://nzmss.org) conference, held in Oban on Stewart Island

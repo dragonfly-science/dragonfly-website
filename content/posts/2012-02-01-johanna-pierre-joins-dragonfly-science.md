@@ -1,13 +1,15 @@
 ---
 title: Johanna Pierre joins Dragonfly Science
-teaser: |    
-    Having worked together on several protected species projects in the
-    last seven years, Johanna Pierre is joining Dragonfly Science this
-    month. She will also maintain her private consultancy, JPEC.
-    
-    “I have enjoyed the projects I’ve worked on with Edward and Finlay,
-    and am looking forward to joining forces with them”, she says.
 ---
+Having worked together on several protected species projects in the
+last seven years, Johanna Pierre is joining Dragonfly Science this
+month. She will also maintain her private consultancy, JPEC.
+
+“I have enjoyed the projects I’ve worked on with Edward and Finlay,
+and am looking forward to joining forces with them”, she says.
+
+<!--more-->
+
 Having worked together on several protected species projects in the
 last seven years, Johanna Pierre is joining Dragonfly Science this
 month. She will also maintain her private consultancy,

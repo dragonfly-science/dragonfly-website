@@ -1,14 +1,16 @@
 ---
 title: Inferring animal dispersal from geochemical proxies: open source R package online
-teaser: |    
-    To pinpoint the natal origins of settling fish in Cook Strait, near
-    Wellington, Philipp Neubauer measured geochemical signatures in fish
-    otoliths (ear bones). A new Bayesian modelling approach allowed him to
-    estimate dispersal of larval fish among local populations in the
-    region. These models are now available in an open-source package for
-    the statistical computing environment R.
 ---
- Studying populations of reef fish in Cook Strait during his PhD was a
+To pinpoint the natal origins of settling fish in Cook Strait, near
+Wellington, Philipp Neubauer measured geochemical signatures in fish
+otoliths (ear bones). A new Bayesian modelling approach allowed him to
+estimate dispersal of larval fish among local populations in the
+region. These models are now available in an open-source package for
+the statistical computing environment R.
+
+<!--more-->
+
+Studying populations of reef fish in Cook Strait during his PhD was a
 challenge for Philipp Neubauer in more ways than one. Not only was he
 confronted by fierce southerly swells while diving for fish larvae, he
 also had to find ways to analyse the complex data that was generated

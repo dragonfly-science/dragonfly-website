@@ -1,15 +1,17 @@
 ---
 title: Seabird estimation report published
 author: edward
-teaser: |    
-    A recent Aquatic Environment and Biodiversity Report estimates the
-    number of seabirds captured during commercial fishing in New Zealand
-    waters between 2002–03 and 2008–09. In New Zealand, government
-    observers are present on some vessels and record any captures of
-    seabirds and other protected species that occur. This study estimated
-    the total numbers of seabirds that would have been reported if
-    observers had been present on every fishing vessel.
 ---
+
+A recent Aquatic Environment and Biodiversity Report estimates the
+number of seabirds captured during commercial fishing in New Zealand
+waters between 2002–03 and 2008–09. In New Zealand, government
+observers are present on some vessels and record any captures of
+seabirds and other protected species that occur. This study estimated
+the total numbers of seabirds that would have been reported if
+observers had been present on every fishing vessel.
+
+<!--more-->
 
 A recent Aquatic Environment and Biodiversity Report, prepared by
 Dragonfly Science for the Ministry of Fisheries, estimates the number

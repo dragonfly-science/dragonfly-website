@@ -1,11 +1,13 @@
 ---
 title: Podcast - bycatch data analysis
-teaser: |    
-    Edward and Finlay talk to Alison Ballance from Radio New Zealand
-    National about their analysis of seabird and marine mammal by-catch
-    data collected by observers on fishing vessels.
 ---
- Edward and Finlay talk to Alison Ballance from Radio New Zealand
+Edward and Finlay talk to Alison Ballance from Radio New Zealand
+National about their analysis of seabird and marine mammal by-catch
+data collected by observers on fishing vessels.
+
+<!--more-->
+
+Edward and Finlay talk to Alison Ballance from Radio New Zealand
 National about their analysis of seabird and marine mammal by-catch
 data collected by observers on fishing vessels.
 

@@ -1,12 +1,15 @@
 ---
 title: Like some talk with your sushi? 
-teaser: |    
-    Last week we held our first official lunchtime technical talk. We
-    started the series to connect with others in Wellington who are
-    interested in the same kind of 'bright and shiny things' that interest
-    us. The next talk will be by Joel Pitt who will give a 'Beginner's
-    guide to information theory', on February 28, starting at 12:15.
 ---
+
+Last week we held our first official lunchtime technical talk. We
+started the series to connect with others in Wellington who are
+interested in the same kind of 'bright and shiny things' that interest
+us. The next talk will be by Joel Pitt who will give a 'Beginner's
+guide to information theory', on February 28, starting at 12:15.
+
+<!--more-->
+
 Last week we held our first official lunchtime technical talk. We
 started the series to connect with others in Wellington who are
 interested in the same kind of 'bright and shiny things' that interest

@@ -1,5 +1,5 @@
 ---
-title: The Regional Economic Activity Report gets interactive 
+title: The Regional Economic Activity Report gets interactive
 ---
 
 Dragonfly has created an interactive web tool to present information
@@ -37,7 +37,8 @@ incorporated some sophisticated data management into the tool.
 databases, R-code for laying out the plots and figures and JavaScript
 to glue it all together.”
 
-![](../posts/2014-06-11-regional-economic-activity-report-gets-interactive/REAR-screen-shot.jpg)
+![](../posts/2014-06-11-regional-economic-activity-report-gets-interactive/REAR-screen-shot.img.md)
+
 Information is displayed in different ways in three places, including
 a map of New Zealand. “There’s a single source of data but it’s coded
 to flow seamlessly through to all the interacting graphics. By moving
@@ -51,6 +52,3 @@ being quite close to that.”
 He has also enjoyed finding out some quirky facts and figures along
 the way. “Where else would you learn that 1.8% of the retail spend in
 Dunedin was by visitors from the Bay of Plenty?”
-
-
-

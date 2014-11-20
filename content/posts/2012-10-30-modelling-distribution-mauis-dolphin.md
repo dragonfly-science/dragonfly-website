@@ -1,12 +1,16 @@
 ---
 title: Modelling the distribution of Maui’s dolphin
-teaser: |    
-    In June 2012, a risk assessment workshop was held to identify, analyse
-    and evaluate all threats to Maui’s dolphin in a review of the species
-    Threat Management Plan. Panellists included scientific experts as well
-    as representatives of the Ministry for Primary Industries and the
-    Department of Conservation.
 ---
+
+In June 2012, a risk assessment workshop was held to identify, analyse
+and evaluate all threats to Maui’s dolphin in a review of the species
+Threat Management Plan. Panellists included scientific experts as well
+as representatives of the Ministry for Primary Industries and the
+Department of Conservation.
+
+<!--more-->
+
+
 In June 2012, a risk assessment workshop was held to identify, analyse
 and evaluate all threats to Maui’s dolphin in a review of the species
 Threat Management Plan. Panellists included scientific experts as well

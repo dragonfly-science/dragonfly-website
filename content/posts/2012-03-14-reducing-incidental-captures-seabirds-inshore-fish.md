@@ -1,13 +1,15 @@
 ---
 title: Reducing incidental captures of seabirds in inshore fisheries
 author: johanna
-teaser: |    
-    In recent years, awareness of seabird bycatch in inshore fisheries has
-    grown considerably.  A recent expert workshop run by the Department of
-    Conservation and Ministry of Fisheries, and attended by Dragonfly,
-    discussed bycatch reduction measures for inshore trawl and bottom
-    longline fisheries.
 ---
+
+In recent years, awareness of seabird bycatch in inshore fisheries has
+grown considerably.  A recent expert workshop run by the Department of
+Conservation and Ministry of Fisheries, and attended by Dragonfly,
+discussed bycatch reduction measures for inshore trawl and bottom
+longline fisheries.
+
+<!--more-->
 
 In recent years, awareness of seabird bycatch in inshore fisheries has
 grown considerably.  Reporting by government fisheries observers

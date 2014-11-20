@@ -1,16 +1,18 @@
 ---
 title: Working at the beach this summer 
-teaser: |    
-    Dragonfly are surveying cockle and pipi populations in the wider
-    Auckland region and toheroa in Southland for the Ministry for Primary
-    Industries (MPI).
-    
-    The work in northern New Zealand is currently underway, with Katrin
-    Berkenbusch leading the project. “I’m a soft-sediment ecologist so
-    it’s a good opportunity to get into this kind of work and make use of
-    my skills. We’re sampling a range of beaches, inlets and estuaries,
-    from the Bay of Plenty to Whangarei.”
 ---
+Dragonfly are surveying cockle and pipi populations in the wider
+Auckland region and toheroa in Southland for the Ministry for Primary
+Industries (MPI).
+
+The work in northern New Zealand is currently underway, with Katrin
+Berkenbusch leading the project. “I’m a soft-sediment ecologist so
+it’s a good opportunity to get into this kind of work and make use of
+my skills. We’re sampling a range of beaches, inlets and estuaries,
+from the Bay of Plenty to Whangarei.”
+
+<!--more-->
+
 Dragonfly are surveying cockle and pipi populations in the wider
 Auckland region and toheroa in Southland for the Ministry for Primary
 Industries (MPI).

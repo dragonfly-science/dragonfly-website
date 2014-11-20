@@ -1,11 +1,13 @@
 ---
 title: The long tail of science
 author: edward
-teaser: |    
-    Google recently made Google Scholar Citations available to the public.
-    We thought it would be interesting to have a look and see where our
-    publications had been picked up.
 ---
+Google recently made Google Scholar Citations available to the public.
+We thought it would be interesting to have a look and see where our
+publications had been picked up.
+
+<!--more-->
+
 Google recently made Google Scholar Citations available to the public.
 We thought it would be interesting to have a look and see where our
 publications had been picked up.

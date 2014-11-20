@@ -1,11 +1,13 @@
 ---
 title: Philipp presenting at the Oxford University Biodiversity Resilience symposium
-teaser: |    
-    Philipp is off to Oxford on Monday to present on the resilience of
-    fished populations at the Biodiversity Resilience symposium. Phil's
-    talk is entitled: The end of the line? Patterns and mechanisms of
-    resilience in overfished stocks.
 ---
+Philipp is off to Oxford on Monday to present on the resilience of
+fished populations at the Biodiversity Resilience symposium. Phil's
+talk is entitled: The end of the line? Patterns and mechanisms of
+resilience in overfished stocks.
+
+<!--more-->
+
 Philipp is off to Oxford on Monday to present on the resilience of
 fished populations at the [Biodiversity Resilience
 symposium](http://www.biodiversity.ox.ac.uk/events/biosymposium/home/).

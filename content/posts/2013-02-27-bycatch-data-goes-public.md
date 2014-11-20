@@ -1,13 +1,15 @@
 ---
 title: Seabird bycatch data goes public
-teaser: |    
-    Fisheries observer data on the capture of seabirds in New Zealand
-    trawl and longline fisheries from 2002&ndash;03 to 2010&ndash;11 have
-    recently been made available through a web interface. The website was
-    developed by Dragonfly Science for the Ministry for Primary Industries
-    and is searchable by year, species, region and fishing method, with
-    results displayed in a clear graphical format.
 ---
+
+Fisheries observer data on the capture of seabirds in New Zealand
+trawl and longline fisheries from 2002&ndash;03 to 2010&ndash;11 have
+recently been made available through a web interface. The website was
+developed by Dragonfly Science for the Ministry for Primary Industries
+and is searchable by year, species, region and fishing method, with
+results displayed in a clear graphical format.
+
+<!--more-->
 
 Fisheries observer data on the capture of seabirds in New Zealand
 trawl and longline fisheries from 2002&ndash;03 to 2010&ndash;11 have
