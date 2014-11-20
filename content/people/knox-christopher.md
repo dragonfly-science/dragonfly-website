@@ -8,7 +8,12 @@ tag: risto
 banner: knox-christopher/christopher-knox-letterbox.jpg
 ---
 
-Hi Christopher gained a PhD in physical chemistry from the University of
+Christopher has a PhD in physical chemistry from the University of
+Canterbury, where he studied photochemistry in small droplets of liquid.
+
+<!--more-->
+
+Christopher gained a PhD in physical chemistry from the University of
 Canterbury and completed two post-docs at the University of California Irvine.
 
 Although he first dabbled in visualisation during his PhD, it was a chance

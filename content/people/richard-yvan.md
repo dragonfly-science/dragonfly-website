@@ -7,6 +7,10 @@ mobile: ''
 tag: yvan
 banner: richard-yvan/yvan-richard-letterbox.jpg
 ---
+Yvan's background is in ecology—specifically population dynamics,
+conservation biology, animal movements and landscape ecology.
+
+<!--more-->
 
 Yvan's background is in ecology—specifically population dynamics, conservation
 biology, animal movements and landscape ecology. 

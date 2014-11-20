@@ -3,7 +3,7 @@ module WebSite.People (
     rules
 ) where
 
-import Data.Monoid ((<>), mconcat)
+import Data.Monoid ((<>))
 import System.FilePath
 
 import Hakyll
@@ -18,37 +18,43 @@ rules = do
         route $ constRoute "people/index.html"
         compile $ do
             base <- baseContext "people"
-            let persons = listField "pages" summaryBody (loadAll "people/*.md")
+            let persons = listField "pages" personIndexCtx (loadAllSnapshots ("people/*.md"  .&&. hasVersion "full") "content")
             let ctx = base <> persons
             scholmdCompiler 
                 >>= loadAndApplyTemplate "templates/people-list.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
+
+    match "people/*.md" $ version "full" $ do
+        compile $ do 
+            scholmdCompiler 
+                >>= saveSnapshot "content"
+
     match "people/*.md" $ do
         route $ setExtension "html"
         compile $ do
             base <- baseContext "people"
             let banner = constField "banner" "/images/person-banner.png"
-            let ctx = base <> banner
+            let ctx = base <> banner <> actualbodyField "actualbody"
             scholmdCompiler 
                 >>= loadAndApplyTemplate "templates/person.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
-summaryBody :: Context String
-summaryBody = 
-    mconcat [ defaultContext
-            , field "summaryBody" $ \item -> do
-                  let path = toFilePath (itemIdentifier item)
-                      metaFile = dropExtension path </> "meta.md"
-                  metaItem <- load $ fromFilePath metaFile
-                  return (itemBody metaItem)
-            , field "summaryImage" $ \item -> do
-                  let path = toFilePath (itemIdentifier item)
-                      base = dropExtension path
-                      metaIdent = fromFilePath $ base </> "meta.md"
-                  imageName <- getMetadataField' metaIdent "image"
-                  return (base </> imageName)
-            ]
+personIndexCtx :: Context String
+personIndexCtx = defaultContext 
+                 <> teaserField "teaser" "content"
+                 <> pageUrlField "pageurl"
+                 <> portholeImage
+
+
+portholeImage :: Context String
+portholeImage = field "portholeImage" getImagePath
+  where 
+    getImagePath item = do
+        let path = toFilePath (itemIdentifier item)
+            base = dropExtension path
+            ident = fromFilePath $ base </> "porthole.png"
+        fmap (maybe "" toUrl) (getRoute ident)
 

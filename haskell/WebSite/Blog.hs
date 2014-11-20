@@ -60,24 +60,9 @@ teaserImage = field "teaserImage" getImagePath
             ident = fromFilePath $ base </> "teaser.jpg"
         fmap (maybe "" toUrl) (getRoute ident)
 
-teaserSeparator :: String
-teaserSeparator = "<!--more-->"
 
 
-actualbodyField :: String -> Context String
-actualbodyField key = field key $ \_ -> do
-    value <- getUnderlying >>= load . setVersion (Just "full")
-    let body = itemBody value
-        parts = splitAll teaserSeparator body
-    case parts of
-        [] -> return "WARNING there is no body text"
-        _  -> return $ last parts
 
-pageUrlField :: String -> Context a
-pageUrlField key = field key $ \item -> do
-    let pseudoPath = toFilePath (itemIdentifier item)
-        path = "/" ++ pseudoPath
-    return (replaceExtension path ".html")
 
 
 

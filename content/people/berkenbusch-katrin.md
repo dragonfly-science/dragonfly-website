@@ -7,6 +7,11 @@ tag: katrin
 title: Katrin Berkenbusch
 banner: berkenbusch-katrin/katrin-berkenbusch-letterbox.jpg
 ---
+Katrin has a PhD in Marine Science from University of Otago,
+where she studied the biology and ecology of burrowing ghost shrimp.
+
+<!--more-->
+
 Katrin has a PhD in Marine Science from University of Otago, where she studied
 the biology and ecology of burrowing ghost shrimp, commonly found in estuaries
 around New Zealand. 

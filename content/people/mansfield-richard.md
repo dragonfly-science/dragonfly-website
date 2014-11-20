@@ -7,6 +7,10 @@ mobile: ''
 tag: richard
 banner: mansfield-richard/richard-mansfield-letterbox.jpg
 ---
+Richard gained his PhD in Computer Science from Victoria University,
+applying game theory to the study of ecological systems.
+
+<!--more-->
 
 Richard gained his PhD in Computer Science from Victoria University, applying
 game theory to the study of ecological systems.

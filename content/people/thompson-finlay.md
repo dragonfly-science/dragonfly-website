@@ -8,6 +8,11 @@ tag: finlay
 banner: thompson-finlay/finlay-thompson-letterbox.jpg
 ---
 
+Finlay gained his PhD in mathematics from [SISSA](http://sissa.it), in
+Italy, researching four dimensional algebra and geometry.
+
+<!--more-->
+
 Finlay gained his PhD in mathematics from [SISSA](http://sissa.it), in Italy,
 researching four dimensional algebra and geometry. This was followed by
 post-docs at [CIMAT](http://www.cimat.mx/) in Mexico and [Victoria
