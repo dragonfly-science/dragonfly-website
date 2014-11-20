@@ -1,19 +1,22 @@
 ---
 title: Resilience of the world's fish stocks
-teaser: |    
-    Philipp Neubauer, who is due to start work at Dragonfly Science in
-    August, has published a paper modelling the recovery of the world’s
-    fish stocks from overfishing in the journal
-    [Science](http://www.sciencemag.org/content/340/6130/347.short) this
-    month. The full paper may be accessed via the publications page of the
-    [RAM legacy stock-assessment
-    database](http://ramlegacy.marinebiodiversity.ca/ram-legacy-stock-assessment-database/publications).
-    
-    “We found that marine fish populations were surprisingly resilient to
-    overfishing and could generally rebuild to sustainable levels within a
-    decade or so – if fishing was reduced substantially at the first signs
-    of overexploitation,” he says.
 ---
+
+Philipp Neubauer, who is due to start work at Dragonfly Science in
+August, has published a paper modelling the recovery of the world’s
+fish stocks from overfishing in the journal
+[Science](http://www.sciencemag.org/content/340/6130/347.short) this
+month. The full paper may be accessed via the publications page of the
+[RAM legacy stock-assessment
+database](http://ramlegacy.marinebiodiversity.ca/ram-legacy-stock-assessment-database/publications).
+
+“We found that marine fish populations were surprisingly resilient to
+overfishing and could generally rebuild to sustainable levels within a
+decade or so – if fishing was reduced substantially at the first signs
+of overexploitation,” he says.
+
+<!--more-->
+
 Philipp Neubauer, who is due to start work at Dragonfly Science in
 August, has published a paper modelling the recovery of the world’s
 fish stocks from overfishing in the journal

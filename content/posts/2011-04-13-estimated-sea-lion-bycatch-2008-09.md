@@ -1,10 +1,12 @@
 ---
 title: Estimated sea lion bycatch in 2008–09
-teaser: |    
-    Dragonfly Science estimated that around 78 sea lions were caught in
-    New Zealand trawl fisheries in the 2008-09 fishing year. This was the
-    lowest number of estimated captures since 2002-03.
 ---
+
+Dragonfly Science estimated that around 78 sea lions were caught in
+New Zealand trawl fisheries in the 2008-09 fishing year. This was the
+lowest number of estimated captures since 2002-03.
+
+<!--more-->
 
 Dragonfly Science estimated that around 78 New Zealand sea lions were
 caught in trawl fisheries in the 2008-09 fishing year. This was the

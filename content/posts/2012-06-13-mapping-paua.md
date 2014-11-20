@@ -1,11 +1,14 @@
 ---
 title: Mapping paua catch with GPS
-teaser: |    
-    The Paua Industry Council (PIC) has been developing data logging
-    technology for fisheries management for a number of years, but
-    recently got Dragonfly Science involved to analyse their data, extract
-    the relevant information and present it in a useful way.
 ---
+
+The Paua Industry Council (PIC) has been developing data logging
+technology for fisheries management for a number of years, but
+recently got Dragonfly Science involved to analyse their data, extract
+the relevant information and present it in a useful way.
+
+<!--more-->
+
 The Paua Industry Council (PIC) has been developing data logging
 technology for fisheries management for a number of years, but
 recently got Dragonfly Science involved to analyse their data, extract

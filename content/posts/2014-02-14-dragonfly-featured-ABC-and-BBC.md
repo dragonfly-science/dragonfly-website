@@ -1,15 +1,17 @@
 ---
 title: Dragonfly featured on ABC and BBC radio programmes
-teaser: |    
-    Dragonfly Science's work for the Pāua Industry Council, using data
-    loggers to manage the pāua fishery, was featured on the ABC Off Track
-    and the BBC Discovery programmes this week.
-    
-    Edward, along with Dave and Jason Baker, discuss the development of
-    the data loggers and the benefits to the fishers. This programme is
-    part two of a four-part series exploring current marine issues around
-    the world.
 ---
+Dragonfly Science's work for the Pāua Industry Council, using data
+loggers to manage the pāua fishery, was featured on the ABC Off Track
+and the BBC Discovery programmes this week.
+
+Edward, along with Dave and Jason Baker, discuss the development of
+the data loggers and the benefits to the fishers. This programme is
+part two of a four-part series exploring current marine issues around
+the world.
+
+<!--more-->
+
 Dragonfly Science's work for the Pāua Industry Council, using data
 loggers to manage the pāua fishery, was featured on the ABC Off Track
 and the BBC Discovery programmes this week.

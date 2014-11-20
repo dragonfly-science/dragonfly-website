@@ -1,13 +1,15 @@
 ---
 title: Making connections in Japan
-teaser: |    
-    Finlay Thompson from Dragonfly Science travelled to Tokyo in September
-    to attend two conferences hosted by the National Institute of
-    Informatics and meet collaborators in the [Parallel GHC
-    project.](http://www.haskell.org/haskellwiki/Parallel_GHC_Project) The
-    visit was also an opportunity to build networks in the high
-    performance computing communities.
 ---
+
+Finlay Thompson from Dragonfly Science travelled to Tokyo in September
+to attend two conferences hosted by the National Institute of
+Informatics and meet collaborators in the [Parallel GHC
+project.](http://www.haskell.org/haskellwiki/Parallel_GHC_Project) The
+visit was also an opportunity to build networks in the high
+performance computing communities.
+
+<!--more-->
 
 Finlay Thompson from Dragonfly Science travelled to Tokyo in September
 to attend two conferences hosted by the National Institute of
