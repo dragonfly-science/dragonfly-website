@@ -11,6 +11,11 @@ banner: abraham-edward/edward-abraham-letterbox.jpg
 Edward has a PhD from Cambridge University, where he studied theoretical
 physics in the cosmology group led by Stephen Hawking.
 
+<!--more-->
+
+Edward has a PhD from Cambridge University, where he studied theoretical
+physics in the cosmology group led by Stephen Hawking.
+
 Returning to New Zealand, Edward worked as an oceanographer at
 [NIWA](http://www.niwa.co.nz) for 10 years, researching interactions between
 the physical and biological environment, particularly how stirring by ocean
