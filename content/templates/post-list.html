@@ -4,9 +4,9 @@
     <div class="post-list">
       $for(posts)$
       <div class="post">
-          <h4><a href="$url$">$title$</a></h4>
+          <h4><a href="$pageurl$">$title$</a></h4>
           <p class="subheading">$published$ $if(author)$ . $author$ $endif$ </p>
-          <p>$teaser$ &nbsp;<a href="$url$" class="read-more">Read more</a></p>
+          <p>$if(teaser)$ $teaser$ $endif$ &nbsp;<a href="$pageurl$" class="read-more">Read more</a></p>
       </div>
       <div class="postimage">
           <img src="$teaserImage$" />
