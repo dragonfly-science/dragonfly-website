@@ -65,7 +65,7 @@ case "$MODE" in
             boot2docker up >/dev/null 2>&1 &&
             $(boot2docker shellinit 2>/dev/null)
         fi
-        EDITIMAGE=docker.dragonfly.co.nz/dragonflyweb/edit
+        EDITIMAGE=dragonflyscience/website
         docker pull $EDITIMAGE
         if [ "$CLEANCACHE" = "true" ]; then
             docker rm dragonflyweb-cache 2>/dev/null
