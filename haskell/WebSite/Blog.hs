@@ -6,23 +6,14 @@ module WebSite.Blog (
 import Data.Monoid ((<>))
 import System.FilePath
 import Hakyll
-import Text.HTML.TagSoup as TS
 
 import WebSite.Context
 import WebSite.Compilers
+import WebSite.DomUtil.Images
 
 imageCredits :: [Item String] -> Item String -> Compiler (Item String)
 imageCredits imgMeta item = do
     return $ fmap (processFigures) item
-    where
-        processFigures :: String  -> String 
-        processFigures s = 
-            let tags = parseTags s
-                [figures] = sections (~== ("<figure>"::String)) tags
-                rv = case figures of
-                        [] -> s
-                        _ -> s
-            in rv
 
 
 rules :: Rules()
