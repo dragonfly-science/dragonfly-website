@@ -13,7 +13,7 @@ RUN apt-get update && \
 MAINTAINER chris@dragonfly.co.nz
 
 COPY ./  /work/
-COPY ./dist/locales-en-US.xml /usr/local/share/x86_64-linux-ghc-7.8.3/pandoc-citeproc-0.4.0.1/locales/
+COPY ./dist/locales-en-US.xml /usr/local/share/x86_64-linux-ghc-7.8.3/pandoc-citeproc-0.6/locales/
 
 ENTRYPOINT ["/work/dist/dragonflyweb"]
 WORKDIR /work
