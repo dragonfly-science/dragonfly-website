@@ -9,7 +9,7 @@ RUN mkdir /work && chown df:df /work
 COPY DragonflyWeb.cabal LICENSE Makefile /work/
 WORKDIR /work
 RUN cabal update && \
-    cabal install --global hakyll && \
+    cabal install --global --only-dependencies && \
     rm -r /root/.cabal
 
 USER df:df
