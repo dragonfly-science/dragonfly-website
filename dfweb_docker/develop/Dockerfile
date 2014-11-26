@@ -1,7 +1,7 @@
 FROM docker.dragonfly.co.nz/debian/nz
 # VERSION 0.1
 
-COPY locales-en-US.xml /usr/local/share/x86_64-linux-ghc-7.8.3/pandoc-citeproc-0.4.0.1/locales/
+COPY locales-en-US.xml /usr/local/share/x86_64-linux-ghc-7.8.3/pandoc-citeproc-0.6/locales/
 RUN apt-get update && \
     apt-get install -y libgmp10 \
         libffi5 \
