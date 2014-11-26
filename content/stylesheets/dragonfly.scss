@@ -10,3 +10,9 @@
 @import "person-banner";
 @import "post-list";
 
+// hack
+#nocite > p,
+#nocite .citation {
+    display: none;
+}
+

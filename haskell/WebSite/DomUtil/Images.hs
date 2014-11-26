@@ -26,9 +26,7 @@ transform (Element _name attrs children) = Element "html" M.empty
 
 goNode :: Node -> [Node]
 goNode (NodeElement e) = [NodeElement $ goElem e]
-goNode (NodeContent t) = [NodeContent t]
-goNode (NodeComment c) = [NodeComment c]
-goNode (NodeInstruction _) = [] -- and hide processing instructions too
+goNode a = [a]
 
 goElem :: Element -> Element
 goElem (Element "figure" attrs children) =

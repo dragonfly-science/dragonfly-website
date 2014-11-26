@@ -10,8 +10,9 @@ import Control.Applicative
 
 
 htm5Writer :: WriterOptions
-htm5Writer = defaultHakyllWriterOptions { 
+htm5Writer = defaultHakyllWriterOptions {
     writerHtml5             = True
+    ,writerSectionDivs      = True
 }
 
 scholmdCompiler :: Compiler (Item String)
