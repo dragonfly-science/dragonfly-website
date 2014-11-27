@@ -20,3 +20,4 @@ dfweb_docker/develop/dragonflyweb
 cabal.sandbox.config
 .deps
 .cabal-sandbox
+.dockerip
