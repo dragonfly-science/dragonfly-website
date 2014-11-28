@@ -10,7 +10,7 @@ PULLS := $(addsuffix /pull,$(DEPS))
 all: $(PULLS) \
 	dfweb_docker/stylesheets/.dockeri \
 	dfweb_docker/scripts/.dockeri \
-	dfweb_docker/haskell-build/.dockeri \
+	dfweb_docker/haskell-build/.dockerip \
 	dfweb_docker/develop/.dockeri \
 	dfweb_docker/cache/.dockerdc \
 	dfweb_docker/buildcache/.dockerdc
@@ -25,7 +25,7 @@ clean:
 	rm -rf assets
 
 
-dfweb_docker/develop/dragonflyweb: dfweb_docker/haskell-build/.dockeri \
+dfweb_docker/develop/dragonflyweb: dfweb_docker/haskell-build/.dockerip \
 	dfweb_docker/buildcache/.dockerdc \
 	haskell/**/*.hs haskell/*.hs
 	docker run --rm --volumes-from $$(cat dfweb_docker/buildcache/.dockerdc) \
@@ -34,7 +34,7 @@ dfweb_docker/develop/dragonflyweb: dfweb_docker/haskell-build/.dockeri \
 dfweb_docker/develop/.dockeri: .deps/debian/nz/latest dfweb_docker/buildcache/.dockerdc
 dfweb_docker/scripts/.dockeri: .deps/node/nz/latest assets/.dir_exists
 dfweb_docker/stylesheets/.dockeri: .deps/ruby/bourbon/latest assets/.dir_exists
-dfweb_docker/haskell-build/.dockeri: .deps/debian/hakyll/latest
+dfweb_docker/haskell-build/.dockerip: .deps/debian/hakyll/latest
 dfweb_docker/cache/.dockeri: .deps/debian/nz/latest
 dfweb_docker/buildcache/.dockeri: .deps/debian/nz/latest
 
@@ -43,7 +43,7 @@ dfweb_docker/buildcache/.dockeri: .deps/debian/nz/latest
 editimage: $(PULLS) content/dist/dragonflyweb \
 	content/assets/dragonfly.js \
 	content/assets/dragonfly.css \
-	dfweb_docker/haskell-build/.dockeri
+	dfweb_docker/haskell-build/.dockerip
 	docker build -t "$(REGISTRY)/dragonflyweb/edit" content
 	docker push $(REGISTRY)/dragonflyweb/edit
 
@@ -55,9 +55,9 @@ deploy: all editimage
 	docker cp $(TMPCONT):/var/cache/dragonflyweb/main/site /tmp/$(TMPCONT)
 	rsync -av --delete /tmp/$(TMPCONT)/site/ \
 		deployhub@www-staging.hoiho.dragonfly.co.nz:/var/www/static/www.dragonfly.co.nz
-	
 
-content/dist/dragonflyweb: dfweb_docker/haskell-build/.dockeri \
+
+content/dist/dragonflyweb: dfweb_docker/haskell-build/.dockerip \
 	dfweb_docker/buildcache/.dockerdc \
 	content/dist/.dir_exists \
 	haskell/**/*.hs haskell/*.hs
@@ -95,6 +95,15 @@ content/assets/dragonfly.js: dfweb_docker/scripts/.dockeri content/assets/.dir_e
 	@docker inspect --format='{{.Id}}' $(IMAGE) || \
 		docker pull $(IMAGE) || \
 		docker build -t "$(IMAGE)" $* && \
+		docker inspect --format='{{.Id}}' $(IMAGE) > $@
+
+%/.dockerip: %/Dockerfile %/* .docker_version
+	$(eval GITREV := $(shell md5sum $^ \
+		| md5sum | awk '{print substr($$1,1,10)}'))
+	$(eval IMAGE := $(REGISTRY)/$*:$(GITREV))
+	@docker inspect --format='{{.Id}}' $(IMAGE) || \
+		docker pull $(IMAGE) || \
+		(docker build -t "$(IMAGE)" $* && docker push $(IMAGE)) && \
 		docker inspect --format='{{.Id}}' $(IMAGE) > $@
 
 %/pull:
