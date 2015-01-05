@@ -10,6 +10,24 @@
 @import "person-banner";
 @import "post-list";
 
+
+div.page-title {
+    padding-left: $content-margin;
+
+    @include media($clinical) {
+        padding-left: $content-margin-clinical;
+    }
+
+    h2 {
+        padding-top: 0.5em;
+        @include media($transient) {
+            display: none;
+        }
+
+    }
+}
+
+
 // hack
 #nocite > p,
 #nocite .citation {

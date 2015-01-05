@@ -1,7 +1,5 @@
 ---
-title: people
+title: People
 ---
-
-# People
 
 

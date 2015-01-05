@@ -37,7 +37,7 @@ $centered-navigation-height: em(82);
         height: $centered-navigation-height-dropdown;
         padding: 0 0;
     }
-    
+
 
     .mobile-logo {
         display: none;
@@ -97,7 +97,6 @@ $centered-navigation-height: em(82);
     // Nav menu
 
     .centered-navigation-wrapper {
-        @include outer-container;
         @include clearfix;
         position: relative;
         z-index: 999;
@@ -171,17 +170,17 @@ $centered-navigation-height: em(82);
 
         a {
             color: $centered-navigation-color;
-            padding-right: $centered-navigation-item-padding; 
-            padding-left: $centered-navigation-item-padding; 
+            padding-right: $centered-navigation-item-padding;
+            padding-left: $centered-navigation-item-padding;
             margin-top: $centered-navigation-text-offset;
             height: $centered-navigation-height - $centered-navigation-text-offset;
-            
+
             @include media($serendipity) {
                 padding-right: 0;
                 padding-left: 0;
             }
         }
-        
+
         @include media($dropacross-mode) {
             padding-right: 0;
             display: block;
