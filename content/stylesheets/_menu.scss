@@ -36,6 +36,7 @@ $centered-navigation-height: em(82);
     @include media($transient) {
         height: $centered-navigation-height-dropdown;
         padding: 0 0;
+        border: none;
     }
 
 

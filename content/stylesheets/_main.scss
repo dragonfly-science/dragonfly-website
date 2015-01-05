@@ -17,6 +17,9 @@ h1 {
 
 main {
     margin-top: em(82);
+    @include media($transient) {
+      margin-top: em(67);  // these margins come from values in _menu.scss
+    }
 }
 
 .container {
@@ -28,13 +31,16 @@ main {
       @include span-columns(8);
       @include shift(2);
     }
-    @include media($clinical) {
-      margin-left: 1em;
-      margin-right: 1em;
-    }
     @include clearfix;
     margin-top: $base-line-height;
     position: relative;
+    @include media($clinical) {
+      margin-left: $content-margin-clinical;
+      margin-right: $content-margin-clinical;
+    }
+    @include media($transient) {
+      margin: 0.5em $content-margin-transient;
+    }
 }
 
 
