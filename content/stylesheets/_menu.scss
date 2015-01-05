@@ -21,7 +21,7 @@ $responsive-navigation-height-compact: em(67);
     position: fixed;
     top:  0px;
     z-index: 9999;
-    padding-left: $content-margin;
+    padding-left: 0;
 
     a {
         text-decoration: none;
@@ -30,10 +30,6 @@ $responsive-navigation-height-compact: em(67);
     // Responsive views
     @include media($horizontal-mode) {
         border-bottom: 1px solid $thin-gray;
-    }
-
-    @include media($clinical) {
-        padding-left: $content-margin-clinical;
     }
 
     @include media($compact-mode) {
@@ -45,8 +41,7 @@ $responsive-navigation-height-compact: em(67);
     .logo {
         height: $responsive-navigation-height + $heavy-underline - em(1); /* HACK - not sure why this 1 px is needed - may fail in other contexts */
         width: $responsive-navigation-logo-width;
-        position: absolute;
-        left: 0;
+        position: fixed;
         background: url('/images/dragonfly-logo-rgb.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -63,7 +58,6 @@ $responsive-navigation-height-compact: em(67);
             background-position: center;
             float: left;
             top: 0.5em;
-            left: $responsive-navigation-padding;
         }
     }
 
@@ -98,9 +92,6 @@ $responsive-navigation-height-compact: em(67);
             border-bottom: 3px solid $base-heading-color;
             display: block;
             padding: 0.3em 1em 0 1em;
-            @include media($transient) {
-                border-bottom: 3px solid white;
-            }
         }
     }
 
@@ -136,15 +127,9 @@ $responsive-navigation-height-compact: em(67);
         position: relative;
         z-index: 999;
         height: 100%;
+        @include content-left-padding;
         @include transition(height 0.4s, background 0.4s);
     }
-
-    .responsive-navigation-wrapper[data-section=open] {
-        height: 100vh;
-        z-index: 10001;
-        @include linear-gradient(-179deg, #3F8DB3 0%, #1A9E86 88%);
-    }
-
     @include media($compact-mode) {
         .responsive-navigation-wrapper[data-section=data] {
             background: $data-purple;
@@ -160,26 +145,63 @@ $responsive-navigation-height-compact: em(67);
         }
     }
 
+    .responsive-navigation-wrapper[data-mode=open] {
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 10001;
+        background-color: $base-heading-color;
+        ul.responsive-navigation-menu {
+            display: block;
+        }
+        @include media($compact-mode) {
+            @include linear-gradient(-179deg, #3F8DB3 0%, #1A9E86 88%);
+        }
+    }
+
+    .responsive-navigation-wrapper[data-mode=open][data-section=people] {
+        background-color: $people-green;
+        @include media($compact-mode) {
+            background-color: none;
+        }
+    }
+    .responsive-navigation-wrapper[data-mode=open][data-section=blog] {
+        background-color: $blog-red;
+        @include media($compact-mode) {
+            background-color: none;
+        }
+    }
+    .responsive-navigation-wrapper[data-mode=open][data-section=publications] {
+        background-color: $publications-orange;
+        @include media($compact-mode) {
+            background-color: none;
+        }
+    }
+    .responsive-navigation-wrapper[data-mode=open][data-section=data] {
+        background-color: $data-purple;
+        @include media($compact-mode) {
+            background-color: none;
+        }
+    }
+
     ul.responsive-navigation-menu {
         -webkit-transform-style: preserve-3d; // stop webkit flicker
         clear: both;
         margin: 0 auto;
         overflow: visible;
         padding: 0;
+        padding-top: 2em;
         width: 100%;
         z-index: 99999;
         display: none;
-        @include content-left-padding;
-
-
-        &.show {
-            display: block;
-        }
 
         @include media ($horizontal-mode) {
             display: block;
             text-align: center;
             padding-left: $responsive-navigation-logo-width;
+            padding-top: 0;
         }
     }
 
@@ -235,44 +257,48 @@ $responsive-navigation-height-compact: em(67);
 
     .responsive-navigation-wrapper[data-section=data] > a.logo {
         border-bottom: $heavy-underline solid $data-purple;
+        @include media($compact-mode) {
+            border-bottom: none;
+        }
     }
 
     .responsive-navigation-wrapper[data-section=blog] > a.logo {
         border-bottom: $heavy-underline solid $blog-red;
+        @include media($compact-mode) {
+            border-bottom: none;
+        }
     }
 
     .responsive-navigation-wrapper[data-section=publications] > a.logo {
         border-bottom: $heavy-underline solid $publications-orange;
+        @include media($compact-mode) {
+            border-bottom: none;
+        }
     }
 
     .responsive-navigation-wrapper[data-section=people] > a.logo {
         border-bottom: $heavy-underline solid $people-green;
-    }
-
-    @mixin small-plain-a {
-        @include media($transient) {
-            border: none;
+        @include media($compact-mode) {
+            border-bottom: none;
         }
     }
 
-    .responsive-navigation-wrapper[data-section=people] li.nav-link[data-section=people] {
-        border-bottom: 4px solid $people-green;
-        @include small-plain-a;
-    }
+    @include media($horizontal-mode) {
+        .responsive-navigation-wrapper[data-section=people] li.nav-link[data-section=people] {
+            border-bottom: 4px solid $people-green;
+        }
 
-    .responsive-navigation-wrapper[data-section=blog] li.nav-link[data-section=blog] {
-        border-bottom: 4px solid $blog-red;
-        @include small-plain-a;
-    }
+        .responsive-navigation-wrapper[data-section=blog] li.nav-link[data-section=blog] {
+            border-bottom: 4px solid $blog-red;
+        }
 
-    .responsive-navigation-wrapper[data-section=publications] li.nav-link[data-section=publications] {
-        border-bottom: 4px solid $publications-orange;
-        @include small-plain-a;
-    }
+        .responsive-navigation-wrapper[data-section=publications] li.nav-link[data-section=publications] {
+            border-bottom: 4px solid $publications-orange;
+        }
 
-    .responsive-navigation-wrapper[data-section=data] li.nav-link[data-section=data]  {
-        border-bottom: 4px solid $data-purple;
-        @include small-plain-a;
+        .responsive-navigation-wrapper[data-section=data] li.nav-link[data-section=data]  {
+            border-bottom: 4px solid $data-purple;
+        }
     }
 }
 

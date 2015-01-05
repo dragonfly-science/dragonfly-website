@@ -11,8 +11,6 @@ build-type:     Simple
 cabal-version:  >= 1.8
 description:
   Statically generates the dragonfly website.
-  Depends on the `node-sass` tool for generating CSS
-    and `bower` for fetch client-side components
 
 executable dragonflyweb
   main-is:         Site.hs
