@@ -167,6 +167,7 @@ $centered-navigation-height: em(82);
         background: transparent;
         line-height: $centered-navigation-height;
         text-align: right;
+        border-bottom: 4px solid rgba(255, 255, 255, 0);
 
         a {
             color: $centered-navigation-color;
@@ -214,6 +215,7 @@ $centered-navigation-height: em(82);
         background-repeat: no-repeat;
         background-position: center;
         z-index: 1000;
+        border-bottom: $heavy-underline solid rgba(255, 255, 255, 0);
         @include media($transient) {
             display: none;
         }
