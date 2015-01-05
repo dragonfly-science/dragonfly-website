@@ -241,22 +241,22 @@ $centered-navigation-height: em(82);
         }
     }
 
-    .centered-navigation-wrapper[data-section=people] > ul > li.nav-link[data-section=people] {
+    .centered-navigation-wrapper[data-section=people] li.nav-link[data-section=people] {
         border-bottom: 4px solid $people-green;
         @include small-plain-a;
     }
 
-    .centered-navigation-wrapper[data-section=blog] > ul > li.nav-link[data-section=blog] {
+    .centered-navigation-wrapper[data-section=blog] li.nav-link[data-section=blog] {
         border-bottom: 4px solid $blog-red;
         @include small-plain-a;
     }
 
-    .centered-navigation-wrapper[data-section=publications] > ul > li.nav-link[data-section=publications] {
+    .centered-navigation-wrapper[data-section=publications] li.nav-link[data-section=publications] {
         border-bottom: 4px solid $publications-orange;
         @include small-plain-a;
     }
 
-    .centered-navigation-wrapper[data-section=data] > ul > li.nav-link[data-section=data]  {
+    .centered-navigation-wrapper[data-section=data] li.nav-link[data-section=data]  {
         border-bottom: 4px solid $data-purple;
         @include small-plain-a;
     }
