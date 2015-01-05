@@ -17,6 +17,16 @@ $content-margin: 72px;
 $content-margin-clinical: 48px;
 $content-margin-transient: 12px;
 
+@mixin content-left-padding {
+    padding-left: $content-margin;
+    @include media($clinical) {
+        padding-left: $content-margin-clinical;
+    }
+    @include media($transient) {
+        padding-left: $content-margin-transient;
+    }
+}
+
 $font-size-h1: $base-font-size * 2.25; // 16 * 2.25 = 36px
 $font-size-h2: $base-font-size * 2; // 16 * 2 = 32px
 $font-size-h3: $base-font-size * 1.75; // 16 * 1.75 = 28px
@@ -31,8 +41,8 @@ $font-size-h5-clinical: $base-font-size;
 $font-size-h6-clinical: $base-font-size;
 $font-size-h1-transient: $base-font-size * 1.5;
 $font-size-h2-transient: $base-font-size * 1.25;
-$font-size-h3-transient: $base-font-size * 1.1; 
-$font-size-h4-transient: $base-font-size; 
+$font-size-h3-transient: $base-font-size * 1.1;
+$font-size-h4-transient: $base-font-size;
 $font-size-h5-transient: $base-font-size;
 $font-size-h6-transient: $base-font-size;
 

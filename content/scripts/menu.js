@@ -1,8 +1,10 @@
 var section = 'none';
 export default function() {
-    var menu = $('.centered-navigation-menu');
-    var menuToggle = $('.centered-navigation-menu-button');
-    var wrapper = $('.centered-navigation-wrapper');
+    var menu = $('#js-responsive-navigation-menu');
+    var menuToggle = $('.responsive-navigation-menu-button');
+    var wrapper = $('.responsive-navigation-wrapper');
+
+    menu.removeClass("show");
 
     $(menuToggle).on('click', function(e) {
         e.preventDefault();

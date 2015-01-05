@@ -1,5 +1,5 @@
 .hero {
-    margin-top: $centered-navigation-height;
+    margin-top: $responsive-navigation-height;
     position: relative;
     @include media($transient) {
         margin-top: 0;

@@ -1,27 +1,26 @@
-$centered-navigation-height: em(82);
-.centered-navigation {
-    $centered-navigation-padding: 1em;
-    $centered-navigation-logo-height: em(44);
-    $centered-navigation-logo-width: em(207);
-    $centered-navigation-logo-bottom: 1.82em;
-    $centered-navigation-background: #FFFFFF;
-    $centered-navigation-color: transparentize($base-font-color, 0.3);
-    $centered-navigation-color-hover: $base-font-color;
-    $centered-navigation-height-dropdown: em(67);
-    $centered-navigation-item-padding: 0.5em;
-    $centered-navigation-item-nudge: 0em;
-    $centered-navigation-text-offset: 0.55em;
+$responsive-navigation-height: em(82);
+$responsive-navigation-height-compact: em(67);
+.responsive-navigation {
+    $responsive-navigation-padding: 1em;
+    $responsive-navigation-logo-height: em(44);
+    $responsive-navigation-logo-width: em(207);
+    $responsive-navigation-logo-bottom: 1.82em;
+    $responsive-navigation-background: #FFFFFF;
+    $responsive-navigation-color: transparentize($base-font-color, 0.3);
+    $responsive-navigation-color-hover: $base-font-color;
+    $responsive-navigation-item-padding: 0.5em;
+    $responsive-navigation-item-nudge: 0em;
+    $responsive-navigation-text-offset: 0.55em;
     $mobile-logo-height: em(27);
-    $dropacross-mode: $clinical;
-    $dropdown-mode: $transient;
+    $horizontal-mode: em(860);  // Desktop menu
+    $compact-mode: $transient;  // Small logo with colored background
 
-    background-color: $centered-navigation-background;
-    height: $centered-navigation-height;
+    background-color: $responsive-navigation-background;
+    height: $responsive-navigation-height;
     width: 100%;
     position: fixed;
     top:  0px;
     z-index: 9999;
-    border-bottom: 1px solid $thin-gray;
     padding-left: $content-margin;
 
     a {
@@ -29,186 +28,23 @@ $centered-navigation-height: em(82);
     }
 
     // Responsive views
+    @include media($horizontal-mode) {
+        border-bottom: 1px solid $thin-gray;
+    }
+
     @include media($clinical) {
         padding-left: $content-margin-clinical;
     }
 
-    @include media($transient) {
-        height: $centered-navigation-height-dropdown;
+    @include media($compact-mode) {
+        height: $responsive-navigation-height-compact;
         padding: 0 0;
         border: none;
     }
 
-
-    .mobile-logo {
-        display: none;
-        float: left;
-        max-height: $centered-navigation-height;
-        padding-left: $centered-navigation-padding;
-        img {
-            height: $mobile-logo-height;
-            margin-top: ($centered-navigation-height-dropdown - $mobile-logo-height) * 0.5;
-        }
-        @include media($dropacross-mode) {
-            display: inline;
-        }
-    }
-    .mobile-only {
-        display: none;
-        @include media($dropacross-mode) {
-            display: block;
-        }
-    }
-
-    .mobile-text {
-        display: none;
-        font-size: $base-font-size * 0.875;
-        color: white;
-        letter-spacing: 0.78;
-        padding-left: $centered-navigation-item-padding * 3;
-        padding-top: em(46);
-        padding-bottom: em(56);
-        line-height: em(28);
-    }
-
-    .centered-navigation-menu-button {
-        display: none;
-        color: $centered-navigation-color;
-        float: right;
-        margin: 0;
-        padding: 1.5em 1em;
-        @include media ($dropacross-mode) {
-            display: block;
-        }
-
-        &:hover {
-            color: $centered-navigation-color-hover;
-        }
-
-        span.icon-bar {
-            display: block;
-            width: em(22);
-            height: em(2);
-            border-radius: em(1);
-            background-color: white;
-            margin-top: em(4);
-        }
-    }
-
-    // Nav menu
-
-    .centered-navigation-wrapper {
-        @include clearfix;
-        position: relative;
-        z-index: 999;
-        height: 100%;
-        @include transition(height 0.4s, background 0.4s);
-    }
-    @include media($dropdown-mode) {
-        .centered-navigation-wrapper[data-section=open] {
-            height: 100vh;
-            z-index: 10001;
-            @include linear-gradient(-179deg, #3F8DB3 0%, #1A9E86 88%);
-            .mobile-logo {
-                display: none;
-            }
-            .mobile-text {
-                display: block;
-            }
-        }
-        .centered-navigation-wrapper[data-section=data] {
-            background: $data-purple;
-        }
-        .centered-navigation-wrapper[data-section=blog] {
-            background: $blog-red;
-        }
-        .centered-navigation-wrapper[data-section=publications] {
-            background: $publications-orange;
-        }
-        .centered-navigation-wrapper[data-section=people] {
-            background: $people-green;
-        }
-    }
-
-    ul.centered-navigation-menu {
-        -webkit-transform-style: preserve-3d; // stop webkit flicker
-        clear: both;
-        margin: 0 auto;
-        overflow: visible;
-        padding: 0;
-        padding-left: $centered-navigation-logo-width;
-        width: 100%;
-        z-index: 99999;
-        display: block;
-        text-align: center;
-
-        @include media ($dropacross-mode) {
-            display: none;
-        }
-    }
-
-    // The nav items
-
-    .nav-link:first-child {
-        margin-left: $centered-navigation-item-nudge;
-        @include media($dropacross-mode) {
-            margin-left: 0
-        }
-    }
-
-    ul li.nav-link {
-        display: inline;
-        overflow: hidden;
-        padding-bottom: $centered-navigation-text-offset * 2;
-        padding-right: $centered-navigation-item-padding;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        z-index: 9999;
-        background: transparent;
-        line-height: $centered-navigation-height;
-        text-align: right;
-        border-bottom: 4px solid rgba(255, 255, 255, 0);
-
-        a {
-            color: $centered-navigation-color;
-            padding-right: $centered-navigation-item-padding;
-            padding-left: $centered-navigation-item-padding;
-            margin-top: $centered-navigation-text-offset;
-            height: $centered-navigation-height - $centered-navigation-text-offset;
-
-            @include media($serendipity) {
-                padding-right: 0;
-                padding-left: 0;
-            }
-        }
-
-        @include media($dropacross-mode) {
-            padding-right: 0;
-            display: block;
-        }
-
-        @include media($dropdown-mode) {
-            padding-left: $centered-navigation-item-padding * 3;
-            a {
-                color: white;
-                font-size: $base-font-size * 1.125;
-            }
-        }
-
-        a {
-            display: inline-block;
-
-
-            &:hover {
-                color: $centered-navigation-color-hover;
-            }
-        }
-    }
-
     .logo {
-        height: $centered-navigation-height + $heavy-underline - em(1); /* HACK - not sure why this 1 px is needed - may fail in other contexts */
-        width: $centered-navigation-logo-width;
+        height: $responsive-navigation-height + $heavy-underline - em(1); /* HACK - not sure why this 1 px is needed - may fail in other contexts */
+        width: $responsive-navigation-logo-width;
         position: absolute;
         left: 0;
         background: url('/images/dragonfly-logo-rgb.png');
@@ -218,23 +54,198 @@ $centered-navigation-height: em(82);
         z-index: 1000;
         border-bottom: $heavy-underline solid rgba(255, 255, 255, 0);
         @include media($transient) {
-            display: none;
+            height: $responsive-navigation-height-compact - 1em;
+            width: 4em;
+            border: none;
+            background: url('/images/dragonfly-wing-only-white.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            float: left;
+            top: 0.5em;
+            left: $responsive-navigation-padding;
         }
     }
 
-    .centered-navigation-wrapper[data-section=data] > a.logo {
+    .contact-text {
+        @include media($horizontal-mode) {
+            display: none;
+        }
+        font-size: $base-font-size * 0.875;
+        color: white;
+        letter-spacing: 0.78;
+        padding-top: em(46);
+        padding-bottom: em(56);
+        line-height: em(28);
+        text-align: left;
+    }
+
+    .responsive-navigation-menu-button {
+        display: block;
+        color: $responsive-navigation-color;
+        float: right;
+        margin: 0;
+        padding: 1.5em 1em;
+        @include media ($horizontal-mode) {
+            display: none;
+        }
+
+        &:hover {
+            color: $responsive-navigation-color-hover;
+        }
+
+        span.icon-bar {
+            border-bottom: 3px solid $base-heading-color;
+            display: block;
+            padding: 0.3em 1em 0 1em;
+            @include media($transient) {
+                border-bottom: 3px solid white;
+            }
+        }
+    }
+
+    .responsive-navigation-wrapper[data-section=people] span.icon-bar {
+        border-bottom: 3px solid $people-green;
+        @include media($transient) {
+            border-bottom: 3px solid white;
+        }
+    }
+    .responsive-navigation-wrapper[data-section=blog] span.icon-bar {
+        border-bottom: 3px solid $blog-red;
+        @include media($transient) {
+            border-bottom: 3px solid white;
+        }
+    }
+    .responsive-navigation-wrapper[data-section=publications] span.icon-bar {
+        border-bottom: 3px solid $publications-orange;
+        @include media($transient) {
+            border-bottom: 3px solid white;
+        }
+    }
+    .responsive-navigation-wrapper[data-section=data] span.icon-bar {
+        border-bottom: 3px solid $data-purple;
+        @include media($transient) {
+            border-bottom: 3px solid white;
+        }
+    }
+
+    // Nav menu
+
+    .responsive-navigation-wrapper {
+        @include clearfix;
+        position: relative;
+        z-index: 999;
+        height: 100%;
+        @include transition(height 0.4s, background 0.4s);
+    }
+
+    .responsive-navigation-wrapper[data-section=open] {
+        height: 100vh;
+        z-index: 10001;
+        @include linear-gradient(-179deg, #3F8DB3 0%, #1A9E86 88%);
+    }
+
+    @include media($compact-mode) {
+        .responsive-navigation-wrapper[data-section=data] {
+            background: $data-purple;
+        }
+        .responsive-navigation-wrapper[data-section=blog] {
+            background: $blog-red;
+        }
+        .responsive-navigation-wrapper[data-section=publications] {
+            background: $publications-orange;
+        }
+        .responsive-navigation-wrapper[data-section=people] {
+            background: $people-green;
+        }
+    }
+
+    ul.responsive-navigation-menu {
+        -webkit-transform-style: preserve-3d; // stop webkit flicker
+        clear: both;
+        margin: 0 auto;
+        overflow: visible;
+        padding: 0;
+        width: 100%;
+        z-index: 99999;
+        display: none;
+        @include content-left-padding;
+
+
+        &.show {
+            display: block;
+        }
+
+        @include media ($horizontal-mode) {
+            display: block;
+            text-align: center;
+            padding-left: $responsive-navigation-logo-width;
+        }
+    }
+
+    // The nav items
+
+    .nav-link:first-child {
+        margin-left: 0;
+        @include media($horizontal-mode) {
+            margin-left: $responsive-navigation-item-nudge;
+        }
+    }
+
+    ul li.nav-link {
+        overflow: hidden;
+        padding-right: $responsive-navigation-item-padding;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        z-index: 9999;
+        background: transparent;
+        display: inherit;
+        text-align: left;
+
+        a {
+            color: white;
+        }
+
+        @include media($horizontal-mode) {
+            display: inline;
+            padding-bottom: $responsive-navigation-text-offset * 2;
+            padding-left: $responsive-navigation-item-padding * 3;
+            line-height: $responsive-navigation-height;
+            text-align: center;
+            border-bottom: 4px solid rgba(255, 255, 255, 0);
+
+            a {
+                color: $responsive-navigation-color;
+                padding-right: $responsive-navigation-item-padding;
+                padding-left: $responsive-navigation-item-padding;
+                margin-top: $responsive-navigation-text-offset;
+                height: $responsive-navigation-height - $responsive-navigation-text-offset;
+
+                padding-right: 0;
+                padding-left: 0;
+
+                display: inline-block;
+                &:hover {
+                    color: $responsive-navigation-color-hover;
+                }
+            }
+        }
+    }
+
+    .responsive-navigation-wrapper[data-section=data] > a.logo {
         border-bottom: $heavy-underline solid $data-purple;
     }
 
-    .centered-navigation-wrapper[data-section=blog] > a.logo {
+    .responsive-navigation-wrapper[data-section=blog] > a.logo {
         border-bottom: $heavy-underline solid $blog-red;
     }
 
-    .centered-navigation-wrapper[data-section=publications] > a.logo {
+    .responsive-navigation-wrapper[data-section=publications] > a.logo {
         border-bottom: $heavy-underline solid $publications-orange;
     }
 
-    .centered-navigation-wrapper[data-section=people] > a.logo {
+    .responsive-navigation-wrapper[data-section=people] > a.logo {
         border-bottom: $heavy-underline solid $people-green;
     }
 
@@ -244,22 +255,22 @@ $centered-navigation-height: em(82);
         }
     }
 
-    .centered-navigation-wrapper[data-section=people] li.nav-link[data-section=people] {
+    .responsive-navigation-wrapper[data-section=people] li.nav-link[data-section=people] {
         border-bottom: 4px solid $people-green;
         @include small-plain-a;
     }
 
-    .centered-navigation-wrapper[data-section=blog] li.nav-link[data-section=blog] {
+    .responsive-navigation-wrapper[data-section=blog] li.nav-link[data-section=blog] {
         border-bottom: 4px solid $blog-red;
         @include small-plain-a;
     }
 
-    .centered-navigation-wrapper[data-section=publications] li.nav-link[data-section=publications] {
+    .responsive-navigation-wrapper[data-section=publications] li.nav-link[data-section=publications] {
         border-bottom: 4px solid $publications-orange;
         @include small-plain-a;
     }
 
-    .centered-navigation-wrapper[data-section=data] li.nav-link[data-section=data]  {
+    .responsive-navigation-wrapper[data-section=data] li.nav-link[data-section=data]  {
         border-bottom: 4px solid $data-purple;
         @include small-plain-a;
     }

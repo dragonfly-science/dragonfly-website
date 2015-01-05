@@ -16,9 +16,9 @@ h1 {
 }
 
 main {
-    margin-top: em(82);
+    margin-top: $responsive-navigation-height;
     @include media($transient) {
-      margin-top: em(67);  // these margins come from values in _menu.scss
+      margin-top: $responsive-navigation-height-compact;
     }
 }
 
