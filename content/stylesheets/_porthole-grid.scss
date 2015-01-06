@@ -9,11 +9,11 @@ $read-more-text-color: $light-gray;
 .porthole-grid {
 
     @include outer-container;
-    @include media($clinical-up) {
-        @include span-columns(10);
-        @include shift(1);
-    }
+    @include span-columns(10);
+    @include shift(1);
     @include media($clinical) {
+        @include span-columns(12);
+        @include shift(0);
         padding-left: 1em;
         padding-right: 1em;
     }

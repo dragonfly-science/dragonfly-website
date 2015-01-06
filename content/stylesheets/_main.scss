@@ -27,9 +27,11 @@ main {
 }
 
 .content {
-    @include media($clinical-up) {
-      @include span-columns(8);
-      @include shift(2);
+    @include span-columns(8 of 12);
+    @include shift(2);
+    @include media($clinical) {
+      @include span-columns(12 of 12);
+      @include shift(0);
     }
     @include clearfix;
     margin-top: $base-line-height;

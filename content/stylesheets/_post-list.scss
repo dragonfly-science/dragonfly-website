@@ -6,11 +6,10 @@ $post-image-size-small: em(100);
 $post-text-size: $base-font-size;
 $post-title-padding-bottom: 0.35em;
 $post-title-padding-top: em(20);
-$read-more-text-color: $light-gray;
+$read-more-text-color: #CF4547;
 
 .post-list {
-    @include outer-container;
-
+    @include span-columns(8 of 8);
     text-align: left;
     margin: 0 auto;
     font-size: $post-text-size;
@@ -19,20 +18,25 @@ $read-more-text-color: $light-gray;
         font-size: $base-font-size * 0.875;
     }
 
-    .postimage {
-        width: $post-image-width;
-        margin: em(20);
+    .post-wrapper {
+        border-bottom: solid 1px #E7E7E7;
+        overflow: hidden;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
 
+    .postimage {
+        @include span-columns(2 of 8);
+        margin-right: 0;
+        padding-top: 3em;
         img {
-            width: $post-image-width;
+            margin: 0;
+            padding: 0;
+            border-bottom: solid 6px $blog-red;
         }
     }
 
     .post {
-        @include media($large-screen) {
-        }
-        
-        margin-right: $post-image-width + em(40);
+        @include span-columns(6 of 8);
 
         p.subheading {
             color: grey;
@@ -63,5 +67,6 @@ $read-more-text-color: $light-gray;
             }
         }
     }
+}
 }
 

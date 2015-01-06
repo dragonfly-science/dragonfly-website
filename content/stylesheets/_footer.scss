@@ -94,9 +94,9 @@
     }
 
     .cell.social {
-        @include shift(0);
-        @include media($serendipity-up) {
-            @include shift(8);
+        @include shift(8);
+        @include media($serendipity) {
+            @include shift(0);
         }
     }
 

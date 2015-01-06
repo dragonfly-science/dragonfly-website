@@ -40,7 +40,7 @@
         }
     }
     p {
-        @include shift(2);
-        @include span-columns(8);
+        @include shift(2 of 12);
+        @include span-columns(8 of 12);
     }
 }
