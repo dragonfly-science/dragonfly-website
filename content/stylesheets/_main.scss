@@ -36,13 +36,7 @@ main {
     @include clearfix;
     margin-top: $base-line-height;
     position: relative;
-    @include media($clinical) {
-      padding-left: $content-margin-clinical;
-      padding-right: $content-margin-clinical;
-    }
-    @include media($transient) {
-      padding: 0.5em $content-margin-transient;
-    }
+    @include side-margins;
 }
 
 
