@@ -8,8 +8,15 @@ $post-title-padding-bottom: 0.35em;
 $post-title-padding-top: em(20);
 $read-more-text-color: #CF4547;
 
+// breakpoints
+$small-desktop: new-breakpoint(max-width em(1000) 8);
+
 .post-list {
-    @include span-columns(8 of 8);
+    // @include span-columns(8 of 8);
+    // @include media($clinical) {
+    //     @include span-columns(7 of 8);
+    // }
+    @include outer-container;
     text-align: left;
     margin: 0 auto;
     font-size: $post-text-size;
@@ -23,9 +30,26 @@ $read-more-text-color: #CF4547;
         overflow: hidden;
         padding-bottom: 1em;
         margin-bottom: 1em;
+        @include media($transient) {
+            /* this gives full width underlines ... */
+            margin-left: -$content-margin-transient;
+            padding-left: 2 * $content-margin-transient;
+            margin-right: -$content-margin-transient;
+            padding-right: 2 * $content-margin-transient;
+        }
+
 
     .postimage {
         @include span-columns(2 of 8);
+        @include media($small-desktop) {
+            display: none;
+        }
+        @include media($transient) {
+            display: inherit;
+            @include span-columns(1 of 4);
+            padding-top: 1em;
+        }
+
         margin-right: 0;
         padding-top: 3em;
         img {
@@ -37,6 +61,9 @@ $read-more-text-color: #CF4547;
 
     .post {
         @include span-columns(6 of 8);
+        @include media($small-desktop) {
+            @include span-columns(8 of 8);
+        }
 
         p.subheading {
             color: grey;
@@ -48,7 +75,17 @@ $read-more-text-color: #CF4547;
         }
 
         @include media($transient) {
-            margin-top: $post-top-margin-small;
+            @include span-columns(3 of 4);
+            a.read-more {
+                display: none;
+            }
+            p {
+                display: none;
+            }
+            p.subheading {
+                display: inherit;
+                color: $read-more-text-color;
+            }
 
             img {
                 width: $post-image-size-small;
@@ -59,11 +96,7 @@ $read-more-text-color: #CF4547;
                 font-size: $base-font-size;
                 font-weight: 500;
                 letter-spacing: em(1);
-                width: em(110);
-                margin: 0 auto;
-            }
-            a.read-more {
-                display: none;
+                // width: em(110);
             }
         }
     }

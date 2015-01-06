@@ -37,11 +37,11 @@ main {
     margin-top: $base-line-height;
     position: relative;
     @include media($clinical) {
-      margin-left: $content-margin-clinical;
-      margin-right: $content-margin-clinical;
+      padding-left: $content-margin-clinical;
+      padding-right: $content-margin-clinical;
     }
     @include media($transient) {
-      margin: 0.5em $content-margin-transient;
+      padding: 0.5em $content-margin-transient;
     }
 }
 

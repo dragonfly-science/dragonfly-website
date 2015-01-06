@@ -79,7 +79,11 @@ $responsive-navigation-height-compact: em(67);
         color: $responsive-navigation-color;
         float: right;
         margin: 0;
-        padding: 1.5em 1em;
+        margin-right: $content-margin-clinical;
+        @include media($transient) {
+            margin-right: $content-margin-transient;
+        }
+        padding: 1.5em 0;
         @include media ($horizontal-mode) {
             display: none;
         }
