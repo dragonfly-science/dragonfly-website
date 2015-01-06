@@ -216,7 +216,6 @@ $responsive-navigation-height-compact: em(67);
 
     ul li.nav-link {
         overflow: hidden;
-        padding-right: $responsive-navigation-item-padding;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -232,7 +231,8 @@ $responsive-navigation-height-compact: em(67);
         @include media($horizontal-mode) {
             display: inline;
             padding-bottom: $responsive-navigation-text-offset * 2;
-            padding-left: $responsive-navigation-item-padding * 3;
+            padding-right: $responsive-navigation-item-padding * 2;
+            padding-left: $responsive-navigation-item-padding * 2;
             line-height: $responsive-navigation-height;
             text-align: center;
             border-bottom: 4px solid rgba(255, 255, 255, 0);
