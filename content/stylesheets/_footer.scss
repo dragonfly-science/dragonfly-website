@@ -1,7 +1,17 @@
 
 .footer {
-    $table-footer: new-breakpoint(min-width $large-screen);
-    $compact-footer: new-breakpoint(max-width $small-screen);
+    $medium-transition: em(860);
+    $small-transition: em(550);
+    $table-footer: new-breakpoint(min-width $medium-transition);
+    $medium-footer: new-breakpoint(max-width $medium-transition min-width $small-transition);
+    $compact-footer: new-breakpoint(max-width $small-transition);
+    @mixin footer-side-margins() {
+        @include side-margins;
+        @include media($medium-footer) {
+            padding-left: $content-margin;
+            padding-right: $content-margin;
+        }
+    }
 
     margin-top: em(100);
     padding-top: em(12);
@@ -15,20 +25,20 @@
 
     .footer-outer {
         padding-bottom: em(50);
-        @include media($compact-footer) {
+        @media screen and (max-width: $medium-transition) {
             padding-bottom: em(20);
         }
     }
 
     #footer-address {
-        @include side-margins;
+        @include footer-side-margins;
         @include media($compact-footer) {
             background: url('/images/footer-small.png');
         }
     }
 
     #footer-outer-social {
-        @include media($clinical) {
+        @media screen and (max-width: $medium-transition) {
             background: #4D4D4D;
             padding-top: em(20);
         }
@@ -52,8 +62,12 @@
         .cell {
 
             @include media($table-footer) {
-                @include span-columns(4);
+                @include span-columns(4 of 12);
                 @include omega(3n);
+            }
+            @include media($medium-footer) {
+                @include span-columns(6 of 12);
+                @include omega(2n);
             }
 
         }
@@ -74,9 +88,18 @@
             }
         }
         #footer-postal {
+            @include media($medium-footer) {
+                @include shift(6 of 12);
+            }
+        }
+        #footer-postal > address {
             border-top: 1px solid $lighter-gray;
             @include media($compact-footer) {
                 border-top: none;
+            }
+            @include media($medium-footer) {
+                border-top: none;
+                padding-top: 1em;
             }
         }
 
@@ -102,13 +125,17 @@
 
         .cell.social {
             @include media($table-footer) {
-                @include shift(8);
+                @include shift(8 of 12);
+            }
+            @include media($medium-footer) {
+                @include shift(0);
+                @include span-columns(12 of 12);
             }
         }
 
         .cell.social p {
             color: white;
-            @include side-margins;
+            @include footer-side-margins;
         }
 
         .cell.social > div {
