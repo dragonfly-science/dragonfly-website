@@ -1,11 +1,26 @@
-<div class="container">
-  <div class="content">
-    <div class="info">
-      Posted on $date$
-      $if(author)$
-        by $author$
+<div class="container post-detail">
+  $if(banner-image)$
+  <div class="banner-image">
+    <figure>
+      <img src="$banner-image$" alt="Dragonfly featured on ABC &amp; BBC radio programmes">
+      $if(banner-title)$
+      <figcaption>$banner-title$</figcaption>
+      $else$
+      <figcaption>$title$</figcaption>
       $endif$
-    </div>
+    </figure>
+      $if(banner-text)$
+      <p>$banner-text$</p>
+      $endif$
+  </div>
+  $endif$
+  <div class="post-info">
+    $date$
+    $if(author)$
+      by $author$
+    $endif$
+  </div>
+  <div class="content">
     $if(actualbody)$ $actualbody$ $else$
     $body$
     $endif$

@@ -25,3 +25,4 @@ scholmdCompiler = do
     bib <- load $ maybe "resources/biblio/dragonfly.yaml" fromFilePath bibfile
 
     writePandocWith htm5Writer  <$> (readPandocBiblio def csl bib =<< getResourceBody )
+

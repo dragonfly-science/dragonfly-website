@@ -42,5 +42,8 @@
     p {
         @include shift(2 of 12);
         @include span-columns(8 of 12);
+        padding-top: 6px;  // I think this is needed because of logo margin
+        font-size: 16px;
+        line-spacing: 1.5em;
     }
 }

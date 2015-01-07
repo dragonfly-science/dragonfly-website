@@ -1,5 +1,7 @@
 ---
 title: Dragonfly featured on ABC and BBC radio programmes
+banner-image: /posts/2014-02-14-dragonfly-featured-ABC-and-BBC/sounds-image.jpg
+banner-text: Marlborough sounds
 ---
 Dragonfly Science's work for the Pāua Industry Council, using data
 loggers to manage the pāua fishery, was featured on the ABC Off Track
@@ -21,8 +23,8 @@ the data loggers and the benefits to the fishers. This programme is
 part two of a four-part series exploring current marine issues around
 the world.
 
-[Listen to the audio (10 min in from the
-start).](http://www.abc.net.au/radionational/programs/offtrack/saving-the-ocean2c-part-2/5166828)
+[Listen to the audio](http://www.abc.net.au/radionational/programs/offtrack/saving-the-ocean2c-part-2/5166828)
+(10 min in from the start).
 
 In part three, Edward talks about finding the best method to keep
 albatross away from fishing vessels. [Listen to the

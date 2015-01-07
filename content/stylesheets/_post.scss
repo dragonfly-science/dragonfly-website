@@ -1,0 +1,21 @@
+.post-detail {
+$post-highlight-color: #808080;
+$post-info-top-padding: 1em;
+
+    .post-info {
+        @include shift(1 of 12);
+        @include span-columns(10 of 12);
+        color: $post-highlight-color;
+        padding-top: $post-info-top-padding;
+    }
+
+    a {
+        color: $post-highlight-color;
+    }
+
+    div.content > p:nth-child(1) {
+        font-weight: 500;
+        font-size: $base-font-size * 1.125;
+        line-height: 1.2em;
+    }
+}

@@ -22,7 +22,7 @@ main = hakyllWith config $ do
     match "templates/*" $ compile templateCompiler
 
     match "resources/biblio/*.csl" $ compile cslCompiler
-    match ("resources/biblio/*.yaml" .||. "resources/biblio/*.bib" ) $ 
+    match ("resources/biblio/*.yaml" .||. "resources/biblio/*.bib" ) $
         compile biblioCompiler
 
     match "**/*.img.md" $ compile scholmdCompiler
@@ -34,39 +34,39 @@ main = hakyllWith config $ do
     -- Home page
     match "pages/index.md" $ do
         route $ constRoute "index.html"
-        compile $ do 
+        compile $ do
             ctx <- baseContext "index"
-            scholmdCompiler 
+            scholmdCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
     -- People section
     People.rules
-    
+
     -- Blog section
     Blog.rules
 
     -- Publications section (not much here yet)
     match "pages/publications.md" $ do
         route $ constRoute "publications/index.html"
-        compile $ do 
+        compile $ do
             ctx <- baseContext "index"
-            scholmdCompiler 
+            scholmdCompiler
                 >>= loadAndApplyTemplate "templates/basic.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
-    
+
     -- Data section (not much here yet)
     match "pages/data.md" $ do
         route $ constRoute "data/index.html"
-        compile $ do 
+        compile $ do
             ctx <- baseContext "index"
-            scholmdCompiler 
+            scholmdCompiler
                 >>= loadAndApplyTemplate "templates/basic.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
-    
+
     -- Static files
     match "assets/*" $ do
         route idRoute
