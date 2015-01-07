@@ -36,8 +36,13 @@ $small-desktop: new-breakpoint(max-width em(1000) 8);
             padding-left: 2 * $content-margin-transient;
             margin-right: -$content-margin-transient;
             padding-right: 2 * $content-margin-transient;
+            margin-bottom: 0.5em;
+            padding-bottom: 0;
         }
 
+    h4 {
+        line-height: 1.3em;
+    }
 
     .postimage {
         @include span-columns(2 of 8);
@@ -67,6 +72,9 @@ $small-desktop: new-breakpoint(max-width em(1000) 8);
 
         p.subheading {
             color: grey;
+            @include media($transient) {
+                padding-top: 0.5em;
+            }
         }
 
         a.read-more {
