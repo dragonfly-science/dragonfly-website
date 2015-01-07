@@ -9,6 +9,7 @@
     $highlight-text-top-padding: 1em;
     $highlight-text-bottom-padding: 2em;
     $border-color: #E7E7E7;
+    $no-pictures-break: em(800);
 
     .content {
         @include shift(0);
@@ -34,6 +35,11 @@
         @include shift(1);
         @include span-columns(10 of 12);
 
+        @include media($transient) {
+            @include shift(0);
+            @include span-columns(12 of 12);
+        }
+
         border-bottom: 1px solid $border-color;
 
         h2 {
@@ -48,12 +54,18 @@
 
         p {
             @include span-columns(7 of 10);
+            @media screen and (max-width: $no-pictures-break) {
+                @include span-columns(10 of 10);
+            }
         }
 
         figure {
             @include span-columns(2 of 10);
             img {
                 border-bottom: solid 6px $section-color;
+            }
+            @media screen and (max-width: $no-pictures-break) {
+                display: none;
             }
         }
     }
