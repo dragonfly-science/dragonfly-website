@@ -51,7 +51,7 @@ main = hakyllWith config $ do
     match "pages/publications.md" $ do
         route $ constRoute "publications/index.html"
         compile $ do
-            ctx <- baseContext "index"
+            ctx <- baseContext "publications"
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/basic.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -61,7 +61,7 @@ main = hakyllWith config $ do
     match "pages/data.md" $ do
         route $ constRoute "data/index.html"
         compile $ do
-            ctx <- baseContext "index"
+            ctx <- baseContext "data"
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/basic.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx

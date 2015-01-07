@@ -21,7 +21,7 @@ scholmdCompiler = do
     bibfile <- getMetadataField ident "bibliography"
     cslfile <- getMetadataField ident "cslfile"
     -- TODO: should get this from config
-    csl <- load $ maybe "resources/biblio/chicago.csl" fromFilePath cslfile
+    csl <- load $ maybe "resources/biblio/acm-siggraph.csl" fromFilePath cslfile
     bib <- load $ maybe "resources/biblio/dragonfly.yaml" fromFilePath bibfile
 
     writePandocWith htm5Writer  <$> (readPandocBiblio def csl bib =<< getResourceBody )

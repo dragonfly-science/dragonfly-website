@@ -1,0 +1,66 @@
+.section-data {
+
+    $section-color: $data-purple;
+    $title-color: #4A4A4A;
+    $title-size: 22px;
+    $date-color: #808080;
+    $date-font-size: 16px;
+    $line-height: 1.45em;
+    $highlight-text-top-padding: 1em;
+    $highlight-text-bottom-padding: 2em;
+    $border-color: #E7E7E7;
+
+    .content {
+        @include shift(0);
+        @include span-columns(12 of 12);
+    }
+    .level1 {
+        @include shift(1);
+        @include span-columns(10 of 12);
+    }
+    .level1 > p:nth-child(2) {
+        color: $section-color;
+        padding-top: $highlight-text-top-padding;
+        a {
+            color: $section-color;
+        }
+    }
+
+    .level1 > p:nth-child(3) {
+        padding-bottom: $highlight-text-bottom-padding;
+    }
+
+    .level2 {
+        @include shift(1);
+        @include span-columns(10 of 12);
+
+        border-bottom: 1px solid $border-color;
+
+        h2 {
+            font-size: 1em;
+            margin-top: 1em;
+        }
+
+        h2 > a {
+            color: $title-color;
+            font-size: $title-size;
+        }
+
+        p {
+            @include span-columns(7 of 10);
+        }
+
+        figure {
+            @include span-columns(2 of 10);
+            img {
+                border-bottom: solid 6px $section-color;
+            }
+        }
+    }
+    .level2 > p:nth-child(2) {
+        color: $date-color;
+        font-size: $date-font-size;
+
+    }
+}
+

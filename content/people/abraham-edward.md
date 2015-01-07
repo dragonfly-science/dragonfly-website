@@ -54,9 +54,9 @@ and enjoys the dynamic way that they can operate.
 things very well. And being part of both the science and software communities
 here in Wellington is exciting.”
 
-# Selected publications {#nocite}
+# Selected publications
 
-## 2013
+## 2013 {.hide-cite-para}
 
 @richard_application_2013
 @richard_risk2_2013
