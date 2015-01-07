@@ -30,7 +30,9 @@ goNode a = [a]
 
 goElem :: Element -> Element
 goElem (Element "figure" attrs children) =
-    Element "figure" attrs $ concatMap goNode children ++ [xml|<figurecaption>|]
+    Element "figure" attrs $ concatMap goNode children ++ [xml|<figcaption>|]
+    -- need a check here to make sure that we don't append a figcaption if one already exists ...
+    -- exact form of this will depend on how meta data is handled
 goElem (Element name attrs children) =
     -- don't know what to do, just pass it through...
     Element name attrs $ concatMap goNode children

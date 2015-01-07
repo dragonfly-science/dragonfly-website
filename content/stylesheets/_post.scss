@@ -1,6 +1,7 @@
 .post-detail {
 $post-highlight-color: #808080;
 $post-info-top-padding: 1em;
+$wrap-images-width: em(950);
 
     .post-info {
         @include shift(1 of 12);
@@ -17,5 +18,14 @@ $post-info-top-padding: 1em;
         font-weight: 500;
         font-size: $base-font-size * 1.125;
         line-height: 1.2em;
+    }
+    .content {
+
+        figure {
+            @media screen and (min-width: $wrap-images-width) {
+                width: 50%;
+                float: right;
+            }
+        }
     }
 }
