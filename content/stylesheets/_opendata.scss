@@ -76,7 +76,7 @@
                 position: relative;
                 img {
                     border-bottom: solid 6px $section-color;
-                    @include filter(grayscale(20%));
+                    @include filter(saturate(90%) contrast(90%));
                 }
                 @media screen and (max-width: $no-pictures-break) {
                     display: none;

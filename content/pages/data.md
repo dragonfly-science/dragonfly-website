@@ -24,7 +24,7 @@ and are available as CSV files [from the MBIE website](http://www.mbie.govt.nz/w
 The datasets include regional GDP by industry, household income, employment by industry,
 tourism origins and products, and population.
 
-![Chris with iPad](/posts/2014-06-11-regional-economic-activity-report-gets-interactive/teaser.jpg)
+![](/posts/2014-06-11-regional-economic-activity-report-gets-interactive/teaser.jpg)
 
 ## [Protected species captures in New Zealand fisheries](http://data.dragonfly.co.nz/psc/)
 
@@ -38,7 +38,7 @@ Industries, with identification of captured animals carried out by the Departmen
 Data on protected species captures in trawl and longline fisheries, from the 2002–03 fishing
 year onwards, are made available [here](http://data.dragonfly.co.nz/psc/).
 
-![-](/posts/2013-08-07-podcast-bycatch-data-analysis/teaser.jpg)
+![](/posts/2013-08-07-podcast-bycatch-data-analysis/teaser.jpg)
 
 ## [Seabird counts around fishing-vessels](http://data.dragonfly.co.nz/seabird-counts/)
 
@@ -49,7 +49,7 @@ islands. New Zealand fisheries observers record the number of seabirds around fi
 unique record of the distribution of seabirds in the New Zealand region.
 The seabird count data may be accessed [here](http://data.dragonfly.co.nz/seabird-counts/).
 
-![-](/images/xci_all_all_1-180x60.png)
+![](/images/xci_all_all_1-180x60.png)
 
 ## New Zealand sealion tag-resight data
 

@@ -42,9 +42,12 @@ $small-desktop: new-breakpoint(max-width em(1000) 8);
 
     h4 {
         line-height: 1.3em;
+        font-size: 22px;
     }
 
-    .postimage {
+    figure {
+        margin: 0;
+        padding-top: 22 * 1.3 * 1px;
         @include span-columns(2 of 8);
         @include media($small-desktop) {
             display: none;
@@ -56,11 +59,12 @@ $small-desktop: new-breakpoint(max-width em(1000) 8);
         }
 
         margin-right: 0;
-        padding-top: 3em;
+        // padding-top: 3em;
         img {
             margin: 0;
             padding: 0;
             border-bottom: solid 6px $blog-red;
+            @include filter(saturate(90%) contrast(90%));
         }
     }
 
