@@ -1,0 +1,3370 @@
+---
+references:
+- volume: '36'
+  page: '526-542'
+  title-short: Spatial variations of stirring in the surface ocean
+  container-title: Journal of Physical Oceanography
+  author:
+  - family: Waugh
+    given: D.W.
+  - family: Abraham
+    given: E.R.
+  - family: Bowen
+    given: M.M.
+  id: waugh2006svs
+  issued:
+    date-parts:
+    - - 2006
+  abstract: Stirring in the Tasman Sea is examined using surface geostrophic currents
+    derived from satellite altimeter measurements. Calculations of the distribution
+    of finite-time Lyapunov exponents (FTLEs) indicate that the stirring in this region
+    is not uniform and stretching rates over 15 days vary from less than 0.02 day$$^-1$$
+    to over 0.3 day$$^-1$$. These variations occur at both small (  10 km) and large
+    (  1000 km) scales, and in both cases are linked to dynamical features of the
+    flow. The small scale variations are related to the characteristics of coherent
+    vortex structures, and there are low FTLEs inside vortices and filaments of high
+    FTLEs in strain-dominated regions surrounding these vortices. Regional variations
+    in the stirring are closely related to variations in mesoscale activity and eddy
+    kinetic energy (EKE). High values of mean FTLE occur in regions of high EKE (highest
+    mean values of around 0.2 day$$^-1$$ occur in the EAC separation region) whereas
+    small values occur in regions with low EKE (mean values around 0.03 day$$^-1$$
+    in the east Tasman sea). There is a compact relationship between the mean FTLEs
+    and EKE, raising the possibility of using the easily-calculated EKE to estimate
+    the stirring. This possibility is even more intriguing as the FTLE distributions
+    can be approximated, for the time scales considered here, by Weibull distributions
+    with shape parameter equal to 1.6, which can be defined from the mean value alone.
+  title: 'Spatial variations of stirring in the surface ocean: A case study of the
+    tasman sea'
+  type: article-journal
+  publisher: American Meteorological Society
+  issue: '3'
+  keyword: stirring
+- DOI: 10.1016/j.dsr2.2005.08.017
+  volume: '52'
+  page: '2911-2927'
+  container-title: Deep-Sea Research Part II
+  author:
+  - family: Law
+    given: CS
+  - family: Abraham
+    given: ER
+  - family: Woodward
+    given: EMS
+  - family: Liddicoat
+    given: MI
+  - family: Fileman
+    given: TW
+  - family: Thingstad
+    given: TF
+  - family: Kitidis
+    given: V.
+  - family: Zohary
+    given: T.
+  id: law2005fps
+  issued:
+    date-parts:
+    - - 2005
+  abstract: The Eastern Mediterranean is the largest oceanic ecosystem that is phosphate-limited.
+    To determine the impact of a transient input we executed a phosphate addition
+    experiment in the surface waters of the Cyprus Eddy (33.31oN 32.31oE), and compared
+    the ecosystem response with surrounding unperturbed water. A tracer, sulphur hexafluoride
+    (SF6), added with the phosphate, enabled tracking of the patch when phosphate
+    concentration declined to detection limits, and provided quantitative estimates
+    of mixing, dilution and patch volume. The patch expanded to greater than 400km2
+    over 9 days with a lateral diffusion rate of 23 +/- 2 m2/s that was consistent
+    with previous tracer releases in eddies. Mixed layer phosphate concentration was
+     110 nmol/l immediately post-release, and declined to less than 5 nmol/l after
+    6 days. A phosphate budget was developed using SF6 as a proxy to discriminate
+    between dilution and biological pathways, with dilution resulting in loss of  
+    75
+  title: The fate of phosphate in an in situ lagrangian addition experiment in the
+    eastern mediterranean
+  type: article-journal
+  publisher: Elsevier
+  issue: '22-23'
+  keyword: fertilisation
+- note: 31 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 41
+  author:
+  - family: Thompson
+    given: Finlay N.
+  - family: Abraham
+    given: Edward R.
+  id: thompson_sealions_95-07
+  issued:
+    date-parts:
+    - - 2009
+  abstract: 'In this report, the number of New Zealand sea lion (Phocarctoshookeri)
+    captures in New Zealand’s trawl fisheries are estimated for the1995–96 to 2006–07
+    fishing years. Over this period, Ministry of Fisheriesobservers recorded the capture
+    of between 5 and 39 sea lions within the NewZealand Exclusive Economic Zone, within
+    each fishing year. During the 2006–07fishing year, 15 sea lions were observed
+    killed on trawls. For the purposes ofthis report, three captures were included
+    in this total that were observed onthe first day of the 2007–08 fishing year,
+    in the last days of the southernblue whiting fishery. All of the captured sea
+    lions were retrieved dead. Ofthe 15 sea lion captures, 7 were observed caught
+    in the squid fishery aroundthe Auckland Islands. This was the lowest number of
+    observed captures in thisfishery since the 1998–99 fishing year. Six sea lion
+    captures were observed inthe southern blue whiting fishery east of Campbell Island,
+    continuing a trendof increasing captures in that fishery since 2002. Two other
+    capturesoccurred, one in the scampi fishery near the Auckland Islands, and one
+    in thesquid fishery south of The Snares.From these observations, estimates of
+    total captures were made for fourdifferent trawl fisheries: the squid fishery
+    near the Auckland Islands; thesouthern blue whiting fishery east of Campbell Island;
+    other (non-squid)fisheries near the Auckland Islands; and all trawl fisheries
+    on the southern endof the Stewart- Snares shelf. Bayesian generalised linear models
+    were fitted todata from the first two of these fisheries. A previous model, used
+    forestimating sea lion captures in the 2004–05 fishing year, was re-implemented
+    forthe Auckland Islands squid fishery. A new model was developed for the southernblue
+    whiting fishery. Ratio estimates were calculated for the other (non-squid)Auckland
+    Islands trawl fishery, and for all trawl fisheries on the southern endof the Stewart-Snares
+    shelf.Over the 12 years of data, fishing effort in the squid fishery near the
+    AucklandIslands was highest in the 1995–96 fishing year, with 4467 trawls being
+    made.Effort then decreased to fewer than 2000 trawls in each year between 1997–98and
+    2002–03. In each year between 2003–04 and 2005–06, over 2400 trawls weremade.
+    The trawl effort fell to 1320 trawls in 2006–07.Since 2001, squid trawl nets in
+    the Auckland Islands squid fishery haveincreasingly been fitted with sea lion
+    exclusion devices (SLEDs) that allowanimals to escape from the net. The estimated
+    interactions (captures andescapes via SLEDs) follow the patterns in effort. In
+    1995–96 and 1996–97 therewere an estimated 141 and 140 interactions, respectively.
+    In each year between1997–98 and 2002–03 there were fewer than 75 estimated interactions.
+    For thethree years 2003–04 to 2005–06 there were 140 or more interactions. In
+    2006–07,the model estimated that there were 74 (95'
+  title: Estimation of the capture of New Zealand sea lions ( emphPhocarctos hookeri)
+    in trawl fisheries, from 1995–96 to 2006–07
+  type: article-journal
+  keyword: dragonfly
+- note: 24 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 35
+  author:
+  - family: Thompson
+    given: Finlay N.
+  - family: Abraham
+    given: Edward R.
+  id: thompson_six_2009
+  issued:
+    date-parts:
+    - - 2009
+  abstract: A summary is presented of captures of seabirds and marinemammals in trawl
+    and surface longline fisheries within the New ZealandExclusive Economic Zone (EEZ),
+    for the first half of the 2007–08 fishing year(1 October 2007 to 31 March 2008,
+    inclusive). Data from other fisheries, suchas bottom longline and set-net, were
+    not available for the period covered.Ministry of Fisheries observers report captures
+    of protected species when theyoccur, and these data are presented here. Observers
+    in trawl fisheries recorded177 bird captures in the first half of 2007– 08, an
+    increase from 124 birdcaptures in the first half of 2006–07. The most frequently
+    caught birds in trawlfisheries were 65 sooty shearwater (Puffinus griseus), 45
+    white-chinned petrel(Procellaria aequinoctialis) and 30 white-capped albatross
+    (Thalassarchesteadi). Other captures included eight Salvin’s albatross (Thalassarchesalvini),
+    three Buller’s albatross (Thalassarche bulleri), and single capturesof Campbell
+    albatross (Thalassarche impavida) and southern royal albatross(Diomedea epomophora).
+    One black petrel (Procellaria parkinsoni) was caught ina scampi trawl, and was
+    confirmed by necropsy. A Westland petrel (Procellariawestlandica) was reported
+    caught alive by an observer, but the identity couldnot be confirmed as it was
+    released.There were 25 New Zealand fur seals (Arctocephalus forsteri) observed
+    caught intrawl fisheries, 21 of them south of 48&\#9702; south. Seven New Zealand
+    sea lions(Phocarctos hookeri) were caught, four of them in the Auckland Islands
+    squidfishery and three in the southern blue whiting fishery to the east of CampbellIsland.
+    There were 20 dolphins, identified by the observers as common dolphin(Delphinus
+    delphis), caught in the jack mackerel fishery on the west coast ofthe North Island.
+    This was twice as many as were observed caught in the firsthalf of 2006–07. No
+    other species of marine mammal were observed caught, andthere were no marine mammals
+    caught in surface longline fisheries. No turtleswere caught in either trawl or
+    surface longline fisheries.Between the first half of 2006–07 and the first half
+    of 2007–08 the total trawleffort decreased from 54 500 to 48 300 tows. In contrast,
+    the number ofobserved tows increased from 3884 to 4436. Most bird captures were
+    in the squidtrawl fishery. There was a small increase in the number of observed
+    tows in thesquid fishery, from 1075 to 1194. Observed captures rose from 89 to
+    136 birds,and the capture rate increased from 8.3 to 11.4 birds per one hundred
+    tows.However, across all trawl fisheries, observed captures of white-capped albatrossdecreased
+    from 42 to 30 birds. Observed captures of other albatross speciesincreased slightly
+    from 12 to 14 birds. Of the 30 white-capped albatross caughtin the first half
+    of 2007–08, only eight were caught on trawl warps. Coverage ofinshore trawl fisheries
+    remains low. During the first half of the 2007–08 fishingyear 97 inshore trawls
+    were observed, 0.3
+  title: Six monthly summary of the capture of protected species in new zealand commercial
+    fisheries, summer 2007–08
+  type: article-journal
+  keyword: dragonfly
+- author:
+  - family: Thompson
+    given: Finlay N.
+  - family: Abraham
+    given: Edward R.
+  - family: Oliver
+    given: Megan D.
+  id: thompson_dolphin_95-08
+  issued:
+    date-parts:
+    - - 2009
+  abstract: Common dolphins (Delphius delphis) are the most frequentlycaught cetacean
+    in New Zealand trawl fisheries. Between the 1995–96 and2007–08 fishing years,
+    there were 97 common dolphin captures reported byMinistry of Fisheries observers
+    in the mackerel trawl fishery on the westcoast of the North Island. These captures
+    were all made by vessels over 90 min length. Capture events were infrequent, with
+    1 trawl in every 100recording common dolphin captures. However, when common dolphins
+    werecaught, they were often caught in groups. In 2007–08, 20 common dolphins werecaught
+    on 5 of 725 observed tows. There were 9 common dolphins caught on asingle trawl.A
+    statistical model was built that used the observer data to estimate the totalcommon
+    dolphin captures in the mackerel fishery. A two-stage Bayesian hurdlemodel was
+    used, with a logistic generalised linear model predicting whether anycommon dolphin
+    captures occurred on a given tow, and a zero-truncated Poissondistribution being
+    used to estimate the number of dolphin captures, given thatthere was a capture
+    event.Of the observed capture events in the large vessel mackerel fishery, 54
+  title: 'Common dolphin (<span class="nocase">\
+
+    emphDelphinus delphis</span>) bycatch in new zealand mackerel trawl fisheries,
+    1995–96 to 2007–08'
+  type: manuscript
+  publisher: Final Research Report for research project PRO2007/02. (Unpublished report
+    held by Ministry of Fisheries, Wellington)
+  keyword: dragonfly
+- author:
+  - family: Waugh
+    given: Susan
+  - family: Filippi
+    given: Dominique
+  - family: Abraham
+    given: Edward
+  id: waugh_ecological_2009
+  issued:
+    date-parts:
+    - - 2009
+  abstract: We examined the risk of fisheries incidental mortality causingpopulation
+    declines for a suite of seabird species in 14 New Zealandfisheries using trawl
+    and longline methods. We applied a method developed bySharp et al. (2009) that
+    used the available data on species biology,fisheries interactions, and fishing
+    effort in a semi-quantitative EcologicalRisk Assessment framework. Data quality
+    was a strong pre-occupation in thestudy, with species abundance and productivity
+    data being of extremelyvariable quality. Fishery data on captures were relatively
+    sparse for smalllongline fisheries. Therefore, the results should be interpreted
+    withcaution, and are best used to guide the setting of research and managementpriorities.
+    Sixty-three species were studied, but the final analysis reportson data for 39,
+    the remainder being excluded due to lack of data in therelevant fisheries at this
+    time. The primary statistic generated by the study is the risk score, which describesthe
+    risk of adverse effects at species level from fishing mortalities – it isthe number
+    of likely captures in New Zealand commercial fisheries, over thespecies-specific
+    index of population productivity. Our primary findings inrelation to the likely
+    impacts of fishing mortality on species, by fishery andarea were:1. Nineteen of
+    39 species (19 species, 90
+  title: Ecological risk assessment for seabirds in new zealand fisheries
+  type: manuscript
+  publisher: Final Research Report for research project PRO2008-01. (Unpublished report
+    held by Ministry of Fisheries, Wellington)
+  keyword: dragonfly
+- note: 148 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 45
+  author:
+  - family: Abraham
+    given: Edward R.
+  - family: Thompson
+    given: Finlay N.
+  - family: Oliver
+    given: Megan D.
+  id: abraham_summary_98-08
+  issued:
+    date-parts:
+    - - 2010
+  abstract: 'A summary is presented of all captures of seabirds, marinemammals,
+    and turtles during trawl and longline fishing within the outer boundaryof the
+    New Zealand Exclusive Economic Zone (EEZ) between 1 October 1998 and 30September
+    2008. Ministry of Fisheries observers record captures of seabirds,marine mammals,
+    and turtles, and these data, along with information on fishingeffort, are used
+    for estimating total captures.Within this report, captures are divided into the
+    following groups: sootyshearwater (Puffinus griseus), white-chinned petrel (Procellariaaequinoctialis),
+    white-capped albatross (Thalassarche steadi), otheralbatrosses, other birds, New
+    Zealand sea lion (Phocarctos hookeri), NewZealand fur seal (Arctocephalus forsteri),
+    dolphins, whales, and turtles.Captures are also reported by fishery, based on
+    method (trawl, bottom longline,and surface longline) and target species. The report
+    contains time series andmaps of the observed and estimated captures.In the 2007–08
+    fishing year there were 233, 37, and 40 birds observed caught intrawl, surface
+    longline, and bottom longline fisheries, respectively. The mostfrequently caught
+    bird species were sooty shearwater, white-chinned petrel, andwhite-capped albatross
+    with 82, 74, and 44 observed caught, respectively. Otherobserved captures included
+    one Westland petrel (Procellaria westlandica) caughtin the West Coast South Island
+    trawl fishery; four black petrels, or Parkinson’spetrels (Procellaria parkinsoni),
+    caught in scampi trawl and hapuku bottomlongline fisheries; and one wandering
+    albatross (Diomedea exulans) caught in thenortheast bluenose longline fishery.
+    Another wandering albatross was caught andreleased alive. All of these species
+    are classified as vulnerable by the IUCN.Estimated captures of seabirds in trawl
+    fisheries decreased by 13.2'
+  title: Summary of the capture of seabirds, marine mammals and turtles in New Zealand
+    commercial fisheries, 1998–99 to 2007–08
+  type: article-journal
+  keyword: dragonfly
+- DOI: 10.1016/j.dsr2.2006.05.028
+  volume: '53'
+  page: '2012-2033'
+  container-title: Deep-Sea Research Part II
+  author:
+  - family: Law
+    given: CS
+  - family: Crawford
+    given: WR
+  - family: Smith
+    given: MJ
+  - family: Boyd
+    given: PW
+  - family: Wong
+    given: CS
+  - family: Nojiri
+    given: Y.
+  - family: Robert
+    given: M.
+  - family: Abraham
+    given: ER
+  - family: Johnson
+    given: WK
+  - family: Forsland
+    given: V.
+  - literal: others
+  id: law2006pea
+  issued:
+    date-parts:
+    - - 2006
+  abstract: An in situ mesoscale iron-fertilisation experiment in the eastern sub-Arctic
+    Pacific (SERIES) was undertaken to test the Iron Hypothesis, that increasing iron
+    supply would stimulate phytoplankton production and particulate organic carbon
+    (POC) export to deep water. Patch dispersion was monitored for 26 days, using
+    an inert tracer (SF6) and biological tracers (chlorophyll-a and fCO2), and we
+    examine the vertical and lateral evolution of the patch, and the influence of
+    dilution on the biological and biogeochemical response to iron addition. Vertical
+    dispersion of the added iron was initially restricted to the upper 12 m by near-surface
+    stratification, although the vertical flux to the lower mixed layer at this time
+    significantly exceeded the unperturbed rate of iron supply. Calculation of vertical
+    diffusion rates (Kz) provided an estimate of the unperturbed Fe flux across the
+    seasonal pycnocline of 0.3–1.5 nmol/m2/d. The iron/tracer patch partially advected
+    around an anticyclonic Haida Eddy that originated off the west coast of Canada
+    in 1999–2000. Lateral patch evolution was initially dominated by current strain,
+    stretching it into a filament of 300 km2 by day 11 and reaching a maximum area
+    of 1300 km2 by day 23. Sustained high winds and intrusion of external waters between
+    days 11 and 18 altered patch geometry and advection. Two scenarios for patch evolution
+    are presented of a single exponential dilution at 0.1/d, and a variable dilution
+    in which dilution increased from 0.078/d to 0.16/d (days 11–18) before decreasing
+    to 0.05/d. Dilution rates were used to constrain dissolved iron dynamics, with
+    iron regeneration rates indirectly estimated from biological iron uptake and lateral
+    dilution losses. Lateral entrainment supplied 6–7 &\#956;mol/L silicic acid and
+    4.6 &\#956;mol/L nitrate to the patch centre by day 20, equivalent to 37
+  title: Patch evolution and the biogeochemical impact of entrainment during an iron
+    fertilisation experiment in the sub-arctic pacific
+  type: article-journal
+  publisher: Elsevier
+  issue: '20-22'
+  keyword: fertilisation
+- ISSN: '1365-2664'
+  DOI: 10.1111/j.1365-2664.2010.01806.x
+  volume: '47'
+  page: '603-610'
+  container-title: Journal of Applied Ecology
+  author:
+  - family: Richard
+    given: Yvan
+  - family: Armstrong
+    given: Doug P
+  id: richard_cost_2010
+  issued:
+    date-parts:
+    - - 2010
+  abstract: 1\. Landscape connectivity, the ability of species to move between different
+    elements of a landscape, has been evaluated mainly by expert opinion, proxy data
+    or homing experiments, all of which have major limitations. Cost distance modelling
+    can overcome these limitations, but the resistance values of different landscape
+    elements are difficult to estimate. 2. Here, we present a novel method combining
+    step selection functions with cost distance modelling to assess functional landscape
+    connectivity. Instead of relying on movement metrics, the method uses a case-control
+    design to assess whether the chosen steps differ from a random sample of alternatives
+    of similar lengths. Alternative models of landscape connectivity and dispersal
+    behaviour are represented as maps of resistance values, and compared using an
+    information-theoretic approach to select those hypotheses that maximize the discrepancy
+    between chosen steps and random alternatives. 3. We applied this method to daily
+    locations recorded along the dispersal paths of 38 juvenile North Island robins
+    Petroica longipes in a fragmented pastoral landscape in New Zealand. We compared
+    models with different resistance values for four recognized vegetation types in
+    the landscape and assessed gap-crossing behaviour by changing the resistance value
+    of pasture as a function of distance to the closest woody vegetation. 4. Model
+    comparison showed that juvenile robins move in decreasing order of preference
+    through native forest, plantations and shrubland, and showed a marked reluctance
+    for flying over pasture. Under the best model, the largest gap crossed was 110
+    m. 5. Synthesis and applications. In combination with data on the total cost distances
+    travelled by dispersers, cost distance models of landscape connectivity can be
+    used to predict distributions of dispersal distances in any landscape with similar
+    vegetation types. They can therefore predict responses of species to landscape
+    management or predict spatial dynamics of populations following reintroduction.
+    Our method is potentially applicable to any dispersal data, even with a relatively
+    small number of locations recorded in complex landscapes, meaning models can be
+    fitted to data that cannot be analysed using previous method. Tools are freely
+    available for download to allow researchers and wildlife managers to apply our
+    methods to their own data.
+  title: Cost distance modelling of landscape connectivity and gap-crossing ability
+    using radio-tracking data
+  type: article-journal
+  issue: '3'
+  keyword: choice analysis, conditional logit model, connectivity, cost distance,
+    dispersal, gap crossing, GIS, least-cost path, Petroica longipes, resistance,
+    fragmentation-dynamics
+- volume: '3'
+  page: '8'
+  container-title: Avian Conservation and Ecology-E&\#769;cologie et conservation
+    des oiseaux
+  author:
+  - family: Armstrong
+    given: D. P
+  - family: Richard
+    given: Y.
+  - family: Ewen
+    given: J. G
+  - family: Dimond
+    given: W. J
+  id: armstrong_avoiding_2008
+  issued:
+    date-parts:
+    - - 2008
+  title: Avoiding hasty conclusions about effects of habitat fragmentation
+  type: article-journal
+  issue: '1'
+  keyword: fragmentation-dynamics
+- container-title: In preparation
+  author:
+  - family: Richard
+    given: Yvan
+  - family: Armstrong
+    given: Doug P.
+  id: richard_natal_2011
+  issued:
+    date-parts:
+    - - 2011
+  title: Natal dispersal of north island robins (petroica longipes) in a fragmented
+    agricultural landscape
+  type: article-journal
+  keyword: fragmentation-dynamics
+- author:
+  - family: Richard
+    given: Yvan
+  - family: Abraham
+    given: Edward R.
+  id: richard_preliminary_2011
+  issued:
+    date-parts:
+    - - 2011
+  abstract: 'The discard of processing waste by fishing trawlers attracts seabirds,
+    putting them at risk from being caught in nets or being struck by fishing gear.
+    In order to minimise the impact of fishing on seabird populations, techniques
+    are required for managing processing waste so that fewer birds are attracted to
+    the stern of trawlers. A simple method, that may reduce the number of birds attracted
+    to trawlers, is to discharge the waste in batches: holding the waste and dumping
+    it periodically, rather than discharging it continuously. In a previous experiment,
+    waste was held for a range of intervals (between 30 minutes and 8 hours), and
+    the influence of discharge interval on seabird abundance was determined. It was
+    found that there were fewer birds behind the vessel when the interval between
+    batches was either 4 or 8 hours long, rather than when it was either 30 minutes
+    or 2 hours. In February and March 2010, a similar experiment was carried out on
+    a trawler that was mainly targeting hoki. The key difference was that this experiment
+    compared the number of birds behind the vessel during continuous discharge with
+    the number that were present with either a 30-minute or 2-hour interval between
+    waste discharges. During the experiment, fishing was carried out normally, with
+    the waste discharge being controlled as part of the experiment. For each day of
+    the experiment a particular discharge regime was followed (either continuous,
+    30-minute, or 2-hour). A fisheries observer recorded the abundance of seabirds
+    (large seabirds, Cape petrels, and other small seabirds) within 40 m from the
+    stern of the vessel, making series of up to 12 observations spaced 5 minutes apart.
+    During batched treatments, the observations began 5 to 10 minutes before a discharge
+    event. In this report, a preliminary analysis of data from the experiment is presented.
+    Although the level of statistical significance was not tested, the seabird abundance
+    at the back of the vessel was similar between treatments when waste was discharged,
+    but the abundance was reduced by half in absence of discharge. As a consequence,
+    across all the observation periods the seabird abundance was lowest when waste
+    was discharged every two hours, slightly higher when the discharge interval was
+    30 minutes, and highest when the waste was continuously discharged. Observations
+    of the 2-hour batch discharge treatment did not cover the whole period between
+    discharge events, and so a larger difference between the 2 hour and other treatments
+    may be expected. During the 2-hour treatment, waste discharge took an average
+    of around 9 minutes, whereas during the 30-minute treatment waste discharge took
+    an average of 3 minutes. The rapid response of seabird numbers and behaviour to
+    the individual discharge events could not be determined, as observations were
+    made 5 minutes apart. A fixed video camera was used to continuously record a view
+    looking back from the stern of the vessel. This footage has not yet been analysed.
+    Both large and small seabirds responded similarly to the discharge treatments,
+    and there was no apparent relationship between seabird abundance and other variables,
+    such as vessel speed, swell height, or wind strength. The experiment was successfully
+    conducted, with the protocol being closely followed. The preliminary descriptive
+    analysis suggests that batching fishing waste may represent an efficient strategy
+    in reducing the number of seabirds that are attracted to trawlers. Statistical
+    modelling of the data would help determine the significance of this key result.'
+  title: Preliminary analysis of data collected during the 2010 offal batching experiment
+  type: manuscript
+  publisher: Unpublished report held by the Department of Conservation, Wellington,
+    New Zealand. 28 pages.
+  keyword: fisheries-bycatch, dragonfly
+- container-title: In preparation
+  author:
+  - family: Richard
+    given: Yvan
+  - family: Boulton
+    given: Rebecca L
+  - family: Armstrong
+    given: Doug P.
+  id: richard_disentangling_2011
+  issued:
+    date-parts:
+    - - 2011
+  title: Disentangling the relative roles of habitat quality and landscape connectivity
+    in metapopulation dynamics
+  type: article-journal
+  keyword: fragmentation-dynamics
+- DOI: 10.1016/S0967-0645(01)00003-0
+  volume: '48'
+  page: '2439-2466'
+  title-short: Circulation and seasonal evolution of polar waters south of australia
+  container-title: Deep-Sea Research Part II
+  author:
+  - family: Trull
+    given: T.
+  - family: Rintoul
+    given: S.R.
+  - family: Hadfield
+    given: M.
+  - family: Abraham
+    given: E.R.
+  id: trull2001cas
+  issued:
+    date-parts:
+    - - 2001
+  abstract: The physical and biogeochemical setting of the Southern Ocean Iron Release
+    Experiment (SOIREE) is described. SOIREE was carried out in the southern Antarctic
+    Zone (61o S, 140o E), between the southern branch of the Polar Front and the southern
+    front of the Antarctic Circumpolar Current. The region is characterized by weak
+    currents, high nutrients, low chlorophyll, moderate summer mixed layer depth,
+    and is remote from the influence of sea-ice and coastal waters. In other words,
+    the SOIREE site is typical of a broad area of the open ocean waters of the Southern
+    Ocean. SOIREE was carried out in late summer (February), close to the time of
+    maximum seasonal nutrient depletion and well past the usual seasonal peak in production
+    and export. While the seasonal nutrient draw-down is substantial, levels of all
+    three macro-nutrients remain high enough to support phytoplankton growth. In contrast,
+    north of the southern branch of the Polar Front, silica is drawn down to levels
+    which are potentially limiting for growth of large diatoms. The response to iron
+    addition may therefore vary with season, at least to the north of the southern
+    branch of the PF. The extent and consequences of silica limitation in Southern
+    Ocean waters appear to have been under-appreciated. Only waters south of the southern
+    branch of the Polar Front are high in silica year-round. In particular, water
+    masses formed in the Southern Ocean sink with little pre-formed silicate (Antarctic
+    Bottom Water (AABW) is an exception, but sinking of AABW is limited to a few small
+    regions along the Antarctic margin). Therefore, in the absence of physiological
+    changes, adding iron is likely to have little effect on carbon export by the silica
+    pump, which plays the dominant role in carbon export in both the modern and glacial
+    Southern Ocean. As a consequence, it may not be as easy to draw down all the macro-nutrients
+    in the Southern Ocean as previously assumed in assessing the response of the global
+    carbon cycle to iron fertilization. The iron hypothesis for glacial-interglacial
+    changes in carbon dioxide requires that the silica limitation be alleviated in
+    waters north of the present-day Polar Front (by changes in ocean circulation),
+    as well as an increase in aeolian iron supply.
+  title: 'Circulation and seasonal evolution of polar waters south of australia:
+    Implications for iron fertilization of the southern ocean'
+  type: article-journal
+  publisher: Elsevier
+  issue: '11-12'
+  keyword: fertilisation
+- author:
+  - family: Abraham
+    given: Edward R.
+  - family: Thompson
+    given: Finlay N.
+  id: abraham_seabirds_02-07
+  issued:
+    date-parts:
+    - - 2010
+  abstract: 'Seabirds are caught during commercial fishing, most frequentlyeither
+    by being hooked during longlining, caught in trawl nets, or struck bytrawl warps.
+    In order to understand the impact of fishing on seabird species,estimates of the
+    total mortality from fishing activity must be obtained. InNew Zealand commercial
+    fisheries, government observers are present on somevessels, and they record any
+    captures of protected species that occur. Theseobserver data provide a consistent
+    basis for estimating total captures.In this report, generalized linear models
+    were used to estimate total capturesof seabirds by trawl and longline methods
+    from observer data. Captures wereestimated for the fishing years 2002–03 to 2006–
+    07, by fishing within the NewZealand Exclusive Economic Zone (EEZ). For trawl,
+    bottom longline, and surfacelongline fisheries, statistical models were built
+    of captures of five speciesgroups: white-capped albatross (Thalassarche steadi),
+    sooty shearwater (Puffinusgriseus), white-chinned petrel (Procellaria aequinoctialis),
+    other albatrossspecies, and other birds. The models were fitted using Bayesian
+    methods, withthe captures represented as samples from a negative binomial distribution.The
+    total number of seabirds that were estimated to have been caught within NewZealand
+    waters during the 2006–07 fishing year was 3554 (95'
+  title: Estimated capture of seabirds in New Zealand trawl and longline fisheries,
+    2002–03 to 2006–07
+  type: manuscript
+  publisher: Final Research Report for research project PRO2007-01 (Unpublished report
+    held by Ministry of Fisheries, Wellington)
+  keyword: dragonfly
+- title-short: The efficacy of warp strike mitigation devices
+  author:
+  - family: Middleton
+    given: David A. J.
+  - family: Abraham
+    given: Edward R.
+  id: middleton_efficacy_2007
+  issued:
+    date-parts:
+    - - 2007
+  abstract: 'Recent research has shown that collisions with trawl warps are asource
+    of seabird mortality in trawl fisheries. To minimise this mortality, anumber of
+    devices have been developed to prevent seabirds from being struckby the trawl
+    warps, or from congregating at the stern of the vessels. Designscurrently used
+    in New Zealand include twin tori lines, bird bafflers and warpscarers. Legislation
+    now requires that at least one of these devices is usedby trawlers fishing within
+    New Zealand waters. Experimental trials of warp strike mitigation devices were
+    carried out in the 2006 southern squid trawlfishery, involving 18 observed vessels.
+    The trials were developedco-operatively by a group that included representatives
+    from the fishingindustry, the Ministry of Fisheries, the Department of Conservation
+    andWWF-NZ. Tori lines, bird bafflers (the 4 boom variety) and warp scarers werecompared
+    using standardised seabird strike measurements: the number of birdsthat struck
+    either the warps or the mitigation device during a 15 minuteobservation period.
+    On the participating trips, different warp strikemitigation treatments were used
+    on different tows according to a randomisedexperimental design. Key results from
+    the trial are: - Tori lines were most effective at reducing seabird strikes on
+    trawl warps. They reduced the warp strikes to between 5'
+  title: 'The efficacy of warp strike mitigation devices: Trials in the 2006 squid
+    fishery'
+  type: manuscript
+  publisher: Final Research Report for research project IPA2006/02. (Unpublished report
+    held by Ministry of Fisheries, Wellington)
+  keyword: dragonfly
+- container-title: New Zealand Aquatic Environment and Biodiversity Report No. 60,
+    29 pages
+  author:
+  - family: Abraham
+    given: Edward R.
+  id: abraham_warp_2010
+  issued:
+    date-parts:
+    - - 2010
+  abstract: Ministry of Fisheries observers have been making warp strikeobservations
+    since the 2004–05 fishing year. During these observations, theyrecord the numbers
+    of birds that are struck by trawl warps during 15 minuteperiods. In this report,
+    a summary is presented of all the strike datacollected from 2004–05 to 2008–09.
+    Warp strike observations largely ceased in2008–09, with the only observations
+    being made on a trip that began during the2007–08 fishing year. The warp strike
+    dataset contains 7266 observations made onthe trawl warps until the 2008–09 fishing
+    year, Over all years, 67.4
+  title: Warp strike in New Zealand trawl fisheries, 2004–05 to 2008–09
+  type: article-journal
+  keyword: dragonfly
+- DOI: 10.1029/2000JC000604
+  volume: '106'
+  page: '14069-14081'
+  container-title: Journal of Geophysical Research
+  author:
+  - family: Sharples
+    given: J.
+  - family: Moore
+    given: C.M.
+  - family: Abraham
+    given: E.R.
+  id: sharples2001itd
+  issued:
+    date-parts:
+    - - 2001
+  abstract: An energetic internal tide on the NE shelf of New Zealand was observed
+    with a combination of moored temperature loggers and current meters, and vertical
+    profiling with a microstructure probe. Internal tide energy flux across the shelf
+    edge was calculated to be approximately 640 W m<span style="vertical-align:sup;">-1</span>,
+    with considerable variability driven by the passage of a storm through the region.
+    Dissipation of the internal tide calculated from the energy loss between two of
+    the moorings was estimated to be 20 ? 14 mW m<span style="vertical-align:sup;">-2</span>.
+    The estimate of tidally-averaged dissipation from the microstructure profiles
+    was 10 (9 to 12, 95
+  title: Internal tide dissipation, mixing, and vertical nitrate flux at the shelf
+    edge of nE new zealand
+  type: article-journal
+  issue: C7
+  keyword: other-ocean
+- note: 29 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 56
+  author:
+  - family: Thompson
+    given: Finlay N.
+  - family: Abraham
+    given: Edward R.
+  - family: Oliver
+    given: Megan D.
+  id: thompson_furseals_02-08
+  issued:
+    date-parts:
+    - - 2010
+  abstract: New Zealand fur seals (Arctocephalus forsteri) have been caughtin commercial
+    trawl fisheries operating around New Zealand’s EEZ. Ministry ofFisheries observers
+    recorded 141 fur seal captures in trawl fisheries in2007–08, and 72 in 2006–07.
+    Fur seals were the most frequently observed non-fishbycatch species in 2007–08.
+    Captures have been reported from trawlers operatingthroughout New Zealand’s EEZ,
+    with the exception of the north and east coastsof the North Island. Most captures
+    have been observed in the hoki fishery, with57 fur seals being observed caught
+    in 2007–08. In contrast, few captures werereported from deepwater or scampi fisheries.A
+    Bayesian generalised linear model was developed using the observed trawleffort.
+    The model was fitted to data from six fishing years, 1 October 2002 to 30September
+    2008. The model was then used to estimate fur seal captures onunobserved tows.
+    Trawl effort from the north and east of the North Island, andfrom the eastern
+    end of the Chatham Rise, was excluded because there were noobserved fur seal captures
+    in those areas. Trawl effort from tows targetinginshore species was also excluded
+    as observer coverage in inshore fisheries wasvery low, and no fur seals were observed
+    caught. The model included covariatesfor fishing area, target species, day of
+    the year, and distance to the shore.These covariates, which have been identified
+    in previous work, were selectedbecause they explained much of the variation in
+    the capture rate.In 2007–08, an estimated 714 (95
+  title: Estimation of fur seal bycatch in New Zealand trawl fisheries, 2002–03 to
+    2007-08
+  type: article-journal
+  keyword: dragonfly
+- note: 25 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 52
+  author:
+  - family: Thompson
+    given: Finlay N.
+  - family: Oliver
+    given: Megan D.
+  - family: Abraham
+    given: Edward R.
+  id: thompson_sealions_95-08
+  issued:
+    date-parts:
+    - - 2010
+  abstract: 'In this report, the number of New Zealand sea lion (Phocarctoshookeri)
+    captures in New Zealand’s trawl fisheries are estimated for the 1995–96to 2007–08
+    fishing years. Over this period, Ministry of Fisheries observersrecorded the capture
+    of between 5 and 39 sea lions within the New ZealandExclusive Economic Zone, within
+    each fishing year. During the 2007–08 fishingyear, 8 sea lions were observed captured
+    on trawls. This count excludes 3captures observed on the first day of the 2007–08
+    fishing year, in the last daysof the southern blue whiting fishery. Seven of the
+    8 captured sea lions wereretrieved dead, and 1 was released alive. Of the 8 sea
+    lion captures, 5 wereobserved caught in the squid fishery around the Auckland
+    Islands. This was thelowest number of observed captures in this fishery since
+    the 1998–99 fishingyear. Two sea lion captures were observed in the southern blue
+    whiting fisheryeast of Campbell Island, a decrease from 6 captures the year before.
+    There wereno sea lion captures in the Auckland Islands scampi fishery or any otherAuckland
+    Islands trawl fishery. One sea lion was caught on an observed trawl inthe hoki
+    fishery south of The Snares and released alive.From these observations, estimates
+    of total captures were made for fourdifferent strata: the squid fishery near the
+    Auckland Islands; the CampbellIsland southern blue whiting fishery; other (non-squid)
+    trawl fisheries near theAuckland Islands; and all trawl fisheries on the southern
+    end of theStewart-Snares shelf. Bayesian generalised linear models were fitted
+    to datafrom the first two of these strata. A previous model, used for estimating
+    sealion captures in the 2006–07 fishing year, was re-implemented for the AucklandIslands
+    squid fishery. Likewise, the model developed in 2006–07 for the CampbellIsland
+    southern blue whiting fishery was re-implemented, with minor changes.Ratio estimates
+    were calculated for the remaining two strata.Since 2001, trawl nets in the Auckland
+    Islands squid fishery have increasinglybeen fitted with sea lion exclusion devices
+    (SLEDs) that allow animals to escapefrom the net. The model estimated that the
+    probability a sea lion failed toescape from a net fitted with a SLED (i.e., the
+    retention probability) was 0.234(95'
+  title: Estimation of the capture of New Zealand sea lions ( emphPhocarctos hookeri)
+    in trawl fisheries, from 1995–96 to 2007–08
+  type: article-journal
+  keyword: dragonfly
+- note: 197 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 32
+  author:
+  - family: Abraham
+    given: Edward R.
+  - family: Thompson
+    given: Finlay N.
+  id: abraham_summary_2009
+  issued:
+    date-parts:
+    - - 2009
+  abstract: 'Seabirds, marine mammals, and turtles are caught in New Zealandcommercial
+    fisheries. These captures are reported by Ministry of Fisheriesobservers when
+    they are onboard fishing vessels. In this report, summaries ofthe captures are
+    presented for all observed trawl and longline fishing eventswithin the New Zealand
+    Exclusive Economic Zone between 1 October 1998, and 30September 2007. Where there
+    was sufficient observer coverage within a stratum,a ratio method was used to estimate
+    the total captures with bootstrapconfidence intervals.Captures are summarised
+    into the following species groups: white-cappedalbatross (Thalassarche steadi);
+    white-chinned petrel (Procellarisaequinocalis); sooty shearwater (Puffinus griseus);
+    other albatross; otherbirds; New Zealand fur seal (Arctocephalus forsteri); New
+    Zealand sea lion(Phocarctos hookeri); Hector’s and Maui’s dolphin (Cephalorhynchus
+    hectori,Cephalorhynchus hectori maui); pilot whale (Globicephala melas); other
+    dolphin;other seals; other marine mammals; and turtles. The captures are reported
+    byfishery, which is based on the method (trawl, bottom longline, and surfacelongline)
+    and the target species. The report contains time series and maps ofthe captures.In
+    the 2006–07 fishing year there were 212, 187, and 58 birds observed caught intrawl,
+    surface longline and bottom longline fisheries, respectively. The birdsmost frequently
+    caught were sooty shearwater, white-capped albatross, andBuller’s albatross (Thalassarche
+    bulleri), with 86, 84, and 56 individualsbeing observed caught, respectively.
+    Other captures included 12 of thecritically endangered Chatham albatross (Thalassarche
+    eremita) caught in bottomlongline fisheries; 30 wandering-type albatross caught
+    in surface longlinefisheries; and 1 black petrel (Procellaria parkinsoni) caught
+    during an inshoretrawl.Estimated captures of seabirds in trawl fisheries decreased
+    from 1930 (95'
+  title: Capture of protected species in New Zealand trawl and longline fisheries,
+    1998–99 to 2006–07
+  type: article-journal
+  keyword: dragonfly
+- publisher-place: Berlin
+  page: '34-38'
+  container-title: Kaandorp, j. and ku&\#776;bler, j. (eds.) the algorithmic beauty
+    of seaweeds, sponges and corals
+  author:
+  - family: Abraham
+    given: E.R.
+  id: abraham_branching_2001
+  issued:
+    date-parts:
+    - - 2001
+  title: The branching sponge emphRaspailia inaequalis
+  type: chapter
+  publisher: Springer
+  keyword: sponges
+- container-title: In preparation
+  author:
+  - family: Richard
+    given: Yvan
+  - family: Boulton
+    given: Rebecca L
+  - family: Armstrong
+    given: Doug P.
+  id: richard_assessing_2011
+  issued:
+    date-parts:
+    - - 2011
+  title: Assessing habitat quality from vital rates in fragmented landscapes
+  type: article-journal
+  keyword: fragmentation-dynamics
+- publisher-place: Berlin
+  page: '109-113'
+  container-title: Kaandorp, j. and ku&\#776;bler, j. (eds.) the algorithmic beauty
+    of seaweeds, sponges and corals
+  author:
+  - family: Abraham
+    given: E.R.
+  id: abraham_laplacian_2001
+  issued:
+    date-parts:
+    - - 2001
+  title: A laplacian model of branching growth
+  type: chapter
+  publisher: Springer
+  keyword: sponges
+- volume: '37'
+  page: '633-644'
+  container-title: New Zealand Journal of Marine and Freshwater Research
+  author:
+  - family: Kirby
+    given: DS
+  - family: Abraham
+    given: ER
+  - family: Uddstrom
+    given: MJ
+  - family: Dean
+    given: H.
+  id: kirby2003tsa
+  issued:
+    date-parts:
+    - - 2003
+  abstract: Exploratory data analysis of a high resolution (hook-by-hook), 6-year
+    time series (1993 – 98) of observed longline catch data for tunas was used to
+    investigate fine-scale spatial patterns along individual sets that may be indicative
+    of social behaviour (i.e., schooling) and/or the response of individual fish to
+    favourable extrinsic conditions (i.e., aggregation). Methods of spatial data analysis
+    (i.e., nearest neighbour analysis) that have previously been applied in various
+    other sciences (e.g., forestry and astronomy) were used. Results indicate strong
+    clustering of individual tunas at characteristic scales within the set. Mean Nearest
+    Neighbour Distances (NNDs) were between 100 and 200 m, compared with NNDs of 200–700
+    m predicted by a heterogeneous Poisson process on the same spatial domain. The
+    results suggest that these adult tunas were either schooling or aggregating at
+    the time of capture; this may therefore be related either to social behaviour
+    or to sub-mesoscale oceanographic features. An aggregation index was derived from
+    the NNDs, giving a classification method that may be used for similar data and
+    the development of empirical models attempting to relate patterns in fish catch
+    distributions to environmental variables. The success of such models will ultimately
+    depend on elucidating the ecological processes reflected in oceanographic features
+    at biologically meaningful spatial scales.
+  title: Tuna schools/aggregations in surface longline data 1993–1998
+  type: article-journal
+  keyword: other-ocean
+- publisher-place: Doctoral dissertation. Massey University, Palmerston North, New
+    Zealand
+  author:
+  - family: Richard
+    given: Yvan
+  id: richard_demography_2007
+  issued:
+    date-parts:
+    - - 2007
+  abstract: Habitat loss and fragmentation are recognised worldwide as contributing
+    to declines and extinctions of species. However, the biological factors underlying
+    the effects of fragmentation are still often poorly understood, possibly due to
+    the diversity of scales and approaches taken by researchers. I propose in this
+    thesis an integrative approach that can be applied to any taxa and landscape,
+    using a metapopulation of North Island robins (Petroica longipes) inhabiting forest
+    patches of a fragmented agricultural landscape of New Zealand. In particular,
+    I attempt to integrate the effects of habitat fragmentation on both habitat quality
+    and the dispersal-driven broad scale dynamics of populations. I first analysed
+    the distribution of robins based on presence-absence data, relating presence-absence
+    to local habitat factors as well as size and isolation of forest patches (Chapter
+    2). Their distribution was found to be primarily limited by the isolation of forest
+    patches, but was also related to some habitat factors. However, habitat fragmentation
+    was not found to affect habitat quality, as the factors found to affect survival
+    and productivity were unrelated to size and isolation, independent from the size
+    or isolation of forest patches (Chapter 3). Based on the radio-tracking of juvenile
+    robins, I applied a choice analysis technique to show that robins need woody vegetation
+    for their natal dispersal and that they are unlikely to cross stretches of pasture
+    greater than 150 m (Chapter 4). Juveniles dispersed a median Euclidean distance
+    of 1 129 m with a maximum of 11 km, whereas I predicted from the data that they
+    would have dispersed a median distance of 3 km in continuous forest with a maximum
+    of 20 km (Chapter 5). The consequences of this dispersal limitation and of variations
+    in habitat quality were assessed using a spatially-explicit individual-based metapopulation
+    model that incorporated realistic gap-limited dispersal behaviour of juvenile
+    robins (Chapter 6). Whereas the movement of individuals between patches is commonly
+    assumed to improve the persistence of populations, I found that a weaker gap-crossing
+    ability, and therefore reduced landscape connectivity, increased the metapopulation
+    size at equilibrium. This study highlights the complex effects of habitat loss
+    and fragmentation on the distribution of species, but also the limits of excessive
+    model simplification.
+  title: Demography and distribution of the north island robin (petroica longipes)
+    in a fragmented agricultural landscape of new zealand
+  type: thesis
+  genre: PhD thesis
+  keyword: fragmentation-dynamics
+- publisher-place: Abu Dhabi, UAE
+  container-title: 'Soorae, P.S. global re-introduction perspectives: Re-introduction
+    case-studies from around the globe'
+  author:
+  - family: Morgan
+    given: K
+  - family: McArthur
+    given: 'N'
+  - family: Johnston
+    given: R
+  - family: Richard
+    given: 'Y'
+  - family: Armstrong
+    given: D. P
+  id: morgan_using_2010
+  issued:
+    date-parts:
+    - - 2010
+  title: Using translocation of north island robins to counter effects of forest fragmentation
+    in the central north island of new zealand
+  type: chapter
+  publisher: IUCN/SSC Re-introduction Specialist Group
+  keyword: fragmentation-dynamics
+- publisher-place: Berlin
+  page: '72-75'
+  container-title: Kaandorp, j. and ku&\#776;bler, j. (eds.) the algorithmic beauty
+    of seaweeds, sponges and corals
+  author:
+  - family: Abraham
+    given: E.R.
+  id: abraham_morphological_2001
+  issued:
+    date-parts:
+    - - 2001
+  title: Morphological analysis of a branching sponge
+  type: chapter
+  publisher: Springer
+  keyword: sponges
+- note: 95 p
+  container-title: New Zealand Fisheries Assessment Report 2011/7
+  author:
+  - family: Miller
+    given: Sonja L.
+  - family: Abraham
+    given: Edward R.
+  id: miller_characterisation_2011
+  issued:
+    date-parts:
+    - - 2011
+  abstract: 'The fishery for kina in New Zealand is based on a single endemic urchin
+    species (Evechinus chloroticus).This report characterises commercial and customary
+    fisheries for kina, primarily by summarising datafrom the Ministry of Fisheries
+    catch effort database, and by analysing fine-scale data from a voluntaryprogramme
+    that has operated in the southern kina fishery since 2004–05. The analysis is
+    supplemented bya review of literature on sea urchins and invertebrate fisheries,
+    and by information from semi-structuredinterviews with commercial and customary
+    stakeholders participating in the New Zealand kina fishery.Kina were introduced
+    into the Quota Management System (QMS) in October 2002 (South Island),and October
+    2003 (North Island). There are 12 quota management areas (QMAs) for kina, with
+    thecommercial kina catch concentrated in four of those: SUR1B (Auckland - South),
+    SUR4 (ChathamIslands), SUR7A (Marlborough Sounds), and SUR5 (Southland). Kina
+    are commercially harvestedprimarily by hand-gathering while free-diving, but there
+    have also been small dredge fisheries targetingkina in SUR7A and SUR1B.In this
+    report, the kina catch and effort data for dive and dredge fisheries are summarised
+    for the 20fishing years 1989-90 to 2008-09. The kina fishery in New Zealand currently
+    harvests around 750 t ofkina per year, compared with a Total Allowable Commercial
+    Catch (TACC) of 1147 t. A small amount ofkina bycatch (an average of less than
+    5 t per year) is reported from fisheries targeting other species. Thekina industry
+    is small, with 75'
+  title: Characterisation of new zealand kina fisheries
+  type: article-journal
+  keyword: kina, sonja-miller, edward-abraham, dragonfly
+- note: 20 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 63
+  author:
+  - family: Thompson
+    given: Finlay N.
+  - family: Abraham
+    given: Edward R.
+  - family: Berkenbusch
+    given: Katrin
+  id: thompson_dolphin_2010
+  issued:
+    date-parts:
+    - - 2010
+  abstract: Common dolphins (Delphinus delphis) are the most frequentlyobserved caught
+    cetacean in New Zealand trawl fisheries. Between the 1995–96and 2008–09 fishing
+    years, there were 108 common dolphin captures reported byMinistry of Fisheries
+    observers in the mackerel trawl fishery on the westcoast of the North Island.
+    All captures were by vessels over 90 m length. Thepattern of captures was similar
+    across fishing years, with a general increasein fishing effort and a concomitant
+    increase in common dolphin captures overthe 14-year period. In the most recent
+    fishing year, 2008–09, fishing effortwas comparatively lower than in preceding
+    years, and 11 common dolphins werecaught in 4 of 510 tows. Capture events frequently
+    involved the capture ofmore than one individual, with a maximum of 9 common dolphins
+    observed caughtin a single tow.Based on observer data, a statistical model was
+    built that estimated the totalnumber of common dolphin captures in the large vessel
+    mackerel fishery. Atwo-stage Bayesian hurdle model was used, with a logistic generalised
+    linearmodel predicting whether any common dolphin captures occurred on a given
+    tow,and a zero-truncated Poisson distribution to estimate the number of dolphincaptures,
+    given that there was a capture event. The model was also used toexplore which
+    covariates were related to common dolphin captures.There was little effort in
+    the large vessel mackerel fishery before 2001–02,with fewer than 1000 tows per
+    year. The estimated number of common dolphincaptures was also relatively small,
+    with a median of less than 12 capturesannually. As the effort in this fishery
+    expanded to over 2000 tows by 2002–03,there was an initial increase in the estimated
+    number of common dolphins caughtper year to 182 (95
+  title: 'Common dolphin (<span class="nocase">\
+
+    emphDelphinus delphis</span>) bycatch in New Zealand mackerel trawl fisheries,
+    1995–96 to 2008–09'
+  type: article-journal
+  keyword: dragonfly
+- container-title: New Zealand Aquatic Environment and Biodiversity Report No. 79.
+    74 pages
+  author:
+  - family: Abraham
+    given: Edward R.
+  - family: Thompson
+    given: Finlay N.
+  id: abraham_seabirds_02-09
+  issued:
+    date-parts:
+    - - 2011
+  abstract: 'Seabirds are caught during commercial fishing, most frequently by being
+    hooked during longlining, caught in trawl nets, or struck by trawl warps. In order
+    to understand the impact of fishing on seabird species, estimates of the total
+    mortality from fishing activity must be obtained. In New Zealand commercial fisheries,
+    government observers are present on some vessels, and they record any captures
+    of seabirds and other protected species that occur.Generalized linear models were
+    used to estimate total captures of seabirds by trawl and longline methods from
+    the observer data. Captures were estimated for trawl, bottom longline, and surface
+    longline fisheries, for the 2002–03 to 2008–09 fishing years (with some models
+    extending back to 1998–99). The estimates were for fishing within the outer boundary
+    of New Zealand Exclusive Economic Zone (EEZ). Statistical models were built of
+    captures of five species groups: white-capped albatross (Thalassarche steadi),
+    sooty shearwater (Puffinus griseus), white-chinned petrel (Procellaria aequinoctialis),
+    other albatross species, and other birds. The models were fitted using Bayesian
+    methods, with the captures represented as samples from a negative binomial distribution.The
+    total number of seabirds that were estimated to have been caught within New Zealand
+    watersduring the 2008–09 fishing year was 3224 (95'
+  title: Estimated capture of seabirds in new zealand trawl and longline fisheries,
+    2002–03 to 2008–09
+  type: article-journal
+  keyword: dragonfly
+- volume: '5'
+  page: '27-36'
+  container-title: Nature Reviews Drug Discovery
+  author:
+  - family: Berry
+    given: D.A.
+  id: berry2006bayesian
+  issued:
+    date-parts:
+    - - 2006
+  title: Bayesian clinical trials
+  type: article-journal
+  publisher: Nature Publishing Group
+  issue: '1'
+- volume: '141'
+  page: '580-589'
+  container-title: Biological Conservation
+  author:
+  - family: Boulton
+    given: Rebecca L
+  - family: Richard
+    given: Yvan
+  - family: Armstrong
+    given: Doug P
+  id: boulton_influence_2008
+  issued:
+    date-parts:
+    - - 2008
+  abstract: The decline of avian populations in fragmented landscapes is often attributed
+    to a decrease in nest survival rates for species breeding within these habitats.
+    We tested whether fragment size and connectivity, livestock grazing, predator
+    density or invertebrate biomass were correlated with nest survival rates for an
+    endemic New Zealand species, the North Island robin (Petroica longipes). Across
+    three breeding seasons (2002-2005) daily nest survival rate for the 203 robin
+    nests monitored in 15 forest fragments was 0.315 (SE 0.003), with nest survival
+    rates increasing with invertebrate biomass (indexed with pitfall traps) and marginally
+    decreasing with fragment size. Footprint tracking rates for exotic ship rats (Rattus
+    rattus), which are likely to be the key nest predator, varied greatly among fragments,
+    but were not a useful predictor of nest survival. We found no relationship between
+    the number of fledglings per successful nesting attempt and invertebrate biomass.
+    We conclude that fragment size and connectivity does not appear to be negatively
+    influencing robin nest survival, potentially because of the already high impact
+    that mammalian nest predators have in this unique system.
+  title: Influence of food availability, predator density and forest fragmentation
+    on nest survival of new zealand robins
+  type: article-journal
+  issue: '2'
+  keyword: fragmentation-dynamics
+- volume: '4'
+  page: '161-168'
+  container-title: Ecological Complexity
+  author:
+  - family: Abraham
+    given: E.R.
+  id: abraham2007suf
+  issued:
+    date-parts:
+    - - 2007
+  abstract: Sea urchin feeding fronts are a striking example of spatial pattern formation
+    in an ecological system. If it is assumed that urchins are asocial, and that they
+    move randomly, then the formation of these dense fronts is an apparent paradox.
+    The key lies in observations that urchins move further in areas where their algal
+    food is less plentiful. This naturally leads to the accumulation of urchins in
+    areas with abundant algae. If urchin movement is represented as a random walk,
+    with a step size that depends on algal concentration, then their movement may
+    be described by a Fokker-Planck diffusion equation. For certain combinations of
+    algal growth and urchin grazing, travelling wave solutions are obtained. Two dimensional
+    simulations of urchin algal dynamics show that an initially uniformly distributed
+    urchin population, grazing on an alga with a smoothly varying density, may form
+    a propagating front separating two sharply delineated regions. On one side of
+    the front algal density is uniformly low, and on the other side of the front algal
+    density is uniformly high. Bounds on when stable fronts will form are obtained
+    in terms of urchin density and grazing, and algal growth.
+  title: Sea-urchin feeding fronts
+  type: article-journal
+  publisher: Elsevier
+  issue: '4'
+  keyword: theoretical-biology
+- DOI: 10.1175/JPO2754.1
+  volume: '35'
+  page: '1553-1567'
+  container-title: Journal of Physical Oceanography
+  author:
+  - family: Stevens
+    given: C.L.
+  - family: Abraham
+    given: E.R.
+  - family: Moore
+    given: C.M.
+  - family: Boyd
+    given: P.W.
+  - family: Sharples
+    given: J.
+  id: stevens2005oss
+  issued:
+    date-parts:
+    - - 2005
+  abstract: Current-meter, temperature, and microstructure observations of the large-amplitude
+    internal tide shoaling on the continental shelf of the east coast of northern
+    New Zealand show the complexity of the internal kinematics and mixing. The propagation
+    speed of the main internal wave was around 0.3 m s$$^-1$$, and nonstationary time
+    series analysis was used to locate the trailing short-wavelength internal waves
+    in frequency (periods of around 40 min) and tidal-phase space. The average energy
+    dissipation rate (5 x 10$$^-8$$ m2 s$$^-3$$) was an order of magnitude smaller
+    than that observed on the open shelf in other studies, but peaks in dissipation
+    rate were measured to be much greater. The vertical diffusivity of heat was around
+    10$$^-4$$ m2 s$$^-1$$, comparable to, or greater than, other studies. Examples
+    of the scale and sporadic nature of larger mixing events were observed. The behavior
+    was complicated by the nearby steeply shoaling coast of the Poor Knight Islands.
+    Consistent reflected wave energy was not apparent.
+  title: Observations of small-scale processes associated with the internal tide encountering
+    an island
+  type: article-journal
+  publisher: American Meteorological Society
+  issue: '9'
+  keyword: other-ocean
+- volume: '12'
+  page: '373'
+  container-title: 'Chaos: An Interdisciplinary Journal of Nonlinear Science'
+  author:
+  - family: Abraham
+    given: E.R.
+  - family: Bowen
+    given: M.M.
+  id: abraham2002csm
+  issued:
+    date-parts:
+    - - 2002
+  abstract: 'The horizontal stirring properties of the flow in a region of the East
+    Australian Current are calculated. A surface velocity field derived from remotely
+    sensed data, using the maximum cross correlation method, is integrated to derive
+    the distribution of the finite-time Lyapunov exponents. For the region studied
+    (between latitudes 36&\#176;S and 41&\#176;S and longitudes 150&\#176;E and 156&\#176;E)
+    the mean Lyapunov exponent during 1997 is estimated to be\
+
+    lambda<span style="vertical-align:sub;">\
+
+    </span>infty = 4&\#215;10–7s–1. This is in close agreement with the few other
+    measurements of stirring rates in the surface ocean which are available. Recent
+    theoretical results on the multifractal spectra of advected reactive tracers are
+    applied to an analysis of a sea-surface temperature image of the study region.
+    The spatial pattern seen in the image compares well with the pattern seen in an
+    advected tracer with a first-order response to changes in surface forcing. The
+    response timescale is estimated to be 20 days.'
+  title: Chaotic stirring by a mesoscale surface-ocean flow
+  type: article-journal
+  publisher: AIP
+  keyword: stirring
+- ISSN: '1439-0310'
+  DOI: 10.1111/j.1439-0310.2010.01759.x
+  volume: '116'
+  page: '490-497'
+  container-title: Ethology
+  author:
+  - family: Boulton
+    given: Rebecca L
+  - family: Richard
+    given: Yvan
+  - family: Armstrong
+    given: Doug P
+  id: boulton_effect_2010
+  issued:
+    date-parts:
+    - - 2010
+  abstract: Because of finite resources, organisms face conflict between their own
+    self-care and reproduction. This conflict is especially apparent in avian species
+    with female-only incubation, where females face a trade-off between time allocated
+    to their own self-maintenance and the thermal requirements of developing embryos.
+    We recorded incubation behaviour of the New Zealand robin (Petroica longipes),
+    a species with female-only incubation, male incubation feeding and high nest predation
+    rates. We examined how male incubation feeding, ambient temperature and food availability
+    (invertebrate biomass) affected the different components of females’ incubation
+    behaviour and whether incubation behaviour explained variation in nest survival.
+    Our results suggest that male incubation feeding rates of 2.8 per hour affect
+    the female’s incubation rhythm by reducing both on- and off-bout duration, resulting
+    in no effect on female nest attentiveness, thus no support for the female-nutritional
+    hypothesis. The incubation behaviours that we measured did not explain nest survival,
+    despite high nest predation rates. Increased ambient temperature caused an increase
+    in off-bout duration, whereas increased food availability increased on-bout duration.
+    While males play a vital role in influencing incubation behaviour, female robins
+    attempt to resolve the trade-off between their own foraging needs and the thermal
+    requirements of their developing embryos via alternating their incubation rhythm
+    in relation to both food and temperature.
+  title: The effect of male incubation feeding, food and temperature on the incubation
+    behaviour of new zealand robins
+  type: article-journal
+  issue: '6'
+  keyword: fragmentation-dynamics
+- DOI: 10.1038/nature02437
+  volume: '428'
+  page: '549-553'
+  container-title: Nature
+  author:
+  - family: Boyd
+    given: P.W.
+  - family: Law
+    given: C.S.
+  - family: Wong
+    given: CS
+  - family: Nojiri
+    given: Y.
+  - family: Tsuda
+    given: A.
+  - family: Levasseur
+    given: M.
+  - family: Takeda
+    given: S.
+  - family: Rivkin
+    given: R.
+  - family: Harrison
+    given: P.J.
+  - family: Strzepek
+    given: R.
+  - literal: others
+  id: boyd2004daf
+  issued:
+    date-parts:
+    - - 2004
+  abstract: Iron supply has a key role in stimulating phytoplankton blooms in high-nitrate
+    low-chlorophyll oceanic waters. However, the fate of the carbon fixed by these
+    blooms, and how efficiently it is exported into the ocean’s interior, remains
+    largely unknown. Here we report on the decline and fate of an iron-stimulated
+    diatom bloom in the Gulf of Alaska. The bloom terminated on day 18, following
+    the depletion of iron and then silicic acid, after which mixed-layer particulate
+    organic carbon (POC) concentrations declined over six days. Increased particulate
+    silica export via sinking diatoms was recorded in sediment traps at depths between
+    50 and 125 m from day 21, yet increased POC export was not evident until day 24.
+    Only a small proportion of the mixed-layer POC was intercepted by the traps, with
+    more than half of the mixed-layer POC deficit attributable to bacterial remineralization
+    and mesozooplankton grazing. The depletion of silicic acid and the inefficient
+    transfer of iron-increased POC below the permanent thermocline have major implications
+    both for the biogeochemical interpretation of times of greater iron supply in
+    the geological past, and also for proposed geo-engineering schemes to increase
+    oceanic carbon sequestration.
+  title: The decline and fate of an iron-induced subarctic phytoplankton bloom
+  type: article-journal
+  issue: '6982'
+  keyword: fertilisation, edward-abraham
+- volume: '268'
+  page: '1323-1327'
+  container-title: 'Proceedings of the Royal Society B: Biological Sciences'
+  author:
+  - family: Frean
+    given: M.
+  - family: Abraham
+    given: E.R.
+  id: frean2001rsp
+  issued:
+    date-parts:
+    - - 2001
+  abstract: In the children’s game of rock-scissors-paper, players each choose one
+    of three strategies. A rock beats a pair of scissors, scissors beat a sheet of
+    paper and paper beats a rock, so the strategies form a competitive cycle. Although
+    cycles in competitive ability appear to be reasonably rare among terrestrial plants,
+    they are common among marine sessile organisms and have been reported in other
+    contexts. Here we consider a system with three species in a competitive loop and
+    show that this simple ecology exhibits two counter-intuitive phenomena. First,
+    the species that is least competitive is expected to have the largest population
+    and, where there are oscillations in a finite population, to be the least likely
+    to die out. As a consequence an apparent weakening of a species leads to an increase
+    in its population. Second, evolution favours the most competitive individuals
+    within a species, which leads to a decline in its population. This is analogous
+    to the tragedy of the commons, but here, rather than leading to a collapse, the
+    ’tragedy’ acts to maintain diversity.
+  title: Rock-scissors-paper and the survival of the weakest
+  type: article-journal
+  publisher: The Royal Society
+  issue: '1474'
+  keyword: theoretical-biology
+- DOI: 10.1016/j.dsr.2006.08.014
+  volume: '53'
+  page: '1941-1960'
+  container-title: Deep-Sea Research Part I
+  author:
+  - family: Bakker
+    given: D.C.E.
+  - family: Boyd
+    given: P.W.
+  - family: Abraham
+    given: E.R.
+  - family: Charette
+    given: M.A.
+  - family: Gall
+    given: M.P.
+  - family: Hall
+    given: J.A.
+  - family: Law
+    given: C.S.
+  - family: Nodder
+    given: S.D.
+  - family: Safi
+    given: K.
+  - family: Singleton
+    given: D.J.
+  - literal: others
+  id: bakker2006mcp
+  issued:
+    date-parts:
+    - - 2006
+  abstract: The Lagrangian Southern Ocean Iron Release Experiment (SOIREE) allowed
+    study of a gradually evolving iron mediated phytoplankton bloom in water labelled
+    with the inert tracer sulfur hexafluoride, SF6. This article describes a pelagic
+    carbon budget for the mixed layer in SOIREE and assesses the extent to which closure
+    of the budget is achieved. Net community production (NCP) converted 837 mmol m-2
+    of inorganic carbon to organic carbon in 12.0 d after the first iron addition.
+    A large fraction (41
+  title: Matching carbon pools and fluxes for the southern ocean iron release experiment
+    (sOIREE)
+  type: article-journal
+  publisher: Elsevier
+  issue: '12'
+  keyword: fertilisation
+- container-title: New Zealand Aquatic Environment and Biodiversity Report No. 80.
+    170 pages.
+  author:
+  - family: Abraham
+    given: Edward R.
+  - family: Thompson
+    given: Finlay N.
+  id: abraham_summary_08-09
+  issued:
+    date-parts:
+    - - 2011
+  abstract: 'A summary is presented of all captures of seabirds, marinemammals,
+    and turtles during trawl, longline, and setnet fishing within the outerboundary
+    of the New Zealand Exclusive Economic Zone (EEZ), between 1 October1998 and 30
+    September 2009. Ministry of Fisheries observers record captures ofseabirds, marine
+    mammals, and turtles, and these data, along with informationon fishing effort,
+    are used for estimating total captures. Protected speciescaptures reported by
+    fishers are also summarised. In 2008–09, the Ministry ofFisheries observer programme
+    introduced a project to increase observer coverageof inshore fishing, including
+    setnet and trawl fisheries. Captures reported fromthis project were included,
+    greatly increasing observer coverage for inshoretrawl and setnet fisheries.Within
+    this report, captures are divided into the following groups: sootyshearwater (Puffinus
+    griseus), white-chinned petrel (Procellariaaequinoctialis), white-capped albatross
+    (Thalassarche steadi), other al-batrosses, other birds, New Zealand sea lion (Phocarctos
+    hookeri), New Zealandfur seal (Arctocephalus forsteri), dolphins, whales, and
+    turtles. Captures arealso reported by fishery, based on method (trawl, bottom
+    longline, surfacelongline, and setnet), target species, and vessel size for bottom
+    longlinevessels. The report contains time series and maps of the observed andestimated
+    captures.In the 2008–09 fishing year, there were 465, 66, 34, and 21 seabirds
+    observedcaught in trawl, surface longline, bottom longline, and setnet fisheries,respectively.
+    Observed captures in trawl fisheries, surface longline fisheries,and setnet fisheries
+    increased compared to the 2007–08 year, and observedcaptures in bottom longline
+    fisheries decreased. The most frequently caughtseabird species were sooty shearwater,
+    white-chinned petrel, and white-cappedalbatross, with 132, 90, and 81 observed
+    caught, respectively. In addition toseabirds, 92 New Zealand fur seals, 3 New
+    Zealand sea lions, 20 common dolphins(Delphinus delphis), 2 pilot whales (Globicephalus
+    mela), 2 leatherback turtles(Dermochelys coriacea), 1 Hector’s dolphin (Cephalorhynchus
+    hectori), and 1green turtle (Chelonia mydas) were observed caught during 2008–09.Estimates
+    of captures made using statistical modelling were available for somespecies groups
+    and fisheries. These estimates were able to account for somenon-representivity
+    of observer coverge. Model estimates were avaliable forseabirds in trawl, surface
+    longline, large vessel (over 34 m in length) bottomlongline fisheries, and snapper
+    bottom longline fisheries in north-eastern NewZealand. Model-based estimates were
+    also available for common dolphin capturesin the North Island jack mackerel fishery,
+    fur seal captures in trawl fisheries,and sea lion captures in trawl fisheries.
+    In fisheries, areas, and years wheremodel based estimates had not been made, and
+    where there was sufficient observercoverage, a simpler ratio-estimation method
+    was used to estimate totalcaptures.The estimated captures of seabirds in trawl
+    fisheries increased to 1601 (95'
+  title: Summary of the capture of seabirds, marine mammals, andturtles in new zealand
+    commercial fisheries, 1998–99 to 2008–09
+  type: article-journal
+  keyword: dragonfly
+- publisher-place: 7th Seabird Group Conference, Wilhelmshaven, Germany
+  title-short: Habitat selection based on conspecifics
+  author:
+  - family: Boulinier
+    given: Thierry
+  - family: McCoy
+    given: K. D.
+  - family: Richard
+    given: Yvan
+  - family: Tveraa
+    given: T
+  id: boulinier_habitat_2000
+  issued:
+    date-parts:
+    - - 2000
+  abstract: The importance of habitat selection processes and dispersal to the functioning
+    of subdivided populations has been shown by theoretical approaches, but few empirical
+    studies have dealt with the underlying behavioural mechanisms and their ecological
+    implications. Breeding populations of seabirds are naturally subdivided at different
+    spatial scales and represent good models to study these processes. In particular,
+    detailed observations on a kittiwake Rissa tridactyla population in Brittany,
+    France, suggested that individuals use the reproductive success of conspecifics
+    for selecting among potential breeding patches. In particular, failed breeders
+    and young prospecting birds were suspected to be attracted successful areas. The
+    observational data used nevertheless did not permit to ascertain the causal nature
+    of the associations observed. The aim of the present work was to test experimentally
+    several predictions of this hypothesis. Specifically, we manipulated the local
+    reproductive success of kittiwakes on a set of study plots in order to test the
+    behavioural responses of the birds in terms of attendance of local breeders and
+    prospecting individuals. The experiment was carried out on the island of Horn&\#248;ya,
+    Norway, and local success was manipulated by reducing or increasing brood size
+    during incubation on a series of replicated plots. Lower attendance of local breeders
+    following their breeding failure and lower prospecting by birds that did not breed
+    on the plot was predicted for plots with reduced local reproductive success. Conversely,
+    we predicted higher attendance of failed breeders and prospectors on plots where
+    a high success was maintained. We also predicted that a higher proportion of failed
+    breeders from unsuccessful plots would be recorded prospecting for sites compared
+    to failed breeders from successful plots. Finally, behavioural responses were
+    expected to be stronger on isolated cliffs compared to plots adjacent to productive
+    areas. Our results are discussed in relation to factors determining heterogeneity
+    among individuals, nest site availability and patch quality at different scales.
+    Understanding the behavioural mechanisms behind differential dispersal and recruitment
+    among breeding patches is crucial for studying the dynamics of subdivided populations
+    and has direct conservation implications for species like seabirds.
+  title: 'Habitat selection based on conspecifics: Local reproductive success affects
+    attendance and prospecting of future potential breeders'
+  type: paper-conference
+  keyword: habitat-selection
+- volume: '407'
+  page: '727-730'
+  container-title: Nature(London)
+  author:
+  - family: Abraham
+    given: E.R.
+  - family: Law
+    given: C.S.
+  - family: Boyd
+    given: P.W.
+  - family: Lavender
+    given: S.J.
+  - family: Maldonado
+    given: M.T.
+  - family: Bowie
+    given: A.R.
+  id: abraham2000isd
+  issued:
+    date-parts:
+    - - 2000
+  abstract: The growth of populations is known to be influenced by dispersal, which
+    has often been described as purely diffusive. In the open ocean, however, the
+    tendrils and filaments of phytoplankton populations provide evidence for dispersal
+    by stirring. Despite the apparent importance of horizontal stirring for plankton
+    ecology, this process remains poorly characterized. Here we investigate the development
+    of a discrete phytoplankton bloom, which was initiated by the iron fertilization
+    of a patch of water (7 km in diameter) in the Southern Ocean. Satellite images
+    show a striking, 150-km-long bloom near the experimental site, six weeks after
+    the initial fertilization. We argue that the ribbon-like bloom was produced from
+    the fertilized patch through stirring, growth and diffusion, and we derive an
+    estimate of the stirring rate. In this case, stirring acts as an important control
+    on bloom development, mixing phytoplankton and iron out of the patch, but also
+    entraining silicate. This may have prevented the onset of silicate limitation,
+    and so allowed the bloom to continue for as long as there was sufficient iron.
+    Stirring in the ocean is likely to be variable, so blooms that are initially similar
+    may develop very differently.
+  title: Importance of stirring in the development of an iron-fertilized phytoplankton
+    bloom
+  type: article-journal
+  publisher: Nature Publishing
+  issue: '6805'
+  keyword: stirring
+- volume: '5'
+  page: '117-121'
+  container-title: Evolutionary Computation, IEEE Transactions on
+  author:
+  - family: Frean
+    given: MR
+  - family: Abraham
+    given: ER
+  id: frean2001vms
+  issued:
+    date-parts:
+    - - 2001
+  abstract: The Prisoner’s Dilemma (PD) involves contests between two players, and
+    may naturally be played on a spatial grid using voter model rules. In the model
+    of spatial PD discussed here, the sites of a 2 dimensional lattice are occupied
+    by strategies. At each time-step a site is chosen to play a PD game with one of
+    its neighbors. The strategy of the chosen site then invades its neighbor with
+    a probability which is proportional to the pay-off from the game. Using results
+    from the analysis of voter models, it is shown that with simple linear strategies
+    this scenario results in the long-term survival of only one strategy. If three
+    non-linear strategies have a cyclic dominance relation between one-another, then
+    it is possible for relatively cooperative strategies to persist indefinitely.
+    With the voter model dynamics, however, the average level of cooperation decreases
+    with time if mutation of the strategies is included. Spatial effects are not in
+    themselves sufficient to lead to the maintenance of cooperation.
+  title: A voter model of the spatial prisoner’s dilemma
+  type: article-journal
+  issue: '2'
+  keyword: theoretical-biology
+- DOI: 10.3354/meps259029
+  volume: '259'
+  page: '29-45'
+  title-short: Physical controls on phytoplankton physiology and production at a shelf
+    sea front
+  container-title: Marine Ecology Progress Series
+  author:
+  - family: Moore
+    given: C.M.
+  - family: Suggett
+    given: D.
+  - family: Holligan
+    given: P.M.
+  - family: Sharples
+    given: J.
+  - family: Abraham
+    given: E.R.
+  - family: Lucas
+    given: M.I.
+  - family: Rippeth
+    given: T.P.
+  - family: Fisher
+    given: N.R.
+  - family: Simpson
+    given: J.H.
+  - family: Hydes
+    given: D.J.
+  id: moore2003pcp
+  issued:
+    date-parts:
+    - - 2003
+  abstract: 'Observations of phytoplankton physiology collected using a fast repetition-rate
+    fluorometer (FRRF) in the vicinity of a shelf-sea tidal-mixing front are presented.
+    These data are combined with more traditional 14C-based measurements and observations
+    of environmental parameters, including estimates of turbulent dissipation rates,
+    in order to investigate the influence of physical forcing on the productivity
+    of the system. Low nutrient concentrations on the stratified side of the front
+    result in a reduction of photosynthetic efficiency. Conversely, the high degree
+    of vertical mixing on the mixed side of the front constrains the ability of phytoplankton
+    to adjust their photosynthetic apparatus to the ambient irradiance field. Redistribution
+    of phytoplankton biomass and variations in physiological parameters also result
+    from the spring-neap tidal cycle. FRRF- and 14C-derived physiological measurements
+    are compared in the context of environmental gradients in the region. A strong
+    correlation was found between independently measured functional absorption cross-sections
+    (\
+
+    sigma<span style="vertical-align:sub;">PSII</span>) and maximal photosynthetic
+    rates (P\*max). Such a relationship was unlikely to have been causative and may
+    have resulted from shifts in the balance between light-harvesting and carbon fixation
+    across the front. The association of changes in P\*max with variations in\
+
+    sigma<span style="vertical-align:sub;">PSII</span> provided the basis for the
+    development of an empirical model, specific to the system and time of study, which
+    utilised FRRF data to extrapolate between primary productivity rates measured
+    at fixed sites. When applied to high resolution cross-frontal data, the model
+    suggested small-scale variations in productivity related to both spatial and temporal
+    physical forcing including the spring-neap cycle.'
+  title: 'Physical controls on phytoplankton physiology and production at a shelf
+    sea front: A fast repetition-rate fluorometer based field study'
+  type: article-journal
+  keyword: other-ocean
+- note: 24 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 36
+  author:
+  - family: Thompson
+    given: Finlay N.
+  - family: Abraham
+    given: Edward R.
+  id: thompson_dolphin_2009
+  issued:
+    date-parts:
+    - - 2009
+  abstract: In the 12 years from 1 October 1995 to 30 September 2007, atotal of 107
+    dolphin captures were reported by Ministry of Fisheriesobservers in trawl and
+    longline fisheries within New Zealand’s ExclusiveEconomic Zone. These captures
+    included 80 common dolphins, 9 pilot whales,and 7 dusky dolphins that were reported
+    killed in trawl fisheries. In longlinefisheries over the same period, eight dolphins
+    were captured and releasedalive, with one common dolphin and two pilot whales
+    reported killed. Therehave been few observations in inshore trawl fisheries, and
+    no data wereavailable from setnet fisheries. Hector’s dolphin captures have previouslybeen
+    reported from both setnet and inshore trawl fisheries, but the observerdatabase
+    does not contain enough information to estimate the captures ofeither Hector’s
+    or Maui’s dolphins.The jack mackerel trawl fishery, operating off the west coast
+    of the NorthIsland, was responsible for 91
+  title: Dolphin bycatch in New Zealand trawl fisheries, 1995–96 to 2006–07
+  type: article-journal
+  keyword: dragonfly
+- author:
+  - family: Mansfield
+    given: Richard
+  id: mansfield-stability-2006
+  issued:
+    date-parts:
+    - - 2006
+  title: Stability and evolution in rock-paper-scissors ecologies
+  type: thesis
+  genre: PhD thesis
+  publisher: Victoria University of Wellington
+- author:
+  - family: Abraham
+    given: Edward R.
+  id: abraham_mincing_2010
+  issued:
+    date-parts:
+    - - 2010
+  abstract: Results are presented from a repeat of previous mincing experiments, conducted
+    during two trips, primarily targeting hoki, on the east coast of the South Island
+    of New Zealand in early 2008. As in the earlier experiments, the numbers of seabirds
+    behind the vessel were counted, and the response of these counts to different
+    treatments of the waste stream was determined. The machinery used for macerating
+    the offal was developed specifically for the vessel used, and the protocol was
+    modified so that more data could be collected. This experiment continues a series
+    of work aimed at reducing the bycatch of seabirds in New Zealand fisheries, including
+    studies of the efficacy of mitigation and previous trials of different offal management
+    strategies.
+  title: Mincing offal to reduce the attendance of seabirds at trawlers.
+  type: manuscript
+  publisher: Unpublished report prepared by Dragonfly for the Department of Conservation,
+    Wellington, New Zealand. 29 pages.
+  keyword: dragonfly
+- volume: '391'
+  page: '577-580'
+  container-title: Nature
+  author:
+  - family: Abraham
+    given: Edward R
+  id: abraham1998gpp
+  issued:
+    date-parts:
+    - - 1998
+  abstract: Diffusive processes are often used to represent the formation of spatial
+    patterns in biological systems. Here I show how patchiness may be generated in
+    planktonic ecosystems through nondiffusive advection. Plankton distributions in
+    oceanic surface waters can be characterized by the spectra of concentrations obtained
+    along ship transects. Such spectra are inevitably found to have a power-law formover
+    horizontal scales ranging from 1 to 100km. Phytoplankton have distributions similar
+    to those of physical quantities such as sea surface temperature, with much less
+    variability at shorter length scales. In contrast, zooplankton density may be
+    almost as variable at short scales as long ones. Distributions of this form are
+    generated in a model of the turbulent stirring of coupled phytoplankton and zooplankton
+    populations. The characteristic spatial patterns of the phytoplankton and zooplankton
+    are a consequence of the timescales of their response to changes in their environment
+    caused by turbulent advection.
+  title: The generation of plankton patchiness by turbulent stirring
+  type: article-journal
+  issue: '6667'
+  keyword: stirring
+- title-short: Mincing and mealing
+  author:
+  - family: Abraham
+    given: Edward R.
+  id: abraham_mincing_2008
+  issued:
+    date-parts:
+    - - 2008
+  abstract: Recent work aimed at reducing the capture of seabirds on trawlwarps has
+    shown that warp strikes are associated with the discharge of wastewhile fishing.
+    Offal management is therefore a key measure for reducing thisincidental catch.
+    An experiment to test the effect of two offal managementstrategies on the numbers
+    of seabirds attending a fishing trawler was carriedout during September - October,
+    2006. The two treatments were (1) sending alloffal and waste to the meal plant,
+    so that discharge was reduced to sumpwater, and (2) passing all waste through
+    a mincer, with 25mm holes in themincing plate, before discharging it. The two
+    treatments were compared with acontrol, where all waste was directly discharged.
+    To determine the response to the treatments, bird numbers were counted in a semicircular
+    sweep of 40mradius, centered on the middle of the stern of the vessel and extendingbehind
+    it. Birds were counted in five species groups (large albatross, smallalbatross,
+    giant petrel, shearwaters and others, cape petrels) and threebehavioural categories
+    (flying, sitting and feeding). The trial covered 21days, with 7 days of each of
+    the two treatments and the control. During theexperiment the vessel fished for
+    hoki off the east coast of the South Island,and also on the Stewart Snares shelf.
+    The mincing treatment did not significantly the numbers of birds within the count
+    area, with the exceptionof feeding large albatross (Diomedea spp.). When the waste
+    was mealed,numbers of feeding birds reduced markedly. The effect was most pronounced
+    forthe smaller albatross (Thalassarche spp.). Within this group, the numbers offeeding
+    birds reduced to 5.3
+  title: 'Mincing and mealing: A test of offal management strategies to reduce interactions
+    between seabirds and trawl vessels'
+  type: manuscript
+  publisher: Unpublished report prepared for the Department of Conservation, Wellington,
+    New Zealand.
+  keyword: dragonfly
+- author:
+  - family: Abraham
+    given: Edward R.
+  - family: Middleton
+    given: David A. J.
+  - family: Waugh
+    given: Susan M.
+  - family: Pierre
+    given: Johanna P.
+  - family: Cleal
+    given: John
+  - family: Walker
+    given: Nathan
+  - family: 'Schr\
+
+      "oder'
+    given: Caren
+  id: abraham_fleet_2008
+  issued:
+    date-parts:
+    - - 2008
+  title: A fleet scale experimental comparison of devices used for reducing the incidental
+    capture of seabirds on trawl warps
+  type: manuscript
+  publisher: submitted to the New Zealand Journal of Marine; Freshwater Research
+  keyword: dragonfly
+- volume: '33'
+  page: '40-51'
+  container-title: New Zealand Journal of Ecology
+  author:
+  - family: Lewis
+    given: R. M
+  - family: Armstrong
+    given: D. P
+  - family: Joy
+    given: M. K
+  - family: Richard
+    given: Y.
+  - family: Ravine
+    given: D.
+  - family: Berggren
+    given: A.
+  - family: Boulton
+    given: R. L
+  id: lewis_using_2009
+  issued:
+    date-parts:
+    - - 2009
+  abstract: Artificial nests are frequently used to assess factors affecting survival
+    of natural bird nests. We tested the potential for artificial nests to be used
+    in a novel application, the prediction of nest predation rates at potential reintroduction
+    sites where exotic predators are being controlled. We collected artificial nest
+    data from nine sites with different predator control regimes around the North
+    Island of New Zealand, and compared the nest survival rates with those of North
+    Island robin (Petroica longipes) nests at the same sites. Most of the robin populations
+    had been reintroduced in the last 10 years, and were known to vary in nest survival
+    and status (increasing/stable or declining). We derived estimates of robin nest
+    survival for each site based on Stanley estimates of daily survival probabilities
+    and the known incubation and brooding periods of robins. Estimates of artificial
+    nest survival for each site were derived using the known fate model in MARK. We
+    identified the imprints on the clay eggs in the artificial nests, and obtained
+    different estimates of artificial nest survival based on imprints made by different
+    potential predators. We then compared the value of these estimates for predicting
+    natural nest survival, assuming a relationship of the form s = alpha p super(
+    beta ), where s is natural nest survival and p is artificial nest survival. Artificial
+    nest survival estimates based on imprints made by rats (Rattus spp.) and brushtail
+    possums (Trichosurus vulpecula) were clearly the best predictors (based on AICc),
+    and explained 64\
+  title: Using artificial nests to predict nest survival at reintroduction sites
+  type: article-journal
+  issue: '1'
+  keyword: fragmentation-dynamics
+- volume: '31'
+  page: '191-200'
+  container-title: New Zealand Journal of Marine and Freshwater Research
+  author:
+  - family: Abraham
+    given: E.R.C.
+  id: abraham1997smw
+  issued:
+    date-parts:
+    - - 1997
+  abstract: Seiche currents were observed in Wellington Harbour, New Zealand, with
+    an Acoustic Doppler Current Profiler (ADCP). A 600 kHz Broad-Band ADCP was deployed
+    on the sea bed in Evans Bay in an upwards looking configuration for 20 days. The
+    measured seiche periods were 159, 26, 17.3, and 8.3 min and there was evidence
+    for seiching at periods of 15.8 and 14.7 min. These observations are in close
+    agreement with the previous predictions of a finite-difference numerical model.
+    The seiching occurred during periods of wind with speeds in excess of 10 m s$$^-1$$.
+    The seiches were found to be barotropic.
+  title: Seiche modes of wellington harbour, new zealand
+  type: article-journal
+  issue: '2'
+  keyword: other-ocean
+- volume: '69'
+  page: 051913 (6 pages)
+  container-title: Physical Review E
+  author:
+  - family: Frean
+    given: M.R.
+  - family: Abraham
+    given: E.R.
+  id: frean2004aae
+  issued:
+    date-parts:
+    - - 2004
+  abstract: The evolutionary persistence of symbiotic associations is a puzzle. Adaptation
+    should eliminate cooperative traits if it is possible to enjoy the advantages
+    of cooperation without reciprocating - a facet of cooperation known in game theory
+    as the Prisoner’s Dilemma. Despite this barrier, symbioses are widespread, and
+    may have been necessary for the evolution of complex life. The discovery of strategies
+    such as tit-for-tat has been presented as a general solution to the problem of
+    cooperation. However, this only holds for within-species cooperation, where a
+    single strategy will come to dominate the population. In a symbiotic association
+    each species may have a different strategy, and the theoretical analysis of the
+    single species problem is no guide to the outcome. We present basic analysis of
+    two-species cooperation and show that a species with a fast adaptation rate is
+    enslaved by a slowly evolving one. Paradoxically, the rapidly evolving species
+    becomes highly cooperative, whereas the slowly evolving one gives little in return.
+    This helps understand the occurrence of endosymbioses where the host benefits,
+    but the symbionts appear to gain little from the association.
+  title: Adaptation and enslavement in endosymbiont-host associations
+  type: article-journal
+  issue: '5'
+  keyword: theoretical-biology
+- DOI: 10.1029/2002JC001604
+  volume: '108'
+  page: '3272'
+  container-title: J. Geophys. Res
+  author:
+  - family: Law
+    given: CS
+  - family: Abraham
+    given: ER
+  - family: Watson
+    given: AJ
+  - family: Liddicoat
+    given: MI
+  id: law2003ved
+  issued:
+    date-parts:
+    - - 2003
+  abstract: 'Dispersion of the tracer sulphur hexafluoride (SF6) during the Southern
+    Ocean Iron Enrichment Experiment (SOIREE) provided an estimate of vertical exchange
+    at the base of the surface mixed layer (60 m) at 61oS 140oE. Budget analysis confirmed
+    that the SF6 patch was well constrained by surface mapping, with the decline in
+    total SF6 showing good agreement with that predicted from wind speed parameterizations.
+    Two approaches were used to calculate the mean effective vertical diffusivity
+    Kz from the diapycnal transfer of SF6, with complementary error function and second-moment
+    fits to the SF6 depth profiles indicating that Kz was less than 0.3\
+
+    times 10<span style="vertical-align:sup;">-4</span> m<span style="vertical-align:sup;">2</span>
+    s<span style="vertical-align:sup;">-1</span>. This result was examined using a
+    three-dimensional diffusion model that incorporated lateral dispersion and air-sea
+    exchange losses, which confirmed that vertical shear and subpycnocline dispersion
+    did not influence the Kz estimate. Current shear at the base of the mixed layer
+    was generated by wind-driven inertial oscillation, with a decrease in wind speed
+    and increasing stratification in the latter half of the experiment reducing diapycnal
+    transfer of SF6. A compilation was used to examine the potential of both N (Brunt-Vaisala
+    frequency) and Ri (gradient Richardson number) on the basis of parameterizations
+    of Kz in the seasonal pycnocline. Application of Kz to nutrient gradients in the
+    seasonal pycnocline suggests that vertical diffusion represents a significant
+    pathway for silicic acid supply in late summer. Furthermore, use of the mean effective
+    Kz (0.11\
+
+    pm 0.2\
+
+    times 10 <span style="vertical-align:sup;">-4</span> m<span style="vertical-align:sup;">2</span>
+    s<span style="vertical-align:sup;">-1</span>) indicates that vertical diffusion
+    supplies a large proportion of the iron required for new production in this region.'
+  title: Vertical eddy diffusion and nutrient supply to the surface mixed layer of
+    the antarctic circumpolar current
+  type: article-journal
+  keyword: other-ocean
+- container-title: New Zealand Aquatic Environment and Biodiversity Report No. 66.
+    25 pages.
+  author:
+  - family: Thompson
+    given: Finlay N.
+  - family: Abraham
+    given: Edward R.
+  id: thompson_sealions_95-09
+  issued:
+    date-parts:
+    - - 2011
+  abstract: 'In this report, the number of New Zealand sea lion (Phocarctos hookeri)
+    captures in New Zealand’s trawl fisheries are estimated for the 1995–96 to 2008–09
+    fishing years. Ministry of Fisheries observers reported the capture of three New
+    Zealand sea lions (Phocarctos hookeri) during the 2008–09 fishing year. This was
+    the lowest number of observed captures in the period covered by the data. The
+    captures were reported from fisheries around the Auckland Islands: two sea lions
+    were caught by trawlers targeting squid, and one sea lion was caught on a tow
+    targeting scampi. Five sea lion captures were reported by fishers, from vessels
+    targeting squid near the Auckland Islands. Two of these animals were among those
+    reported by the observers, resulting in a total of six reported sea lion captures
+    during the 2008–09 fishing year. From the observed captures, estimates of total
+    captures were made for four different strata: trawl effort targeting squid near
+    the Auckland Islands, other trawl effort near the Auckland Islands, trawl effort
+    targeting southern blue whiting near Campbell Island, and all trawl effort on
+    the southern end of the Stewart-Snares shelf. Estimates of sea lion captures were
+    calculated for each of these strata, and a single total estimate was calculated
+    by combining the output from all strata. The statistical methods used to make
+    the estimates followed those used for estimating captures in 2006–07 and 2007–08.
+    There were 1925 tows targeting squid in the Auckland Island fishery in 2008–09,
+    a 52'
+  title: Estimation of the capture of New Zealand sea lions ( emphPhocarctos hookeri)
+    in trawl fisheries, from 1995–96 to 2008–09
+  type: article-journal
+  keyword: dragonfly
+- title-short: Warp strike summary
+  author:
+  - family: Abraham
+    given: Edward R.
+  id: abraham_warp_2006
+  issued:
+    date-parts:
+    - - 2006
+  title: 'Warp strike summary: Preliminary analysis of observer warp-strike data
+    collected during the 2005 calendar year'
+  type: manuscript
+  publisher: Final Research Report for research project IPA2005/03. (Unpublished report
+    held by Ministry of Fisheries, Wellington)
+  keyword: dragonfly
+- volume: '19'
+  page: '8-9'
+  container-title: The Lobster Newsletter
+  author:
+  - family: MacDiarmid
+    given: A
+  - family: Abraham
+    given: 'E.'
+  - family: McKenzie
+    given: A.
+  - family: Dolan
+    given: T.
+  - family: Goodrich
+    given: M.
+  - family: Butler
+    given: M.
+  id: macdiarmid_individual_2006
+  issued:
+    date-parts:
+    - - 2006
+  title: Individual based, spatially explicit models to explore the mating systems
+    of the red rock lobster jasus edwardsii and the caribbean spiny lobster panulirus
+    argus
+  type: article-journal
+  issue: '1'
+  keyword: theoretical-biology
+- DOI: 10.1007/s002270000479
+  volume: '138'
+  page: '503-510'
+  container-title: Marine Biology
+  author:
+  - family: Abraham
+    given: E.R.
+  id: abraham2001fba
+  issued:
+    date-parts:
+    - - 2001
+  abstract: 'The fractal properties of specimens of a planar branching sponge Raspailia
+    inaequalis (Porifera, Demospongiae) were determined by analysing digitised photographs.
+    The specimens, collected from a single site in northeastern New Zealand, had a
+    wide range of morphology. Three different fractal methods were used: box counting;
+    a method that gives the scaling of branch length with distance from the base of
+    the fan; and an allometric analysis of the dependence of frontal area on specimen
+    size. All three approaches gave a similar value for the fractal dimension. The
+    conjecture hat the specimens have a fractal branching structure is consistent
+    with the results of a Horton analysis of their branching pattern. There is a significant
+    relationship between fractal dimension and number of fingers, which implies that
+    a simple count of the number of fingers is as useful for discriminating between
+    individuals as the more complex fractal analysis. Using this relation, sponges
+    from a site with less water movement are inferred to have a lower fractal dimension.
+    This result is in agreement with the predictions of the Kaandorp model of sponge
+    growth.'
+  title: The fractal branching of an arborescent sponge
+  type: article-journal
+  publisher: Springer
+  issue: '3'
+  keyword: sponges
+- DOI: 10.1016/S0967-0645(01)00007-8
+  volume: '48'
+  page: '2529-2550'
+  container-title: Deep-Sea Research Part II
+  author:
+  - family: Boyd
+    given: PW
+  - family: Abraham
+    given: ER
+  id: boyd2001imc
+  issued:
+    date-parts:
+    - - 2001
+  abstract: Active fluorescence (Fast Repetiton Rate Fluorometry, FRRF) was used to
+    follow the photosynthetic response of the phytoplankton community during the Southern
+    Ocean Iron RElease Experiment (SOIREE). This in situ iron enrichment was conducted
+    in the polar waters of the Australasian-Pacific sector of the Southern Ocean in
+    February 1999. Iron fertilisation of these High Nitrate Low Chlorophyll (HNLC)
+    waters resulted in an increase in the photosynthetic competence (Fv/Fm) of the
+    resident cells from around 0.20 to greater than 0.60 (i.e. close to the theoretical
+    maximum) by days 10/11 of the experiment. Although a significant iron-mediated
+    response in Fv/Fm was detected as early as 24 h after the initial enrichment,
+    the increase in Fv/Fm to double ambient levels took 6 days. This response was
+    five-fold slower that observed in iron enrichments (in situ and in vitro) in the
+    HNLC waters of the sub-polar and Equatorial Pacific. During SOIREE, the photosynthetic
+    competence of the resident phytoplankton in iron-enriched waters increased at
+    dissolved iron levels above 0.2 nM, suggesting that iron limitation was alleviated
+    at this concentration. Increases in Fv/Fm of cells within three algal size classes
+    suggested that all taxa displayed a photosynthetic response to iron enrichment.
+    Other physiological proxies of algal iron stress (such as flavodoxin expression)
+    exhibited different trends than Fv/Fm during the time-course of SOIREE, the relationship
+    between Fv/Fm, algal growth rate and such proxies in Southern Ocean waters is
+    discussed.
+  title: Iron-mediated changes in phytoplankton photosynthetic competence during sOIREE
+  type: article-journal
+  publisher: Elsevier
+  issue: '11-12'
+  keyword: fertilisation
+- DOI: 10.1038/35037500
+  volume: '407'
+  page: '695-702'
+  container-title: Nature
+  author:
+  - family: Boyd
+    given: P.W.
+  - family: Watson
+    given: A.J.
+  - family: Law
+    given: C.S.
+  - family: Abraham
+    given: E.R.
+  - family: Trull
+    given: T.
+  - family: Murdoch
+    given: R.
+  - family: Bakker
+    given: D.C.E.
+  - family: Bowie
+    given: A.R.
+  - family: Buesseler
+    given: KO
+  - family: Chang
+    given: H.
+  - literal: others
+  id: boyd2000mpb
+  issued:
+    date-parts:
+    - - 2000
+  abstract: Changes in iron supply to oceanic plankton are thought to have a significant
+    effect on concentrations of atmospheric carbon dioxide by altering rates of carbon
+    sequestration, a theory known as the iron hypothesis. For this reason, it is important
+    to understand the response of pelagic biota to increased iron supply. Here we
+    report the results of a mesoscale iron fertilization experiment in the polar Southern
+    Ocean, where the potential to sequester iron-elevated algal carbon is probably
+    greatest. Increased iron supply led to elevated phytoplankton biomass and rates
+    of photosynthesis in surface waters, causing a large drawdown of carbon dioxide
+    and macronutrients, and elevated dimethyl sulphide levels after 13 days. This
+    drawdown was mostly due to the proliferation of diatom stocks. But downward export
+    of biogenic carbon was not increased. Moreover, satellite observations of this
+    massive bloom 30 days later, suggest that a sufficient proportion of the added
+    iron was retained in surface waters. Our findings demonstrate that iron supply
+    controls phytoplankton growth and community composition during summer in these
+    polar Southern Ocean waters, but the fate of algal carbon remains unknown and
+    depends on the interplay between the processes controlling export, remineralization
+    and timescales of water mass subduction.
+  title: A mesoscale phytoplankton bloom in the polar southern ocean stimulated by
+    iron fertilization
+  type: article-journal
+  keyword: fertilisation
+- ISSN: '0921-2973'
+  DOI: 10.1007/s10980-010-9488-8
+  volume: '25'
+  page: '1363-1374'
+  title-short: The importance of integrating landscape ecology in habitat models
+  container-title: Landscape Ecology
+  author:
+  - family: Richard
+    given: Yvan
+  - family: Armstrong
+    given: Doug P.
+  id: richard_importance_2010
+  issued:
+    date-parts:
+    - - 2010
+  abstract: Although the role of habitat fragmentation in species declines is well
+    recognised, the effect of habitat quality on species distributions is often studied
+    using presence-absence models that ignore metapopulation dynamics. We compared
+    three approaches to model the presence-absence of North Island robins in 400 sites
+    among 74 fragments of native forest in a 15,000-ha agricultural landscape in New
+    Zealand. The first approach only considered local habitat characteristics, the
+    second approach only considered metapopulation factors (patch size and isolation),
+    and the third approach combined these two types of factors. The distribution of
+    North Island robins was best predicted by patch isolation, as their probability
+    of occurrence was negatively correlated with isolation from neighbouring patches
+    and from the closest major forests, which probably acted as a source of immigrants.
+    The inclusion of habitat factors gave only a slight increase in predictive power
+    and indicated that robins were more likely to occur in areas with tall canopy,
+    tall understory and low density of young trees. We modelled the effect of isolation
+    using an index of functional patch connectivity based on dispersal behaviour of
+    radio-tracked juveniles, and this functional index greatly improved the models
+    in comparison to classical indices relying on Euclidean distances. This study
+    highlights the need to incorporate functional indices of isolation in presence-absence
+    models in fragmented landscapes, as species occurrence can otherwise be a misleading
+    predictor of habitat quality and lead to wrong interpretations and management
+    recommendations.
+  title: 'The importance of integrating landscape ecology in habitat models: Isolation-driven
+    occurrence of north island robins in a fragmented landscape'
+  type: article-journal
+  issue: '9'
+  keyword: fragmentation-dynamics
+- page: '81-92'
+  container-title: Proceedings of the 2nd aCM sIGPLAN symposium on haskell
+  author:
+  - family: Jones Jr
+    given: D.
+  - family: Marlow
+    given: S.
+  - family: Singh
+    given: S.
+  id: jones2009parallel
+  issued:
+    date-parts:
+    - - 2009
+  title: Parallel performance tuning for haskell
+  type: paper-conference
+  publisher: ACM
+- note: 37 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 61
+  author:
+  - family: Thompson
+    given: Finlay N.
+  - family: Abraham
+    given: Edward R.
+  id: thompson_furseals_02-09
+  issued:
+    date-parts:
+    - - 2010
+  abstract: In the 2008–09 fishing year, 72 New Zealand fur seals(Arctocephalus forsteri)
+    were observed captured in commercial trawl fisheriesaround New Zealand. Trawls
+    targeting hoki continued to have the highestnumber of observed captures, with
+    38 (53
+  title: 'Estimation of fur seal (<span class="nocase">\
+
+    emphArctocephalus forsteri</span>) bycatch in New Zealand trawl fisheries, 2002–03
+    to 2008–09'
+  type: article-journal
+  keyword: dragonfly
+- author:
+  - family: Abraham
+    given: Edward R.
+  id: abraham_batching_2009
+  issued:
+    date-parts:
+    - - 2009
+  abstract: Seabirds are attracted to fishing vessels by the discard of wastefrom
+    fishing. While this waste provides an available food source, seabirdsforaging
+    near vessels are at risk of either being caught or struck by thefishing gear.
+    Within New Zealand waters, there were 212 seabirds observedkilled by trawlers
+    during the 2006–07 fishing year. Birds feeding on fishingwaste behind trawlers
+    may be struck by the trawl warps. The mortality fromwarp-strike can be reduced
+    by using mitigation devices, such as tori lines,that deter birds from entering
+    the region between the stern and the warps.While tori lines are partially effective,
+    numbers of warp interactions arereduced to close to zero if no offal or discards
+    are discharged. Strategiesthat reduce the discharge of fishing waste, such as
+    converting it to fish mealand retaining it on board, or holding waste and discharging
+    it while thevessel is not fishing, are expected to greatly reduce mortality. Many
+    vesselshold waste in a container and discard it at intervals, a practice known
+    asbatching, in order to reduce interactions with seabirds.In this study it is
+    determined whether increasing the interval between batcheddischarges of offal
+    reduces the numbers of albatrosses and petrels behind asquid trawl vessel. The
+    experiment was carried out on a trawler fishing forarrow squid (Nototodarus sloanii)
+    in the Stewart-Snares and Auckland Islandsregions, between February 5 and March
+    14, 2008. All fishing waste was held in a4.5 m3 capacity container, and then dumped
+    at prescribed intervals. Batcheswere discharged at either 30 minute, 2 hour, 4
+    hour or 8 hour intervals.Seabirds were counted in 40m and 10m radius sweep zones
+    extending behind thestern of the vessel. Observations were made at 5 minute intervals
+    before,during, and after discharge events. Separate counts were made of large
+    birds(principally albatross species), small birds (principally petrels) and Capepetrel
+    (Daption capense). Cape petrel moved away from the area during the trip,and these
+    data are not considered. A statistical model is fitted to the countdata from the
+    40m sweep zone, using Bayesian methods.The experiment demonstrates a clear relationship
+    between discharge and thenumber of birds close to the stern of the vessel. During
+    discharge events,there was an increase in the total numbers of both large birds
+    and small birds.There was also an increase in the proportion of birds on the water,
+    compared toin the air. The response of the birds to the individual discharge events
+    wasrapid, and when discharge ceased the numbers of birds on the water fell back
+    tothe level associated with sump water faster than could be resolved by the fiveminute
+    observation interval.In each of the different bird groups there were, on average,
+    fewer birdspresent during discharge when there was a four or eight hour interval
+    betweendischarges, compared to when there was a thirty minute interval. During
+    thefour and eight hour treatments, the best estimate was that bird numbers werereduced
+    to between 56
+  title: Batching of waste to reduce seabird numbers behind trawl vessels
+  type: manuscript
+  publisher: Unpublished report prepared for the Department of Conservation, Wellington,
+    New Zealand.
+  keyword: dragonfly
+- page: 66 pages
+  author:
+  - family: Richard
+    given: Yvan
+  - family: Abraham
+    given: Edward R.
+  - family: Filippi
+    given: Dominique
+  id: richard_assessment_2011
+  issued:
+    date-parts:
+    - - 2011
+  abstract: 'We examined the risk of incidental mortality from commercial fishing
+    for 64 seabird species in New Zealand trawl and longline fisheries. For each species,
+    the risk was assessed by comparing the total number of birds potentially killed
+    while fishing against the Potential Biological Removal (PBR) index. This index
+    represents the amount of human-induced mortality a species can sustain without
+    compromising its persistence. The PBR was calculated from the best available information
+    on the species’ demography. Because estimates of seabirds’ demographic parameters
+    and of fisheries related mortality are imprecise, the uncertainty around the demographic
+    and mortality estimates was explicitly considered. This allowed uncertainty in
+    the resulting risk to be calculated, and also allowed the identification of parameters
+    where improved precision would reduce overly large uncertainties. However, not
+    all sources of uncertainty could be included, and the results are best used as
+    a guide in the setting of research and management priorities. In general, both
+    seabird demographic information and the distribution of seabirds within New Zealand
+    waters were poorly known. Amongst the 64 studied species, the black petrel (\
+
+    emphProcellaria parkinsoni) clearly stood out as the species the most at risk
+    from commercial fishing activities within the New Zealand Exclusive Economic Zone.
+    With an average number of potential annual fishing-related fatalities estimated
+    to be almost 10 times higher than the PBR, our study suggests that this species
+    should become the primary subject of more detailed research and management. Seven
+    other species had a number of annual potential fatalities significantly exceeding
+    the PBR, as the 95\'
+  title: Assessment of the risk to seabird populations from new zealand commercial
+    fisheries
+  type: manuscript
+  publisher: Final Research Report for research projects IPA2009-19; IPA2009-20. (Unpublished
+    report held by Ministry of Fisheries, Wellington.). 66 pages.
+  keyword: fisheries-bycatch, dragonfly
+- volume: '39'
+  page: '3-22'
+  container-title: Computers and Electronics in Agriculture
+  author:
+  - family: Marchant
+    given: JA
+  - family: Onyango
+    given: CM
+  id: marchant2003comparison
+  issued:
+    date-parts:
+    - - 2003
+  title: Comparison of a bayesian classifier with a multilayer feed-forward neural
+    network using the example of plant/weed/soil discrimination
+  type: article-journal
+  publisher: Elsevier
+  issue: '1'
+- note: 22 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 33
+  author:
+  - family: Abraham
+    given: Edward R.
+  - family: Thompson
+    given: Finlay N.
+  id: abraham_warp_2009
+  issued:
+    date-parts:
+    - - 2009
+  abstract: Since the 2004–05 fishing year, Ministry of Fisheries observershave been
+    carrying out warp strike observations, recording the numbers ofbirds that are
+    struck by trawl warps during 15 minute observation periods. In2004–05, the observations
+    were aimed at exploring the relation between offaldischarge and warp strikes.
+    In 2005–06, monitoring of mitigation devices wasintroduced and the observations
+    include those made as part of an experimentexploring the efficacy of warp-strike
+    mitigation devices. In 2006– 07,regulations requiring the use of warp mitigation
+    devices were introduced, andthe observations are from ongoing monitoring. In this
+    report, a summary ispresented of all the strike data collected from 2004–05 to
+    2006–07. Theanalysis provides an overview of the strike data and an indication
+    of themain trends. During this period a total of 12 097 strike observations weremade.
+    Most observations (58.8
+  title: Warp strike in New Zealand trawl fisheries, 2004–05 to 2006–07
+  type: article-journal
+  keyword: dragonfly
+- note: 25 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 15
+  author:
+  - family: Abraham
+    given: Edward R.
+  id: abraham_evaluating_2008
+  issued:
+    date-parts:
+    - - 2008
+  abstract: Methods for estimating the incidental catch of sea lions in theSQU 6T
+    squid fishery are compared. A simulate and test technique is used,with a trial
+    model being used to generate synthetic data that has the samestatistical properties
+    as the actual capture data. The estimation approachesare then tried on the simulated
+    data. This has the advantages that thesimulated captures are known exactly, and
+    that large numbers of simulateddata sets may be produced.The trial model is fitted
+    to observer data from the 2000 to 2004 calendaryears. The simulated data are derived
+    by applying the trial model to all thetows from the catch effort database that
+    were within SQU 6T and which targetedsquid, from the same time period. The trial
+    model was a generalised linearmodel (GLM) with fixed effects and with year and
+    vessel within year randomeffects. The tested estimation procedures were a fixed
+    effects GLM, a GLM withboth fixed and random effects, and a simple ratio estimator.
+    The ratio estimateassumes that, within any year, the sea lion strike rate is constant
+    across thefishery.In order to reduce sea lion capture, sea lion exclusion devices
+    (or SLEDs) wereintroduced into the fishery in 2000. Since 2004 they have been
+    used on mosttows. The use of SLEDs has reduced the number of sea lions seen by
+    observers,and consequently the estimation problem has become more difficult. Theperformance
+    of the estimators is compared under assumed levels of SLEDcoverage, ranging from
+    10
+  title: Evaluating methods for estimating the incidental capture of New Zealand sealions
+  type: article-journal
+  keyword: dragonfly
+- container-title: Monthly Notices of the Royal Astronomical Society
+  author:
+  - family: Gregory
+    given: P.C.
+  id: gregory2011bayesian
+  issued:
+    date-parts:
+    - - 2011
+  title: Bayesian re-analysis of the gliese 581 exoplanet system
+  type: article-journal
+  publisher: Wiley Online Library
+- title-short: Strength in numbers
+  author:
+  - family: Brynjolfsson
+    given: 'E.'
+  - family: Hitt
+    given: L.
+  - family: Kim
+    given: H.
+  id: brynjolfsson2011strength
+  issued:
+    date-parts:
+    - - 2011
+  title: 'Strength in numbers: How does data-driven decisionmaking affect firm performance?'
+  type: article-journal
+- author:
+  - family: Abraham
+    given: Edward R.
+  id: abraham_summary_2007
+  issued:
+    date-parts:
+    - - 2007
+  abstract: This report gives a preliminary analysis of data collected to testwhether
+    mincing of waste and discards reduces the number of birds attendingfishing trawlers.
+    The trial was carried out on a Korean trawler, fishing in thesouthern squid fishery
+    during April and March, 2007. The numbers of birds werecounted in 40m and 10m
+    semicircular sweep zones extending behind the vessel.Counts were made of five
+    different species categories (large albatross, smallalbatross, giant petrel, other
+    petrel and shearwater, and cape pigeon). Thebirds were also classified into three
+    behavioural categories (flying, sittingon the water, and actively feeding).Three
+    different offal treatments were used (discharge without any processing,mincing
+    all waste with continuous discharge, and mincing all waste with batcheddischarge).
+    During the trip, the fisheries observer who was implementing theexperimental protocol
+    made a total of 85 observations. Of these, 35 were madewhen the factory was not
+    operating and so when there was no discharge. Theseobservations provide a control,
+    but cannot be used for distinguishing betweenthe different treatments. There were
+    some problems with the minced and batchedprotocols. Early in the voyage there
+    was a high volume of discards which couldnot be batched, as there was insufficient
+    room in the factory. The batchedprotocol was then changed to minced. On one tow,
+    when the vessel was targetinghoki, the bycatch clogged the mincer and an unprocessed
+    treatment wassubstituted. In addition, there were sometimes rocks in the trawl
+    and thesecould not be put through the mincer. Small numbers of rocks could be
+    removed byhand by the crew, but large numbers meant the minced treatment had to
+    bechanged to unprocessed.Despite these problems, the preliminary analysis suggests
+    that there was atreatment effect, with fewer large and small albatross attending
+    the vesselwhen the discharge was minced. The batched treatment also reduced the
+    totalnumbers of large and small albatross within the 40m sweep zone. Thesignificance
+    of these results will be checked by statistical modelling.The observer also made
+    100 strike observations, 50 of trawl warp strikes and 50of strikes on the tori
+    lines. There were no warp strikes observed during thevoyage, and so only the tori
+    line strikes are considered. The effect oftreatment on the strikes is unclear.
+    There are fewer large bird strikes whenthe discharge is minced, but more small
+    bird strikes.
+  title: Summary of data collected during the southern squid-fishery mincing trial
+  type: manuscript
+  publisher: Unpublished report prepared for the Department of Conservation, Wellington,
+    New Zealand.
+  keyword: dragonfly
+- container-title: New Zealand Aquatic Environment and Biodiversity Report No. 64.
+    52 pages.
+  author:
+  - family: Abraham
+    given: Edward R.
+  - family: Berkenbusch
+    given: Katrin N.
+  - family: Richard
+    given: Yvan
+  id: abraham_capture_2010
+  issued:
+    date-parts:
+    - - 2010
+  abstract: Little is known about the nature and extent of incidental captures of
+    seabirds and marine mammals in non-commercial fisheries, either in New Zealand
+    or globally. In New Zealand, participation in recreational fishing is high. A
+    recent survey estimated that 16.5\
+  title: The capture of seabirds and marine mammals in new zealand non-commercial
+    fisheries
+  type: article-journal
+  keyword: fisheries-bycatch, dragonfly
+- ISSN: '1176-9440'
+  note: 39 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 16
+  author:
+  - family: Abraham
+    given: Edward R.
+  - family: Kennedy
+    given: Anthony
+  id: abraham_seabird_2008
+  issued:
+    date-parts:
+    - - 2008
+  abstract: This report contains an analysis of data on seabird warp strike collected
+    by fisheries observers. The survey was carried out in the Auckland Islands squid
+    fishery (SQU6T/1T) over the summer of 2004-2005. The key results are listed below.
+    - 904 good observations were made from 526 separate tows, on 19 different vessels
+    - 789 large bird heavy contacts were observed, at an average rate of 3.5 heavy
+    contacts per hour (c. v. 9
+  title: Seabird warp strike in the southern squid trawl fishery, 2004–05
+  type: article-journal
+  keyword: Bycatch, Seabird, dragonfly
+- DOI: 10.1145/1291201.1291217
+  publisher-place: New York, NY, USA
+  URL: http://doi.acm.org/10.1145/1291201.1291217
+  page: '107-118'
+  ISBN: '978-1-59593-674-5'
+  container-title: Proceedings of the aCM sIGPLAN workshop on haskell workshop
+  author:
+  - family: Li
+    given: Peng
+  - family: Marlow
+    given: Simon
+  - family: Peyton Jones
+    given: Simon
+  - family: Tolmach
+    given: Andrew
+  id: Li:2007:LCP:1291201.1291217
+  issued:
+    date-parts:
+    - - 2007
+  title: Lightweight concurrency primitives for gHC
+  type: paper-conference
+  collection-title: Haskell ’07
+  publisher: ACM
+  keyword: concurrency, haskell, thread, transactional memory
+- container-title: Dr. Dobbs Journal (December 2008), http://www. drdobbs. com
+  author:
+  - family: Swaine
+    given: M.
+  id: swaine2008s
+  issued:
+    date-parts:
+    - - 2008
+  title: It’s time to get good at functional programming
+  type: article-journal
+- container-title: 'ICFP ’09: Proceeding of the 14th aCM sIGPLAN international conference
+    on functional programming'
+  author:
+  - family: Marlow
+    given: Simon
+  - family: Peyton Jones
+    given: Simon
+  - family: Singh
+    given: Satnam
+  id: multicore-ghc-09
+  issued:
+    date-parts:
+    - - 2009
+  title: Runtime support for multicore haskell
+  type: paper-conference
+- DOI: 10.1145/2063384.2063405
+  publisher-place: New York, NY, USA
+  URL: http://doi.acm.org/10.1145/2063384.2063405
+  page: 16:1-16:12
+  ISBN: '978-1-4503-0771-0'
+  title-short: Parallel random numbers
+  container-title: Proceedings of 2011 international conference for high performance
+    computing, networking, storage and analysis
+  author:
+  - family: Salmon
+    given: John K.
+  - family: Moraes
+    given: Mark A.
+  - family: Dror
+    given: Ron O.
+  - family: Shaw
+    given: David E.
+  id: Salmon:2011:PRN:2063384.2063405
+  issued:
+    date-parts:
+    - - 2011
+  title: 'Parallel random numbers: As easy as 1, 2, 3'
+  type: paper-conference
+  collection-title: SC ’11
+  publisher: ACM
+- volume: '97'
+  page: '1082-1096'
+  container-title: Agronomy Journal
+  author:
+  - family: Hong
+    given: N.
+  - family: Weisz
+    given: R.
+  - family: White
+    given: J.G.
+  - family: Gumpertz
+    given: M.L.
+  id: hong2005spatial
+  issued:
+    date-parts:
+    - - 2005
+  title: Spatial analysis of precision agriculture treatments in randomized complete
+    blocks
+  type: article-journal
+  publisher: American Society of Agronomy
+  issue: '4'
+- page: '72-79'
+  container-title: Innovations in Hybrid Intelligent Systems
+  author:
+  - family: Tellaeche
+    given: A.
+  - family: BurgosArtizzu
+    given: X.P.
+  - family: Pajares
+    given: G.
+  - family: Ribeiro
+    given: A.
+  id: tellaeche2007vision
+  issued:
+    date-parts:
+    - - 2007
+  title: A vision-based hybrid classifier for weeds detection in precision agriculture
+    through the bayesian and fuzzy k-means paradigms
+  type: article-journal
+  publisher: Springer
+- volume: '33'
+  collection-number: '1'
+  page: '50-60'
+  container-title: ACM sIGMETRICS performance evaluation review
+  author:
+  - family: Moore
+    given: A.W.
+  - family: Zuev
+    given: D.
+  id: moore2005internet
+  issued:
+    date-parts:
+    - - 2005
+  title: Internet traffic classification using bayesian analysis techniques
+  type: paper-conference
+  publisher: ACM
+- volume: '10'
+  page: '117-130'
+  container-title: Image Processing, IEEE Transactions on
+  author:
+  - family: Vailaya
+    given: A.
+  - family: Figueiredo
+    given: M.A.T.
+  - family: Jain
+    given: A.K.
+  - family: Zhang
+    given: H.J.
+  id: vailaya2001image
+  issued:
+    date-parts:
+    - - 2001
+  title: Image classification for content-based indexing
+  type: article-journal
+  publisher: IEEE
+  issue: '1'
+- container-title: Report, Univeristy of Auckland, Faculty of Engineering
+  author:
+  - family: Cui
+    given: T.
+  - family: Fox
+    given: C.
+  - family: Nicholls
+    given: GK
+  - family: O’Sullivan
+    given: MJ
+  id: cui2011using
+  issued:
+    date-parts:
+    - - 2011
+  title: Using parallel mCMC sampling to calibrate a computer model of a geothermal
+    reservoir
+  type: article-journal
+- volume: '47'
+  page: W10521
+  container-title: Water Resources Research
+  author:
+  - family: Cui
+    given: T.
+  - family: Fox
+    given: C.
+  - family: O’Sullivan
+    given: MJ
+  id: cui2011bayesian
+  issued:
+    date-parts:
+    - - 2011
+  title: Bayesian calibration of a large-scale geothermal reservoir model by a new
+    adaptive delayed acceptance metropolis hastings algorithm
+  type: article-journal
+  publisher: American Geophysical Union
+  issue: '10'
+- title-short: Model selection and multimodel inference
+  author:
+  - family: Burnham
+    given: K.P.
+  - family: Anderson
+    given: D.R.
+  id: burnham2002model
+  issued:
+    date-parts:
+    - - 2002
+  title: 'Model selection and multimodel inference: A practical information-theoretic
+    approach'
+  type: book
+  publisher: Springer Verlag
+- title-short: Continuous integration
+  author:
+  - family: Duvall
+    given: P.
+  - family: Matyas
+    given: S.
+  - family: Glover
+    given: A.
+  id: duvall2007continuous
+  issued:
+    date-parts:
+    - - 2007
+  title: 'Continuous integration: Improving software quality and reducing risk'
+  type: book
+  publisher: Addison-Wesley Professional
+- volume: '35'
+  collection-number: '9'
+  page: '268-279'
+  title-short: QuickCheck
+  container-title: Acm sigplan notices
+  author:
+  - family: Claessen
+    given: K.
+  - family: Hughes
+    given: J.
+  id: claessen2000quickcheck
+  issued:
+    date-parts:
+    - - 2000
+  title: 'QuickCheck: A lightweight tool for random testing of haskell programs'
+  type: paper-conference
+  publisher: ACM
+- volume: '41'
+  page: '129-147'
+  container-title: Aquatic Ecology
+  author:
+  - family: Berkenbusch
+    given: K.
+  - family: Rowden
+    given: A. A.
+  id: berkenbusch_examination_2007
+  issued:
+    date-parts:
+    - - 2007
+  title: <span class="nocase">An examination of the spatial and temporal generality
+    of the influence of ecosystem engineers on the composition of associated assemblages</span>
+  type: article-journal
+- publisher-place: Amsterdam
+  page: '53-81'
+  container-title: Treatise on estuarine and coastal science
+  author:
+  - family: Guitierrez
+    given: J. L.
+  - family: Jones
+    given: C. G.
+  - family: Byers
+    given: J. E.
+  - family: Arkema
+    given: K. K.
+  - family: Berkenbusch
+    given: K.
+  - family: Commito
+    given: J.A.
+  - family: Duarte
+    given: C. M.
+  - family: Hacker
+    given: S.D.
+  - family: Hogarth
+    given: P. J.
+  - family: Lambrinos
+    given: J.G.
+  - family: Palomo
+    given: M. G.
+  - family: Wild
+    given: C.
+  - family: Hendricks
+    given: I.E.
+  id: guitierrez_physical_2011
+  issued:
+    date-parts:
+    - - 2011
+  title: Physical ecosystem engineers and the functioning of estuaries and coasts
+  type: chapter
+  publisher: Elsevier
+  editor:
+  - family: Wolanski
+    given: 'E.'
+  - family: McLusky
+    given: D.
+- volume: '192'
+  page: '249-257'
+  container-title: Marine Ecology Progress Series
+  author:
+  - family: Berkenbusch
+    given: K.
+  - family: Rowden
+    given: A. A.
+  - family: Probert
+    given: P. K.
+  id: berkenbusch_temporal_2000
+  issued:
+    date-parts:
+    - - 2000
+  title: '<span class="nocase">Temporal and spatial variation in macrofauna community
+    composition imposed by ghost shrimp\
+
+    emphCallianassa filholi bioturbation</span>'
+  type: article-journal
+- DOI: 10.1016/j.fishres.2012.07.005
+  volume: 131–133
+  page: '30-38'
+  container-title: Fisheries Research
+  author:
+  - family: Pierre
+    given: J.P.
+  - family: Abraham
+    given: E.R.
+  - family: Richard
+    given: Y.
+  - family: Cleal
+    given: J.
+  - family: Middleton
+    given: D.A.J.
+  id: pierre_controlling_2012
+  issued:
+    date-parts:
+    - - 2012
+  abstract: Responsible fisheries management requires the consideration of fishing
+    effects on ecosystems including non-target species. Extensive distributional overlap
+    between fisheries and seabirds, and the attractiveness of the catch and fishery
+    waste to foraging birds, leads to fatal interactions between seabirds and fishing
+    gear. In a series of experiments, we have investigated measures for managing trawl
+    processing waste to reduce seabird mortalities. Different fisheries generate different
+    volumes of processing waste, and vessel capacities for holding this waste can
+    vary significantly both within and between trawl fleets. Here, we compare seabird
+    responses to discharging trawl fisheries waste ad hoc, as and when waste became
+    available, with responses to discharging waste after holding periods of 30 min
+    and 2 h. Using abundance as a proxy for the risk of mortality, we show that compared
+    to discharging ad hoc, holding waste for two specified periods prior to discharge
+    significantly reduces vessel attendance by small seabirds, and both small and
+    large seabirds, respectively. Drawing on this study and our past work, we provide
+    best practice guidelines for trawler waste management to reduce seabird mortality
+    due to interactions with trawl warps. If the ideal approach of discharging waste
+    only when fishing gear is out of the water is impossible, then discharging waste
+    rapidly in maximally large batches, as infrequently as possible is recommended.
+    Holding periods of 30 min to 8 h may be required to reduce the abundance of small
+    species of seabirds attending vessels. For large seabirds, holding periods of
+    2–4 h are required, and 8 h holding periods are still more effective. Discharging
+    waste as it becomes available is not recommended. Mincing processing waste can
+    reduce the attendance of some seabird species at vessels, especially large albatrosses.
+    However, holding waste is preferred, due to relative simplicity in the mechanics
+    of dealing with waste, lower cost, and greater reductions in seabird abundance.
+    Though developed on trawl fisheries, principles of these guidelines are applicable
+    to any fishery discharging waste attractive to seabirds. While holding fisheries
+    waste can minimise seabird captures on trawl warps worldwide, evidence-based management
+    measures are still required to reduce seabird mortalities in trawl nets.
+  title: Controlling trawler waste discharge to reduce seabird mortality
+  type: article-journal
+- DOI: 10.1016/j.biocon.2010.07.026
+  volume: '143'
+  page: '2779-2788'
+  title-short: Reducing interactions between seabirds and trawl fisheries
+  container-title: Biological Conservation
+  author:
+  - family: Pierre
+    given: Johanna P.
+  - family: Abraham
+    given: Edward R.
+  - family: Middleton
+    given: David A.J.
+  - family: Cleal
+    given: John
+  - family: A. Walker
+    dropping-particle: andNathan
+    given: Rebecca Bird
+  - family: Waugh
+    given: Susan M.
+  id: pierre_effectiveness_2010
+  issued:
+    date-parts:
+    - - 2010
+  abstract: 'Seabird bycatch in trawl fisheries is driven by the attraction of birds
+    to foraging opportunities, i.e., the discharge of catch processing waste and the
+    contents of trawl nets. The risk of seabird captures increases with seabird abundance
+    and exposure to fishing gear. We investigated (1) how quickly seabirds responded
+    to discharges of trawl catch processing waste and (2) whether decreasing numbers
+    of seabirds attended trawlers during processing waste discharge events as the
+    time interval between these events increased. Waste was retained onboard the vessel
+    for four different holding periods (30 min, 2 h, 4 h, 8 h), one of which was applied
+    each day using a randomised block design. We determined seabird responses to batch
+    discharge events after the prescribed holding periods using the abundance of large
+    (albatrossses and giant petrels Macronectes spp.) and small (all other petrels
+    except cape petrels Daption capense, shearwaters and prions) seabirds in a semi-circle
+    of 40 m radius, centred on the stern of the experimental trawler. Seabird responses
+    reflected the type of discharge released: birds moved from the air to the water,
+    as the amount of food available increased from no discharge, through sump discharge
+    to batch discharge. When discharge occurred, seabird abundance increased faster
+    than could be resolved with the 5 min sampling period. However, abundance decreased
+    more slowly over a 10–15 min period after the discharge event. The number of large
+    seabirds attending the vessel during discharge events decreased significantly
+    when waste was held for 4 h. For small birds, significant decrease occurred after
+    8 h. Such holding periods emphasise the tenacity of foraging seabirds, although
+    we have not evaluated any long-term habituation to a particular discharge regime.
+    While holding waste for less than 4 h may not reduce seabird attendance during
+    discharge events, holding for shorter intervals can still reduce bycatch risk,
+    e.g., prior to and during net shooting and hauling.'
+  title: 'Reducing interactions between seabirds and trawl fisheries: Responsesto
+    foraging patches provided by fish waste batches'
+  type: article-journal
+  issue: '11'
+  keyword: dragonfly
+- volume: '425'
+  page: '79-90'
+  container-title: Marine Ecology Progress Series
+  author:
+  - family: Berkenbusch
+    given: K.
+  - family: Probert
+    given: P. K.
+  - family: Nodder
+    given: S. D.
+  id: berkenbusch_comparative_2011
+  issued:
+    date-parts:
+    - - 2011
+  title: <span class="nocase">Comparative biomass of sediment benthos across a depth
+    transect, Chatham Rise, southwest Pacific Ocean</span>
+  type: article-journal
+- volume: '57'
+  page: '1363-1371'
+  container-title: 'Deep Sea Research Part I: Oceanographic Research Papers'
+  author:
+  - family: Leduc
+    given: D.
+  - family: Probert
+    given: P. K.
+  - family: Berkenbusch
+    given: K.
+  - family: Nodder
+    given: S. D.
+  - family: Pilditch
+    given: C. A.
+  id: leduc_abundance_2010
+  issued:
+    date-parts:
+    - - 2010
+  title: Abundance of small individuals influences the effectiveness of processing
+    techniques for deep-sea nematodes
+  type: article-journal
+- volume: '81'
+  page: '123-129'
+  container-title: <span class="nocase">Estuarine, Coastal and Shelf Science</span>
+  author:
+  - family: Mills
+    given: V. S.
+  - family: Berkenbusch
+    given: K.
+  id: mills_seagrass_2009
+  issued:
+    date-parts:
+    - - 2009
+  title: '<span class="nocase">Seagrass (\
+
+    emphZostera muelleri) patch size and spatial location influence infaunal macroinvertebrate
+    assemblages</span>'
+  type: article-journal
+- volume: '273'
+  page: '121-138'
+  container-title: Marine Ecology Progress Series
+  author:
+  - family: Lohrer
+    given: A. M.
+  - family: Thrush
+    given: S. F.
+  - family: Hewitt
+    given: J. E.
+  - family: Berkenbusch
+    given: K.
+  - family: Ahrens
+    given: M.
+  - family: Cummings
+    given: V. J.
+  id: lohrer_terrestrially_2004
+  issued:
+    date-parts:
+    - - 2004
+  title: '<span class="nocase">Terrestrially derived sediment: response of marine
+    macrobenthic communities to thin terrigenous deposits</span>'
+  type: article-journal
+- DOI: 10.1071/MU12002
+  volume: '112'
+  page: '244-254'
+  container-title: Emu
+  author:
+  - family: Pierre
+    given: J.P.
+  - family: Abraham
+    given: E.R.
+  - family: Cleal
+    given: J.
+  - family: Middleton
+    given: D.A.J.
+  id: pierre_reducing_emu_2012
+  issued:
+    date-parts:
+    - - 2012
+  abstract: 'By-catch of seabirds on trawl-fishing gear has been reported worldwide,
+    and is exacerbated by the discharge of fisheries waste. We compared the attraction
+    of seabirds to three forms of fishery waste – unprocessed discharge (offal, fish
+    discards), hashed discharge (smaller chunks passed through a hasher pump) and
+    cutter pump discharge (waste passed through the hasher and a cutter pump to further
+    reduce particle size) – to identify the discharge form that most effectively reduced
+    the risk of seabird by-catch. Seabird responses measured within specified areas
+    astern of the vessel were the abundance of: large albatrosses (Diomedea spp.),
+    small albatrosses and giant-petrels (Thalassarche spp.; Southern Giant-Petrels,
+    Macronectes giganteus; and Northern Giant-Petrels, M. halli), Cape Petrels (Daption
+    capense) and all other procellariid species. Seabirds on the water were less numerous
+    during cutter pump and hashed discharge relative to unprocessed discharge (except
+    small albatrosses – cutter treatment). Also, in some cases, the total number of
+    birds decreased, relative to unprocessed discharge treatments (but not small and
+    large albatrosses – cutter treatment). Particle size may be less important for
+    reducing abundances than temporal discharge patterns, which affected how birds
+    tracked the discharge stream. Manipulating discharge characteristics can reduce
+    seabird attraction to fishing vessels. However, the risk of by-catch remained
+    lowest when no discharging occurred.'
+  title: Reducing effects of trawl fishing on seabirds by limiting foraging opportunities
+    provided by fishery waste
+  type: article-journal
+  issue: '3'
+- DOI: 10.1016/j.fishres.2008.08.014
+  volume: '95'
+  page: '210-219'
+  container-title: Fisheries Research
+  author:
+  - family: Abraham
+    given: Edward R.
+  - family: Pierre
+    given: Johanna P.
+  - family: Middleton
+    given: David A. J.
+  - family: Cleal
+    given: John
+  - family: Walker
+    given: Nathan A.
+  - family: Waugh
+    given: Susan M.
+  id: abraham_effectiveness_2009
+  issued:
+    date-parts:
+    - - 2009
+  abstract: 'The risk of seabird bycatch in trawl fisheries is increased byhigh
+    numbers of seabirds attending vessels to feed on fish waste discharged.We conducted
+    an experimental test of whether mincing fish waste prior to itsdischarge from
+    a factory trawler reduced the number of seabirds attending thevessel.The trial
+    was conducted on a mid-water trawler targeting hoki (Macruronusnovaezelandiae)
+    in New Zealand waters, and the experiment compared threetreatments: 1- discharging
+    ’unprocessed’ waste (fish offal and whole discards), 2- mincing all waste to a
+    small particle size before discharge, or, 3- converting all waste to fishmeal
+    and reducing discharge to sump water.The response to the experimental treatments
+    was determined using seabirdabundance within a 40 m-radius semi-circular area
+    centred on the vessel stern.Mincing reduced the numbers of large albatrosses (Diomedea
+    spp.) feeding asternof the vessel, but had no significant effect on other groups
+    of seabirds.In contrast, reducing discharge to sump water resulted in a significantreduction
+    in numbers of all groups of seabirds. In particular, the abundance ofthe small
+    albatross group (principally Thalassarche spp.), and some smallerprocellarids
+    (e.g. sooty shearwater, Puffinus griseus, and white-chinnedpetrel, Procellaria
+    aequinoctialis), was reduced to less than five percent ofthe number that were
+    within the sweep area when unprocessed discharge wasreleased.While mincing significantly
+    reduced the abundance of large albatrosses at thevessel stern, relatively small
+    numbers of these birds attend trawl vessels inNew Zealand waters and associated
+    bycatch rates are low. In contrast, reducingthe quantity of fish waste discharge
+    by mealing resulted in reduced abundancesof a wide range of seabirds at the vessel.
+    Therefore, compared to mincing, werecommend fish waste retention as a more effective
+    management strategy forreducing seabird bycatch.'
+  title: Effectiveness of fish waste management strategies in reducing seabird attendance
+    at a trawl vessel
+  type: article-journal
+  keyword: dragonfly
+- volume: '341'
+  page: '70-84'
+  container-title: <span class="nocase">Journal of Experimental Marine Biology and
+    Ecology</span>
+  author:
+  - family: Berkenbusch
+    given: K.
+  - family: Rowden
+    given: A. A.
+  - family: Myers
+    given: T. E.
+  id: berkenbusch_interactions_2007
+  issued:
+    date-parts:
+    - - 2007
+  title: Interactions between seagrasses and burrowing ghost shrimps and their influence
+    on infaunal assemblages
+  type: article-journal
+- volume: '238'
+  page: '283-292'
+  container-title: <span class="nocase">Journal of Experimental Marine Biology and
+    Ecology</span>
+  author:
+  - family: Berkenbusch
+    given: K.
+  - family: Rowden
+    given: A. A.
+  id: berkenbusch_factors_1999
+  issued:
+    date-parts:
+    - - 1999
+  title: '<span class="nocase">Factors influencing sediment turnover by the burrowing
+    ghost shrimp\
+
+    emphCallianassa filholi(Decapoda: Thalassinidea)</span>'
+  type: article-journal
+  issue: '2'
+- volume: '34'
+  page: '397-408'
+  container-title: <span class="nocase">New Zealand Journal of Marine and Freshwater
+    Research</span>
+  author:
+  - family: Berkenbusch
+    given: K.
+  - family: Rowden
+    given: A. A.
+  id: berkenbusch_intraspecific_2000
+  issued:
+    date-parts:
+    - - 2000
+  title: '<span class="nocase">Intraspecific burrow plasticity of an intertidal
+    population of\
+
+    emphCallianassa filholi (Crustacea: Decapoda: Thalassinidea) in relation to environmental
+    conditions</span>'
+  type: article-journal
+- note: 58 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 109
+  author:
+  - family: Richard
+    given: Yvan
+  - family: Abraham
+    given: Edward R.
+  id: richard_risk2_2013
+  issued:
+    date-parts:
+    - - 2013
+  abstract: This supplementary information presents a summary of population and distributional
+    data for the 70species included in the \<a href=http://www.dragonfly.co.nz/references/richard<span
+    style="vertical-align:sub;">r</span>isk<span style="vertical-align:sub;">2</span>013.html\>risk
+    assessment\</a\> of the impact of fishing-related mortalities on seabirds breedingin
+    the New Zealand region. For each seabird species included in the risk assessment,
+    the demographicparameters used were the New Zealand population size, the age at
+    first reproduction, and the survivalrate. For species for which no demographic
+    estimates were available, values from proxy species wereused, as indicated with
+    a reference to the data source. Distributional data are presented as maps of theat-sea
+    distribution of each species, with separate maps for the non-breeding and breeding
+    distributions.The distribution of non-breeders was derived from existing maps
+    published by NABIS (National AquaticBiodiversity Information System) and Birdlife
+    International. A single distribution map was generatedwhen the breeding season
+    extended throughout the year. Included in the distributional maps are data ofany
+    incidental captures in commercial trawl, longline and set-net fisheries between
+    the 2006–2007 and2010–2011 fishing years, recorded by fisheries observers.A detailed
+    description of the methods used to derive the data presented here is provided
+    in Section 2 ofthe \<a href=http://www.dragonfly.co.nz/references/richard<span
+    style="vertical-align:sub;">r</span>isk<span style="vertical-align:sub;">2</span>013.html\>risk
+    assessment\</a\>.
+  title: Risk of commercial fisheries to New Zealand seabird populations, 2006–07
+    to 2010–11 – supplementary material
+  type: article-journal
+- container-title: '<span class="nocase">Deep Sea Research Part II: Topical Studies
+    in Oceanography</span>'
+  author:
+  - family: Leduc
+    given: D.
+  - family: Rowden
+    given: A.A.
+  - family: Nodder
+    given: S.D.
+  - family: Berkenbusch
+    given: K.
+  - family: K.Probert
+    given: P.
+  - family: Hadfield
+    given: M.G.
+  id: leduc_kaikoura_2013
+  issued:
+    date-parts:
+    - - 2013
+  title: <span class="nocase">Unusually high food availability in Kaikoura Canyon
+    linked to distinct deep-sea nematode community</span>
+  type: article-journal
+- volume: '27'
+  page: '67-73'
+  container-title: <span class="nocase">New Zealand Journal of Ecology</span>
+  author:
+  - family: Berkenbusch
+    given: K.
+  - family: Rowden
+    given: A. A.
+  id: berkenbusch_ecosystem_2003
+  issued:
+    date-parts:
+    - - 2003
+  title: <span class="nocase">Ecosystem engineering – moving away from “just-so” stories</span>
+  type: article-journal
+- volume: '330'
+  page: '342-355'
+  container-title: <span class="nocase">Journal of Experimental Marine Biology and
+    Ecology</span>
+  author:
+  - family: Grove
+    given: S. L.
+  - family: Probert
+    given: P. K.
+  - family: K. Berkenbusch
+    given: K.
+  - family: Nodder
+    given: S. D.
+  id: grove_distribution_2006
+  issued:
+    date-parts:
+    - - 2006
+  title: <span class="nocase">Distribution of bathyal meiofauna in the region of the
+    Subtropical Front, Chatham Rise, south-west Pacific</span>
+  type: article-journal
+- volume: '136'
+  title-short: Latitudinal variation in the reproductive biology of the burrowing
+    ghost shrimp emphCallianassa filholi (decapoda
+  container-title: Marine Biology
+  author:
+  - family: Berkenbusch
+    given: K.
+  - family: Rowden
+    given: A. A.
+  id: berkenbusch_latitudinal_2000
+  issued:
+    date-parts:
+    - - 2000
+  title: 'Latitudinal variation in the reproductive biology of the burrowing ghost
+    shrimp emphCallianassa filholi (decapoda: Thalassinidea)'
+  type: article-journal
+- note: Final Research Report for research project POP2011–09. (Unpublished report
+    held by the Department of Conservation, Wellington.)
+  author:
+  - family: Richard
+    given: Yvan
+  - family: Perriman
+    given: L.
+  - family: Lalas
+    given: C.
+  - family: Abraham
+    given: Edward R.
+  id: richard_demographic_2013
+  issued:
+    date-parts:
+    - - 2013
+  abstract: In a recent risk assessment, northern royal albatross was identified as
+    one the seabird species most atrisk from incidental captures in commercial fisheries
+    in New Zealand. The uncertainty of the estimatedrisk was large, owing to its sensitivity
+    to the uncertainty surrounding existing estimates of the annualsurvival rate.
+    This highlights the need for accurate demographic measures of this species. Demographicrates,
+    such as the annual survival rate, are generally difficult to estimate for long-lived
+    seabirds such asnorthern royal albatross, because of the length of the study required
+    and the remoteness of colonies.Data from a small population of northern royal
+    albatross (Diomedea sanfordi) that self-established on themainland of New Zealand
+    at Taiaroa Head, provided a unique data set for the estimation of demographicrates.
+    Banding as well as monitoring of individuals has been carried out at the Taiaroa
+    Head colony since1938. Data on the presence/absence of birds, as well as on breeding
+    outcomes, were available for theperiod between 1989–90 and 2011–12, and included
+    2128 annual resightings of 355 banded individualsof known-age.The main goal of
+    the present study was to estimate the annual survival rate of juveniles, pre-breeders,and
+    adults at Taiaroa Head. These rates were estimated simultaneously in a single
+    Bayesian multi-statecapture-recapture model. Several models were fitted to the
+    data, with different levels of complexity.From the most parsimonious model, the
+    overall annual adult survival rate was estimated as 0.95 (95\
+  title: Demographic rates of northern royal albatross at taiaroa head, new zealand
+  type: manuscript
+- author:
+  - family: Richard
+    given: Yvan
+  - family: Abraham
+    given: Edward R.
+  - family: Thompson
+    given: Finlay N.
+  - family: Berkenbusch
+    given: Katrin
+  id: richard_counts_2011
+  issued:
+    date-parts:
+    - - 2011
+  abstract: Many seabird species are experiencing a global decline, with incidental
+    mortalities in commercialfisheries considered one of the main causes. While the
+    high seabird diversity in New Zealand watershas been widely recognised, the distribution
+    of many species remains largely unknown. In addition,current estimates of seabird
+    bycatch within New Zealand’s Exclusive Economic Zone lack distributiondata for
+    the majority of species, with model estimates based on the assumption that seabird
+    distributionsare spatially uniform, at least within large areas. Statistical bycatch
+    models could be greatly improved ifobserved captures could be related to the number
+    of seabirds present around fishing vessels.Since 2004, government observers have
+    recorded the number of seabirds present around commercialfishing vessels in New
+    Zealand waters in a relatively consistent framework. These observer data, fromJanuary
+    2004 to June 2009, were entered into a database and groomed to correct inconsistencies
+    andmistakes made during the data collection. Here, a summary of seabird abundance
+    and distribution data arepresented, including comparisons of observer data with
+    other data sources. Some preliminary explorationof the data is also presented,
+    including its limitations and suggestions to improve the value of datacollected
+    in the future.Furthermore, an Internet website was created to make the dataset
+    publicly available, includingdistribution maps of seabirds by species or species
+    group within New Zealand’s Exclusive EconomicZone.
+  title: Counts of seabirds around commercial fishing vessels within new zealand waters
+  type: manuscript
+  publisher: Unpublished report held by the Department of Conservation, Wellington,
+    New Zealand. 24 pages.
+  keyword: fisheries-bycatch, dragonfly
+- ISSN: '1523-1739'
+  DOI: 10.1111/cobi.12256
+  URL: http://dx.doi.org/10.1111/cobi.12256
+  container-title: Conservation Biology
+  author:
+  - family: Armstrong
+    given: Doug P.
+  - family: Gorman
+    given: Nic
+  - family: Pike
+    given: Rhonda
+  - family: Kreigenhofer
+    given: Brigitte
+  - family: Mcarthur
+    given: Nikki
+  - family: Govella
+    given: Susanne
+  - family: Barrett
+    given: Paul
+  - family: Richard
+    given: Yvan
+  id: armstrong_strategic_2014
+  issued:
+    date-parts:
+    - - 2014
+  title: Strategic rat control for restoring populations of native species in forest
+    fragments
+  type: article-journal
+  keyword: Bayesian hierarchical models, fecundity, predator control, private land,
+    population modeling, survival
+- note: 58 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 109
+  author:
+  - family: Richard
+    given: Yvan
+  - family: Abraham
+    given: Edward R.
+  id: richard_risk_2013
+  issued:
+    date-parts:
+    - - 2013
+  abstract: 'This report presents a risk assessment of the effect offishing-related
+    mortalities on 70 of the seabird species thatbreed in the New Zealand region.
+    The assessment covers allfishing by commercial trawl, bottom-longline, surface-longline,and
+    set-net fisheries within New Zealand’s Exclusive EconomicZone. The risk was defined
+    as the ratio of the estimated annualnumber of fatalities of birds due to bycatch
+    in fisheries to thePotential Biological Removal (PBR), which is an estimate of
+    thenumber of seabirds that may be killed without causing thepopulation to decline
+    below half the carrying capacity. The riskratio for each seabird species is an
+    estimate of the ratiobetween the number of fatalities due to fisheries bycatch,
+    andthe PBR.When estimating the PBR for each species, a recovery factor, f ,should
+    be specified. This recovery factor is typically between0.1 and 0.5. It allows
+    some protection against errors inestimating the PBR, and a lower value allows
+    for a shorterrecovery time for depleted populations. In this report, the riskratio
+    is calculated using PBR1: the value of the PBR calculatedwith f = 1. The values
+    of the recovery factor for each specieswill be specified at a later stage. When
+    interpreting the riskratio, it should be borne in mind that species with risk
+    ratiosless than one may still be considered at risk, depending on thevalue of
+    the recovery factor.Estimation of annual fatalities was based on seabird capturesreported
+    by observers between the 2006–07 and 2010–11 fishingyears. From these captures,
+    the total observable captures wereestimated (the number of seabird captures that
+    would have beenreported had an observer been on every fishing vessel). Not allseabirds
+    that are killed are brought on-board vessels, and theobservable captures were
+    multiplied by a factor to account forthese cryptic mortalities. The cryptic multiplier
+    varied between1.30 and 8.66, depending on fishing method and seabird species.This
+    study replaces a previous seabird risk assessment that useda similar methodology.
+    Demographic parameters and distributionswere updated for some species, the methods
+    used for estimatingobservable captures were changed, and calculation of the PBR
+    wasmodified to include an additional calibration factor. Because ofthe number
+    of methodological changes that were made, changes inrisk between the two assessments
+    should not be taken as being dueto changes in the fisheries.In total, there were
+    15 100 (95'
+  title: Risk of commercial fisheries to New Zealand seabird populations, 2006–07
+    to 2010–11
+  type: article-journal
+- note: 30 p
+  container-title: New Zealand Aquatic Environment and Biodiversity Report No. 108
+  author:
+  - family: Richard
+    given: Yvan
+  - family: Abraham
+    given: Edward R.
+  id: richard_application_2013
+  issued:
+    date-parts:
+    - - 2013
+  abstract: The Potential Biological Removal (PBR) approach was developed inresponse
+    to the United States Marine Mammal Protection Act, toidentify populations experiencing
+    human-caused mortality atlevels that could result in population depletion. The
+    PBR iscalculated from the maximum population growth rate (rmax) anda lower estimate
+    of the population size (Nmin), as PBR = rmax Nmin f, where f (typically between
+    0.1 and 0.5) is a“recovery factor” that may be set lower to allow a populationto
+    recover faster, or to provide additional protection to thepopulation. If the human-caused
+    mortalities are less than thePBR, then a depleted population will be able to recover
+    so that,given sufficient time, it has a 95
+  title: <span class="nocase">Application of Potential Biological Removal methods
+    to seabird populations</span>
+  type: article-journal
+...

@@ -62,7 +62,6 @@
                 }
             }
 
-
             p {
                 @include span-columns(7 of 10);
                 @media screen and (max-width: $no-pictures-break) {
@@ -83,6 +82,7 @@
                 }
             }
         }
+
         .level2 > p:nth-child(2) {
             color: $date-color;
             font-size: $date-font-size;
