@@ -51,7 +51,7 @@ The seabird count data may be accessed [here](http://data.dragonfly.co.nz/seabir
 
 ![](/images/xci_all_all_1-180x60.png)
 
-## New Zealand sealion tag-resight data
+## [New Zealand sealion tag-resight data](http://data.dragonfly.co.nz/nzsl-demographics/)
 
 April 20 • 2013
 
