@@ -38,9 +38,9 @@ case "$MODE" in
             `cat dfweb_docker/stylesheets/.dockeri` watch)
 
         # build the dragonweb haskell binary
-        docker run --rm -it -v `pwd`/haskell:/work/haskell \
+        docker run --rm -w /work -v `pwd`/haskell:/work/haskell \
             --volumes-from `cat dfweb_docker/buildcache/.dockerdc` \
-            `cat dfweb_docker/haskell-build/.dockeri`
+            `cat dfweb_docker/haskell-build/.dockerip`
 
         # Finally start the actual develop container
         echo "--> the website is at http://localhost:8000"
