@@ -1,5 +1,5 @@
 REGISTRY := docker.dragonfly.co.nz
-DOCKER_VERSION := 1.3
+DOCKER_VERSION := 1.4.1
 
 DEPS := debian/nz debian/hakyll node/nz ruby/bourbon
 PULLS := $(addsuffix /pull,$(DEPS))
