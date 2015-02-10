@@ -28,7 +28,7 @@ clean:
 dfweb_docker/develop/dragonflyweb: dfweb_docker/haskell-build/.dockerip \
 	dfweb_docker/buildcache/.dockerdc \
 	haskell/**/*.hs haskell/*.hs
-	docker run --rm --volumes-from $$(cat dfweb_docker/buildcache/.dockerdc) \
+	docker run --rm -u $$(id -u):$$(id -g) --volumes-from $$(cat dfweb_docker/buildcache/.dockerdc) \
 		-v $(pwd)/haskell:/work/haskell $$(cat $<)
 
 dfweb_docker/develop/.dockeri: .deps/debian/nz/latest dfweb_docker/buildcache/.dockerdc
