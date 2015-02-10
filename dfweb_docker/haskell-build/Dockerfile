@@ -11,4 +11,4 @@ RUN cabal update && \
     cabal install --global --only-dependencies && \
     rm -r /root/.cabal
 
-CMD ["make"]
+VOLUME ["/dist", "/var/cache/dragonflyweb"]
