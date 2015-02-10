@@ -1,7 +1,7 @@
 ---
 title: Dragonfly featured on ABC and BBC radio programmes
-banner-image: /posts/2014-02-14-dragonfly-featured-ABC-and-BBC/sounds-image.jpg
-banner-text: Marlborough sounds
+banner-image: /posts/2014-02-14-dragonfly-featured-ABC-and-BBC/dave-and-jules.jpg
+banner-text: Dave Baker and Julie Hills (MPI) pāua fishing in Cook Strait
 ---
 Dragonfly Science's work for the Pāua Industry Council, using data
 loggers to manage the pāua fishery, was featured on the ABC Off Track
