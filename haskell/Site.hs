@@ -47,6 +47,15 @@ main = hakyllWith config $ do
     -- Blog section
     Blog.rules
 
+    -- Case studies
+    match "case-studies/*.html" $ do
+        route idRoute
+        compile $ do
+            ctx <- baseContext "casestudies"
+            scholmdCompiler
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
+
     -- Publications section (not much here yet)
     match "pages/publications.md" $ do
         route $ constRoute "publications/index.html"
