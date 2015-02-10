@@ -1,7 +1,6 @@
-FROM docker.dragonfly.co.nz/debian/nz
+FROM debian
 MAINTAINER chris@dragonfly.co.nz
 
-# VERSION 0.3
-
 VOLUME /var/cache/dragonflyweb
+
 
