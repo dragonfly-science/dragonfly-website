@@ -13,7 +13,7 @@ case "$1" in
         echo "run ./run.sh pull-deps to get the latest version of the build dockers"
         exit 0
         ;;
-    develop|pull-deps|ghci)
+    develop|pull-deps|ghci|deploy)
         ;;
     *)
         echo $"Usage: $0 {develop|pull-deps|ghci|help}"
@@ -24,14 +24,17 @@ case "$MODE" in
     develop)
         # Start the javascript watcher
         SCRIPTS_WATCH=$(docker run -dt -u `id -u`:`id -g` \
-            -v `pwd`/content/scripts:/work/scripts \
-            -v `pwd`/content/assets:/work/assets \
-            dragonflyscience/website-scripts watch)
+            -v $PWD/content/scripts:/work/scripts \
+            -v $PWD/content/assets:/work/assets \
+            dragonflyscience/website-scripts bash -c "ls scripts/*.js | \
+                entr -r bash -c 'compile-modules convert scripts/dragonfly.js > assets/dragonfly.js'")
         # start the stylesheet watcher
         STYLESHEETS_WATCH=$(docker run -dt -u `id -u`:`id -g` \
-            -v `pwd`/content/stylesheets:/work/stylesheets \
-            -v `pwd`/content/assets:/work/assets \
-            dragonflyscience/website-sass watch)
+            -v $PWD/content/stylesheets:/work/stylesheets \
+            -v $PWD/content/assets:/work/assets \
+            dragonflyscience/website-sass \
+                bash -c "find stylesheets -name *.scss | \
+                    entr -r scss stylesheets/dragonfly.scss assets/dragonfly.css")
         
         docker inspect dragonfly-website >/dev/null 2>&1
         if [ $? != 0 ]; then
@@ -40,13 +43,13 @@ case "$MODE" in
         fi
 
         # build the dragonweb haskell binary
-        docker run --rm -w /work -v `pwd`/haskell:/work \
+        docker run --rm -w /work -v $PWD/haskell:/work \
             --volumes-from dragonfly-website \
             dragonflyscience/website-hakyll ghc -o /dist/dragonfly-hakyll \
             -odir /tmp/build -hidir /tmp/build Site.hs
 
         # Finally start the actual develop container
-        docker run --rm -it -p 8000:8000 -w /work -v `pwd`/content:/work \
+        docker run --rm -it -p 8000:8000 -w /work -v $PWD/content:/work \
             --volumes-from dragonfly-website \
             dragonflyscience/website-hakyll \
             /dist/dragonfly-hakyll watch
@@ -60,8 +63,29 @@ case "$MODE" in
         docker pull dragonflyscience/website-scripts
     ;;
     ghci)
-        docker run --rm -it -w /work -v `pwd`/haskell:/work \
+        docker run --rm -it -w /work -v $PWD/haskell:/work \
             dragonflyscience/website-hakyll ghci Site.hs
+    ;;
+    deploy)
+        ./run.sh pull-deps &&
+        rm -f content/assets/* &&
+        docker run --rm -u $(id -u):$(id -g) \
+            -v $PWD/content/stylesheets:/work/stylesheets \
+            -v $PWD/content/assets:/work/assets \
+            dragonflyscience/website-sass scss --style compressed --sourcemap=none \
+            stylesheets/dragonfly.scss assets/dragonfly.css &&
+        docker run --rm -u $(id -u):$(id -g) \
+            -v $PWD/content/scripts:/work/scripts \
+            -v $PWD/content/assets:/work/assets \
+            dragonflyscience/website-scripts bash -c \
+                "compile-modules convert scripts/dragonfly.js | yuglify --terminal > assets/dragonfly.js" &&
+        name=$(uuidgen -r) &&
+        docker run --name $name -w /work -v $PWD:/work dragonflyscience/website-hakyll \
+            bash -c "cd haskell && ghc -o /tmp/dragonfly-hakyll -odir /tmp -hidir /tmp/ Site.hs && \
+                cd /work/content && /tmp/dragonfly-hakyll build" &&
+        docker cp $name:/var/cache/dragonflyweb/main/site /tmp/$name/ &&
+        rsync -av --delete /tmp/$name/site/ \
+                deployhub@www-staging.hoiho.dragonfly.co.nz:/var/www/static/www.dragonfly.co.nz
     ;;
     
 esac
@@ -88,12 +112,12 @@ esac
 #     fi
 #     docker run --rm -it -p 8000:8000 \
 #         --volumes-from dragonflyweb-cache \
-#         -v `pwd`/content/case-studies:/work/case-studies \
-#         -v `pwd`/content/images:/work/images \
-#         -v `pwd`/content/pages:/work/pages \
-#         -v `pwd`/content/posts:/work/posts \
-#         -v `pwd`/content/people:/work/people \
-#         -v `pwd`/content/resources:/work/resources \
-#         -v `pwd`/content/templates:/work/templates \
+#         -v $PWD/content/case-studies:/work/case-studies \
+#         -v $PWD/content/images:/work/images \
+#         -v $PWD/content/pages:/work/pages \
+#         -v $PWD/content/posts:/work/posts \
+#         -v $PWD/content/people:/work/people \
+#         -v $PWD/content/resources:/work/resources \
+#         -v $PWD/content/templates:/work/templates \
 #         $EDITIMAGE watch
 #     ;;
