@@ -13,10 +13,10 @@ case "$1" in
         echo "run ./run.sh pull-deps to get the latest version of the build dockers"
         exit 0
         ;;
-    develop|pull-deps)
+    develop|pull-deps|ghci)
         ;;
     *)
-        echo $"Usage: $0 {develop|pull-deps|help}"
+        echo $"Usage: $0 {develop|pull-deps|ghci|help}"
         exit 1
 esac
 
@@ -59,18 +59,15 @@ case "$MODE" in
         docker pull dragonflyscience/website-sass
         docker pull dragonflyscience/website-scripts
     ;;
+    ghci)
+        docker run --rm -it -w /work -v `pwd`/haskell:/work \
+            dragonflyscience/website-hakyll ghci Site.hs
+    ;;
     
 esac
 
 
 
-# ghci)
-#     CMD="ghci Site.hs"
-#     VOLS="-v `pwd`/haskell:/work"
-#     docker run --rm -it $VOLS \
-#         --volumes-from `cat dfweb_docker/buildcache/.dockerdc` \
-#         `cat dfweb_docker/haskell-build/.dockeri` $CMD
-#     ;;
 # edit)
 #     if [ "$(uname)" = "Darwin" ]; then
 #         boot2docker up >/dev/null 2>&1 &&
