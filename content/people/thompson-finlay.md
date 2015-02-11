@@ -6,6 +6,7 @@ lastname: Thompson
 mobile: 021 426 878
 tag: finlay
 banner: thompson-finlay/finlay-thompson-letterbox.jpg
+sortorder: 2
 ---
 
 Finlay gained his PhD in mathematics from [SISSA](http://sissa.it), in

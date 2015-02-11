@@ -6,6 +6,7 @@ phone: +64 (0) 21 989 454
 tag: edward
 title: Edward Abraham
 banner: abraham-edward/edward-abraham-letterbox.jpg
+sortorder: 1
 ---
 
 Edward has a PhD from Cambridge University, where he studied theoretical
