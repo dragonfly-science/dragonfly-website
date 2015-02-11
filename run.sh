@@ -84,40 +84,9 @@ case "$MODE" in
             bash -c "cd haskell && ghc -o /tmp/dragonfly-hakyll -odir /tmp -hidir /tmp/ Site.hs && \
                 cd /work/content && /tmp/dragonfly-hakyll build" &&
         docker cp $name:/var/cache/dragonflyweb/main/site /tmp/$name/ &&
+        docker rm $name &&
         rsync -av --delete /tmp/$name/site/ \
                 deployhub@www-staging.hoiho.dragonfly.co.nz:/var/www/static/www.dragonfly.co.nz
     ;;
     
 esac
-
-
-
-# edit)
-#     if [ "$(uname)" = "Darwin" ]; then
-#         boot2docker up >/dev/null 2>&1 &&
-#         $(boot2docker shellinit 2>/dev/null)
-#     fi
-#     EDITIMAGE=dragonflyscience/website
-#     docker pull $EDITIMAGE
-#     if [ "$CLEANCACHE" = "true" ]; then
-#         docker rm dragonflyweb-cache 2>/dev/null
-#     fi
-#     docker inspect dragonflyweb-cache >/dev/null 2>&1
-#     if [ $? -ne 0 ]; then
-#         docker run --name dragonflyweb-cache -v /var/cache/dragonflyweb docker.dragonfly.co.nz/debian/nz
-#     fi
-#     if [ "$(uname)" = "Darwin" ] && [ "$OPENPAGE" != "false" ]; then
-#         [[ "$CLEANCACHE" = true ]] && delay=15 || delay=3
-#         sleep $delay && open http://$(boot2docker ip 2> /dev/null):8000 &
-#     fi
-#     docker run --rm -it -p 8000:8000 \
-#         --volumes-from dragonflyweb-cache \
-#         -v $PWD/content/case-studies:/work/case-studies \
-#         -v $PWD/content/images:/work/images \
-#         -v $PWD/content/pages:/work/pages \
-#         -v $PWD/content/posts:/work/posts \
-#         -v $PWD/content/people:/work/people \
-#         -v $PWD/content/resources:/work/resources \
-#         -v $PWD/content/templates:/work/templates \
-#         $EDITIMAGE watch
-#     ;;
