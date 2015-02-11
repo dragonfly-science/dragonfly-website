@@ -8,6 +8,9 @@ case "$1" in
         echo "Assuming you have docker installed ./run.sh develop"
         echo "will download the required docker containers and start"
         echo "a server at http://localhost:8000"
+        echo
+        echo "----- Update docker dependencies -----"
+        echo "run ./run.sh pull-deps to get the latest version of the build dockers"
         exit 0
         ;;
     develop|pull-deps)
