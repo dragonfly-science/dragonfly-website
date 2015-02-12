@@ -2,14 +2,8 @@
   <img src=$banner$ width="100%"/> 
   <h1 id="title-$tag$">$title$</h2>
 </div>
-<div class="container">
-  <div class="content" id="content-$tag$">
-    $if(lead)$
-    <div class="lead">$lead$</div>
-    $endif$
-
-    $body$
-
+<div class="container post-detail">
+  <div class="post-info">
     $if(email)$
     <p>Email <a href="mailto:$email$">$email$</a><p>
     $endif$
@@ -17,6 +11,14 @@
     $if(phone)$
     <p>Call $firstname$ on $phone$<p>
     $endif$
+  </div>
+  <div class="content" id="content-$tag$">
+    $if(teaser)$
+    <div class="lead">$teaser$</div>
+    $endif$
+    
+    $body$
+
   </div>
 </div>
 

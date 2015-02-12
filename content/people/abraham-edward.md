@@ -8,59 +8,28 @@ title: Edward Abraham
 banner: abraham-edward/edward-abraham-letterbox.jpg
 ---
 
-Edward has a PhD from Cambridge University, where he studied theoretical
-physics in the cosmology group led by Stephen Hawking.
+Edward is the founder and CEO of Dragonfly. He enjoys bringing evidence to the
+table, using information to make clear, principled decisions. 
+
 
 <!--more-->
 
-Edward has a PhD from Cambridge University, where he studied theoretical
-physics in the cosmology group led by Stephen Hawking.
+In the last eight years, Edward and his growing team have used their skills to
+solve problems for decision makers in government and industry. 
+Helping governments make better policy, and industries become more sustainable and  profitable.  He has experience with  a wide range of stakeholders, and believes
+in pragmatic approaches that add value.
 
-Returning to New Zealand, Edward worked as an oceanographer at
-[NIWA](http://www.niwa.co.nz) for 10 years, researching interactions between
-the physical and biological environment, particularly how stirring by ocean
-currents affects plankton. Two years at Datamine provided business experience
-and gave him an appreciation of the value of statistical analysis in solving
-applied problems.
+Edward has a PhD from
+Cambridge University, where he studied theoretical physics in the cosmology
+group led by Stephen Hawking. Returning to New Zealand, Edward worked as an oceanographer for 10 years, researching interactions between
+the physical and biological environment. Since starting Dragonfly, he has focussed on statistical analysis:
 
-Edward started Dragonfly Science in 2006 to provide a customised data analysis
-service.
+> Statistical analysis is at the heart of the decision making process. It 
+> allows managers to balance opportunity and risk, 
+> resulting in principled decisions that make best use of available information.
 
-Edward's undergraduate study was at the University of Canterbury, where he
-completed a Bachelor of Science with Honours in physics and maths, then gained
-a Commonwealth Scholarship for his study at Cambridge.
+## Selected publications {.hide-cite-para}
 
-“My PhD was the old-fashioned pencil and paper kind, generating pages and pages
-filled with algebraic scribbling. I also learned that you could solve problems
-simply by thinking about them.
-
-“Stephen Hawking was an interesting character to work with, even though he
-wasn't my direct supervisor. He would sneak up to you in his wheelchair and
-talk with his synthesised voice. It was incredibly intimidating. I valued his
-accessibility to students though, and the fact that he was always interested in
-what we were doing.
-
-“I started Dragonfly because I wanted to apply what I had learned at Datamine
-about data analysis to scientific questions, particularly in biology. I also
-saw an opportunity to provide this kind of applied research. There is
-definitely a role for scientific research undertaken in a commercial
-environment that's complementary to government-funded research in traditional
-institutions.”
-
-Edward is interested in the value that small businesses bring to the economy,
-and enjoys the dynamic way that they can operate.
-
-“I like being one of a bunch of similar sized companies, all doing their edgy
-things very well. And being part of both the science and software communities
-here in Wellington is exciting.”
-
-# Selected publications
-
-## 2013 {.hide-cite-para}
-
-@richard_application_2013
-@richard_risk2_2013
-
-## 2006 {.hide-cite-para}
-
-@waugh2006svs
+@abraham2000isd
+@richard_assessment_2011
+@abraham_effectiveness_2009

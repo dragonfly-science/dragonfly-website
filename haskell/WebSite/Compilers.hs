@@ -21,7 +21,7 @@ scholmdCompiler = do
     bibfile <- getMetadataField ident "bibliography"
     cslfile <- getMetadataField ident "cslfile"
     -- TODO: should get this from config
-    csl <- load $ maybe "resources/biblio/acm-siggraph.csl" fromFilePath cslfile
+    csl <- load $ maybe "resources/biblio/apa.csl" fromFilePath cslfile
     bib <- load $ maybe "resources/biblio/dragonfly-bibliography.yaml" fromFilePath bibfile
 
     -- I think this is going to be the easiest place to carry out filtering
