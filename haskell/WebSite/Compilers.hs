@@ -1,12 +1,17 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TupleSections #-}
 module WebSite.Compilers (
                          scholmdCompiler,
+                         sortItemsBy
                          ) where
 
 
 import Hakyll
 import Text.Pandoc.Options
 import Control.Applicative
+import Control.Monad   (liftM)
+import Data.List       (sortBy)
+import Data.Ord        (comparing)
 
 
 htm5Writer :: WriterOptions
@@ -33,3 +38,11 @@ scholmdCompiler = do
 
     writePandocWith htm5Writer  <$> (readPandocBiblio def csl bib =<< getResourceBody )
 
+
+-- Utility function to allow arbitrary sort order for items
+sortItemsBy :: (Ord b, MonadMetadata m) => (Identifier -> m b) -> [Item a] -> m [Item a]
+sortItemsBy f = sortByM $ f . itemIdentifier
+  where
+    sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
+    sortByM f xs = liftM (map fst . sortBy (comparing snd)) $
+                   mapM (\x -> liftM (x,) (f x)) xs

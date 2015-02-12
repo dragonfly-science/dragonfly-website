@@ -3,7 +3,9 @@ module WebSite.People (
     rules
 ) where
 
+import Control.Monad (liftM)
 import Data.Monoid ((<>))
+import Data.Maybe (fromMaybe)
 import System.FilePath
 
 import Hakyll
@@ -18,7 +20,9 @@ rules = do
         route $ constRoute "people/index.html"
         compile $ do
             base <- baseContext "people"
-            let persons = listField "pages" personIndexCtx (loadAllSnapshots ("people/*.md"  .&&. hasVersion "full") "content")
+            let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"  
+            let peopleitems = loadAllSnapshots ("people/*.md"  .&&. hasVersion "full") "content" >>= sortItemsBy sortorder
+            let persons = listField "pages" personIndexCtx peopleitems
             let ctx = base <> persons
             scholmdCompiler 
                 >>= loadAndApplyTemplate "templates/people-list.html" ctx
