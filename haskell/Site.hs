@@ -45,7 +45,7 @@ main = hakyllWith config $ do
     People.rules
 
     -- Blog section
-    Blog.rules
+    --Blog.rules
 
     -- Case studies
     match "case-studies/*.html" $ do
@@ -57,22 +57,29 @@ main = hakyllWith config $ do
                 >>= relativizeUrls
 
     -- Publications section (not much here yet)
-    match "pages/publications.md" $ do
-        route $ constRoute "publications/index.html"
+    match "pages/work.html" $ do
+        route $ constRoute "work/index.html"
         compile $ do
-            ctx <- baseContext "publications"
+            ctx <- baseContext "work"
             scholmdCompiler
-                >>= loadAndApplyTemplate "templates/basic.html" ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
+
+    -- Publications section (not much here yet)
+    match "pages/contact.html" $ do
+        route $ constRoute "contact/index.html"
+        compile $ do
+            ctx <- baseContext "contact"
+            scholmdCompiler
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
     -- Data section (not much here yet)
     match "pages/data.md" $ do
-        route $ constRoute "data/index.html"
+        route $ constRoute "resources/index.html"
         compile $ do
-            ctx <- baseContext "data"
+            ctx <- baseContext "resources"
             scholmdCompiler
-                >>= loadAndApplyTemplate "templates/basic.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 

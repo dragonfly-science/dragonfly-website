@@ -1,6 +1,7 @@
 
 /* ensure that html5 elements are displayed */
 main {display: block;}
+section {display: block;}
 address {display: block;}
 header {display: block;}
 footer {display: block;}
@@ -29,6 +30,19 @@ main {
 .content {
     @include span-columns(8 of 12);
     @include shift(2);
+    @include media($clinical) {
+      @include span-columns(12 of 12);
+      @include shift(0);
+    }
+    @include clearfix;
+    margin-top: $base-line-height;
+    position: relative;
+    @include side-margins;
+}
+
+.wide {
+    @include span-columns(10 of 12);
+    @include shift(1);
     @include media($clinical) {
       @include span-columns(12 of 12);
       @include shift(0);

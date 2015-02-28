@@ -17,9 +17,9 @@ rules :: Rules()
 rules = do
     
     match "pages/people.md" $ do
-        route $ constRoute "people/index.html"
+        route $ constRoute "about/index.html"
         compile $ do
-            base <- baseContext "people"
+            base <- baseContext "about"
             let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"  
             let peopleitems = loadAllSnapshots ("people/*.md"  .&&. hasVersion "full") "content" >>= sortItemsBy sortorder
             let persons = listField "pages" personIndexCtx peopleitems

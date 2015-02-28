@@ -68,8 +68,14 @@ A typical page has the following structure:
     </header>
     <main>
       <div class="container">
-        <div class="content">
-        </div>
+        <div class="heading"></div>
+        <div class="content"></div>
+        <div class="content"></div>
+      </div>
+      <div class="container">
+        <div class="marginal"></div>
+        <div class="marginal"></div>
+        <div class="content"></div>
       </div>
     </main>
     <footer>
