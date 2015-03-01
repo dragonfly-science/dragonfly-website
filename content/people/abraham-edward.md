@@ -4,7 +4,7 @@ firstname: Edward
 lastname: Abraham
 phone: +64 (0) 21 989 454
 tag: edward
-title: Edward Abraham
+title: Edward Abraham, PhD
 banner: abraham-edward/edward-abraham-letterbox.jpg
 sortorder: 1
 ---
@@ -15,9 +15,9 @@ table, using information to make clear, principled decisions.
 
 <!--more-->
 
-In the last eight years, Edward and his growing team have used their skills to
+In the last eight years, Edward and the growing Dragonfly team have used their skills to
 solve problems for decision makers in government and industry. 
-Helping governments make better policy, and industries become more sustainable and  profitable.  He has experience with  a wide range of stakeholders, and believes
+Helping governments make better policy, and industries become more sustainable and  profitable.  Edward has experience with  a wide range of stakeholders, and believes
 in pragmatic approaches that add value.
 
 Edward has a PhD from
@@ -32,5 +32,5 @@ the physical and biological environment. Since starting Dragonfly, he has focuss
 ## Selected publications {.hide-cite-para}
 
 @abraham2000isd
-@richard_assessment_2011
 @abraham_effectiveness_2009
+@richard_risk_2013

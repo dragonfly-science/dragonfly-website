@@ -5,6 +5,7 @@ firstname: Finlay
 lastname: Thompson
 mobile: 021 426 878
 tag: finlay
+title: Finlay Thompson, PhD
 banner: thompson-finlay/finlay-thompson-letterbox.jpg
 sortorder: 2
 ---

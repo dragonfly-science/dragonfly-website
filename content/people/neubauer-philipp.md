@@ -5,50 +5,41 @@ firstname: Philipp
 lastname: Neubauer
 mobile: ''
 tag: philipp
+title: Philipp Neubauer, PhD
 banner: neubauer-philipp/philipp-neubauer-letterbox.jpg
 ---
 
-Philipp studied marine ecology at the [Université de la
-Méditerranée](http://www.imbe.fr/?lang=fr) in France and obtained a Masters
-in ecological modelling, quantifying the benefits of marine reserves to
-local fisheries.
+Philipp is a fisheries scientist who uses statistical analysis to inform actions that promote sustainable fisheries. 
 
 <!--more-->
 
 
-Philipp was born and grew up in Germany but his fascination with biology began
-during a year-long high school exchange in the US. He moved to France to study
-marine ecology and obtained his Masters in 2007, using spatial models to
-quantify the effects of marine reserves on artisan fisheries at the [Université
-de la Méditerranée](http://www.imbe.fr/?lang=fr) in Marseille. 
+Globally, the two most comprehensive threats to marine life are overfishing and climate 
+change. Funded by a 2014 Royal Society of New Zealand Marsden Fast-Start grant, 
+Philipp is using size-based models to research the combined effects of these threats on fished ecosystems around the world. 
+Dealing appropriately 
+with the uncertainties inherent in such complex systems is an important focus, and
+Philipp is a specialist at Bayesian statistical modelling. 
 
-A desire to continue researching in the field of quantitative ecology saw him
-move to New Zealand for a PhD at [Victoria
-University](http://www.victoria.ac.nz/sbs/research-centres-institutes/vucel),
-where he studied the connectivity of triplefin fish populations in Cook Strait.
-His research tracked fish from their larval stage to their adult stage using 11
-chemical signatures in their otoliths (ear bones). 
+Philipp’s previous work, published in [Science](http://www.sciencemag.org/content/340/6130/347.abstract), 
+showed that most fisheries bounce back 
+when fishing is reduced to sustainable levels. With appropriate management,
+fisheries can be resilient and sustainable.
 
-“I collected larvae from different sites in Cook Strait then went back to
-resample the adult populations when the larvae had settled on different reefs.
-The project involved lots of diving as well as some new ways of using the
-otoliths. I ended up with a very complex data set that involved modelling the
-probability that the fish came from certain places, so a Bayesian approach
-seemed ideally suited.” 
+After growing up in central Germany, Philipp moved to seaside Marseille to study for a 
+Masters in ecological modeling at the [Université de la Méditerranée](http://www.imbe.fr/?lang=fr). He completed a PhD in 
+quantitative ecology at [Victoria University](http://www.victoria.ac.nz/sbs/research-centres-institutes/vucel),
+followed by a post-doc at [Rutgers University](http://marine.rutgers.edu/~ojensen/),
+studying the patterns and drivers of decline and recovery in fish stocks. He joined 
+Dragonfly in 2013.
 
-To further explore dispersal in the region, Philipp also created a new
-hydrodynamic model of Cook Strait, based on existing knowledge of the area, and
-compared the findings to those obtained with the otoliths.
+> The impact of fishing on our marine environment is massive – from gathering shellfish at 
+the beach to trawling the ocean depths – you cannot escape it. Robust information from 
+fisheries science offers a way to balance conservation issues with the need to 
+feed the world’s population.
 
-Philipp subsequently took up a post-doc position at [Rutgers
-University](http://marine.rutgers.edu/~ojensen/) in the US, where he studied
-the patterns and drivers of decline and recovery in fish stocks, and worked on
-models to infer the diet of fish species from stable isotopes and fatty acids. 
-
-Back in New Zealand, he is enjoying the wide range of projects that Dragonfly
-is involved in, as well as the expertise on tap within the company. 
-
-“It’s great that I don’t have to solve all my own IT problems any more! We’re
-such a diverse team here that if I come across something I can’t do, I just
-wander across the room and ask someone with a different range of skills, and
-they’ll have the answer.” 
+##Selected publications
+@neubauer2013resilience
+@neubauer2013inferring
+@neubauer_assessing_2014
+@neubauer2014bayesian

@@ -21,8 +21,8 @@ main = hakyllWith config $ do
 
     match "templates/*" $ compile templateCompiler
 
-    match "resources/biblio/*.csl" $ compile cslCompiler
-    match ("resources/biblio/*.yaml" .||. "resources/biblio/*.bib" ) $
+    match "resources/bibliography/*.csl" $ compile cslCompiler
+    match ("resources/bibliography/*.yaml" .||. "resources/bibliography/*.bib" ) $
         compile biblioCompiler
 
     match "**/*.img.md" $ compile scholmdCompiler
