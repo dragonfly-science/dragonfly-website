@@ -1,5 +1,5 @@
 <!-- Use schema.org microformat markup -->
-<footer class="footer" id="footer-contact" itemscope itemtype="http://schema.org/Organization">
+<footer class="footer" id="footer-$section$" itemscope itemtype="http://schema.org/Organization">
   <div class="container footer-outer" id="footer-address">
     <div class="footer-content" id="footer-row-logo">
       <div id="footer-logo"> <img itemprop="logo" src="/images/dragonfly-logo-reversed-rgb.png" /> </div>
@@ -19,6 +19,12 @@
       </div>
       <div class="cell" id="footer-postal"> 
         $partial("templates/address-postal.html")$
+      </div>
+    </div>
+  </div>
+  <div class="container footer-outer" id="footer-outer-map">
+    <div class="footer-content">
+      <div class="cell map" id="footer-map">
       </div>
     </div>
   </div>

@@ -167,6 +167,40 @@
     .footer-content a:hover {
         color: lighten($lighter-gray, 20);
     }
+    
+    #footer-map {
+        display: none;
+    }
+    
+    #footer-outer-map {
+        @include media($medium-footer) {
+            padding-bottom: 0;
+        }
+        @include media($compact-footer) {
+            padding-bottom: 0;
+        }
+    }
+}
 
 
+
+/* Custom styles for the contact page */
+
+#footer-contact {   
+    margin-top: 0em;
+    padding-top: 3em;
+    min-height: 100vh;
+    .main {
+        display: none;
+    }
+     
+    #footer-map {
+        display: block;
+        @include shift(0);
+        @include span-columns(12 of 12);
+        height: 500px;
+    }
+    #footer-row-logo {
+        display: none;
+    }
 }
