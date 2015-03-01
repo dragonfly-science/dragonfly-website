@@ -10,46 +10,34 @@ banner: thompson-finlay/finlay-thompson-letterbox.jpg
 sortorder: 2
 ---
 
-Finlay gained his PhD in mathematics from [SISSA](http://sissa.it), in
-Italy, researching four dimensional algebra and geometry.
-
+Finlay is operations manager at Dragonfly. With his mathemetical background, he brings an insightful rigour
+to solving analytical and technical problems.
 <!--more-->
 
-Finlay gained his PhD in mathematics from [SISSA](http://sissa.it), in Italy,
-researching four dimensional algebra and geometry. This was followed by
-post-docs at [CIMAT](http://www.cimat.mx/) in Mexico and [Victoria
-University](http://www.victoria.ac.nz/smsor/default.aspx). 
+Finlay has long experience as a database and software developer. He leads 
+the technical direction of Dragonfly's work, with a strong focus on open source
+technologies. He enjoys the challenge of making analytical and  
+statistical solutions operational. Automated approaches have the
+potential to massively increase quality, 
+reproducibility and productivity of analytical systems, 
+bringing significant savings to our clients. 
 
-He then began work in Wellington's vibrant IT industry, working on database
-programming to manage New Zealand's electoral roll database, and as a developer
-and database administrator at [Catalyst](http://catalyst.net.nz/). He brings
-their open source approach to software development to Dragonfly.
 
-Finlay joined Dragonfly Science in 2008, working on data management and
-computer modelling. He enjoys developing effective data management systems for
-science work, and high performance computer programming. 
+Finlay researched four dimensional algebra and geometry for his PhD in 
+mathematics at [SISSA](http://sissa.it), Italy. He completed post-docs at [CIMAT](http://www.cimat.mx/)  in Mexico 
+and [Victoria University](http://www.victoria.ac.nz/smsor/default.aspx),
+then worked in Wellington's IT industry before joining Dragonfly in 2008. 
 
-“I think decision making should be supported with information gained from
-rigorous scientific inquiry. Data collection can often be an expensive
+> I think decision making should be supported with the best available 
+information. Data collection can be an expensive
 investment for any organisation, so getting the best information from that data
 is essential. In the long run, robust anaysis will produce a better return on
-investment, encourage further data collection and help the best decisions to be
-made.
+investment. It's gratifying to see our work being used to inform key commercial and
+government decisions. 
 
-“It's gratifying to see our work being used to inform key commercial and
-government decisions. One example is the estimation of marine mammal captures
-in New Zealand trawl fisheries. It has been used to manage the ecological
-impacts of commercial fishing and has resulted in fewer captures because of new
-methods adopted by fishers.”
 
-####Cloudy Bayes
+##Selected publications
 
-This project is a collaboration between the [Parallel GHC
-Project](http://www.haskell.org/haskellwiki/Parallel_GHC_Project) and Dragonfly
-Science. Finlay is developing a Bayesian statistical model fitter that will be
-simple to use, utilise modern multiprocessor computers and be ready to run on
-the cloud. It will eventually be released as an open source project. 
+@thompson_mammals_95-12
+@thompson_dolphin_2013
 
-###Publications
-
-[References tag=finlay-thompson order=-year]
