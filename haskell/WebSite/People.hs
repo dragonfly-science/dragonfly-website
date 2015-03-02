@@ -39,8 +39,11 @@ rules = do
         route $ setExtension "html"
         compile $ do
             base <- baseContext "people"
+            let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"  
+            let peopleitems = loadAllSnapshots ("people/*.md"  .&&. hasVersion "full") "content" >>= sortItemsBy sortorder
+            let persons = listField "pages" personIndexCtx peopleitems
             let banner = constField "banner" "/images/person-banner.png"
-            let ctx = base <> banner <> actualbodyField "actualbody"
+            let ctx = base <> banner <> actualbodyField "actualbody" <> persons
             scholmdCompiler 
                 >>= loadAndApplyTemplate "templates/person.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx

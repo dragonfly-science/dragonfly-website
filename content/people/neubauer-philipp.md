@@ -10,7 +10,6 @@ banner: neubauer-philipp/philipp-neubauer-letterbox.jpg
 ---
 
 Philipp is a fisheries scientist who uses statistical analysis to inform actions that promote sustainable fisheries. 
-
 <!--more-->
 
 

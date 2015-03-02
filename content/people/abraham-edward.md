@@ -2,7 +2,7 @@
 email: edward@dragonfly.co.nz
 firstname: Edward
 lastname: Abraham
-phone: +64 (0) 21 989 454
+phone: +64 21 989 454
 tag: edward
 title: Edward Abraham, PhD
 banner: abraham-edward/edward-abraham-letterbox.jpg
@@ -11,8 +11,6 @@ sortorder: 1
 
 Edward is the founder and CEO of Dragonfly. He enjoys bringing evidence to the
 table, using information to make clear, principled decisions. 
-
-
 <!--more-->
 
 In the last eight years, Edward and the growing Dragonfly team have used their skills to
