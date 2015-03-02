@@ -1,21 +1,12 @@
 ---
 title: Sustainable fisheries
-banner-image: /work/2015-02-10-paua-logger-case-study/dave-and-jules.jpg
-banner-text: Dave Baker and Julie Hills (MPI) pāua fishing in Cook Strait
+banner-image: /work/2015-03-02-paua-logger-case-study/dave-and-jules.jpg
+summary: We built an automated system to upload, process and display daily pāua 
+    catch data. This allows pāua fishers to manage their fishery sustainably and 
+    reduce the time and cost of fishing.
+quote: Dragonfly has been absolutely awesome – we’re rapt.
+quote-attribution: Jeremy Cooper, CEO, Pāua Industry Council
 ---
-
-We built an automated system to upload, process and display daily pāua 
-catch data. This allows pāua fishers to manage their fishery sustainably and 
-reduce the time and cost of fishing.
-<!--more-->
-
-We built an automated system to upload, process and display daily pāua 
-catch data. This allows pāua fishers to manage their fishery sustainably and 
-reduce the time and cost of fishing.
-
-> Dragonfly has been absolutely awesome – we’re rapt.
-
-Jeremy Cooper, CEO, Pāua Industry Council
 
 ## Client
 

@@ -1,19 +1,13 @@
+<div class="container post-banner-image" style='background-image: url("$banner-image$"); background-size: cover;'>
+    $if(quote)$
+    <blockquote class="content"><p>$quote$</p><cite>$quote-attribution$</cite></blockquote>
+    $endif$
+    $if(summary)$
+    $endif$
+  <div class="content post-summary">$summary$</div>
+</div>
+
 <div class="container post-detail">
-  $if(banner-image)$
-  <div class="banner-image">
-    <figure>
-      <img src="$banner-image$" alt="Dragonfly featured on ABC &amp; BBC radio programmes">
-      $if(banner-title)$
-      <figcaption>$banner-title$</figcaption>
-      $else$
-      <figcaption>$title$</figcaption>
-      $endif$
-    </figure>
-      $if(banner-text)$
-      <p>$banner-text$</p>
-      $endif$
-  </div>
-  $endif$
   <div class="post-info">
     $date$
     $if(author)$

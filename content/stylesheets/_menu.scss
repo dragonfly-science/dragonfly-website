@@ -105,19 +105,19 @@ $responsive-navigation-height-compact: em(67);
             border-bottom: 3px solid white;
         }
     }
-    .responsive-navigation-wrapper[data-section=blog] span.icon-bar {
+    .responsive-navigation-wrapper[data-section=work] span.icon-bar {
         border-bottom: 3px solid $blog-red;
         @include media($transient) {
             border-bottom: 3px solid white;
         }
     }
-    .responsive-navigation-wrapper[data-section=publications] span.icon-bar {
+    .responsive-navigation-wrapper[data-section=resources] span.icon-bar {
         border-bottom: 3px solid $publications-orange;
         @include media($transient) {
             border-bottom: 3px solid white;
         }
     }
-    .responsive-navigation-wrapper[data-section=data] span.icon-bar {
+    .responsive-navigation-wrapper[data-section=contact] span.icon-bar {
         border-bottom: 3px solid $data-purple;
         @include media($transient) {
             border-bottom: 3px solid white;
@@ -136,13 +136,13 @@ $responsive-navigation-height-compact: em(67);
         @include transition(height 0.4s, background 0.4s);
     }
     @include media($compact-mode) {
-        .responsive-navigation-wrapper[data-section=data] {
+        .responsive-navigation-wrapper[data-section=contact] {
             background: $data-purple;
         }
-        .responsive-navigation-wrapper[data-section=blog] {
+        .responsive-navigation-wrapper[data-section=work] {
             background: $blog-red;
         }
-        .responsive-navigation-wrapper[data-section=publications] {
+        .responsive-navigation-wrapper[data-section=resources] {
             background: $publications-orange;
         }
         .responsive-navigation-wrapper[data-section=people] {
@@ -172,19 +172,19 @@ $responsive-navigation-height-compact: em(67);
             background-color: none;
         }
     }
-    .responsive-navigation-wrapper[data-mode=open][data-section=blog] {
+    .responsive-navigation-wrapper[data-mode=open][data-section=work] {
         background-color: $blog-red;
         @include media($compact-mode) {
             background-color: none;
         }
     }
-    .responsive-navigation-wrapper[data-mode=open][data-section=publications] {
+    .responsive-navigation-wrapper[data-mode=open][data-section=resources] {
         background-color: $publications-orange;
         @include media($compact-mode) {
             background-color: none;
         }
     }
-    .responsive-navigation-wrapper[data-mode=open][data-section=data] {
+    .responsive-navigation-wrapper[data-mode=open][data-section=contact] {
         background-color: $data-purple;
         @include media($compact-mode) {
             background-color: none;
@@ -235,7 +235,7 @@ $responsive-navigation-height-compact: em(67);
 
         @include media($horizontal-mode) {
             display: inline;
-            padding-bottom: $responsive-navigation-text-offset * 2;
+            padding-bottom: $responsive-navigation-text-offset * 2 + em(1);
             padding-right: $responsive-navigation-item-padding * 2;
             padding-left: $responsive-navigation-item-padding * 2;
             line-height: $responsive-navigation-height;
@@ -260,21 +260,21 @@ $responsive-navigation-height-compact: em(67);
         }
     }
 
-    .responsive-navigation-wrapper[data-section=data] > a.logo {
+    .responsive-navigation-wrapper[data-section=contact] > a.logo {
         border-bottom: $heavy-underline solid $data-purple;
         @include media($compact-mode) {
             border-bottom: none;
         }
     }
 
-    .responsive-navigation-wrapper[data-section=blog] > a.logo {
+    .responsive-navigation-wrapper[data-section=work] > a.logo {
         border-bottom: $heavy-underline solid $blog-red;
         @include media($compact-mode) {
             border-bottom: none;
         }
     }
 
-    .responsive-navigation-wrapper[data-section=publications] > a.logo {
+    .responsive-navigation-wrapper[data-section=resources] > a.logo {
         border-bottom: $heavy-underline solid $publications-orange;
         @include media($compact-mode) {
             border-bottom: none;
@@ -293,15 +293,15 @@ $responsive-navigation-height-compact: em(67);
             border-bottom: 4px solid $people-green;
         }
 
-        .responsive-navigation-wrapper[data-section=blog] li.nav-link[data-section=blog] {
+        .responsive-navigation-wrapper[data-section=work] li.nav-link[data-section=work] {
             border-bottom: 4px solid $blog-red;
         }
 
-        .responsive-navigation-wrapper[data-section=publications] li.nav-link[data-section=publications] {
+        .responsive-navigation-wrapper[data-section=resources] li.nav-link[data-section=resources] {
             border-bottom: 4px solid $publications-orange;
         }
 
-        .responsive-navigation-wrapper[data-section=data] li.nav-link[data-section=data]  {
+        .responsive-navigation-wrapper[data-section=contact] li.nav-link[data-section=contact]  {
             border-bottom: 4px solid $data-purple;
         }
     }

@@ -3,6 +3,11 @@ $post-highlight-color: #808080;
 $post-info-top-padding: 1em;
 $wrap-images-width: em(950);
 
+.post-banner-image {
+    background-size: cover;
+    color: white;
+}
+
     .post-info {
         color: $post-highlight-color;
         padding-top: $post-info-top-padding;
