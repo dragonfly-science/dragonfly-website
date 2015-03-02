@@ -131,6 +131,7 @@ $responsive-navigation-height-compact: em(67);
         position: relative;
         z-index: 999;
         height: 100%;
+        background-opacity: 0.4;
         @include content-left-padding;
         @include transition(height 0.4s, background 0.4s);
     }
