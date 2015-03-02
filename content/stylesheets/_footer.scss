@@ -39,7 +39,7 @@
 
     #footer-outer-social {
         @media screen and (max-width: $medium-transition) {
-            background: #4D4D4D;
+            background: $medium-gray;
             padding-top: em(20);
         }
     }

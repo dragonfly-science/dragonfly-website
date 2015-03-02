@@ -1,10 +1,8 @@
-<div class="container post-banner-image" style='background-image: url("$banner-image$"); background-size: cover;'>
+<div class="container post-banner-image" style='background-image: url("$banner-image$")'>
+    <div class="post-banner-overlay"></div>
     $if(quote)$
-    <blockquote class="content"><p>$quote$</p><cite>$quote-attribution$</cite></blockquote>
+    <blockquote class="wide"><p>$quote$</p><cite>$quote-attribution$</cite></blockquote>
     $endif$
-    $if(summary)$
-    $endif$
-  <div class="content post-summary">$summary$</div>
 </div>
 
 <div class="container post-detail">
@@ -15,6 +13,9 @@
     $endif$
   </div>
   <div class="content">
+    $if(teaser)$
+    <div class="lead">$teaser$</div>
+    $endif$
     $if(actualbody)$ $actualbody$ $else$
     $body$
     $endif$

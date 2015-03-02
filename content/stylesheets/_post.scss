@@ -1,12 +1,36 @@
+.post-banner-image {
+    background-size: cover;
+    position: relative;
+    z-index: -3;
+
+    blockquote {
+        color: white;
+        font-size: 2em;
+        font-weight: bold;
+        border-left: 2px solid white;
+        z-index: -1;
+    }
+    cite {
+        color: white;
+        font-size: 0.8em;
+    }
+}
+/* Puts a dark shade over the image to allow the writing to be read */
+.post-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -2;
+}
+
 .post-detail {
 $post-highlight-color: #808080;
 $post-info-top-padding: 1em;
 $wrap-images-width: em(950);
-
-.post-banner-image {
-    background-size: cover;
-    color: white;
-}
 
     .post-info {
         color: $post-highlight-color;

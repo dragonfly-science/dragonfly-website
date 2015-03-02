@@ -1,16 +1,14 @@
 ---
 title: Triage of visa applications
 banner-image: /work/2015-02-10-INZ-case-study/prediction-service.png
-summary:  We built a prediction service for Immigration New Zealand, to allocate applications
-    to different review streams, based on previous decisions. Appropriate handling of applications
-    results in faster and more reliable decision making.
-quote: We worked out the cost saving from this project, ... it was significant.
+quote: We worked out the cost saving from this project, ... it was significant
 quote-attribution: Steve Cantlon, Principal Business Adviser, Immigration New Zealand
 ---
 
-## Client
-
-Immigration New Zealand
+We built a prediction service for Immigration New Zealand, to allocate applications
+to different review streams, based on previous decisions. Appropriate handling of applications
+results in faster and more reliable decision making.
+<!--more-->
 
 ## Our brief
 
