@@ -9,7 +9,6 @@ tag: yvan
 banner: richard-yvan/yvan-richard-letterbox.jpg
 ---
 Yvan specialises in using the statistical computing software, R, to solve complex problems. 
-
 <!--more-->
 
 Since joining Dragonfly in 2010, Yvan has been working on seabird bycatch issues. 

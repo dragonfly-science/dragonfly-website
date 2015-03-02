@@ -6,6 +6,14 @@ $porthole-title-padding-bottom: 0.35em;
 $porthole-title-padding-top: em(20);
 $read-more-text-color: $light-gray;
 
+.values {
+    @include span-columns(4);
+    h2 {
+        color: $people-green;
+    }
+}
+
+
 .porthole-grid {
     font-size: $porthole-text-size;
     @include media($transient) {

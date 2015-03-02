@@ -4,7 +4,7 @@ import Hakyll
 
 import WebSite.Context
 import WebSite.Compilers
-import qualified WebSite.Blog as Blog
+import qualified WebSite.Work as Work
 import qualified WebSite.People as People
 
 config :: Configuration
@@ -22,9 +22,7 @@ main = hakyllWith config $ do
     match "templates/*" $ compile templateCompiler
 
     match "resources/bibliography/*.csl" $ compile cslCompiler
-    match ("resources/bibliography/*.yaml" .||. "resources/bibliography/*.bib" ) $
-        compile biblioCompiler
-
+    match "resources/bibliography/*.bib" $ compile biblioCompiler
     match "**/*.img.md" $ compile scholmdCompiler
     match "*/**/*.md" $ compile scholmdCompiler
     match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png") $ do
@@ -44,28 +42,28 @@ main = hakyllWith config $ do
     -- People section
     People.rules
 
-    -- Blog section
-    --Blog.rules
+    -- Work section
+    Work.rules
 
-    -- Case studies
-    match "case-studies/*.html" $ do
-        route idRoute
-        compile $ do
-            ctx <- baseContext "casestudies"
-            scholmdCompiler
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
-
-    -- Publications section (not much here yet)
-    match "pages/work.html" $ do
-        route $ constRoute "work/index.html"
-        compile $ do
-            ctx <- baseContext "work"
-            scholmdCompiler
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
+    -- Work
+--    match "work/*.html" $ do
+--        route idRoute
+--        compile $ do
+--            ctx <- baseContext "work"
+--            scholmdCompiler
+--                >>= loadAndApplyTemplate "templates/default.html" ctx
+--                >>= relativizeUrls
 
     -- Publications section (not much here yet)
+--    match "pages/work.md" $ do
+--        route $ constRoute "work/index.html"
+--        compile $ do
+--            ctx <- baseContext "work"
+--            scholmdCompiler
+--                >>= loadAndApplyTemplate "templates/default.html" ctx
+--                >>= relativizeUrls
+
+    -- Contact page
     match "pages/contact.html" $ do
         route $ constRoute "contact/index.html"
         compile $ do

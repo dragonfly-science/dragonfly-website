@@ -9,7 +9,7 @@
     $endif$
     
     $if(phone)$
-    <p>Call $firstname$ on $phone$<p>
+    <p>Call $firstname$ on <a href="tel:$phone$">$phone$</a><p>
     $endif$
   </div>
   <div class="content" id="content-$tag$">
@@ -21,4 +21,5 @@
 
   </div>
 </div>
+$partial("templates/people-navigation.html")$
 

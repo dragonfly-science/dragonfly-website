@@ -1,5 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
-module WebSite.Blog (
+module WebSite.Work (
     rules
 ) where
 
@@ -20,26 +20,26 @@ rules :: Rules()
 rules = do
     
     -- List the blogs
-    match "pages/blog.md" $ do
-        route $ constRoute "blog/index.html"
+    match "pages/work.md" $ do
+        route $ constRoute "work/index.html"
         compile $ do 
-            base <- baseContext "blog"
-            let pages = listField "posts" postIndexCtx (recentFirst =<< loadAllSnapshots ("posts/*.md"  .&&. hasVersion "full") "content")
+            base <- baseContext "work"
+            let pages = listField "posts" postIndexCtx (recentFirst =<< loadAllSnapshots ("work/*.md"  .&&. hasVersion "full") "content")
                 ctx = base <> pages
             scholmdCompiler 
                 >>= loadAndApplyTemplate "templates/post-list.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
-    match "posts/*.md" $ version "full" $ do
+    match "work/*.md" $ version "full" $ do
         compile $ do 
             scholmdCompiler 
                 >>= saveSnapshot "content"
 
-    match "posts/*.md" $ do
+    match "work/*.md" $ do
         route $ setExtension "html"
         compile $ do 
-            base <- baseContext "blog"
+            base <- baseContext "work"
             imageMeta <- loadAll ("**/*.img.md")
             let ctx = base <> actualbodyField "actualbody"
             -- it should be possible to avoid compiling this twice to load the output from
