@@ -10,16 +10,12 @@ to different review streams, based on previous decisions. Appropriate handling o
 results in faster and more reliable decision making.
 <!--more-->
 
-## Our brief
-
 A labour-intensive application system at Immigration New Zealand 
 was requiring growing numbers of staff to meet an 
 increasing demand for visas.  We were contracted to build a front-end triage system to automatically assess each 
 visa application upfront. This initial processing grades applications into those that can 
 be safely fast tracked and those where a more thorough investigation of the applicant 
 is warranted. 
-
-Result
 
 The front-end triage system has brought significant savings to Immigration New 
 Zealand (INZ). Processing efficiencies have sped up the visa turnaround time and 
@@ -28,12 +24,12 @@ growing number of applications.
 
 Since all applications are graded, management can decide where they place the cut-
 off between fast track and review track applications. This feature of the system 
-allows INZ to choose a level of risk for the automated processing that they are 
-comfortable with. It also enables workflow and resources to be managed. 
+allows INZ to choose a level of risk for the visa processing that meets their business
+criteria. It also enables workflow and resources to be managed. 
 
-The decisions made by the triage system are audited, and unexpected decisions are 
-highlighted in a regular report. This information is fed back into the prediction system 
-to continually improve its performance.  
+Analysis and predictive modelling were carried out by Dragonfly, with technical review from Victoria University Staff. We then ported
+the model into the INZ operational environment, running it against a near real-time copy of their database, and delivering predictions 
+within 10 minutes of applications being entered into the system. 
 
 ## Client feedback
 
@@ -50,7 +46,5 @@ wouldn’t have to hire to cope with the increased visa processing. It was signi
 <cite>Steve Cantlon
 Principal Business Adviser, Service Support,
 Ministry of Business, Innovation and Employment</cite>
-
-## Technical
 
 

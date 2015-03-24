@@ -8,42 +8,34 @@ quote: Dragonfly has been absolutely awesome – we’re rapt.
 quote-attribution: Jeremy Cooper, CEO, Pāua Industry Council
 ---
 
-## Client
+The New Zealand pāua fishery is a $50 million export industry. We 
+manage pāua fisheries data on behalf of the Pāua Industry Council, and 
+provide the information they need for responsive, well-informed management of 
+their sector.
+<!--more-->
 
-[Pāua Industry Council](http://www.paua.org.nz/) (PIC)
+Good information is essential for the sustainable management of fisheries. 
+The Pāua Industry Council has developed dataloggers which attach to a diver’s wetsuit and record the position of each dive. 
+By combining the fishing data with catch information, we are able to map the fishery and monitor its
+performance, reef by reef.
 
-## The problem
+We built a web-based system, with each day’s catch data being uploaded
+to a database, visualised, and mapped. Catch volumes in 
+different locations can be displayed as coloured hexagons – green for an area that
+is performing well, and red for a not-so-good one. We also carry out the statistical
+analysis needed to interpret the data, so it can be used to provide
+a robust indicator of the health of the fishery.
 
-Pāua are best managed at a fine, reef scale. Overfishing has serious long 
-term impacts and some areas never recover. Existing stock assessment 
-surveys were not giving pāua fishers enough information to manage their 
-resource effectively. 
+Security and integrity of the data are essential. The information is of high commercial
+value to the fishers, and we have developed processess that maintain the privacy of individual
+fisher’s data, while allowing high level summaries to be shared across the industry. The system
+is deployed on the the Catalyst Cloud, an 
+affordable and secure New Zealand cloud computing service.
 
-PIC has developed dataloggers (which attach to a diver’s wetsuit) to record 
-the position of each dive. The daily catch from each diver is also recorded. 
-We were asked to devise a simple interface to upload the catch and location 
-data, check and analyse it, then present the information graphically for the 
-fishers. This would provide them with almost real-time feedback on the 
-productivity of each pāua reef. 
-
-## The solution
-
-We built a web-based system to automatically transfer each day’s catch data 
-to a database and visualise it graphically and on a map. Catch volumes in 
-different locations can be displayed as coloured hexagons – green for a great 
-catch and red for a not-so-good one. 
-The datalogger system is improving catch rates across the fishery – a sign of 
-a healthy and sustainably managed resource. Fishers are also reporting 
-savings in fuel and time in the water, as they can target their efforts to the 
-best locations. 
-
-The Ministry of Primary Industries is also very positive about the project. They 
+The Ministry of Primary Industries is  very positive about the project. They 
 recognise the value that such detailed and timely information provides beyond 
-their stock assessment surveys. In the long term, providing robust evidence of 
-good management is an important step towards the fishers being able to 
-manage the resource themselves. 
-
-## Client feedback
+their usual stock assessment process. Robust evidence of 
+the state of the fishery will help ensure the sustainability of the fishery.
 
 > I learned really quickly that we had to find a scientist or a company that could 
 > operate outside the square – and that’s Dragonfly. 

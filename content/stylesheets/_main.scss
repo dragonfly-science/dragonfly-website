@@ -27,9 +27,20 @@ main {
     @include outer-container;
 }
 
+
+.sidebar {
+    @include span-columns(2 of 12);
+    @include side-margins;
+    @include content-left-padding;
+    @include media($clinical) {
+      @include span-columns(12 of 12);
+      @include shift(0);
+    }
+    margin-top: $base-line-height;
+}
+
 .content {
     @include span-columns(8 of 12);
-    @include shift(2);
     @include media($clinical) {
       @include span-columns(12 of 12);
       @include shift(0);
