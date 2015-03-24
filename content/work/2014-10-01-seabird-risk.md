@@ -1,8 +1,8 @@
 ---
 title: Seabird risk assessment
 banner-image: /work/2014-10-01-seabird-risk/bullers.jpg
-quote: They fostered an open and inclusive approach with all stakeholders.
-quote-attribution: Bob Zuur , Marine Advocate, WWF-New Zealand.
+quote: They fostered an open and inclusive approach with all stakeholders
+quote-attribution: Bob Zuur , Marine Advocate, WWF-New Zealand
 ---
 
 The National Plan of Action - Seabirds, is the Ministry for Primary Industries’ key policy for
