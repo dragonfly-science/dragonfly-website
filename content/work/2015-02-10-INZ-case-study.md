@@ -31,17 +31,16 @@ Analysis and predictive modelling were carried out by Dragonfly, with technical 
 the model into the INZ operational environment, running it against a near real-time copy of their database, and delivering predictions 
 within 10 minutes of applications being entered into the system. 
 
-## Client feedback
 
 > What Dragonfly were able to drag out of our database was pretty impressive – they 
-did what we thought couldn’t be done. 
+did what we thought couldn't be done. 
 >
 > This triage system lets us decide our level of risk. We can change the settings to an 
 acceptable level, but we still get to choose where we want the trade-off between cost 
-and risk to sit. We haven’t lost that control.
+and risk to sit. We haven't lost that control.
 >
 > We worked out the cost saving from this project, in terms of the extra people we 
-wouldn’t have to hire to cope with the increased visa processing. It was significant.
+wouldn't have to hire to cope with the increased visa processing. It was significant.
 >
 <cite>Steve Cantlon
 Principal Business Adviser, Service Support,

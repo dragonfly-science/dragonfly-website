@@ -41,7 +41,8 @@ rules = do
         compile $ do 
             base <- baseContext "work"
             imageMeta <- loadAll ("**/*.img.md")
-            let ctx = base <> actualbodyField "actualbody"
+            let pages = listField "posts" postIndexCtx (recentFirst =<< loadAllSnapshots ("work/*.md"  .&&. hasVersion "full") "content")
+            let ctx = base <> actualbodyField "actualbody" <> pages
             -- it should be possible to avoid compiling this twice to load the output from
             -- the 'full' version.
             scholmdCompiler 
@@ -55,6 +56,7 @@ postIndexCtx :: Context String
 postIndexCtx = defaultContext 
             <> dateField "published" "%B %d . %Y"
             <> teaserImage
+            <> portholeImage
             <> teaserField "teaser" "content"
             <> pageUrlField "pageurl"
 
@@ -68,6 +70,14 @@ teaserImage = field "teaserImage" getImagePath
             ident = fromFilePath $ base </> "teaser.jpg"
         fmap (maybe "" toUrl) (getRoute ident)
 
+portholeImage :: Context String
+portholeImage = field "portholeImage" getImagePath
+  where 
+    getImagePath item = do
+        let path = toFilePath (itemIdentifier item)
+            base = dropExtension path
+            ident = fromFilePath $ base </> "porthole.png"
+        fmap (maybe "" toUrl) (getRoute ident)
 
 
 

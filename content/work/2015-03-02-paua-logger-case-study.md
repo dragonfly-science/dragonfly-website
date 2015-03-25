@@ -27,9 +27,9 @@ analysis needed to interpret the data, so it can be used to provide
 a robust indicator of the health of the fishery.
 
 Security and integrity of the data are essential. The information is of high commercial
-value to the fishers, and we have developed processess that maintain the privacy of individual
+value to the fishers, and we have developed processes that maintain the privacy of individual
 fisher’s data, while allowing high level summaries to be shared across the industry. The system
-is deployed on the the Catalyst Cloud, an 
+is deployed on the Catalyst Cloud, an 
 affordable and secure New Zealand cloud computing service.
 
 The Ministry of Primary Industries is  very positive about the project. They 

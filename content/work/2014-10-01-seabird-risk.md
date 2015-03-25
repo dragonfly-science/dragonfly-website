@@ -6,8 +6,8 @@ quote-attribution: Bob Zuur , Marine Advocate, WWF-New Zealand
 ---
 
 The National Plan of Action - Seabirds, is the Ministry for Primary Industries’ key policy for
-managining interactions between fisheries and seabirds. The seabird risk assessment underpins that policy, supporting
-prioiritisation of management actions, and providing clear metrics for assessing the performance of the fishing industry.
+managing interactions between fisheries and seabirds. The seabird risk assessment underpins that policy, supporting
+prioritisation of management actions, and providing clear metrics for assessing the performance of the fishing industry.
 <!--more-->
 
 
