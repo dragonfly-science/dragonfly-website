@@ -1,7 +1,6 @@
-<div class="container people-navigation">
+<div class="container people-navigation" data-section="$section$">
   <ul>
     $for(posts)$
-    <li><a href="$pageurl$"><img src="$portholeImage$" alt="$title$" title="$title$"/></a></li>
-    $endfor$
+    <li><a href="$pageurl$"><div class="porthole-navigation" style="background-image: url($teaserImage$)"></div></a></li>    $endfor$
   </ul>
 </div>
