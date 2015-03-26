@@ -58,7 +58,7 @@ getPosts = do
         all = cycle snaps'
         lu = [ (itemIdentifier this, (prev, next))
              | (prev, this, next) <- take l $ drop (l-1) $ zip3 all (drop 1 all) (drop 2 all) ]
-    return $ listField "posts" (postIndexCtx lu)(return snaps')
+    return $ listField "pages" (postIndexCtx lu)(return snaps')
 
 type PreviousNextMap = [(Identifier, (Item String, Item String))]
 postIndexCtx :: PreviousNextMap -> Context String

@@ -54,7 +54,16 @@ personIndexCtx = defaultContext
                  <> teaserField "teaser" "content"
                  <> pageUrlField "pageurl"
                  <> portholeImage
+                 <> teaserImage
 
+teaserImage :: Context String
+teaserImage = field "teaserImage" getImagePath
+  where 
+    getImagePath item = do
+        let path = toFilePath (itemIdentifier item)
+            base = dropExtension path
+            ident = fromFilePath $ base </> "teaser.jpg"
+        fmap (maybe "" toUrl) (getRoute ident)
 
 portholeImage :: Context String
 portholeImage = field "portholeImage" getImagePath
