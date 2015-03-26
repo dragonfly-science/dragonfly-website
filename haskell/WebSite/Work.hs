@@ -4,6 +4,7 @@ module WebSite.Work (
 ) where
 
 import Data.Monoid ((<>))
+import Data.Maybe (maybeToList)
 import System.FilePath
 import Hakyll
 
@@ -24,8 +25,8 @@ rules = do
         route $ constRoute "work/index.html"
         compile $ do 
             base <- baseContext "work"
-            let pages = listField "pages" postIndexCtx (recentFirst =<< loadAllSnapshots ("work/*.md"  .&&. hasVersion "full") "content")
-                ctx = base <> pages
+            posts <- getPosts
+            let  ctx = base <> posts
             scholmdCompiler 
                 >>= loadAndApplyTemplate "templates/post-list.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -41,25 +42,44 @@ rules = do
         compile $ do 
             base <- baseContext "work"
             imageMeta <- loadAll ("**/*.img.md")
-            let pages = listField "pages" postIndexCtx (recentFirst =<< loadAllSnapshots ("work/*.md"  .&&. hasVersion "full") "content")
-            let ctx = base <> actualbodyField "actualbody" <> pages
-            -- it should be possible to avoid compiling this twice to load the output from
-            -- the 'full' version.
+            posts <- getPosts
+            let ctx = base <> actualbodyField "actualbody" <> posts
             scholmdCompiler 
                 >>= loadAndApplyTemplate "templates/post.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= imageCredits imageMeta
                 >>= relativizeUrls
 
+getPosts :: Compiler (Context String)
+getPosts = do
+    snaps <- loadAllSnapshots ("work/*.md"  .&&. hasVersion "full") "content"
+    snaps' <- recentFirst snaps
+    let l = length snaps'
+        all = cycle snaps'
+        lu = [ (itemIdentifier this, (prev, next))
+             | (prev, this, next) <- take l $ drop (l-1) $ zip3 all (drop 1 all) (drop 2 all) ]
+    return $ listField "pages" (postIndexCtx lu)(return snaps')
 
-postIndexCtx :: Context String
-postIndexCtx = defaultContext 
-            <> dateField "published" "%B %d . %Y"
-            <> teaserImage
-            <> portholeImage
-            <> teaserField "teaser" "content"
-            <> pageUrlField "pageurl"
+type PreviousNextMap = [(Identifier, (Item String, Item String))]
+postIndexCtx :: PreviousNextMap -> Context String
+postIndexCtx lu  = defaultContext 
+                <> dateField "published" "%B %d . %Y"
+                <> teaserImage
+                <> portholeImage
+                <> teaserField "teaser" "content"
+                <> pageUrlField "pageurl"
+                <> previous lu
+                <> next lu
 
+previous :: PreviousNextMap -> Context String
+previous lu = 
+    let lup item = return $ fmap fst $ maybeToList $ lookup (itemIdentifier item) lu
+    in  listFieldWith "previous" (postIndexCtx []) lup
+
+next :: PreviousNextMap -> Context String
+next lu = 
+    let lup item = return $ fmap snd $ maybeToList $ lookup (itemIdentifier item) lu
+    in  listFieldWith "next" (postIndexCtx []) lup
 
 teaserImage :: Context String
 teaserImage = field "teaserImage" getImagePath
