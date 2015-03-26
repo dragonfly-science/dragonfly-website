@@ -24,7 +24,7 @@ rules = do
         route $ constRoute "work/index.html"
         compile $ do 
             base <- baseContext "work"
-            let pages = listField "posts" postIndexCtx (recentFirst =<< loadAllSnapshots ("work/*.md"  .&&. hasVersion "full") "content")
+            let pages = listField "pages" postIndexCtx (recentFirst =<< loadAllSnapshots ("work/*.md"  .&&. hasVersion "full") "content")
                 ctx = base <> pages
             scholmdCompiler 
                 >>= loadAndApplyTemplate "templates/post-list.html" ctx
@@ -41,7 +41,7 @@ rules = do
         compile $ do 
             base <- baseContext "work"
             imageMeta <- loadAll ("**/*.img.md")
-            let pages = listField "posts" postIndexCtx (recentFirst =<< loadAllSnapshots ("work/*.md"  .&&. hasVersion "full") "content")
+            let pages = listField "pages" postIndexCtx (recentFirst =<< loadAllSnapshots ("work/*.md"  .&&. hasVersion "full") "content")
             let ctx = base <> actualbodyField "actualbody" <> pages
             -- it should be possible to avoid compiling this twice to load the output from
             -- the 'full' version.
