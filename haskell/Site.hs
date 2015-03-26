@@ -45,24 +45,6 @@ main = hakyllWith config $ do
     -- Work section
     Work.rules
 
-    -- Work
---    match "work/*.html" $ do
---        route idRoute
---        compile $ do
---            ctx <- baseContext "work"
---            scholmdCompiler
---                >>= loadAndApplyTemplate "templates/default.html" ctx
---                >>= relativizeUrls
-
-    -- Publications section (not much here yet)
---    match "pages/work.md" $ do
---        route $ constRoute "work/index.html"
---        compile $ do
---            ctx <- baseContext "work"
---            scholmdCompiler
---                >>= loadAndApplyTemplate "templates/default.html" ctx
---                >>= relativizeUrls
-
     -- Contact page
     match "pages/contact.html" $ do
         route $ constRoute "contact/index.html"

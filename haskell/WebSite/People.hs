@@ -3,74 +3,16 @@ module WebSite.People (
     rules
 ) where
 
-import Control.Monad (liftM)
-import Data.Monoid ((<>))
-import Data.Maybe (fromMaybe)
-import System.FilePath
-
-import Hakyll
-
-import WebSite.Context
-import WebSite.Compilers
+import WebSite.Collection
 
 rules :: Rules()
-rules = do
-    
-    match "pages/people.md" $ do
-        route $ constRoute "about/index.html"
-        compile $ do
-            base <- baseContext "people"
-            let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"  
-            let peopleitems = loadAllSnapshots ("people/*.md"  .&&. hasVersion "full") "content" >>= sortItemsBy sortorder
-            let persons = listField "pages" personIndexCtx peopleitems
-            let ctx = base <> persons
-            scholmdCompiler 
-                >>= loadAndApplyTemplate "templates/people-list.html" ctx
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
+rules = makeRules $ CollectionConfig 
+                        { baseName            = "people"
+                        , indexTemplate       = "about/index.html"
+                        , indexPattern        = "pages/people.md"
+                        , collectionPattern   = "people/*.md"
+                        , collectionTemplate  = "templates/people-list.html"
+                        , pageTemplate        = "templates/person.html"
+                        }
 
-
-    match "people/*.md" $ version "full" $ do
-        compile $ do 
-            scholmdCompiler 
-                >>= saveSnapshot "content"
-
-    match "people/*.md" $ do
-        route $ setExtension "html"
-        compile $ do
-            base <- baseContext "people"
-            let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"  
-            let peopleitems = loadAllSnapshots ("people/*.md"  .&&. hasVersion "full") "content" >>= sortItemsBy sortorder
-            let persons = listField "pages" personIndexCtx peopleitems
-            let banner = constField "banner" "/images/person-banner.png"
-            let ctx = base <> banner <> actualbodyField "actualbody" <> persons
-            scholmdCompiler 
-                >>= loadAndApplyTemplate "templates/person.html" ctx
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
-
-personIndexCtx :: Context String
-personIndexCtx = defaultContext 
-                 <> teaserField "teaser" "content"
-                 <> pageUrlField "pageurl"
-                 <> portholeImage
-                 <> teaserImage
-
-teaserImage :: Context String
-teaserImage = field "teaserImage" getImagePath
-  where 
-    getImagePath item = do
-        let path = toFilePath (itemIdentifier item)
-            base = dropExtension path
-            ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" toUrl) (getRoute ident)
-
-portholeImage :: Context String
-portholeImage = field "portholeImage" getImagePath
-  where 
-    getImagePath item = do
-        let path = toFilePath (itemIdentifier item)
-            base = dropExtension path
-            ident = fromFilePath $ base </> "porthole.png"
-        fmap (maybe "" toUrl) (getRoute ident)
 

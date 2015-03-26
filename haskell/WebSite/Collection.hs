@@ -1,0 +1,114 @@
+{-# LANGUAGE OverloadedStrings #-}
+module WebSite.Collection (
+    makeRules ,
+    CollectionConfig(..),
+    Rules()
+) where
+
+import Control.Monad (liftM)
+import Data.Monoid ((<>))
+import Data.Maybe (fromMaybe, maybeToList)
+import System.FilePath
+
+import Hakyll
+
+import WebSite.Context
+import WebSite.Compilers
+import WebSite.DomUtil.Images
+
+data CollectionConfig = CollectionConfig 
+                      { baseName           :: String
+                      , indexTemplate      :: FilePath
+                      , indexPattern       :: Pattern
+                      , collectionPattern  :: Pattern
+                      , collectionTemplate :: Identifier
+                      , pageTemplate       :: Identifier
+                      }
+
+imageCredits :: [Item String] -> Item String -> Compiler (Item String)
+imageCredits imgMeta item = do
+    return $ fmap (processFigures) item
+
+makeRules :: CollectionConfig -> Rules()
+makeRules cc = do
+
+    match (indexPattern cc) $ do
+        route $ constRoute (indexTemplate cc)
+        compile $ do 
+            base <- baseContext (baseName cc)
+            pages <- getPages cc
+            let  ctx = base <> pages
+            scholmdCompiler 
+                >>= loadAndApplyTemplate (collectionTemplate cc) ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
+
+    match (collectionPattern cc) $ version "full" $ do
+        compile $ do 
+            scholmdCompiler 
+                >>= saveSnapshot "content"
+
+    match (collectionPattern cc) $ do
+        route $ setExtension "html"
+        compile $ do 
+            base <- baseContext (baseName cc)
+            imageMeta <- loadAll ("**/*.img.md")
+            pages <- getPages cc
+            let ctx = base <> actualbodyField "actualbody" <> pages
+            scholmdCompiler 
+                >>= loadAndApplyTemplate (pageTemplate cc) ctx
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= imageCredits imageMeta
+                >>= relativizeUrls
+
+getPages :: CollectionConfig -> Compiler (Context String)
+getPages cc = do
+    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
+    let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"  
+    snaps' <- sortItemsBy sortorder snaps
+    let l = length snaps'
+        all = cycle snaps'
+        lu = [ (itemIdentifier this, (prev, next))
+             | (prev, this, next) <- take l $ drop (l-1) $ zip3 all (drop 1 all) (drop 2 all) ]
+    return $ listField "pages" (pageIndexCtx lu)(return snaps')
+
+type PreviousNextMap = [(Identifier, (Item String, Item String))]
+pageIndexCtx :: PreviousNextMap -> Context String
+pageIndexCtx lu  = defaultContext 
+                <> teaserImage
+                <> portholeImage
+                <> teaserField "teaser" "content"
+                <> pageUrlField "pageurl"
+                <> dateField "published" "%B %d . %Y"
+                <> previous lu
+                <> next lu
+
+previous :: PreviousNextMap -> Context String
+previous lu = 
+    let lup item = return $ fmap fst $ maybeToList $ lookup (itemIdentifier item) lu
+    in  listFieldWith "previous" (pageIndexCtx []) lup
+
+next :: PreviousNextMap -> Context String
+next lu = 
+    let lup item = return $ fmap snd $ maybeToList $ lookup (itemIdentifier item) lu
+    in  listFieldWith "next" (pageIndexCtx []) lup
+
+teaserImage :: Context String
+teaserImage = field "teaserImage" getImagePath
+  where 
+    getImagePath item = do
+        let path = toFilePath (itemIdentifier item)
+            base = dropExtension path
+            ident = fromFilePath $ base </> "teaser.jpg"
+        fmap (maybe "" toUrl) (getRoute ident)
+
+portholeImage :: Context String
+portholeImage = field "portholeImage" getImagePath
+  where 
+    getImagePath item = do
+        let path = toFilePath (itemIdentifier item)
+            base = dropExtension path
+            ident = fromFilePath $ base </> "porthole.png"
+        fmap (maybe "" toUrl) (getRoute ident)
+
+
