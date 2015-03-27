@@ -8,13 +8,12 @@
 }
 .banner-background {
     position: absolute;
-    background-image: url(/images/pattern.svg);
+    background-image: url(/images/jewel-wing.png);
     background-size: cover;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    opacity: 0.3;
 }
 
 .banner .container {
@@ -25,10 +24,12 @@
 
 .banner .container .content h1 {
     padding: 0;
+    padding-top: 1em;
     background: none;
-    font-size: 6em;
+    font-size: 7.7vw;
     color: #ffffff;
     @include media($highbury-fling) {
+        padding-top: 0;
         font-size: 19vw;
     }
     
