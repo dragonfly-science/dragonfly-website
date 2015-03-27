@@ -1,5 +1,5 @@
 ---
-title: Richard Mansfield
+title: Richard Mansfield, PhD
 email: richard@dragonfly.co.nz
 firstname: Richard
 lastname: Mansfield

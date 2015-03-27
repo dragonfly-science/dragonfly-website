@@ -1,10 +1,10 @@
 $porthole-top-margin-small: em(21);
 $porthole-image-size: em(150);
 $porthole-image-size-small: em(100);
-$porthole-text-size: $base-font-size;
 $porthole-title-padding-bottom: 0.35em;
 $porthole-title-padding-top: em(20);
 $read-more-text-color: $light-gray;
+$porthole-text-size: 0.9em;
 
 .values {
     @include span-columns(4);
@@ -15,10 +15,8 @@ $read-more-text-color: $light-gray;
 
 
 .porthole-grid {
-    font-size: $porthole-text-size;
     @include media($transient) {
         width: $small-screen;
-        font-size: $base-font-size * 0.875;
     }
 
     .porthole {
@@ -50,6 +48,9 @@ $read-more-text-color: $light-gray;
             color: $read-more-text-color;
             text-decoration: underline;
         }
+        p {
+            font-size: $porthole-text-size;
+        }
 
         @include media($clinical) {
             @include span-columns(4 of 8);
@@ -70,8 +71,6 @@ $read-more-text-color: $light-gray;
             }
 
             h4 {
-                font-size: $base-font-size;
-                font-weight: 500;
                 letter-spacing: em(1);
             }
             p,
