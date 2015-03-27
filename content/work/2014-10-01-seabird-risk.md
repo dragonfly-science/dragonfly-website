@@ -3,6 +3,7 @@ title: Seabird risk assessment
 banner-image: /work/2014-10-01-seabird-risk/bullers.jpg
 quote: They fostered an open and inclusive approach with all stakeholders
 quote-attribution: Bob Zuur , Marine Advocate, WWF-New Zealand
+logo: /work/2014-10-01-seabird-risk/MPI-logo.png
 ---
 
 The National Plan of Action - Seabirds, is the Ministry for Primary Industries’ key policy for
@@ -33,4 +34,5 @@ is used by the fishing industry to support the certification of New Zealand fish
 > The assessment exercise has given us a new perspective on the risks posed by commercial fisheries, and in particular highlighted risks facing seabirds in New Zealand’s inshore fisheries
 
 Bob Zuur , Marine Advocate, WWF-New Zealand.
+
 

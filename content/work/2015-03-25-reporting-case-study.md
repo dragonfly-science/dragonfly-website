@@ -4,6 +4,7 @@ banner-image: /work/2015-03-25-reporting-case-study/electricity-use-and-demand.p
 summary: 
 quote: If I have another chance to work with Dragonfly I won't hesitate to say yes. No question 
 quote-attribution: Vij Kooyela, Senior Analyst, Sector Performance Team, Ministry of Business, Innovation, & Employment 
+logo: /work/2015-03-25-reporting-case-study/mbie-logo.png
 ---
 One of our secret sauces is a focus on repeatable, automated reporting. We worked with the Sector Performance
 team at the Ministry of Business, Innovation, & Employment to improve their analysis processes, making the team

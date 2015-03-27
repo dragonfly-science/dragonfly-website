@@ -4,6 +4,7 @@ banner-image: /work/2015-03-25-TMP-case-study/matariki.jpg
 summary: We are using machine learning to help Te Māngai Pāho with their guardianship of Maori language.
 quote: The team at Dragonfly have been great to work with. They quickly understood what we were trying to achieve and came up with a very innovative solution 
 quote-attribution: Thomas Hood, Manager, Corporate Services, Te Māngai Pāho
+logo: /work/2015-03-25-TMP-case-study/tmp-logo.png
 ---
 
 Machine learning methods are ideal for rapid classification of streaming data. We are using machine
@@ -41,5 +42,6 @@ trained, the systems is able to keep classifying new data as it arrives.
 > project happen for us.
 
 Thomas Hood, Manager, Corporate Services, Te Māngai Pāho
+
 
 

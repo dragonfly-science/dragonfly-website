@@ -35,6 +35,14 @@ $wrap-images-width: em(950);
 
     .post-info {
         color: $post-highlight-color;
+        text-align: right;
+        img {
+            max-height: 6em;
+            @include filter(opacity(50%));
+            @include media($clinical) {
+                display: none;
+            }
+        }
     }
 
     a {

@@ -6,6 +6,7 @@ summary: We built an automated system to upload, process and display daily pāua
     reduce the time and cost of fishing.
 quote: Dragonfly has been absolutely awesome – we’re rapt
 quote-attribution: Jeremy Cooper, CEO, Pāua Industry Council
+logo: /work/2015-03-02-paua-logger-case-study/pic-logo.png
 ---
 
 The New Zealand pāua fishery is a $50 million export industry. We 
