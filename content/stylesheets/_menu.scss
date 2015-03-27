@@ -63,13 +63,16 @@ $responsive-navigation-height-clinical: em(42);
         @include media($horizontal-mode) {
             display: none;
         }
-        font-size: $base-font-size * 0.875;
         color: white;
-        letter-spacing: 0.78;
         padding-top: em(46);
         padding-bottom: em(56);
         line-height: em(28);
         text-align: left;
+
+        a {
+            color: white;
+            text-decoration: underline;
+        }
     }
 
     .responsive-navigation-menu-button {
@@ -142,40 +145,31 @@ $responsive-navigation-height-clinical: em(42);
         top: 0;
         right: 0;
         z-index: 10001;
-        background-color: $base-heading-color;
+        white-space: nowrap;
+        overflow: none;
         ul.responsive-navigation-menu {
             display: block;
         }
-        @include media($clinical) {
-            @include linear-gradient(-179deg, #3F8DB3 0%, #1A9E86 88%);
+        @include linear-gradient(-179deg, #3F8DB3 0%, #1A9E86 88%);
+        .logo {
+            background-image: url('/images/dragonfly-wing-only-white.png');
+        }
+        span.icon-bar {
+            border-bottom: em(3) solid white;
         }
     }
-
     .responsive-navigation-wrapper[data-mode=open][data-section=people] {
-        background-color: $people-green;
-        @include media($clinical) {
-            background-color: none;
-        }
+        @include linear-gradient($people-green, #3F8D83);
     }
     .responsive-navigation-wrapper[data-mode=open][data-section=work] {
-        background-color: $blog-red;
-        @include media($clinical) {
-            background-color: none;
-        }
+        @include linear-gradient($blog-red, #3F8D83);
     }
     .responsive-navigation-wrapper[data-mode=open][data-section=resources] {
-        background-color: $publications-orange;
-        @include media($clinical) {
-            background-color: none;
-        }
+        @include linear-gradient($publications-orange, #3F8D83);
     }
     .responsive-navigation-wrapper[data-mode=open][data-section=contact] {
-        background-color: $data-purple;
-        @include media($clinical) {
-            background-color: none;
-        }
+        @include linear-gradient($data-purple, #3F8D83);
     }
-
     ul.responsive-navigation-menu {
         -webkit-transform-style: preserve-3d; // stop webkit flicker
         clear: both;
