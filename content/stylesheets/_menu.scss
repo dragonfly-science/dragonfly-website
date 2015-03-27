@@ -1,5 +1,5 @@
 $responsive-navigation-height: em(82);
-$responsive-navigation-height-compact: em(67);
+$responsive-navigation-height-clinical: em(42);
 .responsive-navigation {
     $responsive-navigation-padding: 1em;
     $responsive-navigation-logo-height: em(44);
@@ -11,15 +11,13 @@ $responsive-navigation-height-compact: em(67);
     $responsive-navigation-item-padding: 0.5em;
     $responsive-navigation-item-nudge: 0em;
     $responsive-navigation-text-offset: 0.55em;
-    $mobile-logo-height: em(27);
-    $horizontal-mode: em(860);  // Desktop menu
-    $compact-mode: $transient;  // Small logo with colored background
+    $horizontal-mode: $clinical-up;  // Desktop menu
 
     background-color: $responsive-navigation-background;
     height: $responsive-navigation-height;
     width: 100%;
     position: fixed;
-    top:  0px;
+    top:  0;
     z-index: 9999;
     padding-left: 0;
 
@@ -29,17 +27,17 @@ $responsive-navigation-height-compact: em(67);
 
     // Responsive views
     @include media($horizontal-mode) {
-        border-bottom: 1px solid $thin-gray;
+        border-bottom: em(1) solid $thin-gray;
     }
 
-    @include media($compact-mode) {
-        height: $responsive-navigation-height-compact;
+    @include media($clinical) {
+        height: $responsive-navigation-height-clinical;
         padding: 0 0;
-        border: none;
+        border-bottom: em(1) solid $thin-gray;
     }
 
     .logo {
-        height: $responsive-navigation-height + $heavy-underline - em(1); /* HACK - not sure why this 1 px is needed - may fail in other contexts */
+        height: $responsive-navigation-height + $heavy-underline - em(1); /* HACK - not sure why this 1 pixel is needed - may fail in other contexts */
         width: $responsive-navigation-logo-width;
         position: fixed;
         background: url('/images/dragonfly-logo-rgb.png');
@@ -48,8 +46,8 @@ $responsive-navigation-height-compact: em(67);
         background-position: center;
         z-index: 1000;
         border-bottom: $heavy-underline solid rgba(255, 255, 255, 0);
-        @include media($transient) {
-            height: $responsive-navigation-height-compact - 1em;
+        @include media($clinical) {
+            height: $responsive-navigation-height-clinical - 1em;
             width: 4em;
             border: none;
             background: url('/images/dragonfly-wing-only-white.png');
@@ -80,10 +78,11 @@ $responsive-navigation-height-compact: em(67);
         float: right;
         margin: 0;
         margin-right: $content-margin-clinical;
-        @include media($transient) {
+        padding-top: $responsive-navigation-height - 3*em(3) - 3em;
+        padding-top: 0.6em;
+        @include media ($transient){
             margin-right: $content-margin-transient;
         }
-        padding: 1.5em 0;
         @include media ($horizontal-mode) {
             display: none;
         }
@@ -93,36 +92,22 @@ $responsive-navigation-height-compact: em(67);
         }
 
         span.icon-bar {
-            border-bottom: 3px solid $base-heading-color;
+            border-bottom: em(3) solid white;
             display: block;
             padding: 0.3em 1em 0 1em;
         }
     }
+    
+    .responsive-navigation-wrapper[data-section=index] span.icon-bar {
+        border-bottom: em(3) solid $base-heading-color;
+    }
+    
+    .responsive-navigation-wrapper[data-section=index] .logo {
+        @include media($clinical) {
+            background-image: url('/images/dragonfly-wing-only-blue.png');
+        }
+    }
 
-    .responsive-navigation-wrapper[data-section=people] span.icon-bar {
-        border-bottom: 3px solid $people-green;
-        @include media($transient) {
-            border-bottom: 3px solid white;
-        }
-    }
-    .responsive-navigation-wrapper[data-section=work] span.icon-bar {
-        border-bottom: 3px solid $blog-red;
-        @include media($transient) {
-            border-bottom: 3px solid white;
-        }
-    }
-    .responsive-navigation-wrapper[data-section=resources] span.icon-bar {
-        border-bottom: 3px solid $publications-orange;
-        @include media($transient) {
-            border-bottom: 3px solid white;
-        }
-    }
-    .responsive-navigation-wrapper[data-section=contact] span.icon-bar {
-        border-bottom: 3px solid $data-purple;
-        @include media($transient) {
-            border-bottom: 3px solid white;
-        }
-    }
 
     // Nav menu
 
@@ -135,7 +120,7 @@ $responsive-navigation-height-compact: em(67);
         @include content-left-padding;
         @include transition(height 0.4s, background 0.4s);
     }
-    @include media($compact-mode) {
+    @include media($clinical) {
         .responsive-navigation-wrapper[data-section=contact] {
             background: $data-purple;
         }
@@ -161,32 +146,32 @@ $responsive-navigation-height-compact: em(67);
         ul.responsive-navigation-menu {
             display: block;
         }
-        @include media($compact-mode) {
+        @include media($clinical) {
             @include linear-gradient(-179deg, #3F8DB3 0%, #1A9E86 88%);
         }
     }
 
     .responsive-navigation-wrapper[data-mode=open][data-section=people] {
         background-color: $people-green;
-        @include media($compact-mode) {
+        @include media($clinical) {
             background-color: none;
         }
     }
     .responsive-navigation-wrapper[data-mode=open][data-section=work] {
         background-color: $blog-red;
-        @include media($compact-mode) {
+        @include media($clinical) {
             background-color: none;
         }
     }
     .responsive-navigation-wrapper[data-mode=open][data-section=resources] {
         background-color: $publications-orange;
-        @include media($compact-mode) {
+        @include media($clinical) {
             background-color: none;
         }
     }
     .responsive-navigation-wrapper[data-mode=open][data-section=contact] {
         background-color: $data-purple;
-        @include media($compact-mode) {
+        @include media($clinical) {
             background-color: none;
         }
     }
@@ -240,7 +225,7 @@ $responsive-navigation-height-compact: em(67);
             padding-left: $responsive-navigation-item-padding * 2;
             line-height: $responsive-navigation-height;
             text-align: center;
-            border-bottom: 4px solid rgba(255, 255, 255, 0);
+            border-bottom: em(4) solid rgba(255, 255, 255, 0);
 
             a {
                 color: $responsive-navigation-color;
@@ -262,47 +247,47 @@ $responsive-navigation-height-compact: em(67);
 
     .responsive-navigation-wrapper[data-section=contact] > a.logo {
         border-bottom: $heavy-underline solid $data-purple;
-        @include media($compact-mode) {
+        @include media($clinical) {
             border-bottom: none;
         }
     }
 
     .responsive-navigation-wrapper[data-section=work] > a.logo {
         border-bottom: $heavy-underline solid $blog-red;
-        @include media($compact-mode) {
+        @include media($clinical) {
             border-bottom: none;
         }
     }
 
     .responsive-navigation-wrapper[data-section=resources] > a.logo {
         border-bottom: $heavy-underline solid $publications-orange;
-        @include media($compact-mode) {
+        @include media($clinical) {
             border-bottom: none;
         }
     }
 
     .responsive-navigation-wrapper[data-section=people] > a.logo {
         border-bottom: $heavy-underline solid $people-green;
-        @include media($compact-mode) {
+        @include media($clinical) {
             border-bottom: none;
         }
     }
 
     @include media($horizontal-mode) {
         .responsive-navigation-wrapper[data-section=people] li.nav-link[data-section=people] {
-            border-bottom: 4px solid $people-green;
+            border-bottom: em(4) solid $people-green;
         }
 
         .responsive-navigation-wrapper[data-section=work] li.nav-link[data-section=work] {
-            border-bottom: 4px solid $blog-red;
+            border-bottom: em(4) solid $blog-red;
         }
 
         .responsive-navigation-wrapper[data-section=resources] li.nav-link[data-section=resources] {
-            border-bottom: 4px solid $publications-orange;
+            border-bottom: em(4) solid $publications-orange;
         }
 
         .responsive-navigation-wrapper[data-section=contact] li.nav-link[data-section=contact]  {
-            border-bottom: 4px solid $data-purple;
+            border-bottom: em(4) solid $data-purple;
         }
     }
 }

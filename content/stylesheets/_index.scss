@@ -28,11 +28,17 @@
     background: none;
     font-size: 6em;
     color: #ffffff;
+    @include media($highbury-fling) {
+        font-size: 19vw;
+    }
     
 }
 
 .banner .container .content p {
     font-size: 2em;
+    @include media($transient) {
+        font-size: 8vw;
+    }
 
 }
 

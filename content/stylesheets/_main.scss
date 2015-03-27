@@ -18,8 +18,8 @@ h1 {
 
 main {
     margin-top: $responsive-navigation-height;
-    @include media($transient) {
-      margin-top: $responsive-navigation-height-compact;
+    @include media($clinical) {
+      margin-top: $responsive-navigation-height-clinical;
     }
 }
 
