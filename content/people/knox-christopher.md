@@ -8,8 +8,8 @@ tag: risto
 banner: knox-christopher/christopher-knox-letterbox.jpg
 ---
 
-Christopher is a web and software developer who specialises in data visualisation. 
-He is always searching for new and better ways of making data visualisatons.
+Christopher is a web and software developer who specialises in data visualisation
+– presenting large amounts of data in a graphical form. 
 <!--more-->
 
 Christopher enjoys being able to show clients their data in a way
@@ -52,4 +52,7 @@ underwater.
 it’s easy to be led astray or distracted by a feature that’s actually irrelevant. At 
 Dragonfly, we always rigorously analyse the data before presenting it, and 
 continually refine our work to be sure that any patterns we see are in fact real.
+
+Technical skills:
+D3; Python; Django; EmberJS; Haskell; Docker; CoreOS; OpenStack 
 

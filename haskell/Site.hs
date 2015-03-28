@@ -6,6 +6,7 @@ import WebSite.Context
 import WebSite.Compilers
 import qualified WebSite.Work as Work
 import qualified WebSite.People as People
+import qualified WebSite.News as News
 
 config :: Configuration
 config = defaultConfiguration {
@@ -45,6 +46,9 @@ main = hakyllWith config $ do
     -- Work section
     Work.rules
 
+    -- Work section
+    News.rules
+    
     -- Contact page
     match "pages/contact.html" $ do
         route $ constRoute "contact/index.html"

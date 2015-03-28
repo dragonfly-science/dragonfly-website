@@ -10,7 +10,7 @@ banner: thompson-finlay/finlay-thompson-letterbox.jpg
 sortorder: 2
 ---
 
-Finlay is operations manager at Dragonfly. With his mathematical background, he brings an insightful rigour
+Finlay is operations manager at Dragonfly. As a mathematician, he brings an insightful rigour
 to solving analytical and technical problems.
 <!--more-->
 
@@ -38,6 +38,7 @@ is essential. In the long run, robust anaysis will produce a better return on
 investment. It's gratifying to see our work being used to inform key commercial and
 government decisions. 
 
+Technical skills: Bayesian modelling; Haskell; PostgreSQL; Django, LaTeX
 
 ##Selected publications
 

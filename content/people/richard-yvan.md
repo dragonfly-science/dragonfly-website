@@ -33,6 +33,8 @@ things and move forward. The job at Dragonfly has been full of challenge,
 and I feel I'm doing something very useful. There's a great atmosphere here and
 we have plenty of fun in the team. It's the best job.
 
+Technical skills: R; GGplot; QGis; Grass; LaTeX
+
 ## Selected publications
 
 @boulton2008influence

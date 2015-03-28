@@ -1,0 +1,22 @@
+$if(banner-image)$
+<div class="container post-banner-image" style='background-image: url("$banner-image$")'>
+    <div class="post-banner-overlay"></div>
+</div>
+$endif$
+
+<div class="container post-detail">
+ <div class="sidebar">
+  <div class="post-info">
+  $if(logo)$
+    <img src="$logo$">
+  $endif$
+  </div>
+  </div>
+  <div class="content">
+    $if(teaser)$
+    <div class="lead">$teaser$</div>
+    $endif$
+    $body$
+  </div>
+</div>
+$partial("templates/bubble-navigation.html")$

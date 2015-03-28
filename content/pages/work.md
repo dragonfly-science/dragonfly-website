@@ -1,6 +1,6 @@
 ---
-Title: Case Studies
+Title: Our work
 ---
 
-# Dragonfly case studies
+# Our work
 

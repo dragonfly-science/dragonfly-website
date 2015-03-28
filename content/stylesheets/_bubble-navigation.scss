@@ -46,7 +46,7 @@
 
 .bubble {
     border-radius: 50%;
-    background-size: 100% 100%;
+    background-size: cover;
     width: 100%;
     @include calc(padding-top, "100% - 6px");
     position: relative;

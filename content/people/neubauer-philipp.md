@@ -30,12 +30,15 @@ Masters in ecological modeling at the [Université de la Méditerranée](http:/
 quantitative ecology at [Victoria University](http://www.victoria.ac.nz/sbs/research-centres-institutes/vucel),
 followed by a post-doc at [Rutgers University](http://marine.rutgers.edu/~ojensen/),
 studying the patterns and drivers of decline and recovery in fish stocks. He joined 
-Dragonfly in 2013.
+Dragonfly in 2013. Philipp is passionate about making research tools and results more broadly 
+available.
 
 > The impact of fishing on our marine environment is massive – from gathering shellfish at 
 the beach to trawling the ocean depths – you cannot escape it. Robust information from 
 fisheries science offers a way to balance conservation issues with the need to 
 feed the world’s population.
+
+Technical skills: Bayesian analysis; JAGS; R
 
 ##Selected publications
 @neubauer2013resilience
