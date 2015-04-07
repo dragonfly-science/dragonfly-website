@@ -304,3 +304,11 @@ h1.title {
     }
 }
 
+// Anchors
+a.anchor {
+    display: block; 
+    position: relative; 
+    margin-top:  -$responsive-navigation-height;
+    padding-top:  $responsive-navigation-height;
+    visibility: hidden;
+}

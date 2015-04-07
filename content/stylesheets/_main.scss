@@ -17,10 +17,10 @@ h1 {
 }
 
 main {
-    margin-top: $responsive-navigation-height;
-    @include media($clinical) {
-      margin-top: $responsive-navigation-height-clinical;
-    }
+    //margin-top: $responsive-navigation-height;
+    //@include media($clinical) {
+    //  margin-top: $responsive-navigation-height-clinical;
+    //}
 }
 
 .container {
@@ -63,5 +63,4 @@ main {
     position: relative;
     @include side-margins;
 }
-
 
