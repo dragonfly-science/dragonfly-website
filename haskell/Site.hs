@@ -1,5 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
+import Data.Monoid ((<>))
+
 import Hakyll
 
 import WebSite.Context
@@ -34,7 +36,12 @@ main = hakyllWith config $ do
     match "pages/index.md" $ do
         route $ constRoute "index.html"
         compile $ do
-            ctx <- baseContext "index"
+            base   <- baseContext "index"
+            people <- People.list 1000
+            bubbles <- People.bubbles 
+            work   <- Work.list 3
+            news   <- News.list 6
+            let ctx = base <> people <> work <> news <> bubbles
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx

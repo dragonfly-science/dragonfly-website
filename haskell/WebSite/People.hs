@@ -1,18 +1,26 @@
 {-# LANGUAGE OverloadedStrings #-}
 module WebSite.People (
-    rules
+    rules, list, bubbles
 ) where
+
+import Hakyll
 
 import WebSite.Collection
 
-rules :: Rules()
-rules = makeRules $ CollectionConfig 
-                        { baseName            = "people"
-                        , indexTemplate       = "about/index.html"
-                        , indexPattern        = "pages/people.md"
-                        , collectionPattern   = "people/*.md"
-                        , collectionTemplate  = "templates/people-list.html"
-                        , pageTemplate        = "templates/person.html"
-                        }
+config =  CollectionConfig 
+       { baseName            = "people"
+       , indexTemplate       = "about/index.html"
+       , indexPattern        = "pages/people.md"
+       , collectionPattern   = "people/*.md"
+       , collectionTemplate  = "templates/people-list.html"
+       , pageTemplate        = "templates/person.html"
+       }
 
+rules :: Rules()
+rules = makeRules config
+
+list :: Int -> Compiler (Context String)
+list = getList config
+
+bubbles = getBubbles config (Just "people/finlay-thompson.html")
 
