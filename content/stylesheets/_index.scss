@@ -49,3 +49,38 @@
     height: 3em;
     padding: 0;
 }
+
+#index-case-study {
+    background-size: cover;
+    position: relative;
+    z-index: -3;
+    min-height: 50vw;
+    background-image: url('/work/2015-03-02-paua-logger-case-study/dave-and-jules.jpg');
+    color: white;
+    padding-top: 20%;
+    
+    p {
+        font-size: 1.2em;
+    }
+
+    blockquote {
+        color: white;
+        font-size: 2em;
+        font-weight: bold;
+        border-left: none;
+        font-style: italic;
+        padding-left: 0;
+        z-index: -1;
+        
+        p {
+            margin-bottom: 0;
+        }
+        cite {
+            color: white;
+            font-size: 0.7em;
+            font-style: normal;
+            font-weight: normal;
+        }
+    }
+
+}
