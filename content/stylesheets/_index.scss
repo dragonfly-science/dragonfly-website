@@ -57,6 +57,7 @@
     background-image: url('/work/2015-03-02-paua-logger-case-study/dave-and-jules.jpg');
     color: white;
     padding-top: 20%;
+    padding-bottom: $base-line-height;
     
     p {
         font-size: 1.2em;
@@ -79,6 +80,10 @@
             font-style: normal;
             font-weight: normal;
         }
+    }
+    
+    .exit {
+        text-align: right;
     }
 
 }

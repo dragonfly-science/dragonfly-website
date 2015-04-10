@@ -9,7 +9,7 @@ $base-font-size: 1.1em;
 $base-line-height: $base-font-size * 1.5;
 $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
 $header-line-height: $base-font-size * 1.25;
-$base-border-radius: em(2);
+$base-border-radius: em(5);
 
 $heavy-underline: em(6);
 $medium-underline: em(4);
@@ -76,6 +76,8 @@ $people-green: #5AB18C;
 $data-purple: #82127E;
 $blog-red: #CF4547;
 $publications-orange: #EB7A59;
+$wing-flash-blue: #2093bf;
+$dark-purple: #5E416D;
 
 // Background Color
 $base-background-color: white;
@@ -83,7 +85,7 @@ $base-background-color: white;
 // Font Colors
 $base-font-color: $dark-gray;
 $base-heading-color: $medium-gray;
-$base-accent-color: $blue;
+$base-accent-color: $dark-purple;
 
 // Link Colors
 $base-link-color: $base-font-color;

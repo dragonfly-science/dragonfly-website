@@ -2,10 +2,10 @@
   -webkit-font-smoothing: antialiased;
   background-color: $base-button-color;
   border-radius: $base-border-radius;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
   color: white;
   display: inline-block;
-  font-size: $base-font-size;
-  font-weight: bold;
   line-height: 1;
   padding: .75em 1em;
   text-decoration: none;
