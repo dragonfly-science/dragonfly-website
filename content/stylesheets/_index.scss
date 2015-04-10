@@ -53,7 +53,6 @@
 #index-case-study {
     background-size: cover;
     position: relative;
-    z-index: -3;
     min-height: 40vw;
     background-image: url('/work/2015-03-02-paua-logger-case-study/dave-and-jules.jpg');
     color: white;
@@ -62,7 +61,7 @@
     p {
         font-size: 1.2em;
     }
-
+    
     blockquote {
         color: white;
         font-size: 2em;
@@ -70,7 +69,6 @@
         border-left: none;
         font-style: italic;
         padding-left: 0;
-        z-index: -1;
         
         p {
             margin-bottom: 0;

@@ -1,7 +1,6 @@
 .post-banner-image {
     background-size: cover;
     position: relative;
-    z-index: -3;
     min-height: 30vw;
     
     blockquote {
@@ -11,7 +10,6 @@
         border-left: none;
         font-style: italic;
         padding-left: 0;
-        z-index: -1;
         
         p {
             margin-bottom: 0;
@@ -34,7 +32,6 @@
     width: 100%;
     background-color: black;
     opacity: 0.5;
-    z-index: -2;
 }
 
 .post-detail {
