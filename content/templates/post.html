@@ -1,8 +1,10 @@
-<div class="container post-banner-image" style='background-image: url("$banner-image$")'>
+<div class="post-banner-image menu-spacer" style='background-image: url("$banner-image$")'>
     <div class="post-banner-overlay"></div>
-    $if(quote)$
-    <blockquote class="wide"><p>$quote$</p><cite>$quote-attribution$</cite></blockquote>
-    $endif$
+    <div class="container">
+        $if(quote)$
+        <blockquote class="wide"><p>$quote$</p><cite>$quote-attribution$</cite></blockquote>
+        $endif$
+    </div>
 </div>
 
 <div class="container post-detail">

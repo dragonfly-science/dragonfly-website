@@ -3,18 +3,27 @@
     position: relative;
     z-index: -3;
     min-height: 30vw;
-
+    
     blockquote {
         color: white;
         font-size: 2em;
         font-weight: bold;
-        border-left: 2px solid white;
+        border-left: none;
+        font-style: italic;
+        padding-left: 0;
         z-index: -1;
+        
+        p {
+            margin-bottom: 0;
+        }
+        cite {
+            color: white;
+            font-size: 0.7em;
+            font-style: normal;
+            font-weight: normal;
+        }
     }
-    cite {
-        color: white;
-        font-size: 0.8em;
-    }
+
 }
 /* Puts a dark shade over the image to allow the writing to be read */
 .post-banner-overlay {

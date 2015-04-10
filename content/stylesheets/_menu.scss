@@ -312,3 +312,10 @@ a.anchor {
     padding-top:  $responsive-navigation-height;
     visibility: hidden;
 }
+
+.menu-spacer {
+    margin-top: $responsive-navigation-height;
+    @include media($clinical) {
+        margin-top: $responsive-navigation-height-clinical;
+    }
+}
