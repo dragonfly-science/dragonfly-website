@@ -4,6 +4,10 @@
     width: 100%;
     background-color: black;
     margin: 0;
+    color: white;
+    a {
+        color: white;
+    }
 }
 
 .banner-background {
@@ -78,6 +82,9 @@
     
     .exit {
         text-align: right;
+    }
+    a {
+        color: white;
     }
 
 }

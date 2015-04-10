@@ -17,7 +17,7 @@
     background: url('/images/footer-pattern.png');
     background-size: cover;
     line-height: 1.4em;
-
+    
     @include media($compact-footer) {
         margin-top: em(40);
     }

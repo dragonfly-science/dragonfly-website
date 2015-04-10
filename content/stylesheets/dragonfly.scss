@@ -41,3 +41,10 @@ div.page-title {
     }
 }
 
+.full-screen {
+    @include calc(min-height, "100vh - #{$responsive-navigation-height}");
+
+    @include media($clinical) {
+        @include calc(min-height, "100vh - #{$responsive-navigation-height-clinical}");
+    }
+}
