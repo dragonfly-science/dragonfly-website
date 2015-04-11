@@ -9,13 +9,13 @@ import WebSite.Compilers
 import qualified WebSite.Work as Work
 import qualified WebSite.People as People
 import qualified WebSite.News as News
+import qualified WebSite.Resources as Resources
 
 config :: Configuration
 config = defaultConfiguration {
   destinationDirectory = "/var/cache/dragonflyweb/main/site",
   storeDirectory       = "/var/cache/dragonflyweb/main/cache",
   tmpDirectory         = "/var/cache/dragonflyweb/main/cache/tmp",
-  -- deployCommand        = "rsync -av --delete /var/cache/dragonflyweb/main/site/ $ACCESS:/var/www/static/www.dragonfly.co.nz",
   previewHost          = "0.0.0.0"
 }
 
@@ -55,7 +55,10 @@ main = hakyllWith config $ do
 
     -- Work section
     News.rules
-    
+   
+    -- Resources section
+    Resources.rules
+
     -- Contact page
     match "pages/contact.html" $ do
         route $ constRoute "contact/index.html"
@@ -65,14 +68,6 @@ main = hakyllWith config $ do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
-    -- Data section (not much here yet)
-    match "pages/data.md" $ do
-        route $ constRoute "resources/index.html"
-        compile $ do
-            ctx <- baseContext "resources"
-            scholmdCompiler
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
 
     -- Static files
     match "assets/*" $ do

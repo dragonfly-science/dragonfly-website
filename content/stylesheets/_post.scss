@@ -31,7 +31,6 @@
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.5;
 }
 
 .post-detail {
@@ -55,11 +54,11 @@ $wrap-images-width: em(950);
         color: $post-highlight-color;
     }
 
-    div.content > p:nth-child(1) {
+    /* div.content > p:nth-child(1) {
         font-weight: 500;
         font-size: $base-font-size * 1.125;
         line-height: 1.2em;
-    }
+    } */
 
     .content {
 
