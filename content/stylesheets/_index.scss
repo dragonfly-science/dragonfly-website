@@ -1,24 +1,12 @@
 .banner { 
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: black;
     margin: 0;
     color: white;
     a {
         color: white;
-    }
-    .caption {
-        position: absolute;
-        bottom: 0;
-        left: 5;
-        text-align: left;
-        font-size: 0.8em;
-        color: #AAAAAA;
-        a {
-            color: #AAAAAA;
-            text-decoration: none;
-        }
     }
 }
 
@@ -30,9 +18,21 @@
     opacity: 0.5;
 }
 
+.caption {
+    text-align: left;
+    font-size: 0.8em;
+    color: #AAAAAA;
+    margin-left: 0.5em;
+    margin-top: 0.2em;
+    line-height: normal; 
+    a {
+        color: #AAAAAA;
+        text-decoration: none;
+    }
+}
+
 .banner-background {
     position: absolute;
-    //background-image: url(/images/jewel-wing.png);
     background-image: url("/resources/rear/port-napier.jpg");
     background-size: cover;
     top: 0;
