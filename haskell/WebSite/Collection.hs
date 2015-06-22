@@ -13,6 +13,8 @@ import Data.Monoid ((<>))
 import Data.Maybe (fromMaybe, maybeToList)
 import System.FilePath
 
+import Text.Pandoc
+
 import Hakyll
 
 import WebSite.Context
@@ -57,10 +59,11 @@ makeRules cc = do
         compile $ do 
             ident <- getUnderlying
             base <- baseContext (baseName cc)
+            ref <- refContext
             imageMeta <- loadAll ("**/*.img.md")
             pages <- getList cc 1000
             bubbles <- getBubbles cc (Just ident)
-            let ctx = base <> actualbodyField "actualbody" <> pages <> bubbles
+            let ctx = ref <> base <> actualbodyField "actualbody" <> pages <> bubbles
             scholmdCompiler 
                 >>= loadAndApplyTemplate (pageTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -137,5 +140,3 @@ portholeImage = field "portholeImage" getImagePath
             base = dropExtension path
             ident = fromFilePath $ base </> "porthole.png"
         fmap (maybe "" toUrl) (getRoute ident)
-
-

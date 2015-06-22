@@ -1,15 +1,16 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TupleSections #-}
 module WebSite.Compilers (
-                         scholmdCompiler,
-                         sortItemsBy
-                         ) where
+  scholmdCompiler,
+  renderPandocBiblio,
+  sortItemsBy
+) where
 
 
 import Hakyll
 import Text.Pandoc.Options
 import Control.Applicative
-import Control.Monad   (liftM)
+import Control.Monad   (liftM, (>=>))
 import Data.List       (sortBy)
 import Data.Ord        (comparing)
 
@@ -19,6 +20,12 @@ htm5Writer = defaultHakyllWriterOptions {
     writerHtml5             = True
     ,writerSectionDivs      = True
 }
+
+-- | Render a Pandoc input string to HTML5 output with a CSL style and a
+-- bibliography.
+renderPandocBiblio :: Item CSL -> Item Biblio -> Item String -> Compiler (Item String)
+renderPandocBiblio csl bib =
+    readPandocBiblio def csl bib >=> return . writePandocWith htm5Writer
 
 scholmdCompiler :: Compiler (Item String)
 scholmdCompiler = do
@@ -35,9 +42,7 @@ scholmdCompiler = do
     -- this means that we will potentially land up with a list of reference set and will
     -- need to process all of them.
 
-
-    writePandocWith htm5Writer  <$> (readPandocBiblio def csl bib =<< getResourceBody )
-
+    renderPandocBiblio csl bib =<< getResourceString
 
 -- Utility function to allow arbitrary sort order for items
 sortItemsBy :: (Ord b, MonadMetadata m) => (Identifier -> m b) -> [Item a] -> m [Item a]
