@@ -28,8 +28,9 @@ New Zealand sea lions, with a decline in pup production of over 40%
 since 1998.
 
 ###Mitigation devices
-![Sea lion exclusion device (SLED)
-](../posts/2011-04-13-estimated-sea-lion-bycatch-2008-09/SLED-diagram.png)
+
+![Sea lion exclusion device (SLED)](2011-04-13-estimated-sea-lion-bycatch-2008-09/SLED-diagram.png)
+
 In 2001 a new bycatch mitigation method, the sea lion exclusion device
 (SLED), was introduced in the Auckland Islands squid fishery. The SLED
 is a grid fitted in the net before the cod end, and bars are spaced to
