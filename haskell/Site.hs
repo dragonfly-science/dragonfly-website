@@ -27,7 +27,6 @@ main = hakyllWith config $ do
     match "resources/bibliography/*.csl" $ compile cslCompiler
     match "resources/bibliography/*.bib" $ compile biblioCompiler
     match "**/*.img.md" $ compile scholmdCompiler
-    match "*/**/*.md" $ compile scholmdCompiler
     match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png") $ do
         route idRoute
         compile copyFileCompiler
