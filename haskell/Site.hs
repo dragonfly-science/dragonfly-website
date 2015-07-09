@@ -10,6 +10,7 @@ import qualified WebSite.Work as Work
 import qualified WebSite.People as People
 import qualified WebSite.News as News
 import qualified WebSite.Resources as Resources
+import qualified WebSite.Publications as Publications
 
 config :: Configuration
 config = defaultConfiguration {
@@ -24,8 +25,8 @@ main = hakyllWith config $ do
 
     match "templates/*" $ compile templateCompiler
 
-    match "resources/bibliography/*.csl" $ compile cslCompiler
-    match "resources/bibliography/*.bib" $ compile biblioCompiler
+    match "resources/bibliography/apa.csl" $ compile cslCompiler
+    match "resources/bibliography/mfish.bib" $ compile biblioCompiler
     match "**/*.img.md" $ compile scholmdCompiler
     match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png") $ do
         route idRoute
@@ -54,9 +55,12 @@ main = hakyllWith config $ do
 
     -- Work section
     News.rules
-   
+
     -- Resources section
     Resources.rules
+
+    -- Publications section
+    Publications.rules
 
     -- Contact page
     match "pages/contact.html" $ do
