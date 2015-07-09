@@ -3,20 +3,16 @@ module WebSite.Context (
   baseContext,
   actualbodyField,
   pageUrlField,
-  refContext
+  refContext,
+  biblioContext
 ) where
 
-import Data.List (find)
+import Control.Monad (forM)
 import Data.Monoid ((<>))
 import System.FilePath (takeBaseName, replaceExtension)
-
 import Text.CSL.Reference (Reference)
-import Text.CSL.Style (Formatted(unFormatted))
-import qualified Text.CSL.Reference as Ref
 
-import Text.Pandoc.Shared (stringify)
-
-import WebSite.Compilers (renderPandocBiblio)
+import WebSite.Bibliography
 
 import Hakyll
 
@@ -28,7 +24,6 @@ baseContext section = do
            <> constField "section" section
            <> constField ("on-" ++ takeBaseName path) ""
            <> defaultContext
-
 
 teaserSeparator :: String
 teaserSeparator = "<!--more-->"
@@ -48,40 +43,28 @@ pageUrlField key = field key $ \item -> do
         path = "/" ++ pseudoPath
     return (replaceExtension path ".html")
 
--- Provide the reference data as context if the item is a BibTeX reference.
+-- Provide context for all references
+biblioContext :: Compiler (Context String)
+biblioContext = do
+    csl <- load "resources/bibliography/apa.csl"
+    bib <- load "resources/bibliography/mfish.bib"
+    return $ field "citations-by-year" $ const $
+        fmap mconcat $ forM [2015,2014..2007] $ \yr ->
+            mappend <$> pure ("<h2>" ++ show yr ++ "</h2>")
+                    <*> biblioCitationsByYear csl bib yr
+
+-- Provide context for a single BibTeX reference
 refContext :: Compiler (Context String)
 refContext = do
     csl <- load "resources/bibliography/apa.csl"
     bib <- load "resources/bibliography/mfish.bib"
-    return $ mkField "title" refTitle bib <>
-             mkField "citation" (refCitation csl bib) bib
-  where
-    mkField k fromRef bib = field k $
-        maybe (fail "") fromRef . flip lookupRef bib . itemIdentifier
+    return $  refField "title" refTitle bib
+           <> refField "citation" (refCitation False csl bib) bib
+           <> refField "url" refUrl bib
+           <> refField "doi" refDoi bib
 
--- | Look up the BibTeX ID part of an identifier in a bibliography to see if
--- there is a reference.
-lookupRef :: Identifier -> Item Biblio -> Maybe Reference
-lookupRef ident Item{itemBody = Biblio refs} = do
-    -- Get the BibTeX ID from the path.
-    let bibtexId = takeBaseName $ toFilePath ident
-    -- Find the matching reference ID in the bibliography.
-    find ((== bibtexId) . refId) refs
-
--- | Render the unformatted title of a reference
-refTitle :: Reference -> Compiler String
-refTitle = return . stringify . unFormatted . Ref.title
-
--- | Render the citation HTML for a reference
-refCitation :: Item CSL -> Item Biblio -> Reference -> Compiler String
-refCitation csl bib ref = asItem dummyInput $ renderPandocBiblio csl bib
-  where
-    -- The input is an empty body with dummy metadata to get Pandoc to generate
-    -- the HTML for a reference list with only the one citation.
-    dummyInput = unlines ["---", "nocite: |", ' ':' ':'@':refId ref, "..."]
-
-refId :: Reference -> String
-refId = Ref.unLiteral . Ref.refId
-
-asItem :: a -> (Item a -> Compiler (Item b)) -> Compiler b
-asItem x f = makeItem x >>= f >>= return . itemBody
+refField :: String -> (Reference -> Compiler String) -> Item Biblio -> Context String
+refField k fromRef bib = field k $ \item -> do
+    x <- maybe (fail "") fromRef . flip lookupRef bib . itemIdentifier $ item
+    debugCompiler $ "ref=" ++ show (lookupRef (itemIdentifier item) bib)
+    return x

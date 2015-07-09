@@ -41,9 +41,10 @@ makeRules cc = do
         route $ constRoute (indexTemplate cc)
         compile $ do 
             base <- baseContext (baseName cc)
+            bib <- biblioContext
             pages <- getList cc 1000
             bubbles <- getBubbles cc Nothing
-            let  ctx = base <> pages <> bubbles
+            let  ctx = base <> bib <> pages <> bubbles
             scholmdCompiler 
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
