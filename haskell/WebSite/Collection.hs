@@ -63,7 +63,7 @@ makeRules cc = do
             imageMeta <- loadAll ("**/*.img.md")
             pages <- getList cc 1000
             bubbles <- getBubbles cc (Just ident)
-            let ctx = ref <> base <> actualbodyField "actualbody" <> pages <> bubbles
+            let ctx = base <> ref <> actualbodyField "actualbody" <> pages <> bubbles
             scholmdCompiler 
                 >>= loadAndApplyTemplate (pageTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
