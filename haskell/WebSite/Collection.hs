@@ -73,6 +73,7 @@ makeRules cc = do
 
 getList :: CollectionConfig -> Int ->  Compiler (Context String)
 getList cc limit = do
+    ref <- refContext
     snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
     let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"  
     snaps' <- sortItemsBy sortorder snaps
@@ -80,7 +81,7 @@ getList cc limit = do
         all = cycle snaps'
         lu = [ (itemIdentifier this, (prev, next))
              | (prev, this, next) <- take l $ drop (l-1) $ zip3 all (drop 1 all) (drop 2 all) ]
-    return $ listField (baseName cc) (pageIndexCtx lu)(return $ take limit snaps')
+    return $ listField (baseName cc) (pageIndexCtx ref lu)(return $ take limit snaps')
 
 getBubbles :: CollectionConfig -> Maybe Identifier -> Compiler (Context String)
 getBubbles cc mident = do 
@@ -97,15 +98,15 @@ getBubbles cc mident = do
                     idx <- findIndex (\i -> ident' == itemIdentifier i) snaps'
                     let (before, after) = splitAt (idx + l) (cycle snaps')
                     return $ reverse (take 3 (reverse before)) ++ take 4 after
-        previous = listField "bubbles_prev" (pageIndexCtx lu)(return (take 3 snaps''))
-        this     = listField "bubbles_this" (pageIndexCtx lu)(return (take 1 $ drop 3 snaps''))
-        next     = listField "bubbles_next" (pageIndexCtx lu)(return (take 3 $ drop 4 snaps''))
+        previous = listField "bubbles_prev" (pageIndexCtx mempty lu)(return (take 3 snaps''))
+        this     = listField "bubbles_this" (pageIndexCtx mempty lu)(return (take 1 $ drop 3 snaps''))
+        next     = listField "bubbles_next" (pageIndexCtx mempty lu)(return (take 3 $ drop 4 snaps''))
     return  $ previous <> this <> next
     
 
 type PreviousNextMap = [(Identifier, (Item String, Item String))]
-pageIndexCtx :: PreviousNextMap -> Context String
-pageIndexCtx lu  = defaultContext 
+pageIndexCtx :: Context String -> PreviousNextMap -> Context String
+pageIndexCtx base lu  = base
                 <> teaserImage
                 <> portholeImage
                 <> teaserField "teaser" "content"
@@ -113,16 +114,18 @@ pageIndexCtx lu  = defaultContext
                 <> dateField "published" "%B %d . %Y"
                 <> previous lu
                 <> next lu
+                <> bodyField "body"
+                <> metadataField
 
 previous :: PreviousNextMap -> Context String
 previous lu = 
     let lup item = return $ fmap fst $ maybeToList $ lookup (itemIdentifier item) lu
-    in  listFieldWith "previous" (pageIndexCtx []) lup
+    in  listFieldWith "previous" (pageIndexCtx mempty []) lup
 
 next :: PreviousNextMap -> Context String
 next lu = 
     let lup item = return $ fmap snd $ maybeToList $ lookup (itemIdentifier item) lu
-    in  listFieldWith "next" (pageIndexCtx []) lup
+    in  listFieldWith "next" (pageIndexCtx mempty []) lup
 
 teaserImage :: Context String
 teaserImage = field "teaserImage" getImagePath

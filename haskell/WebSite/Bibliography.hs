@@ -7,6 +7,7 @@ module WebSite.Bibliography (
   refTitle,
   refUrl,
   refDoi,
+  refId,
 ) where
 
 import Data.Char (isSpace)
@@ -101,16 +102,16 @@ insertPageLink includeLink ref refStr
     isNotSep = (/= '\8203')
 
 -- | Render the unformatted title of a reference
-refTitle :: Reference -> Compiler String
-refTitle = return . unformat . Ref.title
+refTitle :: Reference -> String
+refTitle = unformat . Ref.title
 
 -- | Render the URL of a reference
-refUrl :: Reference -> Compiler String
-refUrl = return . Ref.unLiteral . Ref.url
+refUrl :: Reference -> String
+refUrl = Ref.unLiteral . Ref.url
 
 -- | Render the DOI of a reference
-refDoi :: Reference -> Compiler String
-refDoi = return . Ref.unLiteral . Ref.doi
+refDoi :: Reference -> String
+refDoi = Ref.unLiteral . Ref.doi
 
 -- | BibTeX identifier of a reference
 refId :: Reference -> String
