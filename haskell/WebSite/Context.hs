@@ -63,7 +63,7 @@ refContext = do
     csl <- load "resources/bibliography/apa.csl"
     bib <- load "resources/bibliography/mfish.bib"
     return $  refField "title" (failOnNull "title" refTitle) bib
-           <> refField "citation" (refCitation False csl bib) bib
+           <> refField "citation" (refCitation csl bib) bib
            <> refField "refUrl" (failOnNull "refUrl" refUrl) bib
            <> refField "doi" (failOnNull "doi" refDoi) bib
 

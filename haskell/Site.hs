@@ -2,8 +2,11 @@
 
 import Data.Monoid ((<>))
 
+import Text.CSL (readBiblioFile)
+
 import Hakyll
 
+import WebSite.Bibliography
 import WebSite.Context
 import WebSite.Compilers
 import qualified WebSite.Work as Work
@@ -77,3 +80,7 @@ main = hakyllWith config $ do
         route idRoute
         compile copyFileCompiler
 
+-- | Touch all .md publication files to make sure they exist
+touchPubFiles :: IO ()
+touchPubFiles = readBiblioFile "resources/bibliography/mfish.bib"
+                    >>= mapM_ (flip appendFile "" . refPath)
