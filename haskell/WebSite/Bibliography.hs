@@ -5,10 +5,12 @@ module WebSite.Bibliography (
   lookupRef,
   refCitation,
   refTitle,
+  refYear,
   refUrl,
   refDoi,
   refId,
   refPath,
+  refAuthorsSorted,
 ) where
 
 import Data.Char (isSpace)
@@ -49,7 +51,7 @@ biblioCitations csl bib | Biblio refs <- itemBody bib = refCitations csl bib ref
 biblioCitationsByYear :: Item CSL -> Item Biblio -> Int -> Compiler String
 biblioCitationsByYear csl bib yr = biblioCitations csl $
                                    sortBiblioOn refAuthorsSorted $
-                                   filterBiblio ((== show yr) . refYear) bib
+                                   filterBiblio ((== Just yr) . refYear) bib
 
 -- | Extract a comma-delimited (and arbitrarily spaced) list of words
 keywords :: String -> [String]
@@ -99,10 +101,11 @@ refPath ref = "publications/" ++ refId ref ++ ".md"
 -- Note that the Reference type has a number of date fields. This assumes the
 -- desired year is always in the 'issued' field and that there is only one entry
 -- in its list.
-refYear :: Reference -> String
+refYear :: Reference -> Maybe Int
 refYear ref
-  | [Ref.RefDate {Ref.year = Ref.Literal yr}] <- Ref.issued ref = yr
-  | otherwise = "unknown year"
+  | [Ref.RefDate {Ref.year = Ref.Literal s}] <- Ref.issued ref
+  , [(yr, "")] <- reads s = Just yr
+  | otherwise = Nothing
 
 -- | Sortable text for ordering a bibliography by authors
 refAuthorsSorted :: Reference -> [[String]]
