@@ -11,8 +11,7 @@ import Hakyll
 import Text.Pandoc.Options
 import Control.Applicative
 import Control.Monad   (liftM, (>=>))
-import Data.List       (sortBy)
-import Data.Ord        (comparing)
+import Data.List       (sortOn)
 
 
 htm5Writer :: WriterOptions
@@ -45,9 +44,9 @@ scholmdCompiler = do
     renderPandocBiblio csl bib =<< getResourceString
 
 -- Utility function to allow arbitrary sort order for items
-sortItemsBy :: (Ord b, MonadMetadata m) => (Identifier -> m b) -> [Item a] -> m [Item a]
+sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]
 sortItemsBy f = sortByM $ f . itemIdentifier
   where
     sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
-    sortByM f xs = liftM (map fst . sortBy (comparing snd)) $
+    sortByM f xs = liftM (map fst . sortOn snd) $
                    mapM (\x -> liftM (x,) (f x)) xs
