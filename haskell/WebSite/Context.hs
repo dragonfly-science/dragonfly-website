@@ -23,7 +23,11 @@ baseContext section = do
            <> constField "jquery" "//ajax.googleapis.com/ajax/libs/jquery/2.0.3"
            <> constField "section" section
            <> constField ("on-" ++ takeBaseName path) ""
-           <> defaultContext
+           <> bodyField "body"
+           <> metadataField
+           -- We don't include titleField (or defaultContext which includes
+           -- titleField) here because (1) we never want the file name as the
+           -- title and (2) we want to use the title from citations.
 
 teaserSeparator :: String
 teaserSeparator = "<!--more-->"
@@ -58,13 +62,16 @@ refContext :: Compiler (Context String)
 refContext = do
     csl <- load "resources/bibliography/apa.csl"
     bib <- load "resources/bibliography/mfish.bib"
-    return $  refField "title" refTitle bib
-           <> refField "citation" (refCitation False csl bib) bib
-           <> refField "url" refUrl bib
-           <> refField "doi" refDoi bib
+    return $  refField "title" (failOnNull "title" refTitle) bib
+           <> refField "citation" (refCitation csl bib) bib
+           <> refField "refUrl" (failOnNull "refUrl" refUrl) bib
+           <> refField "doi" (failOnNull "doi" refDoi) bib
 
 refField :: String -> (Reference -> Compiler String) -> Item Biblio -> Context String
-refField k fromRef bib = field k $ \item -> do
-    x <- maybe (fail "") fromRef . flip lookupRef bib . itemIdentifier $ item
-    debugCompiler $ "ref=" ++ show (lookupRef (itemIdentifier item) bib)
-    return x
+refField k showFieldM bib =
+    field k (maybe (fail "") showFieldM . flip lookupRef bib . itemIdentifier)
+
+failOnNull :: String -> (Reference -> String) -> Reference -> Compiler String
+failOnNull fieldName showField ref
+  | s <- showField ref, not (null s) = return s
+  | otherwise = fail $ "No '" ++ fieldName ++ "' field for reference '" ++ refId ref ++ "'"

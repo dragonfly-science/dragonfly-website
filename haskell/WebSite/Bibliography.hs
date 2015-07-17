@@ -5,8 +5,12 @@ module WebSite.Bibliography (
   lookupRef,
   refCitation,
   refTitle,
+  refYear,
   refUrl,
   refDoi,
+  refId,
+  refPath,
+  refAuthorsSorted,
 ) where
 
 import Data.Char (isSpace)
@@ -47,7 +51,7 @@ biblioCitations csl bib | Biblio refs <- itemBody bib = refCitations csl bib ref
 biblioCitationsByYear :: Item CSL -> Item Biblio -> Int -> Compiler String
 biblioCitationsByYear csl bib yr = biblioCitations csl $
                                    sortBiblioOn refAuthorsSorted $
-                                   filterBiblio ((== show yr) . refYear) bib
+                                   filterBiblio ((== Just yr) . refYear) bib
 
 -- | Extract a comma-delimited (and arbitrarily spaced) list of words
 keywords :: String -> [String]
@@ -62,73 +66,46 @@ keywords s = build (\c n -> keywords' c n s)
 
 -- | Render references as HTML citations
 refCitations :: Item CSL -> Item Biblio -> [Reference] -> Compiler String
-refCitations csl bib = fmap concat . mapM (refCitation True csl bib)
+refCitations csl bib = fmap concat . mapM (refCitation csl bib)
 
 -- | Render a reference as an HTML citation
-refCitation :: Bool -> Item CSL -> Item Biblio -> Reference -> Compiler String
-refCitation includeLink csl bib ref = do
-    -- Check if the file exists before creating a link to it.
-    doInsert <-
-        if includeLink then
-            unsafeCompiler $ doesFileExist $ refPath ref "md"
-        else
-            return False
-    insertPageLink doInsert ref <$> asItem dummyInput (renderPandocBiblio csl bib)
+refCitation :: Item CSL -> Item Biblio -> Reference -> Compiler String
+refCitation csl bib ref = asItem dummyInput (renderPandocBiblio csl bib)
   where
-    rid = refId ref
     -- The input is an empty body with dummy metadata to get Pandoc to generate
     -- the HTML for the reference.
-    dummyInput = unlines ["---", "nocite: |", ' ':' ':'@':rid, "..."]
-
--- | Replace zero width space separators with a link to the publication page.
---
--- The zero width space characters should be added in the CSL as prefix and suffix
--- to the title.
---
--- This is a workaround for not being able to add links in the CSL or
--- pandoc-citeproc. See https://github.com/jgm/pandoc-citeproc/issues/52 for an
--- issue that could avoid the need for this hack.
-insertPageLink :: Bool -> Reference -> String -> String
-insertPageLink includeLink ref refStr
-  | True <- includeLink,
-    (beg, s1) <- span isNotSep refStr, _:s2 <- s1,
-    (mid, s3) <- span isNotSep s2, _:end <- s3 = concat
-      [beg, "<a href=\"/", refPath ref "html", "\">", mid, "</a>", end]
-  | otherwise =
-      -- Remove the separators since they are not being used.
-      filter isNotSep refStr
-  where
-    isNotSep = (/= '\8203')
+    dummyInput = unlines ["---", "nocite: |", ' ':' ':'@':refId ref, "..."]
 
 -- | Render the unformatted title of a reference
-refTitle :: Reference -> Compiler String
-refTitle = return . unformat . Ref.title
+refTitle :: Reference -> String
+refTitle = unformat . Ref.title
 
 -- | Render the URL of a reference
-refUrl :: Reference -> Compiler String
-refUrl = return . Ref.unLiteral . Ref.url
+refUrl :: Reference -> String
+refUrl = Ref.unLiteral . Ref.url
 
 -- | Render the DOI of a reference
-refDoi :: Reference -> Compiler String
-refDoi = return . Ref.unLiteral . Ref.doi
+refDoi :: Reference -> String
+refDoi = Ref.unLiteral . Ref.doi
 
 -- | BibTeX identifier of a reference
 refId :: Reference -> String
 refId = Ref.unLiteral . Ref.refId
 
 -- | File path of a reference summary page
-refPath :: Reference -> String -> FilePath
-refPath ref ext = "publications/" ++ refId ref ++ '.':ext
+refPath :: Reference -> FilePath
+refPath ref = "publications/" ++ refId ref ++ ".md"
 
 -- | Issue year of a reference.
 --
 -- Note that the Reference type has a number of date fields. This assumes the
 -- desired year is always in the 'issued' field and that there is only one entry
 -- in its list.
-refYear :: Reference -> String
+refYear :: Reference -> Maybe Int
 refYear ref
-  | [Ref.RefDate {Ref.year = Ref.Literal yr}] <- Ref.issued ref = yr
-  | otherwise = "unknown year"
+  | [Ref.RefDate {Ref.year = Ref.Literal s}] <- Ref.issued ref
+  , [(yr, "")] <- reads s = Just yr
+  | otherwise = Nothing
 
 -- | Sortable text for ordering a bibliography by authors
 refAuthorsSorted :: Reference -> [[String]]

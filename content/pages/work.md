@@ -1,5 +1,5 @@
 ---
-Title: Our work
+title: Our work
 ---
 
 # What we do
