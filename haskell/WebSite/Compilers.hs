@@ -1,52 +1,34 @@
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TupleSections #-}
 module WebSite.Compilers (
+  readScholmd,
+  writeScholmd,
   scholmdCompiler,
-  renderPandocBiblio,
-  sortItemsBy
+  imageCredits,
 ) where
 
+import Data.Default (def)
+import Data.Monoid ((<>))
 
 import Hakyll
-import Text.Pandoc.Options
-import Control.Applicative
-import Control.Monad   (liftM, (>=>))
-import Data.List       (sortOn)
 
+import Text.Pandoc.Definition (Pandoc)
 
-htm5Writer :: WriterOptions
-htm5Writer = defaultHakyllWriterOptions {
-    writerHtml5             = True
-    ,writerSectionDivs      = True
-}
+import WebSite.Config
+import WebSite.Util
+import WebSite.DomUtil.Images
 
--- | Render a Pandoc input string to HTML5 output with a CSL style and a
--- bibliography.
-renderPandocBiblio :: Item CSL -> Item Biblio -> Item String -> Compiler (Item String)
-renderPandocBiblio csl bib =
-    readPandocBiblio def csl bib >=> return . writePandocWith htm5Writer
+readScholmd :: Compiler (Item Pandoc)
+readScholmd = do
+    csl <- load cslNoBibIdentifier
+    bib <- load bibIdentifier
+    readPandocBiblio def csl bib =<< getResourceString
+
+writeScholmd :: Item Pandoc -> Compiler (Item String)
+writeScholmd = return . writePandocWith htm5Writer
 
 scholmdCompiler :: Compiler (Item String)
-scholmdCompiler = do
-    ident <- getUnderlying
-    bibfile <- getMetadataField ident "bibliography"
-    cslfile <- getMetadataField ident "cslfile"
-    -- TODO: should get this from config
-    csl <- load $ maybe "resources/bibliography/apa.csl" fromFilePath cslfile
-    bib <- load $ maybe "resources/bibliography/mfish.bib" fromFilePath bibfile
+scholmdCompiler = readScholmd >>= writeScholmd
 
-    -- I think this is going to be the easiest place to carry out filtering
-    -- apply a filter to `bibfile` and then pass the results of the filter to
-    -- readPandocBiblio.
-    -- this means that we will potentially land up with a list of reference set and will
-    -- need to process all of them.
-
-    renderPandocBiblio csl bib =<< getResourceString
-
--- Utility function to allow arbitrary sort order for items
-sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]
-sortItemsBy f = sortByM $ f . itemIdentifier
-  where
-    sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
-    sortByM f xs = liftM (map fst . sortOn snd) $
-                   mapM (\x -> liftM (x,) (f x)) xs
+-- FIXME: imgMeta is not used. Should it be?
+imageCredits :: [Item String] -> Item String -> Compiler (Item String)
+imageCredits imgMeta = return . fmap processFigures

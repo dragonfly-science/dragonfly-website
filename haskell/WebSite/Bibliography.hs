@@ -1,7 +1,5 @@
 {-# LANGUAGE RecordWildCards #-}
 module WebSite.Bibliography (
-  biblioCitations,
-  biblioCitationsByYear,
   lookupRef,
   refCitation,
   refTitle,
@@ -9,8 +7,8 @@ module WebSite.Bibliography (
   refUrl,
   refDoi,
   refId,
-  refPath,
   refAuthorsSorted,
+  reverseRefAuthors,
 ) where
 
 import Data.Char (isSpace)
@@ -23,7 +21,7 @@ import qualified Text.CSL.Reference as Ref
 import Text.CSL.Style (Formatted(unFormatted), Agent(..))
 import Text.Pandoc.Shared (stringify)
 
-import WebSite.Compilers (renderPandocBiblio)
+import WebSite.Util
 
 import Hakyll
 
@@ -35,38 +33,6 @@ lookupRef ident item | Biblio refs <- itemBody item = do
     let bibtexId = takeBaseName $ toFilePath ident
     -- Find the matching reference ID in the bibliography.
     find ((== bibtexId) . refId) refs
-
-filterBiblio :: (Reference -> Bool) -> Item Biblio -> Item Biblio
-filterBiblio c = fmap $ \(Biblio refs) -> Biblio (filter c refs)
-
-sortBiblioOn :: Ord a => (Reference -> a) -> Item Biblio -> Item Biblio
-sortBiblioOn f = fmap $ \(Biblio refs) -> Biblio (sortOn f refs)
-
-biblioByKeyword :: String -> Item Biblio -> Item Biblio
-biblioByKeyword kw = filterBiblio (elem kw . keywords . unformat . Ref.keyword)
-
-biblioCitations :: Item CSL -> Item Biblio -> Compiler String
-biblioCitations csl bib | Biblio refs <- itemBody bib = refCitations csl bib refs
-
-biblioCitationsByYear :: Item CSL -> Item Biblio -> Int -> Compiler String
-biblioCitationsByYear csl bib yr = biblioCitations csl $
-                                   sortBiblioOn refAuthorsSorted $
-                                   filterBiblio ((== Just yr) . refYear) bib
-
--- | Extract a comma-delimited (and arbitrarily spaced) list of words
-keywords :: String -> [String]
-keywords s = build (\c n -> keywords' c n s)
-  where
-    isSep c = isSpace c || c == ','
-    keywords' cons nil = go
-      where
-        go s = case dropWhile isSep s of
-            "" -> nil
-            s' -> let (w, s'') = break isSep s' in w `cons` go s''
-
--- | Render references as HTML citations
-refCitations :: Item CSL -> Item Biblio -> [Reference] -> Compiler String
-refCitations csl bib = fmap concat . mapM (refCitation csl bib)
 
 -- | Render a reference as an HTML citation
 refCitation :: Item CSL -> Item Biblio -> Reference -> Compiler String
@@ -92,10 +58,6 @@ refDoi = Ref.unLiteral . Ref.doi
 refId :: Reference -> String
 refId = Ref.unLiteral . Ref.refId
 
--- | File path of a reference summary page
-refPath :: Reference -> FilePath
-refPath ref = "publications/" ++ refId ref ++ ".md"
-
 -- | Issue year of a reference.
 --
 -- Note that the Reference type has a number of date fields. This assumes the
@@ -111,6 +73,9 @@ refYear ref
 refAuthorsSorted :: Reference -> [[String]]
 refAuthorsSorted = map agentSortOrder . Ref.author
 
+reverseRefAuthors :: Item Biblio -> Identifier -> [[String]]
+reverseRefAuthors bib ident = maybe [] refAuthorsSorted $ lookupRef ident bib
+
 -- | Sortable text for ordering authors
 --
 -- FIXME! This doesn't properly handle all the naming structures produced by
@@ -120,6 +85,3 @@ agentSortOrder Agent{..} = unformat familyName : map unformat givenName
 
 unformat :: Formatted -> String
 unformat = stringify . unFormatted
-
-asItem :: a -> (Item a -> Compiler (Item b)) -> Compiler b
-asItem x f = makeItem x >>= f >>= return . itemBody

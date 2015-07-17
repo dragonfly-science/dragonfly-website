@@ -14,6 +14,8 @@ import Text.CSL.Reference (Reference)
 
 import Hakyll
 
+import WebSite.Config
+import WebSite.Util
 import WebSite.Bibliography
 import WebSite.Collection hiding (getList)
 import WebSite.Context
@@ -39,24 +41,21 @@ rules = do
         route $ constRoute (indexTemplate cc)
         compile $ do
             base <- baseContext (baseName cc)
-            bib <- load "resources/bibliography/mfish.bib"
-            bibCtx <- biblioContext
-            citations <- getCitationsByYearField cc bib
-            let  ctx = base <> bibCtx <> citations
+            bib <- load bibIdentifier
+            citations <- getCitationsByYearField bib
+            let  ctx = base <> citations
             scholmdCompiler
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
-    match publicationYearsPattern $
-        compile $ scholmdCompiler >>= saveSnapshot "content"
+    match allPublicationsPattern $ version citationsVersion $
+        compile $ scholmdCompiler >>= saveSnapshot citationsSnapshot
 
-    match (collectionPattern cc) $ version "full" $ do
-        compile $ do
-            scholmdCompiler
-                >>= saveSnapshot "content"
+    match allPublicationsByYearPattern $ version citationsVersion $
+        compile $ scholmdCompiler >>= saveSnapshot citationsSnapshot
 
-    match (collectionPattern cc) $ do
+    match allPublicationsPattern $ do
         route $ setExtension "html"
         compile $ do
             base <- baseContext (baseName cc)
@@ -69,42 +68,24 @@ rules = do
                 >>= imageCredits imageMeta
                 >>= relativizeUrls
 
--- | Get a list of citation items after filtering and sorting the bibliography
-getCitations :: Ord a
-                => CollectionConfig
-                -> (Identifier -> Bool)
-                -> (Identifier -> a)
-                -> Compiler [Item String]
-getCitations cc filterCond sortCond =
-    loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
-        >>= return . sortOn (sortCond   . itemIdentifier)
-                   . filter (filterCond . itemIdentifier)
-
 -- | Outer list context: citations grouped by year
-getCitationsByYearField :: CollectionConfig -> Item Biblio -> Compiler (Context String)
-getCitationsByYearField cc bib = do
-    citations <- getCitationsForYearField cc bib
-    loadAllSnapshots publicationYearsPattern "content"
+getCitationsByYearField :: Item Biblio -> Compiler (Context String)
+getCitationsByYearField bib = do
+    citations <- getCitationsForYearField bib
+    loadAllSnapshots allPublicationsByYearPattern citationsSnapshot
         >>= sortItemsBy reverseRefYear
-        >>= return . listField "publications" (metadataField <> citations) . return
+        >>= listFieldR "publications-by-year" (metadataField <> citations)
 
 -- | Inner list context: citations for one year, sorted by author
-getCitationsForYearField :: CollectionConfig -> Item Biblio -> Compiler (Context String)
-getCitationsForYearField cc bib = do
+getCitationsForYearField :: Item Biblio -> Compiler (Context String)
+getCitationsForYearField bib = do
     ref <- refContext
     return $ listFieldWith "publications-for-year" (metadataField <> ref) $ \item -> do
         yr <- read <$> getMetadataField' (itemIdentifier item) "year"
-        getCitations cc (refYearIs bib yr) (reverseRefAuthors bib)
+        getCitationsWith (refYearIs bib yr) (reverseRefAuthors bib)
 
 reverseRefYear :: Identifier -> Compiler (Down Int)
 reverseRefYear i = Down . read <$> getMetadataField' i "year"
 
-reverseRefAuthors :: Item Biblio -> Identifier -> [[String]]
-reverseRefAuthors bib ident = maybe [] refAuthorsSorted $ lookupRef ident bib
-
 refYearIs :: Item Biblio -> Int -> Identifier -> Bool
 refYearIs bib yr ident = maybe False (== yr) $ refYear =<< lookupRef ident bib
-
-imageCredits :: [Item String] -> Item String -> Compiler (Item String)
-imageCredits imgMeta item = do
-    return $ fmap (processFigures) item

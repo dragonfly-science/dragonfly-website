@@ -4,6 +4,7 @@ import Data.Monoid ((<>))
 
 import Hakyll
 
+import WebSite.Config
 import WebSite.Context
 import WebSite.Compilers
 import qualified WebSite.Work as Work
@@ -25,8 +26,9 @@ main = hakyllWith config $ do
 
     match "templates/*" $ compile templateCompiler
 
-    match "resources/bibliography/apa.csl" $ compile cslCompiler
-    match "resources/bibliography/mfish.bib" $ compile biblioCompiler
+    match (fromList [cslIdentifier, cslNoBibIdentifier]) $ compile cslCompiler
+    match (fromList [bibIdentifier]) $ compile biblioCompiler
+
     match "**/*.img.md" $ compile scholmdCompiler
     match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png") $ do
         route idRoute
