@@ -3,15 +3,18 @@ module WebSite.Context (
   baseContext,
   actualbodyField,
   pageUrlField,
+  publicationsContext,
   refContext,
-  biblioContext
 ) where
 
 import Control.Monad (forM)
 import Data.Monoid ((<>))
 import System.FilePath (takeBaseName, replaceExtension)
 import Text.CSL.Reference (Reference)
+import Text.Pandoc.Definition (Pandoc)
 
+import WebSite.Config
+import WebSite.Util
 import WebSite.Bibliography
 
 import Hakyll
@@ -47,21 +50,22 @@ pageUrlField key = field key $ \item -> do
         path = "/" ++ pseudoPath
     return (replaceExtension path ".html")
 
--- Provide context for all references
-biblioContext :: Compiler (Context String)
-biblioContext = do
-    csl <- load "resources/bibliography/apa.csl"
-    bib <- load "resources/bibliography/mfish.bib"
-    return $ field "citations-by-year" $ const $
-        fmap mconcat $ forM [2015,2014..2007] $ \yr ->
-            mappend <$> pure ("<h2>" ++ show yr ++ "</h2>")
-                    <*> biblioCitationsByYear csl bib yr
+-- | List context: citations sorted by author
+publicationsContext :: Item Pandoc -> Compiler (Context String)
+publicationsContext pandoc = case collectCitationIds $ itemBody pandoc of
+    [] -> do
+        return mempty
+    ids -> do
+        bib <- load bibIdentifier
+        ref <- refContext
+        getCitationsById (reverseRefAuthors bib) ids
+            >>= listFieldR "publications" (metadataField <> ref)
 
 -- Provide context for a single BibTeX reference
 refContext :: Compiler (Context String)
 refContext = do
-    csl <- load "resources/bibliography/apa.csl"
-    bib <- load "resources/bibliography/mfish.bib"
+    csl <- load cslIdentifier
+    bib <- load bibIdentifier
     return $  refField "title" (failOnNull "title" refTitle) bib
            <> refField "citation" (refCitation csl bib) bib
            <> refField "refUrl" (failOnNull "refUrl" refUrl) bib

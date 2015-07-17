@@ -1,0 +1,17 @@
+$body$
+$if(publications)$
+  <section class="level3" id="publications">
+    <h3>Publications</h3>
+    <div class="post-list">
+      $for(publications)$
+        <div class="post-wrapper">
+          <div class="post">
+            <div class="post-teaser">
+              $partial("templates/citation-entry.html")$
+            </div>
+          </div>
+        </div>
+      $endfor$
+    </div>
+  </section>
+$endif$

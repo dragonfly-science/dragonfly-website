@@ -17,9 +17,9 @@ import Text.Pandoc
 
 import Hakyll
 
+import WebSite.Util
 import WebSite.Context
 import WebSite.Compilers
-import WebSite.DomUtil.Images
 
 data CollectionConfig = CollectionConfig 
                       { baseName           :: String
@@ -30,10 +30,6 @@ data CollectionConfig = CollectionConfig
                       , pageTemplate       :: Identifier
                       }
 
-imageCredits :: [Item String] -> Item String -> Compiler (Item String)
-imageCredits imgMeta item = do
-    return $ fmap (processFigures) item
-
 makeRules :: CollectionConfig -> Rules()
 makeRules cc = do
 
@@ -41,10 +37,9 @@ makeRules cc = do
         route $ constRoute (indexTemplate cc)
         compile $ do 
             base <- baseContext (baseName cc)
-            bib <- biblioContext
             pages <- getList cc 1000
             bubbles <- getBubbles cc Nothing
-            let  ctx = base <> bib <> pages <> bubbles
+            let  ctx = base <> pages <> bubbles
             scholmdCompiler 
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -60,12 +55,14 @@ makeRules cc = do
         compile $ do 
             ident <- getUnderlying
             base <- baseContext (baseName cc)
-            ref <- refContext
             imageMeta <- loadAll ("**/*.img.md")
             pages <- getList cc 1000
             bubbles <- getBubbles cc (Just ident)
-            let ctx = base <> ref <> actualbodyField "actualbody" <> pages <> bubbles
-            scholmdCompiler 
+            pandoc <- readScholmd
+            pubs <- publicationsContext pandoc
+            let ctx = base <> actualbodyField "actualbody" <> pages <> bubbles
+            writeScholmd pandoc
+                >>= loadAndApplyTemplate "templates/append-publications.html" (pubs <> ctx)
                 >>= loadAndApplyTemplate (pageTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= imageCredits imageMeta

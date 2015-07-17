@@ -1,5 +1,7 @@
 ---
 title: Estimated sea lion bycatch in 2008–09
+nocite: |
+  @thompson_sealions_95-09
 ---
 
 Dragonfly Science estimated that around 78 sea lions were caught in
@@ -60,9 +62,3 @@ International Union for Conservation of Nature (IUCN) Red List. This
 means that it is believed that, if causal factors continue to operate,
 the species is likely to move into the Endangered category in the near
 future.
-
-###Publications
-[References key=thompson_sealions_95-09]
-
-
-
