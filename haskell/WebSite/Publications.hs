@@ -31,9 +31,6 @@ cc     = CollectionConfig
        , pageTemplate        = "templates/publication.html"
        }
 
-publicationYearsPattern :: Pattern
-publicationYearsPattern = "publications/year/*.md"
-
 rules :: Rules()
 rules = do
 
@@ -52,8 +49,10 @@ rules = do
     match allPublicationsPattern $ version citationsVersion $
         compile $ scholmdCompiler >>= saveSnapshot citationsSnapshot
 
-    match allPublicationsByYearPattern $ version citationsVersion $
-        compile $ scholmdCompiler >>= saveSnapshot citationsSnapshot
+    create allPublicationsByYearIdentifiers $
+        -- Make empty items with the year in the identifier so we can organize
+        -- the publications by year.
+        compile $ makeItem ("" :: String)
 
     match allPublicationsPattern $ do
         route $ setExtension "html"
@@ -76,20 +75,23 @@ rules = do
 getCitationsByYearField :: Item Biblio -> Compiler (Context String)
 getCitationsByYearField bib = do
     citations <- getCitationsForYearField bib
-    loadAllSnapshots allPublicationsByYearPattern citationsSnapshot
+    let year = field "year" $ return . show . itemYear
+    loadAll (fromList allPublicationsByYearIdentifiers)
         >>= sortItemsBy reverseRefYear
-        >>= listFieldR "publications-by-year" (metadataField <> citations)
+        >>= listFieldR "publications-by-year" (metadataField <> citations <> year)
 
 -- | Inner list context: citations for one year, sorted by author
 getCitationsForYearField :: Item Biblio -> Compiler (Context String)
 getCitationsForYearField bib = do
     ref <- refContext
     return $ listFieldWith "publications-for-year" (metadataField <> ref) $ \item -> do
-        yr <- read <$> getMetadataField' (itemIdentifier item) "year"
-        getCitationsWith (refYearIs bib yr) (reverseRefAuthors bib)
+        getCitationsWith (refYearIs $ itemYear item) (reverseRefAuthors bib)
+  where
+    refYearIs :: Int -> Identifier -> Bool
+    refYearIs yr ident = maybe False (== yr) $ refYear =<< lookupRef ident bib
+
+itemYear :: Item a -> Int
+itemYear = extractRefYear . itemIdentifier
 
 reverseRefYear :: Identifier -> Compiler (Down Int)
-reverseRefYear i = Down . read <$> getMetadataField' i "year"
-
-refYearIs :: Item Biblio -> Int -> Identifier -> Bool
-refYearIs bib yr ident = maybe False (== yr) $ refYear =<< lookupRef ident bib
+reverseRefYear = return . Down . extractRefYear
