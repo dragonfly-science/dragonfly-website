@@ -30,6 +30,10 @@ extractRefId i
 mkPublicationPattern :: String -> Pattern
 mkPublicationPattern = fromGlob . mkPublicationPath
 
+-- | Make a pattern for a publication PDF
+publicationPDFPattern :: Pattern
+publicationPDFPattern = "publications/pdf/*.pdf"
+
 allPublicationsPattern :: Pattern
 allPublicationsPattern = mkPublicationPattern "*"
 
