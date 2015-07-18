@@ -7,6 +7,12 @@ import qualified Data.List as List
 
 import Hakyll
 
+-- | These are years of the publications page.
+--
+-- NOTE: Update this when you want to add the next year.
+publicationYears :: [Int]
+publicationYears = [2007..2015]
+
 cslIdentifier, cslNoBibIdentifier :: Identifier
 cslIdentifier      = "resources/bibliography/apa-note.csl"
 cslNoBibIdentifier = "resources/bibliography/apa-nobib.csl"
@@ -37,17 +43,24 @@ publicationPDFPattern = "publications/pdf/*.pdf"
 allPublicationsPattern :: Pattern
 allPublicationsPattern = mkPublicationPattern "*"
 
-allPublicationsByYearPattern :: Pattern
-allPublicationsByYearPattern = mkPublicationPattern "year/*"
-
 allCitationsPattern :: Pattern
 allCitationsPattern = allPublicationsPattern .&&. hasVersion citationsVersion
-
-allCitationsByYearPattern :: Pattern
-allCitationsByYearPattern = allPublicationsByYearPattern .&&. hasVersion citationsVersion
 
 citationsVersion :: String
 citationsVersion = "citations"
 
 citationsSnapshot :: Snapshot
 citationsSnapshot = "citations"
+
+-- | Identifiers for all the year groups of publications.
+allPublicationsByYearIdentifiers :: [Identifier]
+allPublicationsByYearIdentifiers =
+    map (fromFilePath . mkPublicationPath . mappend "year/" . show) publicationYears
+
+-- | Extract the reference issue year from a publication-by-year identifier
+extractRefYear :: Identifier -> Int
+extractRefYear i
+  | Just s1 <- List.stripPrefix "publications/year/" $ toFilePath i
+  , s2 <- takeWhile (/= '.') s1
+  , [(yr, "")] <- reads s2 = yr
+  | otherwise = error $ "Identifier '" ++ toFilePath i ++ "' does not have a publication year"
