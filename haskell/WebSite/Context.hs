@@ -70,6 +70,8 @@ refContext = do
            <> refField "citation" (refCitation csl bib) bib
            <> refField "refUrl" (failOnNull "refUrl" refUrl) bib
            <> refField "doi" (failOnNull "doi" refDoi) bib
+           <> refField "abstract" (failOnNull "abstract" refAbstract) bib
+           <> refField "id" (failOnNull "id" refId) bib
 
 refField :: String -> (Reference -> Compiler String) -> Item Biblio -> Context String
 refField k showFieldM bib =

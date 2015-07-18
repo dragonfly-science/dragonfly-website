@@ -68,6 +68,10 @@ rules = do
                 >>= imageCredits imageMeta
                 >>= relativizeUrls
 
+    match ("publications/pdf/*.pdf") $ do
+        route idRoute
+        compile copyFileCompiler
+
 -- | Outer list context: citations grouped by year
 getCitationsByYearField :: Item Biblio -> Compiler (Context String)
 getCitationsByYearField bib = do

@@ -6,6 +6,7 @@ module WebSite.Bibliography (
   refYear,
   refUrl,
   refDoi,
+  refAbstract,
   refId,
   refAuthorsSorted,
   reverseRefAuthors,
@@ -53,6 +54,10 @@ refUrl = Ref.unLiteral . Ref.url
 -- | Render the DOI of a reference
 refDoi :: Reference -> String
 refDoi = Ref.unLiteral . Ref.doi
+
+-- | Render the abstract of a reference
+refAbstract :: Reference -> String
+refAbstract = unformat . Ref.abstract
 
 -- | BibTeX identifier of a reference
 refId :: Reference -> String
