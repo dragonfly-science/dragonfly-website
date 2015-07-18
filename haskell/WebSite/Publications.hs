@@ -3,7 +3,7 @@ module WebSite.Publications (
     rules
 ) where
 
-import Control.Monad (liftM)
+import Control.Monad (liftM, when)
 import Data.List (sortOn)
 import Data.Monoid ((<>))
 import Data.Maybe (fromMaybe)
@@ -85,7 +85,11 @@ getCitationsForYearField :: Item Biblio -> Compiler (Context String)
 getCitationsForYearField bib = do
     ref <- refContext
     return $ listFieldWith "publications-for-year" (metadataField <> ref) $ \item -> do
-        getCitationsWith (refYearIs $ itemYear item) (reverseRefAuthors bib)
+        let yr = itemYear item
+        citations <- getCitationsWith (refYearIs yr) (reverseRefAuthors bib)
+        when (null citations) $
+            fail $ "No citations for identifier: " ++ show (itemIdentifier item)
+        return citations
   where
     refYearIs :: Int -> Identifier -> Bool
     refYearIs yr ident = maybe False (== yr) $ refYear =<< lookupRef ident bib
