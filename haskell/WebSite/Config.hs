@@ -8,7 +8,7 @@ import qualified Data.List as List
 import Hakyll
 
 cslIdentifier, cslNoBibIdentifier :: Identifier
-cslIdentifier      = "resources/bibliography/apa.csl"
+cslIdentifier      = "resources/bibliography/apa-note.csl"
 cslNoBibIdentifier = "resources/bibliography/apa-nobib.csl"
 
 bibIdentifier :: Identifier
