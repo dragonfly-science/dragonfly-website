@@ -7,7 +7,8 @@ module WebSite.Context (
   refContext,
 ) where
 
-import Control.Monad (forM)
+import Control.Monad (forM, when)
+import Data.List (intercalate)
 import Data.Monoid ((<>))
 import System.FilePath (takeBaseName, replaceExtension)
 import Text.CSL.Reference (Reference)
@@ -52,14 +53,20 @@ pageUrlField key = field key $ \item -> do
 
 -- | List context: citations sorted by author
 publicationsContext :: Item Pandoc -> Compiler (Context String)
-publicationsContext pandoc = case collectCitationIds $ itemBody pandoc of
-    [] -> do
-        return mempty
-    ids -> do
-        bib <- load bibIdentifier
-        ref <- refContext
-        getCitationsById (reverseRefAuthors bib) ids
-            >>= listFieldR "publications" (metadataField <> ref)
+publicationsContext pandoc = do
+    bib <- load bibIdentifier
+    ref <- refContext
+    let citationIds = collectCitationIds $ itemBody pandoc
+    citations <- getCitationsById (reverseRefAuthors bib) citationIds
+    return $ listFieldWith "publications" (metadataField <> ref) $ \item -> do
+        let ident = show $ itemIdentifier item
+        when (length citationIds /= length citations) $ do
+            error $ "In '" ++ ident
+                 ++ "', reference not found for at least one of: "
+                 ++ intercalate ", " citationIds
+        when (null citations) $
+            fail $ "No citations for identifier: " ++ ident
+        return citations
 
 -- Provide context for a single BibTeX reference
 refContext :: Compiler (Context String)
