@@ -8,6 +8,9 @@ tag: finlay
 title: Finlay Thompson, PhD
 banner: thompson-finlay/finlay-thompson-letterbox.jpg
 sortorder: 2
+nocite: |
+  @thompson_mammals_95-12
+  @thompson_dolphin_2013
 ---
 
 Finlay is operations manager at Dragonfly. As a mathematician, he brings an insightful rigour
@@ -39,9 +42,3 @@ investment. It's gratifying to see our work being used to inform key commercial 
 government decisions. 
 
 Technical skills: Bayesian modelling; Haskell; PostgreSQL; Django, LaTeX
-
-##Selected publications
-
-@thompson_mammals_95-12
-@thompson_dolphin_2013
-

@@ -31,7 +31,3 @@ that will tell them how their local cockle and pipi populations are faring, espe
 those on beaches that are under a lot of pressure from recreational fishing. As 
 science providers, Dragonfly is an important link between the resource managers 
 and the public.
-
-
-##Selected publications
-
