@@ -68,7 +68,7 @@ rules = do
                 >>= imageCredits imageMeta
                 >>= relativizeUrls
 
-    match ("publications/pdf/*.pdf") $ do
+    match publicationPDFPattern $ do
         route idRoute
         compile copyFileCompiler
 
