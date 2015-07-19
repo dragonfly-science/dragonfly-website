@@ -7,6 +7,10 @@ tag: edward
 title: Edward Abraham, PhD
 banner: abraham-edward/edward-abraham-letterbox.jpg
 sortorder: 1
+nocite: |
+  @abraham2000isd
+  @abraham_effectiveness_2009
+  @richard_risk_2013
 ---
 
 Edward is the founder and CEO of Dragonfly. He enjoys bringing evidence to the
@@ -26,9 +30,3 @@ the physical and biological environment. Since starting Dragonfly, he has focuss
 > Statistical analysis is at the heart of the decision making process. It 
 > allows managers to balance opportunity and risk, 
 > resulting in principled decisions that make best use of available information.
-
-## Selected publications {.hide-cite-para}
-
-@abraham2000isd
-@abraham_effectiveness_2009
-@richard_risk_2013

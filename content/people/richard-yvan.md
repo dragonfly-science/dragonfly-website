@@ -7,6 +7,11 @@ title: Yvan Richard, PhD
 mobile: ''
 tag: yvan
 banner: richard-yvan/yvan-richard-letterbox.jpg
+nocite: |
+  @boulton2008influence
+  @richard2010cost
+  @richard_risk_2013
+  @richard_demographic_2013
 ---
 Yvan specialises in using the statistical computing software, R, to solve complex problems. 
 <!--more-->
@@ -34,10 +39,3 @@ and I feel I'm doing something very useful. There's a great atmosphere here and
 we have plenty of fun in the team. It's the best job.
 
 Technical skills: R; GGplot; QGis; Grass; LaTeX
-
-## Selected publications
-
-@boulton2008influence
-@richard2010cost
-@richard_risk_2013
-@richard_demographic_2013
