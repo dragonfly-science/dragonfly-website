@@ -58,7 +58,7 @@ case "$MODE" in
         docker rm -f $SCRIPTS_WATCH
         ;;
     pull-deps)
-        docker pull dragonflyscience/website-hakyll
+        #docker pull dragonflyscience/website-hakyll
         docker pull dragonflyscience/website-sass
         docker pull dragonflyscience/website-scripts
     ;;
@@ -80,7 +80,8 @@ case "$MODE" in
             dragonflyscience/website-scripts bash -c \
                 "compile-modules convert scripts/dragonfly.js | yuglify --terminal > assets/dragonfly.js" &&
         name=$(uuidgen -r) &&
-        docker run --name $name -w /work -v $PWD:/work dragonflyscience/website-hakyll \
+        docker run --name $name -w /work -v $PWD:/work \
+            dragonflyscience/website-hakyll \
             bash -c "cd haskell && ghc -o /tmp/dragonfly-hakyll -odir /tmp -hidir /tmp/ Site.hs && \
                 cd /work/content && /tmp/dragonfly-hakyll build" &&
         docker cp $name:/var/cache/dragonflyweb/main/site /tmp/$name/ &&
