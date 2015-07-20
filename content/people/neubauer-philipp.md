@@ -8,10 +8,7 @@ tag: philipp
 title: Philipp Neubauer, PhD
 banner: neubauer-philipp/philipp-neubauer-letterbox.jpg
 nocite: |
-  @neubauer2013resilience
-  @neubauer2013inferring
   @neubauer_assessing_2014
-  @neubauer2014bayesian
 ---
 
 Philipp is a fisheries scientist who uses statistical analysis to inform actions that promote sustainable fisheries. 

@@ -8,8 +8,6 @@ mobile: ''
 tag: yvan
 banner: richard-yvan/yvan-richard-letterbox.jpg
 nocite: |
-  @boulton2008influence
-  @richard2010cost
   @richard_risk_2013
   @richard_demographic_2013
 ---
