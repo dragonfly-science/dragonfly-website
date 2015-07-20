@@ -1,6 +1,6 @@
 ---
 pdf: FAR-2015-17-Toheroa-2013-14.pdf
-tags: [shellfish, dragonfly, katrin, edward, philipp] 
+tags: katrin, shellfish, dragonfly
 ---
 The surf clam toheroa (*Paphies ventricosa*) is
 endemic to New Zealand, where it inhabits the intertidal
@@ -91,8 +91,8 @@ juveniles and few individuals at intermediate and large
 sizes.
 
 The toheroa population at Orepuki Beach was also small,
-with an estimated 28 000 (95% CI: 10 000–46 000) toheroa
->=40 mm shell length at this beach. The population at
+with an estimated 28 000 (95% CI: 10 000–46 000) 
+toheroa ≥40 mm shell length at this beach. The population at
 this beach was dominated by juveniles, with 365 000 (95%
 CI: 211 000–519 000) toheroa <40 mm shell length.
 Toheroa were distributed along the entire survey area at
