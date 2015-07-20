@@ -1,0 +1,3 @@
+---
+---
+"The horizontal stirring properties of the flow in a region of the East Australian Current are calculated. A surface velocity field derived from remotely sensed data, using the maximum cross correlation method, is integrated to derive the distribution of the finite-time Lyapunov exponents. For the region studied (between latitudes 36&#176;S and 41&#176;S and longitudes 150&#176;E and 156&#176;E) the mean Lyapunov exponent during 1997 is estimated to be
