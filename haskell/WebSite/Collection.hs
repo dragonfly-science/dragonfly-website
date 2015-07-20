@@ -108,6 +108,7 @@ pageIndexCtx lu  = defaultContext
                 <> teaserField "teaser" "content"
                 <> pageUrlField "pageurl"
                 <> dateField "published" "%B %d . %Y"
+                <> listContextWith tagContext "tags"
                 <> previous lu
                 <> next lu
 

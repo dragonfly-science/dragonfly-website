@@ -5,9 +5,13 @@ module WebSite.Context (
   pageUrlField,
   publicationsContext,
   refContext,
+  listContextWith,
+  tagContext
 ) where
 
-import Control.Monad (forM)
+import Control.Monad (forM, when)
+import Data.List (intercalate)
+import qualified Data.Map as M
 import Data.Monoid ((<>))
 import System.FilePath (takeBaseName, replaceExtension)
 import Text.CSL.Reference (Reference)
@@ -22,15 +26,29 @@ import Hakyll
 baseContext :: String -> Compiler (Context String)
 baseContext section = do
     path <- fmap toFilePath getUnderlying
+    ident <- getUnderlying
     return $  dateField  "date"   "%B %e, %Y"
            <> constField "jquery" "//ajax.googleapis.com/ajax/libs/jquery/2.0.3"
            <> constField "section" section
            <> constField ("on-" ++ takeBaseName path) ""
            <> bodyField "body"
+           <> listContextWith tagContext "tags"
            <> metadataField
            -- We don't include titleField (or defaultContext which includes
            -- titleField) here because (1) we never want the file name as the
            -- title and (2) we want to use the title from citations.
+
+
+tagContext :: Context String
+tagContext = field "tag" (return . itemBody) 
+
+listContextWith :: Context String -> String -> Context a
+listContextWith ctx s = listField s ctx $ do
+    identifier <- getUnderlying
+    metadata <- getMetadata identifier
+    let metas = maybe [] (map trim . splitAll ",") $ M.lookup s metadata
+    return $ map (\x -> Item (fromFilePath x) x) metas
+
 
 teaserSeparator :: String
 teaserSeparator = "<!--more-->"
@@ -52,14 +70,20 @@ pageUrlField key = field key $ \item -> do
 
 -- | List context: citations sorted by author
 publicationsContext :: Item Pandoc -> Compiler (Context String)
-publicationsContext pandoc = case collectCitationIds $ itemBody pandoc of
-    [] -> do
-        return mempty
-    ids -> do
-        bib <- load bibIdentifier
-        ref <- refContext
-        getCitationsById (reverseRefAuthors bib) ids
-            >>= listFieldR "publications" (metadataField <> ref)
+publicationsContext pandoc = do
+    bib <- load bibIdentifier
+    ref <- refContext
+    let citationIds = collectCitationIds $ itemBody pandoc
+    citations <- getCitationsById (reverseRefAuthors bib) citationIds
+    return $ listFieldWith "publications" (metadataField <> ref) $ \item -> do
+        let ident = show $ itemIdentifier item
+        when (length citationIds /= length citations) $ do
+            error $ "In '" ++ ident
+                 ++ "', reference not found for at least one of: "
+                 ++ intercalate ", " citationIds
+        when (null citations) $
+            fail $ "No citations for identifier: " ++ ident
+        return citations
 
 -- Provide context for a single BibTeX reference
 refContext :: Compiler (Context String)

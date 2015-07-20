@@ -13,7 +13,7 @@ reports and publications.
 
 Her work leading surveys of pipi and cockle populations on beaches, inlets and 
 estuaries from the Bay of Plenty to Whangarei is part of the Ministry for Primary 
-Industries’ (MPI) regular monitoring of the fisheries.
+Industries' (MPI) regular monitoring of the fisheries.
 
 As an adjunct lecturer at the University of Otago, Katrin also supervises students 
 and researches deep-sea benthic communities. She is a certified scientific diver 
@@ -21,9 +21,9 @@ and was hired by Ngāi Tahu as an expert witness in their submission opposing th
 mining of phosphorite nodules on Chatham Rise. 
 
 Katrin has a PhD in marine science from the University of Otago. She worked as a 
-marine ecologist at NIWA before completing a postdoctoral fellowship at the US 
+marine ecologist at NIWA before completing a postdoctoral fellowship, based at the US 
 Environmental Protection Agency. Katrin was scientific editor of the New Zealand 
-Journal of Marine and Freshwater Research for five years and joined Dragonfly in 
+Journal of Marine and Freshwater Research for five years, and joined Dragonfly in 
 2012, where she leads the writing and editing of reports and other publications. 
 
 > It’s very rewarding to be out talking to locals and collecting and sharing data 
@@ -31,7 +31,3 @@ that will tell them how their local cockle and pipi populations are faring, espe
 those on beaches that are under a lot of pressure from recreational fishing. As 
 science providers, Dragonfly is an important link between the resource managers 
 and the public.
-
-
-##Selected publications
-
