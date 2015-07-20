@@ -2,7 +2,7 @@
 title: Seabird risk assessment
 banner-image: /work/2014-10-01-seabird-risk/bullers.jpg
 quote: They fostered an open and inclusive approach with all stakeholders
-quote-attribution: Bob Zuur , Marine Advocate, WWF-New Zealand
+quote-attribution: Bob Zuur, Marine Advocate, WWF-New Zealand
 logo: /work/2014-10-01-seabird-risk/MPI-logo.png
 ---
 
