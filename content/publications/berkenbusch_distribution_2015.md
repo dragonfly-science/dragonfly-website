@@ -91,7 +91,7 @@ sizes.
 
 The toheroa population at Orepuki Beach was also small,
 with an estimated 28 000 (95% CI: 10 000–46 000) 
-toheroa >=40 mm shell length at this beach. The population at
+toheroa ≥40 mm shell length at this beach. The population at
 this beach was dominated by juveniles, with 365 000 (95%
 CI: 211 000–519 000) toheroa <40 mm shell length.
 Toheroa were distributed along the entire survey area at
