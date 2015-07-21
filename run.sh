@@ -58,7 +58,7 @@ case "$MODE" in
         docker rm -f $SCRIPTS_WATCH
         ;;
     pull-deps)
-        #docker pull dragonflyscience/website-hakyll
+        docker pull dragonflyscience/website-hakyll
         docker pull dragonflyscience/website-sass
         docker pull dragonflyscience/website-scripts
     ;;
