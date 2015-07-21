@@ -48,3 +48,25 @@ div.page-title {
         @include calc(min-height, "100vh - #{$responsive-navigation-height-clinical}");
     }
 }
+
+div.year-2017 + div.year-2017 > div.citation-year { display: none; }
+div.year-2016 + div.year-2016 > div.citation-year { display: none; }
+div.year-2015 + div.year-2015 > div.citation-year { display: none; }
+div.year-2014 + div.year-2014 > div.citation-year { display: none; }
+div.year-2013 + div.year-2013 > div.citation-year { display: none; }
+div.year-2012 + div.year-2012 > div.citation-year { display: none; }
+div.year-2011 + div.year-2011 > div.citation-year { display: none; }
+div.year-2010 + div.year-2010 > div.citation-year { display: none; }
+div.year-2009 + div.year-2009 > div.citation-year { display: none; }
+div.year-2008 + div.year-2008 > div.citation-year { display: none; }
+div.year-2007 + div.year-2007 > div.citation-year { display: none; }
+div.year-2006 + div.year-2006 > div.citation-year { display: none; }
+div.year-2005 + div.year-2005 > div.citation-year { display: none; }
+div.year-2004 + div.year-2004 > div.citation-year { display: none; }
+div.year-2003 + div.year-2003 > div.citation-year { display: none; }
+div.year-2002 + div.year-2002 > div.citation-year { display: none; }
+div.year-2001 + div.year-2001 > div.citation-year { display: none; }
+div.year-2000 + div.year-2000 > div.citation-year { display: none; }
+div.year-1999 + div.year-1999 > div.citation-year { display: none; }
+div.year-1998 + div.year-1998 > div.citation-year { display: none; }
+div.year-1997 + div.year-1997 > div.citation-year { display: none; }

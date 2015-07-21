@@ -11,7 +11,7 @@ $read-more-text-color: #CF4547;
 
     .post-wrapper {
         border-bottom: solid 1px #E7E7E7;
-        overflow: hidden;
+        overflow: visible;
         padding-bottom: 1em;
         margin-bottom: 1em;
         @include media($transient) {
@@ -24,6 +24,12 @@ $read-more-text-color: #CF4547;
             padding-bottom: 0;
         }
 
+    .citation-year {
+        float: left;
+        margin-top: -1em;
+        margin-left: -7em;
+    }
+    
 
     .post {
         @include media($clinical) {
@@ -80,3 +86,4 @@ $read-more-text-color: #CF4547;
 .post-wrapper:last-child {
     border-bottom: none;
 }
+

@@ -77,6 +77,7 @@ refContext = do
            <> refField "refUrl"   (failOnNull "refUrl" refUrl) bib
            <> refField "doi"      (failOnNull "doi" refDoi) bib
            <> refField "abstract" (failOnNull "abstract" refAbstract) bib
+           <> refField "year"     (failOnNull "year" (show . maybe 0 id . refYear)) bib
            <> refField "id"       (failOnNull "id" refId) bib
 
 refField :: String -> (Reference -> Compiler String) -> Item Biblio -> Context String
