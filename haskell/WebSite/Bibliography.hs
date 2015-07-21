@@ -12,6 +12,9 @@ module WebSite.Bibliography (
   reverseRefAuthors,
 ) where
 
+
+import Control.Monad ((>=>))
+import Data.Default (def)
 import Data.Char (isSpace)
 import Data.List (find, sortOn)
 import GHC.Exts (build)
@@ -22,9 +25,19 @@ import qualified Text.CSL.Reference as Ref
 import Text.CSL.Style (Formatted(unFormatted), Agent(..))
 import Text.Pandoc.Shared (stringify)
 
-import WebSite.Util
+import WebSite.Config
 
 import Hakyll
+
+-- | Render a Pandoc input string to HTML5 output with a CSL style and a
+-- bibliography.
+renderPandocBiblio
+    :: Item CSL
+    -> Item Biblio
+    -> Item String
+    -> Compiler (Item String)
+renderPandocBiblio csl bib =
+    readPandocBiblio def csl bib >=> return . writePandocWith htm5Writer
 
 -- | Look up the BibTeX ID part of an identifier in a bibliography to see if
 -- there is a reference.
@@ -42,6 +55,10 @@ refCitation csl bib ref = asItem dummyInput (renderPandocBiblio csl bib)
     -- The input is an empty body with dummy metadata to get Pandoc to generate
     -- the HTML for the reference.
     dummyInput = unlines ["---", "nocite: |", ' ':' ':'@':refId ref, "..."]
+    -- | Compile something wrapped as an Item
+    asItem :: a -> (Item a -> Compiler (Item b)) -> Compiler b
+    asItem x f = makeItem x >>= f >>= return . itemBody
+
 
 -- | Render the unformatted title of a reference
 refTitle :: Reference -> String

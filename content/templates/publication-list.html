@@ -1,21 +1,14 @@
 <div class="container">
   <div class="sidebar"></div>
   <div class="content">
-    $for(publications-by-year)$
-      $if(publications-for-year)$
-        <h2 id="$year$">$year$</h2>
         <div class="post-list">
-          $for(publications-for-year)$
+        $for(publications)$
           <div class="post-wrapper">
             <div class="post">
-              <div class="post-teaser">
                 $partial("templates/citation-entry.html")$
-              </div>
             </div>
           </div>
-          $endfor$
+        $endfor$
         </div>
-      $endif$
-    $endfor$
   </div>
 </div>

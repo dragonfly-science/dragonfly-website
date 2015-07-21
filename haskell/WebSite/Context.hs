@@ -3,7 +3,6 @@ module WebSite.Context (
   baseContext,
   actualbodyField,
   pageUrlField,
-  publicationsContext,
   refContext,
   listContextWith,
   tagContext
@@ -18,7 +17,6 @@ import Text.CSL.Reference (Reference)
 import Text.Pandoc.Definition (Pandoc)
 
 import WebSite.Config
-import WebSite.Util
 import WebSite.Bibliography
 
 import Hakyll
@@ -32,7 +30,7 @@ baseContext section = do
            <> constField "section" section
            <> constField ("on-" ++ takeBaseName path) ""
            <> bodyField "body"
-           <> listContextWith tagContext "tags"
+           <> listContextWith "tags" tagContext
            <> metadataField
            -- We don't include titleField (or defaultContext which includes
            -- titleField) here because (1) we never want the file name as the
@@ -42,9 +40,9 @@ baseContext section = do
 tagContext :: Context String
 tagContext = field "tag" (return . itemBody) 
 
-listContextWith :: Context String -> String -> Context a
-listContextWith ctx s = listField s ctx $ do
-    identifier <- getUnderlying
+listContextWith :: String -> Context String -> Context a
+listContextWith s ctx  = listFieldWith s ctx $ \item -> do
+    let identifier = itemIdentifier item
     metadata <- getMetadata identifier
     let metas = maybe [] (map trim . splitAll ",") $ M.lookup s metadata
     return $ map (\x -> Item (fromFilePath x) x) metas
@@ -68,34 +66,18 @@ pageUrlField key = field key $ \item -> do
         path = "/" ++ pseudoPath
     return (replaceExtension path ".html")
 
--- | List context: citations sorted by author
-publicationsContext :: Item Pandoc -> Compiler (Context String)
-publicationsContext pandoc = do
-    bib <- load bibIdentifier
-    ref <- refContext
-    let citationIds = collectCitationIds $ itemBody pandoc
-    citations <- getCitationsById (reverseRefAuthors bib) citationIds
-    return $ listFieldWith "publications" (metadataField <> ref) $ \item -> do
-        let ident = show $ itemIdentifier item
-        when (length citationIds /= length citations) $ do
-            error $ "In '" ++ ident
-                 ++ "', reference not found for at least one of: "
-                 ++ intercalate ", " citationIds
-        when (null citations) $
-            fail $ "No citations for identifier: " ++ ident
-        return citations
 
 -- Provide context for a single BibTeX reference
 refContext :: Compiler (Context String)
 refContext = do
     csl <- load cslIdentifier
     bib <- load bibIdentifier
-    return $  refField "title" (failOnNull "title" refTitle) bib
+    return $  refField "title"    (failOnNull "title" refTitle) bib
            <> refField "citation" (refCitation csl bib) bib
-           <> refField "refUrl" (failOnNull "refUrl" refUrl) bib
-           <> refField "doi" (failOnNull "doi" refDoi) bib
+           <> refField "refUrl"   (failOnNull "refUrl" refUrl) bib
+           <> refField "doi"      (failOnNull "doi" refDoi) bib
            <> refField "abstract" (failOnNull "abstract" refAbstract) bib
-           <> refField "id" (failOnNull "id" refId) bib
+           <> refField "id"       (failOnNull "id" refId) bib
 
 refField :: String -> (Reference -> Compiler String) -> Item Biblio -> Context String
 refField k showFieldM bib =
