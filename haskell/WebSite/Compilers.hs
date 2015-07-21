@@ -14,12 +14,11 @@ import Hakyll
 import Text.Pandoc.Definition (Pandoc)
 
 import WebSite.Config
-import WebSite.Util
 import WebSite.DomUtil.Images
 
 readScholmd :: Compiler (Item Pandoc)
 readScholmd = do
-    csl <- load cslNoBibIdentifier
+    csl <- load cslIdentifier
     bib <- load bibIdentifier
     readPandocBiblio def csl bib =<< getResourceString
 
@@ -32,3 +31,5 @@ scholmdCompiler = readScholmd >>= writeScholmd
 -- FIXME: imgMeta is not used. Should it be?
 imageCredits :: [Item String] -> Item String -> Compiler (Item String)
 imageCredits imgMeta = return . fmap processFigures
+
+

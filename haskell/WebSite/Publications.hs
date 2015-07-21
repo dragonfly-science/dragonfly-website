@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TupleSections #-}
 module WebSite.Publications (
     rules
 ) where
@@ -15,7 +16,6 @@ import Text.CSL.Reference (Reference)
 import Hakyll
 
 import WebSite.Config
-import WebSite.Util
 import WebSite.Bibliography
 import WebSite.Collection hiding (getList)
 import WebSite.Context
@@ -38,23 +38,19 @@ rules = do
         route $ constRoute (indexTemplate cc)
         compile $ do
             base <- baseContext (baseName cc)
-            bib <- load bibIdentifier
-            citations <- getCitationsByYearField bib
-            let  ctx = base <> citations
+            citations <- getList cc 1000
+            let ctx = citations <> base
             scholmdCompiler
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
-    match allPublicationsPattern $ version citationsVersion $
-        compile $ scholmdCompiler >>= saveSnapshot citationsSnapshot
+    match (collectionPattern cc) $ version "full" $ do
+        compile $ do 
+            scholmdCompiler 
+                >>= saveSnapshot "content"
 
-    create allPublicationsByYearIdentifiers $
-        -- Make empty items with the year in the identifier so we can organize
-        -- the publications by year.
-        compile $ makeItem ("" :: String)
-
-    match allPublicationsPattern $ do
+    match (collectionPattern cc) $ do
         route $ setExtension "html"
         compile $ do
             base <- baseContext (baseName cc)
@@ -71,31 +67,26 @@ rules = do
         route idRoute
         compile copyFileCompiler
 
--- | Outer list context: citations grouped by year
-getCitationsByYearField :: Item Biblio -> Compiler (Context String)
-getCitationsByYearField bib = do
-    citations <- getCitationsForYearField bib
-    let year = field "year" $ return . show . itemYear
-    loadAll (fromList allPublicationsByYearIdentifiers)
-        >>= sortItemsBy reverseRefYear
-        >>= listFieldR "publications-by-year" (metadataField <> citations <> year)
-
--- | Inner list context: citations for one year, sorted by author
-getCitationsForYearField :: Item Biblio -> Compiler (Context String)
-getCitationsForYearField bib = do
+getList :: CollectionConfig -> Int ->  Compiler (Context String)
+getList cc limit = do
     ref <- refContext
-    return $ listFieldWith "publications-for-year" (metadataField <> ref) $ \item -> do
-        let yr = itemYear item
-        citations <- getCitationsWith (refYearIs yr) (reverseRefAuthors bib)
-        when (null citations) $
-            fail $ "No citations for identifier: " ++ show (itemIdentifier item)
-        return citations
+    let tags = listContextWith "tags" tagContext
+    bib <- load bibIdentifier
+    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
+    let sortorder i = do
+        case lookupRef i bib of
+            Nothing   -> return (0,[])
+            Just ref  -> do
+                let year = maybe 0 id $ refYear ref
+                let author = refAuthorsSorted ref
+                return (- year, author)
+    snaps' <- sortItemsBy sortorder snaps
+    return $ listField (baseName cc) (tags <> ref) (return $ take limit snaps')
+
+-- Sort items by a monadic ordering function
+sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]
+sortItemsBy f = sortByM $ f . itemIdentifier
   where
-    refYearIs :: Int -> Identifier -> Bool
-    refYearIs yr ident = maybe False (== yr) $ refYear =<< lookupRef ident bib
+    sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
+    sortByM f xs = map fst . sortOn snd <$> mapM (\x -> (x,) <$> f x) xs
 
-itemYear :: Item a -> Int
-itemYear = extractRefYear . itemIdentifier
-
-reverseRefYear :: Identifier -> Compiler (Down Int)
-reverseRefYear = return . Down . extractRefYear

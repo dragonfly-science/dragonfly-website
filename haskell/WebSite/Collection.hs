@@ -1,7 +1,9 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TupleSections #-}
 module WebSite.Collection (
     makeRules,
     getList, 
+    pageIndexCtx,
     getBubbles,
     CollectionConfig(..),
     Rules()
@@ -17,7 +19,6 @@ import Text.Pandoc
 
 import Hakyll
 
-import WebSite.Util
 import WebSite.Context
 import WebSite.Compilers
 
@@ -59,10 +60,9 @@ makeRules cc = do
             pages <- getList cc 1000
             bubbles <- getBubbles cc (Just ident)
             pandoc <- readScholmd
-            pubs <- publicationsContext pandoc
             let ctx = base <> actualbodyField "actualbody" <> pages <> bubbles
             writeScholmd pandoc
-                >>= loadAndApplyTemplate "templates/append-publications.html" (pubs <> ctx)
+                >>= loadAndApplyTemplate "templates/append-publications.html" ctx
                 >>= loadAndApplyTemplate (pageTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= imageCredits imageMeta
@@ -102,13 +102,13 @@ getBubbles cc mident = do
 
 type PreviousNextMap = [(Identifier, (Item String, Item String))]
 pageIndexCtx :: PreviousNextMap -> Context String
-pageIndexCtx lu  = defaultContext 
+pageIndexCtx lu  = listContextWith "tags" tagContext
+                <> defaultContext 
                 <> teaserImage
                 <> portholeImage
                 <> teaserField "teaser" "content"
                 <> pageUrlField "pageurl"
                 <> dateField "published" "%B %d . %Y"
-                <> listContextWith tagContext "tags"
                 <> previous lu
                 <> next lu
 
@@ -139,3 +139,11 @@ portholeImage = field "portholeImage" getImagePath
             base = dropExtension path
             ident = fromFilePath $ base </> "porthole.png"
         fmap (maybe "" toUrl) (getRoute ident)
+
+-- Sort items by a monadic ordering function
+sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]
+sortItemsBy f = sortByM $ f . itemIdentifier
+  where
+    sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
+    sortByM f xs = map fst . sortOn snd <$> mapM (\x -> (x,) <$> f x) xs
+

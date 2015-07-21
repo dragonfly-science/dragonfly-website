@@ -7,6 +7,16 @@ import qualified Data.List as List
 
 import Hakyll
 
+import Text.Pandoc.Options (WriterOptions(..))
+
+-- | Options for an HTML5 Pandoc writer
+htm5Writer :: WriterOptions
+htm5Writer = defaultHakyllWriterOptions
+    { writerHtml5       = True
+    , writerSectionDivs = True
+    }
+
+
 -- | These are years of the publications page.
 --
 -- NOTE: Update this when you want to add the next year.
