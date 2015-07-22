@@ -1,9 +1,10 @@
 <div class="container">
   <div class="sidebar"></div>
   <div class="content">
+      <div style="float:right"><b>Filter publications</b><input class="search" /></div>
       <h1>Publications</h1>
       <br />
-        <div class="post-list">
+        <div class="post-list list">
         $for(publications)$
                 $partial("templates/citation-entry.html")$
         $endfor$
