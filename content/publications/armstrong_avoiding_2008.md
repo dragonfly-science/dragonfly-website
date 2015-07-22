@@ -1,5 +1,5 @@
 ---
-tags: yvan, habitat fragements, bird
+tags: yvan, habitat fragments, bird
 ---
 Habitat fragmentation can potentially have negative
 impacts on many species because of both changes
