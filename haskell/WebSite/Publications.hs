@@ -81,7 +81,7 @@ getList cc limit = do
                 let author = refAuthorsSorted ref
                 return (- year, author)
     snaps' <- sortItemsBy sortorder snaps
-    return $ listField (baseName cc) (tags <> ref) (return $ take limit snaps')
+    return $ listField (baseName cc) (tags <> metadataField <> ref) (return $ take limit snaps')
 
 -- Sort items by a monadic ordering function
 sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]
