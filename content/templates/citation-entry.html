@@ -4,10 +4,11 @@
 
     <p class="citation">$citation$</p>
 $if(bibUrl)$ <a href="$bibUrl$">url</a> $endif$
-<a href = "/publications/$id$.html">Summary</a>
+$if(pdf)$<a href="/publications/pdf/$pdf$"><i class="fa fa-file-pdf-o"></i>  Download PDF</a> | $endif$
+<a href = "/publications/$id$.html">Read more</a>
 $if(tags)$ 
     $for(tags)$
-    <b>$tag$</b>
+    <!--<b>$tag$</b>-->
     $endfor$
 $endif$
 </div>
