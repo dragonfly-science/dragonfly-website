@@ -72,6 +72,7 @@ getList cc limit = do
     ref <- refContext
     let tags = listContextWith "tags" tagContext
     bib <- load bibIdentifier
+    base <- baseContext (baseName cc)
     snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
     let sortorder i = do
         case lookupRef i bib of
@@ -81,7 +82,7 @@ getList cc limit = do
                 let author = refAuthorsSorted ref
                 return (- year, author)
     snaps' <- sortItemsBy sortorder snaps
-    return $ listField (baseName cc) (tags <> metadataField <> ref) (return $ take limit snaps')
+    return $ listField (baseName cc) (tags <> base <> ref) (return $ take limit snaps')
 
 -- Sort items by a monadic ordering function
 sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]

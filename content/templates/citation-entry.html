@@ -4,8 +4,8 @@
 
     <p class="citation">$citation$</p>
 $if(bibUrl)$ <a href="$bibUrl$">url</a> $endif$
-$if(pdf)$<a href="/publications/pdf/$pdf$"><i class="fa fa-file-pdf-o"></i>  Download PDF</a> | $endif$
-<a href = "/publications/$id$.html">Read more</a>
+$if(pdf)$ <a href="/publications/pdf/$pdf$"><i class="fa fa-file-pdf-o"></i>  Download PDF</a>$endif$
+$if(hasBody)$  $if(pdf)$ | $endif$<a href = "/publications/$id$.html">Read more &#9656;</a>$endif$
 $if(tags)$ 
     $for(tags)$
     <!--<b>$tag$</b>-->

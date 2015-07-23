@@ -30,6 +30,7 @@ baseContext section = do
            <> constField "section" section
            <> constField ("on-" ++ takeBaseName path) ""
            <> bodyField "body"
+           <> boolField "hasBody" ((/= "") . trim . itemBody)
            <> listContextWith "tags" tagContext
            <> metadataField
            -- We don't include titleField (or defaultContext which includes
