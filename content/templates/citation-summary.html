@@ -1,15 +1,20 @@
 <h3>$citation$</h3>
-$if(pdf)$<h4><a href="/publications/pdf/$pdf$"><i class="fa fa-file-pdf-o"></i></a>
+$if(pdf)$<h4 class="download"><a href="/publications/pdf/$pdf$"><i class="fa fa-file-pdf-o"></i></a>
 <a href="/publications/pdf/$pdf$">Download PDF</a></h4>$endif$
 $if(tags)$ 
+    <!--
     $for(tags)$
     <b>$tag$</b> 
     $endfor$
+    $if(bibUrl)$ <a href="$bibUrl$">url</a> $endif$
+    $if(doi)$ $doi$ $endif$
+    $if(keywords)$ $keywords$ $endif$
+    -->
 $endif$
-$if(bibUrl)$ <a href="$bibUrl$">url</a> $endif$
-$if(doi)$ $doi$ $endif$
-$if(keywords)$ $keywords$ $endif$
-$body$
+
+<div class="content">
+    $body$
+</div>
 
 
 

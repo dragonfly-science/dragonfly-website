@@ -11,7 +11,7 @@ import Data.Monoid ((<>))
 
 import Hakyll
 
-import Text.Pandoc.Definition (Pandoc)
+import Text.Pandoc.Definition 
 
 import WebSite.Config
 import WebSite.DomUtil.Images
@@ -20,7 +20,11 @@ readScholmd :: Compiler (Item Pandoc)
 readScholmd = do
     csl <- load cslIdentifier
     bib <- load bibIdentifier
-    readPandocBiblio def csl bib =<< getResourceString
+    Item i pd <- readPandocBiblio def csl bib =<< getResourceString
+    let Pandoc m pdbs = pd
+    if length pdbs == 1
+        then makeItem ( Pandoc  nullMeta  [])
+        else return (Item i pd)
 
 writeScholmd :: Item Pandoc -> Compiler (Item String)
 writeScholmd = return . writePandocWith htm5Writer
