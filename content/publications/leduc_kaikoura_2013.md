@@ -1,3 +1,5 @@
 ---
-pdf: leduc_kaikoura_2013
+pdf: Leducetal_2014_KaikouraCanyon.pdf
+tags: katrin, Kaikoura Canyon, 
+
 ---
