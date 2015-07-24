@@ -1,5 +1,5 @@
 ---
-pdf: Berkenbusch&Rowden_1999_Jembe.pdf
+pdf: Berkenbusch_Rowden_1999_Jembe.pdf
 tags: katrin, ghost shrimp, bioturbation
 ---
 Bioturbation by the burrowing thalassinidean shrimp *Callianassa filholi* (Milne-Edwards 1878) was studied at an intertidal sandflat in Otago Harbour, south-eastern New Zealand, over a period of 12 months. The amount of sediment expelled from shrimp burrows was measured each month (by direct entrapment over 24 h) and inhabiting shrimp were subsequently captured from the burrows. Rate of sediment expulsion was significantly related to seawater temperature, shore height of burrow and time, whilst the amount of sediment expelled from individual burrows was positively related to size of inhabiting shrimp but independent of sex. Annual sediment turnover for *C. filholi* was estimated at 96 kg (dry) m<sup>−2</sup> yearsup>−1</sup> which accounted for the variability imposed by monthly changes in seawater temperature and the spatial and temporal dynamics of the shrimp population. The results demonstrate the need to take account of physical and biological factors when constructing sediment turnover estimates for callianassid shrimps, and inferring their bioturbatory significance.
