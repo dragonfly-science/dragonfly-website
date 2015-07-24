@@ -1,6 +1,6 @@
 ---
-pdf: Neubauer&Abraham_2014_GPS.pdf
-tags: phil, paua, abalone, data logger, GPS, dragonfly
+pdf: Neubauer_Abraham_2014_GPS.pdf
+tags: phil, edward, paua, abalone, data logger, GPS, dragonfly
 ---
 The pāua (*Haliotis iris*) stock in New Zealand quota management area PAU 7 was at or near the soft
 limit of 20% of virgin biomass (B<sub>0</sub>) at the time of the most recent stock assessment (2011). Biomass

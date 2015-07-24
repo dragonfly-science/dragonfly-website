@@ -1,6 +1,6 @@
 ---
 pdf: FAR-2015-17-Toheroa-2013-14.pdf
-tags: katrin, shellfish, dragonfly
+tags: katrin, edward, phil, shellfish, dragonfly
 ---
 The surf clam toheroa (*Paphies ventricosa*) is
 endemic to New Zealand, where it inhabits the intertidal
