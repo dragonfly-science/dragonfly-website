@@ -2,8 +2,8 @@
 pdf: Neubauer&Abraham_2014_GPS.pdf
 tags: phil, paua, abalone, data logger, GPS, dragonfly
 ---
-The pāua (Haliotis iris) stock in New Zealand quota management area PAU 7 was at or near the soft
-limit of 20% of virgin biomass (B0) at the time of the most recent stock assessment (2011). Biomass
+The pāua (*Haliotis iris*) stock in New Zealand quota management area PAU 7 was at or near the soft
+limit of 20% of virgin biomass (B<sub>0</sub>) at the time of the most recent stock assessment (2011). Biomass
 was projected to increase under the current Total Allowable Commercial Catch (TACC; 187 t) with a
 probability of increase only slightly above 50%. A shelving scenario suggested that both the probability
 of increase and the projected biomass would increase substantially with a shelving of 20% of the current
