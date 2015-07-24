@@ -1,3 +1,5 @@
 ---
-pdf: neubauer_bayesian_2015.pdf
+pdf: Neubauer_2015_bayesian.pdf
+tags: phil, 
 ---
+Quantitative analysis of stable isotopes (SI) and, more recently, fatty acid profiles (FAP) are useful and complementary tools for estimating the relative contribution of different prey items in the diet of a predator. The combination of these two approaches, however, has thus far been limited and qualitative. We propose a mixing model for FAP that follows the Bayesian machinery employed in state-of-the-art mixing models for SI. This framework provides both point estimates and probability distributions for individual and population level diet proportions. Where fat content and conversion coefficients are available, they can be used to improve diet estimates. This model can be explicitly integrated with analogous models for SI to increase resolution and clarify predator–prey relationships. We apply our model to simulated data and an experimental dataset that allows us to illustrate modeling strategies and demonstrate model performance. Our methods are provided as an open source software package for the statistical computing environment R.
