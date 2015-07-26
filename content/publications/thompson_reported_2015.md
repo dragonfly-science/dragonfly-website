@@ -11,7 +11,7 @@ multiple data sources. Duplicate records were reconciled by collating all data f
 into a single database, and then linking the records using a set of matching rules.
 
 The resulting data set included 388 sea lion captures, reported in the 22-year period between October
-1991 and September 2013 from trawlers operating near New Zealand’s subantarctic islands. In the data
+1991 and September 2013 from trawlers operating near New Zealand's subantarctic islands. In the data
 set, 337 (86.9%) sea lion captures were reported by MPI observers compared with 289 (74.5%) sea
 lion captures reported by fishers or the Deepwater Group. Of the fisher-reported captures, 43 (11.1%)
 were not also reported by MPI observers. Of the 169 (43.6%) captured animals returned for necropsy, 8
