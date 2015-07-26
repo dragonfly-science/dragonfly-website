@@ -4,7 +4,7 @@ tags: yvan, edward, risk assessment, seabirds, fisheries, dragonfly
 ---
 This report presents a risk assessment of the effect of fishing-related mortalities on 70 of the seabird
 species that breed in the New Zealand region. The assessment covers all fishing by commercial trawl,
-bottom-longline, surface-longline, and set-net fisheries within New Zealand’s Exclusive Economic Zone.
+bottom-longline, surface-longline, and set-net fisheries within New Zealand's Exclusive Economic Zone.
 The risk was defined as the ratio of the estimated annual number of fatalities of birds due to bycatch in
 fisheries to the Potential Biological Removal (PBR), which is an estimate of the number of seabirds
 that may be killed without causing the population to decline below half the carrying capacity. The risk
