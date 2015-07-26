@@ -5,8 +5,7 @@ tags: yvan, edward, risk assessment, seabird, dragonfly
 The Potential Biological Removal (PBR) approach was developed in response to the United States
 Marine Mammal Protection Act, to identify populations experiencing human-caused mortality at levels
 that could result in population depletion. The PBR is calculated from the maximum population growth
-rate (*r*<sub>max</sub>) and a lower estimate of the population size (*N*<sub>min</sub>), as PBR = &#189;1
-2 *r*<sub>max</sub>*N*<sub>min</sub>*f* , where *f* (typically
+rate (*r*<sub>max</sub>) and a lower estimate of the population size (*N*<sub>min</sub>), as PBR = &#189;*r*<sub>max</sub>*N*<sub>min</sub>*f* , where *f* (typically
 between 0.1 and 0.5) is a "recovery factor" that may be set lower to allow a population to recover faster, or
 to provide additional protection to the population. If the human-caused mortalities are less than the PBR,
 then a depleted population will be able to recover so that, given sufficient time, it has a 95% probability
@@ -22,11 +21,11 @@ seabirds, representing a range of species breeding in New Zealand. For each spec
 the maximum human-caused mortality rate that the populations could incur, while still being able to
 recover to above half the carrying capacity, with 95% probability, in the presence of both environmental
 and demographic stochasticity. Second, we generated a PBR estimate using an approximate maximum
-growth rate and population size. The PBR estimate included a parameter r, calibrated so that the
-base PBR (PBRb; evaluated with f = 1 and with the total population, N, rather than the conservative
-estimate, Nmin) had only a 5%-probability of exceeding the maximum human-caused mortality. Finally,
+growth rate and population size. The PBR estimate included a parameter *&#961;*, calibrated so that the
+base PBR (PBR<sub>b</sub>; evaluated with *f* = 1 and with the total population, *N*, rather than the conservative
+estimate, *N*<sub>min</sub>) had only a 5%-probability of exceeding the maximum human-caused mortality. Finally,
 we explored the effect of errors or bias in the demographic parameters used for the calculation of the
-PBR, to provide guidance in setting the value of the recovery factor, f .
+PBR, to provide guidance in setting the value of the recovery factor, *f*.
 The analysis showed that the approximate base PBR derived from demographic parameter estimates
 tended to overestimate the maximum human-caused mortality. Inclusion of a calibration factor, r, was
 required to adjust the PBR approximations to meet the management criterion; r varied between 0.17
