@@ -1,6 +1,6 @@
 ---
 pdf: Richard_Abraham_2013_AEBR109.pdf
-
+tags: yvan, edward, risk assessment, seabirds, fisheries, dragonfly
 ---
 This report presents a risk assessment of the effect of fishing-related mortalities on 70 of the seabird
 species that breed in the New Zealand region. The assessment covers all fishing by commercial trawl,
