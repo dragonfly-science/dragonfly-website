@@ -1,11 +1,12 @@
 <div class="container">
   <div class="sidebar"></div>
   <div class="content">
-      <div style="float:right"><b>Search publications</b><input class="search" placeholder="Search" /></div>
-      <h1>Publications</h1>
+      <h1>Publications, reports, and presentations</h1>
       <br />
-        <div id="publication-list">
-            <ul class="post-list list">
+        <div id="publication-list" class="post-list">
+        <input class="search publication-search" placeholder="Search" />
+        <span class="badge" id="publication-count" style="display: none"></span>
+            <ul class="list">
             $for(publications)$
                     $partial("templates/citation-entry.html")$
             $endfor$
@@ -13,9 +14,3 @@
         </div>
   </div>
 </div>
-<script>
-var options = {
-    valueNames: ['citation']
-};
-var publicationList = new List('publication-list', options);
-</script>
