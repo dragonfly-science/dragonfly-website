@@ -51,7 +51,7 @@ locations in a longline basket.
 For hook pods, the smaller number of pods available led to an approach of
 deploying approximately 50 pods on a longline. TDRs were also deployed on hook pods (and snoods in these sets not carrying pods) to document sink rates.
 
-For all devices tested, snood characteristics (e.g., lightstick a􀄴achment)
+For all devices tested, snood characteristics (e.g., lightstick attachment)
 and fish catch were documented at hauling, and TDRs were retrieved for
 downloading. The location of experimental weights on snoods was also
 documented. Finally, the operational characteristics of the experimental
@@ -67,7 +67,7 @@ project, captures of three albatross (*Thalassarche* spp.) and two New Zealand
 fur seal (*Arctocephalus forsteri*) were recorded.
 
 There was considerable variation in longline sink rates amongst the
-experimental weighting approaches tested and the sets using skippers’
+experimental weighting approaches tested and the sets using skippers'
 normal gear setups. To depths of 7 m, safe leads sank slightly faster, on
 average, than normal gear. Beyond 7 m, average sink rates of gear carrying
 safe leads and normal gear were extremely similar. Below 2 m depth, gear
