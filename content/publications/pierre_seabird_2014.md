@@ -1,6 +1,6 @@
 ---
 pdf: Pierreetal_2014_mit2013-03.pdf
-tags: finlay, mitigation, seabird, dragonfly
+tags: finlay, mitigation, seabird, fisheries, dragonfly
 ---
 In New Zealand waters, bottom longlining is conducted by vessels with 
 diverse characteristics, both physical (e.g., vessel size) and operational
