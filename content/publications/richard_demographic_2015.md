@@ -5,7 +5,7 @@ tags: dragonfly, yvan, edward
 Demographic rates, such as annual survival rate, are generally difficult to
 estimate for long-lived seabirds, because of the length of time required for
 this kind of study and the remoteness of colonies. However, a small colony of
-northern royal albatross (Diomedea sanfordi) established itself on the mainland
+northern royal albatross (*Diomedea sanfordi*) established itself on the mainland
 of New Zealand at Taiaroa Head, making possible regular banding and monitoring
 of its individuals since the first chick fledged, in 1938. Data on the
 presence/absence of birds, as well as on breeding outcomes, were available for
