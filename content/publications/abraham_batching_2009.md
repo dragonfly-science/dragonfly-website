@@ -1,6 +1,6 @@
 ---
 pdf: Abraham_2009_batching.pdf
-tags: edward, fish waste, dragonfly
+tags: edward, fisheries, bycatch, seabird, fish waste, dragonfly
 ---
 Seabirds are attracted to fishing vessels by the discard of waste from fishing. While this waste provides an available food source, seabirds foraging near vessels are at risk of either being caught or struck by the fishing gear. Within New Zealand waters, there were 212 seabirds observed killed by trawlers during the 2006—07 fishing year. Birds feeding on fishing waste behind trawlers may be struck by the trawl warps. The mortality from warp-strike can be reduced by using mitigation devices, such as tori lines, that deter birds from entering the region between the stern and the warps. While tori lines are partially effective, numbers of warp interactions are reduced to close to zero if no offal or discards are discharged. Strategies that reduce the discharge of fishing waste, such as converting it to fish meal and retaining it on board, or holding waste and discharging it while the vessel is not fishing, are expected to greatly reduce mortality. Many vessels hold waste in a container and discard it at intervals, a practice known as batching, in order to reduce interactions with seabirds. 
 
