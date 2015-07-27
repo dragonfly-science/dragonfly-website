@@ -1,8 +1,7 @@
-<div class="post-wrapper year-$year$">
+<li class="post-wrapper year-$year$">
     <div class="citation-year"><h1>$year$</h1></div>
-<div class="post">
 
-    <p class="citation">$citation$</p>
+    <div class="citation post">$citation$</div>
 $if(bibUrl)$ <a href="$bibUrl$">url</a> $endif$
 $if(pdf)$ <a href="/publications/pdf/$pdf$"><i class="fa fa-file-pdf-o"></i>  Download PDF</a>$endif$
 $if(hasBody)$  $if(pdf)$ | $endif$<a href = "/publications/$id$.html">Read more &#9656;</a>$endif$
@@ -11,5 +10,4 @@ $if(tags)$
     <!--<b>$tag$</b>-->
     $endfor$
 $endif$
-</div>
-</div>
+</li>
