@@ -30,7 +30,7 @@ is particularly important.
 From Richard & Abraham's (2014) assessment, cryptic mortality was
 especially influential in determining overall assessed risk for both albatross
 and petrel species, including black petrel (*Procellaria parkinsoni*) interacting
-with small-vessel surface and bottom longline fisheries, and Salvin's (*Thalassarche salvini) and New Zealand white-capped (*T. cauta steadi*)
+with small-vessel surface and bottom longline fisheries, and Salvin's (*Thalassarche salvini*) and New Zealand white-capped (*T. cauta steadi*)
 albatross interacting with small inshore trawl vessels, and southern Buller's
 albatross (*T. bulleri bulleri*) interacting with large trawl vessels with meal
 plants.  Key assumptions included that cryptic mortality scalars derived
