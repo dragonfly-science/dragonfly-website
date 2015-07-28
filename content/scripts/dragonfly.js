@@ -1,6 +1,25 @@
 import menuInit from './menu';
 /* global $ */
 
+function tagFilter(){
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    };
+    
+    var tags = getParameterByName('tag').split(',');
+    $('.tag').show().each(function(i, elem){
+        tags.forEach(function(t){
+            if (!$(elem).hasClass('tag-' + t )){
+                $(elem).hide();
+            }
+            console.log(t);
+        });
+    });
+}
+
 $(document).ready(function() {
     menuInit();
     var options = {
@@ -23,5 +42,9 @@ $(document).ready(function() {
             $('#publication-count').hide();
         }
     });
+     
+    tagFilter();
+    
 });
+
 
