@@ -1,6 +1,6 @@
 ---
 pdf: waugh_stirring_2008.pdf
-tags: edward, stirring
+tags: edward, stirring, dragonfly
 ---
 Global variations of stirring in the surface ocean are
 quantified using finite-time Lyapunov exponents (FTLEs)
