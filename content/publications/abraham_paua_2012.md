@@ -3,16 +3,16 @@ pdf: abraham_paua_2012.pdf
 tags: edward, paua, logger data, dragonfly
 ---
 Pāua (primarily *Haliotis iris*) fisheries in New Zealand are currently managed
-in Quota Management Areas (QMAs). An further assumption used in paua stock
+in Quota Management Areas (QMAs). An further assumption used in pāua stock
 assessment is that catch per unit effort (CPUE) provides an index of
 abundance There are several key problems that can confound the relationship
 between haliotid CPUE and abundance. In particular, abalone are vulnerable to
-serial depletion where accessible paua are fished initially, but there is a
+serial depletion where accessible pāua are fished initially, but there is a
 progression of fishing to other reefs with a similar CPUE once the accessible
-paua have been harvested. 
+pāua have been harvested. 
 
-In addition, management of p ¯ aua is hampered by the limitations of current data collection that only gives aggregate data at a
-statistical area and daily scale.  To address these issues, paua loggers were
+In addition, management of pāua is hampered by the limitations of current data collection that only gives aggregate data at a
+statistical area and daily scale.  To address these issues, pāua loggers were
 introduced into the New Zealand commercial fishery in October 2010. The
 loggers are compact units that fit in a pocket on the back of a diver's
 wetsuit. When the diver is at the surface they record their position, using a
@@ -21,13 +21,13 @@ is also kept on the boat, and is used to record the location and time of catch
 bags being brought onboard.  
 
 In order to help develop methods for interpreting
-the paua logger data, a fishdown experiment was carried out in Fighting Bay
+the pāua logger data, a fishdown experiment was carried out in Fighting Bay
 (in the outer Marlborough Sounds) in the summer of 2011—12. Fighting Bay was
-closed to all fishing in 1996, and so has a high paua abundance. During the
+closed to all fishing in 1996, and so has a high pāua abundance. During the
 fishdown, a designated area within Fighting Bay was repeatedly fished, using
-commercial paua divers, until the catch per unit effort was reduced to levels
-similar to a fished control site. Paua loggers were used during the experiment
-to monitor changes in CPUE over a wide range of paua abundance. Fishing was
+commercial pāua divers, until the catch per unit effort was reduced to levels
+similar to a fished control site. Pāua loggers were used during the experiment
+to monitor changes in CPUE over a wide range of pāua abundance. Fishing was
 also carried out at Boat Harbour, a nearby fished site.  
 
 Catch per unit
@@ -43,9 +43,9 @@ models were fitted to the data, with a separate catchability for each diver.
 The resulting models fitted the data well, with the c.v.'s of the model fitted
 using the underwater and fishing-time measures of effort being 0.17 and 0.10,
 respectively. It is striking that the simpler measure of effort fitted the
-catch data more closely. During the fishdown, 8 t of paua were harvested from
+catch data more closely. During the fishdown, 8 t of pāua were harvested from
 Fighting Bay. Using the fishing-time measure of effort, the depletion model
-estimated that there were 3 (2.3 to 3.9) t of harvestable paua remaining at
+estimated that there were 3 (2.3 to 3.9) t of harvestable pāua remaining at
 the end of the experiment.  
 
 Exploration of the data shows the power of the
@@ -58,11 +58,11 @@ mapped). It was expected that during the fishdown divers would move to deeper
 water. No consistent change in the depth or duration of the dives was seen. Swim distances were variable,
 and no consistent change in the swim distance associated with dives (either on the surface or underwater)
 was seen. The other indicator that showed a marked change was shell length-frequency. Harvesting was
-size selective, with the larger paua being preferentially harvested. On the first day in Fighting Bay, 2.7% 
+size selective, with the larger pāua being preferentially harvested. On the first day in Fighting Bay, 2.7% 
 of the shells had a basal length less than 130 mm, and on the final day 28.8% of the shells were less than
 this threshold.
 
-The Fighting Bay data will be a valuable dataset for the future development of indices of paua stock 
+The Fighting Bay data will be a valuable dataset for the future development of indices of pāua stock 
 status. In this report we have carried out an exploratory analysis. There are more avenues that could
 be fruitfully explored. The next priority for analysis of the logger data, is to develop indices of spatial
 movement of the divers. There was evidence during the experiment that divers moved more slowly when
