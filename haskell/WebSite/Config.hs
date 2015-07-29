@@ -17,6 +17,20 @@ htm5Writer = defaultHakyllWriterOptions
     }
 
 
+-- | recognised tags
+tagDictionary :: [(String, String)] 
+tagDictionary = [("edward", "Edward Abraham"), 
+    ("katrin", "Katrin Berkenbusch"),
+    ("phil", "Philipp Neubauer"),
+    ("yvan", "Yvan Richard"),
+    ("finlay", "Finlay Thompson"),
+    ("richard", "Richard Mansfield"),
+    ("chris", "Christopher Knox"),
+    ("report", "Report"),
+    ("publication", "Publication"),
+    ("presentation", "Presentation"),
+    ("dragonfly", "Dragonfly")]
+
 -- | These are years of the publications page.
 --
 -- NOTE: Update this when you want to add the next year.

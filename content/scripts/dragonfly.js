@@ -12,7 +12,7 @@ function tagFilter(){
     var tags = getParameterByName('tag').split(',');
     $('.tag').show().each(function(i, elem){
         tags.forEach(function(t){
-            if (!$(elem).hasClass('tag-' + t )){
+            if (!(t === "") & (!$(elem).hasClass('tag-' + t ))){
                 $(elem).hide();
             }
             console.log(t);
