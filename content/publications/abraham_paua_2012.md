@@ -1,6 +1,6 @@
 ---
 pdf: abraham_paua_2012.pdf
-tags: edward, paua, logger data, dragonfly
+tags: edward, paua, fisheries, dragonfly
 ---
 Pāua (primarily *Haliotis iris*) fisheries in New Zealand are currently managed
 in Quota Management Areas (QMAs). An further assumption used in pāua stock
@@ -9,7 +9,7 @@ abundance There are several key problems that can confound the relationship
 between haliotid CPUE and abundance. In particular, abalone are vulnerable to
 serial depletion where accessible pāua are fished initially, but there is a
 progression of fishing to other reefs with a similar CPUE once the accessible
-pāua have been harvested. 
+pāua have been harvested.
 
 In addition, management of pāua is hampered by the limitations of current data collection that only gives aggregate data at a
 statistical area and daily scale.  To address these issues, pāua loggers were
@@ -18,7 +18,7 @@ loggers are compact units that fit in a pocket on the back of a diver's
 wetsuit. When the diver is at the surface they record their position, using a
 GPS, and when they are underwater the loggers record the diver's depth. A unit
 is also kept on the boat, and is used to record the location and time of catch
-bags being brought onboard.  
+bags being brought onboard.
 
 In order to help develop methods for interpreting
 the pāua logger data, a fishdown experiment was carried out in Fighting Bay
@@ -28,7 +28,7 @@ fishdown, a designated area within Fighting Bay was repeatedly fished, using
 commercial pāua divers, until the catch per unit effort was reduced to levels
 similar to a fished control site. Pāua loggers were used during the experiment
 to monitor changes in CPUE over a wide range of pāua abundance. Fishing was
-also carried out at Boat Harbour, a nearby fished site.  
+also carried out at Boat Harbour, a nearby fished site.
 
 Catch per unit
 effort was measured using the loggers in two different ways: firstly, from the
@@ -46,7 +46,7 @@ respectively. It is striking that the simpler measure of effort fitted the
 catch data more closely. During the fishdown, 8 t of pāua were harvested from
 Fighting Bay. Using the fishing-time measure of effort, the depletion model
 estimated that there were 3 (2.3 to 3.9) t of harvestable pāua remaining at
-the end of the experiment.  
+the end of the experiment.
 
 Exploration of the data shows the power of the
 loggers to quantify the detailed distribution of the catch.  The catch over the
@@ -58,11 +58,11 @@ mapped). It was expected that during the fishdown divers would move to deeper
 water. No consistent change in the depth or duration of the dives was seen. Swim distances were variable,
 and no consistent change in the swim distance associated with dives (either on the surface or underwater)
 was seen. The other indicator that showed a marked change was shell length-frequency. Harvesting was
-size selective, with the larger pāua being preferentially harvested. On the first day in Fighting Bay, 2.7% 
+size selective, with the larger pāua being preferentially harvested. On the first day in Fighting Bay, 2.7%
 of the shells had a basal length less than 130 mm, and on the final day 28.8% of the shells were less than
 this threshold.
 
-The Fighting Bay data will be a valuable dataset for the future development of indices of pāua stock 
+The Fighting Bay data will be a valuable dataset for the future development of indices of pāua stock
 status. In this report we have carried out an exploratory analysis. There are more avenues that could
 be fruitfully explored. The next priority for analysis of the logger data, is to develop indices of spatial
 movement of the divers. There was evidence during the experiment that divers moved more slowly when

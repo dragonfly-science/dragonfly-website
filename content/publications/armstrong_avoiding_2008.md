@@ -1,6 +1,6 @@
 ---
 pdf: Armstrongetal_2008_habitat fragmentation.pdf
-tags: yvan, habitat fragments, bird
+tags: yvan, ecology
 ---
 Habitat fragmentation can potentially have negative
 impacts on many species because of both changes

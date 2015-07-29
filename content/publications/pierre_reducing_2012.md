@@ -1,3 +1,3 @@
 ---
-tags: johanna, longline fisheries, shark, black petrel, seabird
+tags: seabird, bycatch
 ---

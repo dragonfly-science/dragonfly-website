@@ -1,5 +1,5 @@
 ---
 pdf: Berkenbusch_Rowden_2000_NZJMFR.pdf
-tags: katrin, burrow, ghost shrimp
+tags: katrin, marine-biology
 ---
 Burrow morphology and intraspecific burrow plasticity in relation to environmental conditions were examined for an intertidal population of *Callianassa filholi* Milne‐Edwards, 1878 in southeastern New Zealand. Multivariate analysis of burrow features revealed no significant differences in burrow morphology between seasons. However, dissimilarities between burrows from different seasons could be identified and included differences in lateral extent, total length, and volume of burrows. These size parameters each showed low values in winter, coinciding with low seawater temperature and high organic content of the sediment. There was no significant relationship between any of the three size parameters and sediment grain size or shore height of the burrow, but lateral extent and total length of the burrow were significantly related to organic content of the sediment, decreasing with increasing organic content. Furthermore, there was a significant positive relationship between seawater temperature and total length of the burrow. Data from the present study imply that intraspecific variation in burrow morphology for callianassids is dependent on environmental variables, which has consequences for the construction of useful burrow models.

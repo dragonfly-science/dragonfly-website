@@ -1,6 +1,6 @@
 ---
 pdf: Abraham_2006_urchin.pdf
-tags: edward, urchin, spatial
+tags: edward, marine-biology
 ---
 Sea urchin feeding fronts are a striking example of spatial pattern formation
 in an ecological system. If it is assumed that urchins are asocial, and that

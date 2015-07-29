@@ -1,3 +1,3 @@
 ---
-tags: edward, branching sponge, morphology
+tags: edward, marine-biology
 ---

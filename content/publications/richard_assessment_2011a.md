@@ -1,6 +1,6 @@
 ---
 pdf: Richardetal_2011a_IPA2009-20.pdf
-tags: yvan, edward, risk assessment, seabirds, fisheries, dragonfly
+tags: yvan, edward, risk-assessment, seabird, dragonfly
 ---
 We examined the risk of incidental mortality from commercial fishing for 64 seabird species in New
 Zealand trawl and longline fisheries. For each species, the risk was assessed by comparing the
@@ -39,7 +39,7 @@ the risk is primarily associated with the lack of information. Of the species th
 than one, the risk for four of them (grey-headed albatross, Westland petrel, Chatham albatross, and
 light-mantled albatross) was associated with a lack of observer coverage in inshore fisheries that overlap
 with the distribution of these birds. Increasing the number of observations in inshore trawl and small
-vessel longline fisheries, especially in FMAs 1, 2, 3, and 7, would increase the precision of the estimated 
+vessel longline fisheries, especially in FMAs 1, 2, 3, and 7, would increase the precision of the estimated
 fatalities. The risk was estimated independently for each fishery, and there was no assumption that the
 vulnerability of seabirds to capture was related between different fisheries. This has the consequence
 that birds (such as light-mantled sooty albatross) may be caught infrequently in well observed fisheries,
