@@ -1,13 +1,13 @@
 #! /usr/bin/python
 """
 Updates the tags in the front matter of the YAML file, by reading them in fromm tags.csv.
-To generate the tags.csv file run 'grep tags: *.md > tags.csv' in the publications directory
+To generate the tags.csv file run './tags_extract.sh' in the publications directory
 """
 count = 0
 alltags = set()
 for line in open('tags.csv').readlines():
-    tags = [x.strip() for x in line.split(':tags:')]
-    alltags.update([x.strip() for x in tags[1].split(',')])
+    tags = [x.strip() for x in line.split(',')]
+    alltags.update([x.strip() for x in tags[1:]])
     rows = []
     header = False
     tagged = False
@@ -22,7 +22,7 @@ for line in open('tags.csv').readlines():
                 count += 1
         elif header and not tagged and row.startswith('tags:'):
             oldrow = row
-            row = 'tags: ' + tags[1]
+            row = 'tags: ' + ', '.join(tags[1:])
             tagged = True
             count += (oldrow.strip() != row.strip())
         rows.append(row)
@@ -31,4 +31,4 @@ for line in open('tags.csv').readlines():
         o.write(row.strip() + '\n')
     o.close()
 print 'Updated %s files' % count
-print ','.join(alltags)
+print ', '.join(alltags)
