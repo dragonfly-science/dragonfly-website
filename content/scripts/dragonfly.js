@@ -1,19 +1,20 @@
 import menuInit from './menu';
 /* global $ */
 
-function tagFilter(){
-    function getParameterByName(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-            results = regex.exec(location.search);
-        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-    };
-    
-    var tags = getParameterByName('tag').split(',');
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+function tagFilter(tags){    
     $('.tag').show().each(function(i, elem){
-        tags.forEach(function(t){
+        tags.split(',').forEach(function(t){
             if (!(t === "") & (!$(elem).hasClass('tag-' + t ))){
-                $(elem).remove();
+                $(elem).hide();
+                console.log(t);
             }
         });
     });
@@ -42,8 +43,38 @@ $(document).ready(function() {
         }
     });
      
-    tagFilter();
+    tagFilter(getParameterByName('tag'));
     
+    //Dropdown menus
+    $(".dropdown-button").click(function() {
+        console.log('Dropdown clicked')
+        var $button, $menu;
+        $button = $(this);
+        $menu = $button.siblings(".dropdown-menu");
+        $menu.toggleClass("show-menu");
+        $menu.children("li").click(function() {
+            $menu.removeClass("show-menu");
+            $button.html($(this).html());
+            if ($(this)[0].hasAttribute("data-tag")) {
+                $button.attr("data-tag", $(this)[0].getAttribute("data-tag"));
+            }
+            var t = []; 
+            $(".dropdown-button").each(function(){
+                t.push($(this).attr("data-tag"));
+            });
+            tagFilter(t.toString());
+        });
+    });
+    $(document).mouseup(function (e){
+        $(".dropdown-menu").each(function() {
+            if (!$(this).is(e.target)  // if the target of the click isn't the container...
+                    && $(this).has(e.target).length === 0) { // ... nor a descendant of the container
+                $(this).removeClass("show-menu");
+            }
+        });
+    });
 });
+
+
 
 
