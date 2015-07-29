@@ -15,42 +15,11 @@ import Data.Monoid ((<>))
 import System.FilePath (takeBaseName, replaceExtension)
 import Text.CSL.Reference (Reference)
 import Text.Pandoc.Definition (Pandoc)
-import qualified Data.Text as T
-import qualified Data.Text.Encoding as T
-import Network.HTTP.Types.URI (urlEncode)
 
 import WebSite.Config
 import WebSite.Bibliography
 
 import Hakyll
-
-slugify :: T.Text -> T.Text
-slugify = T.intercalate "-"
-    . filter (/= "")
-    . map wordslug
-    . T.words
-  where wordslug :: T.Text -> T.Text
-        wordslug = T.decodeUtf8
-          . urlEncode True
-          . T.encodeUtf8
-          . T.replace "'" ""
-          . T.replace "&" "and"
-          . T.replace "(" ""
-          . T.replace ")" ""
-          . T.replace "," ""
-          . T.replace ";" ""
-          . T.replace ":" ""
-          . T.replace "$m" ""
-          . T.replace "$" ""
-          . T.replace "=" ""
-          . T.replace "%" "pc"
-          . T.replace "+" "plus"
-          . T.replace "/" "or"
-          . T.replace "---" "-"
-          . T.toLower
-
-slugify' :: String  -> String
-slugify' = T.unpack . slugify . T.pack
 
 baseContext :: String -> Compiler (Context String)
 baseContext section = do
@@ -68,15 +37,18 @@ baseContext section = do
            -- titleField) here because (1) we never want the file name as the
            -- title and (2) we want to use the title from citations.
 
+tagDictionary :: [(String, String)] 
+tagDictionary = [("edward", "Edward Abraham")]
 
 tagContext :: Context String
 tagContext = field "tag" (return . itemBody) 
+            <> field "tagDisplay" (return . maybe "Not found" id . flip lookup tagDictionary . itemBody)
 
 listContextWith :: String -> Context String -> Context a
 listContextWith s ctx  = listFieldWith s ctx $ \item -> do
     let identifier = itemIdentifier item
     metadata <- getMetadata identifier
-    let metas = maybe [] (map (slugify' . trim) . splitAll ",") $ M.lookup s metadata
+    let metas = maybe [] (map trim . splitAll ",") $ M.lookup s metadata
     return $ map (\x -> Item (fromFilePath x) x) metas
 
 
