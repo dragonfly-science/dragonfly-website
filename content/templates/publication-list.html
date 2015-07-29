@@ -2,6 +2,9 @@
   <div class="sidebar"></div>
   <div class="content">
       <h1>Publications, reports, and presentations</h1>
+      $for(allTags)$
+      <span class="tag tag-$tag$">$tagDisplay$</span>
+      $endfor$
       <br />
         <div id="publication-list" class="post-list">
         <input class="search publication-search" placeholder="Search" />

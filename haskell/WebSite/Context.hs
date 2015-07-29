@@ -32,17 +32,28 @@ baseContext section = do
            <> bodyField "body"
            <> boolField "hasBody" ((/= "") . trim . itemBody)
            <> listContextWith "tags" tagContext
+           <> allTags 
            <> metadataField
            -- We don't include titleField (or defaultContext which includes
            -- titleField) here because (1) we never want the file name as the
            -- title and (2) we want to use the title from citations.
 
-tagDictionary :: [(String, String)] 
-tagDictionary = [("edward", "Edward Abraham")]
+tagLookup :: String -> String
+tagLookup tag = 
+    let mtag = lookup tag tagDictionary
+    in  maybe ("Not found (" ++ tag ++ ")") id mtag
+    --in  fromJust mtag
 
 tagContext :: Context String
 tagContext = field "tag" (return . itemBody) 
-            <> field "tagDisplay" (return . maybe "Not found" id . flip lookup tagDictionary . itemBody)
+            <> field "tagDisplay" (return . tagLookup . itemBody)
+
+
+--listField :: String -> Context a -> Compiler [Item a] -> Context b
+allTags :: Context String 
+allTags = listField "allTags" ctx (return $ map (\x -> Item (fromFilePath (fst x)) x ) tagDictionary)
+    where ctx = field "tag" (return . fst . itemBody) 
+            <> field "tagDisplay" (return . snd . itemBody)
 
 listContextWith :: String -> Context String -> Context a
 listContextWith s ctx  = listFieldWith s ctx $ \item -> do
