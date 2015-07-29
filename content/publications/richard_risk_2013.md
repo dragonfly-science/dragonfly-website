@@ -1,6 +1,6 @@
 ---
 pdf: Richard_Abraham_2013_AEBR109.pdf
-tags: yvan, edward, risk assessment, seabirds, fisheries, dragonfly
+tags: yvan, edward, risk-assessment, seabird, fisheries, dragonfly
 ---
 This report presents a risk assessment of the effect of fishing-related mortalities on 70 of the seabird
 species that breed in the New Zealand region. The assessment covers all fishing by commercial trawl,
@@ -20,7 +20,7 @@ mind that species with risk ratios less than one may still be considered at risk
 the recovery factor.
 
 Estimation of annual fatalities was based on seabird captures reported by observers between the 2006–07
-and 2010–11 fishing years. From these captures, the total observable captures were estimated (the 
+and 2010–11 fishing years. From these captures, the total observable captures were estimated (the
 number of seabird captures that would have been reported had an observer been on every fishing vessel).
 Not all seabirds that are killed are brought on-board vessels, and the observable captures were multiplied
 by a factor to account for these cryptic mortalities. The cryptic multiplier varied between 1.30 and 8.66,

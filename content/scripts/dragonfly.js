@@ -13,9 +13,8 @@ function tagFilter(){
     $('.tag').show().each(function(i, elem){
         tags.forEach(function(t){
             if (!(t === "") & (!$(elem).hasClass('tag-' + t ))){
-                $(elem).hide();
+                $(elem).remove();
             }
-            console.log(t);
         });
     });
 }

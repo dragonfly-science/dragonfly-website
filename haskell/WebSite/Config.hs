@@ -19,17 +19,31 @@ htm5Writer = defaultHakyllWriterOptions
 
 -- | recognised tags
 tagDictionary :: [(String, String)] 
+
 tagDictionary = [("edward", "Edward Abraham"), 
     ("katrin", "Katrin Berkenbusch"),
-    ("phil", "Philipp Neubauer"),
+    ("philipp", "Philipp Neubauer"),
     ("yvan", "Yvan Richard"),
     ("finlay", "Finlay Thompson"),
     ("richard", "Richard Mansfield"),
-    ("chris", "Christopher Knox"),
+    ("risto", "Christopher Knox"),
     ("report", "Report"),
     ("publication", "Publication"),
     ("presentation", "Presentation"),
-    ("dragonfly", "Dragonfly")]
+    ("dragonfly", "Dragonfly"),
+    ("ecology", "Ecology"),
+    ("oceanography", "Oceanography"),
+    ("marine-biology", "Marine biology"),
+    ("marine-mammal", "Marine mammals"),
+    ("bycatch", "Bycatch"),
+    ("paua", "Pāua"),
+    ("fisheries", "Fisheries"),
+    ("bayesian", "Bayesian"),
+    ("theoretical-biology", "Theoretical biology"),
+    ("risk-assessment", "Risk assessment"),
+    ("seabird", "Seabirds"),
+    ("theoretical-physics", "Theoretical physics")
+    ]
 
 -- | These are years of the publications page.
 --

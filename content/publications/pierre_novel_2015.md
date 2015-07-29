@@ -1,6 +1,6 @@
 ---
 pdf: Pierreetal_2014_MIT2012-04.pdf
-tags: edward, line-weighting, fisheries, seabirds, dragonfly
+tags: edward, seabird, bycatch, dragonfly
 ---
 Seabird bycatch has been reported from surface-longline fisheries for more
 than two decades. Characteristics of surface-longline gear that exacerbate

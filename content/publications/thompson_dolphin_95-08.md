@@ -1,6 +1,6 @@
 ---
 pdf: Thompson_common_2009.pdf
-tags: tags: finlay, edward, common dolphin, fisheries, bycatch, dragonfly
+tags: finlay, edward, marine-mammal, bycatch, dragonfly
 ---
 Common dolphins (*Delphius delphis*) are the most frequently caught cetacean in
 New Zealand trawl fisheries. Between the 1995—96 and 2007—08 fishing years,
@@ -10,7 +10,7 @@ These captures were all made by vessels over 90 m in length. Capture events
 were infrequent, with 1 trawl in every 100 recording common dolphin captures.
 However, when common dolphins were caught, they were often caught in groups. In
 2007—08, 20 common dolphins were caught on 5 of 725 observed tows. There were 9
-common dolphins caught on a single trawl. 
+common dolphins caught on a single trawl.
 
 A statistical model was built that
 used the observer data to estimate the total common dolphin captures in the
@@ -18,7 +18,7 @@ mackerel fishery. A two-stage Bayesian hurdle model was used, with a logistic
 generalised linear model predicting whether any common dolphin captures
 occurred on a given tow, and a zero-truncated Poisson distribution being used
 to estimate the number of dolphin captures, given that there was a capture
-event. 
+event.
 
 Of the observed capture events in the large vessel mackerel fishery, 54%
 were during the 9% of observed trawls where the top of the net was less than 30
@@ -31,7 +31,7 @@ restricting trawls with shallow headlines would reduce dolphin bycatch. Trawl
 duration, light condition, and region were all also identified as covariates
 associated with dolphin bycatch. The model estimated that there was a higher
 bycatch on longer trawls, trawls hauled between midnight and dawn, and trawls
-in the region to the north of 30&#176; 18' S. 
+in the region to the north of 30&#176; 18' S.
 
 There was little effort in the
 large vessel mackerel fishery before 2000—01; fewer than 600 tows per year. The
@@ -45,4 +45,4 @@ The reasons for the decrease in common dolphin captures since 2002—03 are not
 known. There are no available estimates of the number of common dolphins living
 in the region where the mackerel fishery is active, and so there is no basis
 for assessing the impact of these mortalities on the local common dolphin
-population. 
+population.

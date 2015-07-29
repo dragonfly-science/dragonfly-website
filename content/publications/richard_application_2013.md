@@ -1,6 +1,6 @@
 ---
 pdf: Richard_Abraham_2013_AEBR108.pdf
-tags: yvan, edward, risk assessment, seabird, dragonfly
+tags: yvan, edward, risk-assessment, seabird, dragonfly
 ---
 The Potential Biological Removal (PBR) approach was developed in response to the United States
 Marine Mammal Protection Act, to identify populations experiencing human-caused mortality at levels
