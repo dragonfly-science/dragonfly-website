@@ -6,8 +6,9 @@
         <div id="publication-list" class="post-list">
         <span class="dropdown">
           <div class="dropdown-container">
-            <p class="dropdown-button" data-tag="dragonfly">All Dragonfly publications</p>
+            <p class="dropdown-button" data-tag="">All authors</p>
               <ul class="dropdown-menu dropdown-select">
+                <li data-tag="">All authors</li>
                 <li data-tag="dragonfly">All Dragonfly publications</li>
                 <li data-tag="edward">Edward Abraham</li>
                 <li data-tag="katrin">Katrin Berkenbusch</li>
@@ -47,8 +48,8 @@
               </ul>
           </div>
         </span> 
-        <input class="search publication-search dropdown dropdown-button" placeholder="Search" />
-        <span class="badge" id="publication-count" style="display: none"></span>
+        <div><input class="search publication-search dropdown dropdown-button" placeholder="Search" /></div>
+        <div class="badge" id="publication-count"></div>
             <ul class="list">
             $for(publications)$
                     $partial("templates/citation-entry.html")$
