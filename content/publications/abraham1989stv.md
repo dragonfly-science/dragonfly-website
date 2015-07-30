@@ -1,6 +1,6 @@
 ---
 pdf: Abrahametal_1989_spacetime.pdf
-tags: edward, theoretical-physics
+tags: edward, theoretical-physics, article
 ---
 The action for an extended object (string, membrane, etc) can be written in a form
 that is worldsheet or worldvolume (super)-Weyl invariant. We show that, as a consequence,
