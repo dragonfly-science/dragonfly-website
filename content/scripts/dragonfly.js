@@ -13,37 +13,55 @@ function tagFilter(tags){
     $('.tag').show().each(function(i, elem){
         tags.split(',').forEach(function(t){
             if (!(t === "") & (!$(elem).hasClass('tag-' + t ))){
-                $(elem).hide();
-                console.log(t);
+                $(elem).remove();
+                $("[data-tag=" + t + "]").parents(".dropdown").hide()
             }
         });
     });
 }
 
+
 $(document).ready(function() {
     menuInit();
+
+    tagFilter(getParameterByName("tag"));
+
     var options = {
-        valueNames: ['citation']
+        valueNames: ['citation', 'tagslugs']
     };
     var publicationList = new List('publication-list', options);
 
     publicationList.on('updated', function(){
-        if (publicationList.searched) {
-            $('#publication-count').show();
-            var n = publicationList.visibleItems.length;
-            if (n == 0){
-                $('#publication-count').text('Oops! There are no matching publications');
-            } else if (n == 1){
-                $('#publication-count').text('One matching publication');
-            } else {
-                $('#publication-count').text(n + ' matching publications');
-            }
+        var n = publicationList.visibleItems.length;
+        if (n == 0){
+            $('#publication-count').text('Oops! There are no matching publications');
+        } else if (n == 1){
+            $('#publication-count').text('One matching publication');
         } else {
-            $('#publication-count').hide();
+            $('#publication-count').text(n + ' matching publications');
         }
     });
-     
-    tagFilter(getParameterByName('tag'));
+
+
+    var updateList = function() {
+        var tags = [];
+        $(".dropdown-button[data-tag]").each(function(){
+            tags.push($(this).attr("data-tag").trim());
+        });
+        tags = _.filter(tags, function(t){return !(t === "");});
+        console.log(tags);
+        publicationList.filter(function(item) {
+            var itemtags = _.filter(item.values().tagslugs.split(' '), function(t){return !(t === "");});
+            if (tags.length > 0){
+                return (_.difference(tags, itemtags).length === 0);
+            } else {
+                return true;
+            }
+        });
+    }
+
+    updateList();
+
     
     //Dropdown menus
     $(".dropdown-button").click(function() {
@@ -57,14 +75,11 @@ $(document).ready(function() {
             $button.html($(this).html());
             if ($(this)[0].hasAttribute("data-tag")) {
                 $button.attr("data-tag", $(this)[0].getAttribute("data-tag"));
+                updateList();
             }
-            var t = []; 
-            $(".dropdown-button").each(function(){
-                t.push($(this).attr("data-tag"));
-            });
-            tagFilter(t.toString());
         });
     });
+    
     $(document).mouseup(function (e){
         $(".dropdown-menu").each(function() {
             if (!$(this).is(e.target)  // if the target of the click isn't the container...
@@ -74,6 +89,7 @@ $(document).ready(function() {
         });
     });
 });
+
 
 
 
