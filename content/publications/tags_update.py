@@ -13,7 +13,9 @@ for line in open('tags.csv').readlines():
     tagged = False
     try:
         mdfile = open(tags[0]).readlines()
-        for row in mdfile:
+        for rowcount, row in enumerate(mdfile):
+            if rowcount == 0 and not row.startswith('---'):
+                print 'Incorrectly formatted file: %s' % tags[0]
             if not header and row.startswith('---'):
                 header = True
             elif header and row.startswith('---'):
@@ -23,7 +25,7 @@ for line in open('tags.csv').readlines():
                     tagged = True
                     count += 1
             elif header and not tagged and row.startswith('tags:'):
-                oldrow = row
+                oldrow = str(row)
                 row = 'tags: ' + ', '.join(tags[1:])
                 tagged = True
                 count += (oldrow.strip() != row.strip())
