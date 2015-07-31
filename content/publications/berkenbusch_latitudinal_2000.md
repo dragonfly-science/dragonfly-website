@@ -1,6 +1,6 @@
 ---
 pdf: Berkenbusch_Rowden_2000_reproduction.pdf
-tags: katrin, marine-biology
+tags: katrin, benthic, article
 ---
 Population structure and reproductive ecology of the burrowing ghost shrimp *Callianassa filholi* Milne-Edwards, 1878 were studied in populations along a latitudinal gradient throughout New Zealand during the breeding season. Size-frequency distributions revealed unimodal populations, with predominantly sexually mature shrimp. All populations showed an unbiased sex-ratio, and there appeared to be no significant difference in size (carapace length, CL) between sexes. At the same time, CL and size at maturity differed significantly between populations; however, a general increase in sizes from north to south was not consistent throughout the latitudinal range studied. The timing of the breeding cycle differed significantly between populations, and breeding started earlier in southern populations. Number of embryos (fecundity) increased linearly with female CL at each location, but rates differed significantly between populations. Embryo size was not related to number of embryos, and the former increased significantly with latitude. With the exception of embryo size, observed differences in body size/size at maturity and reproductive timing between *C. filholi* populations are thought to be determined by food availability rather than temperature. Thus, further study is suggested on these aspects of thalassinid reproductive biology.
 

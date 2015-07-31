@@ -1,6 +1,6 @@
 ---
 pdf: abraham_paua_2012.pdf
-tags: edward, paua, fisheries, dragonfly
+tags: edward, paua, fisheries, dragonfly, report, benthic
 ---
 Pāua (primarily *Haliotis iris*) fisheries in New Zealand are currently managed
 in Quota Management Areas (QMAs). An further assumption used in pāua stock

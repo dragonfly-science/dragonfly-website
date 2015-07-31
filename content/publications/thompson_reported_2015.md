@@ -1,6 +1,6 @@
 ---
 pdf: AEBR-145-Reported-New-Zealand-sea-lion-captures.pdf
-tags: finlay, katrin, marine-mammal, dragonfly
+tags: finlay, katrin, marine-mammal, dragonfly, report
 ---
 This report presents an authoritative data set of documented captures of New Zealand sea lion (*Phocarctos
 hookeri*) in New Zealand's commercial trawl fisheries.
