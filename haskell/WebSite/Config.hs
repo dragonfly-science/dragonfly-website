@@ -19,7 +19,6 @@ htm5Writer = defaultHakyllWriterOptions
 
 -- | recognised tags
 tagDictionary :: [(String, String)] 
-
 tagDictionary = [("edward", "Edward Abraham"), 
     ("katrin", "Katrin Berkenbusch"),
     ("philipp", "Philipp Neubauer"),
@@ -36,7 +35,11 @@ tagDictionary = [("edward", "Edward Abraham"),
     ("marine-biology", "Marine biology"),
     ("marine-mammal", "Marine mammals"),
     ("bycatch", "Bycatch"),
+    ("sea-urchin", "Sea urchin"),
     ("paua", "Pāua"),
+    ("robin", "Robin"),
+    ("benthic", "Benthic"),
+    ("acoustic", "Acoustic monitoring"),
     ("fisheries", "Fisheries"),
     ("bayesian", "Bayesian"),
     ("theoretical-biology", "Theoretical biology"),
