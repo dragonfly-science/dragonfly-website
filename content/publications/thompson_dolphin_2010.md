@@ -1,6 +1,6 @@
 ---
 pdf: Thompsonetal_2010_AEBR63.pdf
-tags: finlay, edward, katrin, marine-mammal, bycatch, dragonfly
+tags: finlay, edward, katrin, marine-mammal, bycatch, dragonfly, report, bayesian
 ---
 Common dolphins (*Delphinus delphis*) are the most frequently observed caught cetacean in New Zealand trawl fisheries. Between the 1995—96 and 2008—09 fishing years, there were 108 common dolphin captures reported by Ministry of Fisheries observers in the mackerel trawl fishery on the west coast of the North Island. All captures were by vessels over 90 m length. The pattern of captures was similar across fishing years, with a general increase in fishing effort and a concomitant increase in common dolphin captures over the 14-year period. In the most recent fishing year, 2008—09, fishing effort was comparatively lower than in preceding years, and 11 common dolphins were caught in 4 of 510 tows. Capture events frequently involved the capture of more than one individual, with a maximum of 9 common dolphins observed caught in a single tow.
 

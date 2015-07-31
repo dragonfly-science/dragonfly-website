@@ -1,3 +1,3 @@
 ---
-tags: edward, marine-biology
+tags: edward, benthic, article
 ---

@@ -1,6 +1,6 @@
 ---
 pdf: Thompson_Abraham_2010_AEBR61.pdf
-tags: finlay, edward, marine-mammal, bycatch, dragonfly
+tags: finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
 ---
 In the 2008—09 fishing year, 72 New Zealand fur seals (*Arctocephalus forsteri*) were observed captured in commercial trawl fisheries around New Zealand. Trawls targeting hoki continued to have the highest number of observed captures, with 38 (53%) observed, 20 of these on hoki trawlers in the Cook Strait alone. The highest observed fur seal capture rate of 14.17 captures per 100 tows was on southern blue whiting trawls near the Bounty Islands, with 17 fur seal captures observed. Another 16 captures were observed in a range of other fisheries: hake, squid, scampi, jack mackerel, and other middle depth species (barracouta and silver warehou).
 

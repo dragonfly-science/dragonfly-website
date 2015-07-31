@@ -1,6 +1,6 @@
 ---
 pdf: Thompsonetal_2013_AEBR105.pdf
-tags: finlay, katrin, edward, marine-mammal, bycatch, dragonfly
+tags: finlay, katrin, edward, marine-mammal, bycatch, dragonfly, report, bayesian
 ---
 Marine mammal species that are captured in New Zealand commercial trawl fisheries include common dolphin (*Delphinus delphis*), New Zealand fur seal (*Arctocephalus forsteri*), and New Zealand sea lion (*Phocarctos hookeri*). These incidental captures are recorded by fisheries observers when they are on- board vessels. For fisheries with sufficient observer coverage, these data, combined with fishing effort data, allow estimations of the total number of incidental captures via the development of statistical models. Here, we present estimates of the capture of common dolphin, New Zealand fur seal and New Zealand sea lion in New Zealand trawl fisheries, including the 2010—11 fishing year.
 

@@ -1,6 +1,6 @@
 ---
 pdf: Pierreetal_2014_cryptic.pdf
-tags: yvan, edward, seabird, fisheries, bycatch, dragonfly
+tags: yvan, edward, seabird, bycatch, dragonfly, report
 ---
 Understanding the nature and extent of interactions between commercial
 fisheries and marine protected species is one component of best practice
