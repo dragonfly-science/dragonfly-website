@@ -1,6 +1,6 @@
 ---
 pdf: Waughetal_2009_PRO2008-01.pdf
-tags: edward, risk-assessment, seabird, dragonfly
+tags: edward, risk-assessment, seabird, dragonfly, report, bayesian
 ---
 We examined the risk of fisheries incidental mortality causing population declines for a suite of seabird species in 14 New Zealand fisheries using trawl and longline methods. We applied a method developed by Sharp et al. (2009) that used the available data on species biology, fisheries interactions, and fishing effort in a semi-quantitative Ecological Risk Assessment framework. Data quality was a strong pre-occupation in the study, with species abundance and productivity data being of extremely variable quality. Fishery data on captures were relatively sparse for small longline fisheries. Therefore, the results should be interpreted with caution, and are best used to guide the setting of research and management priorities. Sixty-three species were studied, but the final analysis reports on data for 39, the remainder being excluded due to lack of data in the relevant fisheries at this time.
 

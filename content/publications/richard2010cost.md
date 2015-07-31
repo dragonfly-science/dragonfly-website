@@ -1,6 +1,6 @@
 ---
 pdf: Richardetal_2010_landscape.pdf
-tags: yvan, ecology
+tags: yvan, robin, article
 ---
 1. Landscape connectivity, the ability of species to move between different elements of a landscape, has been evaluated mainly by expert opinion, proxy data or homing experiments, all of which have major limitations. Cost distance modelling can overcome these limitations, but the resistance values of different landscape elements are difficult to estimate.
 2. Here, we present a novel method combining step selection functions with cost distance modelling to assess functional landscape connectivity. Instead of relying on movement metrics, the method uses a case-control design to assess whether the chosen steps differ from a random sample of alternatives of similar lengths. Alternative models of landscape connectivity and dispersal behaviour are represented as maps of resistance values, and compared using an information-theoretic approach to select those hypotheses that maximize the discrepancy between chosen steps and random alternatives.

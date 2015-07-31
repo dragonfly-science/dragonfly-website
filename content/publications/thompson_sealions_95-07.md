@@ -1,6 +1,6 @@
 ---
 pdf: Thompson_Abraham_2009_AEBR41.pdf
-tags: finlay, edward, marine-mammal, bycatch, dragonfly
+tags: finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
 ---
 In this report, the number of New Zealand sea lion (*Phocarctos hookeri*) captures in New Zealand's trawl fisheries are estimated for the 1995—96 to 2006—07 fishing years. Over this period, Ministry of Fisheries observers recorded the capture of between 5 and 39 sea lions within the New Zealand Exclusive Economic Zone, within each fishing year. During the 2006—07 fishing year, 15 sea lions were observed killed on trawls. For the purposes of this report, three captures were included in this total that were observed on the first day of the 2007—08 fishing year, in the last days of the southern blue whiting fishery. All of the captured sea lions were retrieved dead. Of the 15 sea lion captures, 7 were observed caught in the squid fishery around the Auckland Islands. This was the lowest number of observed captures in this fishery since the 1998—99 fishing year. Six sea lion captures were observed in the southern blue whiting fishery east of Campbell Island, continuing a trend of increasing captures in that fishery since 2002. Two other captures occurred, one in the scampi fishery near the Auckland Islands, and one in the squid fishery south of The Snares.
 

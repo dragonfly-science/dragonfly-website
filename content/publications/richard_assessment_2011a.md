@@ -1,6 +1,6 @@
 ---
 pdf: Richardetal_2011a_IPA2009-20.pdf
-tags: yvan, edward, risk-assessment, seabird, dragonfly
+tags: yvan, edward, risk-assessment, seabird, dragonfly, report, bayesian
 ---
 We examined the risk of incidental mortality from commercial fishing for 64 seabird species in New
 Zealand trawl and longline fisheries. For each species, the risk was assessed by comparing the

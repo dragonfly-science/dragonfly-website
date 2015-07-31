@@ -1,5 +1,5 @@
 ---
 pdf: Frean_Abraham_2001_competition.pdf
-tags: edward, theoretical-biology
+tags: edward, theoretical-biology, article
 ---
 In the children's game of rock-scissors-paper, players each choose one of three strategies. A rock beats a pair of scissors, scissors beat a sheet of paper and paper beats a rock, so the strategies form a competitive cycle. Although cycles in competitive ability appear to be reasonably rare among terrestrial plants, they are common among marine sessile organisms and have been reported in other contexts. Here we consider a system with three species in a competitive loop and show that this simple ecology exhibits two counter-intuitive phenomena. First, the species that is least competitive is expected to have the largest population and, where there are oscillations in a finite population, to be the least likely to die out. As a consequence an apparent weakening of a species leads to an increase in its population. Second, evolution favours the most competitive individuals within a species, which leads to a decline in its population. This is analogous to the tragedy of the commons, but here, rather than leading to a collapse, the 'tragedy' acts to maintain diversity.

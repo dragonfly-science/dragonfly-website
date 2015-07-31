@@ -1,6 +1,6 @@
 ---
 pdf: MacDiarmid_2006_individual.pdf
-tags: edward, fisheries, theoretical-biology
+tags: edward, benthic, theoretical-biology, article
 ---
 Field and laboratory experiments have been undertaken over the last decade
 investigating various aspects of the mating system of the red or southern rock
