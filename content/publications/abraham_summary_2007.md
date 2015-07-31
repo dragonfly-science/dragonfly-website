@@ -1,6 +1,6 @@
 ---
 pdf: Abraham_2007_mincing-trial.pdf
-tags: edward, seabird, bycatch, dragonfly
+tags: edward, seabird, bycatch, dragonfly, report
 ---
 This report gives a preliminary analysis of data collected to test whether mincing of waste and discards reduces the number of birds attending fishing trawlers. The trial was carried out on a Korean trawler, fishing in the southern squid fishery during April and March, 2007. The numbers of birds were counted in 40m and 10m semicircular sweep zones extending behind the vessel. Counts were made of five different species categories (large albatross, small albatross, giant petrel, other petrel and shearwater, and cape pigeon). The birds were also classified into three behavioural categories (flying, sitting on the water, and actively feeding).
 

@@ -1,6 +1,6 @@
 ---
 pdf: Thompsonetal_2010_AEBR56.pdf
-tags: finlay, edward, marine-mammal, bycatch, dragonfly
+tags: finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
 ---
 New Zealand fur seals (*Arctocephalus forsteri*) have been caught in commercial trawl fisheries operating around New Zealand's EEZ. Ministry of Fisheries observers recorded 141 fur seal captures in trawl fisheries in 2007—08, and 72 in 2006—07. Fur seals were the most frequently observed non-fish bycatch species in 2007—08. Captures have been reported from trawlers operating throughout New Zealand's EEZ, with the exception of the north and east coasts of the North Island. Most captures have been observed in the hoki fishery, with 57 fur seals being observed caught in 2007—08. In contrast, few captures were reported from deepwater or scampi fisheries.
 

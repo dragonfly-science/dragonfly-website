@@ -1,6 +1,6 @@
 ---
 pdf: Abraham_Kennedy_2008_AEBR16.pdf
-tags: edward, seabird, bycatch, dragonfly
+tags: edward, seabird, bycatch, dragonfly, report, bayesian
 ---
 This report contains an analysis of data on seabird warp strike collected by
 fisheries observers. The survey was carried out in the Auckland Islands squid

@@ -1,6 +1,6 @@
 ---
 pdf: Pierreetal_2013_scampi-trawl-mitigation.pdf
-tags: finlay, edward, seabird, bycatch, dragonfly
+tags: finlay, edward, seabird, bycatch, dragonfly, report, bayesian
 ---
 Seabird bycatch rates in the scampi fishery are estimated to be the second highest amongst New Zealand
 trawl fisheries. Seabird captures in this fishery are exacerbated by characteristics of the fishing operation:

@@ -1,6 +1,6 @@
 ---
 pdf: Thompson_Abraham_2009_AEBR35.pdf
-tags: finlay, edward, seabird, marine-mammal, bycatch, dragonfly
+tags: finlay, edward, seabird, marine-mammal, bycatch, dragonfly, report
 ---
 A summary is presented of captures of seabirds and marine mammals in trawl and surface longline fisheries within the New Zealand Exclusive Economic Zone (EEZ), for the first half of the 2007—08 fishing year (1 October 2007 to 31 March 2008, inclusive). Data from other fisheries, such as bottom longline and set-net, were not available for the period covered.
 

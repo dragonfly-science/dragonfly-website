@@ -1,6 +1,6 @@
 ---
 pdf: Pierreetal_2014_MIT2012-04.pdf
-tags: edward, seabird, bycatch, dragonfly
+tags: edward, seabird, bycatch, dragonfly, report, bayesian
 ---
 Seabird bycatch has been reported from surface-longline fisheries for more
 than two decades. Characteristics of surface-longline gear that exacerbate

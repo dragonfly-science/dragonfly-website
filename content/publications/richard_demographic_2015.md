@@ -1,6 +1,6 @@
 ---
 pdf: Richardetal_2015_albatross.pdf
-tags: dragonfly, yvan, edward
+tags: dragonfly, seabird, yvan, edward, article, bayesian
 ---
 Demographic rates, such as annual survival rate, are generally difficult to
 estimate for long-lived seabirds, because of the length of time required for

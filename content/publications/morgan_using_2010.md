@@ -1,6 +1,6 @@
 ---
 pdf: Morganetal_2010_robin.pdf
-tags: yvan, ecology
+tags: yvan, robin, article
 ---
 The purpose of most translocation projects is to preserve endangered species or
 restore the ecosystem of an area. In comparison this translocation is being used
