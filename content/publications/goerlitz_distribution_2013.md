@@ -1,0 +1,5 @@
+---
+pdf:
+tags: katrin, benthic, article
+---
+Lugworms are important members of the macrobenthos of sheltered intertidal sediments, and this study assessed the abundance and distribution of *Abarenicola affinis* in Otago, southern New Zealand. Using a faecal cast:lugworm ratio (1.00:1.09) revealed a patchy distribution across inlets, with an overall mean abundance of 11.1 individual/m<sup>2</sup> (range: 3.8 to 21.3 individuals/m<sup>2</sup>). Distribution patterns varied among inlets, with lugworms mostly confined to the high intertidal zone, but spread across all intertidal zones in one inlet. The lugworm habitat was characterised by muddy to medium sand (55—233 &#956;m mean grain size) with low organic matter (<2%) and chlorophyll *a* (1—12 &#956;g/g dry sediment) contents. Depending on the inlet, lugworm abundance was related to sediment parameters,indicating that their distribution across Otago inlets is habitat dependent. The present findings also indicate that factors other than those measured contribute to *A. affinis* distribution and abundance patterns in this region.
