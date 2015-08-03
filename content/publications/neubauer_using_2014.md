@@ -11,6 +11,7 @@ TACC. This shelving level was agreed upon by the pāua fishing industry for the 
 Anecdotal reports early in the fishing season, however, suggested a decline in catch rates. Lower catch
 per unit effort (CPUE), in turn, may reflect a decrease in available biomass that could not only offset the
 expected benefits from shelving, but also drive the stock further towards extremely low biomass levels.
+
 The pāua data logger initiative is an industry-led and Ministry of Primary Industries (MPI) supported
 programme to achieve fine scale spatial and temporal monitoring of the fishery. Within this programme,
 data loggers recording dive positions, depth, and duration are worn by individual pāua divers. Catch
@@ -18,13 +19,16 @@ information is also recorded on separate boat units. A previous assessment of th
 suggested that the catch and effort metrics have the potential to provide fine-scale information on CPUE.
 Parameters of the pāua dive operation, including dive times and depths, were found to be strong predictors
 of catch.
+
 Here, data logger data were used to assess changes in standardised catches between the 2012–13 and
 2013–14 fishing years. We applied both qualitative comparisons of temporal and spatial trends in catches
 as well as modeling of catch and effort data to obtain indications of potential changes between these
 fishing years.
+
 Temporal patterns in catch histories were broadly similar, however lower catches were reported for most
 months in the 2013–14 fishing year. The logger data suggested that divers searched smaller areas on
 average during the 2013–14 season to obtain equivalent catches (i.e., higher catch per unit area).
+
 Models of catch and effort data showed a slight increase in effort-standardised catches for the current
 (2013–14) fishing year. However, this effect was only significant in a fixed-effects model that estimated
 an overall year change. When estimating interannual change for individual divers and statistical areas

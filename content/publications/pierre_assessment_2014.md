@@ -51,7 +51,7 @@ and from trawl fisheries off the Falkland Islands. Given the seabirds and
 fisheries for which cryptic mortality is a particularly important determinant
 of overall risk, and the additional information that may be available, priority areas for improving estimates of cryptic mortalities in New Zealand
 fisheries include developing method-specific cryptic mortality scalars for
-boĴom longline fisheries, exploring existing information to refine scalars
+bottom longline fisheries, exploring existing information to refine scalars
 applicable to inshore fisheries, and refining estimates of mortalities - both
 observed and cryptic - that result from aerial warp strikes. Applying scalars
 for broad groupings of large (i.e., predominantly albatrosses) and small
