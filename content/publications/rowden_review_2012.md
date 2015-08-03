@@ -1,0 +1,16 @@
+---
+pdf: Rowdenetal_2012_AEBR96.pdf
+tags: katrin, benthic, report
+---
+Soft sediments are unconsolidated substrata such as mud, sand and gravels that form extensive areas of habitat in the coastal and offshore areas of the New Zealand marine environment. Diverse biotic assemblages are associated with these habitats that are integral to the functioning of the soft sediment ecosystem. Some of these assemblages are currently threatened by anthropogenic activities.
+
+The availability of sufficient and suitable data frequently restricts the spatial extent over which patterns of diversity and threats can be assessed, and as a consequence, the suggestions made concerning the need for further research that will allow for a better understanding of biodiversity and management of the environment. To facilitate the best utilisation, and collection, of past and new biodiversity data it is wise to undertake a thorough and documented review of information already available. Such a review will provide a useful synthesis of current knowledge and can include the identification of particular issues of interest or concern.
+
+The objectives of the present project were to review existing published and unpublished sources of information on soft-sediment marine assemblages around New Zealand; to thereby identify hotspots of biodiversity, areas of particular vulnerability, and gaps in knowledge and make recommendations on areas or assemblages that could be the subject of directed research in future years.
+
+A database: The Marine Soft Sediment Biodiversity Bibliographic Database, was constructed to house over 700 references for reports, journal papers, theses, video material, conference proceedings and databases. The vast majority (95%) of the references are post-1960 and the subject of these articles spatially concentrated. These findings probably reflect the distribution of on-going land and coastal development and population growth; mussel farms; science researchers and institutes (via their proximity to study sites). Areas where there were relatively few records probably reflect the distance of these locations from human population centres; their inaccessibility; and their relative lack of soft-sediment habitats.
+
+The written review was conducted separately for seagrass and mangroves, macroalgae, intertidal, and subtidal macroinvertebrate assemblages. These extensive and comprehensive reviews addressed the project’s objectives and thereby addressed some of the objectives of New Zealand’s Biodiversity Strategy.
+The reviews include a series of recommendations that indicate the types of research that is considered necessary in order to address perceived shortfalls in knowledge of biodiversity, its importance to ecosystem function, and the threats and consequences of disturbance by anthropogenic activities.
+
+More studies are recommended than can be presently supported by the biodiversity research funds that the Ministry of Fisheries administers. It is proposed that there now follow a formal and rigorous procedure to prioritise the recommendations, in order that important and scarce national biodiversity funds are directed towards a research agenda that will best deliver on New Zealand’s commitment to the Convention on Biological Diversity.
