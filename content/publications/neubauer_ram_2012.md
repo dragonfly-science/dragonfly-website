@@ -1,4 +1,4 @@
 ---
-tags: phil, fisheries, dragonfly, presentation
+tags: philipp, fisheries, dragonfly, presentation
 ---
 The Ram Legacy Stock Assessment Database (SADB - Ricard et al. 2012) is a public database containing time-series and biological metrics from over 300 (and counting) globally-distributed stock assessments. As such, this database provides opportunities for unique insight into population dynamics of exploited species. To illustrate the diversity of questions that can be asked from this data, we first present a number of past and ongoing studies that used the SADB, as well as its predecessor, the Ram Myers Stock Recruitment database. We then concentrate on the use of the SADB as a tool to develop priors for fisheries analyses based on taxonomic or geographical correlations amongst stocks. Such meta-analytic techniques can be directly integrated with statistical models to provide estimates for missing or poorly known parameters in studies of population dynamics and stock assessments. We demonstrate this use with a meta-analysis of population growth rates that is embedded within a larger statistical model to estimate drivers of stock recovery.
