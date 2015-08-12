@@ -12,6 +12,7 @@ import Control.Monad (forM, when)
 import Data.List (intercalate)
 import qualified Data.Map as M
 import Data.Monoid ((<>))
+import Data.Maybe
 import System.FilePath (takeBaseName, replaceExtension)
 import Text.CSL.Reference (Reference)
 import Text.Pandoc.Definition (Pandoc)
@@ -41,8 +42,8 @@ baseContext section = do
 tagLookup :: String -> String
 tagLookup tag = 
     let mtag = lookup tag tagDictionary
-    in  maybe ("Not found (" ++ tag ++ ")") id mtag
-    --in  fromJust mtag
+    --in  maybe ("Not found (" ++ tag ++ ")") id mtag
+    in  fromJust mtag
 
 tagContext :: Context String
 tagContext = field "tag" (return . itemBody) 
