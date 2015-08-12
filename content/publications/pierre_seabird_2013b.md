@@ -1,6 +1,6 @@
 ---
 pdf: Pierre_Goad_2013_bycatch-mitigation-SLL.pdf
-tags: 
+tags: seabird, bycatch, dragonfly, report
 ---
 Significant seabird bycatch issues were first identified in longline fisheries (e.g., Brothers 1991), and international management responses were initially focused on addressing this fishing method, ahead of others (FAO 1999). However, despite prolonged management and considerable scientific efforts, surface longlines still catch and kill significant numbers of seabirds annually, and worldwide (Anderson 2011). In New Zealand, surface longline fisheries are a source of bycatch risk for seabird species including Antipodean and Gibson's albatross (*Diomedea antipodensis antipodensis*, *D. a. gibsoni*), Campbell albatross (*Thalassarche impavida*), Salvin’s albatross (*Thalassarche salvini*), southern Buller’s albatross (*Thalassarche bulleri bulleri*), white-capped albatross (*Thalassarche steadi*), black petrel (*Procellaria parkinsoni*), Westland petrel (*Procellaria westlandica*), and white-chinned petrel (*Procellaria aequinoctialis*) (Abraham and Thompson 2011). It is highly likely that some of these species are caught in commercial fisheries in New Zealand waters at levels exceeding their sustainability limits (Richard and Abraham 2013), as well as being caught internationally (e.g., Baker et al. 2007).
 
