@@ -1,0 +1,65 @@
+<a class="anchor" id="work"></a>
+<div class="container">
+    <div class="sidebar"></div>
+    <div class="content">
+      <h1>Our work</h1>
+      <div class="lead">
+        <p>
+          We use statistical analysis so our clients can
+        make decisions based on the best available information. We are independent, and we work with our
+        clients in an open and engaged way.
+        </p>
+      </div>
+      <p>Our speciality is modern Bayesian analysis, which allows uncertainty to be
+      carried all the way through from analysis to decision making. Bayesian modelling
+      may be applied to a wide range of analytical problems, allowing best 
+      use of limited information, or to properly account for variation in data-rich situations.
+      We also use a wide range of machine-learning and simulation methods, as required by our clients.
+      </p>
+      <p>Our work is
+      supported by excellent technical database and software-development skills. We build operation systems that
+      allow organisations to get ongoing value from their data. Systems for data collection, management, analysis, and reporting.
+      </p>
+      <div class="post-list">
+        $for(work)$
+        <div class="post-wrapper">
+          <div class="post">    
+              <div class="post-image">
+                <a href="$pageurl$"><div class="post-porthole" style="background-image: url('$teaserImage$')">
+                </div></a>
+              </div>
+              <div class="post-teaser">
+                <h4><a href="$pageurl$">$title$</a></h4>
+                $if(teaser)$ $teaser$ $endif$
+                <span><a href="$pageurl$" class="read-more">Read more.</a></span>
+              </div>
+          </div>
+        </div>
+        $endfor$
+      </div>
+    </div>
+</div>
+<div class="index-banner index-case-study" class="full-screen">
+    <div class="post-banner-overlay medium-screen"></div>
+    <div class="container">
+        <div class="sidebar"></div>
+        <div class="content">
+            <blockquote>
+                <p>Dragonfly has been absolutely awesome – we’re rapt</p>
+                <cite>Jeremy Cooper, CEO, Pāua Industry Council</cite>
+            </blockquote>
+            <div>
+                <p>We provide the databases, statistical analysis, and 
+                    reporting to help the pāua industry sustainably manage their &dollar;50M export fishery.
+                </p>
+            </div>
+        </div>
+        <div class="wide">
+            <div class="exit">
+                <a href="/work/">
+                    <button>Browse more of our recent work</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -8,10 +8,6 @@ publications had been picked up.
 
 <!--more-->
 
-Google recently made Google Scholar Citations available to the public.
-We thought it would be interesting to have a look and see where our
-publications had been picked up.
-
 It wasn't too surprising to see that some work I was part of at NIWA,
 published in Nature [(A mesoscale phytoplankton bloom in the polar
 Southern Ocean stimulated by iron

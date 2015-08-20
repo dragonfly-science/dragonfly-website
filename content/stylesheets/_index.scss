@@ -125,8 +125,8 @@
     @include span-columns(5 of 12);
     @include shift(3);
     @include media($clinical) {
-      @include span-columns(9 of 12);
-      @include shift(3);
+      @include span-columns(10 of 12);
+      @include shift(1);
     }
     @include clearfix;
     margin-top: $base-line-height;
