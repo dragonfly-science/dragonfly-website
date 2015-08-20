@@ -16,7 +16,7 @@ $porthole-text-size: 0.9em;
 
 .porthole-grid {
     @include media($transient) {
-        width: $small-screen;
+        width: 100%;
     }
 
     .porthole {

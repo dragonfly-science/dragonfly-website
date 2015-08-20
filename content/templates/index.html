@@ -16,74 +16,47 @@
       Photograph of Port Napier CC-BY Phillip Capper.
 </div>
 
-<a class="anchor" id="work"></a>
-<div class="container">
-    <div class="sidebar"></div>
-    <div class="content">
-      <p>We use statistical analysis so our clients can
-      make decisions based on the best available information. We are independent, and we work with our
-      clients in an open and engaged way.
-      </p>
-      
-      <p>Our speciality is modern Bayesian analysis, which allows uncertainty to be
-      carried all the way through from analysis to decision making. Bayesian modelling
-      may be applied to a wide range of analytical problems, allowing best 
-      use of limited information, or to properly account for variation in data-rich situations.
-      We also use a wide range of machine-learning and simulation methods, as required by our clients.
-      </p>
-      <p>Our work is
-      supported by excellent technical database and software-development skills. We build operation systems that
-      allow organisations to get ongoing value from their data. Systems for data collection, management, nalysis, and reporting.
-      </p>
-    </div>
-</div>
+<section id="work-section">
+  $partial("templates/work-list.html")$
+</section>
 
-<div class="index-banner index-case-study" class="full-screen">
-    <div class="post-banner-overlay medium-screen"></div>
-    <div class="container">
-        <div class="sidebar"></div>
-        <div class="content">
-            <blockquote>
-                <p>Dragonfly has been absolutely awesome – we’re rapt</p>
-                <cite>Jeremy Cooper, CEO, Pāua Industry Council</cite>
-            </blockquote>
-            <div>
-                <p>We provide the databases, statistical analysis, and 
-                    reporting to help the pāua industry sustainably manage their &dollar;50M export fishery.
-                </p>
-            </div>
-        </div>
-        <div class="wide">
-            <div class="exit">
-                <a href="/work/">
-                    <button>Browse more of our recent work</button>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+<section id="about-section">  
+  $partial("templates/people-list.html")$
+</section>
 
-    $partial("templates/people-list.html")$
-<a id="resources" class="anchor"></a>
-<div class="index-banner index-resources" class="full-screen">
-  <div class="post-banner-overlay medium-screen"></div>
+<section class="padded-section" id="publications-section">
+  <a id="publications" class="anchor"></a>
   <div class="container">
-    <div class="sidebar"></div>
-    <div class="content-resources">
-      <h1> Open data </h1>
-      <p> We help organisations make their data available, either internally, or publicly. Opening up data 
-          helps create a shared understanding of issues, and allows stakeholders to be enagaged.
-      </p>
+    <div class="wide">
+      <h1>Publications</h1>
+      <a href="/publications">See more publications.</a>
     </div>
   </div>
-</div>
-<div class="caption">
-  <i class="fa fa-camera"></i> Photograph of a white-capped albatross 
-  CC-BY Kristina Hoeppner. White-capped albatross are reported as bycatch
-  in trawl fisheries, and we have made seabird bycatch data openly 
-  available.
-</div>
+</section>
 
+<section id="resources-section">
+  <a id="resources" class="anchor"></a>
+  <div class="index-banner index-resources" class="full-screen">
+    <div class="post-banner-overlay medium-screen"></div>
+    <div class="container">
+      <div class="sidebar"></div>
+      <div class="content-resources">
+        <h1> Open data </h1>
+        <p> We help organisations make their data available, either internally, or publicly. Opening up data 
+            helps create a shared understanding of issues, and allows stakeholders to be engaged.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="caption">
+    <i class="fa fa-camera"></i> Photograph of a white-capped albatross 
+    CC-BY Kristina Hoeppner. White-capped albatross are reported as bycatch
+    in trawl fisheries, and we have made seabird bycatch data openly 
+    available.
+  </div>
+</section>
 
-    $partial("templates/news-list.html")$
+<section id="news-section">  
+  $partial("templates/news-list.html")$
+</section>
 
