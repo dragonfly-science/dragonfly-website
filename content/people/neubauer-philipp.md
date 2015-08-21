@@ -40,4 +40,8 @@ the beach to trawling the ocean depths – you cannot escape it. Robust informat
 fisheries science offers a way to balance conservation issues with the need to 
 feed the world’s population.
 
-Technical skills: Bayesian analysis; JAGS; R
+### Technical skills
+Bayesian analysis; JAGS; R
+
+### Publications
+

@@ -3,6 +3,7 @@
   <div class="sidebar">
   </div>
   <div class="content">
+    <h1>News</h1>
     <div class="post-list">
       $for(news)$
       <div class="post-wrapper">
@@ -15,7 +16,7 @@
             <h4><a href="$pageurl$">$title$</a></h4>
             <p class="subheading">$published$ $if(author)$ . $author$ $endif$ </p>
             $if(teaser)$ $teaser$ $endif$
-            <span><a href="$pageurl$" class="read-more">Read more</a>.</span>
+            <span><a href="$pageurl$" class="read-more">Read more.</a></span>
           </div>
       </div>
       </div>

@@ -4,9 +4,9 @@ $read-more-text-color: #CF4547;
 .post-list {
     @include outer-container;
     text-align: left;
-    margin: 0 auto;
+    margin: 2em auto;
     @include media($transient) {
-        width: $small-screen;
+        width: 100%;
     }
 
     .post-wrapper {
@@ -58,7 +58,6 @@ $read-more-text-color: #CF4547;
         }
 
         @include media($transient) {
-            @include span-columns(3 of 4);
             a.read-more {
                 display: none;
             }
