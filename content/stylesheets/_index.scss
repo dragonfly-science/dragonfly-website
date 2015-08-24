@@ -127,11 +127,32 @@
     }
 }
 
-.index-heading {    
-    background-image: url("../images/jewel-wing.png");
+.index-section {
+    border-bottom: 1px solid $lighter-gray;
+}
+
+.index-heading {
+    padding-top: 1.5em;
     h1 {
-        color: white;
         font-size: $font-size-large; 
+    }
+    .overline {
+        border-top: 5px solid $data-purple;
+        &#work-overline {
+            border-color: $wing-flash-blue;
+        }
+        &#about-overline {
+            border-color: $people-green;
+        }
+        &#publications-overline {
+            border-color: $publications-orange;
+        }
+        &#data-overline {
+            border-color: $data-purple;
+        }
+        &#stories-overline {
+            border-color: $blog-red;
+        }
     }
 }
 
