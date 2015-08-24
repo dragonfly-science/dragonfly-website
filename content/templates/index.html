@@ -28,12 +28,29 @@
         </div> 
     </div>
   </div>
-  $partial("templates/work-list.html")$
-  <a href="/work" class="full-width-link">
-    <div class="container">
-      <span>Read more about our work.</span>
-    </div>
-  </a>
+  <div class="container">
+    $partial("templates/work-list.html")$
+    <a href="/work" class="index-link">
+      Read more about our work.
+    </a>
+  </div>
+  <div class="index-banner index-case-study" class="full-screen">
+      <div class="post-banner-overlay medium-screen"></div>
+      <div class="container">
+          <div class="sidebar"></div>
+          <div class="content">
+              <blockquote>
+                  <p>Dragonfly has been absolutely awesome – we’re rapt</p>
+                  <cite>Jeremy Cooper, CEO, Pāua Industry Council</cite>
+              </blockquote>
+              <div>
+                  <p>We provide the databases, statistical analysis, and 
+                      reporting to help the pāua industry sustainably manage their &dollar;50M export fishery.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
 
 <section id="about-section" class="index-section">  
@@ -59,11 +76,11 @@
     </div>
   </div>
   $partial("templates/people-list.html")$
-  <a href="/about" class="full-width-link">
-    <div class="container">
-      <span>Read more about our people.</span>
-    </div>
-  </a>
+  <div class="container">
+    <a href="/about" class="index-link">
+      Read more about our people.
+    </a>
+  </div>
 </section>
 
 <section id="news-section" class="index-section">
@@ -74,11 +91,11 @@
     </div>
   </div> <!-- end of banner -->
   $partial("templates/news-list.html")$
-  <a href="/news" class="full-width-link">
-    <div class="container">
-      <span>Read more of our stories.</span>
-    </div>
-  </a>
+  <div class="container">
+    <a href="/news" class="index-link">
+      Read more of our stories.
+    </a>
+  </div>
 </section>
 
 <section id="resources-section" class="index-section">
@@ -92,20 +109,20 @@
       </div>
     </div>
   </div> <!-- end of banner -->
-<!--   <div class="index-banner index-resources" class="full-screen">
+  <div class="index-banner index-resources" class="full-screen">
     <div class="post-banner-overlay medium-screen"></div>
   </div>
-  <div class="caption">
+<!--   <div class="caption">
     <i class="fa fa-camera"></i> Photograph of a white-capped albatross 
     CC-BY Kristina Hoeppner. White-capped albatross are reported as bycatch
     in trawl fisheries, and we have made seabird bycatch data openly 
     available.
   </div> -->
-  <a href="/resources" class="full-width-link">
-    <div class="container">
-      <span>See more of our open datasets.</span>
-    </div>
-  </a>
+  <div class="container">
+    <a href="/resources" class="index-link">
+      See more of our open datasets.
+    </a>
+  </div>
 </section>
 
 <section class="index-section" id="publications-section">
@@ -133,12 +150,10 @@
         <img src="../images/journal-logos/peerj.png">
       </div>
     </div>
+    <a href="/publications" class="index-link">
+      Read more of our publications.
+    </a>
   </div>
-  <a href="/publications" class="full-width-link">
-    <div class="container">
-      <span>See more of our publications.</span>
-    </div>
-  </a>
 </section>
 
 

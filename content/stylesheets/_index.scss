@@ -128,6 +128,8 @@
 }
 
 .index-section {
+    padding-bottom: 2em;
+    clear: both;
 }
 
 .index-heading {
@@ -184,42 +186,46 @@
     }
 }
 
-.full-width-link {
-    display: block;
-    background-color: $medium-gray;
-    padding: 0.5em;
-    width: 100%;
+.index-link {
+    display: inline-block;
+    float: right;
+    border-bottom: 5px solid $medium-gray;
+    padding: 1em;
+    margin: 0 auto;
     text-decoration: none;
     font-weight: 700;
-    color: #fff;
     margin-bottom: 1em;
     &:hover {
         text-decoration: none;
-        color: #FFF;
+    }
+    &::after {
+        content: "▶";
+        padding-left: 1em;
     }
     span {
-        &::after {
-            content: "▶";
-            color: #FFF;
-            padding-left: 1em;
-        }
     }
     #publications-section & {
-        background-color: $publications-orange;
+        border-bottom: 5px solid $publications-orange;
+        // background-color: rgba($publications-orange, 0.3);
     }
     #work-section & {
-        background-color: $wing-flash-blue;
+        border-bottom: 5px solid $wing-flash-blue;
+        // background-color: rgba($wing-flash-blue, 0.3);
     }
     #about-section & {
-        background-color: $people-green;
+        border-bottom: 5px solid $people-green;
+        // background-color: rgba($people-green, 0.3);
     }
     #publications-section & {
-        background-color: $publications-orange;
+        border-bottom: 5px solid $publications-orange;
+        // background-color: rgba($publications-orange, 0.3);
     }
     #resources-section & {
-        background-color: $data-purple;
+        border-bottom: 5px solid $data-purple;
+        // background-color: rgba($data-purple, 0.3);
     }
     #news-section & {
-        background-color: $blog-red;
+        border-bottom: 5px solid $blog-red;
+        // background-color: rgba($blog-red, 0.3);
     }
 }
