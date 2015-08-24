@@ -128,7 +128,6 @@
 }
 
 .index-section {
-    border-bottom: 1px solid $lighter-gray;
 }
 
 .index-heading {
@@ -172,13 +171,15 @@
 .index-journal-list {
     width: 100%;
     .journal-logo {
-        height: 200px;
         width: 20%;
         display: inline-block;
         margin: 1em;
-        background-image: url("../images/journal-logos/nature.png");
-        &:hover {
-            background-image: url("../images/journal-logos/nature-black.png");
+        // background-image: url("../images/journal-logos/nature.png");
+        // &:hover {
+        //     background-image: url("../images/journal-logos/nature-black.png");
+        // }
+        img {
+            width: 100%;
         }
     }
 }
@@ -188,18 +189,37 @@
     background-color: $medium-gray;
     padding: 0.5em;
     width: 100%;
-    a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1em;
+    &:hover {
         text-decoration: none;
-        font-weight: 700;
-        color: #fff;
-        &:hover {
-            text-decoration: none;
-            color: $lighter-gray;
-        }
+        color: #FFF;
+    }
+    span {
         &::after {
             content: "▶";
             color: #FFF;
             padding-left: 1em;
         }
+    }
+    #publications-section & {
+        background-color: $publications-orange;
+    }
+    #work-section & {
+        background-color: $wing-flash-blue;
+    }
+    #about-section & {
+        background-color: $people-green;
+    }
+    #publications-section & {
+        background-color: $publications-orange;
+    }
+    #resources-section & {
+        background-color: $data-purple;
+    }
+    #news-section & {
+        background-color: $blog-red;
     }
 }
