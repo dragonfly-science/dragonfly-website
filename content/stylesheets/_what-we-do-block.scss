@@ -1,0 +1,25 @@
+.what-we-do-block {
+    @include outer-container;
+    margin: 2em auto;
+    padding-bottom: 1em;
+    border-bottom: solid 1px #E7E7E7;
+    &:last-of-type {
+        border-bottom: none;
+        margin-bottom: 1em;
+    }
+    h3, h2 {
+        .highlight {
+            font-weight: 500;
+        }
+        margin-bottom: 1em;
+    }
+    .description {
+        @include span-columns (4 of 8);
+    }
+    .case-study {
+        @include span-columns (4 of 8);
+        a.read-more {
+            color: $wing-flash-blue;
+        }
+    }
+}

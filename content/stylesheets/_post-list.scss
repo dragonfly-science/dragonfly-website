@@ -24,10 +24,12 @@ $read-more-text-color: #CF4547;
             padding-bottom: 0;
         }
 
-    .citation-year {
+        .citation-year {
+        }
     }
-    
+}
 
+.post-list, .what-we-do-block {
     .post {
         @include media($clinical) {
             @include span-columns(8 of 8);
@@ -42,17 +44,21 @@ $read-more-text-color: #CF4547;
 
         a.read-more {
             color: $read-more-text-color;
-            text-decoration: underline;
+            text-decoration: none;
+            font-weight: 500;
         }
+
         .post-image {
             @include span-columns(2 of 8);
         }
+
         .post-porthole {
             width: 100%;
             padding-top: 100%;
             border-radius: 50%;
             background-size: cover;
         }
+
         .post-teaser {
             @include span-columns(6 of 8);
         }
@@ -76,7 +82,6 @@ $read-more-text-color: #CF4547;
 
         }
     }
-}
 }
 
 .post-wrapper:last-child {
