@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .banner { 
     position: relative;
     min-height: 100vh;
@@ -76,6 +78,10 @@
     color: white;
     padding-bottom: $base-line-height;
     
+    &.short-banner {
+        min-height: initial;
+    }
+
     p {
         font-size: 1.2em;
     }
@@ -121,6 +127,36 @@
     }
 }
 
+.index-section {
+    padding-bottom: 2em;
+    clear: both;
+}
+
+.index-heading {
+    padding-top: 1.5em;
+    h1 {
+        font-size: $font-size-large; 
+    }
+    .overline {
+        border-top: 5px solid $data-purple;
+        &#work-overline {
+            border-color: $wing-flash-blue;
+        }
+        &#about-overline {
+            border-color: $people-green;
+        }
+        &#publications-overline {
+            border-color: $publications-orange;
+        }
+        &#data-overline {
+            border-color: $data-purple;
+        }
+        &#stories-overline {
+            border-color: $blog-red;
+        }
+    }
+}
+
 .index-resources .content-resources {
     @include span-columns(5 of 12);
     @include shift(3);
@@ -132,4 +168,64 @@
     margin-top: $base-line-height;
     position: relative;
     @include side-margins;
+}
+
+.index-journal-list {
+    width: 100%;
+    .journal-logo {
+        width: 20%;
+        display: inline-block;
+        margin: 1em;
+        // background-image: url("../images/journal-logos/nature.png");
+        // &:hover {
+        //     background-image: url("../images/journal-logos/nature-black.png");
+        // }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.index-link {
+    display: inline-block;
+    float: right;
+    border-bottom: 5px solid $medium-gray;
+    padding: 1em;
+    margin: 0 auto;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 1em;
+    &:hover {
+        text-decoration: none;
+    }
+    &::after {
+        content: "▶";
+        padding-left: 1em;
+    }
+    span {
+    }
+    #publications-section & {
+        border-bottom: 5px solid $publications-orange;
+        // background-color: rgba($publications-orange, 0.3);
+    }
+    #work-section & {
+        border-bottom: 5px solid $wing-flash-blue;
+        // background-color: rgba($wing-flash-blue, 0.3);
+    }
+    #about-section & {
+        border-bottom: 5px solid $people-green;
+        // background-color: rgba($people-green, 0.3);
+    }
+    #publications-section & {
+        border-bottom: 5px solid $publications-orange;
+        // background-color: rgba($publications-orange, 0.3);
+    }
+    #resources-section & {
+        border-bottom: 5px solid $data-purple;
+        // background-color: rgba($data-purple, 0.3);
+    }
+    #news-section & {
+        border-bottom: 5px solid $blog-red;
+        // background-color: rgba($blog-red, 0.3);
+    }
 }
