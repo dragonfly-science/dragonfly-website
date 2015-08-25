@@ -17,6 +17,27 @@ htm5Writer = defaultHakyllWriterOptions
     }
 
 
+-- Image metadata fields (All Maybe):
+-- Owner
+-- Credit
+-- Url
+-- Source
+-- Licence
+-- Title
+-- Description (MD body)
+
+-- Owner: Philipp Capper
+-- URL: https://www.flickr.com/photos/flissphil/74545133/
+-- Source: Flickr
+-- Licence: CC-BY
+-- Title: Photograph of Port Napier
+
+-- Licence data structure:
+-- Key
+-- Description
+-- URL
+-- Text
+
 -- | recognised tags
 tagDictionary :: [(String, String)] 
 tagDictionary = [("edward", "Edward Abraham"), 
