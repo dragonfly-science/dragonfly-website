@@ -176,10 +176,6 @@
         width: 20%;
         display: inline-block;
         margin: 1em;
-        // background-image: url("../images/journal-logos/nature.png");
-        // &:hover {
-        //     background-image: url("../images/journal-logos/nature-black.png");
-        // }
         img {
             width: 100%;
         }
@@ -206,26 +202,20 @@
     }
     #publications-section & {
         border-bottom: 5px solid $publications-orange;
-        // background-color: rgba($publications-orange, 0.3);
     }
     #work-section & {
         border-bottom: 5px solid $wing-flash-blue;
-        // background-color: rgba($wing-flash-blue, 0.3);
     }
     #about-section & {
         border-bottom: 5px solid $people-green;
-        // background-color: rgba($people-green, 0.3);
     }
     #publications-section & {
         border-bottom: 5px solid $publications-orange;
-        // background-color: rgba($publications-orange, 0.3);
     }
     #resources-section & {
         border-bottom: 5px solid $data-purple;
-        // background-color: rgba($data-purple, 0.3);
     }
     #news-section & {
         border-bottom: 5px solid $blog-red;
-        // background-color: rgba($blog-red, 0.3);
     }
 }
