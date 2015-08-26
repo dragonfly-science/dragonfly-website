@@ -129,13 +129,19 @@ $responsive-navigation-height-clinical: em(42);
             background: $data-purple;
         }
         .responsive-navigation-wrapper[data-section=work] {
-            background: $blog-red;
+            background: $wing-flash-blue;
         }
         .responsive-navigation-wrapper[data-section=resources] {
-            background: $publications-orange;
+            background: $data-purple;
         }
         .responsive-navigation-wrapper[data-section=people] {
             background: $people-green;
+        }
+        .responsive-navigation-wrapper[data-section=publications] {
+            background: $publications-orange;
+        }
+        .responsive-navigation-wrapper[data-section=news] {
+            background: $blog-red;
         }
     }
 
@@ -163,13 +169,19 @@ $responsive-navigation-height-clinical: em(42);
         @include linear-gradient($people-green, #3F8D83);
     }
     .responsive-navigation-wrapper[data-mode=open][data-section=work] {
-        @include linear-gradient($blog-red, #3F8D83);
+        @include linear-gradient($wing-flash-blue, #3F8D83);
     }
     .responsive-navigation-wrapper[data-mode=open][data-section=resources] {
-        @include linear-gradient($publications-orange, #3F8D83);
+        @include linear-gradient($data-purple, #3F8D83);
     }
     .responsive-navigation-wrapper[data-mode=open][data-section=contact] {
-        @include linear-gradient($data-purple, #3F8D83);
+        @include linear-gradient($contact-gray, #3F8D83);
+    }
+    .responsive-navigation-wrapper[data-mode=open][data-section=publications] {
+        @include linear-gradient($publications-orange, $blog-red);
+    }
+    .responsive-navigation-wrapper[data-mode=open][data-section=news] {
+        @include linear-gradient($blog-red, $wing-flash-blue);
     }
     ul.responsive-navigation-menu {
         -webkit-transform-style: preserve-3d; // stop webkit flicker
@@ -240,32 +252,34 @@ $responsive-navigation-height-clinical: em(42);
         }
     }
 
-    .responsive-navigation-wrapper[data-section=contact] > a.logo {
-        border-bottom: $heavy-underline solid $data-purple;
+    .responsive-navigation-wrapper > a.logo {
         @include media($clinical) {
-            border-bottom: none;
+            border-bottom: none !important;
         }
+    }
+
+    .responsive-navigation-wrapper[data-section=contact] > a.logo {
+        border-bottom: $heavy-underline solid $contact-gray;
     }
 
     .responsive-navigation-wrapper[data-section=work] > a.logo {
-        border-bottom: $heavy-underline solid $blog-red;
-        @include media($clinical) {
-            border-bottom: none;
-        }
+        border-bottom: $heavy-underline solid $wing-flash-blue;
     }
 
     .responsive-navigation-wrapper[data-section=resources] > a.logo {
-        border-bottom: $heavy-underline solid $publications-orange;
-        @include media($clinical) {
-            border-bottom: none;
-        }
+        border-bottom: $heavy-underline solid $data-purple;
     }
 
     .responsive-navigation-wrapper[data-section=people] > a.logo {
         border-bottom: $heavy-underline solid $people-green;
-        @include media($clinical) {
-            border-bottom: none;
-        }
+    }
+
+    .responsive-navigation-wrapper[data-section=news] > a.logo {
+        border-bottom: $heavy-underline solid $blog-red;
+    }
+
+    .responsive-navigation-wrapper[data-section=publications] > a.logo {
+        border-bottom: $heavy-underline solid $publications-orange;
     }
 
     @include media($horizontal-mode) {
@@ -274,15 +288,23 @@ $responsive-navigation-height-clinical: em(42);
         }
 
         .responsive-navigation-wrapper[data-section=work] li.nav-link[data-section=work] {
-            border-bottom: em(4) solid $blog-red;
+            border-bottom: em(4) solid $wing-flash-blue;
         }
 
         .responsive-navigation-wrapper[data-section=resources] li.nav-link[data-section=resources] {
+            border-bottom: em(4) solid $data-purple;
+        }
+
+        .responsive-navigation-wrapper[data-section=publications] li.nav-link[data-section=publications] {
             border-bottom: em(4) solid $publications-orange;
         }
 
+        .responsive-navigation-wrapper[data-section=news] li.nav-link[data-section=news] {
+            border-bottom: em(4) solid $blog-red;
+        }
+
         .responsive-navigation-wrapper[data-section=contact] li.nav-link[data-section=contact]  {
-            border-bottom: em(4) solid $data-purple;
+            border-bottom: em(4) solid $contact-gray;
         }
     }
 }

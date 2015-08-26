@@ -36,6 +36,7 @@
 .banner-background {
     position: absolute;
     background-image: url("/resources/rear/port-napier.jpg");
+    background-position-x: 70%;
     background-size: cover;
     top: 0;
     left: 0;
@@ -117,6 +118,7 @@
 .index-case-study {
     padding-top: 20%;
     background-image: url('/work/2015-03-02-paua-logger-case-study/dave-and-jules.jpg');
+    background-position-x: 25%;
 }
 
 .index-resources {
@@ -136,24 +138,6 @@
     padding-top: 1.5em;
     h1 {
         font-size: $font-size-large; 
-    }
-    .overline {
-        border-top: 5px solid $data-purple;
-        &#work-overline {
-            border-color: $wing-flash-blue;
-        }
-        &#about-overline {
-            border-color: $people-green;
-        }
-        &#publications-overline {
-            border-color: $publications-orange;
-        }
-        &#data-overline {
-            border-color: $data-purple;
-        }
-        &#stories-overline {
-            border-color: $blog-red;
-        }
     }
 }
 

@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .what-we-do-block {
     @include outer-container;
     margin: 2em auto;
@@ -15,13 +17,13 @@
         margin-bottom: 1em;
     }
     .description {
-        @include span-columns (4 of 8);
+        @include span-columns (6 of 8);
         p {
             font-size: 1.25em;
         }
     }
     .case-study {
-        @include span-columns (4 of 8);
+        @include span-columns (2 of 8);
         // border: 3px solid $wing-flash-blue;
         // padding: 1em;
         h3 {
@@ -35,4 +37,15 @@
             margin-bottom: 1em;
         }
     }
+    // main.section-work & {
+    //     .description, .case-study-link {
+    //         display: none;
+    //     }
+    //     h2 {
+    //     }
+    //     h2::after {
+    //         content: "▼";
+    //         color: $wing-flash-blue;
+    //     }
+    // }
 }
