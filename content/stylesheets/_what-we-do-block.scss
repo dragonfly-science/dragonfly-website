@@ -17,13 +17,19 @@
         margin-bottom: 1em;
     }
     .description {
-        @include span-columns (6 of 8);
+        @include span-columns(6 of 8);
+        @include media($clinical) {
+            @include span-columns(8 of 8);
+        }
         p {
             font-size: 1.25em;
         }
     }
     .case-study {
-        @include span-columns (2 of 8);
+        @include span-columns(2 of 8);
+        @include media($clinical) {
+            @include span-columns(8 of 8);
+        }
         // border: 3px solid $wing-flash-blue;
         // padding: 1em;
         h3 {
@@ -33,8 +39,12 @@
             color: $wing-flash-blue;
         }
         .post-image {
-            @include shift(2);
+            @include shift(3 of 8);
+            @include span-columns(2 of 8);
             margin-bottom: 1em;
+        }
+        .case-study-description {
+            @include span-columns(8 of 8);
         }
     }
     // main.section-work & {
