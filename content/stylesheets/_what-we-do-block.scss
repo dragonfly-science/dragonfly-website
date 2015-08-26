@@ -9,17 +9,30 @@
     }
     h3, h2 {
         .highlight {
+            color: $wing-flash-blue;
             font-weight: 500;
         }
         margin-bottom: 1em;
     }
     .description {
         @include span-columns (4 of 8);
+        p {
+            font-size: 1.25em;
+        }
     }
     .case-study {
         @include span-columns (4 of 8);
-        a.read-more {
+        // border: 3px solid $wing-flash-blue;
+        // padding: 1em;
+        h3 {
             color: $wing-flash-blue;
+        }
+        .arrow {
+            color: $wing-flash-blue;
+        }
+        .post-image {
+            @include shift(2);
+            margin-bottom: 1em;
         }
     }
 }
