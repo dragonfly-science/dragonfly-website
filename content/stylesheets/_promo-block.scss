@@ -12,7 +12,6 @@
         margin-bottom: 1em;
     }
     .description {
-        @include span-columns(8 of 8);
         .explanation {
             @extend .left-coloured-border;
         }
@@ -20,8 +19,12 @@
             font-size: 1.25em;
         }
     }
+    .case-study-container {
+        @include outer-container;
+        display: flex;
+    }
     .case-study {
-        @include span-columns(8 of 8);
+        width: 80%;
         background-size: cover;
         .case-study-description {
             .arrow {
@@ -34,6 +37,10 @@
             text-align: right;
             @include span-columns(8 of 8);
         }
+    }
+    .case-study-image {
+        width: 20%;
+        background-size: cover;
     }
     .promo-image {
         @include span-columns (8 of 8);
