@@ -29,7 +29,7 @@ $read-more-text-color: #CF4547;
     }
 }
 
-.post-list, .what-we-do-block {
+.post-list, .promo-block {
     .post {
         @include media($clinical) {
             @include span-columns(8 of 8);
