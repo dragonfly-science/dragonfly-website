@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+.promo-block {
+    @include outer-container;
+    margin: 2em auto;
+    padding-bottom: 1em;
+    &:last-of-type {
+        border-bottom: none;
+        margin-bottom: 1em;
+    }
+    h3, h2 {
+        margin-bottom: 1em;
+    }
+    .description {
+        @include span-columns(8 of 8);
+        .explanation {
+            @extend .left-coloured-border;
+        }
+        p {
+            font-size: 1.25em;
+        }
+    }
+    .case-study {
+        @include span-columns(8 of 8);
+        background-size: cover;
+        .case-study-description {
+            .arrow {
+                @extend .coloured-text;
+                padding-left: 1em;
+            }
+            @extend .right-coloured-border;
+            padding: 1em;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: right;
+            @include span-columns(8 of 8);
+        }
+    }
+    .promo-image {
+        @include span-columns (8 of 8);
+        @extend .right-coloured-border;
+    }
+}
+

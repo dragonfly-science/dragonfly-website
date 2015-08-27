@@ -155,9 +155,10 @@
 }
 
 .index-journal-list {
-    width: 100%;
+    @include span-columns (8 of 8);
+    @extend .right-coloured-border;
     .journal-logo {
-        width: 20%;
+        @include span-columns (2 of 8);
         display: inline-block;
         margin: 1em;
         img {
@@ -181,25 +182,9 @@
     &::after {
         content: "▶";
         padding-left: 1em;
+        @extend .coloured-text;
     }
     span {
     }
-    #publications-section & {
-        border-bottom: 5px solid $publications-orange;
-    }
-    #work-section & {
-        border-bottom: 5px solid $wing-flash-blue;
-    }
-    #about-section & {
-        border-bottom: 5px solid $people-green;
-    }
-    #publications-section & {
-        border-bottom: 5px solid $publications-orange;
-    }
-    #resources-section & {
-        border-bottom: 5px solid $data-purple;
-    }
-    #news-section & {
-        border-bottom: 5px solid $blog-red;
-    }
+    @extend .bottom-coloured-border;
 }

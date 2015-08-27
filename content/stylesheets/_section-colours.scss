@@ -1,0 +1,86 @@
+.coloured-border {
+    .section-work &, #work-section & {
+      border-color: $wing-flash-blue;
+    }
+    .section-about &, #about-section & {
+      border-color: $people-green;
+    }
+    .section-publications &, #publications-section & {
+      border-color: $publications-orange;
+    }
+    .section-data &, #data-section & {
+      border-color: $data-purple;
+    }
+    .section-news &, #news-section & {
+      border-color: $blog-red
+    }
+    .section-contact &, #contact-section & {
+      border-color: $contact-gray;
+    }  
+}
+
+.coloured-text {
+    .section-work &, #work-section & {
+      color: $wing-flash-blue;
+    }
+    .section-about &, #about-section & {
+      color: $people-green;
+    }
+    .section-publications &, #publications-section & {
+      color: $publications-orange;
+    }
+    .section-data &, #data-section & {
+      color: $data-purple;
+    }
+    .section-news &, #news-section & {
+      color: $blog-red
+    }
+    .section-contact &, #contact-section & {
+      color: $contact-gray;
+    }  
+}
+
+.coloured-background {
+    .section-work &, #work-section & {
+      background-color: $wing-flash-blue;
+    }
+    .section-about &, #about-section & {
+      background-color: $people-green;
+    }
+    .section-publications &, #publications-section & {
+      background-color: $publications-orange;
+    }
+    .section-data &, #data-section & {
+      background-color: $data-purple;
+    }
+    .section-news &, #news-section & {
+      background-color: $blog-red
+    }
+    .section-contact &, #contact-section & {
+      background-color: $contact-gray;
+    }  
+}
+
+.left-coloured-border {
+    border-left: 5px solid $wing-flash-blue;
+    padding-left: 1em;
+    @extend .coloured-border;
+}
+.right-coloured-border {
+    border-right: 5px solid $wing-flash-blue;
+    padding-right: 1em;
+    @extend .coloured-border;
+}
+.bottom-coloured-border {
+    border-bottom: 5px solid $wing-flash-blue;
+    @extend .coloured-border;
+}
+.overline {
+    border-top: 5px solid $wing-flash-blue;
+    @extend .coloured-border;
+}
+
+.highlight {
+  font-weight: 500;
+  @extend .coloured-text;
+}
