@@ -2,16 +2,16 @@
     .section-work &, #work-section & {
       border-color: $wing-flash-blue;
     }
-    .section-about &, #about-section & {
+    .section-about &, #about-section &, .section-people &, #people-section & {
       border-color: $people-green;
     }
     .section-publications &, #publications-section & {
       border-color: $publications-orange;
     }
-    .section-data &, #data-section & {
+    .section-data &, #data-section &, .section-resources &, #resources-section & {
       border-color: $data-purple;
     }
-    .section-news &, #news-section & {
+    .section-news &, #news-section &, .section-stories &, #stories-section & {
       border-color: $blog-red
     }
     .section-contact &, #contact-section & {
@@ -23,16 +23,16 @@
     .section-work &, #work-section & {
       color: $wing-flash-blue;
     }
-    .section-about &, #about-section & {
+    .section-about &, #about-section &, .section-people &, #people-section & {
       color: $people-green;
     }
     .section-publications &, #publications-section & {
       color: $publications-orange;
     }
-    .section-data &, #data-section & {
+    .section-data &, #data-section &, .section-resources &, #resources-section & {
       color: $data-purple;
     }
-    .section-news &, #news-section & {
+    .section-news &, #news-section &, .section-stories &, #stories-section & {
       color: $blog-red
     }
     .section-contact &, #contact-section & {
@@ -44,16 +44,16 @@
     .section-work &, #work-section & {
       background-color: $wing-flash-blue;
     }
-    .section-about &, #about-section & {
+    .section-about &, #about-section &, .section-people &, #people-section & {
       background-color: $people-green;
     }
     .section-publications &, #publications-section & {
       background-color: $publications-orange;
     }
-    .section-data &, #data-section & {
+    .section-data &, #data-section &, .section-resources &, #resources-section & {
       background-color: $data-purple;
     }
-    .section-news &, #news-section & {
+    .section-news &, #news-section &, .section-stories &, #stories-section & {
       background-color: $blog-red
     }
     .section-contact &, #contact-section & {

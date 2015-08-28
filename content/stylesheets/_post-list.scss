@@ -1,5 +1,4 @@
 $post-image-size-small: em(100);
-$read-more-text-color: #CF4547;
 
 .post-list {
     @include outer-container;
@@ -43,7 +42,7 @@ $read-more-text-color: #CF4547;
         }
 
         a.read-more {
-            color: $read-more-text-color;
+            @extend .coloured-text;
             text-decoration: none;
             font-weight: 500;
         }
@@ -72,7 +71,6 @@ $read-more-text-color: #CF4547;
             }
             p.subheading {
                 display: inherit;
-                color: $read-more-text-color;
             }
 
             img {

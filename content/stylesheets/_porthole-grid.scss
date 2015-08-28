@@ -3,7 +3,6 @@ $porthole-image-size: em(150);
 $porthole-image-size-small: em(100);
 $porthole-title-padding-bottom: 0.35em;
 $porthole-title-padding-top: em(20);
-$read-more-text-color: $light-gray;
 $porthole-text-size: 0.9em;
 
 .values {
@@ -45,7 +44,7 @@ $porthole-text-size: 0.9em;
         }
 
         a.read-more {
-            color: $read-more-text-color;
+            @extend .coloured-text;
             text-decoration: underline;
         }
         p {

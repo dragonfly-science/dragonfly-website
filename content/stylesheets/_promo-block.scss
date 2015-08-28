@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     .one-third {
         @include span-columns(4 of 12);
+        flex-grow: 1;
         @include media($clinical) {
             @include span-columns(12 of 12);
         }
