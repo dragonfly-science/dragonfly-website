@@ -13,7 +13,11 @@ import Data.List
 import Control.Monad (liftM)
 import Data.Monoid ((<>))
 import Data.Maybe (fromMaybe, maybeToList)
+import Control.Monad.Error.Class
 import System.FilePath
+import Data.Time.Locale.Compat (defaultTimeLocale)
+import Data.Time.Clock (utctDay)
+import Data.Time.Calendar (toModifiedJulianDay)
 
 import Text.Pandoc
 
@@ -71,7 +75,11 @@ makeRules cc = do
 getList :: CollectionConfig -> Int ->  Compiler (Context String)
 getList cc limit = do
     snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
-    let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"  
+    let sortorder i = do so <- getMetadataField i "sortorder" 
+                         days <- (do utc <- getItemUTC defaultTimeLocale i
+                                     return (( negate . toModifiedJulianDay . utctDay) utc)
+                                  ) `catchError` (\_ -> return 666)
+                         return (maybe days read so)   -- TODO: read will error if sortorder is not readable as integer
     snaps' <- sortItemsBy sortorder snaps
     let l = length snaps'
         all = cycle snaps'
