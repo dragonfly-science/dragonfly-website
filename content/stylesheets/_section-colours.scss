@@ -63,12 +63,10 @@
 
 .left-coloured-border {
     border-left: 5px solid $wing-flash-blue;
-    padding-left: 1em;
     @extend .coloured-border;
 }
 .right-coloured-border {
     border-right: 5px solid $wing-flash-blue;
-    padding-right: 1em;
     @extend .coloured-border;
 }
 .bottom-coloured-border {
@@ -78,6 +76,15 @@
 .overline {
     border-top: 5px solid $wing-flash-blue;
     @extend .coloured-border;
+}
+
+.right-then-bottom-coloured-border {
+  border-right: 5px solid;
+  @extend .coloured-border;
+  @include media($clinical) {
+    border-right: none;
+    border-bottom: 5px solid;
+  }
 }
 
 .highlight {

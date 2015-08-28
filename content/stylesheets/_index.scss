@@ -154,19 +154,6 @@
     @include side-margins;
 }
 
-.index-journal-list {
-    @include span-columns (8 of 8);
-    @extend .right-coloured-border;
-    .journal-logo {
-        @include span-columns (2 of 8);
-        display: inline-block;
-        margin: 1em;
-        img {
-            width: 100%;
-        }
-    }
-}
-
 .index-link {
     display: inline-block;
     float: right;
