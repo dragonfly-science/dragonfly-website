@@ -17,9 +17,9 @@ h1 {
 }
 
 main {
-    margin-top: $responsive-navigation-height;
+    margin-top: $responsive-navigation-height + 2em;
     @include media($clinical) {
-     margin-top: $responsive-navigation-height-clinical;
+     margin-top: $responsive-navigation-height-clinical + 1em;
     }
 }
 

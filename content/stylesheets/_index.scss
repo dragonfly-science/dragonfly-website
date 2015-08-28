@@ -71,7 +71,6 @@
 
 }
 
-
 .index-banner {
     background-size: cover;
     position: relative;
@@ -115,43 +114,9 @@
 
 }
 
-.index-case-study {
-    padding-top: 20%;
-    background-image: url('/work/2015-03-02-paua-logger-case-study/dave-and-jules.jpg');
-    background-position-x: 25%;
-}
-
-.index-resources {
-    background-image: url("/resources/protected-species-captures/white-capped-albatross.jpg");
-    h1 {
-        color: white;
-        font-size: $font-size-large; 
-    }
-}
-
 .index-section {
     padding-bottom: 2em;
     clear: both;
-}
-
-.index-heading {
-    padding-top: 1.5em;
-    h1 {
-        font-size: $font-size-large; 
-    }
-}
-
-.index-resources .content-resources {
-    @include span-columns(5 of 12);
-    @include shift(3);
-    @include media($clinical) {
-      @include span-columns(10 of 12);
-      @include shift(1);
-    }
-    @include clearfix;
-    margin-top: $base-line-height;
-    position: relative;
-    @include side-margins;
 }
 
 .index-link {
