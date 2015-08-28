@@ -1,50 +1,84 @@
 @charset "utf-8";
 
 .promo-block {
-    @include outer-container;
+    @include row();
     margin: 2em auto;
     padding-bottom: 1em;
-    &:last-of-type {
-        border-bottom: none;
-        margin-bottom: 1em;
-    }
-    h3, h2 {
-        margin-bottom: 1em;
-    }
-    .description {
-        .explanation {
-            @extend .left-coloured-border;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    .one-third {
+        @include span-columns(4 of 12);
+        @include media($clinical) {
+            @include span-columns(12 of 12);
         }
+    }
+    .statement {
+        @extend .one-third;
+        @extend .right-then-bottom-coloured-border;
+        padding-right: 1em;
+        @include media($clinical) {
+            margin-bottom: 1em;
+            padding-bottom: 1em;
+            padding-right: 0;
+        }
+    }
+    .explanation {
+        @extend .one-third;
         p {
             font-size: 1.25em;
         }
     }
     .case-study-container {
-        @include outer-container;
-        display: flex;
-    }
-    .case-study {
-        width: 80%;
+        @extend .one-third;
+        @extend .right-coloured-border;
         background-size: cover;
-        .case-study-description {
+        display: flex;
+        align-items: flex-end;
+        a {
+            text-decoration: none;
+        }
+        .case-study {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 1em;
+            text-align: right;
+            p {
+                margin: 0;
+            }
             .arrow {
                 @extend .coloured-text;
                 padding-left: 1em;
             }
-            @extend .right-coloured-border;
-            padding: 1em;
-            background-color: rgba(255, 255, 255, 0.8);
-            text-align: right;
-            @include span-columns(8 of 8);
         }
     }
-    .case-study-image {
-        width: 20%;
-        background-size: cover;
+    .journal-list {
+        @extend .one-third;
+        display: flex;
+        flex-wrap: wrap;
+        .journal-logo {
+            width: 50%;
+            padding: 1em;
+            display: inline-block;
+            img {
+                width: 100%;
+            }
+        }
     }
-    .promo-image {
-        @include span-columns (8 of 8);
-        @extend .right-coloured-border;
+    .people-list {
+        @extend .one-third;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .person {
+            max-width: 125px;
+            padding: 0.5em;
+            a {
+                text-decoration: none;
+            }
+            .person-description {
+                font-size: 0.8em;
+            }
+        }
     }
 }
 
