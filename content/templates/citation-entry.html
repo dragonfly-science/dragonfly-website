@@ -1,8 +1,11 @@
 <li class="post-wrapper year-$year$ tag $if(tags)$ $for(tags)$ tag-$tag$ $endfor$ $endif$">
-<div class="citation-year"><h1>$year$</h1></div>
-    <div class="citation post">$citation$</div>
-    <div class="tagslugs hidden">$if(tags)$ $for(tags)$ $tag$ $endfor$ $endif$</div>
-$if(bibUrl)$ <a href="$bibUrl$">url</a> $endif$
-$if(pdf)$ <a href="/publications/pdf/$pdf$"><i class="fa fa-file-pdf-o"></i>  Download PDF</a>$endif$
-$if(hasBody)$  $if(pdf)$ | $endif$<a href = "/publications/$id$.html">Read more &#9656;</a>$endif$
+    <div class="citation-year"><h1>$year$</h1></div>
+    <div class="post">
+        $if(title)$ <h3>$title$</h3> $endif$
+        <div class="citation">$citation$</div>
+        <div class="tagslugs hidden">$if(tags)$ $for(tags)$ $tag$ $endfor$ $endif$</div>
+        $if(bibUrl)$ <a href="$bibUrl$">url</a> $endif$
+        $if(pdf)$ <a href="/publications/pdf/$pdf$"><i class="fa fa-file-pdf-o"></i>  Download PDF</a>$endif$
+        $if(hasBody)$  $if(pdf)$ | $endif$<a href = "/publications/$id$.html" class="read-more">Read more &#9656;</a>$endif$
+    </div>
 </li>

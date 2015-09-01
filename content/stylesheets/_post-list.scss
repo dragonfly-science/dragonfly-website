@@ -26,9 +26,7 @@ $post-image-size-small: em(100);
         .citation-year {
         }
     }
-}
 
-.post-list, .promo-block {
     .post {
         @include media($clinical) {
             @include span-columns(8 of 8);
@@ -42,7 +40,7 @@ $post-image-size-small: em(100);
         }
 
         a.read-more {
-            @extend .coloured-text;
+            @include colour('color');
             text-decoration: none;
             font-weight: 500;
         }
@@ -66,13 +64,9 @@ $post-image-size-small: em(100);
             a.read-more {
                 display: none;
             }
-            p {
-                display: none;
-            }
             p.subheading {
                 display: inherit;
             }
-
             img {
                 width: $post-image-size-small;
                 height: $post-image-size-small;
