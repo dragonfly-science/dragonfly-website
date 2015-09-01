@@ -16,19 +16,25 @@
     $for(news)$
     <div class="post-wrapper">
     <div class="post">    
-        <div class="post-image">
-          <a href="$pageurl$"><div class="post-porthole" style="background-image: url('$teaserImage$')">
-          </div></a>
-        </div>
-        <div class="post-teaser">
-          <h4><a href="$pageurl$">$title$</a></h4>
-          <p class="subheading">$published$ $if(author)$ . $author$ $endif$ </p>
-          $if(teaser)$ $teaser$ $endif$
-          <span><a href="$pageurl$" class="read-more">Read more &#9656;</a></span>
-        </div>
+      <div class="post-image">
+        <a href="$pageurl$"><div class="post-porthole" style="background-image: url('$teaserImage$')">
+        </div></a>
+      </div>
+      <div class="post-teaser">
+        <h4><a href="$pageurl$">$title$</a></h4>
+        <p class="subheading">
+          $published$
+          $if(author)$
+            $author$
+          $endif$ 
+        </p>
+        $if(teaser)$
+          $teaser$
+        $endif$
+        <span><a href="$pageurl$" class="read-more">Read more &#9656;</a></span>
+      </div>
     </div>
     </div>
     $endfor$
   </div>
 </div>
-
