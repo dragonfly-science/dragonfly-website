@@ -1,14 +1,16 @@
 <div class="container post-detail">
   $if(title)$ <div class="heading"><h1>$title$</h1></div> $endif$
   <div class="sidebar details-sidebar">
-    $if(pdf)$<h3 class="download"><a href="/publications/pdf/$pdf$"><i class="fa fa-file-pdf-o"></i></a>
-    <a href="/publications/pdf/$pdf$">Download PDF</a></h3>$endif$
+    $if(pdf)$
+        <h3 class="download">
+            <a href="/publications/pdf/$pdf$">
+                <i class="fa fa-file-pdf-o"></i>
+                Download PDF
+            </a>
+        </h3>
+    $endif$
     <h3>Tags:</h3>
     $if(tags)$ $for(tags)$ <a href="/publications/?tag=$tag$" class="button">$tagDisplay$</a> $endfor$ $endif$
-    $if(doi)$
-        <h3>DOI:</h3>
-        $doi$
-    $endif$
   </div>
   <div class="content">
     $partial("templates/citation-summary.html")$

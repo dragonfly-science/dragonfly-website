@@ -68,6 +68,13 @@ $wrap-images-width: em(950);
         @extend .right-coloured-border;
         padding-right: 0.5em;
         padding-left: 0;
+        .download a {
+            @include colour('color');
+            font-weight: 500;
+            i {
+                display: block;
+            }
+        }
     }
 
     a {
