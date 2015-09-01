@@ -116,7 +116,7 @@ pageIndexCtx lu  = listContextWith "tags" tagContext
                 <> portholeImage
                 <> teaserField "teaser" "content"
                 <> pageUrlField "pageurl"
-                <> dateField "published" "%B %d . %Y"
+                <> dateField "published" "%B %d, %Y"
                 <> previous lu
                 <> next lu
 
