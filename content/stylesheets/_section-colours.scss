@@ -1,93 +1,86 @@
+@mixin colour($attribute) {
+  .section-work &, #work-section &, &.work, .work & {
+    #{$attribute}: $wing-flash-blue;
+  }
+  .section-about &, #about-section &, .section-people &, #people-section &, &.people, .people & {
+    #{$attribute}: $people-green;
+  }
+  .section-publications &, #publications-section &, &.publications, .publications & {
+    #{$attribute}: $publications-orange;
+  }
+  .section-data &, #data-section &, .section-resources &, #resources-section &, &.data, .data & {
+    #{$attribute}: $data-purple;
+  }
+  .section-news &, #news-section &, .section-stories &, #stories-section &, &.stories, .stories & {
+    #{$attribute}: $blog-red;
+  }
+  .section-contact &, #contact-section &, &.contact, .contact & {
+    #{$attribute}: $contact-gray;
+  }   
+}
+
+@mixin colour($attribute) {
+  .section-work &, #work-section &, &.work, .work & {
+    #{$attribute}: $wing-flash-blue;
+  }
+  .section-about &, #about-section &, .section-people &, #people-section &, &.people, .people & {
+    #{$attribute}: $people-green;
+  }
+  .section-publications &, #publications-section &, &.publications, .publications & {
+    #{$attribute}: $publications-orange;
+  }
+  .section-data &, #data-section &, .section-resources &, #resources-section &, &.data, .data & {
+    #{$attribute}: $data-purple;
+  }
+  .section-news &, #news-section &, .section-stories &, #stories-section &, &.stories, .stories & {
+    #{$attribute}: $blog-red;
+  }
+  .section-contact &, #contact-section &, &.contact, .contact & {
+    #{$attribute}: $contact-gray;
+  }   
+}
+
 .coloured-border {
-    .section-work &, #work-section & {
-      border-color: $wing-flash-blue;
-    }
-    .section-about &, #about-section &, .section-people &, #people-section & {
-      border-color: $people-green;
-    }
-    .section-publications &, #publications-section & {
-      border-color: $publications-orange;
-    }
-    .section-data &, #data-section &, .section-resources &, #resources-section & {
-      border-color: $data-purple;
-    }
-    .section-news &, #news-section &, .section-stories &, #stories-section & {
-      border-color: $blog-red
-    }
-    .section-contact &, #contact-section & {
-      border-color: $contact-gray;
-    }  
+    @include colour('border-color');
 }
 
 .coloured-text {
-    .section-work &, #work-section & {
-      color: $wing-flash-blue;
-    }
-    .section-about &, #about-section &, .section-people &, #people-section & {
-      color: $people-green;
-    }
-    .section-publications &, #publications-section & {
-      color: $publications-orange;
-    }
-    .section-data &, #data-section &, .section-resources &, #resources-section & {
-      color: $data-purple;
-    }
-    .section-news &, #news-section &, .section-stories &, #stories-section & {
-      color: $blog-red
-    }
-    .section-contact &, #contact-section & {
-      color: $contact-gray;
-    }  
+    @include colour('color');
 }
 
 .coloured-background {
-    .section-work &, #work-section & {
-      background-color: $wing-flash-blue;
-    }
-    .section-about &, #about-section &, .section-people &, #people-section & {
-      background-color: $people-green;
-    }
-    .section-publications &, #publications-section & {
-      background-color: $publications-orange;
-    }
-    .section-data &, #data-section &, .section-resources &, #resources-section & {
-      background-color: $data-purple;
-    }
-    .section-news &, #news-section &, .section-stories &, #stories-section & {
-      background-color: $blog-red
-    }
-    .section-contact &, #contact-section & {
-      background-color: $contact-gray;
-    }  
+    @include colour('background-color');
 }
 
+$border-width: 3px;
+
 .left-coloured-border {
-    border-left: 5px solid $wing-flash-blue;
-    @extend .coloured-border;
+    border-left: $border-width solid $wing-flash-blue;
+    @include colour('border-color');
 }
 .right-coloured-border {
-    border-right: 5px solid $wing-flash-blue;
-    @extend .coloured-border;
+    border-right: $border-width solid $wing-flash-blue;
+    @include colour('border-color');
 }
 .bottom-coloured-border {
-    border-bottom: 5px solid $wing-flash-blue;
-    @extend .coloured-border;
+    border-bottom: $border-width solid $wing-flash-blue;
+    @include colour('border-color');
 }
 .overline {
-    border-top: 5px solid $wing-flash-blue;
-    @extend .coloured-border;
+    border-top: $border-width solid $wing-flash-blue;
+    @include colour('border-color');
 }
 
 .right-then-bottom-coloured-border {
-  border-right: 5px solid;
-  @extend .coloured-border;
+  border-right: $border-width solid;
+  @include colour('border-color');
   @include media($clinical) {
     border-right: none;
-    border-bottom: 5px solid;
+    border-bottom: $border-width solid;
   }
 }
 
 .highlight {
   font-weight: 500;
-  @extend .coloured-text;
+  @include colour('color');
 }

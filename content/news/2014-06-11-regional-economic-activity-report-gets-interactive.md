@@ -11,14 +11,6 @@ in desktop and tablet versions, and an app is planned.
 
 <!--more-->
 
-
-Dragonfly has created an interactive web tool to present information
-on population, employment, GDP and annual household income across the
-country's 66 territorial authorities for the Ministry of Business,
-Innovation and Employment (MBIE). It is [available from the MBIE
-website](http://www.mbie.govt.nz/what-we-do/business-growth-agenda/regions)
-in desktop and tablet versions, and an app is planned.
-
 The tool is the result of five month’s work with the Sector
 Performance Team and is a flagship project for Minister Steven Joyce.
 Joyce was keen to demonstrate the broad range of economic activity in

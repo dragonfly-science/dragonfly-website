@@ -44,7 +44,7 @@ $porthole-text-size: 0.9em;
         }
 
         a.read-more {
-            @extend .coloured-text;
+            @include colour('color');
             text-decoration: underline;
         }
         p {

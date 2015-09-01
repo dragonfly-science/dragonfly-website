@@ -2,6 +2,7 @@
 @import "base/base";
 @import "neat/neat";
 
+@import "section-colours";
 @import "menu";
 @import "main";
 @import "porthole-grid";
@@ -16,7 +17,6 @@
 @import "bubble-navigation";
 @import "refills";
 @import "promo-block";
-@import "section-colours";
 
 p {
     line-height: $para-line-height;

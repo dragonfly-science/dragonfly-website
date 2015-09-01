@@ -8,9 +8,15 @@ $endif$
   <div class="sidebar">
   </div>
   <div class="content">
-   $if(title)$
-    <h1>$title$</h1>
-   $endif$
+    <div class="heading">
+     $if(title)$
+      <h1>$title$</h1>
+     $endif$
+     <div class="details">
+       $if(date)$<p>$date$</p>$endif$
+       $if(author)$<p>$author$</p>$endif$
+     </div>
+    </div>
   </div>
  <div class="sidebar">
   <div class="post-info">
