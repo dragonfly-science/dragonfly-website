@@ -1,10 +1,13 @@
 <div class="post-banner-image" style='background-image: url("$banner-image$")'>
-    <div class="post-banner-overlay medium-screen"></div>
+  $if(quote)$
+    <div class="post-banner-overlay"></div>
     <div class="container">
-        $if(quote)$
-        <blockquote class="wide"><p>$quote$</p><cite>$quote-attribution$</cite></blockquote>
-        $endif$
+      <blockquote class="wide">
+        <p>$quote$</p>
+        <cite>$quote-attribution$</cite>
+      </blockquote>
     </div>
+  $endif$
 </div>
 
 <div class="container post-detail">
