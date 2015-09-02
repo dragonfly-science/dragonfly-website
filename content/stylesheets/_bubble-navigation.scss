@@ -38,6 +38,13 @@
 }
 
 .bubble-navigation[data-section=work]{    
+    background-color: $wing-flash-blue;
+    .bubble {
+        border: 3px solid $wing-flash-blue;
+    }
+}
+
+.bubble-navigation[data-section=news]{    
     background-color: $blog-red;
     .bubble {
         border: 3px solid $blog-red;
@@ -68,6 +75,9 @@
         @include transition-duration(0.2s);
         @include transition-timing-function(ease-in);
         @include transition-delay(0.2s); 
+        @include media($transient) {
+            display: none;
+        }
 	}
 }
 .bubble:hover {

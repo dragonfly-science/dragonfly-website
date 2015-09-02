@@ -9,19 +9,17 @@
 
 <div class="container post-detail">
  $if(title)$
-   <div class="sidebar">
-   </div>
-   <div class="content">
-    <h1>$title$</h1>
-   </div>
+    <div class="heading">
+      <h1>$title$</h1>
+    </div>
  $endif$
- <div class="sidebar">
-  <div class="post-info">
-  $if(logo)$
-    <img src="$logo$">
-  $endif$
+$if(logo)$
+  <div class="sidebar details-sidebar">
+    <div class="post-info">
+      <img src="$logo$">
+    </div>
   </div>
-  </div>
+$endif$
   <div class="content">
     $if(teaser)$
     <div class="lead">$teaser$</div>
