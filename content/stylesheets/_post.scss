@@ -2,7 +2,7 @@
     background-size: cover;
     position: relative;
     top: -2em;
-    min-height: 30vw;
+    min-height: 25vw;
     
     blockquote {
         color: white;
@@ -66,8 +66,9 @@ $wrap-images-width: em(950);
 
     .details-sidebar {
         @extend .right-coloured-border;
-        padding-right: 0.5em;
-        padding-left: 0;
+        @include media($transient) {
+            border: none;
+        }
         .download a {
             @include colour('color');
             font-weight: 500;
