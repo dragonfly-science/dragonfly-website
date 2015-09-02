@@ -6,7 +6,9 @@ logo: /resources/protected-species-captures/MPI-logo.png
 Data on seabird, marine mammal, and turtle bycatch in New
 Zealand waters is made available through an interactive website,
 developed for the Ministry for Primary Industries.
+
 <!--more-->
+
 Seabirds, marine mammals, and turtles are caught during commercial fishing
 operations. In order to monitor the impacts of fishing on these species,
 government observers on fishing vessels record any protected species bycatch
@@ -20,5 +22,5 @@ Protected species bycatch is an issue that is of interest to many people,
 including Government, fishing industry representatives, local orgnisations (such
 as Forest & Bird), and international organisations (such as Birdlife International).
 Making these data widely available helps create a common understanding of this
-issue and allows stkeholders to explore for themselves which 
+issue and allows stakeholders to explore for themselves which 
 species are affected, and where the captures are occurring.
