@@ -16,7 +16,7 @@ areas.
 <!--more-->
 
 ![Tom (right) on a pāua research trip  during his
-PhD](../posts/2012-11-29-tom-mccowan/Tom-McCowan.jpg)
+PhD](../news/2012-11-29-tom-mccowan/Tom-McCowan.jpg)
 
 Tom McCowan, a
 PhD student working for the Paua Industry Council Ltd (PIC), is

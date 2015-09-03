@@ -18,10 +18,8 @@ h1 {
 
 main {
     margin-top: $responsive-navigation-height;
-    padding-top: 2em;
     @include media($clinical) {
      margin-top: $responsive-navigation-height-clinical;
-     padding-top: 1em;
     }
 }
 

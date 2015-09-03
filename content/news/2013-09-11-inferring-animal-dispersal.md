@@ -22,7 +22,7 @@ stones). A new Bayesian modelling approach allowed him to estimate
 dispersal of larval fish among local populations in the region. ![Fish
 hatchling otoliths in the larval head (left and centre close up) and
 extracted (right). The diameter of the otolith is ~ 25
-microns.](../posts/2013-09-11-inferring-animal-dispersal/Triplehead.png)
+microns.](../news/2013-09-11-inferring-animal-dispersal/Triplehead.png)
 
 He has recently made these models publicly available as an open-source
 package for the statistical computing environment R via the open

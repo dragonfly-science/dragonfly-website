@@ -1,5 +1,4 @@
 .hero {
-    margin-top: -2em;
     position: relative;
     @include media($transient) {
         margin-top: 0;
