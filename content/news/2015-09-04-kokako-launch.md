@@ -4,6 +4,8 @@ banner-image: /news/2015-09-04-kokako-launch/banner.jpg
 ---
 Dragonfly’s innovative technology to digitally monitor the proportion of Māori language broadcast on radio and television has been branded as Kōkako (*core-kar-coh*). 
 
+<!--more-->
+
 A rare New Zealand wattlebird, the kōkako has an evocative flute-like call, as its onomatopoeic Māori name suggests. Edward Abraham felt the sound quality of the word, as well as the bird’s uniqueness, was right for their successful world-first project. 
 
 Commissioned by [Te Māngai Pāho](http://www.tmp.govt.nz/), New Zealand’s Māori broadcasting agency, the technology separates programmes into short sound packets that are classified as Te Reo (Māori language), English or music, based on their vowel sounds. Since iwi (Māori) radio stations are funded to provide a specific amount of content in Te Reo, Kōkako enables the broadcasters to flip between languages (instead of delivering Māori content in longer chunks) but still meet their programming targets. 
