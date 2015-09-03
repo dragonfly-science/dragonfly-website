@@ -45,7 +45,7 @@ restrictions in place, and others are completely closed to fishing.
 MPI is particularly interested in how these populations are faring.
 
 ![Toheroa at Orepuki
-beach](../posts/2014-01-15-working-beach-summer/Oreti-beach-and-toheroa.jpg)Toheroa
+beach](../news/2014-01-15-working-beach-summer/Oreti-beach-and-toheroa.jpg)Toheroa
 are New Zealand’s largest shellfish, and mature individuals can be
 more than 11 cm long. This treasured species was once very abundant on
 beaches in Northland and Southland but populations are now closed to
