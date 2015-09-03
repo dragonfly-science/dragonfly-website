@@ -1,0 +1,27 @@
+$border-width: 3px;
+
+.left-coloured-border {
+    border-left: $border-width solid $wing-flash-blue;
+    @include section_colour('border-color');
+}
+.right-coloured-border {
+    border-right: $border-width solid $wing-flash-blue;
+    @include section_colour('border-color');
+}
+.bottom-coloured-border {
+    border-bottom: $border-width solid $wing-flash-blue;
+    @include section_colour('border-color');
+}
+.overline {
+    border-top: $border-width solid $wing-flash-blue;
+    @include section_colour('border-color');
+}
+
+.right-then-bottom-coloured-border {
+  border-right: $border-width solid;
+  @include section_colour('border-color');
+  @include media($clinical) {
+    border-right: none;
+    border-bottom: $border-width solid;
+  }
+}

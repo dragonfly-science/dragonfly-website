@@ -44,7 +44,7 @@ $wrap-images-width: em(950);
 
     .heading {
         border-bottom: 3px solid;
-        @include colour('border-color');
+        @include section_colour('border-color');
         margin-bottom: 0.5em;
         .details {
             text-align: right;
@@ -70,7 +70,7 @@ $wrap-images-width: em(950);
             border: none;
         }
         .download a {
-            @include colour('color');
+            @include section_colour('color');
             font-weight: 500;
             i {
                 display: block;
