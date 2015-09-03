@@ -47,7 +47,7 @@
                 margin: 0;
             }
             .arrow {
-                @extend .coloured-text;
+                @include section_colour('color');
                 padding-left: 1em;
             }
         }

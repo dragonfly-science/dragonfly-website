@@ -100,3 +100,14 @@ cite {
   font-size: 1.25em;
   font-weight: 400;
 }
+
+a.read-more {
+    @include darker_section_colour('color');
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.highlight {
+    @include section_colour('color');
+    font-weight: 500;  
+}

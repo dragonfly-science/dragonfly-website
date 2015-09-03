@@ -1,25 +1,41 @@
 <div class="container">
-  $partial("templates/work-list.html")$
-</div>
-
-<div class="container">
-  <h1><span class="overline work-overline">Case studies</span></h1>
-  <div class="post-list">
+  <section class="promo-block">
+    <div class="statement">
+      <h2>
+        We do <span class="highlight">data science</span>.
+      </h2>
+    </div>
+    <div class="explanation">
+      <p>
+        We use <span class="highlight">statistical analysis</span> so our clients can make decisions based on the best available information.
+      </p>
+      <p>
+        We <span class="highlight">build operational systems</span> for data management, analysis, and reporting.
+      </p>
+      <p>
+        We enable <span class="highlight">evidence based policy</span> with research and analysis.
+      </p>
+      <p>
+        We support the development of clients' <span class="highlight">data science capability</span>.
+      </p>
+    </div>
+  </section>
+  <h1> <span class="overline"> Case studies</span></h1>
+  <div class="case-study-list">
     $for(work)$
-    <div class="post-wrapper">
-    <div class="post">
-      <div class="post-image">
-        <a href="$pageurl$"><div class="post-porthole" style="background-image: url('$teaserImage$')">
-        </div></a>
+      <div class="case-study">
+        <a href="$pageurl$">
+          <div style="background-image: url('$teaserImage$')" class="case-study-image">
+          </div>
+        </a>
+        <div class="case-study-description">
+          <a href="$pageurl$">
+            <h4>$title$</h4>
+          </a>
+          $if(teaser)$ $teaser$ $endif$
+          <span><a href="$pageurl$" class="read-more">Read more &#9656;</a></span>
+        </div>
       </div>
-      <div class="post-teaser">
-        <h4><a href="$pageurl$">$title$</a></h4>
-        <p class="subheading">$published$ $if(author)$ . $author$ $endif$ </p>
-        $if(teaser)$ $teaser$ $endif$
-        <span><a href="$pageurl$" class="read-more">Read more &#9656;</a></span>
-      </div>
-    </div>
-    </div>
     $endfor$
   </div>
 </div>

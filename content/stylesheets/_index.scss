@@ -134,7 +134,7 @@
     &::after {
         content: "▶";
         padding-left: 1em;
-        @extend .coloured-text;
+        @include section_colour('color');
     }
     span {
     }

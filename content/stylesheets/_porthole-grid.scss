@@ -43,12 +43,6 @@ $porthole-text-size: 0.9em;
             color: $people-green;
             font-weight: 500;
         }
-
-        a.read-more {
-            @include colour('color');
-            text-decoration: none;
-            font-weight: 500;
-        }
         p {
             font-size: $porthole-text-size;
         }

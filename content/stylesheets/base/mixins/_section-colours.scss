@@ -1,4 +1,4 @@
-@mixin colour($attribute) {
+@mixin section_colour($attribute) {
   .section-work &, #work-section &, &.work, .work & {
     #{$attribute}: $wing-flash-blue;
   }
@@ -19,68 +19,24 @@
   }   
 }
 
-@mixin colour($attribute) {
+@mixin darker_section_colour($attribute) {
   .section-work &, #work-section &, &.work, .work & {
-    #{$attribute}: $wing-flash-blue;
+    #{$attribute}: mix($wing-flash-blue, #000, 50%);
   }
   .section-about &, #about-section &, .section-people &, #people-section &, &.people, .people & {
-    #{$attribute}: $people-green;
+    #{$attribute}: mix($people-green, #000, 50%);
   }
   .section-publications &, #publications-section &, &.publications, .publications & {
-    #{$attribute}: $publications-orange;
+    #{$attribute}: mix($publications-orange, #000, 50%);
   }
   .section-data &, #data-section &, .section-resources &, #resources-section &, &.data, .data & {
-    #{$attribute}: $data-purple;
+    #{$attribute}: mix($data-purple, #000, 50%);
   }
   .section-news &, #news-section &, .section-stories &, #stories-section &, &.stories, .stories & {
-    #{$attribute}: $blog-red;
+    #{$attribute}: mix($blog-red, #000, 50%);
   }
   .section-contact &, #contact-section &, &.contact, .contact & {
-    #{$attribute}: $contact-gray;
+    #{$attribute}: mix($contact-gray, #000, 50%);
   }   
 }
 
-.coloured-border {
-    @include colour('border-color');
-}
-
-.coloured-text {
-    @include colour('color');
-}
-
-.coloured-background {
-    @include colour('background-color');
-}
-
-$border-width: 3px;
-
-.left-coloured-border {
-    border-left: $border-width solid $wing-flash-blue;
-    @include colour('border-color');
-}
-.right-coloured-border {
-    border-right: $border-width solid $wing-flash-blue;
-    @include colour('border-color');
-}
-.bottom-coloured-border {
-    border-bottom: $border-width solid $wing-flash-blue;
-    @include colour('border-color');
-}
-.overline {
-    border-top: $border-width solid $wing-flash-blue;
-    @include colour('border-color');
-}
-
-.right-then-bottom-coloured-border {
-  border-right: $border-width solid;
-  @include colour('border-color');
-  @include media($clinical) {
-    border-right: none;
-    border-bottom: $border-width solid;
-  }
-}
-
-.highlight {
-  font-weight: 500;
-  @include colour('color');
-}

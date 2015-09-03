@@ -25,7 +25,7 @@ $post-image-size-small: em(100);
 
         .citation-year h1 {
             border-bottom: 3px solid;
-            @include colour('border-color');
+            @include section_colour('border-color');
             margin-bottom: 0.5em;
         }
     }
@@ -40,12 +40,6 @@ $post-image-size-small: em(100);
             @include media($transient) {
                 padding-top: 0.5em;
             }
-        }
-
-        a.read-more {
-            @include colour('color');
-            text-decoration: none;
-            font-weight: 500;
         }
 
         a, a h3 {
