@@ -4,89 +4,33 @@
       We use <span class="highlight">statistical analysis</span> so our clients can
       make decisions based on the best available information.
     </h2>
-  </div>
-  <div class="explanation">
-    <p>
-      Our speciality is modern Bayesian methods, which allow uncertainty to be
-      carried all the way through from analysis to decision making. 
-    </p>
-  </div>
-  <div class="case-study-container" style="background-image: url('/work/2014-10-01-warp-strike/streamers.jpg')">
-    <a href="/work/2014-10-01-warp-strike.html" class="case-study-link">
-      <div class="case-study">
-        <p> We used statistical analysis to find the most effective way to reduce albatross killed in trawl fisheries.&nbsp;<span class="arrow">▶</span>
-        </p>
-      </div>
-    </a>
-  </div>
-</section>
-
-<section class="promo-block">
-  <div class="statement">
     <h2>
       We <span class="highlight">build operational systems</span> for data management, analysis, and reporting.
     </h2>
-  </div>
-  <div class="explanation">
-    <p>
-      We build custom systems to allow organisations to get ongoing value from their data.
-    </p>
-    <p> 
-      Our statistical work is supported by excellent technical database and software development skills.
-    </p>    
-  </div>
-    <div class="case-study-container" style="background-image: url('/work/2015-02-10-INZ-case-study/prediction-service.png')">
-      <a href="/work/2015-02-10-INZ-case-study.html" class="case-study-link"> 
-        <div class="case-study">
-          <p> We built a prediction service for Immigration New Zealand.&nbsp;<span class="arrow">▶</span>
-          </p>
-        </div>
-      </a>
-    </div>
-</section>
-
-<section class="promo-block">
-  <div class="statement">
     <h2> 
-      We enable <span class="highlight">evidence based policy</span>.
+      We enable <span class="highlight">evidence based policy</span> with research and analysis.
     </h2>
-  </div>
-  <div class="explanation">
-    <p>
-      Good research and analysis builds consensus between stakeholders, and enables the development of
-      policy that makes best use of available information.
-    </p>
-  </div>
-    <div class="case-study-container" style="background-image: url('/work/2014-10-01-seabird-risk/bullers.jpg')">
-      <a href="/work/2014-10-01-seabird-risk.html" class="case-study-link">
-        <div class="case-study">
-          <p>We developed the risk assessment which underpins the National Plan of Action - Seabirds.&nbsp;<span class="arrow">▶</span>
-          </p>
-        </div>
-      </a>
-    </div>
-</section>
-
-<section class="promo-block">
-  <div class="statement">
     <h2> 
       We support the development of clients' <span class="highlight">data science capability</span>.
     </h2>
   </div>
-  <div class="explanation">
-    <p>
-      We work openly with clients and transfer our skills to the teams we work with. 
-    </p>
-    <p>
-      We help teams to develop efficient processes for carrying out high quality, reliable analysis.
-    </p>
-  </div>
-    <div class="case-study-container" style="background-image: url('/work/2015-03-25-reporting-case-study/electricity-use-and-demand.png')">
-      <a href="/work/2015-03-25-reporting-case-study.html" class="case-study-link">
+  <div class="two-thirds">
+    <div class="case-study-list">
+      $for(work)$
         <div class="case-study">
-          <p> We worked with the sector performance team at the Ministry of Business, Innovation, &amp; Employment (MBIE).&nbsp;<span class="arrow">▶</span>
-          </p>
+          <a href="$pageurl$">
+            <div style="background-image: url('$teaserImage$')" class="case-study-image">
+            </div>
+          </a>
+          <div class="case-study-description">
+            <a href="$pageurl$">
+              <h4>$title$</h4>
+            </a>
+            $if(teaser)$ $teaser$ $endif$
+            <span><a href="$pageurl$" class="read-more">Read more &#9656;</a></span>
+          </div>
         </div>
-      </a>
+      $endfor$
     </div>
+  </div>
 </section>

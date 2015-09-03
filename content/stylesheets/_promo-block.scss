@@ -14,10 +14,20 @@
             @include span-columns(12 of 12);
         }
     }
+    .two-thirds {
+        @include span-columns(8 of 12);
+        flex-grow: 1;
+        @include media($clinical) {
+            @include span-columns(12 of 12);
+        }
+    }
     .statement {
         @extend .one-third;
         @extend .right-then-bottom-coloured-border;
         padding-right: 1em;
+        h2 {
+            margin-bottom: 1em;
+        }
         @include media($clinical) {
             margin-bottom: 1em;
             padding-bottom: 1em;
