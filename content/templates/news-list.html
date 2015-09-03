@@ -28,8 +28,10 @@
             $author$
           $endif$ 
         </p>
-        $if(teaser)$
-          $teaser$
+        $if(summary)$
+          $summary$
+        $else$
+          $if(teaser)$ $teaser$ $endif$
         $endif$
         <span><a href="$pageurl$" class="read-more">Read more &#9656;</a></span>
       </div>
