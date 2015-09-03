@@ -1,5 +1,6 @@
 ---
 title: Kōkako brand launched
+banner-image: /news/2015-09-04-kokako-launch/banner.jpg
 ---
 Dragonfly’s innovative technology to digitally monitor the proportion of Māori language broadcast on radio and television has been branded as Kōkako (*core-kar-coh*). 
 
