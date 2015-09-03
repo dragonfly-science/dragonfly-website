@@ -42,7 +42,7 @@ Moving to Saudi Arabia, Christopher took up a position using visualisation to
 support research scientists at the [King Abdullah University of Science and
 Technology](http://www.kaust.edu.sa/). These included chemists who were enabled
 to virtually stand inside the molecules they were studying, and biologists using 
-virtual rality techniques to explore
+virtual reality techniques to explore
 vast data sets. While at KAUST, Christopher  was part of the team that developed the 
 [iDive](http://idivehousing.com/),
 an underwater housing for the iPad that enables scientists to collect data electronically

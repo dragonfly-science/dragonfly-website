@@ -30,14 +30,14 @@ on diverse projects such as estimating bycatch of marine mammals in New Zealand 
 the number of leaky houses in New Zealand.
 
 Finlay researched four dimensional algebra and geometry for his PhD in 
-mathematics at [SISSA](http://sissa.it), Italy. He completed post-docs at [CIMAT](http://www.cimat.mx/)  in Mexico 
+mathematics at [SISSA](http://sissa.it), Italy. He completed post-docs at [CIMAT](http://www.cimat.mx/) in Mexico 
 and [Victoria University](http://www.victoria.ac.nz/smsor/default.aspx),
 then worked in Wellington's IT industry before joining Dragonfly in 2008. 
 
 > I think decision making should be supported with the best available 
 information. Data collection can be an expensive
 investment for any organisation, so getting the most from that data
-is essential. In the long run, robust anaysis will produce a better return on
+is essential. In the long run, robust analysis will produce a better return on
 investment. It's gratifying to see our work being used to inform key commercial and
 government decisions. 
 
