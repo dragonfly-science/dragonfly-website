@@ -2,28 +2,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.case-study {
-    @include span-columns (3 of 12);
-    &:nth-child(4n + 4) {
-        @include omega;
-    }
-    padding: 0.5em;
-    .case-study-image {
-        border-radius: 50%;
-        width: 100%;
-        padding-top: 100%;
-        background-size: cover;
-    }
-    .case-study-description {
-        margin-top: 1em;
-        a {
-            text-decoration: none;
+    .case-study {
+        @include span-columns (3 of 12);
+        &:nth-child(4n + 4) {
+            @include omega;
         }
-        h4 {
-            @include section_colour('color');
-            font-weight: 500;
+        padding: 0.5em;
+        .case-study-image {
+            border-radius: 50%;
+            width: 100%;
+            padding-top: 100%;
+            background-size: cover;
+        }
+        .case-study-description {
+            margin-top: 1em;
+            a {
+                text-decoration: none;
+            }
+            h4 {
+                @include section_colour('color');
+                font-weight: 500;
+            }
         }
     }
 }

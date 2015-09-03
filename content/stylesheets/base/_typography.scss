@@ -102,7 +102,7 @@ cite {
 }
 
 a.read-more {
-    @include darker_section_colour('color');
+    @include section_colour('color');
     text-decoration: none;
     font-weight: 500;
 }
