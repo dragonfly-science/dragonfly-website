@@ -30,7 +30,7 @@ world.
 
 Electronic portfolios enable students to put together their work, such as web
 content they have authored, into a showcase. Strict permissions for different
-pages are built in, so different pages can be shared with different audiences—a
+pages are built in, so different pages can be shared with different audiences — a
 feature that many sites do not allow. 
 
 “Dragonfly has a reputation for being able to deal with messy data and hard

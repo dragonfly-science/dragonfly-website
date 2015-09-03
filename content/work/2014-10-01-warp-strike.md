@@ -27,7 +27,7 @@ An experiment was planned to identify the best mitigation device, with
 representatives from the Ministry of Fisheries, the Department of Conservation,
 WWF-New Zealand, the fishing industry and research organisations working
 collaboratively. Edward Abraham from Dragonfly Science explains, “We had a
-simple question that needed to be answered—which device worked the best?
+simple question that needed to be answered — which device worked the best?
 
 “There was plenty of hearsay about how effective each mitigation device was,
 but it wasn't clear where the truth lay. Dragonfly, working together with other
@@ -38,7 +38,7 @@ recommendation to fisheries managers.”
 
 
 “The statistical models demonstrated that streamer lines behind the vessel were
-the best way to keep the birds away from the warps”, continues Edward.
+the best way to keep the birds away from the warps,” continues Edward.
 
 “We were able to show that there was a 90% reduction in bird strikes when
 streamer lines were used. The analysis clearly showed that streamer lines were
