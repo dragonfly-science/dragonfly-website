@@ -5,11 +5,11 @@ quote: I believe Dragonfly’s interactive is one of the best visualisations of 
 quote-attribution: Harkanwal Singh, Data Editor, New Zealand Herald
 logo: /work/2015-03-19-webrear-case-study/mbie-logo.png
 summary: We built an intuitive website and iPad app to help people dig into New Zealand's economic results. 
-
 ---
 
 This project for the Ministry of Business, Innovation, & Employment made their data on New Zealand’s regional
 economies widely available via an intuititve website and high-spec iPad app.  
+
 <!--more-->
 
 ##Economic activity by region
