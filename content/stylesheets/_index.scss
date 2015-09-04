@@ -12,6 +12,13 @@
     }
 }
 
+a.contact-button {
+    display: none;
+    @include media($clinical) {
+        display: inline-block;
+    }
+}
+
 .dark-screen {
     opacity: 0.7;
 }
