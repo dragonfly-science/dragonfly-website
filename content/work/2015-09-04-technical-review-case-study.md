@@ -6,11 +6,15 @@ summary: We reviewed a koala population study, checking that the spatial modelli
 banner-image: /work/2015-09-04-technical-review-case-study/koala.jpg
 logo: /work/2015-09-04-technical-review-case-study/queensland-government.png
 ---
+
+We reviewed a koala population study for the Department of Environment and Heritage Protection in Queensland. The technical review checked that their client had used appropriate spatial modelling and data analysis methods and that the reports' conclusions were fair. 
+<!--more-->
+
 ##Koala population modelling in southeast Queensland
 
 The Department of Environment and Heritage Protection commissioned UniQuest (University of Queensland) to assess the conservation status of koala in southeast Queensland. Although populations of this iconic species are increasing in southern Australia, koala were listed as vulnerable in the South East Queensland bioregion in 2004. This assessment will be used to guide the conservation policy and planning for koala in this region. 
 
-Koala conservation is a sensitive issue in Australia. Our independent technical review (by experts from outside the country) gave the Department confidence that the report had been prepared in line with industry best practice, before it was released.
+Koala conservation is a sensitive issue in Australia. Our independent technical review gave the Department confidence that the report had been prepared in line with industry best practice, before it was released.
 
 ##Our review of the modelling techniques and results
 
@@ -29,13 +33,9 @@ This opportunity to review work carried out by our peers was also beneficial for
 >
 >The review was provided on time and in budget – that’s important to us in government with tight budgets and accountability for them.
 
-<cite>Dr Richard Seaton
-
-Principal Conservation Officer
-
-Threatened Species Unit
-
-Department of Environment and Heritage Protection
-
+<cite>Dr Richard Seaton<br />
+Principal Conservation Officer<br />
+Threatened Species Unit<br />
+Department of Environment and Heritage Protection<br />
 Queensland, Australia.</cite>
 
