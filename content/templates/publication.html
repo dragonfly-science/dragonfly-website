@@ -10,7 +10,7 @@
         </h3>
     $endif$
     <h3>Tags:</h3>
-    $if(tags)$ $for(tags)$ <a href="/publications/?tag=$tag$" class="button">$tagDisplay$</a> $endfor$ $endif$
+    $if(tags)$ $for(tags)$ <a href="/publications/?tag=$tag$">$tagDisplay$</a> $endfor$ $endif$
   </div>
   <div class="content">
     $partial("templates/citation-summary.html")$
