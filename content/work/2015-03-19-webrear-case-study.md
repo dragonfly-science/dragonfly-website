@@ -4,11 +4,11 @@ banner-image: /work/2015-03-19-webrear-case-study/webrear.png
 quote: I believe Dragonfly’s interactive is one of the best visualisations of public data in New Zealand
 quote-attribution: Harkanwal Singh, Data Editor, New Zealand Herald
 logo: /work/2015-03-19-webrear-case-study/mbie-logo.png
-summary: We built an intuitive website and iPad app to help people dig into New Zealand's economic results. 
+summary: We designed and built a new intuitive website and iPad app to help people dig into New Zealand's economic results. 
 ---
 
-This project for the Ministry of Business, Innovation, & Employment made their data on New Zealand’s regional
-economies widely available via an intuititve website and high-spec iPad app.  
+This project for the Ministry of Business, Innovation, & Employment put data on New Zealand’s regional
+economies online for the first time. We created a desktop version and high-spec iPad and mobile app to help people dig into the data. 
 
 <!--more-->
 
@@ -30,12 +30,14 @@ matched the Ministry’s own styles. Charts and maps were drawn using the softwa
 web framework to create a responsive, dynamic website that could also be cost-effectively delivered as a
 mobile app.
 
+##A team effort
+
 To successfully deliver the project, we worked with a large team of up to 30 people across MBIE and 
 externally. We were able to coordinate this team and deliver the website, following an 
 extremely tight timetable to meet 
 the Minister’s release date. 
 
-[Explore New Zealand’s regional economies here.](http://www.mbie.govt.nz/what-we-do/business-growth-agenda/regions/interactive-web-tool)
+[Explore New Zealand’s regional economies here.](http://www.mbie.govt.nz/info-services/business/business-growth-agenda/regions)
 
 
 > I believe Dragonfly’s interactive is one of the best visualisations of 
@@ -45,5 +47,6 @@ the Minister’s release date.
 > 
 > And just from a technical perspective, I think it’s a very polished product.
 
-Harkanwal Singh, Data Editor, New Zealand Herald.
+<cite>Harkanwal Singh, Data Editor, New Zealand Herald.</cite>
+
 
