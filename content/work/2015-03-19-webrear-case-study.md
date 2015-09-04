@@ -4,14 +4,15 @@ banner-image: /work/2015-03-19-webrear-case-study/webrear.png
 quote: I believe Dragonfly’s interactive is one of the best visualisations of public data in New Zealand
 quote-attribution: Harkanwal Singh, Data Editor, New Zealand Herald
 logo: /work/2015-03-19-webrear-case-study/mbie-logo.png
+summary: We built an intuitive website and iPad app to help people dig into New Zealand's economic results. 
 ---
 
-We worked with the Ministry of Business, Innovation, & Employment to make data on New Zealand’s regional
-economies widely available. We built a data-rich website and iPad app that allows a deep exploration of
-these data.
+This project for the Ministry of Business, Innovation, & Employment made their data on New Zealand’s regional
+economies widely available via an intuititve website and high-spec iPad app.  
+
 <!--more-->
 
-
+##Economic activity by region
 The Regional Economic Activity Report presents data on a broad range of
 economic activity in New Zealand. As part of the government’s Business Growth Agenda, 
 Minister Steven Joyce 
@@ -20,6 +21,7 @@ online version.  Regional and city council staff had also requested access to mo
 information, 
 to inform their policy and planning around resources, permitting, and business management.
 
+##How we made it happen  
 We built an interactive desktop version of the report, which was
 then released as an iPad and mobile app. A single source of data flows through to the report,
 the website, and the apps, to ensure the integrity of the data across all the

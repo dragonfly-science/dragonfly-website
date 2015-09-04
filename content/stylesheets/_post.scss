@@ -1,7 +1,7 @@
 .post-banner-image {
     background-size: cover;
     position: relative;
-    min-height: 30vw;
+    min-height: 25vw;
     
     blockquote {
         color: white;
@@ -20,9 +20,28 @@
             font-style: normal;
             font-weight: normal;
         }
+        a.button {
+            font-size: 0.7em;
+        }
+    }
+    h1, h2, h3, a {
+        color: white;
+    }
+
+    .image-bottom-text {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+        padding: 1em;
+        z-index: 5;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: right;
     }
 
 }
+
 /* Puts a dark shade over the image to allow the writing to be read */
 .post-banner-overlay {
     position: absolute;
@@ -30,13 +49,23 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .post-detail {
 $post-highlight-color: #808080;
 $post-info-top-padding: 1em;
 $wrap-images-width: em(950);
+
+    .heading {
+        border-bottom: 3px solid;
+        @include section_colour('border-color');
+        margin-bottom: 0.5em;
+        .details {
+            text-align: right;
+            color: $medium-gray;
+        }
+    }
 
     .post-info {
         color: $post-highlight-color;
@@ -50,15 +79,29 @@ $wrap-images-width: em(950);
         }
     }
 
+    .details-sidebar {
+        @extend .right-coloured-border;
+        @include media($transient) {
+            border: none;
+        }
+        .download a {
+            @include section_colour('color');
+            font-weight: 500;
+            i {
+                display: block;
+            }
+        }
+    }
+
     a {
         color: $post-highlight-color;
     }
 
-    /* div.content > p:nth-child(1) {
+    div.content > p:nth-child(1) {
         font-weight: 500;
         font-size: $base-font-size * 1.125;
         line-height: 1.2em;
-    } */
+    }
 
     .content {
 

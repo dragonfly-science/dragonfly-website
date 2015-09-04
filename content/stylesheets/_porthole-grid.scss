@@ -3,7 +3,6 @@ $porthole-image-size: em(150);
 $porthole-image-size-small: em(100);
 $porthole-title-padding-bottom: 0.35em;
 $porthole-title-padding-top: em(20);
-$read-more-text-color: $light-gray;
 $porthole-text-size: 0.9em;
 
 .values {
@@ -42,11 +41,7 @@ $porthole-text-size: 0.9em;
 
         h4 a {
             color: $people-green;
-        }
-
-        a.read-more {
-            color: $read-more-text-color;
-            text-decoration: underline;
+            font-weight: 500;
         }
         p {
             font-size: $porthole-text-size;

@@ -1,60 +1,68 @@
 <div class="container">
-  <div class="sidebar"></div>
-  <div class="content">
-      <h1>Publications, reports, and presentations</h1>
-      <br />
-        <div id="publication-list" class="post-list">
-        <span class="dropdown">
-          <div class="dropdown-container">
-            <p class="dropdown-button" data-tag="">All authors</p>
-              <ul class="dropdown-menu dropdown-select">
-                <li data-tag="">All authors</li>
-                <li data-tag="dragonfly">Dragonfly work</li>
-                <li data-tag="edward">Edward Abraham</li>
-                <li data-tag="katrin">Katrin Berkenbusch</li>
-                <li data-tag="richard">Richard Mansfield</li>
-                <li data-tag="philipp">Philipp Neubauer</li>
-                <li data-tag="yvan">Yvan Richard</li>
-                <li data-tag="finlay">Finlay Thompson</li>
-              </ul>
-          </div>
-        </span> 
-        <span class="dropdown">
-          <div class="dropdown-container">
-            <p class="dropdown-button" data-tag="">All publication types</p>
-              <ul class="dropdown-menu dropdown-select">
-                <li data-tag="">All publication types</li>
-                <li data-tag="article">Article</li>
-                <li data-tag="report">Report</li>
-                <li data-tag="presentation">Presentation</li>
-              </ul>
-          </div>
-        </span>
-        <span class="dropdown">
-          <div class="dropdown-container">
-            <p class="dropdown-button" data-tag="">All subjects</p>
-              <ul class="dropdown-menu dropdown-select">
-                <li data-tag="">All subjects</li>
-                <li data-tag="benthic">Benthic</li>
-                <li data-tag="bycatch">Bycatch</li>
-                <li data-tag="marine-biology">Marine biology</li>
-                <li data-tag="fisheries">Fisheries</li>
-                <li data-tag="marine-mammal">Marine mammals</li>
-                <li data-tag="oceanography">Oceanography</li>
-                <li data-tag="risk-assessment">Risk assessment</li>
-                <li data-tag="seabird">Seabirds</li>
-                <li data-tag="theoretical-biology">Theoretical biology</li>
-                <li data-tag="theoretical-physics">Theoretical physics</li>
-              </ul>
-          </div>
-        </span> 
-        <div><input class="search publication-search dropdown dropdown-button" placeholder="Search" /></div>
-        <div class="badge" id="publication-count"></div>
-            <ul class="list">
-            $for(publications)$
-                    $partial("templates/citation-entry.html")$
-            $endfor$
-            </ul>
-        </div>
-  </div>
+  <section class="promo-block">
+    <div class="statement">
+      <h2> 
+        <span class="highlight">We share our findings</span> with the scientific community and the broader community.
+      </h2>
+    </div>
+    <div class="explanation">
+      <p>
+        As experts in our fields, we are widely published in a variety of scientific journals. We regularly present at conferences and publish papers both individually and as an organisation.
+      </p>
+    </div>
+  </section>
+  <br />
+    <div id="publication-list" class="post-list">
+    <span class="dropdown">
+      <div class="dropdown-container">
+        <p class="dropdown-button" data-tag="">All authors</p>
+          <ul class="dropdown-menu dropdown-select">
+            <li data-tag="">All authors</li>
+            <li data-tag="dragonfly">Dragonfly work</li>
+            <li data-tag="edward">Edward Abraham</li>
+            <li data-tag="katrin">Katrin Berkenbusch</li>
+            <li data-tag="richard">Richard Mansfield</li>
+            <li data-tag="philipp">Philipp Neubauer</li>
+            <li data-tag="yvan">Yvan Richard</li>
+            <li data-tag="finlay">Finlay Thompson</li>
+          </ul>
+      </div>
+    </span> 
+    <span class="dropdown">
+      <div class="dropdown-container">
+        <p class="dropdown-button" data-tag="">All publication types</p>
+          <ul class="dropdown-menu dropdown-select">
+            <li data-tag="">All publication types</li>
+            <li data-tag="article">Article</li>
+            <li data-tag="report">Report</li>
+            <li data-tag="presentation">Presentation</li>
+          </ul>
+      </div>
+    </span>
+    <span class="dropdown">
+      <div class="dropdown-container">
+        <p class="dropdown-button" data-tag="">All subjects</p>
+          <ul class="dropdown-menu dropdown-select">
+            <li data-tag="">All subjects</li>
+            <li data-tag="benthic">Benthic</li>
+            <li data-tag="bycatch">Bycatch</li>
+            <li data-tag="marine-biology">Marine biology</li>
+            <li data-tag="fisheries">Fisheries</li>
+            <li data-tag="marine-mammal">Marine mammals</li>
+            <li data-tag="oceanography">Oceanography</li>
+            <li data-tag="risk-assessment">Risk assessment</li>
+            <li data-tag="seabird">Seabirds</li>
+            <li data-tag="theoretical-biology">Theoretical biology</li>
+            <li data-tag="theoretical-physics">Theoretical physics</li>
+          </ul>
+      </div>
+    </span> 
+    <div><input class="search publication-search dropdown dropdown-button" placeholder="Search" /></div>
+    <div class="badge" id="publication-count"></div>
+        <ul class="list">
+        $for(publications)$
+                $partial("templates/citation-entry.html")$
+        $endfor$
+        </ul>
+    </div>
 </div>

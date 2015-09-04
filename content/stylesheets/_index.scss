@@ -12,6 +12,13 @@
     }
 }
 
+a.contact-button {
+    display: none;
+    @include media($clinical) {
+        display: inline-block;
+    }
+}
+
 .dark-screen {
     opacity: 0.7;
 }
@@ -36,6 +43,7 @@
 .banner-background {
     position: absolute;
     background-image: url("/resources/rear/port-napier.jpg");
+    background-position-x: 70%;
     background-size: cover;
     top: 0;
     left: 0;
@@ -69,7 +77,6 @@
     }
 
 }
-
 
 .index-banner {
     background-size: cover;
@@ -114,76 +121,9 @@
 
 }
 
-.index-case-study {
-    padding-top: 20%;
-    background-image: url('/work/2015-03-02-paua-logger-case-study/dave-and-jules.jpg');
-}
-
-.index-resources {
-    background-image: url("/resources/protected-species-captures/white-capped-albatross.jpg");
-    h1 {
-        color: white;
-        font-size: $font-size-large; 
-    }
-}
-
 .index-section {
     padding-bottom: 2em;
     clear: both;
-}
-
-.index-heading {
-    padding-top: 1.5em;
-    h1 {
-        font-size: $font-size-large; 
-    }
-    .overline {
-        border-top: 5px solid $data-purple;
-        &#work-overline {
-            border-color: $wing-flash-blue;
-        }
-        &#about-overline {
-            border-color: $people-green;
-        }
-        &#publications-overline {
-            border-color: $publications-orange;
-        }
-        &#data-overline {
-            border-color: $data-purple;
-        }
-        &#stories-overline {
-            border-color: $blog-red;
-        }
-    }
-}
-
-.index-resources .content-resources {
-    @include span-columns(5 of 12);
-    @include shift(3);
-    @include media($clinical) {
-      @include span-columns(10 of 12);
-      @include shift(1);
-    }
-    @include clearfix;
-    margin-top: $base-line-height;
-    position: relative;
-    @include side-margins;
-}
-
-.index-journal-list {
-    width: 100%;
-    .journal-logo {
-        width: 20%;
-        display: inline-block;
-        margin: 1em;
-        // background-image: url("../images/journal-logos/nature.png");
-        // &:hover {
-        //     background-image: url("../images/journal-logos/nature-black.png");
-        // }
-        img {
-            width: 100%;
-        }
-    }
 }
 
 .index-link {
@@ -201,31 +141,9 @@
     &::after {
         content: "▶";
         padding-left: 1em;
+        @include section_colour('color');
     }
     span {
     }
-    #publications-section & {
-        border-bottom: 5px solid $publications-orange;
-        // background-color: rgba($publications-orange, 0.3);
-    }
-    #work-section & {
-        border-bottom: 5px solid $wing-flash-blue;
-        // background-color: rgba($wing-flash-blue, 0.3);
-    }
-    #about-section & {
-        border-bottom: 5px solid $people-green;
-        // background-color: rgba($people-green, 0.3);
-    }
-    #publications-section & {
-        border-bottom: 5px solid $publications-orange;
-        // background-color: rgba($publications-orange, 0.3);
-    }
-    #resources-section & {
-        border-bottom: 5px solid $data-purple;
-        // background-color: rgba($data-purple, 0.3);
-    }
-    #news-section & {
-        border-bottom: 5px solid $blog-red;
-        // background-color: rgba($blog-red, 0.3);
-    }
+    @extend .bottom-coloured-border;
 }

@@ -1,27 +1,28 @@
-<div class="post-banner-image menu-spacer" style='background-image: url("$banner-image$")'>
-    <div class="post-banner-overlay medium-screen"></div>
+<div class="post-banner-image" style='background-image: url("$banner-image$")'>
+  $if(quote)$
+    <div class="post-banner-overlay"></div>
     <div class="container">
-        $if(quote)$
-        <blockquote class="wide"><p>$quote$</p><cite>$quote-attribution$</cite></blockquote>
-        $endif$
+      <blockquote class="wide">
+        <p>$quote$</p>
+        <cite>$quote-attribution$</cite>
+      </blockquote>
     </div>
+  $endif$
 </div>
 
 <div class="container post-detail">
  $if(title)$
-   <div class="sidebar">
-   </div>
-   <div class="content">
-    <h1>$title$</h1>
-   </div>
+    <div class="heading">
+      <h1>$title$</h1>
+    </div>
  $endif$
- <div class="sidebar">
-  <div class="post-info">
-  $if(logo)$
-    <img src="$logo$">
-  $endif$
+$if(logo)$
+  <div class="sidebar">
+    <div class="post-info">
+      <img src="$logo$">
+    </div>
   </div>
-  </div>
+$endif$
   <div class="content">
     $if(teaser)$
     <div class="lead">$teaser$</div>

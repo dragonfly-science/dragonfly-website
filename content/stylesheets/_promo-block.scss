@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+.promo-block {
+    @include row();
+    padding: 2em 0;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    .one-third {
+        @include span-columns(4 of 12);
+        flex-grow: 1;
+        @include media($clinical) {
+            @include span-columns(12 of 12);
+        }
+    }
+    .two-thirds {
+        @include span-columns(8 of 12);
+        flex-grow: 1;
+        @include media($clinical) {
+            @include span-columns(12 of 12);
+        }
+    }
+    .statement {
+        @extend .one-third;
+        @extend .right-then-bottom-coloured-border;
+        padding-right: 1em;
+        h2 {
+            margin-bottom: 1em;
+        }
+        @include media($clinical) {
+            margin-bottom: 1em;
+            padding-bottom: 1em;
+            padding-right: 0;
+        }
+    }
+    .explanation {
+        @extend .one-third;
+        p {
+            font-size: 1.25em;
+        }
+    }
+    .case-study-container {
+        @extend .one-third;
+        @extend .right-coloured-border;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        a {
+            text-decoration: none;
+        }
+        .case-study {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 1em;
+            text-align: right;
+            p {
+                margin: 0;
+            }
+            .arrow {
+                @include section_colour('color');
+                padding-left: 1em;
+            }
+        }
+    }
+    .journal-list {
+        @extend .one-third;
+        display: flex;
+        flex-wrap: wrap;
+        .journal-logo {
+            width: 50%;
+            padding: 1em;
+            display: inline-block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .people-list {
+        @extend .one-third;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .person {
+            max-width: 125px;
+            width: 125px;
+            padding: 0.5em;
+            a {
+                text-decoration: none;
+            }
+            .person-description {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+

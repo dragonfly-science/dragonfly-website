@@ -24,23 +24,21 @@ the team how to use this powerful software to produce publication quality graphi
 that met the requirements of the graphic designers. 
 
 We also introduced the team to software development practices, such as version 
-control and continuous build processes. With these 
+control and continuous build processes.
 
 The Ministry requested our support to produce an improved printed version of 
 the report using LaTeX, a powerful coded typesetting system. Together 
 LaTeX and R (a graphing tool), offered significant advantages over traditional 
-word processing programmes for producing this large [or specify no. of pages] 
-report, which has many figures and tables.
+word processing programmes for producing this large report, which has many figures and tables.
 
 Because LaTeX has a coded interface, helping staff to use and manage the 
 code themselves was an important part of the project.
-
 
 The 2014 REAR’s very polished production has set a new standard for 
 MBIE’s reporting. LaTeX allows final changes to be made quickly and easily, 
 which led to the much higher quality output.
 
-Code also equals reproducibiity and economy – future reports will be created 
+Code also equals reproducibility and economy – future reports will be created 
 by inputting new data rather than creating individual plots from scratch. The 
 MBIE team believe this feature will save them 70 percent of the preparation 
 time for future reports. 
@@ -48,7 +46,6 @@ time for future reports.
 Ministry staff found our code and documentation easy to follow and gained 
 confidence in managing it themselves. With our experience to fall back on, 
 they enjoyed the fun of working with a new programme. 
-
 
 >We are very grateful to Dragonfly. Their work was much more collaborative 
 >than we had experienced with contractors before. For us, the benefits go 
