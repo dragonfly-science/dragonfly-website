@@ -3,6 +3,7 @@ title: Technical review
 quote: Dragonfly’s expertise in working with uncertain data sets was the key driver in choosing them as a contractor
 quote-attribution: Dr Richard Seaton, Principal Conservation Officer, Department of Environment and Heritage Protection, Queensland
 summary: We reviewed a population study, checking that the spatial modelling and data analysis methods had been applied correctly and the reports' conclusions were fair. 
+banner-image: /work/2015-09-04-technical-review-case-study/koala.jpg
 ---
 ##Koala population modelling in southeast Queensland
 
