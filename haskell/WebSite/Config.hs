@@ -66,7 +66,8 @@ tagDictionary = [("edward", "Edward Abraham"),
     ("theoretical-biology", "Theoretical biology"),
     ("risk-assessment", "Risk assessment"),
     ("seabird", "Seabirds"),
-    ("theoretical-physics", "Theoretical physics")
+    ("theoretical-physics", "Theoretical physics"),
+    ("shellfish", "Shellfish")
     ]
 
 -- | These are years of the publications page.

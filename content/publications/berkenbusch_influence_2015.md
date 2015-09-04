@@ -1,6 +1,6 @@
 ---
 pdf:  Berkenbuschetal_2015_nzmss.pdf
-tags: katrin, edward, philipp, benthic, fisheries, dragonfly, presentation
+tags: katrin, edward, philipp, benthic, fisheries, dragonfly, presentation, shellfish
 ---
 The surf clam toheroa (*Paphies ventricosa*) is endemic to New Zealand, where it inhabits the intertidal zone of exposed sandy beaches in North and South Island regions.  This species is of great cultural importance, and has a long history of supporting customary, recreational and commercial fisheries.  
 

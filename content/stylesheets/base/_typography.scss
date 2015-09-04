@@ -101,10 +101,11 @@ cite {
   font-weight: 400;
 }
 
-a.read-more {
+a.read-more, a .read-more {
     @include section_colour('color');
     text-decoration: none;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .highlight {
