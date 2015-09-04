@@ -1,8 +1,8 @@
 ---
 title: Technical review
 quote: Dragonfly’s expertise in working with uncertain data sets was the key driver in choosing them as a contractor
-quote-attribution: Dr Richard Seaton, Principal Conservation Officer, Department of Environment and Heritage Protection, Queensland
-summary: We reviewed a population study, checking that the spatial modelling and data analysis methods had been applied correctly and the reports' conclusions were fair. 
+quote-attribution: Dr Richard Seaton, Department of Environment and Heritage Protection, Queensland
+summary: We reviewed a koala population study, checking that the spatial modelling and data analysis methods had been applied correctly and the reports' conclusions were fair. 
 banner-image: /work/2015-09-04-technical-review-case-study/koala.jpg
 logo: /work/2015-09-04-technical-review-case-study/queensland-government.png
 ---
@@ -29,5 +29,13 @@ This opportunity to review work carried out by our peers was also beneficial for
 >
 >The review was provided on time and in budget – that’s important to us in government with tight budgets and accountability for them.
 
-Dr Richard Seaton, Principal Conservation Officer, Threatened Species Unit, Department of Environment and Heritage Protection, queensland, Australia
+<cite>Dr Richard Seaton
+
+Principal Conservation Officer
+
+Threatened Species Unit
+
+Department of Environment and Heritage Protection
+
+Queensland, Australia.</cite>
 
