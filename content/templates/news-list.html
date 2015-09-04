@@ -1,23 +1,42 @@
 <div class="container">
-  <div class="content">
-    <div class="post-list">
-      $for(news)$
-      <div class="post-wrapper">
-      <div class="post">    
-          <div class="post-image">
-            <a href="$pageurl$"><div class="post-porthole" style="background-image: url('$teaserImage$')">
-            </div></a>
-          </div>
-          <div class="post-teaser">
-            <h4><a href="$pageurl$">$title$</a></h4>
-            <p class="subheading">$published$ $if(author)$ . $author$ $endif$ </p>
-            $if(teaser)$ $teaser$ $endif$
-            <span><a href="$pageurl$" class="read-more">Read more.</a></span>
-          </div>
-      </div>
-      </div>
-      $endfor$
+  <section class="promo-block">
+    <div class="statement">
+      <h2> 
+        <span class="highlight">We tell our stories</span>.
+      </h2>
     </div>
+    
+    <div class="explanation">
+      <p>
+        We get excited about what we do.
+      </p>
+    </div>
+  </section>
+  <div class="post-list">
+    $for(news)$
+    <div class="post-wrapper">
+    <div class="post">    
+      <div class="post-image">
+        <a href="$pageurl$"><div class="post-porthole" style="background-image: url('$teaserImage$')">
+        </div></a>
+      </div>
+      <div class="post-teaser">
+        <h4><a href="$pageurl$">$title$</a></h4>
+        <p class="subheading">
+          $published$
+          $if(author)$
+            $author$
+          $endif$ 
+        </p>
+        $if(summary)$
+          $summary$
+        $else$
+          $if(teaser)$ $teaser$ $endif$
+        $endif$
+        <span><a href="$pageurl$" class="read-more">Read more &#9656;</a></span>
+      </div>
+    </div>
+    </div>
+    $endfor$
   </div>
 </div>
-

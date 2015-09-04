@@ -1,16 +1,17 @@
 $if(banner-image)$
-<div class="container post-banner-image" style='background-image: url("$banner-image$")'>
-    <div class="post-banner-overlay"></div>
-</div>
+  <div class="post-banner-image" style='background-image: url("$banner-image$")'>
+  </div>
 $endif$
 
 <div class="container post-detail">
-  <div class="sidebar">
-  </div>
-  <div class="content">
+  <div class="heading">
    $if(title)$
     <h1>$title$</h1>
    $endif$
+   <div class="details">
+     $if(date)$<p>$date$</p>$endif$
+     $if(author)$<p>$author$</p>$endif$
+   </div>
   </div>
  <div class="sidebar">
   <div class="post-info">

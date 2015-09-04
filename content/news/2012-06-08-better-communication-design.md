@@ -8,7 +8,7 @@ focussing on our fur seals, white-capped albatross and black petrels.
 <!--more-->
 
 ![Detail of seabird safe release
-poster](../posts/2012-06-08-better-communication-design/Bird-poster-detail.png)
+poster](../news/2012-06-08-better-communication-design/Bird-poster-detail.png)
 
 Design students from Massey University are again looking for ways to
 improve communication of the complex issues around fishing bycatch,

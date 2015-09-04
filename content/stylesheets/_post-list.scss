@@ -1,5 +1,4 @@
 $post-image-size-small: em(100);
-$read-more-text-color: #CF4547;
 
 .post-list {
     @include outer-container;
@@ -24,9 +23,12 @@ $read-more-text-color: #CF4547;
             padding-bottom: 0;
         }
 
-    .citation-year {
+        .citation-year h1 {
+            border-bottom: 3px solid;
+            @include section_colour('border-color');
+            margin-bottom: 0.5em;
+        }
     }
-    
 
     .post {
         @include media($clinical) {
@@ -40,19 +42,25 @@ $read-more-text-color: #CF4547;
             }
         }
 
-        a.read-more {
-            color: $read-more-text-color;
-            text-decoration: underline;
+        a, a h3 {
+            text-decoration: none;
         }
+
+        h3 {
+            font-weight: 500;
+        }
+
         .post-image {
             @include span-columns(2 of 8);
         }
+
         .post-porthole {
             width: 100%;
             padding-top: 100%;
             border-radius: 50%;
             background-size: cover;
         }
+
         .post-teaser {
             @include span-columns(6 of 8);
         }
@@ -61,14 +69,9 @@ $read-more-text-color: #CF4547;
             a.read-more {
                 display: none;
             }
-            p {
-                display: none;
-            }
             p.subheading {
                 display: inherit;
-                color: $read-more-text-color;
             }
-
             img {
                 width: $post-image-size-small;
                 height: $post-image-size-small;
@@ -76,7 +79,6 @@ $read-more-text-color: #CF4547;
 
         }
     }
-}
 }
 
 .post-wrapper:last-child {

@@ -1,78 +1,78 @@
-<div class="banner">
-  <div class="banner-background"></div>
-  <div class="post-banner-overlay dark-screen"></div>
-  <div class="container">
-    <div class="sidebar"></div>
-    <div class="content">
-      <!--<h1>Measure. Learn. Act.</h1>-->
-      <p>Dragonfly uses data to  help government, industry, and business make effective decisions</p>
-    </div>
-  </div>
-</div>
-<div class="caption">
-  <i class="fa fa-camera"></i> Dragonfly prepared a summary 
+<!-- <section>
+  <div class="post-banner-image" style="background-image: url('../resources/rear/port-napier.jpg')">
+    <div class="image-bottom-text">
+      Dragonfly prepared a summary 
       of New Zealand's regional economic activity for the 
       Ministry of Business, Innovation, &amp; Employment. 
-      Photograph of Port Napier CC-BY Phillip Capper.
-</div>
+      <span><a href="/work/2015-03-25-reporting-case-study.html" class="read-more work">Read more &#9656;</a></span>
+    </div>
+  </div>
+  <div class="caption">
+    <i class="fa fa-camera"></i>
+        Photograph of Port Napier CC-BY Phillip Capper.
+  </div>
+</section> -->
+
+<section>
+  <div class="post-banner-image" style="background-image: url('../images/jewel-wing@2x.png')">
+    <div class="container">
+      <blockquote class="wide">
+        <h2>Dragonfly uses data to help government, industry, and business make effective decisions.</h2>
+        <a href="#contact" class="button contact-button">Get in touch.</a>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
 
 <section id="work-section" class="index-section">
   <a class="anchor" id="work"></a>
-  <div class="index-heading" class="full-screen">
-    <div class="container">    
-        <h1><span class="overline" id="work-overline">What we do</span></h1>
-    </div>
-  </div>
   <div class="container">
     $partial("templates/work-list.html")$
     <a href="/work" class="index-link">
       Read more about our work.
     </a>
   </div>
-  <div class="index-banner index-case-study" class="full-screen">
-      <div class="post-banner-overlay medium-screen"></div>
-      <div class="container">
-          <div class="sidebar"></div>
-          <div class="content">
-              <blockquote>
-                  <p>Dragonfly has been absolutely awesome – we’re rapt</p>
-                  <cite>Jeremy Cooper, CEO, Pāua Industry Council</cite>
-              </blockquote>
-              <div>
-                  <p>
-                    We provide the databases, statistical analysis, and 
-                    reporting to help the pāua industry sustainably manage their &dollar;50M export fishery.
-                    <span><a href="/work/2015-03-02-paua-logger-case-study.html" class="read-more">Read more.</a></span>
-                  </p>
-              </div>
-          </div>
-      </div>
-  </div>
 </section>
 
 <section id="about-section" class="index-section">  
   <a class="anchor" id="about"></a>
-  <div class="index-heading" class="full-screen">
-    <div class="container">    
-        <h1><span class="overline" id="about-overline">Who we are</span></h1>
-        <div class="lead">
-          <p>
-            Dragonfly brings together talented specialists who have excelled in their fields. Our technical skills
-            include statistical analysis, database design and administration, data visualisation, and 
-            software development. 
-          </p>
-        </div>
+  <div class="container">    
+    <section class="promo-block">
+      <div class="statement">
+        <h2> 
+          <span class="highlight">We are scientists</span> who believe in making science useful in the world.
+        </h2>
+      </div>
+      <div class="explanation">
+        <p>
+          Dragonfly brings together talented specialists who have excelled in their fields. Our technical skills
+          include statistical analysis, database design and administration, data visualisation, and 
+          software development. 
+        </p>
         <p>
           We work on the real-world problems that
           matter to our clients, bringing solid, reliable evidence to the conversation. 
+        </p>
+        <p>
           Data science is all about getting to the bottom of it, and we are happy
           to dive deep. Our approach is fluid
           and pragmatic. We have the technical skills to pick problems apart,
           and the creativity to find novel solutions. 
         </p>
-    </div>
+      </div>
+      <div class="people-list">
+        $for(people)$
+          <div class="person">
+            <a href="$pageurl$">
+              <img src="$portholeImage$" />
+              <p class="person-description">$title$</p>
+            </a>
+          </div>
+        $endfor$
+      </div>
+    </section>
   </div>
-  $partial("templates/people-list.html")$
   <div class="container">
     <a href="/about" class="index-link">
       Read more about our people.
@@ -80,78 +80,39 @@
   </div>
 </section>
 
-<section id="news-section" class="index-section">
-  <a id="news" class="anchor"></a>
-  <div class="index-heading" class="full-screen">
-    <div class="container">
-      <h1><span class="overline" id="stories-overline">Stories</span></h1>
-    </div>
-  </div> <!-- end of banner -->
-  $partial("templates/news-list.html")$
-  <div class="container">
-    <a href="/news" class="index-link">
-      Read more of our stories.
-    </a>
-  </div>
-</section>
-
-<section id="resources-section" class="index-section">
-  <a id="resources" class="anchor"></a>
-  <div class="index-heading" class="full-screen">
-    <div class="container">
-      <h1><span class="overline" id="data-overline">Data</span></h1>
-      <div class="lead">
-        <p>We help organisations make their data available, either internally, or publicly. Opening up data 
-          helps create a shared understanding of issues, and allows stakeholders to be engaged.</p>
-      </div>
-    </div>
-  </div> <!-- end of banner -->
-  <div class="index-banner index-resources" class="full-screen">
-    <div class="post-banner-overlay medium-screen"></div>
-  </div>
-<!--   <div class="caption">
-    <i class="fa fa-camera"></i> Photograph of a white-capped albatross 
-    CC-BY Kristina Hoeppner. White-capped albatross are reported as bycatch
-    in trawl fisheries, and we have made seabird bycatch data openly 
-    available.
-  </div> -->
-  <div class="container">
-    <a href="/resources" class="index-link">
-      See more of our open datasets.
-    </a>
-  </div>
-</section>
-
 <section class="index-section" id="publications-section">
   <a id="publications" class="anchor"></a>
-  <div class="index-heading" class="full-screen">
-    <div class="container">
-      <h1><span class="overline" id="publications-overline">Publications</span></h1>
-      <div class="lead">
-        <p>As experts in our fields, we are widely published in a variety of scientific journals. We regularly present at conferences and publish papers both individually and as an organisation.</p>
-      </div>
-    </div>
-  </div> <!-- end of banner -->
   <div class="container">
-    <div class="index-journal-list">
-      <div class="journal-logo" id="journal-nature">
-        <img src="../images/journal-logos/nature.png">
+    <section class="promo-block">
+      <div class="statement">
+        <h2> 
+          <span class="highlight">We share our findings</span> with the scientific community and the broader community.
+        </h2>
       </div>
-      <div class="journal-logo" id="journal-science">
-        <img src="../images/journal-logos/science.png">
+      <div class="explanation">
+        <p>
+          As experts in our fields, we are widely published in a variety of scientific journals. We regularly present at conferences and publish papers both individually and as an organisation.
+        </p>
       </div>
-      <div class="journal-logo" id="journal-plos">
-        <img src="../images/journal-logos/plos.png">
+      <div class="journal-list">
+        <div class="journal-logo" id="journal-nature">
+          <img src="../images/journal-logos/nature.png">
+        </div>
+        <div class="journal-logo" id="journal-science">
+          <img src="../images/journal-logos/science.png">
+        </div>
+        <div class="journal-logo" id="journal-plos">
+          <img src="../images/journal-logos/plos.png">
+        </div>
+        <div class="journal-logo" id="journal-peerj">
+          <img src="../images/journal-logos/peerj.png">
+        </div>
       </div>
-      <div class="journal-logo" id="journal-peerj">
-        <img src="../images/journal-logos/peerj.png">
-      </div>
+    </section>
+    <div class="container">
+      <a href="/publications" class="index-link">
+        Read our publications.
+      </a>
     </div>
-    <a href="/publications" class="index-link">
-      Read more of our publications.
-    </a>
   </div>
 </section>
-
-
-
