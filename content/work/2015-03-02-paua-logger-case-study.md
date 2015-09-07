@@ -1,9 +1,8 @@
 ---
 title: Sustainable fisheries
 banner-image: /work/2015-03-02-paua-logger-case-study/dave-and-jules.jpg
-summary: We built an automated system to upload, process and display daily pāua 
-    catch data. This allows pāua fishers to manage their fishery sustainably and 
-    reduce the time and cost of fishing.
+summary: A seamless system to upload, process, and display daily pāua catch data. 
+tags: systems
 quote: Dragonfly has been absolutely awesome – we’re rapt
 quote-attribution: Jeremy Cooper, CEO, Pāua Industry Council
 logo: /work/2015-03-02-paua-logger-case-study/pic-logo.png

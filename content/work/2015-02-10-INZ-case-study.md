@@ -1,10 +1,11 @@
 ---
-title: Triage of visa applications
+title: Smart sorting
 banner-image: /work/2015-02-10-INZ-case-study/prediction-service.png
 quote: We worked out the cost saving from this project, ... it was significant
 quote-attribution: Steve Cantlon, Principal Business Adviser, Immigration New Zealand
 logo: /work/2015-02-10-INZ-case-study/inz-logo.png
-summary: Our tuneable prediction service for visitor visas makes application processing faster by altomatically allocating them to different review streams. 
+summary: A tuneable prediction service for faster visitor visa processing.  
+tags: systems
 ---
 
 We built a prediction service for Immigration New Zealand, to allocate applications
@@ -40,13 +41,11 @@ and risk to sit. We haven't lost that control.
 > We worked out the cost saving from this project, in terms of the extra people we 
 wouldn't have to hire to cope with the increased visa processing. It was significant.
 >
-<cite>Steve Cantlon
-
-Principal Business Adviser
-
-Service Support
-
+<cite>Steve Cantlon <br />
+Principal Business Adviser<br />
+Service Support<br />
 Ministry of Business, Innovation and Employment</cite> 
+
 
 
 
