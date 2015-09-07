@@ -131,7 +131,7 @@ $responsive-navigation-height-clinical: em(42);
         .responsive-navigation-wrapper[data-section=work] {
             background: $wing-flash-blue;
         }
-        .responsive-navigation-wrapper[data-section=resources] {
+        .responsive-navigation-wrapper[data-section=data] {
             background: $data-purple;
         }
         .responsive-navigation-wrapper[data-section=people] {
@@ -171,7 +171,7 @@ $responsive-navigation-height-clinical: em(42);
     .responsive-navigation-wrapper[data-mode=open][data-section=work] {
         @include linear-gradient($wing-flash-blue, #3F8D83);
     }
-    .responsive-navigation-wrapper[data-mode=open][data-section=resources] {
+    .responsive-navigation-wrapper[data-mode=open][data-section=data] {
         @include linear-gradient($data-purple, #3F8D83);
     }
     .responsive-navigation-wrapper[data-mode=open][data-section=contact] {
@@ -266,7 +266,7 @@ $responsive-navigation-height-clinical: em(42);
         border-bottom: $heavy-underline solid $wing-flash-blue;
     }
 
-    .responsive-navigation-wrapper[data-section=resources] > a.logo {
+    .responsive-navigation-wrapper[data-section=data] > a.logo {
         border-bottom: $heavy-underline solid $data-purple;
     }
 
@@ -291,7 +291,7 @@ $responsive-navigation-height-clinical: em(42);
             border-bottom: em(4) solid $wing-flash-blue;
         }
 
-        .responsive-navigation-wrapper[data-section=resources] li.nav-link[data-section=resources] {
+        .responsive-navigation-wrapper[data-section=data] li.nav-link[data-section=data] {
             border-bottom: em(4) solid $data-purple;
         }
 
