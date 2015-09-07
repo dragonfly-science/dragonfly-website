@@ -25,3 +25,7 @@ $border-width: 3px;
     border-bottom: $border-width solid;
   }
 }
+
+blockquote {
+    @include section_colour('border-color');
+}
