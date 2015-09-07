@@ -8,7 +8,7 @@
   .section-publications &, #publications-section &, &.publications, .publications & {
     #{$attribute}: $publications-orange;
   }
-  .section-data &, #data-section &, .section-resources &, #resources-section &, &.data, .data & {
+  .section-data &, #data-section &, .section-data &, #data-section &, &.data, .data & {
     #{$attribute}: $data-purple;
   }
   .section-news &, #news-section &, .section-stories &, #stories-section &, &.stories, .stories & {
@@ -29,7 +29,7 @@
   .section-publications &, #publications-section &, &.publications, .publications & {
     #{$attribute}: mix($publications-orange, #000, 50%);
   }
-  .section-data &, #data-section &, .section-resources &, #resources-section &, &.data, .data & {
+  .section-data &, #data-section &, .section-data &, #data-section &, &.data, .data & {
     #{$attribute}: mix($data-purple, #000, 50%);
   }
   .section-news &, #news-section &, .section-stories &, #stories-section &, &.stories, .stories & {

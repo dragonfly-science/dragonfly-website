@@ -10,7 +10,7 @@ import WebSite.Compilers
 import qualified WebSite.Work as Work
 import qualified WebSite.People as People
 import qualified WebSite.News as News
-import qualified WebSite.Resources as Resources
+import qualified WebSite.Data as Data
 import qualified WebSite.Publications as Publications
 
 config :: Configuration
@@ -58,8 +58,8 @@ main = hakyllWith config $ do
     -- Work section
     News.rules
 
-    -- Resources section
-    Resources.rules
+    -- Data section
+    Data.rules
 
     -- Publications section
     Publications.rules
