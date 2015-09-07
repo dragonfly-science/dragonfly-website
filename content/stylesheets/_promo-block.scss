@@ -22,7 +22,7 @@
     }
     .statement {
         @extend .one-third;
-        @extend .right-then-bottom-coloured-border;
+        // @extend .right-then-bottom-coloured-border;
         padding-right: 1em;
         h2 {
             margin-bottom: 1em;
@@ -37,28 +37,6 @@
         @extend .one-third;
         p {
             font-size: 1.25em;
-        }
-    }
-    .case-study-container {
-        @extend .one-third;
-        @extend .right-coloured-border;
-        background-size: cover;
-        display: flex;
-        align-items: flex-end;
-        a {
-            text-decoration: none;
-        }
-        .case-study {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 1em;
-            text-align: right;
-            p {
-                margin: 0;
-            }
-            .arrow {
-                @include section_colour('color');
-                padding-left: 1em;
-            }
         }
     }
     .journal-list {
