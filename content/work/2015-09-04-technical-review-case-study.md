@@ -1,8 +1,9 @@
 ---
-title: Technical review
+title: Peer review
 quote: Dragonfly’s expertise in working with uncertain data sets was the key driver in choosing them as a contractor
 quote-attribution: Dr Richard Seaton, Department of Environment and Heritage Protection, Queensland
-summary: We reviewed a koala population study, checking that the spatial modelling and data analysis methods had been applied correctly and the reports' conclusions were fair. 
+summary: A technical review of the statistical methods used in a koala population study. 
+tags: stats
 banner-image: /work/2015-09-04-technical-review-case-study/koala.jpg
 logo: /work/2015-09-04-technical-review-case-study/queensland-government.png
 ---

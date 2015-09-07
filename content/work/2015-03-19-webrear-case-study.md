@@ -1,10 +1,11 @@
 ---
-title: Beautiful data
+title: Data visualisation
 banner-image: /work/2015-03-19-webrear-case-study/webrear.png
 quote: I believe Dragonfly’s interactive is one of the best visualisations of public data in New Zealand
 quote-attribution: Harkanwal Singh, Data Editor, New Zealand Herald
 logo: /work/2015-03-19-webrear-case-study/mbie-logo.png
-summary: We designed and built a new intuitive website and iPad app to help people dig into New Zealand's economic results. 
+summary: An intuitive website and iPad app to explore New Zealand's economic results.
+tags: systems 
 ---
 
 This project for the Ministry of Business, Innovation, & Employment put data on New Zealand’s regional
@@ -47,6 +48,8 @@ the Minister’s release date.
 > 
 > And just from a technical perspective, I think it’s a very polished product.
 
-<cite>Harkanwal Singh, Data Editor, New Zealand Herald.</cite>
+<cite>Harkanwal Singh<br />
+Data Editor<br />
+New Zealand Herald.</cite>
 
 

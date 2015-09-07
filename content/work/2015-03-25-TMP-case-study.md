@@ -1,7 +1,8 @@
 ---
 title:  Language recognition
 banner-image: /work/2015-03-25-TMP-case-study/matariki.jpg
-summary: We developed an automated system to track the use of Māori language on air. 
+summary: A world-first method to track the use of te reo Māori on air.
+tags: systems
 quote: The team at Dragonfly have been great to work with. They quickly understood what we were trying to achieve and came up with a very innovative solution. 
 quote-attribution: Thomas Hood, Te Māngai Pāho
 logo: /work/2015-03-25-TMP-case-study/tmp-logo.png
