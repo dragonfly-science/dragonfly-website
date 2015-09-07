@@ -13,6 +13,9 @@
     $if(tags)$ $for(tags)$ <a href="/publications/?tag=$tag$">$tagDisplay$</a> $endfor$ $endif$
   </div>
   <div class="content">
-    $partial("templates/citation-summary.html")$
+    <h3>Citation</h3>
+    <p>$citation$</p>
+    <h3>Summary</h3>
+    $body$
   </div>
 </div>
