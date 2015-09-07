@@ -7,13 +7,13 @@ tag: katrin
 title: Katrin Berkenbusch, PhD
 banner: berkenbusch-katrin/katrin-berkenbusch-letterbox.jpg
 ---
-Katrin is a marine scientist, specialising in benthic ecology, and is responsible for the quality of our 
+Katrin is a marine scientist who specialises in benthic ecology. She is responsible for the quality of our 
 reports and publications.
 <!--more-->
 
 Her work leading surveys of pipi and cockle populations on beaches, inlets and 
 estuaries from the Bay of Plenty to Whangarei is part of the Ministry for Primary 
-Industries' (MPI) regular monitoring of the fisheries.
+Industries' regular monitoring of these fisheries.
 
 As an adjunct lecturer at the University of Otago, Katrin also supervises students 
 and researches deep-sea benthic communities. She is a certified scientific diver 
@@ -28,6 +28,6 @@ Journal of Marine and Freshwater Research for five years, and joined Dragonfly i
 
 > It’s very rewarding to be out talking to locals and collecting and sharing data 
 that will tell them how their local cockle and pipi populations are faring, especially 
-those on beaches that are under a lot of pressure from recreational fishing. As 
-science providers, Dragonfly is an important link between the resource managers 
+those on beaches that are under a lot of pressure from recreational fishing. As a science provider, Dragonfly is an important link between the resource managers 
 and the public.
+

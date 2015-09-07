@@ -41,4 +41,4 @@ is essential. In the long run, robust analysis will produce a better return on
 investment. It's gratifying to see our work being used to inform key commercial and
 government decisions. 
 
-Technical skills: Bayesian modelling; Haskell; PostgreSQL; Django, LaTeX
+### Selected publications
