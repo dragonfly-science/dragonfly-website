@@ -8,7 +8,7 @@ summary: An intuitive website and iPad app to explore New Zealand's economic res
 tags: systems 
 ---
 
-This project for the Ministry of Business, Innovation, & Employment put data on New Zealand’s regional
+This project for the Ministry of Business, Innovation and Employment put data on New Zealand’s regional
 economies online for the first time. We created a desktop version and high-spec iPad and mobile app to help people dig into the data. 
 
 <!--more-->

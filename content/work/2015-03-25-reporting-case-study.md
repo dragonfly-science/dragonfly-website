@@ -4,7 +4,7 @@ banner-image: /work/2015-03-25-reporting-case-study/electricity-use-and-demand.p
 summary: A templated programme to efficiently produce data-rich reports.
 tags: capability, systems
 quote: If I have another chance to work with Dragonfly I won't hesitate to say yes. No question. 
-quote-attribution: Vij Kooyela, Senior Analyst, Ministry of Business, Innovation, & Employment 
+quote-attribution: Vij Kooyela, Senior Analyst, Ministry of Business, Innovation and Employment 
 logo: /work/2015-03-25-reporting-case-study/mbie-logo.png
 ---
 One of our secret sauces is a focus on repeatable, automated reporting. We worked with the Sector Performance
@@ -63,7 +63,7 @@ time for future reports.
 <cite>Vij Kooyela<br />
 Senior Analyst<br />
 Sector Performance Team<br />
-Ministry of Business, Innovation, & Employment.</cite>
+Ministry of Business, Innovation and Employment.</cite>
 
 
 
