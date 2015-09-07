@@ -20,8 +20,8 @@ and researches deep-sea benthic communities. She is a certified scientific diver
 and was hired by Ngāi Tahu as an expert witness in their submission opposing the 
 mining of phosphorite nodules on Chatham Rise. 
 
-Katrin has a PhD in marine science from the University of Otago. She worked as a 
-marine ecologist at NIWA before completing a postdoctoral fellowship, based at the US 
+Katrin has a PhD in marine science from the [University of Otago](http://www.otago.ac.nz/marinescience/research/shelf-and-deep-sea-systems/). She worked as a 
+marine ecologist at [NIWA](https://www.niwa.co.nz/) before completing a postdoctoral fellowship, based at the US 
 Environmental Protection Agency. Katrin was scientific editor of the New Zealand 
 Journal of Marine and Freshwater Research for five years, and joined Dragonfly in 
 2012, where she leads the writing and editing of reports and other publications. 

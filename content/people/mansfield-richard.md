@@ -14,7 +14,7 @@ In his experience with databases and as a developer, Richard has become convince
  
 One current project is developing a web-based tool for building reports. The tool allows many users to write code and add it to a repository, and keeps track of who is doing what. Richard believes that such a complex project requires a simple, transparent approach to reduce duplication and unnecessary work. 
 
-Richard gained his PhD in Computer Science from Victoria University, applying
+Richard gained his PhD in computer science from [Victoria University of Wellington](http://www.victoria.ac.nz/sms), applying
 game theory to the study of ecological systems. He worked at [Catalyst IT](http://catalyst.net.nz/) in Wellington
 for five years as a web developer and programmer before joining Dragonfly in 2012. 
  

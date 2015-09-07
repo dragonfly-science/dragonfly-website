@@ -26,7 +26,7 @@ robust automated systems and architecture that gave him confidence that every
 view would be correct. It was released to the public in a desktop format as well as 
 an app. 
 
-Christopher has a PhD in physical chemistry from the University of Canterbury and completed two post-docs at the University of California Irvine. He then worked in software engineering at [NVIDIA](http://www.nvidia.com/content/global/global.php) in Finland followed by a position at the [King Abdullah University of Science and
+Christopher has a PhD in physical chemistry from the [University of Canterbury](http://www.chem.canterbury.ac.nz/) and completed two post-docs at the [University of California Irvine](http://uci.edu/). He then worked in software engineering at [NVIDIA](http://www.nvidia.com/content/global/global.php) in Finland followed by a position at the [King Abdullah University of Science and
 Technology](http://www.kaust.edu.sa/), using visualisation to support research. He joined Dragonfly in 2013. 
 
 
