@@ -1,13 +1,14 @@
 ---
 title: Repeatable reporting
 banner-image: /work/2015-03-25-reporting-case-study/electricity-use-and-demand.png
-summary: We created an automated, templated system for producing data-rich reports.
-quote: If I have another chance to work with Dragonfly I won't hesitate to say yes. No question 
+summary: A templated programme to efficiently produce data-rich reports.
+tags: capability, systems
+quote: If I have another chance to work with Dragonfly I won't hesitate to say yes. No question. 
 quote-attribution: Vij Kooyela, Senior Analyst, Ministry of Business, Innovation, & Employment 
 logo: /work/2015-03-25-reporting-case-study/mbie-logo.png
 ---
 One of our secret sauces is a focus on repeatable, automated reporting. We worked with the Sector Performance
-team at the Ministry of Business, Innovation, & Employment (MBIE) to improve their analysis processes and make their reporting more collaborative and efficient.
+team at the Ministry of Business, Innovation & Employment (MBIE) to improve their analysis processes and make their reporting more collaborative and efficient.
 <!--more-->
 
 ##A complex report 
@@ -36,7 +37,7 @@ code themselves was an important part of the project. Ministry staff found our c
 confidence in managing it themselves. With our experience to fall back on, 
 they enjoyed the fun of working with a new programme. 
 
-##A new standard set
+##Beautiful report production
 The 2014 REAR’s very polished production has set a new standard for 
 MBIE’s reporting. LaTeX allows final changes to be made quickly and easily, 
 which led to the much higher quality output.
@@ -61,6 +62,7 @@ time for future reports.
 
 <cite>Vij Kooyela<br />
 Senior Analyst<br />
+Sector Performance Team<br />
 Ministry of Business, Innovation, & Employment.</cite>
 
 
