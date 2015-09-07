@@ -160,7 +160,7 @@ a.contact-button {
     &:hover {
         text-decoration: none;
     }
-    &::after {
+    &:after {
         content: "▶";
         padding-left: 1em;
         @include section_colour('color');
