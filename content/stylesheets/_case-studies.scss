@@ -38,11 +38,11 @@
     margin-top: 0;
     .case-study {
         h3 {
-            font-weight: 800;
+            /*font-weight: 800;*/
             margin-bottom: 2em;
             padding-bottom: 0.5em;
-            @include section_colour('border-color');
-            border-bottom: 5px solid;
+            /*@include section_colour('border-color');*/
+            /*border-bottom: 5px solid;*/
         }
     }
 }

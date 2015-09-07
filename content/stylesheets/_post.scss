@@ -42,6 +42,8 @@
 
 }
 
+    
+
 /* Puts a dark shade over the image to allow the writing to be read */
 .post-banner-overlay {
     position: absolute;
@@ -58,8 +60,9 @@ $post-info-top-padding: 1em;
 $wrap-images-width: em(950);
 
     .heading {
-        border-bottom: 3px solid;
-        @include section_colour('border-color');
+        /*border-bottom: 3px solid;*/
+        /*@include section_colour('border-color');*/
+        margin-top: 2em;
         margin-bottom: 0.5em;
         .details {
             text-align: right;
