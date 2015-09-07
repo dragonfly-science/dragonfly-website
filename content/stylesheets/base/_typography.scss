@@ -110,6 +110,19 @@ a.read-more, a .read-more {
     text-decoration: none;
     font-weight: 500;
     white-space: nowrap;
+  
+    &:after {
+        content: ' \25b8';
+    }
+    
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active, &:focus {
+        outline: none;
+        text-decoration: underline;
+    }
 }
 
 .highlight {
