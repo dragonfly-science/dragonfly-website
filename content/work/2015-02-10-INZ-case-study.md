@@ -1,7 +1,7 @@
 ---
 title: Smart sorting
 banner-image: /work/2015-02-10-INZ-case-study/prediction-service.png
-quote: We worked out the cost saving from this project, ... it was significant
+quote: We worked out the cost saving from this project ... it was significant
 quote-attribution: Steve Cantlon, Principal Business Adviser, Immigration New Zealand
 logo: /work/2015-02-10-INZ-case-study/inz-logo.png
 summary: A tuneable prediction service for faster visitor visa processing.  
@@ -40,7 +40,7 @@ and risk to sit. We haven't lost that control.
 >
 > We worked out the cost saving from this project, in terms of the extra people we 
 wouldn't have to hire to cope with the increased visa processing. It was significant.
->
+
 <cite>Steve Cantlon <br />
 Principal Business Adviser<br />
 Service Support<br />

@@ -1,5 +1,5 @@
 ---
-title: Reducing albatross fatalities in trawl fisheries
+title: Informed decision-making
 summary: A objective search for the best device to reduce albatross fatalities. 
 tags: policy, stats
 banner-image: /work/2014-10-01-warp-strike/streamers.jpg
