@@ -20,18 +20,16 @@ to solving analytical and technical problems.
 Finlay has extensive experience as a database and software developer. He leads 
 the technical direction of Dragonfly's work, with a strong focus on open source
 technologies. He enjoys the challenge of making analytical and 
-statistical solutions operational. Automated approaches have the
-potential to massively increase quality, 
-reproducibility and productivity of analytical systems, 
-bringing significant savings to our clients. 
+statistical solutions operational. 
 
-Since joining Dragonfly, Finlay has become experienced at Bayesian analysis, carrying out statistical modelling
-on diverse projects such as estimating bycatch of marine mammals in New Zealand fisheries, and
-the number of leaky houses in New Zealand.
+Finlay is experienced in Bayesian analysis and has carryied out statistical modelling
+on diverse projects such as estimating the bycatch of marine mammals in New Zealand fisheries, and
+the number of leaky homes in the country. He believes that automated approaches can massively increase the quality, reproducibility, and productivity of analytical systems, 
+bringing significant savings to clients. 
 
 Finlay researched four dimensional algebra and geometry for his PhD in 
 mathematics at [SISSA](http://sissa.it), Italy. He completed post-docs at [CIMAT](http://www.cimat.mx/) in Mexico 
-and [Victoria University](http://www.victoria.ac.nz/smsor/default.aspx),
+and [Victoria University of Wellington](http://www.victoria.ac.nz/sms),
 then worked in Wellington's IT industry before joining Dragonfly in 2008. 
 
 > I think decision making should be supported with the best available 
