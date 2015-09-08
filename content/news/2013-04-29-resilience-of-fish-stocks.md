@@ -17,20 +17,7 @@ of overexploitation,” he says.
 
 <!--more-->
 
-Philipp Neubauer, who is due to start work at Dragonfly Science in
-August, has published a paper modelling the recovery of the world’s
-fish stocks from overfishing in the journal
-[Science](http://www.sciencemag.org/content/340/6130/347.short) this
-month. The full paper may be accessed via the publications page of the
-[RAM legacy stock-assessment
-database](http://ramlegacy.marinebiodiversity.ca/ram-legacy-stock-assessment-database/publications).
-
-“We found that marine fish populations were surprisingly resilient to
-overfishing and could generally rebuild to sustainable levels within a
-decade or so – if fishing was reduced substantially at the first signs
-of overexploitation,” he says.
-
-Neubauer and his collaborators looked at populations that had
+With his collaborators, Philipp looked at populations that had
 experienced at least one period when their abundance dropped below 50%
 of a common management target. They identified and then modelled the
 variables responsible for recovery times and their relative impact. To
@@ -39,7 +26,7 @@ treating depleted stocks as 'ailing patients' and applying statistical
 methods from clinical trials, they were able to determine the factors
 that affect a stock’s recovery.
 
-Neubauer is currently completing a post-doc at Rutgers University in
+Philipp is currently completing a post-doc at Rutgers University in
 the US, and did his PhD in marine ecology at Victoria University of
 Wellington. He and his collaborators were keen to find out if the slow
 recovery of overexploited populations was due to insufficient
