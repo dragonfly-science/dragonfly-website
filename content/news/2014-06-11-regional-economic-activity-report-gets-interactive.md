@@ -6,7 +6,7 @@ Dragonfly has created an interactive web tool to present information
 on population, employment, GDP and annual household income across the
 country's 66 territorial authorities for the Ministry of Business,
 Innovation and Employment (MBIE). It is [available from the MBIE
-website](http://www.mbie.govt.nz/what-we-do/business-growth-agenda/regions)
+website](http://www.mbie.govt.nz/info-services/business/business-growth-agenda/regions/interactive-web-tool)
 in desktop and tablet versions, and an app is planned.
 
 <!--more-->
