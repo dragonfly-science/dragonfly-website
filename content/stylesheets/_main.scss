@@ -27,6 +27,10 @@ main {
     @include outer-container;
 }
 
+.content-margin {
+    margin-top: $base-line-height;
+}
+
 
 .sidebar {
     @include span-columns(2 of 12);
@@ -36,7 +40,6 @@ main {
       @include span-columns(12 of 12);
       @include shift(0);
     }
-    margin-top: $base-line-height;
 }
 
 .content {
@@ -46,7 +49,6 @@ main {
       @include shift(0);
     }
     @include clearfix;
-    margin-top: $base-line-height;
     position: relative;
     @include side-margins;
 }
@@ -59,7 +61,6 @@ main {
       @include shift(0);
     }
     @include clearfix;
-    margin-top: $base-line-height;
     position: relative;
     @include side-margins;
 }
