@@ -2,7 +2,7 @@
 title: Joining the dots for pāua fishers
 ---
 
-Tom McCowan, a PhD student working for the Paua Industry Council Ltd
+Tom McCowan, a PhD student working for the Pāua Industry Council Ltd
 (PIC), is currently being housed at Dragonfly.
 
 Tom's job is to get the pāua dive-logger programme up and running
@@ -17,18 +17,6 @@ areas.
 
 ![Tom (right) on a pāua research trip  during his
 PhD](../news/2012-11-29-tom-mccowan/Tom-McCowan.jpg)
-
-Tom McCowan, a
-PhD student working for the Paua Industry Council Ltd (PIC), is
-currently being housed at Dragonfly.
-
-Tom's job is to get the pāua dive-logger programme up and running
-nationwide - the next step from the proof-of-concept stage. The dive
-loggers collect detailed data on diver location and catch, and the
-programme will ultimately give fishers access to up-to-date
-information on the state of the fishery, reef by reef. The loggers are
-currently being widely used in the Marlborough and Chatham Islands
-areas.
 
 Jeremy Cooper, CEO of PIC is certain that New Zealand’s pāua fisheries
 need to have management implemented at a reef-scale, rather than a

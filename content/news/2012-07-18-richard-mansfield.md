@@ -2,18 +2,13 @@
 title: Dragonfly grows database and programming expertise
 ---
 
-The appointment of Richard Mansfield to the Dragonfly Science team
+The appointment of Richard Mansfield to the Dragonfly team
 brings some complementary programming and web development expertise to
 the company. Previously from Catalyst IT, Richard is a specialist in
 open source software development for the web.
 
 <!--more-->
 
-
-The appointment of Richard Mansfield to the Dragonfly Science team
-brings some complementary programming and web development expertise to
-the company. Previously from Catalyst IT, Richard is a specialist in
-open source software development for the web.
 
 “Coming to Dragonfly seems like a good change and a chance to work
 with Edward and Finlay on the analytical techniques they have been

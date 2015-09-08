@@ -7,20 +7,11 @@ Island robins from Kapiti Island to the hills behind Eastbourne in
 April as part of the MIRO (Mainland Island Restoration Operation)
 project run by volunteers.
 
-Yvan from Dragonfly Science was one of eight ‘catchers’ on Kapiti
+Yvan from Dragonfly was one of eight ‘catchers’ on Kapiti
 Island. He studied robins during his PhD and became expert at catching
 them, so was pleased to be able to help out.
 
 <!--more-->
-
-More than 70 people were involved in the translocation of 40 North
-Island robins from Kapiti Island to the hills behind Eastbourne in
-April as part of the MIRO (Mainland Island Restoration Operation)
-project run by volunteers.
-
-Yvan from Dragonfly Science was one of eight ‘catchers’ on Kapiti. He
-studied robins during his PhD and became expert at catching them, so
-was pleased to be able to help out.
 
 “The first day I did a recce of my area. I worked out the territories
 and where the males and females were, and trained them to come for

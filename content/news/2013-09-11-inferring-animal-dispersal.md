@@ -1,7 +1,7 @@
 ---
 title: Inferring animal dispersal from geochemical proxies: open source R package online
 ---
-To pinpoint the natal origins of settling fish in Cook Strait, near
+To pinpoint the origins of settling fish in Cook Strait, near
 Wellington, Philipp Neubauer measured geochemical signatures in fish
 otoliths (ear bones). A new Bayesian modelling approach allowed him to
 estimate dispersal of larval fish among local populations in the
