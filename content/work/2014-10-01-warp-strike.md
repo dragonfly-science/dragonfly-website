@@ -31,7 +31,7 @@ WWF-New Zealand, the fishing industry and research organisations working
 collaboratively. They had a simple question: which device worked the best?
 
 Despite plenty of hearsay about how effective each mitigation device was,
-t wasn't clear where the truth lay. Dragonfly worked together with other
+it wasn't clear where the truth lay. Dragonfly worked together with other
 stakeholders to provide the necessary analysis and make a clear
 recommendation to fisheries managers.
 
