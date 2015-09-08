@@ -19,6 +19,27 @@
   }   
 }
 
+.color-data {
+    color: $data-purple;
+}
+
+.color-news {
+    color: $blog-red;
+}
+
+.color-people {
+    color: $people-green;
+}
+
+.color-publications {
+    color: $publications-orange;
+}
+
+.color-work {
+    color: $wing-flash-blue;
+}
+
+
 @mixin darker_section_colour($attribute) {
   .section-work &, #work-section &, &.work, .work & {
     #{$attribute}: mix($wing-flash-blue, #000, 50%);

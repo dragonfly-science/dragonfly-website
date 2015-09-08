@@ -1,13 +1,7 @@
 .case-study-list {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin-top: 1em;
     .case-study {
-        min-width: 200px;
-        max-width: 300px;
-        width: 20%;
-        margin: 2%;
         .case-study-image {
             border-radius: 50%;
         }
@@ -15,6 +9,10 @@
 }
 
 .case-study {
+    @include span-columns(3 of 12);
+    @include media($clinical-up) {
+            @include omega(4n);
+    }
     padding: 0.5em;
     .case-study-image {
         width: 100%;
