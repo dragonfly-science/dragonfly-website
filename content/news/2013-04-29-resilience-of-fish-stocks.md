@@ -2,7 +2,7 @@
 title: Resilience of the world's fish stocks
 ---
 
-Philipp Neubauer, who is due to start work at Dragonfly Science in
+Philipp Neubauer, who is due to start work at Dragonfly in
 August, has published a paper modelling the recovery of the world’s
 fish stocks from overfishing in the journal
 [Science](http://www.sciencemag.org/content/340/6130/347.short) this

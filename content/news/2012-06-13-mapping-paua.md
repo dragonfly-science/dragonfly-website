@@ -4,15 +4,16 @@ title: Mapping pāua catch with GPS
 
 The Paua Industry Council (PIC) has been developing data logging
 technology for fisheries management for a number of years, but
-recently got Dragonfly Science involved to analyse their data, extract
+recently got Dragonfly involved to analyse their data, extract
 the relevant information and present it in a useful way.
-
-<!--more-->
 
 A Marlborough-based pāua fishing company, Saavid Fishing Ltd, has
 monitored its fishery using GPS-based technology for some years, and
 helped develop and trial a number of different data logging units for
-PIC. David Baker from Saavid Fishing is a commercial pāua diver and
+PIC.
+<!--more-->
+
+David Baker from Saavid Fishing is a commercial pāua diver and
 his family makes a living from the fishery. He is also Chair of
 PauaMAC7, the Paua Management Action Committee for Paua Management
 Area 7.
