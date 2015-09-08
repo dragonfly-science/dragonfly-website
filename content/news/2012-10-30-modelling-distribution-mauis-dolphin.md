@@ -10,13 +10,6 @@ Department of Conservation.
 
 <!--more-->
 
-
-In June 2012, a risk assessment workshop was held to identify, analyse
-and evaluate all threats to Maui’s dolphin in a review of the species
-Threat Management Plan. Panellists included scientific experts as well
-as representatives of the Ministry for Primary Industries and the
-Department of Conservation.
-
 As part of the review, Dragonfly Science were asked to supply data on
 fishing effort, a map of the dolphin's distribution and where the two
 areas overlap. Their work appears in Appendix 2 of the report.

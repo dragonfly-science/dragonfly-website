@@ -2,22 +2,16 @@
 title: Doing our bit to reverse the brain drain
 ---
 
-Christopher Knox has recently joined the Dragonfly Science team as a
+Christopher Knox has recently joined the Dragonfly team as a
 visualisation scientist. Originally from Christchurch, he spent 10
-years overseas, most recently in Saudi Arabia. Although Christopher
+years overseas, most recently in Saudi Arabia. 
+
+Although Christopher
 and his wife were planning to return to New Zealand eventually, the
 offer of a job with Dragonfly was the catalyst they needed to make the
 move home.
 
 <!--more-->
-
- 
-Christopher Knox has recently joined the Dragonfly Science team as a
-visualisation scientist. Originally from Christchurch, he spent 10
-years overseas, most recently in Saudi Arabia. Although Christopher
-and his wife were planning to return to New Zealand eventually, the
-offer of a job with Dragonfly was the catalyst they needed to make the
-move home.
 
 “I was working in data visualisation at the King Abdullah University
 of Science and Technology. It’s an international university carrying

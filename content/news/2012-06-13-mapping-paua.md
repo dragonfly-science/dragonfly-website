@@ -1,5 +1,5 @@
 ---
-title: Mapping paua catch with GPS
+title: Mapping pāua catch with GPS
 ---
 
 The Paua Industry Council (PIC) has been developing data logging
@@ -9,17 +9,12 @@ the relevant information and present it in a useful way.
 
 <!--more-->
 
-The Paua Industry Council (PIC) has been developing data logging
-technology for fisheries management for a number of years, but
-recently got Dragonfly Science involved to analyse their data, extract
-the relevant information and present it in a useful way.
-
-A Marlborough-based paua fishing company, Saavid Fishing Ltd, has
+A Marlborough-based pāua fishing company, Saavid Fishing Ltd, has
 monitored its fishery using GPS-based technology for some years, and
 helped develop and trial a number of different data logging units for
-PIC. David Baker from Saavid Fishing is a commercial paua diver and
+PIC. David Baker from Saavid Fishing is a commercial pāua diver and
 his family makes a living from the fishery. He is also Chair of
-PauaMac7, the Paua Management Action Committee for Paua Management
+PauaMAC7, the Paua Management Action Committee for Paua Management
 Area 7.
 
 “Through PIC, the industry has been working with Nelson-based
@@ -38,7 +33,7 @@ To calculate the CPUE, a diver’s time underwater, the total time spent
 fishing (including swimming on the surface and underwater), the catch
 and the area fished were needed. In addition, a fishdown experiment
 was carried out in a completely unfished area nearby to determine the
-relationships between the CPUE and the relative abundance of paua in
+relationships between the CPUE and the relative abundance of pāua in
 the area.
 
 ![David Baker (Saavid Fishing) and Julie Hills (Ministry for Primary
@@ -50,7 +45,7 @@ so we get much more detail.
 
 “Two good things come out of this for us as an industry – firstly we
 can manage the fishery much more closely and make it more sustainable.
-It’s easy to go too far with paua – they are a hard little animal to
+It’s easy to go too far with pāua – they are a hard little animal to
 manage. We also hope that by having a record of good data, we will
 avoid having to do costly stock assessments in the future.
 

@@ -16,7 +16,7 @@ perspectives with such a broad audience at the symposium."
 
 In a [recent
 paper](https://www.dragonfly.co.nz/news/2013-04-29-resilience-of-fish-stocks/)
-that appeared in the journal Science, Philipp and his colleagues found
+that appeared in the journal *Science*, Philipp and his colleagues found
 surprising patterns of resilience in most of the world's overfished
 stocks, which allowed these stocks to recover faster than expected,
 under appropriate management.
