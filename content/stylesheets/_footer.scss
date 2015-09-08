@@ -18,9 +18,9 @@
     background-size: cover;
     line-height: 1.4em;
     
-    @include media($compact-footer) {
+    /*@include media($compact-footer) {
         margin-top: em(40);
-    }
+    }*/
 
     .footer-outer {
         padding-bottom: em(50);

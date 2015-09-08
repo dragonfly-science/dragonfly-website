@@ -332,6 +332,10 @@ a.anchor {
     position: relative; 
     margin-top:  -$responsive-navigation-height;
     padding-top:  $responsive-navigation-height;
+    @include media($serendipity) {
+        margin-top: -$responsive-navigation-height-serendipity;
+        padding-top:  $responsive-navigation-height-serendipity;
+    }
     visibility: hidden;
 }
 
