@@ -44,7 +44,7 @@ wouldn't have to hire to cope with the increased visa processing. It was signifi
 <cite>Steve Cantlon <br />
 Principal Business Adviser<br />
 Service Support<br />
-Ministry of Business, Innovation and Employment</cite> 
+Ministry of Business, Innovation and Employment.</cite> 
 
 
 
