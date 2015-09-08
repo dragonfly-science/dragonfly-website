@@ -76,6 +76,7 @@
             padding-top: em(14);
         }
 
+
         #footer-phone {
             border-top: 1px solid $lighter-gray;
         }
@@ -182,6 +183,9 @@
 }
 
 
+address + p {
+    margin-top: 1em;
+}
 
 /* Custom styles for the contact page */
 
