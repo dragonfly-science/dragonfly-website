@@ -1,5 +1,5 @@
 $responsive-navigation-height: em(82);
-$responsive-navigation-height-clinical: em(42);
+$responsive-navigation-height-serendipity: em(42);
 .responsive-navigation {
     $responsive-navigation-padding: 1em;
     $responsive-navigation-logo-height: em(44);
@@ -11,7 +11,7 @@ $responsive-navigation-height-clinical: em(42);
     $responsive-navigation-item-padding: 0.5em;
     $responsive-navigation-item-nudge: 0em;
     $responsive-navigation-text-offset: 0.55em;
-    $horizontal-mode: $clinical-up;  // Desktop menu
+    $horizontal-mode: $serendipity-up;  // Desktop menu
 
     background-color: $responsive-navigation-background;
     height: $responsive-navigation-height;
@@ -31,8 +31,8 @@ $responsive-navigation-height-clinical: em(42);
         border-bottom: em(1) solid $thin-gray;
     }
 
-    @include media($clinical) {
-        height: $responsive-navigation-height-clinical;
+    @include media($serendipity) {
+        height: $responsive-navigation-height-serendipity;
         padding: 0 0;
         border-bottom: em(1) solid $thin-gray;
     }
@@ -47,8 +47,8 @@ $responsive-navigation-height-clinical: em(42);
         background-position: center;
         z-index: 1000;
         border-bottom: $heavy-underline solid rgba(255, 255, 255, 0);
-        @include media($clinical) {
-            height: $responsive-navigation-height-clinical - 1em;
+        @include media($serendipity) {
+            height: $responsive-navigation-height-serendipity - 1em;
             width: 4em;
             border: none;
             background: url('/images/dragonfly-wing-only-white.png');
@@ -81,7 +81,7 @@ $responsive-navigation-height-clinical: em(42);
         color: $responsive-navigation-color;
         float: right;
         margin: 0;
-        margin-right: $content-margin-clinical;
+        margin-right: $content-margin-serendipity;
         padding-top: $responsive-navigation-height - 3*em(3) - 3em;
         padding-top: 0.6em;
         @include media ($transient){
@@ -107,7 +107,7 @@ $responsive-navigation-height-clinical: em(42);
     }
     
     .responsive-navigation-wrapper[data-section=index] .logo {
-        @include media($clinical) {
+        @include media($serendipity) {
             background-image: url('/images/dragonfly-wing-only-blue.png');
         }
     }
@@ -124,7 +124,7 @@ $responsive-navigation-height-clinical: em(42);
         @include content-left-padding;
         @include transition(height 0.4s, background 0.4s);
     }
-    @include media($clinical) {
+    @include media($serendipity) {
         .responsive-navigation-wrapper[data-section=contact] {
             background: $data-purple;
         }
@@ -253,7 +253,7 @@ $responsive-navigation-height-clinical: em(42);
     }
 
     .responsive-navigation-wrapper > a.logo {
-        @include media($clinical) {
+        @include media($serendipity) {
             border-bottom: none !important;
         }
     }
@@ -337,7 +337,7 @@ a.anchor {
 
 .menu-spacer {
     margin-top: $responsive-navigation-height;
-    @include media($clinical) {
-        margin-top: $responsive-navigation-height-clinical;
+    @include media($serendipity) {
+        margin-top: $responsive-navigation-height-serendipity;
     }
 }
