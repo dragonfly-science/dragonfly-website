@@ -2,7 +2,7 @@
 title: Making connections in Japan
 ---
 
-Finlay Thompson from Dragonfly Science travelled to Tokyo in September
+Finlay Thompson from Dragonfly travelled to Tokyo in September
 to attend two conferences hosted by the National Institute of
 Informatics and meet collaborators in the [Parallel GHC
 project.](http://www.haskell.org/haskellwiki/Parallel_GHC_Project) The
@@ -10,13 +10,6 @@ visit was also an opportunity to build networks in the high
 performance computing communities.
 
 <!--more-->
-
-Finlay Thompson from Dragonfly Science travelled to Tokyo in September
-to attend two conferences hosted by the National Institute of
-Informatics and meet collaborators in the [Parallel GHC
-project.](http://www.haskell.org/haskellwiki/Parallel_GHC_Project) The
-visit was also an opportunity to build networks in the high
-performance computing communities.
 
 Dragonfly has initiated a project called Cloudy Bayes to develop tools
 for fast Bayesian statistical analysis using processing on the cloud
@@ -35,7 +28,7 @@ east coast in March. Finlay also struck some bad weather.
 there were high winds and pouring rain. When we came out of the
 restaurant, a tree outside had been blown  over, the police were
 everywhere and peoples' umbrellas were getting ripped to shreds.
-It just seemed like a good Wellington northerly to me.
+It just seemed like a good Wellington northerly to me," he says.
 
 “It was also good to meet Dr Kazuhiko Yamamoto from Internet
 Innovation Japan.

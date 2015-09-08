@@ -37,8 +37,7 @@ by recreational fishers for a while. We haven't had much evidence of
 the effect of being caught on the birds. This find shows that birds
 may be killed as a result of being hooked.”
 
-In their report, based on interviews with fishers, Dragonfly Science
-estimated that in the northeastern region of New Zealand (which
+In their report, based on interviews with fishers, Dragonfly estimated that in the northeastern region of New Zealand (which
 includes the Bay of Plenty and the Hauraki Gulf) there were somewhere
 between 6 000 and 16 000 seabird captures per year by recreational
 fishers. Although many of the birds may be unharmed, and simply
