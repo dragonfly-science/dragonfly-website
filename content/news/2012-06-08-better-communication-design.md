@@ -5,16 +5,15 @@ Design students from Massey University are again looking for ways to
 improve communication of the complex issues around fishing bycatch,
 focussing on our fur seals, white-capped albatross and black petrels.
 
-<!--more-->
-
-![Detail of seabird safe release
-poster](../news/2012-06-08-better-communication-design/Bird-poster-detail.png)
-
-
 The project is a 4th year Information Design paper, taken as part of a
 Bachelor of Design (Hons). Students are challenged to take the raw
 data provided by Dragonfly, and translate it into a relevant graphic
 form for a selected audience.
+
+<!--more-->
+
+![Detail of seabird safe release
+poster](../news/2012-06-08-better-communication-design/Bird-poster-detail.png)
 
 The 12-week course began with a presentation from Johanna and Edward
 from Dragonfly. Students initially wrote a report about one of the
