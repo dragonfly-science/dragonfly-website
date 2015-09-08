@@ -2,20 +2,11 @@
 title: Counting kiwis
 ---
 
-Simon Morton spoke to Stu Cockburn from DOC and Edward from Dragonfly
-Science about their project monitoring North Island brown kiwi in the
-Rimutaka Forest Park on *This Way Up,*  Radio New Zealand National.
-Susan Ellis from the Rimutaka Forest Park Trust was also interviewed.
+Simon Morton spoke to Stu Cockburn from the Department of Conservation and Edward from Dragonfly
+about their project monitoring North Island brown kiwi in the
+Rimutaka Forest Park on *This Way Up*, Radio New Zealand National. Susan Ellis from the Rimutaka Forest Park Trust was also interviewed.
 
 <!--more-->
-
-
- Simon Morton spoke to Stu Cockburn from DOC and Edward from Dragonfly
-about their project monitoring North Island brown kiwi in the Rimutaka
-Forest Park on  [This Way
-Up](http://www.radionz.co.nz/national/programmes/thiswayup)  Radio New
-Zealand National. Susan Ellis from the [Rimutaka Forest Park
-Trust](http://www.rimutakatrust.org.nz/) was also interviewed.
 
 Remote digital recorders in the area collect huge amounts of data, and
 Dragonfly are working on software to help identify the kiwi calls. The

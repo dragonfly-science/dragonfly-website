@@ -4,22 +4,15 @@ title: Flesh-footed shearwaters caught by recreational fishers
 
 Collecting dead birds from Bay of Plenty beaches after the Rena
 grounding showed that not all the deaths were caused by the 350 tonnes
-of heavy fuel oil that leaked from the vessel. The team that handled
+of heavy fuel oil that leaked from the vessel. 
+
+The team that handled
 more than 2000 oiled birds also found 64 unoiled flesh-footed
 shearwaters that were in good body condition, and found evidence that
 some had apparently been killed as a result of interactions with
 recreational fishers.
 
 <!--more-->
-
-
- Collecting dead birds from Bay of Plenty beaches after the Rena
-grounding showed that not all the deaths were caused by the 350 tonnes
-of heavy fuel oil that leaked from the vessel. The team that handled
-more than 2000 oiled birds also found 64 unoiled flesh-footed
-shearwaters that were in good body condition, and found evidence that
-some had apparently been killed as a result of interactions with
-recreational fishers.
 
 The flesh-footed shearwater is included on the IUCN Red List of
 Threatened Species.
@@ -30,6 +23,7 @@ deaths were caused by trauma. This included broken wings, crushed
 skulls and stab wounds—presumably inflicted when birds were removed
 from fishing hooks after being pulled onboard,” says Alan Tennyson,
 Curator at Te Papa.
+
 Alan worked with the Massey University veterinary team and Maritime
 New Zealand in the aftermath of the oil spill.
 

@@ -4,7 +4,7 @@ title: Taiaroa Head colony perfect for albatross study
 
 The northern royal albatross colony at Taiaroa Head has been used to
 estimate the birds’ survival rates at different ages in a single
-model. The new estimate by Dragonfly Science updates the survival rate
+model. The new estimate by Dragonfly updates the survival rate
 calculation from 1993, which was based on re-sighting data from
 1937–1993.
 
@@ -24,7 +24,7 @@ Since then, a number of things have changed – climate and marine
 conditions, population size and the distribution of fishing effort –
 and better analysis methods are available.
 
-Yvan Richard, who carried out the analysis, estimated the number of
+Yvan, who carried out the analysis, estimated the number of
 juveniles, pre-breeders and breeding pairs in each age range and
 calculated the ratio of the number of breeding pairs and the number of
 adults, to the total population. This ratio is thought to be the only
@@ -35,13 +35,14 @@ rates agreed with previous estimates.
 beginning. Since 1938, when a few birds came over from the Chathams
 and started to breed there, every bird has been banded and monitored,
 which is unique given the seabirds’ usual habit of breeding in remote,
-inaccessible places.”
+inaccessible places,” he says.
 
 The colony is only 5% of the total population of northern royals, with
 the remainder breeding on small islands near the Chatham Islands. At
 Taiaroa Head, the colony is actively managed, mainly by providing
 intensive predator control and egg and chick fostering programmes. It
 is a popular tourist attraction and educational facility.
+
 Despite an excellent data set, Yvan says the analysis, using a single
 Bayesian multi-state capture-recapture model, was challenging.
 
