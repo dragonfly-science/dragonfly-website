@@ -4,7 +4,7 @@ banner-image: jewel-wing.png
 ---
 Dragonfly launched a new website in September, which incorporates its updated brand Dragonfly Data Science. 
 
-“Although we’ve been using the brand on our printed reports for a while already, this is the first time its been used on our website. We chose ‘data science’ because it’s a broad term that captures the whole range of what we do,” says Finlay Thompson.
+“Although we’ve been using the brand on our printed reports for a while already, this is the first time its been used on our website. We chose ‘data science’ because it’s a broad term that captures the whole range of what we do,” says Finlay.
 
 <!--more-->
 
