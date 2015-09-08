@@ -4,25 +4,23 @@ nocite: |
   @thompson_sealions_95-09
 ---
 
-Dragonfly Science estimated that around 78 sea lions were caught in
+Dragonfly estimated that around 78 sea lions were caught in
 New Zealand trawl fisheries in the 2008-09 fishing year. This was the
 lowest number of estimated captures since 2002-03.
 
-<!--more-->
-
-Dragonfly Science estimated that around 78 New Zealand sea lions were
-caught in trawl fisheries in the 2008-09 fishing year. This was the
-lowest number of estimated captures since 2002-03. The estimates,
+The estimates,
 based on observer reported captures, were made for trawls targeting
 squid, southern blue whiting and other species near Auckland Island,
 Campbell Island and the southern end of the Stewart-Snares shelf. The
 estimate includes sea lions that may have escaped from the net through
 sea lion exclusion devices.
 
+<!--more-->
+
 A total of six sea lion captures were reported by observers during the
 year, from fisheries around the Auckland Islands, where 85% of the
 animals breed. Smaller colonies are on Campbell Island, The Snares and
-New Zealand's South Island, near the Otago Peninsula.  The estimated
+New Zealand's South Island, near the Otago Peninsula. The estimated
 total interactions were derived from these observed captures.
 
 A recent population estimate suggests a total population around 12,000
@@ -36,10 +34,12 @@ since 1998.
 In 2001 a new bycatch mitigation method, the sea lion exclusion device
 (SLED), was introduced in the Auckland Islands squid fishery. The SLED
 is a grid fitted in the net before the cod end, and bars are spaced to
-prevent sea lions passing through. The grid is angled so that the sea
+prevent sea lions passing through. 
+
+The grid is angled so that the sea
 lions are directed upward towards a hole in the top of the net, where
 they can escape. Since 2004-05 almost all vessels operating in this
-fishery have used SLEDs.  While there have been fewer captures since
+fishery have used SLEDs. While there have been fewer captures since
 SLEDs were introduced, the survival of sea lions that escape the net
 through the SLED opening is not well documented.
 

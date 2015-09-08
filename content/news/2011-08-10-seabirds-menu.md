@@ -1,7 +1,7 @@
 ---
 title: Seabirds on the menu
 ---
-Dragonfly Science staff attended the New Zealand Marine Sciences
+Dragonfly staff attended the New Zealand Marine Sciences
 Society conference, held in Oban on Stewart Island from 5-8 July.
 
 Getting to the island entailed travelling through Bluff, one of the
@@ -9,14 +9,11 @@ few places where sooty shearwater pies may be bought for lunch.
 
 <!--more-->
 
-Dragonfly Science staff attended the [New Zealand Marine Sciences
-Society](http://nzmss.org) conference, held in Oban on Stewart Island
-from 5-8 July. The population of Stewart Island is only 360 in the
+The population of Stewart Island is only 360 in the
 winter, so the arrival of 150 scientists was noticeable around the
 township.
 
-Getting to the island entailed travelling through Bluff to catch a
-ferry. Muttonbirds (sooty shearwater or titi) are a local delicacy and
+Muttonbirds (sooty shearwater or titi) are a local delicacy and
 around 350,000 are customarily taken from their burrows each year,
 when the chicks are almost fledged. Sooty shearwaters are also caught
 in trawl fisheries, and their numbers are now in decline. The sign
@@ -26,12 +23,14 @@ threats that seabirds face.
 The conference was an intense three days of marine science. “It was
 also good to have a yarn with the local blue cod fishers in the pub,
 and they were keen to give us their views about things, including
-seabird interactions, commented Edward. "We went on a charter trip
+seabird interactions, commented Edward. 
+
+"We went on a charter trip
 with Squizzy, on the Lo Loma, and had a good crowd of mollymawks and
-albatrosses hanging around waiting for scraps"
+albatrosses hanging around waiting for scraps."
 
 “We also went over to Ulva Island, a pest-free bird sanctuary, and saw
-yellowheads, tree creepers and lots of weka on the beach,  says Yvan,
+yellowheads, tree creepers and lots of weka on the beach, says Yvan,
 Dragonfly's keenest birder.
 
 “Finlay and I went out looking for kiwi a couple of times.

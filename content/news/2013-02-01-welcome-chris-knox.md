@@ -2,11 +2,11 @@
 title: Doing our bit to reverse the brain drain
 ---
 
-Christopher Knox has recently joined the Dragonfly team as a
+Christopher Knox recently joined the Dragonfly team as a
 visualisation scientist. Originally from Christchurch, he spent 10
 years overseas, most recently in Saudi Arabia. 
 
-Although Christopher
+Although Chris
 and his wife were planning to return to New Zealand eventually, the
 offer of a job with Dragonfly was the catalyst they needed to make the
 move home.
@@ -48,7 +48,7 @@ weakness of visualisation is that it looks awesome! That can make it
 very easy to show people the wrong result – and when it’s up there in
 colour it becomes very believable.”
 
-Christopher also has a long-standing interest in using visualisation
+Chris also has a long-standing interest in using visualisation
 for field science. One of his goals is to help field scientists make
 better decisions in the field about what they are sampling, using
 visualisation and analysis.

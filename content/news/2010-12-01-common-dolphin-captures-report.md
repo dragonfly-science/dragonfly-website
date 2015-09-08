@@ -4,17 +4,11 @@ date: 2010-12-01
 ---
 Estimates of common dolphin bycatch in the the jack mackerel trawl
 fishery over a 13-year period were recently published by Dragonfly
-Science in a report based on data from 1995 to 2009. Common dolphins
+in a report based on data from 1995 to 2009. Common dolphins
 (*Delphinus delphis*) are the most frequently observed cetacean caught
 in New Zealand trawl fisheries.
 
 <!--more-->
-
-Estimates of common dolphin bycatch in the the jack mackerel trawl
-fishery over a 13-year period were recently published by Dragonfly
-Science in a report based on fisheries data from 1995 to 2009. Common
-dolphins (*Delphinus delphis*) are the most frequently observed
-cetacean caught in New Zealand trawl fisheries.
 
 Between the 1995–96 and 2008–09 fishing years, 108 common dolphin
 captures were reported by Ministry of Fisheries observers in the
@@ -27,7 +21,7 @@ from observers.
 a large increase in the estimated number of mortalities, which peaked
 at 182 dolphins in 2002–03. Since then, captures have decreased and in
 2008–09, the model estimated that 25 dolphins were killed”, said
-Finlay Thompson of Dragonfly.
+Finlay.
 
 The statistical modelling used the observer and associated fishing
 effort data to estimate dolphin captures across the bulk of the
