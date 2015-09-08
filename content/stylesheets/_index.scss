@@ -7,6 +7,12 @@
         font-weight: 200;
         font-size: 5em;
         margin: 0.5em 0;
+        @include media($transient) {
+            font-size: 3em;
+        }
+        @include media($transient) {
+            font-size: 4em;
+        }
     }
 }
 

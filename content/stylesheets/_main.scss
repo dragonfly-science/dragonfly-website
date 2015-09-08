@@ -31,6 +31,9 @@ main {
     margin-top: $base-line-height;
 }
 
+.side-margins {
+    @include side-margins;
+}
 
 .sidebar {
     @include span-columns(2 of 12);
