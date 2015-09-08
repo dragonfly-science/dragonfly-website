@@ -11,12 +11,6 @@ longline fisheries.
 
 <!--more-->
 
-In recent years, awareness of seabird bycatch in inshore fisheries has
-grown considerably. Reporting by government fisheries observers
-covers a small proportion of inshore fishing activity. However,
-coverage has been sufficient to identify potential issues with
-protected species bycatch, including seabirds, in setnet, trawl and
-longline fisheries.
 
 Department of Conservation and Ministry of Fisheries teams have been
 working with inshore fishers for the last few years, to develop
