@@ -1,6 +1,6 @@
 ---
 title: New Zealand sealion tag-resight data
-link: https://data.dragonfly.co.nz/nzsl-demographic/
+link: http://data.dragonfly.co.nz/nzsl-demographics/
 banner-image: /work/2014-10-01-seabird-risk/bullers.jpg
 ---
 

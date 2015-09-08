@@ -1,6 +1,6 @@
 ---
 title: Seabird counts around fishing-vessels
-link: https://data.dragonfly.co.nz/seabird-counts/
+link: http://data.dragonfly.co.nz/seabird-counts/
 banner-image: /work/2014-10-01-seabird-risk/bullers.jpg
 ---
 
