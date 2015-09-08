@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.index-top-header {
+.index-header {
     margin-top: 1em;
     text-align: center;
     h1 {
@@ -50,15 +50,20 @@ a.contact-button {
 }
 
 .caption {
+    position: absolute;
     text-align: left;
     font-size: 0.8em;
-    color: #AAAAAA;
-    margin-left: 0.5em;
-    margin-top: 0.2em;
+    color: white;
+    left: 0.5em;
+    bottom: 0.2em;
     line-height: normal; 
     a {
-        color: #AAAAAA;
+        color: white;
         text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 }
 
@@ -144,7 +149,6 @@ a.contact-button {
 }
 
 .index-section {
-    padding-bottom: 2em;
     clear: both;
 }
 
@@ -184,9 +188,8 @@ a.contact-button {
 .index-banner-text {
     padding-top: 1em;
     padding-bottom: 1em;
-    color: white;
-    background-color: #515785;
-    font-size: $font-size-h4;
+    color: $lighter-gray;
+    background-color: darken($wing-flash-blue, 20%);
 
     a {
         color: white;
@@ -195,3 +198,24 @@ a.contact-button {
 
 }
     
+.index-friendly {
+        margin-top: 1em;
+        margin-bottom: 3em;
+        @include span-columns(4 of 11);
+        @include shift(1 of 11);
+        @include omega(3n);
+}
+
+
+.index-friendly-porthole {
+    text-align: center;
+    
+    a img {
+        width: 60%;
+    }
+}
+
+.index-friendly-row {
+    @include row();
+}
+
