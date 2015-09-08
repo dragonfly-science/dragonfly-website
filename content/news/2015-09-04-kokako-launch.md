@@ -4,7 +4,7 @@ banner-image: /news/2015-09-04-kokako-launch/banner.jpg
 ---
 Dragonfly’s innovative technology to digitally monitor the proportion of Māori language broadcast on radio and television has been branded as Kōkako (*core-kar-coh*). 
 
-A rare New Zealand wattlebird, the kōkako has an evocative flute-like call, as its onomatopoeic Māori name suggests. Edward Abraham felt the sound quality of the word, as well as the bird’s uniqueness, was right for their successful world-first project. 
+A rare New Zealand wattlebird, the kōkako has an evocative flute-like call, as its onomatopoeic Māori name suggests. Edward felt the sound quality of the word, as well as the bird’s uniqueness, was right for their successful world-first project. 
 
 <!--more-->
 
