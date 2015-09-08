@@ -11,30 +11,26 @@
     </div>
     <div class="one-third">
       <div class="case-study-list">
-        <div class="case-study">
-          <a href="/work/2014-10-01-seabird-risk.html">
-            <div style="background-image: url('/work/2014-10-01-seabird-risk/teaser.jpg')" class="case-study-image">
+          $for(tag_stats)$ 
+            <div class="case-study">
+              <a href="$pageurl$">
+                <div style="background-image: url('$teaserImage$')" class="case-study-image">
+                </div>
+              </a>
+              <div class="case-study-description">
+                <a href="$pageurl$">
+                  <h4>$title$</h4>
+                  <p>$if(summary)$
+                    $summary$
+                  $else$
+                    $if(teaser)$ $teaser$ $endif$
+                  $endif$
+                  </p>
+                  <span><a href="$pageurl$" class="read-more">Read more</a></span>
+                </a>
+              </div>
             </div>
-          </a>
-          <div class="case-study-description">
-            <a href="/work/2014-10-01-seabird-risk.html">
-              <h4>Risk assessment</h4>
-              <p>An analysis of the risk posed to seabirds from the fishing industry. </p>
-            </a>
-          </div>
-        </div>
-        <div class="case-study">
-          <a href="/work/2015-09-04-technical-review-case-study.html">
-            <div style="background-image: url('/work/2015-09-04-technical-review-case-study/teaser.jpg')" class="case-study-image">
-            </div>
-          </a>
-          <div class="case-study-description">
-            <a href="/work/2015-09-04-technical-review-case-study.html">
-              <h4>Peer review</h4>
-              <p>A technical review of the statistical methods used in a koala population study. </p>
-            </a>
-          </div>
-        </div>
+          $endfor$
       </div>
     </div>
   </section>

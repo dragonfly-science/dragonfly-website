@@ -10,7 +10,7 @@ module WebSite.Collection (
 ) where
 
 import Data.List
-import Control.Monad (liftM)
+import Control.Monad (liftM, foldM)
 import Data.Monoid ((<>))
 import Data.Maybe (fromMaybe, maybeToList)
 import Control.Monad.Error.Class
@@ -18,6 +18,8 @@ import System.FilePath
 import Data.Time.Locale.Compat (defaultTimeLocale)
 import Data.Time.Clock (utctDay)
 import Data.Time.Calendar (toModifiedJulianDay)
+import qualified Data.Set as S
+import qualified Data.Map as M
 
 import Text.Pandoc
 
@@ -43,8 +45,9 @@ makeRules cc = do
         compile $ do 
             base <- baseContext (baseName cc)
             pages <- getList cc 1000
+            tagLists <- getTagLists cc 
             bubbles <- getBubbles cc Nothing
-            let  ctx = base <> pages <> bubbles
+            let  ctx = base <> pages <> bubbles <> tagLists
             scholmdCompiler 
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -72,14 +75,18 @@ makeRules cc = do
                 >>= imageCredits imageMeta
                 >>= relativizeUrls
 
+sortorder :: Identifier -> Compiler Integer
+sortorder i = do 
+    so <- getMetadataField i "sortorder" 
+    days <- (do utc <- getItemUTC defaultTimeLocale i
+                return (( negate . toModifiedJulianDay . utctDay) utc)
+            ) `catchError` (\_ -> return 666)
+    return (maybe days read so)
+    -- TODO: read will error if sortorder is not readable as integer
+
 getList :: CollectionConfig -> Int ->  Compiler (Context String)
 getList cc limit = do
     snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
-    let sortorder i = do so <- getMetadataField i "sortorder" 
-                         days <- (do utc <- getItemUTC defaultTimeLocale i
-                                     return (( negate . toModifiedJulianDay . utctDay) utc)
-                                  ) `catchError` (\_ -> return 666)
-                         return (maybe days read so)   -- TODO: read will error if sortorder is not readable as integer
     snaps' <- sortItemsBy sortorder snaps
     let l = length snaps'
         all = cycle snaps'
@@ -107,16 +114,44 @@ getBubbles cc mident = do
         next     = listField "bubbles_next" (pageIndexCtx lu)(return (take 3 $ drop 4 snaps''))
     return  $ previous <> this <> next
     
+getTagLists :: CollectionConfig -> Compiler (Context String)
+getTagLists cc = do
+    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
+
+    -- Get all the tags together, and find unique tags
+    let tags :: S.Set String -> Item String -> Compiler (S.Set String)
+        tags tagSet i = do
+            metadata <- getMetadata $ itemIdentifier i
+            let mtags = M.lookup "tags" metadata
+                ntags = S.fromList $ maybe [] (map trim . splitAll ",") mtags
+            return $ S.union tagSet ntags
+    uniquetags <- foldM tags S.empty snaps
+
+    -- foreach tag create a list of items with that tag
+    let hasTag tag i = do
+            metadata <- getMetadata i
+            let mtags = M.lookup "tags" metadata
+            return $ S.member tag $ S.fromList $ maybe [] (map trim . splitAll ",") mtags
+    let tagList ctx tag = do
+            snaps' <- filterItemsBy (hasTag tag) snaps
+            let ntags = listField ("tag_"++tag) itemCtx (sortItemsBy sortorder snaps')
+            return $ ctx <> ntags
+    foldM tagList mempty uniquetags
+
+
+itemCtx :: Context String
+itemCtx  = listContextWith "tags" tagContext
+        <> defaultContext 
+        <> teaserImage
+        <> portholeImage
+        <> teaserField "teaser" "content"
+        <> pageUrlField "pageurl"
+        <> dateField "published" "%B %d, %Y"
+
 
 type PreviousNextMap = [(Identifier, (Item String, Item String))]
 pageIndexCtx :: PreviousNextMap -> Context String
-pageIndexCtx lu  = listContextWith "tags" tagContext
-                <> defaultContext 
-                <> teaserImage
-                <> portholeImage
-                <> teaserField "teaser" "content"
-                <> pageUrlField "pageurl"
-                <> dateField "published" "%B %d, %Y"
+pageIndexCtx lu  = itemCtx 
                 <> previous lu
                 <> next lu
 
@@ -154,4 +189,11 @@ sortItemsBy f = sortByM $ f . itemIdentifier
   where
     sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
     sortByM f xs = map fst . sortOn snd <$> mapM (\x -> (x,) <$> f x) xs
+
+-- Filter items by a monadic filter function
+filterItemsBy :: Monad m => (Identifier -> m Bool) -> [Item a] -> m [Item a]
+filterItemsBy f = filterByM $ f . itemIdentifier
+  where
+    filterByM :: Monad m => (a -> m Bool) -> [a] -> m [a]
+    filterByM f xs = map fst . filter snd <$> mapM (\x -> (x,) <$> f x) xs
 
