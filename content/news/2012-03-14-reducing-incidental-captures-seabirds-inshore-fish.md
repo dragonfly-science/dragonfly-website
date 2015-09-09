@@ -1,6 +1,5 @@
 ---
 title: Reducing incidental captures of seabirds in inshore fisheries
-author: johanna
 ---
 
 In recent years, awareness of seabird bycatch in inshore fisheries has
@@ -27,8 +26,8 @@ larger vessels. Inshore vessels are smaller and have very different
 styles of operation. This means offshore measures can be difficult to
 transfer to inshore fleets.
 
-In February 2012, Ministry of Fisheries and Department of Conservation
-held expert workshops on inshore trawl and longline fisheries.  For
+In February 2012, the Ministry of Fisheries and the Department of Conservation
+held expert workshops on inshore trawl and longline fisheries. For
 trawl fisheries, the goal of the workshop was to develop a protocol
 for testing fisher-made bycatch reduction devices, to determine their
 efficacy in reducing seabird interactions with trawl warps. In
@@ -36,12 +35,9 @@ offshore fisheries, the same issues received attention about 6 years
 ago and are now managed using a combination of bycatch reduction
 devices and fish waste management.  
 
-(See our [Case
-Study](http://www.dragonfly.co.nz/warp-strike.html) on warp strike
-fatalities in offshore fisheries, and publications on managing trawler
-waste). For longline fisheries, variation in practice amongst inshore
+For longline fisheries, variation in practice among inshore
 vessels means that documentation of current operations is needed
-first.  Understanding operational patterns allows the development of
+first. Understanding operational patterns allows the development of
 seabird bycatch reduction measures that minimise disruption to fishing
 practices.
 
