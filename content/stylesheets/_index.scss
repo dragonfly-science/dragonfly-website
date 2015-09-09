@@ -205,8 +205,8 @@ a.contact-button {
 }
     
 .index-friendly {
-        margin-top: 1em;
-        margin-bottom: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
         @include span-columns(4 of 11);
         @include shift(1 of 11);
         @include omega(2n);
@@ -215,7 +215,11 @@ a.contact-button {
             @include span-columns(8 of 12);
             @include shift(2);
             @include omega();
-
+        }
+        p {
+            @include media($clinical-up){
+                min-height: 6em;
+            }
         }
 }
 
@@ -238,7 +242,7 @@ a.contact-button {
 }
 
 .hide-small {
-    @include media($transient) {
+    @include media($serendipity) {
         display: none;
     }
 }

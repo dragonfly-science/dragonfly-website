@@ -12,7 +12,6 @@
     @include clearfix;
     position: relative;
     @include side-margins;
-    margin-top: 1em;
     .case-study {
         .case-study-image {
             border-radius: 50%;
@@ -32,6 +31,7 @@
         @include span-columns(12 of 12);
         @include omega();
     }
+    margin-top: 2em;
     .case-study-image {
         margin-left: auto;
         margin-right: auto;
@@ -52,10 +52,6 @@
         margin-top: 1em;
         a {
             text-decoration: none;
-        }
-        h4 {
-            @include section_colour('color');
-            font-weight: 500;
         }
     }
 
