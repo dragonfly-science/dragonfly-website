@@ -100,44 +100,8 @@ cite {
   }
 }
 
-.lead p {
-  font-size: 1.25em;
-  font-weight: 400;
-}
-
-a.read-more, a .read-more {
-    @include section_colour('color');
-    text-decoration: none;
-    font-weight: 500;
-    white-space: nowrap;
-  
-    &:after {
-        content: ' \25b8';
-    }
-    
-    &:hover {
-        text-decoration: underline;
-    }
-
-    &:active, &:focus {
-        outline: none;
-        text-decoration: underline;
-    }
-}
-
-.highlight {
-    @include section_colour('color');
-    font-weight: 500;  
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-
-    &:active, &:focus {
-        outline: none;
-        text-decoration: underline;
-    }
-
+.lead {
+  font-size: $font-size-h3;
 }
 
 .highlight-weight {
@@ -152,4 +116,19 @@ a.read-more, a .read-more {
         text-decoration: underline;
     }
 }
+
+.highlight {
+    @extend .highlight-weight;
+    @include section_colour('color');
+}
+
+a.read-more, a .read-more {
+    @extend .highlight;
+
+    &:after {
+        content: ' \25b8';
+    }
+    
+}
+
 
