@@ -1,16 +1,14 @@
 <div class="container">
   <a class="anchor" id="stats"></a>
-  <section class="promo-block">
-    <div class="statement">
-      <h2 class="highlight">
-        We use statistical analysis.
-      </h2>
+    <div class="statement wide">
+      <h1>
+        We use statistical analysis
+      </h1>
       <p>
         Our speciality is modern Bayesian methods, which allow uncertainty to be carried all the way through from analysis to decision making. 
       </p>
     </div>
-    <div class="one-third">
-      <div class="case-study-list">
+      <div class="case-study-list wide">
           $for(tag_stats)$ 
             <div class="case-study">
               <a href="$pageurl$">
@@ -19,27 +17,24 @@
               </a>
               <div class="case-study-description">
                 <a href="$pageurl$">
-                  <h4>$title$</h4>
+                  <h4 class="highlight">$title$</h4>
                   <p>$if(summary)$
                     $summary$
                   $else$
                     $if(teaser)$ $teaser$ $endif$
                   $endif$
-                  </p>
                   <span><a href="$pageurl$" class="read-more">Read more</a></span>
+                  </p>
                 </a>
               </div>
             </div>
           $endfor$
       </div>
-    </div>
-  </section>
   <a class="anchor" id="systems"></a>
-  <section class="promo-block">
-    <div class="statement">
-      <h2 class="highlight">
-        We build systems for data.
-      </h2>
+    <div class="statement wide">
+      <h1>
+        We build systems for data
+      </h1>
       <p>
         We build custom systems to allow organisations to get ongoing value from their data.
       </p>
@@ -47,65 +42,70 @@
         Our statistical work is supported by excellent technical database and software development skills.
       </p>
     </div>
-    <div class="one-third">
-      <div class="case-study-list">
-        <div class="case-study">
-          <a href="/work/2015-02-10-INZ-case-study.html">
-            <div style="background-image: url('/work/2015-02-10-INZ-case-study/teaser.jpg')" class="case-study-image">
+      <div class="case-study-list wide">
+          $for(tag_systems)$ 
+            <div class="case-study">
+              <a href="$pageurl$">
+                <div style="background-image: url('$teaserImage$')" class="case-study-image">
+                </div>
+              </a>
+              <div class="case-study-description">
+                <a href="$pageurl$">
+                  <h4 class="highlight">$title$</h4>
+                  <p>$if(summary)$
+                    $summary$
+                  $else$
+                    $if(teaser)$ $teaser$ $endif$
+                  $endif$
+                  <span><a href="$pageurl$" class="read-more">Read more</a></span>
+                  </p>
+                </a>
+              </div>
             </div>
-          </a>
-          <div class="case-study-description">
-            <a href="/work/2015-02-10-INZ-case-study.html">
-              <h4>Smart sorting</h4>
-              <p>A tuneable prediction service for faster visitor visa processing.</p>
-            </a>
-          </div>
-        </div>
-        <div class="case-study">
-          <a href="/work/2015-03-02-paua-logger-case-study.html">
-            <div style="background-image: url('/work/2015-03-02-paua-logger-case-study/teaser.jpg')" class="case-study-image">
-            </div>
-          </a>
-          <div class="case-study-description">
-            <a href="/work/2015-03-02-paua-logger-case-study.html">
-              <h4>Sustainable fisheries</h4>
-              <p>A seamless system to upload, process, and display daily pāua catch data. </p>
-            </a>
-          </div>
-        </div>
-        <div class="case-study">
-          <a href="/work/2015-03-25-TMP-case-study.html">
-            <div style="background-image: url('/work/2015-03-25-TMP-case-study/teaser.jpg')" class="case-study-image">
-            </div>
-          </a>
-          <div class="case-study-description">
-            <a href="/work/2015-03-25-TMP-case-study.html">
-              <h4>Language recognition</h4>
-              <p>A world-first method to track the use of te reo Māori on air.</p>
-            </a>
-          </div>
-        </div>
-        <div class="case-study">
-          <a href="/work/2015-03-19-webrear-case-study.html">
-            <div style="background-image: url('/work/2015-03-19-webrear-case-study/teaser.jpg')" class="case-study-image">
-            </div>
-          </a>
-          <div class="case-study-description">
-            <a href="/work/2015-03-19-webrear-case-study.html">
-              <h4>Regional data visualisation</h4>
-              <p>An intuitive website and iPad app to explore New Zealand's economic results.</p>
-            </a>
-          </div>
-        </div>
+          $endfor$
       </div>
+
+
+  <a class="anchor" id="policy"></a>
+    <div class="statement wide">
+      <h1>
+        We enable evidence based policy 
+      </h1>
+      <p>
+        Good research and analysis builds consensus between stakeholders, and enables the development of policy that makes best use of available information.
+      </p>
     </div>
-  </section>
-  <a class="anchor" id="capability"></a>
-  <section class="promo-block">
-    <div class="statement">
-      <h2 class="highlight">
-        We improve data science capability.
-      </h2>
+
+      <div class="case-study-list wide">
+          $for(tag_policy)$ 
+            <div class="case-study">
+              <a href="$pageurl$">
+                <div style="background-image: url('$teaserImage$')" class="case-study-image">
+                </div>
+              </a>
+              <div class="case-study-description">
+                <a href="$pageurl$">
+                  <h4 class="highlight">$title$</h4>
+                  <p>$if(summary)$
+                    $summary$
+                  $else$
+                    $if(teaser)$ $teaser$ $endif$
+                  $endif$
+                  <span><a href="$pageurl$" class="read-more">Read more</a></span>
+                  </p>
+                </a>
+              </div>
+            </div>
+          $endfor$
+      </div>
+
+
+
+<a class="anchor" id="capability"></a>
+    <div class="statement  wide">
+      <h1>
+        We improve data science capability
+      </h1>
       <p>
         We work openly with clients and transfer our skills to the teams we work with. 
       </p>
@@ -113,105 +113,28 @@
         We help teams to develop efficient processes for carrying out high quality, reliable analysis.
       </p>
     </div>
-    <div class="one-third">
-      <div class="case-study-list">
-        <div class="case-study">
-          <a href="/work/2015-09-04-technical-review-case-study.html">
-            <div style="background-image: url('/work/2015-09-04-technical-review-case-study/teaser.jpg')" class="case-study-image">
+      <div class="case-study-list wide">
+          $for(tag_capability)$ 
+            <div class="case-study">
+              <a href="$pageurl$">
+                <div style="background-image: url('$teaserImage$')" class="case-study-image">
+                </div>
+              </a>
+              <div class="case-study-description">
+                <a href="$pageurl$">
+                  <h4 class="highlight">$title$</h4>
+                  <p>$if(summary)$
+                    $summary$
+                  $else$
+                    $if(teaser)$ $teaser$ $endif$
+                  $endif$
+                  <span><a href="$pageurl$" class="read-more">Read more</a></span>
+                  </p>
+                </a>
+              </div>
             </div>
-          </a>
-          <div class="case-study-description">
-            <a href="/work/2015-09-04-technical-review-case-study.html">
-              <h4>Peer review</h4>
-              <p>A technical review of the statistical methods used in a koala population study. </p>
-            </a>
-          </div>
-        </div>
-        <div class="case-study">
-          <a href="/work/2015-03-25-reporting-case-study.html">
-            <div style="background-image: url('/work/2015-03-25-reporting-case-study/teaser.jpg')" class="case-study-image">
-            </div>
-          </a>
-          <div class="case-study-description">
-            <a href="/work/2015-03-25-reporting-case-study.html">
-              <h4>Repeatable reporting</h4>
-              <p>A templated programme to efficiently produce data-rich reports.</p>
-            </a>
-          </div>
-        </div>
+          $endfor$
       </div>
-    </div>
-  </section>
-  <a class="anchor" id="policy"></a>
-  <section class="promo-block">
-    <div class="statement">
-      <h2 class="highlight">
-        We enable evidence based policy. 
-      </h2>
-      <p>
-        Good research and analysis builds consensus between stakeholders, and enables the development of policy that makes best use of available information.
-      </p>
-    </div>
-    <div class="one-third">
-      <div class="case-study-list">
-      <div class="case-study">
-        <a href="/work/2014-10-01-warp-strike.html">
-          <div style="background-image: url('/work/2014-10-01-warp-strike/teaser.jpg')" class="case-study-image">
-          </div>
-        </a>
-        <div class="case-study-description">
-          <a href="/work/2014-10-01-warp-strike.html">
-            <h4>Reducing albatross fatalities in trawl fisheries</h4>
-            <p>An objective search for the best device to reduce albatross fatalities. </p>
-          </a>
-        </div>
-      </div>
-      <div class="case-study">
-        <a href="/work/2015-09-04-technical-review-case-study.html">
-          <div style="background-image: url('/work/2015-09-04-technical-review-case-study/teaser.jpg')" class="case-study-image">
-          </div>
-        </a>
-        <div class="case-study-description">
-          <a href="/work/2015-09-04-technical-review-case-study.html">
-            <h4>Peer review</h4>
-            <p>A technical review of the statistical methods used in a koala population study. </p>
-          </a>
-        </div>
-      </div>
-      <div class="case-study">
-        <a href="/work/2014-10-01-seabird-risk.html">
-          <div style="background-image: url('/work/2014-10-01-seabird-risk/teaser.jpg')" class="case-study-image">
-          </div>
-        </a>
-        <div class="case-study-description">
-          <a href="/work/2014-10-01-seabird-risk.html">
-            <h4>Risk assessment</h4>
-            <p>An analysis of the risk posed to seabirds from the fishing industry. </p>
-          </a>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
-<!--   <div class="case-study-list">
-    $for(work)$
-      <div class="case-study">
-        <a href="$pageurl$">
-          <div style="background-image: url('$teaserImage$')" class="case-study-image">
-          </div>
-        </a>
-        <div class="case-study-description">
-          <a href="$pageurl$">
-            <h4>$title$</h4>
-          </a>
-          $if(summary)$
-            $summary$
-          $else$
-            $if(teaser)$ $teaser$ $endif$
-          $endif$
-          <span><a href="$pageurl$" class="read-more">Read more</a></span>
-        </div>
-      </div>
-    $endfor$
-  </div> -->
+  
+  
 </div>

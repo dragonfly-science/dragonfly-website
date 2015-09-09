@@ -2,7 +2,7 @@
 title: Sustainable fisheries
 banner-image: /work/2015-03-02-paua-logger-case-study/dave-and-jules.jpg
 summary: A seamless system to upload, process, and display daily pāua catch data. 
-tags: systems
+tags: stats
 quote: Dragonfly has been absolutely awesome – we’re rapt.
 quote-attribution: Jeremy Cooper, CEO, Pāua Industry Council
 logo: /work/2015-03-02-paua-logger-case-study/pic-logo.png
@@ -51,5 +51,6 @@ the state of the fishery will help ensure the sustainability of the fishery.
 <cite>Jeremy Cooper<br />
 CEO<br />
 Pāua Industry Council.</cite>
+
 
 
