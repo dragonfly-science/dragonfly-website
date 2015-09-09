@@ -9,21 +9,20 @@
     </div>
   $endif$
 </div>
-
 <div class="container post-detail">
- $if(title)$
-    <div class="heading">
+  $if(title)$
+    <div class="heading wide">
       <h1>$title$</h1>
     </div>
- $endif$
-$if(logo)$
+  $endif$
   <div class="sidebar">
-    <div class="post-info">
-      <img src="$logo$">
-    </div>
+    $if(logo)$
+      <div class="post-info">
+        <img src="$logo$">
+      </div>
+    $endif$
   </div>
-$endif$
-  <div class="content">
+  <div class="content post-body">
     $body$
   </div>
 </div>

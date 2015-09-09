@@ -1,22 +1,20 @@
 <div class="hero" id="hero-$tag$"> 
-  <img src="$banner$" width="100%"/>  <!-- TODO: put banner back here" -->
+  <img src="$banner$" width="100%"/>
 </div>
 <div class="container post-detail">
-  <div class="wide post-info">
+  <div class="heading wide">
     <h1 id="title-$tag$">$title$</h1>
-    $if(email)$
-    <p>Email <a href="mailto:$email$">$email$</a><p>
-    $endif$
-    
-    $if(phone)$
-    <p>Call $firstname$ on <a href="tel:$phone$">$phone$</a><p>
-    $endif$
+    <div class="details">
+      $if(email)$
+        <p>Email <a href="mailto:$email$">$email$</a><p>
+      $endif$
+      $if(phone)$
+        <p>Call $firstname$ on <a href="tel:$phone$">$phone$</a><p>
+      $endif$
+    </div>
   </div>
-  <div class="sidebar"></div>
-  <div class="content" id="content-$tag$">
-    
+  <div class="wide post-body" id="content-$tag$">
     $body$
-
   </div>
 </div>
 $partial("templates/bubble-navigation.html")$

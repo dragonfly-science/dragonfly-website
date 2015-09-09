@@ -7,21 +7,21 @@
     </div>
     <div class="explanation">
       <p>
-        Dragonfly brings together talented specialists who have excelled in their fields. Our technical skills
-        include statistical analysis, database design and administration, data visualisation, and 
-        software development. 
+        Dragonfly brings together talented specialists who have excelled in their fields. Our technical skills include statistical analysis, database design and administration, data visualisation, and software development. 
       </p>
     </div>
   </section>
   <a class="anchor" id="staff"></a>
   <div class="porthole-grid wide">
     $for(people)$
-    <div class="porthole">
-      <a href="$pageurl$"><img src="$portholeImage$" /></a>
-      <h4><a href="$pageurl$">$title$</a></h4>
-      $teaser$
-      <a href="$pageurl$" class="read-more">Read more</a>
-    </div>
+      <div class="porthole">
+        <a href="$pageurl$">
+          <img src="$portholeImage$" />
+        </a>
+        <h4><a href="$pageurl$">$title$</a></h4>
+        $teaser$
+        <a href="$pageurl$" class="read-more">Read more</a>
+      </div>
     $endfor$
   </div>
 </div>

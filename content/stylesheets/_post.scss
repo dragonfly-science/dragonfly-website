@@ -46,18 +46,14 @@
 $post-highlight-color: #808080;
 $post-info-top-padding: 1em;
 $wrap-images-width: em(950);
-
     .heading {
-        /*border-bottom: 3px solid;*/
-        /*@include section_colour('border-color');*/
         margin-top: 2em;
-        margin-bottom: 0.5em;
+        margin-bottom: 2em;
         .details {
             text-align: right;
             color: $medium-gray;
         }
     }
-
     .post-info {
         color: $post-highlight-color;
         text-align: right;
@@ -69,12 +65,7 @@ $wrap-images-width: em(950);
             }
         }
     }
-
-    .details-sidebar {
-        @extend .right-coloured-border;
-        @include media($transient) {
-            border: none;
-        }
+    .sidebar {
         .download a {
             @include section_colour('color');
             font-weight: 500;
@@ -83,19 +74,15 @@ $wrap-images-width: em(950);
             }
         }
     }
-
     a {
         color: $post-highlight-color;
     }
-
-    div.content > p:nth-child(1) {
+    div.post-body > p:nth-child(1) {
         font-weight: 500;
         font-size: $base-font-size * 1.125;
         line-height: 1.2em;
     }
-
-    .content {
-
+    .post-body {
         figure {
             @media screen and (min-width: $wrap-images-width) {
                 width: 50%;
