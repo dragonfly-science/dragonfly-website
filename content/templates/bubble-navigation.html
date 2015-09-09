@@ -1,15 +1,15 @@
 <div class="bubble-navigation" data-section="$section$">
   <div class="container">
     <ul>
-        $for(bubbles_prev)$
-        <li><a href="$pageurl$"><div class="bubble" style="background-image: url($teaserImage$)"><p>$title$</p></div></a></li>    
-        $endfor$
-        $for(bubbles_this)$
-        <li><a href="$pageurl$"><div class="bubble" style="background-image: url($teaserImage$)"><p>$title$</p></div></a></li>    
-        $endfor$
-        $for(bubbles_next)$
-        <li><a href="$pageurl$"><div class="bubble" style="background-image: url($teaserImage$)"><p>$title$</p></div></a></li>    
-        $endfor$
+      $for(bubbles_prev)$
+        $partial("templates/bubble.html")$
+      $endfor$
+      $for(bubbles_this)$
+        $partial("templates/bubble.html")$
+      $endfor$
+      $for(bubbles_next)$
+        $partial("templates/bubble.html")$
+      $endfor$
     </ul>
   </div>
 </div>

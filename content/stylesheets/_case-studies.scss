@@ -11,7 +11,6 @@
     }
     @include clearfix;
     position: relative;
-    @include side-margins;
     .case-study {
         .case-study-image {
             border-radius: 50%;
