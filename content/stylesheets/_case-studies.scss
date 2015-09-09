@@ -1,5 +1,17 @@
 .case-study-list {
-    justify-content: center;
+    @include span-columns(12 of 12);
+    @include shift(0);
+    @include media($serendipity) {
+      @include span-columns(8 of 12);
+      @include shift(2);
+    }
+    @include media($clinical) {
+      @include span-columns(12 of 12);
+      @include shift(0);
+    }
+    @include clearfix;
+    position: relative;
+    @include side-margins;
     margin-top: 1em;
     .case-study {
         .case-study-image {
@@ -10,13 +22,30 @@
 
 .case-study {
     @include span-columns(3 of 12);
-    @include media($clinical-up) {
-            @include omega(4n);
+    @include omega(4n);
+    @include pad(0 0 0 6%);
+    @include media($serendipity) {
+        @include span-columns(6 of 12);
+        @include omega(2n);
     }
-    padding: 0.5em;
+    @include media($transient) {
+        @include span-columns(12 of 12);
+        @include omega();
+    }
     .case-study-image {
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
         padding-top: 100%;
+        @include media($serendipity) {
+            width: 80%;
+            padding-top: 80%;
+        }
+
+        @include media($transient) {
+            width: 60%;
+            padding-top: 60%;
+        }
         background-size: cover;
     }
     .case-study-description {
