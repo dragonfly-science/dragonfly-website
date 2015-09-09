@@ -93,6 +93,15 @@ content that is not full width should be inside a container block. Typical page
 content is inside a content block. The default template includes everything outside
 the main block. Page templates should include container and content blocks as appropriate.
 
+### Adding news posts
 
+- `teaser.jpg` - ideally a square image at 500x500px
+- banner - link this in the `banner-image` section of the front matter
 
+### Adding case studies
 
+Mandatory fields:
+- `title`
+- `banner-image`
+- `teaser.jpg` - ideally a square image at 500x500px
+- Note that all images must be must be a .png or .jpg

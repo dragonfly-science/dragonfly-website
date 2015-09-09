@@ -2,26 +2,33 @@ $if(banner-image)$
   <div class="post-banner-image" style='background-image: url("$banner-image$")'>
   </div>
 $endif$
-
 <div class="container post-detail">
-  <div class="heading">
+  <div class="heading wide">
    $if(title)$
     <h1>$title$</h1>
    $endif$
    <div class="details">
-     $if(date)$<p>$date$</p>$endif$
-     $if(author)$<p>$author$</p>$endif$
-   </div>
+    $if(date)$
+      <p>$date$</p>
+    $endif$
+    $if(author)$
+      <p>$author$</p>
+    $endif$
+    </div>
   </div>
- <div class="sidebar">
-  <div class="post-info">
   $if(logo)$
-    <img src="$logo$">
+    <div class="sidebar">
+      <div class="post-info">
+          <img src="$logo$">
+      </div>
+    </div>
+    <div class="content post-body">
+      $body$
+    </div>
+  $else$
+    <div class="wide post-body">
+      $body$
+    </div>
   $endif$
-  </div>
-  </div>
-  <div class="content">
-    $body$
-  </div>
 </div>
 $partial("templates/bubble-navigation.html")$

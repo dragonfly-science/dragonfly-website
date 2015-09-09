@@ -1,6 +1,6 @@
 ---
 title: Christopher Knox, PhD
-email: chris@dragonfly
+email: chris@dragonfly.co.nz
 firstname: Christopher
 lastname: Knox
 phone: +64 22 341 5679
