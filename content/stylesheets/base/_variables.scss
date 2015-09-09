@@ -20,8 +20,6 @@ $content-margin-transient: 12px;
 
 @mixin side-margins() {
     /* margins for full width are generally managed via the grid settings ... */
-    padding-left: $content-margin;
-    padding-right: $content-margin;
     @include media($clinical) {
         padding-left: $content-margin-clinical;
         padding-right: $content-margin-clinical;
@@ -34,7 +32,7 @@ $content-margin-transient: 12px;
 
 
 @mixin content-left-padding {
-    padding-left: $content-margin;
+        padding-left: $content-margin;
     @include media($clinical) {
         padding-left: $content-margin-clinical;
     }
