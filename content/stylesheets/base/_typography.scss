@@ -128,9 +128,28 @@ a.read-more, a .read-more {
 .highlight {
     @include section_colour('color');
     font-weight: 500;  
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active, &:focus {
+        outline: none;
+        text-decoration: underline;
+    }
+
 }
 
 .highlight-weight {
     font-weight: 500;  
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active, &:focus {
+        outline: none;
+        text-decoration: underline;
+    }
 }
 
