@@ -21,7 +21,7 @@
 
 .case-study {
     @include span-columns(3 of 12);
-    @include omega(4n);
+    @include omega();
     @include pad(0 0 0 6%);
     @include media($serendipity) {
         @include span-columns(6 of 12);
