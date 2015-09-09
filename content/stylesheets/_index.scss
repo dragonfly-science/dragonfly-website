@@ -209,7 +209,14 @@ a.contact-button {
         margin-bottom: 3em;
         @include span-columns(4 of 11);
         @include shift(1 of 11);
-        @include omega(3n);
+        @include omega(2n);
+
+        @include media($clinical){
+            @include span-columns(8 of 12);
+            @include shift(2);
+            @include omega();
+
+        }
 }
 
 
@@ -223,5 +230,16 @@ a.contact-button {
 
 .index-friendly-row {
     @include row();
+}
+
+
+.section-break {
+    margin-bottom: 6em;
+}
+
+.hide-small {
+    @include media($transient) {
+        display: none;
+    }
 }
 

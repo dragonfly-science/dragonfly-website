@@ -58,6 +58,10 @@
             font-weight: 500;
         }
     }
+
+    h3 {
+        min-height: 5em;
+    }
 }
 
 .services-list {
@@ -66,7 +70,6 @@
     .case-study {
         h3 {
             /*font-weight: 800;*/
-            margin-bottom: 2em;
             padding-bottom: 0.5em;
             /*@include section_colour('border-color');*/
             /*border-bottom: 5px solid;*/
