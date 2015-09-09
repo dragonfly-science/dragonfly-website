@@ -1,6 +1,5 @@
 ---
 title: Seabird estimation report published
-author: edward
 ---
 
 A recent Aquatic Environment and Biodiversity Report estimates the
