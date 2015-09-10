@@ -140,8 +140,16 @@ a.contact-button {
 .index-banner-image {
     background-size: cover;
     position: relative;
-    min-height: 50vw;
-    
+    min-height: $max-width/3;
+    @include media($serendipity){
+        min-height: $large-screen/3;
+    }
+    @include media($clinical){
+        min-height: $medium-screen/3;
+    }
+    @include media($transient){
+        min-height: $small-screen/2;
+    }
     h1, h2, h3, a {
         color: white;
     }
