@@ -47,14 +47,6 @@ a.contact-button {
     }
 }
 
-.dark-screen {
-    opacity: 0.7;
-}
-
-.medium-screen {
-    opacity: 0.5;
-}
-
 .caption {
     position: absolute;
     text-align: left;
@@ -144,40 +136,16 @@ a.contact-button {
             font-weight: normal;
         }
     }
-    
     .exit {
         text-align: right;
     }
     a {
         color: white;
     }
-
 }
 
 .index-section {
     clear: both;
-}
-
-.index-link {
-    display: inline-block;
-    float: right;
-    border-bottom: 5px solid $medium-gray;
-    padding: 1em;
-    margin: 0 auto;
-    text-decoration: none;
-    font-weight: 700;
-    margin-bottom: 1em;
-    &:hover {
-        text-decoration: none;
-    }
-    &:after {
-        content: "▶";
-        padding-left: 1em;
-        @include section_colour('color');
-    }
-    span {
-    }
-    @extend .bottom-coloured-border;
 }
 
 .index-banner-image {

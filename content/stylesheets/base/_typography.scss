@@ -89,6 +89,7 @@ blockquote {
   color: lighten($base-font-color, 15);
   margin: $base-line-height 0;
   padding-left: $base-line-height / 2;
+  @include section_colour('border-color');
 }
 
 cite {
