@@ -3,7 +3,6 @@ $porthole-image-size: em(150);
 $porthole-image-size-small: em(100);
 $porthole-title-padding-bottom: 0.35em;
 $porthole-title-padding-top: em(20);
-$porthole-text-size: 0.9em;
 
 @mixin grid_item($columns) {
     $span_columns: floor(12 / $columns);
@@ -58,7 +57,7 @@ $porthole-text-size: 0.9em;
             @extend .highlight;
         }
         p {
-            font-size: $porthole-text-size;
+            text-align: left;
         }
         @include media($clinical) {
             @include span-columns(4 of 8);

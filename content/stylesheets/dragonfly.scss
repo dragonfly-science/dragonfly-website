@@ -13,7 +13,6 @@
 @import "biblio";
 @import "bubble-navigation";
 @import "refills";
-@import "promo-block";
 @import "case-studies";
 
 p {
@@ -33,12 +32,6 @@ div.page-title {
             display: none;
         }
 
-    }
-}
-
-.hide-heading {
-    h1 {
-        display: none;
     }
 }
 

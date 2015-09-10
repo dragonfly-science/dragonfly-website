@@ -75,9 +75,7 @@ $wrap-images-width: em(950);
         color: $post-highlight-color;
     }
     div.post-body > p:nth-child(1) {
-        font-weight: 500;
-        font-size: $base-font-size * 1.125;
-        line-height: 1.2em;
+        font-size: $font-size-h3;
     }
     .post-body {
         figure {
