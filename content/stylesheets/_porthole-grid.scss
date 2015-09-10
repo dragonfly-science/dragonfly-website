@@ -50,13 +50,12 @@ $porthole-text-size: 0.9em;
             height: $porthole-image-size;
         }
         h4 {
-            @include section_colour('color');
+            @extend .highlight;
             padding-bottom: $porthole-title-padding-bottom;
             padding-top: $porthole-title-padding-top;
         }
         h4 a {
-            @include section_colour('color');
-            font-weight: 500;
+            @extend .highlight;
         }
         p {
             font-size: $porthole-text-size;
