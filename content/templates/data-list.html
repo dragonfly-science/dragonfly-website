@@ -1,33 +1,34 @@
 <div class="container">
-  <section class="promo-block">
-    <div class="statement">
-      <h2>
-        We choose to <span class="highlight">open up data</span> whenever we can.
-      </h2>
-    </div>
-    <div class="explanation">
-      <p>
-        By creating a friendly and intuitive interface with online datasets, we help people find the facts they're looking for as easily and as quickly as possible.  
-      </p>
-    </div>
-  </section>
-</section>
-  <div class="post-list">
-    $for(data)$
-      <div class="post-wrapper">
-      <div class="post">
-          <div class="post-image">
-            <a href="$link$"><div class="post-porthole" style="background-image: url('$teaserImage$')">
-            </div></a>
-          </div>
-          <div class="post-teaser">
-            <h4><a href="$link$">$title$</a></h4>
-            <p class="subheading">$if(published)$ $published$ $endif$ $if(author)$ . $author$ $endif$ </p>
-            $if(teaser)$ $teaser$ $endif$
-            <span><a href="$link$" class="read-more">Explore the data</a></span>
-          </div>
+  <div class="wide">
+    <section class="promo-block">
+      <div class="statement">
+        <h2>
+          We choose to <span class="highlight">open up data</span> whenever we can.
+        </h2>
       </div>
+      <div class="explanation">
+        <p>
+          By creating a friendly and intuitive interface with online datasets, we help people find the facts they're looking for as easily and as quickly as possible.  
+        </p>
       </div>
-    $endfor$
+    </section>
+    <div class="post-list">
+      $for(data)$
+        <div class="post-wrapper">
+        <div class="post">
+            <div class="post-image">
+              <a href="$link$"><div class="post-porthole" style="background-image: url('$teaserImage$')">
+              </div></a>
+            </div>
+            <div class="post-teaser">
+              <h4><a href="$link$">$title$</a></h4>
+              <p class="subheading">$if(published)$ $published$ $endif$ $if(author)$ . $author$ $endif$ </p>
+              $if(teaser)$ $teaser$ $endif$
+              <span><a href="$link$" class="read-more">Explore the data</a></span>
+            </div>
+        </div>
+        </div>
+      $endfor$
+    </div>
   </div>
 </div>
