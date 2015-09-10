@@ -105,32 +105,25 @@ cite {
   font-size: $font-size-h3;
 }
 
-.highlight-weight {
+.highlight {
     font-weight: 500;  
     text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
-
-    &:active, &:focus {
-        outline: none;
-        text-decoration: underline;
-    }
-}
-
-.highlight {
-    @extend .highlight-weight;
     @include section_colour('color');
+    a &, &a {
+      &:hover {
+          text-decoration: underline;
+      }
+      &:active, &:focus {
+          outline: none;
+          text-decoration: underline;
+      }
+    }
 }
 
 a.read-more, a .read-more {
     @extend .highlight;
     white-space: nowrap;
-
     &:after {
         content: ' \25b8';
     }
-    
 }
-
-
