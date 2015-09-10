@@ -5,72 +5,76 @@ $porthole-title-padding-bottom: 0.35em;
 $porthole-title-padding-top: em(20);
 $porthole-text-size: 0.9em;
 
-.values {
-    @include span-columns(4);
-    h2 {
-        color: $people-green;
+@mixin grid_item($columns) {
+    $span_columns: floor(12 / $columns);
+    @include span-columns($span_columns);
+    @include media($clinical-up) {
+        @include omega(#{$columns}n);
+    }
+    @include media($clinical) {
+        @include span-columns(4 of 8);
+        @include omega(2n);
+    }
+    @include media($transient) {
+        @include span-columns(2);
+        @include omega(2n);
     }
 }
-
 
 .porthole-grid {
     @include media($transient) {
         width: 100%;
     }
-
+    &.two-columns .porthole {
+        @include grid_item(2);
+    }
+    &.three-columns .porthole {
+        @include grid_item(3);
+    }
+    &.four-columns .porthole {
+        @include grid_item(4);
+    }
+    &.six-columns .porthole {
+        @include grid_item(6);
+    }
     .porthole {
-        @include span-columns(4);
-        @include media($clinical-up) {
-            @include omega(3n);
-        }
         margin-top: 2em;
         margin-bottom: 1em;
         text-align: center;
-
+        a {
+            text-decoration: none;
+        }
         img {
             border-radius: 50%;
             width: $porthole-image-size;
             height: $porthole-image-size;
         }
-
         h4 {
-            color: $people-green;
+            @include section_colour('color');
             padding-bottom: $porthole-title-padding-bottom;
             padding-top: $porthole-title-padding-top;
         }
-
         h4 a {
-            color: $people-green;
+            @include section_colour('color');
             font-weight: 500;
         }
         p {
             font-size: $porthole-text-size;
         }
-
         @include media($clinical) {
             @include span-columns(4 of 8);
             @include omega(2n);
-            .read-more {
-                display: none;
-            }
         }
-
         @include media($transient) {
             @include span-columns(2);
             @include omega(2n);
             margin-top: $porthole-top-margin-small;
-
             img {
                 width: $porthole-image-size-small;
                 height: $porthole-image-size-small;
             }
-
             h4 {
                 letter-spacing: em(1);
-            }
-            p,
-            a.read-more {
-                display: none;
             }
         }
     }

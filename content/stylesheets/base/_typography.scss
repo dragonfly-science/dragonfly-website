@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: $base-heading-color;
 
-  a {
+  a, a & {
       text-decoration: none;
   }
 }
@@ -125,6 +125,7 @@ cite {
 
 a.read-more, a .read-more {
     @extend .highlight;
+    white-space: nowrap;
 
     &:after {
         content: ' \25b8';
