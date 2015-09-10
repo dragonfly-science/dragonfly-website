@@ -11,8 +11,7 @@ $post-image-size-small: em(100);
     .post-wrapper {
         border-bottom: solid 1px #E7E7E7;
         overflow: hidden;
-        padding-bottom: 1em;
-        margin-bottom: 1em;
+        padding: 1.5em 0;
         @include media($transient) {
             /* this gives full width underlines ... */
             margin-left: -$content-margin-transient;
