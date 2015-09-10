@@ -120,6 +120,11 @@ cite {
     }
 }
 
+.fat-highlight {
+  @extend .highlight;
+  font-weight: 800;
+}
+
 a.read-more, a .read-more {
     @extend .highlight;
     white-space: nowrap;
