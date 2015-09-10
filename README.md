@@ -97,6 +97,7 @@ the main block. Page templates should include container and content blocks as ap
 
 - `teaser.jpg` - ideally a square image at 500x500px
 - banner - link this in the `banner-image` section of the front matter
+- Avoid using bigger headings than an H3
 
 ### Adding case studies
 
