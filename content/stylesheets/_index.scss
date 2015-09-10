@@ -3,17 +3,6 @@
 .index-header {
     margin-top: 1em;
     text-align: center;
-    h1 {
-        font-weight: 200;
-        font-size: 5em;
-        margin: 0.5em 0;
-        @include media($transient) {
-            font-size: 3em;
-        }
-        @include media($transient) {
-            font-size: 4em;
-        }
-    }
 }
 
 .banner { 
@@ -151,8 +140,16 @@ a.contact-button {
 .index-banner-image {
     background-size: cover;
     position: relative;
-    min-height: 50vw;
-    
+    min-height: $max-width/3;
+    @include media($serendipity){
+        min-height: $large-screen/3;
+    }
+    @include media($clinical){
+        min-height: $medium-screen/3;
+    }
+    @include media($transient){
+        min-height: $small-screen/2;
+    }
     h1, h2, h3, a {
         color: white;
     }

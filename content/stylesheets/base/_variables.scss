@@ -20,6 +20,10 @@ $content-margin-transient: 12px;
 
 @mixin side-margins() {
     /* margins for full width are generally managed via the grid settings ... */
+    @include media($serendipity) {
+        padding-left: $content-margin-serendipity;
+        padding-right: $content-margin-serendipity;
+    }
     @include media($clinical) {
         padding-left: $content-margin-clinical;
         padding-right: $content-margin-clinical;
@@ -41,23 +45,22 @@ $content-margin-transient: 12px;
     }
 }
 
-$font-size-large: $base-font-size * 4; // 16 * 4 = 64px
-$font-size-h1: $base-font-size * 3; // 16 * 3 = 48px
-$font-size-h2: $base-font-size * 1.5; // 16 * 1.5 = 24px
-$font-size-h3: $base-font-size * 1.25; // 16 * 1.25 = 20px
-$font-size-h4: $base-font-size * 1.125; // 16 * 1.125 = 18px
+$font-size-h1: $base-font-size * 4.5; 
+$font-size-h2: $base-font-size * 2.25; 
+$font-size-h3: $base-font-size * 1.33; 
+$font-size-h4: $base-font-size * 1.125; 
 $font-size-h5: $base-font-size;
 $font-size-h6: $base-font-size;
-$font-size-h1-clinical: $base-font-size * 1.75;
-$font-size-h2-clinical: $base-font-size * 1.5;
+$font-size-h1-clinical: $base-font-size * 4;
+$font-size-h2-clinical: $base-font-size * 2;
 $font-size-h3-clinical: $base-font-size * 1.25;
 $font-size-h4-clinical: $base-font-size * 1.125;
 $font-size-h5-clinical: $base-font-size;
 $font-size-h6-clinical: $base-font-size;
-$font-size-h1-transient: $base-font-size * 1.5;
-$font-size-h2-transient: $base-font-size * 1.25;
-$font-size-h3-transient: $base-font-size * 1.125;
-$font-size-h4-transient: $base-font-size;
+$font-size-h1-transient: $base-font-size * 3;
+$font-size-h2-transient: $base-font-size * 1.5;
+$font-size-h3-transient: $base-font-size * 1.25;
+$font-size-h4-transient: $base-font-size * 1.125;
 $font-size-h5-transient: $base-font-size;
 $font-size-h6-transient: $base-font-size;
 
