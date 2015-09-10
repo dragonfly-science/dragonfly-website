@@ -11,14 +11,8 @@
     <div class="citation">
       $citation$
     </div>
-    <div class="tagslugs hidden">
-      $if(tags)$ $for(tags)$ $tag$ $endfor$ $endif$
-    </div>
-    $if(bibUrl)$
-      <a href="$bibUrl$">url</a>
-    $endif$
     $if(pdf)$
-      <a href="/publications/pdf/$pdf$">
+      <a href="/publications/pdf/$pdf$" class="highlight">
         <i class="fa fa-file-pdf-o"></i>  Download PDF
       </a>
     $endif$
