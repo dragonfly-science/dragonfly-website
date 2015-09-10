@@ -4,6 +4,11 @@
 .promo-block {
     @include row();
     @extend .padded-section;
+    .statement {
+        .highlight {
+            font-weight: 800;
+        }
+    }
     .statement, .explanation {
         @include span-columns(6 of 12);
         @include media($clinical) {
