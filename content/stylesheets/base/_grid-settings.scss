@@ -1,10 +1,5 @@
 @import "../neat/neat-helpers";
 
-// Neat Overrides
-// $column: 90px;
-// $gutter: 30px;
-// $grid-columns: 12;
-
 // Neat Breakpoints
 $max-width: em(1088);
 $large-screen: em(960);
@@ -21,5 +16,3 @@ $clinical-up: new-breakpoint(min-width $medium-screen 12);
 $highbury-fling: new-breakpoint(max-width $small-medium-transition 8);
 
 $transient: new-breakpoint(max-width $small-screen 4);
-
-// $visual-grid: true;

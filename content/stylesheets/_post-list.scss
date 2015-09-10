@@ -24,8 +24,6 @@ $post-image-size-small: em(100);
         }
 
         .citation-year h1 {
-            border-bottom: 3px solid;
-            @include section_colour('border-color');
             margin-bottom: 0.5em;
         }
     }
@@ -84,4 +82,3 @@ $post-image-size-small: em(100);
 .post-wrapper:last-child {
     border-bottom: none;
 }
-
