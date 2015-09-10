@@ -2,16 +2,16 @@
   .section-work &, #work-section &, &.work, .work & {
     #{$attribute}: $wing-flash-blue;
   }
-  .section-about &, #about-section &, .section-people &, #people-section &, &.people, .people & {
+  .section-people &, #people-section &, &.people, .people & {
     #{$attribute}: $people-green;
   }
   .section-publications &, #publications-section &, &.publications, .publications & {
     #{$attribute}: $publications-orange;
   }
-  .section-data &, #data-section &, .section-data &, #data-section &, &.data, .data & {
+  .section-data &, #data-section &, &.data, .data & {
     #{$attribute}: $data-purple;
   }
-  .section-news &, #news-section &, .section-stories &, #stories-section &, &.stories, .stories & {
+  .section-news &, #news-section &, &.news, .news & {
     #{$attribute}: $blog-red;
   }
   .section-contact &, #contact-section &, &.contact, .contact & {
@@ -20,31 +20,30 @@
 }
 
 .color-data {
-    color: $data-purple;
+  color: $data-purple;
 }
 
 .color-news {
-    color: $blog-red;
+  color: $blog-red;
 }
 
 .color-people {
-    color: $people-green;
+  color: $people-green;
 }
 
 .color-publications {
-    color: $publications-orange;
+  color: $publications-orange;
 }
 
 .color-work {
-    color: $wing-flash-blue;
+  color: $wing-flash-blue;
 }
-
 
 @mixin darker_section_colour($attribute) {
   .section-work &, #work-section &, &.work, .work & {
     #{$attribute}: mix($wing-flash-blue, #000, 50%);
   }
-  .section-about &, #about-section &, .section-people &, #people-section &, &.people, .people & {
+  .section-people &, #people-section &, &.people, .people & {
     #{$attribute}: mix($people-green, #000, 50%);
   }
   .section-publications &, #publications-section &, &.publications, .publications & {
@@ -53,7 +52,7 @@
   .section-data &, #data-section &, .section-data &, #data-section &, &.data, .data & {
     #{$attribute}: mix($data-purple, #000, 50%);
   }
-  .section-news &, #news-section &, .section-stories &, #stories-section &, &.stories, .stories & {
+  .section-news &, #news-section &, &.news, .news & {
     #{$attribute}: mix($blog-red, #000, 50%);
   }
   .section-contact &, #contact-section &, &.contact, .contact & {
