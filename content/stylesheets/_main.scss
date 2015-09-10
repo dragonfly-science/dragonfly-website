@@ -28,9 +28,9 @@ main {
 
 .sidebar {
     @include span-columns(2 of 12);
-    @include side-margins;
-    @include content-left-padding;
+    @include shift(1);
     @include media($clinical) {
+      @include content-left-padding;
       @include span-columns(12 of 12);
       @include shift(0);
     }
