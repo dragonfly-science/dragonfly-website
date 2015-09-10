@@ -7,15 +7,6 @@ header {display: block;}
 footer {display: block;}
 nav {display: block;}
 
-h1 {
-  @include media($clinical){
-    font-size: $font-size-h1-clinical;
-  }
-  @include media($transient){
-    font-size: $font-size-h1-transient;
-  }
-}
-
 main {
     margin-top: $responsive-navigation-height;
     @include media($serendipity) {
@@ -66,5 +57,65 @@ main {
     @include clearfix;
     position: relative;
     @include side-margins;
+}
+
+h1 {
+  font-size: $font-size-h1;
+  @include media($clinical){
+    font-size: $font-size-h1-clinical;
+  }
+  @include media($transient){
+    font-size: $font-size-h1-transient;
+  }
+}
+
+h2 {
+  font-size: $font-size-h2;
+  @include media($clinical){
+    font-size: $font-size-h2-clinical;
+  }
+  @include media($transient){
+    font-size: $font-size-h2-transient;
+  }
+}
+
+h3 {
+  font-size: $font-size-h3;
+  @include media($clinical){
+    font-size: $font-size-h3-clinical;
+  }
+  @include media($transient){
+    font-size: $font-size-h3-transient;
+  }
+}
+
+h4 {
+  font-size: $font-size-h4;
+  @include media($clinical){
+    font-size: $font-size-h4-clinical;
+  }
+  @include media($transient){
+    font-size: $font-size-h4-transient;
+  }
+}
+
+h5 {
+  font-size: $font-size-h5;
+  @include media($clinical){
+    font-size: $font-size-h5-clinical;
+  }
+  @include media($transient){
+    font-size: $font-size-h5-transient;
+  }
+}
+
+h6 {
+  font-size: $font-size-h6;
+  @include media($clinical){
+    font-size: $font-size-h6-clinical;
+  }
+  @include media($transient){
+    font-size: $font-size-h6-transient;
+  }
 }
 
