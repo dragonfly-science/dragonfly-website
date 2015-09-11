@@ -15,7 +15,7 @@ otherwise, those specific items may not be re-used without express permission.
 ## Hakyll and Docker
 
 The site is statically generated from the source. This means that it is compiled,
-and produces static files that are bunled up and served from the webserver. It uses the [Hakyll](http://jaspervdj.be/hakyll/index.html) static site library,
+and produces static files that are bundled up and served from the webserver. It uses the [Hakyll](http://jaspervdj.be/hakyll/index.html) static site library,
 which is managed by the code in the `haskell/` directory.  There is some [Docker](http://www.docker.com)
 magic going on to get a build system up and running on a linux server. Ideally, you can check out the
 code and run `./run.sh develop` to get started.
