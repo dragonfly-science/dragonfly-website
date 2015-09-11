@@ -63,9 +63,6 @@ $post-image-size-small: em(100);
         }
 
         @include media($transient) {
-            a.read-more {
-                display: none;
-            }
             p.subheading {
                 display: inherit;
             }
