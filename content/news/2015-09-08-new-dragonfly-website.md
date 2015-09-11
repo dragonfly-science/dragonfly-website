@@ -1,6 +1,5 @@
 ---
 title: New website for Dragonfly 
-banner-image: /news/2015-09-08-new-dragonfly-website/dragonfly-wing.png
 ---
 Dragonfly launched a new website in September, which incorporates its updated brand Dragonfly Data Science. 
 
