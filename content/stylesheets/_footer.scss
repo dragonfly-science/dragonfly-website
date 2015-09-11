@@ -138,6 +138,12 @@
             padding-right: em(15);
         }
 
+        span.license-text {
+            padding-left: 1em;
+            position: relative;
+            bottom: 5px;
+        }
+
     }
 
     #footer-row-logo {
@@ -159,8 +165,8 @@
         color: lighten($lighter-gray, 20);
     }
     
-    #footer-map {
-        display: none;
+    #footer-license {
+        margin-top: 2em;
     }
     
     #footer-outer-map {
