@@ -12,7 +12,7 @@ Copyright of those specific items may not be held by Dragonfly Limited. Unless i
 otherwise, those specific items may not be re-used without express permission.
 
 
-## Underlying technology
+## Hakyll and Docker
 
 The site is statically generated from the source. This means that it is compiled,
 and produces static files that are bunled up and served from the webserver. It uses the [Hakyll](http://jaspervdj.be/hakyll/index.html) static site library,
