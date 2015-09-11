@@ -13,10 +13,10 @@ case "$1" in
         echo "run ./run.sh pull-deps to get the latest version of the build dockers"
         exit 0
         ;;
-    develop|pull-deps|ghci|deploy)
+    develop|check|pull-deps|ghci|deploy)
         ;;
     *)
-        echo $"Usage: $0 {develop|pull-deps|ghci|help}"
+        echo $"Usage: $0 {develop|check|pull-deps|ghci|help}"
         exit 1
 esac
 
@@ -66,7 +66,7 @@ case "$MODE" in
         docker run --rm -it -w /work -v $PWD/haskell:/work \
             dragonflyscience/website-hakyll ghci Site.hs
     ;;
-    deploy)
+    deploy|check)
         ./run.sh pull-deps &&
         rm -f content/assets/* &&
         docker run --rm -u $(id -u):$(id -g) \
@@ -84,10 +84,18 @@ case "$MODE" in
             dragonflyscience/website-hakyll \
             bash -c "cd haskell && ghc -o /tmp/dragonfly-hakyll -odir /tmp -hidir /tmp/ Site.hs && \
                 cd /work/content && /tmp/dragonfly-hakyll build" &&
-        docker cp $name:/var/cache/dragonflyweb/main/site /tmp/$name/ &&
-        docker rm $name &&
-        rsync -av --delete /tmp/$name/site/ \
+        
+        if [ "$MODE" == "deploy" ]; then
+            docker cp $name:/var/cache/dragonflyweb/main/site /tmp/$name/ &&
+            docker rm $name &&
+            rsync -av --delete /tmp/$name/site/ \
                 deployhub@www-staging.hoiho.dragonfly.co.nz:/var/www/static/www.dragonfly.co.nz
+        else	
+	    docker run --rm -it -w /work -v $PWD/content:/work \
+              --volumes-from dragonfly-website \
+              dragonflyscience/website-hakyll \
+              /dist/dragonfly-hakyll check
+        fi
     ;;
     
 esac
