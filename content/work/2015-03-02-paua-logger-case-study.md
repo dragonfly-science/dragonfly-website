@@ -14,12 +14,27 @@ providing the information they need for responsive, well-informed management of
 their sector.
 <!--more-->
 
+<<<<<<< HEAD
 
 ##Information for sustainable fisheries
 Good information is essential for the sustainable management of fisheries.
 The Pāua Industry Council helps manage catch in New Zealand pāua fisheries, to 
 ensure that the populations remain healthy. Pāua divers collect data on each individual dive. From this fishing data,
 we are able to map the fishery and monitor its performance, reef by reef.
+=======
+### Detailed information for sustainable pāua fisheries
+Good information is essential for the sustainable management of fisheries. 
+The Pāua Industry Council has developed dataloggers which attach to a diver’s wetsuit and record the position of each dive. 
+By combining the fishing data with catch information, we are able to map the fishery and monitor its
+performance, reef by reef.
+
+### Daily catch data displayed
+We built a web-based system, with each day’s catch data being uploaded
+to a database, visualised, and mapped. Catch volumes in 
+different locations can be displayed as coloured hexagons – green for an area that's performing well, and red for a not-so-good one. We also carry out the statistical
+analysis needed to interpret the data, so it can be used to provide
+a robust indicator of the health of the fishery.
+>>>>>>> 484d575cd96b0d5e28435cd30ffb3484c1555d32
 
 ##Statistical analysis supports decision making
 Deciding whether to increase or decrease catches is a tough trade-off for fisheries. Decreasing catches puts 
@@ -33,8 +48,13 @@ fisher’s data, while allowing high level summaries to be shared across the ind
 is deployed on the [Catalyst Cloud](http://www.catalyst.net.nz/catalyst-cloud), an 
 affordable and secure New Zealand cloud computing service.
 
+<<<<<<< HEAD
 ##Ensuring sustainability 
 The Ministry of Primary Industries is very positive about this work. They 
+=======
+### Value for fishery managers 
+The Ministry of Primary Industries is very positive about the project. They 
+>>>>>>> 484d575cd96b0d5e28435cd30ffb3484c1555d32
 recognise the value that such detailed and timely information provides beyond 
 their usual stock assessment process. Robust evidence of 
 the state of the fishery will help ensure the sustainability of the fishery.

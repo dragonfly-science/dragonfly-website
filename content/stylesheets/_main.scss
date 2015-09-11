@@ -28,9 +28,9 @@ main {
 
 .sidebar {
     @include span-columns(2 of 12);
-    @include side-margins;
-    @include content-left-padding;
+    @include shift(1);
     @include media($clinical) {
+      @include content-left-padding;
       @include span-columns(12 of 12);
       @include shift(0);
     }
@@ -38,25 +38,40 @@ main {
 
 .content {
     @include span-columns(8 of 12);
+    @include clearfix;
+    position: relative;
     @include media($clinical) {
+      @include side-margins;
       @include span-columns(12 of 12);
       @include shift(0);
     }
-    @include clearfix;
-    position: relative;
-    @include side-margins;
+    &.no-sidebar {
+        @include shift(1);
+    }
 }
 
 .wide {
     @include span-columns(10 of 12);
     @include shift(1);
+    @include clearfix;
+    position: relative;
     @include media($clinical) {
+      @include side-margins;
       @include span-columns(12 of 12);
       @include shift(0);
     }
+}
+
+.narrow {
+    @include span-columns(8 of 12);
+    @include shift(2);
     @include clearfix;
     position: relative;
-    @include side-margins;
+    @include media($clinical) {
+      @include side-margins;
+      @include span-columns(12 of 12);
+      @include shift(0);
+    }
 }
 
 h1 {

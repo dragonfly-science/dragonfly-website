@@ -3,7 +3,12 @@ $if(banner-image)$
   </div>
 $endif$
 <div class="container post-detail">
-  <div class="heading wide">
+  <div class="sidebar">
+   <div class="post-top-image">
+     <div class="porthole" style="background-image: url('$teaserImage$');"></div>
+   </div>
+  </div>
+  <div class="heading content">
    $if(title)$
     <h2>$title$</h2>
    $endif$
@@ -26,7 +31,7 @@ $endif$
       $body$
     </div>
   $else$
-    <div class="wide post-body">
+    <div class="narrow post-body">
       $body$
     </div>
   $endif$

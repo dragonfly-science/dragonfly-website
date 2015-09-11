@@ -14,11 +14,11 @@ method was the most effective at reducing the number of albatross killed in traw
 <!--more-->
 
 
-##Albatross interactions with trawl warps
+### Albatross interactions with trawl warps
 
 Globally, albatross populations are in decline because they are killed by fishing operations. For albatross populations to recover, these fatalities must be reduced. In trawl fisheries, the warps (cables that connect trawling gear to a vessel) can strike and kill albatross that are feeding behind the vessel.
 
-##Finding the best device 
+### Finding the best device 
 
 In 2006, legislation was introduced requiring that all trawlers over 28 m in
 length, fishing in New Zealand waters, use mitigation devices. These devices
@@ -36,7 +36,7 @@ it wasn't clear where the truth lay. Dragonfly worked together with other
 stakeholders to provide the necessary analysis and make a clear
 recommendation to fisheries managers.
 
-##Statistical models show a clear winner
+### Statistical models show a clear winner
 
 The statistical models demonstrated that streamer lines behind the vessel were by far the best way to keep the birds away from the warps. The analysis showed a 90% reduction in bird strikes when
 they were used. 
