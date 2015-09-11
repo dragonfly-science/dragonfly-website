@@ -19,7 +19,15 @@ main {
 }
 
 .content-margin {
-    margin-top: $base-line-height;
+  margin-top: $base-line-height;
+}
+
+main > .container:first-of-type {
+  padding-top: $base-line-height;
+}
+
+main > .container:last-of-type {
+  padding-bottom: $base-line-height;
 }
 
 .side-margins {
