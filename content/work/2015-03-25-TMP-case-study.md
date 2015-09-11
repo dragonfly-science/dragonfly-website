@@ -1,19 +1,20 @@
 ---
-title:  Language recognition
+short-title:  Machine learning
+title: Machine learning for language identification
 banner-image: /work/2015-03-25-TMP-case-study/matariki.jpg
-summary: A world-first method to track the use of te reo Māori on air.
+summary: An automated method for tracking the use of Te Reo Māori on air.
 tags: systems
 quote: The team at Dragonfly have been great to work with. They quickly understood what we were trying to achieve and came up with a very innovative solution. 
 quote-attribution: Thomas Hood, Te Māngai Pāho
 logo: /work/2015-03-25-TMP-case-study/tmp-logo.png
 ---
 
-Machine learning methods are ideal for classifying streaming data rapidly. We are using these methods to help Te Māngai Pāho identify different languages broadcast by radio stations in New Zealand.  
+Machine learning methods are ideal for classifying streaming data rapidly. We are using these methods to help Te Māngai Pāho identify different languages broadcast the radio stations they fund in New Zealand.  
 <!--more-->
 
-##Tracking the proportion of Māori and English spoken
+##Tracking spoken Māori
 Te Māngai Pāho is a government agency charged with funding and monitoring the 
-Te Reo Māori (Māori language) content of iwi radio and Māori Television. 
+Te Reo Māori (Māori language) content of iwi radio. 
 Radio stations are funded to deliver eight hours of Te Reo content in an 
 eighteen hour period which, for compliance purposes, is often delivered in specific 
 blocks of time. Broadcasters, however, report that this inhibits a natural use of the 

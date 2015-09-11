@@ -1,10 +1,11 @@
 ---
-title: Smart sorting
+title: Operational data analysis
+short-title: Operational analysis
 banner-image: /work/2015-02-10-INZ-case-study/prediction-service.png
 quote: We worked out the cost saving from this project ... it was significant.
 quote-attribution: Steve Cantlon, Principal Business Adviser, Immigration New Zealand
 logo: /work/2015-02-10-INZ-case-study/inz-logo.png
-summary: A tuneable prediction service for faster visitor visa processing.  
+summary: A prediction service for faster visitor visa processing.  
 tags: systems
 ---
 
@@ -16,19 +17,20 @@ to fast track and review track streams, based on previous decisions. Appropriate
 A labour intensive application system at Immigration New Zealand (INZ)
 was requiring growing numbers of staff to meet an 
 increasing demand for visas. We were contracted to build a front-end triage system to automatically assess each 
-visa application upfront. This initial processing grades applications into those that can 
+visa application upfront. This initial risk assessment grades applications into those that can 
 be safely fast tracked and those where a more thorough investigation of the applicant 
 is warranted. 
 
-##A tuneable grading system
+
+##Ongoing value from data
 Since all applications are graded, management can decide where they place the cut-
 off between fast track and review track applications. This feature of the system 
 allows INZ to choose a level of risk for the visa processing that meets their business
-criteria. It also enables workflow and resources to be managed. 
+criteria. It also enables workflow and resources to be managed.
 
 Analysis and predictive modelling were carried out by Dragonfly, with technical review from staff at Victoria University. We then ported
 the model into the INZ operational environment, running it against a near real-time copy of their database, and delivering predictions 
-within 10 minutes of applications being entered into the system. 
+within 10 minutes of applications being entered into the system. The prediction service makes use of data from past applications, delivering ongoing value to Immigration New Zealand.
 
 
 > What Dragonfly were able to drag out of our database was pretty impressive – they 

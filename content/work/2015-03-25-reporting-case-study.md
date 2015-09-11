@@ -1,14 +1,15 @@
 ---
-title: Repeatable reporting
+title: Data science capability building
+short-title: Capability building
 banner-image: /work/2015-03-25-reporting-case-study/electricity-use-and-demand.png
-summary: A templated programme to efficiently produce data-rich reports.
+summary: A system to efficiently produce data-rich, collaborative reports.
 tags: capability, systems
 quote: If I have another chance to work with Dragonfly I won't hesitate to say yes. No question. 
 quote-attribution: Vij Kooyela, Senior Analyst, Ministry of Business, Innovation and Employment 
 logo: /work/2015-03-25-reporting-case-study/mbie-logo.png
 ---
-One of our secret sauces is a focus on repeatable, automated reporting. We worked with the Sector Performance
-team at the Ministry of Business, Innovation & Employment (MBIE) to improve their analysis processes and make their reporting more collaborative and efficient.
+One of our strengths is a focus on repeatable, automated reporting. We worked with the Sector Performance
+team at the Ministry of Business, Innovation & Employment (MBIE) to improve their data analysis processes and make their reporting more collaborative and efficient.
 <!--more-->
 
 ##A complex report 
@@ -20,7 +21,7 @@ and communications teams.
 
 ##Mentoring staff in R and LaTeX
 We worked with the MBIE sector performance team to help develop the graphics for
-this report. Their analysts were using the software R, and we were able to show 
+this report. Their analysts were using the statistical software R, and we were able to show 
 the team how to use this powerful software to produce publication quality graphics,
 that met the requirements of the graphic designers. 
 
@@ -29,20 +30,20 @@ control and continuous build processes.
 
 The Ministry requested our support to produce an improved printed version of 
 the report using LaTeX, a powerful coded typesetting system. Together 
-LaTeX and R (a graphing tool), offered significant advantages over traditional 
+LaTeX and R offered significant advantages over traditional 
 word processing programmes for producing this large report, which has many figures and tables.
 
 Because LaTeX has a coded interface, helping staff to use and manage the 
 code themselves was an important part of the project. Ministry staff found our code and documentation easy to follow and gained 
 confidence in managing it themselves. With our experience to fall back on, 
-they enjoyed the fun of working with a new programme. 
+they enjoyed the fun of working with new processes.
 
 ##Beautiful report production
 The 2014 REAR’s very polished production has set a new standard for 
 MBIE’s reporting. LaTeX allows final changes to be made quickly and easily, 
 which led to the much higher quality output.
 
-Code also equals reproducibility and economy – future reports will be created 
+Code also equals reproducibility and economy—future reports will be created 
 by inputting new data rather than creating individual plots from scratch. The 
 MBIE team believe this feature will save them 70 percent of the preparation 
 time for future reports. 
