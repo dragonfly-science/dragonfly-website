@@ -20,9 +20,9 @@ which is managed by the code in the `haskell/` directory.  There is some [Docker
 magic going on to get a build system up and running on a linux server. Ideally, you can check out the
 code and run `./run.sh develop` to get started.
 
-## Concepts
+## Notes
 
-#### This git repository is the database
+#### This git repository is all there is
 
 There is no database behind the site (other than the git repository). This means the website is static, and fully versioned. with all the collaborative benefits of git available.The content for the site is organised under the `content/` folder. Most of the folders there should be fairly self explanatory. If you need to edit the site,
 these are the files to make changes to. 
@@ -67,7 +67,7 @@ control and user management respectively. When code changes are pushed to the ma
 continuous integration system will update the [staging site](https://www-staging.dragonfly.co.nz).
 This takes less than a minute. 
 
-## HTML and CSS
+### HTML and CSS
 
 HTML templates for the project are in `content/templates`. A typical page has the following structure:
 ```
