@@ -62,10 +62,8 @@ $post-highlight-color: #808080;
 $post-info-top-padding: 1em;
 $wrap-images-width: em(950);
     .heading {
-        margin-top: 2em;
         margin-bottom: 2em;
         @include media($clinical) {
-            margin-top: 1em;
             margin-bottom: 1em;
         }
         .details {
