@@ -1,0 +1,38 @@
+name:                dragonfly-website
+version:             0.1.0.0
+synopsis:            Dragonfly website site generator
+-- description:         
+homepage:            http://dragonfly.co.nz
+license:             MIT
+license-file:        LICENSE
+author:              Chris Knox
+maintainer:          chris@dragonfly.co.nz
+-- copyright:           
+category:            Web
+build-type:          Simple
+-- extra-source-files:  
+cabal-version:       >=1.10
+
+executable website
+  main-is:             Site.hs
+  -- other-modules:       
+  other-extensions:    OverloadedStrings, RecordWildCards, TupleSections, QuasiQuotes
+  build-depends:       base
+                     , directory
+                     , filepath
+                     , containers
+                     , text
+                     , pandoc
+                     , pandoc-citeproc
+                     , hamlet
+                     , hakyll
+                     , data-default
+                     , pandoc-types
+                     , utf8-string
+                     , blaze-html
+                     , shakespeare
+                     , xml-conduit
+                     , xml-hamlet
+                     , html-conduit
+  -- hs-source-dirs:      
+  default-language:    Haskell2010
