@@ -21,8 +21,10 @@ function tagFilter(tags){
 }
 
 
-$(document).ready(function() {
-    menuInit();
+var initPublications = function() {
+    if ($("#publication-list").length === 0) {
+	return;
+    }
 
     tagFilter(getParameterByName("tag"));
 
@@ -49,7 +51,6 @@ $(document).ready(function() {
             tags.push($(this).attr("data-tag").trim());
         });
         tags = _.filter(tags, function(t){return !(t === "");});
-        console.log(tags);
         publicationList.filter(function(item) {
             var itemtags = _.filter(item.values().tagslugs.split(' '), function(t){return !(t === "");});
             if (tags.length > 0){
@@ -62,6 +63,12 @@ $(document).ready(function() {
 
     updateList();
 
+}
+
+$(document).ready(function() {
+    menuInit();
+
+    initPublications();
     
     //Dropdown menus
     $(".dropdown-button").click(function() {
