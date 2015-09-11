@@ -13,7 +13,7 @@ We built a prediction service for Immigration New Zealand, to allocate applicati
 to fast track and review track streams, based on previous decisions. Appropriate handling of applications brings faster and more reliable decision making.
 <!--more-->
 
-##Demand for visas increasing 
+### Demand for visas increasing 
 A labour intensive application system at Immigration New Zealand (INZ)
 was requiring growing numbers of staff to meet an 
 increasing demand for visas. We were contracted to build a front-end triage system to automatically assess each 
@@ -21,8 +21,12 @@ visa application upfront. This initial risk assessment grades applications into 
 be safely fast tracked and those where a more thorough investigation of the applicant 
 is warranted. 
 
+<<<<<<< HEAD
 
 ##Ongoing value from data
+=======
+### A tuneable grading system
+>>>>>>> 484d575cd96b0d5e28435cd30ffb3484c1555d32
 Since all applications are graded, management can decide where they place the cut-
 off between fast track and review track applications. This feature of the system 
 allows INZ to choose a level of risk for the visa processing that meets their business

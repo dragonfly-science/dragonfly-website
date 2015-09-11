@@ -29,6 +29,24 @@
 
 }
 
+.post-top-image {
+    padding: 0.5em;
+    .porthole {
+        width: 100%;
+        padding-top: 100%;
+        border-radius: 50%;
+        background-size: cover;
+    }
+    @include media($clinical) {
+        padding-bottom: 0;
+        .porthole {
+            width: 50%;
+            padding-top: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+
 /* Puts a dark shade over the image to allow the writing to be read */
 .post-banner-overlay {
     position: absolute;
@@ -46,6 +64,10 @@ $wrap-images-width: em(950);
     .heading {
         margin-top: 2em;
         margin-bottom: 2em;
+        @include media($clinical) {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
         .details {
             text-align: right;
             color: $medium-gray;

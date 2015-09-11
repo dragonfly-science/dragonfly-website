@@ -67,7 +67,7 @@ makeRules cc = do
             pages <- getList cc 1000
             bubbles <- getBubbles cc (Just ident)
             pandoc <- readScholmd
-            let ctx = base <> actualbodyField "actualbody" <> pages <> bubbles
+            let ctx = base <> teaserImage <> actualbodyField "actualbody" <> pages <> bubbles
             writeScholmd pandoc
                 >>= loadAndApplyTemplate "templates/append-publications.html" ctx
                 >>= loadAndApplyTemplate (pageTemplate cc) ctx
