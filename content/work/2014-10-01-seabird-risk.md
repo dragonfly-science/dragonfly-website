@@ -1,5 +1,6 @@
 ---
-title: Risk assessment
+title: Risk assessment for policy development
+short-title: Risk assessment
 summary: An analysis of the risk posed to seabirds from the fishing industry. 
 tags: stats, policy
 banner-image: /work/2014-10-01-seabird-risk/bullers.jpg

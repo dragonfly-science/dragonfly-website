@@ -1,5 +1,6 @@
 ---
-title: Data visualisation
+title: Data visualisation makes information accessible
+short-title: Data visualisation
 banner-image: /work/2015-03-19-webrear-case-study/ipad.jpg
 quote: I believe Dragonfly’s interactive is one of the best visualisations of public data in New Zealand.
 quote-attribution: Harkanwal Singh, Data Editor, New Zealand Herald
@@ -9,7 +10,7 @@ tags: systems
 ---
 
 This project for the Ministry of Business, Innovation and Employment put data on New Zealand’s regional
-economies online for the first time. We created a desktop version and high-spec iPad and mobile app to help people dig into the data. 
+economies online, making the information widely available. We created a desktop version and iPad and mobile apps to help people explore the data. 
 
 <!--more-->
 
@@ -26,8 +27,8 @@ to inform their policy and planning around resources, permitting, and business m
 We built an interactive desktop version of the report, which was
 then released as an iPad and mobile app. A single source of data flows through to the report,
 the website, and the apps, to ensure the integrity of the data across all the
-presentations. We worked with digital design agency Salted Herring to create a look and feel that
-matched the Ministry’s own styles. Charts and maps were drawn using the software R, and we used the EmberJS
+presentations. We worked with digital design agency [Salted Herring](http://www.saltedherring.com) to create a look and feel that
+matched the Ministry’s own styles. Charts and maps were drawn using the statistical software R, and we used the EmberJS
 web framework to create a responsive, dynamic website that could also be cost-effectively delivered as a
 mobile app.
 

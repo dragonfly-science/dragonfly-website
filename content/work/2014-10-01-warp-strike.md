@@ -1,6 +1,7 @@
 ---
-title: Informed decision-making
-summary: A objective search for the best device to reduce albatross fatalities. 
+title: Statistical analysis for effective management
+short-title: Statistical analysis
+summary: Selecting the best device to reduce albatross fatalities. 
 tags: policy, stats
 banner-image: /work/2014-10-01-warp-strike/streamers.jpg
 quote: Dragonfly consistently produced strong, defensible outputs, and delivered value for money.
@@ -57,7 +58,10 @@ trawlers.
 <cite>Johanna Pierre<br /> 
 Manager<br />
 Marine Conservation Services<br />
-Department of Conservation.</cite>
+Department of Conservation.<br />
+(Currently at [Johanna Pierre Environment Consulting](http://jpec.co.nz/))
+</cite>
+
 
 
 

@@ -1,5 +1,6 @@
 ---
-title: Peer review
+title: Spatial modelling of koala
+short-title: Spatial modelling
 quote: Dragonfly’s expertise in working with uncertain data sets was the key driver in choosing them as a contractor.
 quote-attribution: Dr Richard Seaton, Department of Environment and Heritage Protection, Queensland
 summary: A technical review of the statistical methods used in a koala population study. 
