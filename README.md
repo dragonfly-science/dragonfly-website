@@ -38,13 +38,13 @@ This file has the content for the post. At the top of the file is a metadata sec
 
 A directory where all other associated files can go, such as a image files and their associated description files 
 
-### Notes on adding news posts
+#### Adding news posts
 
 - `teaser.jpg` - ideally a square image at 500x500px
 - banner - link this in the `banner-image` section of the front matter
 - Avoid using bigger headings than an H3
 
-### Notes on adding case studies
+#### Adding case studies
 
 Mandatory fields:
 - `title`
@@ -67,7 +67,7 @@ control and user management respectively. When code changes are pushed to the ma
 continuous integration system will update the [staging site](https://www-staging.dragonfly.co.nz).
 This takes less than a minute. 
 
-### HTML and CSS
+#### HTML templates and CSS
 
 HTML templates for the project are in `content/templates`. A typical page has the following structure:
 ```
