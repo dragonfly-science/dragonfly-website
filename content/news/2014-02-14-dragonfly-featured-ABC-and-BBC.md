@@ -1,7 +1,5 @@
 ---
 title: Dragonfly featured on ABC and BBC radio programmes
-banner-image: /news/2014-02-14-dragonfly-featured-ABC-and-BBC/dave-and-jules.jpg
-banner-text: Dave Baker and Julie Hills (MPI) pāua fishing in Cook Strait
 ---
 Dragonfly's work for the Paua Industry Council, using data
 loggers to manage the pāua fishery, was featured on the ABC's Off Track
