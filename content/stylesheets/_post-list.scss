@@ -11,7 +11,8 @@ $post-image-size-small: em(100);
     .post-wrapper {
         border-bottom: solid 1px #E7E7E7;
         overflow: hidden;
-        padding: 1.5em 0;
+        padding-bottom: 0.5em;
+        padding-top: 1.5em;
         @include media($transient) {
             /* this gives full width underlines ... */
             margin-left: -$content-margin-transient;
@@ -77,4 +78,16 @@ $post-image-size-small: em(100);
 
 .post-wrapper:last-child {
     border-bottom: none;
+}
+
+
+.totop {
+    text-align: right;
+    a {
+        color: $lighter-gray;
+        text-decoration: none;
+        &:hover {
+            color: $light-gray;
+        }
+    }
 }
