@@ -52,7 +52,7 @@ Estimated seabird captures increased by 29.3% between 2007–08 and
 range of different fisheries, despite an ongoing decline in the
 effort. The reasons for this increase are unclear.
 
-[Read the report summary.](references/abraham_seabirds_02-09.html)
+[Read the report summary.](/publications/abraham_seabirds_02-09.html)
 
 [Download full report from the Ministry of
 Fisheries.](http://fs.fish.govt.nz/Page.aspx?pk=113&dk=22872)
