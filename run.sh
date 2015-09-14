@@ -35,7 +35,7 @@ case "$MODE" in
             dragonflyscience/website-sass \
                 bash -c "find stylesheets -name *.scss | \
                     entr -r scss stylesheets/dragonfly.scss assets/dragonfly.css")
-        
+
         docker inspect dragonfly-website >/dev/null 2>&1
         if [ $? != 0 ]; then
             docker run -v /dist -v /var/cache/dragonflyweb -v /tmp/build \
@@ -84,18 +84,18 @@ case "$MODE" in
             dragonflyscience/website-hakyll \
             bash -c "cd haskell && ghc -o /tmp/dragonfly-hakyll -odir /tmp -hidir /tmp/ Site.hs && \
                 cd /work/content && /tmp/dragonfly-hakyll build" &&
-        
+
         if [ "$MODE" == "deploy" ]; then
-            docker cp $name:/var/cache/dragonflyweb/main/site /tmp/$name/ &&
+            docker cp $name:/tmp/cache/dragonflyweb/main/site /tmp/$name/ &&
             docker rm $name &&
             rsync -av --delete /tmp/$name/site/ \
                 deployhub@www-staging.hoiho.dragonfly.co.nz:/var/www/static/www.dragonfly.co.nz
-        else	
+        else
 	    docker run --rm -it -w /work -v $PWD/content:/work \
               --volumes-from dragonfly-website \
               dragonflyscience/website-hakyll \
               /dist/dragonfly-hakyll check
         fi
     ;;
-    
+
 esac
