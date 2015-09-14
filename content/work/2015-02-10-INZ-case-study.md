@@ -21,12 +21,8 @@ visa application upfront. This initial risk assessment grades applications into 
 be safely fast tracked and those where a more thorough investigation of the applicant 
 is warranted. 
 
-<<<<<<< HEAD
 
 ##Ongoing value from data
-=======
-### A tuneable grading system
->>>>>>> 484d575cd96b0d5e28435cd30ffb3484c1555d32
 Since all applications are graded, management can decide where they place the cut-
 off between fast track and review track applications. This feature of the system 
 allows INZ to choose a level of risk for the visa processing that meets their business

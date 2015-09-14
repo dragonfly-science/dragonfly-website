@@ -156,6 +156,9 @@ $responsive-navigation-height-serendipity: em(42);
         overflow: none;
         ul.responsive-navigation-menu {
             display: block;
+            li, .contact-text {
+                font-size: 1.5em;
+            }
         }
         @include linear-gradient(-179deg, #3F8DB3 0%, #1A9E86 88%);
         .logo {

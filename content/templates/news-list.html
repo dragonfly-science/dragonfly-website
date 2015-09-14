@@ -1,10 +1,10 @@
 <div class="container">
   <div class="wide">
     <h2> 
-      We like to <span class="highlight">tell our stories</span>.
+      We like to tell our stories.
     </h2>
     <p class="lead">
-      We get excited about the work we do for our clients and the diverse projects we're involved in.
+      We get excited about the work we do for our clients, and the diverse projects we're involved in.
     </p>
     <div class="post-list">
       $for(news)$
@@ -29,6 +29,7 @@
                 $if(teaser)$ $teaser$ $endif$
               $endif$
               <span><a href="$pageurl$" class="read-more">Read more</a></span>
+              $partial("templates/_top.html")$
             </div>
           </div>
         </div>
