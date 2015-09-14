@@ -73,7 +73,15 @@ main = hakyllWith config $ do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
-
+    -- Standalone pages
+    match "pages/*.md" $ do
+        route $ setExtension "html"
+        compile $ do
+            ctx  <- baseContext "index"
+            scholmdCompiler
+                >>= loadAndApplyTemplate "templates/default.html" ctx
+                >>= relativizeUrls
+        
     -- Static files
     match "assets/*" $ do
         route idRoute
@@ -82,3 +90,5 @@ main = hakyllWith config $ do
     match "favicon.ico" $ do
         route idRoute
         compile copyFileCompiler
+
+
