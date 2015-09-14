@@ -39,9 +39,19 @@ main = hakyllWith config $ do
     -- for each <name> and <args> we get a image
     --   some/path/image.jpg -> some/path/name-image.jpg
     -- created by running convert <args> on the image
+    -- Make images at each of the CSS breakpoints
+    -- full:  1088
+    -- large:  960
+    -- medium: 720
+    -- small-medium: 560
+    -- small: 420
     Images.imageProcessor ( "**/*.jpg" .||. "**/*.png") $ 
-                          [ ("small",  ["-resize" , "500"]) 
-                          , ("medium", ["-resize" , "800"]) 
+                          [ ( "420", ["-resize" , "420"]) 
+                          , ( "560", ["-resize" , "560"]), 
+                          , ( "720", ["-resize" , "720"]),
+                          , ( "960", ["-resize" , "960"]), 
+                          , ("1088", ["-resize" , "1088"]), 
+                          , ("1600", ["-resize" , "1600"])
                           ]
 
     -- Home page
