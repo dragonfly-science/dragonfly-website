@@ -52,5 +52,5 @@ Department of Conservation and Ministry of Fisheries will roll out
 device testing and data collection programmes at various times through
 the year.
 
-[Read more about this work](/work/2014-10-01-warp-strike). 
+[Read more about this work](/work/warp-strike). 
 

@@ -13,7 +13,7 @@ form for a selected audience.
 <!--more-->
 
 ![Detail of seabird safe release
-poster](../news/2012-06-08-better-communication-design/Bird-poster-detail.png)
+poster, designed by Alex Downey](/news/2012-06-08-better-communication-design/bird_poster_closeup.png)
 
 The 12-week course began with a presentation from Johanna and Edward
 from Dragonfly. Students initially wrote a report about one of the

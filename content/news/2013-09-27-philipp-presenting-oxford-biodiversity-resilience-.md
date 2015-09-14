@@ -15,7 +15,7 @@ incredibly excited to be discussing these recent findings and new
 perspectives with such a broad audience at the symposium."
 
 In a [recent
-paper](https://www.dragonfly.co.nz/news/2013-04-29-resilience-of-fish-stocks/)
+paper](/news/2013-04-29-resilience-of-fish-stocks/)
 that appeared in the journal *Science*, Philipp and his colleagues found
 surprising patterns of resilience in most of the world's overfished
 stocks, which allowed these stocks to recover faster than expected,
@@ -41,5 +41,4 @@ These feedback loops remain a new frontier for fisheries management,
 and provide a fundamental challenge to the way that fisheries
 biologists think about fished populations.
 
-Download [Phil's
-talk](https://www.dragonfly.co.nz/resources/Neubauer_fisheries_resilience.pdf)
+Download [Phil's talk](/publications/pdf/Neubauer_2013_global-fish-stocks.pdf)

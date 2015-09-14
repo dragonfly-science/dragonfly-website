@@ -1,5 +1,5 @@
 ---
-pdf: Pierreetal_2014_novel-approaches-presentation.pdf
+pdf: Pierre_2014_novel.pdf
 tags: edward, seabird, bycatch, dragonfly, presentation
 ---
 This talk presents a study aimed at reducing the availability of surface longline hooks to seabirds during line
