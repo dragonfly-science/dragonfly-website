@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	
+<head>
+    <style type="text/css">@import url(/static/css/dragonfly.css);</style>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<title>Sexibam</title>
+<link rel="shortcut icon" href="/static/css/dragonfly.ico">
+
+<!--[if lte IE 6]> <style type="text/css"> .clearfix { height: 1%; } </style> <![endif]--> <!--[if IE 7]> <style type="text/css"> .clearfix { display:inline-block; } </style> <![endif]--> <!--[if IE]><style type="text/css"> .container { width: 700px } </style><![endif]-->
+</head>
+
+<body>
+<div id="bigcontainer">
+    <div class="container">
+	
+        <div class="banner">
+        <div class = "splash">
+<table width="100%"><tr><td align="left" id="splash_left">DRAGONFLY SCIENCE</td><td align="right" id="splash_right">Understanding through data</td></tr></table>
+        </div>
+        </div>
+
+        <div class="box">
+            <div class = "clearfix content">
+                <div id="iehack">
+
+
+<br>
+
+  
+  <div class="figure  figure-center"  style="width: 600px" >
+
+<img src="/images/Sexibam_splash_screen-600x403.jpg" alt="sexibam splash screen"  width="600"   height="403"  >
+
+<p class="caption">Program splash screen</p>
+<p class="credit">Yvan Richard</p>
+</div>
+
+<div class="figure  figure-right"  style="width: 220px" >
+
+<img src="/images/robin-220x287.jpg" alt="robin"  width="220"   height="287"  >
+
+<p class="caption">North Island robin</p>
+<p class="credit">Yvan Richard</p>
+</div>
+
+<p>A few packages already exist to simulate the dynamics of populations in fragmented landscapes. However, the movement of individuals between populations is generally over-simplified, whereas it is recognised as a major driver in the distribution and persistence of species.</p>
+<p>For instance, we found that juveniles of North-Island robins (<i>Petroica longipes</i>) are very reluctant to cross more than 100 m of pasture during dispersal (see our methodology), and the landscape structure therefore needs to be taken into account if one wants to model the amount of movements between populations. Unfortunately, in metapopulation models, movements are often assumed to be independent of the matrix (the part of the landscape between habitat patches), and only dependent on the distance between habitat patches and on the size and/or quality of the patches.</p>
+<p>For my PhD, I wanted a model that could be used to disentangle the relative effects of habitat quality and landscape connectivity on species persistence and distribution. To account for landscape connectivity, I wanted a realistic-yet-simple model of animal movement, which could be easily manipulated, and potentially applicable to other species and landscapes. Moreover, I wanted a flexible way of manipulating habitat quality via its impact on the species vital rates (productivity and adult/juvenile survival). </p>
+<p>SEXIBAM is a program I wrote in C++ to model the dynamics of populations in fragmented landscapes. It is individually-based, i.e. the fate of each individual is modelled (both males and females): individuals reproduce, their juveniles disperse, settle in a territory, find a partner if possible, and eventually die, and each stage is controlled by parameters.
+It is also spatially-explicit in the sense that patches and individuals occur in a specific landscape. Real or created maps (as rasters) of vegetation cover for example can be used.
+Finally, it is a metapopulation model, because individuals are located in discrete habitat patches, either provided by the user or calculated using the program using the patch recognition function. During the simulations, the number of individuals in each patch is recorded for better insight into the whole dynamics at the landscape level.</p>
+<div class="figure  figure-center"  style="width: 730px" >
+
+<img src="/images/screenshotone-730x670.png" alt="sexibam screenshot 1"  width="730"   height="670"  >
+
+<p class="caption">Figure 2. SEXIBAM's map window, showing the studied landscape and a simulated movement path with a 50-m gap crossing ability (in pink). </p>
+<p class="credit">Yvan Richard</p>
+</div>
+
+<div class="figure  figure-center"  style="width: 730px" >
+
+<img src="/images/screenshottwo-730x583.png" alt="sexibam screenshot 2"  width="730"   height="583"  >
+
+<p class="caption">Figure 3. SEXIBAM's parameter window, where parameters on dispersal and vital rates (productivity, adult and juvenile survival) can be changed.</p>
+<p class="credit">Yvan Richard</p>
+</div>
+
+<table  cellpadding="2" cellspacing="5" style="vertical-align:top">
+<tr valign="top">
+    <td width="25%" valign="top" style="text-align:justify"><strong>Metapopulation dynamics</strong></td>
+    <td style="text-align:justify">
+        Simulation of the whole metapopulation dynamics over time, starting from specified locations
+        (coordinates or mouse clicks on the map), or random in the landscape or within specific patches.
+        The output is a csv file presenting the 
+        metapopulation state at each simulation year: metapopulation size, the number of males and females,
+        the number of juveniles produced, the number and proportion of occupied patches, the patch turnover,
+        the number of juveniles who left the study area or died during dispersal.
+    </td>
+</tr>
+<tr valign="top">
+    <td><strong>Dispersal simulations</strong></td>
+    <td style="text-align:justify">
+        Dispersal only (no mortality, no reproduction) from specified or random locations or patches.
+        The output is a csv file indicating for each dispersal trajectory the starting and ending locations,
+        the Euclidean distance, the total distance achieved, the number of visited patches and the total
+        area visited (sum of the areas of visited patches). A map of all dispersal paths and
+        of settlement locations can be also saved.<br><br>
+    </td>
+</tr>
+</table>
+
+<div class="figure  figure-center"  >
+
+<img src="/images/anim2_3.gif" alt="Sexibam gap simulation"   >
+
+<p class="caption">Figure 4. Example of dispersal simulations with SEXIBAM. Two sets of 500 dispersal simulations each were run, keeping the distribution of total dispersal distances equal, but changing the gap crossing ability from 100 m to 150 m. All paths started from the central red point. The frequency of visits of each cell is represented by a gradient from blue (one or few visits) to red (many visits). </p>
+<p class="credit">Yvan Richard</p>
+</div>
+
+<table cellpadding="2" cellspacing="5" width="100%">
+<tr>
+    <td width="25%"><strong>Metapopulation or population viability analysis</strong></td>
+
+    <td>To follow the trajectory of the species distribution and population sizes over time.</td>
+</tr>
+<tr>
+    <td><strong>Re-introduction assessment</strong></td>
+    <td>To estimate the viability of hypothetic re-introduced populations.</td>
+</tr>
+<tr>
+
+    <td><strong>Sensitivity analysis</strong></td>
+    <td>To assess the effect of various parameter values on the distribution and persistence of
+        the metapopulation.</td>
+</tr>
+<tr>
+    <td><strong>Connectivity analysis</strong></td>
+    <td>To assess the landscape or patch functional connectivity.</td>
+</tr>
+
+<tr>
+    <td><strong>Dispersal calibration</strong><br><br></td>
+    <td>To calibrate the distribution of dispersal distances to observed data.<br><br></td>
+</tr>
+</table>
+
+<table cellpadding="2" cellspacing="5" width="100%">
+<tr>
+    <td width="25%"><strong>No environmental stochasticity</strong></td>
+
+    <td>This will be probably be changed.</td>
+</tr>
+<tr>
+    <td><strong>No habitat selection</strong></td>
+    <td>Juveniles settle in habitat patches regardless of their quality.</td>
+</tr>
+<tr>
+
+    <td><strong>Binary gap crossing behaviour</strong></td>
+    <td>A gap is either crossable or not, depending on the specified gap crossing ability value.</td>
+</tr>
+</table>
+
+<div class="figure  figure-center"  style="width: 730px" >
+
+<img src="/images/pano_hilux_dennis-730x230.jpg" alt="benneydale landscape"  width="730"   height="230"  >
+
+
+<p class="credit">Yvan Richard</p>
+</div>
+  
+  
+
+
+                 </div>
+            </div>
+        </div>
+        <div class = "footer">
+
+Dragonfly Limited, PO Box 27535, Wellington 6141. Phone +64 4 385 9285.
+
+	<a class="footer" href="/login/?next=%2Fyvan-richard-sexibam.html" >Log in to website</a>.
+
+
+        </div>
+    </div>
+<div id="navcolumn">
+    <div class = "watermark"><a href='/index.html' title="Dragonfly home"><img src='/static/css/damsel_70.png' alt="Dragonfly home"></a></div>
+        <div class="menu">
+
+
+<ul> 
+    
+	<li> <a class="menuinactive" href="/about.html" title="About Dragonfly Science">ABOUT US</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/case-studies.html" title="Case Studies">CASE STUDIES</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/people.html" title="Dragonfly Science people">PEOPLE</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/posts/" title="Dragonfly news">NEWS</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/publications.html" title="Dragonfly Science publications">PUBLICATIONS</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/contact.html" title="Contact Dragonfly Science">CONTACT</a>
+    </li>
+     
+    
+</ul>
+
+</div>
+</div>
+</div>
+
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-441953-1";
+urchinTracker();
+</script>
+
+</body>
+</html>

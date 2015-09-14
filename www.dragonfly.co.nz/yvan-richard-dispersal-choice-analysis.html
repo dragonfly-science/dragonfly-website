@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	
+<head>
+    <style type="text/css">@import url(/static/css/dragonfly.css);</style>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<title>Dispersal choice analysis</title>
+<link rel="shortcut icon" href="/static/css/dragonfly.ico">
+
+<!--[if lte IE 6]> <style type="text/css"> .clearfix { height: 1%; } </style> <![endif]--> <!--[if IE 7]> <style type="text/css"> .clearfix { display:inline-block; } </style> <![endif]--> <!--[if IE]><style type="text/css"> .container { width: 700px } </style><![endif]-->
+</head>
+
+<body>
+<div id="bigcontainer">
+    <div class="container">
+	
+        <div class="banner">
+        <div class = "splash">
+<table width="100%"><tr><td align="left" id="splash_left">DRAGONFLY SCIENCE</td><td align="right" id="splash_right">Understanding through data</td></tr></table>
+        </div>
+        </div>
+
+        <div class="box">
+            <div class = "clearfix content">
+                <div id="iehack">
+
+
+<br>
+
+  
+  <h2>Main goals</h2>
+<ul>
+<li>
+Identify the landscape features that facilitate or impede individual movements, if any, based on potentially any dispersal data.
+</li>
+<li>
+Quantify the maximum distance of inhospitable habitat an organism can cross.
+</li>
+</ul>
+
+<h2>Introduction</h2>
+<p>Despite the fact that dispersal has been recognised to be a fundamental process to drive the distribution, the viability and the evolution of species, it is still poorly understood and over-simplified in most studies. Although dispersal has often been assumed to be independent of the landscape (Fig. 1, path 1), the features of the landscape can often facilitate or impede individual movements. A common problem in dispersal studies is the fact that records of dispersal paths, obtained for example from radio-tracking, typically consist in series of locations, discrete in time and space. We therefore generally do not know the path followed by an individual between them. Straight lines were generally used to represent such path, but nowadays, least-cost path modelling allows a better representation of individual movements. Indeed, the path inferred between two observed locations can be calculated in order to maximise the crossing of facilitating features and to minimise the crossing of barriers or inhospitable habitats (Fig. 1, path 2). See how cost functions work on the online ArcGIS page. However:</p>
+<p>How do we know whether individuals use corridors for their dispersal or not? Or more generally, do all substrates provide the same connectivity and if not, how can we identify the features that may facilitate or impede individual movements?</p>
+<div class="figure  figure-center"  style="width: 739px" >
+
+<img src="/images/RB-mW_choice_example_-_smaller-739x621.jpg" alt="dispersal choice example"  width="739"   height="621"  >
+
+<p class="caption">Figure 3. This figure shows a dispersal step (in yellow, starting point in the centre) matched to 10 random alternatives (in red) of similar length, chosen among a wider set of random locations situated in woody vegetation (in black). The least-cost paths are calculated assuming that movements occur most likely in native forest (resistance value of 1), less in pine forest (value of 2), even less in shrubland (3), and impeded by pasture (10).</p>
+<p class="credit">Yvan Richard</p>
+</div>
+
+<p>Cost distance modelling relies on the assignment of a resistance value (also called cost or friction value) to each cell of the map that denotes the difficulty of the organism or its reluctance to cross the map cell. However, the resistance values are unfortunately often guessed based on expert judgment or on proxy data. Moreover, their assignment generally assumes that individual movements are decided on a cell-by-cell basis, and decisions made on a larger scale such as gap-crossing ability are ignored.</p>
+<p>Ignoring the spatial distribution of these resistance values implies that a path crossing several small stretches of inhospitable habitat (Fig. 2, path 1) can have the same cost as a path crossing fewer but larger stretches (Fig. 2, path 2). However, it is possible that an organism might be willing to use the first path but not the second one. This therefore brings another question:</p>
+<p>If individuals' movements are impeded by some inhospitable habitats, what maximum distance of these habitats are individuals willing to cross?</p>
+<div class="figure  figure-center"  style="width: 618px" >
+
+<img src="/images/cost_curves-618x492.gif" alt="gap crossing curves"  width="618"   height="492"  >
+
+<p class="caption">Figure 4. To test for the gap crossing limitation of species, the resistance value of each cell of pasture can change as a function of its distance to the nearest woody vegetation. Several functions can be used, tested, and their comparison based on models' AIC would indicate which one fits the data the best.</p>
+
+</div>
+
+<p>I propose here an approach I developed to answer these questions.</p>
+<p><br><br> </p>
+<p>To illustrate the approach, let's consider an organism living in mature forests. We want to test the hypothesis that this species is reluctant to cross pastures and prefers using woody vegetation to disperse. After fitting some individuals with radio-transmitters, we recorded their location every day during their dispersal (daily dispersal steps). Our dataset at this point only consists of a table containing the radio-tagged individuals, the date and time of each resighting and the corresponding locations where the individuals were found.</p>
+<p>If we want to test whether pasture has a low degree of connectivity compared to woody vegetation, we can assign each cell of the map representing pasture with a high resistance value, i.e. 10, compared to those representing woody vegetation with a value of 1, meaning that an individual is 10 times more likely to cross a cell of woody vegetation than a cell of pasture. Most GIS software can then calculate the cost distance between two consecutive recorded locations, which indicates the likelihood of the movement between the two points, assuming that our assignment of resistance values is right. This assignment of the values to each pixel of the map represents our hypothesis about landscape connectivity.</p>
+<p>Our connectivity hypothesis can be considered as satisfying only if we can demonstrate that individuals seek to minimise the cost distance of the path they choose, i.e. they prefer moving through low resistance substrates and avoid high resistance ones. For this purpose, we can match each chosen dispersal step (each pair of consecutive locations) to a sample of non-chosen available alternatives of similar length, and calculate the cost distance for these alternative paths also (Fig. 3).</p>
+<p>The least-cost paths (and the cost distances that can be calculated in most GIS software package) typically look like this:</p>
+<div class="figure  figure-center"  style="width: 739px" >
+
+<img src="/images/RB-mW_choice_example_-_smaller-739x621.jpg" alt="dispersal choice example"  width="739"   height="621"  >
+
+<p class="caption">Figure 3. This figure shows a dispersal step (in yellow, starting point in the centre) matched to 10 random alternatives (in red) of similar length, chosen among a wider set of random locations situated in woody vegetation (in black). The least-cost paths are calculated assuming that movements occur most likely in native forest (resistance value of 1), less in pine forest (value of 2), even less in shrubland (3), and impeded by pasture (10).</p>
+<p class="credit">Yvan Richard</p>
+</div>
+
+<p><br><br></p>
+<p>Conditional logit models can then be used to test whether the chosen steps have a lower cost distance on average than their matched alternatives. Such model can be fitted using a Cox proportional hazards model with Breslow ties as their likelihood functions are similar (Chen &amp; Kuo 2001). The data only need to be prepared to be equivalent to survival data, where the individual "dies" at time 1 for the chosen alternative, or "survives" and becomes censored at time 2 for the non-chosen alternatives (Kuhfeld 2001). The theory behind the conditional logit model in an ecological context has been described in Fortin et al. (2005) and for the closely related multinomial logit regression model in Cooper &amp; Millspaugh (1999). </p>
+<p>Here is an example of how the model can be fitted using the great free statistical software R, using the coxph function from the survival library:</p>
+<fieldset name="Group1" style="font-family:'Courier New';font-size:11px">
+<pre>
+library(foreign)  # for function read.dbf
+library(survival)  # for function coxph
+
+# import the output table from the GIS
+thedata <- read.dbf("C:\\Discrete choice model\\OutputTable.dbf")
+
+# Data preparation
+attach(thedata)
+t <- 2-CHOICE   # CHOICE=1 for chosen alternative, 0 otherwise
+RelCost <- PATHC_CS1/PATHL_CS1   # Standardisation of cost distances by distance
+
+# Fit Cox proportional hazards model
+# StartPtID is the index of the starting point of each dispersal step
+choice.mod <- coxph(Surv(t,CHOICE) ~ RelCost + strata(StartPtID),
+     data=thedata, method="breslow")
+
+# Output results
+summary(choice.mod)
+</pre>
+</fieldset>
+
+<p>And for the old-fashioned people, here is an example of how to fit the same model using Proc PHREG in SAS®:</p>
+<fieldset name="Group1" style="font-family:'Courier New';font-size:11px">
+<pre>
+/* Import data from Excel spreadsheet */
+Proc import out=WORK.DispChoice
+  datafile= "C:\Discrete choice model\OutputTable.dbf" /* Output table from the GIS */
+  DBMS=DBF replace;
+  getdeleted=No;
+Run;
+
+/* Data preparation for Proc PHREG*/
+Data DispChoice;
+  set DispChoice;
+  t=2-CHOICE;  /* CHOICE=1 for chosen alternative, 0 otherwise */
+  RelCost = PATHC_CS1/PATHL_CS1;  /* Standardisation of cost distances by distance */
+  output;
+run;
+
+/* Model */
+Proc PHREG data=DispChoice;
+  strata StartPtID; /* Index of starting location of each dispersal step */
+  model t*CHOICE(0)= RelCost /ties=breslow;
+run;
+</pre>
+</fieldset>
+
+<p>Note that this model only has two hierarchical levels, the alternative points within the dispersal steps (defined by StartPtID in this case), i.e. the chosen and non-chosen alternatives, can only be compared from each starting point. It is therefore assumed that actual dispersal steps are independent within and between individuals. A close look (plots etc.) at the data should be sufficient to detect if this assumption is erroneous.</p>
+<p>From the fitted model, we get the value and significance of the coefficient β of the utility function U of path i defined as:</p>
+<p>Ui = β.RelativeCosti     (equation 1)</p>
+<p>A negative value of β that is statistically significant indicates that individuals prefer to go to locations that are well connected, i.e. for which paths go through corridors and avoid barriers most often.</p>
+<p>The probability pi that an individual chooses the path i among j possibilities is:</p>
+<p>pi = exp(Ui) / ∑exp(U1...j)     (equation 2)</p>
+<p>If β is significantly negative, individuals' movements follow the map of resistance values we created, which is already satisfying. We can now go further and try different values of resistance, e.g. increase the resistance of pasture to movements and assign different values to different woody vegetation types. If the dataset is kept the same among models, i.e. the random alternatives matched to the chosen dispersal steps are identical across models, then we can use the Akaike Information Criterion (AIC) to compare the models and find the model that fits the data the best.</p>
+<p>Likewise, we can incorporate some behavioural traits in the model such as the gap crossing ability of species (see above). This can be achieved by assigning a resistance value to each cell of pasture that changes as a function of its distance to the nearest woody vegetation. A linear or Gompertz function can be used, and several models with various function parameters can be tested as above (Fig. 4).</p>
+<div class="figure  figure-center"  style="width: 618px" >
+
+<img src="/images/cost_curves-618x492.gif" alt="gap crossing curves"  width="618"   height="492"  >
+
+<p class="caption">Figure 4. To test for the gap crossing limitation of species, the resistance value of each cell of pasture can change as a function of its distance to the nearest woody vegetation. Several functions can be used, tested, and their comparison based on models' AIC would indicate which one fits the data the best.</p>
+
+</div>
+
+<p><br><br></p>
+<p>The best model will indicate which hypothesis about landscape connectivity fits the data the best. If the best model indicates a strong gap crossing limitation, we can then calculate the largest gap crossed by the species by first calculating the least-cost paths between consecutive dispersal points based on the cost map of the best model to infer the movement paths, and then by extracting the largest gap crossed by these paths by splitting these paths based on the vegetation cover layer in the GIS.</p>
+<ul>
+<li>
+    <strong>Objective.
+    </strong>Whereas the assignment of resistance values used to 
+    be quite subjective, the comparison of alternative 
+    hypotheses based on AIC allows to test whether a factor is 
+    truly influencing species movements.
+    </li>
+
+<li>
+    Can be potentially applied 
+    to<strong> any available dispersal data</strong>, without having 
+    to rely on expensive research design.
+    </li>
+<li>
+    <strong>Quantitative</strong>. 
+    The approach allows to quantify the resistance values/functions 
+    associated with landscape elements.
+    </li>
+
+<li>
+    <strong>Applicable</strong> 
+    to most landscapes and species to test most hypotheses about 
+    dispersal.
+    </li>
+<li>
+    <strong>Flexible</strong>. 
+    Most factors promoting or limiting species movements can be 
+    represented in a cost map. Avoidance of roads, buildings or 
+    human habitation for example can be modelled by assigning a cost 
+    to each map pixel that decreases with distance from the these 
+    features, easily calculated in the GIS, and gap crossing ability 
+    can be modelled as described above. Furthermore, several factors 
+    can be combined in the calculation of the cost map; the 
+    resistance value of each pixel would simply be a weighted sum of 
+    the different factors.
+    </li>
+
+<li>
+    <strong>Generalizable</strong>. 
+    By directly incorporating some behavioural traits in the 
+    hypotheses, the functions used to represent these traits, once 
+    fitted and validated, are likely to be extrapolated to other 
+    landscapes.
+    </li>
+<li>
+    <strong>Extendable</strong>. 
+    One can also include in the models some characteristics of the 
+    dispersing individuals such as sex, size, age or sibling status 
+    to analyse or control for variations in dispersal behaviour 
+    among individuals. Such models would then be a mixture of 
+    conditional and multinomial logit models, but they can be fitted 
+    the same way as previously described.
+    </li>
+<li>
+
+    The results are <strong>easy to present</strong> to the 
+    public, stakeholders, land and wildlife managers. Cost 
+    distances and dispersal 
+    frequencies can be represented 
+    on maps such as the following ones:
+    </li>
+</ul>
+
+<div class="figure  figure-center"  style="width: 739px" >
+
+<img src="/images/RB-mW_choice_example_-_smaller-739x621.jpg" alt="dispersal choice example"  width="739"   height="621"  >
+
+<p class="caption">Figure 3. This figure shows a dispersal step (in yellow, starting point in the centre) matched to 10 random alternatives (in red) of similar length, chosen among a wider set of random locations situated in woody vegetation (in black). The least-cost paths are calculated assuming that movements occur most likely in native forest (resistance value of 1), less in pine forest (value of 2), even less in shrubland (3), and impeded by pasture (10).</p>
+<p class="credit">Yvan Richard</p>
+</div>
+
+<div class="figure  figure-center"  style="width: 618px" >
+
+<img src="/images/cost_curves-618x492.gif" alt="gap crossing curves"  width="618"   height="492"  >
+
+<p class="caption">Figure 4. To test for the gap crossing limitation of species, the resistance value of each cell of pasture can change as a function of its distance to the nearest woody vegetation. Several functions can be used, tested, and their comparison based on models' AIC would indicate which one fits the data the best.</p>
+
+</div>
+
+<DIV ALIGN="center">
+<table width="100%">
+<tr>
+    <td><iframe style="height:287px; width: 350px" src="http://www.youtube.com/embed/OahDK6LYihs" frameborder="0" allowfullscreen></iframe></td>
+    <td><iframe style="height:287px; width: 350px" src="http://www.youtube.com/embed/m0OCZt0yfgI" frameborder="0" allowfullscreen></iframe></td>
+</tr>
+</table>
+</DIV>
+
+<p>Assuming that you already have a shapefile containing some dispersal points, the main task is to calculate the cost distances of the chosen and random locations for each dispersal step for the conditional logit model. Fortunately, I wrote a toolbox in Python for ArcGIS that automates most of the operations. You can download it for free at the end of this page. The toolbox contains two scripts:</p>
+<ul>
+<li>Dispersal choice analysis - for ArcGIS 92.py<br>
+From a shapefile containing consecutive dispersal locations, this script selects random locations to be matched to the chosen destination for each dispersal step and calculates the cost distance of these points for one of several cost rasters. The output is a table where each row represents a dispersal step, chosen or not, with the associated cost distance (one column for each cost raster). This table can be used directly in R or SAS for fitting conditional logit models using the codes provided above.</li>
+
+<li>Dispersal paths and gaps - for ArcGIS 92.py<br>
+From a shapefile containing consecutive dispersal locations, this script calculates the least-cost path between them, given one or several cost rasters, and extracts the maximum distance crossed over a specified substrate (for gap crossing ability - see above).</li>
+</ul>
+
+<p>What do I need to run the scripts?</p>
+<ul>
+<li>ArcGIS 9.0-9.2 with an ArcInfo license and spatial analyst. This is the expensive part of the process... I hope one day to be able to adapt the scripts to GRASS.</li>
+<li>A shapefile with dispersal points, ordered by individual and by date/time.</li>
+<li>A shapefile with relevant random points that will be used as the alternative points. You can create such shapefile using the free extension Hawth's Analysis Tools for ArcGIS.</li>
+<li>One or more cost rasters calculated in ArcGIS to represent the various hypotheses about landscape connectivity.</li>
+<li>A lot of patience... Everything in ArcGIS 9.x takes time, but more particularly the calculation of cost distances and least-cost paths. For instance, in the case of 100 recorded dispersal steps, each matched to 10 alternatives, and under 10 different cost sets, the script needs to calculate 10 000 least-cost paths, while a single calculation may take several minutes depending on the length of the step, the map resolution and the computer power. However, the script offers the possibility for the user to be notified by e-mail upon completion of the script (whether successfully or not), and, in case of successful completion, the output table can also be sent.</li>
+</ul>
+
+<p>What these scripts do NOT do:
+<ul>
+<li>Fitting the actual conditional logit models. This can easily be done using statistical software such as R (free) or SAS (commercial), if you use the codes provided above.</li>
+</ul></p>
+<p>For more details, see the help file provided with the script. </p>
+<ul>
+<li><a href="https://www.dragonfly.co.nz/files/Dispersal_Choice_Analysis_-_ArcGIS_92.zip">Dispersal cost distance toolbox for ArcGIS 9.2</a></li>
+</ul>
+<p><br>
+LICENSE &amp; COPYRIGHT</p>
+<p>This software is copyrighted and is the intellectual property of the author. You (users) are granted license to use, install and freely distribute this software without limit. You are expressly forbidden to sell this product, or in any way attempt to make a profit by distributing it (this includes distributing it on a website that sells advertising space).
+Although you may distribute this software, I ask that you refer other interested users directly to this web site to ensure they have acquired the latest version.<br>
+Implicit in the use of this product is the understanding that:<br>
+- No technical support is offered for this product.<br>
+- The product is provided AS-IS, without warranty of any kind.<br>
+- YOU are responsible for ensuring that the output of this tools is accurate, relevant, consistent, and otherwise error-free.<br>
+- The author assumes no responsibility for any suffering you may experience as a result of the use (or misuse) of this software.<br>
+- The author does not warrant that this software is bug free.<br></p>
+<p>CHEN Z. &amp; KUO L. (2001). A note on the estimation of the multinomial logit model with random effects. <i>The American Statistician</i>, 55, 89-95.</p>
+<p>COOPER A.B. &amp; MILLSPAUGH J.J. (1999). The application of discrete choice models to wildlife resource selection studies. <i>Ecology</i>, 80, 566-575.</p>
+<p>FORTIN D., BEYER H.L., BOYCE M.S., SMITH D.W., DUCHESNE T. &amp; MAO J.S. (2005). Wolves influence elk movements: behavior shapes a trophic cascade in Yellowstone National Park. <i>Ecology</i>, 86, 1320-1330.</p>
+<p>KUHFELD W.F. (2001). Multinomial logit, discrete choice modeling: an introduction to designing choice experiments, and collecting, processing and analyzing choice data with the SAS system. <i>SAS Technical Report TS-621</i>, SAS Institute, Cary, North Carolina, USA.</p>
+  
+  
+
+
+                 </div>
+            </div>
+        </div>
+        <div class = "footer">
+
+Dragonfly Limited, PO Box 27535, Wellington 6141. Phone +64 4 385 9285.
+
+	<a class="footer" href="/login/?next=%2Fyvan-richard-dispersal-choice-analysis.html" >Log in to website</a>.
+
+
+        </div>
+    </div>
+<div id="navcolumn">
+    <div class = "watermark"><a href='/index.html' title="Dragonfly home"><img src='/static/css/damsel_70.png' alt="Dragonfly home"></a></div>
+        <div class="menu">
+
+
+<ul> 
+    
+	<li> <a class="menuinactive" href="/about.html" title="About Dragonfly Science">ABOUT US</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/case-studies.html" title="Case Studies">CASE STUDIES</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/people.html" title="Dragonfly Science people">PEOPLE</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/posts/" title="Dragonfly news">NEWS</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/publications.html" title="Dragonfly Science publications">PUBLICATIONS</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/contact.html" title="Contact Dragonfly Science">CONTACT</a>
+    </li>
+     
+    
+</ul>
+
+</div>
+</div>
+</div>
+
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-441953-1";
+urchinTracker();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	
+<head>
+    <style type="text/css">@import url(/static/css/dragonfly.css);</style>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<title>Index of Functional Patch Connectivity</title>
+<link rel="shortcut icon" href="/static/css/dragonfly.ico">
+
+<!--[if lte IE 6]> <style type="text/css"> .clearfix { height: 1%; } </style> <![endif]--> <!--[if IE 7]> <style type="text/css"> .clearfix { display:inline-block; } </style> <![endif]--> <!--[if IE]><style type="text/css"> .container { width: 700px } </style><![endif]-->
+</head>
+
+<body>
+<div id="bigcontainer">
+    <div class="container">
+	
+        <div class="banner">
+        <div class = "splash">
+<table width="100%"><tr><td align="left" id="splash_left">DRAGONFLY SCIENCE</td><td align="right" id="splash_right">Understanding through data</td></tr></table>
+        </div>
+        </div>
+
+        <div class="box">
+            <div class = "clearfix content">
+                <div id="iehack">
+
+
+<br>
+
+  
+  <h2>Index of Functional Patch Connectivity (IFPC)</h2>
+<h2>Presentation</h2>
+<p>This tool assigns an index of functional patch connectivity (IFPC) to each patch of a user-specified polygon layer. The smaller the index, the more isolated the patch is.</p>
+<p>In this tool, connectivity is estimated from the organism’s point of view (hence the name ‘functional connectivity’) by using the ArcGIS Cost Distance tool, i.e. connectivity relates to how easily an individual can move from one patch to another, as the tool considers the features of the matrix between patches that can facilitate or impede individual movements. When only the Euclidean distance between each patch is considered, a patch close to another patch would be considered as not isolated, but if a barrier to individual movements exists between them, they can be functionally isolated, as no or very few individuals can move between these patches.</p>
+<p>In addition, patch functional connectivity relates to the number of immigrating individuals in a patch, in turn often related to the size of the neighbouring patches, likely to host larger populations.</p>
+<p>As the computation of cost distances is a long process, a threshold radius is specified, and only neighbouring patches located within this Euclidean distance from the focal patch are considered. In addition, the tool allows the user to specify two layers of patches: a first one representing the patches the user is interested in and for which IFPCs are calculated, and a second layer representing the possible neighbouring patches for which IFPC need not to be calculated.</p>
+<p>The IFPC is calculated as the sum of the areas of the surrounding patches, weighed by the least cost of going between them and the focal patch, as shown in this illustration:</p>
+<div class="figure  figure-center"  style="width: 549px" >
+
+<img src="/images/IFPC_illustration-549x454.jpg" alt="IFPC illustration"  width="549"   height="454"  >
+
+<p class="caption">Illustration of the Index of Functional Patch Connectivity</p>
+<p class="credit">Yvan Richard</p>
+</div>
+
+<h2>Input</h2>
+<p>The tool needs:
+<ul>
+<li>a cost raster (cost of going through each cell of the landscape)</li>
+<li>a polygon feature layer representing the patches of interest (patch layer), each one must have a unique ID in a column named 'GRIDCODE' (e.g. created when using the ArcGIS Region group tool).</li>
+<li>a polygon feature layer representing the patches used for defining the focal patches neighbourhood. It can be the same previous layer or you can specify another one in order to include more habitats, areas outside the study area, etc. IFPCs are not calculated for these patches,</li>
+<li>a threshold radius (in map units) that defines the surrounding area of each focal patch.
+    the workspace (folder) where you want the output to be placed (it needs to be created beforehand).
+</ul></p>
+<p>The user can specify whether the tool should create the rasters representing the least-cost paths between the focal patches and their surrounding patches. This is not needed in the calculation of the IFPC but can be useful to check the validity of the input cost raster. Just be aware that it increases the computing time</p>
+<h2>Output</h2>
+<p>A copy of the patch layer (named 'Patches_IFPC.shp'), where each patch has a new attribute: the index of patch functional connectivity (labelled IFPC).</p>
+<h2>Requirements</h2>
+<ul>
+<li>ArcGIS 9.x</li>
+<li>Spatial Analyst extension (you might need to enable it)</li>
+<li>a computer which computing power corresponds to the inverse of your patience threshold...</li>
+</ul>
+
+<h2>Installation</h2>
+<ul>
+<li>Extract the .tbx (the toolbox) and the .py (Python script) files in your toolbox folder ("\My Toolboxes").</li>
+<li>In ArcToolBox, add a new toolbox and browse for IFPC.tbx. Make sure that the script is linked to IFPC.py.</li>
+</ul>
+
+<h2>Download</h2>
+<p>Download the tool:
+<ul>
+<li><a href="https://www.dragonfly.co.nz/files/IFPC_90.zip">IFPC for ArcGIS 9.0 &amp; 9.1</a></li>
+<li><a href="https://www.dragonfly.co.nz/files/IFPC_92.zip">IFPC for ArcGIS 9.2</a></li>
+</ul></p>
+<p><br>
+LICENSE &amp; COPYRIGHT</p>
+<p>This software is copyrighted and is the intellectual property of the author. You (users) are granted license to use, install and freely distribute this software without limit. You are expressly forbidden to sell this product, or in any way attempt to make a profit by distributing it (this includes distributing it on a website that sells advertising space).<br>
+Although you may distribute this software, I ask that you refer other interested users directly to this web site to ensure they have acquired the latest version.<br>
+Implicit in the use of this product is the understanding that:<br>
+- No technical support is offered for this product.<br>
+- The product is provided AS-IS, without warranty of any kind.<br>
+- YOU are responsible for ensuring that the output of this tools is accurate, relevant, consistent, and otherwise error-free.<br>
+- The author assumes no responsibility for any suffering you may experience as a result of the use (or misuse) of this software.<br>
+- The author does not warrant that this software is bug free.<br></p>
+  
+  
+
+
+                 </div>
+            </div>
+        </div>
+        <div class = "footer">
+
+Dragonfly Limited, PO Box 27535, Wellington 6141. Phone +64 4 385 9285.
+
+	<a class="footer" href="/login/?next=%2Fyvan-richard-ifpc.html" >Log in to website</a>.
+
+
+        </div>
+    </div>
+<div id="navcolumn">
+    <div class = "watermark"><a href='/index.html' title="Dragonfly home"><img src='/static/css/damsel_70.png' alt="Dragonfly home"></a></div>
+        <div class="menu">
+
+
+<ul> 
+    
+	<li> <a class="menuinactive" href="/about.html" title="About Dragonfly Science">ABOUT US</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/case-studies.html" title="Case Studies">CASE STUDIES</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/people.html" title="Dragonfly Science people">PEOPLE</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/posts/" title="Dragonfly news">NEWS</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/publications.html" title="Dragonfly Science publications">PUBLICATIONS</a>
+    </li>
+    
+	<li> <a class="menuinactive" href="/contact.html" title="Contact Dragonfly Science">CONTACT</a>
+    </li>
+     
+    
+</ul>
+
+</div>
+</div>
+</div>
+
+<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-441953-1";
+urchinTracker();
+</script>
+
+</body>
+</html>
