@@ -6,7 +6,6 @@ module WebSite.DomUtil.Images (
 
 import qualified Data.ByteString.Lazy.UTF8       (fromString)
 import qualified Data.Map                        as M
-import           Data.Text.Lazy                  hiding (concatMap)
 import           Text.Blaze.Html                 (toHtml)
 import           Text.Blaze.Html.Renderer.String (renderHtml)
 import           Text.Hamlet.XML
@@ -18,7 +17,7 @@ main :: IO()
 main = interact processFigures
 
 transform :: Element -> Element
-transform (Element _name attrs children) = Element "html" M.empty
+transform (Element _name _ children) = Element "html" M.empty
     [xml|
             $forall child <- children
                 ^{goNode child}
