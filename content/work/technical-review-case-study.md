@@ -5,8 +5,8 @@ quote: Dragonfly’s expertise in working with uncertain data sets was the key d
 quote-attribution: Dr Richard Seaton, Department of Environment and Heritage Protection, Queensland
 summary: A technical review of the statistical methods used in a koala population study. 
 tags: stats, capability
-banner-image: /work/2015-09-04-technical-review-case-study/koala.jpg
-logo: /work/2015-09-04-technical-review-case-study/queensland-government.png
+banner-image: /work/technical-review-case-study/koala.jpg
+logo: /work/technical-review-case-study/queensland-government.png
 ---
 
 We reviewed a koala population study for the Department of Environment and Heritage Protection in Queensland. The technical review checked that their client had used appropriate spatial modelling and data analysis methods and that the reports' conclusions were fair. 
