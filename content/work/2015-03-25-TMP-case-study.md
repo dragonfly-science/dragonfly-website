@@ -12,9 +12,6 @@ logo: /work/2015-03-25-TMP-case-study/tmp-logo.png
 Machine learning methods are ideal for classifying streaming data rapidly. We are using these methods to help Te Māngai Pāho identify different languages broadcast the radio stations they fund in New Zealand.  
 <!--more-->
 
-<<<<<<< HEAD
-##Tracking spoken Māori
-=======
 ### Tracking the proportion of Māori and English spoken
 >>>>>>> 484d575cd96b0d5e28435cd30ffb3484c1555d32
 Te Māngai Pāho is a government agency charged with funding and monitoring the 

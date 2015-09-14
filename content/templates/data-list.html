@@ -1,10 +1,10 @@
 <div class="container">
   <div class="wide">
         <h2>
-          We choose to <span class="highlight">open up data</span> whenever we can.
+          We encourage the release of data.
         </h2>
         <p class="lead">
-          By creating a friendly and intuitive interface with online datasets, we help people find the facts they're looking for as easily and as quickly as possible.  
+          Giving access to data helps make information widely available, building consensus. Where appropriate, we encourage the release of open data. 
         </p>
     <div class="post-list">
       $for(data)$
@@ -19,6 +19,7 @@
                 <p class="subheading">$if(published)$ $published$ $endif$ $if(author)$ . $author$ $endif$ </p>
                 $if(teaser)$ $teaser$ $endif$
                 <span><a href="$link$" class="read-more">Explore the data</a></span>
+                $partial("templates/_top.html")$
               </div>
           </div>
         </div>

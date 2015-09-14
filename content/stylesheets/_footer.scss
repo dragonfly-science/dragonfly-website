@@ -120,27 +120,29 @@
         }
 
         .cell.social {
+            margin-top: em(13);
             @include media($table-footer) {
                 @include shift(8 of 12);
             }
             @include media($medium-footer) {
-                @include shift(0);
-                @include span-columns(12 of 12);
+                @include shift(6);
             }
         }
 
-        .cell.social p {
-            color: white;
-            @include footer-side-margins;
-        }
-
         .cell.social > div {
-            border-top: 1px solid white;
+            border-top: 1px solid $lighter-gray;
             padding-top: em(13);
         }
 
         .cell.social > div > p > a {
             padding-right: em(15);
+        }
+
+        span.license-text {
+            padding-left: 1em;
+            position: relative;
+            bottom: 5px;
+            font-size:0.9em;
         }
 
     }
@@ -164,8 +166,8 @@
         color: lighten($lighter-gray, 20);
     }
     
-    #footer-map {
-        display: none;
+    #footer-license {
+        margin-top: 2em;
     }
     
     #footer-outer-map {
@@ -181,25 +183,4 @@
 
 address + p {
     margin-top: 1em;
-}
-
-/* Custom styles for the contact page */
-
-#footer-contact {   
-    margin-top: 0em;
-    padding-top: 3em;
-    min-height: 100vh;
-    .main {
-        display: none;
-    }
-     
-    #footer-map {
-        display: block;
-        @include shift(0);
-        @include span-columns(12 of 12);
-        height: 500px;
-    }
-    #footer-row-logo {
-        display: none;
-    }
 }
