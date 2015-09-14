@@ -7,6 +7,7 @@ import Hakyll
 import WebSite.Config
 import WebSite.Context
 import WebSite.Compilers
+import qualified WebSite.Images as Images
 import qualified WebSite.Work as Work
 import qualified WebSite.People as People
 import qualified WebSite.News as News
@@ -33,6 +34,15 @@ main = hakyllWith config $ do
     match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png") $ do
         route idRoute
         compile copyFileCompiler
+
+    -- Process images through imagemagick
+    -- for each <name> and <args> we get a image
+    --   some/path/image.jpg -> some/path/name-image.jpg
+    -- created by running convert <args> on the image
+    Images.imageProcessor ( "**/*.jpg" .||. "**/*.png") $ 
+                          [ ("small",  ["-resize" , "500"]) 
+                          , ("medium", ["-resize" , "800"]) 
+                          ]
 
     -- Home page
     match "pages/index.md" $ do
