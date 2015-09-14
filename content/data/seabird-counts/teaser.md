@@ -1,3 +1,0 @@
----
-owner: Department of Conservation
----

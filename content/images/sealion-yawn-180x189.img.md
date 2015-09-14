@@ -1,3 +1,0 @@
----
-credit: Dominique Filippi
----
