@@ -3,9 +3,9 @@ module WebSite.News (
     rules, list
 ) where
 
-import WebSite.Collection
+import           WebSite.Collection
 
-config = CollectionConfig 
+config = CollectionConfig
        { baseName            = "news"
        , indexTemplate       = "news/index.html"
        , indexPattern        = "pages/news.md"

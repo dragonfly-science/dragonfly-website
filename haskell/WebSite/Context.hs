@@ -8,19 +8,16 @@ module WebSite.Context (
   tagContext
 ) where
 
-import Control.Monad (forM, when)
-import Data.List (intercalate)
-import qualified Data.Map as M
-import Data.Monoid ((<>))
-import Data.Maybe
-import System.FilePath (takeBaseName, replaceExtension)
-import Text.CSL.Reference (Reference)
-import Text.Pandoc.Definition (Pandoc)
+import qualified Data.Map             as M
+import           Data.Maybe
+import           Data.Monoid          ((<>))
+import           System.FilePath      (replaceExtension, takeBaseName)
+import           Text.CSL.Reference   (Reference)
 
-import WebSite.Config
-import WebSite.Bibliography
+import           WebSite.Bibliography
+import           WebSite.Config
 
-import Hakyll
+import           Hakyll
 
 baseContext :: String -> Compiler (Context String)
 baseContext section = do
@@ -33,27 +30,27 @@ baseContext section = do
            <> bodyField "body"
            <> boolField "hasBody" ((/= "") . trim . itemBody)
            <> listContextWith "tags" tagContext
-           <> allTags 
+           <> allTags
            <> metadataField
            -- We don't include titleField (or defaultContext which includes
            -- titleField) here because (1) we never want the file name as the
            -- title and (2) we want to use the title from citations.
 
 tagLookup :: String -> String
-tagLookup tag = 
+tagLookup tag =
     let mtag = lookup tag tagDictionary
     --in  maybe ("Not found (" ++ tag ++ ")") id mtag
     in  fromJust mtag
 
 tagContext :: Context String
-tagContext = field "tag" (return . itemBody) 
+tagContext = field "tag" (return . itemBody)
             <> field "tagDisplay" (return . tagLookup . itemBody)
 
 
 --listField :: String -> Context a -> Compiler [Item a] -> Context b
-allTags :: Context String 
+allTags :: Context String
 allTags = listField "allTags" ctx (return $ map (\x -> Item (fromFilePath (fst x)) x ) tagDictionary)
-    where ctx = field "tag" (return . fst . itemBody) 
+    where ctx = field "tag" (return . fst . itemBody)
             <> field "tagDisplay" (return . snd . itemBody)
 
 listContextWith :: String -> Context String -> Context a
