@@ -1,10 +1,10 @@
 ---
 title: Data visualisation makes information accessible
 short-title: Data visualisation
-banner-image: /work/2015-03-19-webrear-case-study/ipad.jpg
+banner-image: /work/webrear-case-study/ipad.jpg
 quote: I believe Dragonfly’s interactive is one of the best visualisations of public data in New Zealand.
 quote-attribution: Harkanwal Singh, Data Editor, New Zealand Herald
-logo: /work/2015-03-19-webrear-case-study/mbie-logo.png
+logo: /work/webrear-case-study/mbie-logo.png
 summary: An intuitive website and iPad app to explore New Zealand's economic results.
 tags: systems 
 ---

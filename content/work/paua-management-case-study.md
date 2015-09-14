@@ -1,11 +1,11 @@
 ---
 title: Informed management
-banner-image: /work/2015-03-02-paua-logger-case-study/dave-and-jules.jpg
+banner-image: /work/paua-management-case-study/dave-and-jules.jpg
 summary: Statistical analysis to ensure sustainability of the pāua fishery. 
 tags: stats
 quote: Dragonfly has been absolutely awesome – we’re rapt.
 quote-attribution: Jeremy Cooper, CEO, Pāua Industry Council
-logo: /work/2015-03-02-paua-logger-case-study/pic-logo.png
+logo: /work/paua-management-case-study/pic-logo.png
 ---
 
 The New Zealand pāua (abalone) fishery is a $50 million export industry. We 
