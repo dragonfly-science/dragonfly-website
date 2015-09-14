@@ -6,15 +6,14 @@ module WebSite.Compilers (
   imageCredits,
 ) where
 
-import Data.Default (def)
-import Data.Monoid ((<>))
+import           Data.Default           (def)
 
-import Hakyll
+import           Hakyll
 
-import Text.Pandoc.Definition 
+import           Text.Pandoc.Definition
 
-import WebSite.Config
-import WebSite.DomUtil.Images
+import           WebSite.Config
+import           WebSite.DomUtil.Images
 
 readScholmd :: Compiler (Item Pandoc)
 readScholmd = do
@@ -35,5 +34,3 @@ scholmdCompiler = readScholmd >>= writeScholmd
 -- FIXME: imgMeta is not used. Should it be?
 imageCredits :: [Item String] -> Item String -> Compiler (Item String)
 imageCredits imgMeta = return . fmap processFigures
-
-

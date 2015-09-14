@@ -3,11 +3,11 @@
 -- | This module contains values related to configuration.
 module WebSite.Config where
 
-import qualified Data.List as List
+import qualified Data.List           as List
 
-import Hakyll
+import           Hakyll
 
-import Text.Pandoc.Options (WriterOptions(..))
+import           Text.Pandoc.Options (WriterOptions (..))
 
 -- | Options for an HTML5 Pandoc writer
 htm5Writer :: WriterOptions
@@ -39,8 +39,8 @@ htm5Writer = defaultHakyllWriterOptions
 -- Text
 
 -- | recognised tags
-tagDictionary :: [(String, String)] 
-tagDictionary = [("edward", "Edward Abraham"), 
+tagDictionary :: [(String, String)]
+tagDictionary = [("edward", "Edward Abraham"),
     ("katrin", "Katrin Berkenbusch"),
     ("philipp", "Philipp Neubauer"),
     ("yvan", "Yvan Richard"),

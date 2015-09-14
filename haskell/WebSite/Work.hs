@@ -3,9 +3,9 @@ module WebSite.Work (
     rules, list
 ) where
 
-import WebSite.Collection
+import           WebSite.Collection
 
-config = CollectionConfig 
+config = CollectionConfig
        { baseName            = "work"
        , indexTemplate       = "work/index.html"
        , indexPattern        = "pages/work.md"
