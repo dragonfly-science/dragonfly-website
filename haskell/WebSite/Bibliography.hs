@@ -13,21 +13,18 @@ module WebSite.Bibliography (
 ) where
 
 
-import Control.Monad ((>=>))
-import Data.Default (def)
-import Data.Char (isSpace)
-import Data.List (find, sortOn)
-import GHC.Exts (build)
-import System.Directory (doesFileExist)
-import System.FilePath (takeBaseName)
-import Text.CSL.Reference (Reference)
+import           Control.Monad      ((>=>))
+import           Data.Default       (def)
+import           Data.List          (find)
+import           System.FilePath    (takeBaseName)
+import           Text.CSL.Reference (Reference)
 import qualified Text.CSL.Reference as Ref
-import Text.CSL.Style (Formatted(unFormatted), Agent(..))
-import Text.Pandoc.Shared (stringify)
+import           Text.CSL.Style     (Agent (..), Formatted (unFormatted))
+import           Text.Pandoc.Shared (stringify)
 
-import WebSite.Config
+import           WebSite.Config
 
-import Hakyll
+import           Hakyll
 
 -- | Render a Pandoc input string to HTML5 output with a CSL style and a
 -- bibliography.

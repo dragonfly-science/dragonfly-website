@@ -9,7 +9,7 @@ function getParameterByName(name) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-function tagFilter(tags){    
+function tagFilter(tags){
     $('.tag').show().each(function(i, elem){
         tags.split(',').forEach(function(t){
             if (!(t === "") & (!$(elem).hasClass('tag-' + t ))){
@@ -63,16 +63,8 @@ var initPublications = function() {
 
     updateList();
 
-}
-
-$(document).ready(function() {
-    menuInit();
-
-    initPublications();
-    
-    //Dropdown menus
+    //Publication dropdown menus
     $(".dropdown-button").click(function() {
-        console.log('Dropdown clicked')
         var $button, $menu;
         $button = $(this);
         $menu = $button.siblings(".dropdown-menu");
@@ -86,7 +78,13 @@ $(document).ready(function() {
             }
         });
     });
-    
+}
+
+$(document).ready(function() {
+    menuInit();
+
+    initPublications();
+
     $(document).mouseup(function (e){
         $(".dropdown-menu").each(function() {
             if (!$(this).is(e.target)  // if the target of the click isn't the container...
@@ -96,8 +94,3 @@ $(document).ready(function() {
         });
     });
 });
-
-
-
-
-

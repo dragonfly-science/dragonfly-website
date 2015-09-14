@@ -3,10 +3,10 @@ title: Statistical analysis for effective management
 short-title: Statistical analysis
 summary: Selecting the best device to reduce albatross fatalities. 
 tags: policy, stats
-banner-image: /work/2014-10-01-warp-strike/streamers.jpg
+banner-image: /work/warp-strike/streamers.jpg
 quote: Dragonfly consistently produced strong, defensible outputs, and delivered value for money.
 quote-attribution: Johanna Pierre, Manager, Marine Conservation Services, Department of Conservation
-logo: /work/2014-10-01-seabird-risk/MPI-logo.png
+logo: /work/seabird-risk/MPI-logo.png
 ---
 
 Our statistical analysis enabled fisheries managers to make a decision about which 

@@ -1,34 +1,31 @@
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TupleSections #-}
+{-# LANGUAGE TupleSections     #-}
 module WebSite.Collection (
     makeRules,
-    getList, 
+    getList,
     pageIndexCtx,
     getBubbles,
     CollectionConfig(..),
     Rules()
 ) where
 
-import Data.List
-import Control.Monad (liftM, foldM)
-import Data.Monoid ((<>))
-import Data.Maybe (fromMaybe, maybeToList)
-import Control.Monad.Error.Class
-import System.FilePath
-import Data.Time.Locale.Compat (defaultTimeLocale)
-import Data.Time.Clock (utctDay)
-import Data.Time.Calendar (toModifiedJulianDay)
-import qualified Data.Set as S
-import qualified Data.Map as M
+import           Control.Monad.Except
+import           Data.List
+import qualified Data.Map                as M
+import           Data.Maybe              (fromMaybe, maybeToList)
+import           Data.Monoid             ((<>))
+import qualified Data.Set                as S
+import           Data.Time.Calendar      (toModifiedJulianDay)
+import           Data.Time.Clock         (utctDay)
+import           Data.Time.Locale.Compat (defaultTimeLocale)
+import           System.FilePath
 
-import Text.Pandoc
+import           Hakyll
 
-import Hakyll
+import           WebSite.Compilers
+import           WebSite.Context
 
-import WebSite.Context
-import WebSite.Compilers
-
-data CollectionConfig = CollectionConfig 
+data CollectionConfig = CollectionConfig
                       { baseName           :: String
                       , indexTemplate      :: FilePath
                       , indexPattern       :: Pattern
@@ -42,25 +39,25 @@ makeRules cc = do
 
     match (indexPattern cc) $ do
         route $ constRoute (indexTemplate cc)
-        compile $ do 
+        compile $ do
             base <- baseContext (baseName cc)
             pages <- getList cc 1000
-            tagLists <- getTagLists cc 
+            tagLists <- getTagLists cc
             bubbles <- getBubbles cc Nothing
             let  ctx = base <> pages <> bubbles <> tagLists
-            scholmdCompiler 
+            scholmdCompiler
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
 
     match (collectionPattern cc) $ version "full" $ do
-        compile $ do 
-            scholmdCompiler 
+        compile $ do
+            scholmdCompiler
                 >>= saveSnapshot "content"
 
     match (collectionPattern cc) $ do
         route $ setExtension "html"
-        compile $ do 
+        compile $ do
             ident <- getUnderlying
             base <- baseContext (baseName cc)
             imageMeta <- loadAll ("**/*.img.md")
@@ -76,8 +73,8 @@ makeRules cc = do
                 >>= relativizeUrls
 
 sortorder :: Identifier -> Compiler Integer
-sortorder i = do 
-    so <- getMetadataField i "sortorder" 
+sortorder i = do
+    so <- getMetadataField i "sortorder"
     days <- (do utc <- getItemUTC defaultTimeLocale i
                 return (( negate . toModifiedJulianDay . utctDay) utc)
             ) `catchError` (\_ -> return 666)
@@ -95,15 +92,15 @@ getList cc limit = do
     return $ listField (baseName cc) (pageIndexCtx lu)(return $ take limit snaps')
 
 getBubbles :: CollectionConfig -> Maybe Identifier -> Compiler (Context String)
-getBubbles cc mident = do 
+getBubbles cc mident = do
     snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
-    let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"  
+    let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"
     snaps' <- sortItemsBy sortorder snaps
     let l = length snaps'
         all = cycle snaps'
         lu = [ (itemIdentifier this, (prev, next))
              | (prev, this, next) <- take l $ drop (l-1) $ zip3 all (drop 1 all) (drop 2 all) ]
-        snaps'' = maybe (take 7 snaps') id $ do 
+        snaps'' = maybe (take 7 snaps') id $ do
                     ident <- mident
                     let ident' = setVersion (Just "full") ident
                     idx <- findIndex (\i -> ident' == itemIdentifier i) snaps'
@@ -113,7 +110,7 @@ getBubbles cc mident = do
         this     = listField "bubbles_this" (pageIndexCtx lu)(return (take 1 $ drop 3 snaps''))
         next     = listField "bubbles_next" (pageIndexCtx lu)(return (take 3 $ drop 4 snaps''))
     return  $ previous <> this <> next
-    
+
 getTagLists :: CollectionConfig -> Compiler (Context String)
 getTagLists cc = do
     snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
@@ -141,7 +138,7 @@ getTagLists cc = do
 
 itemCtx :: Context String
 itemCtx  = listContextWith "tags" tagContext
-        <> defaultContext 
+        <> defaultContext
         <> teaserImage
         <> portholeImage
         <> teaserField "teaser" "content"
@@ -151,23 +148,23 @@ itemCtx  = listContextWith "tags" tagContext
 
 type PreviousNextMap = [(Identifier, (Item String, Item String))]
 pageIndexCtx :: PreviousNextMap -> Context String
-pageIndexCtx lu  = itemCtx 
+pageIndexCtx lu  = itemCtx
                 <> previous lu
                 <> next lu
 
 previous :: PreviousNextMap -> Context String
-previous lu = 
+previous lu =
     let lup item = return $ fmap fst $ maybeToList $ lookup (itemIdentifier item) lu
     in  listFieldWith "previous" (pageIndexCtx []) lup
 
 next :: PreviousNextMap -> Context String
-next lu = 
+next lu =
     let lup item = return $ fmap snd $ maybeToList $ lookup (itemIdentifier item) lu
     in  listFieldWith "next" (pageIndexCtx []) lup
 
 teaserImage :: Context String
 teaserImage = field "teaserImage" getImagePath
-  where 
+  where
     getImagePath item = do
         let path = toFilePath (itemIdentifier item)
             base = dropExtension path
@@ -176,7 +173,7 @@ teaserImage = field "teaserImage" getImagePath
 
 portholeImage :: Context String
 portholeImage = field "portholeImage" getImagePath
-  where 
+  where
     getImagePath item = do
         let path = toFilePath (itemIdentifier item)
             base = dropExtension path
@@ -196,4 +193,3 @@ filterItemsBy f = filterByM $ f . itemIdentifier
   where
     filterByM :: Monad m => (a -> m Bool) -> [a] -> m [a]
     filterByM f xs = map fst . filter snd <$> mapM (\x -> (x,) <$> f x) xs
-

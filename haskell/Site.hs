@@ -1,24 +1,24 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import Data.Monoid ((<>))
+import           Data.Monoid          ((<>))
 
-import Hakyll
+import           Hakyll
 
-import WebSite.Config
-import WebSite.Context
-import WebSite.Compilers
-import qualified WebSite.Images as Images
-import qualified WebSite.Work as Work
-import qualified WebSite.People as People
-import qualified WebSite.News as News
-import qualified WebSite.Data as Data
+import           WebSite.Compilers
+import           WebSite.Config
+import           WebSite.Context
+import qualified WebSite.Images       as Images
+import qualified WebSite.Data         as Data
+import qualified WebSite.News         as News
+import qualified WebSite.People       as People
 import qualified WebSite.Publications as Publications
+import qualified WebSite.Work         as Work
 
 config :: Configuration
 config = defaultConfiguration {
-  destinationDirectory = "/var/cache/dragonflyweb/main/site",
-  storeDirectory       = "/var/cache/dragonflyweb/main/cache",
-  tmpDirectory         = "/var/cache/dragonflyweb/main/cache/tmp",
+  destinationDirectory = "/tmp/cache/dragonflyweb/main/site",
+  storeDirectory       = "/tmp/cache/dragonflyweb/main/cache",
+  tmpDirectory         = "/tmp/cache/dragonflyweb/main/cache/tmp",
   previewHost          = "0.0.0.0"
 }
 
@@ -50,7 +50,7 @@ main = hakyllWith config $ do
         compile $ do
             base   <- baseContext "index"
             people <- People.list 1000
-            bubbles <- People.bubbles 
+            bubbles <- People.bubbles
             work   <- Work.list 3
             news   <- News.list 6
             let ctx = base <> people <> work <> news <> bubbles

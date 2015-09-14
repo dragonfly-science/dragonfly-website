@@ -1,12 +1,12 @@
 ---
 title: Data science capability building
 short-title: Capability building
-banner-image: /work/2015-03-25-reporting-case-study/electricity-use-and-demand.png
+banner-image: /work/reporting-case-study/electricity-use-and-demand.png
 summary: A system to efficiently produce data-rich, collaborative reports.
 tags: capability, systems
 quote: If I have another chance to work with Dragonfly I won't hesitate to say yes. No question. 
 quote-attribution: Vij Kooyela, Senior Analyst, Ministry of Business, Innovation and Employment 
-logo: /work/2015-03-25-reporting-case-study/mbie-logo.png
+logo: /work/reporting-case-study/mbie-logo.png
 ---
 One of our strengths is a focus on repeatable, automated reporting. We worked with the Sector Performance
 team at the Ministry of Business, Innovation & Employment (MBIE) to improve their data analysis processes and make their reporting more collaborative and efficient.

@@ -22,3 +22,4 @@ cabal.sandbox.config
 .deps
 .cabal-sandbox
 .dockerip
+.stack-work
