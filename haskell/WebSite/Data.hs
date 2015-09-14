@@ -3,9 +3,9 @@ module WebSite.Data (
     rules, list
 ) where
 
-import WebSite.Collection
+import           WebSite.Collection
 
-config = CollectionConfig 
+config = CollectionConfig
        { baseName            = "data"
        , indexTemplate       = "data/index.html"
        , indexPattern        = "pages/data.md"

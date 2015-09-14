@@ -3,11 +3,11 @@ module WebSite.People (
     rules, list, bubbles
 ) where
 
-import Hakyll
+import           Hakyll
 
-import WebSite.Collection
+import           WebSite.Collection
 
-config =  CollectionConfig 
+config =  CollectionConfig
        { baseName            = "people"
        , indexTemplate       = "people/index.html"
        , indexPattern        = "pages/people.md"
@@ -23,4 +23,3 @@ list :: Int -> Compiler (Context String)
 list = getList config
 
 bubbles = getBubbles config (Just "people/finlay-thompson.html")
-

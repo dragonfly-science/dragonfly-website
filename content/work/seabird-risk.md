@@ -3,10 +3,10 @@ title: Risk assessment for policy development
 short-title: Risk assessment
 summary: An analysis of the risk posed to seabirds from the fishing industry. 
 tags: stats, policy
-banner-image: /work/2014-10-01-seabird-risk/bullers.jpg
+banner-image: /work/seabird-risk/bullers.jpg
 quote: Dragonfly fostered an open and inclusive approach with all stakeholders.
 quote-attribution: Bob Zuur, Marine Advocate, WWF-New Zealand
-logo: /work/2014-10-01-seabird-risk/MPI-logo.png
+logo: /work/seabird-risk/MPI-logo.png
 ---
 
 The National Plan of Action&mdash;Seabirds, is the Ministry for Primary Industries’ key policy for
