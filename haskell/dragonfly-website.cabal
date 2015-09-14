@@ -13,7 +13,7 @@ cabal-version:       >=1.10
 
 executable website
   main-is:             Site.hs
-  -- other-modules:       
+  other-modules:       WebSite.Validate
   other-extensions:    OverloadedStrings, RecordWildCards, TupleSections, QuasiQuotes
   build-depends:       base
                      , directory
@@ -37,5 +37,6 @@ executable website
                      , monads-tf
                      , mtl
                      , hxt
+                     , tagsoup
   -- hs-source-dirs:      
   default-language:    Haskell2010

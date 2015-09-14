@@ -11,6 +11,7 @@ import qualified WebSite.Data         as Data
 import qualified WebSite.News         as News
 import qualified WebSite.People       as People
 import qualified WebSite.Publications as Publications
+import           WebSite.Validate     (validatePage)
 import qualified WebSite.Work         as Work
 
 config :: Configuration
@@ -20,6 +21,7 @@ config = defaultConfiguration {
   tmpDirectory         = "/tmp/cache/dragonflyweb/main/cache/tmp",
   previewHost          = "0.0.0.0"
 }
+
 
 main :: IO ()
 main = hakyllWith config $ do
@@ -48,6 +50,7 @@ main = hakyllWith config $ do
                 >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
+                >>= validatePage
 
     -- People section
     People.rules
