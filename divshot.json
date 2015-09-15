@@ -1,6 +1,6 @@
 {
   "name": "dragonfly",
-  "root": "./_site",
+  "root": "./_site/site",
   "clean_urls": true,
   "cache_control": {},
   "routes": {
