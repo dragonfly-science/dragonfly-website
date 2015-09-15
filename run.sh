@@ -87,6 +87,9 @@ case "$MODE" in
 
         if [ "$MODE" == "deploy" ]; then
             docker cp $name:/tmp/cache/dragonflyweb/main/site /tmp/$name/ &&
+            rm -rf _site &&
+            mkdir -p _site &&
+            docker cp $name:/tmp/cache/dragonflyweb/main/site _site/ &&
             docker rm $name &&
             rsync -av --delete /tmp/$name/site/ \
                 deployhub@www-staging.hoiho.dragonfly.co.nz:/var/www/static/www.dragonfly.co.nz
