@@ -89,10 +89,10 @@ case "$MODE" in
             docker cp $name:/tmp/cache/dragonflyweb/main/site /tmp/$name/ &&
             rm -rf _site &&
             mkdir -p _site &&
-            docker cp $name:/tmp/cache/dragonflyweb/main/site _site/ &&
-            docker rm $name &&
-            rsync -av --delete /tmp/$name/site/ \
-                deployhub@www-staging.hoiho.dragonfly.co.nz:/var/www/static/www.dragonfly.co.nz
+            docker cp $name:/tmp/cache/dragonflyweb/main/site _site &&
+            docker rm $name
+            #rsync -av --delete /tmp/$name/site/ \
+            #    deployhub@www-staging.hoiho.dragonfly.co.nz:/var/www/static/www.dragonfly.co.nz
         else
 	    docker run --rm -it -w /work -v $PWD/content:/work \
               --volumes-from dragonfly-website \
