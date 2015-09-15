@@ -6,7 +6,7 @@ A variety of core sizes are used for sampling deepsea
 nematodes but little is known about the potential effects of
 core dimensions on estimates of diversity and community
 structure. We investigated the effects of core surface area
-(subcores vs. cores; 6.6 vs. 66.4 cm2) and depth (shallow vs.
+(subcores vs. cores; 6.6 vs. 66.4 cm<sup>2</sup>) and depth (shallow vs.
 deep subcores; 0–1 vs. 0–5 cm) on estimates of nematode
 genus diversity and community structure at six sites on the
 continental slope of New Zealand. We found that cores
