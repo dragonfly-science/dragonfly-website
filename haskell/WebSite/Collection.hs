@@ -140,7 +140,6 @@ itemCtx :: Context String
 itemCtx  = listContextWith "tags" tagContext
         <> defaultContext
         <> teaserImage
-        <> portholeImage
         <> teaserField "teaser" "content"
         <> pageUrlField "pageurl"
         <> dateField "published" "%B %d, %Y"
@@ -169,16 +168,7 @@ teaserImage = field "teaserImage" getImagePath
         let path = toFilePath (itemIdentifier item)
             base = dropExtension path
             ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" toUrl) (getRoute ident)
-
-portholeImage :: Context String
-portholeImage = field "portholeImage" getImagePath
-  where
-    getImagePath item = do
-        let path = toFilePath (itemIdentifier item)
-            base = dropExtension path
-            ident = fromFilePath $ base </> "porthole.png"
-        fmap (maybe "" toUrl) (getRoute ident)
+        fmap (maybe "" (toUrl . (flip replaceFileName "256-teaser.jpg"))) (getRoute ident)
 
 -- Sort items by a monadic ordering function
 sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]

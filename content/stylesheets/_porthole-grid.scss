@@ -36,44 +36,45 @@ $porthole-title-padding-top: em(20);
     &.six-columns .porthole {
         @include grid_item(6);
     }
-    .porthole {
-        margin-top: 2em;
-        margin-bottom: 1em;
-        text-align: center;
-        a {
-            text-decoration: none;
-        }
+}
+
+.porthole {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    a {
+        text-decoration: none;
+    }
+    img {
+        border-radius: 50%;
+        width: $porthole-image-size;
+        height: $porthole-image-size;
+    }
+    h4 {
+        @extend .highlight;
+        padding-bottom: $porthole-title-padding-bottom;
+        padding-top: $porthole-title-padding-top;
+    }
+    h4 a {
+        @extend .highlight;
+    }
+    p {
+        text-align: left;
+    }
+    @include media($clinical) {
+        @include span-columns(4 of 8);
+        @include omega(2n);
+    }
+    @include media($transient) {
+        @include span-columns(2);
+        @include omega(2n);
+        margin-top: $porthole-top-margin-small;
         img {
-            border-radius: 50%;
-            width: $porthole-image-size;
-            height: $porthole-image-size;
+            width: $porthole-image-size-small;
+            height: $porthole-image-size-small;
         }
         h4 {
-            @extend .highlight;
-            padding-bottom: $porthole-title-padding-bottom;
-            padding-top: $porthole-title-padding-top;
-        }
-        h4 a {
-            @extend .highlight;
-        }
-        p {
-            text-align: left;
-        }
-        @include media($clinical) {
-            @include span-columns(4 of 8);
-            @include omega(2n);
-        }
-        @include media($transient) {
-            @include span-columns(2);
-            @include omega(2n);
-            margin-top: $porthole-top-margin-small;
-            img {
-                width: $porthole-image-size-small;
-                height: $porthole-image-size-small;
-            }
-            h4 {
-                letter-spacing: em(1);
-            }
+            letter-spacing: em(1);
         }
     }
 }

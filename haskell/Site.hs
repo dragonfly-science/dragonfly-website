@@ -45,13 +45,19 @@ main = hakyllWith config $ do
     -- medium: 720
     -- small-medium: 560
     -- small: 420
-    Images.imageProcessor ( "**/*.jpg" .||. "**/*.png") $ 
-                          [ ( "420", ["-resize" , "420"]) 
-                          , ( "560", ["-resize" , "560"]), 
-                          , ( "720", ["-resize" , "720"]),
-                          , ( "960", ["-resize" , "960"]), 
-                          , ("1088", ["-resize" , "1088"]), 
+    Images.imageProcessor ( "images/dragonfly-wing.png") $ 
+                          [ ( "420", ["-resize" , "420x128^", "-crop", "420"]) 
+                          , ( "960", ["-resize" , "960x128^"]) 
+                          , ("1600", ["-resize" , "1600x128^"])
+                          ]
+    Images.imageProcessor ( "images/ipad.jpg") $ 
+                          [ ( "420", ["-resize" , "420x240^", "-crop", "420"]) 
+                          , ( "960", ["-resize" , "960x320^"]) 
                           , ("1600", ["-resize" , "1600"])
+                          ]
+    Images.imageProcessor ( "**/teaser.jpg") $ 
+                          [ ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0"]) 
+                          , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0"]) 
                           ]
 
     -- Home page
