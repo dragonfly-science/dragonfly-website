@@ -15,6 +15,7 @@ import           WebSite.Collection   hiding (getList)
 import           WebSite.Compilers
 import           WebSite.Config
 import           WebSite.Context
+import           WebSite.Validate     (validatePage)
 
 cc     = CollectionConfig
        { baseName            = "publications"
@@ -38,6 +39,7 @@ rules = do
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
+                >>= validatePage
 
     match (collectionPattern cc) $ version "full" $ do
         compile $ do
@@ -56,6 +58,7 @@ rules = do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= imageCredits imageMeta
                 >>= relativizeUrls
+                >>= validatePage
 
     match publicationPDFPattern $ do
         route idRoute
