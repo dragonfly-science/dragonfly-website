@@ -1,6 +1,6 @@
 ---
 pdf: Leducetal-2015-core-area.pdf
-tags: katrin, benthic, publication
+tags: katrin, benthic, article
 ---
 A variety of core sizes are used for sampling deepsea
 nematodes but little is known about the potential effects of
