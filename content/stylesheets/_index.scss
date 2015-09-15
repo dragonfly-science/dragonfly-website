@@ -26,12 +26,11 @@ a.contact-button {
 
 .dragonfly-divider {
     height: 8em;
-    .divider-image {
+    #dragonfly-wing {
         position: absolute;
-        background-image: url("/images/dragonfly-wing.png");
         left: 0;
         right: 0;
-        height: 8em;
+        height: em(128);
         background-size: cover;
     }
 }
@@ -52,17 +51,6 @@ a.contact-button {
     a:hover {
         text-decoration: underline;
     }
-}
-
-.banner-background {
-    position: absolute;
-    background-image: url("/resources/rear/port-napier.jpg");
-    background-position-x: 70%;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
 }
 
 .banner .container {
@@ -146,9 +134,6 @@ a.contact-button {
     @include media($clinical){
         min-height: $medium-screen/3;
     }
-    @include media($transient){
-        min-height: $small-screen/2;
-    }
     h1, h2, h3, a {
         color: white;
     }
@@ -210,3 +195,4 @@ a.contact-button {
         display: none;
     }
 }
+

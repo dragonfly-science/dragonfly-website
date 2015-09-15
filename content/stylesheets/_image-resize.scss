@@ -1,0 +1,27 @@
+#dragonfly-wing {
+    @include media($serendipity-up) {
+        background-image: url("/images/1600-dragonfly-wing.png");
+    }
+    @include media($transient-serendipity) {
+        background-image: url("/images/960-dragonfly-wing.png");
+    }
+    @include media($transient) {
+        background-image: url("/images/420-dragonfly-wing.png");
+    }
+}
+
+#index-ipad-image {
+    background-position-x: 100%; 
+    background-position-y: 8%;
+    @include media($serendipity-up) {
+        background-image: url("/images/1600-ipad.jpg");
+    }
+    @include media($transient-serendipity) {
+        background-image: url("/images/960-ipad.jpg");
+    }
+    @include media($transient) {
+        background-image: url("/images/420-ipad.jpg");
+    }
+}
+
+
