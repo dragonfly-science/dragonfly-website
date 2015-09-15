@@ -24,6 +24,7 @@ import           Hakyll
 
 import           WebSite.Compilers
 import           WebSite.Context
+import           WebSite.Validate        (validatePage)
 
 data CollectionConfig = CollectionConfig
                       { baseName           :: String
@@ -49,6 +50,7 @@ makeRules cc = do
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= relativizeUrls
+                >>= validatePage
 
     match (collectionPattern cc) $ version "full" $ do
         compile $ do
@@ -71,6 +73,7 @@ makeRules cc = do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= imageCredits imageMeta
                 >>= relativizeUrls
+                >>= validatePage
 
 sortorder :: Identifier -> Compiler Integer
 sortorder i = do

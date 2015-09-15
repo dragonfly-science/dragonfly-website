@@ -7,33 +7,23 @@ import           Hakyll
 
 import           Control.Monad.Except
 import           Data.List
-import           Text.HTML.TagSoup
---import           Text.XML.HXT.Core
---import           Text.XML.HXT.DOM.FormatXmlTree
-import           Text.XML.HXT.DOM.ShowXml
+import           Data.Tree.NTree.TypeDefs
+import           Text.XML.HXT.DOM.TypeDefs
 import           Text.XML.HXT.Parser.HtmlParsec
 
 validatePage :: Item String -> Compiler (Item String)
 validatePage item = do
   return $ fmap htmlValidation item
 
+-- TODO: Workout out how to unpack XError from NTree XNode
+getErrors :: NTree XNode -> Bool
+--getErrors (NTree (XError _ _)) = True
+getErrors _ = False
+
 htmlValidation :: String -> String
 htmlValidation html =
   let doc = parseHtmlContent html
-  in xshow doc
-
-htmlValidatios = unlines . g . f . parseTagsOptions opts
-    where
-        opts = parseOptions{optTagPosition=True, optTagWarning=True}
-
-        f :: [Tag String] -> [String]
-        f (TagPosition row col:TagWarning warn:rest) =
-            ("Warning (" ++ show row ++ "," ++ show col ++ "): " ++ warn) : f rest
-        f (TagWarning warn:rest) =
-            ("Warning (?,?): " ++ warn) : f rest
-        f (_:rest) = f rest
-        f [] = []
-
-        g xs = xs ++ [if n == 0 then "Success, no warnings"
-                      else "Failed, " ++ show n ++ " warning" ++ ['s'|n>1]]
-            where n = length xs
+      d = filter getErrors doc
+  in if length d == 0
+     then html
+     else error "Bad xml" -- TODO: return a decent error message
