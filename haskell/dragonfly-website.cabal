@@ -14,6 +14,18 @@ cabal-version:       >=1.10
 executable website
   main-is:             Site.hs
   other-modules:       WebSite.Validate
+                     , WebSite.Bibliography
+                     , WebSite.Collection
+                     , WebSite.Compilers
+                     , WebSite.Config
+                     , WebSite.Context
+                     , WebSite.Data
+                     , WebSite.DomUtil.Images
+                     , WebSite.Images
+                     , WebSite.News
+                     , WebSite.People
+                     , WebSite.Publications
+                     , WebSite.Work
   other-extensions:    OverloadedStrings, RecordWildCards, TupleSections, QuasiQuotes
   build-depends:       base
                      , directory
