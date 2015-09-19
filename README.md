@@ -64,7 +64,7 @@ One big advantage with this approach comes from git and
 [GitHub](https://www.github.com/dragonfly-science), which gives us good version
 control and user management respectively. When code changes are pushed to the master branch of the  
 [GitHub repo](https://www.github.com/dragonfly-science/website), our
-continuous integration system will update the [staging site](https://www-staging.dragonfly.co.nz).
+continuous integration system will update the [staging site](https://www-dev.dragonfly.co.nz).
 This takes less than a minute. If you are collaborating with us, we can give you a username and 
 password for the staging site.
 
