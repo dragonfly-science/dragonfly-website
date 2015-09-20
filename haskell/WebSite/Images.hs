@@ -2,6 +2,8 @@
 module WebSite.Images where
 
 import           Control.Applicative (empty, (<$>))
+import           Control.Monad.Except (catchError)
+import           Control.Monad.IO.Class (liftIO)
 import           Control.Monad
 import           Data.List
 import           Data.Monoid (mappend, mconcat, mempty)
@@ -41,7 +43,11 @@ imageRules pat procs = match pat $ do
     -- Process with scale and crop instructions.
     processImage (name, args) = version name $ do
         route $ customRoute (imageRoute name)
-        let cmd = "convert"
-        let args' = ["-"] ++ args ++ ["-"]
-        compile $ getResourceLBS >>= withItemBody (unixFilterLBS cmd args')
+        compile $ convertImage "convert" $ ["-"] ++ args ++ ["-"]
+    -- Try to process the file
+    convertImage cmd args' = do
+        catchError (getResourceLBS >>= withItemBody (unixFilterLBS cmd args'))
+                   (\_ -> do
+                    (getResourceLBS >>= withItemBody (unixFilterLBS "cat" [])))
+        
 
