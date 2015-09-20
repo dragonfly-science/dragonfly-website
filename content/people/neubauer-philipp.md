@@ -24,7 +24,7 @@ showed that most fisheries bounce back when fishing is reduced to sustainable le
 fisheries worldwide can be resilient and sustainable.
 
 After growing up in central Germany, Philipp moved to seaside Marseille to study for a 
-Masters in ecological modeling at the [Université de la Méditerranée](http://www.imbe.fr/?lang=fr). He completed a PhD in 
+Masters in ecological modeling at the [Université de la Méditerranée](http://www.mio.univ-amu.fr/?lang=en). He completed a PhD in 
 quantitative ecology at [Victoria University of Wellington](http://www.victoria.ac.nz/sbs/research-centres-institutes/vucel),
 followed by a post-doc at [Rutgers University](http://marine.rutgers.edu/~ojensen/),
 studying the patterns and drivers of decline and recovery in fish stocks. He joined 
