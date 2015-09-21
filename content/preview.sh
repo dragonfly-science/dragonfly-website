@@ -50,8 +50,9 @@ mkdir -p $DIR/.work
 
 if [ ! -e "$DIR/.work/website" ]; then
   echo "Fetching preview binary"
-  curl -L https://github.com/dragonfly-science/dragonfly-website/releases/download/v1.0.0/website \
-    > $DIR/.work/website && chmod 755 $DIR/.work/website
+  cd $DIR/.work && \
+  curl -L -O https://github.com/dragonfly-science/dragonfly-website/releases/download/v1.0.0/website.zip \
+    && unzip website.zip
 fi
 
 if [ "$needsclean" == "true" ]; then
