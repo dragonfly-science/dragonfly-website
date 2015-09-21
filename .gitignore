@@ -24,3 +24,4 @@ cabal.sandbox.config
 .dockerip
 .stack-work
 .divshot-cache
+.work
