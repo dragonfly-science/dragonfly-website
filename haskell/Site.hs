@@ -61,6 +61,9 @@ main = hakyllWith config $ do
                           [ ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0"])
                           , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0"])
                           ]
+    --Images.imageProcessor ( "**/*.pdf") $
+    --                      [ ( "256", ["-density" , "100", "-resize", "256x256^", "-crop", "256x256+0+0"])
+    --                      ]
 
     -- Home page
     match "pages/index.md" $ do
