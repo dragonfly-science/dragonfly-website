@@ -3,7 +3,6 @@ module WebSite.Images where
 
 import           Control.Applicative (empty, (<$>))
 import           Control.Monad.Except (catchError)
-import           Control.Monad.IO.Class (liftIO)
 import           Control.Monad
 import           Data.List
 import           Data.Monoid (mappend, mconcat, mempty)
@@ -19,7 +18,7 @@ type ImageProcessing = [(String, [String])]
 
 -- | Process image files according to a specification.
 --
--- The 'Rules' and 'Context'  returned can be used to output and 
+-- The 'Rules' and 'Context'  returned can be used to output and
 imageProcessor :: Pattern -- ^ Images to process.
                -> ImageProcessing -- ^ Processing instructions.
                -> Rules ()
@@ -34,7 +33,7 @@ imageRules pat procs = match pat $ do
   where
     imageRoute name ident = let path = toFilePath ident
                                 base = takeFileName path
-                                name' = name ++ "-" ++ base 
+                                name' = name ++ "-" ++ base
                             in replaceFileName path name'
     -- Process an image with no instructions.
     processImage (name, []) = version name $ do
@@ -42,12 +41,9 @@ imageRules pat procs = match pat $ do
         compile $ copyFileCompiler
     -- Process with scale and crop instructions.
     processImage (name, args) = version name $ do
+        let cmd = "convert"
+            args' = ["-"] ++ args ++ ["-"]
         route $ customRoute (imageRoute name)
-        compile $ convertImage "convert" $ ["-"] ++ args ++ ["-"]
-    -- Try to process the file
-    convertImage cmd args' = do
-        catchError (getResourceLBS >>= withItemBody (unixFilterLBS cmd args'))
-                   (\_ -> do
-                    (getResourceLBS >>= withItemBody (unixFilterLBS "cat" [])))
-        
+        compile $ getResourceLBS >>= withItemBody (unixFilterLBS cmd args')
+
 
