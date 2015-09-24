@@ -49,7 +49,6 @@ makeRules cc = do
             scholmdCompiler
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
                 >>= validatePage
 
     match (collectionPattern cc) $ version "full" $ do
@@ -72,7 +71,6 @@ makeRules cc = do
                 >>= loadAndApplyTemplate (pageTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= imageCredits imageMeta
-                >>= relativizeUrls
                 >>= validatePage
 
 sortorder :: Identifier -> Compiler Integer
