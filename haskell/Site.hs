@@ -78,7 +78,6 @@ main = hakyllWith config $ do
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
                 >>= validatePage
 
     -- People section
@@ -103,7 +102,6 @@ main = hakyllWith config $ do
             ctx <- baseContext "contact"
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
                 >>= validatePage
 
     -- Standalone pages
@@ -113,7 +111,6 @@ main = hakyllWith config $ do
             ctx  <- baseContext "index"
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
 
     -- Static files
     match "assets/*" $ do
