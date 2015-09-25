@@ -59,5 +59,5 @@ if [ "$needsclean" == "true" ]; then
   $DIR/.work/website clean
 fi
 
-$DIR/.work/website watch -p 8448 -h localhost
+exec $DIR/.work/website watch -p 8448 -h localhost
 

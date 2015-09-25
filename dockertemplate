@@ -1,0 +1,12 @@
+FROM dragonflyscience/dragonfly-website
+MAINTAINER chris@dragonfly.co.nz
+
+RUN groupadd -g ${GROUPID} worker && useradd --create-home -u ${USERID} -g ${GROUPID} worker
+RUN mkdir /work && chown -R worker:worker /work
+
+EXPOSE 8000
+
+USER worker:worker
+
+RUN cabal update
+

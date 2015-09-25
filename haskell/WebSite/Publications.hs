@@ -38,7 +38,6 @@ rules = do
             scholmdCompiler
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
                 >>= validatePage
 
     match (collectionPattern cc) $ version "full" $ do
@@ -57,8 +56,6 @@ rules = do
                 >>= loadAndApplyTemplate (pageTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= imageCredits imageMeta
-                >>= relativizeUrls
-                >>= validatePage
 
     match publicationPDFPattern $ do
         route idRoute
