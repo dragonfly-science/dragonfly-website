@@ -49,8 +49,10 @@ case "$MODE" in
     docker run --rm $INTERACTIVE -w /work -v $PWD/haskell:/work $IMAGE ghci Site.hs
     ;;
   deploy|check)
-    ./run.sh update &&
-    ./run.sh clean &&
+    docker pull dragonflyscience/dragonfly-website &&
+      cat dockertemplate | USERID=$(id -u) GROUPID=$(id -g) envsubst | docker build -t "$IMAGE" - &&
+      docker run --rm $INTERACTIVE -w /work -v $PWD/haskell:/work $IMAGE cabal build && 
+    $HAKYLL clean &&
     $HAKYLL build
 
     if [ "$MODE" == "check" ]; then
