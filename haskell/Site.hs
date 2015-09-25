@@ -66,7 +66,7 @@ main = hakyllWith config $ do
     --                      ]
 
     -- Home page
-    match "pages/index.md" $ do
+    match "index.md" $ do
         route $ constRoute "index.html"
         compile $ do
             base   <- baseContext "index"
@@ -107,13 +107,13 @@ main = hakyllWith config $ do
                 >>= validatePage
 
     -- Standalone pages
-    match "pages/*.md" $ do
+    match "pages/*.html" $ do
         route $ setExtension "html"
         compile $ do
             ctx  <- baseContext "index"
-            scholmdCompiler
+            getResourceBody
+                >>= applyAsTemplate ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
 
     -- Static files
     match "assets/*" $ do
