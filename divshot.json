@@ -6,6 +6,7 @@
   "routes": {
     "**": "index.html"
   },
+  "error_page": "/pages/404.html",
   "redirects": {
     "/contact.html": "/#contact",
     "/people.html": "/people/",
