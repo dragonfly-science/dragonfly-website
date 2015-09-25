@@ -14,8 +14,7 @@ established and renowned ecologists is fantastic", says Phil. "I am
 incredibly excited to be discussing these recent findings and new
 perspectives with such a broad audience at the symposium."
 
-In a [recent
-paper](/news/2013-04-29-resilience-of-fish-stocks/)
+In a [recent paper](/news/2013-04-29-resilience-of-fish-stocks.html)
 that appeared in the journal *Science*, Philipp and his colleagues found
 surprising patterns of resilience in most of the world's overfished
 stocks, which allowed these stocks to recover faster than expected,

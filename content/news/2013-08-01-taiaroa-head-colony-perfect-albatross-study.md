@@ -47,7 +47,7 @@ Despite an excellent data set, Yvan says the analysis, using a single
 Bayesian multi-state capture-recapture model, was challenging.
 
 ![Click for full-size
-image](../news/2013-08-01-taiaroa-head-colony-perfect-albatross-study/population-growth-Taiaroa-Head.jpg)“It’s
+image](/news/2013-08-01-taiaroa-head-colony-perfect-albatross-study/population-growth-Taiaroa-Head.jpg)“It’s
 quite complex because you’re never going to see every bird each year –
 they spend much of their juvenile years at sea and also breed every
 second year. So, if you see an individual one year but not the

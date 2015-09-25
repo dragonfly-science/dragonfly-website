@@ -22,7 +22,7 @@ stones). A new Bayesian modelling approach allowed him to estimate
 dispersal of larval fish among local populations in the region. ![Fish
 hatchling otoliths in the larval head (left and centre close up) and
 extracted (right). The diameter of the otolith is ~ 25
-microns.](../news/2013-09-11-inferring-animal-dispersal/Triplehead.png)
+microns.](/news/2013-09-11-inferring-animal-dispersal/Triplehead.png)
 
 He has recently made these models publicly available as an open-source
 package for the statistical computing environment R via the open
@@ -30,16 +30,16 @@ source repository [GitHub](https://github.com/Philipp-Neubauer/PopR).
 The package uses R for data grooming and analysis of outputs, the
 computationally expensive MCMC calculations are performed using the
 new open source technical computing language
-[julia](http://julialang.org/), which is called from within R.
+[Julia](http://julialang.org/), which is called from within R.
 
 “I wanted to make the software available so that other people can use
-it. That way it will get trialed in different environments – the bugs
+it. That way it will get trialled in different environments – the bugs
 will be found out, then hopefully fixed, and people will apply it to
 new problems. This sort of collaboration is a real strength of
-open-source software. The combination of an R front end and a julia
+open-source software. The combination of an R front end and a Julia
 back end will hopefully lead to more straightforward uptake by
-ecologsits, who are more familiar with R, while allowing efficient
-computing and extensions to new applications in the underlying julia
+ecologists, who are more familiar with R, while allowing efficient
+computing and extensions to new applications in the underlying Julia
 back end.”
 
 He hopes to include models for genetic data as well as a combined
