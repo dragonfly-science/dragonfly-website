@@ -3,9 +3,6 @@
   "root": "./_site",
   "clean_urls": true,
   "cache_control": {},
-  "routes": {
-    "**": "index.html"
-  },
   "error_page": "/pages/404.html",
   "redirects": {
     "/contact.html": "/#contact",
