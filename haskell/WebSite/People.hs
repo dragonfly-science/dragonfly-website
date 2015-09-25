@@ -10,7 +10,7 @@ import           WebSite.Collection
 config =  CollectionConfig
        { baseName            = "people"
        , indexTemplate       = "people/index.html"
-       , indexPattern        = "pages/people.md"
+       , indexPattern        = "people.md"
        , collectionPattern   = "people/*.md"
        , collectionTemplate  = "templates/people-list.html"
        , pageTemplate        = "templates/person.html"
