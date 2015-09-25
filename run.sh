@@ -21,30 +21,32 @@ case "$1" in
 esac
 
 IMAGE=dragonfly-website-$USER
-HAKYLL="docker run --rm -it -p 8000:8000 -w /work/content -v $PWD:/work $IMAGE /work/haskell/dist/build/website/website"
+INTERACTIVE=$([ -t 0 ] && echo '-it')
+CMD=/work/haskell/dist/build/website/website
+HAKYLL="docker run --rm $INTERACTIVE -w /work/content -v $PWD:/work $IMAGE $CMD"
 
 docker inspect $IMAGE >/dev/null 2>&1
 if [ $? != 0 ]; then
     docker pull dragonflyscience/dragonfly-website &&
     cat dockertemplate | USERID=$(id -u) GROUPID=$(id -g) envsubst | docker build -t "$IMAGE" - &&
-    docker run --rm -it -w /work -v $PWD/haskell:/work $IMAGE cabal build
+    docker run --rm $INTERACTIVE -w /work -v $PWD/haskell:/work $IMAGE cabal build
 fi
 
 case "$MODE" in
   develop)
-      docker run --rm -it -w /work -v $PWD/haskell:/work $IMAGE cabal build &&
-      $HAKYLL watch
+      docker run --rm $INTERACTIVE -w /work -v $PWD/haskell:/work $IMAGE cabal build &&
+      docker run --rm $INTERACTIVE -p 8000:8000 -w /work/content -v $PWD:/work $IMAGE $CMD watch
     ;;
   update)
     docker pull dragonflyscience/dragonfly-website &&
       cat dockertemplate | USERID=$(id -u) GROUPID=$(id -g) envsubst | docker build -t "$IMAGE" - &&
-      docker run --rm -it -w /work -v $PWD/haskell:/work $IMAGE cabal build
+      docker run --rm $INTERACTIVE -w /work -v $PWD/haskell:/work $IMAGE cabal build
     ;;
   clean)
       $HAKYLL clean
     ;;
   ghci)
-    docker run --rm -it -w /work -v $PWD/haskell:/work $IMAGE ghci Site.hs
+    docker run --rm $INTERACTIVE -w /work -v $PWD/haskell:/work $IMAGE ghci Site.hs
     ;;
   deploy|check)
     ./run.sh update &&
