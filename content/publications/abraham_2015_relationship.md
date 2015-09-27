@@ -1,5 +1,5 @@
 ---
-pdf: abraham_relationship_2015.pdf
+pdf: abraham_2015_relationship.pdf
 tags: edward, philipp, dragonfly, article, bayesian, paua, benthic, marine-biology 
 ---
 Catch-per-unit-effort (CPUE) is commonly used as an index of abundance in
