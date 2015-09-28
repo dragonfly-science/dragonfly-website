@@ -11,7 +11,7 @@ groups.
 <!--more-->
 
 Douglas’ interest in author identification began with a curiosity about the writers of the 
-controversial Whale Oil blog. 
+controversial *Whale Oil* blog. 
 
 “When Dirty Politics came out, I wanted to find a way to identify the author of a blog post, 
 because it was thought that various people were writing the posts anonymously on behalf of 
