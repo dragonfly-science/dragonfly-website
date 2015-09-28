@@ -43,17 +43,6 @@ worked. I made a modification where a network was simultaneously learning to mod
 authors at once by modelling the language as a whole and picking out bits that suited each 
 author.”
 
-Other competitors extracted thousands of features from the text, (e.g., the number of words 
-over six letters, the number of times a sequence of words occurs) and used a supercomputer 
-to compare them using a vector space. Douglas’ alternative method, however, 
-cleverly reduced the number of text features without losing any information. 
-
-“The vector space method requires you to decide ahead of time what text features you will 
-use for each language, and then disregard the rest. My network was trained to pay attention 
-to every little part of the text and not prematurely throw away any information. It turns out that 
-nobody else uses recurrent neural networks in this way as far as we know. They are quite 
-new.” 
-
 Douglas says he will probably have another go at the competition next year. In the meantime 
 he is presenting his work to the linguistic departments in New Zealand universities, where 
 there is growing interest in computational linguistics. 
