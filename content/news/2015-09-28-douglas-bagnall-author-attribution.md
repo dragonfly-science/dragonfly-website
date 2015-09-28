@@ -61,3 +61,5 @@ there is growing interest in computational linguistics.
 Read a paper describing Douglas’s system: [Author Identification using multi-headed Recurrent Neural Networks](http://www.uni-weimar.de/medien/webis/events/pan-15/pan15-papers-final/pan15-authorship-verification/bagnall15-notebook.pdf).
 
 Douglas's software Recur is [openly available](https://github.com/douglasbagnall/recur).
+
+Contact Douglas by email at [douglas@halo.gen.nz](mailto:douglas@halo.gen.nz).
