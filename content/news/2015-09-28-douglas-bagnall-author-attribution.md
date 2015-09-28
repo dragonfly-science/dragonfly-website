@@ -13,7 +13,7 @@ groups.
 Douglas’ interest in author identification began with a curiosity about the writers of the 
 controversial *Whale Oil* blog. 
 
-“When Dirty Politics came out, I wanted to find a way to identify the author of a blog post, 
+“When *Dirty Politics* came out, I wanted to find a way to identify the author of a blog post, 
 because it was thought that various people were writing the posts anonymously on behalf of 
 corporations and politicians. I decided to use a recurrent neural network, which works by 
 predicting what the next character is most likely be, based on what had been written so far.”
