@@ -30,4 +30,7 @@ Besides spoken language, Richard Mansfield at Dragonfly has used [Echoprint](htt
 
 “The live product isn’t too far away now”, says Edward. “The web-based dashboard is currently being designed, which is where the radio stations will see how their Te Reo content is tracking by the hour and by the day. After that it will be connected to the engineering in the background and we’ll be away.”
 
-[Read a case study about how we developed this technology.](/work/TMP-case-study.html)
+[Read a case study about how we developed this technology](/work/TMP-case-study.html).
+
+Kōkako uses Recurrent Neural Network software developed by Douglas Bagnall, which is 
+[openly available](https://github.com/douglasbagnall/recur).
