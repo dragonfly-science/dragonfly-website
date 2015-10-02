@@ -54,6 +54,9 @@ case "$MODE" in
       docker run --rm $INTERACTIVE -w /work -v $PWD/haskell:/work $IMAGE cabal build && 
     $HAKYLL clean &&
     $HAKYLL build
+    if [ $? != 0 ]; then
+      exit 1
+    fi
 
     if [ "$MODE" == "check" ]; then
        $HAKYLL check
