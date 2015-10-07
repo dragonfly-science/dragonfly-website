@@ -1,5 +1,5 @@
 ---
-pdf: Berkenbusch_bivalves_2015.pdf
+pdf: Berkenbusch_2015_intertidal2.pdf
 tags: katrin, philipp, fisheries, dragonfly, benthic, report, shellfish
 ---
 In New Zealand's sheltered coastal environments, bivalve species targeted in
