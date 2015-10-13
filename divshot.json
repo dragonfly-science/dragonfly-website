@@ -5,6 +5,7 @@
   "cache_control": {},
   "error_page": "/pages/404.html",
   "redirects": {
+    "/regional-economic-activity-report.html":"/",
     "/contact.html": "/#contact",
     "/people.html": "/people/",
     "/people/richard-mansfield.html": "/people/mansfield-richard.html",
