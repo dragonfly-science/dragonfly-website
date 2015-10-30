@@ -13,7 +13,7 @@ Phil enjoys the flexibility of working remotely and usually commutes to the offi
 three or four days a week. 
 
 > It’s the best of both worlds really. I can be around for the family a bit more some 
-> days, or come in to town for client meetings. Dragonfly are really flexible---this 
+> days, or come in to town for client meetings. Dragonfly are really flexible — this 
 > week I took some leave so my wife could finish her marine biology PhD thesis.
 
 Long time staff member Katrin Berkenbusch also works from her home on the 
