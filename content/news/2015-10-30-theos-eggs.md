@@ -1,7 +1,7 @@
 ---
 title: Theo's eggs
 ---
-Philip Neubauer keeps the Dragonfly staff supplied with eggs from his lifestyle 
+Philipp Neubauer keeps the Dragonfly staff supplied with eggs from his lifestyle 
 block in the Wairarapa, about an hour by train from Wellington. 
 
 His son Theo, aged “four and three quarters” decorates the boxes with his 
