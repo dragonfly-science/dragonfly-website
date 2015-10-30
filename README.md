@@ -112,3 +112,10 @@ design. Breakpoints are named after mountain bike trails in Aro Valley. There is
   - [$clinical](http://www.trailforks.com/trails/clinical/): medium
   - [$serendipity](http://www.trailforks.com/trails/serendipity-16954/): large
 
+### Deployment is from the release branch
+
+The release branch is automatically deployed. You can manually merge from master or create a 
+pull request. Creating a pull request on github from the master branch to the release branch
+is the preferred method of deploying.
+
+
