@@ -35,7 +35,7 @@ fisheries than in surface-longline or trawl fisheries. Among the bottom-longline
 the highest overlap was with fishing for snapper.”
 
 The results of this study, carried out on behalf of the Ministry for Primary Industries,
-will allow better estimate of the risk of fiswheries
+will allow better estimate of the risk of fisheries
 to black petrel, and will be used to update the [2013 seabird risk 
 assessment](https://www.dragonfly.co.nz/publications/richard_risk_2013.html). More data
 on the distribution of black petrel would help improve oour knowledge of how this species
