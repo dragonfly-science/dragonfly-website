@@ -16,12 +16,12 @@ import           WebSite.Validate     (validatePage)
 import qualified WebSite.Work         as Work
 
 config :: Configuration
-config = defaultConfiguration {
-  destinationDirectory = "/tmp/cache/dragonflyweb/main/site",
-  storeDirectory       = "/tmp/cache/dragonflyweb/main/cache",
-  tmpDirectory         = "/tmp/cache/dragonflyweb/main/cache/tmp",
-  previewHost          = "0.0.0.0"
-}
+config = defaultConfiguration
+  { previewHost          = "0.0.0.0"
+  , destinationDirectory = "../_site"
+  , storeDirectory       = "../.cache"
+  , tmpDirectory         = "../.cache/tmp"
+  }
 
 
 main :: IO ()
@@ -61,9 +61,12 @@ main = hakyllWith config $ do
                           [ ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0"])
                           , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0"])
                           ]
+    --Images.imageProcessor ( "**/*.pdf") $
+    --                      [ ( "256", ["-density" , "100", "-resize", "256x256^", "-crop", "256x256+0+0"])
+    --                      ]
 
     -- Home page
-    match "pages/index.md" $ do
+    match "index.md" $ do
         route $ constRoute "index.html"
         compile $ do
             base   <- baseContext "index"
@@ -75,7 +78,6 @@ main = hakyllWith config $ do
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
                 >>= validatePage
 
     -- People section
@@ -100,21 +102,30 @@ main = hakyllWith config $ do
             ctx <- baseContext "contact"
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
                 >>= validatePage
 
     -- Standalone pages
-    match "pages/*.md" $ do
+    match "pages/*.html" $ do
         route $ setExtension "html"
         compile $ do
             ctx  <- baseContext "index"
-            scholmdCompiler
+            getResourceBody
+                >>= applyAsTemplate ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
 
-    -- Static files
-    match "assets/*" $ do
-        route idRoute
+    -- Sass based stylesheets
+    match "stylesheets/**.scss" $ do
+      compile getResourceBody
+
+    scssDependencies <- makePatternDependency "stylesheets/**.scss"
+    rulesExtraDependencies [scssDependencies] $ do
+      create ["assets/dragonfly.css"] $ do
+        route $ idRoute
+        compile $ sassCompiler
+
+    -- Scripts
+    match "scripts/dragonfly.js" $ do
+        route $ constRoute "assets/dragonfly.js"
         compile copyFileCompiler
 
     match "favicon.ico" $ do

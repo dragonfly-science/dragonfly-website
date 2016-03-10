@@ -3,6 +3,7 @@ module WebSite.Compilers (
   readScholmd,
   writeScholmd,
   scholmdCompiler,
+  sassCompiler,
   imageCredits,
 ) where
 
@@ -31,6 +32,14 @@ writeScholmd = return . writePandocWith htm5Writer
 scholmdCompiler :: Compiler (Item String)
 scholmdCompiler = readScholmd >>= writeScholmd
 
+
+sassCompiler :: Compiler (Item String)
+sassCompiler = loadBody (fromFilePath "stylesheets/dragonfly.scss")
+                 >>= makeItem
+                 >>= withItemBody (unixFilter "scss" args)
+  where args = ["-s", "-I", "stylesheets/"]
+
 -- FIXME: imgMeta is not used. Should it be?
 imageCredits :: [Item String] -> Item String -> Compiler (Item String)
 imageCredits imgMeta = return . fmap processFigures
+

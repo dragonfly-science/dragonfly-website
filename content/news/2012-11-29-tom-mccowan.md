@@ -16,7 +16,7 @@ areas.
 <!--more-->
 
 ![Tom (right) on a pāua research trip  during his
-PhD](../news/2012-11-29-tom-mccowan/Tom-McCowan.jpg)
+PhD](/news/2012-11-29-tom-mccowan/Tom-McCowan.jpg)
 
 Jeremy Cooper, CEO of PIC is certain that New Zealand’s pāua fisheries
 need to have management implemented at a reef-scale, rather than a
