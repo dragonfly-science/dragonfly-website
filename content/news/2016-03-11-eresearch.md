@@ -1,7 +1,7 @@
 ---
 title: Report back from eResearch 2016
 ---
-A highlight for Finlay of the recent eResearch conference, was hearing the wider research community endorse the value of the principles and methods that are central to how Dragonfly operates.
+A highlight for Finlay of the recent Queenstown eResearch conference, was hearing the wider research community endorse the value of the principles and methods that are central to how Dragonfly operates.
 
 <!--more-->
 
@@ -22,3 +22,5 @@ Finlay has also been invited to present at a [ResBaz](https://www.nesi.org.nz/ne
 “The conference raised a lot of issues that are pertinent to our work. It gave me contact with people who are facing those same issues – about how science gets done and what are the obstacles are. I valued the introductions and network opportunities.”
 
 [eResearch 2016](http://eresearch2016.org.nz/) was held in Queenstown from 9–11 February with the theme  ‘Next generation: collaboration, capabilities and impact’. Finlay’s talk was titled ‘Trust but verify, fisheries science in the cloud’. He spoke about recent work at Dragonfly and highlighted the importance of continuous integration as a tool to lift the quality and reproducibility of code.
+
+Contact [Finlay Thompson](/people/thompson-finlay.html) ([finlay@dragonfly.co.nz](mailto:finlay@dragonfly.co.nz)) to talk about open data and collaborative research.
