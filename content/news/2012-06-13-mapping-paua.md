@@ -38,7 +38,7 @@ relationships between the CPUE and the relative abundance of pāua in
 the area.
 
 ![David Baker (Saavid Fishing) and Julie Hills (Ministry for Primary
-Industries)](../news/2012-06-13-mapping-paua/Dave-and-Julie.png)David
+Industries)](/news/2012-06-13-mapping-paua/Dave-and-Julie.png)David
 continues, “These techniques allow us to get immediate feedback on
 stocks rather than waiting three years for a stock assessment report.
 Also, it’s on a hectare block (100 m) scale rather than a 10 km scale,

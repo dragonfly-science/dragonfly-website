@@ -20,7 +20,7 @@ import           WebSite.Validate     (validatePage)
 cc     = CollectionConfig
        { baseName            = "publications"
        , indexTemplate       = "publications/index.html"
-       , indexPattern        = "pages/publications.md"
+       , indexPattern        = "publications.md"
        , collectionPattern   = "publications/*.md"
        , collectionTemplate  = "templates/publication-list.html"
        , pageTemplate        = "templates/publication.html"
@@ -38,7 +38,6 @@ rules = do
             scholmdCompiler
                 >>= loadAndApplyTemplate (collectionTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= relativizeUrls
                 >>= validatePage
 
     match (collectionPattern cc) $ version "full" $ do
@@ -57,8 +56,6 @@ rules = do
                 >>= loadAndApplyTemplate (pageTemplate cc) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= imageCredits imageMeta
-                >>= relativizeUrls
-                >>= validatePage
 
     match publicationPDFPattern $ do
         route idRoute
