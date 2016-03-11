@@ -17,7 +17,7 @@ This online resource is taught by trained instructors with the goal of increasin
 
 “What I think is interesting is that the skills they’re expecting their students to learn are exactly the skills we use all the time. They’ve come to the same conclusion that writing code is an essential tool for a researcher.”
 
-Finlay has also been invited to present at a [ResBaz](https://www.nesi.org.nz/news/2015/06/research-bazaar-2016)(Research Bazaar, another NeSI initiative) workshop in April in Wellington, with researchers from NIWA, Victoria and Massey Universities and other institutions invited.
+Finlay has also been invited to present at a [ResBaz](https://www.nesi.org.nz/news/2015/06/research-bazaar-2016) (Research Bazaar, another NeSI initiative) workshop in April in Wellington, with researchers from NIWA, Victoria and Massey Universities and other institutions invited.
 
 “The conference raised a lot of issues that are pertinent to our work. It gave me contact with people who are facing those same issues – about how science gets done and what are the obstacles are. I valued the introductions and network opportunities.”
 
