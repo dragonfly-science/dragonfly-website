@@ -1,6 +1,7 @@
 ---
 pdf: AEBR-161-Black-petrel.pdf
 tags: edward, yvan, dragonfly, seabird, bycatch, report
+title: Overlap of the distribution of black petrel (<i>Procellaria parkinsoni</i>) with New Zealand trawl and longline fisheries
 ---
 Black petrel, *Procellaria parkinsoni*, has been identified as the New Zealand endemic seabird species
 that is most at risk from incidental captures in commercial fisheries. The goal of this project was to use
@@ -40,7 +41,7 @@ decreased in Hauraki Gulf, and increased towards the shelf break. Overlap with i
 decreased, while overlap with bluenose bottom-longline fisheries (which are mainly on the shelf break)
 increased. When compared with observed captures, there appeared to be low overlap on the East Coast
 North Island, south of East Cape. There were no seabird abundance observations made by fisheries
-observers on bottom-longline vesselsin this area. Both models(the lat-long model and the habitat model)
+observers on bottom-longline vessels in this area. Both models (the lat-long model and the habitat model)
 gave similar overlaps for the main fisheries in the region.
 
 Although there were limitations with the source data sets, the boosted regression tree models provided
