@@ -1,5 +1,6 @@
 ---
 pdf: abraham_2015_relationship.pdf
+title: Relationship between small-scale catch-per-unit-effort and abundance in New Zealand abalone (pāua, <i>Haliotis iris</i>) fisheries
 tags: edward, philipp, dragonfly, article, bayesian, paua, benthic, marine-biology 
 ---
 Catch-per-unit-effort (CPUE) is commonly used as an index of abundance in
