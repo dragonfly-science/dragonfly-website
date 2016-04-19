@@ -15,16 +15,16 @@ This update of the previous seabird risk assessment followed the recommendations
 additional years of data, the 2011–12 and 2012–13 fishing years. Risk was defined as the ratio of annual
 potential fatalities (an estimate of the number of birds killed in fisheries each year) to the Potential Biological
 Removal (PBR; a measure of the reproductive capacity of the populations). The estimation of the
-PBR included a calibration factor, &#961, to adjust the calculation of the maximum growth rate and total population
+PBR included a calibration factor, rho, to adjust the calculation of the maximum growth rate and total population
 size, and to ensure that the population goals are met in the presence of environmental stochasticity.
-The appropriate value for  (ranging between between 0.17 and 0.61) depends on the species type. In
+The appropriate value for rho (ranging between between 0.17 and 0.61) depends on the species type. In
 addition, the PBR generally includes a recovery factor *f* that protects against errors in the demographic
 estimates used to calculate it. Here, the recovery factor *f* was set to 1, guided by the "National Plan of
 Action – 2013 to reduce the incidental catch of seabirds in New Zealand fisheries" (NPOA). The PBR
-with the calibration factor, and with a recovery factor of one, is referred to as PBR. The estimation
+with the calibration factor, and with a recovery factor of one, is referred to as PBR<sub>rho</sub>. The estimation
 of annual potential fatalities was based on data of seabird captures recorded by government fisheries
 observers and of fishing effort in trawl, bottom- and surface-longline, and set-net fisheries. A risk ratio
-larger than one indicates that the fishing-related fatalities in commercial fisheries exceed PBR, and the
+larger than one indicates that the fishing-related fatalities in commercial fisheries exceed PBR<sub>rho</sub>, and the
 population will be at risk of not being able to remain above half its carrying capacity.
 
 In total, there were 16 200 (95% c.i.: 12 600–21 000) estimated annual potential seabird fatalities across
@@ -42,7 +42,7 @@ Following the risk categories in the NPOA, seven species were considered to be a
 including black petrel, Salvin's albatross, southern Buller's albatross, flesh-footed shearwater, Gibson's
 albatross, New Zealand white-capped albatross, and northern Buller's albatross. The risk ratio of black
 petrel was especially large, with a median of 11.34 (95% c.i.: 6.85–19.81), due to the combination of a
-high number of estimated annual potential fatalities (mean 1130; 95% c.i.: 840–1490), and a low PBR
+high number of estimated annual potential fatalities (mean 1130; 95% c.i.: 840–1490), and a low PBR<sub>rho</sub>
 (mean 100; 95% c.i.: 60–147).
 
 Four species were considered to be at "High risk", including Chatham Island albatross, Antipodean albatross,
