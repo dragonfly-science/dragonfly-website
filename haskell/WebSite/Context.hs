@@ -38,9 +38,9 @@ baseContext section = do
 
 tagLookup :: String -> String
 tagLookup tag =
-    let mtag = lookup tag tagDictionary
-    --in  maybe ("Not found (" ++ tag ++ ")") id mtag
-    in  fromJust mtag
+    case lookup tag tagDictionary of
+      Just mtag -> mtag
+      Nothing -> error "The tag " ++ tag ++ " needs to be defined in Context.hs"
 
 tagContext :: Context String
 tagContext = field "tag" (return . itemBody)
