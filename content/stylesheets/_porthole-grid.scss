@@ -8,7 +8,7 @@ $porthole-title-padding-top: em(20);
     $span_columns: floor(12 / $columns);
     @include span-columns($span_columns);
     @include media($clinical-up) {
-        @include omega(#{$columns}n);
+        @include omega("#{$columns}n");
     }
     @include media($clinical) {
         @include span-columns(6 of 8);
