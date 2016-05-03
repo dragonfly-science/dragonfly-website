@@ -9,7 +9,7 @@ PULL=${PULL:=false}
 
 git submodule init &&
 git submodule update
-if [ $? != 0]; then
+if [ $? != 0 ]; then
   echo "there was a problem with the git submodules"
   exit 1;
 fi
