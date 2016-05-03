@@ -121,14 +121,9 @@ main = do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
 
     -- Sass based stylesheets
-    match "stylesheets/**.scss" $ do
-      compile getResourceBody
-
-    scssDependencies <- makePatternDependency "stylesheets/**.scss"
-    rulesExtraDependencies [scssDependencies] $ do
-      create ["assets/dragonfly.css"] $ do
-        route $ idRoute
-        compile $ sassCompiler
+    match "stylesheets/dragonfly.css" $ do
+        route $ constRoute "assets/dragonfly.css"
+        compile copyFileCompiler
 
     -- Scripts
     match "scripts/dragonfly.js" $ do
