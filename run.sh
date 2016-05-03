@@ -7,6 +7,13 @@ INTERACTIVE=$([ -t 0 ] && echo '-it')
 PORT=${PORT:=8000}
 PULL=${PULL:=false}
 
+git submodule init &&
+git submodule update
+if [ $? != 0]; then
+  echo "there was a problem with the git submodules"
+  exit 1;
+fi
+
 docker inspect $IMAGE >/dev/null 2>&1
 if [ $? != 0 ]; then
   if [ "$PULL" == "true" ]; then
