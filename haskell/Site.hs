@@ -1,8 +1,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import           Data.Maybe           (isJust)
 import           Data.Monoid          ((<>))
-import           System.Environment
+import           System.Process
+import System.Exit
 
 import           Hakyll
 
@@ -28,7 +28,9 @@ config = defaultConfiguration
 
 main :: IO ()
 main = do
-  fakeImageResize <- lookupEnv "FAKE_IMAGE_RESIZE"
+  (_, _, _, h) <- createProcess $ shell "which convert"
+  st <- getProcessExitCode h
+  let fakeImageResize = st /= Just ExitSuccess
   hakyllWith config $ do
 
     match "templates/*" $ compile templateCompiler
@@ -51,21 +53,22 @@ main = do
     -- medium: 720
     -- small-medium: 560
     -- small: 420
-    let fir = isJust fakeImageResize
+
+    let fir a = if fakeImageResize then [] else a
 
     Images.imageProcessor ( "images/dragonfly-wing.png") $
-                          [ ( "420", if fir then [] else ["-resize" , "420x128^", "-crop", "420"])
-                          , ( "960", if fir then [] else ["-resize" , "960x128^"])
-                          , ("1600", if fir then [] else ["-resize" , "1600x128^"])
+                          [ ( "420", fir ["-resize" , "420x128^", "-crop", "420"])
+                          , ( "960", fir ["-resize" , "960x128^"])
+                          , ("1600", fir ["-resize" , "1600x128^"])
                           ]
     Images.imageProcessor ( "images/ipad.jpg") $
-                          [ ( "420", if fir then [] else ["-resize" , "420x240^", "-crop", "420"])
-                          , ( "960", if fir then [] else ["-resize" , "960x320^"])
-                          , ("1600", if fir then [] else ["-resize" , "1600"])
+                          [ ( "420", fir ["-resize" , "420x240^", "-crop", "420"])
+                          , ( "960", fir ["-resize" , "960x320^"])
+                          , ("1600", fir ["-resize" , "1600"])
                           ]
     Images.imageProcessor ( "**/teaser.jpg") $
-                          [ ( "256", if fir then [] else ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0"])
-                          , ( "100", if fir then [] else ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0"])
+                          [ ( "256", fir ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0"])
+                          , ( "100", fir ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0"])
                           ]
 
     --Images.imageProcessor ( "**/*.pdf") $

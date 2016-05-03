@@ -49,6 +49,10 @@ executable website
                      , monads-tf
                      , mtl
                      , hxt
-                     , tagsoup
+                     , xml-conduit
+                     , xml-hamlet
+                     , html-conduit
+                     , blaze-html
+                     , process
   -- hs-source-dirs:      
   default-language:    Haskell2010
