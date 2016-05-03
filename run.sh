@@ -5,10 +5,15 @@ IMAGE=dragonflyscience/dragonfly-website
 USERIMAGE=$USER-dragonfly-website:$VERSION
 INTERACTIVE=$([ -t 0 ] && echo '-it')
 PORT=${PORT:=8000}
+PULL=${PULL:=false}
 
 docker inspect $IMAGE >/dev/null 2>&1
 if [ $? != 0 ]; then
-    docker build -t "$IMAGE" .
+  if [ "$PULL" == "true" ]; then
+    docker pull $IMAGE
+  else
+    docker build -t "$IMAGE" docker
+  fi
 fi
 
 docker inspect $USERIMAGE >/dev/null 2>&1
