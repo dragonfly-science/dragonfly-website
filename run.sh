@@ -10,7 +10,7 @@ if [ $? != 0 ]; then
     docker build -t "$IMAGE" .
 fi
 
-docker run --rm $INTERACTIVE -u $(id -u):$(id -g) \
+docker run --rm $INTERACTIVE -p $PORT:8000 -u $(id -u):$(id -g) \
   -w /work -v $PWD:/work \
   -v $HOME/.stack:/$HOME/.stack \
   -e STACK_ROOT=/$HOME/.stack \
