@@ -28,7 +28,7 @@ config = defaultConfiguration
 
 main :: IO ()
 main = do
-  (_, _, _, h) <- createProcess $ shell "which convert"
+  (_, _, _, h) <- createProcess $ shell "which convert >/dev/null 2>&1"
   st <- getProcessExitCode h
   let fakeImageResize = st /= Just ExitSuccess
   hakyllWith config $ do

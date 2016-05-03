@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=20160503-2
+VERSION=20160504-0
 IMAGE=dragonflyscience/dragonfly-website
 USERIMAGE=$USER-dragonfly-website:$VERSION
 INTERACTIVE=$([ -t 0 ] && echo '-it')
