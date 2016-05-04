@@ -24,4 +24,4 @@ fi
 
 docker run --rm $INTERACTIVE -p $PORT:8000 -u $(id -u):$(id -g) \
   -w /work -v $PWD:/work \
-  $IMAGE ./build.sh $*
+  $IMAGE ./task.sh $*
