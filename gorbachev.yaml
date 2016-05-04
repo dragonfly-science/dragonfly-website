@@ -1,1 +1,1 @@
-docker: dragonflyscience/dragonfly-website
+docker: dragonflyscience/dragonfly-website:lts-5.15
