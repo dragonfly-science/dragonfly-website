@@ -40,7 +40,7 @@ tagLookup :: String -> String
 tagLookup tag =
     case lookup tag tagDictionary of
       Just mtag -> mtag
-      Nothing -> error "The tag " ++ tag ++ " needs to be defined in Context.hs"
+      Nothing -> ""
 
 tagContext :: Context String
 tagContext = field "tag" (return . itemBody)
