@@ -26,3 +26,4 @@ cabal.sandbox.config
 .divshot-cache
 .work
 .cache
+sync.txt
