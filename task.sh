@@ -46,11 +46,15 @@ case "$MODE" in
     cd $BASEDIR/haskell && stack ghci
     ;;
   deploy|check)
-    hakyll clean &&
     cd $BASEDIR/content/stylesheets && scss --sourcemap=none -t compressed dragonfly.scss dragonfly.css &&
     hakyll build
     if [ $? != 0 ]; then
-      exit 1
+      hakyll clean &&
+      cd $BASEDIR/content/stylesheets && scss --sourcemap=none -t compressed dragonfly.scss dragonfly.css &&
+      hakyll build
+      if [ $? != 0 ]; then
+        exit 1
+      fi
     fi
 
     if [ "$MODE" == "check" ]; then

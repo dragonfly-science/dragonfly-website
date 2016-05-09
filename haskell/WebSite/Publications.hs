@@ -57,10 +57,6 @@ rules = do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= imageCredits imageMeta
 
-    match publicationPDFPattern $ do
-        route idRoute
-        compile copyFileCompiler
-
 getList :: CollectionConfig -> Int ->  Compiler (Context String)
 getList cc limit = do
     ref <- refContext
