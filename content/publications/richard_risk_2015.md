@@ -2,7 +2,8 @@
 pdf: AEBR-162-risk-assessment.pdf
 tags: edward, yvan, dragonfly, seabird, bycatch, report
 ---
-This report presents an assessment of the risk of fisheries-related mortalities to 70 species and sub-species
+This report, together with the [supplementary information](/publications/pdf/AEBR-162-risk-supplement.pdf),
+presents an assessment of the risk of fisheries-related mortalities to 70 species and sub-species
 of seabirds that are breeding in New Zealand. The risk assessment considered all fishing by commercial
 trawl, bottom-longline, surface-longline and set-net methods within the outer boundary of New Zealand’s
 Exclusive Economic Zone. It built on a previous seabird risk assessment that was carried out in 2013,
@@ -68,11 +69,13 @@ changing the grouping of the seabird species.
 This seabird risk assessment allowed an assessment of the impacts of a wide range of commercial fishing
 on New Zealand seabirds. Risk was quantified, placing the estimated annual potential fatalities in a
 population context. The relative stability in the assessment, given the changes that were made since the
-previous assessment, indicated that the methodology is maturing. Over time, it will allow for fisheriesrelated
-changes in the risk to be assessed. Possible improvements include a better specification of cryptic
+previous assessment, indicated that the methodology is maturing. Over time, it will allow for fisheries
+related changes in the risk to be assessed. Possible improvements include a better specification of cryptic
 mortality. Poor knowledge of cryptic mortality restricts understanding of the impacts of fisheries on
 seabird populations. Other improvements include increased observer coverage in small-vessel fisheries
 that currently have limited observer data. As the risk assessment requires adequate observer data, increasing
 observer coverage in these fisheries would reduce the uncertainty associated with the current
 estimates of risk. The assessment could also be extended to include broader impacts, such as seabird
 captures in recreational fisheries, and in global fisheries.
+
+Supplementary information is available in a [separate document](/publications/pdf/AEBR-162-risk-supplement.pdf). 
