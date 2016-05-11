@@ -2,7 +2,7 @@
 pdf: AEBR-162-risk-assessment.pdf
 tags: edward, yvan, dragonfly, seabird, bycatch, report
 ---
-This report, together with the [supplementary information](/publications/pdf/AEBR-162-risk-supplement.pdf),
+This report, together with the [supplementary information](https://files.dragonfly.co.nz/publications/pdf/AEBR-162-risk-supplement.pdf),
 presents an assessment of the risk of fisheries-related mortalities to 70 species and sub-species
 of seabirds that are breeding in New Zealand. The risk assessment considered all fishing by commercial
 trawl, bottom-longline, surface-longline and set-net methods within the outer boundary of New Zealand’s
@@ -78,4 +78,4 @@ observer coverage in these fisheries would reduce the uncertainty associated wit
 estimates of risk. The assessment could also be extended to include broader impacts, such as seabird
 captures in recreational fisheries, and in global fisheries.
 
-Supplementary information is available in a [separate document](/publications/pdf/AEBR-162-risk-supplement.pdf). 
+Supplementary information is available in a [separate document](https://files.dragonfly.co.nz/publications/pdf/AEBR-162-risk-supplement.pdf).
