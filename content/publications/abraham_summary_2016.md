@@ -2,11 +2,12 @@
 pdf: abraham_summary_2016.pdf
 tags: edward, yvan, katrin, finlay, seabird, marine-mammal, turtle, dragonfly, report, bayesian
 ---
-In New Zealand?s Exclusive Economic Zone (EEZ), government fisheries observers on-board commercialfishing vessels record the incidental captures of protected species, including seabirds, marine mammalsand turtles. For fisheries with sufficient observer coverage, these data, combined with fishing effortdata, allow the development of statistical models to estimate the total number of incidental captures. Thecurrent study updates previous bycatch assessments, providing total capture estimates of seabirds, marinemammals and turtles in trawl and longline fisheries for the period between 2002?03 and 2012–13
+In New Zealand's Exclusive Economic Zone (EEZ), government fisheries observers on-board commercial
+fishing vessels record the incidental captures of protected species, including seabirds, marine mammalsand turtles. For fisheries with sufficient observer coverage, these data, combined with fishing effortdata, allow the development of statistical models to estimate the total number of incidental captures. Thecurrent study updates previous bycatch assessments, providing total capture estimates of seabirds, marinemammals and turtles in trawl and longline fisheries for the period between 2002–03 and 2012–13
 (with some models extending back to the 1995–96 fishing year).
 
 There was a total of 4379 (95% credible interval (c.i.): 3654–5340) estimated seabird captures in all trawl
-and longline fisheries within the outer boundary of New Zealand?s EEZ in 2012–13. Most seabird captures
+and longline fisheries within the outer boundary of New Zealand's EEZ in 2012–13. Most seabird captures
 occurred in trawl fisheries, with 2604 (95% c.i.: 2055–3465) estimated seabird captures, compared
 with bottom-longline and surface-longline fisheries that had 991 (95% c.i.: 666–1349) and 783 (95%
 c.i.: 567–1144) estimated seabird captures, respectively. Of the total capture estimate for 2012–13, 1658
@@ -17,12 +18,12 @@ surface-longline and bottom-longline fisheries (cut-off vessel lengths 45 and 34
 Statistical models were also built to estimate total captures of seven seabird species or species groupings,including New Zealand white-capped albatross (<i>Thalassarche steadi</i>), Salvin?s albatross (<i>Thalassarchesalvini</i>), southern Buller?s albatross (<i>Thalassarche bulleri bulleri</i>), white-chinned petrel (<i>Procellariaaequinoctialis</i>), sooty shearwater (<i>Puffinus griseus</i>), "other albatrosses", and "other birds". For New
 Zealand white-capped albatross, there was a total of 558 (95% c.i.: 435–724) estimated captures in
 2012–13, compared with 487 (95% c.i.: 294–794) estimated captures of Salvin?s albatross, 259 (95%
-c.i.: 200–341) estimated captures of southern Buller?s albatross, 368 (95% c.i.: 242–576) estimated
+c.i.: 200–341) estimated captures of southern Buller's albatross, 368 (95% c.i.: 242–576) estimated
 captures of sooty shearwater, and 586 (95% c.i.: 470–755) estimated captures of white-chinned petrel.
 For the two species groupings other albatrosses and other birds, capture estimates were 354 (95% c.i.:219–598) and 1766 (95% c.i.: 1170–2654) captures, respectively.
 
 For marine mammals, sufficient observer data allowed the estimation of captures of common dolphins,New Zealand fur seals, and New Zealand sea lions in different fisheries. Captures of common dolphinswere estimated for the jack mackerel trawl fishery off the North Island's west coast, as the majority
-of observed common dolphin captures occurred in this fishery (139 of a total 157 observed capturesin all trawl fisheries between 1995?96 and 2012–13). In 2012?13, there were an estimated 15 (95%
+of observed common dolphin captures occurred in this fishery (139 of a total 157 observed capturesin all trawl fisheries between 1995–96 and 2012–13). In 2012–13, there were an estimated 15 (95%
 c.i.: 15–19) common dolphin captures in the large-vessel (90 m or longer) jack mackerel trawl fishery,
 and the estimated capture rate was 0.87 (95% c.i.: 0.87–1.11) dolphins per 100 tows. Both estimates
 were higher than those in the preceding fishing year, when there were seven (95% c.i.: 5–14) estimated
