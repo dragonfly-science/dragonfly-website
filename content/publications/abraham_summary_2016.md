@@ -15,9 +15,11 @@ c.i.: 567–1144) estimated seabird captures, respectively. Of the total capture
 petrels and other seabirds. The estimation included captures in all trawl fisheries, and in small- and large-vessel
 surface-longline and bottom-longline fisheries (cut-off vessel lengths 45 and 34 m, respectively).Although small-vessel fisheries were associated with most of the seabird captures, observer coverage inthese fisheries continued to be low, especially in small-vessel trawl fisheries.
 
-Statistical models were also built to estimate total captures of seven seabird species or species groupings,including New Zealand white-capped albatross (<i>Thalassarche steadi</i>), Salvin?s albatross (<i>Thalassarchesalvini</i>), southern Buller?s albatross (<i>Thalassarche bulleri bulleri</i>), white-chinned petrel (<i>Procellariaaequinoctialis</i>), sooty shearwater (<i>Puffinus griseus</i>), "other albatrosses", and "other birds". For New
+Statistical models were also built to estimate total captures of seven seabird species or species groupings,including New Zealand white-capped albatross (<i>Thalassarche steadi</i>), Salvin's albatross (<i>Thalassarche
+salvini</i>), southern Buller's albatross (<i>Thalassarche bulleri bulleri</i>), white-chinned petrel (<i>Procellaria
+aequinoctialis</i>), sooty shearwater (<i>Puffinus griseus</i>), "other albatrosses", and "other birds". For New
 Zealand white-capped albatross, there was a total of 558 (95% c.i.: 435–724) estimated captures in
-2012–13, compared with 487 (95% c.i.: 294–794) estimated captures of Salvin?s albatross, 259 (95%
+2012–13, compared with 487 (95% c.i.: 294–794) estimated captures of Salvin's albatross, 259 (95%
 c.i.: 200–341) estimated captures of southern Buller's albatross, 368 (95% c.i.: 242–576) estimated
 captures of sooty shearwater, and 586 (95% c.i.: 470–755) estimated captures of white-chinned petrel.
 For the two species groupings other albatrosses and other birds, capture estimates were 354 (95% c.i.:219–598) and 1766 (95% c.i.: 1170–2654) captures, respectively.
@@ -33,7 +35,7 @@ the covariates included in the model, distance of the headline below the surface
 New Zealand fur seals were incidentally captured in a number of different trawl fisheries, involving arange of target species and fishing areas. Across all trawl fisheries, there were an estimated 398 (95% c.i.:236–713) captures of fur seals in 2012–13, and the estimated capture rate in 2012–13 was 0.48 (95% c.i.:
 0.28–0.85) fur seals per 100 tows. Most of the estimated captures were in the hoki trawl fishery, with 242
 (95% c.i.: 114–534) estimated fur seal captures and a capture rate of 2.07 (95% c.i.: 0.98–4.57) fur seals
-per 100 tows. For other target fisheries, capture estimates in 2012?13 included trawls targeting middle-depth species (78 estimated captures; 95% c.i.: 29–189), southern blue whiting (26 estimated captures; 95% c.i.: 26–26), ling (15 estimated captures; 95% c.i.: 5–42), and hake (11 estimated captures; 95% c.i.:
+per 100 tows. For other target fisheries, capture estimates in 2012–13 included trawls targeting middle-depth species (78 estimated captures; 95% c.i.: 29–189), southern blue whiting (26 estimated captures; 95% c.i.: 26–26), ling (15 estimated captures; 95% c.i.: 5–42), and hake (11 estimated captures; 95% c.i.:
 8–21). Other trawl target fisheries had less than ten mean estimated captures in 2012–13, and included
 squid, mackerel, and scampi fisheries). Estimated fur seal captures in deepwater fisheries were close tozero (95% c.i.: 0–1). Low observer effort in inshore trawl fisheries (0.5% coverage in 2012–13) resulted
 in an uncertain capture estimate of 11 fur seal captures (95% c.i.: 0–49).
@@ -42,7 +44,8 @@ In addition to trawl fisheries, New Zealand fur seals were incidentally caught i
 fisheries, and the corresponding estimated capture rate was 0.04 (95% c.i.: 0.03–0.06) fur seals per 1000
 hooks.
 
-The number of captures of New Zealand sea lions in subantarctic trawl fisheries was estimated for fivecombinations of target fishery and area, including the squid, scampi, and other trawl fisheries off AucklandIslands, the southern blue whiting trawl fishery off Campbell Island, and all trawl fisheries on theStewart-Snares shelf. The total number of estimated captures across all strata was 33 (95% c.i.: 27?40)sea lions in 2012–13. This estimate was markedly higher than in the preceding fishing year, when there
+The number of captures of New Zealand sea lions in subantarctic trawl fisheries was estimated for fivecombinations of target fishery and area, including the squid, scampi, and other trawl fisheries off AucklandIslands, the southern blue whiting trawl fishery off Campbell Island, and all trawl fisheries on theStewart-Snares shelf. The total number of estimated captures across all strata was 33 (95% c.i.: 27–40)
+sea lions in 2012–13. This estimate was markedly higher than in the preceding fishing year, when there
 were an estimated 12 (95% c.i.: 5–21) sea lion captures. Most of the estimated sea lion captures were in
 the southern blue whiting fishery, with 21 (95% c.i.: 21–22) estimated captures and an estimated capture
 rate of 2.72 (95% c.i.: 2.72–2.85) sea lions per 100 tows. High observer coverage of 99.9% in the
