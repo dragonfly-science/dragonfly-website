@@ -2,10 +2,12 @@
 pdf: abraham_summary_2016.pdf
 tags: edward, yvan, katrin, finlay, seabird, marine-mammal, turtle, dragonfly, report, bayesian
 ---
-In New Zealand?s Exclusive Economic Zone (EEZ), government fisheries observers on-board commercialfishing vessels record the incidental captures of protected species, including seabirds, marine mammalsand turtles. For fisheries with sufficient observer coverage, these data, combined with fishing effortdata, allow the development of statistical models to estimate the total number of incidental captures. Thecurrent study updates previous bycatch assessments, providing total capture estimates of seabirds, marinemammals and turtles in trawl and longline fisheries for the period between 2002?03 and 2012?13(with some models extending back to the 1995?96 fishing year).
+In New Zealand?s Exclusive Economic Zone (EEZ), government fisheries observers on-board commercialfishing vessels record the incidental captures of protected species, including seabirds, marine mammalsand turtles. For fisheries with sufficient observer coverage, these data, combined with fishing effortdata, allow the development of statistical models to estimate the total number of incidental captures. Thecurrent study updates previous bycatch assessments, providing total capture estimates of seabirds, marinemammals and turtles in trawl and longline fisheries for the period between 2002?03 and 2012–13
+(with some models extending back to the 1995–96 fishing year).
 
 There was a total of 4379 (95% credible interval (c.i.): 3654–5340) estimated seabird captures in all trawl
-and longline fisheries within the outer boundary of New Zealand?s EEZ in 2012?13. Most seabird capturesoccurred in trawl fisheries, with 2604 (95% c.i.: 2055–3465) estimated seabird captures, compared
+and longline fisheries within the outer boundary of New Zealand?s EEZ in 2012–13. Most seabird captures
+occurred in trawl fisheries, with 2604 (95% c.i.: 2055–3465) estimated seabird captures, compared
 with bottom-longline and surface-longline fisheries that had 991 (95% c.i.: 666–1349) and 783 (95%
 c.i.: 567–1144) estimated seabird captures, respectively. Of the total capture estimate for 2012–13, 1658
 (95% c.i.: 1355–2049) captures were of albatross, and 2721 (95% c.i.: 2079–3613) captures were of
@@ -24,13 +26,14 @@ of observed common dolphin captures occurred in this fishery (139 of a total 157
 c.i.: 15–19) common dolphin captures in the large-vessel (90 m or longer) jack mackerel trawl fishery,
 and the estimated capture rate was 0.87 (95% c.i.: 0.87–1.11) dolphins per 100 tows. Both estimates
 were higher than those in the preceding fishing year, when there were seven (95% c.i.: 5–14) estimated
-common dolphin captures, with a capture rate of 0.43 (95% c.i.: 0.30?0.85) dolphins per 100 tows. Ofthe covariates included in the model, distance of the headline below the surface best explained commondolphin captures.
+common dolphin captures, with a capture rate of 0.43 (95% c.i.: 0.30–0.85) dolphins per 100 tows. Of
+the covariates included in the model, distance of the headline below the surface best explained commondolphin captures.
 
 New Zealand fur seals were incidentally captured in a number of different trawl fisheries, involving arange of target species and fishing areas. Across all trawl fisheries, there were an estimated 398 (95% c.i.:236–713) captures of fur seals in 2012–13, and the estimated capture rate in 2012–13 was 0.48 (95% c.i.:
-0.28?0.85) fur seals per 100 tows. Most of the estimated captures were in the hoki trawl fishery, with 242(95% c.i.: 114–534) estimated fur seal captures and a capture rate of 2.07 (95% c.i.: 0.98–4.57) fur seals
-per 100 tows. For other target fisheries, capture estimates in 2012?13 included trawls targeting middledepthspecies (78 estimated captures; 95% c.i.: 29–189), southern blue whiting (26 estimated captures;
-95% c.i.: 26–26), ling (15 estimated captures; 95% c.i.: 5–42), and hake (11 estimated captures; 95% c.i.:
-8–21). Other trawl target fisheries had less than ten mean estimated captures in 2012?13, and included
+0.28–0.85) fur seals per 100 tows. Most of the estimated captures were in the hoki trawl fishery, with 242
+(95% c.i.: 114–534) estimated fur seal captures and a capture rate of 2.07 (95% c.i.: 0.98–4.57) fur seals
+per 100 tows. For other target fisheries, capture estimates in 2012?13 included trawls targeting middle-depth species (78 estimated captures; 95% c.i.: 29–189), southern blue whiting (26 estimated captures; 95% c.i.: 26–26), ling (15 estimated captures; 95% c.i.: 5–42), and hake (11 estimated captures; 95% c.i.:
+8–21). Other trawl target fisheries had less than ten mean estimated captures in 2012–13, and included
 squid, mackerel, and scampi fisheries). Estimated fur seal captures in deepwater fisheries were close tozero (95% c.i.: 0–1). Low observer effort in inshore trawl fisheries (0.5% coverage in 2012–13) resulted
 in an uncertain capture estimate of 11 fur seal captures (95% c.i.: 0–49).
 
