@@ -4,7 +4,7 @@ title: Pest monitoring by curious minds
  Dragonfly has combined forces with the Otago Peninsula Biodiversity Group to teach primary-school children how to monitor pests in the Dunedin area.
 
 <!--more-->
-Through funding by an "Unlocking Curious Minds" grant from the Ministry of Business, Innovation and Employment, Katrin and Chris will work with the Otago Peninsula Biodiversity Group (OPBG) (see (http://www.pestfreepeninsula.org.nz)) to engage pupils in the monitoring of possum and rodent populations in their local environments.
+Through funding by an "Unlocking Curious Minds" grant from the Ministry of Business, Innovation and Employment, Katrin and Chris will work with the [Otago Peninsula Biodiversity Group](http://www.pestfreepeninsula.org.nz) (OPBG) to engage pupils in the monitoring of possum and rodent populations in their local environments.
 
 By providing monitoring kits to participating schools and families, OPBG is enabling children to actively collect rodent data.  At the same time, children learn about the importance of this information for the protection of biodiversity.
 
