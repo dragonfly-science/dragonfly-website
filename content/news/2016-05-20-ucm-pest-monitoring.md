@@ -25,3 +25,5 @@ their learning about pest monitoring and biodiversity."
 
 The project starts in June 2016, with the data collection by school children in
 spring.
+
+Contact [Katrin Berkenbusch](/people/berkenbusch-katrin.html) for more information about this project.
