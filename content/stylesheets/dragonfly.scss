@@ -45,6 +45,7 @@ div.page-title {
     }
 }
 
+li.year-2018 + li.year-2018 > div.citation-year { display: none; }
 li.year-2017 + li.year-2017 > div.citation-year { display: none; }
 li.year-2016 + li.year-2016 > div.citation-year { display: none; }
 li.year-2015 + li.year-2015 > div.citation-year { display: none; }
