@@ -1,6 +1,7 @@
 ---
 pdf: Belletal_2014_black-petrel-spatial-analysis.pdf
 tags: edward, seabird, dragonfly, report
+title: At-sea distribution of the black petrels (<i>Procellaria parkinsoni</i>) on Great Barrier Island (Aotea Island), 2009–10: Part 2 – Overlap with fisheries
 ---
 This report is part of an ongoing long-term study of the black petrel, *Procellaria parkinsoni*, on
 Great Barrier Island (Aotea Island) that was begun in the 1995/96 breeding season, and aims to
