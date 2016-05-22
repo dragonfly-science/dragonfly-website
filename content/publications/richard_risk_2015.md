@@ -16,7 +16,7 @@ This update of the previous seabird risk assessment followed the recommendations
 additional years of data, the 2011–12 and 2012–13 fishing years. Risk was defined as the ratio of annual
 potential fatalities (an estimate of the number of birds killed in fisheries each year) to the Potential Biological
 Removal (PBR; a measure of the reproductive capacity of the populations). The estimation of the
-PBR included a calibration factor, rho, to adjust the calculation of the maximum growth rate and total population
+PBR included a calibration factor, rho &#961, to adjust the calculation of the maximum growth rate and total population
 size, and to ensure that the population goals are met in the presence of environmental stochasticity.
 The appropriate value for rho (ranging between between 0.17 and 0.61) depends on the species type. In
 addition, the PBR generally includes a recovery factor *f* that protects against errors in the demographic
