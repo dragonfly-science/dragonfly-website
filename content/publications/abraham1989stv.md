@@ -1,5 +1,5 @@
 ---
-pdf: Abrahametal_1989_spacetime.pdf
+pdf: Abrahamet_1989_spacetime.pdf
 tags: edward, theoretical-physics, article
 ---
 The action for an extended object (string, membrane, etc) can be written in a form
