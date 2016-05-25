@@ -1,4 +1,6 @@
 ---
+pdf: Abraham_2010_estimated.pdf
+tags: edward, dragonfly, finlay, report, seabirds, bycatch
 ---
 Seabirds are caught during commercial fishing, most frequently either by being hooked during longlining, caught in trawl nets, or struck by trawl warps. In order to understand the impact of fishing on seabird species, estimates of the total mortality from fishing activity must be obtained. In New Zealand commercial fisheries, government observers are present on some vessels, and they record any captures of protected species that occur. These observer data provide a consistent basis for estimating total captures. 
 In this report, generalized linear models were used to estimate total captures of seabirds by trawl and longline methods from observer data. Captures were estimated for the fishing years 2002—03 to 2006—07, by fishing within the New Zealand Exclusive Economic Zone (EEZ). For trawl, bottom longline, and surface longline fisheries, statistical models were built of captures of five species groups: white-capped albatross (Thalassarche steadi), sooty shearwater (*Puffinus griseus*), white-chinned petrel (*Procellaria aequinoctialis*), other albatross species, and other birds. The models were fitted using Bayesian methods, with the captures represented as samples from a negative binomial distribution. 
