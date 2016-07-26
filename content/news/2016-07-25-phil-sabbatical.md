@@ -23,6 +23,6 @@ Phil is also looking at ways to include aspects of climate change in the models.
 
 He says some aspects of this work are new for New Zealand.
 
-“We might be doing well at keeping any single species on track, but were not used to looking at an ecosystem as a whole. What happens to one species if we’re fishing another? Such multispecies models are relatively common in Europe, but not so much in New Zealand.”
+“We might be doing well at keeping any single species on track, but were not used to looking at an ecosystem as a whole. What happens to one species if we’re fishing another? Multispecies models are relatively common in Europe, but not so much in New Zealand.”
 
 Read a case study describing Phil’s research in more detail: [Statistical modelling for working out who's eating who](https://www.dragonfly.co.nz/work/predator-prey.html).
