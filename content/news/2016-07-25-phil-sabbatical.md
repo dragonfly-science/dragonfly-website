@@ -9,7 +9,7 @@ Working with [Ken Andersen](http://ken.haste.dk/), professor in theoretical mari
 
 His Marsden project is using size-based models to research the combined effects of fishing and climate change on fished ecosystems around the world. The models simplify a marine ecosystem, using the size of the fish to work out who is eating who.
 
-“I’m excited about it. Ken Anderson is a specialist in this type of modelling” Phil says.
+“I'm excited about it. Ken Anderson is a specialist in this type of modelling” Phil says.
 
 When they were first proposed, the size-based models were only used to study theoretical questions, such as the theoretical consequences of fishing an ecosystem. More recently, there has been a push to use them in real situations.
 
@@ -17,12 +17,12 @@ When they were first proposed, the size-based models were only used to study the
 
 Phil is also looking at ways to include aspects of climate change in the models.
 
-“We can assume that some species will just move if things warm up, but others are really limited by geography—like on the Chatham Rise. There’s nowhere obvious for them to go.”
+“We can assume that some species will just move if things warm up, but others are really limited by geography—like on the Chatham Rise. There's nowhere obvious for them to go.”
 
 “But we may be able to find strategies that could mitigate the effects of climate change in a fishery. It would be good to find ways of generating food from the ecosystems that are sustainable, given what we expect to happen.”
 
 He says some aspects of this work are new for New Zealand.
 
-“We might be doing well at keeping any single species on track, but we're not used to looking at an ecosystem as a whole. What happens to one species if we’re fishing another? Multispecies models are relatively common in Europe, but not so much in New Zealand.”
+“We might be doing well at keeping any single species on track, but we're not used to looking at an ecosystem as a whole. What happens to one species if we're fishing another? Multispecies models are relatively common in Europe, but not so much in New Zealand.”
 
-Read a case study describing Phil’s research in more detail: [Statistical modelling for working out who's eating who](https://www.dragonfly.co.nz/work/predator-prey.html).
+Read a case study describing Phil's research in more detail: [Statistical modelling for working out who's eating who](https://www.dragonfly.co.nz/work/predator-prey.html).
