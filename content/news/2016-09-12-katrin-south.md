@@ -18,5 +18,5 @@ Katrin also leads Dragonfly’s intertidal shellfish surveys each summer and mai
 
 “Dragonfly is a very dynamic workplace – there’s always something happening. I love being involved in such a wide array of projects. Then I have my own projects just outside my door, including a wetland that I’m trying to restore.”
 
-[Read about Dragonfly’s involvement with the Otago Peninsula Biodiversity Group](http://www.curiousminds.nz/stories/person/21/tracking-small-feet-on-the-ground/) or about results from an
+Read about [Dragonfly’s involvement with the Otago Peninsula Biodiversity Group](http://www.curiousminds.nz/stories/person/21/tracking-small-feet-on-the-ground/) or about results from an
 [analysis of intertidal survey data](https://www.dragonfly.co.nz/news/2016-04-11-sample-smarter.html).
