@@ -7,8 +7,8 @@ Fast electronic communication with the team in Wellington and good workflow proc
 
 <!--more-->
 
-Extending east from Dunedin, Otago Peninsula is home to New Zealand’s only mainland colony of albatross, as well as penguins, seals and sealions. Recent work by the Otago Peninsula Biodiversity Group has seen possums eradicated and stoats and rats are next on their list.
-“I really like the quietness here – and I don’t mind the cold. The remote working works so well for me because of all the writing and editing I do – I feel I can just focus on that without distractions. Also, because of our instant communication, like Slack and Google Chat, I don’t feel like I’m not in the office. I still have that personal contact, which is really amazing.”
+Extending east from Dunedin, Otago Peninsula is home to New Zealand’s only mainland colony of albatross, as well as penguins, seals and sea lions. Recent work by the Otago Peninsula Biodiversity Group has seen possums eradicated and stoats and rats are next on their list.
+“I really like the quietness here – and I don’t mind the cold. The remote working works well for me because of all the writing and editing I do – I feel I can just focus on that without distractions. Also, because of our instant communication, like Slack and Google Chat, I don’t feel like I’m not in the office. I still have that personal contact, which is really amazing.”
 
 Visits to Wellington a few times a year also help Katrin to stay connected with the rest of the team.
 
