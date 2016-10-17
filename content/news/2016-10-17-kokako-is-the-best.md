@@ -4,6 +4,7 @@ title: Kōkako among supreme winners at annual Best design awards
 The [Kōkako](https://www.kokako.co) application was awarded a Purple Pin at the 2016 
 New Zealand design awards held last Friday night in Auckland. The award recognised Kōkako as the best entry in
 the interactive application category, including  websites and mobile applications.
+
 <!--more-->
 
 The [Best Design Awards](http://bestawards.co.nz) is an annual showcase of excellence in graphic, spatial,
