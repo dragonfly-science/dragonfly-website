@@ -13,6 +13,8 @@ which recognises work that raises the bar of New Zealand design. Kōkako was awa
 the Purple Pin in the hotly contested interactive application category, which covers all
 websites and mobile applications designed in New Zealand in the last year. 
 
+![The Kōkako award being announced, photo by Simon Winter of Salted Herring](/news/2016-10-17-kokako-is-the-best/kokako-on-screen.jpg)
+
 Kōkako’s attractive and intuitive user interface was designed by Dragonfly’s
 project partners, Salted Herring. This collaborative effort resulted 
 in an application that helps iwi radio stations measure the use of Māori language on their stations.
