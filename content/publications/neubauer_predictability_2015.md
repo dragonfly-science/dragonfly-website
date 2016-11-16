@@ -1,6 +1,7 @@
 ---
 pdf: neubauer_predictability_2015.pdf
 tags: philipp, edward, katrin, dragonfly, benthic, fisheries, shellfish, bayesian
+title: Predictability of cockle (<i>Austrovenus stutchburyi</i>) population trends in New Zealand's northern North Island
 ---
 Population monitoring programmes are used to gain knowledge about system functioning or about the
 response of a system's state to management measures. The current study provided an assessment

@@ -1,6 +1,7 @@
 ---
 pdf: Thompson_common_2009.pdf
 tags: finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
+title: Common dolphin (<i>Delphinus delphis</i>) bycatch in New Zealand mackerel trawl fisheries, 1995–96 to 2007–08
 ---
 Common dolphins (*Delphius delphis*) are the most frequently caught cetacean in
 New Zealand trawl fisheries. Between the 1995—96 and 2007—08 fishing years,

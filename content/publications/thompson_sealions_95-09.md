@@ -1,6 +1,7 @@
 ---
 pdf: Thompson_Abraham_2010_AEBR66.pdf
 tags: finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
+title: Estimation of the capture of New Zealand sea lions (<i>Phocarctos hookeri</i>) in trawl fisheries, from 1995–96 to 2008–09
 ---
 In this report, the number of New Zealand sea lion (*Phocarctos hookeri*) captures in New Zealand's trawl fisheries are estimated for the 1995—96 to 2008—09 fishing years. Ministry of Fisheries observers reported the capture of three New Zealand sea lions (*Phocarctos hookeri*) during the 2008—09 fishing year. This was the lowest number of observed captures in the period covered by the data. The captures were reported from fisheries around the Auckland Islands: two sea lions were caught by trawlers targeting squid, and one sea lion was caught on a tow targeting scampi. Five sea lion captures were reported by fishers, from vessels targeting squid near the Auckland Islands. Two of these animals were among those reported by the observers, resulting in a total of six reported sea lion captures during the 2008—09 fishing year.
 
