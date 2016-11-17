@@ -27,6 +27,7 @@ executable website
                      , WebSite.Work
   other-extensions:    OverloadedStrings, RecordWildCards, TupleSections, QuasiQuotes
   build-depends:       base
+                     , aeson
                      , directory
                      , filepath
                      , containers

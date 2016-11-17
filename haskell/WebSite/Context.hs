@@ -8,6 +8,8 @@ module WebSite.Context (
   tagContext
 ) where
 
+import           Control.Monad
+import           Data.Aeson
 import qualified Data.Map             as M
 import qualified Data.HashMap.Strict  as HM
 import qualified Data.Text            as T
@@ -55,11 +57,17 @@ allTags = listField "allTags" ctx (return $ map (\x -> Item (fromFilePath (fst x
     where ctx = field "tag" (return . fst . itemBody)
             <> field "tagDisplay" (return . snd . itemBody)
 
+resultToMaybe :: Result a -> Maybe a
+resultToMaybe (Success a) = Just a
+resultToMaybe (Error _) = Nothing
+
 listContextWith :: String -> Context String -> Context a
 listContextWith s ctx  = listFieldWith s ctx $ \item -> do
     let identifier = itemIdentifier item
     metadata <- getMetadata identifier
-    let metas = maybe [] (map trim . splitAll ",") $ HM.lookup (T.pack s) metadata
+    let metas = maybe [] (map trim . splitAll ",") $
+              join $ fmap (resultToMaybe . fromJSON) $
+                HM.lookup (T.pack s) metadata
     return $ map (\x -> Item (fromFilePath x) x) metas
 
 
