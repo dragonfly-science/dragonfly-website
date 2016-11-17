@@ -10,8 +10,12 @@ module WebSite.Collection (
 ) where
 
 import           Control.Monad.Except
+import           Control.Monad
+import qualified Data.HashMap.Strict  as HM
+import           Data.Aeson
 import           Data.List
 import qualified Data.Map                as M
+import qualified Data.Text               as T
 import           Data.Maybe              (fromMaybe, maybeToList)
 import           Data.Monoid             ((<>))
 import qualified Data.Set                as S
@@ -23,6 +27,7 @@ import           System.FilePath
 import           Hakyll
 
 import           WebSite.Compilers
+import           WebSite.Util
 import           WebSite.Context
 import           WebSite.Validate        (validatePage)
 
@@ -120,7 +125,7 @@ getTagLists cc = do
     let tags :: S.Set String -> Item String -> Compiler (S.Set String)
         tags tagSet i = do
             metadata <- getMetadata $ itemIdentifier i
-            let mtags = M.lookup "tags" metadata
+            let mtags = join $ fmap (resultToMaybe . fromJSON) $ HM.lookup "tags" metadata
                 ntags = S.fromList $ maybe [] (map trim . splitAll ",") mtags
             return $ S.union tagSet ntags
     uniquetags <- foldM tags S.empty snaps
@@ -128,7 +133,7 @@ getTagLists cc = do
     -- foreach tag create a list of items with that tag
     let hasTag tag i = do
             metadata <- getMetadata i
-            let mtags = M.lookup "tags" metadata
+            let mtags = join $ fmap (resultToMaybe . fromJSON) $ HM.lookup "tags" metadata
             return $ S.member tag $ S.fromList $ maybe [] (map trim . splitAll ",") mtags
     let tagList ctx tag = do
             snaps' <- filterItemsBy (hasTag tag) snaps

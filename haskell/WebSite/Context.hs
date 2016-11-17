@@ -20,6 +20,7 @@ import           Text.CSL.Reference   (Reference)
 
 import           WebSite.Bibliography
 import           WebSite.Config
+import           WebSite.Util
 
 import           Hakyll
 
@@ -57,9 +58,6 @@ allTags = listField "allTags" ctx (return $ map (\x -> Item (fromFilePath (fst x
     where ctx = field "tag" (return . fst . itemBody)
             <> field "tagDisplay" (return . snd . itemBody)
 
-resultToMaybe :: Result a -> Maybe a
-resultToMaybe (Success a) = Just a
-resultToMaybe (Error _) = Nothing
 
 listContextWith :: String -> Context String -> Context a
 listContextWith s ctx  = listFieldWith s ctx $ \item -> do
