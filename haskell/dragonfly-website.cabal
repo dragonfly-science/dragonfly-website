@@ -20,7 +20,6 @@ executable website
                      , WebSite.Config
                      , WebSite.Context
                      , WebSite.Data
-                     , WebSite.DomUtil.Images
                      , WebSite.Images
                      , WebSite.News
                      , WebSite.People
@@ -31,6 +30,7 @@ executable website
                      , directory
                      , filepath
                      , containers
+                     , unordered-containers
                      , text
                      , pandoc
                      , pandoc-citeproc

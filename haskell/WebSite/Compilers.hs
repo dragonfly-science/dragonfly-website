@@ -14,7 +14,6 @@ import           Hakyll
 import           Text.Pandoc.Definition
 
 import           WebSite.Config
-import           WebSite.DomUtil.Images
 
 readScholmd :: Compiler (Item Pandoc)
 readScholmd = do
@@ -41,5 +40,5 @@ sassCompiler = loadBody (fromFilePath "stylesheets/dragonfly.scss")
 
 -- FIXME: imgMeta is not used. Should it be?
 imageCredits :: [Item String] -> Item String -> Compiler (Item String)
-imageCredits imgMeta = return . fmap processFigures
+imageCredits imgMeta = return . fmap id
 

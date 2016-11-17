@@ -9,6 +9,8 @@ module WebSite.Context (
 ) where
 
 import qualified Data.Map             as M
+import qualified Data.HashMap.Strict  as HM
+import qualified Data.Text            as T
 import           Data.Maybe
 import           Data.Monoid          ((<>))
 import           System.FilePath      (replaceExtension, takeBaseName)
@@ -57,7 +59,7 @@ listContextWith :: String -> Context String -> Context a
 listContextWith s ctx  = listFieldWith s ctx $ \item -> do
     let identifier = itemIdentifier item
     metadata <- getMetadata identifier
-    let metas = maybe [] (map trim . splitAll ",") $ M.lookup s metadata
+    let metas = maybe [] (map trim . splitAll ",") $ HM.lookup (T.pack s) metadata
     return $ map (\x -> Item (fromFilePath x) x) metas
 
 
