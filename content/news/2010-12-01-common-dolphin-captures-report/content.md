@@ -1,6 +1,8 @@
 ---
 title: Common dolphin captures in 2008–09
 date: 2010-12-01
+nocite: |
+  @thompson_dolphin_2010
 ---
 Estimates of common dolphin bycatch in the the jack mackerel trawl
 fishery over a 13-year period were recently published by Dragonfly
@@ -58,4 +60,3 @@ series, No 63.
 
 ###Reference
 
-[References key=thompson_dolphin_2010]

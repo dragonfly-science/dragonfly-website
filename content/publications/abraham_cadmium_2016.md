@@ -10,7 +10,9 @@ councils and other researchers between 2006 and 2015 from across a broad range o
 and soil types; trends in soil cadmium accumulation from the long-term flood irrigation
 fertiliser trials at Winchmore Research Station in Canterbury, New Zealand; and cadmium
 concentrations in food from the 2009 New Zealand Total Diet Study, with a comparison to
-international standards. The analysis showed that the monthly averaged concentration of
+international standards. 
+
+The analysis showed that the monthly averaged concentration of
 cadmium (Cd) in phosphate (P) fertiliser, ready for dispatch, has remained below the
 voluntary limit of 280 mg Cd/kg P, with a long-term average of 184 mg Cd/kg P. The soil
 cadmium data showed that for many New Zealand territorial authorities (32 of the 62 that
