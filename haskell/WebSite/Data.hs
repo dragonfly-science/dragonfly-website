@@ -9,7 +9,7 @@ config = CollectionConfig
        { baseName            = "data"
        , indexTemplate       = "data/index.html"
        , indexPattern        = "data.md"
-       , collectionPattern   = "data/*.md"
+       , collectionPattern   = "data/**/content.md"
        , collectionTemplate  = "templates/data-list.html"
        , pageTemplate        = "templates/post.html"
        }

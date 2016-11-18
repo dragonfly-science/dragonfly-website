@@ -10,6 +10,8 @@ module WebSite.Context (
 
 import           Control.Monad
 import           Data.Aeson
+import           Data.List
+
 import qualified Data.Map             as M
 import qualified Data.HashMap.Strict  as HM
 import qualified Data.Text            as T
@@ -85,7 +87,10 @@ pageUrlField :: String -> Context a
 pageUrlField key = field key $ \item -> do
     let pseudoPath = toFilePath (itemIdentifier item)
         path = "/" ++ pseudoPath
-    return (replaceExtension path ".html")
+    return $
+      if isSuffixOf "/content.md" path
+         then (take ((length path) - 11) path) ++ ".html"
+      else (replaceExtension path ".html")
 
 
 -- Provide context for a single BibTeX reference
