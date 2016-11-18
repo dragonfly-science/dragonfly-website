@@ -1,6 +1,6 @@
 ---
 pdf: Abrahametal_cadmium_2016.pdf
-tags: edward, cadmium, soil, dragonfly, report
+tags: edward, dragonfly, report
 ---
 We summarise up-to-date data related to the management of cadmium in New Zealand's
 agriculture and food systems, including: cadmium concentrations reported in phosphate
@@ -15,7 +15,7 @@ cadmium (Cd) in phosphate (P) fertiliser, ready for dispatch, has remained below
 voluntary limit of 280 mg Cd/kg P, with a long-term average of 184 mg Cd/kg P. The soil
 cadmium data showed that for many New Zealand territorial authorities (32 of the 62 that
 have been sampled), there were no farms with soil cadmium concentrations beyond the range
-that naturally occurs in New Zealand. In four districts in the Waikato region (MatamataPiako,
+that naturally occurs in New Zealand. In four districts in the Waikato region (Matamata-Piako,
 Waipa, Waitomo, and Otorohanga), over 5% of the farms had soil cadmium
 concentrations that require active management to prevent accumulation above the voluntary
 soil cadmium limit of 1.8 mg Cd/kg. Of the 1980 farms sampled to date, four (0.37%) had
