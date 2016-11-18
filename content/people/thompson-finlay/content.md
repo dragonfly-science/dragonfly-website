@@ -7,7 +7,7 @@ phone: +64 21 426 878
 tag: finlay
 title: Finlay Thompson, PhD
 banner: thompson-finlay/finlay-thompson-letterbox.jpg
-sortorder: 2
+sortorder: "2"
 nocite: |
   @thompson_mammals_95-12
   @thompson_dolphin_2013

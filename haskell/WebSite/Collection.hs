@@ -62,7 +62,7 @@ makeRules cc = do
                 >>= saveSnapshot "content"
 
     match (collectionPattern cc) $ do
-        route $ setExtension "html"
+        route $ gsubRoute "/content.md" (const ".html")
         compile $ do
             ident <- getUnderlying
             base <- baseContext (baseName cc)
@@ -172,7 +172,7 @@ teaserImage = field "teaserImage" getImagePath
   where
     getImagePath item = do
         let path = toFilePath (itemIdentifier item)
-            base = dropExtension path
+            base = take ((length path) - 11) path
             ident = fromFilePath $ base </> "teaser.jpg"
         fmap (maybe "" (toUrl . (flip replaceFileName "256-teaser.jpg"))) (getRoute ident)
 

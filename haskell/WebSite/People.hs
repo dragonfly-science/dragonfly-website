@@ -11,7 +11,7 @@ config =  CollectionConfig
        { baseName            = "people"
        , indexTemplate       = "people/index.html"
        , indexPattern        = "people.md"
-       , collectionPattern   = "people/*.md"
+       , collectionPattern   = "people/**/content.md"
        , collectionTemplate  = "templates/people-list.html"
        , pageTemplate        = "templates/person.html"
        }
