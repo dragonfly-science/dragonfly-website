@@ -36,7 +36,7 @@ feel quite strongly about. This is information that potentially has
 high public interest and should help inform the debate about seabird
 bycatch,” says Edward.
 
-The release of the data was enabled by  [NZGOAL](http://nzgoal.info/),
+The release of the data was enabled by  [NZGOAL](https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/),
 the New Zealand Government Open Access and Licensing framework, which
 seeks to make government  data available so that it can be re-used.
 The data are copyright Ministry for Primary Industries and are

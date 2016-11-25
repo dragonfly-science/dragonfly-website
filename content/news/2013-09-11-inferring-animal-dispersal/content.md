@@ -1,5 +1,5 @@
 ---
-title: Inferring animal dispersal from geochemical proxies: open source R package online
+title: "Inferring animal dispersal from geochemical proxies: open source R package online"
 ---
 To pinpoint the origins of settling fish in Cook Strait, near
 Wellington, Philipp  measured geochemical signatures in fish

@@ -20,17 +20,19 @@ executable website
                      , WebSite.Config
                      , WebSite.Context
                      , WebSite.Data
-                     , WebSite.DomUtil.Images
                      , WebSite.Images
                      , WebSite.News
                      , WebSite.People
                      , WebSite.Publications
                      , WebSite.Work
+                     , WebSite.Util
   other-extensions:    OverloadedStrings, RecordWildCards, TupleSections, QuasiQuotes
   build-depends:       base
+                     , aeson
                      , directory
                      , filepath
                      , containers
+                     , unordered-containers
                      , text
                      , pandoc
                      , pandoc-citeproc

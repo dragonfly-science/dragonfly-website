@@ -6,7 +6,7 @@ phone: +64 21 989 454
 tag: edward
 title: Edward Abraham, PhD
 banner: abraham-edward/edward-abraham-letterbox.jpg
-sortorder: 1
+sortorder: "1"
 nocite: |
   @abraham2000isd
   @abraham_effectiveness_2009

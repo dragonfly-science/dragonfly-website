@@ -1,7 +1,7 @@
 #!/bin/bash
 
-LTS=lts-5.15
-IMAGE=dragonflyscience/dragonfly-website:$LTS
+VER=nightly-2016-11-17
+IMAGE=dragonflyscience/dragonfly-website:$VER
 INTERACTIVE=$([ -t 0 ] && echo '-it')
 PORT=${PORT:=8000}
 BUILD=${BUILD:=false}
