@@ -9,7 +9,7 @@ config = CollectionConfig
        { baseName            = "news"
        , indexTemplate       = "news/index.html"
        , indexPattern        = "news.md"
-       , collectionPattern   = "news/*.md"
+       , collectionPattern   = "news/**/content.md"
        , collectionTemplate  = "templates/news-list.html"
        , pageTemplate        = "templates/news.html"
        }

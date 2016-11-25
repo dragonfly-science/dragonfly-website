@@ -8,7 +8,13 @@ module WebSite.Context (
   tagContext
 ) where
 
+import           Control.Monad
+import           Data.Aeson
+import           Data.List
+
 import qualified Data.Map             as M
+import qualified Data.HashMap.Strict  as HM
+import qualified Data.Text            as T
 import           Data.Maybe
 import           Data.Monoid          ((<>))
 import           System.FilePath      (replaceExtension, takeBaseName)
@@ -16,6 +22,7 @@ import           Text.CSL.Reference   (Reference)
 
 import           WebSite.Bibliography
 import           WebSite.Config
+import           WebSite.Util
 
 import           Hakyll
 
@@ -53,11 +60,14 @@ allTags = listField "allTags" ctx (return $ map (\x -> Item (fromFilePath (fst x
     where ctx = field "tag" (return . fst . itemBody)
             <> field "tagDisplay" (return . snd . itemBody)
 
+
 listContextWith :: String -> Context String -> Context a
 listContextWith s ctx  = listFieldWith s ctx $ \item -> do
     let identifier = itemIdentifier item
     metadata <- getMetadata identifier
-    let metas = maybe [] (map trim . splitAll ",") $ M.lookup s metadata
+    let metas = maybe [] (map trim . splitAll ",") $
+              join $ fmap (resultToMaybe . fromJSON) $
+                HM.lookup (T.pack s) metadata
     return $ map (\x -> Item (fromFilePath x) x) metas
 
 
@@ -77,7 +87,10 @@ pageUrlField :: String -> Context a
 pageUrlField key = field key $ \item -> do
     let pseudoPath = toFilePath (itemIdentifier item)
         path = "/" ++ pseudoPath
-    return (replaceExtension path ".html")
+    return $
+      if isSuffixOf "/content.md" path
+         then (take ((length path) - 11) path) ++ ".html"
+      else (replaceExtension path ".html")
 
 
 -- Provide context for a single BibTeX reference
