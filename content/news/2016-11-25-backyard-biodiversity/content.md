@@ -7,11 +7,11 @@ title: Tooth and Claw snags young locals
 
 Sarah Irvine, Otago Peninsula Biodiversity Group Project Manager, says her daughter was very enthusiastic about being involved.  
 
-“She trialled the Tooth and Claw website before it went live and once she’d entered the test data said, ‘I want to do more!’ The data entry side really appealed to her and the website was at the right level for the age of the school children.”
+“She trialled the Tooth and Claw website before it went live and once she’d entered the test data said, ‘I want to do more!’ The data entry side really appealed to her, and the website was at the right level for the age of the school children.”
 
 Sarah says the children enjoyed finding out what was lurking in their back yards. “They loved putting out the tunnels and checking what was there in the morning. They also loved sharing their finds with their classmates and their family. It was lots of fun.”
 
-Monitoring kits (that included tracking tunnels, chew cards, wax tags and pitfall traps) were issued to schools and families in rotation for a week at a time. 
+Monitoring kits (that included tracking tunnels, chew cards, wax tags and pitfall traps) were issued to schools and families in rotation for a week at a time.
 
 “At one school, the children took on the responsibility of managing the kits – issuing them and making sure they came back – as well as helping each other with identifying the teeth marks and paw prints and with the data entry.”
 
