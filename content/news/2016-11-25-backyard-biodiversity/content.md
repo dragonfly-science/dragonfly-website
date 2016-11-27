@@ -1,7 +1,7 @@
 ---
 title: Tooth and Claw snags young locals
 ---
- A website created by Dragonfly to record observations of pest animals on Otago Peninsula was given the thumbs up by local children after a busy spring. The project, Backyard Biodiversity, saw children monitoring pests around their homes and schools and recording it on the Tooth and Claw website.
+ A website created by Dragonfly to record observations of pest animals on Otago Peninsula was given the thumbs up by local children after a busy spring. The project, Backyard Biodiversity, saw children monitoring pests around their homes and schools and recording it on the [Tooth and Claw website](https://toothandclaw.nz).
 
 <!--more-->
 
@@ -25,6 +25,6 @@ Backyard Biodiversity culminated in a display of posters at Otago Museum, which 
 
 On a poster, an Anderson’s Bay School student wrote, “After school I went home and put out the traps. I put one beside my trampoline. I put one beside my porch. I put one in a bush and one on a tree. I got a stoat, 3 hedgehogs and 1 rat.”
 
-[View the monitoring results on toothandclaw.nz](https://toothandclaw.nz/tc/results/school/) or [read more about the project](https://www.dragonfly.co.nz/news/2016-05-20-ucm-pest-monitoring.html).
+[View the monitoring results](https://toothandclaw.nz/tc/results/school/) or [read more about the project](https://www.dragonfly.co.nz/news/2016-05-20-ucm-pest-monitoring.html).
 
 Backyard Biodiversity is an [Unlocking Curious Minds](http://www.curiousminds.nz/) project run by Backyard Biodiversity Educator Carol Tippet for the [Otago Peninsula Biodiversity Group](http://www.pestfreepeninsula.org.nz/).
