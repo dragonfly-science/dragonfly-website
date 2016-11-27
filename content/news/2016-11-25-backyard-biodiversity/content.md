@@ -25,6 +25,6 @@ Backyard Biodiversity culminated in a display of posters at Otago Museum, which 
 
 On a poster, an Anderson’s Bay School student wrote, “After school I went home and put out the traps. I put one beside my trampoline. I put one beside my porch. I put one in a bush and one on a tree. I got a stoat, 3 hedgehogs and 1 rat.”
 
-[View the monitoring results on](toothandclaw.nz) or [read more about the project](https://www.dragonfly.co.nz/news/2016-05-20-ucm-pest-monitoring.html).
+[View the monitoring results on toothandclaw.nz](http://toothandclaw.nz) or [read more about the project](https://www.dragonfly.co.nz/news/2016-05-20-ucm-pest-monitoring.html).
 
 Backyard Biodiversity is an [Unlocking Curious Minds](http://www.curiousminds.nz/) project run by Backyard Biodiversity Educator Carol Tippet for the [Otago Peninsula Biodiversity Group](http://www.pestfreepeninsula.org.nz/).
