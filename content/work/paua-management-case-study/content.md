@@ -15,13 +15,13 @@ their sector.
 <!--more-->
 
 
-##Information for sustainable fisheries
+### Information for sustainable fisheries
 Good information is essential for the sustainable management of fisheries.
 The Pāua Industry Council helps manage catch in New Zealand pāua fisheries, to 
 ensure that the populations remain healthy. Pāua divers collect data on each individual dive. From this fishing data,
 we are able to map the fishery and monitor its performance, reef by reef.
 
-##Statistical analysis supports decision making
+### Statistical analysis supports decision making
 Deciding whether to increase or decrease catches is a tough trade-off for fisheries. Decreasing catches puts 
 short-term financial pressure on the fishers, but increasing catches may affect the longer-term sustainability.
 We carry out the statistical
@@ -40,7 +40,7 @@ fisher’s data, while allowing high level summaries to be shared across the ind
 is deployed on the [Catalyst Cloud](http://www.catalyst.net.nz/catalyst-cloud), an 
 affordable and secure New Zealand cloud computing service.
 
-##Ensuring sustainability 
+### Ensuring sustainability 
 The Ministry of Primary Industries is very positive about this work. They 
 recognise the value that such detailed and timely information provides beyond 
 their usual stock assessment process. Robust evidence of 
