@@ -1,7 +1,7 @@
 ---
-title: Kōkako featured on Native Affairs
+title: Kōkako featured on Native Affairs, Māori Television
 ---
-The Maori language software Kōkako features on Native Affairs and is in the running for a New
+The Māori language software Kōkako features on Native Affairs and is in the running for a New
 Zealand design award.
 
 <!--more-->
