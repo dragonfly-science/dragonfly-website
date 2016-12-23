@@ -2,7 +2,7 @@
 title: Informed management
 banner-image: /work/paua-management-case-study/dave-and-jules.jpg
 summary: Statistical analysis to ensure sustainability of the pāua fishery. 
-tags: stats
+tags: policy
 quote: Dragonfly has been absolutely awesome – we’re rapt.
 quote-attribution: Jeremy Cooper, CEO, Pāua Industry Council
 logo: /work/paua-management-case-study/pic-logo.png

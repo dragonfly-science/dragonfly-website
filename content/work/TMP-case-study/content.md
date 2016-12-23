@@ -24,7 +24,7 @@ The recurrent neural network achieves more than 95% accuracy in detecting each l
 ### Partnership with Salted Herring
 We were pleased to work with Wellington digital design agency [Salted Herring](https://www.saltedherring.com/) on this project, who designed the user interface and created the brand identity. We worked together on the front-end development. [Kōkako](https://kokako.co/) was named a Supreme Winner in the interactive category of the [2016 Best Design Awards](https://bestawards.co.nz/interactive/applications/kokako-language-tracking) and awarded a Purple Pin.
 
-[Watch a Native Affairs, Maōri TV interview about this project[(https://www.dragonfly.co.nz/news/2016-10-17-kokako-is-the-best.html). 
+[Watch a Native Affairs, Maōri TV interview about this project](https://www.dragonfly.co.nz/news/2016-10-17-kokako-is-the-best.html). 
 
 > The team at Dragonfly have been great to work with. They quickly understood what 
 > we were trying to achieve and came up with a very innovative solution. 
