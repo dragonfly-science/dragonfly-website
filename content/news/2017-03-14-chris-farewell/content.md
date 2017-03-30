@@ -5,6 +5,7 @@ After four years and two children, Chris is leaving Dragonfly to take up a posit
 
 <!--more-->
 
+
 “My role is to search interesting data sets – either public or released via an Official Information Act request – for something I think the public will be interested in. I pitch the idea to the investigative journalism editor and they decide if it’s worth me spending time developing a visualisation to tell the story,” he says.
 
 “And with the budget and an election coming up this year, there will be plenty to keep me entertained.”
