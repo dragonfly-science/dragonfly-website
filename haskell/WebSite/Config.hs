@@ -75,7 +75,7 @@ tagDictionary = [
 --
 -- NOTE: Update this when you want to add the next year.
 publicationYears :: [Int]
-publicationYears = [2007..2016]
+publicationYears = [2007..2017]
 
 cslIdentifier, cslNoBibIdentifier :: Identifier
 cslIdentifier      = "resources/bibliography/apa-note.csl"
