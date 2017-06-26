@@ -14,13 +14,13 @@
     background-position-x: 100%; 
     background-position-y: 8%;
     @include media($serendipity-up) {
-        background-image: url("/images/1600-ipad.jpg");
+        background-image: url("/images/1600-kokako.jpg");
     }
     @include media($transient-serendipity) {
-        background-image: url("/images/960-ipad.jpg");
+        background-image: url("/images/960-kokako.jpg");
     }
     @include media($transient) {
-        background-image: url("/images/420-ipad.jpg");
+        background-image: url("/images/420-kokako.jpg");
     }
 }
 

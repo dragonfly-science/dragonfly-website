@@ -61,7 +61,7 @@ main = do
                           , ( "960", fir ["-resize" , "960x128^"])
                           , ("1600", fir ["-resize" , "1600x128^"])
                           ]
-    Images.imageProcessor ( "images/ipad.jpg") $
+    Images.imageProcessor ( "images/kokako.jpg") $
                           [ ( "420", fir ["-resize" , "420x240^", "-crop", "420"])
                           , ( "960", fir ["-resize" , "960x320^"])
                           , ("1600", fir ["-resize" , "1600"])
