@@ -5,7 +5,7 @@ Genomics, the study of genomes (the complete set of genetic material within an o
 
 <!--more-->
 
-Rob Elshire’s Palmerston North-based business the [Elshire Group]( https://www.elshiregroup.co.nz/)offers a genotyping-by-sequencing service using a technology invented by Rob. The company’s clients are mostly based overseas.
+Rob Elshire’s Palmerston North-based business the [Elshire Group](https://www.elshiregroup.co.nz/) offers a genotyping-by-sequencing service using a technology invented by Rob. The company’s clients are mostly based overseas.
 
 “My wife and I run the business based in our lab at Massey University. We prepare the DNA samples, get them analysed in Australia then either send the raw data to the client or process it here first. It’s most commonly plant and animal samples to support breeding work, conservation biology, or ecology.”
 
