@@ -1,11 +1,11 @@
 ---
-title: Keeping track of a whole species
+title: Keeping track of an entire species
 ---
 Kākāpō, New Zealand’s large, flightless, nocturnal parrots generate few offspring but much data. The whole population of about 150 birds is intensively managed and monitored on several pest free offshore islands. The birds’ weight, breeding and mating activity, and blood and poo sample results are currently recorded in a database that has to cope with increasing amounts of data.
 
 <!--more-->
 
-Dragonfly has been contracted to update the database, and Edward recently spent a few days with the team on Codfish Island/Whenua Hou, off Stewart Island/Rakiura, to scope the project.
+Dragonfly is currently scoping the project and Edward recently spent a few days with the team on Codfish Island/Whenua Hou, off Stewart Island/Rakiura, to research and plan the work. 
 
 ![Edward helped with some fieldwork while on the island. Credit Andrew Digby, Department of Conservation.](/news/2017-08-14-kakapo-two/ed-kakapo.jpg)
 
