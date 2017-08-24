@@ -6,7 +6,7 @@ tags: systems
 banner-image: /work/navigating-complexity/fish-factory.jpg
 quote: We sat down together and discussed a concept. Then Dragonfly came up with some absolutely key ideas that have really made our system what it is.
 quote-attribution: David Middleton, Chief Executive, Trident Systems
-logo: /work/predator-prey/rutgers.jpg
+logo: /work/navigating-complexity/trident-logo.png
 ---
 Sustainable management based on robust analyses of well managed data is critically important to fishers and fishery managers in New Zealand. We support Trident Systems’ commitment to collecting better data – and getting more value from that data – to benefit the country’s fisheries.
 
