@@ -1,5 +1,5 @@
 ---
-title: Keeping track of an entire species
+title: Keeping track of Kākāpō
 ---
 Kākāpō, New Zealand’s large, flightless, nocturnal parrots generate few offspring but much data. The whole population of about 150 birds is intensively managed and monitored on several pest free offshore islands. The birds’ weight, breeding and mating activity, and blood and poo sample results are currently recorded in a database that has to cope with increasing amounts of data.
 
