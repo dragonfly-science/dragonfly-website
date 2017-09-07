@@ -1,7 +1,7 @@
 ---
 short-title: Navigating complexity
-title: Devising a system to support and track multiple users sharing data and outputs
-summary: Long term database development is supporting sustainable fisheries management.
+title: Collaborative data analysis for fisheries research
+summary: Long term development of data anaysis systems is supporting sustainable fisheries management.
 tags: systems
 banner-image: /work/navigating-complexity/fish-factory.jpg
 quote: We sat down together and discussed a concept. Then Dragonfly came up with some absolutely key ideas that have really made our system what it is.
