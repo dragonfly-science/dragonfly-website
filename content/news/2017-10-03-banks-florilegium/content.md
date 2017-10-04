@@ -5,7 +5,7 @@ Dragonfly Data Science is now located on level 4 of 158 Victoria St, instead of 
 
 <!--more-->
 
-Edward and Finlay have been aware of the need for a larger space for some time – especially a place to hold meetings – but were reluctant to leave their handy location. They jumped at the opportunity to move within the building.
+Edward and Finlay have been aware of the need for a larger space for some time – especially a place to hold meetings – but were reluctant to leave their handy location.
 
  “We’re still settling in and finishing things off, but we’d love people to come by and see where we are.”
 
