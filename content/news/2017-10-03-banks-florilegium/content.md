@@ -13,7 +13,7 @@ The new white office walls are soon to be adorned by a set of six historic botan
 
 Back in England, Banks hired 18 engravers to create more than 700 copperplate line engravings from the paintings and drawings, but the plates were never printed. He eventually bequeathed them to the British Museum.
 
-“My mum worked at the Natural History Museum in London in the 1950s and came across some of the original paintings in a desk drawer in the back of her office. Once the prints were finally printed in the 1980s, Mum and Dad bought a few because of the connection and because Dad was right into botany.”
+“My mum worked at the Natural History Museum in London in the 1950s and came across some of the Sydney Parkinson's original drawings were in a desk drawer in her office. Once the plates were finally printed in the 1980s, Mum and Dad bought a few because of the connection and because Dad was an enthusiastic botanist.”
 
 Edward says the new office was an ideal opportunity to drag the prints out from under his parent’s bed, “where all the treasures live” and get them framed and hung up for people to enjoy.  
 
