@@ -3,7 +3,6 @@ pdf: Neubauer-FAR-2017-54-Paua-data-logger.pdf
 tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
 title: The pāua data-logger system
 ---
-
 The pāua data-logger system was conceived to provide high-resolution information
 on spatial resource use and catch-per-unit-effort in the pāua fisheries around
 New Zealand. The system consists of two hard- ware components, the boat unit and
@@ -18,3 +17,4 @@ report presents a stocktake of the current state of the programme, discusses
 areas for improvement, and makes recommendations for the programme to transition
 successfully to the new Integrated Electronic Monitoring and Reporting System,
 mandated by the Ministry for Primary Industries from 1 October 2017.
+
