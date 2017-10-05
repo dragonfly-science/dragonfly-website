@@ -1,5 +1,5 @@
 ---
-pdf: Neubauer-FAR-2017-54-Paua-data-logger.pdf
+pdf: Neubauer-2017-54-Paua-data-logger.pdf
 tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
 title: The pāua data-logger system
 ---
