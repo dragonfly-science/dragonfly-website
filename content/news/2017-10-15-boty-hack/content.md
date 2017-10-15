@@ -46,5 +46,7 @@ around them, but many of our seabirds are facing just as significant threats as
 our land birds.”
 
 [Read the press coverage on NZ Herald.](http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=11931731)
+
 [Vote for the Bird of the Year.](https://www.birdoftheyear.org.nz/)
+
 [Find out about more our seabird risk assessment work.](https://www.dragonfly.co.nz/work/seabird-risk.html)
