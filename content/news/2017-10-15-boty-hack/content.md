@@ -16,7 +16,7 @@ Collins. We checked it out and found that all the votes had come from the same
 IP address, and the email addresses were probably automatically generated, rather
 than belonging to different people.”
 
-![Graph of voting for the white-faced heron showing the sudden increase then removal of fraudulent votes.](/news/2017-10-15-white-faced-heron-votes.jpg)
+![Graph of voting for the white-faced heron showing the sudden increase then removal of fraudulent votes.](/news/2017-10-15-boty-hack/white-faced-heron-votes.jpg)
 
 The fraudulent votes have since been removed, but media attention from the
 hacking story increased votes for the competition overall as well as for the
