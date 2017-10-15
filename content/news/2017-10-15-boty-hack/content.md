@@ -39,7 +39,7 @@ look for clues to explain why a trend is changing.”
 
 So which bird did Yvan vote for?
 
-“The New Zealand robin, since did my PhD on them. Unfortunately the black petrel
+“The New Zealand robin, since I did my PhD on them. Unfortunately the black petrel
 was not part of the competition this year – our seabirds were definitely
 under-represented. People are more emotionally connected to the birds they see
 around them, but many of our seabirds are facing just as significant threats as
