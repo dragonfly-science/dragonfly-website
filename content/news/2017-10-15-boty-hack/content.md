@@ -2,7 +2,7 @@
 title: Curiosity uncovers election hack
 ---
 Routine monitoring of the Bird of the Year election by Yvan Richard uncovered
-illegal voting in the competition last week. The discovery was picked up by
+fraudulent voting in the competition last week. The discovery was picked up by
 media worldwide and “ruffled a few feathers” in New Zealand as well.
 
 <!--more-->
