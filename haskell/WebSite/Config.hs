@@ -78,8 +78,8 @@ publicationYears :: [Int]
 publicationYears = [2007..2017]
 
 cslIdentifier, cslNoBibIdentifier :: Identifier
-cslIdentifier      = "resources/bibliography/apa-note.csl"
-cslNoBibIdentifier = "resources/bibliography/apa-nobib.csl"
+cslIdentifier      = "resources/csl/apa-note.csl"
+cslNoBibIdentifier = "resources/csl/apa-nobib.csl"
 
 bibIdentifier :: Identifier
 bibIdentifier = "resources/bibliography/mfish.bib"
