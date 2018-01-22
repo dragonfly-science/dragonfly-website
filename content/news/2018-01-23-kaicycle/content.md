@@ -1,7 +1,7 @@
 ---
 title: Shout out to Kaicycle
 ---
-A new, more spacious office has enabled Dragonfly to get set up with systems to recycle its plastic and paper waste and compost fruit skins and food scraps.
+A new, more spacious office has enabled Dragonfly to get set up with systems to recycle plastic and paper waste and to compost fruit skins and food scraps.
 
 <!--more-->
 
