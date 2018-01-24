@@ -65,6 +65,7 @@ advantage of these opportunities means we need someone to help with aspects of
 our fisheries work. 
 
 Some relevant fisheries projects that we are currently working on include:
+ 
 * risk assessment of the impact of fishing on New Zealand seabird and marine mammal populations
 * research on the impact of climate change on marine ecosystems
 * developing spatial models for New Zealand pāua fisheries
