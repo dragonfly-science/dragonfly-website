@@ -64,12 +64,11 @@ language modelling, and reproducible research. We are ambitious, and taking
 advantage of these opportunities means we need someone to help with aspects of
 our fisheries work. 
 
-Some relevant fisheries projects that we are currently working on include:
- 
-- risk assessment of the impact of fishing on New Zealand seabird and marine mammal populations
-- research on the impact of climate change on marine ecosystems
-- developing spatial models for New Zealand pāua fisheries
-- assessment of the impact of fisheries on Pacific whale-sharks.
+Some relevant fisheries projects that we are currently working on include
+risk assessment of the impact of fishing on New Zealand seabird and marine mammal populations;
+research on the impact of climate change on marine ecosystems;
+developing spatial models for New Zealand pāua fisheries; and 
+assessment of the impact of fisheries on Pacific whale-sharks.
 
 While most of our research is applied, we support fundamental science projects
 that can complement and inform our other work. The successful candidate will be
