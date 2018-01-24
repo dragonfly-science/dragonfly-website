@@ -12,13 +12,13 @@ low impact. You will be joining our team in Wellington, New Zealand.
 
 ## The role
 We seek a fisheries or environmental scientist who is comfortable developing
-Bayesian statistical models and using them to analyse data. Experience at complex
+Bayesian statistical models and using them to analyse data. Experience with complex
 models, such as fisheries stock-assessment models, or spatio-temporal models 
 will be required. 
 Our Linux-based toolchain revolves around
 open-source software such as R, Python, PostgresSQL, and we would prefer a
 person who has actively coded using these tools.
-Experience with Bayesian software such as Stan, JAGS, or Template Model Builder,  
+Experience with statistical modelling platforms such as Stan, JAGS, or Template Model Builder,  
 would be ideal. 
 
 A Ph.D. in a relevant field and postdoctoral experience are desirable.  At
