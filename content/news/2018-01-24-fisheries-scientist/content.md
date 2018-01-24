@@ -1,9 +1,9 @@
 ---
 title: Fisheries Scientist—Statistical Modelling
 ---
-We are looking for someone with excellent statistical modelling skills in a
-fisheries-related area, to work on and lead projects related to
-fisheries and their environmental impacts. Sustainable management of these
+We are looking for someone with excellent statistical modelling skills 
+to work on and lead projects related to
+fisheries and their environmental impacts. Sustainable management of
 fisheries depends on informed decision making. You will be providing technical
 advice to ensure that fisheries are well-run, sustainable, and of
 low impact. You will be joining our team in Wellington, New Zealand.
