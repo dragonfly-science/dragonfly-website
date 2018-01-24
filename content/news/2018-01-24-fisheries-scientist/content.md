@@ -2,11 +2,11 @@
 title: Fisheries Scientist—Statistical Modelling
 ---
 We are looking for someone with excellent statistical modelling skills in a
-fisheries-related area, to work on and lead projects related to New Zealand
+fisheries-related area, to work on and lead projects related to
 fisheries and their environmental impacts. Sustainable management of these
 fisheries depends on informed decision making. You will be providing technical
-advice to ensure that New Zealand fisheries are well-run, sustainable, and of
-low impact. You will be joining our team in Welllington, New Zealand.
+advice to ensure that fisheries are well-run, sustainable, and of
+low impact. You will be joining our team in Wellington, New Zealand.
 
 <!--more-->
 
@@ -41,7 +41,7 @@ streams of research, or seek funding to continue existing streams of work.
 The role is offered as a full-time permanent position, with salary depending on
 experience, and five weeks annual leave. Usual terms and conditions under New
 Zealand labour law apply.  We anticipate that the role will be based in
-Wellington, New Zealand, and applicants must be eligible to work in New Zealand.
+Wellington, and applicants must be eligible to work in New Zealand.
 We can offer flexible working arrangements, if required, that may suit people
 with young families. For example, some of our staff live semi-rurally and work
 partly from home. 
@@ -49,8 +49,7 @@ partly from home.
 ## Working at dragonfly
 
 Dragonfly Data Science ([www.dragonfly.co.nz](http://www.dragonfly.co.nz)) 
-are a small consultancy, primarily
-based in Wellington, New Zealand.  We are a collaborative team, taking pride in
+are a small consultancy.  We are a collaborative team, taking pride in
 our ability to work together, and draw on substantial expertise in a range of
 domains. While individuals are  responsible for particular projects, outputs are
 products of our teamwork.  This role will suit a curious, open-minded and
