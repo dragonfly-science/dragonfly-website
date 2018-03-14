@@ -7,7 +7,7 @@ the interactive application category, including  websites and mobile application
 
 <!--more-->
 
-The [Best Design Awards](http://bestawards.co.nz) are an annual showcase of excellence in graphic, spatial,
+The [Best Design Awards](https://bestawards.co.nz/interactive/applications/salted-herring/kokako-language-tracking/) are an annual showcase of excellence in graphic, spatial,
 product, interactive and motion design. A jury of international peers reward
 the very best piece of design in each discipline with the supreme Purple Pin,
 which recognises work that raises the bar of New Zealand design. Kōkako was awarded
