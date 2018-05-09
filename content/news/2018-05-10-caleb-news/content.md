@@ -1,5 +1,5 @@
 ---
-title: Another Dragonfly joins the team
+title: Ngā mihi ki a Caleb
 ---
 Caleb Moses is all set to join Dragonfly later this month. He will bring
 valuable experience in machine learning, natural language processing, data
