@@ -22,6 +22,6 @@ attractive user interface, developed by Wellington digital brand agency [Salted
 Herring](https://www.saltedherring.com/). This design has received some
 attention, with Kōkako selected as a finalist in the Interactive Applications
 section of the Designers Institute of New Zealand [NZ Best Design
-Awards](http://bestawards.co.nz/entries/interactive/kokako-language-tracking/).
+Awards](https://bestawards.co.nz/interactive/applications/salted-herring/kokako-language-tracking/).
 
 Read [a case study about our work with Te Māngai Pāho](https://www.dragonfly.co.nz/work/TMP-case-study.html).
