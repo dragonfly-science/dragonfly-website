@@ -2,7 +2,7 @@
 title: Going deep on Māori language
 ---
 Developer and data scientist Miles Thompson recently started working with
-Dragonfly on the Kōrero Māori project – applying machine learning to
+Dragonfly on the Te Hiku Media Kōrero Māori project – applying machine learning to
 transcribing spoken Māori.
 
 <!--more-->
@@ -47,8 +47,8 @@ of the model we’ve developed so far. Dragonfly are doing cutting edge work –
 it’s a very exciting place to be. Things are changing rapidly in the area of
 machine learning at the moment and we’re at the forefront of that.”
 
-Dragonfly Data Science is a partner in Kōrero Māori, a project building speech
-recognition software for te reo Māori, led by [Te Hiku Media](https://tehiku.nz/),
+Dragonfly Data Science is helping on Kōrero Māori, a project building speech
+recognition software for te reo Māori. The project is led by [Te Hiku Media](https://tehiku.nz/),
 and supported by [Te Pūnaha Matatini](http://www.tepunahamatatini.ac.nz/). [Listen to a story
 on RNZ](https://www.radionz.co.nz/news/te-manu-korihi/352075/siri-kei-te-pehea-te-ahua-o-te-rangi)
 about the project.
