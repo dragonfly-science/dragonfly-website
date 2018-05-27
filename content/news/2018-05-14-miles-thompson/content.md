@@ -1,5 +1,5 @@
 ---
-title: Going deep on Māori language
+title: Deep learning language
 ---
 Developer and data scientist Miles Thompson recently started working with
 Dragonfly on the Te Hiku Media Kōrero Māori project – applying machine learning to
