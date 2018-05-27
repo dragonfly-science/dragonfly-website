@@ -21,16 +21,16 @@ harvested recent comments on the internet and using machine learning, we found
 and arranged comments that were then spoken in the performance. It was
 fascinating to see my programming work presented in that setting.”
 
-Miles’ day job for four years was chief technical officer for the financial
+Miles’ day job for five years was chief technology officer for the financial
 research provider CreditSights. After two children came along, he and his
 partner moved back to New Zealand and Miles carried on working for the company
 as a technical architect.
 
 During those years he was involved in projects with Edward, including a venture
 that incorporated machine learning and AI. Although he’d studied neural networks
-at university, he hadn’t ever used them.
+at university, he had only used them in a research context prior to that time. 
 
-“It was a powerful approach but needed a few years for our hardware to catch up
+“It was a powerful approach but needed a few more years for hardware to catch up
 with the algorithms. At that stage people had almost given up on machine
 learning and neural networks because it was so difficult to get them to work.”
 
