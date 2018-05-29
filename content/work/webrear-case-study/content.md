@@ -39,7 +39,7 @@ externally. We were able to coordinate this team and deliver the website, follow
 extremely tight timetable to meet 
 the Minister’s release date. 
 
-[Explore New Zealand’s regional economies here.](http://www.mbie.govt.nz/info-services/business/business-growth-agenda/regions)
+[Explore New Zealand’s regional economies here.](http://webrear.mbie.govt.nz/summary/new-zealand)
 
 
 > I believe Dragonfly’s interactive is one of the best visualisations of 
