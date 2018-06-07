@@ -10,20 +10,20 @@ responsible for the stewardship of the country’s ocean resources.
 <!--more-->
 
 They found that even after accounting for price effects and the volume of fish
-landed, there was still some residual variation due to size – larger fish were
+landed, there was still residual variation due to size – larger fish were
 more likely to be assessed.
 
-“One of the reasons we looked at the US fisheries was because we had a very
+“One of the reasons we looked at US fisheries was because we had a very
 comprehensive data set. It was compiled by one of the co-authors, Mike
 Melnychuk, from the University of Washington. He has surveyed fisheries managers
-and fisheries scientists for many years to understand the stock assessments and
-economic context,” says Phil.
+and fisheries scientists for many years to understand fisheries stock assessments and
+their economic context,” says Phil.
 
 Phil has been working on the project for several years, and says it ended up
 being a lot more complicated that he imagined at the start.
 
 “We had the database for all the things that were being assessed, but trying to
-figure out what species weren’t being assessed was really hard. In the end we
+figure out what species weren’t being assessed was hard. In the end we
 used a national landings database that NOAA has maintained since the 1950s. It’s
 pretty huge and contains everything that ever came up onto a fishing boat and
 was reported, including alligators!”
