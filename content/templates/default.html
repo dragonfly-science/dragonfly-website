@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="top">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      prefix="og: http://ogp.me/ns#"
+      xml:lang="en" lang="en" id="top">
 <head>
     <meta charset='utf-8' />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Dragonfly Data Science - $title$</title>
+    <meta property="og:title" content="Dragonfly Data Science: $title$" />
+    <meta property="og:url" content="$url$" />
+    $if(banner-image)$<meta property="og:image" content="$banner-image$" />
+    $else$ $if(teaserImage)$<meta property="og:image" content="$teaserImage$" />$endif$
+    $endif$
+    $if(og-description)$<meta property="og:description" content="$og-description$" />$endif$
     <link rel="stylesheet" type="text/css" href="/assets/dragonfly.css" />
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <!--[if lt IE 9]>
