@@ -28,9 +28,6 @@ config = defaultConfiguration
 
 main :: IO ()
 main = do
-  (_, _, _, h) <- createProcess $ shell "which convert >/dev/null 2>&1"
-  st <- getProcessExitCode h
-  let fakeImageResize = st /= Just ExitSuccess
   hakyllWith config $ do
 
     match "templates/*" $ compile templateCompiler
@@ -54,21 +51,19 @@ main = do
     -- small-medium: 560
     -- small: 420
 
-    let fir a = if fakeImageResize then [] else a
-
     Images.imageProcessor ( "images/dragonfly-wing.png") $
-                          [ ( "420", fir ["-resize" , "420x128^", "-crop", "420"])
-                          , ( "960", fir ["-resize" , "960x128^"])
-                          , ("1600", fir ["-resize" , "1600x128^"])
+                          [ ( "420", ["-resize" , "420x128^", "-crop", "420"])
+                          , ( "960", ["-resize" , "960x128^"])
+                          , ("1600", ["-resize" , "1600x128^"])
                           ]
     Images.imageProcessor ( "images/kokako.jpg") $
-                          [ ( "420", fir ["-resize" , "420x240^", "-crop", "420"])
-                          , ( "960", fir ["-resize" , "960x320^"])
-                          , ("1600", fir ["-resize" , "1600"])
+                          [ ( "420", ["-resize" , "420x240^", "-crop", "420"])
+                          , ( "960", ["-resize" , "960x320^"])
+                          , ("1600", ["-resize" , "1600"])
                           ]
     Images.imageProcessor ( "**/teaser.jpg") $
-                          [ ( "256", fir ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0"])
-                          , ( "100", fir ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0"])
+                          [ ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0"])
+                          , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0"])
                           ]
 
     --Images.imageProcessor ( "**/*.pdf") $
