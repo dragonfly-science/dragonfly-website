@@ -9,14 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Dragonfly Data Science - $title$</title>
     <meta property="og:title" content="Dragonfly Data Science: $title$" />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="$url$" />
-    $if(banner-image)$<meta property="og:image" content="$banner-image$" />
-    $else$ 
-        $if(teaserImage)$
-            <meta property="og:image" content="$teaserImage$" />
-            <meta property="og:image:width" content="256" />
-            <meta property="og:image:height" content="256" />
-        $endif$
+    $if(teaserImage)$
+        <meta property="og:image" content="https://www.dragonfly.co.nz/$teaserImage$" />
+        <meta property="og:image:width" content="256" />
+        <meta property="og:image:height" content="256" />
+    $else$
+        <meta property="og:image" content="https://www.dragonfly.co.nz/images/dragonfly-wing-short.png" />
+        <meta property="og:image:width" content="878" />
+        <meta property="og:image:height" content="287" /> 
     $endif$
     $if(og-description)$<meta property="og:description" content="$og-description$" />$endif$
     <link rel="stylesheet" type="text/css" href="/assets/dragonfly.css" />
