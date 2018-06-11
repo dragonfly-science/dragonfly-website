@@ -1,5 +1,7 @@
 ---
 title: Home
+og-title: Dragonfly Data Science
+og-description: Good decisions using data
 ---
 
 # Dragonfly Data Science

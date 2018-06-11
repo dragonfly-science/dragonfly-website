@@ -8,7 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Dragonfly Data Science - $title$</title>
+    $if(og-title)$
+    <meta property="og:title" content="$og-title$" />
+    $else$
     <meta property="og:title" content="Dragonfly Data Science: $title$" />
+    $endif$
     <meta property="og:type" content="website" />
     <meta property="og:url" content="$url$" />
     $if(teaserImage)$
