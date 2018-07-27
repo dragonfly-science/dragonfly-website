@@ -27,3 +27,4 @@ cabal.sandbox.config
 .work
 .cache
 sync.txt
+/dist-newstyle/

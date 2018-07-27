@@ -17,7 +17,7 @@ import qualified Data.HashMap.Strict  as HM
 import qualified Data.Text            as T
 import           Data.Maybe
 import           Data.Monoid          ((<>))
-import           System.FilePath      (replaceExtension, takeBaseName)
+import           System.FilePath      (replaceExtension, takeBaseName, takeDirectory)
 import           Text.CSL.Reference   (Reference)
 
 import           WebSite.Bibliography
@@ -30,6 +30,11 @@ baseContext :: String -> Compiler (Context String)
 baseContext section = do
     path <- fmap toFilePath getUnderlying
     ident <- getUnderlying
+    route <- getRoute ident
+    let prepareUrl :: String -> String
+        prepareUrl path = "/" <> (if takeBaseName path == "index" 
+                                    then takeDirectory path 
+                                    else path)
     return $  dateField  "date"   "%B %e, %Y"
            <> constField "jquery" "//ajax.googleapis.com/ajax/libs/jquery/2.0.3"
            <> constField "section" section
@@ -39,6 +44,7 @@ baseContext section = do
            <> listContextWith "tags" tagContext
            <> allTags
            <> metadataField
+           <> maybe (constField "url" "/") (constField "url" . prepareUrl ) route
            -- We don't include titleField (or defaultContext which includes
            -- titleField) here because (1) we never want the file name as the
            -- title and (2) we want to use the title from citations.

@@ -82,7 +82,7 @@ cslIdentifier      = "resources/csl/apa-note.csl"
 cslNoBibIdentifier = "resources/csl/apa-nobib.csl"
 
 bibIdentifier :: Identifier
-bibIdentifier = "resources/bibliography/mfish.bib"
+bibIdentifier = "resources/bibliography/dragonfly.bib"
 
 -- | Make a publication path for a reference ID
 mkPublicationPath :: String -> FilePath

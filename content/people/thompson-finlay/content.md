@@ -22,12 +22,12 @@ the technical direction of Dragonfly's work, with a strong focus on open source
 technologies. He enjoys the challenge of making analytical and 
 statistical solutions operational. 
 
-Finlay is experienced in Bayesian analysis and has carryied out statistical modelling
+Finlay is experienced in Bayesian analysis and has carried out statistical modelling
 on diverse projects such as estimating the bycatch of marine mammals in New Zealand fisheries, and
 the number of leaky homes in the country. He believes that automated approaches can massively increase the quality, reproducibility, and productivity of analytical systems, 
 bringing significant savings to clients. 
 
-Finlay researched four dimensional algebra and geometry for his PhD in 
+Finlay researched four-dimensional algebra and geometry for his PhD in 
 mathematics at [SISSA](http://sissa.it), Italy. He completed post-docs at [CIMAT](http://www.cimat.mx/) in Mexico 
 and [Victoria University of Wellington](http://www.victoria.ac.nz/sms),
 then worked in Wellington's IT industry before joining Dragonfly in 2008. 
