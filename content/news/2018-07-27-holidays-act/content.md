@@ -2,8 +2,8 @@
 title: Untangling complex patterns of work
 ---
 A challenging problem applying the Holidays Act to the employees of a large
-company turned into a great opportunity for [Sentio](https://www.sentio.co.nz/)
-and Dragonfly to work together.
+company led to  [Sentio](https://www.sentio.co.nz/)
+and Dragonfly working together.
 
 <!--more-->
 
