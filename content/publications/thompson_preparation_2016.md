@@ -1,5 +1,5 @@
 ---
-pdf: Berkenbusch_Neubauer_2018_toheroa.pdf
+pdf: Thompsonetal_2017_AEBR192.pdf
 tags: finlay, edward, katrin, bycatch, dragonfly, report
 ---
 Incidental captures of protected species in New Zealand waters are recorded by fisheries observers when

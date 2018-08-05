@@ -50,4 +50,4 @@ in spite of the low number of juveniles in the preceding survey in 2013–14. Fu
 increase in juveniles since 1998 suggests strong recruitment, with potential to augment the
 existing toheroa population at this site. The southern end of the beach continues to be an important area,
 including recruiting juveniles and adult toheroa. With only small toheroa populations remaining at other
-southern sites, Oreti Beach continues to support the main southern population of this species.
+southern sites, Oreti Beach continues to support the main southern population of this species.s
