@@ -1,5 +1,5 @@
 ---
-pdf: Abraham_Richard_2017_AEBR184.pdf
+pdf: Abraham_Richard_2018_AEBR197.pdf
 tags: edward, yvan, seabird, dragonfly, report, bayesian
 ---
 In New Zealand, captures of seabirds and other protected species are recorded by government observers when they are on-board commercial fishing vessels. This report addresses the question of how many seabirds would be reported caught if every commercial trawl and longline vessel fishing within New Zealand’s Exclusive Economic Zone carried an observer. Statistical models were used to scale up from observed captures, to estimate total captures across all commercial trawl and longline fisheries. Estimates were made for the 2002–03 to 2014–15 fishing years for trawl fisheries, and for the 1998–99 to 2014–15 fishing years for longline fisheries.
