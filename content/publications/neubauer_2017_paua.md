@@ -1,6 +1,7 @@
 ---
 pdf: Neubauer_2017_FAR2017_57.pdf
 tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
+title: Spatial bias in pāua <i>Haliotis iris</i> catch-per-unit-effort
 ---
 In fisheries, the exploitation of spatially discrete populations can lead to decoupling of trends in fishery-dependent catch-per-unit-effort (CPUE) and actual stock biomass trends. In this context, abalone (Halitidae)
 CPUE is regarded as unreliable in many abalone fisheries worldwide, where stocks are made up
