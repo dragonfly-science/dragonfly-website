@@ -1,6 +1,6 @@
 ---
 pdf: Abraham-AEBR-2017-189-Marine-mammal-risk-assessment.pdf 
-tags: edward, yvan, philipp, katrin, marine-mammal, dragonfly, report, bayesian
+tags: edward, yvan, philipp, katrin, marine-mammal, dragonfly, report, bayesian, risk-assessment
 ---
 This study provides an assessment of the impact of fishing-related fatalities on
 the populations of 35 marine mammal (sub)species that inhabit New Zealand
