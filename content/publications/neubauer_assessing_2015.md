@@ -1,6 +1,7 @@
 ---
 pdf: Neubaueretal_2015_FAR2015_71.pdf
 tags: philipp, edward, yvan, paua, fisheries, dragonfly, benthic, report, bayesian
+title: Assessing the performance of pāua (<i>Haliotis iris</i>) fisheries using GPS logger data
 ---
 
 The pāua *Haliotis iris* dive-logger data collection programme is an industry-led initiative aimed at achieving
