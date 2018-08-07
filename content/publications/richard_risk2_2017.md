@@ -1,6 +1,6 @@
 ---
 pdf: Richardetal_2017_AEBR191S.pdf
-tags: yvan, edward, katrin, dragonfly, seabird, bycatch, report
+tags: yvan, edward, katrin, dragonfly, seabird, bycatch, report, risk-assessment
 ---
 This supplementary information presents a summary of population and distributional data for the 71 taxa
 included in the risk assessment of the impact of fishing-related mortalities on seabirds breeding in the
