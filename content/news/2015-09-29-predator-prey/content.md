@@ -10,7 +10,7 @@ at Rutgers University, and Olaf is continuing to expand the use of this analysis
 
 <!--more-->
 
-After [Philipp Neubauer](/people/neubauer-philipp) completed his Ph.D., he had a post-doctoral fellowship
+After [Philipp Neubauer](/people/neubauer-philipp.html) completed his Ph.D., he had a post-doctoral fellowship
 in the United States working in the laboratory of [Olaf
 Jensen](http://marine.rutgers.edu/~ojensen/) at Rutgers University. Since
 returning to New Zealand, Philipp has been able to continue his collaboration
