@@ -1,6 +1,6 @@
 ---
 pdf: AEBR-162-risk-assessment.pdf
-tags: edward, yvan, dragonfly, seabird, bycatch, report
+tags: edward, yvan, dragonfly, seabird, bycatch, report, risk-assessment
 ---
 This report, together with the [supplementary information](https://files.dragonfly.co.nz/publications/pdf/AEBR-162-risk-supplement.pdf),
 presents an assessment of the risk of fisheries-related mortalities to 70 species and sub-species
