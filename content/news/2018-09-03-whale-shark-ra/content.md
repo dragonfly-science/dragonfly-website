@@ -17,7 +17,7 @@ Phil built a model that predicted where there was suitable habitat across the In
 
 “We had a large data set recorded by observers on tropical tuna fishing vessels from 2006 onwards in the western Pacific. It enabled us to identify where the rates of interactions were high.
 
-“There were a whole lot of unknowns for the species’ basic life history characteristics – we don’t know how often or where they breed or how many pups they have. We only know from a single sample that a female can carry up to 300 embryos but we don’t know when they are released.”
+“There were a whole lot of unknowns for the species’ basic life history characteristics – we don’t know how often or where they breed or how many pups they have. We only know from a single sample that a female can carry up to 300 embryos, but we don’t know when they are released.”
 
 Phil says that he was able to account for the large uncertainty in the input parameters and take it through the analysis, even through qualitative judgements had to be applied.
 
