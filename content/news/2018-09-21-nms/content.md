@@ -1,7 +1,8 @@
 ---
-title: Tech support for the National Monitoring System
+title: Streamlining the National Monitoring System
 ---
-Our work with the Ministry for the Environment helped stand up the data collection, management and storage aspects of the National Monitoring System. The NMS monitors all the resource consents issued by councils around the country.
+Our work with the Ministry for the Environment helped streamline the data collection, management and storage aspects of the National Monitoring System. The NMS monitors all the resource consents issued by councils around the country. A spreadsheet-based analysis system was shifted to using R, reducing the 
+work that needed to be done by MfE to collate the data. 
 
 <!--more-->
 
@@ -11,7 +12,7 @@ The NMS, however, collects detailed information about every resource consent iss
 
 Isabelle Collins, Principal Advisor, National Monitoring System, says about 40,000 consents are issued every year and a lot of information is collected for each consent.
 
-“It’s a really chunky set of data to collect and analyse. Dragonfly have been our tech support as we’ve got the system up and running – we couldn’t have got there without them.”
+“It’s a really chunky set of data to collect and analyse. Dragonfly have been our technical support as we’ve got the system up and running – we couldn’t have got there without them.”
 
 MfE decided to build the system on reusable code rather than using a commercially available database, mainly because the RMA is frequently updated or changed.
 
@@ -19,7 +20,7 @@ MfE decided to build the system on reusable code rather than using a commerciall
 
 Isabelle says they came up with solution that copes with the variation in scale and technology ranging from Auckland Council with 20,000 consents a year to tiny district councils with only 30 consents.
 
-“We send out a standard spreadsheet each year that can be filled in manually or have data from the bigger councils dumped into it. It’s a happy medium. Dragonfly’s code sucks the data from all the spreadsheets and feeds it into a database, which they host for us.”
+“We send out a standard spreadsheet each year that can be filled in manually or have data from the bigger councils dumped into it. It’s a happy medium. Dragonfly’s code sucks the data from all the spreadsheets and feeds it into a database.”
 
 With data now going back to 2014, the NMS is enabling MfE to see patterns and trends and find out if councils are implementing the act properly, efficiently, and if the act is making a difference.
 

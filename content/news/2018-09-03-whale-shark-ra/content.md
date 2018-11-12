@@ -25,6 +25,6 @@ The report to the committee concluded that the risk from fisheries is moderate t
 
 “Although some die before they are released, if you treat them gently when they’re caught, we know they do survive – at least in the short term.”
 
-Read the risk assessment report:[Risk to the Indo-Pacific Ocean whale shark population from interactions with Pacific Ocean purse-seine fisheries](https://www.wcpfc.int/node/31005).
+Read the risk assessment report: [Risk to the Indo-Pacific Ocean whale shark population from interactions with Pacific Ocean purse-seine fisheries](https://www.wcpfc.int/node/31005).
 
 See a news story about our work [mapping turtle distribution in the Pacific Ocean](https://www.dragonfly.co.nz/news/2016-11-17-turtles-delphi-map.html).
