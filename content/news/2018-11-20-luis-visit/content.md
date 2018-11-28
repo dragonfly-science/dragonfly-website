@@ -1,5 +1,5 @@
 ---
-title: Chilean partnership a success
+title: Chilean partnership for albatross risk assessment
 ---
 Luis Adasme, an analyst from the Chilean fisheries research institute IFOP, was hosted by Dragonfly for 5 weeks to create the first seabird risk assessment for Chilean fisheries.
 
@@ -22,6 +22,6 @@ Luis also attended a Fisheries New Zealand observer training course in Nelson, h
 
 Luis was enabled to come to New Zealand through an [ACAP](https://acap.aq/) secondment and was supported by Fisheries New Zealand, DOC and [IFOP (Instituto de Fomento Pesquero)](https://www.ifop.cl/en/) where he works as a senior analyst.
 
-[See a news story](https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12162768) about the signing of another New Zealand partnership with Chile to protect seabirds.
+[See a news story](https://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=12162768) about the signing of a New Zealand partnership with Chile to protect seabirds.
 
-Read about our work with data scientists in Japan. https://www.dragonfly.co.nz/news/2017-12-21-japan-science.html  
+[Read about our seabird work with fisheries scientists in Japan](https://www.dragonfly.co.nz/news/2017-12-21-japan-science.html)
