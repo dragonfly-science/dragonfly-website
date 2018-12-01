@@ -7,6 +7,7 @@ mobile: ''
 tag: philipp
 title: Philipp Neubauer, PhD
 banner: neubauer-philipp/philipp-neubauer-letterbox.jpg
+sortorder: "4"
 nocite: |
   @neubauer_assessing_2014
 ---

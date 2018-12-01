@@ -5,6 +5,7 @@ lastname: Berkenbusch
 mobile: ''
 tag: katrin
 title: Katrin Berkenbusch, PhD
+sortorder: "3"
 banner: berkenbusch-katrin/katrin-berkenbusch-letterbox.jpg
 ---
 Katrin is a marine scientist who specialises in benthic ecology. She is responsible for the quality of our 
