@@ -24,4 +24,4 @@ Zealand’s conference](https://www.nzlingsoc.org/conference/conference-2018/) i
 Wellington on 15 November called, ‘How to train your indigenous language speech
 recognition engine.’
 
-[Read more about Caleb](https://www.dragonfly.co.nz/news/2018-05-10-caleb-news.html).
+[Read more about Caleb](https://www.dragonfly.co.nz/people/moses-caleb.html).
