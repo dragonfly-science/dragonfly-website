@@ -9,7 +9,7 @@ banner-image: /work/technical-review-case-study/koala.jpg
 logo: /work/technical-review-case-study/queensland-government.png
 ---
 
-We reviewed a koala population study for the Department of Environment and Heritage Protection in Queensland. The technical review checked that their client had used appropriate spatial modelling and data analysis methods and that the reports' conclusions were fair. 
+We reviewed a koala population study for the Department of Environment and Heritage Protection in Queensland. The technical review checked that their client had used appropriate spatial modelling and data analysis methods and that the report's conclusions were fair. 
 <!--more-->
 
 ### Koala population modelling in southeast Queensland
