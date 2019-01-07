@@ -1,4 +1,4 @@
-pdf: abraham_2018_cadmium.pdf
+pdf: Abraham_2018_cadmium.pdf
 title: Cadmium in New Zealand agricultural soils
 tags: edward, dragonfly, article, bayesian, cadmium, soil
 ---
