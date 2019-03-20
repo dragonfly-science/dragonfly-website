@@ -1,14 +1,15 @@
 ---
 title: Automating analysis of national consents data
-short-title: Consents
-banner-image: 
-quote: Our project involved understanding the RMA, which is a hefty and dynamic piece of legislation. Dragonfly’s interest in and ability to come to grips with the act and how it is applied was really key to the success of the project. How Dragonfly set up the framework so we could populate it sensibly were some of the most elegant parts of the code base. I really valued Dragonfly’s exquisite communication skills – they are also excellent listeners. I found them to be passionate, talented and good company. Dragonfly were flexible and adaptable despite changes in scope as the nature of the business problem evolved. They were unflappable.
-quote-attribution: Dr Ignatius Menzies, Data Science Lead, Environmental Reporting, Ministry for the Environment – Manatū Mō Te Taiao
-logo: /work/webrear-case-study/mfe-logo.png
-summary: We worked with the Ministry for the Environment to develop systems for processing nationakl consents data
-tags: systems 
+short-title: Resource consents
+banner-image: /work/nms-case-study/roseneath.png
+quote: I really valued Dragonfly’s exquisite communication skills – they are also excellent listeners. I found them to be passionate, talented and good company. 
+quote-attribution: Dr Ignatius Menzies, Manatū Mō Te Taiao
+logo: /work/nms-case-study/mfe-logo.png
+summary: We worked with the Ministry for the Environment to develop systems for processing national resource consents data
+tags: capability 
 ---
-We worked with the Ministry for the Environment (MfE) to automate the input, collation and verification of data into the National Monitoring System (NMS). The NMS contains detailed information about the 40,000 resource consent applications made to New Zealand’s 78 district and regional councils each year. 
+We worked with the Ministry for the Environment (MfE) to automate the input, collation and verification of data on resource consent applications. Each year, detailed data are collated by the 40,000 or so resource consent applications made to New Zealand’s district and regional councils. This information is critical for understanding how the  resource management  act is functioning in New Zealand. 
+
 <!--more-->
 
 
@@ -16,7 +17,7 @@ We worked with the Ministry for the Environment (MfE) to automate the input, col
 
 Councils vary greatly in their resourcing and number of applications – from Auckland to Chatham Islands – so the new system had to work right across the range. 
 
-A multi-sheet spreadsheet is sent to every council each year. The new process feeds the data from the spreadsheets into the NMS via a series of standardisations, sense checks and verifications. The ministry then releases the collated data, which provides a national view of the year’s consenting and resource management activity. 
+A multi-sheet spreadsheet is sent to every council each year. The new process feeds the data from the spreadsheets into the National Monitoring System (NMS) via a series of standardisations, sense checks and verifications. The ministry then releases the collated data, which provides a national view of the year’s consenting and resource management activity. 
 
 ##Custom build for flexibility
 
@@ -37,10 +38,27 @@ Two of our staff worked on site at MfE for the first half of the project. This e
 MfE staff also appreciated the value of our standard reproducible approach to coding during the project – using version control and a shared code repository. Many valued it as a learning and development experience.  
 
 ##The result
-Automating the NMS has reduced the number of people needed to manage the annual process by about three fulltime staff. The staff who worked on this project are now applying their coding and data management skills to other Ministry reports and gaining efficiencies there too. 
+Automating the NMS has reduced the number of people needed to manage the annual process by about three full time staff. The staff who worked on this project are now applying their coding and data management skills to other Ministry reports and gaining efficiencies there too. 
 
 MfE is also able to release the compiled data much faster. This typically took more than a year from when the spreadsheet was sent out, because of the volume of data to process. A faster turnaround enables MfE to see how the RMA is working across the country closer to real time, and where necessary to update the policy settings in response.  
 
+> Our project involved understanding the RMA, which is a hefty and dynamic piece
+> of legislation. Dragonfly’s interest in and ability to come to grips with the
+> act and how it is applied was really key to the success of the project. 
+>
+> How
+> Dragonfly set up the framework so we could populate it sensibly were some of the
+> most elegant parts of the code base. I really valued Dragonfly’s exquisite
+> communication skills – they are also excellent listeners. I found them to be
+> passionate, talented and good company. 
+> Dragonfly were flexible and adaptable
+> despite changes in scope as the nature of the business problem evolved. They
+> were unflappable.
+
+<cite>Dr Ignatius Menzies, <br />
+Data Science Lead, <br />
+Environmental Reporting, <br />
+Ministry for the Environment – Manatū Mō Te Taiao </cite>
 
 [Access key data from the National Monitoring System](http://www.mfe.govt.nz/rma/rma-monitoring).
 
