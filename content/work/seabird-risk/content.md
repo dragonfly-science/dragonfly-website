@@ -36,7 +36,7 @@ is used by the fishing industry to support the certification of New Zealand fish
 > Dragonfly bridged the gap between science and its associated uncertainties, and policy 
 > and its inherent conflicts. They fostered an open and inclusive approach with all stakeholders.
 >
-> The assessment exercise has given us a new perspective on the risks posed by commercial fisheries, and in particular highlighted risks facing seabirds in New Zealand’s inshore fisheries
+> The assessment exercise has given us a new perspective on the risks posed by commercial fisheries, and in particular highlighted risks facing seabirds in New Zealand’s inshore fisheries.
 
 <cite>Bob Zuur<br />
 Marine Advocate<br />WWF-New Zealand.</cite>
