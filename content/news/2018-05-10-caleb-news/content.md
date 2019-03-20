@@ -13,7 +13,7 @@ changes in land cover and injury data across the country, and working on
 environmental reporting.
 
 His first job at Dragonfly will be with the Kōrero Māori project, which
-Dragonfly is working on with [Te Hiku Media](http://www.tehiiku.nz/) and [Te Pūnaha Matatini](http://www.tepunahamatatini.ac.nz/). 
+Dragonfly is working on with [Te Hiku Media](https://tehiku.nz/) and [Te Pūnaha Matatini](http://www.tepunahamatatini.ac.nz/). 
 Its end goal is to produce a Māori ‘Siri’
 for digital devices.
 
