@@ -1,10 +1,10 @@
 ---
-title: Southern Hemisphere tuna bycatch estimated
+title: Southern Hemisphere seabird bycatch estimated
 ---
 An international team of scientists recently completed a comprehensive analysis
-of seabird bycatch in all Southern Hemisphere tuna surface longline fisheries. It was
+of seabird bycatch in Southern Hemisphere tuna surface longline fisheries. It was
 carried out at the final workshop in a multi-year Common Oceans ABNJ Tuna
-Project run by Birdlife on behalf of the Food and agriculture Organisation out of Rome.
+Project run by Birdlife on behalf of the Food and Agriculture Organisation.
 
 <!--more-->
 
@@ -14,8 +14,9 @@ Australia and Brazil. Dr Igor Debski from the Department of Conservation
 and Edward were there from New Zealand as part of the technical team.
 
 “During the workshop we developed an estimate of total seabird bycatch for the
-Southern Hemisphere for surface longline fisheries based on one of the best
-datasets that has been compiled. The dataset could only be worked on for the
+Southern Hemisphere, for surface longline fisheries operating south of 20 South.
+As the workshop we compiled one of the best
+datasets of observer data on seabird bycatch that has been compiled. The dataset could only be worked on for the
 duration of the workshop so the analysis was necessarily limited, but we had
 three teams trying to calculate total bycatch using different methods and we all came up
 with similar estimates.”
