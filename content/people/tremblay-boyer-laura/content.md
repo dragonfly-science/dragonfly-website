@@ -33,8 +33,7 @@ Laura believes that scientists responsible for informing decision-makers should
 think differently about communication: 
 
 > My role as a scientist is to not only do the best science I can, but also to
-reach diverse audiences. The best science will make no difference if it is 
-communicated poorly
+reach diverse audiences. Even the best science won't make a difference if it is not well communicated
 
 ### Selected publications
 
