@@ -66,7 +66,7 @@ of that I think we tend to be ahead of the curve, especially in indigenous
 matters.” 
 
 The image of the conference participants that accompanies this story was painted
-by watercolour artist Sergio Garzon (Instagram @sergiogarzon).
+by watercolour artist Sergio Garzon ([Instagram](https://www.instagram.com/sergiogarzon/)).
 
 Read more about the [indigenous protocol and artificial intelligence
 workshop](https://www.indigenous-ai.net/) or about the 
