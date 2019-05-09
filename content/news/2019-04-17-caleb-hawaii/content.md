@@ -1,8 +1,8 @@
 ---
-title: Indigenous Artificial Intelligence
+title: Indigenous Protocals and Artificial Intelligence
 ---
 Caleb Moses recently spent time in Hawaiʻi at an indigenous AI workshop, as part of
-a New Zealand group led by Peter-Lucas Jones and Keoni Mahelona from Te Hiku Media. 
+a New Zealand group led by Peter-Lucas Jones and Keoni Mahelona from [Te Hiku Media](https://tehiku.nz/). 
 
 <!--more-->
 
@@ -13,7 +13,7 @@ as artists and activists. According to Caleb, the aim of the workshop was to
 indigenous AI could look like.” 
 
 People at the AI workshop were excited to learn about the work that
-Te Hiku Media have been leading, to create a speech
+[Te Hiku Media](https://tehiku.nz/) have been leading, to create a speech
 recognition system for Te Reo Māori.
 
 “A lot of people were inspired (to put it mildly) by the work we’d done”, he
@@ -66,7 +66,7 @@ of that I think we tend to be ahead of the curve, especially in indigenous
 matters.” 
 
 ![Conference participants, ainted by watercolour artist Sergio Garzon ([Instagram](https://www.instagram.com/sergiogarzon/)).
-](teaser.jpg)
+](2019-04-17-caleb-hawaii/indigenous-protocols-sergio-garzon.jpg)
 
 Read more about the [indigenous protocol and artificial intelligence
 workshop](https://www.ics.hawaii.edu/2019/03/indigenous-protocols-and-artificial-intelligence/) or about the 
