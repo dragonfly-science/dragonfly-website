@@ -1,7 +1,7 @@
 ---
 title: Indigenous Artificial Intelligence
 ---
-Caleb Moses recently spent time in Hawai’i at an indigenous AI workshop, as part of
+Caleb Moses recently spent time in Hawaiʻi at an indigenous AI workshop, as part of
 a New Zealand group led by Peter-Lucas Jones and Keoni Mahelona from Te Hiku Media. 
 
 <!--more-->
@@ -38,17 +38,17 @@ help tangata whenua.”
 
 Caleb also joined Peter-Lucas and Keoni at the [International Conference on Language
 Documentation & Conservation](https://icldc6.weebly.com/), where they presented
-te reo Māori speech recognition work in a talk called ‘kaitiakitanga:
+te reo Māori speech recognition work in a talk called ‘Kaitiakitanga:
 community-led guardianship and automatic speech recognition for Te Reo Māori’. 
 
-“It was fascinating to be in Hawai’i – I particularly enjoyed learning about
+“It was fascinating to be in Hawaiʻi – I particularly enjoyed learning about
 their culture and colonial history. Fortunately I made friends with Dr Noelani
-Arista at the AI workshop – she’s a native Hawai’ian history professor from the
-University of Hawai’i at Manoa – who shared some great insights and answered my
+Arista at the AI workshop – she’s a native Kanaka Māoli history professor from the
+University of Hawaiʻi at Manoa – who shared some great insights and answered my
 many questions.”
 
 He says one insight was hearing about the archive of newspapers from as early as
-1834, in which the Hawai’ian people documented their collective knowledge and
+1834, in which the Kanaka Māoli documented their collective knowledge and
 satisfied their curiosity for the outside world.
 
 “One had a big picture of an elephant on page 2 and lots of detailed information
