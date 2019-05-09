@@ -19,8 +19,13 @@ trawl fisheries, and the  1998–99 to 2015–16 fishing years
 for longline fisheries.
 
 The present assessment used a unified modelling framework to estimate incidental
-captures of seabirds for ten species and species groups: New Zealand white-capped albatross (*Thalassarche steadi*), Salvin’s albatross (*Thalassarche salvini*), Buller's albatrosses (*Thalassarche bulleri*, combining both southern *T. b. bulleri* and northern *T. b. platei* subspecies), white-chinned petrel (*Procellaria aequinoctialis*), black petrel (*Procellaria parkinsoni*), grey petrel (*Procellaria cinerea*), sooty shearwater (*Puffinus griseus*), and flesh-footed shearwater (*Puffinus carneipes*).  Estimates were also derived for
-seabirds grouped as either "other albatrosses" or "other birds".  
+captures of seabirds for ten species and species groups: New Zealand white-capped albatross
+(*Thalassarche steadi*), Salvin’s albatross (*Thalassarche salvini*), Buller's albatrosses
+(*Thalassarche bulleri*, combining both southern *T. b. bulleri* and northern *T. b. platei*
+  subspecies), white-chinned petrel (*Procellaria aequinoctialis*), black petrel
+  (*Procellaria parkinsoni*), grey petrel (*Procellaria cinerea*),
+  sooty shearwater (*Puffinus griseus*), and flesh-footed shearwater (*Puffinus carneipes*).  
+  Estimates were also derived for seabirds grouped as either "other albatrosses" or "other birds".  
 
 The estimation revealed a total of 4517 (95% c.i.: 3760–5825) seabird
 captures in trawl and longline fisheries (c.i., credible interval, the 95th
