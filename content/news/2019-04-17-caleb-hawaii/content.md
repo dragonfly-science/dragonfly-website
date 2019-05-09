@@ -65,9 +65,9 @@ how knowledge can be cared for and used.
 of that I think we tend to be ahead of the curve, especially in indigenous
 matters.” 
 
-The image of the conference participants that accompanies this story was painted
-by watercolour artist Sergio Garzon ([Instagram](https://www.instagram.com/sergiogarzon/)).
+![Conference participants, ainted by watercolour artist Sergio Garzon ([Instagram](https://www.instagram.com/sergiogarzon/)).
+](teaser.jpg)
 
 Read more about the [indigenous protocol and artificial intelligence
-workshop](https://www.indigenous-ai.net/) or about the 
+workshop](https://www.ics.hawaii.edu/2019/03/indigenous-protocols-and-artificial-intelligence/) or about the 
 [Kōrero Māori project](https://www.nzherald.co.nz/northern-advocate/news/article.cfm?c_id=1503450&objectid=11998971).
