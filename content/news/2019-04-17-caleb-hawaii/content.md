@@ -1,5 +1,5 @@
 ---
-title: Indigenous Protocals and Artificial Intelligence
+title: Indigenous Protocols and Artificial Intelligence
 ---
 Caleb Moses recently spent time in Hawaiʻi at an indigenous AI workshop, as part of
 a New Zealand group led by Peter-Lucas Jones and Keoni Mahelona from [Te Hiku Media](https://tehiku.nz/). 
@@ -65,7 +65,7 @@ how knowledge can be cared for and used.
 of that I think we tend to be ahead of the curve, especially in indigenous
 matters.” 
 
-![Conference participants, ainted by watercolour artist Sergio Garzon ([Instagram](https://www.instagram.com/sergiogarzon/)).
+![Conference participants, painted by watercolour artist Sergio Garzon ([Instagram](https://www.instagram.com/sergiogarzon/)).
 ](2019-04-17-caleb-hawaii/indigenous-protocols-sergio-garzon.jpg)
 
 Read more about the [indigenous protocol and artificial intelligence
