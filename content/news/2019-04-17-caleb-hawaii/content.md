@@ -1,7 +1,8 @@
 ---
 title: Indigenous Protocols and Artificial Intelligence
 ---
-Caleb Moses recently spent time in Hawaiʻi at an indigenous AI workshop, as part of
+Caleb Moses recently spent time in Hawaiʻi at a workshop exploring the relationship between
+indigeneous protocols and artificial intelligence, as part of
 a New Zealand group led by Peter-Lucas Jones and Keoni Mahelona from [Te Hiku Media](https://tehiku.nz/). 
 
 <!--more-->
@@ -47,6 +48,9 @@ Arista at the AI workshop – she’s a native Kanaka Māoli history professor f
 University of Hawaiʻi at Manoa – who shared some great insights and answered my
 many questions.”
 
+![Conference participants, painted by watercolour artist Sergio Garzon ([Instagram](https://www.instagram.com/sergiogarzon/)).
+](2019-04-17-caleb-hawaii/indigenous-protocols-sergio-garzon.jpg)
+
 He says one insight was hearing about the archive of newspapers from as early as
 1834, in which the Kanaka Māoli documented their collective knowledge and
 satisfied their curiosity for the outside world.
@@ -65,9 +69,6 @@ how knowledge can be cared for and used.
 of that I think we tend to be ahead of the curve, especially in indigenous
 matters.” 
 
-![Conference participants, painted by watercolour artist Sergio Garzon ([Instagram](https://www.instagram.com/sergiogarzon/)).
-](2019-04-17-caleb-hawaii/indigenous-protocols-sergio-garzon.jpg)
-
-Read more about the [indigenous protocol and artificial intelligence
+Read more about the [indigenous protocols and artificial intelligence
 workshop](https://www.ics.hawaii.edu/2019/03/indigenous-protocols-and-artificial-intelligence/) or about the 
 [Kōrero Māori project](https://www.nzherald.co.nz/northern-advocate/news/article.cfm?c_id=1503450&objectid=11998971).
