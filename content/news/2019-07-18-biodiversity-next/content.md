@@ -5,7 +5,7 @@ Sponsorship from Dragonfly is helping volunteer Wikimedian Siobhan Leachman get 
 
 <!--more-->
 
-She had a scholarship to cover her flights and accommodation costs for [WikidataCon 2019](https://www.wikidata.org/wiki/Wikidata:WikidataCon_2019) in Berlin, but when her biodiversity colleagues overseas heard about the trip, they insisted she came early to join them at Biodiversity Next https://biodiversitynext.org/ in Leiden.
+She had a scholarship to cover her flights and accommodation costs for [WikidataCon 2019](https://www.wikidata.org/wiki/Wikidata:WikidataCon_2019) in Berlin, but when her biodiversity colleagues overseas heard about the trip, they insisted she came early to join them at [Biodiversity Next](https://biodiversitynext.org/) in Leiden.
 
 For the last 18 months Siobhan has been creating entries for New Zealand’s native moths in Wikipedia and Wikidata, along with other projects.
 
