@@ -1,5 +1,5 @@
 ---
-title: Indigenous Protocols and Artificial Intelligence
+title: Indigenous protocols and artificial intelligence
 ---
 Caleb Moses recently spent time in Hawaiʻi at a workshop exploring the relationship between
 indigeneous protocols and artificial intelligence, as part of
