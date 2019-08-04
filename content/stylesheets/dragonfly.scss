@@ -45,6 +45,11 @@ div.page-title {
     }
 }
 
+li.year-2023 + li.year-2023 > div.citation-year { display: none; }
+li.year-2022 + li.year-2022 > div.citation-year { display: none; }
+li.year-2021 + li.year-2021 > div.citation-year { display: none; }
+li.year-2020 + li.year-2020 > div.citation-year { display: none; }
+li.year-2019 + li.year-2019 > div.citation-year { display: none; }
 li.year-2018 + li.year-2018 > div.citation-year { display: none; }
 li.year-2017 + li.year-2017 > div.citation-year { display: none; }
 li.year-2016 + li.year-2016 > div.citation-year { display: none; }
