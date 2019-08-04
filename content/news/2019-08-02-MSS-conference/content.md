@@ -21,6 +21,6 @@ Katrin says although it was hard work to go back to the data, she enjoyed the op
 
 Phil Neubauer also gave a talk at the conference called ‘Modelling effects of long-term environmental variability and climate on fished populations: implications for stock assessment advice.’
 
-[View the slides from Katrin’s talk](add link).
+[View the slides from Katrin’s talk](https://www.dragonfly.co.nz/publications/berkenbusch_regional_2019.html).
 
 [Read about our shellfish surveys in the upper North Island](https://www.dragonfly.co.nz/news/2016-01-10-shellfish-surveys.html).
