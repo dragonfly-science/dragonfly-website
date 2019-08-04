@@ -1,8 +1,7 @@
 ---
 pdf:  berkenbusch_regional_2019.pdf
 tags: katrin, benthic, seagrass, shrimp, dragonfly, presentation
-title: Regional patterns of macrofaunal diversity and abundance determined by
-antagonistic ecosystem engineers in soft-sediment intertidal habitats
+title: Regional patterns of macrofaunal diversity and abundance determined by antagonistic ecosystem engineers in soft-sediment intertidal habitats
 ---
 Macrofaunal assemblages in soft-sediment environments frequently contain
 species, ecosystem engineers, that exert a disproportional influence on the
