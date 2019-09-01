@@ -55,9 +55,9 @@ MfE is also able to release the compiled data much faster. This typically took m
 > despite changes in scope as the nature of the business problem evolved. They
 > were unflappable.
 
-<cite>Dr Ignatius Menzies, <br />
-Data Science Lead, <br />
-Environmental Reporting, <br />
+<cite>Dr Ignatius Menzies <br />
+Data Science Lead <br />
+Environmental Reporting <br />
 Ministry for the Environment – Manatū Mō Te Taiao </cite>
 
 [Access key data from the National Monitoring System](http://www.mfe.govt.nz/rma/rma-monitoring).
