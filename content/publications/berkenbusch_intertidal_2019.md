@@ -14,7 +14,7 @@ Island region.
 
 This study presents the most recent survey findings, based on data from the 2018–19 fishing year.
 Northern sites included in this survey were (in alphabetical order): Aotea Harbour, Hokianga Harbour,
-Kawakawa Bay (West), Mangawhai Harbour, Mill Bay, Ngunguru Estuary, Ohiwa Harbour, Otumoetai
+Kawakawa Bay (West), Mangawhai Harbour, Mill Bay, Ngunguru Estuary, Ōhiwa Harbour, Otūmoetai
 (Tauranga Harbour), Ruakaka Estuary, Te Haumi Bay, Whangamatā Harbour and Whangapoua Harbour.
 
 All of the 2018–19 survey sites contained cockle populations, with most sites supporting notable population
@@ -26,8 +26,8 @@ Whangamatā harbours
 
 None of the northern sites contained notable numbers of large cockles (30 mm shell length), and this
 size class consistently contributed few individuals to the total population. The highest density estimates
-of large cockles were just over 30 individuals per m<sup>2</sup> at Mangawhai, Ohiwa and Whangamatā harbours
-and Te Haumi Beach. This size class was near-absent at Otumoetai (Tauranga Harbour) and Ruakaka
+of large cockles were just over 30 individuals per m<sup>2</sup> at Mangawhai, Ōhiwa and Whangamatā harbours
+and Te Haumi Beach. This size class was near-absent at Otūmoetai (Tauranga Harbour) and Ruakaka
 Estuary, and the remaining sites had small abundance and density estimates (frequently with high uncertainty)
 for this size class.
 
