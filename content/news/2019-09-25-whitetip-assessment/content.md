@@ -21,9 +21,9 @@ Laura modelled three scenarios (0, 56 and 75%) for the proportion of sharks that
 
 “You could make an optimistic assumption that if you catch a shark and unhook it, it’s going to survive no matter what. But in practice many are already dead when they’re brought on board or die shortly after. Reducing the harm done to living sharks when they’re caught is very important. More would survive if they were handled well.”
 
-But there’s also an issue with crew safety, which has been raised by many fishing nations ¬– getting up close to a shark’s mouth to remove a hook or cut a metal fishing line can be dangerous. Long trailing lines, however, decrease a shark’s chance of survival.
+But there’s also an issue with crew safety, which has been raised by many fishing nations—getting up close to a shark’s mouth to remove a hook or cut a metal fishing line can be dangerous. Long trailing lines, however, decrease a shark’s chance of survival.
 
-[Common Oceans ABNJ](http://www.fao.org/in-action/commonoceans/en/) supported research to find out what happened to sharks after they were captured by longline gear and released. Different species were tagged on board then released as normal. The tags self-release after 30 to 180 days, after which time the data they have recorded becomes available.
+[Common Oceans](http://www.fao.org/in-action/commonoceans/en/) supported research to find out what happened to sharks after they were captured by longline gear and released. Different species were tagged on board then released as normal. The tags self-release after 30 to 180 days, after which time the data they have recorded becomes available.
 
 “They estimated that 60% of the sharks did survive being hooked, depending on the species. This number matched the assumption I made for our intermediate survival scenario in the stock assessment model. Even under the most optimistic scenario (75%), current bycatch rates are still borderline for the long term survival of the whitetips.”
 
@@ -31,7 +31,8 @@ Other scientists were involved in the year-long project. “Felipe Carvalho from
 
 Philip Neubauer helped with the Bayesian approach to the catch reconstruction. “He did a whole separate study testing different methods for data-poor assessments. These could be used to track shark populations between the more rigorous 5-yearly stock assessments.”
 
-**More information**
+###More information
+
 * [Whitetip stock assessment report](https://www.wcpfc.int/node/42932)
 * [Input descriptions, especially the historical catch reconstruction and catch scenarios](https://www.wcpfc.int/node/43122)
 * [Data-poor assessment](https://www.wcpfc.int/node/43050)
