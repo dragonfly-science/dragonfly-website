@@ -52,6 +52,7 @@ post-doctoral fellowships. We look forward to hearing from people interested in
 machine learning, artificial intelligence and te reo Māori.
 
 For more information see:
+
 * [Minister Megan Woods' media release](https://www.beehive.govt.nz/release/government-invests-te-reo-environmental-data-research)
 * [Te Hiku Media announcement](https://tehiku.nz/te-hiku-tech/papa-reo/)
 
