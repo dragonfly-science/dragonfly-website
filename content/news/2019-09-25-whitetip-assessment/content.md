@@ -7,7 +7,7 @@ Laura Tremblay-Boyer led a Dragonfly assessment of oceanic whitetip shark popula
 
 The only previous stock assessment for the species worldwide was in 2012, also for WCPFC. It showed that this once-common shark species had been depleted to less than 10% of its unfished female biomass. In 2018, the US National Oceanic and Atmospheric Administration (NOAA) recommended that the species be listed as threatened.
 
-“I collated information from different sources to inform the integrated stock assessment model. The first and biggest task was to reconstruct the species’ historical catch – the total number of sharks that have been caught each year since 1995 – using data collected by fisheries observers on vessels,” says Laura.
+"I collated information from different sources to inform the integrated stock assessment model. The first and biggest task was to reconstruct the species’ historical catch – the total number of sharks that have been caught each year since 1995 – using data collected by fisheries observers on vessels," says Laura.
 
 She used a combination of 648 models (scenarios about the shark’s biology and productivity, catch size and survival after capture) to come up with an updated assessment for 2016. It was 4% of the unfished female biomass.
 
