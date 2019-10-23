@@ -1,12 +1,18 @@
 ---
 title: Partnership for Papa Reo
 ---
-Te Hiku Media and Dragonfly have received an investment of $13 million through
+Te Hiku Media, supported by Dragonfly, have received an investment of $13 million through
 MBIE's Strategic Science Investment Fund to develop a multilingual language
-platform, Papa Reo, that will develop cutting edge natural language processing tools,
-starting with te reo Māori.  Formed in 1991, [Te Hiku Media](https://tehiku.nz) 
-is an organisation committed to the revitalisation of tikanga and te reo Māori. In 2013, kaumātua from Ngāti Kuri, Te Aupōuri, Ngāi Takoto, Te Rarawa and Ngāti Kahu encouraged Te Hiku Media to pursue technological innovation and secure a digital future for te reo Māori.  
+platform, Papa Reo. Papa Reo will develop cutting edge natural language processing tools,
+starting with te reo Māori. 
+
 <!--more-->
+
+Formed in 1991, [Te Hiku Media](https://tehiku.nz) is an organisation committed
+to the revitalisation of tikanga and te reo Māori. In 2013, kaumātua from Ngāti
+Kuri, Te Aupōuri, Ngāi Takoto, Te Rarawa and Ngāti Kahu encouraged Te Hiku Media
+to pursue technological innovation and secure a digital future for te reo Māori.  
+
 “We are delighted to be able to support Te Hiku Media in making tools like
 speech recognition available in te reo Māori, with the ambition of inspiring
 indigenous languages worldwide,” says Edward. 
