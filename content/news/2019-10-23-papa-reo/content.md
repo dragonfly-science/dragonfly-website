@@ -13,7 +13,8 @@ to the revitalisation of tikanga and te reo Māori. In 2013, kaumātua from Ngā
 Kuri, Te Aupōuri, Ngāi Takoto, Te Rarawa and Ngāti Kahu encouraged Te Hiku Media
 to pursue technological innovation and secure a digital future for te reo Māori.  
 
-“We are delighted to be able to support Te Hiku Media in making tools like
+Dragonfly are supporting this vision: 
+“We are delighted to be able to work with Te Hiku Media to make tools like
 speech recognition available in te reo Māori, with the ambition of inspiring
 indigenous languages worldwide,” says Edward. 
 
