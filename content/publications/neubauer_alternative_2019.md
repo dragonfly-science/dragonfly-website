@@ -100,23 +100,23 @@ substantially lower existential risks for this stock.
 Based on our findings, we suggest that the Scientific Committee considers
 the following:
 
-* Inferences from different models indicate that oceanic whitetip shark
+- Inferences from different models indicate that oceanic whitetip shark
 continues to be overfished, and overfishing may still be occurring
 owing to incidental mortality from fishing, despite non-retention
 measure CMM 2011-04. Estimated fishing mortality rates for the last
 year in the assessment (2016) lead to substantial risk that the stock
 will not persist.
- * Spatial risk assessment methods should be employed for
+ - Spatial risk assessment methods should be employed for
 species with poor historical records (e.g., poor species
 identification), but for which recent records are judged reliable. In
 addition, a standardised methodology based on spatial risk assessment
 methodology could be employed to prioritise assessment and conservation efforts.
-* Surplus production models can provide a robust cost- and
+- Surplus production models can provide a robust cost- and
 time-effective way to assess shark populations, and provide similar
 outputs to fully integrated stock assessments such as SS3. Therefore, they may
 be considered as a rapid assessment tool, either alongside or
 instead of fully integrated stock assessments, which could be employed
 for species of high priority.
-* Depletion-based catch-only simulations should be
+- Depletion-based catch-only simulations should be
 considered for constructing priors for DSPMs and to understand the amount
 of additional information provided by fitting the DSPM.

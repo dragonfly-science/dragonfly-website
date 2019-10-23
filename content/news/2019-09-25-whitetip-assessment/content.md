@@ -1,7 +1,7 @@
 ---
 title: Oceanic whitetip shark stock assessment
 ---
-Laura Tremblay-Boyer led a Dragonfly assessment of oceanic whitetip shark populations in the Pacific Ocean from 1995–2016 for the Western & Central Pacific Fisheries Commission (WCPFC). She presented it to the commission in August.
+Laura Tremblay-Boyer led a Dragonfly assessment of oceanic whitetip shark populations in the Pacific Ocean for the Western & Central Pacific Fisheries Commission (WCPFC). She presented it to the commission in August.
 
 <!--more-->
 
