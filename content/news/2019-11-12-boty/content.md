@@ -25,8 +25,9 @@ the data how you wish, but must acknowledge Forest and Bird.
 
 For more information:
 
-- Download [the confirmed vote dataset](/data/boty/BOTY-votes-2019.csv) (3.6MB)
-- Visit the Forest and Bird [Bird of the Year](https://www.birdoftheyear.org.nz/) website
-- Read about [Yellow-eyed penguin](https://en.wikipedia.org/wiki/Yellow-eyed_penguin) on Wikipedia
+* Download [the confirmed vote dataset](/data/boty/BOTY-votes-2019.csv) (3.6MB)
+* Access the confirmed vote dataset through [Google Docs](https://docs.google.com/spreadsheets/d/1uUr5EJKg_Crn8Ux44WDGVuQXuJs4_acVHzWb_pDcZP4/edit?usp=sharing)
+* Visit the Forest and Bird [Bird of the Year](https://www.birdoftheyear.org.nz/) website
+* Read about [Yellow-eyed penguin](https://en.wikipedia.org/wiki/Yellow-eyed_penguin) on Wikipedia
 
 
