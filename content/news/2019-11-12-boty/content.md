@@ -14,7 +14,8 @@ the file gives the date of the vote, the hour of the vote, the country the vote
 appeared to have been cast in (derived from the internet protocol address,
 if the country could be determined), and the five preference votes in order
 (vote 1, vote 2, vote 3, vote 4, and vote 5). The file includes macrons on the
-common names, and is UTF-8 encoded.
+common names, and is UTF-8 encoded. The data were prepared by [Yvan Richard](/people/richard-yvan.html) in
+his role as scrutineer for the Bird of the Year competition. Thanks Yvan!
 
 The dataset is copyright [Forest and Bird](https://www.forestandbird.org.nz),
 and is released under a [Creative Commons Attribution 4.0
