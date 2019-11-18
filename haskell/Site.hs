@@ -36,7 +36,7 @@ main = do
     match (fromList [bibIdentifier]) $ compile biblioCompiler
 
     match "**/*.img.md" $ compile scholmdCompiler
-    match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png") $ do
+    match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png" .||. "**/*.csv") $ do
         route idRoute
         compile copyFileCompiler
 

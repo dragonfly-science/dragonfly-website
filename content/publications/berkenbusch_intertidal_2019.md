@@ -22,7 +22,7 @@ sizes. Abundance estimates ranged from 3.46 million (CV: 12.25%) cockles at Ruak
 to 222.41 million (CV: 17.52%) cockles at Kawakawa Bay (West). The corresponding density estimates
 were between 88 cockles per m2 at Ruakaka Estuary and 1997 cockles per m<sup>2</sup> at Ngunguru Estuary.
 Density estimates were also high (>1000 individuals per m<sup>2</sup>) at Whangapoua, Mangawhai and
-Whangamatā harbours
+Whangamatā harbours.
 
 None of the northern sites contained notable numbers of large cockles (30 mm shell length), and this
 size class consistently contributed few individuals to the total population. The highest density estimates
