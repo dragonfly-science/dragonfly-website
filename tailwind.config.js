@@ -19,7 +19,10 @@ module.exports = {
         'faded-purple': '#A3649B'
       },
       maxWidth: {
-        '12rem': '12rem'
+        '12rem': '12rem',
+        '1/2': '50%',
+        '1/3': '33%',
+        '1/4': '25%',
       }
     }
   },

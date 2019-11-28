@@ -14,5 +14,6 @@ html {
 /* Import Partials */
 @import "navigation/main-nav.src.css";
 @import "navigation/mobile-menu.src.css";
+@import "footer/main-footer.src.css";
 
 @tailwind utilities;

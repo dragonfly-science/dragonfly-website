@@ -1,0 +1,13 @@
+.main-footer {
+    a {
+        @apply underline;
+
+        &:hover {
+            @apply no-underline;
+        }
+    }
+
+    address {
+        @apply not-italic;
+    }
+}
