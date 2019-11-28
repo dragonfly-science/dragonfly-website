@@ -90,6 +90,12 @@
       e.stopPropagation();
 
       wrapper.toggleClass('open');
+
+      if (wrapper.is('.open')) {
+        $(this).addClass('dragonfly-close').removeClass('dragonfly-hamburger');
+      } else {
+        $(this).addClass('dragonfly-hamburger').removeClass('dragonfly-close');
+      }
       // if(wrapper.dataset.mode  === 'open') {
       //   wrapper.dataset.mode = 'closed';
       // } else {

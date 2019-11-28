@@ -6,4 +6,43 @@
         @apply opacity-100;
         height: calc(100vh - 3rem);
     }
+
+    &__link {
+        @apply w-full text-center pb-2;
+
+        a {
+            @apply text-slate-grey text-lg font-normal leading-none;
+        }
+    }
+}
+
+@responsive {
+    .closed {
+        @apply opacity-100 !important;
+        height: auto !important;
+    }
+}
+
+@screen lg {
+    .main-nav {
+        @apply opacity-100 h-auto flex-row mt-0 left-auto py-0 w-auto top-auto relative justify-start items-center;
+
+        &__link {
+            @apply text-left w-auto mr-24 pb-0;
+
+            a {
+                @apply text-sm;
+            }
+        }
+    }
+}
+
+@screen xl {
+    .main-nav {
+        &__link {
+            a {
+                @apply text-lg;
+            }
+        }
+    }
 }
