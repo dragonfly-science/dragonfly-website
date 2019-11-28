@@ -1,28 +1,28 @@
 <!-- Use schema.org microformat markup -->
 <a class="anchor" id="contact"></a>
 <footer class="main-footer bg-black text-white leading-snug px-6 text-center sm:text-left lg:text-lg" itemscope itemtype="http://schema.org/Organization">
-  <div class="container mx-auto py-10 md:py-20 flex flex-col" id="footer-address">
+  <div class="container mx-auto py-10 flex flex-col md:py-20" id="footer-address">
     <div class="flex justify-between w-full flex-row flex-wrap">
-      <div class="main-footer__detail w-full sm:w-1/2 lg:w-auto mx-auto md:mx-0 mb-8">
-        <span class="block mb-4 sm:mb-8 font-medium">Contact:</span>
+      <div class="main-footer__detail">
+        <span>Contact:</span>
 
         $partial("templates/_address-phones.html")$
       </div>
 
-      <div class="main-footer__detail w-full sm:w-1/2 lg:w-auto mx-auto md:mx-0 mb-8">
-          <span class="block mb-4 sm:mb-8 font-medium">Visit:</span>
+      <div class="main-footer__detail">
+          <span>Visit:</span>
   
           $partial("templates/_address-physical.html")$
-      </div class="main-footer__detail w-full sm:w-1/2 lg:w-auto mx-auto md:mx-0 mb-8">
+      </div>
 
-      <div class="main-footer__detail w-full sm:w-1/2 lg:w-auto mx-auto md:mx-0 mb-8">
-          <span class="block mb-4 sm:mb-8 font-medium">Post:</span>
+      <div class="main-footer__detail">
+          <span>Post:</span>
   
           $partial("templates/_address-postal.html")$
       </div>
 
-      <div class="main-footer__detail w-full sm:w-1/2 lg:flex-grow-0 lg:flex-shrink-0 lg:w-auto mx-auto md:mx-0 mb-8">
-          <span class="block mb-4 sm:mb-8 font-medium">Follow:</span>
+      <div class="main-footer__detail lg:flex-grow-0 lg:flex-shrink-0">
+          <span>Follow:</span>
   
           <a href="https://www.twitter.com/dflydsci">Twitter</a><br/>
           <a href="https://github.com/dragonfly-science">Github</a><br/>
