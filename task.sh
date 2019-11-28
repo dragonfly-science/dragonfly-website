@@ -34,8 +34,7 @@ function hakyll {
 
 case "$MODE" in
   develop)
-    cd $BASEDIR/content/stylesheets && find . -name \*.scss | \
-      entr -r scss dragonfly.scss dragonfly.css &
+    cd $BASEDIR/ & \
     hakyll watch
     ;;
   clean)

@@ -1,0 +1,15 @@
+/* Import Tailwind base */
+@tailwind base;
+@tailwind components;
+
+html {
+    @apply font-body;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Import Partials */
+@import "navigation/main-nav.src.css";
+
+@tailwind utilities;

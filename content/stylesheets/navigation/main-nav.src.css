@@ -1,0 +1,9 @@
+.main-nav {
+    @apply flex flex-col top-0 flex-grow justify-center absolute w-full left-0 bg-white h-0 overflow-hidden mt-12 opacity-0;
+    transition: all 0.25s ease;
+
+    &.open {
+        @apply opacity-100;
+        height: calc(100vh - 3rem);
+    }
+}
