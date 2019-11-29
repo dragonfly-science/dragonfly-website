@@ -26,7 +26,7 @@
         "fonts": "glyphs2font fonts.yaml",
         "build": "npm run css & npm run fonts",
         "css": "NODE_ENV=production postcss content/stylesheets/main.src.css --config ./ -o content/stylesheets/dragonfly.css",
-        "watch:css": "NODE_ENV=production postcss content/stylesheets/main.src.css --config ./ -o content/stylesheets/dragonfly.css -w"
+        "watch:css": "npm run fonts & NODE_ENV=production postcss content/stylesheets/main.src.css --config ./ -o content/stylesheets/dragonfly.css -w"
     },
     "author": "",
     "license": "ISC"

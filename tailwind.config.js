@@ -18,8 +18,15 @@ module.exports = {
         'pale-grey': '#F1F1F2',
         'faded-purple': '#A3649B'
       },
+      fontSize: {
+        '7xl': '5rem',
+        '8xl': '6rem',
+        '9xl': '7rem',
+        '9/2xl': '7.5rem',
+      },
       maxWidth: {
         '12rem': '12rem',
+        '3/4': '75%',
         '1/2': '50%',
         '1/3': '33%',
         '1/4': '25%',
