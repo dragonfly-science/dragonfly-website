@@ -1,6 +1,7 @@
 flags: {}
 packages:
 - '.'
-extra-deps: []
-resolver: nightly-2016-11-17
+extra-deps:
+- hamlet-1.2.0@sha256:1b009261b10b6100ec4cd89fb780f1c4dbed5dc70009247e8f2fbabb5dc7c34c,1573
+resolver: lts-12.26
 

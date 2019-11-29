@@ -1,6 +1,4 @@
-.git
-.sass-cache
-_cache
-_site
-dist
-*
+**
+!haskell/stack.yaml
+!haskell/dragonfly-website.cabal
+

@@ -2,6 +2,6 @@
 
 set -ex
 
-./task.sh deploy
+make build
 
 cp -r _site/* /publish/

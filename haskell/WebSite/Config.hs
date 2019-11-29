@@ -12,8 +12,7 @@ import           Text.Pandoc.Options (WriterOptions (..))
 -- | Options for an HTML5 Pandoc writer
 htm5Writer :: WriterOptions
 htm5Writer = defaultHakyllWriterOptions
-    { writerHtml5       = True
-    , writerSectionDivs = True
+    { writerSectionDivs = True
     }
 
 

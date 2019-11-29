@@ -84,8 +84,7 @@ refId = Ref.unLiteral . Ref.refId
 -- in its list.
 refYear :: Reference -> Maybe Int
 refYear ref
-  | [Ref.RefDate {Ref.year = Ref.Literal s}] <- Ref.issued ref
-  , [(yr, "")] <- reads s = Just yr
+  | [Ref.RefDate {Ref.year = Just yr}] <- Ref.issued ref = Just yr
   | otherwise = Nothing
 
 -- | Sortable text for ordering a bibliography by authors
