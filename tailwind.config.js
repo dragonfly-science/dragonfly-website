@@ -19,6 +19,7 @@ module.exports = {
         'faded-purple': '#A3649B'
       },
       fontSize: {
+        '6/2xl': '4.5rem',
         '7xl': '5rem',
         '8xl': '6rem',
         '9xl': '7rem',
@@ -35,6 +36,18 @@ module.exports = {
   },
   variants: {},
   plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.rotate-90': {
+          transform: 'rotate(90deg)',
+        },
+        '.rotate-180': {
+          transform: 'rotate(180deg)',
+        },
+      }
+
+      addUtilities(newUtilities)
+    },
     function({ addVariant, e }) {
       addVariant('before', ({ modifySelectors, separator }) => {
         modifySelectors(({ className }) => {

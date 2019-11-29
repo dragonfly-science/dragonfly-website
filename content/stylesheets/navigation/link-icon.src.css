@@ -1,0 +1,8 @@
+/* Link as seen in page headers. */
+.link-icon {
+    @apply text-lg font-medium inline-block;
+
+    .icon {
+        @apply ml-6 text-lg inline-block;
+    }
+}
