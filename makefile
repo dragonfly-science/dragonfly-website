@@ -5,7 +5,7 @@ RUN ?= docker run --rm -it -p 8000:8000 -u $$(id -u):$$(id -g) -w /work -v $$(pw
 ## Compile the hakyll executible
 HS := $(shell find haskell/WebSite -name *.hs)
 website: $(HS) haskell/Site.hs
-	$(RUN) bash -c 'cd haskell && stack build && cp $$(stack path --local-install-root)/bin/website /work/website'
+	$(RUN) bash -c 'cd haskell && stack build && cp $$(stack path --local-install-root)/bin/website ../website'
 
 develop:
 	$(RUN) bash -c '(cd content/stylesheets && find . -name \*.scss | entr -r sass dragonfly.scss dragonfly.css) & (cd content && ../website watch)'
