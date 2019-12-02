@@ -33,6 +33,9 @@ module.exports = {
         '1/4': '25%',
       },
       minHeight: {
+        '20': '20rem',
+        '24': '24rem',
+        '30': '30rem',
         '36': '36rem',
       }
     }
