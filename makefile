@@ -7,11 +7,9 @@ HS := $(shell find haskell/WebSite -name *.hs)
 website: $(HS) haskell/Site.hs
 	$(RUN) bash -c 'cd haskell && stack build && cp $$(stack path --local-install-root)/bin/website ../website'
 
-develop:
-	$(RUN) bash -c '(cd content/stylesheets && find . -name \*.css -not -name dragonfly.css | entr -r npm watch:css) & (cd content && ../website watch)'
+develop: website
+	$(RUN) bash -c '(cd content/stylesheets && find . -name \*.css -not -name dragonfly.css | entr -r npm run watch:css) & (cd content && ../website watch)'
 
-clean:
-	$(RUN) bash -c 'cd content && ../website clean'
 
 CONTENT := $(shell find content)
 build: website content/stylesheets/dragonfly.css
@@ -42,5 +40,7 @@ local:
 		-u $$(id -u):$$(id -g) $(IMAGE) bash
 
 
+clean:
+	rm website && rm -rf _site .cache
 
 
