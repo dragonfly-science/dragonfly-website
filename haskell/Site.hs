@@ -80,7 +80,13 @@ main = do
             bubbles <- People.bubbles
             work   <- Work.list 3
             news   <- News.list 6
-            let ctx = base <> people <> work <> news <> bubbles
+            let tiles = listField "tiles" base $ sequence
+                  [ load "content/news/2017-08-14-kakapo-two/content.md"
+                  , load "content/work/INZ-case-study/content.md"
+                  , load "content/news/2019-09-25-whitetip-assessment/content.md"
+                  , load "content/work/webrear-case-study/content.md"
+                  ]
+            let ctx = base <> people <> work <> news <> bubbles <> tiles
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx

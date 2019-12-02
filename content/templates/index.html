@@ -7,16 +7,27 @@
       <h1 class="text-6xl font-bold leading-none lg:text-9/2xl">Kia Ora</h1>
 
       <p class="page-header__content text-2xl pt-6 pr-6 mb-16 leading-tight lg:leading-none lg:text-3xl lg:pt-12">
-        We are an international team of data scientists and programmers based 
-        in Wellington, New Zealand who aim to put data to good use and make 
+        We are an international team of data scientists and programmers based
+        in Wellington, New Zealand who aim to put data to good use and make
         positive impact.</p>
-      
+
       <a href="#contact" class="link-icon"><span class="text">Get in touch</span> <span class="icon dragonfly-arrow"></span></a>
-      
+
     </div>
   </div>
 </header>
 
+<section class="flex flex-wrap">
+  $for(tiles)$
+  <a href="#" class="no-gutters w-full md:w-1/2 xl:w-1/3 bg-cool-blue bg-cover px-16 pt-8 pb-12 text-white leading-none flex flex-col" style="background-image: url('/work/seabird-risk/teaser.jpg')">
+    <span class="tag uppercase text-sm">Project</span>
+    <h2 class="text-4xl lg:text-6xl xl:text-5xl font-medium mb-8 mr-12 lg:mr-0">$title$</h2>
+    <p class="text-xl leading-tight">$teaser$</p>
+
+    <span class="dragonfly-arrow mt-auto ml-auto text-3xl inline-block"></span>
+  </a>
+  $endfor$
+</section>
 
 <section class="flex flex-wrap">
   <a href="#" class="no-gutters w-full md:w-1/2 xl:w-1/3 bg-cool-blue bg-cover px-16 pt-8 pb-12 text-white leading-none flex flex-col" style="background-image: url('/work/seabird-risk/teaser.jpg')">
@@ -125,7 +136,7 @@
     </div>
     <div class="wide">
       <p class="lead">
-        We always enjoy a chat about what we do. We are happy to talk about how data science can 
+        We always enjoy a chat about what we do. We are happy to talk about how data science can
         help make your organisation more profitable, sustainable, and productive.
       </p>
     </div>
@@ -133,7 +144,7 @@
       <div class="porthole-grid two-columns narrow">
         <div class="porthole">
             <p class="porthole-heading">
-              Talk to <a class="people highlight" href="/people/abraham-edward.html">Edward Abraham</a> 
+              Talk to <a class="people highlight" href="/people/abraham-edward.html">Edward Abraham</a>
               about data science, statistics, or for general Dragonfly queries.
             </p>
             <a href="/people/abraham-edward.html">
@@ -152,7 +163,7 @@
         </div>
         <div class="porthole">
             <p class="porthole-heading">
-              Talk to <a class="people highlight" href="/people/thompson-finlay.html">Finlay Thompson</a> 
+              Talk to <a class="people highlight" href="/people/thompson-finlay.html">Finlay Thompson</a>
               about software, databases, or tricky technical problems.
             </p>
             <a href="/people/thompson-finlay.html">
@@ -174,10 +185,10 @@
     </div>
     <div class="wide">
       <h3>
-          To find out more, you can read about the 
-          <a class="people highlight" href="/people/">Dragonfly team</a>, 
-          browse our <a class="news highlight" href="/news/">news stories</a>, 
-          or search for <a class="publications highlight" href="/publications/">reports 
+          To find out more, you can read about the
+          <a class="people highlight" href="/people/">Dragonfly team</a>,
+          browse our <a class="news highlight" href="/news/">news stories</a>,
+          or search for <a class="publications highlight" href="/publications/">reports
           and publications</a>.
       </h3>
     </div>
