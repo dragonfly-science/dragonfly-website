@@ -2,12 +2,12 @@
 
 ## Open code
 
-This is the repository for the website of [Dragonfly Data Science](http://www.dragonfly.co.nz). You are welcome to report any issues with the website, through [GitHub](https://github.com/dragonfly-science/website/issues). If you really enjoy fixing other peoples' stuff, pull requests would also be appreciated! 
+This is the repository for the website of [Dragonfly Data Science](http://www.dragonfly.co.nz). You are welcome to report any issues with the website, through [GitHub](https://github.com/dragonfly-science/website/issues). If you really enjoy fixing other peoples' stuff, pull requests would also be appreciated!
 
 You are welcome to fork this repository and use it as a basis for your own projects. Text content
 and code on this website are copyright Dragonfly Limited but are licenced for re-use under a [Creative Commons International Attribution 4.0 licence](https://creativecommons.org/licenses/by/4.0/) (see [LICENSE](https://github.com/dragonfly-science/website/blob/master/LICENSE) for terms and conditions). Please note that this
 licence does not apply to any logos, emblems and trade marks on the website or
-to the website’s design elements or to any photography, imagery, or publications. 
+to the website’s design elements or to any photography, imagery, or publications.
 Copyright of those specific items may not be held by Dragonfly Limited. Unless indicated
 otherwise, those specific items may not be re-used without express permission.
 
@@ -18,14 +18,14 @@ The site is statically generated from the source. This means that it is compiled
 and produces static files that are bundled up and served from the webserver. It uses the [Hakyll](http://jaspervdj.be/hakyll/index.html) static site library,
 which is managed by the code in the `haskell/` directory.  There is some [Docker](http://www.docker.com)
 magic going on to get a build system up and running on a linux server. Ideally, you can check out the
-code and run `./run.sh develop` to get started.
+code and run `make develop` to get started.
 
 ## Notes
 
 #### This git repository is all there is
 
 There is no database behind the site (other than the git repository). This means the website is static, and fully versioned. with all the collaborative benefits of git available.The content for the site is organised under the `content/` folder. Most of the folders there should be fairly self explanatory. If you need to edit the site,
-these are the files to make changes to. 
+these are the files to make changes to.
 
 For example, to add a new new post you need to create a new file and directory
 in the `content/posts/` directory.
@@ -36,7 +36,7 @@ This file has the content for the post. At the top of the file is a metadata sec
 
 `2015-01-02-my-exciting-blog-post.md/`
 
-A directory where all other associated files can go, such as a image files and their associated description files 
+A directory where all other associated files can go, such as a image files and their associated description files
 
 #### Adding news posts
 
@@ -62,10 +62,10 @@ in the templates.
 
 One big advantage with this approach comes from git and
 [GitHub](https://www.github.com/dragonfly-science), which gives us good version
-control and user management respectively. When code changes are pushed to the master branch of the  
+control and user management respectively. When code changes are pushed to the master branch of the
 [GitHub repo](https://www.github.com/dragonfly-science/website), our
 continuous integration system will update the [staging site](https://www-dev.dragonfly.co.nz).
-This takes less than a minute. If you are collaborating with us, we can give you a username and 
+This takes less than a minute. If you are collaborating with us, we can give you a username and
 password for the staging site.
 
 #### HTML templates and CSS
@@ -114,7 +114,7 @@ design. Breakpoints are named after mountain bike trails in Aro Valley. There is
 
 ### Deployment is from the release branch
 
-The release branch is automatically deployed. You can manually merge from master or create a 
+The release branch is automatically deployed. You can manually merge from master or create a
 pull request. Creating a pull request on github from the master branch to the release branch
 is the preferred method of deploying.
 

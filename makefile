@@ -20,7 +20,7 @@ build: website content/stylesheets/dragonfly.css
 
 SCSS := $(shell find content/stylesheets -name *.scss)
 content/stylesheets/dragonfly.css: content/stylesheets/dragonfly.scss $(SCSS)
-	$(RUN) bash -c 'sass --sourcemap=none -t compressed $< $@'
+	$(RUN) bash -c 'sass --no-source-map -s compressed $< $@'
 
 docker:
 	docker build --tag $(IMAGE) .
