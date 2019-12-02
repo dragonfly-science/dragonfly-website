@@ -1,6 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import           Data.Monoid          ((<>))
+import           Data.Foldable        (forM_)
 import           System.Process
 import System.Exit
 
@@ -36,7 +37,7 @@ main = do
     match (fromList [bibIdentifier]) $ compile biblioCompiler
 
     match "**/*.img.md" $ compile scholmdCompiler
-    match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png" .||. "**/*.csv") $ do
+    match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png" .||. "**/*.csv" .||. "fonts/*") $ do
         route idRoute
         compile copyFileCompiler
 

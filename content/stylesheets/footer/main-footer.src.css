@@ -1,0 +1,43 @@
+.main-footer {
+    &__detail {
+        @apply w-full mx-auto mb-8;
+
+        > span {
+            @apply block mb-4 font-medium;
+        }
+    }
+    
+    a {
+        @apply underline;
+
+        &:hover {
+            @apply no-underline;
+        }
+    }
+
+    address {
+        @apply not-italic;
+    }
+}
+
+@screen sm {
+    .main-footer__detail {
+        @apply w-1/2;
+    }
+
+    .main-footer__detail span {
+        @apply mb-8;
+    }
+}
+
+@screen md {
+    .main-footer__detail {
+        @apply mx-0;
+    }
+}
+
+@screen lg {
+    .main-footer__detail {
+        @apply w-auto;
+    }
+}

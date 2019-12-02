@@ -1,0 +1,9 @@
+.page-header {
+    a {
+        @apply underline;
+
+        &:hover {
+            @apply no-underline;
+        }
+    }
+}

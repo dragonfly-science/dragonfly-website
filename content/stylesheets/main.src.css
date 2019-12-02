@@ -1,0 +1,37 @@
+/* Import Tailwind base */
+@tailwind base;
+@tailwind components;
+
+/* :root {
+  --cool-blue: #43A1C9;
+  --dark-peach: #EB7A59;
+  --slate-grey: #565659;
+  --faded-red: #CF4547;
+  --greeny-blue: #50AD85;
+  --grape: #5B3456;
+  --light-peach: #E5DECC;
+  --pale-teal: #9DC4A9;
+  --very-light-pink: #E7E7E7;
+  --pale-grey: #F1F1F2;
+  --faded-purple: #A3649B;
+} */
+
+html {
+    @apply font-body text-slate-grey;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Plugins. */
+/* @import "../fonts/dragonfly.css"; */
+
+/* Import Partials */
+@import "navigation/link-icon.src.css";
+@import "navigation/main-nav.src.css";
+@import "navigation/mobile-menu.src.css";
+@import "footer/main-footer.src.css";
+@import "header/page-header.src.css";
+
+@import "utilities/utilities.src.css";
+
+@tailwind utilities;
