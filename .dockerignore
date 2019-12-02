@@ -1,4 +1,6 @@
 **
 !haskell/stack.yaml
 !haskell/dragonfly-website.cabal
+!package.json
+!package-lock.json
 

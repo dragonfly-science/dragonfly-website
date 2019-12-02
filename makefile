@@ -1,4 +1,4 @@
-TAG := lts-12.26
+TAG := lts-12.26-v1
 IMAGE := dragonflyscience/dragonfly-website:$(TAG)
 RUN ?= docker run --rm -it -p 8000:8000 -u $$(id -u):$$(id -g) -w /work -v $$(pwd):/work $(IMAGE)
 
@@ -18,9 +18,11 @@ build: website content/stylesheets/dragonfly.css
 	$(RUN) bash -c 'cd content && ../website build'
 
 
-SCSS := $(shell find content/stylesheets -name *.scss)
-content/stylesheets/dragonfly.css: content/stylesheets/dragonfly.scss $(SCSS)
-	$(RUN) bash -c 'sass --no-source-map -s compressed $< $@'
+CSS := $(shell find content/stylesheets -name *.css -not -name dragonfly.css)
+content/stylesheets/dragonfly.css: content/stylesheets/main.src.css $(CSS)
+	$(RUN) bash -c 'npm run css && npm run fonts'
+	## $(RUN) bash -c 'NODE_ENV=production postcss $< --config ./ -o $@'
+
 
 docker:
 	docker build --tag $(IMAGE) .
