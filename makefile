@@ -8,7 +8,7 @@ website: $(HS) haskell/Site.hs
 	$(RUN) bash -c 'cd haskell && stack build && cp $$(stack path --local-install-root)/bin/website ../website'
 
 develop:
-	$(RUN) bash -c '(cd content/stylesheets && find . -name \*.scss | entr -r sass dragonfly.scss dragonfly.css) & (cd content && ../website watch)'
+	$(RUN) bash -c '(cd content/stylesheets && find . -name \*.css -not -name dragonfly.css | entr -r npm watch:css) & (cd content && ../website watch)'
 
 clean:
 	$(RUN) bash -c 'cd content && ../website clean'
