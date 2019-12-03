@@ -1,9 +1,53 @@
 .page-header {
+    @apply w-full py-16 px-6 bg-cover;
+
     a {
         @apply underline;
 
         &:hover {
             @apply no-underline;
+        }
+    }
+
+    &__title {
+        @apply text-6xl font-bold leading-none;
+    }
+
+    &__content {
+        @apply text-2xl pt-6 pr-6 mb-16 leading-tight;
+    }
+
+    &__container {
+        @apply max-w-full;
+    }
+}
+
+@screen md {
+    .page-header {
+        &__container {
+            @apply max-w-3/4;
+        }
+    }
+}
+
+@screen lg {
+    .page-header {
+        @apply py-32;
+
+        &__title {
+            @apply text-9/2xl;
+        }
+
+        &__content {
+            @apply leading-none text-3xl pt-12;
+        }
+    }
+}
+
+@screen xl {
+    .page-header {
+        &__container {
+            @apply max-w-1/2;
         }
     }
 }

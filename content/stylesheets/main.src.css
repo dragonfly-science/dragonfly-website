@@ -27,16 +27,18 @@ html {
 /* @import "../fonts/dragonfly.css"; */
 
 /* Import Partials */
-@import "navigation/button.src.css";
-@import "navigation/link-icon.src.css";
-@import "navigation/main-nav.src.css";
-@import "navigation/mobile-menu.src.css";
-
 @import "footer/main-footer.src.css";
 
 @import "grid/columns.src.css";
 
 @import "header/page-header.src.css";
+
+@import "layout/numbered-section.src.css";
+
+@import "navigation/button.src.css";
+@import "navigation/link-icon.src.css";
+@import "navigation/main-nav.src.css";
+@import "navigation/mobile-menu.src.css";
 
 @import "utilities/utilities.src.css";
 
