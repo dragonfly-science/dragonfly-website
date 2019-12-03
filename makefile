@@ -19,8 +19,6 @@ build: website content/stylesheets/dragonfly.css
 CSS := $(shell find content/stylesheets -name *.css -not -name dragonfly.css)
 content/stylesheets/dragonfly.css: content/stylesheets/main.src.css $(CSS)
 	$(RUN) bash -c 'npm run css && npm run fonts'
-	## $(RUN) bash -c 'NODE_ENV=production postcss $< --config ./ -o $@'
-
 
 docker:
 	docker build --tag $(IMAGE) .

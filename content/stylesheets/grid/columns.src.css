@@ -7,7 +7,9 @@
     }
 
     &__title {
-        @apply text-4xl font-medium mb-8;
+        @apply font-bold mb-8;
+        @apply text-4xl;
+        
     }
 
     &__text {
@@ -38,12 +40,20 @@
         &__text {
             @apply mr-0;
         }
+
+        &__title {
+            font-size: 2.5vw;
+        }
     }
 }
 
 @screen xl {
     .no-gutter-cell {
-        @apply min-h-30;
+        @apply min-h-30 w-1/4;
+
+        /* &__title {
+            @apply text-5xl;
+        } */
 
         &__text {
             @apply text-2xl;

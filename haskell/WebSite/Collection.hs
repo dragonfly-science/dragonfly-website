@@ -174,7 +174,7 @@ teaserImage = field "teaserImage" getImagePath
         let path = toFilePath (itemIdentifier item)
             base = take ((length path) - 11) path
             ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" (toUrl . (flip replaceFileName "256-teaser.jpg"))) (getRoute ident)
+        fmap (maybe "" (toUrl . (flip replaceFileName "teaser.jpg"))) (getRoute ident)
 
 -- Sort items by a monadic ordering function
 sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]

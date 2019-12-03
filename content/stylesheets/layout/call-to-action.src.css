@@ -1,0 +1,21 @@
+.call-to-action {
+    @apply w-full bg-light-peach py-16 px-6 math-paper;
+
+    &__text {
+        @apply text-3xl leading-tight w-full font-bold;
+    }
+
+    &__button {
+        @apply text-2xl font-normal;
+    }
+}
+
+@screen lg {
+    .call-to-action {
+        @apply py-32;
+
+        &__text {
+            @apply text-5xl;
+        }
+    }
+}
