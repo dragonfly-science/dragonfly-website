@@ -3,7 +3,7 @@
     @apply py-8 px-6;
 
     &__title {
-        @apply font-bold text-4xl mb-4;
+        @apply font-bold text-4xl mb-8 leading-none;
     }
 
     &__lists {
@@ -21,7 +21,15 @@
     }
 
     li {
-        @apply mb-2;
+        @apply mb-1;
+    }
+}
+
+@screen sm {
+    .list-container {
+        &__lists {
+            @apply flex-row;
+        }
     }
 }
 
@@ -30,15 +38,15 @@
         @apply py-16;
 
         &__title {
-            @apply text-5xl;
-        }
-
-        &__lists {
-            @apply flex-row;
+            @apply text-5xl mb-12;
         }
 
         ul {
             @apply text-xl;
+        }
+
+        li {
+            @apply mb-0;
         }
     }
 }
@@ -46,7 +54,7 @@
 @screen xl {
     .list-container {
         ul {
-            @apply text-3xl;
+            @apply text-2xl;
         }
     }
 }
