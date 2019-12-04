@@ -12,34 +12,52 @@
         
     }
 
-    &__text {
+    &__text,
+    p {
         @apply text-xl leading-tight;
     }
 
     &__title,
-    &__text {
+    &__text,
+    p {
         @apply max-w-md;
     }
 
     &__link {
-        @apply mt-auto ml-auto text-3xl inline-block;
+        @apply mt-auto ml-auto text-3xl; 
+        @apply block !important;
+    }
+
+    p + p {
+        @apply mt-2;
+    }
+
+    p:last-of-type {
+        @apply mb-6;
+    }
+
+    &__title,
+    &__text,
+    p {
+        @apply max-w-xs;
     }
 }
 
 @screen sm {
     .no-gutter-cell {
         @apply w-1/2;
+
+        &__title,
+        &__text,
+        p {
+            @apply max-w-full;
+        }
     }
 }
 
 @screen lg {
     .no-gutter-cell {
-        @apply px-16 w-1/3;
-
-        &__title,
-        &__text {
-            @apply mr-0;
-        }
+        @apply w-1/3;
 
         &__title {
             font-size: 2.5vw;
@@ -50,13 +68,16 @@
 @screen xl {
     .no-gutter-cell {
         @apply min-h-30 w-1/4;
+    }
+}
 
-        /* &__title {
-            @apply text-5xl;
-        } */
+@screen wd {
+    .no-gutter-cell {
+        @apply px-16;
 
-        &__text {
-            @apply text-2xl;
+        &__text,
+        p {
+            @apply text-2xl mr-0;
         }
     }
 }
@@ -64,8 +85,9 @@
 /* Variations. */
 .no-gutter-cell {
     &--advert {
-        &__text {
-            @apply text-2xl leading-tight mb-12 mr-12 font-normal;
+        &__text,
+        p {
+            @apply text-2xl leading-tight mb-12 mr-12 font-normal max-w-full;
 
             a {
                 @apply underline;
@@ -84,12 +106,47 @@
             }
         }
     }
+
+    &--news {
+        @apply bg-center relative;
+
+        &:before {
+            @apply absolute bottom-0 left-0 w-full h-full z-10 block;
+            content: '';
+            background-blend-mode: multiply;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100%);
+        }
+
+        &:hover {
+            background-size: 200%;
+
+            &:before {
+                background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+            }
+        }
+
+        * {
+            @apply z-20 relative;
+        }
+
+        &__text,
+        p {
+            @apply text-lg;
+        }
+
+        &__link {
+            .icon {
+                @apply text-3xl !important;
+            }
+        }
+    }
 }
 
 @screen lg {
     .no-gutter-cell {
         &--advert {
-            &__text {
+            &__text,
+            p {
                 @apply text-3xl mr-0;
             }
         }

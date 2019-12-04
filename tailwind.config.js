@@ -55,6 +55,9 @@ module.exports = {
         '24': '24rem',
         '30': '30rem',
         '36': '36rem',
+      },
+      screens: {
+        'wd': '104rem'
       }
     }
   },
