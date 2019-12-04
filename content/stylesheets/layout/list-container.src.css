@@ -1,0 +1,52 @@
+/* list container - a box that contains a title & 1 or more (up to 3) lists. */
+.list-container {
+    @apply py-8 px-6;
+
+    &__title {
+        @apply font-bold text-4xl mb-4;
+    }
+
+    &__lists {
+        @apply  flex flex-col justify-between;
+    }
+
+    ul {
+        @apply list-disc text-lg;
+        margin-left: 1em;
+        margin-right: 1em;
+
+        &:last-child {
+            @apply mr-0;
+        }
+    }
+
+    li {
+        @apply mb-2;
+    }
+}
+
+@screen lg {
+    .list-container {
+        @apply py-16;
+
+        &__title {
+            @apply text-5xl;
+        }
+
+        &__lists {
+            @apply flex-row;
+        }
+
+        ul {
+            @apply text-xl;
+        }
+    }
+}
+
+@screen xl {
+    .list-container {
+        ul {
+            @apply text-3xl;
+        }
+    }
+}

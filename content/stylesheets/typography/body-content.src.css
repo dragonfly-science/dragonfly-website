@@ -1,0 +1,93 @@
+/* Body content container styles. */
+.body-content {
+    @apply ml-0 my-6;
+
+    p {
+        @apply mb-6;
+    }
+
+    > p:first-of-type {
+        @apply font-medium text-2xl leading-tight mb-6;
+    }
+
+    > a,
+    > p > a {
+        @apply underline;
+
+        &:hover {
+            @apply no-underline;
+        }
+    }
+
+    blockquote {
+        @apply bg-cool-blue text-white w-full;
+        @apply px-8 py-12 ml-0 mt-8 mb-8;
+
+        p {
+            @apply mb-0 text-xl font-medium italic leading-tight;
+
+            &:before,
+            &:after {
+                @apply inline;
+                content: '"';
+            }
+        }
+    }
+}
+
+@screen sm {
+    .body-content {
+        blockquote {
+            @apply w-3/4;
+        }
+    }
+}
+
+@screen md {
+    .body-content {
+        > p:first-of-type {
+            @apply text-4xl;
+        }
+
+        blockquote {
+            p {
+                @apply text-2xl;
+            }
+        }
+    }
+}
+
+@screen lg {
+    .body-content {
+        @apply mt-24 mb-96;
+
+        > p:first-of-type {
+            @apply mb-12;
+        }
+
+        blockquote {
+            @apply px-16 -ml-16;
+
+            p {
+                @apply text-3xl;
+            }
+        }
+    }
+}
+
+@screen xl {
+    .body-content {
+        @apply ml-64;
+
+        blockquote {
+            @apply pt-16 pr-24 pb-24 pl-40 -ml-1/2 mt-8 mb-8 w-full;
+        }
+    }
+}
+
+/* Variations. */
+.body-content {
+    &--person {
+        
+    }
+}
