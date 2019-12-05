@@ -1,0 +1,39 @@
+/* list of tags as seen in publications. */
+.tag-list {
+    &__tag {
+        @apply bg-cool-blue text-white text-lg font-medium no-underline px-6 pt-3 pb-4 leading-none inline-block;
+
+        &--active {
+            @apply bg-beige text-cool-blue;
+        }
+
+        &--article {
+            @apply bg-greeny-blue;
+        }
+
+        &--presentation {
+            @apply bg-dark-peach;
+        }
+
+        &--report {
+            @apply bg-faded-purple;
+        }
+    }
+}
+
+/* Variations */
+.tag-list {
+    &--publication-tile {
+        .tag-list__tag {
+            @apply hidden;
+        }
+
+        .tag-list__tag {
+            &--report,
+            &--presentation,
+            &--article {
+                @apply inline-block;
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+/* Grid cells that are intended to utilise gutters. */
+.grid-cell {
+    @apply bg-white mb-8;
+    width: calc(25% - 2rem);
+}
