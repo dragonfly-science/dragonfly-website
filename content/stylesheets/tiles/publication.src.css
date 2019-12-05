@@ -5,4 +5,12 @@
     &__footer {
         @apply px-6;
     }
+
+    &__header + .publication-tile__title {
+        @apply mt-10;
+    }
+
+    &__footer {
+        @apply mb-8 mt-6;
+    }
 }
