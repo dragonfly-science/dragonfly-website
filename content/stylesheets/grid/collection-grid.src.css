@@ -1,0 +1,3 @@
+.collection-grid {
+    @apply max-w-8xl w-full flex flex-wrap mx-auto;
+}
