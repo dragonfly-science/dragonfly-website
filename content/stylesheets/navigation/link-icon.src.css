@@ -5,4 +5,14 @@
     .icon {
         @apply ml-6 text-lg inline-block;
     }
+
+    &--bold {
+        @apply font-medium;
+
+        .icon {
+            &:before {
+                @apply font-bold;
+            }
+        }
+    }
 }

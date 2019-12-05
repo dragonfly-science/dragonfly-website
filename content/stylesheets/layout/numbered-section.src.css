@@ -1,0 +1,201 @@
+/* Numbersed section as seen on the what we do page. */
+.numbered-section {
+    @apply overflow-hidden px-6;
+    counter-increment: list-number;
+
+    &:nth-of-type(even) {
+        .numbered-section__content {
+            &:last-child {
+                @apply order-first;
+
+                &:before {
+                    @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
+                    content: '';
+                }
+            }
+        }
+    }
+
+    &:nth-of-type(odd) {
+        .numbered-section__content {
+            &:last-child {
+                &:after {
+                    @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
+                    content: '';
+                }
+            }
+        }
+    }
+
+    &__content {
+        @apply relative w-full flex justify-center flex-col;
+
+        img {
+            @apply mx-auto mt-0 mb-8;
+        }
+    }
+
+    &__heading {
+        @apply mt-10 max-w-md font-bold relative text-cool-blue flex py-5;
+
+        span {
+            @apply text-2xl leading-none mt-3;
+        }
+
+        &:before {
+            @apply block text-6xl mr-8 leading-none;
+            content: counter(list-number);
+        }
+
+        &:after {
+            @apply block bg-cool-blue absolute top-0 left-0 w-32;
+            height: 4px;
+            content: '';
+        }
+    }
+
+    &__text {
+        @apply text-lg font-medium leading-tight max-w-xl pr-8;
+    }
+
+    &__link {
+        @apply mt-8 font-bold underline mb-10;
+        @apply text-sm !important;
+
+        &:hover {
+            @apply no-underline;
+        }
+    }
+
+    &__container {
+        @apply block mx-auto;
+    }
+
+    &--no-image {
+        &:nth-of-type(even) {
+            @apply overflow-hidden;
+
+            .numbered-section__container {
+                @apply relative;
+
+                &:before {
+                    @apply hidden;
+                    content: '';
+                }
+            }
+
+            .numbered-section__content {
+                @apply ml-auto;
+
+                &:last-child {
+                    &:before {
+                        @apply hidden;
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(odd) {
+            @apply overflow-hidden;
+
+            .numbered-section__container {
+                @apply relative;
+
+                &:after {
+                    @apply hidden;
+                    content: '';
+                }
+            }
+
+            .numbered-section__content {
+                &:last-child {
+                    &:after {
+                        @apply hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@screen sm {
+    .numbered-section {
+        &--no-image {
+            &:nth-of-type(even) {
+                .numbered-section__container {
+                    &:before {
+                        @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
+                    }
+                }
+            }
+
+            &:nth-of-type(odd) {
+                .numbered-section__container {
+                    &:after {
+                        @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@screen md {
+    .numbered-section {
+        &:nth-of-type(even) {
+            .numbered-section__content {
+                &:first-child {
+                    @apply pl-8;
+                }
+            }
+        }
+
+        &__content {
+            @apply w-1/2;
+
+            img {
+                @apply my-16;
+            }
+        }
+
+        &__container {
+            @apply flex;
+        }
+
+        &__heading {
+            @apply mt-20 pr-8 max-w-lg;
+        }
+
+        &__text {
+            @apply text-2xl;
+        }
+
+        &__link {
+            @apply mb-20;
+            @apply text-lg !important;
+        }
+    }
+}
+
+@screen lg {
+    .numbered-section {
+        &:nth-of-type(even) {
+            .numbered-section__content {
+                &:first-child {
+                    @apply pl-16;
+                }
+            }
+        }
+
+        &__heading {
+
+            &:before {
+                @apply text-8xl;
+            }
+
+            span {
+                @apply text-4/2xl;
+            }
+        }
+    }
+}

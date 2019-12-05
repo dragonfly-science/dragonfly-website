@@ -1,0 +1,157 @@
+/* Body content container styles. */
+.body-content {
+    @apply ml-0 my-6 max-w-3xl;
+
+    p {
+        @apply mb-6;
+    }
+
+    > p {
+        &:first-of-type {
+            @apply font-medium text-3xl leading-tight mb-6;
+        }
+    }
+
+    h2, h3, h4, h5, h6 {
+        @apply font-medium leading-tight mb-4 mt-8;
+    }
+
+    h2 {
+        @apply text-2xl;
+    }
+
+    h3 {
+        @apply text-xl;
+    }
+
+    h4 {
+        @apply text-lg font-bold;
+    }
+
+    h5 {
+        @apply text-lg;
+    }
+
+    h6 {
+        @apply text-base font-bold;
+    }
+
+    > a,
+    p > a,
+    li > a {
+        @apply underline;
+
+        &:hover {
+            @apply no-underline;
+        }
+    }
+
+    ul {
+        @apply list-disc my-2 mx-4;
+    }
+
+    > hr {
+        &:last-of-type {
+            @apply bg-slate-grey h-1 max-w-lg mt-20 mb-4;
+
+            + p {
+                @apply text-xl font-bold;
+            }
+
+            ~ * {
+                @apply max-w-lg;
+                /* @apply bg-cool-blue; */
+            }
+        }
+    }
+
+    blockquote {
+        @apply bg-cool-blue text-white w-full;
+        @apply px-8 py-12 ml-0 mt-8 mb-8;
+
+        p {
+            @apply mb-0 text-xl font-medium italic leading-tight;
+
+            &:before,
+            &:after {
+                @apply inline;
+                content: '"';
+            }
+        }
+    }
+}
+
+@screen sm {
+    .body-content {
+        blockquote {
+            @apply w-3/4;
+        }
+    }
+}
+
+@screen md {
+    .body-content {
+        blockquote {
+            p {
+                @apply text-2xl;
+            }
+        }
+    }
+}
+
+@screen lg {
+    .body-content {
+        @apply mt-24 mb-96;
+
+        > p {
+            &:first-of-type {
+                @apply font-medium text-4xl leading-tight mb-6 mt-10;
+            }
+        }
+
+        h2 {
+            @apply text-3xl;
+        }
+
+        h3 {
+            @apply text-2xl;
+        }
+
+        h4 {
+            @apply text-xl;
+        }
+
+        h5 {
+            @apply text-lg;
+        }
+
+        h6 {
+            @apply text-base font-bold;
+        }
+
+        blockquote {
+            @apply px-16 -ml-16;
+
+            p {
+                @apply text-3xl;
+            }
+        }
+    }
+}
+
+@screen xl {
+    .body-content {
+        @apply ml-64;
+
+        blockquote {
+            @apply pt-16 pr-24 pb-24 pl-40 -ml-1/2 mt-8 mb-8 w-full;
+        }
+    }
+}
+
+/* Variations. */
+.body-content {
+    &--article {
+        
+    }
+}

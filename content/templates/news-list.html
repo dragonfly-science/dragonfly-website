@@ -1,39 +1,39 @@
-<div class="container">
-  <div class="wide">
-    <h2> 
-      We like to tell our stories.
-    </h2>
-    <p class="lead">
-      We get excited about the work we do for our clients, and the diverse projects we're involved in.
-    </p>
-    <div class="post-list">
-      $for(news)$
-        <div class="post-wrapper">
-          <div class="post">
-            <div class="post-image">
-              <a href="$pageurl$">
-                <div class="post-porthole" style="background-image: url('$teaserImage$')"></div>
-              </a>
-            </div>
-            <div class="post-teaser">
-              <h4><a href="$pageurl$" class="highlight">$title$</a></h4>
-              <p class="subheading">
-                $published$
-                $if(author)$
-                  $author$
-                $endif$ 
-              </p>
-              $if(summary)$
-                $summary$
-              $else$
-                $if(teaser)$ $teaser$ $endif$
-              $endif$
-              <span><a href="$pageurl$" class="read-more">Read more</a></span>
-              $partial("templates/_top.html")$
-            </div>
-          </div>
-        </div>
-      $endfor$
+<header class="page-header bg-light-peach math-paper">
+  <div class="container mx-auto">
+    <div class="page-header__container max-w-full">
+      <h1 class="page-header__title">Latest news</h1>
     </div>
   </div>
-</div>
+</header>
+
+<section id="top-section" class="math-paper">
+  <div class="collection-grid">
+    <div class="no-gutter-cell no-gutter-cell--advert flex justify-center">
+      <div>
+        <p class="no-gutter-cell--advert__text">
+          We like to tell our stories about the work we do for clients, and 
+          the diverse projects we're involved in.
+        </p>
+
+        <p class="no-gutter-cell--advert__text">
+          So have a read through of the latest.
+        </p>
+      </div>
+    </div>
+
+    $for(news)$
+      <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay" style="background-image: url('$teaserImage$')">
+        <span class="no-gutter-cell__tag">$published$</span>
+        <strong class="no-gutter-cell__title">$title$</strong>
+        <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link"><span class="icon dragonfly-arrow ml-0"></span></span>
+      </a>
+    $endfor$
+  </div>
+
+  <section class="call-to-action">
+    <div class="container mx-auto text-center">
+      <a href="#" class="call-to-action__button button button--rounded button--cool-blue">Load more</a>
+    </div>
+  </section>
+</section>
+

@@ -1,0 +1,8 @@
+.publication-tile {
+    &__tag-list,
+    &__title,
+    &__citation,
+    &__footer {
+        @apply px-6;
+    }
+}

@@ -1,0 +1,33 @@
+.button {
+    @apply px-8 pt-3 pb-4 text-center font-medium no-underline leading-none;
+}
+
+@screen lg {
+    .button {
+        @apply px-16 py-5;
+    }
+}
+
+.button--rounded {
+    @apply rounded;
+}
+
+.button--cool-blue {
+    background-color: var(--cool-blue);
+    color: var(--white);
+
+    &:hover {
+        background-color: var(--white);
+        color: var(--cool-blue);
+    }
+}
+
+.button--black {
+    background-color: var(--black);
+    color: var(--white);
+
+    &:hover {
+        background-color: var(--white);
+        color: var(--black);
+    }
+}

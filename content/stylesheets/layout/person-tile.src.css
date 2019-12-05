@@ -1,0 +1,40 @@
+.person-tile {
+    @apply overflow-hidden relative flex flex-row items-end;
+
+    background-position: top center;
+    filter: grayscale(100%) sepia(50%);
+
+    &:before {
+        @apply absolute bottom-0 left-0 w-full h-full z-10 block;
+        content: '';
+        background-blend-mode: multiply;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    &:hover {
+        filter: grayscale(0) sepia(0);
+
+        &:before {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+        }
+    }
+
+    .no-gutter-cell__title,
+    .no-gutter-cell__link {
+        @apply z-10;
+    }
+
+    &--advert {
+        filter: none;
+
+        &:before {
+            display: none;
+        }
+    }
+}
+
+@screen xl {
+    .person-tile {
+        @apply w-1/4;
+    }
+}

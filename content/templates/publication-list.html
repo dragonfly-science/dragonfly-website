@@ -1,4 +1,12 @@
-<div class="container">
+<header class="page-header bg-cool-blue math-paper math-paper--reverse">
+    <div class="container mx-auto">
+      <div class="page-header__container">
+        <h1 class="page-header__title text-white">Publications</h1>
+      </div>
+    </div>
+  </header>
+
+<div class="container hidden">
   <div class="wide">
     <h2> 
       We communicate our findings.
@@ -54,11 +62,15 @@
       </span> 
       <div><input class="search publication-search dropdown dropdown-button" placeholder="Search" /></div>
       <div class="badge" id="publication-count"></div>
-          <ul class="list">
-          $for(publications)$
-                  $partial("templates/_citation-entry.html")$
-          $endfor$
-          </ul>
+          
       </div>
     </div>
 </div>
+
+<section id="top-section" class="bg-light-peach math-paper">
+  <div class="collection-grid justify-between list">
+    $for(publications)$
+      $partial("templates/_citation-entry.html")$
+    $endfor$
+  </div>
+</section>

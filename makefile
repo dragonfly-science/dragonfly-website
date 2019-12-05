@@ -8,7 +8,7 @@ website: $(HS) haskell/Site.hs
 	$(RUN) bash -c 'cd haskell && stack build && cp $$(stack path --local-install-root)/bin/website ../website'
 
 develop: website
-	$(RUN) bash -c '(cd content/stylesheets && find . -name \*.css -not -name dragonfly.css | entr -r npm run watch:css) & (cd content && ../website watch)'
+	$(RUN) bash -c '(cd content/stylesheets && find . -name \*.css -not -name dragonfly.css | npm run watch:css) & (cd content && ../website watch)'
 
 
 CONTENT := $(shell find content)
@@ -19,8 +19,6 @@ build: website content/stylesheets/dragonfly.css
 CSS := $(shell find content/stylesheets -name *.css -not -name dragonfly.css)
 content/stylesheets/dragonfly.css: content/stylesheets/main.src.css $(CSS)
 	$(RUN) bash -c 'npm run css && npm run fonts'
-	## $(RUN) bash -c 'NODE_ENV=production postcss $< --config ./ -o $@'
-
 
 docker:
 	docker build --tag $(IMAGE) .
