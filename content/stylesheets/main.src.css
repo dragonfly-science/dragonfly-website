@@ -3,17 +3,18 @@
 @tailwind components;
 
 :root {
+  --beige: #d2cec3;
   --cool-blue: #43A1C9;
   --dark-peach: #EB7A59;
-  --slate-grey: #565659;
-  --faded-red: #CF4547;
-  --greeny-blue: #50AD85;
-  --grape: #5B3456;
-  --light-peach: #E5DECC;
-  --pale-teal: #9DC4A9;
-  --very-light-pink: #E7E7E7;
-  --pale-grey: #F1F1F2;
   --faded-purple: #A3649B;
+  --faded-red: #CF4547;
+  --grape: #5B3456;
+  --greeny-blue: #50AD85;
+  --light-peach: #E5DECC;
+  --pale-grey: #F1F1F2;
+  --pale-teal: #9DC4A9;
+  --slate-grey: #565659;
+  --very-light-pink: #E7E7E7;
   --white: #ffffff;
 }
 
@@ -28,20 +29,26 @@ html {
 /* Import Partials */
 @import "footer/main-footer.src.css";
 
+@import "grid/collection-grid.src.css";
 @import "grid/columns.src.css";
+@import "grid/guttered-cells.src.css";
 
 @import "header/page-header.src.css";
 
 @import "layout/call-to-action.src.css";
+@import "layout/citation-year.src.css";
 @import "layout/list-container.src.css";
 @import "layout/numbered-section.src.css";
 @import "layout/person-tile.src.css";
 @import "layout/sidebar.src.css";
+@import "layout/tag-list.src.css";
 
 @import "navigation/button.src.css";
 @import "navigation/link-icon.src.css";
 @import "navigation/main-nav.src.css";
 @import "navigation/mobile-menu.src.css";
+
+@import "tiles/publication.src.css";
 
 @import "typography/body-content.src.css";
 

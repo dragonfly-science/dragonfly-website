@@ -1,8 +1,33 @@
-$if(banner-image)$
-  <div class="post-banner-image" style='background-image: url("$banner-image$")'>
+<header class="page-header page-header--news page-header--article $if(banner-image)$ text-white $else$ page-header--no-overlay bg-light-peach math-paper $endif$" $if(banner-image)$ style="background-image: url($banner-image$);" $endif$>
+  <div class="container mx-auto">
+    <div class="page-header__container flex flex-col">
+      $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
+      $if(date)$
+        <span class="page-header--article__date">$date$</span>
+      $endif$
+
+    </div>
   </div>
-$endif$
-<div class="container post-detail">
+</header>
+
+<article id="top-section" class="article math-paper">
+  <div class="bg-light-peach px-6">
+    <div class="container mx-auto flex flex-col lg:flex-row">
+      <div class="body-content body-content--article">
+        $body$
+      </div>
+    </div>
+  </div>
+</article>
+
+<div class="bg-light-peach math-paper px-6">
+  <header class="container text-center mx-auto">
+    <h2 class="text-3xl lg:text-5xl font-bold pt-10 pb-16 lg:pt-24 lg:pb-32">You might also like these stories</h2>
+  </header>
+  $partial("templates/_bubble-navigation.html")$
+</div>
+
+<div class="container post-detail hidden">
   <div class="sidebar">
    <div class="post-top-image">
      <div class="porthole" style="background-image: url('$teaserImage$');"></div>
@@ -36,4 +61,4 @@ $endif$
     </div>
   $endif$
 </div>
-$partial("templates/_bubble-navigation.html")$
+

@@ -7,3 +7,10 @@
     background-position: -19px -19px, -19px -19px, -46px -46px, -46px -46px;
     background-attachment: fixed;
 }
+
+.math-paper--reverse {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+                      linear-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255, 255, 255, 0.4) 1px, transparent 1px);
+}

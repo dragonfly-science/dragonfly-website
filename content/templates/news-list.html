@@ -7,7 +7,7 @@
 </header>
 
 <section id="top-section" class="math-paper">
-  <div class="max-w-8xl w-full flex flex-wrap mx-auto">
+  <div class="collection-grid">
     <div class="no-gutter-cell no-gutter-cell--advert flex justify-center">
       <div>
         <p class="no-gutter-cell--advert__text">
@@ -22,20 +22,11 @@
     </div>
 
     $for(news)$
-      <div class="no-gutter-cell no-gutter-cell--news" style="background-image: url('$teaserImage$')">
+      <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay" style="background-image: url('$teaserImage$')">
         <span class="no-gutter-cell__tag">$published$</span>
-        <h2 class="no-gutter-cell__title">$title$</h2>
-        
-        <div>
-            $if(summary)$
-            $summary$
-          $else$
-            $if(teaser)$ $teaser$ $endif$
-          $endif$
-        </div>
-        
-        <a href="$pageurl$" class="link-icon no-gutter-cell__link no-gutter-cell--news__link"><span class="icon dragonfly-arrow ml-0"></span></a>
-      </div>
+        <strong class="no-gutter-cell__title">$title$</strong>
+        <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link"><span class="icon dragonfly-arrow ml-0"></span></span>
+      </a>
     $endfor$
   </div>
 

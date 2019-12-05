@@ -10,7 +10,7 @@
     }
 
     &__title {
-        @apply text-6xl font-bold leading-none;
+        @apply text-4xl font-bold leading-none;
     }
 
     &__content {
@@ -18,14 +18,14 @@
     }
 
     &__container {
-        @apply max-w-full;
+        @apply max-w-3/4;
     }
 }
 
 @screen md {
     .page-header {
-        &__container {
-            @apply max-w-3/4;
+        &__title {
+            @apply text-6xl;
         }
     }
 }
@@ -55,7 +55,11 @@
 /* Variations. */
 
 .page-header {
-    &--person {
+    &--news {
+        @apply py-12 !important;
+    }
+
+    &--article {
         @apply py-20 relative;
         background-position: center top;
 
@@ -64,6 +68,10 @@
             content: '';
             background-blend-mode: multiply;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        &__date {
+            @apply mt-4;
         }
 
         .container {
@@ -75,13 +83,26 @@
                 @apply text-2xl ml-0 mt-8;
             }
         }
+
+        
+    }
+
+    &--no-overlay {
+        &:before {
+            @apply hidden;
+        }
     }
 }
 
 @screen lg {
     .page-header {
-        &--person {
+        &--article {
             @apply py-32;
+
+            /* &__date {
+                @apply -mt-28;
+            } */
+
             .page-header__title {
                 @apply mb-32 text-7xl;
             }
@@ -90,6 +111,12 @@
                 .icon {
                     @apply text-5xl mt-0;
                 }
+            }
+        }
+
+        &--news {
+            .page-header__title {
+                @apply mb-0;
             }
         }
     }

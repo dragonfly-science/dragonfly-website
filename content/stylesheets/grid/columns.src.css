@@ -28,18 +28,28 @@
         @apply block !important;
     }
 
-    p + p {
-        @apply mt-2;
-    }
-
-    p:last-of-type {
-        @apply mb-6;
-    }
-
     &__title,
     &__text,
     p {
         @apply max-w-xs;
+    }
+
+    p {
+        &:last-of-type {
+            @apply mb-6;
+        }
+
+        + p {
+            @apply mt-2;
+        }
+    }
+
+    a {
+        @apply underline;
+
+        &:hover {
+            @apply no-underline;
+        }
     }
 }
 
@@ -107,7 +117,7 @@
         }
     }
 
-    &--news {
+    &--overlay {
         @apply bg-center relative;
 
         &:before {

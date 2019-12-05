@@ -1,28 +1,38 @@
-<li class="post-wrapper year-$year$ tag $if(tags)$ $for(tags)$ tag-$tag$ $endfor$ $endif$">
-  <div class="citation-year">
-    <h2>$year$</h2>
-  </div>
-  <div class="post">
+<h2 class="citation-year citation-year--$year$">$year$</h2>
+
+<div class="publication-tile grid-cell year-$year$ tag $if(tags)$ $for(tags)$ tag-$tag$ $endfor$ $endif$">
+  <header>
+    $if(tags)$
+    <ul class="tag-list tag-list--publication-tile publication-tile__tag-list">
+        $for(tags)$
+        <li class="tag-list__tag tag-list__tag--$tag$">$tag$</li>
+        $endfor$
+    </ul>
+    $endif$
+  </header>
+
     $if(title)$
-      <a href="/publications/$id$.html">
+      <a class="publication-tile__title block" href="/publications/$id$.html">
         <h3>$title$</h3>
       </a>
     $endif$
-    <div class="citation">
+    <div class="publication-tile__citation">
       $citation$
     </div>
     <div class="tagslugs hidden">    
         $if(tags)$ $for(tags)$ $tag$ $endfor$ $endif$    
     </div>
-    $if(pdf)$
-      <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="highlight">
-        <i class="fa fa-file-pdf-o"></i>  Download PDF
-      </a>
-    $endif$
-    $if(hasBody)$
-      $if(pdf)$ | $endif$
-      <a href="/publications/$id$.html" class="read-more">Read more</a>
-    $endif$
-  </div>
-  $partial("templates/_top.html")$
-</li>
+
+    <footer class="flex publication-tile__footer">
+      $if(pdf)$
+        <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="highlight">
+          <i class="fa fa-file-pdf-o"></i>  Download PDF
+        </a>
+      $endif$
+      $if(hasBody)$
+        <a href="/publications/$id$.html" class="read-more">Read more</a>
+      $endif$
+  </footer>
+</div>
+
+

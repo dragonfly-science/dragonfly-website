@@ -1,4 +1,4 @@
-<header class="page-header page-header--person text-white" style="background-image: url($banner$);" id="hero-$tag$">
+<header class="page-header page-header--article text-white $if(firstname)$ person-$firstname$ $endif$" style="background-image: url($banner$);" id="hero-$tag$">
   <div class="container mx-auto">
     <div class="page-header__container flex flex-col">
       <h1 class="page-header__title">$title$</h1>
@@ -11,23 +11,23 @@
   </div>
 </header>
 
-<section id="top-section" class="person math-paper">
+<article id="top-section" class="article math-paper">
   <div class="bg-light-peach px-6">
     <div class="container mx-auto flex flex-col lg:flex-row">
-      <div class="body-content body-content--person" id="content-$tag$">
+      <div class="body-content body-content--article" id="content-$tag$">
         $body$
       </div>
       <aside class="sidebar">
         $if(email)$
-        <a href="mailto:$email$">$email$</a><br/>
+          <a href="mailto:$email$">$email$</a><br/>
         $endif$
         $if(phone)$
-        <a href="tel:$phone$">$phone$</a>
+          <a href="tel:$phone$">$phone$</a>
         $endif$
       </aside>
     </div>
   </div>
-</section>
+</article>
 
 <section class="call-to-action">
   <div class="container mx-auto flex">
@@ -36,24 +36,3 @@
     </div>
   </div>
 </section>
-
-<!-- <div class="hero" id="hero-$tag$">
-  <img src="$banner$" width="100%"/>
-</div> -->
-<!-- <div class="container post-detail">
-  <div class="heading wide">
-    <h2 id="title-$tag$">$title$</h2>
-    <div class="details">
-      $if(email)$
-        <p>Email <a href="mailto:$email$">$email$</a><p>
-      $endif$
-      $if(phone)$
-        <p>Call $firstname$ on <a href="tel:$phone$">$phone$</a><p>
-      $endif$
-    </div>
-  </div>
-  <div class="wide post-body" id="content-$tag$">
-
-  </div>
-</div>
-$partial("templates/_bubble-navigation.html")$ -->
