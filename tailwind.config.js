@@ -13,7 +13,9 @@ module.exports = {
         'faded-red': '#CF4547',
         'grape': '#5B3456',
         'greeny-blue': '#50AD85',
+        'greyish-brown': '#4a4a4a',
         'light-peach': '#E5DECC',
+        'light-grey': '#D1D3D4',
         'pale-grey': '#F1F1F2',
         'pale-teal': '#9DC4A9',
         'slate-grey': '#565659',
@@ -51,6 +53,7 @@ module.exports = {
         '1/2': '50%',
         '1/3': '33%',
         '1/4': '25%',
+        '7xl': '102.5rem',
         '8xl': '120rem',
       },
       minHeight: {

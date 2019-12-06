@@ -10,6 +10,8 @@
   --faded-red: #CF4547;
   --grape: #5B3456;
   --greeny-blue: #50AD85;
+  --greyish-brown: #4a4a4a;
+  --light-grey: #D1D3D4;
   --light-peach: #E5DECC;
   --pale-grey: #F1F1F2;
   --pale-teal: #9DC4A9;
@@ -27,11 +29,14 @@ html {
 /* Plugins. */
 
 /* Import Partials */
+@import "filters/filtering.src.css";
+
 @import "footer/main-footer.src.css";
 
 @import "grid/collection-grid.src.css";
 @import "grid/columns.src.css";
 @import "grid/guttered-cells.src.css";
+@import "grid/publication-grid.src.css";
 
 @import "header/page-header.src.css";
 

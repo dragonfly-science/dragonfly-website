@@ -92,6 +92,16 @@
             @apply hidden;
         }
     }
+
+    &--publications {
+        .page-header__content {
+            @apply mb-0;
+        }
+    }
+
+    &--small {
+        @apply py-8;
+    }
 }
 
 @screen lg {
@@ -117,6 +127,23 @@
         &--news {
             .page-header__title {
                 @apply mb-0;
+            }
+        }
+
+        &--small {
+            @apply py-16 !important;
+        }
+    }
+}
+
+@screen xl {
+    .page-header {
+        &--publications {
+            .page-header__container {
+                @apply flex max-w-full;
+            }
+            .page-header__content {
+                @apply pt-6 pl-16;
             }
         }
     }

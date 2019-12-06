@@ -1,4 +1,12 @@
 .publication-tile {
+    @apply flex flex-col;
+
+    &__title,
+    &__citation,
+    &__footer {
+        @apply max-w-lg;
+    }
+
     &__tag-list,
     &__title,
     &__citation,
@@ -10,7 +18,49 @@
         @apply mt-10;
     }
 
+    &__title {
+        @apply text-xl font-bold leading-none no-underline mb-6;
+    }
+
+    &__citation {
+        @apply mb-6 text-base leading-none;
+    }
+
     &__footer {
-        @apply mb-8 mt-6;
+        @apply mb-8 mt-auto w-full;
+    }
+
+    &__read-more {
+        @apply underline text-lg;
+
+        &:hover {
+            @apply no-underline;
+        }
+    }
+
+    hr {
+        @apply hidden;
+    }
+}
+
+@screen sm {
+    .publication-tile {
+        &__title,
+        &__citation,
+        &__read-more {
+            @apply mr-8 max-w-full;
+        }
+    }
+}
+
+@screen lg {
+    .publication-tile {
+        &__title {
+            @apply text-2xl;
+        }
+
+        &__citation {
+            @apply text-xl;
+        }
     }
 }

@@ -1,0 +1,10 @@
+.publication-grid {
+    @apply max-w-7xl !important;
+    @apply pt-6 px-6 pb-24;
+}
+
+@screen xl {
+    .publication-grid {
+        @apply px-12;
+    }
+}

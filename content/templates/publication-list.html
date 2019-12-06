@@ -1,20 +1,95 @@
-<header class="page-header bg-cool-blue math-paper math-paper--reverse">
-    <div class="container mx-auto">
-      <div class="page-header__container">
-        <h1 class="page-header__title text-white">Publications</h1>
+<header class="page-header page-header--publications bg-cool-blue math-paper math-paper--reverse">
+  <div class="container mx-auto">
+    <div class="page-header__container text-white">
+      <h1 class="page-header__title">Publications</h1>
+
+      <div class="page-header__content">
+          <h2> 
+              We communicate our findings.
+            </h2>
+            <p>
+                We write reports, give presentations, and publish in the scientific literature. Browse or search this list of publicly available reports, presentations, and journal articles by
+                Dragonfly staff.
+            </p>
+      </div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+<div class="filtering bg-light-peach px-6">
+  <div class="container mx-auto flex">
+    <div class="filtering__tools">
+      <div class="filtering__tools__header">
+          <div class="flex-grow">
+              <div class="filtering__search">
+                <input class="filtering__search__input" placeholder="Find publication" />
+                <button class="filtering__search__button dragonfly-search"></button>
+              </div>
+              <div class="filtering__count" id="publication-count">200 publications available</div>
+          </div>
+
+          <div class="filtering__buttons">
+              <button class="text-cool-blue dragonfly-hamburger text-2xl" title="show/hide filter options"></button>
+          </div>
+      </div>
+
+      <div class="filtering__tools__links">
+          <div class="filtering__tags flex-grow mr-8">
+            <span class="filtering__tags__title">By author</span>
+            <ul class="tag-list">
+              <li class="tag-list__tag" data-tag="">All authors</li>
+              <li class="tag-list__tag" data-tag="dragonfly">Dragonfly work</li>
+              <li class="tag-list__tag" data-tag="edward">Edward Abraham</li>
+              <li class="tag-list__tag" data-tag="katrin">Katrin Berkenbusch</li>
+              <li class="tag-list__tag" data-tag="richard">Richard Mansfield</li>
+              <li class="tag-list__tag" data-tag="philipp">Philipp Neubauer</li>
+              <li class="tag-list__tag" data-tag="yvan">Yvan Richard</li>
+              <li class="tag-list__tag" data-tag="finlay">Finlay Thompson</li>
+            </ul>
+          </div>
+
+          <div class="filtering__tags flex-grow mr-8">
+            <span class="filtering__tags__title">By subject</span>
+            <ul class="tag-list">
+              <li class="tag-list__tag" data-tag="">All subjects</li>
+              <li class="tag-list__tag" data-tag="benthic">Benthic</li>
+              <li class="tag-list__tag" data-tag="bycatch">Bycatch</li>
+              <li class="tag-list__tag" data-tag="marine-biology">Marine biology</li>
+              <li class="tag-list__tag" data-tag="fisheries">Fisheries</li>
+              <li class="tag-list__tag" data-tag="marine-mammal">Marine mammals</li>
+              <li class="tag-list__tag" data-tag="oceanography">Oceanography</li>
+              <li class="tag-list__tag" data-tag="risk-assessment">Risk assessment</li>
+              <li class="tag-list__tag" data-tag="seabird">Seabirds</li>
+              <li class="tag-list__tag" data-tag="theoretical-biology">Theoretical biology</li>
+              <li class="tag-list__tag" data-tag="theoretical-physics">Theoretical physics</li>
+            </ul>
+          </div>
+
+          <div class="filtering__tags flex-grow-0">
+            <span class="filtering__tags__title">By publication type</span>
+            <ul class="tag-list">
+              <li class="tag-list__tag" data-tag="">All types</li>
+              <li class="tag-list__tag tag-list__tag--article" data-tag="article">Article</li>
+              <li class="tag-list__tag tag-list__tag--report" data-tag="report">Report</li>
+              <li class="tag-list__tag tag-list__tag--presentation" data-tag="presentation">Presentation</li>
+            </ul>
+          </div>
       </div>
     </div>
-  </header>
-
+  </div>
+</div>
 <div class="container hidden">
   <div class="wide">
-    <h2> 
+    <!-- <h2> 
       We communicate our findings.
     </h2>
     <p class="lead">
         We write reports, give presentations, and publish in the scientific literature. Browse or search this list of publicly available reports, presentations, and journal articles by
         Dragonfly staff.
-    </p>
+    </p> -->
       <div id="publication-list" class="post-list">
       <span class="dropdown">
         <div class="dropdown-container">
@@ -59,16 +134,13 @@
               <li data-tag="theoretical-physics">Theoretical physics</li>
             </ul>
         </div>
-      </span> 
-      <div><input class="search publication-search dropdown dropdown-button" placeholder="Search" /></div>
-      <div class="badge" id="publication-count"></div>
-          
+      </span>
       </div>
     </div>
 </div>
 
 <section id="top-section" class="bg-light-peach math-paper">
-  <div class="collection-grid justify-between list">
+  <div class="collection-grid publication-grid justify-between list">
     $for(publications)$
       $partial("templates/_citation-entry.html")$
     $endfor$

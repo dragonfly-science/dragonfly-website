@@ -79,6 +79,10 @@
             }
         }
     }
+
+    &__title {
+        @apply mt-0 !important;
+    }
 }
 
 @screen sm {
@@ -153,5 +157,21 @@
 .body-content {
     &--article {
         
+    }
+
+    &--full-width {
+        > hr {
+            &:last-of-type {
+                @apply bg-slate-grey h-1 max-w-lg mt-20 mb-4;
+
+                + p {
+                    @apply font-normal;
+                }
+
+                ~ * {
+                    @apply max-w-full;
+                }
+            }
+        }
     }
 }

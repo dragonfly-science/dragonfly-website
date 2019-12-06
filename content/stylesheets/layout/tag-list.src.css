@@ -1,10 +1,11 @@
 /* list of tags as seen in publications. */
 .tag-list {
     &__tag {
-        @apply bg-cool-blue text-white text-lg font-medium no-underline px-6 pt-3 pb-4 leading-none inline-block;
+        @apply bg-cool-blue text-white text-lg font-medium no-underline; 
+        @apply px-6 pt-3 pb-4 mr-2 mb-2 leading-none inline-block cursor-pointer;
 
-        &--active {
-            @apply bg-beige text-cool-blue;
+        &:hover {
+            @apply bg-slate-grey;
         }
 
         &--article {
@@ -18,6 +19,10 @@
         &--report {
             @apply bg-faded-purple;
         }
+
+        &--active {
+            @apply bg-beige text-cool-blue pointer-events-none !important;
+        }
     }
 }
 
@@ -25,14 +30,14 @@
 .tag-list {
     &--publication-tile {
         .tag-list__tag {
-            @apply hidden;
+            @apply hidden cursor-default pointer-events-none;
         }
 
         .tag-list__tag {
             &--report,
             &--presentation,
             &--article {
-                @apply inline-block;
+                @apply mr-0 mb-0 inline-block;
             }
         }
     }
