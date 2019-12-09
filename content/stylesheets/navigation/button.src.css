@@ -8,8 +8,24 @@
     }
 }
 
+.button--small {
+    @apply px-8 pt-3 pb-4;
+}
+
 .button--rounded {
     @apply rounded;
+}
+
+.button--icon {
+    @apply inline-flex;
+
+    &__text {
+        @apply mr-4;
+    }
+
+    &__icon {
+        @apply flex-grow-0 ml-auto;
+    }
 }
 
 .button--cool-blue {

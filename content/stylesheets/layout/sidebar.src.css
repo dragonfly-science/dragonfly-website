@@ -1,12 +1,16 @@
 .sidebar {
-    @apply py-24 text-lg leading-normal w-full max-w-full;
+    @apply py-24 text-lg leading-normal w-full max-w-full text-center;
 
     a {
-        @apply text-slate-grey underline;
+        @apply underline;
 
         &:hover {
             @apply text-cool-blue no-underline;
         }
+    }
+
+    .button {
+        @apply no-underline;
     }
 
     &--graph {

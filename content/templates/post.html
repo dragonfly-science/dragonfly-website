@@ -1,17 +1,46 @@
-<div class="post-banner-image" style='background-image: url("$banner-image$")'>
-  $if(quote)$
-    <div class="post-banner-overlay"></div>
-    <div class="container">
-    <div class="wide">
-      <blockquote>
-        <p>$quote$</p>
-        <cite>$quote-attribution$</cite>
-      </blockquote>
+<header class="page-header page-header--article bg-light-peach text-white" $if(banner-image)$style='background-image: url("$banner-image$")'$endif$>
+  <div class="container mx-auto">
+    <div class="page-header__container">
+      $if(title)$
+      <h1 class="page-header__title">$title$</h1>
+      $endif$
+
+      $if(summary)$
+      <p class="page-header__content">
+        $summary$
+        <!-- <blockquote>
+          <p>$quote$</p>
+          <cite>$quote-attribution$</cite>
+        </blockquote> -->
+      </p>
+      $endif$
+
+      <a href="#top-section" class="link-icon">
+        <span class="icon dragonfly-arrow rotate-90"></span>
+      </a>
+
     </div>
+  </div>
+</header>
+
+
+<article id="top-section" class="article math-paper">
+  <div class="bg-light-peach px-6">
+    <div class="container mx-auto flex flex-col lg:flex-row">
+      <div class="body-content body-content--article">
+        $body$
+      </div>
+      <aside class="sidebar">
+        <a href="#" class="button button--cool-blue button--rounded button--icon button--small">
+          <span class="button--icon__text">View project</span>
+          <span class="button--icon__icon dragonfly-arrow -rotate-45"></span>
+        </a>
+      </aside>
     </div>
-  $endif$
-</div>
-<div class="container post-detail">
+  </div>
+</article>
+
+<div class="container post-detail hidden">
   $if(title)$
     <div class="heading wide">
       <h2>$title$</h2>
@@ -28,4 +57,10 @@
     $body$
   </div>
 </div>
-$partial("templates/_bubble-navigation.html")$
+
+<div class="related-content">
+  <header class="related-content__header container">
+    <h2 class="related-content__title">You might also like these projects</h2>
+  </header>
+  $partial("templates/_bubble-navigation.html")$
+</div>

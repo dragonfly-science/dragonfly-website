@@ -45,6 +45,7 @@ html {
 @import "layout/list-container.src.css";
 @import "layout/numbered-section.src.css";
 @import "layout/person-tile.src.css";
+@import "layout/related-content.src.css";
 @import "layout/sidebar.src.css";
 @import "layout/tag-list.src.css";
 
