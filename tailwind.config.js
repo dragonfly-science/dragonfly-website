@@ -77,6 +77,9 @@ module.exports = {
         '.-rotate-45': {
           transform: 'rotate(-45deg)',
         },
+        '.rotate-45': {
+          transform: 'rotate(45deg)',
+        },
         '.rotate-180': {
           transform: 'rotate(180deg)',
         },
