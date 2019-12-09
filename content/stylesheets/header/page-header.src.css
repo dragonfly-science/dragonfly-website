@@ -32,10 +32,10 @@
 
 @screen lg {
     .page-header {
-        @apply py-32;
+        @apply py-20;
 
         &__title {
-            @apply text-9/2xl;
+            @apply text-7xl;
         }
 
         &__content {
@@ -60,7 +60,8 @@
     }
 
     &--article {
-        @apply py-20 relative;
+        /* @apply py-20; */
+        @apply relative;
         background-position: center top;
 
         &:before {
@@ -99,7 +100,7 @@
 @screen lg {
     .page-header {
         &--article {
-            @apply py-32;
+            /* @apply py-32; */
 
             /* &__date {
                 @apply -mt-28;

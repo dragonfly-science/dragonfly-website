@@ -4,6 +4,7 @@ firstname: Edward
 lastname: Abraham
 phone: +64 21 989 454
 tag: edward
+honour: PhD
 title: Edward Abraham, PhD
 banner: abraham-edward/edward-abraham-letterbox.jpg
 sortorder: "1"

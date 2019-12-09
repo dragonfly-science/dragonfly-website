@@ -18,7 +18,7 @@
 
     &--large {
         .icon {
-            @apply text-2xl ml-0 mt-8 font-bold;
+            @apply text-2xl ml-0 font-bold;
         }
     }
 }

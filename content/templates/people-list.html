@@ -18,7 +18,11 @@
   <div class="collection-grid">
     $for(people)$
       <a href="$pageurl$" class="no-gutter-cell person-tile" style="background-image: url('$teaserImage$')">
-        <h2 class="no-gutter-cell__title mb-0">$title$</h2>
+        <h2 class="no-gutter-cell__title mb-0">
+            $firstname$<br>
+            $lastname$$if(honour)$,<br>
+            <span class="font-light">$honour$</span>$endif$
+        </h2>
     
         <span class="no-gutter-cell__link dragonfly-arrow"></span>
       </a>
