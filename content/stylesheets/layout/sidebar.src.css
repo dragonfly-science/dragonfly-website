@@ -17,7 +17,6 @@
         @apply relative;
         
         &:after {
-            /* @apply block absolute math-paper top-0 right-0 w-3/4 h-full; */
             @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
             content: '';
         }

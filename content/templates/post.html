@@ -8,14 +8,10 @@
       $if(summary)$
       <p class="page-header__content">
         $summary$
-        <!-- <blockquote>
-          <p>$quote$</p>
-          <cite>$quote-attribution$</cite>
-        </blockquote> -->
       </p>
       $endif$
 
-      <a href="#top-section" class="link-icon">
+      <a href="#top-section" class="link-icon link-icon--large">
         <span class="icon dragonfly-arrow rotate-90"></span>
       </a>
 
@@ -31,6 +27,10 @@
         $body$
       </div>
       <aside class="sidebar">
+        $if(logo)$
+        <img src="$logo$" class="mx-auto mb-8">
+        $endif$
+
         <a href="#" class="button button--cool-blue button--rounded button--icon button--small">
           <span class="button--icon__text">View project</span>
           <span class="button--icon__icon dragonfly-arrow -rotate-45"></span>
@@ -39,24 +39,6 @@
     </div>
   </div>
 </article>
-
-<div class="container post-detail hidden">
-  $if(title)$
-    <div class="heading wide">
-      <h2>$title$</h2>
-    </div>
-  $endif$
-  <div class="sidebar">
-    $if(logo)$
-      <div class="post-info">
-        <img src="$logo$">
-      </div>
-    $endif$
-  </div>
-  <div class="content post-body">
-    $body$
-  </div>
-</div>
 
 <div class="related-content">
   <header class="related-content__header container">

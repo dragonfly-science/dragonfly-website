@@ -77,14 +77,6 @@
         .container {
             @apply relative z-20;
         }
-
-        .link-icon {
-            .icon {
-                @apply text-2xl ml-0 mt-8;
-            }
-        }
-
-        
     }
 
     &--no-overlay {
@@ -117,11 +109,11 @@
                 @apply mb-32 text-7xl;
             }
 
-            .link-icon {
+            /* .link-icon {
                 .icon {
                     @apply text-5xl mt-0;
                 }
-            }
+            } */
         }
 
         &--news {

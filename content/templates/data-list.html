@@ -1,29 +1,50 @@
-<div class="container">
-  <div class="wide">
-        <h2>
-          We encourage the release of data.
-        </h2>
-        <p class="lead">
-          Giving access to data helps make information widely available, building consensus. Where appropriate, we encourage the release of open data. 
-        </p>
-    <div class="post-list">
-      $for(data)$
-        <div class="post-wrapper">
-          <div class="post">
-              <div class="post-image">
-                <a href="$link$"><div class="post-porthole" style="background-image: url('$teaserImage$')">
-                </div></a>
-              </div>
-              <div class="post-teaser">
-                <h4><a href="$link$" class="highlight">$title$</a></h4>
-                <p class="subheading">$if(published)$ $published$ $endif$ $if(author)$ . $author$ $endif$ </p>
-                $if(teaser)$ $teaser$ $endif$
-                <span><a href="$link$" class="read-more">Explore the data</a></span>
-                $partial("templates/_top.html")$
-              </div>
-          </div>
-        </div>
-      $endfor$
+<header class="page-header bg-light-peach math-paper">
+  <div class="container mx-auto">
+    <div class="page-header__container">
+      <h1 class="page-header__title">We encourage the release of data.</h1>
+
+      <p class="page-header__content">
+        Giving access to data helps make information widely available, building consensus. Where appropriate, we encourage the
+        release of open data.
+      </p>
+
+      <a href="#top-section" class="link-icon link-icon--large">
+        <span class="icon dragonfly-arrow rotate-90"></span>
+      </a>
+
     </div>
   </div>
-</div>
+</header>
+
+<a id="top-section"></a>
+$for(data)$
+<section class="numbered-section numbered-section--no-numbers bg-light-peach">
+  <div class="numbered-section__container container">
+    <div class="numbered-section__content">
+      <h2 class="numbered-section__heading"><span>$title$</span></h2>
+      <div class="numbered-section__text">
+        $if(teaser)$ $teaser$ $endif$
+      </div>
+
+      $if(link)$
+      <a href="$link$" class="link-icon numbered-section__link" target="_blank"><span class="text">Explore the data</span> <span
+          class="icon dragonfly-arrow -rotate-45"></span></a>
+      $endif$
+    </div>
+    <div class="numbered-section__content">
+      <img src="$teaserImage$" alt="Bayesian Analysis image">
+    </div>
+  </div>
+</section>
+$endfor$
+
+<section class="call-to-action call-to-action--no-math-paper">
+  <div class="container mx-auto flex flex-col lg:flex-row">
+    <p class="call-to-action__text text-center mb-8 mx-auto max-w-xl lg:max-w-3xl lg:text-left lg:mr-16 lg:mb-0">
+      Do you have some data you'd like us to explore?
+    </p>
+    <div class="flex justify-center flex-grow flex-shrink-0 my-auto w-full lg:w-auto lg:justify-end">
+      <a href="#contact" class="call-to-action__button button button--rounded button--cool-blue">Get in touch</a>
+    </div>
+  </div>
+</section>

@@ -8,6 +8,10 @@
     &__button {
         @apply text-2xl font-normal;
     }
+
+    &--no-math-paper {
+        background-image: none;
+    }
 }
 
 @screen lg {

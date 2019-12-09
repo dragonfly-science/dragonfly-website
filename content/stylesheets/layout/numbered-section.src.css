@@ -27,6 +27,14 @@
         }
     }
 
+    p {
+        @apply mb-4;
+
+        &:last-of-type {
+            @apply mb-0;
+        }
+    }
+
     &__content {
         @apply relative w-full flex justify-center flex-col;
 
@@ -69,74 +77,6 @@
 
     &__container {
         @apply block mx-auto;
-    }
-
-    &--no-image {
-        &:nth-of-type(even) {
-            @apply overflow-hidden;
-
-            .numbered-section__container {
-                @apply relative;
-
-                &:before {
-                    @apply hidden;
-                    content: '';
-                }
-            }
-
-            .numbered-section__content {
-                @apply ml-auto;
-
-                &:last-child {
-                    &:before {
-                        @apply hidden;
-                    }
-                }
-            }
-        }
-
-        &:nth-of-type(odd) {
-            @apply overflow-hidden;
-
-            .numbered-section__container {
-                @apply relative;
-
-                &:after {
-                    @apply hidden;
-                    content: '';
-                }
-            }
-
-            .numbered-section__content {
-                &:last-child {
-                    &:after {
-                        @apply hidden;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@screen sm {
-    .numbered-section {
-        &--no-image {
-            &:nth-of-type(even) {
-                .numbered-section__container {
-                    &:before {
-                        @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
-                    }
-                }
-            }
-
-            &:nth-of-type(odd) {
-                .numbered-section__container {
-                    &:after {
-                        @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -195,6 +135,87 @@
 
             span {
                 @apply text-4/2xl;
+            }
+        }
+    }
+}
+
+/* Variations. */
+.numbered-section {
+    &--no-image {
+        &:nth-of-type(even) {
+            @apply overflow-hidden;
+
+            .numbered-section__container {
+                @apply relative;
+
+                &:before {
+                    @apply hidden;
+                    content: '';
+                }
+            }
+
+            .numbered-section__content {
+                @apply ml-auto;
+
+                &:last-child {
+                    &:before {
+                        @apply hidden;
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(odd) {
+            @apply overflow-hidden;
+
+            .numbered-section__container {
+                @apply relative;
+
+                &:after {
+                    @apply hidden;
+                    content: '';
+                }
+            }
+
+            .numbered-section__content {
+                &:last-child {
+                    &:after {
+                        @apply hidden;
+                    }
+                }
+            }
+        }
+    }
+
+    &--no-numbers {
+        .numbered-section__heading {
+            &:before,
+            &:after {
+                @apply mr-0;
+                content: '';
+            }
+        }
+    }
+}
+
+@screen sm {
+    .numbered-section {
+        &--no-image {
+            &:nth-of-type(even) {
+                .numbered-section__container {
+                    &:before {
+                        @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
+                    }
+                }
+            }
+
+            &:nth-of-type(odd) {
+                .numbered-section__container {
+                    &:after {
+                        @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
+                    }
+                }
             }
         }
     }

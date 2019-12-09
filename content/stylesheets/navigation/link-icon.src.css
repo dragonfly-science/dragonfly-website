@@ -15,4 +15,20 @@
             }
         }
     }
+
+    &--large {
+        .icon {
+            @apply text-2xl ml-0 mt-8 font-bold;
+        }
+    }
+}
+
+@screen lg {
+    .link-icon {
+        &--large {
+            .icon {
+                @apply text-5xl;
+            }
+        }
+    }
 }

@@ -6,6 +6,10 @@
         @apply mb-6;
     }
 
+    img {
+        @apply block mx-auto my-6;
+    }
+
     > p {
         &:first-of-type {
             @apply font-medium text-3xl leading-tight mb-6;
