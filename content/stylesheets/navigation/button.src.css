@@ -28,22 +28,24 @@
     }
 }
 
-.button--cool-blue {
-    background-color: var(--cool-blue);
-    color: var(--white);
+@variants hover {
+    .button--cool-blue {
+        background-color: var(--cool-blue);
+        color: var(--white);
+    }
 
-    &:hover {
+    .button--black {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    .button--slate-grey {
+        background-color: var(--slate-grey);
+        color: var(--white);
+    }
+
+    .button--white {
         background-color: var(--white);
         color: var(--cool-blue);
-    }
-}
-
-.button--black {
-    background-color: var(--black);
-    color: var(--white);
-
-    &:hover {
-        background-color: var(--white);
-        color: var(--black);
     }
 }

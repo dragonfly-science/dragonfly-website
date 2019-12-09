@@ -1,5 +1,5 @@
 .sidebar {
-    @apply py-24 text-lg leading-normal w-full max-w-full text-center;
+    @apply py-24 text-lg leading-normal w-full max-w-full;
 
     a {
         @apply underline;

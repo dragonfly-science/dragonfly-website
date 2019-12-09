@@ -11,7 +11,38 @@
         @apply w-full text-center pb-2;
 
         a {
-            @apply text-slate-grey text-lg font-normal leading-none;
+            @apply text-slate-grey text-lg font-normal leading-none static underline;
+
+            &:after {
+                @apply w-full hidden bg-cool-blue;
+                height: 0;
+                content: '';
+            }
+
+            &:hover {
+                @apply no-underline;
+                &:after {
+                    height: 0.25rem;
+                }
+            }
+        }
+    }
+
+    &[data-section="work"] .main-nav__link[data-section="work"],
+    &[data-section="people"] .main-nav__link[data-section="people"],
+    &[data-section="news"] .main-nav__link[data-section="news"],
+    &[data-section="data"] .main-nav__link[data-section="data"],
+    &[data-section="publications"] .main-nav__link[data-section="publications"] {
+        a {
+            @apply no-underline text-light-grey;
+
+            &:hover {
+                @apply text-slate-grey;
+            }
+
+            &:after {
+                height: 0.25rem;
+            }
         }
     }
 }
@@ -28,10 +59,14 @@
         @apply opacity-100 h-auto flex-row mt-0 left-auto py-0 w-auto top-auto relative justify-start items-center;
 
         &__link {
-            @apply text-left w-auto mr-24 pb-0;
+            @apply text-left w-auto mr-24 pb-0 h-full flex items-center justify-center relative;
 
             a {
-                @apply text-sm;
+                @apply text-sm no-underline;
+
+                &:after {
+                    @apply absolute top-0 w-full block bg-cool-blue;
+                }
             }
         }
     }

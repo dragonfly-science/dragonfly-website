@@ -1,16 +1,65 @@
 .call-to-action {
     @apply w-full bg-light-peach py-16 px-6 math-paper;
 
+    &__container {
+        @apply mx-auto text-center;
+    }
+
     &__text {
         @apply text-3xl leading-tight w-full font-bold;
     }
 
     &__button {
-        @apply text-2xl font-normal;
+        @apply text-2xl font-normal rounded;
+
+        &--cool-blue {
+            @apply button--cool-blue;
+
+            &:hover {
+                @apply button--white;
+            }
+        }
     }
 
     &--no-math-paper {
         background-image: none;
+    }
+
+    &--single-column {
+        .call-to-action {
+            &__text {
+                @apply mb-10;
+            }
+        }
+    }
+
+    &--dual-column {
+        .call-to-action {
+            &__container {
+                @apply flex flex-col;
+            }
+
+            &__text {
+                @apply text-center mb-8 mx-auto max-w-xl;
+            }
+
+            &__button-container {
+                @apply flex justify-center flex-grow flex-shrink-0 my-auto w-full;
+            }
+        }
+    }
+
+    &--cool-blue {
+        @apply bg-cool-blue text-white;
+        background-image: none;
+
+        .call-to-action__button {
+            @apply button--white;
+            
+            &:hover {
+                @apply button--slate-grey;
+            }
+        }
     }
 }
 
@@ -20,6 +69,28 @@
 
         &__text {
             @apply text-5xl;
+        }
+
+        &--single-column {
+            .call-to-action__text {
+                @apply mb-16;
+            }
+        }
+
+        &--dual-column {
+            .call-to-action {
+                &__container {
+                    @apply flex-row;
+                }
+
+                &__text {
+                    @apply max-w-3xl text-left mr-16 mb-0;
+                }
+
+                &__button-container {
+                    @apply w-auto justify-end;
+                }
+            }
         }
     }
 }

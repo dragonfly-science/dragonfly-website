@@ -1,5 +1,5 @@
 <header class="fixed top-0 bg-white w-full px-6 z-50">
-  <div class="container flex-col h-12 lg:flex-row mx-auto flex justify-center lg:h-24" data-section="$section$" id="js-responsive-navigation-menu">
+  <div class="container flex-col h-12 lg:flex-row mx-auto flex justify-center lg:h-24" id="js-responsive-navigation-menu">
     <div class="logo items-center flex">
         <a href="/" class="my-3 lg:my-auto mr-2">
           <img src="/images/dragonfly-logo-rgb.svg" class="max-w-full h-6 lg:max-w-12rem w-auto lg:w-full lg:h-24 lg:h-auto" />
@@ -7,22 +7,22 @@
         <span class="mobile-menu dragonfly-hamburger text-2xl cursor-pointer text-cool-blue my-3 ml-auto lg:hidden"></span>
     </div>
 
-    <nav class="main-nav lg:closed">
+    <nav class="main-nav lg:closed" data-section="$section$">
       <ul class="flex flex-col lg:flex-row h-full lg:mx-auto w-full lg:w-auto items-center">
         <li class="main-nav__link" data-section="work">
-            <a href="/work/" class="hover:text-cool-blue hover:underline">What we do</a>
+            <a href="/work/">What we do</a>
         </li>
         <li class="main-nav__link" data-section="people">
-            <a href="/people/" class="hover:text-cool-blue hover:underline">Who we are</a>
+            <a href="/people/">Who we are</a>
         </li>
         <li class="main-nav__link" data-section="news">
-            <a href="/news/" class="hover:text-cool-blue hover:underline">News</a>
+            <a href="/news/">News</a>
         </li>
         <li class="main-nav__link" data-section="data">
-            <a href="/data/" class="hover:text-cool-blue hover:underline">Data</a>
+            <a href="/data/">Data</a>
         </li>
         <li class="main-nav__link mr-0" data-section="publications">
-            <a href="/publications/" class="hover:text-cool-blue hover:underline">Publications</a>
+            <a href="/publications/">Publications</a>
         </li>
         <li class="main-nav__link lg:hidden">
           <span class="font-medium text-lg block pb-1">Get in touch</span>
