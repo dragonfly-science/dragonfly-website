@@ -78,6 +78,12 @@
         .container {
             @apply relative z-20;
         }
+
+        .page-header__title {
+            + .link-icon {
+                @apply mt-10;
+            }
+        }
     }
 
     &--no-overlay {
@@ -97,6 +103,24 @@
     }
 }
 
+@screen md {
+    .page-header {
+        &--article {
+            /* @apply py-32; */
+
+            /* &__date {
+                @apply -mt-28;
+            } */
+
+            .page-header__title {
+                + .link-icon {
+                    @apply mt-20;
+                }
+            }
+        }
+    }
+}
+
 @screen lg {
     .page-header {
         &--article {
@@ -107,7 +131,7 @@
             } */
 
             .page-header__title {
-                @apply mb-32 text-7xl;
+                @apply text-7xl;
             }
 
             /* .link-icon {

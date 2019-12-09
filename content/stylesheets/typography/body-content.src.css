@@ -12,7 +12,7 @@
 
     > p {
         &:first-of-type {
-            @apply font-medium text-3xl leading-tight mb-6;
+            @apply font-medium text-xl leading-tight mb-6;
         }
     }
 
@@ -134,6 +134,12 @@
 
 @screen md {
     .body-content {
+        > p {
+            &:first-of-type {
+                @apply text-3xl;
+            }
+        }
+
         blockquote {
             p {
                 @apply text-2xl;
