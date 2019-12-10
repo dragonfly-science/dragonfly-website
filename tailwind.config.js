@@ -64,8 +64,33 @@ module.exports = {
       },
       screens: {
         'wd': '104rem'
-      }
-    }
+      },
+      transitionProperty: {
+        'none': 'none',
+        'all': 'all',
+        'color': 'color',
+        'bg': 'background-color',
+        'border': 'border-color',
+        'colors': ['color', 'background-color', 'border-color'],
+        'opacity': 'opacity',
+        'transform': 'transform',
+        'margin': 'margin'
+      },
+      transitionTimingFunction: {
+        'default': 'ease',
+        'linear': 'linear',
+        'ease': 'ease',
+        'ease-in': 'ease-in',
+        'ease-out': 'ease-out',
+        'ease-in-out': 'ease-in-out',
+        'ease-in-quart': 'easeInQuart',
+        'ease-out-quart': 'easeOutQuart',
+        'ease-out-expo': 'easeOutExpo',
+        'ease-in-back': 'easeInBack',
+        'ease-out-back': 'easeOutBack',
+        'ease-in-out-back': 'easeInOutBack',
+      },
+    },
   },
   variants: {},
   plugins: [
@@ -108,5 +133,6 @@ module.exports = {
         })
       })
     },
+    require('tailwindcss-transitions')(),
   ]
 }

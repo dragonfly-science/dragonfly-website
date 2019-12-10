@@ -3,8 +3,8 @@
                       linear-gradient(90deg, rgba(67, 161, 201, 0.9) 1px, transparent 1px),
                       linear-gradient(rgba(67, 161, 201, 0.4) 1px, transparent 1px),
                       linear-gradient(90deg, rgba(67, 161, 201, 0.4) 1px, transparent 1px);
-    background-size: 54px 54px, 54px 54px, 54px 54px, 54px 54px;
-    background-position: -19px -19px, -19px -19px, -46px -46px, -46px -46px;
+    background-size: 56px 56px, 56px 56px, 56px 56px, 56px 56px;
+    background-position: -17px -17px, -17px -17px, -45px -45px, -45px -45px;
     background-attachment: fixed;
 }
 

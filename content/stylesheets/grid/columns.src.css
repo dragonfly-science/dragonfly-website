@@ -1,6 +1,15 @@
 /* No gutter column - for use on homepage, people page etc. */
 .no-gutter-cell {
-    @apply w-full bg-cool-blue bg-cover px-6 pt-8 pb-12 text-white leading-none flex flex-col min-h-20;
+    @apply w-full overflow-hidden bg-cool-blue px-6 pt-8 pb-12 text-white leading-none flex flex-col min-h-20;
+    @apply transition-all transition-500 transition-ease-out-quart;
+
+    transform: translate3d(0, 0, 0);
+
+    &:hover {
+        .no-gutter-cell__image {
+            transform: translate3d(-50%, -50%, 0) scale(1.1);
+        }
+    }
 
     &__tag {
         @apply uppercase text-sm block mb-1;
@@ -25,7 +34,18 @@
 
     &__link {
         @apply mt-auto ml-auto text-3xl; 
+        @apply transition-all transition-500 transition-ease-out-quart;
         @apply block !important;
+    }
+
+    &__image {
+        @apply absolute z-0 !important;
+        @apply w-full h-full bg-cover;
+        @apply transition-all transition-ease-out-quart;
+
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
     }
 
     &__title,
@@ -121,18 +141,36 @@
         @apply bg-center relative;
 
         &:before {
+            @apply opacity-100;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100%);
+        }
+
+        &:after {
+            @apply opacity-0;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+        }
+
+        &:before,
+        &:after {
             @apply absolute bottom-0 left-0 w-full h-full z-10 block;
+            @apply transition-all transition-500 transition-ease-out-quart;
+            transform: translate3d(0, 0, 0);
             content: '';
             background-blend-mode: multiply;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100%);
         }
 
         &:hover {
-            background-size: 200%;
-
             &:before {
-                background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+               @apply opacity-0;
             }
+            &:after {
+               @apply opacity-100;
+            }
+
+            /* &:before,
+            &:after {
+                @apply transition-ease-out-quart;
+            } */
         }
 
         * {

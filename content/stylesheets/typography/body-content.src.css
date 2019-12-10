@@ -6,6 +6,10 @@
         @apply mb-6;
     }
 
+    a {
+        @apply transition-all transition-ease-out-quart;
+    }
+
     img {
         @apply block mx-auto my-6;
     }

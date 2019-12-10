@@ -3,6 +3,7 @@
     &__tag {
         @apply bg-cool-blue text-white text-lg font-medium no-underline; 
         @apply px-6 pt-3 pb-4 mr-2 mb-2 leading-none inline-block cursor-pointer;
+        @apply transition-bg transition-ease-out-quart;
 
         &:hover {
             @apply bg-slate-grey;
