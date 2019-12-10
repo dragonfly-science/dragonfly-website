@@ -29,7 +29,7 @@
     tagFilter(getParameterByName("tag"));
 
     var options = {
-      valueNames: ['citation', 'tagslugs']
+      valueNames: ['publication-tile__citation', 'tagslugs']
     };
     var publicationList = new List('publication-list', options);
 
@@ -92,6 +92,20 @@
       wrapper.toggleClass('open');
 
       if (wrapper.is('.open')) {
+        $(this).addClass('dragonfly-close').removeClass('dragonfly-hamburger');
+      } else {
+        $(this).addClass('dragonfly-hamburger').removeClass('dragonfly-close');
+      }
+    });
+
+    $('.filtering__hamburger').on('click', function(e) {
+      e.preventDefault();
+
+      var filters = $(this).parents('.filtering');
+
+      filters.toggleClass('open');
+
+      if (filters.is('.open')) {
         $(this).addClass('dragonfly-close').removeClass('dragonfly-hamburger');
       } else {
         $(this).addClass('dragonfly-hamburger').removeClass('dragonfly-close');

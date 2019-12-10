@@ -1,4 +1,4 @@
-TAG := lts-12.26-v1
+TAG := lts-12.26-v2
 IMAGE := dragonflyscience/dragonfly-website:$(TAG)
 RUN ?= docker run --rm -it -p 8000:8000 -u $$(id -u):$$(id -g) -w /work -v $$(pwd):/work $(IMAGE)
 

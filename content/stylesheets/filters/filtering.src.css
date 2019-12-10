@@ -1,5 +1,11 @@
 /* Filtering as seen on publications etc. */
 .filtering {
+    &.open {
+        .filtering__tools__links {
+            max-height: 100vh;
+        }
+    }
+
     &__tools {
         @apply my-8 flex-grow flex flex-col;
 
@@ -8,7 +14,10 @@
         }
 
         &__links {
-            @apply flex flex-col;
+            @apply flex flex-col overflow-hidden;
+            @apply transition-max-height transition-ease-out-quart transition-500;
+
+            max-height: 0;
         }
     }
 
@@ -47,6 +56,11 @@
 
     &__buttons {
         @apply flex-grow-0 flex-shrink-0 ml-4 flex justify-between flex-col;
+
+        button {
+            @apply outline-none !important;
+            @apply transition-max-height transition-ease-out-quart;
+        }
     }
 }
 

@@ -68,13 +68,14 @@ module.exports = {
       transitionProperty: {
         'none': 'none',
         'all': 'all',
-        'color': 'color',
         'bg': 'background-color',
         'border': 'border-color',
+        'color': 'color',
         'colors': ['color', 'background-color', 'border-color'],
+        'margin': 'margin',
+        'max-height': 'max-height',
         'opacity': 'opacity',
         'transform': 'transform',
-        'margin': 'margin'
       },
       transitionTimingFunction: {
         'default': 'ease',
