@@ -4,6 +4,7 @@ email: yvan@dragonfly.co.nz
 firstname: Yvan
 lastname: Richard
 title: Yvan Richard, PhD
+honour: PhD
 mobile: ''
 tag: yvan
 banner: richard-yvan/yvan-richard-letterbox.jpg

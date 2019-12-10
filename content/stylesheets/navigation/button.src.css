@@ -1,5 +1,5 @@
 .button {
-    @apply px-8 pt-3 pb-4 text-center font-medium no-underline leading-none;
+    @apply px-8 pt-3 pb-4 text-center font-medium no-underline leading-none transition-bg transition-100;
 }
 
 @screen lg {
@@ -8,26 +8,44 @@
     }
 }
 
+.button--small {
+    @apply px-8 pt-3 pb-4;
+}
+
 .button--rounded {
     @apply rounded;
 }
 
-.button--cool-blue {
-    background-color: var(--cool-blue);
-    color: var(--white);
+.button--icon {
+    @apply inline-flex;
 
-    &:hover {
-        background-color: var(--white);
-        color: var(--cool-blue);
+    &__text {
+        @apply mr-4;
+    }
+
+    &__icon {
+        @apply flex-grow-0 ml-auto;
     }
 }
 
-.button--black {
-    background-color: var(--black);
-    color: var(--white);
+@variants hover {
+    .button--cool-blue {
+        background-color: var(--cool-blue);
+        color: var(--white);
+    }
 
-    &:hover {
+    .button--black {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    .button--slate-grey {
+        background-color: var(--slate-grey);
+        color: var(--white);
+    }
+
+    .button--white {
         background-color: var(--white);
-        color: var(--black);
+        color: var(--cool-blue);
     }
 }

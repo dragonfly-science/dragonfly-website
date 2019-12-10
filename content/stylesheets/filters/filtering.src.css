@@ -1,0 +1,116 @@
+/* Filtering as seen on publications etc. */
+.filtering {
+    &__tools {
+        @apply my-8 flex-grow flex flex-col;
+
+        &__header {
+            @apply flex flex-row;
+        }
+
+        &__links {
+            @apply flex flex-col;
+        }
+    }
+
+    &__title {
+        @apply text-cool-blue text-2xl flex-grow mb-4;
+    }
+
+    &__search {
+        @apply bg-white my-auto py-1 pl-3 pr-3 flex justify-between flex-grow-0 max-w-xs;
+    
+        &__input {
+            @apply text-lg pr-3 flex-grow leading-none outline-none;
+            max-width: 10rem;
+        }
+
+        &__button {
+            @apply text-cool-blue text-2xl outline-none;
+        }
+    }
+
+    &__tags {
+        @apply mt-8;
+
+        &:last-of-type {
+            @apply mb-8;
+        }
+
+        &__title {
+            @apply  mb-3 inline-block font-medium;
+        }
+    }
+
+    &__count {
+        @apply w-full text-lg mt-2 font-medium text-greyish-brown;
+    }
+
+    &__buttons {
+        @apply flex-grow-0 flex-shrink-0 ml-4 flex justify-between flex-col;
+    }
+}
+
+@screen md {
+    .filtering {
+        &__tools {
+            &__header {
+                @apply flex-row;
+            }
+
+            &__links {
+                @apply flex-row;
+            }
+        }
+
+        &__search {
+            @apply max-w-1/2;
+            /* @apply bg-white my-auto py-1 pl-3 pr-3 flex justify-center flex-grow-0; */
+        
+            &__input {
+                @apply text-xl max-w-full;
+            }
+
+            /* &__button {
+                @apply text-cool-blue text-2xl outline-none;
+            } */
+        }
+
+        /* &__title {
+            @apply my-auto;
+        } */
+
+        &__buttons {
+            button {
+            }
+        }
+
+        &__count {
+            @apply text-xl;
+        }
+    }
+}
+
+@screen lg {
+    .filtering {
+        &__tools__links {
+            @apply mr-32;
+        }
+
+        &__title {
+            @apply text-4xl mb-0;
+        }
+
+        &__tags {
+            @apply my-16;
+        }
+
+        &__buttons {
+            /* @apply ml-20 relative my-0;
+
+            button {
+                @apply absolute right-0 -mr-12;
+                margin-top: -2.6rem;
+            } */
+        }
+    }
+}

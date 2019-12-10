@@ -12,13 +12,16 @@ develop: website
 
 
 CONTENT := $(shell find content)
-build: website content/stylesheets/dragonfly.css
+build: website npm content/stylesheets/dragonfly.css
 	$(RUN) bash -c 'cd content && ../website build'
 
 
 CSS := $(shell find content/stylesheets -name *.css -not -name dragonfly.css)
 content/stylesheets/dragonfly.css: content/stylesheets/main.src.css $(CSS)
 	$(RUN) bash -c 'npm run css && npm run fonts'
+
+npm:
+	npm install
 
 docker:
 	docker build --tag $(IMAGE) .

@@ -1,4 +1,4 @@
-<h2 class="citation-year citation-year--$year$">$year$</h2>
+<!-- <h2 class="citation-year citation-year--$year$">$year$</h2> -->
 
 <div class="publication-tile grid-cell year-$year$ tag $if(tags)$ $for(tags)$ tag-$tag$ $endfor$ $endif$">
   <header class="publication-tile__header">
@@ -16,21 +16,23 @@
         <h3>$title$</h3>
       </a>
     $endif$
+
     <div class="publication-tile__citation">
       $citation$
     </div>
+
     <div class="tagslugs hidden">    
         $if(tags)$ $for(tags)$ $tag$ $endfor$ $endif$    
     </div>
 
-    <footer class="flex publication-tile__footer">
+    <footer class="flex justify-between items-center publication-tile__footer">
       $if(pdf)$
-        <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="highlight">
-          <i class="fa fa-file-pdf-o"></i>  Download PDF
+        <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="publication-tile__pdf text-light-grey hover:text-slate-grey">
+          <span class="dragonfly-pdf text-5xl"></span>
         </a>
       $endif$
       $if(hasBody)$
-        <a href="/publications/$id$.html" class="read-more">Read more</a>
+        <a href="/publications/$id$.html" class="publication-tile__read-more">Read more</a>
       $endif$
   </footer>
 </div>

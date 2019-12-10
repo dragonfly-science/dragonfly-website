@@ -13,7 +13,9 @@ module.exports = {
         'faded-red': '#CF4547',
         'grape': '#5B3456',
         'greeny-blue': '#50AD85',
+        'greyish-brown': '#4a4a4a',
         'light-peach': '#E5DECC',
+        'light-grey': '#D1D3D4',
         'pale-grey': '#F1F1F2',
         'pale-teal': '#9DC4A9',
         'slate-grey': '#565659',
@@ -51,6 +53,7 @@ module.exports = {
         '1/2': '50%',
         '1/3': '33%',
         '1/4': '25%',
+        '7xl': '102.5rem',
         '8xl': '120rem',
       },
       minHeight: {
@@ -61,8 +64,33 @@ module.exports = {
       },
       screens: {
         'wd': '104rem'
-      }
-    }
+      },
+      transitionProperty: {
+        'none': 'none',
+        'all': 'all',
+        'color': 'color',
+        'bg': 'background-color',
+        'border': 'border-color',
+        'colors': ['color', 'background-color', 'border-color'],
+        'opacity': 'opacity',
+        'transform': 'transform',
+        'margin': 'margin'
+      },
+      transitionTimingFunction: {
+        'default': 'ease',
+        'linear': 'linear',
+        'ease': 'ease',
+        'ease-in': 'ease-in',
+        'ease-out': 'ease-out',
+        'ease-in-out': 'ease-in-out',
+        'ease-in-quart': 'easeInQuart',
+        'ease-out-quart': 'easeOutQuart',
+        'ease-out-expo': 'easeOutExpo',
+        'ease-in-back': 'easeInBack',
+        'ease-out-back': 'easeOutBack',
+        'ease-in-out-back': 'easeInOutBack',
+      },
+    },
   },
   variants: {},
   plugins: [
@@ -70,6 +98,12 @@ module.exports = {
       const newUtilities = {
         '.rotate-90': {
           transform: 'rotate(90deg)',
+        },
+        '.-rotate-45': {
+          transform: 'rotate(-45deg)',
+        },
+        '.rotate-45': {
+          transform: 'rotate(45deg)',
         },
         '.rotate-180': {
           transform: 'rotate(180deg)',
@@ -99,5 +133,6 @@ module.exports = {
         })
       })
     },
+    require('tailwindcss-transitions')(),
   ]
 }

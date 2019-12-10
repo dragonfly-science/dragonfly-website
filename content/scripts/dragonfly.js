@@ -96,12 +96,20 @@
       } else {
         $(this).addClass('dragonfly-hamburger').removeClass('dragonfly-close');
       }
-      // if(wrapper.dataset.mode  === 'open') {
-      //   wrapper.dataset.mode = 'closed';
-      // } else {
-      //   wrapper.dataset.mode = 'open';
-      // }
     });
+
+    $('a[href="#top-section"]').click(function(e) {
+      e.preventDefault();
+
+      var headerH = $('.main-header').outerHeight();
+      var sectionOffset = $('#top-section').offset().top;
+
+      $('html, body').animate({
+        'scrollTop': sectionOffset - headerH
+      })
+    })
+
+
 
     // $(wrapper).on('click', function(e) {
     //   if(wrapper.is('.open') && menuToggle.is(':visible')) {

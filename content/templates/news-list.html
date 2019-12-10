@@ -22,17 +22,18 @@
     </div>
 
     $for(news)$
-      <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay" style="background-image: url('$teaserImage$')">
+      <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay">
         <span class="no-gutter-cell__tag">$published$</span>
         <strong class="no-gutter-cell__title">$title$</strong>
         <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link"><span class="icon dragonfly-arrow ml-0"></span></span>
+        <div class="no-gutter-cell__image" style="background-image: url('$teaserImage$')"></div>
       </a>
     $endfor$
   </div>
 
-  <section class="call-to-action">
-    <div class="container mx-auto text-center">
-      <a href="#" class="call-to-action__button button button--rounded button--cool-blue">Load more</a>
+  <section class="call-to-action call-to-action--single-column">
+    <div class="call-to-action__container container">
+      <a href="#" class="button call-to-action__button call-to-action__button--cool-blue">Load more</a>
     </div>
   </section>
 </section>

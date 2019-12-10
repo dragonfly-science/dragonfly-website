@@ -3,15 +3,74 @@
     @apply text-lg font-medium inline-block;
 
     .icon {
-        @apply ml-6 text-lg inline-block;
+        @apply ml-4 text-lg inline-block;
+        @apply transition-margin transition-ease-in-back transition-500;
+        transform: translate3d(0, 0, 0);
     }
 
+    &:hover {
+        .icon {
+            @apply ml-6 transition-ease-out-back;
+        }
+    }
+}
+
+/* Variants. */
+.link-icon {
     &--bold {
         @apply font-medium;
 
         .icon {
             &:before {
                 @apply font-bold;
+            }
+        }
+    }
+
+    &--large {
+        .icon {
+            @apply text-2xl ml-0 font-bold;
+        }
+
+        &.link-icon--arrow-down {
+            &:hover {
+                .icon {
+                    @apply ml-0;
+                }
+            }
+        }
+    }
+
+    &--arrow-down {
+        .icon {
+            @apply rotate-90;
+        }
+
+        &:hover {
+            .icon {
+                @apply ml-4;
+            }
+        }
+    }
+
+    &--arrow-out {
+        .icon {
+            @apply -rotate-45;
+        }
+
+        &:hover {
+            .icon {
+                @apply ml-4;
+            }
+        }
+    }
+}
+
+@screen lg {
+    .link-icon {
+        &--large {
+            .icon {
+                @apply text-5xl;
             }
         }
     }

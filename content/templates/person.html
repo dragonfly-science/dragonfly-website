@@ -1,10 +1,14 @@
 <header class="page-header page-header--article text-white $if(firstname)$ person-$firstname$ $endif$" style="background-image: url($banner$);" id="hero-$tag$">
   <div class="container mx-auto">
     <div class="page-header__container flex flex-col">
-      <h1 class="page-header__title">$title$</h1>
+      <h1 class="page-header__title">
+        $firstname$<br>
+        $lastname$$if(honour)$,<br>
+        <span class="font-light">$honour$</span>$endif$
+      </h1>
 
-      <a href="#contact" class="link-icon link-icon--bold">
-        <span class="icon dragonfly-arrow rotate-90"></span>
+      <a href="#top-section" class="link-icon link-icon--arrow-down link-icon--large">
+        <span class="icon dragonfly-arrow"></span>
       </a>
 
     </div>
@@ -29,10 +33,8 @@
   </div>
 </article>
 
-<section class="call-to-action">
-  <div class="container mx-auto flex">
-    <div class="flex justify-center flex-grow flex-shrink-0 my-auto w-full">
-      <a href="/people/" class="call-to-action__button button button--rounded button--cool-blue">Back to team</a>
-    </div>
+<section class="call-to-action call-to-action--single-column">
+  <div class="call-to-action__container container">
+    <a href="/people/" class="button call-to-action__button call-to-action__button--cool-blue">Back to team</a>
   </div>
 </section>

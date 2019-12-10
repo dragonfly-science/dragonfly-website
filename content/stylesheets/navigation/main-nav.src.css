@@ -1,6 +1,7 @@
 .main-nav {
-    @apply flex flex-col top-0 flex-grow justify-center absolute w-full left-0 bg-white h-0 overflow-hidden mt-12 opacity-0;
-    transition: all 0.25s ease;
+    /* @apply overflow-hidden; */
+    @apply flex flex-col top-0 flex-grow justify-center absolute w-full; 
+    @apply left-0 bg-white h-0 mt-12 opacity-0 transition-all;
 
     &.open {
         @apply opacity-100;
@@ -11,7 +12,68 @@
         @apply w-full text-center pb-2;
 
         a {
-            @apply text-slate-grey text-lg font-normal leading-none;
+            @apply text-slate-grey text-lg font-normal leading-none static;
+            @apply transition-all underline;
+
+            &:after {
+                @apply w-full bg-cool-blue transition-all transition-ease-out-quart;
+                height: 0;
+                content: '';
+            }
+
+            &:hover {
+                @apply no-underline;
+
+                &:after {
+                    @apply transition-all;
+                    @apply h-1;
+                }
+            }
+        }
+
+        ul {
+            @apply block w-full relative;
+
+            li {
+                a {
+                    &:after {
+                        @apply hidden;
+                    }
+                }
+            }
+        }
+    }
+
+    &__label {
+        @apply font-medium text-lg block pb-1;
+    }
+
+    &__container {
+        @apply flex flex-col h-full w-full items-center overflow-x-auto my-8;
+    }
+
+    &__button {
+        @apply text-slate-grey text-sm font-normal hidden leading-none transition-all;
+
+        &:hover {
+            @apply text-cool-blue underline;
+        }
+    }
+
+    &[data-section="work"] .main-nav__link[class*="section--work"],
+    &[data-section="people"] .main-nav__link[class*="section--people"],
+    &[data-section="news"] .main-nav__link[class*="section--news"],
+    &[data-section="data"] .main-nav__link[class*="section--data"],
+    &[data-section="publications"] .main-nav__link[class*="section--publications"] {
+        &:after {
+            @apply w-full bg-cool-blue absolute top-0 block;
+            height: 0;
+            content: '';
+        }
+
+        > a,
+        .main-nav__label {
+            @apply text-light-grey no-underline;
         }
     }
 }
@@ -27,12 +89,81 @@
     .main-nav {
         @apply opacity-100 h-auto flex-row mt-0 left-auto py-0 w-auto top-auto relative justify-start items-center;
 
+        &[data-section="work"] .main-nav__link[class*="section--work"],
+        &[data-section="people"] .main-nav__link[class*="section--people"],
+        &[data-section="news"] .main-nav__link[class*="section--news"],
+        &[data-section="data"] .main-nav__link[class*="section--data"],
+        &[data-section="publications"] .main-nav__link[class*="section--publications"] {
+            &:after {
+                @apply h-1;
+            }
+        }
+
         &__link {
-            @apply text-left w-auto mr-24 pb-0;
+            @apply text-left w-auto mr-24 pb-0 h-full flex items-center justify-center relative;
+
+            &:after {
+                @apply w-full bg-cool-blue absolute top-0 h-0 transition-all;
+                content: '';
+            }
+
+            &:hover {
+                &:after {
+                    @apply h-1;
+                }
+
+                > ul {
+                    @apply block;
+                }
+            }
 
             a {
-                @apply text-sm;
+                &:after {
+                    @apply absolute top-0 w-full block bg-cool-blue;
+                }
             }
+
+            a,
+            .main-nav__label {
+                @apply text-sm no-underline;
+            }
+
+            ul {
+                @apply bg-white m-0 -mt-12 py-6 px-6 pt-16 absolute hidden;
+                top: 100%;
+                width: calc(100% + 5rem);
+
+                li {
+                    @apply whitespace-no-wrap;
+
+                    a {
+                        @apply text-sm;
+
+                        &:hover {
+                            @apply text-cool-blue;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__label {
+            @apply cursor-default relative inline-flex items-center mx-auto relative z-10;
+            @apply text-slate-grey text-lg font-normal leading-none static underline;
+
+            &:after {
+                @apply inline-block border-black border-r border-b ml-4 relative; 
+                @apply top-auto h-2 w-2 rotate-45;
+                content: '';
+            }
+        }
+
+        &__button {
+            @apply block;
+        }
+
+        &__container {
+            @apply flex-row mx-auto w-auto overflow-visible my-0;
         }
     }
 }
@@ -40,7 +171,8 @@
 @screen xl {
     .main-nav {
         &__link {
-            a {
+            a,
+            .main-nav__label {
                 @apply text-lg;
             }
         }

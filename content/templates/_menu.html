@@ -1,5 +1,5 @@
-<header class="fixed top-0 bg-white w-full px-6 z-50">
-  <div class="container flex-col h-12 lg:flex-row mx-auto flex justify-center lg:h-24" data-section="$section$" id="js-responsive-navigation-menu">
+<header class="main-header fixed top-0 bg-white w-full px-6 z-50">
+  <div class="container flex-col h-12 lg:flex-row mx-auto flex justify-center lg:h-24" id="js-responsive-navigation-menu">
     <div class="logo items-center flex">
         <a href="/" class="my-3 lg:my-auto mr-2">
           <img src="/images/dragonfly-logo-rgb.svg" class="max-w-full h-6 lg:max-w-12rem w-auto lg:w-full lg:h-24 lg:h-auto" />
@@ -7,22 +7,30 @@
         <span class="mobile-menu dragonfly-hamburger text-2xl cursor-pointer text-cool-blue my-3 ml-auto lg:hidden"></span>
     </div>
 
-    <nav class="main-nav lg:closed">
-      <ul class="flex flex-col lg:flex-row h-full lg:mx-auto w-full lg:w-auto items-center">
-        <li class="main-nav__link" data-section="work">
-            <a href="/work/" class="hover:text-cool-blue hover:underline">What we do</a>
+    <nav class="main-nav lg:closed" data-section="$section$">
+      <ul class="main-nav__container">
+        <li class="main-nav__link section--work" data-section="work">
+            <a href="/work/">What we do</a>
         </li>
-        <li class="main-nav__link" data-section="people">
-            <a href="/people/" class="hover:text-cool-blue hover:underline">Who we are</a>
+        <li class="main-nav__link section--people" data-section="people">
+            <a href="/people/">Who we are</a>
         </li>
-        <li class="main-nav__link" data-section="news">
-            <a href="/news/" class="hover:text-cool-blue hover:underline">News</a>
+        <li class="main-nav__link section--work section--data section--publications" data-section="work">
+            <span class="main-nav__label">Our work</span>
+            <ul>
+                <li>
+                    <a href="/case-studies/">Case Studies</a>
+                </li>
+                <li>
+                    <a href="/data/">Data</a>
+                </li>
+                <li>
+                    <a href="/publications/">Publications</a>
+                </li>
+            </ul>
         </li>
-        <li class="main-nav__link" data-section="data">
-            <a href="/data/" class="hover:text-cool-blue hover:underline">Data</a>
-        </li>
-        <li class="main-nav__link mr-0" data-section="publications">
-            <a href="/publications/" class="hover:text-cool-blue hover:underline">Publications</a>
+        <li class="main-nav__link section--news mr-0" data-section="news">
+            <a href="/news/">Latest news</a>
         </li>
         <li class="main-nav__link lg:hidden">
           <span class="font-medium text-lg block pb-1">Get in touch</span>
@@ -36,7 +44,7 @@
         </li>
       </ul>
 
-      <a href="#contact" class="slate-grey text-sm font-normal hidden lg:block leading-none hover:text-cool-blue hover:underline">Get in touch</a>
+      <a href="#contact" class="main-nav__button">Get in touch</a>
     </nav>
   </div>
 </header>

@@ -3,6 +3,7 @@ title: Richard Mansfield, PhD
 email: richard@dragonfly.co.nz
 firstname: Richard
 lastname: Mansfield
+honour: PhD
 mobile: ''
 tag: richard
 banner: mansfield-richard/richard-mansfield-letterbox.jpg
