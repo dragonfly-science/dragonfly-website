@@ -22,7 +22,11 @@
         }
 
         &--active {
-            @apply bg-beige text-cool-blue pointer-events-none !important;
+            @apply bg-beige text-cool-blue !important;
+        }
+
+        &--disabled {
+            @apply bg-beige text-cool-blue opacity-50 pointer-events-none !important;
         }
     }
 }
