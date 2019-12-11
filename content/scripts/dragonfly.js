@@ -72,10 +72,28 @@
         var itemtags = _.filter(item.values().tagslugs.trim().split(' '), function(t){return !(t === "");});
 
         var a = authors.length > 0 ? _.intersection(authors, itemtags).length === authors.length : true;
-        var b = subjects.length > 0 ? _.intersection(subjects, itemtags).length > 0 : true;
+        var b = subjects.length > 0 ? _.intersection(subjects, itemtags).length == subjects.length : true;
         var c = publications.length > 0 ? _.intersection(publications, itemtags).length === publications.length : true;
 
         return a && b && c;
+      });
+
+      // get tags from visible list items.
+      var visibleTags = [];
+      _.each(publicationList.visibleItems, function(item) {
+        visibleTags = visibleTags.concat(item.values().tagslugs.trim().split(' '));
+      });
+      visibleTags = _.uniq(visibleTags);
+
+      // Diable tags that aren't visible.
+      $(".tag-list__tag[data-tag]").each(function () {
+        var tag = $(this).attr("data-tag").trim();
+
+        if (tag !== '' && _.indexOf(visibleTags, tag) === -1) {
+          $(this).addClass('tag-list__tag--disabled').removeClass('tag-list__tag--active');
+        } else {
+          $(this).removeClass('tag-list__tag--disabled');
+        }
       });
     }
 
