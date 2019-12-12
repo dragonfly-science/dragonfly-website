@@ -13,8 +13,8 @@ develop: website
 
 CONTENT := $(shell find content)
 build: website npm content/stylesheets/dragonfly.css
-	$(RUN) bash -c 'cd content && ../website build'
 	$(RUN) bash -c 'npm run build:js'
+	$(RUN) bash -c 'cd content && ../website build'
 
 
 CSS := $(shell find content/stylesheets -name *.css -not -name dragonfly.css)
