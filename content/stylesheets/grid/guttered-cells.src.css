@@ -5,18 +5,18 @@
 
 @screen sm {
     .grid-cell {
-        max-width: calc(50% - 1rem);
+        max-width: calc(50% - 2rem);
     }
 }
 
 @screen lg {
     .grid-cell {
-        max-width: calc(33% - 1rem);
+        max-width: calc(33% - 2rem);
     }
 }
 
 @screen xl {
     .grid-cell {
-        max-width: calc(25% - 1rem);
+        max-width: calc(25% - 2rem);
     }
 }

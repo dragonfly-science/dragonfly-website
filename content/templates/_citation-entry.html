@@ -1,6 +1,27 @@
 <!-- <h2 class="citation-year citation-year--$year$">$year$</h2> -->
+<div class="grid-cell citation-year citation-year--$year$">
+  <div class="citation-year__text">
+      $year$
 
-<div class="publication-tile grid-cell year-$year$ tag $if(tags)$ $for(tags)$ tag-$tag$ $endfor$ $endif$">
+      <span class="link-icon link-icon--large">
+          <span class="icon dragonfly-arrow"></span>
+      </span>
+  </div>
+
+  <div class="hidden">
+    $if(title)$
+      <span>$title$</span>
+    $endif$
+
+    <div class="publication-tile__citation">
+      $citation$
+    </div>
+
+    <div class="tagslugs">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
+  </div>
+</div>
+
+<div class="publication-tile grid-cell list-tile year-$year$ tag$if(tags)$$for(tags)$ tag-$tag$$endfor$$endif$">
   <header class="publication-tile__header">
     $if(tags)$
     <ul class="tag-list tag-list--publication-tile publication-tile__tag-list">

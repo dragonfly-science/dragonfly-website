@@ -5,6 +5,8 @@
         @apply px-6 pt-3 pb-4 mr-2 mb-2 leading-none inline-block cursor-pointer;
         @apply transition-bg transition-ease-out-quart;
 
+        transform: translate3d(0, 0, 0);
+
         &:hover {
             @apply bg-slate-grey;
         }

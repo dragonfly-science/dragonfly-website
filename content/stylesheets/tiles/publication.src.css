@@ -1,5 +1,5 @@
 .publication-tile {
-    @apply flex flex-col;
+    @apply flex flex-col mr-8;
 
     &__title,
     &__citation,

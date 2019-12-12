@@ -1,8 +1,27 @@
 .citation-year {
-    @apply text-cool-blue text-center text-9/2xl leading-none my-32 w-full hidden;
+    @apply text-left text-4xl font-medium leading-none hidden;
+    @apply publication-tile bg-transparent mr-8;
+
+    &__text {
+        @apply px-6 flex flex-col justify-between;
+
+        .link-icon {
+            @apply mt-10;
+
+            .icon {
+                @apply rotate-90 !important;
+            }
+
+            &:hover {
+                .icon {
+                    @apply m-0;
+                }
+            }
+        }
+    }
 
     &.citation-year--2025  {
-        @apply block;
+        @apply flex;
 
         + .year-2025 + .citation-year--2025 {
             @apply hidden;
@@ -10,7 +29,7 @@
     }
 
     &.citation-year--2024  {
-        @apply block;
+        @apply flex;
 
         + .year-2024 + .citation-year--2024 {
             @apply hidden;
@@ -18,7 +37,7 @@
     }
 
     &.citation-year--2023  {
-        @apply block;
+        @apply flex;
 
         + .year-2023 + .citation-year--2023 {
             @apply hidden;
@@ -26,7 +45,7 @@
     }
 
     &.citation-year--2022  {
-        @apply block;
+        @apply flex;
 
         + .year-2022 + .citation-year--2022 {
             @apply hidden;
@@ -34,7 +53,7 @@
     }
 
     &.citation-year--2021  {
-        @apply block;
+        @apply flex;
 
         + .year-2021 + .citation-year--2021 {
             @apply hidden;
@@ -42,7 +61,7 @@
     }
 
     &.citation-year--2020  {
-        @apply block;
+        @apply flex;
 
         + .year-2020 + .citation-year--2020 {
             @apply hidden;
@@ -50,7 +69,7 @@
     }
 
     &.citation-year--2019  {
-        @apply block;
+        @apply flex;
 
         + .year-2019 + .citation-year--2019 {
             @apply hidden;
@@ -58,7 +77,7 @@
     }
 
     &.citation-year--2018  {
-        @apply block;
+        @apply flex;
 
         + .year-2018 + .citation-year--2018 {
             @apply hidden;
@@ -66,7 +85,7 @@
     }
 
     &.citation-year--2017  {
-        @apply block;
+        @apply flex;
 
         + .year-2017 + .citation-year--2017 {
             @apply hidden;
@@ -74,7 +93,7 @@
     }
 
     &.citation-year--2016 {
-        @apply block;
+        @apply flex;
 
         + .year-2016 + .citation-year--2016 {
             @apply hidden;
@@ -82,7 +101,7 @@
     }
 
     &.citation-year--2015  {
-        @apply block;
+        @apply flex;
 
         + .year-2015 + .citation-year--2015 {
             @apply hidden;
@@ -90,7 +109,7 @@
     }
 
     &.citation-year--2014  {
-        @apply block;
+        @apply flex;
 
         + .year-2014 + .citation-year--2014 {
             @apply hidden;
@@ -98,7 +117,7 @@
     }
 
     &.citation-year--2013  {
-        @apply block;
+        @apply flex;
 
         + .year-2013 + .citation-year--2013 {
             @apply hidden;
@@ -106,7 +125,7 @@
     }
 
     &.citation-year--2012  {
-        @apply block;
+        @apply flex;
 
         + .year-2012 + .citation-year--2012 {
             @apply hidden;
@@ -114,7 +133,7 @@
     }
 
     &.citation-year--2011  {
-        @apply block;
+        @apply flex;
 
         + .year-2011 + .citation-year--2011 {
             @apply hidden;
@@ -122,7 +141,7 @@
     }
 
     &.citation-year--2010  {
-        @apply block;
+        @apply flex;
 
         + .year-2010 + .citation-year--2010 {
             @apply hidden;
@@ -130,7 +149,7 @@
     }
 
     &.citation-year--2009  {
-        @apply block;
+        @apply flex;
 
         + .year-2009 + .citation-year--2009 {
             @apply hidden;
@@ -138,7 +157,7 @@
     }
 
     &.citation-year--2008  {
-        @apply block;
+        @apply flex;
 
         + .year-2008 + .citation-year--2008 {
             @apply hidden;
@@ -146,7 +165,7 @@
     }
 
     &.citation-year--2007  {
-        @apply block;
+        @apply flex;
 
         + .year-2007 + .citation-year--2007 {
             @apply hidden;
@@ -154,7 +173,7 @@
     }
 
     &.citation-year--2006  {
-        @apply block;
+        @apply flex;
 
         + .year-2006 + .citation-year--2006 {
             @apply hidden;
@@ -162,7 +181,7 @@
     }
 
     &.citation-year--2005  {
-        @apply block;
+        @apply flex;
 
         + .year-2005 + .citation-year--2005 {
             @apply hidden;
@@ -170,7 +189,7 @@
     }
 
     &.citation-year--2004  {
-        @apply block;
+        @apply flex;
 
         + .year-2004 + .citation-year--2004 {
             @apply hidden;
@@ -178,7 +197,7 @@
     }
 
     &.citation-year--2003  {
-        @apply block;
+        @apply flex;
 
         + .year-2003 + .citation-year--2003 {
             @apply hidden;
@@ -186,7 +205,7 @@
     }
 
     &.citation-year--2002  {
-        @apply block;
+        @apply flex;
 
         + .year-2002 + .citation-year--2002 {
             @apply hidden;
@@ -194,7 +213,7 @@
     }
 
     &.citation-year--2001  {
-        @apply block;
+        @apply flex;
 
         + .year-2001 + .citation-year--2001 {
             @apply hidden;
@@ -202,7 +221,7 @@
     }
 
     &.citation-year--2000  {
-        @apply block;
+        @apply flex;
 
         + .year-2000 + .citation-year--2000 {
             @apply hidden;
@@ -210,7 +229,7 @@
     }
 
     &.citation-year--1999  {
-        @apply block;
+        @apply flex;
 
         + .year-1999 + .citation-year--1999 {
             @apply hidden;
@@ -218,7 +237,7 @@
     }
 
     &.citation-year--1998  {
-        @apply block;
+        @apply flex;
 
         + .year-1998 + .citation-year--1998 {
             @apply hidden;
@@ -226,7 +245,7 @@
     }
 
     &.citation-year--1997  {
-        @apply block;
+        @apply flex;
 
         + .year-1997 + .citation-year--1997 {
             @apply hidden;
@@ -234,7 +253,7 @@
     }
 
     &.citation-year--1996  {
-        @apply block;
+        @apply flex;
 
         + .year-1996 + .citation-year--1996 {
             @apply hidden;
@@ -242,7 +261,7 @@
     }
 
     &.citation-year--1995  {
-        @apply block;
+        @apply flex;
 
         + .year-1995 + .citation-year--1995 {
             @apply hidden;
@@ -250,7 +269,7 @@
     }
 
     &.citation-year--1994  {
-        @apply block;
+        @apply flex;
 
         + .year-1994 + .citation-year--1994 {
             @apply hidden;
@@ -258,7 +277,7 @@
     }
 
     &.citation-year--1993  {
-        @apply block;
+        @apply flex;
 
         + .year-1993 + .citation-year--1993 {
             @apply hidden;
@@ -266,7 +285,7 @@
     }
 
     &.citation-year--1992  {
-        @apply block;
+        @apply flex;
 
         + .year-1992 + .citation-year--1992 {
             @apply hidden;
@@ -274,7 +293,7 @@
     }
 
     &.citation-year--1991  {
-        @apply block;
+        @apply flex;
 
         + .year-1991 + .citation-year--1991 {
             @apply hidden;
@@ -282,7 +301,7 @@
     }
 
     &.citation-year--1990  {
-        @apply block;
+        @apply flex;
 
         + .year-1990 + .citation-year--1990 {
             @apply hidden;
@@ -290,7 +309,7 @@
     }
 
     &.citation-year--1989  {
-        @apply block;
+        @apply flex;
 
         + .year-1989 + .citation-year--1989 {
             @apply hidden;
@@ -298,9 +317,24 @@
     }
 }
 
-/* [class*="citation-year--"] {
-    background: blue;
-    &:first-of-type {
-        background: red;
+@screen sm {
+    .citation-year {
+        @apply bg-cool-blue text-white;
     }
-} */
+}
+
+@screen lg {
+    .citation-year {
+        @apply text-7xl;
+        
+        &__text {
+            @apply pt-20 pb-12;
+
+            .link-icon {
+                .icon {
+                    @apply rotate-0;
+                }
+            }
+        }
+    }
+}
