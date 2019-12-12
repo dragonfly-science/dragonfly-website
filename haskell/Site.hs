@@ -126,8 +126,8 @@ main = do
         compile copyFileCompiler
 
     -- Scripts
-    match "scripts/dragonfly.js" $ do
-        route $ constRoute "assets/dragonfly.js"
+    match "scripts/*.js" $ do
+        route $ gsubRoute "scripts/" (const "assets/")
         compile copyFileCompiler
 
     match "favicon.ico" $ do

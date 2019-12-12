@@ -13,11 +13,20 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
+            },
+            {
+                test: require.resolve('zepto'),
+                use: 'imports-loader?this=>window',
             }
         ]
     },
     stats: {
         colors: true
     },
-    devtool: 'source-map'
+    devtool: 'source-map',
+    resolve: {
+        alias: {
+            jquery: 'zepto',
+        }
+    }
 };

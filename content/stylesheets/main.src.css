@@ -27,6 +27,10 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 /* Plugins. */
 
 /* Import Partials */

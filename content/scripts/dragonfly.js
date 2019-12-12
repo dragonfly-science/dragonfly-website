@@ -26,7 +26,7 @@
       return;
     }
 
-    tagFilter(getParameterByName("tag"));
+    // tagFilter(getParameterByName("tag"));
 
     var options = {
       valueNames: ['publication-tile__title', 'publication-tile__citation', 'tagslugs'],
@@ -120,11 +120,13 @@
   $(document).ready(function() {
     var section = 'none';
     var menuToggle = $('.mobile-menu');
-    var wrapper = $('.main-nav');
+    
 
-    $(menuToggle).on('click', function(e) {
+    $('.mobile-menu').on('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
+
+      var wrapper = $('.main-nav');
 
       wrapper.toggleClass('open');
 
