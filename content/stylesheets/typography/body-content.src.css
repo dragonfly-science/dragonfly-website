@@ -11,7 +11,26 @@
     }
 
     img {
-        @apply block mx-auto my-6;
+        @apply block my-6 mx-auto opacity-0;
+        @apply transition-all transition-ease-out-quart;
+        line-height: 0;
+        font-size: 0;
+
+        &[data-loaded="true"] {
+            @apply opacity-100;
+        }
+    }
+
+    figure {
+        @apply my-6 flex justify-center flex-col bg-black;
+
+        img {
+            @apply my-0;
+        }
+
+        figcaption {
+            @apply text-sm italic block pt-2 bg-light-peach;
+        }
     }
 
     > p {
@@ -44,7 +63,7 @@
         @apply text-base font-bold;
     }
 
-    > a,
+    a,
     p > a,
     li > a {
         @apply underline;
@@ -192,6 +211,10 @@
         blockquote + p > cite {
             @apply -ml-16 px-16;
         }
+
+        figure {
+            @apply -mx-6;
+        }
     }
 }
 
@@ -220,6 +243,10 @@
                     @apply -mr-1/2 ml-auto pl-24 pr-40;
                 }
             }
+        }
+
+        figure {
+            @apply -mx-12;
         }
     }
 }

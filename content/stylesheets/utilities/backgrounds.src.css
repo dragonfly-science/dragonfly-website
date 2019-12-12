@@ -14,3 +14,14 @@
                       linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
                       linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
 }
+
+/* For use with lozad. */
+.background-image,
+.lozad-image {
+    @apply opacity-0;
+    @apply transition-all transition-500 transition-ease-out-quart;
+
+    &[data-loaded="true"] {
+        @apply opacity-100;
+    }
+}

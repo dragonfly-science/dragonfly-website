@@ -7,16 +7,18 @@ banner-image: /work/predator-prey/sardines.jpg
 quote: Dragonfly is such a great organisation to work with. They work very efficiently and we always get a fantastic product out of it.
 quote-attribution: Dr Olaf Jensen, Institute of Marine and Coastal Sciences
 logo: /work/predator-prey/rutgers.jpg
+project-link: https://peerj.com/articles/920.pdf
+project-link-text: Read the paper
 ---
 Figuring out predator-prey relationships (or who’s eating who) in a marine ecosystem is fundamental for understanding ecosystems, and is increasingly recognised as an important aspect of managing fisheries. Knowing how strong the interactions between different species are, can be helpful in deciding how much of a predator or prey species can be harvested without adversely affecting the other. 
 
 <!--more-->
 
 
-### Creating a new model
+## Creating a new model
 Two complementary chemical analyses (stable isotope and fatty acid analysis) are commonly used in marine biology to decipher the relationships between different species in a food web. Until now, the analyses could only be used separately, but we developed a new statistical method that enables them to be used together.  The combination of the methods is very powerful, showing situations where the two analyses match up, differ, or where data is lacking.  
 
-### Open to everyone 
+## Open to everyone 
 
 After developing the model and publishing the method as a scientific paper, we
 released it as an open source software package. By adding documentation and
@@ -25,7 +27,7 @@ scientist without them needing to be familiar with programming. The Jensen lab i
 
 Read the paper at [PeerJ](https://peerj.com/articles/920.pdf), or download the FastinR software from [GitHub](https://github.com/philipp-neubauer/fastinR).
 
-### Better analysis leads to new research
+## Better analysis leads to new research
 The new model has enabled the Jensen lab to look into new research problems.
 These include interactions between marlin and the sardine fishery off the coast
 of Baja California and the ongoing effects of the 2010 Deepwater Horizon oil
