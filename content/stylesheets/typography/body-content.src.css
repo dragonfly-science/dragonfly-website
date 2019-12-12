@@ -128,7 +128,7 @@
     blockquote,
     blockquote + p > cite {
         @apply bg-cool-blue text-white w-full block;
-        @apply px-8 py-12 ml-0 mb-8;
+        @apply px-10 py-12 ml-0 mb-8;
     }
 
     blockquote {
@@ -173,7 +173,7 @@
 
 @screen lg {
     .body-content {
-        @apply mt-24 mb-96;
+        @apply my-24;
 
         > p {
             &:first-of-type {
@@ -203,7 +203,7 @@
 
         blockquote {
             p {
-                @apply text-3xl;
+                @apply text-2xl;
             }
         }
 
@@ -226,21 +226,21 @@
             @apply mt-8 mb-8 pt-16 pb-24;
 
             + p > cite {
-                @apply -mt-40;
+                @apply -mt-32;
             }
         }
 
         blockquote,
         blockquote + p > cite {
-            @apply pr-24 pl-40 -ml-1/2 w-full;
+            @apply pr-24 pl-32 -ml-1/2 w-full;
         }
 
         blockquote {
             &:nth-of-type(even) {
-                @apply -mr-1/2 ml-auto pl-24 pr-40;
+                @apply -mr-1/2 ml-auto pl-24 pr-32;
 
                 + p > cite {
-                    @apply -mr-1/2 ml-auto pl-24 pr-40;
+                    @apply -mr-1/2 ml-auto pl-24 pr-32;
                 }
             }
         }
