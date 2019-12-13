@@ -18,7 +18,6 @@
     &__title {
         @apply font-bold mb-8;
         @apply text-4xl;
-        
     }
 
     &__text,

@@ -61,6 +61,7 @@
     }
 
     &[data-section="work"] .main-nav__link[class*="section--work"],
+    &[data-section="what-we-do"] .main-nav__link[class*="section--what-we-do"],
     &[data-section="people"] .main-nav__link[class*="section--people"],
     &[data-section="news"] .main-nav__link[class*="section--news"],
     &[data-section="data"] .main-nav__link[class*="section--data"],
@@ -90,6 +91,7 @@
         @apply opacity-100 h-auto flex-row mt-0 left-auto py-0 w-auto top-auto relative justify-start items-center;
 
         &[data-section="work"] .main-nav__link[class*="section--work"],
+        &[data-section="what-we-do"] .main-nav__link[class*="section--what-we-do"],
         &[data-section="people"] .main-nav__link[class*="section--people"],
         &[data-section="news"] .main-nav__link[class*="section--news"],
         &[data-section="data"] .main-nav__link[class*="section--data"],

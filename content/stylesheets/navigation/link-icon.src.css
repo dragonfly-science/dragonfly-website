@@ -48,7 +48,7 @@
 
         &:hover {
             .icon {
-                @apply ml-0;
+                @apply ml-4;
             }
         }
     }

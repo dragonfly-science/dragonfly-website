@@ -1,14 +1,14 @@
 .sidebar {
     @apply py-24 text-lg leading-normal w-full max-w-full;
 
-    a {
+    /* a {
         @apply underline;
         @apply transition-all transition-ease-out-quart;
 
         &:hover {
             @apply text-cool-blue no-underline;
         }
-    }
+    } */
 
     .button {
         @apply no-underline;

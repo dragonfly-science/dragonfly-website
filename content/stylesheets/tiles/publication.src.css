@@ -38,6 +38,15 @@
         }
     }
 
+    &__pdf {
+        @apply text-light-grey;
+        @apply transition-color transition-ease-out-quart transition-500;
+
+        &:hover {
+            @apply text-slate-grey;
+        }
+    }
+
     hr {
         @apply hidden;
     }

@@ -70,7 +70,7 @@ makeRules cc = do
             pages <- getList cc 1000
             bubbles <- getBubbles cc (Just ident)
             pandoc <- readScholmd
-            let ctx = base <> teaserImage <> actualbodyField "actualbody" <> pages <> bubbles
+            let ctx = base <> teaserImage <> socialImage <> actualbodyField "actualbody" <> pages <> bubbles
             writeScholmd pandoc
                 >>= loadAndApplyTemplate "templates/append-publications.html" ctx
                 >>= loadAndApplyTemplate (pageTemplate cc) ctx
@@ -146,6 +146,7 @@ itemCtx :: Context String
 itemCtx  = listContextWith "tags" tagContext
         <> defaultContext
         <> teaserImage
+        <> socialImage
         <> teaserField "teaser" "content"
         <> pageUrlField "pageurl"
         <> dateField "published" "%B %d, %Y"
@@ -175,6 +176,15 @@ teaserImage = field "teaserImage" getImagePath
             base = take ((length path) - 11) path
             ident = fromFilePath $ base </> "teaser.jpg"
         fmap (maybe "" (toUrl . (flip replaceFileName "480-teaser.jpg"))) (getRoute ident)
+
+socialImage :: Context String
+socialImage = field "socialImage" getImagePath
+    where
+    getImagePath item = do
+        let path = toFilePath (itemIdentifier item)
+            base = take ((length path) - 11) path
+            ident = fromFilePath $ base </> "teaser.jpg"
+        fmap (maybe "" (toUrl . (flip replaceFileName "1200-teaser.jpg"))) (getRoute ident)
 
 -- Sort items by a monadic ordering function
 sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]

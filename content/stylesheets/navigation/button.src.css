@@ -16,6 +16,12 @@
     @apply rounded;
 }
 
+.button--icon-left {
+    &__text {
+        @apply ml-4 !important;
+    }
+}
+
 .button--icon {
     @apply inline-flex;
 
@@ -47,5 +53,10 @@
     .button--white {
         background-color: var(--white);
         color: var(--cool-blue);
+    }
+
+    .button--white-slate-grey {
+        background-color: var(--white);
+        color: var(--slate-grey);
     }
 }
