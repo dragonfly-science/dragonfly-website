@@ -5,7 +5,7 @@
     .icon {
         @apply ml-4 text-lg inline-block;
         @apply transition-margin transition-ease-in-back transition-500;
-        transform: translate3d(0, 0, 0);
+        /* transform: translate3d(0, 0, 0); */
     }
 
     &:hover {

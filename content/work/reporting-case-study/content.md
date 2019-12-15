@@ -12,14 +12,14 @@ One of our strengths is a focus on repeatable, automated reporting. We worked wi
 team at the Ministry of Business, Innovation & Employment (MBIE) to improve their data analysis processes and make their reporting more collaborative and efficient.
 <!--more-->
 
-### A complex report 
+## A complex report 
 The Regional Economic Activity Report (REAR) presents population, 
 employment, GDP and annual household income information across New Zealand's regions
 and Territorial Authorities. The report is prepared annually by MBIE. Pulling together this complex
 document required many resources, and needed coordination between analysts, graphics,
 and communications teams.
 
-### Mentoring staff in R and LaTeX
+## Mentoring staff in R and LaTeX
 We worked with the MBIE sector performance team to help develop the graphics for
 this report. Their analysts were using the statistical software R, and we were able to show 
 the team how to use this powerful software to produce publication quality graphics,
@@ -38,7 +38,7 @@ code themselves was an important part of the project. Ministry staff found our c
 confidence in managing it themselves. With our experience to fall back on, 
 they enjoyed the fun of working with new processes.
 
-### Beautiful report production
+## Beautiful report production
 The 2014 REAR’s very polished production has set a new standard for 
 MBIE’s reporting. LaTeX allows final changes to be made quickly and easily, 
 which led to the much higher quality output.

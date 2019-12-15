@@ -1,4 +1,4 @@
-TAG := lts-12.26-v1
+TAG := lts-12.26-v2
 IMAGE := dragonflyscience/dragonfly-website:$(TAG)
 RUN ?= docker run --rm -it -p 8000:8000 -u $$(id -u):$$(id -g) -w /work -v $$(pwd):/work $(IMAGE)
 
@@ -8,11 +8,12 @@ website: $(HS) haskell/Site.hs
 	$(RUN) bash -c 'cd haskell && stack build && cp $$(stack path --local-install-root)/bin/website ../website'
 
 develop: website
-	$(RUN) bash -c '(cd content/stylesheets && find . -name \*.css -not -name dragonfly.css | npm run watch:css) & (cd content && ../website watch)'
+	$(RUN) bash -c '(cd content/stylesheets && find . -name \*.css -not -name dragonfly.css | npm run watch:css) & (cd content && ../website watch) & (cd content && npm run watch:js)'
 
 
 CONTENT := $(shell find content)
 build: website npm content/stylesheets/dragonfly.css
+	$(RUN) bash -c 'npm run build:js'
 	$(RUN) bash -c 'cd content && ../website build'
 
 

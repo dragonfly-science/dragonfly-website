@@ -22,9 +22,10 @@
 }
 
 html {
-    @apply font-body text-slate-grey;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+  @apply font-body text-slate-grey;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 /* Plugins. */

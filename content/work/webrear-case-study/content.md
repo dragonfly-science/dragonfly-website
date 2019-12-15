@@ -7,6 +7,9 @@ quote-attribution: Harkanwal Singh, Data Editor, New Zealand Herald
 logo: /work/webrear-case-study/mbie-logo.png
 summary: An intuitive website and iPad app to explore New Zealand's economic results.
 tags: systems 
+project-link: http://webrear.mbie.govt.nz/summary/new-zealand
+project-link-text: View project
+project-link-title: Explore New Zealand’s regional economies
 ---
 
 This project for the Ministry of Business, Innovation and Employment put data on New Zealand’s regional
@@ -52,5 +55,3 @@ the Minister’s release date.
 <cite>Harkanwal Singh<br />
 Data Editor<br />
 New Zealand Herald.</cite>
-
-

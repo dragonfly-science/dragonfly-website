@@ -1,9 +1,12 @@
 /* list of tags as seen in publications. */
 .tag-list {
     &__tag {
-        @apply bg-cool-blue text-white text-lg font-medium no-underline; 
+        @apply bg-cool-blue text-white text-lg font-medium; 
         @apply px-6 pt-3 pb-4 mr-2 mb-2 leading-none inline-block cursor-pointer;
         @apply transition-bg transition-ease-out-quart;
+        @apply no-underline !important;
+
+        transform: translate3d(0, 0, 0);
 
         &:hover {
             @apply bg-slate-grey;
@@ -22,7 +25,11 @@
         }
 
         &--active {
-            @apply bg-beige text-cool-blue pointer-events-none !important;
+            @apply bg-beige text-cool-blue !important;
+        }
+
+        &--disabled {
+            @apply bg-white text-slate-grey opacity-25 pointer-events-none !important;
         }
     }
 }
@@ -40,6 +47,12 @@
             &--article {
                 @apply mr-0 mb-0 inline-block;
             }
+        }
+    }
+
+    &--small {
+        .tag-list__tag {
+            @apply text-sm px-4 pt-2 pb-3;
         }
     }
 }

@@ -68,13 +68,14 @@ module.exports = {
       transitionProperty: {
         'none': 'none',
         'all': 'all',
-        'color': 'color',
         'bg': 'background-color',
         'border': 'border-color',
+        'color': 'color',
         'colors': ['color', 'background-color', 'border-color'],
+        'margin': 'margin',
+        'max-height': 'max-height',
         'opacity': 'opacity',
         'transform': 'transform',
-        'margin': 'margin'
       },
       transitionTimingFunction: {
         'default': 'ease',
@@ -96,6 +97,9 @@ module.exports = {
   plugins: [
     function({ addUtilities }) {
       const newUtilities = {
+        '.rotate-0': {
+          transform: 'rotate(0deg)',
+        },
         '.rotate-90': {
           transform: 'rotate(90deg)',
         },

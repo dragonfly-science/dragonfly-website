@@ -1,5 +1,5 @@
 .publication-tile {
-    @apply flex flex-col;
+    @apply flex flex-col mr-8;
 
     &__title,
     &__citation,
@@ -35,6 +35,15 @@
 
         &:hover {
             @apply no-underline;
+        }
+    }
+
+    &__pdf {
+        @apply text-light-grey;
+        @apply transition-color transition-ease-out-quart transition-500;
+
+        &:hover {
+            @apply text-slate-grey;
         }
     }
 
