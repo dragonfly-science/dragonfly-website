@@ -1,24 +1,26 @@
-import { Engine, acorn, Renderer, MouseEventHandler } from 'way-of-life'
+import { acorn, MouseEventHandler } from 'way-of-life'
+import Engine from './engine'
+import Renderer from './renderer'
 
 const defaultOptions = {
     canvasSelector: '#gameoflife',
-    desiredFPS: 9,
+    desiredFPS: 7,
     pixelsPerCell: 28,
-    strokeStyle: 'rgba(86, 86, 89, 0)',
-    fillStyle: 'rgba(86, 86, 89, 0.4)',
-    showText: false,
-    useWasm: false,
+    fillStyle: 'rgba(171, 167, 159, 0.8)',
 }
 
 const options = defaultOptions
 options.desiredFPS = parseInt(options.desiredFPS, 10)
 options.pixelsperCell = parseInt(options.pixelsperCell, 10)
-
 const gameOfLife = () => {
     const canvas = document.querySelector(options.canvasSelector)
 
-    const width = ~~(canvas.clientWidth / (options.pixelsPerCell - 2))
-    const height = ~~(canvas.clientHeight / (options.pixelsPerCell - 2))
+    if (canvas === null) {
+        return
+    }
+
+    const width = ~~(canvas.clientWidth / (options.pixelsPerCell))
+    const height = ~~(canvas.clientHeight / (options.pixelsPerCell))
 
     const jsEngine = new Engine(width, height)
     const engine  = jsEngine
@@ -32,7 +34,7 @@ const gameOfLife = () => {
     })
 
     // mouse events
-    const events = new MouseEventHandler(canvas, engine, renderer)
+    new MouseEventHandler(canvas, engine, renderer)
 
     const checkFlag = () => {
         if (engine.module.calledRun !== true) {
@@ -40,12 +42,17 @@ const gameOfLife = () => {
         } else {
 
             jsEngine.init()
-            acorn(jsEngine, Math.ceil(Math.random() * ~~(height / 2)), Math.ceil(Math.random() * ~~(width / 2)))
-            // start
+            acorn(jsEngine, ~~(height / 2), ~~(width / 2))
             renderer.start()
         }
     }
     checkFlag()
 }
 
-window.onload = gameOfLife
+// class GameOfLife {
+//     constructor() {
+
+//     }
+// }
+
+export default gameOfLife

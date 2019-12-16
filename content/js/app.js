@@ -7,7 +7,7 @@ import Parallaxing from './parallax'
 import Publications from './publications'
 import TopSection from './top-section'
 
-import GameOfLife from './game-of-life'
+import GameOfLife from './game-of-life/game-of-life'
 
 smoothscroll.polyfill()
 
@@ -17,4 +17,5 @@ Zepto(($) => {
     TopSection($)
     LazyLoad()
     Parallaxing()
+    GameOfLife()
 })
