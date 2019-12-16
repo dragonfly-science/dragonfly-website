@@ -44,6 +44,7 @@ html {
 
 @import "layout/call-to-action.src.css";
 @import "layout/citation-year.src.css";
+@import "layout/game-of-life.src.css";
 @import "layout/list-container.src.css";
 @import "layout/numbered-section.src.css";
 @import "layout/person-tile.src.css";

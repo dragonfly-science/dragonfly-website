@@ -7,6 +7,8 @@ import Parallaxing from './parallax'
 import Publications from './publications'
 import TopSection from './top-section'
 
+import GameOfLife from './game-of-life'
+
 smoothscroll.polyfill()
 
 Zepto(($) => {
