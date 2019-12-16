@@ -112,9 +112,8 @@ getBubbles cc mident = do
                     let (before, after) = splitAt (idx + l) (cycle snaps')
                     return $ reverse (take 3 (reverse before)) ++ take 4 after
         previous = listField "bubbles_prev" (pageIndexCtx lu)(return (take 3 snaps''))
-        this     = listField "bubbles_this" (pageIndexCtx lu)(return (take 1 $ drop 3 snaps''))
         next     = listField "bubbles_next" (pageIndexCtx lu)(return (take 3 $ drop 4 snaps''))
-    return  $ previous <> this <> next
+    return  $ previous <> next
 
 getTagLists :: CollectionConfig -> Compiler (Context String)
 getTagLists cc = do
