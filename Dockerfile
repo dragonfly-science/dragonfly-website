@@ -33,6 +33,8 @@ ADD package.json .
 ADD package-lock.json .
 RUN mkdir /.config
 RUN chmod -R o+w /.config
+RUN mkdir /.npm
+RUN chmod -R o+w /.npm
 RUN npm install --no-optional && npm cache clean --force
 ENV PATH /node_modules/.bin:$PATH
 

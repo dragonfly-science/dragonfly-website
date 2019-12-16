@@ -1,2 +1,2 @@
-docker: dragonflyscience/dragonfly-website:lts-12.26-v1
+docker: dragonflyscience/dragonfly-website:lts-12.26-v3
 publish: dragonfly-website-staging
