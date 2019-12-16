@@ -22,7 +22,6 @@ import qualified Data.Set                as S
 import           Data.Time.Calendar      (toModifiedJulianDay)
 import           Data.Time.Clock         (utctDay)
 import           Data.Time.Locale.Compat (defaultTimeLocale)
-import           System.FilePath
 
 import           Hakyll
 
@@ -142,15 +141,6 @@ getTagLists cc = do
     foldM tagList mempty uniquetags
 
 
-itemCtx :: Context String
-itemCtx  = listContextWith "tags" tagContext
-        <> defaultContext
-        <> teaserImage
-        <> socialImage
-        <> teaserField "teaser" "content"
-        <> pageUrlField "pageurl"
-        <> dateField "published" "%B %d, %Y"
-
 
 type PreviousNextMap = [(Identifier, (Item String, Item String))]
 pageIndexCtx :: PreviousNextMap -> Context String
@@ -168,23 +158,6 @@ next lu =
     let lup item = return $ fmap snd $ maybeToList $ lookup (itemIdentifier item) lu
     in  listFieldWith "next" (pageIndexCtx []) lup
 
-teaserImage :: Context String
-teaserImage = field "teaserImage" getImagePath
-  where
-    getImagePath item = do
-        let path = toFilePath (itemIdentifier item)
-            base = take ((length path) - 11) path
-            ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" (toUrl . (flip replaceFileName "480-teaser.jpg"))) (getRoute ident)
-
-socialImage :: Context String
-socialImage = field "socialImage" getImagePath
-    where
-    getImagePath item = do
-        let path = toFilePath (itemIdentifier item)
-            base = take ((length path) - 11) path
-            ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" (toUrl . (flip replaceFileName "1200-teaser.jpg"))) (getRoute ident)
 
 -- Sort items by a monadic ordering function
 sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]

@@ -3,6 +3,9 @@ module WebSite.Context (
   baseContext,
   actualbodyField,
   pageUrlField,
+  itemCtx,
+  teaserImage,
+  socialImage,
   refContext,
   listContextWith,
   tagContext
@@ -11,6 +14,7 @@ module WebSite.Context (
 import           Control.Monad
 import           Data.Aeson
 import           Data.List
+import           System.FilePath
 
 import qualified Data.Map             as M
 import qualified Data.HashMap.Strict  as HM
@@ -32,8 +36,8 @@ baseContext section = do
     ident <- getUnderlying
     route <- getRoute ident
     let prepareUrl :: String -> String
-        prepareUrl path = "/" <> (if takeBaseName path == "index" 
-                                    then takeDirectory path 
+        prepareUrl path = "/" <> (if takeBaseName path == "index"
+                                    then takeDirectory path
                                     else path)
     return $  dateField  "date"   "%B %e, %Y"
            <> constField "jquery" "//ajax.googleapis.com/ajax/libs/jquery/2.0.3"
@@ -76,6 +80,32 @@ listContextWith s ctx  = listFieldWith s ctx $ \item -> do
                 HM.lookup (T.pack s) metadata
     return $ map (\x -> Item (fromFilePath x) x) metas
 
+itemCtx :: Context String
+itemCtx  = listContextWith "tags" tagContext
+        <> defaultContext
+        <> teaserImage
+        <> socialImage
+        <> teaserField "teaser" "full"
+        <> pageUrlField "pageurl"
+        <> dateField "published" "%B %d, %Y"
+
+teaserImage :: Context String
+teaserImage = field "teaserImage" getImagePath
+  where
+    getImagePath item = do
+        let path = toFilePath (itemIdentifier item)
+            base = take ((length path) - 11) path
+            ident = fromFilePath $ base </> "teaser.jpg"
+        fmap (maybe "" (toUrl . (flip replaceFileName "480-teaser.jpg"))) (getRoute ident)
+
+socialImage :: Context String
+socialImage = field "socialImage" getImagePath
+    where
+    getImagePath item = do
+        let path = toFilePath (itemIdentifier item)
+            base = take ((length path) - 11) path
+            ident = fromFilePath $ base </> "teaser.jpg"
+        fmap (maybe "" (toUrl . (flip replaceFileName "1200-teaser.jpg"))) (getRoute ident)
 
 teaserSeparator :: String
 teaserSeparator = "<!--more-->"

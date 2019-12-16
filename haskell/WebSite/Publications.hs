@@ -1,5 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TupleSections     #-}
+{-# LANGUAGE TupleSections #-}
+{-# LANGUAGE ScopedTypeVariables #-}
 module WebSite.Publications (
     rules
 ) where
@@ -81,3 +82,4 @@ sortItemsBy f = sortByM $ f . itemIdentifier
   where
     sortByM :: (Monad m, Ord k) => (a -> m k) -> [a] -> m [a]
     sortByM f xs = map fst . sortOn snd <$> mapM (\x -> (x,) <$> f x) xs
+
