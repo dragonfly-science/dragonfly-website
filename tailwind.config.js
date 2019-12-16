@@ -62,6 +62,10 @@ module.exports = {
         '30': '30rem',
         '36': '36rem',
       },
+      opacity: {
+        '10': '0.1',
+        '025': '0.025',
+      },
       screens: {
         'wd': '104rem'
       },

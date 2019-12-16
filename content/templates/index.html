@@ -1,4 +1,4 @@
-<header class="page-header bg-light-peach math-paper">
+<header class="page-header bg-light-peach math-paper bg-scroll">
   <div class="container mx-auto">
     <div class="page-header__container">
       <h1 class="page-header__title">Kia Ora</h1>
@@ -27,6 +27,8 @@
   $for(tiles)$
     <a href="$url$" class="no-gutter-cell no-gutter-cell--overlay">
       <span class="no-gutter-cell__tag">Project</span>
+      $for(tags)$$tag$$endfor$
+      <br>
       <h2 class="no-gutter-cell__title">$title$</h2>
       $if(teaser)$
       <p class="no-gutter-cell__text">$teaser$</p>

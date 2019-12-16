@@ -1,6 +1,6 @@
 /* Body content container styles. */
 .body-content {
-    @apply ml-0 my-6 max-w-3xl;
+    @apply ml-0 my-6 max-w-3xl text-lg;
 
     p {
         @apply mb-6;
@@ -22,7 +22,17 @@
     }
 
     figure {
-        @apply my-6 flex justify-center flex-col bg-black;
+        @apply my-6 flex justify-center flex-col relative;
+        
+        &:after {
+            @apply absolute block top-0 left-0 w-full h-full bg-black opacity-025 z-0;
+            background-blend-mode: multiply;
+            content: '';
+        }
+
+        * {
+            @apply z-10;
+        }
 
         img {
             @apply my-0;
@@ -35,7 +45,7 @@
 
     > p {
         &:first-of-type {
-            @apply font-medium text-xl leading-tight mb-6;
+            @apply font-medium text-2xl leading-tight mb-6;
         }
     }
 
