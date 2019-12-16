@@ -1,4 +1,4 @@
-<header class="page-header bg-light-peach math-paper">
+<header class="page-header bg-light-peach math-paper bg-scroll">
   <div class="container mx-auto">
     <div class="page-header__container">
       <h1 class="page-header__title">Kia Ora</h1>
@@ -8,7 +8,10 @@
         in Wellington, New Zealand who aim to put data to good use and make
         positive impact.</p>
 
-      <a href="#contact" class="link-icon"><span class="text">Get in touch</span> <span class="icon dragonfly-arrow"></span></a>
+      <a href="#contact" class="link-icon">
+        <span class="text">Get in touch</span>
+        <span class="icon dragonfly-arrow"></span>
+      </a>
 
     </div>
   </div>
@@ -27,6 +30,8 @@
   $for(tiles)$
     <a href="$url$" class="no-gutter-cell no-gutter-cell--overlay">
       <span class="no-gutter-cell__tag">Project</span>
+      $for(tags)$$tag$$endfor$
+      <br>
       <h2 class="no-gutter-cell__title">$title$</h2>
       $if(teaser)$
       <p class="no-gutter-cell__text">$teaser$</p>
@@ -51,145 +56,3 @@
     <a href="#contact" class="button call-to-action__button call-to-action__button--cool-blue">Get in touch</a>
   </div>
 </section>
-
-
-<!-- <div class="container mx-auto">
-  <h1>Smarter decisions using data</h1>
-</div> -->
-<!-- <section id="work-section">
-  <a class="anchor" id="work"></a>
-  <div class="container section-break">
-    <div class="services-list">
-      <div class="case-study">
-        <h3>Make <a class="highlight" href="/work#stats">informed decisions</a></h3>
-        <a href="/work/delphi-case-study.html">
-          <div style="background-image: url('/work/delphi-case-study/256-teaser.jpg')" class="case-study-image">
-          </div>
-        </a>
-        <div class="case-study-description">
-          <a href="/work/delphi-case-study.html">
-            <p>Statistical analysis helps managers make the best use of available information. Read how we used expert opinion to map turtle distributions <span class="read-more">&nbsp;</span></p>
-          </a>
-        </div>
-      </div>
-      <div class="case-study">
-        <h3>Get <a class="highlight" href="/work/#systems">ongoing value</a> from your data</h3>
-        <a href="/work/INZ-case-study.html">
-          <div style="background-image: url('/work/INZ-case-study/256-teaser.jpg')" class="case-study-image">
-          </div>
-        </a>
-        <div class="case-study-description">
-          <a href="/work/INZ-case-study.html">
-            <p>We build systems for data management, analysis, and display. Read how we improved visa processing<span class="read-more">&nbsp;</span></p>
-          </a>
-        </div>
-      </div>
-      <div class="case-study">
-        <h3>Develop <a class="highlight" href="/work#policy">evidence based policy</a></h3>
-        <a href="/work/seabird-risk.html">
-          <div style="background-image: url('/work/seabird-risk/256-teaser.jpg')" class="case-study-image">
-          </div>
-        </a>
-        <div class="case-study-description">
-        <p>
-          <a href="/work/seabird-risk.html">
-            <p>Good policy is supported by quantitative analysis. Read how we helped managers prioritise seabird conservation<span class="read-more">&nbsp;</span></p>
-          </a>
-        </div>
-      </div>
-      <div class="case-study">
-        <h3>Build your <a class="highlight" href="/work#capability">data science capability</a></h3>
-        <a href="/work/reporting-case-study.html">
-          <div style="background-image: url('/work/reporting-case-study/256-teaser.jpg')" class="case-study-image">
-          </div>
-        </a>
-        <div class="case-study-description">
-          <a href="/work/reporting-case-study.html">
-            <p>We help develop capability. Read how we worked with a team to reduce their report preparation time by 70%<span class="read-more">&nbsp;</span></p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="index-banner-image" id="index-ipad-image">
-  </div>
-  <div class="index-banner-text">
-    <div class="container">
-        <div class="wide">
-          <a href="/work/TMP-case-study.html">
-            <p>
-             Machine learning allows complex information to be analysed and simplified.
-             We developed an application to process audio from New Zealand's iwi radio stations,
-             allowing monitoring of the use of Māori language. This application was a
-             supreme winner on the 2016 Best Design awards. <span class="read-more" style="color: white">Read more</span>
-            </p>
-          </a>
-        </div>
-     </div>
-  </div>
-</section>
-<section class="section-break">
-  <div class="container">
-    <div class="index-header">
-      <h1>Talk to us</h1>
-    </div>
-    <div class="wide">
-      <p class="lead">
-        We always enjoy a chat about what we do. We are happy to talk about how data science can
-        help make your organisation more profitable, sustainable, and productive.
-      </p>
-    </div>
-    <div class="narrow">
-      <div class="porthole-grid two-columns narrow">
-        <div class="porthole">
-            <p class="porthole-heading">
-              Talk to <a class="people highlight" href="/people/abraham-edward.html">Edward Abraham</a>
-              about data science, statistics, or for general Dragonfly queries.
-            </p>
-            <a href="/people/abraham-edward.html">
-              <img src="/people/abraham-edward/256-teaser.jpg" />
-            </a>
-            <p>
-              <span>
-                <span class="hide-small">Call Edward on </span>
-                <a href="tel:+6421989454">+64 (0) 21 989 454</a>
-              </span><br />
-              <span>
-                <span class="hide-small">Email </span>
-                <a href="mailto:edward@dragonfly.co.nz">edward@dragonfly.co.nz</a>
-              </span>
-            </p>
-        </div>
-        <div class="porthole">
-            <p class="porthole-heading">
-              Talk to <a class="people highlight" href="/people/thompson-finlay.html">Finlay Thompson</a>
-              about software, databases, or tricky technical problems.
-            </p>
-            <a href="/people/thompson-finlay.html">
-              <img src="/people/thompson-finlay/256-teaser.jpg" />
-            </a>
-            <p>
-              <span>
-                <span class="hide-small">Call Finlay on </span>
-                <a href="tel:+6421426878">+64 (0) 21 426 878</a>
-              </span>
-              <br />
-              <span>
-                <span class="hide-small">Email </span>
-                <a href="mailto:finlay@dragonfly.co.nz">finlay@dragonfly.co.nz</a>
-              </span>
-            </p>
-        </div>
-      </div>
-    </div>
-    <div class="wide">
-      <h3>
-          To find out more, you can read about the
-          <a class="people highlight" href="/people/">Dragonfly team</a>,
-          browse our <a class="news highlight" href="/news/">news stories</a>,
-          or search for <a class="publications highlight" href="/publications/">reports
-          and publications</a>.
-      </h3>
-    </div>
-  </div>
-</section> -->

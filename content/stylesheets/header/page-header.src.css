@@ -14,11 +14,19 @@
     }
 
     &__content {
-        @apply text-2xl pt-6 pr-6 mb-16 leading-tight;
+        @apply text-xl pt-6 mb-16 leading-tight;
     }
+}
 
-    &__container {
-        @apply max-w-3/4;
+@screen sm {
+    .page-header {
+        &__content {
+            @apply pr-6;
+        }
+
+        &__container {
+            @apply max-w-3/4;
+        }
     }
 }
 
