@@ -21,7 +21,7 @@
 <section id="top-section" class="math-paper">
   <div class="collection-grid">
     $for(people)$
-      <a href="$pageurl$" class="no-gutter-cell person-tile lozad background-image bg-black" data-background-image="$teaserImage$">
+      <a href="$pageurl$" class="no-gutter-cell person-tile bg-black">
         <h2 class="no-gutter-cell__title mb-0">
             $firstname$<br>
             $lastname$$if(honour)$,<br>
@@ -29,6 +29,7 @@
         </h2>
     
         <span class="no-gutter-cell__link dragonfly-arrow"></span>
+        <div class="no-gutter-cell__image background-image lozad" data-background-image="$teaserImage$"></div>
       </a>
     $endfor$
 

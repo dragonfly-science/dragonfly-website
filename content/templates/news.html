@@ -26,39 +26,3 @@
   </header>
   $partial("templates/_bubble-navigation.html")$
 </div>
-
-<div class="container post-detail hidden">
-  <div class="sidebar">
-   <div class="post-top-image">
-     <div class="porthole" style="background-image: url('$teaserImage$');"></div>
-   </div>
-  </div>
-  <div class="heading content">
-   $if(title)$
-    <h2>$title$</h2>
-   $endif$
-   <div class="details">
-    $if(date)$
-      <p>$date$</p>
-    $endif$
-    $if(author)$
-      <p>$author$</p>
-    $endif$
-    </div>
-  </div>
-  $if(logo)$
-    <div class="sidebar">
-      <div class="post-info">
-          <img src="$logo$">
-      </div>
-    </div>
-    <div class="content post-body">
-      $body$
-    </div>
-  $else$
-    <div class="narrow post-body">
-      $body$
-    </div>
-  $endif$
-</div>
-
