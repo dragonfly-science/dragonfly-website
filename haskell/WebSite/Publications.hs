@@ -41,12 +41,12 @@ rules = do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= validatePage
 
-    match (collectionPattern cc) $ version "full" $ do
+    match (collectionPattern cc) $ do
         compile $ do
             scholmdCompiler
                 >>= saveSnapshot "content"
 
-    match (collectionPattern cc) $ do
+    match (collectionPattern cc) $ version "output" $ do
         route $ setExtension "html"
         compile $ do
             base <- baseContext (baseName cc)
@@ -64,7 +64,7 @@ getList cc limit = do
     let tags = listContextWith "tags" tagContext
     bib <- load bibIdentifier
     base <- baseContext (baseName cc)
-    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
+    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasNoVersion) "content"
     snaps' <- sortItemsBy (sortorder bib) snaps
     return $ listField (baseName cc) (tags <> base <> ref) (return $ take limit snaps')
     where
