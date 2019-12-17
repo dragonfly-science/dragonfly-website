@@ -15,6 +15,10 @@ module.exports = {
                 loader: 'babel-loader',
             },
             {
+                test: /\.css$/,
+                use: [ 'style-loader', 'postcss-loader' ]
+            },
+            {
                 test: require.resolve('zepto'),
                 use: 'imports-loader?this=>window',
             }
