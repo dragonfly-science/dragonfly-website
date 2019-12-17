@@ -7,14 +7,10 @@ $else$
         <div class="no-gutter-cell no-gutter-cell--overlay">
     $endif$
 $endif$
-    $if(published)$
-        <span class="no-gutter-cell__tag">$published$</span>
-    $else$
-        $if(section)$
+    $if(section)$
         <span class="no-gutter-cell__tag">$section$</span>
-        $else$
+    $else$
         <span class="no-gutter-cell__tag">&nbsp;</span>
-        $endif$
     $endif$
     <strong class="no-gutter-cell__title">$title$</strong>
 

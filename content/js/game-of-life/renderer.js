@@ -24,6 +24,8 @@ class Renderer {
     this.canvas.width = this.engine.width * this.pixelsPerCell
     this.canvas.height = this.engine.height * this.pixelsPerCell
 
+    this.context.translate(0.5, 0.5)
+
     window.addEventListener("orientationchange", this.resize.bind(this))
     window.addEventListener('resize', this.resize.bind(this))
   }
@@ -94,8 +96,8 @@ class Renderer {
     const h = this.canvas.height / this.pixelsPerCell
 
     for (let i=0; i<w; i++) {
-        const newX = x + (i * this.pixelsPerCell)
-        const newX1 = x - (i * this.pixelsPerCell)
+        const newX = Math.ceil(x + (i * this.pixelsPerCell))
+        const newX1 = Math.floor(x - (i * this.pixelsPerCell))
 
         this.context.beginPath();
             if (i % 2 === 1) {
@@ -114,8 +116,8 @@ class Renderer {
     }
 
     for (let i=0; i<h; i++) {
-        const newY = y + (i * this.pixelsPerCell)
-        const newY1 = y - (i * this.pixelsPerCell)
+        const newY = Math.ceil(y + (i * this.pixelsPerCell))
+        const newY1 = Math.floor(y - (i * this.pixelsPerCell))
 
         this.context.beginPath();
             if (i % 2 === 1) {

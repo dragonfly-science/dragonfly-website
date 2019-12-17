@@ -3,7 +3,9 @@
     @apply ml-0 my-6 max-w-3xl text-lg;
 
     p {
-        @apply mb-6;
+        @apply mb-6 overflow-hidden;
+
+        text-overflow: ellipsis;
     }
 
     a {
@@ -264,7 +266,15 @@
 /* Variations. */
 .body-content {
     &--article {
-        
+        .body-content__body {
+            p {
+                @apply text-lg;
+
+                &:first-of-type {
+                    @apply font-medium;
+                }
+            }
+        }
     }
 
     &--full-width {

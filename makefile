@@ -43,6 +43,6 @@ local:
 
 
 clean:
-	rm website && rm -rf _site .cache
+	rm -f website && rm -rf _site .cache
 
 

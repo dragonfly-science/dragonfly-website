@@ -20,7 +20,7 @@
 </header>
 
 <section id="top-section" class="math-paper">
-  <div class="collection-grid">
+  <div class="collection-grid collection-grid--no-bottom">
     <div class="no-gutter-cell no-gutter-cell--advert">
       <div>
         <p class="no-gutter-cell--advert__text">We use <a href="/work">Bayesian statistical, Machine Learning</a> and R to transform data
@@ -29,9 +29,9 @@
             class="icon dragonfly-arrow"></span></a>
       </div>
     </div>
-  $for(tiles)$
-    $partial("templates/_tile.html")$
-  $endfor$
+    $for(tiles)$
+      $partial("templates/_tile-index.html")$
+    $endfor$
     <a href="/people/" class="no-gutter-cell bg-black flex hover:bg-cool-blue">
       <div class="mt-auto w-full flex">
         <strong class="no-gutter-cell__title mb-0">Meet <br />the team</strong>

@@ -55,12 +55,12 @@ makeRules cc = do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= validatePage
 
-    match (collectionPattern cc) $ version "full" $ do
+    match (collectionPattern cc) $ do
         compile $ do
             scholmdCompiler
                 >>= saveSnapshot "content"
 
-    match (collectionPattern cc) $ do
+    match (collectionPattern cc) $ version "output" $ do
         route $ gsubRoute "/content.md" (const ".html")
         compile $ do
             ident <- getUnderlying
@@ -88,7 +88,7 @@ sortorder i = do
 
 getList :: CollectionConfig -> Int ->  Compiler (Context String)
 getList cc limit = do
-    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
+    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasNoVersion) "content"
     snaps' <- sortItemsBy sortorder snaps
     let l = length snaps'
         all = cycle snaps'
@@ -98,7 +98,7 @@ getList cc limit = do
 
 getBubbles :: CollectionConfig -> Maybe Identifier -> Compiler (Context String)
 getBubbles cc mident = do
-    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
+    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasNoVersion) "content"
     let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"
     snaps' <- sortItemsBy sortorder snaps
     let l = length snaps'
@@ -107,7 +107,7 @@ getBubbles cc mident = do
              | (prev, this, next) <- take l $ drop (l-1) $ zip3 all (drop 1 all) (drop 2 all) ]
         snaps'' = maybe (take 7 snaps') id $ do
                     ident <- mident
-                    let ident' = setVersion (Just "full") ident
+                    let ident' = setVersion Nothing ident
                     idx <- findIndex (\i -> ident' == itemIdentifier i) snaps'
                     let (before, after) = splitAt (idx + l) (cycle snaps')
                     return $ reverse (take 3 (reverse before)) ++ take 4 after
@@ -117,7 +117,7 @@ getBubbles cc mident = do
 
 getTagLists :: CollectionConfig -> Compiler (Context String)
 getTagLists cc = do
-    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
+    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasNoVersion) "content"
 
     -- Get all the tags together, and find unique tags
     let tags :: S.Set String -> Item String -> Compiler (S.Set String)

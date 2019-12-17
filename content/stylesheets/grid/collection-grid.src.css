@@ -1,10 +1,21 @@
 .collection-grid {
-    @apply max-w-8xl w-full flex flex-wrap mx-auto;
+    @apply max-w-8xl w-full flex flex-wrap mx-auto pb-20;
 }
 
 /* Variations. */
+.collection-grid {
+    &--no-bottom {
+        @apply pb-0;
+    }
+}
 @screen lg {
     .collection-grid {
+        @apply pb-32;
+
+        &--no-bottom {
+            @apply pb-0;
+        }
+
         &--work {
             .no-gutter-cell {
                 &:nth-of-type(1),

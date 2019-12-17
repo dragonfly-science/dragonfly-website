@@ -22,7 +22,7 @@
 
     &__text,
     p {
-        @apply text-xl leading-tight;
+        @apply text-lg leading-tight;
     }
 
     &__title,
@@ -39,9 +39,11 @@
 
     &__image {
         @apply absolute z-0 !important;
-        @apply w-full h-full bg-cover;
+        @apply bg-cover;
         @apply transition-all transition-ease-out-quart;
 
+        width: 101%;
+        height: 101%;
         left: 50%;
         top: 50%;
         transform: translate3d(-50%, -50%, 0);
@@ -106,7 +108,7 @@
 
         &__text,
         p {
-            @apply text-2xl mr-0;
+            @apply text-xl mr-0;
         }
     }
 }
@@ -179,7 +181,7 @@
 
         &__text,
         p {
-            @apply text-lg;
+            @apply text-xl;
         }
 
         &__link {

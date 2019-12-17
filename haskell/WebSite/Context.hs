@@ -11,6 +11,8 @@ module WebSite.Context (
   tagContext
 ) where
 
+import Debug.Trace
+
 import           Control.Monad
 import           Data.Aeson
 import           Data.List
@@ -80,14 +82,16 @@ listContextWith s ctx  = listFieldWith s ctx $ \item -> do
                 HM.lookup (T.pack s) metadata
     return $ map (\x -> Item (fromFilePath x) x) metas
 
+
 itemCtx :: Context String
 itemCtx  = listContextWith "tags" tagContext
-        <> defaultContext
         <> teaserImage
         <> socialImage
-        <> teaserField "teaser" "full"
+        <> mapContext stripTags (teaserField "teaser" "content")
         <> pageUrlField "pageurl"
         <> dateField "published" "%B %d, %Y"
+        <> sectionField "section"
+        <> defaultContext
 
 teaserImage :: Context String
 teaserImage = field "teaserImage" getImagePath
@@ -107,14 +111,11 @@ socialImage = field "socialImage" getImagePath
             ident = fromFilePath $ base </> "teaser.jpg"
         fmap (maybe "" (toUrl . (flip replaceFileName "1200-teaser.jpg"))) (getRoute ident)
 
-teaserSeparator :: String
-teaserSeparator = "<!--more-->"
-
 actualbodyField :: String -> Context String
 actualbodyField key = field key $ \_ -> do
-    value <- getUnderlying >>= load . setVersion (Just "full")
+    value <- getUnderlying >>= load
     let body = itemBody value
-        parts = splitAll teaserSeparator body
+        parts = splitAll "<!--more-->" body
     case parts of
         [] -> return "WARNING there is no body text"
         _  -> return $ last parts
@@ -127,6 +128,13 @@ pageUrlField key = field key $ \item -> do
       if isSuffixOf "/content.md" path
          then (take ((length path) - 11) path) ++ ".html"
       else (replaceExtension path ".html")
+
+sectionField :: String -> Context a
+sectionField key = field key $ \item -> do
+    let path = toFilePath (itemIdentifier item)
+    return $
+      fromMaybe "" $
+        listToMaybe (splitDirectories path)
 
 
 -- Provide context for a single BibTeX reference

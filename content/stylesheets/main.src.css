@@ -28,6 +28,11 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  color: var(--white);
+  background: var(--cool-blue);
+}
+
 /* Plugins. */
 
 /* Import Partials */
