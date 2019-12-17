@@ -83,22 +83,11 @@ listContextWith s ctx  = listFieldWith s ctx $ \item -> do
     return $ map (\x -> Item (fromFilePath x) x) metas
 
 
-teaserField2 :: String           -- ^ Key to use
-             -> Snapshot         -- ^ Snapshot to load
-             -> Context String   -- ^ Resulting context
-teaserField2 key snapshot = field key $ \item -> do
-    body <- itemBody <$> loadSnapshot (itemIdentifier item) snapshot
-    case needlePrefix "<!--more-->" (trace ("teaserField2 " ++ show body) body) of
-        Nothing -> error $
-            "Hakyll.Web.Template.Context: no teaser defined for " ++
-            show (itemIdentifier item)
-        Just t -> return t
-
 itemCtx :: Context String
 itemCtx  = listContextWith "tags" tagContext
         <> teaserImage
         <> socialImage
-        <> teaserField2 "teaser" "content"
+        <> teaserField "teaser" "content"
         <> pageUrlField "pageurl"
         <> dateField "published" "%B %d, %Y"
         <> sectionField "section"

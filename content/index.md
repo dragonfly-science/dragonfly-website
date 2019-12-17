@@ -3,8 +3,8 @@ title: Home
 og-title: Dragonfly Data Science
 og-description: Good decisions using data
 tiles:
-  - work/INZ-case-study/content.md
   - news/2017-08-14-kakapo-two/content.md
+  - work/INZ-case-study/content.md
   - news/2019-09-25-whitetip-assessment/content.md
   - work/webrear-case-study/content.md
 ---
