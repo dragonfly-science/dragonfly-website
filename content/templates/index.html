@@ -30,18 +30,7 @@
       </div>
     </div>
   $for(tiles)$
-    <a href="$url$" class="no-gutter-cell no-gutter-cell--overlay">
-      <span class="no-gutter-cell__tag">Project</span>
-      $for(tags)$$tag$$endfor$
-      <br>
-      <h2 class="no-gutter-cell__title">$title$</h2>
-      $if(teaser)$
-      <p class="no-gutter-cell__text">$teaser$</p>
-      $endif$
-
-      <span class="no-gutter-cell__link dragonfly-arrow"></span>
-      <div class="no-gutter-cell__image background-image lozad" data-background-image="$teaserImage$"></div>
-    </a>
+    $partial("templates/_tile.html")$
   $endfor$
     <a href="/people/" class="no-gutter-cell bg-black flex hover:bg-cool-blue">
       <div class="mt-auto w-full flex">

@@ -22,14 +22,7 @@
     </div>
 
     $for(news)$
-      <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay">
-        <span class="no-gutter-cell__tag">$published$</span>
-        <strong class="no-gutter-cell__title">$title$</strong>
-        <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link">
-          <span class="icon dragonfly-arrow ml-0"></span>
-        </span>
-        <div class="no-gutter-cell__image background-image lozad" data-background-image="$teaserImage$"></div>
-      </a>
+      $partial("templates/_tile.html")$
     $endfor$
   </div>
 </section>
