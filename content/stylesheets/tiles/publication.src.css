@@ -1,5 +1,5 @@
 .publication-tile {
-    @apply flex flex-col mr-8;
+    @apply flex flex-col;
 
     &__title,
     &__citation,
@@ -57,13 +57,15 @@
         &__title,
         &__citation,
         &__read-more {
-            @apply mr-8 max-w-full;
+            @apply mr-4 max-w-full;
         }
     }
 }
 
 @screen lg {
     .publication-tile {
+        @apply mr-0;
+
         &__title {
             @apply text-2xl;
         }
@@ -71,5 +73,11 @@
         &__citation {
             @apply text-xl;
         }
+    }
+}
+
+@screen xl {
+    .publication-tile {
+        @apply mr-8;
     }
 }

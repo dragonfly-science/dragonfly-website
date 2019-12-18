@@ -105,14 +105,14 @@ getBubbles cc mident = do
         all = cycle snaps'
         lu = [ (itemIdentifier this, (prev, next))
              | (prev, this, next) <- take l $ drop (l-1) $ zip3 all (drop 1 all) (drop 2 all) ]
-        snaps'' = maybe (take 7 snaps') id $ do
+        snaps'' = maybe (take 5 snaps') id $ do
                     ident <- mident
                     let ident' = setVersion Nothing ident
                     idx <- findIndex (\i -> ident' == itemIdentifier i) snaps'
                     let (before, after) = splitAt (idx + l) (cycle snaps')
-                    return $ reverse (take 3 (reverse before)) ++ take 4 after
-        previous = listField "bubbles_prev" (pageIndexCtx lu)(return (take 3 snaps''))
-        next     = listField "bubbles_next" (pageIndexCtx lu)(return (take 3 $ drop 4 snaps''))
+                    return $ reverse (take 2 (reverse before)) ++ take 3 after
+        previous = listField "bubbles_prev" (pageIndexCtx lu)(return (take 2 snaps''))
+        next     = listField "bubbles_next" (pageIndexCtx lu)(return (take 2 $ drop 3 snaps''))
     return  $ previous <> next
 
 getTagLists :: CollectionConfig -> Compiler (Context String)

@@ -1,6 +1,6 @@
 .citation-year {
     @apply text-left text-4xl font-medium leading-none hidden;
-    @apply publication-tile bg-transparent mr-8;
+    @apply bg-transparent;
 
     &__text {
         @apply px-6 flex flex-col justify-between;
@@ -320,12 +320,16 @@
 @screen sm {
     .citation-year {
         @apply bg-cool-blue text-white;
+
+        &__text {
+            @apply pb-10 pt-20;
+        }
     }
 }
 
 @screen lg {
     .citation-year {
-        @apply text-7xl;
+        @apply text-7xl mr-0;
         
         &__text {
             @apply pt-20 pb-12;
@@ -336,5 +340,11 @@
                 }
             }
         }
+    }
+}
+
+@screen xl {
+    .citation-year {
+        @apply mr-8;
     }
 }

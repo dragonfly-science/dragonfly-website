@@ -22,7 +22,7 @@
             @apply opacity-100;
         }
     }
-
+    
     figure {
         @apply my-6 flex justify-center flex-col relative;
         
@@ -267,7 +267,7 @@
 .body-content {
     &--article {
         .body-content__body {
-            p {
+            > p {
                 @apply text-lg;
 
                 &:first-of-type {
