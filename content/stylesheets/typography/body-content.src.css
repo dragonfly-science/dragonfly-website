@@ -3,9 +3,9 @@
     @apply ml-0 my-6 max-w-3xl text-lg;
 
     p {
-        @apply mb-6 overflow-hidden;
-
-        text-overflow: ellipsis;
+        @apply mb-6;
+        /* @apply overflow-hidden;
+        text-overflow: ellipsis; */
     }
 
     a {

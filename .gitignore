@@ -9,3 +9,4 @@ node_modules
 app.bundle.*
 .cache/
 .stack-work
+*.css.map
