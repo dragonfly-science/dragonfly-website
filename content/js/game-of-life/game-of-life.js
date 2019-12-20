@@ -1,12 +1,13 @@
 import { acorn, MouseEventHandler } from 'way-of-life'
 import Engine from './engine'
 import Renderer from './renderer'
+import $ from 'zepto'
 
 const defaultOptions = {
     canvasSelector: '#gameoflife',
-    desiredFPS: 7,
+    desiredFPS: parseInt($('.animation-controls__input').val()),
     pixelsPerCell: 28,
-    fillStyle: 'rgba(171, 167, 159, 0.8)',
+    fillStyle: '#43A1C9',
 }
 
 const options = defaultOptions
@@ -36,23 +37,69 @@ const gameOfLife = () => {
     // mouse events
     new MouseEventHandler(canvas, engine, renderer)
 
-    const checkFlag = () => {
+    const initialize = () => {
         if (engine.module.calledRun !== true) {
             window.setTimeout(checkFlag.bind(this), 100)
         } else {
-
             jsEngine.init()
             acorn(jsEngine, ~~(height / 2), ~~(width / 2))
+            acorn(jsEngine, ~~(height / 2) + options.pixelsPerCell, ~~(width / 2))
             renderer.start()
         }
     }
-    checkFlag()
+    initialize()
+
+    // Set up controls to alter speed
+    $('.animation-controls__header button').on('click', function(e) {
+        $('.animation-controls').toggleClass('open')
+    })
+
+    $('.animation-controls__input').on('change keyup', function(e) {
+        let val = parseInt($(this).val())
+
+        if (val < 0) {
+            val = 0
+        }
+
+        renderer.play = false
+        renderer.desiredFPS = val
+        renderer.play = true
+    })
+
+    let mouseTimeout = null;
+
+    const changeValue = (el) => {
+        let val = parseInt($('.animation-controls__input').val()) + ($(el).is('.up') ? 1 : -1 )
+        const matches = $('.animation-controls__input').val().match(/fps$/)
+
+        if (val < 0) {
+            val = 0
+        }
+
+        renderer.play = false
+        renderer.desiredFPS = val
+        renderer.play = true
+
+        val += matches === null ? '' : 'fps'
+
+        $('.animation-controls__input').val(val)
+    }
+
+    $('.animation-controls__control button').on('click', function() {
+        changeValue(this)
+    })
+
+    $('.animation-controls__control button').on('mousedown', function(e) {
+        const self = this
+
+        mouseTimeout = setInterval(function() {
+            changeValue(self)
+        }, 100)
+    })
+
+    $('.animation-controls__control button').on('mouseup', function() {
+        clearInterval(mouseTimeout)
+    })
 }
-
-// class GameOfLife {
-//     constructor() {
-
-//     }
-// }
 
 export default gameOfLife

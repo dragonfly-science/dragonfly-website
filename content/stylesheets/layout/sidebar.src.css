@@ -1,15 +1,6 @@
 .sidebar {
     @apply py-24 text-lg leading-normal w-full max-w-full;
 
-    /* a {
-        @apply underline;
-        @apply transition-all transition-ease-out-quart;
-
-        &:hover {
-            @apply text-cool-blue no-underline;
-        }
-    } */
-
     .button {
         @apply no-underline;
     }
@@ -30,6 +21,6 @@
 
 @screen lg {
     .sidebar {
-        @apply ml-20 w-64;
+        @apply w-64;
     }
 }

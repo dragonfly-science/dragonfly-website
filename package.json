@@ -44,9 +44,10 @@
     },
     "scripts": {
         "fonts": "glyphs2font fonts.yaml",
+        "fonts:build": "NODE_ENV=production postcss content/fonts/dragonfly.css --config ./postcss.config.prod.js -o _site/fonts/dragonfly.css",
         "build": "npm run css & npm run fonts & npm run build:js",
         "css": "NODE_ENV=production postcss content/stylesheets/main.src.css --config ./ -o content/stylesheets/dragonfly.css",
-        "watch:css": "npm run fonts & NODE_ENV=production postcss content/stylesheets/main.src.css -m --config ./ -o content/stylesheets/dragonfly.css -w",
+        "watch:css": "npm run fonts & NODE_ENV=production postcss content/stylesheets/main.src.css -m --config ./postcss.config.js -o content/stylesheets/dragonfly.css -w",
         "watch:js": "webpack -w",
         "build:js": "webpack --mode=production"
     },

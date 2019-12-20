@@ -232,7 +232,7 @@
 
 @screen xl {
     .body-content {
-        @apply ml-64;
+        /* @apply ml-64; */
 
         blockquote {
             @apply mt-8 mb-8 pt-16 pb-24;
@@ -290,6 +290,18 @@
                     @apply max-w-full;
                 }
             }
+        }
+    }
+
+    &--no-sidebar {
+        /* @apply ml-64; */
+    }
+}
+
+@screen xl {
+    .body-content {
+        &--no-sidebar {
+            @apply ml-64;
         }
     }
 }

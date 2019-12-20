@@ -1,5 +1,4 @@
-<header class="page-header page-header--article page-header--news page-header--small $if(socialImage)$ text-white jarallax $else$ page-header--no-overlay bg-light-peach math-paper $endif$">
-    $if(socialImage)$<img class="jarallax-img page-header__bg-image lozad lozad-image" src="$socialImage$" />$endif$
+<header class="page-header page-header--article page-header--news page-header--small page-header--no-overlay bg-light-peach math-paper">
   <div class="container mx-auto">
     <div class="page-header__container flex flex-col">
       $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
@@ -14,7 +13,10 @@
 <article id="top-section" class="article math-paper">
   <div class="bg-light-peach px-6">
     <div class="container mx-auto flex flex-col lg:flex-row">
-      <div class="body-content body-content--article">
+      <!-- <aside class="sidebar">
+          <img class="lozad lozad-image rounded-full" data-src="$teaserImage$">
+      </aside> -->
+      <div class="body-content body-content--no-sidebar body-content--article">
         $body$
       </div>
     </div>

@@ -41,12 +41,14 @@ html {
 @import "footer/main-footer.src.css";
 
 @import "grid/collection-grid.src.css";
-@import "grid/columns.src.css";
 @import "grid/guttered-cells.src.css";
+@import "grid/no-gutter-cell.src.css";
 @import "grid/publication-grid.src.css";
 
 @import "header/page-header.src.css";
 
+@import "layout/animation-controls.src.css";
+@import "layout/content.src.css";
 @import "layout/call-to-action.src.css";
 @import "layout/citation-year.src.css";
 @import "layout/game-of-life.src.css";

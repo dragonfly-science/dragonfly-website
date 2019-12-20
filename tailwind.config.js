@@ -30,6 +30,8 @@ module.exports = {
         '9/2xl': '7.5rem',
       },
       margin: {
+        '12rem': '12rem',
+        '-12rem': '-12rem',
         '28': '7rem',
         '-28': '-7rem',
         '2/3': '66%',
@@ -51,8 +53,10 @@ module.exports = {
       },
       maxWidth: {
         '12rem': '12rem',
+        '14rem': '14rem',
         '16rem': '16rem',
         '3/4': '75%',
+        '2/3': '66%',
         '1/2': '50%',
         '1/3': '33%',
         '1/4': '25%',
@@ -115,6 +119,9 @@ module.exports = {
         },
         '.rotate-45': {
           transform: 'rotate(45deg)',
+        },
+        '.rotate-135': {
+          transform: 'rotate(135deg)',
         },
         '.rotate-180': {
           transform: 'rotate(180deg)',

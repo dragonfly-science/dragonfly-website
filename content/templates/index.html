@@ -1,4 +1,3 @@
-<!-- <header class="page-header bg-light-peach math-paper math-paper--origin bg-scroll relative overflow-hidden"> -->
 <header class="page-header bg-light-peach relative overflow-hidden select-none">
   <div class="container mx-auto relative z-10">
     <div class="page-header__container">
@@ -9,18 +8,34 @@
         in Wellington, New Zealand who aim to put data to good use and make
         positive impact.</p>
 
-      <a href="#contact" class="link-icon">
-        <span class="text">Get in touch</span>
-        <span class="icon dragonfly-arrow"></span>
-      </a>
+        <a href="#top-section" class="link-icon link-icon--arrow-down link-icon--large">
+          <span class="icon dragonfly-arrow"></span>
+        </a>
 
     </div>
   </div>
+  <div class="animation-controls">
+    <div class="animation-controls__header flex flex-row">
+      <button class="bg-slate-grey">
+        <i class="dragonfly-hamburger"></i>
+        <i class="dragonfly-close"></i>
+      </button>
+      <span>Game of Life</span>
+    </div>
+    <div class="animation-controls__control">
+        <input type="text" autocomplete="off" pattern="[^0-9]+?(fps)" class="animation-controls__input" value="6fps" spellcheck="false" />
+        <div class="animation-controls__control__buttons">
+          <button class="up -rotate-45"></button>
+          <button class="down rotate-135"></button>
+        </div>
+    </div>
+  </div>
+
   <canvas id="gameoflife" class="game-of-life"></canvas>
 </header>
 
 <section id="top-section" class="math-paper">
-  <div class="collection-grid collection-grid--no-bottom">
+  <div class="collection-grid collection-grid--2cell collection-grid--no-bottom">
     <div class="no-gutter-cell no-gutter-cell--advert">
       <div>
         <p class="no-gutter-cell--advert__text">We use <a href="/work">Bayesian statistical, Machine Learning</a> and R to transform data

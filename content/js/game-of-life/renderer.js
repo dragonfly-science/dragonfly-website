@@ -7,12 +7,13 @@ class Renderer {
     this.context = canvas.getContext('2d')
     this.engine = engine
 
+    
     // options
     this.pixelsPerCell = options.pixelsPerCell || 5
     this.desiredFPS = options.desiredFPS || 30
     this.fpsNode = options.fpsNode || false
     this.fillStyle = options.fillStyle || 'rgba(222,122,39,0.5)'
-
+    
     // renderer variables
     this.play = false
     this.fpsTime = 0

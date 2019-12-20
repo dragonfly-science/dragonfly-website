@@ -14,7 +14,7 @@
         }
 
         &__links {
-            @apply flex flex-col overflow-hidden;
+            @apply flex flex-col overflow-auto;
             @apply transition-max-height transition-ease-out-quart transition-500;
 
             max-height: 0;
@@ -72,26 +72,17 @@
             }
 
             &__links {
-                @apply flex-row;
+                @apply flex-row overflow-hidden;
             }
         }
 
         &__search {
             @apply max-w-1/2;
-            /* @apply bg-white my-auto py-1 pl-3 pr-3 flex justify-center flex-grow-0; */
         
             &__input {
                 @apply text-xl max-w-full;
             }
-
-            /* &__button {
-                @apply text-cool-blue text-2xl outline-none;
-            } */
         }
-
-        /* &__title {
-            @apply my-auto;
-        } */
 
         &__buttons {
             button {
@@ -116,15 +107,6 @@
 
         &__tags {
             @apply my-16;
-        }
-
-        &__buttons {
-            /* @apply ml-20 relative my-0;
-
-            button {
-                @apply absolute right-0 -mr-12;
-                margin-top: -2.6rem;
-            } */
         }
     }
 }
