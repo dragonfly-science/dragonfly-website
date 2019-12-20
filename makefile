@@ -16,7 +16,8 @@ build: website npm
 	$(RUN) bash -c 'cd content && ../website build'
 	$(RUN) bash -c 'npm run css && npm run fonts'
 	$(RUN) bash -c 'npm run build:js && npm run fonts:build'
-	$(RUN) bash -c 'cp content/stylesheets/dragonfly.css _site/assets/dragonfly.css; cp content/scripts/app.bundle.js _site/assets/app.bundle.js'
+	$(RUN) bash -c 'mkdir -p ./_site/assets'
+	$(RUN) bash -c 'cp ./content/stylesheets/dragonfly.css ./_site/assets/dragonfly.css; cp ./content/scripts/app.bundle.js ./_site/assets/app.bundle.js'
 
 
 CSS := $(shell find content/stylesheets -name *.css -not -name dragonfly.css)
