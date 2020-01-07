@@ -1,5 +1,6 @@
 import { createBrowserHistory } from 'history'
-import _ from 'underscore'
+// import _ from 'underscore'
+import { filter, forEach, indexOf, intersection, uniq } from 'lodash-es'
 import List from 'list.js'
 import QS from 'query-string'
 
@@ -49,7 +50,7 @@ const decodeURL = () => {
     if (typeof parsed.tags !== 'undefined') {
         // Disable tags that aren't visible.
         $(`.tag-list__tag`).removeClass('tag-list__tag--active')
-        _.each(parsed.tags.split(','), function(el) {
+        forEach(parsed.tags.split(','), function(el) {
             $(`.tag-list__tag[data-tag="${el}"]`)
                 .addClass('tag-list__tag--active')
                 .removeClass('tag-list__tag--disabled')
@@ -79,13 +80,13 @@ const Publications = ($) => {
             'publication-type': true,
         }
 
-        _.each(['author', 'subject', 'publication-type'], function(element) {
+        forEach(['author', 'subject', 'publication-type'], function(element) {
             let current = []
             $(`.tag-list__tag--${element}.tag-list__tag--active[data-tag]`).each(function() {
                 current.push($(this).attr('data-tag').trim())
             });
 
-            current = _.filter(current, (t) => (!(t === '')))
+            current = filter(current, (t) => (!(t === '')))
             foundTags[element] = current
         })
 
@@ -94,11 +95,11 @@ const Publications = ($) => {
         const publications = foundTags['publication-type']
 
         publicationList.filter((item) => {
-            const itemtags = _.filter(item.values().tagslugs.trim().split(' '), (t) => (!(t === '')))
+            const itemtags = filter(item.values().tagslugs.trim().split(' '), (t) => (!(t === '')))
 
-            const a = authors.length > 0 ? _.intersection(authors, itemtags).length === authors.length : true;
-            const b = subjects.length > 0 ? _.intersection(subjects, itemtags).length == subjects.length : true;
-            const c = publications.length > 0 ? _.intersection(publications, itemtags).length === publications.length : true;
+            const a = authors.length > 0 ? intersection(authors, itemtags).length === authors.length : true;
+            const b = subjects.length > 0 ? intersection(subjects, itemtags).length == subjects.length : true;
+            const c = publications.length > 0 ? intersection(publications, itemtags).length === publications.length : true;
 
             return a && b && c;
         })
@@ -119,7 +120,7 @@ const Publications = ($) => {
         let t = ''
 
         // Filter out any non-publication tiles (e.g. years)
-        _.each(publicationList.visibleItems, function(el, index) {
+        forEach(publicationList.visibleItems, function(el, index) {
             if ($(el.elm).is('.list-tile')) {
                 n++
             }
@@ -144,10 +145,10 @@ const Publications = ($) => {
 
         // get tags from visible list items.
         let visibleTags = [];
-        _.each(publicationList.visibleItems, function(item) {
+        forEach(publicationList.visibleItems, function(item) {
             visibleTags = visibleTags.concat(item.values().tagslugs.trim().split(' '))
         })
-        visibleTags = _.uniq(visibleTags)
+        visibleTags = uniq(visibleTags)
 
         // Diable tags that aren't visible.
         $('.tag-list__tag').each(function(index, item) {
@@ -156,7 +157,7 @@ const Publications = ($) => {
             if (typeof tag !== 'undefined') {
                 tag = tag.trim()
 
-                if (tag !== '' && _.indexOf(visibleTags, tag) === -1) {
+                if (tag !== '' && indexOf(visibleTags, tag) === -1) {
                     $(this).addClass('tag-list__tag--disabled').removeClass('tag-list__tag--active')
                 } else {
                     $(this).removeClass('tag-list__tag--disabled')
