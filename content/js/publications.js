@@ -3,15 +3,6 @@ import _ from 'underscore'
 import List from 'list.js'
 import QS from 'query-string'
 
-
-// export const getParameterByName = (name) => {
-//     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]')
-//     let regex = new RegExp('[\\?&]' + name + '=([^&#]*)')
-//     let results = regex.exec(location.search)
-
-//     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '))
-// }
-
 /**
  * Update the URL with query string params for tags & search (if available)
  * @param history History object

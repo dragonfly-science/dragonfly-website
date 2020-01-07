@@ -68,7 +68,7 @@ continuous integration system will update the [staging site](https://www-dev.dra
 This takes less than a minute. If you are collaborating with us, we can give you a username and
 password for the staging site.
 
-#### HTML templates and CSS
+#### HTML templates, CSS & JavaScript
 
 HTML templates for the project are in `content/templates`. A typical page has the following structure:
 ```
@@ -87,7 +87,7 @@ HTML templates for the project are in `content/templates`. A typical page has th
       <div class="container">
         <div class="side-bar"></div>
         <div class="content"></div>
-      </div>
+      <!-- </div> -->
     </main>
     <footer>
       <div class="container">
@@ -104,13 +104,8 @@ content that is not full width should be inside a container block. Typical page
 content is inside a wide or a content block. The default template includes everything outside
 the main block. Page templates should include container and content blocks as appropriate.
 
-The layout uses the [Bourbon](http://www.bourbon.io) SASS system for managing the CSS and the responsive
-design. Breakpoints are named after mountain bike trails in Aro Valley. There is a mysterious order to them.
-
-  - [$transient](http://www.trailforks.com/trails/transient/): smallest
-  - [$highbury-fling](http://tracks.org.nz/track/show/851): smallish
-  - [$clinical](http://www.trailforks.com/trails/clinical/): medium
-  - [$serendipity](http://www.trailforks.com/trails/serendipity-16954/): large
++ [css documentation](docs/css.md)
++ [JS documentation](docs/js.md)
 
 ### Deployment is from the release branch
 

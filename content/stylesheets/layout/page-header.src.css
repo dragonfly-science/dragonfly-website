@@ -68,7 +68,6 @@
     }
 
     &--article {
-        /* @apply py-20; */
         @apply relative;
         background-position: center top;
 
@@ -114,12 +113,6 @@
 @screen md {
     .page-header {
         &--article {
-            /* @apply py-32; */
-
-            /* &__date {
-                @apply -mt-28;
-            } */
-
             .page-header__title {
                 + .link-icon {
                     @apply mt-20;
@@ -132,21 +125,9 @@
 @screen lg {
     .page-header {
         &--article {
-            /* @apply py-32; */
-
-            /* &__date {
-                @apply -mt-28;
-            } */
-
             .page-header__title {
                 @apply text-7xl;
             }
-
-            /* .link-icon {
-                .icon {
-                    @apply text-5xl mt-0;
-                }
-            } */
         }
 
         &--news {

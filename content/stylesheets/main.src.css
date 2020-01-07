@@ -36,24 +36,21 @@ html {
 /* Plugins. */
 
 /* Import Partials */
-@import "filters/filtering.src.css";
-
-@import "footer/main-footer.src.css";
-
 @import "grid/collection-grid.src.css";
-@import "grid/guttered-cells.src.css";
+@import "grid/grid-cell.src.css";
 @import "grid/no-gutter-cell.src.css";
 @import "grid/publication-grid.src.css";
-
-@import "header/page-header.src.css";
 
 @import "layout/animation-controls.src.css";
 @import "layout/content.src.css";
 @import "layout/call-to-action.src.css";
 @import "layout/citation-year.src.css";
+@import "layout/filtering.src.css";
 @import "layout/game-of-life.src.css";
 @import "layout/list-container.src.css";
+@import "layout/main-footer.src.css";
 @import "layout/numbered-section.src.css";
+@import "layout/page-header.src.css";
 @import "layout/person-tile.src.css";
 @import "layout/related-content.src.css";
 @import "layout/sidebar.src.css";
