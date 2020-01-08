@@ -18,7 +18,8 @@ module.exports = {
             defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
 
             whitelistPatterns: [
-                /--disabled$/
+                /--disabled$/,
+                /body-content.*/
             ],
             rejected: true
         })
