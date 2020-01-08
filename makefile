@@ -9,6 +9,7 @@ website: $(HS) haskell/Site.hs
 
 develop: website
 	$(RUN) bash -c '(cd content/stylesheets && find . -name \*.css -not -name dragonfly.css | npm run watch:css) & (cd content && ../website watch) & (cd content && npm run watch:js)'
+	$(RUN) bash -c 'touch ./content/js/app.ts'
 
 
 CONTENT := $(shell find content)

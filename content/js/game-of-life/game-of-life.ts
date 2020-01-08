@@ -81,7 +81,7 @@ const gameOfLife = () => {
         renderer.desiredFPS = val
         renderer.play = true
 
-        $('.animation-controls__input').val(matches === null ? '' : 'fps')
+        $('.animation-controls__input').val(val + (matches === null ? '' : 'fps'))
     }
 
     $('.animation-controls__control button').on('click', function(this: HTMLElement) {
