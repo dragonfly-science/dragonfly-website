@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+// const ImageminPlugin = require("imagemin-webpack")
 
 module.exports = {
     entry: path.resolve(__dirname, 'content/js/app.ts'),
@@ -39,6 +40,6 @@ module.exports = {
     plugins: [
         new webpack.ProvidePlugin({
             $: 'zepto-webpack'
-        })
+        }),
     ]
 };
