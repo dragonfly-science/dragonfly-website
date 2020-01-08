@@ -85,7 +85,7 @@ const decodeURL = () => {
     }
 }
 
-const Publications = ($: ZeptoStatic) => {
+const Publications = () => {
     if ($('#publication-list').length === 0) {
         return
     }

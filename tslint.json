@@ -23,7 +23,8 @@
         "no-submodule-imports": false,
         "no-implicit-dependencies": false,
         "no-string-literal": false,
-        "no-bitwise": false
+        "no-bitwise": false,
+        "variable-name": false
     },
     "rulesDirectory": []
 }

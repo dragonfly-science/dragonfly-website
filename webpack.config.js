@@ -21,10 +21,6 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [ 'style-loader', 'postcss-loader' ]
-            },
-            {
-                test: require.resolve('zepto'),
-                use: 'imports-loader?this=>window',
             }
         ]
     },
@@ -37,5 +33,10 @@ module.exports = {
             jquery: 'zepto',
         },
         extensions: ['.js', '.ts'],
-    }
+    },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'zepto-webpack'
+        })
+    ]
 };

@@ -46,6 +46,6 @@ local:
 
 
 clean:
-	rm -f website && rm -rf _site .cache
+	rm -f website && rm -rf _site .cache && rm content/stylesheets/dragonfly.css* && rm content/scripts/*.js*
 
 

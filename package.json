@@ -54,7 +54,8 @@
         "tslint-loader": "^3.5.4",
         "typescript": "^3.7.4",
         "webpack": "^4.41.2",
-        "webpack-cli": "^3.3.10"
+        "webpack-cli": "^3.3.10",
+        "zepto-webpack": "^1.2.1"
     },
     "scripts": {
         "fonts": "glyphs2font fonts.yaml",

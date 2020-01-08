@@ -1,6 +1,6 @@
 import animateScrollTo from 'animated-scroll-to'
 
-const TopSection = ($: ZeptoStatic) => {
+const TopSection = () => {
     $('a[href="#top-section"]').click((e) => {
         e.preventDefault()
 

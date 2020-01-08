@@ -11,11 +11,10 @@ import GameOfLife from './game-of-life/game-of-life'
 smoothscroll.polyfill()
 
 Zepto(($: ZeptoStatic) => {
-    Publications($)
+    Publications()
     MobileMenu()
-    TopSection($)
+    TopSection()
     LazyLoad()
     Parallaxing()
     GameOfLife()
 })
-
