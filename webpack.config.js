@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-    entry: './content/js/app.js',
+    entry: path.resolve(__dirname, 'content/js/app.ts'),
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'content/scripts'),
@@ -13,6 +13,10 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
+            },
+            {
+                test: /\.tsx?/,
+                loader: ['ts-loader'],
             },
             {
                 test: /\.css$/,
@@ -31,6 +35,7 @@ module.exports = {
     resolve: {
         alias: {
             jquery: 'zepto',
-        }
+        },
+        extensions: ['.js', '.ts'],
     }
 };
