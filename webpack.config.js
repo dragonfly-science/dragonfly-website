@@ -6,23 +6,25 @@ module.exports = {
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'content/scripts'),
+        chunkFilename: '[name].bundle.js',
         filename: 'app.bundle.js'
     },
     module: {
         rules: [
             {
-                test: /\.js$/,
-                loader: 'babel-loader',
-            },
-            {
                 test: /\.tsx?/,
-                loader: ['ts-loader'],
+                loader: ['babel-loader'],
             },
             {
                 test: /\.css$/,
                 use: [ 'style-loader', 'postcss-loader' ]
             }
         ]
+    },
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+      },
     },
     stats: {
         colors: true

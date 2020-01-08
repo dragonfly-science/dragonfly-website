@@ -2,11 +2,9 @@
     "name": "dragonfly-website",
     "version": "1.0.0",
     "description": "JavaScript & CSS for the dragonfly website.",
-    "main": "index.js",
+    "main": "content/js/app.ts",
     "dependencies": {
-        "@types/smoothscroll-polyfill": "^0.3.1",
         "animated-scroll-to": "^2.0.5",
-        "hamburgers": "^1.1.3",
         "history": "^4.10.1",
         "jarallax": "^1.12.0",
         "list.js": "^1.5.0",
@@ -21,7 +19,7 @@
         "zepto": "^1.2.0"
     },
     "devDependencies": {
-        "@babel/core": "^7.7.5",
+        "@babel/core": "^7.7.7",
         "@babel/plugin-proposal-class-properties": "^7.7.4",
         "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
         "@babel/preset-env": "^7.7.6",
@@ -32,6 +30,7 @@
         "@types/lodash": "^4.14.149",
         "@types/lodash-es": "^4.17.3",
         "@types/lozad": "^1.9.0",
+        "@types/smoothscroll-polyfill": "^0.3.1",
         "@types/zepto": "^1.0.30",
         "autoprefixer": "^9.7.2",
         "babel-loader": "^8.0.6",

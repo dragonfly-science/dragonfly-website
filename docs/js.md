@@ -1,7 +1,7 @@
 # JavaScript
 
-All JavaScript is written for ES6+ & compiled via [Webpack](https://webpack.js.org/),
-parsed via [Babel](https://babeljs.io/).
+All JavaScript is written in [Typescript](https://www.typescriptlang.org/) for 
+ES6 & compiled via [Webpack](https://webpack.js.org/), parsed via [Babel](https://babeljs.io/).
 
 ## Webpack functions
 
