@@ -14,7 +14,7 @@
     }
 
     &__content {
-        @apply text-xl pt-6 mb-16 leading-tight;
+        @apply text-xl pt-6 mb-16 leading-tight font-medium;
     }
 }
 
@@ -43,11 +43,15 @@
         @apply py-20;
 
         &__title {
-            @apply text-7xl;
+            @apply text-8xl;
         }
 
         &__content {
-            @apply leading-none text-3xl pt-12;
+            @apply text-3xl pt-12;
+        }
+
+        &__container {
+            @apply ml-24;
         }
     }
 }

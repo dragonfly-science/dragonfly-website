@@ -1,5 +1,4 @@
 .main-nav {
-    /* @apply overflow-hidden; */
     @apply flex flex-col top-0 flex-grow justify-center absolute w-full; 
     @apply left-0 bg-white h-0 mt-12 opacity-0 transition-all;
 
@@ -22,7 +21,7 @@
             }
 
             &:hover {
-                @apply no-underline;
+                @apply no-underline text-cool-blue;
 
                 &:after {
                     @apply transition-all;
@@ -45,7 +44,12 @@
     }
 
     &__label {
-        @apply font-medium text-lg block pb-1;
+        @apply font-medium text-lg block;
+        @apply transition-all;
+
+        &:hover {
+            @apply text-cool-blue;
+        }
     }
 
     &__container {
@@ -102,7 +106,7 @@
         }
 
         &__link {
-            @apply text-left w-auto mr-24 pb-0 h-full flex items-center justify-center relative;
+            @apply text-left w-auto mr-16 pb-0 h-full flex items-center justify-center relative;
 
             &:after {
                 @apply w-full bg-cool-blue absolute top-0 h-0 transition-all;
@@ -155,8 +159,16 @@
 
             &:after {
                 @apply inline-block border-black border-r border-b ml-4 relative; 
-                @apply top-auto h-2 w-2 rotate-45;
+                @apply top-auto h-2 w-2 rotate-45 transition-all;
                 content: '';
+            }
+    
+            &:hover {
+                @apply text-cool-blue;
+    
+                &:after {
+                    @apply border-cool-blue;
+                }
             }
         }
 

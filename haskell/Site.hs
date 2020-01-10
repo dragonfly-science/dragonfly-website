@@ -66,10 +66,11 @@ main = do
                           ]
     Images.imageProcessor ( "**/teaser.jpg") $
                           [ ( "1200", ["-resize" , "1200+600^", "-gravity", "Center", "-crop", "1200+6000+0+0", "-quality", "75"]),
-                            ( "480", ["-resize" , "480+480^", "-gravity", "Center", "-crop", "480+480+0+0", "-quality", "75"]),
+                            ( "480", ["-resize" , "600+600^", "-gravity", "Center", "-crop", "600+600+0+0", "-quality", "75"]),
                             ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
                           , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0", "-quality", "75"])
                           ]
+
 
     --Images.imageProcessor ( "**/*.pdf") $
     --                      [ ( "256", ["-density" , "100", "-resize", "256x256^", "-crop", "256x256+0+0"])

@@ -1,13 +1,11 @@
 const path = require('path')
 const webpack = require('webpack')
-// const ImageminPlugin = require("imagemin-webpack")
 
 module.exports = {
     entry: path.resolve(__dirname, 'content/js/app.ts'),
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'content/scripts'),
-        chunkFilename: '[name].bundle.js',
         filename: 'app.bundle.js'
     },
     module: {
@@ -21,11 +19,6 @@ module.exports = {
                 use: [ 'style-loader', 'postcss-loader' ]
             }
         ]
-    },
-    optimization: {
-      splitChunks: {
-        chunks: 'all',
-      },
     },
     stats: {
         colors: true

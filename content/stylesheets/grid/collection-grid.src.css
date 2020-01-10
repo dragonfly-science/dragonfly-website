@@ -64,7 +64,7 @@
     
                 &--advert {
                     > div {
-                        margin: auto;
+                        /* margin: auto; */
                     }
                 }
     
@@ -88,7 +88,7 @@
     
                 &--advert {
                     > div {
-                        @apply max-w-1/2 !important;
+                        @apply max-w-2/3 !important;
                     }
                 }
             }
