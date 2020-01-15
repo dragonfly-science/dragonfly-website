@@ -1,26 +1,20 @@
-<header class="page-header bg-light-peach math-paper">
+<header class="page-header page-header--reversed bg-cool-blue math-paper math-paper--reverse">
   <div class="page-header__outer">
-    <div class="page-header__container max-w-full">
+    <div class="page-header__container text-white">
       <h1 class="page-header__title">Latest news</h1>
+
+      <div class="page-header__content">
+        <p>
+          We like to tell our stories about the work we do for clients, and 
+          the diverse projects we're involved in.
+        </p>
+      </div>
     </div>
   </div>
 </header>
 
 <section id="top-section" class="math-paper">
-  <div class="collection-grid">
-    <div class="no-gutter-cell no-gutter-cell--advert">
-      <div>
-        <p class="no-gutter-cell--advert__text">
-          We like to tell our stories about the work we do for clients, and 
-          the diverse projects we're involved in.
-        </p>
-
-        <p class="no-gutter-cell--advert__text">
-          So have a read through the latest.
-        </p>
-      </div>
-    </div>
-
+  <div class="collection-grid collection-grid--2cell collection-grid--no-bottom">
     $for(news)$
       $partial("templates/_tile.html")$
     $endfor$

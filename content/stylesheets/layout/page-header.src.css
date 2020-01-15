@@ -71,7 +71,7 @@
 @screen xl {
     .page-header {
         &__container {
-            @apply max-w-2/3;
+            @apply max-w-38rem;
         }
 
         &__outer {
@@ -119,7 +119,7 @@
         }
     }
 
-    &--publications {
+    &--reversed {
         .page-header__content {
             @apply mb-0;
         }
@@ -164,13 +164,18 @@
 
 @screen xl {
     .page-header {
-        &--publications {
-            .page-header__container {
-                @apply flex max-w-full;
+        &--reversed {
+            /* .page-header__container {
+                @apply flex max-w-full !important;
             }
+
+            .page-header__title {
+                @apply pr-16;
+            }
+
             .page-header__content {
-                @apply pt-6 pl-16;
-            }
+                @apply pt-6;
+            } */
         }
     }
 }

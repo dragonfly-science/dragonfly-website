@@ -31,7 +31,8 @@
     }
 
     &__title {
-        @apply font-bold mb-16 max-w-2/3;
+        @apply font-bold mb-16;
+        @apply max-w-3/4;
         @apply transition-all transition-ease-out-quart;
 
         font-size: 8vw;
@@ -44,11 +45,7 @@
     &__text,
     p {
         @apply text-lg leading-tight;
-    }
-
-    &__text,
-    p {
-        @apply max-w-xs;
+        @apply max-w-2/3;
     }
 
     &__link {
@@ -95,18 +92,24 @@
 
 @screen sm {
     .no-gutter-cell {
-        @apply w-1/2;
-
         &__text,
         p {
-            @apply max-w-full;
+            /* @apply max-w-full; */
+        }
+
+        &__title {
+            /* @apply max-w-full; */
+            font-size: 6vw;
         }
     }
 }
 
 @screen md {
     .no-gutter-cell {
+        @apply w-1/2;
+        
         &__title {
+            /* @apply max-w-full; */
             font-size: 5vw;
         }
     }
@@ -118,8 +121,7 @@
         @apply px-8;
 
         &__title {
-            @apply max-w-full;
-            font-size: 4vw;
+            font-size: 3.2vw;
         }
     }
 }
@@ -127,6 +129,10 @@
 @screen xl {
     .no-gutter-cell {
         @apply min-h-30 w-1/4;
+
+        &__title {
+            @apply max-w-full;
+        }
     }
 }
 

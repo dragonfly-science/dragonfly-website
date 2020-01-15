@@ -52,7 +52,6 @@ html {
 @import "layout/main-footer.src.css";
 @import "layout/numbered-section.src.css";
 @import "layout/page-header.src.css";
-@import "layout/person-tile.src.css";
 @import "layout/positioning.src.css";
 @import "layout/related-content.src.css";
 @import "layout/sidebar.src.css";
@@ -63,6 +62,7 @@ html {
 @import "navigation/main-nav.src.css";
 @import "navigation/mobile-menu.src.css";
 
+@import "tiles/person-tile.src.css";
 @import "tiles/publication.src.css";
 
 @import "typography/body-content.src.css";

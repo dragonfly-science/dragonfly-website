@@ -22,21 +22,24 @@
   <div class="collection-grid collection-grid--no-bottom">
     $for(people)$
       <a href="$pageurl$" class="no-gutter-cell person-tile bg-black">
-        <h2 class="no-gutter-cell__title mb-0">
+        <h2 class="no-gutter-cell__title person-tile__title">
             $firstname$<br>
             $lastname$$if(honour)$,<br>
             <span class="font-light">$honour$</span>$endif$
         </h2>
-    
-        <span class="no-gutter-cell__link dragonfly-arrow ml-auto"></span>
-        <div class="no-gutter-cell__image background-image lozad" data-background-image="$teaserImage$"></div>
+
+        <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link person-tile__link">
+          <span class="icon dragonfly-arrow"></span>
+        </span>
+
+        <div class="no-gutter-cell__image person-tile__image background-image lozad" data-background-image="$teaserImage$"></div>
       </a>
     $endfor$
 
-    <a href="#" class="no-gutter-cell person-tile person-tile--advert lg:text-sm flex flex-row items-end bg-greeny-blue text-white hover:bg-cool-blue">
-        <h2 class="no-gutter-cell__title mb-0">We're hiring</h2>
+    <a href="#" class="no-gutter-cell person-tile person-tile--advert">
+        <h2 class="no-gutter-cell__title person-tile__title">We're hiring</h2>
     
-        <span class="no-gutter-cell__link ml-auto">
+        <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link person-tile__link">
           <span class="icon dragonfly-arrow"></span>
         </span>
       </a>

@@ -21,6 +21,16 @@
             }
         }
     }
+
+    &--4cell {
+        @apply max-w-full;
+
+        .no-gutter-cell {
+            &__title {
+                font-size: 8vw;
+            }
+        }
+    }
 }
 
 @screen sm {
@@ -33,11 +43,31 @@
             .no-gutter-cell {
                 @apply w-full !important;
 
-                &--advert {
+                /* &--advert {
                     > div {
                         @apply max-w-3/4 !important;
                     }
+                } */
+            }
+        }
+
+        &--4cell {
+            @apply max-w-full;
+    
+            .no-gutter-cell {
+                &__title {
+                    font-size: 6vw;
                 }
+            }
+        }
+    }
+}
+
+@screen md {
+    .collection-grid {
+        .no-gutter-cell {
+            &__title {
+                /* font-size: 6vw; */
             }
         }
     }
@@ -70,12 +100,16 @@
             .no-gutter-cell {
                 @apply max-w-1/2 w-full px-24 !important;
     
-                /* &__title {
-                    @apply text-6xl !important;
-                } */
-    
                 &__text {
                     @apply max-w-2/3 !important;
+                }
+            }
+        }
+
+        &--4cell {
+            .no-gutter-cell {
+                &__title {
+                    font-size: 4vw !important;
                 }
             }
         }
@@ -88,14 +122,18 @@
             .no-gutter-cell {
     
                 &--advert {
-                    > div {
+                    /* > div {
                         @apply max-w-3/4 !important;
-                    }
+                    } */
                 }
+            }
+        }
 
-                /* &__title {
-                    @apply text-7xl !important;
-                } */
+        &--4cell {
+            .no-gutter-cell {
+                &__title {
+                    font-size: 3.2vw !important;
+                }
             }
         }
     }
