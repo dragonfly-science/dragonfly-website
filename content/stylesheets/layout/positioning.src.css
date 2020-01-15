@@ -1,0 +1,20 @@
+// Set up margin for a container based, full width item, with a column width
+// fraction of margin.
+
+.inner-column {
+    
+}
+
+@screen lg {
+    .inner-column {
+        @apply px-24;
+
+        &--left {
+            @apply pl-24;
+        }
+
+        &--right {
+            @apply pr-24;
+        }
+    }
+}

@@ -16,22 +16,34 @@
     &__content {
         @apply text-xl pt-6 mb-16 leading-tight font-medium;
     }
+
+    &__outer {
+        @apply mx-auto relative z-10;
+    }
 }
 
 @screen sm {
     .page-header {
-        &__content {
-            @apply pr-6;
-        }
-
         &__container {
             @apply max-w-3/4;
+        }
+
+        &__content {
+            @apply pr-6;
         }
     }
 }
 
 @screen md {
     .page-header {
+        /* &__container {
+            @apply ml-24;
+        } */
+
+        &__outer {
+            @apply px-8;
+        }
+
         &__title {
             @apply text-6xl;
         }
@@ -51,7 +63,7 @@
         }
 
         &__container {
-            @apply ml-24;
+            @apply ml-32 ml-56;
         }
     }
 }
@@ -59,7 +71,11 @@
 @screen xl {
     .page-header {
         &__container {
-            @apply max-w-1/2;
+            @apply max-w-2/3;
+        }
+
+        &__outer {
+            @apply px-32;
         }
     }
 }

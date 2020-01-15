@@ -100,7 +100,7 @@ teaserImage = field "teaserImage" getImagePath
         let path = toFilePath (itemIdentifier item)
             base = take ((length path) - 11) path
             ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" (toUrl . (flip replaceFileName "480-teaser.jpg"))) (getRoute ident)
+        fmap (maybe "" (toUrl . (flip replaceFileName "960-teaser.jpg"))) (getRoute ident)
 
 socialImage :: Context String
 socialImage = field "socialImage" getImagePath

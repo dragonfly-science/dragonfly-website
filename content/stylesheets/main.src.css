@@ -38,6 +38,7 @@ html {
 /* Import Partials */
 @import "grid/collection-grid.src.css";
 @import "grid/grid-cell.src.css";
+@import "grid/inner-cell.src.css";
 @import "grid/no-gutter-cell.src.css";
 @import "grid/publication-grid.src.css";
 
@@ -52,6 +53,7 @@ html {
 @import "layout/numbered-section.src.css";
 @import "layout/page-header.src.css";
 @import "layout/person-tile.src.css";
+@import "layout/positioning.src.css";
 @import "layout/related-content.src.css";
 @import "layout/sidebar.src.css";
 @import "layout/tag-list.src.css";

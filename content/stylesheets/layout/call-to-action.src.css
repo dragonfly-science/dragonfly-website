@@ -10,7 +10,8 @@
     }
 
     &__button {
-        @apply text-2xl font-normal rounded;
+        @apply font-normal rounded;
+        @apply px-6 pt-2 pb-3 !important;
 
         &--cool-blue {
             @apply button--cool-blue;

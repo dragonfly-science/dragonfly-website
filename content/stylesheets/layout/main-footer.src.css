@@ -3,7 +3,7 @@
         @apply w-full mx-auto mb-8;
 
         > span {
-            @apply block mb-4 font-medium;
+            @apply block mb-4 font-bold opacity-50;
         }
     }
     

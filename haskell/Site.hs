@@ -65,9 +65,10 @@ main = do
                           , ("1600", ["-resize" , "1600"])
                           ]
     Images.imageProcessor ( "**/teaser.jpg") $
-                          [ ( "1200", ["-resize" , "1200+600^", "-gravity", "Center", "-crop", "1200+6000+0+0", "-quality", "75"]),
-                            ( "480", ["-resize" , "600+600^", "-gravity", "Center", "-crop", "600+600+0+0", "-quality", "75"]),
-                            ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
+                          [ ( "1200", ["-resize" , "1200+600^", "-gravity", "Center", "-crop", "1200+6000+0+0", "-quality", "75"])
+                          , ( "960", ["-resize" , "960+960^", "-gravity", "Center", "-crop", "960+960+0+0", "-quality", "75"])
+                          , ( "480", ["-resize" , "600+600^", "-gravity", "Center", "-crop", "600+600+0+0", "-quality", "75"])
+                          , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
                           , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0", "-quality", "75"])
                           ]
 

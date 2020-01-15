@@ -41,6 +41,12 @@
         }
     }
 
+    &--xl {
+        .icon {
+            @apply text-4xl !important;
+        }
+    }
+
     &--arrow-down {
         .icon {
             @apply rotate-90;
