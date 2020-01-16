@@ -39,7 +39,7 @@
     }
 
     &__tags {
-        @apply mt-8;
+        @apply mt-4;
 
         &:last-of-type {
             @apply mb-8;
@@ -106,7 +106,7 @@
         }
 
         &__tags {
-            @apply my-16;
+            @apply my-8;
         }
     }
 }

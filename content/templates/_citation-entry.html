@@ -3,9 +3,9 @@
   <div class="citation-year__text">
       $year$
 
-      <span class="link-icon link-icon--large">
+      <!-- <span class="link-icon link-icon--large">
           <span class="icon dragonfly-arrow"></span>
-      </span>
+      </span> -->
   </div>
 
   <div class="hidden">
@@ -26,19 +26,19 @@
     $if(tags)$
     <ul class="tag-list tag-list--publication-tile publication-tile__tag-list">
         $for(tags)$
-        <li class="tag-list__tag tag-list__tag--$tag$">$tag$</li>
+        <li class="tag-list__tag tag-list__tag--$tag$ tag-list__tag--$tag$-active">$tag$</li>
         $endfor$
     </ul>
     $endif$
   </header>
 
     $if(title)$
-      <a class="publication-tile__title block" href="/publications/$id$.html">
+      <a class="publication-tile__title tile__tile block" href="/publications/$id$.html">
         <h3>$title$</h3>
       </a>
     $endif$
 
-    <div class="publication-tile__citation">
+    <div class="publication-tile__citation tile__citation">
       $citation$
     </div>
 

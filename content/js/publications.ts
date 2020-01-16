@@ -43,7 +43,7 @@ const updateURL = (history: History, intialized: boolean = true) => {
 
     const tags: string[] = []
     $('.tag-list__tag--active').each((index, item) => {
-        if ($(item).data('tag') !== '') {
+        if (typeof $(item).data('tag') !== 'undefined' && $(item).data('tag') !== '') {
             tags.push($(item).data('tag').trim())
         }
 
@@ -86,14 +86,14 @@ const decodeURL = () => {
 }
 
 const Publications = () => {
-    if ($('#publication-list').length === 0) {
+    if ($('#filter-list').length === 0) {
         return
     }
 
     const history = createBrowserHistory()
     const options = {
-        valueNames: ['publication-tile__title',
-                     'publication-tile__citation',
+        valueNames: ['tile__title',
+                     'tile__citation',
                      'tagslugs'],
         searchClass: 'filtering__search__input',
     }
@@ -141,9 +141,10 @@ const Publications = () => {
 
     decodeURL()
 
-    publicationList = new List('publication-list', options)
+    publicationList = new List('filter-list', options)
     let intialized = false
     const searchVal = $('.filtering__search__input').val()
+    const contentType = $('#filter-list').data('type')
 
     if (searchVal !== '') {
         publicationList.search(searchVal)
@@ -167,17 +168,17 @@ const Publications = () => {
 
         switch (n) {
             case 0:
-                t = 'Oops! There are no matching publications'
+                t = `Oops! There are no matching ${contentType}s`
                 break
             case 1:
-                t = 'One matching publication'
+                t = `One matching ${contentType}`
                 break
             default:
-                t = `${n} matching publications`
+                t = `${n} matching ${contentType}s`
                 break
         }
 
-        $('#publication-count').text(t)
+        $('#filter-count').text(t)
 
         // get tags from visible list items.
         let visibleTags: string[] = []
@@ -189,7 +190,7 @@ const Publications = () => {
         visibleTags = uniq(visibleTags)
 
         // Diable tags that aren't visible.
-        $('.tag-list__tag').each((index, item) => {
+        $('.tag-list__tag').each((index: number, item: HTMLElement) => {
             let tag = $(item).data('tag')
 
             if (typeof tag !== 'undefined') {
@@ -200,6 +201,15 @@ const Publications = () => {
                 } else {
                     $(item).removeClass('tag-list__tag--disabled')
                 }
+            }
+
+            return true
+        })
+
+        // If no tags are active in a list, make the first one active.
+        $('.tag-list').each((index: number, item: HTMLElement) => {
+            if ($(item).find('.tag-list__tag--active').length === 0) {
+                $(item).find('.tag-list__tag:first-child').removeClass('tag-list__tag--disabled').addClass('tag-list__tag--active')
             }
 
             return true

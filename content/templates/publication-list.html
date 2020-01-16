@@ -17,18 +17,12 @@
 </header>
 
 
-<div id="publication-list">
+<div id="filter-list" data-type="publication">
   <div class="filtering bg-light-peach px-6">
     <div class="container mx-auto flex">
       <div class="filtering__tools">
         <div class="filtering__tools__header">
-            <div class="flex-grow">
-                <div class="filtering__search">
-                  <input class="filtering__search__input" placeholder="Find publication" />
-                  <button class="filtering__search__button dragonfly-search"></button>
-                </div>
-                <div class="filtering__count" id="publication-count"></div>
-            </div>
+            $partial("templates/_search-field.html")$
 
             <div class="filtering__buttons">
                 <button class="filtering__hamburger outline-none text-cool-blue dragonfly-hamburger text-2xl" title="show/hide filter options"></button>
@@ -70,7 +64,7 @@
             </div>
 
             <div class="filtering__tags flex-grow-0">
-              <span class="filtering__tags__title">By publication type</span>
+              <span class="filtering__tags__title whitespace-no-wrap">By publication type</span>
               <ul class="tag-list">
                 <li class="tag-list__tag tag-list__tag--publication-type tag-list__tag--active" data-tag="">All types</li>
                 <li class="tag-list__tag tag-list__tag--publication-type tag-list__tag--article" data-tag="article">Article</li>

@@ -19,7 +19,8 @@ module.exports = {
 
             whitelistPatterns: [
                 /--disabled$/,
-                /body-content.*/
+                /body-content.*/,
+                /whitespace-*/,
             ],
             rejected: true
         })

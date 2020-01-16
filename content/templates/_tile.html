@@ -1,10 +1,10 @@
 $if(pageurl)$
-    <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay">
+    <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay list-tile">
 $else$
     $if(url)$
-        <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay">
+        <a href="$url$" class="no-gutter-cell no-gutter-cell--overlay list-tile">
     $else$
-        <div class="no-gutter-cell no-gutter-cell--overlay">
+        <div class="no-gutter-cell no-gutter-cell--overlay list-tile">
     $endif$
 $endif$
     $if(published)$
@@ -16,11 +16,13 @@ $endif$
         <span class="no-gutter-cell__tag">&nbsp;</span>
         $endif$
     $endif$
-    <strong class="no-gutter-cell__title">$title$</strong>
+    <strong class="no-gutter-cell__title tile__title">$title$</strong>
 
     $if(teaser)$
-        <div class="no-gutter-cell__text">$teaser$</div>
+        <div class="no-gutter-cell__text tile__citation">$teaser$</div>
     $endif$
+
+    <div class="tagslugs hidden">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
 
     <span class="link-icon link-icon--xl no-gutter-cell__link no-gutter-cell--overlay__link">
         <span class="icon dragonfly-arrow ml-0 mt-4"></span>

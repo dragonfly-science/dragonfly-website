@@ -10,8 +10,6 @@ export default () => {
         const header = $('.main-header > .container')
         const defaulP: number = 64
 
-        console.log($(window).width())
-
         adverts.forEach((value: HTMLElement, i: number) => {
             const p: number = ($(value).parent().width() - header.width()) / 2
 

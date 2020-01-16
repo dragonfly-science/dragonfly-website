@@ -14,10 +14,22 @@
 </header>
 
 <section id="top-section" class="math-paper">
-  <div class="collection-grid collection-grid--2cell collection-grid--no-bottom">
-    $for(news)$
-      $partial("templates/_tile.html")$
-    $endfor$
+  <div id="filter-list" data-type="news article">
+    <div class="filtering bg-light-peach px-6">
+      <div class="container mx-auto flex">
+        <div class="filtering__tools">
+          <div class="filtering__tools__header">
+            $partial("templates/_search-field.html")$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="collection-grid collection-grid--2cell collection-grid--no-bottom list">
+      $for(news)$
+        $partial("templates/_tile.html")$
+      $endfor$
+    </div>
   </div>
 </section>
 
