@@ -2,6 +2,7 @@ import { createBrowserHistory, History } from 'history'
 
 import List from 'list.js'
 import { filter, forEach, indexOf, intersection, uniq } from 'lodash-es'
+import pluralize from 'pluralize'
 import QS from 'query-string'
 
 interface QSParams {
@@ -168,13 +169,13 @@ const Publications = () => {
 
         switch (n) {
             case 0:
-                t = `Oops! There are no matching ${contentType}s`
+                t = `Oops! There are no matching ${pluralize(contentType, 2)}`
                 break
             case 1:
                 t = `One matching ${contentType}`
                 break
             default:
-                t = `${n} matching ${contentType}s`
+                t = `${n} matching ${pluralize(contentType, 2)}`
                 break
         }
 
