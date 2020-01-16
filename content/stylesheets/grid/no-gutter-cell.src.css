@@ -38,13 +38,17 @@
     }
 
     &__text {
-        @apply opacity-0 transition-all transition-ease-out-quart mb-8;
+        @apply opacity-0 transition-all transition-ease-out-quart;
+        @apply mb-8 overflow-hidden;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
     }
 
     &__text,
     p {
         @apply text-lg leading-tight;
-        /* @apply max-w-2/3; */
     }
 
     &__link {
@@ -128,13 +132,6 @@
             &.tile__title {
                 @apply max-w-full;
             }
-        }
-
-        &__text {
-            display: -webkit-box;
-            -webkit-line-clamp: 5;
-            -webkit-box-orient: vertical;  
-            overflow: hidden;
         }
     }
 }
