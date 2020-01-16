@@ -1,5 +1,6 @@
 /* Filtering as seen on publications etc. */
 .filtering {
+    @apply w-full px-6;
     &.open {
         .filtering__tools__links {
             max-height: 100vh;
@@ -26,7 +27,7 @@
     }
 
     &__search {
-        @apply bg-white my-auto py-1 pl-3 pr-3 flex justify-between flex-grow-0 max-w-xs;
+        @apply bg-white my-auto py-1 pl-3 pr-3 flex justify-between flex-grow-0 max-w-full;
     
         &__input {
             @apply text-lg pr-3 flex-grow leading-none outline-none;
@@ -97,6 +98,15 @@
 
 @screen lg {
     .filtering {
+        @apply px-24;
+        /* > div {
+            @apply px-0;
+        } */
+
+        &__search {
+            @apply max-w-xs;
+        }
+
         &__tools__links {
             @apply mr-32;
         }
@@ -107,6 +117,33 @@
 
         &__tags {
             @apply my-8;
+        }
+    }
+}
+
+@screen xl {
+    /* .filtering {
+        > div {
+            @apply max-w-7xl mx-auto px-12;
+        }
+    } */
+}
+
+/* Variations. */
+.filtering {
+    &--full-width {
+        .filtering__search {
+            @apply max-w-full;
+        }
+    }
+}
+
+@screen lg {
+    .filtering {
+        &--full-width {
+            .filtering__search {
+                @apply max-w-1/2;
+            }
         }
     }
 }

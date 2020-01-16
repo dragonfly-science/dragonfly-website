@@ -92,13 +92,7 @@
 
 @screen sm {
     .no-gutter-cell {
-        &__text,
-        p {
-            /* @apply max-w-full; */
-        }
-
         &__title {
-            /* @apply max-w-full; */
             font-size: 6vw;
         }
     }
@@ -109,7 +103,6 @@
         @apply w-1/2;
         
         &__title {
-            /* @apply max-w-full; */
             font-size: 5vw;
         }
     }
@@ -219,9 +212,13 @@
             }
         }
     }
+
+    &--bottom-aligned {
+        @apply overflow-hidden relative flex flex-row items-end;
+    }
 }
 
-@screen lg {
+@screen md {
     .no-gutter-cell {
         &--advert {
             &__text,

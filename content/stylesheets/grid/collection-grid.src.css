@@ -63,16 +63,6 @@
     }
 }
 
-@screen md {
-    .collection-grid {
-        .no-gutter-cell {
-            &__title {
-                /* font-size: 6vw; */
-            }
-        }
-    }
-}
-
 @screen lg {
     .collection-grid {
         @apply pb-32;
@@ -101,7 +91,13 @@
                 @apply max-w-1/2 w-full px-24 !important;
     
                 &__text {
-                    @apply max-w-2/3 !important;
+                    @apply max-w-full !important;
+                }
+            }
+
+            &--advert {
+                > div {
+                    @apply max-w-8/10 !important;
                 }
             }
         }
@@ -120,11 +116,8 @@
     .collection-grid {
         &--2cell {
             .no-gutter-cell {
-    
-                &--advert {
-                    /* > div {
-                        @apply max-w-3/4 !important;
-                    } */
+                &__text {
+                    @apply max-w-2/3 !important;
                 }
             }
         }

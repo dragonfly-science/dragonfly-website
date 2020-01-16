@@ -47,11 +47,16 @@
     $for(tiles)$
       $partial("templates/_tile-index.html")$
     $endfor$
-    <a href="/people/" class="no-gutter-cell bg-black flex hover:bg-cool-blue">
-      <div class="mt-auto w-full flex">
-        <strong class="no-gutter-cell__title mb-0">Meet <br />the team</strong>
-        <span class="no-gutter-cell__link dragonfly-arrow ml-auto"></span>
-      </div>
+    <a href="/people/" class="no-gutter-cell no-gutter-cell--bottom-aligned no-gutter-cell--overlay bg-black flex">
+      <!-- <div class="absolute bottom-0 w-full h-full"> -->
+        <strong class="no-gutter-cell__title mb-0 mt-auto">Meet <br />the team</strong>
+        
+        <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link ml-auto">
+          <span class="icon dragonfly-arrow ml-0"></span>
+        </span>
+      <!-- </div> -->
+
+      <div class="no-gutter-cell__image background-image lozad" data-background-image="/images/team_tile.jpg"></div>
     </a>
   </div>
 </section>

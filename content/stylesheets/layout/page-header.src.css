@@ -63,7 +63,7 @@
         }
 
         &__container {
-            @apply ml-32 ml-56;
+            @apply ml-40;
         }
     }
 }
@@ -85,6 +85,10 @@
 .page-header {
     &--news {
         @apply py-12 !important;
+    }
+
+    &--white {
+        @apply text-white;
     }
 
     &--article {
