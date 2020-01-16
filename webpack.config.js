@@ -6,7 +6,8 @@ module.exports = {
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'content/scripts'),
-        filename: 'app.bundle.js'
+        filename: 'app.bundle.js',
+        chunkFilename: '[name].bundle.js'
     },
     module: {
         rules: [
@@ -19,6 +20,12 @@ module.exports = {
                 use: [ 'style-loader', 'postcss-loader' ]
             }
         ]
+    },
+    optimization: {
+        splitChunks: {
+            // include all types of chunks
+            chunks: 'initial'
+        }
     },
     stats: {
         colors: true
