@@ -5,6 +5,9 @@ module.exports = {
       body: ['omnes-pro', '"Helvetica Neue"', 'Helvetica', 'Roboto', 'Arial', 'sans-serif'],
     },
     extend: {
+      boxShadow: {
+        '3xl': '20px 30px 40px 3px rgba(0,0,0,.3)'
+      },
       colors: {
         'beige': '#d2cec3',
         'cool-blue': '#43A1C9',
@@ -22,6 +25,8 @@ module.exports = {
         'very-light-pink': '#E7E7E7',
       },
       fontSize: {
+        '2/3xl': '1.6rem',
+        '3/2xl': '2rem',
         '4/2xl': '2.5rem',
         '6/2xl': '4.5rem',
         '7xl': '5rem',

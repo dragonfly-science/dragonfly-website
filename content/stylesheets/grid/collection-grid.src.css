@@ -12,11 +12,11 @@
         @apply max-w-full;
 
         .no-gutter-cell {
-            @apply max-w-full w-full px-6 !important;
+            @apply max-w-full px-6;
 
             &--advert {
                 > div {
-                    @apply max-w-full !important;
+                    @apply max-w-full;
                 }
             }
         }
@@ -26,6 +26,7 @@
         @apply max-w-full;
 
         .no-gutter-cell {
+            @apply max-w-full;
             &__title {
                 font-size: 8vw;
             }
@@ -41,7 +42,8 @@
     
         &--2cell {
             .no-gutter-cell {
-                @apply w-full !important;
+                @apply max-w-1/2;
+                /* @apply w-full !important; */
 
                 /* &--advert {
                     > div {
@@ -52,9 +54,8 @@
         }
 
         &--4cell {
-            @apply max-w-full;
-    
             .no-gutter-cell {
+                @apply max-w-1/2;
                 &__title {
                     font-size: 6vw;
                 }
@@ -89,6 +90,10 @@
         &--2cell {
             .no-gutter-cell {
                 @apply max-w-1/2 w-full px-24 !important;
+
+                /* &__title {
+                    font-size: 4vw;
+                } */
     
                 &__text {
                     @apply max-w-full !important;
@@ -102,13 +107,13 @@
             }
         }
 
-        &--4cell {
+        /* &--4cell {
             .no-gutter-cell {
                 &__title {
                     font-size: 4vw !important;
                 }
             }
-        }
+        } */
     }
 }
 
@@ -126,6 +131,18 @@
             .no-gutter-cell {
                 &__title {
                     font-size: 3.2vw !important;
+                }
+            }
+        }
+    }
+}
+
+@screen wd {
+    .collection-grid {
+        &--2cell {
+            .no-gutter-cell {
+                &__title {
+                    font-size: 3.2vw;
                 }
             }
         }

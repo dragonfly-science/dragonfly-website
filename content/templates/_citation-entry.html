@@ -21,7 +21,11 @@
   </div>
 </div>
 
+$if(hasBody)$
+<a class="publication-tile grid-cell list-tile year-$year$ tag$if(tags)$$for(tags)$ tag-$tag$$endfor$$endif$" href="/publications/$id$.html">
+$else$
 <div class="publication-tile grid-cell list-tile year-$year$ tag$if(tags)$$for(tags)$ tag-$tag$$endfor$$endif$">
+$endif$
   <header class="publication-tile__header">
     $if(tags)$
     <ul class="tag-list tag-list--publication-tile publication-tile__tag-list">
@@ -33,9 +37,9 @@
   </header>
 
     $if(title)$
-      <a class="publication-tile__title tile__tile block" href="/publications/$id$.html">
+      <div class="publication-tile__title tile__tile block">
         <h3>$title$</h3>
-      </a>
+      </div>
     $endif$
 
     <div class="publication-tile__citation tile__citation">
@@ -46,13 +50,17 @@
 
     <footer class="flex justify-between items-center publication-tile__footer">
       $if(pdf)$
-        <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="publication-tile__pdf">
+        <button data-href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="publication-tile__pdf button-link">
           <span class="dragonfly-pdf text-5xl"></span>
-        </a>
+        </button>
       $endif$
       $if(hasBody)$
-        <a href="/publications/$id$.html" class="publication-tile__read-more">Read more</a>
+        <span class="publication-tile__read-more">Read more</span>
       $endif$
   </footer>
-</div>
+$if(hasBody)$
+  </a>
+$else$
+  </div>
+$endif$
 

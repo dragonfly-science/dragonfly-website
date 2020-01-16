@@ -1,5 +1,5 @@
 .page-header {
-    @apply w-full py-16 px-6 bg-cover;
+    @apply w-full py-16 bg-cover;
 
     a {
         @apply underline;
@@ -18,7 +18,7 @@
     }
 
     &__outer {
-        @apply mx-auto relative z-10;
+        @apply mx-auto relative px-6 z-10;
     }
 }
 
@@ -59,11 +59,16 @@
         }
 
         &__content {
-            @apply text-3xl pt-12;
+            @apply text-2/3xl pt-12;
+            line-height: 1.2em;
         }
 
         &__container {
-            @apply ml-40;
+            @apply ml-24;
+        }
+
+        &__outer {
+            @apply px-24;
         }
     }
 }
@@ -72,10 +77,6 @@
     .page-header {
         &__container {
             @apply max-w-38rem;
-        }
-
-        &__outer {
-            @apply px-32;
         }
     }
 }
@@ -95,12 +96,12 @@
         @apply relative;
         background-position: center top;
 
-        &:before {
+        /* &:before {
             @apply absolute bottom-0 left-0 w-full h-full z-10 block;
             content: '';
             background-blend-mode: multiply;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
-        }
+        } */
 
         &__date {
             @apply mt-4;
@@ -131,6 +132,10 @@
 
     &--small {
         @apply py-8;
+    }
+
+    &--image-based {
+
     }
 }
 
@@ -163,23 +168,10 @@
         &--small {
             @apply py-16 !important;
         }
-    }
-}
 
-@screen xl {
-    .page-header {
-        &--reversed {
-            /* .page-header__container {
-                @apply flex max-w-full !important;
-            }
-
-            .page-header__title {
-                @apply pr-16;
-            }
-
-            .page-header__content {
-                @apply pt-6;
-            } */
+        &--image-based,
+        &.jarallax {
+            min-height: 40rem;
         }
     }
 }

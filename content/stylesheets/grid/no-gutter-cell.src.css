@@ -32,7 +32,6 @@
 
     &__title {
         @apply font-bold mb-16;
-        @apply max-w-3/4;
         @apply transition-all transition-ease-out-quart;
 
         font-size: 8vw;
@@ -45,7 +44,7 @@
     &__text,
     p {
         @apply text-lg leading-tight;
-        @apply max-w-2/3;
+        /* @apply max-w-2/3; */
     }
 
     &__link {
@@ -114,7 +113,7 @@
         @apply px-8;
 
         &__title {
-            font-size: 3.2vw;
+            font-size: 4vw;
         }
     }
 }
@@ -124,7 +123,18 @@
         @apply min-h-30 w-1/4;
 
         &__title {
-            @apply max-w-full;
+            @apply max-w-3/4;
+
+            &.tile__title {
+                @apply max-w-full;
+            }
+        }
+
+        &__text {
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
         }
     }
 }
@@ -223,18 +233,8 @@
         &--advert {
             &__text,
             p {
-                @apply text-3xl mr-0;
-            }
-        }
-    }
-}
-
-@screen xl {
-    .no-gutter-cell {
-        &--advert {
-            &__text,
-            p {
-                @apply text-4xl;
+                @apply text-2/3xl max-w-3/4;
+                line-height: 1.2em;
             }
         }
     }

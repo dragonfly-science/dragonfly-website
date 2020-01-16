@@ -1,5 +1,18 @@
 .publication-tile {
-    @apply flex flex-col;
+    @apply flex flex-col transition-all transition-250 shadow-none;
+
+    a& {
+        &:hover {
+            /* background: red; */
+            @apply shadow-3xl;
+        }
+    }
+
+    &:hover {
+        .publication-tile__read-more {
+            @apply no-underline;
+        }
+    }
 
     &__title,
     &__citation,
@@ -32,15 +45,11 @@
 
     &__read-more {
         @apply underline text-lg;
-
-        &:hover {
-            @apply no-underline;
-        }
     }
 
     &__pdf {
         @apply text-light-grey;
-        @apply transition-color transition-ease-out-quart transition-500;
+        @apply transition-color transition-ease-out-quart transition-500 z-10 relative;
 
         &:hover {
             @apply text-slate-grey;

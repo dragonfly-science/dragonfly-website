@@ -4,8 +4,6 @@
 
     p {
         @apply mb-6;
-        /* @apply overflow-hidden;
-        text-overflow: ellipsis; */
     }
 
     a {
@@ -189,7 +187,8 @@
 
         > p {
             &:first-of-type {
-                @apply font-medium text-4xl leading-tight mb-6;
+                @apply font-medium text-3/2xl mb-6;
+                line-height: 1.2em;
             }
         }
 
