@@ -82,7 +82,6 @@
 }
 
 /* Variations. */
-
 .page-header {
     &--news {
         @apply py-12 !important;

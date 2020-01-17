@@ -1,6 +1,8 @@
 /* Filtering as seen on publications etc. */
 .filtering {
-    @apply w-full px-6;
+    /* @apply w-full px-6; */
+    
+
     &.open {
         .filtering__tools__links {
             max-height: 100vh;
@@ -8,7 +10,9 @@
     }
 
     &__tools {
-        @apply my-8 flex-grow flex flex-col;
+        @apply my-8 mx-auto flex-grow flex flex-col;
+        @apply max-w-7xl;
+        @apply p-6;
 
         &__header {
             @apply flex flex-row;
@@ -27,7 +31,8 @@
     }
 
     &__search {
-        @apply bg-white my-auto py-1 pl-3 pr-3 flex justify-between flex-grow-0 max-w-full;
+        @apply bg-white my-auto py-1 pl-3 pr-3 flex justify-between flex-grow-0;
+        @apply max-w-full;
     
         &__input {
             @apply text-lg pr-3 flex-grow leading-none outline-none;
@@ -78,8 +83,6 @@
         }
 
         &__search {
-            @apply max-w-1/2;
-        
             &__input {
                 @apply text-xl max-w-full;
             }
@@ -98,17 +101,15 @@
 
 @screen lg {
     .filtering {
-        @apply px-24;
-        /* > div {
-            @apply px-0;
-        } */
-
         &__search {
-            @apply max-w-xs;
+            @apply max-w-1/2;
         }
 
-        &__tools__links {
-            @apply mr-32;
+        &__tools {
+
+            &__links {
+                @apply mr-32;
+            }
         }
 
         &__title {
@@ -122,28 +123,13 @@
 }
 
 @screen xl {
-    /* .filtering {
-        > div {
-            @apply max-w-7xl mx-auto px-12;
-        }
-    } */
-}
-
-/* Variations. */
-.filtering {
-    &--full-width {
-        .filtering__search {
-            @apply max-w-full;
-        }
-    }
-}
-
-@screen lg {
     .filtering {
-        &--full-width {
-            .filtering__search {
-                @apply max-w-1/2;
-            }
+        &__tools {
+            @apply px-12;
+        }
+
+        &__search {
+            @apply mr-8;
         }
     }
 }

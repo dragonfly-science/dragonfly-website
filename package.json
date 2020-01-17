@@ -55,6 +55,7 @@
         "postcss-loader": "^3.0.0",
         "postcss-preset-env": "^6.7.0",
         "precss": "^4.0.0",
+        "stylelint-config-recommended": "^3.0.0",
         "ts-loader": "^6.2.1",
         "tslint": "^5.20.1",
         "tslint-eslint-rules": "^5.4.0",
