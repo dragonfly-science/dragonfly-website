@@ -1,12 +1,5 @@
 .publication-tile {
-    @apply flex flex-col transition-all transition-250 shadow-none;
-
-    a& {
-        &:hover {
-            /* background: red; */
-            @apply shadow-3xl;
-        }
-    }
+    @apply flex flex-col relative;
 
     &:hover {
         .publication-tile__read-more {
@@ -49,10 +42,29 @@
 
     &__pdf {
         @apply text-light-grey;
-        @apply transition-color transition-ease-out-quart transition-500 z-10 relative;
+        @apply transition-color transition-ease-out-quart transition-500 z-20 relative;
 
         &:hover {
             @apply text-slate-grey;
+        }
+    }
+
+    &__details {
+        @apply absolute z-10 w-full h-full;
+        @apply transition-all transition-250 shadow-none;
+
+        font-size: 0;
+        line-height: 0;
+        text-indent: -40000px;
+
+        &:hover {
+            @apply shadow-3xl;
+        }
+
+        ~ footer {
+            .publication-tile__read-more {
+                @pply underline;
+            }
         }
     }
 

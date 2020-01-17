@@ -85,15 +85,18 @@ module.exports = {
         'wd': '104rem'
       },
       transitionProperty: {
-        'none': 'none',
         'all': 'all',
         'bg': 'background-color',
         'border': 'border-color',
         'color': 'color',
         'colors': ['color', 'background-color', 'border-color'],
+        'height': 'height',
         'margin': 'margin',
         'max-height': 'max-height',
+        'none': 'none',
         'opacity': 'opacity',
+        'padding': 'padding',
+        'top': 'top',
         'transform': 'transform',
       },
       transitionTimingFunction: {

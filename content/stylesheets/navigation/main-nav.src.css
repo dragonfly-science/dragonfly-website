@@ -121,7 +121,13 @@
                 } */
 
                 > ul {
-                    @apply block;
+                    @apply transition-ease-out-quart;
+                    /* max-height: 1000px; */
+                    top: 100%;
+
+                    li {
+                        /* @apply h-6; */
+                    }
                 }
             }
 
@@ -139,15 +145,19 @@
             }
 
             ul {
-                @apply bg-white m-0 -mt-12 py-6 px-6 pt-16 absolute hidden;
-                top: 100%;
+                @apply bg-white absolute m-0 transition-ease-in-quart;
+                @apply transition-top pt-3 pb-6 overflow-hidden;
+
+                /* max-height: 0; */
+                top: -100%;
                 width: calc(100% + 5rem);
+                z-index: -1;
 
                 li {
-                    @apply whitespace-no-wrap;
+                    @apply whitespace-no-wrap px-6;
 
                     a {
-                        @apply text-sm leading-snug;
+                        @apply leading-snug;
 
                         &:hover {
                             @apply text-cool-blue;

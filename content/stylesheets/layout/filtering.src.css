@@ -131,5 +131,58 @@
         &__search {
             @apply mr-8;
         }
+
+        &__buttons {
+            @apply mr-8;
+        }
+    }
+}
+
+/* Variations. */
+.filtering {
+    &__tools--inline {
+        @apply flex flex-col max-w-full px-6;
+
+        .filtering__tags {
+            @apply mb-0;
+        }
+    }
+}
+
+@screen md {
+    .filtering {
+        &__tools--inline {
+            @apply px-8;
+        }
+    }
+}
+
+@screen lg {
+    .filtering {
+        &__tools--inline {
+            @apply flex-row pl-48 pr-24;
+
+            .filtering__tools {
+                &__header {
+                    @apply w-1/2;
+                }
+
+                &__links {
+                    @apply ml-8 mr-0;
+                }
+            }
+
+            .filtering__search {
+                @apply max-w-full mr-0;
+            }
+    
+            .filtering__tags {
+                @apply mt-0;
+
+                &__title {
+                    @apply mt-2;
+                }
+            }
+        }
     }
 }
