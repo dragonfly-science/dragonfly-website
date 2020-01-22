@@ -27,6 +27,6 @@
     @apply transition-opacity transition-delay-500 transition-500 transition-ease-out-quart;
 
     &.loaded {
-        @apply opacity-100 transition-all transition-delay-0;
+        @apply opacity-100 transition-all transition-delay-100;
     }
 }

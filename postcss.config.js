@@ -7,8 +7,10 @@ module.exports = {
         require('postcss-preset-env')({ browsers: 'last 2 versions' }),
         require('postcss-easings')({}),
         require('cssnano')({}),
+        // require('stylelint'),
         require('@fullhuman/postcss-purgecss')({
             // Specify the paths to all of the template files in your project 
+            rejected: true,
             content: [
                 './content/templates/*.html',
                 './content/pages/*.html',
@@ -24,7 +26,7 @@ module.exports = {
                 /whitespace-*/,
                 /loaded$/,
             ],
-            rejected: true
-        })
+        }),
+        require('postcss-reporter')({})
     ]
 }
