@@ -7,6 +7,8 @@ import MobileMenu from './mobile-menu'
 import Parallaxing from './parallax'
 import TopSection from './top-section'
 
+import ScrollImages from './scroll-images'
+
 import GameOfLife from './game-of-life/game-of-life'
 
 smoothscroll.polyfill()
@@ -19,4 +21,5 @@ Zepto(($: ZeptoStatic) => {
     LazyLoad()
     Parallaxing()
     GameOfLife()
+    ScrollImages()
 })

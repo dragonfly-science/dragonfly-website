@@ -22,6 +22,7 @@ module.exports = {
                 /--disabled$/,
                 /body-content.*/,
                 /whitespace-*/,
+                /loaded$/,
             ],
             rejected: true
         })

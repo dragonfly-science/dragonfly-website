@@ -16,7 +16,7 @@
         line-height: 0;
         font-size: 0;
 
-        &[data-loaded="true"] {
+        &.loaded {
             @apply opacity-100;
         }
     }

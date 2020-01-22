@@ -2,8 +2,11 @@ import lozad from 'lozad'
 
 const LazyLoad = () => {
     const options = {
-        rootMargin: '1000px 0px', // syntax similar to that of CSS Margin
-        threshold: 0, // ratio of element convergence
+        rootMargin: '1000px 0px',
+        threshold: 0,
+        loaded: (el: HTMLElement) => {
+            el.classList.add('loaded')
+        },
     }
     const observer = lozad('.lozad', options)
     observer.observe()
