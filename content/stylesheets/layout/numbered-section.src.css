@@ -197,6 +197,14 @@
             }
         }
     }
+
+    .scrollable {
+        .lozad-image {
+            &.loaded {
+                @apply transition-delay-0;
+            }
+        }
+    }
 }
 
 @screen sm {

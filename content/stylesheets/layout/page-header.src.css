@@ -20,6 +20,12 @@
     &__outer {
         @apply mx-auto relative px-6 z-10;
     }
+
+    .lozad-image {
+        &.loaded {
+            @apply transition-delay-0;
+        }
+    }
 }
 
 @screen sm {
