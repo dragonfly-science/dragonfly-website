@@ -202,6 +202,7 @@
         .lozad-image {
             &.loaded {
                 @apply transition-delay-0;
+                @apply transition-ease;
             }
         }
     }
