@@ -36,16 +36,18 @@ innovation.  We thrive to provide an excellent work environment.
 > visualisation, and preparing presentations and reports. We use reproducible
 > methods, and you will be writing code.
 >
-> You can expect to have time to develop your skills as you go. The ideal candidate has:
+> You will have opportunities to develop your skills as you go. 
+>
+> The ideal candidate has:
 >
 >   - a tertiary qualification in mathematics, statistics, or related field,
 >   - programming experience in R, python, SQL, or other relevant languages and,
->   - good communication skills, especially writing and presenting.
+>   - excellent communication skills, especially writing and presenting.
 >
 >
 > This role is offered as a permanent position, with salary depending on
-> experience.  The position is based at our office in Wellington, New Zealand. To
-> apply, please send a cover letter (a maximum of two pages), a curriculum vitae
+> experience.  The position is based at our office in Wellington, New Zealand. 
+> To apply, please send a cover letter (a maximum of two pages), a curriculum vitae
 > and examples of recent research outputs (including code that you have
 > developed) to [Finlay Thompson](mailto:finlay@dragonfly.co.nz).
 >
