@@ -9,7 +9,7 @@
         border-left: none;
         font-style: italic;
         padding-left: 0;
-        
+
         p {
             margin-bottom: 0;
         }
@@ -98,6 +98,12 @@ $wrap-images-width: em(950);
         font-size: $font-size-h3;
     }
     .post-body {
+        ul {
+          padding: 0 1em 1em 1em;
+          margin: 0 1em;
+          list-style-type: disc;
+          font-weight: 300;
+        }
         figure {
             @media screen and (min-width: $wrap-images-width) {
                 width: 50%;
