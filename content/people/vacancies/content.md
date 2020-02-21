@@ -50,6 +50,7 @@ innovation.  We thrive to provide an excellent work environment.
 > To apply, please send a cover letter (a maximum of two pages), a curriculum vitae
 > and examples of recent research outputs (including code that you have
 > developed) to [Finlay Thompson](mailto:finlay@dragonfly.co.nz).
+> International applicants are asked to check their visa eligibility on the Immigration New Zealand website.
 >
 > Applications close on Friday, 13 March 2020.
 
@@ -91,6 +92,8 @@ innovation.  We thrive to provide an excellent work environment.
 > experience.  To apply for this position, please send a cover letter (a maximum
 > of two pages), a curriculum vitae and examples of recent research outputs
 > (including code that you have developed) to [Philipp Neubauer](mailto:philipp@dragonfly.co.nz).
+> International applicants are asked to check their visa eligibility on the Immigration New Zealand website.
+
 >
 > Applications close on Friday, 13 March 2020.
 
