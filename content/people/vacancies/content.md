@@ -36,7 +36,7 @@ innovation.  We thrive to provide an excellent work environment.
 > visualisation, and preparing presentations and reports. We use reproducible
 > methods, and you will be writing code.
 >
-> You will have opportunities to develop your skills as you go. 
+> You will have opportunities to develop your skills as you go.
 >
 > The ideal candidate has:
 >
@@ -46,13 +46,13 @@ innovation.  We thrive to provide an excellent work environment.
 >
 >
 > This role is offered as a permanent position, with salary depending on
-> experience.  The position is based at our office in Wellington, New Zealand. 
+> experience.  The position is based at our office in Wellington, New Zealand.
 > To apply, please send a cover letter (a maximum of two pages), a curriculum vitae
 > and examples of recent research outputs (including code that you have
 > developed) to [Finlay Thompson](mailto:finlay@dragonfly.co.nz).
 > International applicants are asked to check their visa eligibility on the Immigration New Zealand website.
 >
-> Applications close on Friday, 13 March 2020.
+> Applications close on Saturday, 14 March 2020.
 
 > ## Early-career fisheries scientist
 >
@@ -95,6 +95,6 @@ innovation.  We thrive to provide an excellent work environment.
 > International applicants are asked to check their visa eligibility on the Immigration New Zealand website.
 
 >
-> Applications close on Friday, 13 March 2020.
+> Applications close on Saturday, 14 March 2020.
 
 
