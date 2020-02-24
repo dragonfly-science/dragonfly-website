@@ -25,7 +25,7 @@ visualisations and reports. We are committed to using reproducible methods in
 all our work.
 
 We are an inclusive and friendly company, focused on collaboration and
-innovation.  We thrive to provide an excellent work environment.
+innovation.  We strive to provide an excellent work environment.
 
 > ## Graduate data scientist
 >
