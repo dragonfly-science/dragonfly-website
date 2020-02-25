@@ -35,7 +35,7 @@ initial data exploration, model development (Bayesian and/or ML), data
 visualisation, and preparing presentations and reports. We use reproducible
 methods, and you will be writing code.
 
-You can find more information [graduate-data-scientist.html](graduate-data-scientist.html).
+You can find more information [here](graduate-data-scientist.html).
 
 Applications close on Saturday, 14 March 2020.
 
@@ -45,7 +45,7 @@ We are looking for an early-career fisheries scientist with data analysis and
 modelling skills to contribute to projects related to fisheries and their
 environmental impacts (e.g., bycatch) in New Zealand and internationally.
 
-You can find more information [early-career-fisheries-scientist.html](early-career-fisheries-scientist.html).
+You can find more information [here](early-career-fisheries-scientist.html).
 
 Applications close on Saturday, 14 March 2020.
 
