@@ -10,6 +10,8 @@ banner: neubauer-philipp/philipp-neubauer-letterbox.jpg
 sortorder: "4"
 nocite: |
   @neubauer_thermal_2019
+  @neubauer_alternative_2019
+  @neubauer2013resilience
 ---
 
 Philipp is a fisheries scientist who uses statistical analysis to inform actions that promote sustainable fisheries. 
