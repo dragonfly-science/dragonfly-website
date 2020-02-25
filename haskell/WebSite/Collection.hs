@@ -90,7 +90,8 @@ sortorder i = do
 getList :: CollectionConfig -> Int ->  Compiler (Context String)
 getList cc limit = do
     snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
-    snaps' <- sortItemsBy sortorder snaps
+    let filterItems i = liftM (maybe True (/="0")) $ getMetadataField i "sortorder"
+    snaps' <- sortItemsBy sortorder =<< filterItemsBy filterItems snaps
     let l = length snaps'
         all = cycle snaps'
         lu = [ (itemIdentifier this, (prev, next))
@@ -101,7 +102,8 @@ getBubbles :: CollectionConfig -> Maybe Identifier -> Compiler (Context String)
 getBubbles cc mident = do
     snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
     let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"
-    snaps' <- sortItemsBy sortorder snaps
+    let filterItems i = liftM (maybe True (/="0")) $ getMetadataField i "sortorder"
+    snaps' <- sortItemsBy sortorder =<< filterItemsBy filterItems snaps
     let l = length snaps'
         all = cycle snaps'
         lu = [ (itemIdentifier this, (prev, next))
