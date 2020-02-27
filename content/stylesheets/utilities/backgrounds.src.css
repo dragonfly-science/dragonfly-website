@@ -24,9 +24,9 @@
 .background-image,
 .lozad-image {
     @apply opacity-0;
-    @apply transition-opacity transition-delay-500 transition-500 transition-ease-out-quart;
+    @apply transition-opacity transition-delay-500 transition-250 transition-ease-out-quart;
 
     &.loaded {
-        @apply opacity-100 transition-all transition-delay-100;
+        @apply opacity-100 transition-all transition-delay-0;
     }
 }
