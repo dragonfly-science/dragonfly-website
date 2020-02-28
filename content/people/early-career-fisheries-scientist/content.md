@@ -1,6 +1,8 @@
 ---
 title: Early-career fisheries scientist
 sortorder: "0"
+firstname: Early-career
+lastname: fisheries scientist
 tag: vacancies
 teaser: ""
 banner: early-career-fisheries-scientist/vacancies-letterbox.jpg

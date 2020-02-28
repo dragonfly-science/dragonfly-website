@@ -1,5 +1,7 @@
 ---
 title: Working at Dragonfly
+firstname: Working at
+lastname: Dragonfly
 sortorder: "1000"
 tag: vacancies
 banner: vacancies/vacancies-letterbox.jpg
