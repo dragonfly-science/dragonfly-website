@@ -73,12 +73,6 @@ tagDictionary = [
     ("yvan", "Yvan Richard")
     ]
 
--- | These are years of the publications page.
---
--- NOTE: Update this when you want to add the next year.
-publicationYears :: [Int]
-publicationYears = [2007..2017]
-
 cslIdentifier, cslNoBibIdentifier :: Identifier
 cslIdentifier      = "resources/csl/apa-note.csl"
 cslNoBibIdentifier = "resources/csl/apa-nobib.csl"
@@ -118,10 +112,6 @@ citationsVersion = "citations"
 citationsSnapshot :: Snapshot
 citationsSnapshot = "citations"
 
--- | Identifiers for all the year groups of publications.
-allPublicationsByYearIdentifiers :: [Identifier]
-allPublicationsByYearIdentifiers =
-    map (fromFilePath . mkPublicationPath . mappend "year/" . show) publicationYears
 
 -- | Extract the reference issue year from a publication-by-year identifier
 extractRefYear :: Identifier -> Int
