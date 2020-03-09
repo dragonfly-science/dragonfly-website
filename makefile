@@ -30,6 +30,9 @@ content/stylesheets/dragonfly.css: content/stylesheets/main.src.css $(CSS)
 npm:
 	$(RUN) bash -c 'npm install'
 
+audit:
+	$(RUN) bash -c 'npm audit fix'
+
 docker:
 	docker build --tag $(IMAGE) .
 
