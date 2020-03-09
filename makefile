@@ -28,7 +28,7 @@ content/stylesheets/dragonfly.css: content/stylesheets/main.src.css $(CSS)
 	$(RUN) bash -c 'npm run css && npm run fonts'
 
 npm:
-	npm install
+	$(RUN) bash -c 'npm install'
 
 docker:
 	docker build --tag $(IMAGE) .
