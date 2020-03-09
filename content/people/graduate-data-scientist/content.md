@@ -2,6 +2,8 @@
 title: Graduate Data Scientist
 sortorder: "0"
 tag: vacancies
+firstname: Graduate
+lastname: Data Scientist
 teaser: ""
 banner: graduate-data-scientist/vacancies-letterbox.jpg
 ---

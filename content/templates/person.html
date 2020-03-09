@@ -1,20 +1,44 @@
-<div class="hero" id="hero-$tag$"> 
-  <img src="$banner$" width="100%"/>
-</div>
-<div class="container post-detail">
-  <div class="heading wide">
-    <h2 id="title-$tag$">$title$</h2>
-    <div class="details">
-      $if(email)$
-        <p>Email <a href="mailto:$email$">$email$</a><p>
-      $endif$
-      $if(phone)$
-        <p>Call $firstname$ on <a href="tel:$phone$">$phone$</a><p>
-      $endif$
+<header class="page-header page-header--image-based page-header--article text-white $if(firstname)$person-$firstname$$endif$" style="background-image: url($banner$);" id="hero-$tag$">
+  <div class="page-header__outer">
+    <div class="page-header__container flex flex-col">
+      <h1 class="page-header__title">
+        $firstname$<br>
+        $lastname$$if(honour)$,<br>
+        <span class="font-light">$honour$</span>$endif$
+      </h1>
+
+      <a href="#top-section" class="link-icon link-icon--arrow-down link-icon--large">
+        <span class="icon dragonfly-arrow"></span>
+      </a>
+
     </div>
   </div>
-  <div class="wide post-body" id="content-$tag$">
-    $body$
+</header>
+
+<article id="top-section" class="article math-paper">
+  <div class="bg-light-peach px-6">
+    <div class="container mx-auto flex flex-col lg:flex-row">
+      <div class="body-content body-content--article" id="content-$tag$">
+        $body$
+      </div>
+      <aside class="sidebar">
+        $if(email)$
+          <a href="mailto:$email$">$email$</a><br/>
+        $endif$
+        $if(phone)$
+          <a href="tel:$phone$">$phone$</a>
+        $endif$
+      </aside>
+    </div>
   </div>
-</div>
-$partial("templates/_bubble-navigation.html")$
+</article>
+
+<section class="call-to-action call-to-action--single-column">
+  <div class="call-to-action__container container">
+    <!-- <a href="/people/" class="button call-to-action__button call-to-action__button--cool-blue">Back to team</a> -->
+    <a href="/people/" class="button call-to-action__button call-to-action__button--cool-blue button--icon button--icon-left">
+      <span class="button--icon-left__icon dragonfly-arrow rotate-180"></span>
+      <span class="button--icon-left__text">Back to team</span>
+    </a>
+  </div>
+</section>

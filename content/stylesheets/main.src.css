@@ -1,0 +1,72 @@
+/* Import Tailwind base */
+@tailwind base;
+@tailwind components;
+
+:root {
+  --beige: #d2cec3;
+  --cool-blue: #43A1C9;
+  --dark-peach: #EB7A59;
+  --faded-purple: #A3649B;
+  --faded-red: #CF4547;
+  --grape: #5B3456;
+  --greeny-blue: #50AD85;
+  --greyish-brown: #4a4a4a;
+  --light-grey: #D1D3D4;
+  --light-peach: #E5DECC;
+  --pale-grey: #F1F1F2;
+  --pale-teal: #9DC4A9;
+  --slate-grey: #565659;
+  --very-light-pink: #E7E7E7;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+html {
+  @apply font-body text-slate-grey;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: var(--white);
+  background: var(--cool-blue);
+}
+
+/* Plugins. */
+
+/* Import Partials */
+@import "grid/collection-grid.src.css";
+@import "grid/grid-cell.src.css";
+@import "grid/inner-cell.src.css";
+@import "grid/no-gutter-cell.src.css";
+@import "grid/publication-grid.src.css";
+
+@import "layout/animation-controls.src.css";
+@import "layout/content.src.css";
+@import "layout/call-to-action.src.css";
+@import "layout/citation-year.src.css";
+@import "layout/filtering.src.css";
+@import "layout/game-of-life.src.css";
+@import "layout/list-container.src.css";
+@import "layout/main-footer.src.css";
+@import "layout/numbered-section.src.css";
+@import "layout/page-header.src.css";
+@import "layout/positioning.src.css";
+@import "layout/related-content.src.css";
+@import "layout/sidebar.src.css";
+@import "layout/tag-list.src.css";
+
+@import "navigation/button.src.css";
+@import "navigation/link-icon.src.css";
+@import "navigation/main-nav.src.css";
+@import "navigation/mobile-menu.src.css";
+
+@import "tiles/person-tile.src.css";
+@import "tiles/publication.src.css";
+
+@import "typography/body-content.src.css";
+
+@import "utilities/utilities.src.css";
+
+@tailwind utilities;

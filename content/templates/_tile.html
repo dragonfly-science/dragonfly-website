@@ -1,0 +1,41 @@
+$if(pageurl)$
+    <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay list-tile">
+$else$
+    $if(url)$
+        <a href="$url$" class="no-gutter-cell no-gutter-cell--overlay list-tile">
+    $else$
+        <div class="no-gutter-cell no-gutter-cell--overlay list-tile">
+    $endif$
+$endif$
+    $if(published)$
+        <span class="no-gutter-cell__tag">$published$</span>
+    $else$
+        $if(section)$
+        <span class="no-gutter-cell__tag">$section$</span>
+        $else$
+        <span class="no-gutter-cell__tag">&nbsp;</span>
+        $endif$
+    $endif$
+    $if(title)$
+    <strong class="no-gutter-cell__title tile__title">$title$</strong>
+    $endif$
+    $if(teaser)$
+        <div class="no-gutter-cell__text tile__citation">$teaser$</div>
+    $endif$
+
+    <div class="tagslugs hidden">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
+
+    <span class="link-icon link-icon--xl no-gutter-cell__link no-gutter-cell--overlay__link">
+        <span class="icon dragonfly-arrow ml-0 mt-4"></span>
+    </span>
+
+    <div class="no-gutter-cell__image background-image lozad" data-background-image="$teaserImage$"></div>
+$if(pageurl)$
+</a>
+$else$
+    $if(url)$
+</a>
+    $else$
+</div>
+    $endif$
+$endif$

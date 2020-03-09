@@ -1,39 +1,39 @@
 <!-- Use schema.org microformat markup -->
 <a class="anchor" id="contact"></a>
-<footer class="footer full-screen" itemscope itemtype="http://schema.org/Organization">
-  <div class="container footer-outer" id="footer-address">
-    <div class="footer-content" id="footer-row-logo">
-      <div id="footer-logo"> <img itemprop="logo" src="/images/dragonfly-logo-reversed-rgb.png" /> </div>
-      <div id="footer-totop">
-        <a href="#top">Top &#9650;</a>
-      </div>
-    </div>
-    <div class="footer-content" id="footer-row-contact">
-      <p class="heading">Get in touch</p>
-    </div>
-    <div class="footer-content">
-      <div class="cell" id="footer-phone">
+<footer class="main-footer bg-black text-white leading-snug px-6 text-center sm:text-left lg:text-lg" itemscope itemtype="http://schema.org/Organization">
+  <div class="container mx-auto py-10 flex flex-col md:py-20" id="footer-address">
+    <div class="flex justify-between w-full flex-row flex-wrap">
+      <div class="main-footer__detail">
+        <span>Contact:</span>
+
         $partial("templates/_address-phones.html")$
       </div>
-      <div class="cell showlink-mobile" id="footer-physical">
-        $partial("templates/_address-physical.html")$
+
+      <div class="main-footer__detail">
+          <span>Visit:</span>
+  
+          $partial("templates/_address-physical.html")$
       </div>
-      <div class="cell" id="footer-postal">
-        $partial("templates/_address-postal.html")$
+
+      <div class="main-footer__detail">
+          <span>Post:</span>
+  
+          $partial("templates/_address-postal.html")$
+      </div>
+
+      <div class="main-footer__detail lg:flex-grow-0 lg:flex-shrink-0">
+          <span>Follow:</span>
+  
+          <a href="https://www.twitter.com/dflydsci">Twitter</a><br/>
+          <a href="https://github.com/dragonfly-science">Github</a><br/>
       </div>
     </div>
-    <div class="footer-content" id="footer-social">
-      <div class="cell social">
-        <div>
-          <p><a href="https://www.twitter.com/dflydsci"><img src="/images/twitter-white.png" /></a> Follow us on Twitter</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer-content" id="footer-license">
-      <div>
-          <p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="/images/cc.png" /><img src="/images/by.png" /></a><span class="license-text">The text content and code of this website is copyright Dragonfly Limited, and is <a href= "https://github.com/dragonfly-science/website/blob/master/LICENSE">licensed for reuse</a>.</span></p>
-        <p><a href="https://github.com/dragonfly-science/website"><img src="/images/github-logo.png" /></a><span class="license-text">The source code is available on <a href="https://github.com/dragonfly-science/website">GitHub</a>. If you have any problems or suggestions, you are welcome to <a href="https://github.com/dragonfly-science/website/issues">raise an issue</a>.</span></p>
-      </div>
+
+    <div class="mt-10 md:mt-32">
+        <p>
+          The text content and code of this website is copyright Dragonfly Limited, and is <a href= "https://github.com/dragonfly-science/website/blob/master/LICENSE">licensed for reuse</a>.<br/>
+          The source code is available on <a href="https://github.com/dragonfly-science/website">GitHub</a>. If you have any problems or suggestions, you are welcome to <a href="https://github.com/dragonfly-science/website/issues">raise an issue</a>.
+        </p>
     </div>
   </div>
 </footer>

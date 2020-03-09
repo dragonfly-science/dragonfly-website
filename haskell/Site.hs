@@ -1,8 +1,11 @@
 {-# LANGUAGE OverloadedStrings #-}
 
+import Debug.Trace
+
 import           Data.Monoid          ((<>))
+import           Data.Foldable        (forM_)
 import           System.Process
-import System.Exit
+import           System.Exit
 
 import           Hakyll
 
@@ -36,7 +39,7 @@ main = do
     match (fromList [bibIdentifier]) $ compile biblioCompiler
 
     match "**/*.img.md" $ compile scholmdCompiler
-    match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png" .||. "**/*.csv") $ do
+    match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png" .||. "**/*.csv" .||. "fonts/*") $ do
         route idRoute
         compile copyFileCompiler
 
@@ -62,9 +65,13 @@ main = do
                           , ("1600", ["-resize" , "1600"])
                           ]
     Images.imageProcessor ( "**/teaser.jpg") $
-                          [ ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0"])
-                          , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0"])
+                          [ ( "1200", ["-resize" , "1200+600^", "-gravity", "Center", "-crop", "1200+6000+0+0", "-quality", "75"])
+                          , ( "960", ["-resize" , "960+960^", "-gravity", "Center", "-crop", "960+960+0+0", "-quality", "75"])
+                          , ( "480", ["-resize" , "600+600^", "-gravity", "Center", "-crop", "600+600+0+0", "-quality", "75"])
+                          , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
+                          , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0", "-quality", "75"])
                           ]
+
 
     --Images.imageProcessor ( "**/*.pdf") $
     --                      [ ( "256", ["-density" , "100", "-resize", "256x256^", "-crop", "256x256+0+0"])
@@ -79,7 +86,16 @@ main = do
             bubbles <- People.bubbles
             work   <- Work.list 3
             news   <- News.list 6
-            let ctx = base <> people <> work <> news <> bubbles
+
+            -- Tile definition
+            let getTiles itm = do
+                  md <- getMetadata (itemIdentifier itm)
+                  case lookupStringList "tiles" md of
+                    Just tiles -> mapM (load . fromFilePath) tiles
+                    Nothing -> return []
+                tiles = listFieldWith "tiles" itemCtx getTiles
+
+            let ctx = base <> people <> work <> news <> bubbles <> tiles
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -101,13 +117,13 @@ main = do
     Publications.rules
 
     -- Contact page
-    match "pages/contact.html" $ do
-        route $ constRoute "contact/index.html"
+    match "pages/what-we-do.html" $ do
+        route $ constRoute "what-we-do.html"
         compile $ do
-            ctx <- baseContext "contact"
-            scholmdCompiler
+            ctx <- baseContext "what-we-do"
+            getResourceBody
+                >>= applyAsTemplate ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= validatePage
 
     -- Standalone pages
     match "pages/*.html" $ do
@@ -124,8 +140,8 @@ main = do
         compile copyFileCompiler
 
     -- Scripts
-    match "scripts/dragonfly.js" $ do
-        route $ constRoute "assets/dragonfly.js"
+    match "scripts/*.js" $ do
+        route $ gsubRoute "scripts/" (const "assets/")
         compile copyFileCompiler
 
     match "favicon.ico" $ do

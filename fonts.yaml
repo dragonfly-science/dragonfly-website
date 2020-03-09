@@ -1,0 +1,34 @@
+font:
+    svg:        ./content/fonts/dragonfly.svg
+    ttf:        ./content/fonts/dragonfly.ttf
+    eot:        ./content/fonts/dragonfly.eot
+    woff:       ./content/fonts/dragonfly.woff
+    css:        ./content/fonts/dragonfly.css
+    name:       dragonfly
+    prefix:     dragonfly
+    fixedwidth: false
+    height:     1000
+    descent:    150
+    normalize:  true
+    center:     true
+    round:      10e12
+
+glyphs:
+  - glyph: ./content/images/icons/arrow.svg
+    name: arrow
+    code: 0xE001
+  - glyph: ./content/images/icons/close.svg
+    name: close
+    code: 0xE002
+  - glyph: ./content/images/icons/hamburger.svg
+    name: hamburger
+    code: 0xE003
+  - glyph: ./content/images/icons/icon-search.svg
+    name: search
+    code: 0xE004
+  - glyph: ./content/images/icons/pdf-download.svg
+    name: pdf
+    code: 0xE005
+  - glyph: ./content/images/icons/reset-icon.svg
+    name: reset
+    code: 0xE006

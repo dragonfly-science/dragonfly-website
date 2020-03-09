@@ -2,6 +2,9 @@
 
 set -ex
 
-./task.sh deploy
+export RUN=
+
+make clean
+make build
 
 cp -r _site/* /publish/

@@ -1,7 +1,6 @@
-<li>
-  <a href="$pageurl$">
-    <div class="bubble" style="background-image: url($teaserImage$)">
-      <p>$title$</p>
-    </div>
-  </a>
-</li>
+<a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay">
+  $if(published)$<span class="no-gutter-cell__tag">$published$</span>$endif$
+  $if(title)$<strong class="no-gutter-cell__title">$title$</strong>$endif$
+  <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link"><span class="icon dragonfly-arrow ml-0"></span></span>
+ $if(teaserImage)$ <div class="no-gutter-cell__image background-image lozad" data-background-image="$teaserImage$"></div>$endif$
+</a>

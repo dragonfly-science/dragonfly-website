@@ -3,6 +3,7 @@ title: Philipp Neubauer
 email: philipp@dragonfly.co.nz
 firstname: Philipp
 lastname: Neubauer
+honour: PhD
 mobile: ''
 tag: philipp
 title: Philipp Neubauer, PhD

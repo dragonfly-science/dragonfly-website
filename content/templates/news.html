@@ -1,39 +1,31 @@
-$if(banner-image)$
-  <div class="post-banner-image" style='background-image: url("$banner-image$")'>
-  </div>
-$endif$
-<div class="container post-detail">
-  <div class="sidebar">
-   <div class="post-top-image">
-     <div class="porthole" style="background-image: url('$teaserImage$');"></div>
-   </div>
-  </div>
-  <div class="heading content">
-   $if(title)$
-    <h2>$title$</h2>
-   $endif$
-   <div class="details">
-    $if(date)$
-      <p>$date$</p>
-    $endif$
-    $if(author)$
-      <p>$author$</p>
-    $endif$
+<header class="page-header page-header--article page-header--news page-header--small page-header--no-overlay bg-light-peach math-paper">
+  <div class="page-header__outer">
+    <div class="page-header__container flex flex-col">
+      $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
+      $if(date)$
+        <span class="page-header--article__date">$date$</span>
+      $endif$
+
     </div>
   </div>
-  $if(logo)$
-    <div class="sidebar">
-      <div class="post-info">
-          <img src="$logo$">
+</header>
+
+<article id="top-section" class="article math-paper">
+  <div class="bg-light-peach px-6">
+    <div class="container mx-auto flex flex-col lg:flex-row">
+      <!-- <aside class="sidebar">
+          <img class="lozad lozad-image rounded-full" data-src="$teaserImage$">
+      </aside> -->
+      <div class="body-content body-content--no-sidebar body-content--article">
+        $body$
       </div>
     </div>
-    <div class="content post-body">
-      $body$
-    </div>
-  $else$
-    <div class="narrow post-body">
-      $body$
-    </div>
-  $endif$
+  </div>
+</article>
+
+<div class="related-content relative z-10">
+  <header class="related-content__header container">
+    <h2 class="related-content__title">You might also like these stories</h2>
+  </header>
+  $partial("templates/_bubble-navigation.html")$
 </div>
-$partial("templates/_bubble-navigation.html")$

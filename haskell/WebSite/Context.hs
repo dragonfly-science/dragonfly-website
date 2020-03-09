@@ -3,14 +3,20 @@ module WebSite.Context (
   baseContext,
   actualbodyField,
   pageUrlField,
+  itemCtx,
+  teaserImage,
+  socialImage,
   refContext,
   listContextWith,
   tagContext
 ) where
 
+import Debug.Trace
+
 import           Control.Monad
 import           Data.Aeson
 import           Data.List
+import           System.FilePath
 
 import qualified Data.Map             as M
 import qualified Data.HashMap.Strict  as HM
@@ -32,8 +38,8 @@ baseContext section = do
     ident <- getUnderlying
     route <- getRoute ident
     let prepareUrl :: String -> String
-        prepareUrl path = "/" <> (if takeBaseName path == "index" 
-                                    then takeDirectory path 
+        prepareUrl path = "/" <> (if takeBaseName path == "index"
+                                    then takeDirectory path
                                     else path)
     return $  dateField  "date"   "%B %e, %Y"
            <> constField "jquery" "//ajax.googleapis.com/ajax/libs/jquery/2.0.3"
@@ -77,14 +83,39 @@ listContextWith s ctx  = listFieldWith s ctx $ \item -> do
     return $ map (\x -> Item (fromFilePath x) x) metas
 
 
-teaserSeparator :: String
-teaserSeparator = "<!--more-->"
+itemCtx :: Context String
+itemCtx  = listContextWith "tags" tagContext
+        <> teaserImage
+        <> socialImage
+        <> mapContext stripTags (teaserField "teaser" "content")
+        <> pageUrlField "pageurl"
+        <> dateField "published" "%B %d, %Y"
+        <> sectionField "section"
+        <> defaultContext
+
+teaserImage :: Context String
+teaserImage = field "teaserImage" getImagePath
+  where
+    getImagePath item = do
+        let path = toFilePath (itemIdentifier item)
+            base = take ((length path) - 11) path
+            ident = fromFilePath $ base </> "teaser.jpg"
+        fmap (maybe "" (toUrl . (flip replaceFileName "960-teaser.jpg"))) (getRoute ident)
+
+socialImage :: Context String
+socialImage = field "socialImage" getImagePath
+    where
+    getImagePath item = do
+        let path = toFilePath (itemIdentifier item)
+            base = take ((length path) - 11) path
+            ident = fromFilePath $ base </> "teaser.jpg"
+        fmap (maybe "" (toUrl . (flip replaceFileName "1200-teaser.jpg"))) (getRoute ident)
 
 actualbodyField :: String -> Context String
 actualbodyField key = field key $ \_ -> do
-    value <- getUnderlying >>= load . setVersion (Just "full")
+    value <- getUnderlying >>= load
     let body = itemBody value
-        parts = splitAll teaserSeparator body
+        parts = splitAll "<!--more-->" body
     case parts of
         [] -> return "WARNING there is no body text"
         _  -> return $ last parts
@@ -97,6 +128,13 @@ pageUrlField key = field key $ \item -> do
       if isSuffixOf "/content.md" path
          then (take ((length path) - 11) path) ++ ".html"
       else (replaceExtension path ".html")
+
+sectionField :: String -> Context a
+sectionField key = field key $ \item -> do
+    let path = toFilePath (itemIdentifier item)
+    return $
+      fromMaybe "" $
+        listToMaybe (splitDirectories path)
 
 
 -- Provide context for a single BibTeX reference

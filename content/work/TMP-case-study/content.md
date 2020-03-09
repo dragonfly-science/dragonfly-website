@@ -7,6 +7,8 @@ tags: systems
 quote: The team at Dragonfly have been great to work with. They quickly understood what we were trying to achieve and came up with a very innovative solution. 
 quote-attribution: Thomas Hood, Te Māngai Pāho
 logo: /work/TMP-case-study/tmp-logo.png
+project-link: https://kokako.co
+project-link-text: View project
 ---
 
 Machine learning methods are ideal for classifying streaming data rapidly. We developed Kōkako, a language monitoring app, for Te Māngai Pāho to identify the different language content broadcast on the radio stations they fund in New Zealand. Kōkako won a Best Design Award in 2016.  
@@ -38,6 +40,3 @@ We were pleased to work with Wellington digital design agency [Salted Herring](h
 <cite>Thomas Hood<br />
 Manager Corporate Services<br />
 Te Māngai Pāho.</cite>
-
-
-

@@ -1,0 +1,23 @@
+/* Navigation section at bottom of a page, linking users to related content.
+ - e.g. projects, news etc. */
+.related-content {
+    @apply bg-light-peach math-paper;
+
+    &__header {
+        @apply text-center mx-auto;
+    }
+
+    &__title {
+        @apply text-3xl font-bold pt-10 pb-16;
+    }
+}
+
+@screen lg {
+    .related-content {
+        @apply px-6;
+
+        &__title {
+            @apply text-5xl pt-24 pb-32;
+        }
+    }
+}

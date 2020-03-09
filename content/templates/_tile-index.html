@@ -1,0 +1,35 @@
+$if(pageurl)$
+    <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay">
+$else$
+    $if(url)$
+        <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay">
+    $else$
+        <div class="no-gutter-cell no-gutter-cell--overlay">
+    $endif$
+$endif$
+    $if(section)$
+        <span class="no-gutter-cell__tag">$section$</span>
+    $else$
+        <span class="no-gutter-cell__tag">&nbsp;</span>
+    $endif$
+    $if(title)$
+    <strong class="no-gutter-cell__title">$title$</strong>
+    $endif$
+    $if(teaser)$
+        <div class="no-gutter-cell__text">$teaser$</div>
+    $endif$
+
+    <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link">
+        <span class="icon dragonfly-arrow ml-0 mt-4"></span>
+    </span>
+
+    <div class="no-gutter-cell__image background-image lozad" data-background-image="$teaserImage$"></div>
+$if(pageurl)$
+</a>
+$else$
+    $if(url)$
+</a>
+    $else$
+</div>
+    $endif$
+$endif$

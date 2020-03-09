@@ -12,8 +12,7 @@ import           Text.Pandoc.Options (WriterOptions (..))
 -- | Options for an HTML5 Pandoc writer
 htm5Writer :: WriterOptions
 htm5Writer = defaultHakyllWriterOptions
-    { writerHtml5       = True
-    , writerSectionDivs = True
+    { writerSectionDivs = True
     }
 
 
@@ -43,15 +42,18 @@ tagDictionary :: [(String, String)]
 tagDictionary = [
     ("acoustic", "Acoustic monitoring"),
     ("article", "Article"),
+    ("assessment", "Assessment"),
     ("bayesian", "Bayesian"),
     ("benthic", "Benthic"),
     ("bycatch", "Bycatch"),
+    ("data", "Data"),
     ("dragonfly", "Dragonfly"),
     ("ecology", "Ecology"),
     ("edward", "Edward Abraham"),
     ("finlay", "Finlay Thompson"),
     ("fisheries", "Fisheries"),
     ("katrin", "Katrin Berkenbusch"),
+    ("laura", "Laura Tremblay-Boyer"),
     ("marine-biology", "Marine biology"),
     ("marine-mammal", "Marine mammals"),
     ("oceanography", "Oceanography"),

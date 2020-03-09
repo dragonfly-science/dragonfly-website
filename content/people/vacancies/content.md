@@ -1,5 +1,7 @@
 ---
 title: Working at Dragonfly
+firstname: Working at
+lastname: Dragonfly
 sortorder: "1000"
 tag: vacancies
 banner: vacancies/vacancies-letterbox.jpg
@@ -48,5 +50,3 @@ environmental impacts (e.g., bycatch) in New Zealand and internationally.
 You can find more information [here](early-career-fisheries-scientist.html).
 
 Applications close on Saturday, 14 March 2020.
-
-

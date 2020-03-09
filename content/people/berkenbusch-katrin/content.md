@@ -4,6 +4,7 @@ firstname: Katrin
 lastname: Berkenbusch
 mobile: ''
 tag: katrin
+honour: PhD
 title: Katrin Berkenbusch, PhD
 sortorder: "3"
 banner: berkenbusch-katrin/katrin-berkenbusch-letterbox.jpg

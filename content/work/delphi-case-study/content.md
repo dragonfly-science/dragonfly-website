@@ -6,13 +6,14 @@ summary: Facilitating mapping of turtle distributions in the Pacific
 tags: stats, policy
 quote: Dragonfly’s timeliness of delivery was critical, and one of the reasons the project was such a success.   
 quote-attribution: Neville Smith, Principal Fisheries Scientist, Pacific Community (SPC)
-
+project-link: http://www.fao.org/fileadmin/user_upload/common_oceans/docs/Tuna/TurtleMeetingsFinalReport.pdf
+project-link-text: Download report
 logo: /work/delphi-case-study/Pacific-Community-logo.jpg
 ---
 We created an online survey to map the distribution of four species of sea
 turtle in the Pacific Ocean. The maps fed into simulations of turtle
 interactions with fisheries produced at a workshop led by the Western and
-Central Pacific Fisheries Commission (WCPFC).   
+Central Pacific Fisheries Commission (WCPFC).
 <!--more-->
 
 ### Where are the turtles?
