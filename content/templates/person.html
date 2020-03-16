@@ -2,8 +2,14 @@
   <div class="page-header__outer">
     <div class="page-header__container flex flex-col">
       <h1 class="page-header__title">
-        $firstname$<br>
-        $lastname$$if(honour)$,<br>
+        $if(bannerTitleLine1)$
+          $bannerTitleLine1$<br>
+          $if(bannerTitleLine2)$$bannerTitleLine2$$endif$
+        $else$
+          $firstname$<br>
+          $lastname$
+        $endif$
+        $if(honour)$<br>
         <span class="font-light">$honour$</span>$endif$
       </h1>
 
