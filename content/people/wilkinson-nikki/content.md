@@ -3,7 +3,6 @@ title: Nikki Wilkinson
 email: nikki@dragonfly.co.nz
 firstname: Nikki
 lastname: Wilkinson
-title: Nikki Wilkinson
 mobile: ''
 tag: nikki
 banner: wilkinson-nikki/nikki-wilkinson-letterbox.jpg
