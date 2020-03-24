@@ -5,7 +5,7 @@ Looking tanned, happy and ridiculously fit, Edward is back at work after walking
 
 <!--more-->
 
-[His journey started at Ship Cove in the Marlborough Sounds just after Christmas and he reached Bluff at the end of February. As a side trip, he was joined by his daughter at Te Anau and they walked the Kepler Track together.
+His journey started at Ship Cove in the Marlborough Sounds just after Christmas and he reached Bluff at the end of February. As a side trip, he was joined by his daughter at Te Anau and they walked the Kepler Track together.
 
 Many trail walkers take on the challenge for a particular reason. Although there was nothing specific for Edward, he says sorting out his late parents affairs and selling the family farm had got him thinking.
 
@@ -16,7 +16,7 @@ Discovering new parts of Aotearoa he knew nothing about, making friends with fel
 His photos feature beautiful native plants, views and new young Irish and Scottish walking friends – including meals and celebrations as they made it to another town.
 
 “I liked the rhythm. You can be alone all day but you catch up with people at night.”  
-![Cooling down in the river](/news/2020-03-12/te-araroa/wading-river.jpg)
+![Cooling down in the river](/news/2020-03-12-te-araroa/wading-river.jpg)
 
 He had no major injuries but reported that overcoming blisters, strains, niggles and overall soreness needed constant attention. “One strain had to wait till I got reception and could consult Dr Google on how to strap it up, but that worked a treat!”
 
