@@ -16,7 +16,8 @@ Discovering new parts of Aotearoa he knew nothing about, making friends with fel
 His photos feature beautiful native plants, views and new young Irish and Scottish walking friends – including meals and celebrations as they made it to another town.
 
 “I liked the rhythm. You can be alone all day but you catch up with people at night.”  
-![Cooling down in the river](/news/2020-03-12-te-araroa/wading-river.jpg)
+
+![Crossing one of the many South Island rivers](news/2020-03-12-te-araroa/wading-river.jpg)
 
 He had no major injuries but reported that overcoming blisters, strains, niggles and overall soreness needed constant attention. “One strain had to wait till I got reception and could consult Dr Google on how to strap it up, but that worked a treat!”
 
