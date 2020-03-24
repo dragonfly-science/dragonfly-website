@@ -1,5 +1,5 @@
 ---
-title: 63 days to walk 1420 km
+title: 63 days to walk 1350 km
 ---
 Looking tanned, happy and ridiculously fit, Edward is back at work after walking the South Island half of Te Araroa – New Zealand’s trail.
 
