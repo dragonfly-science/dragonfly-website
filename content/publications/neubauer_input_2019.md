@@ -2,7 +2,7 @@
 pdf: neubauer_input_2019.pdf
 tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
 title: Input data for the 2018 stock assessment of pāua (<i>Haliotis iris</i>) for
-		  PAU 5D
+PAU 5D
 ---
 
 This report describes the data inputs to the 2018 stock assessment of

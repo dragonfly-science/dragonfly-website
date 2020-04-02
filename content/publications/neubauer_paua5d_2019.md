@@ -1,8 +1,7 @@
 ---
 pdf: neubauer_paua5d_2019.pdf
 tags: philipp, laura, paua, fisheries, dragonfly, benthic, report, bayesian
-title: The 2018 stock assessment of pāua (<i>Haliotis iris</i>) for
-		  PAU 5D
+title: The 2018 stock assessment of pāua (<i>Haliotis iris</i>) for PAU 5D
 ---
 
 We conducted a Bayesian length-based stock assessment for
