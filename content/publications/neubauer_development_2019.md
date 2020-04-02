@@ -4,7 +4,6 @@ tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
 title: Development and evaluation of management procedures in
 pāua quota management areas 5A, 5B and 5D
 ---
-
 This project was a first attempt at introducing formal management
 procedures (MPs) based on control rules in pāua fisheries in New
 Zealand. Stakeholders in pāua quota management area PAU 5 requested
