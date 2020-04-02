@@ -1,10 +1,8 @@
 ---
 pdf: neubauer_input_2019.pdf
 tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
-title: Input data for the 2018 stock assessment of pāua (<i>Haliotis iris</i>) for
-PAU 5D
+title: Input data for the 2018 stock assessment of pāua (<i>Haliotis iris</i>) for PAU 5D
 ---
-
 This report describes the data inputs to the 2018 stock assessment of
 New Zealand abalone,  pāua (*Haliotis iris*), in quota management
 area (QMA) PAU 5D. The PAU 5D QMA covers the
