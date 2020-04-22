@@ -117,4 +117,7 @@ The release branch is automatically deployed. You can manually merge from master
 pull request. Creating a pull request on github from the master branch to the release branch
 is the preferred method of deploying.
 
+# Redevelopment
+
+New front end development is taking place on the staging branch.
 
