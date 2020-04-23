@@ -1,0 +1,91 @@
+<header class="page-header page-header--white page-header--article jarallax">
+    $if(banner)$<img
+        class="jarallax-img page-header__bg-image lozad lozad-image"
+        src="$banner$"
+    />
+    $endif$
+    <div class="page-header__outer">
+        <div class="page-header__container">
+            $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
+        
+            $if(subtitle)$<p class="page-header__content">$subtitle$</p>$endif$
+            
+            <a
+                href="#top-section"
+                class="link-icon link-icon--arrow-down link-icon--large">
+                <span class="icon dragonfly-arrow"></span>
+            </a>
+        </div>
+    </div>
+</header>
+
+
+<article id="top-section" class="article math-paper">
+  <div class="bg-light-peach px-6">
+    <div class="container mx-auto flex flex-col lg:flex-row">
+      <div class="body-content body-content--article flex-grow">
+        $body$
+      </div>
+      <aside class="sidebar text-center lg:text-left">
+        <a href="#" class="person-tile person-tile--singular mt-24">
+            <img class="lozad" data-src="/people/thompson-finlay/teaser.jpg" width="100%" height="auto" />
+
+            <div class="w-full mt-4">
+                <span class="person-tile__title">
+                    Finlay<br>
+                    Thompson<br>
+                    <span class="font-light">PhD</span>
+                    <em class="person-tile__role">Operations Manager</em>
+                </span>
+
+                <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link person-tile__link">
+                    <span class="icon dragonfly-arrow"></span>
+                </span>
+            </div>
+        </a>
+      </aside>
+    </div>
+  </div>
+  <section class="numbered-section numbered-section--no-numbers bg-white">
+    <div class="numbered-section__container container">
+        <div class="numbered-section__content">
+            <h2 class="numbered-section__heading">
+                <span>Expert knowledge was combined fairly</span>
+            </h2>
+            <h3 class="mt-4 mb-4 text-lg text-cool-blue font-semibold max-w-3/4">so information about where turtles and fishing overlap could underpin decision-making. </h3>
+            <p class="numbered-section__text">
+                We created an online survey to map the distribution of four species of sea turtle in the Pacific Ocean. The maps fed into simulations of turtle interactions with fisheries that were produced at an international workshop.
+            </p>
+
+            <div class="numbered-section__call-to-action">
+                <span>text</span>
+                <a
+                    href="/"
+                    class="call-to-action__button button call-to-action__button--cool-blue">
+                    call to action
+                </a>
+            </div>
+        
+            <!-- <a href="/work/?tags=capability" class="link-icon numbered-section__link"><span class="text">Transferring our skills</span> <span class="icon dragonfly-arrow"></span></a> -->
+        </div>
+        <div class="numbered-section__content scrollable">
+            <a href="/work/delphi-case-study.html" class="no-gutter-cell no-gutter-cell--overlay list-tile w-full">
+                <span class="no-gutter-cell__tag">work</span>
+                <strong class="no-gutter-cell__title tile__title">Quantitive information from expert opinion</strong>
+
+                <div class="no-gutter-cell__text tile__citation">We created an online survey to map the distribution of four species of sea turtle in the Pacific Ocean. The maps fed into simulations of turtle interactions with fisheries produced at a workshop led by the Western and Central Pacific Fisheries Commission (WCPFC). </div>
+            
+
+                <div class="tagslugs hidden">stats policy </div>
+
+                <span class="link-icon link-icon--xl no-gutter-cell__link no-gutter-cell--overlay__link">
+                    <span class="icon dragonfly-arrow ml-0 mt-4"></span>
+                </span>
+
+                <div class="no-gutter-cell__image background-image lozad loaded" data-background-image="/work/delphi-case-study/960-teaser.jpg" data-loaded="true" style="background-image: url('/work/delphi-case-study/960-teaser.jpg');"></div>
+
+            </a>
+        </div>
+    </div>
+</section>
+</article>

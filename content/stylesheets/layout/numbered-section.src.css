@@ -78,6 +78,18 @@
     &__container {
         @apply block mx-auto;
     }
+
+    &__call-to-action {
+        @apply flex flex-col mt-8;
+
+        span {
+            @apply block font-semibold mb-2;
+        }
+
+        a {
+            @apply mr-auto;
+        }
+    }
 }
 
 @screen md {

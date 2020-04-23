@@ -19,6 +19,7 @@ import qualified WebSite.People       as People
 import qualified WebSite.Publications as Publications
 import           WebSite.Validate     (validatePage)
 import qualified WebSite.Work         as Work
+import qualified WebSite.WhatWeDo     as WhatWeDo
 
 config :: Configuration
 config = defaultConfiguration
@@ -120,18 +121,27 @@ main = do
     -- Publications section
     Publications.rules
 
-    -- Contact page
-    match "pages/what-we-do.html" $ do
-        route $ constRoute "what-we-do.html"
-        compile $ do
-            ctx <- baseContext "what-we-do"
-            getResourceBody
-                >>= applyAsTemplate ctx
-                >>= loadAndApplyTemplate "templates/default.html" ctx
+    -- What we do section
+    WhatWeDo.rules
+    -- match "pages/what-we-do.html" $ do
+    --     route $ constRoute "what-we-do.html"
+    --     compile $ do
+    --         ctx <- baseContext "what-we-do"
+    --         getResourceBody
+    --             >>= applyAsTemplate ctx
+    --             >>= loadAndApplyTemplate "templates/default.html" ctx
+
+    -- match "pages/what-we-do/*.html" $ do
+    --     route $ gsubRoute "pages/" $ const ""
+    --     compile $ do
+    --         ctx <- baseContext "what-we-do-internal"
+    --         getResourceBody
+    --             >>= applyAsTemplate ctx
+    --             >>= loadAndApplyTemplate "templates/default.html" ctx
 
     -- Standalone pages
     match "pages/*.html" $ do
-        route $ setExtension "html"
+        route $ setExtension ""
         compile $ do
             ctx  <- baseContext "index"
             getResourceBody
@@ -151,3 +161,9 @@ main = do
     match "favicon.ico" $ do
         route idRoute
         compile copyFileCompiler
+
+-- cleanRoute :: Routes
+-- cleanRoute = customRoute createIndexRoute
+--     where
+--         createIndexRoute ident = "what-we-do" </> takeBaseName p </> ".html"
+--             where p = toFilePath ident

@@ -65,7 +65,7 @@
     }
 
     &[data-section="work"] .main-nav__link[class*="section--work"],
-    &[data-section="what-we-do"] .main-nav__link[class*="section--what-we-do"],
+    &[data-section="whatwedo"] .main-nav__link[class*="section--what-we-do"],
     &[data-section="people"] .main-nav__link[class*="section--people"],
     &[data-section="news"] .main-nav__link[class*="section--news"],
     &[data-section="data"] .main-nav__link[class*="section--data"],
@@ -96,7 +96,7 @@
         @apply relative justify-start items-center;
 
         &[data-section="work"] .main-nav__link[class*="section--work"],
-        &[data-section="what-we-do"] .main-nav__link[class*="section--what-we-do"],
+        &[data-section="whatwedo"] .main-nav__link[class*="section--what-we-do"],
         &[data-section="people"] .main-nav__link[class*="section--people"],
         &[data-section="news"] .main-nav__link[class*="section--news"],
         &[data-section="data"] .main-nav__link[class*="section--data"],
