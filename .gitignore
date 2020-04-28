@@ -1,6 +1,6 @@
 haskell/stack.yaml.lock
 _site/
-website
+/website
 content/stylesheets/dragonfly.css
 content/fonts/dragonfly.eot
 content/fonts/dragonfly.ttf
