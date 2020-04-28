@@ -64,6 +64,18 @@
     }
 }
 
+.call-to-action-block {
+    @apply flex flex-col my-8;
+
+    span {
+        @apply block font-semibold mb-2;
+    }
+
+    a {
+        @apply mr-auto;
+    }
+}
+
 @screen lg {
     .call-to-action {
         @apply py-32;

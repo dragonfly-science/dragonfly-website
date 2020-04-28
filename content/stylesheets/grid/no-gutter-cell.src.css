@@ -223,6 +223,32 @@
     &--bottom-aligned {
         @apply overflow-hidden relative flex flex-row items-end;
     }
+
+    &--sidebar {
+        @apply max-w-full w-56 p-6 min-h-16 h-16;
+
+        &:hover {
+            .no-gutter-cell__link {
+                .icon {
+                    @apply mr-0;
+                }
+            }
+
+            .no-gutter-cell__title {
+                @apply mb-5;
+            }
+        }
+
+        .no-gutter-cell__link {
+            .icon {
+                @apply text-xl !important;
+            }
+        }
+
+        .no-gutter-cell__title {
+            @apply text-3xl mb-5;
+        }
+    }
 }
 
 @screen md {

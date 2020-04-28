@@ -1,0 +1,26 @@
+.ruled-heading {
+    @apply relative pt-5;
+
+    span {
+        @apply mt-3;
+    }
+
+    &:after {
+        @apply block absolute top-0 left-0 w-32 bg-slate-grey;
+        height: 4px;
+        content: '';
+    }
+
+    &--cool-blue {
+        &:after {
+            @apply bg-cool-blue;
+        }
+    }
+
+    &--center {
+        &:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

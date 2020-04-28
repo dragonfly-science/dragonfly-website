@@ -1,0 +1,30 @@
+:root {
+  --beige: #d2cec3;
+  --cool-blue: #43A1C9;
+  --dark-peach: #EB7A59;
+  --faded-purple: #A3649B;
+  --faded-red: #CF4547;
+  --grape: #5B3456;
+  --greeny-blue: #50AD85;
+  --greyish-brown: #4a4a4a;
+  --light-grey: #D1D3D4;
+  --light-peach: #E5DECC;
+  --pale-grey: #F1F1F2;
+  --pale-teal: #9DC4A9;
+  --slate-grey: #565659;
+  --very-light-pink: #E7E7E7;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+html {
+  @apply font-body text-slate-grey;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: var(--white);
+  background: var(--cool-blue);
+}

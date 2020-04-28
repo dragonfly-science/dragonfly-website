@@ -295,6 +295,10 @@
     &--no-sidebar {
         /* @apply ml-64; */
     }
+
+    &--bottomless {
+        @apply mb-0;
+    }
 }
 
 @screen xl {

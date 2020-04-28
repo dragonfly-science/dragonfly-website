@@ -70,8 +70,12 @@ module.exports = {
         '7xl': '102.5rem',
         '8xl': '120rem',
       },
+      maxHeight: {
+        '16': '16rem'
+      },
       minHeight: {
         '3': '3rem',
+        '16': '16rem',
         '20': '20rem',
         '24': '24rem',
         '30': '30rem',

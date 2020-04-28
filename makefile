@@ -42,7 +42,7 @@ pull:
 push:
 	docker push $(IMAGE)
 
-local:
+interact:
 	docker run -it --rm -w /work -v $(PWD):/work \
 		--net=host \
 		-e DISPLAY=$$DISPLAY \

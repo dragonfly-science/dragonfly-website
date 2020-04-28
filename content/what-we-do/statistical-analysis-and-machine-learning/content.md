@@ -24,6 +24,11 @@ introduction: >
   bibendum nulla sed consectetur.
 introductionPerson: richard-yvan
 banner: /images/whatwedo_header.jpg
+relatedWork:
+  - delphi-case-study
+  - seabird-risk
+  - technical-review-case-study
+  - warp-strike
 ---
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 

@@ -86,19 +86,27 @@
     }
 
     &--singular {
-        @apply min-h-0 overflow-visible flex-col;
-
-        &:before {
-            @apply hidden;
-        }
+        @apply min-h-0 overflow-visible flex-col p-0;
 
         img {
+            @apply relative z-0;
+
             &:before {
                 @apply absolute bottom-0 left-0 w-full h-full z-10 block;
                 @apply transition-all transition-500 transition-ease-out-quart;
                 content: '';
                 background-blend-mode: multiply;
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+            }
+
+            + h2 {
+                @apply hidden;
+            }
+
+            &.loaded {
+                + h2 {
+                    @apply block;
+                }
             }
         }
         
@@ -108,6 +116,22 @@
 
         .person-tile__role {
             @apply block mt-4;
+        }
+
+        &:hover {
+            .person-tile__title {
+                @apply mb-0 !important;
+            }
+
+            .no-gutter-cell__text {
+                @apply opacity-100 mb-16;
+            }
+
+            .no-gutter-cell__link {
+                .icon {
+                    @apply mr-0;
+                }
+            }
         }
     }
 }

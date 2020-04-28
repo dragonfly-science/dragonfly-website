@@ -1,0 +1,123 @@
+.what-we-do-section {
+    @apply py-16;
+
+    &__title {
+        @apply block font-medium text-2xl leading-tight;
+    }
+
+    &__subtitle {
+        @apply block mt-2 mb-4 text-lg font-medium;
+    }
+
+    &__description {
+        @apply ml-0 my-6 max-w-3xl text-base;
+    }
+
+    &__intro {
+        @apply w-full flex justify-center;
+
+        &__title {
+            @apply text-5xl font-bold mb-16;
+        }
+    }
+
+    &__projects {
+        @apply flex flex-col;
+    }
+
+    &__project {
+        @apply flex-grow flex flex-col max-w-full mr-0 ml-0;
+
+        &:nth-child(even) {
+            @apply mr-0;
+
+            .what-we-do-section__project__link {
+                @apply order-first pr-0 pl-0;
+            }
+
+            .what-we-do-section__project__details {
+                @apply text-left;
+            }
+
+            .what-we-do-section__title,
+            .what-we-do-section__subtitle,
+            .what-we-do-section__description {
+                @apply ml-0;
+            }
+        }
+
+        &__link {
+            @apply flex items-start py-5 pr-8 mb-8;
+        }
+    }
+}
+
+@screen md {
+    .what-we-do-section {
+        &__projects {
+            @apply flex flex-row;
+        }
+
+        &__project {
+            @apply max-w-1/2 mr-8;
+        }
+    }
+}
+
+@screen lg {
+    .what-we-do-section {
+        &__project {
+            @apply flex-row;
+
+            &:nth-child(even) {
+                .what-we-do-section__project__link {
+                    @apply order-1 pr-0 pl-8;
+                }
+
+                .what-we-do-section__project__details {
+                    @apply text-right;
+                }
+
+                .what-we-do-section__title,
+                .what-we-do-section__subtitle,
+                .what-we-do-section__description {
+                    @apply ml-auto;
+                }
+
+                .call-to-action-block {
+                    a {
+                        @apply ml-auto mr-0;
+                    }
+                }
+
+                .what-we-do-section__title {
+                    &:after {
+                        @apply left-auto right-0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@screen xl {
+    .what-we-do-section {
+        &__title,
+        &__subtitle,
+        &__description {
+            @apply max-w-3/4;
+        }
+
+        &__title {
+            @apply text-3xl;
+        }
+
+        &__subtitle {
+            @apply text-xl;
+        }
+
+        &__description {
+            @apply text-lg;
+        }
+    }
+}

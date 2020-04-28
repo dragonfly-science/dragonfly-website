@@ -1,14 +1,14 @@
-module.exports = {
+module.exports = (context) => ({
     plugins: [
-        require('precss')({}),
-        require("postcss-import")({}),
+        require('postcss-preset-env')({ browsers: 'last 2 versions' }),
+        require('postcss-reporter')({}),
+        require('postcss-import')({}),
+        require('postcss-easings')({}),
+        require('postcss-nested')({}),
         require('tailwindcss')('./tailwind.config.js'),
         require('autoprefixer')({}),
-        require('postcss-preset-env')({ browsers: 'last 2 versions' }),
-        require('postcss-easings')({}),
-        require('cssnano')({}),
-        // require('stylelint'),
-        require('@fullhuman/postcss-purgecss')({
+        context.env === 'production' ? require('cssnano')({}) : false,
+        context.env === 'production' ? require('@fullhuman/postcss-purgecss')({
             // Specify the paths to all of the template files in your project 
             rejected: true,
             content: [
@@ -26,7 +26,6 @@ module.exports = {
                 /whitespace-*/,
                 /loaded$/,
             ],
-        }),
-        require('postcss-reporter')({})
+        }) : false
     ]
-}
+})
