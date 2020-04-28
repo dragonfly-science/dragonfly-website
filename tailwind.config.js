@@ -88,6 +88,12 @@ module.exports = {
       screens: {
         'wd': '104rem'
       },
+      transitionDuration: {
+        '250': '250ms'
+      },
+      transitionDelay: {
+        '0': '0ms'
+      },
       transitionProperty: {
         'all': 'all',
         'bg': 'background-color',
@@ -104,50 +110,17 @@ module.exports = {
         'transform': 'transform',
       },
       transitionTimingFunction: {
-        'default': 'ease',
-        'linear': 'linear',
-        'ease': 'ease',
-        'ease-in': 'ease-in',
-        'ease-out': 'ease-out',
-        'ease-in-out': 'ease-in-out',
-        'ease-in-quart': 'easeInQuart',
-        'ease-out-quart': 'easeOutQuart',
-        'ease-out-expo': 'easeOutExpo',
-        'ease-in-back': 'easeInBack',
-        'ease-out-back': 'easeOutBack',
-        'ease-in-out-back': 'easeInOutBack',
+        'out-quart': 'cubic-bezier(0.25, 1, 0.5, 1)',
+        'in-quart': 'cubic-bezier(0.5, 0, 0.75, 0)',
+      },
+      rotate: {
+        '0': '0',
+        '135': '135deg',
       },
     },
   },
   variants: {},
   plugins: [
-    function({ addUtilities }) {
-      const newUtilities = {
-        '.rotate-0': {
-          transform: 'rotate(0deg)',
-        },
-        '.rotate-90': {
-          transform: 'rotate(90deg)',
-        },
-        '.-rotate-90': {
-          transform: 'rotate(-90deg)',
-        },
-        '.-rotate-45': {
-          transform: 'rotate(-45deg)',
-        },
-        '.rotate-45': {
-          transform: 'rotate(45deg)',
-        },
-        '.rotate-135': {
-          transform: 'rotate(135deg)',
-        },
-        '.rotate-180': {
-          transform: 'rotate(180deg)',
-        },
-      }
-
-      addUtilities(newUtilities)
-    },
     function({ addVariant, e }) {
       addVariant('before', ({ modifySelectors, separator }) => {
         modifySelectors(({ className }) => {
@@ -169,6 +142,5 @@ module.exports = {
         })
       })
     },
-    require('tailwindcss-transitions')(),
   ]
 }

@@ -3,7 +3,7 @@
     &__tag {
         @apply bg-white text-cool-blue text-lg font-medium; 
         @apply mb-1 leading-none inline-block cursor-pointer;
-        @apply transition-bg transition-ease-out-quart;
+        @apply transition-bg ease-out-quart;
         @apply no-underline !important;
         @apply text-sm px-4 pt-2;
 

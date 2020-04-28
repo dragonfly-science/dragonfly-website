@@ -42,7 +42,7 @@
 
     &__pdf {
         @apply text-light-grey;
-        @apply transition-color transition-ease-out-quart transition-500 z-20 relative;
+        @apply transition-color ease-out-quart duration-500 z-20 relative;
 
         &:hover {
             @apply text-slate-grey;
@@ -51,7 +51,7 @@
 
     &__details {
         @apply absolute z-10 w-full h-full;
-        @apply transition-all transition-250 shadow-none;
+        @apply transition-all duration-250 shadow-none;
 
         font-size: 0;
         line-height: 0;

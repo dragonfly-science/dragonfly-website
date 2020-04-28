@@ -23,8 +23,8 @@
 
     .lozad-image {
         &.loaded {
-            @apply transition-delay-0;
-            @apply transition-ease;
+            @apply delay-0;
+            @apply ease-linear;
         }
     }
 }

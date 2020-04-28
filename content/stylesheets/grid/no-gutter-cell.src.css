@@ -2,7 +2,7 @@
 .no-gutter-cell {
     @apply w-full overflow-hidden bg-black px-6 pt-8 pb-12 text-white; 
     @apply leading-none flex flex-col min-h-20 overflow-hidden;
-    @apply transition-all transition-500 transition-ease-out-quart;
+    @apply transition-all duration-500 ease-out-quart;
 
     transform: translate3d(0, 0, 0);
 
@@ -32,13 +32,13 @@
 
     &__title {
         @apply font-bold mb-16;
-        @apply transition-all transition-ease-out-quart;
+        @apply transition-all ease-out-quart;
 
         font-size: 8vw;
     }
 
     &__text {
-        @apply opacity-0 transition-all transition-ease-out-quart;
+        @apply opacity-0 transition-all ease-out-quart;
         @apply mb-8 overflow-hidden;
 
         display: -webkit-box;
@@ -53,19 +53,19 @@
 
     &__link {
         @apply text-4xl mt-auto relative min-h-3;
-        @apply transition-all transition-500 transition-ease;
+        @apply transition-all duration-500 ease-linear;
         @apply block !important;
 
         .icon {
             @apply absolute right-0;
-            @apply transition-250 transition-ease !important;
+            @apply duration-250 ease-linear !important;
         }
     }
 
     &__image {
         @apply absolute z-0 !important;
         @apply bg-cover;
-        @apply transition-all transition-ease-out-quart;
+        @apply transition-all ease-out-quart;
 
         width: 100%;
         height: 100%;
@@ -189,7 +189,7 @@
         &:before,
         &:after {
             @apply absolute bottom-0 left-0 w-full h-full z-10 block;
-            @apply transition-all transition-500 transition-ease-out-quart;
+            @apply transition-all duration-500 ease-out-quart;
             transform: translate3d(0, 0, 0);
             content: '';
             background-blend-mode: multiply;

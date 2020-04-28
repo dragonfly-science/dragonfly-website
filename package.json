@@ -16,7 +16,6 @@
         "query-string": "^6.12.1",
         "smoothscroll-polyfill": "^0.4.4",
         "tailwindcss": "^1.3.5",
-        "tailwindcss-transitions": "^2.2.0",
         "way-of-life": "^0.3.0",
         "zepto": "^1.2.0"
     },

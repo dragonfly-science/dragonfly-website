@@ -4,13 +4,13 @@
 
     .icon {
         @apply ml-4 text-lg inline-block;
-        @apply transition-margin transition-ease-in-back transition-500;
+        @apply transition-margin ease-in-out duration-500;
         /* transform: translate3d(0, 0, 0); */
     }
 
     &:hover {
         .icon {
-            @apply ml-6 transition-ease-out-back;
+            @apply ml-6;
         }
     }
 }
@@ -49,7 +49,7 @@
 
     &--arrow-down {
         .icon {
-            @apply rotate-90;
+            @apply transform rotate-90;
         }
 
         &:hover {
@@ -61,7 +61,7 @@
 
     &--arrow-out {
         .icon {
-            @apply -rotate-45;
+            @apply transform -rotate-45;
         }
 
         &:hover {

@@ -25,6 +25,9 @@ module.exports = (context) => ({
                 /body-content.*/,
                 /whitespace-*/,
                 /loaded$/,
+                /transition-*/,
+                /duration-*/,
+                /ease-*/,
             ],
         }) : false
     ]

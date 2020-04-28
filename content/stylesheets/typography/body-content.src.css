@@ -7,12 +7,12 @@
     }
 
     a {
-        @apply transition-all transition-ease-out-quart;
+        @apply transition-all ease-out-quart;
     }
 
     img {
         @apply block my-6 mx-auto opacity-0;
-        @apply transition-all transition-ease-out-quart transition-delay-100;
+        @apply transition-all ease-out-quart delay-100;
         line-height: 0;
         font-size: 0;
 

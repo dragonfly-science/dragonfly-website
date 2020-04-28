@@ -9,7 +9,7 @@
             @apply mt-10;
 
             .icon {
-                @apply rotate-90 !important;
+                @apply transform rotate-90 !important;
             }
 
             &:hover {
@@ -336,7 +336,7 @@
 
             .link-icon {
                 .icon {
-                    @apply rotate-0;
+                    @apply transform rotate-0;
                 }
             }
         }

@@ -15,7 +15,7 @@
             @apply transition-all underline;
 
             &:after {
-                @apply w-full bg-cool-blue transition-all transition-ease-out-quart;
+                @apply w-full bg-cool-blue transition-all ease-out-quart;
                 height: 0;
                 content: '';
             }
@@ -121,7 +121,7 @@
                 } */
 
                 > ul {
-                    @apply transition-ease-out-quart;
+                    @apply ease-out-quart;
                     /* max-height: 1000px; */
                     top: 100%;
 
@@ -145,7 +145,7 @@
             }
 
             ul {
-                @apply bg-white absolute m-0 transition-ease-in-quart;
+                @apply bg-white absolute m-0 ease-in-quart;
                 @apply transition-top pt-3 pb-6 overflow-hidden;
 
                 /* max-height: 0; */
@@ -174,7 +174,7 @@
 
             &:after {
                 @apply inline-block border-black border-r border-b ml-4 relative; 
-                @apply top-auto h-2 w-2 rotate-45 transition-all;
+                @apply top-auto h-2 w-2 transform rotate-45 transition-all;
                 content: '';
             }
     
