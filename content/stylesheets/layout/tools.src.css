@@ -3,7 +3,7 @@
     @apply max-w-4xl mx-auto;
 
     &__tool {
-        @apply leading-none mr-6 mb-6 transition-all;
+        @apply leading-none mr-6 mb-6;
         font-size: 4vw;
 
         &:hover {
