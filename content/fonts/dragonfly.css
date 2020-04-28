@@ -54,4 +54,37 @@
 .dragonfly-reset:before {
     content:         "\e006";
 }
+.dragonfly-gatsby:before {
+    content:         "\e007";
+}
+.dragonfly-elm:before {
+    content:         "\e008";
+}
+.dragonfly-django:before {
+    content:         "\e009";
+}
+.dragonfly-latex:before {
+    content:         "\e010";
+}
+.dragonfly-haskell:before {
+    content:         "\e011";
+}
+.dragonfly-tensorflow:before {
+    content:         "\e012";
+}
+.dragonfly-rstudio:before {
+    content:         "\e013";
+}
+.dragonfly-pytorch:before {
+    content:         "\e014";
+}
+.dragonfly-postgresql:before {
+    content:         "\e015";
+}
+.dragonfly-stan:before {
+    content:         "\e016";
+}
+.dragonfly-qgis:before {
+    content:         "\e017";
+}
 

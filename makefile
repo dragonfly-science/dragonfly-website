@@ -47,7 +47,6 @@ interact:
 		--net=host \
 		-e DISPLAY=$$DISPLAY \
 		-e RUN= \
-		-v /tmp/.X11-unix/X0:/tmp/.X11-unix/X0 \
 		-u $$(id -u):$$(id -g) $(IMAGE) bash
 
 

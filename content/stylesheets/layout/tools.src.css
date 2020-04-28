@@ -1,0 +1,29 @@
+.tools {
+    @apply flex flex-row flex-wrap justify-center items-center;
+    @apply max-w-4xl mx-auto;
+
+    &__tool {
+        @apply leading-none mr-6 mb-6 transition-all;
+        font-size: 4vw;
+
+        &:hover {
+            @apply text-slate-grey;
+        }
+    }
+}
+
+@screen md {
+    .tools {
+        &__tool {
+            font-size: 3vw;
+        }
+    }
+}
+
+@screen lg {
+    .tools {
+        &__tool {
+            font-size: 2vw;
+        }
+    }
+}
