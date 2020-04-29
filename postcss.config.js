@@ -28,6 +28,7 @@ module.exports = (context) => ({
                 /transition-*/,
                 /duration-*/,
                 /ease-*/,
+                /dragonfly-*/
             ],
         }) : false
     ]
