@@ -20,9 +20,12 @@ build: website npm
 	$(RUN) bash -c 'mkdir ./content/scripts/'
 	$(RUN) bash -c 'cd content && ../website build'
 	$(RUN) bash -c 'npm run css && npm run fonts'
-	$(RUN) bash -c 'npm run build:js && npm run fonts:build'
+	$(RUN) bash -c 'npm run build:js'
 	$(RUN) bash -c 'mkdir -p ./_site/assets'
-	$(RUN) bash -c 'cp ./content/stylesheets/dragonfly.css ./_site/assets/dragonfly.css; cp ./content/scripts/*.js ./_site/assets/'
+	$(RUN) bash -c 'cp ./content/stylesheets/dragonfly.css \
+		./_site/assets/dragonfly.css; \
+		cp ./content/scripts/*.js ./_site/assets/; \
+		cp -rf ./content/fonts ./_site/fonts'
 
 
 CSS := $(shell find content/stylesheets -name *.css -not -name dragonfly.css)
@@ -53,6 +56,10 @@ interact:
 
 
 clean:
-	rm -f website && rm -rf _site .cache && rm -f content/stylesheets/dragonfly.css* && rm -f content/scripts/*.js*
+	rm -f website && rm -rf _site .cache && \
+	rm -f content/stylesheets/dragonfly.css* && \
+	rm -f content/fonts/* && \
+	rm -f content/scripts/*.js*
 
-
+compress:
+	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'
