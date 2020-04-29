@@ -1,17 +1,16 @@
 ---
-title: Informed management
+title: Ongoing data collection and analysis
+short-title: Ongoing data collection and analysis
 banner-image: /work/paua-management-case-study/dave-and-jules.jpg
-summary: Statistical analysis to ensure sustainability of the pāua fishery. 
+summary: supports the pāua industry to manage their fishery sustainably 
 tags: policy
 quote: Dragonfly has been absolutely awesome – we’re rapt.
 quote-attribution: Jeremy Cooper, CEO, Pāua Industry Council
 logo: /work/paua-management-case-study/pic-logo.png
 ---
-
-The New Zealand pāua (abalone) fishery is a $50 million export industry. We 
-carry out analysis of pāua fisheries on behalf of the Pāua Industry Council and the Ministry for Primary Industries,
-providing the information they need for responsive, well-informed management of 
-their sector.
+The New Zealand pāua (abalone) fishery is a $50 million export industry. We
+carry out analysis of pāua fisheries to provide information that's critical for
+responsive, well-informed management.
 <!--more-->
 
 

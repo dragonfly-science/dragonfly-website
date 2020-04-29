@@ -1,16 +1,17 @@
 ---
-title: Operational data analysis
-short-title: Operational analysis
+title: Predicting which visa applications to fast-track
+short-title: Predicting which visa applications to fast-track
 banner-image: /work/INZ-case-study/prediction-service.png
 quote: We worked out the cost saving from this project ... it was significant.
 quote-attribution: Steve Cantlon, Principal Business Adviser, Immigration New Zealand
 logo: /work/INZ-case-study/inz-logo.png
-summary: A prediction service for faster visitor visa processing.  
+summary: can speed up the process and save staff time and money 
 tags: systems
 ---
 
-We built a prediction service for Immigration New Zealand, to allocate applications
-to fast track and review track streams, based on previous decisions. Appropriate handling of applications brings faster and more reliable decision making.
+We built a prediction service to allocate visa applications to fast track and
+review track streams, based on previous decisions. Handling applications
+appropriately brings faster and more reliable decision making.
 <!--more-->
 
 ### Demand for visas increasing 

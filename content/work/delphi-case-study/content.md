@@ -1,19 +1,23 @@
 ---
-short-title:  Expert opinion
-title: Quantitive information from expert opinion
+title: Expert knowledge was combined fairly
+short-title: Expert knowledge was combined fairly
 banner-image: /work/delphi-case-study/turtle-map.png
-summary: Facilitating mapping of turtle distributions in the Pacific  
+summary: >
+  so information about where turtles and fishing overlap could underpin
+  decision-making.
 tags: stats, policy
-quote: Dragonfly’s timeliness of delivery was critical, and one of the reasons the project was such a success.   
-quote-attribution: Neville Smith, Principal Fisheries Scientist, Pacific Community (SPC)
+quote: >
+  Dragonfly’s timeliness of delivery was critical, and one of the reasons 
+  the project was such a success.   
+quote-attribution: >
+  Neville Smith, Principal Fisheries Scientist, Pacific Community (SPC)
 project-link: http://www.fao.org/fileadmin/user_upload/common_oceans/docs/Tuna/TurtleMeetingsFinalReport.pdf
 project-link-text: open report
 logo: /work/delphi-case-study/Pacific-Community-logo.jpg
 ---
 We created an online survey to map the distribution of four species of sea
 turtle in the Pacific Ocean. The maps fed into simulations of turtle
-interactions with fisheries produced at a workshop led by the Western and
-Central Pacific Fisheries Commission (WCPFC).
+interactions with fisheries that were produced at an international workshop.
 <!--more-->
 
 ### Where are the turtles?

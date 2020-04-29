@@ -1,17 +1,22 @@
 ---
-title: Automating analysis of national consents data
-short-title: Resource consents
+title: Automating data input and verification 
+short-title: Automating data input and verification 
 banner-image: /work/nms-case-study/roseneath.png
 quote: I really valued Dragonfly’s exquisite communication skills – they are also excellent listeners. I found them to be passionate, talented and good company. 
 quote-attribution: Dr Ignatius Menzies, Manatū Mō Te Taiao
 logo: /work/nms-case-study/mfe-logo.png
-summary: We worked with the Ministry for the Environment to develop systems for processing national resource consents data
+summary: >
+  streamlined the processing of resource consent applications at a national
+  scale  
 tags: capability
 project-link: http://www.mfe.govt.nz/rma/rma-monitoring
 project-link-text: View key data
 project-link-title: Access key data from the National Monitoring System
 ---
-We worked with the Ministry for the Environment (MfE) to automate the input, collation and verification of data on resource consent applications. Each year, detailed data are collated by the 40,000 or so resource consent applications made to New Zealand’s district and regional councils. This information is critical for understanding how the  resource management  act is functioning in New Zealand. 
+Each year, detailed data are collated by the 40,000 or so resource consent 
+applications made to New Zealand’s district and regional councils. This 
+information is critical for understanding how the resource management act is 
+functioning in New Zealand.
 
 <!--more-->
 
