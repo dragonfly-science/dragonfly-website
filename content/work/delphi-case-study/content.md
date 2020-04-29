@@ -8,7 +8,7 @@ summary: >
 tags: stats, policy
 quote: >
   Dragonfly’s timeliness of delivery was critical, and one of the reasons 
-  the project was such a success.   
+  the project was such a success.
 quote-attribution: >
   Neville Smith, Principal Fisheries Scientist, Pacific Community (SPC)
 project-link: http://www.fao.org/fileadmin/user_upload/common_oceans/docs/Tuna/TurtleMeetingsFinalReport.pdf

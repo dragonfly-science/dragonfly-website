@@ -1,9 +1,4 @@
-<header class="page-header page-header--white page-header--article jarallax">
-    $if(banner)$<img
-        class="jarallax-img page-header__bg-image lozad lozad-image"
-        src="$banner$"
-    />
-    $endif$
+<header class="page-header page-header--white page-header--article"$if(banner)$ style="background-image: url($banner$);"$endif$>
     <div class="page-header__outer">
         <div class="page-header__container">
             $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
@@ -27,7 +22,7 @@
         $body$
       </div>
       <aside class="sidebar what-we-do-sidebar">
-        <a href="#" class="no-gutter-cell person-tile person-tile--singular w-full no-gutter-cell--no-animation">
+        <a href="#" class="no-gutter-cell person-tile person-tile--singular no-gutter-cell--no-animation">
             <img class="lozad" data-src="/people/thompson-finlay/teaser.jpg" width="100%" height="auto" />
             <h2 class="what-we-do-sidebar__details no-gutter-cell__title person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full">
                 Finlay<br>

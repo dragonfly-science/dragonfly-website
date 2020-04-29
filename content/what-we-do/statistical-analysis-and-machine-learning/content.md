@@ -1,5 +1,9 @@
 ---
-title: Statistical analysis and machine learning
+title: We are experts at statistical analysis.
+subtitle: |
+  Our speciality is modern Bayesian methods, which allow uncertainty to be
+  carried all the way through from analysis to decision making.
+introductionPerson: richard-yvan
 teaserTitle: Statistical analysis and machine learning
 teaserIntro: >
     The power of modern Bayesian methods enable us to reach higher, 
@@ -8,21 +12,7 @@ teaserIntro: >
 teaserCTAdescriptor: some text
 teaserCTAbutton: Read more
 teaserAnchorId: stats
-subtitle: |
-  Using modern analysis methods we can reach higher and more objective
-  probability.
-introduction: >
-  Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac
-  cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit
-  amet risus. Cras mattis consectetur purus sit amet fermentum. Integer posuere
-  erat a ante venenatis dapibus posuere velit aliquet.
-
-  Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-  Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam.
-  Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio,
-  dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Aenean lacinia
-  bibendum nulla sed consectetur.
-introductionPerson: richard-yvan
+sortorder: 1
 banner: /images/whatwedo_header.jpg
 relatedWork:
   - delphi-case-study

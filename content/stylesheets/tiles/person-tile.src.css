@@ -86,7 +86,7 @@
     }
 
     &--singular {
-        @apply min-h-0 overflow-visible flex-col p-0;
+        @apply min-h-0 max-w-full w-56 overflow-visible flex-col p-0;
 
         img {
             @apply relative z-0;

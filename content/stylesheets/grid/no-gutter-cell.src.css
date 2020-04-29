@@ -8,7 +8,7 @@
 
     &:hover {
         .no-gutter-cell__image {
-            transform: translate3d(-50%, -50%, 0) scale(1.1);
+            transform: translate3d(-50%, -50%, 0) scale(1.15);
         }
 
         .no-gutter-cell__title {
@@ -71,7 +71,11 @@
         height: 100%;
         left: 50%;
         top: 50%;
-        transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0) scale(1.0);
+
+        &--large {
+            transform: translate3d(-50%, -50%, 0) scale(1.1);
+        }
     }
 
     p {

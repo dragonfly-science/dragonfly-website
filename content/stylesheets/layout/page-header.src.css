@@ -1,5 +1,5 @@
 .page-header {
-    @apply w-full py-16 bg-cover;
+    @apply w-full py-16 bg-cover bg-fixed;
 
     a {
         @apply underline;
