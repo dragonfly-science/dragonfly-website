@@ -19,7 +19,7 @@ build: website npm
 	$(RUN) bash -c 'rm -rf ./content/scripts/'
 	$(RUN) bash -c 'mkdir ./content/scripts/'
 	$(RUN) bash -c 'cd content && ../website build'
-	$(RUN) bash -c 'npm run css && npm run fonts'
+	$(RUN) bash -c 'mkdir ./content/fonts && npm run css && npm run fonts'
 	$(RUN) bash -c 'npm run build:js'
 	$(RUN) bash -c 'mkdir -p ./_site/assets'
 	$(RUN) bash -c 'cp ./content/stylesheets/dragonfly.css \
