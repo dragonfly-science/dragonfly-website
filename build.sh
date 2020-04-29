@@ -7,4 +7,4 @@ export RUN=
 make clean
 make build
 
-cp -r _site/* /publish/
+cp -rf _site/* /publish/
