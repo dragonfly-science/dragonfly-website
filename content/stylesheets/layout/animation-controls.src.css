@@ -1,7 +1,15 @@
 /*  Animation controls for the game of life. */
 .animation-controls {
     @apply absolute z-20 bg-slate-grey text-white flex flex-col w-full max-w-14rem -mr-56 right-0 transition-all;
+
     top: 28px;
+
+    button {
+        &:active,
+        &:focus {
+            @apply outline-none;
+        }
+    }
 
     &.open {
         @apply mr-0;
@@ -16,13 +24,6 @@
                     @apply hidden;
                 }
             }
-        }
-    }
-
-    button {
-        &:active,
-        &:focus {
-            @apply outline-none;
         }
     }
 
@@ -64,7 +65,7 @@
 
     &__input {
         @apply bg-cool-blue;
-        
+
         &:active,
         &:focus {
             @apply outline-none;

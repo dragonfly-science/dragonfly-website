@@ -1,7 +1,6 @@
 /* Import Tailwind base */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-
 @import "utilities/base.src.css";
 
 /* Import Partials */
@@ -10,7 +9,6 @@
 @import "grid/inner-cell.src.css";
 @import "grid/no-gutter-cell.src.css";
 @import "grid/publication-grid.src.css";
-
 @import "layout/animation-controls.src.css";
 @import "layout/content.src.css";
 @import "layout/call-to-action.src.css";
@@ -29,18 +27,13 @@
 @import "layout/tools.src.css";
 @import "layout/what-we-do-section.src.css";
 @import "layout/what-we-do-sidebar.src.css";
-
 @import "navigation/button.src.css";
 @import "navigation/link-icon.src.css";
 @import "navigation/main-nav.src.css";
 @import "navigation/mobile-menu.src.css";
-
 @import "tiles/person-tile.src.css";
 @import "tiles/publication.src.css";
 @import "tiles/what-we-do.src.css";
-
 @import "typography/body-content.src.css";
-
 @import "utilities/utilities.src.css";
-
 @import "tailwindcss/utilities";

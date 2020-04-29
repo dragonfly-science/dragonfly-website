@@ -2,6 +2,8 @@ TAG := lts-12.26-v3
 IMAGE := dragonflyscience/dragonfly-website:$(TAG)
 RUN ?= docker run --rm -it -p 8000:8000 -u $$(id -u):$$(id -g) -w /work -v $$(pwd):/work $(IMAGE)
 
+ADD ?=
+
 ## Compile the hakyll executible
 HS := $(shell find haskell/WebSite -name *.hs)
 website: $(HS) haskell/Site.hs
@@ -28,7 +30,7 @@ content/stylesheets/dragonfly.css: content/stylesheets/main.src.css $(CSS)
 	$(RUN) bash -c 'npm run css && npm run fonts'
 
 npm:
-	$(RUN) bash -c 'npm install'
+	$(RUN) bash -c 'npm install $(ADD)'
 
 audit:
 	$(RUN) bash -c 'npm audit fix'

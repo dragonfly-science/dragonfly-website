@@ -1,14 +1,5 @@
 /* Filtering as seen on publications etc. */
 .filtering {
-    /* @apply w-full px-6; */
-    
-
-    &.open {
-        .filtering__tools__links {
-            max-height: 100vh;
-        }
-    }
-
     &__tools {
         @apply my-8 mx-auto flex-grow flex flex-col;
         @apply max-w-7xl;
@@ -26,6 +17,12 @@
         }
     }
 
+    &.open {
+        .filtering__tools__links {
+            max-height: 100vh;
+        }
+    }
+
     &__title {
         @apply text-cool-blue text-2xl flex-grow mb-4;
     }
@@ -33,9 +30,10 @@
     &__search {
         @apply bg-white my-auto py-1 pl-3 pr-3 flex justify-between flex-grow-0;
         @apply max-w-full;
-    
+
         &__input {
             @apply text-lg pr-3 flex-grow leading-none outline-none;
+
             max-width: 10rem;
         }
 
@@ -52,7 +50,7 @@
         }
 
         &__title {
-            @apply  mb-3 inline-block font-medium;
+            @apply mb-3 inline-block font-medium;
         }
     }
 
@@ -106,7 +104,6 @@
         }
 
         &__tools {
-
             &__links {
                 @apply mr-32;
             }
@@ -175,7 +172,7 @@
             .filtering__search {
                 @apply max-w-full mr-0;
             }
-    
+
             .filtering__tags {
                 @apply mt-0;
 
