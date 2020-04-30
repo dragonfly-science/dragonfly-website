@@ -3,6 +3,7 @@ IMAGE := dragonflyscience/dragonfly-website:$(TAG)
 RUN ?= docker run --rm -it -p 8000:8000 -u $$(id -u):$$(id -g) -w /work -v $$(pwd):/work $(IMAGE)
 
 ADD ?=
+NPM ?=
 
 ## Compile the hakyll executible
 HS := $(shell find haskell/WebSite -name *.hs)
@@ -11,11 +12,11 @@ website: $(HS) haskell/Site.hs
 
 develop: website
 	$(RUN) bash -c 'npm run build & (cd content/stylesheets && find . -name \*.css -not -name dragonfly.css \
-		   | npm run watch:css) & (cd content && ../website watch) & (cd content && npm run watch:js)'
+		   | npm run watch:css) & (cd content && npm run watch:js) & (cd content && ../website watch)'
 
 
 CONTENT := $(shell find content)
-build: website npm
+build: website install
 	$(RUN) bash -c 'rm -rf ./content/scripts/'
 	$(RUN) bash -c 'mkdir ./content/scripts/'
 	$(RUN) bash -c 'cd content && ../website build'
@@ -32,8 +33,11 @@ CSS := $(shell find content/stylesheets -name *.css -not -name dragonfly.css)
 content/stylesheets/dragonfly.css: content/stylesheets/main.src.css $(CSS)
 	$(RUN) bash -c 'npm run css && npm run fonts'
 
-npm:
+install:
 	$(RUN) bash -c 'npm install $(ADD)'
+
+npm:
+	$(RUN) bash -c 'npm $(NPM)'
 
 audit:
 	$(RUN) bash -c 'npm audit fix'

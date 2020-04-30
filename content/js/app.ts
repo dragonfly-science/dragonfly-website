@@ -8,6 +8,7 @@ import Parallaxing from './parallax'
 import TopSection from './top-section'
 
 import GameOfLife from './game-of-life/game-of-life'
+import StickySidebar from './sticky-sidebar'
 
 smoothscroll.polyfill()
 
@@ -19,4 +20,5 @@ Zepto(($: ZeptoStatic) => {
     LazyLoad()
     Parallaxing()
     GameOfLife()
+    StickySidebar()
 })
