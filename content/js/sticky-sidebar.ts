@@ -1,9 +1,10 @@
 import { isNull } from 'lodash-es'
+import lozad from 'lozad'
 import ScrollMagic from 'scrollmagic'
 
-const StickySidebar = () => {
-    const sidebar = $('#sticky-sidebar')
-    const body = $('#body-content')
+const intializeStickySidebar = (triggerElement: string, pinnedElement: string): void => {
+    const sidebar = $(pinnedElement)
+    const body = $(triggerElement)
     const header = $('#main-header')
 
     if (isNull(sidebar) || isNull(body)) {
@@ -11,28 +12,35 @@ const StickySidebar = () => {
     }
 
     const controller = new ScrollMagic.Controller()
-    const mt = {
-        body: parseInt(body.css('margin-top'), 10),
-        header: parseInt(header.css('margin-top'), 10),
-    }
-    const offset = 0 - (mt.body + mt.header)
-    const side = {
-        h: sidebar.height(),
-        mt: parseInt(sidebar.css('margin-top'), 10),
-    }
-    const duration = body.height() - side.mt - side.h
-
-    console.log(offset, duration)
+    const duration = body.height() - sidebar.height() -
+                     parseInt(sidebar.css('margin-top'), 10)
 
     const scene = new ScrollMagic.Scene(
                     {
-                        triggerElement: '#body-content',
+                        triggerElement,
                         triggerHook: 'onLeave',
-                        offset,
+                        offset: 0 - (header.height()),
                         duration,
                     })
-                    .setPin('#sticky-sidebar')
+                    .setPin(pinnedElement)
                     .addTo(controller)
+}
+
+const StickySidebar = (triggerElement: string, pinnedElement: string): void => {
+    const imgTarget = '.sticky-lozad'
+    if (isNull($(imgTarget))) {
+        return
+    }
+
+    const observer = lozad(imgTarget, {
+        loaded(el) {
+            el.classList.add('loaded')
+            el.classList.add('lozad')
+            setTimeout(intializeStickySidebar, 500, triggerElement, pinnedElement)
+        },
+    })
+
+    observer.observe()
 }
 
 export default StickySidebar

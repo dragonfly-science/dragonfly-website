@@ -16,10 +16,10 @@
 
 @screen lg {
     .what-we-do-sidebar {
-        @apply max-w-full w-56 text-left p-0 pt-24 ml-auto mr-0 block;
+        @apply max-w-full w-56 text-left p-0 ml-auto mr-0 block;
 
-        .person-tile {
+        /* .person-tile {
             @apply mt-32;
-        }
+        } */
     }
 }

@@ -3,7 +3,7 @@ const webpack = require('webpack')
 
 module.exports = {
     entry: path.resolve(__dirname, 'content/js/app.ts'),
-    mode: 'development',
+    mode: 'production',
     output: {
         path: path.resolve(__dirname, 'content/scripts'),
         filename: 'app.bundle.js',

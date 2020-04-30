@@ -20,5 +20,5 @@ Zepto(($: ZeptoStatic) => {
     LazyLoad()
     Parallaxing()
     GameOfLife()
-    StickySidebar()
+    StickySidebar('.sticky-container__body', '.sticky-container__element')
 })
