@@ -11,9 +11,10 @@
 
     &--graph {
         @apply relative;
-        
-        &:after {
+
+        &::after {
             @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
+
             content: '';
         }
     }

@@ -1,8 +1,9 @@
 ---
-title: We are experts at statistical analysis.
-subtitle: |
-  Our speciality is modern Bayesian methods, which allow uncertainty to be
-  carried all the way through from analysis to decision making.
+title: Statistical analysis and machine learning
+subtitle: >
+  We are experts at statistical analysis. Our speciality is modern Bayesian
+  methods, which allow uncertainty to be carried all the way through from
+  analysis to decision making.
 introductionPerson: richard-yvan
 teaserTitle: Statistical analysis and machine learning
 teaserIntro: >

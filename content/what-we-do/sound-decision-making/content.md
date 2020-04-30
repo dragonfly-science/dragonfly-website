@@ -1,8 +1,9 @@
 ---
-title: We enable evidence based policy
-subtitle: |
-  Good research and analysis builds consensus between stakeholders, and enables
-  the development of policy that makes best use of available information.
+title: Evidence for sound decision-making
+subtitle: >
+  We enable evidence based policy. Good research and analysis builds consensus
+  between stakeholders, and enables the development of policy that makes best
+  use of available information.
 introductionPerson: richard-yvan
 teaserTitle: Evidence for sound decision-making
 teaserIntro: >

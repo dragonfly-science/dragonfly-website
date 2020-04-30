@@ -1,11 +1,11 @@
 ---
-title: We enjoy transferring our skills.
-subtitle: |
-  We work openly with clients, and enjoy transferring our skills to the teams we
-  work with. We help people develop efficient processes for carrying out high
-  quality, reliable analysis.
+title: Upskilling your team
+subtitle: >
+  We enjoy transferring our skills. We work openly with clients, and enjoy
+  transferring our skills to the teams we work with. We help people develop
+  efficient processes for carrying out high quality, reliable analysis.
 introductionPerson: richard-yvan
-teaserTitle: Upskilling your team
+teaserTitle: 
 teaserIntro: >
     We're not about keeping everything to ourselves - we'd love to equip your
     team. Our style is to get things set up right, walk alongside as long as

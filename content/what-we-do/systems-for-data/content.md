@@ -1,9 +1,9 @@
 ---
-title: We build systems for data
-subtitle: |
-  Our statistical work is supported by excellent technical database and software
-  development skills. We develop operational systems to allow organisations to
-  get ongoing value from their data.
+title: Systems for data
+subtitle: >
+  We build systems for data. Our statistical work is supported by excellent
+  technical database and software development skills. We develop operational
+  systems to allow organisations to get ongoing value from their data.
 introductionPerson: richard-yvan
 teaserTitle: Systems for data
 teaserIntro: >

@@ -1,6 +1,6 @@
 .tools {
     @apply max-w-4xl mx-auto;
-    @apply grid grid-cols-2 gap-4;
+    @apply grid grid-cols-2 col-gap-4 row-gap-10;
 
     &__tool {
         @apply leading-none text-center text-4xl;

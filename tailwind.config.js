@@ -110,8 +110,8 @@ module.exports = {
         'transform': 'transform',
       },
       transitionTimingFunction: {
-        'out-quart': 'cubic-bezier(0.25, 1, 0.5, 1)',
-        'in-quart': 'cubic-bezier(0.5, 0, 0.75, 0)',
+        'out-quart': 'easeOutQuart',
+        'in-quart': 'easeInQuart',
       },
       rotate: {
         '0': '0',

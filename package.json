@@ -62,16 +62,16 @@
         "zepto-webpack": "^1.2.1"
     },
     "scripts": {
-        "fonts": "glyphs2font fonts.yaml",
-        "fonts:build": "postcss content/fonts/dragonfly.css --env production -o _site/fonts/dragonfly.css",
+        "build:fonts": "postcss content/fonts/dragonfly.css --env production -o _site/fonts/dragonfly.css",
+        "build:js": "webpack --mode=production",
         "build": "npm run css & npm run fonts & npm run build:js",
+        "check-types": "tsc",
         "css": "postcss content/stylesheets/main.src.css --env production -o content/stylesheets/dragonfly.css",
-        "watch": "npm run watch:css & npm run watch:js",
+        "fonts": "mkdir -p content/fonts & glyphs2font fonts.yaml",
+        "lint": "tslint -c tslint.json 'content/js/**/*.{ts,tsx}'",
         "watch:css": "postcss ./content/stylesheets/main.src.css --env development -m -o ./content/stylesheets/dragonfly.css -w",
         "watch:js": "webpack -w",
-        "build:js": "webpack --mode=production",
-        "check-types": "tsc",
-        "lint": "tslint -c tslint.json 'content/js/**/*.{ts,tsx}'"
+        "watch": "npm run watch:css & npm run watch:js"
     },
     "author": "",
     "license": "MIT",

@@ -13,6 +13,7 @@
     img {
         @apply block my-6 mx-auto opacity-0;
         @apply transition-all ease-out-quart delay-100;
+
         line-height: 0;
         font-size: 0;
 
@@ -20,12 +21,13 @@
             @apply opacity-100;
         }
     }
-    
+
     figure {
         @apply my-6 flex justify-center flex-col relative;
-        
-        &:after {
+
+        &::after {
             @apply absolute block top-0 left-0 w-full h-full bg-black opacity-025 z-0;
+
             background-blend-mode: multiply;
             content: '';
         }
@@ -43,13 +45,69 @@
         }
     }
 
+    blockquote,
+    blockquote + p > cite {
+        @apply bg-cool-blue text-white w-full block;
+        @apply px-10 py-12 ml-0 mb-8;
+    }
+
+    blockquote {
+        @apply mt-8;
+
+        + p {
+            > cite {
+                @apply -mt-24 font-normal not-italic;
+
+                &::before {
+                    @apply inline-block mr-1;
+
+                    content: '\2014';
+                }
+            }
+        }
+
+        p {
+            @apply mb-2 text-xl font-medium italic leading-tight;
+
+            &:first-of-type {
+                &::before {
+                    @apply inline;
+
+                    content: '"';
+                }
+            }
+
+            &:last-of-type {
+                @apply mb-0;
+
+                &::after {
+                    @apply inline;
+
+                    content: '"';
+                }
+            }
+        }
+
+        &:nth-of-type(even) {
+            @apply bg-black ml-auto;
+
+            + p > cite {
+                @apply bg-black ml-auto;
+            }
+        }
+    }
+
     > p {
         &:first-of-type {
             @apply font-medium text-2xl leading-tight mb-6;
         }
     }
 
-    h2, h3, h4, h5, h6 {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         @apply font-medium leading-tight mb-4 mt-8;
     }
 
@@ -97,56 +155,6 @@
 
             ~ * {
                 @apply max-w-lg;
-            }
-        }
-    }
-
-    blockquote {
-        @apply mt-8;
-
-        p {
-            @apply mb-2 text-xl font-medium italic leading-tight;
-
-            &:first-of-type {
-                &:before {
-                    @apply inline;
-                    content: '"';
-                }
-            }
-
-            &:last-of-type {
-                @apply mb-0;
-                &:after {
-                    @apply inline;
-                    content: '"';
-                }
-            }
-        }
-
-        + p {
-            > cite {
-                @apply -mt-24 font-normal not-italic;
-
-                &:before {
-                    @apply inline-block mr-1;
-                    content: '\2014';
-                }
-            }
-        }
-    }
-
-    blockquote,
-    blockquote + p > cite {
-        @apply bg-cool-blue text-white w-full block;
-        @apply px-10 py-12 ml-0 mb-8;
-    }
-
-    blockquote {
-        &:nth-of-type(even) {
-            @apply bg-black ml-auto;
-
-            + p > cite {
-                @apply bg-black ml-auto;
             }
         }
     }
