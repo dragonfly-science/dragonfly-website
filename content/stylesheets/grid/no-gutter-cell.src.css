@@ -51,7 +51,7 @@
         height: 100%;
         left: 50%;
         top: 50%;
-        transform: translate3d(-50%, -50%, 0) scale(1.0);
+        transform: translate3d(-50%, -50%, 0) scale(1);
 
         &--large {
             transform: translate3d(-50%, -50%, 0) scale(1.1);

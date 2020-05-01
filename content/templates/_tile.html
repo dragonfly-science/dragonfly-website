@@ -19,8 +19,13 @@ $endif$
     $if(title)$
     <strong class="no-gutter-cell__title tile__title">$title$</strong>
     $endif$
-    $if(teaser)$
-        <div class="no-gutter-cell__text tile__citation">$teaser$</div>
+    
+    $if(summary)$
+        <div class="no-gutter-cell__text tile__citation">$summary$</div>
+    $else$
+        $if(teaser)$
+            <div class="no-gutter-cell__text tile__citation">$teaser$</div>
+        $endif$
     $endif$
 
     <div class="tagslugs hidden">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
