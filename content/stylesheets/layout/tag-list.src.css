@@ -1,7 +1,7 @@
 /* list of tags as seen in publications. */
 .tag-list {
     &__tag {
-        @apply bg-white text-cool-blue text-lg font-medium; 
+        @apply bg-white text-cool-blue text-lg font-medium;
         @apply mb-1 leading-none inline-block cursor-pointer;
         @apply transition-bg ease-out-quart;
         @apply no-underline !important;
@@ -50,16 +50,14 @@
             @apply bg-white text-slate-grey opacity-25 pointer-events-none !important;
         }
     }
-}
 
-/* Variations */
-.tag-list {
+    /**
+     * Modifiers
+     * */
     &--publication-tile {
         .tag-list__tag {
             @apply hidden cursor-default pointer-events-none;
-        }
 
-        .tag-list__tag {
             &--report,
             &--presentation,
             &--article {

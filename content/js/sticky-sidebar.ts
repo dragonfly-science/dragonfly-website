@@ -34,8 +34,7 @@ const StickySidebar = (triggerElement: string, pinnedElement: string): void => {
 
     const observer = lozad(imgTarget, {
         loaded(el) {
-            el.classList.add('loaded')
-            el.classList.add('lozad')
+            el.classList.add('loaded', 'lozad')
             setTimeout(intializeStickySidebar, 500, triggerElement, pinnedElement)
         },
     })

@@ -70,6 +70,7 @@
         "css": "postcss content/stylesheets/main.src.css --env production -o content/stylesheets/dragonfly.css",
         "fonts": "mkdir -p content/fonts & glyphs2font fonts.yaml",
         "lint": "tslint -c tslint.json 'content/js/**/*.{ts,tsx}'",
+        "sylefix": "stylelint content/stylesheets/dragonfly.css",
         "watch:css": "postcss ./content/stylesheets/main.src.css --env development -m -o ./content/stylesheets/dragonfly.css -w",
         "watch:js": "webpack -w",
         "watch": "npm run watch:css & npm run watch:js"

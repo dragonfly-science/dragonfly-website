@@ -1,23 +1,32 @@
 .math-paper {
-    background-image: linear-gradient(rgba(67, 161, 201, 0.9) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(67, 161, 201, 0.9) 1px, transparent 1px),
-                      linear-gradient(rgba(67, 161, 201, 0.4) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(67, 161, 201, 0.4) 1px, transparent 1px);
+    background-image:
+        linear-gradient(rgba(67, 161, 201, 0.9) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(67, 161, 201, 0.9) 1px, transparent 1px),
+        linear-gradient(rgba(67, 161, 201, 0.4) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(67, 161, 201, 0.4) 1px, transparent 1px);
     background-size: 50px 50px;
-    background-position: calc(50% - 25px) calc(50% - 25px), calc(50% - 25px) calc(50% - 25px), calc(50% - 50px) calc(50% - 50px), calc(50% - 50px) calc(50% - 50px);
+    background-position:
+        calc(50% - 25px) calc(50% - 25px),
+        calc(50% - 25px) calc(50% - 25px),
+        calc(50% - 50px) calc(50% - 50px),
+        calc(50% - 50px) calc(50% - 50px);
     background-attachment: fixed, fixed, fixed, fixed;
 }
 
 .math-paper--origin {
-    background-position: calc(50% - 25px) calc(50% - 25px), calc(50% - 25px) calc(50% - 25px), calc(50% - 50px) calc(50% - 50px), calc(50% - 50px) calc(50% - 50px);
-    /* background-origin: content-box; */
+    background-position:
+        calc(50% - 25px) calc(50% - 25px),
+        calc(50% - 25px) calc(50% - 25px),
+        calc(50% - 50px) calc(50% - 50px),
+        calc(50% - 50px) calc(50% - 50px);
 }
 
 .math-paper--reverse {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-                      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-                      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
 }
 
 /* For use with lozad. */

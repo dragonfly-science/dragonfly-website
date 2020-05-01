@@ -85,6 +85,10 @@ module.exports = {
         '10': '0.1',
         '025': '0.025',
       },
+      rotate: {
+        '0': '0',
+        '135': '135deg',
+      },
       screens: {
         'wd': '104rem'
       },
@@ -113,9 +117,11 @@ module.exports = {
         'out-quart': 'easeOutQuart',
         'in-quart': 'easeInQuart',
       },
-      rotate: {
-        '0': '0',
-        '135': '135deg',
+      width: {
+        '72': '18rem',
+        '80': '20rem',
+        '88': '22rem',
+        '96': '24rem',
       },
     },
   },
