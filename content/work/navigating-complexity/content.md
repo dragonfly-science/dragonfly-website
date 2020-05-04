@@ -9,6 +9,8 @@ quote: >
   absolutely key ideas that have really made our system what it is.
 quote-attribution: David Middleton, Chief Executive, Trident Systems
 logo: /work/navigating-complexity/trident-logo.png
+CTADescriptor: some text
+CTAButton: read more
 ---
 Robust analysis of well-managed data is critically important to fishers and
 fishery managers in New Zealand. We support a commitment to collecting better

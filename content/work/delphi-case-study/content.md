@@ -14,6 +14,8 @@ quote-attribution: >
 project-link: http://www.fao.org/fileadmin/user_upload/common_oceans/docs/Tuna/TurtleMeetingsFinalReport.pdf
 project-link-text: open report
 logo: /work/delphi-case-study/Pacific-Community-logo.jpg
+CTADescriptor: some text
+CTAButton: read more
 ---
 We created an online survey to map the distribution of four species of sea
 turtle in the Pacific Ocean. The maps fed into simulations of turtle

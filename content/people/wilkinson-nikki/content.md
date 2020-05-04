@@ -3,11 +3,12 @@ title: Nikki Wilkinson
 email: nikki@dragonfly.co.nz
 firstname: Nikki
 lastname: Wilkinson
+role: Data scientist
 mobile: ''
 tag: nikki
 banner: wilkinson-nikki/nikki-wilkinson-letterbox.jpg
 ---
-Nikki is a Data Scientist at Dragonfly and has a strong interest in machine learning
+Nikki is a data scientist at Dragonfly and has a strong interest in machine learning
 and artificial intelligence.
 <!--more-->
 

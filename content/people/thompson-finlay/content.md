@@ -3,6 +3,7 @@ title: Finlay Thompson
 email: finlay@dragonfly.co.nz
 firstname: Finlay
 lastname: Thompson
+role: Operations manager
 phone: +64 21 426 878
 tag: finlay
 title: Finlay Thompson, PhD

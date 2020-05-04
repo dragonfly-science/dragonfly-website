@@ -15,6 +15,8 @@ tags: systems
 project-link: http://webrear.mbie.govt.nz/summary/new-zealand
 project-link-text: View project
 project-link-title: Explore New Zealand’s regional economies
+CTADescriptor: some text
+CTAButton: read more
 ---
 
 This project put data on New Zealand’s regional economies online, making the 

@@ -5,4 +5,5 @@ introduction: >
   The services we offer range from advice about data
   management/architecture to building sophisticated reporting 
   tools.
+projectsTitle: Related Projects
 ---

@@ -9,6 +9,8 @@ quote-attribution: Thomas Hood, Te Māngai Pāho
 logo: /work/TMP-case-study/tmp-logo.png
 project-link: https://kokako.co
 project-link-text: View project
+CTADescriptor: some text
+CTAButton: read more
 ---
 
 Machine learning methods are ideal for classifying streaming data rapidly. We developed Kōkako, a language monitoring app to identify different languages broadcast on radio stations in New Zealand. Kōkako won a Best Design Award in 2016. 

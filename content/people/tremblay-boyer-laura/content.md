@@ -3,6 +3,7 @@ title: Laura Tremblay-Boyer
 email: laura@dragonfly.co.nz
 firstname: Laura
 lastname: Tremblay-Boyer
+role: Fisheries scientist
 mobile: ''
 tag: laura
 banner: tremblay-boyer-laura/laura-tremblay-boyer-letterbox.jpg

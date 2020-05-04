@@ -7,6 +7,8 @@ quote-attribution: Steve Cantlon, Principal Business Adviser, Immigration New Ze
 logo: /work/INZ-case-study/inz-logo.png
 summary: can speed up the process and save staff time and money 
 tags: systems
+CTADescriptor: some text
+CTAButton: read more
 ---
 
 We built a prediction service to allocate visa applications to fast track and

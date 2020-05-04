@@ -4,7 +4,8 @@ subtitle: >
   We build systems for data. Our statistical work is supported by excellent
   technical database and software development skills. We develop operational
   systems to allow organisations to get ongoing value from their data.
-introductionPerson: richard-yvan
+author: 
+  - people/richard-yvan/content.md
 teaserTitle: Systems for data
 teaserIntro: >
     Data is precious. We build robust databases and software systems to collect,
@@ -14,11 +15,11 @@ teaserCTAbutton: Read more
 teaserAnchorId: systems
 banner: /images/whatwedo_header.jpg
 sortorder: 2
-relatedWork:
-  - INZ-case-study
-  - TMP-case-study
-  - navigating-complexity
-  - webrear-case-study
+tiles:
+  - work/INZ-case-study/content.md
+  - work/TMP-case-study/content.md
+  - work/navigating-complexity/content.md
+  - work/webrear-case-study/content.md
 ---
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
 

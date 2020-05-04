@@ -3,6 +3,7 @@ title: Philipp Neubauer
 email: philipp@dragonfly.co.nz
 firstname: Philipp
 lastname: Neubauer
+role: Fisheries scientist
 honour: PhD
 mobile: ''
 tag: philipp

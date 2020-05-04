@@ -7,6 +7,8 @@ banner-image: /work/warp-strike/streamers.jpg
 quote: Dragonfly consistently produced strong, defensible outputs, and delivered value for money.
 quote-attribution: Johanna Pierre, Manager, Marine Conservation Services, Department of Conservation
 logo: /work/seabird-risk/MPI-logo.png
+CTADescriptor: some text
+CTAButton: read more
 ---
 
 Our statistical analysis enabled fisheries managers to make a decision about which 

@@ -11,6 +11,8 @@ quote-attribution: Dr Olaf Jensen, Institute of Marine and Coastal Sciences
 logo: /work/predator-prey/rutgers.jpg
 project-link: https://peerj.com/articles/920.pdf
 project-link-text: Read the paper
+CTADescriptor: some text
+CTAButton: read more
 ---
 A good understanding of marine predator-prey relationships is important for
 managing fisheries. Using statistical analysis we can model the strength of

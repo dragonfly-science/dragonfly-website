@@ -7,6 +7,8 @@ banner-image: /work/seabird-risk/bullers.jpg
 quote: Dragonfly fostered an open and inclusive approach with all stakeholders.
 quote-attribution: Bob Zuur, Marine Advocate, WWF-New Zealand
 logo: /work/seabird-risk/MPI-logo.png
+CTADescriptor: some text
+CTAButton: read more
 ---
 
 The National Plan of Action&mdash;Seabirds sets out the policy for managing

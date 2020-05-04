@@ -3,6 +3,7 @@ title: Pep Zuijderwijk
 email: pep@saltedherring.design
 firstname: Pep
 lastname: Zuijderwijk
+role: Designer
 bannerTitleLine1: Pep
 bannerTitleLine2: Zuijderwijk [Zow-der-vaik]
 mobile: ''

@@ -12,6 +12,8 @@ tags: capability
 project-link: http://www.mfe.govt.nz/rma/rma-monitoring
 project-link-text: View key data
 project-link-title: Access key data from the National Monitoring System
+CTADescriptor: some text
+CTAButton: read more
 ---
 Each year, detailed data are collated by the 40,000 or so resource consent 
 applications made to New Zealand’s district and regional councils. This 

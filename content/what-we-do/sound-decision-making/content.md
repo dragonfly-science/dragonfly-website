@@ -4,7 +4,8 @@ subtitle: >
   We enable evidence based policy. Good research and analysis builds consensus
   between stakeholders, and enables the development of policy that makes best
   use of available information.
-introductionPerson: richard-yvan
+author: 
+  - people/richard-yvan/content.md
 teaserTitle: Evidence for sound decision-making
 teaserIntro: >
     Great policy is rooted in sound research and data analysis. Having a trusted
@@ -14,11 +15,11 @@ teaserCTAbutton: Read more
 teaserAnchorId: policy
 banner: /images/whatwedo_header.jpg
 sortorder: 3
-relatedWork:
-  - delphi-case-study
-  - paua-management-case-study
-  - seabird-risk
-  - warp-strike
+tiles:
+  - work/delphi-case-study/content.md
+  - work/paua-management-case-study/content.md
+  - work/seabird-risk/content.md
+  - work/warp-strike/content.md
 ---
 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper.
 

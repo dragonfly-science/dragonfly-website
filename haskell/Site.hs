@@ -123,21 +123,6 @@ main = do
 
     -- What we do section
     WhatWeDo.rules
-    -- match "pages/what-we-do.html" $ do
-    --     route $ constRoute "what-we-do.html"
-    --     compile $ do
-    --         ctx <- baseContext "what-we-do"
-    --         getResourceBody
-    --             >>= applyAsTemplate ctx
-    --             >>= loadAndApplyTemplate "templates/default.html" ctx
-
-    -- match "pages/what-we-do/*.html" $ do
-    --     route $ gsubRoute "pages/" $ const ""
-    --     compile $ do
-    --         ctx <- baseContext "what-we-do-internal"
-    --         getResourceBody
-    --             >>= applyAsTemplate ctx
-    --             >>= loadAndApplyTemplate "templates/default.html" ctx
 
     -- Standalone pages
     match "pages/*.html" $ do
@@ -161,9 +146,3 @@ main = do
     match "favicon.ico" $ do
         route idRoute
         compile copyFileCompiler
-
--- cleanRoute :: Routes
--- cleanRoute = customRoute createIndexRoute
---     where
---         createIndexRoute ident = "what-we-do" </> takeBaseName p </> ".html"
---             where p = toFilePath ident

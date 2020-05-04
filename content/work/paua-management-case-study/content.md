@@ -7,6 +7,8 @@ tags: policy
 quote: Dragonfly has been absolutely awesome – we’re rapt.
 quote-attribution: Jeremy Cooper, CEO, Pāua Industry Council
 logo: /work/paua-management-case-study/pic-logo.png
+CTADescriptor: some text
+CTAButton: read more
 ---
 The New Zealand pāua (abalone) fishery is a $50 million export industry. We
 carry out analysis of pāua fisheries to provide information that's critical for

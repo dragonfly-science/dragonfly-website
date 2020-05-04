@@ -3,6 +3,7 @@ title: Simon Winter
 email: simon@dragonfly.co.nz
 firstname: Simon
 lastname: Winter
+role: Front-end developer
 mobile: ''
 tag: simon
 banner: winter-simon/simon-winter-letterbox.jpg

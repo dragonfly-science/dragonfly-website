@@ -4,7 +4,8 @@ subtitle: >
   We enjoy transferring our skills. We work openly with clients, and enjoy
   transferring our skills to the teams we work with. We help people develop
   efficient processes for carrying out high quality, reliable analysis.
-introductionPerson: richard-yvan
+author: 
+  - people/richard-yvan/content.md
 teaserTitle: 
 teaserIntro: >
     We're not about keeping everything to ourselves - we'd love to equip your
@@ -15,11 +16,11 @@ teaserCTAbutton: Read more
 teaserAnchorId: capability
 banner: /images/whatwedo_header.jpg
 sortorder: 4
-relatedWork:
-  - nms-case-study
-  - predator-prey
-  - reporting-case-study
-  - technical-review-case-study
+tiles:
+  - work/nms-case-study/content.md
+  - work/predator-prey/content.md
+  - work/reporting-case-study/content.md
+  - work/technical-review-case-study/content.md
 ---
 Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 

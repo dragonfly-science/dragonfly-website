@@ -26,7 +26,15 @@
     }
 
     &__project {
-        @apply flex-grow flex flex-col w-96 max-w-full mx-auto;
+        @apply flex flex-col w-96 max-w-full mx-0;
+
+        .call-to-action-block {
+            @apply mb-0 mt-auto pt-8 self-end w-full;
+        }
+
+        &__details {
+            @apply flex flex-col items-start;
+        }
 
         &__link {
             @apply flex items-start py-5 pr-8 mb-8;
@@ -53,11 +61,11 @@
 @screen sm {
     .what-we-do-section {
         &__projects {
-            @apply flex flex-row;
+            @apply flex flex-row flex-wrap;
         }
 
         &__project {
-            @apply max-w-1/2;
+            width: calc(50% - 1rem);
 
             &:nth-child(odd) {
                 @apply mr-4;
@@ -73,7 +81,7 @@
 @screen lg {
     .what-we-do-section {
         &__project {
-            @apply flex-row;
+            @apply flex-row mb-16;
 
             &:nth-child(even) {
                 .what-we-do-section__project__link {
@@ -108,12 +116,6 @@
 
 @screen xl {
     .what-we-do-section {
-        /* &__title,
-        &__subtitle,
-        &__description {
-            @apply max-w-3/4;
-        } */
-
         &__title {
             @apply text-3xl;
         }

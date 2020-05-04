@@ -4,7 +4,7 @@ const LazyLoad = () => {
     const options = {
         rootMargin: '1000px 0px',
         threshold: 0,
-        loaded: (el: HTMLElement) => {
+        loaded(el: HTMLElement) {
             el.classList.add('loaded')
         },
     }

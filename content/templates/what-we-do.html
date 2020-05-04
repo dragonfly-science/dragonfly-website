@@ -22,19 +22,24 @@
         $body$
       </div>
       <aside class="sidebar what-we-do-sidebar">
-        <a href="#" class="sticky-container__element no-gutter-cell person-tile person-tile--singular transition-none mt-24">
-            <img class="sticky-lozad" data-src="/people/thompson-finlay/teaser.jpg" width="100%" height="auto" />
-            <h2 class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full">
-                Finlay<br>
-                Thompson<br>
-                <br>
-                <em>Operations Manager</em>
-            </h2>
-        </a>
+        $if(author)$
+            $for(author)$
+            <a href="$pageurl$" class="sticky-container__element no-gutter-cell person-tile person-tile--singular transition-none mt-24">
+                <img class="sticky-lozad" data-src="$teaserImage$" width="100%" height="auto" />
+                <h2 class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full">
+                    $firstname$<br>
+                    $lastname$<br>
+                    <br>
+                    <em>$role$</em>
+                </h2>
+            </a>
+            $endfor$
+        $endif$
       </aside>
     </div>
   </div>
 
+  $if(tiles)$
   <div class="px-6">
     <section class="container mx-auto what-we-do-section">
         <header class="what-we-do-section__intro">
@@ -42,60 +47,11 @@
         </header>
 
         <div class="what-we-do-section__projects">
-            <div class="what-we-do-section__project">
-                <div class="what-we-do-section__project__link">
-                    <div class="no-gutter-cell no-gutter-cell--sidebar no-gutter-cell--no-hover">
-                        <div 
-                            class="no-gutter-cell__image no-gutter-cell__image--large background-image lozad" 
-                            data-background-image="/work/delphi-case-study/960-teaser.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="what-we-do-section__project__details">
-                    <span class="what-we-do-section__title ruled-heading">Expert knowledge was combined fairly</span>
-                    
-                    <span class="what-we-do-section__subtitle">so information about where turtles and fishing overlap could underpin decision-making.</span>
-
-                    <p class="what-we-do-section__description">We created an online survey to map the distribution of four species of sea turtle in the Pacific Ocean. The maps fed into simulations of turtle interactions with fisheries that were produced at an international workshop.</p>
-
-                    <div class="call-to-action-block">
-                        <span>cccc</span>
-                        <a
-                            href="/"
-                            class="call-to-action__button button call-to-action__button--cool-blue">
-                            Read more
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="what-we-do-section__project">
-                <div class="what-we-do-section__project__link">
-                    <div class="no-gutter-cell no-gutter-cell--sidebar no-gutter-cell--no-hover">
-                        <div 
-                            class="no-gutter-cell__image no-gutter-cell__image--large background-image lozad" 
-                            data-background-image="/work/seabird-risk/960-teaser.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="what-we-do-section__project__details">
-                    <span class="what-we-do-section__title ruled-heading">Risks to seabirds were quantified</span>
-                    
-                    <span class="what-we-do-section__subtitle">to guide the development of a significant New Zealand policy document.</span>
-
-                    <p class="what-we-do-section__description">The National Plan of Action–Seabirds sets out the policy for managing interactions between fisheries and seabirds. Our seabird risk assessment underpins that policy - it supports the prioritisation of management actions and provides clear metrics for assessing the performance of the fishing industry.</p>
-
-                    <div class="call-to-action-block">
-                        <span>cccc</span>
-                        <a
-                            href="/"
-                            class="call-to-action__button button call-to-action__button--cool-blue">
-                            Read more
-                        </a>
-                    </div>
-                </div>
-            </div>
+            $for(tiles)$
+                $partial("templates/_related-project-tile.html")$
+            $endfor$
         </div>
     </section>
   </div>
+  $endif$
 </article>

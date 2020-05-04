@@ -10,6 +10,8 @@ quote: >
 quote-attribution: >
   Vij Kooyela, Senior Analyst, Ministry of Business, Innovation and Employment 
 logo: /work/reporting-case-study/mbie-logo.png
+CTADescriptor: some text
+CTAButton: read more
 ---
 We used our expertise in reproducible reporting to improve a team's data
 analysis processes, saving them significant time and effort on their 

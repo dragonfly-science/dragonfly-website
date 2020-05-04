@@ -12,6 +12,8 @@ quote-attribution: >
 tags: stats, capability
 banner-image: /work/technical-review-case-study/koala.jpg
 logo: /work/technical-review-case-study/queensland-government.png
+CTADescriptor: some text
+CTAButton: read more
 ---
 
 We reviewed a koala population study, checking that the report authors had used
