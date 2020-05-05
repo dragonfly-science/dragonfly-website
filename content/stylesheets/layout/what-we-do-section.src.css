@@ -33,7 +33,7 @@
         }
 
         &__details {
-            @apply flex flex-col items-start h-full;
+            @apply flex flex-col items-start h-full w-full;
         }
 
         &__link {
@@ -142,6 +142,11 @@
 
         &__description {
             @apply text-lg;
+        }
+
+        &__title,
+        &__description {
+            @apply max-w-18rem;
         }
     }
 }

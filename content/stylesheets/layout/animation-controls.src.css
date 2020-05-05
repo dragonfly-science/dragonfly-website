@@ -1,6 +1,7 @@
 /*  Animation controls for the game of life. */
 .animation-controls {
-    @apply absolute z-20 bg-slate-grey text-white flex flex-col w-full max-w-14rem -mr-56 right-0 transition-all;
+    @apply absolute z-20 bg-slate-grey text-white flex flex-col w-full;
+    @apply max-w-14rem -mr-56 right-0 transition-all;
 
     top: 28px;
 
