@@ -2,7 +2,7 @@
     @apply py-16;
 
     &__title {
-        @apply block font-medium text-2xl leading-tight;
+        @apply block font-medium text-2xl mb-4 leading-tight;
     }
 
     &__subtitle {
@@ -90,6 +90,10 @@
             &__title {
                 @apply text-5xl mb-16;
             }
+        }
+
+        &__title {
+            @apply mb-6;
         }
 
         &__project {

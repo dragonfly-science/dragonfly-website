@@ -1,10 +1,9 @@
 ---
 title: What we do
 introduction: >
-  We help our clients use their data to inform decision-making.
-  The services we offer range from advice about data
-  management/architecture to building sophisticated reporting 
-  tools.
+  We help our clients use their data to make the best decisions. This involves a
+  range of services from building sophisticated reporting tools to giving expert
+  advice on data architecture.
 banner: /images/whatwedo_header.jpg
 toolsTitle: We love a good tool
 toolsIntro: >

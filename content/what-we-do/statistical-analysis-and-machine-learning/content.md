@@ -8,10 +8,10 @@ author:
   - people/richard-yvan/content.md
 teaserTitle: Statistical analysis and machine learning
 teaserIntro: >
-    The power of modern Bayesian methods enable us to reach higher, 
-    more objective, probability. We choose to use them to
-    transform data and squeeze the juice out of it.
-teaserCTAdescriptor: some text
+    The power of modern Bayesian methods enables us to reach higher, more
+    objective probability. We use these methods to transform data and squeeze
+    the juice out of it.
+teaserCTAdescriptor: See how and why we use them
 teaserCTAbutton: Read more
 teaserAnchorId: stats
 sortorder: 1

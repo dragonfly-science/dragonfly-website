@@ -5,12 +5,12 @@ subtitle: >
   between stakeholders, and enables the development of policy that makes best
   use of available information.
 author: 
-  - people/richard-yvan/content.md
+  - people/abraham-edward/content.md
 teaserTitle: Evidence for sound decision-making
 teaserIntro: >
     Great policy is rooted in sound research and data analysis. Having a trusted
     information base enables people to come together and make good decisions.
-teaserCTAdescriptor: some text
+teaserCTAdescriptor: View some examples from our clients
 teaserCTAbutton: Read more
 teaserAnchorId: policy
 banner: /images/whatwedo_header.jpg

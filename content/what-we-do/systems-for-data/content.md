@@ -5,12 +5,12 @@ subtitle: >
   technical database and software development skills. We develop operational
   systems to allow organisations to get ongoing value from their data.
 author: 
-  - people/richard-yvan/content.md
+  - people/mansfield-richard/content.md
 teaserTitle: Systems for data
 teaserIntro: >
     Data is precious. We build robust databases and software systems to collect,
     store and manage your data properly and securely.
-teaserCTAdescriptor: some text
+teaserCTAdescriptor: Read about our ethos and experience
 teaserCTAbutton: Read more
 teaserAnchorId: systems
 banner: /images/whatwedo_header.jpg

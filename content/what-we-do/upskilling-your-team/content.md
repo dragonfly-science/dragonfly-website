@@ -5,13 +5,13 @@ subtitle: >
   transferring our skills to the teams we work with. We help people develop
   efficient processes for carrying out high quality, reliable analysis.
 author: 
-  - people/richard-yvan/content.md
+  - people/thompson-finlay/content.md
 teaserTitle: Upskilling your team
 teaserIntro: >
-    We're not about keeping everything to ourselves - we'd love to equip your
-    team. Our style is to get things set up right, walk alongside as long as
-    you need us, and be there to help with the tricky stuff.
-teaserCTAdescriptor: some text
+    We're not about keeping everything to ourselves. Our style is to get things
+    set up right, walk alongside as long as you need us, and be there to help
+    with the tricky stuff.
+teaserCTAdescriptor: See why people like to work with us
 teaserCTAbutton: Read more
 teaserAnchorId: capability
 banner: /images/whatwedo_header.jpg
