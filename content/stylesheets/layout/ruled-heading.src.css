@@ -5,20 +5,27 @@
         @apply mt-3;
     }
 
-    &:after {
+    &::after {
         @apply block absolute top-0 left-0 w-32 bg-slate-grey;
+
         height: 4px;
         content: '';
     }
 
     &--cool-blue {
-        &:after {
+        &::after {
             @apply bg-cool-blue;
         }
     }
 
+    &--white {
+        &::after {
+            @apply bg-white;
+        }
+    }
+
     &--center {
-        &:after {
+        &::after {
             left: 50%;
             transform: translateX(-50%);
         }

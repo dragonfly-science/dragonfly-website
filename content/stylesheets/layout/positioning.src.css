@@ -1,9 +1,7 @@
-// Set up margin for a container based, full width item, with a column width
-// fraction of margin.
-
-.inner-column {
-    
-}
+/**
+ * Set up margin for a container based, full width item, with a column width
+ * fraction of margin.
+ * */
 
 @screen lg {
     .inner-column {

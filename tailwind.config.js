@@ -34,6 +34,9 @@ module.exports = {
         '9xl': '7rem',
         '9/2xl': '7.5rem',
       },
+      lineHeight: {
+        'tighter': '1.2em'
+      },
       margin: {
         '12rem': '12rem',
         '-12rem': '-12rem',

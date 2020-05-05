@@ -6,7 +6,7 @@ subtitle: >
   efficient processes for carrying out high quality, reliable analysis.
 author: 
   - people/richard-yvan/content.md
-teaserTitle: 
+teaserTitle: Upskilling your team
 teaserIntro: >
     We're not about keeping everything to ourselves - we'd love to equip your
     team. Our style is to get things set up right, walk alongside as long as

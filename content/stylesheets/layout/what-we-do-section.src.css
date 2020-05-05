@@ -10,14 +10,14 @@
     }
 
     &__description {
-        @apply ml-0 my-6 max-w-3xl text-base;
+        @apply ml-0 mb-6 max-w-3xl text-base;
     }
 
     &__intro {
         @apply w-full flex justify-center;
 
         &__title {
-            @apply text-5xl font-bold mb-16;
+            @apply text-3xl font-bold mb-8;
         }
     }
 
@@ -26,14 +26,14 @@
     }
 
     &__project {
-        @apply flex flex-col w-96 max-w-full mx-0;
+        @apply flex flex-col w-96 max-w-full mx-0 mb-8;
 
         .call-to-action-block {
-            @apply mb-0 mt-auto pt-8 self-end w-full;
+            @apply mb-0 mt-auto self-end w-full;
         }
 
         &__details {
-            @apply flex flex-col items-start;
+            @apply flex flex-col items-start h-full;
         }
 
         &__link {
@@ -60,6 +60,12 @@
 
 @screen sm {
     .what-we-do-section {
+        &__intro {
+            &__title {
+                @apply text-4xl;
+            }
+        }
+
         &__projects {
             @apply flex flex-row flex-wrap;
         }
@@ -80,6 +86,12 @@
 
 @screen lg {
     .what-we-do-section {
+        &__intro {
+            &__title {
+                @apply text-5xl mb-16;
+            }
+        }
+
         &__project {
             @apply flex-row mb-16;
 

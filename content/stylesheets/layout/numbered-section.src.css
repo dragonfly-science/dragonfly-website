@@ -1,39 +1,8 @@
 /* Numbersed section as seen on the what we do page. */
 .numbered-section {
     @apply overflow-hidden px-6;
+
     counter-increment: list-number;
-
-    &:nth-of-type(even) {
-        .numbered-section__content {
-            &:last-child {
-                @apply order-first;
-
-                &:before {
-                    @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
-                    content: '';
-                }
-            }
-        }
-    }
-
-    &:nth-of-type(odd) {
-        .numbered-section__content {
-            &:last-child {
-                &:after {
-                    @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
-                    content: '';
-                }
-            }
-        }
-    }
-
-    p {
-        @apply mb-4;
-
-        &:last-of-type {
-            @apply mb-0;
-        }
-    }
 
     &__content {
         @apply relative w-full flex justify-center flex-col;
@@ -68,29 +37,43 @@
         @apply block mx-auto;
     }
 
-    /* &__call-to-action {
-        @apply flex flex-col my-8;
+    &:nth-of-type(odd) {
+        .numbered-section__content {
+            &:last-child {
+                &::after {
+                    @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
 
-        span {
-            @apply block font-semibold mb-2;
+                    content: '';
+                }
+            }
         }
+    }
 
-        a {
-            @apply mr-auto;
+    &:nth-of-type(even) {
+        .numbered-section__content {
+            &:last-child {
+                @apply order-first;
+
+                &::before {
+                    @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
+
+                    content: '';
+                }
+            }
         }
-    } */
+    }
+
+    p {
+        @apply mb-4;
+
+        &:last-of-type {
+            @apply mb-0;
+        }
+    }
 }
 
 @screen md {
     .numbered-section {
-        &:nth-of-type(even) {
-            .numbered-section__content {
-                &:first-child {
-                    @apply pl-8;
-                }
-            }
-        }
-
         &__content {
             @apply w-1/2;
 
@@ -107,30 +90,25 @@
             @apply mt-20 pr-8 max-w-lg;
         }
 
-        &__text {
-            @apply text-2xl;
-        }
-
         &__link {
             @apply mb-20;
             @apply text-lg !important;
+        }
+
+        &:nth-of-type(even) {
+            .numbered-section__content {
+                &:first-child {
+                    @apply pl-8;
+                }
+            }
         }
     }
 }
 
 @screen lg {
     .numbered-section {
-        &:nth-of-type(even) {
-            .numbered-section__content {
-                &:first-child {
-                    @apply pl-16;
-                }
-            }
-        }
-
         &__heading {
-
-            &:before {
+            &::before {
                 @apply text-8xl;
             }
 
@@ -139,8 +117,28 @@
             }
         }
 
+        &__text {
+            @apply text-2xl;
+        }
+
         &__call-to-action {
             @apply mb-0;
+        }
+
+        &:nth-of-type(even) {
+            .numbered-section__content {
+                &:first-child {
+                    @apply pl-16;
+                }
+            }
+        }
+    }
+}
+
+@screen xl {
+    .numbered-section {
+        &__text {
+            @apply text-3xl;
         }
     }
 }
@@ -226,7 +224,7 @@
 
             &:nth-of-type(odd) {
                 .numbered-section__container {
-                    &:after {
+                    &::after {
                         @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
                     }
                 }

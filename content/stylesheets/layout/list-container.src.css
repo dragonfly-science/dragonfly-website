@@ -1,17 +1,18 @@
 /* list container - a box that contains a title & 1 or more (up to 3) lists. */
 .list-container {
-    @apply py-8 px-6;
+    @apply py-16 px-6;
 
     &__title {
-        @apply font-bold text-4xl mb-8 leading-none;
+        @apply font-bold text-2xl mb-6 leading-none;
     }
 
     &__lists {
-        @apply  flex flex-col justify-between;
+        @apply flex flex-col justify-between;
     }
 
     ul {
         @apply list-disc text-lg;
+
         margin-left: 1em;
         margin-right: 1em;
 
@@ -35,10 +36,8 @@
 
 @screen lg {
     .list-container {
-        @apply py-16;
-
         &__title {
-            @apply text-5xl mb-12;
+            @apply text-4/2xl;
         }
 
         ul {
