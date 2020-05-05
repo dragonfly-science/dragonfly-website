@@ -20,6 +20,14 @@
                 @apply button--white;
             }
         }
+
+        &--white {
+            @apply button--white;
+
+            &:hover {
+                @apply button--slate-grey;
+            }
+        }
     }
 
     &--no-math-paper {

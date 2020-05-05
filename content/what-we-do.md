@@ -5,14 +5,17 @@ introduction: >
   range of services from building sophisticated reporting tools to giving expert
   advice on data architecture.
 banner: /images/whatwedo_header.jpg
-toolsTitle: We love a good tool
+toolsTitle: We love good tools
 toolsIntro: >
-  Communicating good science, requires us to to think
-  outside the box. These tools help us to do this
+  These are our favourites – open source, refined, trusted. With them at our
+  fingertips, we can do magic with data.  
 toolsDetails: >
-  Something about the types of tools - for GIS,
-  modelling, databases, machine learning ...
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Nullam quis risus eget urna mollis ornare vel eu leo.
-  Aenean lacinia bibendum nulla sed consectetur.
+  Within out team we have expertise will all these data science and
+  analysis tools.
+  <br>
+  Would your project benefit from our skills? 
+toolsCTADescriptor: How about a chat over coffee 
+  to find out...
+toolsCTALink: "#contact"
+toolsCTAButton: contact us
 ---
