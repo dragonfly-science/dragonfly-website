@@ -33,6 +33,7 @@ World Albatross Day was begun by [ACAP](https://www.acap.aq/en)
 “ACAP provides an important opportunity to get governments together to  talk and share information. It has a strong science focus and is really good at promoting best practice for fishers and methods that have been shown to work rather than just good ideas. Happy birthday :-).”
 
 Read more about Dragonfly’s work with albatross:
+
 [A partnership with Chile for albatross risk assessment](https://www.dragonfly.co.nz/news/2018-11-20-luis-visit.html), a secondment that was part-funded by ACAP.
 
-[Ed’s photos from Campbell Island](https://www.dragonfly.co.nz/news/2018-01-15-campbell-photos.html).
+[Ed’s photos from Campbell Island](https://www.flickr.com/photos/slipperydip/sets/72157691369957824).
