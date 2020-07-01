@@ -13,7 +13,7 @@ This question eventually led Brett back to university to finish his philosophy d
 
 “A philosophy professor got me hooked on biology, and my honours was about the evolution of cooperation. After that I got a PhD scholarship at Australian National University, studying how complex organisation arises in humans and other animals. Ants were my favourite. It seemed like such a puzzling engineering question: how does an evolutionary process produce such incredibly complex social organisation?”
 
-Brett says he has a research-oriented approach to problems and likes to think carefully about how to approach a problem. “It often requires time and clarity of thought to define the actual problem and state it clearly. After that you can harness the numerous online resources we have today, and put together a solution tailored for the problem at hand.”
+Brett says he has a research-oriented approach and likes to think carefully about how to solve a problem. “It often requires time and clarity of thought to define the actual problem and state it clearly. After that you can harness the numerous online resources we have today, and put together a solution tailored to the problem at hand.”
 
 Ethics is another strength that Brett brings to the role. Though not strictly an ethicist, he says he’s been “soaked in ethics” for quite a while thanks to his time in various philosophy departments.
 
