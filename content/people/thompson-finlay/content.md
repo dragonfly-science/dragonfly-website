@@ -9,13 +9,13 @@ tag: finlay
 title: Finlay Thompson, PhD
 honour: PhD
 banner: thompson-finlay/finlay-thompson-letterbox.jpg
-sortorder: "2"
+sortorder: "1"
 nocite: |
   @thompson_mammals_95-12
   @thompson_dolphin_2013
 ---
 
-Finlay is operations manager at Dragonfly. As a mathematician, he brings an insightful rigour
+Finlay is the CEO of Dragonfly. As a mathematician, he brings an insightful rigour
 to solving analytical and technical problems.
 <!--more-->
 
