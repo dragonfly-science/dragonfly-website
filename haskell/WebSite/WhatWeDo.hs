@@ -64,7 +64,7 @@ rules = do
             let getTiles itm = do
                   md <- getMetadata $ itemIdentifier itm
                   case lookupStringList "tiles" md of
-                    Just tiles -> mapM (load . fromFilePath) tiles
+                    Just tiles -> mapM (load . fromFilePath) (take 2 tiles)
                     Nothing -> return []
                 tiles = listFieldWith "tiles" itemCtx getTiles
             
@@ -78,10 +78,10 @@ rules = do
 
             let ctx = base
                         <> author
-                        <> tiles
                         <> teaserImage
                         <> socialImage
                         <> actualbodyField "actualbody"
+                        <> tiles
             writeScholmd pandoc
                 >>= loadAndApplyTemplate (pageTemplate config) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx

@@ -1,6 +1,8 @@
 module.exports = (context) => ({
     plugins: [
-        require('postcss-preset-env')({ browsers: 'last 2 versions' }),
+        require('postcss-preset-env')({
+            browsers: 'last 2 versions'
+        }),
         require('postcss-reporter')({}),
         require('postcss-import')({}),
         require('postcss-easings')({}),
@@ -16,7 +18,7 @@ module.exports = (context) => ({
                 './content/pages/*.html',
                 './_site/**/*.html',
             ],
-            
+
             // Include any special characters you're using in this regular expression
             defaultExtractor: content => content.match(/[\w-?\/:]+(?<!:)/g) || [],
 
@@ -28,7 +30,8 @@ module.exports = (context) => ({
                 /transition-*/,
                 /duration-*/,
                 /ease-*/,
-                /dragonfly-*/
+                /dragonfly-*/,
+                /opacity-*/,
             ],
         }) : false
     ]

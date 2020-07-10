@@ -2,8 +2,7 @@
     <div class="what-we-do-section__project__link">
         <div class="no-gutter-cell no-gutter-cell--sidebar no-gutter-cell--no-hover">
             $if(teaserImage)$
-            <div 
-                class="no-gutter-cell__image no-gutter-cell__image--large background-image lozad" 
+            <div class="no-gutter-cell__image no-gutter-cell__image--large background-image lozad"
                 data-background-image="$teaserImage$">
             </div>
             $endif$
@@ -18,13 +17,13 @@
         $endif$
 
         $if(pageurl)$
-            <div class="call-to-action-block">
-                <span>$CTADescriptor$</span>
-                <a
-                    href="$pageurl$"
-                    class="call-to-action__button button call-to-action__button--cool-blue"
-                >$CTAButton$</a>
-            </div>
+        <div class="call-to-action-block">
+            $if(CTADescriptor)$
+            <span>$CTADescriptor$</span>
+            $endif$
+            <a href="$pageurl$" class="call-to-action__button button call-to-action__button--cool-blue">$if(CTAButton)$
+                $CTAButton$ $else$read more$endif$</a>
+        </div>
         $endif$
     </div>
 </div>

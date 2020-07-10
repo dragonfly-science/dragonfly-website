@@ -1,11 +1,15 @@
 ---
 title: Statistical analysis and machine learning
 subtitle: >
-  We are experts at statistical analysis. Our speciality is modern Bayesian
-  methods, which allow uncertainty to be carried all the way through from
-  analysis to decision making.
-author: 
-  - people/richard-yvan/content.md
+    We are experts at statistical analysis. Our speciality is modern Bayesian
+    methods, which allow uncertainty to be carried all the way through from
+    analysis to decision making.
+author:
+    - people/richard-yvan/content.md
+quote: >
+    The power of modern Bayesian methods enables us to reach higher, more
+    objective probability. We use these methods to transform data and squeeze
+    the juice out of it.
 teaserTitle: Statistical analysis and machine learning
 teaserIntro: >
     The power of modern Bayesian methods enables us to reach higher, more
@@ -17,11 +21,12 @@ teaserAnchorId: stats
 sortorder: 1
 banner: /images/whatwedo_header.jpg
 tiles:
-  - work/delphi-case-study/content.md
-  - work/seabird-risk/content.md
-  - work/technical-review-case-study/content.md
-  - work/warp-strike/content.md
+    - work/delphi-case-study/content.md
+    - work/seabird-risk/content.md
+    - work/technical-review-case-study/content.md
+    - work/warp-strike/content.md
 ---
+
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
 Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.

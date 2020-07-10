@@ -8,16 +8,24 @@
     &:before {
         @apply absolute bottom-0 left-0 w-full h-full z-10 block;
         @apply transition-all duration-500 ease-out-quart;
-        content: '';
+        content: "";
         background-blend-mode: multiply;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0) 100%
+        );
     }
 
     &:hover {
         filter: grayscale(0) sepia(0);
 
         &:before {
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+            background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.2) 0%,
+                rgba(0, 0, 0, 0) 100%
+            );
         }
     }
 
@@ -94,9 +102,13 @@
             &:before {
                 @apply absolute bottom-0 left-0 w-full h-full z-10 block;
                 @apply transition-all duration-500 ease-out-quart;
-                content: '';
+                content: "";
                 background-blend-mode: multiply;
-                background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+                background: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.6) 0%,
+                    rgba(0, 0, 0, 0) 100%
+                );
             }
 
             + h2 {
@@ -109,7 +121,7 @@
                 }
             }
         }
-        
+
         .person-tile__title {
             @apply text-xl leading-none font-medium;
         }
@@ -119,10 +131,6 @@
         }
 
         &:hover {
-            .person-tile__title {
-                @apply mb-0 !important;
-            }
-
             .no-gutter-cell__text {
                 @apply opacity-100 mb-16;
             }

@@ -1,24 +1,26 @@
-import smoothscroll from 'smoothscroll-polyfill'
+import smoothscroll from "smoothscroll-polyfill";
 
-import Columns from './_2column-grid'
-import Filtering from './filtering'
-import LazyLoad from './lazy-load'
-import MobileMenu from './mobile-menu'
-import Parallaxing from './parallax'
-import TopSection from './top-section'
+import Columns from "./_2column-grid";
+import Filtering from "./filtering";
+import ImageCaptions from "./image-caption";
+import LazyLoad from "./lazy-load";
+import MobileMenu from "./mobile-menu";
+import Parallaxing from "./parallax";
+import TopSection from "./top-section";
 
-import GameOfLife from './game-of-life/game-of-life'
-import StickySidebar from './sticky-sidebar'
+import GameOfLife from "./game-of-life/game-of-life";
+import StickySidebar from "./sticky-sidebar";
 
-smoothscroll.polyfill()
+smoothscroll.polyfill();
 
 Zepto(($: ZeptoStatic) => {
-    Columns()
-    Filtering()
-    MobileMenu()
-    TopSection()
-    LazyLoad()
-    Parallaxing()
-    GameOfLife()
-    StickySidebar('.sticky-container__body', '.sticky-container__element')
-})
+    Columns();
+    Filtering();
+    MobileMenu();
+    TopSection();
+    LazyLoad();
+    Parallaxing();
+    GameOfLife();
+    ImageCaptions();
+    StickySidebar(".sticky-container__body", ".sticky-container__element");
+});

@@ -53,7 +53,7 @@
         &--no-bottom {
             @apply pb-0;
         }
-    
+
         &--2cell {
             .no-gutter-cell {
                 @apply max-w-1/2;
@@ -139,12 +139,11 @@
 
         &--articles {
             .no-gutter-cell {
-
                 &:nth-of-type(1),
                 &:nth-of-type(2) {
                     .no-gutter-cell__title,
                     .no-gutter-cell__text {
-                        @apply max-w-3/4;
+                        @apply max-w-2/3;
                     }
                 }
             }
