@@ -12,6 +12,7 @@
 
     &__outer {
         @apply mx-auto relative px-6 z-10;
+        @apply transition-color duration-500;
     }
 
     /* Modifiers. */
@@ -41,6 +42,10 @@
         }
     }
 
+    &--image-bg {
+        @apply bg-light-peach;
+    }
+
     &--no-overlay {
         &::before {
             @apply hidden;
@@ -59,10 +64,12 @@
 
     /* Additional Elements. */
     .lozad-image {
-        &.loaded {
+        @apply absolute h-full w-full bg-cover top-0 left-0;
+
+        /* &.loaded {
             @apply delay-0;
             @apply ease-linear;
-        }
+        } */
     }
 
     a {
@@ -88,6 +95,14 @@
 
 @screen md {
     .page-header {
+        &--article {
+            .page-header__title {
+                + .link-icon {
+                    @apply mt-20;
+                }
+            }
+        }
+
         &__outer {
             @apply px-8;
         }
@@ -100,7 +115,7 @@
 
 @screen lg {
     .page-header {
-        @apply py-20 bg-fixed;
+        @apply py-20;
 
         &__title {
             @apply text-8xl;
@@ -117,31 +132,7 @@
         &__outer {
             @apply px-24;
         }
-    }
-}
 
-@screen xl {
-    .page-header {
-        &__container {
-            @apply max-w-38rem;
-        }
-    }
-}
-
-@screen md {
-    .page-header {
-        &--article {
-            .page-header__title {
-                + .link-icon {
-                    @apply mt-20;
-                }
-            }
-        }
-    }
-}
-
-@screen lg {
-    .page-header {
         &--article {
             .page-header__title {
                 @apply text-7xl;
@@ -158,9 +149,21 @@
             @apply py-16 !important;
         }
 
-        &--image-based,
+        &--image-bg,
         &.jarallax {
             min-height: 40rem;
+        }
+
+        /* .lozad-image {
+            @apply bg-fixed;
+        } */
+    }
+}
+
+@screen xl {
+    .page-header {
+        &__container {
+            @apply max-w-38rem;
         }
     }
 }

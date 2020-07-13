@@ -1,4 +1,4 @@
-<header class="page-header page-header--article $if(banner-image)$bg-black text-white$else$math-paper bg-light-peach$endif$"$if(banner-image)$ style="background-image: url($banner-image$);"$endif$>
+<header class="page-header page-header--article page-header--image-bg">
   <div class="page-header__outer">
     <div class="page-header__container">
       $if(title)$
@@ -17,6 +17,8 @@
 
     </div>
   </div>
+
+  <div class="background-image bg-light-peach$if(banner-image)$ lozad lozad-image$endif$"$if(banner-image)$ data-background-image="$banner-image$"$endif$></div>
 </header>
 
 

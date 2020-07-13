@@ -32,11 +32,20 @@ const intializeStickySidebar = (
         .addTo(controller);
 };
 
-const StickySidebar = (triggerElement: string, pinnedElement: string): void => {
-    const imgTarget = ".sticky-lozad";
+const initTimeout = (triggerElement: string, pinnedElement: string) => {
+    setTimeout(
+        intializeStickySidebar,
+        500,
+        triggerElement,
+        pinnedElement,
+    )
+}
 
-    if (isNull($(imgTarget))) {
-        console.log("is null");
+const StickySidebar = (triggerElement: string, pinnedElement: string): void => {
+    const imgTarget = ".sticky-lozad"
+
+    if ($(imgTarget).length === 0) {
+        initTimeout(triggerElement, pinnedElement)
         return;
     }
 
@@ -45,12 +54,7 @@ const StickySidebar = (triggerElement: string, pinnedElement: string): void => {
         threshold: 0.5,
         loaded(el) {
             el.classList.add("loaded", "lozad");
-            setTimeout(
-                intializeStickySidebar,
-                500,
-                triggerElement,
-                pinnedElement
-            );
+            initTimeout(triggerElement, pinnedElement)
         },
     });
 

@@ -1,6 +1,6 @@
 .sticky-container {
     &__body {
-        p:last-child {
+        > p:last-child {
             @apply mb-0;
         }
     }

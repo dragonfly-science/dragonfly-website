@@ -95,8 +95,9 @@ itemCtx  = listContextWith "tags" tagContext
         <> defaultContext
 
 teaserImage :: Context String
-teaserImage = field "teaserImage" getImagePath
-           <> field "teaserImageCaption" (getImageMeta "caption")
+teaserImage = field "teaserImage" (getImagePath "960")
+           <> field "teaserImageSmall" (getImagePath "256")
+           <> field "teaserImageMedium" (getImagePath "480")
            <> field "teaserImageCredit" (getImageMeta "credit")
            <> field "teaserImageCaption" (getImageMeta "caption")
            <> field "teaserImageTitle" (getImageMeta "title")
@@ -105,11 +106,11 @@ teaserImage = field "teaserImage" getImagePath
            <> field "teaserImageWidth" (getImageMeta "width")
            <> field "teaserImageHeight" (getImageMeta "height")
   where
-    getImagePath item = do
+    getImagePath size item = do
         let path = toFilePath (itemIdentifier item)
             base = take ((length path) - 11) path
             ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" (toUrl . (flip replaceFileName "960-teaser.jpg"))) (getRoute ident)
+        fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser.jpg")))) (getRoute ident)
     getImageMeta f item = do
         let path = toFilePath (itemIdentifier item)
             base = take ((length path) - 11) path

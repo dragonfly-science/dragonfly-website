@@ -1,4 +1,4 @@
-<header class="page-header page-header--image-based page-header--article text-white $if(firstname)$person-$firstname$$endif$" style="background-image: url($banner$);" id="hero-$tag$">
+<header class="page-header page-header--image-bg page-header--article $if(firstname)$person-$firstname$$endif$" id="hero-$tag$">
   <div class="page-header__outer">
     <div class="page-header__container flex flex-col">
       <h1 class="page-header__title">
@@ -19,32 +19,31 @@
 
     </div>
   </div>
+
+  <div class="background-image bg-light-peach$if(banner)$ lozad lozad-image$endif$"$if(banner)$ data-background-image="$banner$"$endif$></div>
 </header>
 
 <article id="top-section" class="article math-paper">
   <div class="bg-light-peach px-6">
-    <div class="container mx-auto flex flex-col lg:flex-row">
-      <div class="body-content body-content--article" id="content-$tag$">
+    <div class="sticky-container container mx-auto py-24 flex flex-col lg:flex-row">
+      <div class="sticky-container__body body-content body-content--article my-0" id="content-$tag$">
         $body$
       </div>
-      <aside class="sidebar">
-        $if(email)$
-          <a href="mailto:$email$">$email$</a><br/>
-        $endif$
-        $if(phone)$
-          <a href="tel:$phone$">$phone$</a>
-        $endif$
+      <aside class="sidebar sticky-sidebar">
+        <div class="sticky-container__element w-56">
+            $if(email)$
+            <a href="mailto:$email$">$email$</a><br/>
+            $endif$
+            $if(phone)$
+            <a href="tel:$phone$">$phone$</a>
+            $endif$
+
+            <a href="/people/" class="button call-to-action__button call-to-action__button--slate-grey button--icon button--icon-left mt-8">
+                <span class="button--icon-left__icon dragonfly-arrow transform rotate-180"></span>
+                <span class="button--icon-left__text">Back to team</span>
+            </a>
+        </div>
       </aside>
     </div>
   </div>
 </article>
-
-<section class="call-to-action call-to-action--single-column">
-  <div class="call-to-action__container container">
-    <!-- <a href="/people/" class="button call-to-action__button call-to-action__button--cool-blue">Back to team</a> -->
-    <a href="/people/" class="button call-to-action__button call-to-action__button--cool-blue button--icon button--icon-left">
-      <span class="button--icon-left__icon dragonfly-arrow rotate-180"></span>
-      <span class="button--icon-left__text">Back to team</span>
-    </a>
-  </div>
-</section>

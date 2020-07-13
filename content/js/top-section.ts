@@ -1,29 +1,20 @@
-import animateScrollTo from "animated-scroll-to";
+import animateScrollTo from 'animated-scroll-to'
 
 const TopSection = () => {
     $('a[href="#top-section"]').click((e) => {
-        e.preventDefault();
+        e.preventDefault()
 
-        const headerH = $(".main-header").height();
-        const sectionOffset = $("#top-section").offset().top;
+        const headerH = $('.main-header').height()
+        const sectionOffset = $('#top-section').offset().top
 
-        animateScrollTo(sectionOffset - headerH);
-    });
+        animateScrollTo(sectionOffset - headerH)
+    })
 
-    // $('a[href="#contact"]').click((e) => {
-    //     e.preventDefault();
+    // tslint:disable-next-line: only-arrow-functions
+    $('a[href="#contact"]').click(function(e: Event) {
+        e.preventDefault()
+        location.hash = 'contact-dragonfly'
+    })
+}
 
-    //     // const scrollingElement = document.scrollingElement || document.body;
-    //     // scrollingElement.scrollTop = scrollingElement.scrollHeight;
-
-    //     window.scrollTo({
-    //         top: document.body.clientHeight + window.innerHeight,
-    //         left: 0,
-    //         behavior: "smooth",
-    //     });
-
-    //     // animateScrollTo(scrollingElement.scrollHeight);
-    // });
-};
-
-export default TopSection;
+export default TopSection

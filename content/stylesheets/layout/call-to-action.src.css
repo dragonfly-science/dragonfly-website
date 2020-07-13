@@ -28,6 +28,14 @@
                 @apply button--slate-grey;
             }
         }
+
+        &--slate-grey {
+            @apply button--slate-grey;
+
+            &:hover {
+                @apply button--light-peach;
+            }
+        }
     }
 
     &--no-math-paper {

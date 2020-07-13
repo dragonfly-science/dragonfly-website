@@ -1,18 +1,45 @@
-const requestAF = (): void => {
-    const main = document.getElementById("main-container");
-    const footer = document.getElementById("main-footer");
+const cloneFooter = (): void => {
+    const footer = document.getElementById('main-footer')
+    const cloned = footer.cloneNode(true) as HTMLElement
+    cloned.setAttribute('id', 'modal-footer')
+    cloned.classList.add(...'main-footer--modal'.split(' '))
+    document.getElementsByTagName('body')[0].appendChild(cloned)
 
-    main.style.marginBottom = `${footer.clientHeight}px`;
-};
+    const close = cloned.querySelector('.dragonfly-close')
 
-const calcMainBottomMargin = (): void => {
-    requestAnimationFrame(requestAF);
-};
+    if (close) {
+        close.addEventListener('click', () => {
+            const scrollTop = document.body.scrollTop
+            location.hash = ''
+            window.scrollTo({
+                top: scrollTop,
+                behavior: 'smooth',
+            })
+            return false
+        })
+    }
+}
+
+const checkHash = (): void => {
+    const hash = location.hash.substr(1)
+    const footer = document.getElementById('modal-footer')
+
+    if (hash === 'contact-dragonfly') {
+        document.body.classList.add('modal-open')
+        footer.classList.add('main-footer--is-open')
+    } else {
+        document.body.classList.remove('modal-open')
+        footer.classList.remove('main-footer--is-open')
+    }
+}
 
 const Footer = (): void => {
-    "resize oreientationchange scroll".split(" ").forEach((e) => {
-        window.addEventListener(e, calcMainBottomMargin, false);
-    });
-};
+    cloneFooter()
 
-export default Footer;
+    window.addEventListener('hashchange', checkHash)
+
+    checkHash()
+}
+
+export default Footer
+

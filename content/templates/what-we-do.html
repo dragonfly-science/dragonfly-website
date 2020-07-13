@@ -1,5 +1,4 @@
-<header class="page-header page-header--white page-header--article" $if(banner)$
-    style="background-image: url($banner$);" $endif$>
+<header class="page-header page-header--article page-header--image-bg">
     <div class="page-header__outer">
         <div class="page-header__container">
             $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
@@ -11,6 +10,7 @@
             </a>
         </div>
     </div>
+    <div class="background-image bg-light-peach$if(banner)$ lozad lozad-image$endif$"$if(banner)$ data-background-image="$banner$"$endif$></div>
 </header>
 
 
@@ -24,19 +24,29 @@
                 <div class="sticky-container__element w-56">
                     $if(author)$
                     $if(quote)$
-                    <blockquote class="sidebar-caption ruled-heading">$quote$</blockquote>
+                    <blockquote class="sidebar-caption ruled-heading">
+                    
+                        <p>$quote$</p>
+
+                        <cite>
+                            $for(author)$
+                            <a href="$pageurl$" class="no-gutter-cell person-tile person-tile--singular">
+                                $if(teaserImageMedium)$
+                                    <img class="sticky-lozad" data-src="$teaserImageMedium$" width="100%" height="auto" />
+                                $endif$
+                                <h2 class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full">
+                                    $firstname$<br>
+                                    $lastname$<br>
+                                    <br>
+                                    <em>$role$</em>
+                                </h2>
+                            </a>
+                            $endfor$
+                        </cite>
+                    
+                    </blockquote>
                     $endif$
-                    $for(author)$
-                    <a href="$pageurl$" class="no-gutter-cell person-tile person-tile--singular">
-                        <img class="sticky-lozad" data-src="$teaserImage$" width="100%" height="auto" />
-                        <h2 class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full">
-                            $firstname$<br>
-                            $lastname$<br>
-                            <br>
-                            <em>$role$</em>
-                        </h2>
-                    </a>
-                    $endfor$
+                    
                     $endif$
                 </div>
             </aside>

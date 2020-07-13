@@ -50,6 +50,11 @@
         color: var(--white);
     }
 
+    .button--light-peach {
+        background-color: var(--light-peach);
+        color: var(--slate-grey);
+    }
+
     .button--white {
         background-color: var(--white);
         color: var(--cool-blue);

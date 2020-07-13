@@ -2,6 +2,7 @@ import smoothscroll from "smoothscroll-polyfill";
 
 import Columns from "./_2column-grid";
 import Filtering from "./filtering";
+import Footer from "./footer";
 import ImageCaptions from "./image-caption";
 import LazyLoad from "./lazy-load";
 import MobileMenu from "./mobile-menu";
@@ -22,5 +23,6 @@ Zepto(($: ZeptoStatic) => {
     Parallaxing();
     GameOfLife();
     ImageCaptions();
+    Footer();
     StickySidebar(".sticky-container__body", ".sticky-container__element");
 });

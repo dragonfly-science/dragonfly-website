@@ -1,5 +1,4 @@
-<header class="page-header page-header--white page-header--article" $if(banner)$style="background-image: url($banner$);"
-    $endif$>
+<header class="page-header page-header--article page-header--image-bg">
     <div class="page-header__outer">
         <div class="page-header__container">
             $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
@@ -11,6 +10,7 @@
             </a>
         </div>
     </div>
+    <div class="background-image bg-light-peach$if(banner)$ lozad lozad-image$endif$"$if(banner)$ data-background-image="$banner$"$endif$></div>
 </header>
 
 $for(whatwedo)$
@@ -18,8 +18,12 @@ $if(teaserAnchorId)$<a class="anchor" id="$teaserAnchorId$"></a>$endif$
 <section id="top-section" class="numbered-section numbered-section--no-numbers bg-light-peach">
     <div class="numbered-section__container container">
         <div class="numbered-section__content">
-            $if(teaserTitle)$<h2 class="numbered-section__heading ruled-heading ruled-heading--cool-blue">
-                <span>$teaserTitle$</span></h2>$endif$
+            $if(teaserTitle)$
+                <h2 class="numbered-section__heading ruled-heading ruled-heading--cool-blue">
+                    <span>$teaserTitle$</span>
+                </h2>
+            $endif$
+
             $if(teaserIntro)$
             <p class="numbered-section__text">
                 $teaserIntro$
@@ -35,6 +39,22 @@ $if(teaserAnchorId)$<a class="anchor" id="$teaserAnchorId$"></a>$endif$
             </div>
             $endif$
 
+            $if(author)$
+                    $if(quote)$
+                    <blockquote class="sidebar-caption ruled-heading">$quote$</blockquote>
+                    $endif$
+                    $for(author)$
+                    <a href="$pageurl$" class="no-gutter-cell person-tile person-tile--singular">
+                        <img class="sticky-lozad" data-src="$teaserImage$" width="100%" height="auto" />
+                        <h2 class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full">
+                            $firstname$<br>
+                            $lastname$<br>
+                            <br>
+                            <em>$role$</em>
+                        </h2>
+                    </a>
+                    $endfor$
+                    $endif$
 
         </div>
         <div class="numbered-section__content scrollable">
@@ -102,17 +122,6 @@ $endfor$
                 <a class="tools__tool dragonfly-pytorch" href="https://pytorch.org/" target="_blank" title="PyTorch"
                     aria-hidden="true"></a>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="call-to-action call-to-action--dual-column">
-    <div class="call-to-action__container container">
-        <p class="call-to-action__text">
-            Do you have a project that requires any of these skills?
-        </p>
-        <div class="call-to-action__button-container">
-            <a href="#contact" class="call-to-action__button button call-to-action__button--cool-blue">Get in touch</a>
         </div>
     </div>
 </section>
