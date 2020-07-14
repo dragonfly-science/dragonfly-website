@@ -13,6 +13,7 @@ const TopSection = (): void => {
   // tslint:disable-next-line: only-arrow-functions
   $('a[href="#contact"]').click(function (e: Event) {
     e.preventDefault()
+    window.keepScroll = false
     location.hash = 'contact-dragonfly'
   })
 }

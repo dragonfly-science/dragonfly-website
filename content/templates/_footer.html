@@ -1,46 +1,47 @@
 <!-- Use schema.org microformat markup -->
-<footer
-    class="main-footer"
-    itemscope itemtype="http://schema.org/Organization" id="main-footer">
-    <div class="container mx-auto py-10 flex flex-col relative md:py-20" id="footer-address">
-        <span class="dragonfly-close text-2xl cursor-pointer my-3 ml-auto absolute text-white right-0 top-0"></span>
-        <div class="flex justify-between w-full flex-row flex-wrap">
-            <div class="main-footer__detail">
-                <span>Contact:</span>
+<footer class="main-footer" itemscope itemtype="http://schema.org/Organization" id="main-footer">
+  <div class="container mx-auto py-10 flex flex-col relative md:py-20" id="footer-address">
+    <img src="/images/dragonfly-logo-reversed.svg"
+      class="dragonfly-logo max-w-full mb-8 h-6 lg:max-w-12rem w-auto lg:w-full lg:h-24 lg:h-auto"
+      alt="Dragonfly logo" />
+    <span class="dragonfly-close text-2xl cursor-pointer my-3 ml-auto absolute text-white right-0 top-0"></span>
+    <div class="flex justify-between w-full flex-row flex-wrap">
+      <div class="main-footer__detail">
+        <span>Contact:</span>
 
-                $partial("templates/_address-phones.html")$
-            </div>
+        $partial("templates/_address-phones.html")$
+      </div>
 
-            <div class="main-footer__detail">
-                <span>Visit:</span>
+      <div class="main-footer__detail">
+        <span>Visit:</span>
 
-                $partial("templates/_address-physical.html")$
-            </div>
+        $partial("templates/_address-physical.html")$
+      </div>
 
-            <div class="main-footer__detail">
-                <span>Post:</span>
+      <div class="main-footer__detail">
+        <span>Post:</span>
 
-                $partial("templates/_address-postal.html")$
-            </div>
+        $partial("templates/_address-postal.html")$
+      </div>
 
-            <div class="main-footer__detail lg:flex-grow-0 lg:flex-shrink-0">
-                <span>Follow:</span>
+      <div class="main-footer__detail lg:flex-grow-0 lg:flex-shrink-0">
+        <span>Follow:</span>
 
-                <a href="https://www.twitter.com/dflydsci">Twitter</a><br />
-                <a href="https://github.com/dragonfly-science">Github</a><br />
-            </div>
-        </div>
-
-        <div class="mt-10 md:mt-32">
-            <p>
-                The text content and code of this website is copyright Dragonfly Limited, and is <a
-                    href="https://github.com/dragonfly-science/website/blob/master/LICENSE">licensed for
-                    reuse</a>.<br />
-                The source code is available on <a href="https://github.com/dragonfly-science/website">GitHub</a>. If
-                you have any problems or suggestions, you are welcome to <a
-                    href="https://github.com/dragonfly-science/website/issues">raise an issue</a>.
-            </p>
-        </div>
+        <a href="https://www.twitter.com/dflydsci">Twitter</a><br />
+        <a href="https://github.com/dragonfly-science">Github</a><br />
+      </div>
     </div>
+
+    <div class="mt-10 md:mt-32">
+      <p>
+        The text content and code of this website is copyright Dragonfly Limited, and is <a
+          href="https://github.com/dragonfly-science/website/blob/master/LICENSE">licensed for
+          reuse</a>.<br />
+        The source code is available on <a href="https://github.com/dragonfly-science/website">GitHub</a>. If
+        you have any problems or suggestions, you are welcome to <a
+          href="https://github.com/dragonfly-science/website/issues">raise an issue</a>.
+      </p>
+    </div>
+  </div>
 </footer>
 <a class="anchor" id="contact"></a>

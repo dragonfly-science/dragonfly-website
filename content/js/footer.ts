@@ -9,12 +9,9 @@ const cloneFooter = (): void => {
 
   if (close) {
     close.addEventListener('click', () => {
-      const scrollTop = document.body.scrollTop
+      window.keepScroll =
+        document.documentElement.scrollTop || document.body.scrollTop
       location.hash = ''
-      window.scrollTo({
-        top: scrollTop,
-        behavior: 'smooth',
-      })
       return false
     })
   }
@@ -23,6 +20,12 @@ const cloneFooter = (): void => {
 const checkHash = (): void => {
   const hash = location.hash.substr(1)
   const footer = document.getElementById('modal-footer')
+
+  if (window.keepScroll !== false) {
+    document.documentElement.scrollTop = document.body.scrollTop =
+      typeof window.keepScroll === 'boolean' ? 0 : window.keepScroll
+    window.keepScroll = false
+  }
 
   if (hash === 'contact-dragonfly') {
     document.body.classList.add('modal-open')

@@ -17,7 +17,8 @@
     @apply hidden fixed top-0 left-0 h-full w-full z-50 pointer-events-none opacity-0;
     @apply transition-all ease-out-quart duration-500 pt-10;
 
-    .dragonfly-close {
+    .dragonfly-close,
+    .dragonfly-logo {
       @apply block !important;
     }
   }
@@ -45,7 +46,8 @@
     @apply not-italic;
   }
 
-  .dragonfly-close {
+  .dragonfly-close,
+  .dragonfly-logo {
     @apply hidden;
   }
 }
