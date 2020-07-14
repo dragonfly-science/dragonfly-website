@@ -10,4 +10,4 @@ make compress
 
 cp static-site.tgz /output
 
-cp -rf _site/* /publish/
+mv -f _site /publish/
