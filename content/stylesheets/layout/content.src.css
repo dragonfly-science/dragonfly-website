@@ -1,24 +1,23 @@
 /* layout of body-content area. */
 
 @screen lg {
-    .sidebar {
-        + .body-content {
-            @apply ml-40;
-        }
+  .sidebar {
+    + .body-content {
+      @apply ml-40;
     }
+  }
 }
 
 @screen lg {
-    .body-content {
-    
-        + .sidebar {
-            @apply ml-24;
-        }
+  .body-content {
+    + .sidebar {
+      @apply ml-24;
     }
+  }
 }
 
 @screen xl {
-    .body-content {
-        @apply ml-64 !important;
-    }
+  .body-content {
+    @apply ml-64 !important;
+  }
 }

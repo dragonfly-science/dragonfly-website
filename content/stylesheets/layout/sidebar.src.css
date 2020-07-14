@@ -1,27 +1,27 @@
 .sidebar {
-    @apply py-24 text-lg leading-normal w-full max-w-full;
+  @apply py-24 text-lg leading-normal w-full max-w-full;
 
-    .button {
-        @apply no-underline;
+  .button {
+    @apply no-underline;
+  }
+
+  &__title {
+    @apply block font-bold leading-none text-base;
+  }
+
+  &--graph {
+    @apply relative;
+
+    &::after {
+      @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
+
+      content: '';
     }
-
-    &__title {
-        @apply block font-bold leading-none text-base;
-    }
-
-    &--graph {
-        @apply relative;
-
-        &::after {
-            @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
-
-            content: '';
-        }
-    }
+  }
 }
 
 @screen lg {
-    .sidebar {
-        @apply w-64;
-    }
+  .sidebar {
+    @apply w-64;
+  }
 }

@@ -1,67 +1,67 @@
 .button {
-    @apply px-8 pt-3 pb-4 text-center font-medium no-underline leading-none transition-bg duration-100;
+  @apply px-8 pt-3 pb-4 text-center font-medium no-underline leading-none transition-bg duration-100;
 }
 
 @screen lg {
-    .button {
-        @apply px-16 py-5;
-    }
+  .button {
+    @apply px-16 py-5;
+  }
 }
 
 .button--small {
-    @apply px-8 pt-3 pb-4;
+  @apply px-8 pt-3 pb-4;
 }
 
 .button--rounded {
-    @apply rounded;
+  @apply rounded;
 }
 
 .button--icon-left {
-    &__text {
-        @apply ml-4 !important;
-    }
+  &__text {
+    @apply ml-4 !important;
+  }
 }
 
 .button--icon {
-    @apply inline-flex;
+  @apply inline-flex;
 
-    &__text {
-        @apply mr-4;
-    }
+  &__text {
+    @apply mr-4;
+  }
 
-    &__icon {
-        @apply flex-grow-0 ml-auto;
-    }
+  &__icon {
+    @apply flex-grow-0 ml-auto;
+  }
 }
 
 @variants hover {
-    .button--cool-blue {
-        background-color: var(--cool-blue);
-        color: var(--white);
-    }
+  .button--cool-blue {
+    background-color: var(--cool-blue);
+    color: var(--white);
+  }
 
-    .button--black {
-        background-color: var(--black);
-        color: var(--white);
-    }
+  .button--black {
+    background-color: var(--black);
+    color: var(--white);
+  }
 
-    .button--slate-grey {
-        background-color: var(--slate-grey);
-        color: var(--white);
-    }
+  .button--slate-grey {
+    background-color: var(--slate-grey);
+    color: var(--white);
+  }
 
-    .button--light-peach {
-        background-color: var(--light-peach);
-        color: var(--slate-grey);
-    }
+  .button--light-peach {
+    background-color: var(--light-peach);
+    color: var(--slate-grey);
+  }
 
-    .button--white {
-        background-color: var(--white);
-        color: var(--cool-blue);
-    }
+  .button--white {
+    background-color: var(--white);
+    color: var(--cool-blue);
+  }
 
-    .button--white-slate-grey {
-        background-color: var(--white);
-        color: var(--slate-grey);
-    }
+  .button--white-slate-grey {
+    background-color: var(--white);
+    color: var(--slate-grey);
+  }
 }

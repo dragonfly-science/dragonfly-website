@@ -1,7 +1,7 @@
 .sticky-container {
-    &__body {
-        > p:last-child {
-            @apply mb-0;
-        }
+  &__body {
+    > p:last-child {
+      @apply mb-0;
     }
+  }
 }

@@ -4,15 +4,15 @@
  * */
 
 @screen lg {
-    .inner-column {
-        @apply px-24;
+  .inner-column {
+    @apply px-24;
 
-        &--left {
-            @apply pl-24;
-        }
-
-        &--right {
-            @apply pr-24;
-        }
+    &--left {
+      @apply pl-24;
     }
+
+    &--right {
+      @apply pr-24;
+    }
+  }
 }

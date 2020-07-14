@@ -1,9 +1,9 @@
 .sticky-sidebar {
-    @apply hidden;
+  @apply hidden;
 }
 
 @screen lg {
-    .sticky-sidebar {
-        @apply max-w-full w-56 text-left p-0 block flex-shrink-0;
-    }
+  .sticky-sidebar {
+    @apply max-w-full w-56 text-left p-0 block flex-shrink-0;
+  }
 }

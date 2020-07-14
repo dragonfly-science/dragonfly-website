@@ -1,5 +1,5 @@
 @screen lg {
-    body.modal-open {
-        @apply overflow-hidden;
-    }
+  body.modal-open {
+    @apply overflow-hidden;
+  }
 }

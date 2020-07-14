@@ -1,234 +1,235 @@
 /* Numbersed section as seen on the what we do page. */
 .numbered-section {
-    @apply overflow-hidden px-6;
+  @apply overflow-hidden px-6;
 
-    counter-increment: list-number;
+  counter-increment: list-number;
 
-    &__content {
-        @apply relative w-full flex justify-center flex-col;
+  &__content {
+    @apply relative w-full flex justify-center flex-col;
 
-        img {
-            @apply mx-auto mt-0 mb-8;
+    img {
+      @apply mx-auto mt-0 mb-8;
+    }
+  }
+
+  &__heading {
+    @apply mt-10 max-w-md font-bold text-cool-blue flex pb-5;
+
+    span {
+      @apply text-2xl leading-none;
+    }
+  }
+
+  &__text {
+    @apply text-lg font-medium leading-tight max-w-xl pr-8;
+  }
+
+  &__link {
+    @apply mt-8 font-bold underline mb-10;
+    @apply text-sm !important;
+
+    &:hover {
+      @apply no-underline;
+    }
+  }
+
+  &__container {
+    @apply block mx-auto;
+  }
+
+  &:nth-of-type(odd) {
+    .numbered-section__content {
+      &:last-child {
+        &::after {
+          @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
+
+          content: '';
         }
+      }
     }
+  }
 
-    &__heading {
-        @apply mt-10 max-w-md font-bold text-cool-blue flex pb-5;
+  &:nth-of-type(even) {
+    .numbered-section__content {
+      &:last-child {
+        @apply order-first;
 
-        span {
-            @apply text-2xl leading-none;
+        &::before {
+          @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
+
+          content: '';
         }
+      }
     }
+  }
 
-    &__text {
-        @apply text-lg font-medium leading-tight max-w-xl pr-8;
+  p {
+    @apply mb-4;
+
+    &:last-of-type {
+      @apply mb-0;
     }
+  }
 
-    &__link {
-        @apply mt-8 font-bold underline mb-10;
-        @apply text-sm !important;
+  /* Variations. */
+  &--no-image {
+    &:nth-of-type(even) {
+      @apply overflow-hidden;
 
-        &:hover {
-            @apply no-underline;
+      .numbered-section__container {
+        @apply relative;
+
+        &::before {
+          @apply hidden;
+
+          content: '';
         }
-    }
+      }
 
-    &__container {
-        @apply block mx-auto;
+      .numbered-section__content {
+        @apply ml-auto;
+
+        &:last-child {
+          &::before {
+            @apply hidden;
+          }
+        }
+      }
     }
 
     &:nth-of-type(odd) {
-        .numbered-section__content {
-            &:last-child {
-                &::after {
-                    @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
+      @apply overflow-hidden;
 
-                    content: '';
-                }
-            }
+      .numbered-section__container {
+        @apply relative;
+
+        &::after {
+          @apply hidden;
+
+          content: '';
         }
+      }
+
+      .numbered-section__content {
+        &:last-child {
+          &::after {
+            @apply hidden;
+          }
+        }
+      }
     }
+  }
 
-    &:nth-of-type(even) {
-        .numbered-section__content {
-            &:last-child {
-                @apply order-first;
+  &--no-numbers {
+    .numbered-section__heading {
+      &::before,
+      &::after {
+        @apply mr-0;
 
-                &::before {
-                    @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
-
-                    content: '';
-                }
-            }
-        }
+        content: '';
+      }
     }
+  }
 
-    p {
-        @apply mb-4;
-
-        &:last-of-type {
-            @apply mb-0;
-        }
+  .scrollable {
+    .lozad-image {
+      &.loaded {
+        @apply delay-0;
+        @apply ease-linear;
+      }
     }
-}
-
-@screen md {
-    .numbered-section {
-        &__content {
-            @apply w-1/2;
-
-            img {
-                @apply my-16;
-            }
-        }
-
-        &__container {
-            @apply flex;
-        }
-
-        &__heading {
-            @apply mt-20 pr-8 max-w-lg;
-        }
-
-        &__link {
-            @apply mb-20;
-            @apply text-lg !important;
-        }
-
-        &:nth-of-type(even) {
-            .numbered-section__content {
-                &:first-child {
-                    @apply pl-8;
-                }
-            }
-        }
-    }
-}
-
-@screen lg {
-    .numbered-section {
-        &__heading {
-            &::before {
-                @apply text-8xl;
-            }
-
-            span {
-                @apply text-4/2xl;
-            }
-        }
-
-        &__text {
-            @apply text-2xl;
-        }
-
-        &__call-to-action {
-            @apply mb-0;
-        }
-
-        &:nth-of-type(even) {
-            .numbered-section__content {
-                &:first-child {
-                    @apply pl-16;
-                }
-            }
-        }
-    }
-}
-
-@screen xl {
-    .numbered-section {
-        &__text {
-            @apply text-3xl;
-        }
-    }
-}
-
-/* Variations. */
-.numbered-section {
-    &--no-image {
-        &:nth-of-type(even) {
-            @apply overflow-hidden;
-
-            .numbered-section__container {
-                @apply relative;
-
-                &:before {
-                    @apply hidden;
-                    content: '';
-                }
-            }
-
-            .numbered-section__content {
-                @apply ml-auto;
-
-                &:last-child {
-                    &:before {
-                        @apply hidden;
-                    }
-                }
-            }
-        }
-
-        &:nth-of-type(odd) {
-            @apply overflow-hidden;
-
-            .numbered-section__container {
-                @apply relative;
-
-                &:after {
-                    @apply hidden;
-                    content: '';
-                }
-            }
-
-            .numbered-section__content {
-                &:last-child {
-                    &:after {
-                        @apply hidden;
-                    }
-                }
-            }
-        }
-    }
-
-    &--no-numbers {
-        .numbered-section__heading {
-            &:before,
-            &:after {
-                @apply mr-0;
-                content: '';
-            }
-        }
-    }
-
-    .scrollable {
-        .lozad-image {
-            &.loaded {
-                @apply delay-0;
-                @apply ease-linear;
-            }
-        }
-    }
+  }
 }
 
 @screen sm {
-    .numbered-section {
-        &--no-image {
-            &:nth-of-type(even) {
-                .numbered-section__container {
-                    &:before {
-                        @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
-                    }
-                }
-            }
-
-            &:nth-of-type(odd) {
-                .numbered-section__container {
-                    &::after {
-                        @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
-                    }
-                }
-            }
+  .numbered-section {
+    &--no-image {
+      &:nth-of-type(even) {
+        .numbered-section__container {
+          &::before {
+            @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
+          }
         }
+      }
+
+      &:nth-of-type(odd) {
+        .numbered-section__container {
+          &::after {
+            @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
+          }
+        }
+      }
     }
+  }
+}
+
+@screen md {
+  .numbered-section {
+    &__content {
+      @apply w-1/2;
+
+      img {
+        @apply my-16;
+      }
+    }
+
+    &__container {
+      @apply flex;
+    }
+
+    &__heading {
+      @apply mt-20 pr-8 max-w-lg;
+    }
+
+    &__link {
+      @apply mb-20;
+      @apply text-lg !important;
+    }
+
+    &:nth-of-type(even) {
+      .numbered-section__content {
+        &:first-child {
+          @apply pl-8;
+        }
+      }
+    }
+  }
+}
+
+@screen lg {
+  .numbered-section {
+    &__heading {
+      &::before {
+        @apply text-8xl;
+      }
+
+      span {
+        @apply text-4/2xl;
+      }
+    }
+
+    &__text {
+      @apply text-2xl;
+    }
+
+    &__call-to-action {
+      @apply mb-0;
+    }
+
+    &:nth-of-type(even) {
+      .numbered-section__content {
+        &:first-child {
+          @apply pl-16;
+        }
+      }
+    }
+  }
+}
+
+@screen xl {
+  .numbered-section {
+    &__text {
+      @apply text-3xl;
+    }
+  }
 }
