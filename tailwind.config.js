@@ -1,4 +1,5 @@
 module.exports = {
+  purge: false,
   theme: {
     fontFamily: {
       display: ['omnes-pro', '"Helvetica Neue"', 'Helvetica', 'Roboto', 'Arial', 'sans-serif'],
@@ -131,23 +132,47 @@ module.exports = {
   },
   variants: {},
   plugins: [
-    function({ addVariant, e }) {
-      addVariant('before', ({ modifySelectors, separator }) => {
-        modifySelectors(({ className }) => {
+    function ({
+      addVariant,
+      e
+    }) {
+      addVariant('before', ({
+        modifySelectors,
+        separator
+      }) => {
+        modifySelectors(({
+          className
+        }) => {
           return `.${e(`before${separator}${className}`)}:before`
         })
       })
     },
-    function({ addVariant, e }) {
-      addVariant('after', ({ modifySelectors, separator }) => {
-        modifySelectors(({ className }) => {
+    function ({
+      addVariant,
+      e
+    }) {
+      addVariant('after', ({
+        modifySelectors,
+        separator
+      }) => {
+        modifySelectors(({
+          className
+        }) => {
           return `.${e(`after${separator}${className}`)}:after`
         })
       })
     },
-    function({ addVariant, e }) {
-      addVariant('last-child', ({ modifySelectors, separator }) => {
-        modifySelectors(({ className }) => {
+    function ({
+      addVariant,
+      e
+    }) {
+      addVariant('last-child', ({
+        modifySelectors,
+        separator
+      }) => {
+        modifySelectors(({
+          className
+        }) => {
           return `.${e(`last-child${separator}${className}`)}:last-child`
         })
       })
