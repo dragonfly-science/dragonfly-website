@@ -71,7 +71,7 @@ const gameOfLife = (): void => {
     renderer.play = true
   })
 
-  let mouseTimeout: number = null
+  let mouseTimeout: NodeJS.Timeout = null
 
   const changeValue = (el: HTMLElement): void => {
     let val: number =
