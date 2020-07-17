@@ -37,12 +37,14 @@
     }
 
     &__link {
-      @apply flex items-start py-5 pr-8 mb-8;
+      @apply flex items-start flex-shrink-0 w-56 mr-8 mb-8;
+
+      /* py-5 pr-8 mb-8  */
     }
 
     &:nth-child(even) {
       .what-we-do-section__project__link {
-        @apply order-first pr-0 pl-0;
+        @apply order-first mr-0;
       }
 
       .what-we-do-section__project__details {
@@ -101,7 +103,7 @@
 
       &:nth-child(even) {
         .what-we-do-section__project__link {
-          @apply order-1 pr-0 pl-8;
+          @apply order-1 pr-0 pl-0 ml-8;
         }
 
         .what-we-do-section__project__details {

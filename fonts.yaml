@@ -1,17 +1,17 @@
 font:
-    svg:        ./content/fonts/dragonfly.svg
-    ttf:        ./content/fonts/dragonfly.ttf
-    eot:        ./content/fonts/dragonfly.eot
-    woff:       ./content/fonts/dragonfly.woff
-    css:        ./content/fonts/dragonfly.css
-    name:       dragonfly
-    prefix:     dragonfly
-    fixedwidth: false
-    height:     1000
-    descent:    150
-    normalize:  true
-    center:     true
-    round:      10e12
+  svg: ./content/fonts/dragonfly.svg
+  ttf: ./content/fonts/dragonfly.ttf
+  eot: ./content/fonts/dragonfly.eot
+  woff: ./content/fonts/dragonfly.woff
+  css: ./content/fonts/dragonfly.css
+  name: dragonfly
+  prefix: dragonfly
+  fixedwidth: false
+  height: 1000
+  descent: 150
+  normalize: true
+  center: true
+  round: 10e12
 
 glyphs:
   - glyph: ./content/images/icons/arrow.svg

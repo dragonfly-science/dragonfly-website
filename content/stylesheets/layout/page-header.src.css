@@ -65,11 +65,6 @@
   /* Additional Elements. */
   .lozad-image {
     @apply absolute h-full w-full bg-cover top-0 left-0;
-
-    /* &.loaded {
-            @apply delay-0;
-            @apply ease-linear;
-        } */
   }
 
   a {
@@ -103,6 +98,10 @@
       }
     }
 
+    &__container {
+      @apply max-w-30rem;
+    }
+
     &__outer {
       @apply px-8;
     }
@@ -123,10 +122,6 @@
 
     &__content {
       @apply text-2/3xl pt-12 leading-tighter;
-    }
-
-    &__container {
-      @apply ml-24;
     }
 
     &__outer {
@@ -151,19 +146,23 @@
 
     &--image-bg,
     &.jarallax {
-      min-height: 40rem;
+      @apply min-h-24;
     }
-
-    /* .lozad-image {
-            @apply bg-fixed;
-        } */
   }
 }
 
 @screen xl {
   .page-header {
     &__container {
-      @apply max-w-38rem;
+      @apply ml-24 max-w-38rem;
+    }
+  }
+}
+
+@screen wd {
+  .page-header {
+    &__outer {
+      max-width: 1920px;
     }
   }
 }

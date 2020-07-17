@@ -1,6 +1,9 @@
 .math-paper {
   background-image:
-    linear-gradient(rgba(67, 161, 201, 0.9) 1px, transparent 1px),
+    linear-gradient(
+      rgba(67, 161, 201, 0.9) 1px,
+      transparent 1px
+    ),
     linear-gradient(90deg, rgba(67, 161, 201, 0.9) 1px, transparent 1px),
     linear-gradient(rgba(67, 161, 201, 0.4) 1px, transparent 1px),
     linear-gradient(90deg, rgba(67, 161, 201, 0.4) 1px, transparent 1px);
@@ -23,7 +26,10 @@
 
 .math-paper--reverse {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(
+      rgba(255, 255, 255, 0.2) 1px,
+      transparent 1px
+    ),
     linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
     linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
@@ -37,5 +43,28 @@
 
   &.loaded {
     @apply opacity-100 transition-all;
+  }
+}
+
+.lozad-container {
+  @apply relative;
+
+  &::before {
+    @apply absolute top-0 left-0 w-full h-full bg-black block z-10;
+    @apply transition-bg duration-500;
+
+    content: '';
+  }
+
+  &.loaded {
+    &::before {
+      @apply bg-transparent;
+    }
+  }
+
+  &--light-peach {
+    &::before {
+      @apply bg-light-peach;
+    }
   }
 }

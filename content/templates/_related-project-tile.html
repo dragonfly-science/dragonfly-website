@@ -1,29 +1,28 @@
 <div class="what-we-do-section__project">
-    <div class="what-we-do-section__project__link">
-        <div class="no-gutter-cell no-gutter-cell--sidebar no-gutter-cell--no-hover">
-            $if(teaserImage)$
-            <div class="no-gutter-cell__image no-gutter-cell__image--large background-image lozad"
-                data-background-image="$teaserImage$">
-            </div>
-            $endif$
-        </div>
+  <div class="what-we-do-section__project__link">
+    <div class="relative w-full h-56">
+      $if(teaserImage)$
+      <div class="background-image bg-cover w-full h-full lozad" data-background-image="$teaserImage$">
+      </div>
+      $endif$
     </div>
-    <div class="what-we-do-section__project__details">
-        $if(title)$
-        <span class="what-we-do-section__title ruled-heading">$title$</span>
-        $endif$
-        $if(teaser)$
-        <p class="what-we-do-section__description">$teaser$</p>
-        $endif$
+  </div>
+  <div class="what-we-do-section__project__details">
+    $if(title)$
+    <span class="what-we-do-section__title ruled-heading">$title$</span>
+    $endif$
+    $if(teaser)$
+    <p class="what-we-do-section__description">$teaser$</p>
+    $endif$
 
-        $if(pageurl)$
-        <div class="call-to-action-block">
-            $if(CTADescriptor)$
-            <span>$CTADescriptor$</span>
-            $endif$
-            <a href="$pageurl$" class="call-to-action__button button call-to-action__button--cool-blue">$if(CTAButton)$
-                $CTAButton$ $else$read more$endif$</a>
-        </div>
-        $endif$
+    $if(pageurl)$
+    <div class="call-to-action-block">
+      $if(CTADescriptor)$
+      <span>$CTADescriptor$</span>
+      $endif$
+      <a href="$pageurl$" class="call-to-action__button button call-to-action__button--cool-blue">$if(CTAButton)$
+        $CTAButton$ $else$read more$endif$</a>
     </div>
+    $endif$
+  </div>
 </div>

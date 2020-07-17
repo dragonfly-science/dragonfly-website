@@ -1,21 +1,37 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   purge: false,
   theme: {
     fontFamily: {
-      display: ['omnes-pro', '"Helvetica Neue"', 'Helvetica', 'Roboto', 'Arial', 'sans-serif'],
-      body: ['omnes-pro', '"Helvetica Neue"', 'Helvetica', 'Roboto', 'Arial', 'sans-serif'],
+      display: [
+        'omnes-pro',
+        '"Helvetica Neue"',
+        'Helvetica',
+        'Roboto',
+        'Arial',
+        'sans-serif',
+      ],
+      body: [
+        'omnes-pro',
+        '"Helvetica Neue"',
+        'Helvetica',
+        'Roboto',
+        'Arial',
+        'sans-serif',
+      ],
     },
     extend: {
       boxShadow: {
-        '3xl': '20px 30px 40px 3px rgba(0,0,0,.3)'
+        '3xl': '20px 30px 40px 3px rgba(0,0,0,.3)',
       },
       colors: {
-        'beige': '#d2cec3',
+        beige: '#d2cec3',
         'cool-blue': '#43A1C9',
         'dark-peach': '#EB7A59',
         'faded-purple': '#A3649B',
         'faded-red': '#CF4547',
-        'grape': '#5B3456',
+        grape: '#5B3456',
         'greeny-blue': '#50AD85',
         'greyish-brown': '#4a4a4a',
         'light-peach': '#E5DECC',
@@ -36,7 +52,7 @@ module.exports = {
         '9/2xl': '7.5rem',
       },
       lineHeight: {
-        'tighter': '1.2em'
+        tighter: '1.2em',
       },
       margin: {
         '12rem': '12rem',
@@ -65,6 +81,7 @@ module.exports = {
         '14rem': '14rem',
         '16rem': '16rem',
         '18rem': '18rem',
+        '30rem': '30rem',
         '38rem': '38rem',
         '8/10': '80%',
         '3/4': '75%',
@@ -76,7 +93,7 @@ module.exports = {
         '8xl': '120rem',
       },
       maxHeight: {
-        '16': '16rem'
+        '16': '16rem',
       },
       minHeight: {
         '3': '3rem',
@@ -89,34 +106,36 @@ module.exports = {
       opacity: {
         '10': '0.1',
         '025': '0.025',
+        '80': '0.8',
+        '90': '0.9',
       },
       rotate: {
         '0': '0',
         '135': '135deg',
       },
       screens: {
-        'wd': '104rem'
+        wd: '104rem',
       },
       transitionDuration: {
-        '250': '250ms'
+        '250': '250ms',
       },
       transitionDelay: {
-        '0': '0ms'
+        '0': '0ms',
       },
       transitionProperty: {
-        'all': 'all',
-        'bg': 'background-color',
-        'border': 'border-color',
-        'color': 'color',
-        'colors': ['color', 'background-color', 'border-color'],
-        'height': 'height',
-        'margin': 'margin',
+        all: 'all',
+        bg: 'background-color',
+        border: 'border-color',
+        color: 'color',
+        colors: ['color', 'background-color', 'border-color'],
+        height: 'height',
+        margin: 'margin',
         'max-height': 'max-height',
-        'none': 'none',
-        'opacity': 'opacity',
-        'padding': 'padding',
-        'top': 'top',
-        'transform': 'transform',
+        none: 'none',
+        opacity: 'opacity',
+        padding: 'padding',
+        top: 'top',
+        transform: 'transform',
       },
       transitionTimingFunction: {
         'out-quart': 'easeOutQuart',
@@ -132,50 +151,34 @@ module.exports = {
   },
   variants: {},
   plugins: [
-    function ({
-      addVariant,
-      e
-    }) {
-      addVariant('before', ({
-        modifySelectors,
-        separator
-      }) => {
-        modifySelectors(({
-          className
-        }) => {
+    plugin(function ({ addUtilities }) {
+      const newUtilities = {
+        '.translate-3d': {
+          transform: 'translate3d(0,0,0)',
+        },
+      }
+      addUtilities(newUtilities, ['responsive', 'hover'])
+    }),
+    function ({ addVariant, e }) {
+      addVariant('before', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
           return `.${e(`before${separator}${className}`)}:before`
         })
       })
     },
-    function ({
-      addVariant,
-      e
-    }) {
-      addVariant('after', ({
-        modifySelectors,
-        separator
-      }) => {
-        modifySelectors(({
-          className
-        }) => {
+    function ({ addVariant, e }) {
+      addVariant('after', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
           return `.${e(`after${separator}${className}`)}:after`
         })
       })
     },
-    function ({
-      addVariant,
-      e
-    }) {
-      addVariant('last-child', ({
-        modifySelectors,
-        separator
-      }) => {
-        modifySelectors(({
-          className
-        }) => {
+    function ({ addVariant, e }) {
+      addVariant('last-child', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
           return `.${e(`last-child${separator}${className}`)}:last-child`
         })
       })
     },
-  ]
+  ],
 }
