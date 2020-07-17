@@ -1,0 +1,67 @@
+font:
+  svg: ../content/fonts/dragonfly.svg
+  ttf: ../content/fonts/dragonfly.ttf
+  eot: ../content/fonts/dragonfly.eot
+  woff: ../content/fonts/dragonfly.woff
+  css: ../content/fonts/dragonfly.css
+  name: dragonfly
+  prefix: dragonfly
+  fixedwidth: false
+  height: 1000
+  descent: 150
+  normalize: true
+  center: true
+  round: 10e12
+
+glyphs:
+  - glyph: ../content/images/icons/arrow.svg
+    name: arrow
+    code: 0xE001
+  - glyph: ../content/images/icons/close.svg
+    name: close
+    code: 0xE002
+  - glyph: ../content/images/icons/hamburger.svg
+    name: hamburger
+    code: 0xE003
+  - glyph: ../content/images/icons/icon-search.svg
+    name: search
+    code: 0xE004
+  - glyph: ../content/images/icons/pdf-download.svg
+    name: pdf
+    code: 0xE005
+  - glyph: ../content/images/icons/reset-icon.svg
+    name: reset
+    code: 0xE006
+  - glyph: ../content/images/icons/gatsby.svg
+    name: gatsby
+    code: 0xE007
+  - glyph: ../content/images/icons/elm.svg
+    name: elm
+    code: 0xE008
+  - glyph: ../content/images/icons/django.svg
+    name: django
+    code: 0xE009
+  - glyph: ../content/images/icons/latex.svg
+    name: latex
+    code: 0xE010
+  - glyph: ../content/images/icons/haskell.svg
+    name: haskell
+    code: 0xE011
+  - glyph: ../content/images/icons/tensorflow.svg
+    name: tensorflow
+    code: 0xE012
+  - glyph: ../content/images/icons/rstudio.svg
+    name: rstudio
+    code: 0xE013
+  - glyph: ../content/images/icons/pytorch.svg
+    name: pytorch
+    code: 0xE014
+  - glyph: ../content/images/icons/postgresql.svg
+    name: postgresql
+    code: 0xE015
+  - glyph: ../content/images/icons/stan1.svg
+    name: stan
+    code: 0xE016
+  - glyph: ../content/images/icons/qgis.svg
+    name: qgis
+    code: 0xE017

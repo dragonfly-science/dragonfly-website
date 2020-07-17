@@ -17,10 +17,10 @@
     "esModuleInterop": true,
     "typeRoots": [
       "./node_modules/@types",
-      "./content/js/types"
+      "./js/types"
     ]
   },
   "include": [
-    "content/js"
+    "./js"
   ]
 }

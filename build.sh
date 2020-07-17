@@ -6,7 +6,7 @@ export RUN=
 
 make clean
 make build
-make NPM="run imagemin"
+make -C front-end NPM="run imagemin" npm
 make compress
 
 cp static-site.tgz /output

@@ -2,7 +2,7 @@
   "name": "dragonfly-website",
   "version": "1.0.0",
   "description": "JavaScript & CSS for the dragonfly website.",
-  "main": "content/js/app.ts",
+  "main": "../content/js/app.ts",
   "dependencies": {
     "@types/pluralize": "0.0.29",
     "animated-scroll-to": "^2.0.10",
@@ -85,24 +85,24 @@
     "analyze:check": "npm run eslint:check && npm run prettier:lint && npm run stylelint:lint && npm run ts:lint",
     "analyze:fix": "npm run eslint:fix && npm run prettier:fix && npm run stylelint:fix",
     "analyze:lint": "npm run ts:lint && npm run stylelint:lint && npm run prettier:lint",
-    "build:fonts": "postcss content/fonts/dragonfly.css --env production -o _site/fonts/dragonfly.css",
+    "build:fonts": "postcss ../content/fonts/dragonfly.css --env production -o _site/fonts/dragonfly.css",
     "build:js": "webpack --mode=production",
     "build": "npm run css & npm run fonts & npm run build:js",
     "check-types": "tsc",
-    "css": "postcss content/stylesheets/main.src.css --env production -o content/stylesheets/dragonfly.css",
-    "eslint": "eslint \"./content/js/**/*.ts\"",
-    "eslint:check": "eslint --print-config \"content/js/**/*.ts\" | eslint-config-prettier-check",
-    "eslint:fix": "eslint --fix \"content/js/**/*.ts\"",
-    "fonts": "mkdir -p content/fonts & glyphs2font fonts.yaml",
+    "css": "postcss ./stylesheets/main.src.css --env production -o ../content/stylesheets/dragonfly.css",
+    "eslint": "eslint \"./js/**/*.ts\"",
+    "eslint:check": "eslint --print-config \"./js/**/*.ts\" | eslint-config-prettier-check",
+    "eslint:fix": "eslint --fix \"./js/**/*.ts\"",
+    "fonts": "mkdir -p ../content/fonts & glyphs2font fonts.yaml",
     "imagemin": "node imagemin.js",
-    "prettier:fix": "prettier --write \"content/js/**/*.ts\"",
-    "prettier:lint": "prettier --check \"content/js/**/*.ts\"",
+    "prettier:fix": "prettier --write \"./js/**/*.ts\"",
+    "prettier:lint": "prettier --check \"./js/**/*.ts\"",
     "staging": "serve",
-    "stylelint:fix": "stylelint content/stylesheets/**/*.src.css --fix",
-    "stylelint:lint": "stylelint content/stylesheets/**/*.src.css",
-    "ts:lint": "tslint -c tslint.json 'content/js/**/*.ts'",
+    "stylelint:fix": "stylelint ./stylesheets/**/*.src.css --fix",
+    "stylelint:lint": "stylelint ./stylesheets/**/*.src.css",
+    "ts:lint": "tslint -c tslint.json './js/**/*.ts'",
     "watch": "npm run watch:css & npm run watch:js",
-    "watch:css": "postcss ./content/stylesheets/main.src.css --env development -m -o ./content/stylesheets/dragonfly.css -w",
+    "watch:css": "postcss ./stylesheets/main.src.css --env development -m -o ./../content/stylesheets/dragonfly.css -w",
     "watch:js": "webpack -w"
   },
   "author": "",
@@ -119,6 +119,6 @@
     }
   },
   "lint-staged": {
-    "./content/**/*.{ts,src.css}": "npm run analyze:fix"
+    "./**/*.{ts,src.css}": "npm run analyze:fix"
   }
 }

@@ -17,9 +17,9 @@ module.exports = (context) => ({
           // Specify the paths to all of the template files in your project
           rejected: true,
           content: [
-            './content/templates/*.html',
-            './content/pages/*.html',
-            './_site/**/*.html',
+            '../content/templates/*.html',
+            '../content/pages/*.html',
+            '../_site/**/*.html',
           ],
 
           // Include any special characters you're using in this regular expression

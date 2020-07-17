@@ -2,10 +2,10 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: path.resolve(__dirname, 'content/js/app.ts'),
+  entry: path.resolve(__dirname, 'js/app.ts'),
   mode: 'production',
   output: {
-    path: path.resolve(__dirname, 'content/scripts'),
+    path: path.resolve(__dirname, '../content/scripts'),
     filename: 'app.bundle.js',
     chunkFilename: '[name].bundle.js',
   },

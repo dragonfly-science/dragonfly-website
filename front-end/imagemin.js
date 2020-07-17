@@ -5,7 +5,7 @@ const imageminSvgo = require('imagemin-svgo')
 const fs = require('file-system')
 
 fs.recurse(
-  '_site',
+  '../_site',
   [
     'images/**/*.{jpg,png,svg}',
     'news/**/*.{jpg,png,svg}',

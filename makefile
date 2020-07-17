@@ -11,8 +11,8 @@ website: $(HS) haskell/Site.hs
 	$(RUN) bash -c 'cd haskell && stack build && cp $$(stack path --local-install-root)/bin/website ../website'
 
 develop: website
-	$(RUN) bash -c 'npm run build & (cd content/stylesheets && find . -name \*.css -not -name dragonfly.css \
-		| npm run watch:css) & (cd content && npm run watch:js) & (cd content && ../website watch)'
+	$(RUN) bash -c 'make -C front-end NPM="run build" npm & (cd content/stylesheets && find . -name \*.css -not -name dragonfly.css \
+		| make -C ../front-end NPM="run watch:css" npm) & (make -C front-end NPM="run watch:js" npm) & (cd content && ../website watch)'
 
 
 CONTENT := $(shell find content)
@@ -20,8 +20,8 @@ build: website install
 	$(RUN) bash -c 'rm -rf ./content/scripts/'
 	$(RUN) bash -c 'mkdir ./content/scripts/'
 	$(RUN) bash -c 'cd content && ../website build'
-	$(RUN) bash -c 'npm run css && npm run fonts'
-	$(RUN) bash -c 'npm run build:js && npm run build:fonts'
+	$(RUN) bash -c 'make -C front-end NPM="run css" npm && make -C front-end NPM="run fonts" npm'
+	$(RUN) bash -c 'make -C front-end NPM="run build:js" npm && make -C front-end NPM="run build:fonts" npm'
 	$(RUN) bash -c 'mkdir -p ./_site/assets'
 	$(RUN) bash -c 'cp ./content/stylesheets/dragonfly.css \
 		./_site/assets/dragonfly.css; \
@@ -31,16 +31,10 @@ build: website install
 
 CSS := $(shell find content/stylesheets -name *.css -not -name dragonfly.css)
 content/stylesheets/dragonfly.css: content/stylesheets/main.src.css $(CSS)
-	$(RUN) bash -c 'npm run css && npm run fonts'
+	$(RUN) bash -c 'make -C front-end NPM="run css" npm && make -C front-end NPM="run fonts" npm'
 
 install:
-	$(RUN) bash -c 'npm install $(ADD)'
-
-npm:
-	$(RUN) bash -c 'npm $(NPM)'
-
-audit:
-	$(RUN) bash -c 'npm audit fix'
+	$(RUN) bash -c 'make -C front-end NPM="install" npm'
 
 docker:
 	docker build --tag $(IMAGE) .
