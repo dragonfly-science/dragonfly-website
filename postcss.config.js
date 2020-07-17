@@ -37,6 +37,7 @@ module.exports = (context) => ({
             /dragonfly-*/,
             /opacity-*/,
             /page-header-*/,
+            /main-footer--*/,
           ],
         })
       : false,

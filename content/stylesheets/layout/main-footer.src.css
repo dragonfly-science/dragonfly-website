@@ -24,10 +24,10 @@
   }
 
   &--is-open {
-    /* @apply fixed w-full h-full;
-        @apply z-50 !important;
+    @apply fixed w-full h-full;
+    @apply z-50 !important;
 
-        max-height: 100vh; */
+    max-height: 100vh;
 
     &.main-footer--modal {
       @apply pointer-events-auto opacity-100 pt-0;
