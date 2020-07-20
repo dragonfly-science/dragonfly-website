@@ -4,7 +4,7 @@
       <h1 class="page-header__title">Publications</h1>
 
       <div class="page-header__content">
-          <h2> 
+          <h2>
               We communicate our findings.
             </h2>
             <p>
@@ -24,8 +24,14 @@
         <div class="filtering__tools__header">
             $partial("templates/_search-field.html")$
 
-            <div class="filtering__buttons">
-                <button class="filtering__hamburger outline-none text-cool-blue dragonfly-hamburger text-2xl" title="show/hide filter options"></button>
+            <div class="filtering__buttons xl:ml-0">
+                <button
+                  class="filtering__button outline-none text-cool-blue text-lg font-bold pt-2"
+                  title="show/hide filter options"
+                >
+                  filters
+                  <span class="ml-1 fas fa-plus rotate-0 transform transition duration-300"></span>
+                </button>
             </div>
         </div>
 

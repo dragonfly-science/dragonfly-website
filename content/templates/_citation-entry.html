@@ -44,18 +44,19 @@
 
     <div class="tagslugs hidden">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
 
-    <footer class="flex justify-between items-center publication-tile__footer">
+    <footer class="publication-tile__footer flex justify-between items-center">
       $if(pdf)$
         <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="publication-tile__pdf button-link">
-          <span class="dragonfly-pdf text-5xl"></span>
+          <span class="dragonfly-pdf text-3xl"></span>
+          <i>Download<br>report</i>
         </a>
       $endif$
       $if(hasBody)$
-        <span class="publication-tile__read-more">Read more</span>
+        <div class="publication-tile__read-more text-sm">read more <span class="ml-1 icon dragonfly-arrow"></span></div>
       $endif$
   </footer>
   $if(hasBody)$
-    <a class="publication-tile__details" href="/publications/$id$.html">Read more</a>
+    <a class="publication-tile__details" href="/publications/$id$.html">read more</a>
   $endif$
 </div>
 

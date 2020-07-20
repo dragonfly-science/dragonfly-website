@@ -59,20 +59,20 @@
     @apply flex flex-col h-full w-full items-center overflow-x-auto my-8;
   }
 
-  &__button {
+  /* &__button {
     @apply text-slate-grey text-sm font-medium hidden leading-none transition-all;
 
     &:hover {
       @apply text-cool-blue underline;
     }
-  }
+  } */
 
-  &[data-section="work"] .main-nav__link[class*="section--work"],
-  &[data-section="whatwedo"] .main-nav__link[class*="section--what-we-do"],
-  &[data-section="people"] .main-nav__link[class*="section--people"],
-  &[data-section="news"] .main-nav__link[class*="section--news"],
-  &[data-section="data"] .main-nav__link[class*="section--data"],
-  &[data-section="publications"] .main-nav__link[class*="section--publications"] {
+  &[data-section='work'] .main-nav__link[class*='section--work'],
+  &[data-section='whatwedo'] .main-nav__link[class*='section--what-we-do'],
+  &[data-section='people'] .main-nav__link[class*='section--people'],
+  &[data-section='news'] .main-nav__link[class*='section--news'],
+  &[data-section='data'] .main-nav__link[class*='section--data'],
+  &[data-section='publications'] .main-nav__link[class*='section--publications'] {
     &::after {
       @apply w-full bg-cool-blue absolute top-0 block;
 
@@ -100,12 +100,12 @@
     @apply opacity-100 h-auto flex-row mt-0 left-auto py-0 w-auto top-auto;
     @apply relative justify-start items-center;
 
-    &[data-section="work"] .main-nav__link[class*="section--work"],
-    &[data-section="whatwedo"] .main-nav__link[class*="section--what-we-do"],
-    &[data-section="people"] .main-nav__link[class*="section--people"],
-    &[data-section="news"] .main-nav__link[class*="section--news"],
-    &[data-section="data"] .main-nav__link[class*="section--data"],
-    &[data-section="publications"] .main-nav__link[class*="section--publications"] {
+    &[data-section='work'] .main-nav__link[class*='section--work'],
+    &[data-section='whatwedo'] .main-nav__link[class*='section--what-we-do'],
+    &[data-section='people'] .main-nav__link[class*='section--people'],
+    &[data-section='news'] .main-nav__link[class*='section--news'],
+    &[data-section='data'] .main-nav__link[class*='section--data'],
+    &[data-section='publications'] .main-nav__link[class*='section--publications'] {
       &::after {
         @apply h-1;
       }
@@ -193,10 +193,6 @@
           @apply border-cool-blue;
         }
       }
-    }
-
-    &__button {
-      @apply block;
     }
 
     &__container {

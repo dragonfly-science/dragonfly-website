@@ -114,6 +114,10 @@
     .person-tile__title {
       @apply mb-0;
     }
+
+    .no-gutter-cell__image {
+      transform: translate3d(-50%, -50%, 0) scale(1.03);
+    }
   }
 }
 

@@ -27,9 +27,12 @@
     @apply text-cool-blue text-2xl flex-grow mb-4;
   }
 
+  &__inputs {
+    @apply w-full;
+  }
+
   &__search {
     @apply bg-white my-auto py-1 pl-3 pr-3 flex justify-between flex-grow-0;
-    @apply max-w-full;
 
     &__input {
       @apply text-lg pr-3 flex-grow leading-none outline-none;
@@ -107,7 +110,7 @@
 
 @screen lg {
   .filtering {
-    &__search {
+    &__inputs {
       @apply max-w-1/2;
     }
 

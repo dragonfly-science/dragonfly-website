@@ -11,7 +11,7 @@
 
   &__button {
     @apply font-normal rounded;
-    @apply px-6 pt-2 pb-3 !important;
+    @apply px-6 pt-2 pb-3;
 
     &--cool-blue {
       @apply button--cool-blue;

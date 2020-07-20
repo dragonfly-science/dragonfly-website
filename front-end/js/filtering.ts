@@ -257,18 +257,17 @@ const Publications = (): void => {
   })
 
   // Set up filtering.
-  $('.filtering__hamburger').on('click', function (this: HTMLElement, e) {
+  $('.filtering__hamburger, .filtering__button').on('click', function (
+    this: HTMLElement,
+    e
+  ) {
     e.preventDefault()
 
     const filters = $(this).parents('.filtering')
 
     filters.toggleClass('open')
 
-    if (filters.is('.open')) {
-      $(this).addClass('dragonfly-close').removeClass('dragonfly-hamburger')
-    } else {
-      $(this).addClass('dragonfly-hamburger').removeClass('dragonfly-close')
-    }
+    $(this).find('span').toggleClass('rotate-0 rotate-45')
   })
 }
 
