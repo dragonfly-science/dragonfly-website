@@ -94,7 +94,7 @@
     "eslint:check": "eslint --print-config \"./js/**/*.ts\" | eslint-config-prettier-check",
     "eslint:fix": "eslint --fix \"./js/**/*.ts\"",
     "fonts": "mkdir -p ../content/fonts & glyphs2font fonts.yaml",
-    "imagemin": "node imagemin.js",
+    "imagemin": "chmod -R 775 ../_site && node imagemin.js",
     "prettier:fix": "prettier --write \"./js/**/*.ts\"",
     "prettier:lint": "prettier --check \"./js/**/*.ts\"",
     "staging": "serve",

@@ -17,35 +17,37 @@ fs.recurse(
     const dir = filepath.substr(0, filepath.lastIndexOf('/'))
     const ext = relative.substr(relative.indexOf('.'))
 
-    const process = async () => {
+    async function process() {
+      let plugins = []
+      switch (ext) {
+        case '.jpg':
+          plugins = [
+            imageminJpegoptim({
+              progressive: true,
+              max: 60,
+            }),
+          ]
+          break
+        case '.png':
+          plugins = [imageminPngquant()]
+          break
+        case '.svg':
+          plugins = [imageminSvgo()]
+          break
+        default:
+          break
+      }
+
       try {
-        switch (ext) {
-          case '.jpg':
-            await imagemin([filepath], {
-              destination: dir,
-              plugins: [
-                imageminJpegoptim({
-                  progressive: true,
-                }),
-              ],
-            })
-            break
-          case '.png':
-            await imagemin([filepath], {
-              destination: dir,
-              plugins: [imageminPngquant()],
-            })
-            break
-          case '.svg':
-            await imagemin([filepath], {
-              destination: dir,
-              plugins: [imageminSvgo()],
-            })
-            break
-          default:
-            break
-        }
-      } catch (error) {}
+        const processed = await imagemin([filepath], {
+          destination: dir,
+          plugins,
+          glob: true,
+        })
+        console.info(`Processing completed for ${processed[0].sourcePath}`)
+      } catch (error) {
+        console.warn(`Error processing ${filename}`)
+      }
     }
 
     process()
