@@ -18,7 +18,8 @@
     </div>
   </div>
 
-  <div class="background-image bg-light-peach$if(banner-image)$ lozad lozad-image$endif$"$if(banner-image)$ data-background-image="$banner-image$"$endif$></div>
+  <div class="background-image bg-light-peach$if(banner-image)$ lozad lozad-image$endif$" $if(banner-image)$
+    data-background-image="$banner-image$" $endif$></div>
 </header>
 
 
@@ -35,7 +36,8 @@
 
         $if(project-link)$
         $if(project-link-title)$<span class="sidebar__title mb-2 lg:text-left">$project-link-title$</span>$endif$
-        <a href="$project-link$" target="_blank" class="button button--cool-blue button--rounded button--icon button--small hover:button--white">
+        <a href="$project-link$" target="_blank"
+          class="button button--cool-blue button--rounded button--icon button--small hover:button--white">
           <span class="button--icon__text">$if(project-link-text)$$project-link-text$$else$Visit project$endif$</span>
           <span class="button--icon__icon dragonfly-arrow -rotate-45"></span>
         </a>
@@ -45,7 +47,7 @@
   </div>
 </article>
 
-<div class="related-content">
+<div class="related-content  math-paper">
   <header class="related-content__header container">
     <h2 class="related-content__title">You might also like these projects</h2>
   </header>

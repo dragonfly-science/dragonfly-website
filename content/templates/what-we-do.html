@@ -58,18 +58,15 @@
   </div>
 
   $if(tiles)$
-  <div>
-    <section class="what-we-do-section">
-      <header class="what-we-do-section__intro container mx-auto">
-        <h2 class="what-we-do-section__intro__title px-6">Related projects</h2>
-      </header>
-
-      <div class="what-we-do-section__projects collection-grid collection-grid--no-bottom list">
-        $for(tiles)$
-        $partial("templates/_tile.html")$
-        $endfor$
-      </div>
-    </section>
+  <div class="related-content relative z-10">
+    <header class="related-content__header container">
+      <h2 class="related-content__title">Related projects</h2>
+    </header>
+    <div class="collection-grid collection-grid--no-bottom list">
+      $for(tiles)$
+      $partial("templates/_tile.html")$
+      $endfor$
+    </div>
   </div>
   $endif$
 </article>

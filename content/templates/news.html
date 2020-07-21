@@ -1,45 +1,48 @@
 <header
-    class="page-header page-header--article page-header--news page-header--small page-header--no-overlay bg-light-peach math-paper">
-    <div class="page-header__outer">
-        <div class="page-header__container flex flex-col">
-            $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
-            $if(date)$
-            <span class="page-header--article__date">$date$</span>
-            $endif$
+  class="page-header page-header--article page-header--news page-header--small page-header--no-overlay bg-light-peach math-paper">
+  <div class="page-header__outer">
+    <div class="page-header__container flex flex-col">
+      $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
+      $if(date)$
+      <span class="page-header--article__date">$date$</span>
+      $endif$
 
-        </div>
     </div>
+  </div>
 </header>
 
 <article id="top-section" class="news-article bg-light-peach">
-    <div
-        class="sticky-container news-article__container container flex flex-col items-start lg:flex-row mx-auto">
-        <div class="flex flex-col lg:flex-row">
-            <aside class="sidebar sticky-sidebar news-article__sidebar">
-                <figure class="sticky-container__element">
-                    <img class="w-56 sticky-lozad" data-src="$teaserImageSmall$" $if(teaserImageCaption)$
-                        alt="$teaserImageCaption$" $endif$>
-                    $if(teaserImageCaption)$
-                    <div class="sidebar-caption image-caption ruled-heading">
-                        <figcaption>$teaserImageCaption$</figcaption>
-                        $if(teaserImageCredit)$
-                        <cite>$teaserImageCredit$</cite>
-                        $endif$
-                    </div>
-                    $endif$
-
-                </figure>
-            </aside>
-            <div class="sticky-container__body body-content body-content--no-sidebar body-content--news-article">
-                $body$
-            </div>
-        </div>
+  <div class="sticky-container news-article__container container flex flex-col items-start lg:flex-row mx-auto">
+    <div class="flex flex-col lg:flex-row">
+      <aside class="sidebar sticky-sidebar news-article__sidebar">
+        $if(teaserImageSmall)$
+        $if(noImage)$
+        $else$
+        <figure class="sticky-container__element">
+          <img class="w-56 sticky-lozad" data-src="$teaserImageSmall$" $if(teaserImageCaption)$
+            alt="$teaserImageCaption$" $endif$>
+          $if(teaserImageCaption)$
+          <div class="sidebar-caption image-caption ruled-heading">
+            <figcaption>$teaserImageCaption$</figcaption>
+            $if(teaserImageCredit)$
+            <cite>$teaserImageCredit$</cite>
+            $endif$
+          </div>
+          $endif$
+        </figure>
+        $endif$
+        $endif$
+      </aside>
+      <div class="sticky-container__body body-content body-content--no-sidebar body-content--news-article">
+        $body$
+      </div>
     </div>
+  </div>
 </article>
 
-<div class="related-content relative z-10">
-    <header class="related-content__header container">
-        <h2 class="related-content__title">You might also like these stories</h2>
-    </header>
-    $partial("templates/_bubble-navigation.html")$
+<div class="related-content math-paper relative z-10">
+  <header class="related-content__header container">
+    <h2 class="related-content__title">You might also like these stories</h2>
+  </header>
+  $partial("templates/_bubble-navigation.html")$
 </div>

@@ -27,11 +27,6 @@ build: website install
 		cp ./content/scripts/*.js ./_site/assets/; \
 		cp -rf ./content/fonts ./_site/fonts'
 
-
-# CSS := $(shell find front-end/stylesheets -name *.css)
-# content/stylesheets/dragonfly.css: front-end/stylesheets/main.src.css $(CSS)
-# 	$(RUN) bash -c 'make -C front-end NPM="run css" npm && make -C front-end NPM="run fonts" npm'
-
 install:
 	$(RUN) bash -c 'make -C front-end NPM="install" npm'
 
