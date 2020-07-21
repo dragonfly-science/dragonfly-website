@@ -1,5 +1,5 @@
 .what-we-do-section {
-  @apply py-16;
+  @apply pt-16;
 
   &__title {
     @apply block font-medium text-2xl mb-4 leading-tight;

@@ -13,8 +13,7 @@
   &__title {
     @apply font-bold mb-16;
     @apply transition-all ease-out-quart;
-
-    font-size: 8vw;
+    @apply text-5xl;
   }
 
   &__text {
@@ -132,23 +131,21 @@
     &::before {
       @apply opacity-90;
 
-      background-image:
-        linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.5) 0%,
-          rgba(0, 0, 0, 0.1) 100%
-        );
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.1) 100%
+      );
     }
 
     &::after {
       @apply opacity-0;
 
-      background-image:
-        linear-gradient(
-          0deg,
-          rgba(0, 0, 0, 0.8) 0%,
-          rgba(0, 0, 0, 0.8) 100%
-        );
+      background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
     }
 
     &::before,
@@ -241,7 +238,7 @@
 @screen sm {
   .no-gutter-cell {
     &__title {
-      font-size: 6vw;
+      /* font-size: 6vw; */
     }
   }
 }
@@ -251,7 +248,7 @@
     @apply w-1/2;
 
     &__title {
-      font-size: 5vw;
+      /* font-size: 5vw; */
     }
 
     &--advert {
@@ -270,7 +267,7 @@
     @apply px-8;
 
     &__title {
-      font-size: 3vw;
+      /* font-size: 3vw; */
     }
   }
 }

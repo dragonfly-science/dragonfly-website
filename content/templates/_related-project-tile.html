@@ -8,11 +8,19 @@
     </div>
   </div>
   <div class="what-we-do-section__project__details">
+    $if(teaserTitle)$
+    <span class="what-we-do-section__title ruled-heading">$teaserTitle$</span>
+    $else$
     $if(title)$
     <span class="what-we-do-section__title ruled-heading">$title$</span>
     $endif$
+    $endif$
+    $if(teaserIntro)$
+    <p class="what-we-do-section__description">$teaserIntro$</p>
+    $else$
     $if(teaser)$
     <p class="what-we-do-section__description">$teaser$</p>
+    $endif$
     $endif$
 
     $if(pageurl)$

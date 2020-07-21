@@ -64,10 +64,10 @@ rules = do
             let getTiles itm = do
                   md <- getMetadata $ itemIdentifier itm
                   case lookupStringList "tiles" md of
-                    Just tiles -> mapM (load . fromFilePath) (take 2 tiles)
+                    Just tiles -> mapM (load . fromFilePath) tiles
                     Nothing -> return []
                 tiles = listFieldWith "tiles" itemCtx getTiles
-            
+
             -- author definition
             let getAuthor itm = do
                   md <- getMetadata $ itemIdentifier itm

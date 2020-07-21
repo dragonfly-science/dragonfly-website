@@ -1,5 +1,5 @@
 .collection-grid {
-  @apply max-w-8xl w-full flex flex-wrap mx-auto pb-20;
+  @apply w-full flex flex-wrap mx-auto pb-20;
 
   /* Variations. */
   &--no-bottom {
@@ -27,7 +27,7 @@
       @apply max-w-full;
 
       &__title {
-        font-size: 8vw;
+        /* font-size: 8vw; */
       }
     }
   }
@@ -65,7 +65,7 @@
         @apply max-w-1/2;
 
         &__title {
-          font-size: 6vw;
+          /* font-size: 6vw; */
         }
       }
     }
@@ -83,7 +83,7 @@
     &--articles {
       .no-gutter-cell {
         .no-gutter-cell__title {
-          font-size: 3vw;
+          /* font-size: 3vw; */
         }
 
         &:nth-of-type(1),
@@ -91,7 +91,7 @@
           @apply max-w-1/2 w-full px-24 !important;
 
           .no-gutter-cell__title {
-            font-size: 3.2vw;
+            /* font-size: 3.2vw; */
           }
         }
       }
@@ -132,7 +132,7 @@
     &--4cell {
       .no-gutter-cell {
         &__title {
-          font-size: 3.2vw !important;
+          /* font-size: 3.2vw !important; */
         }
       }
     }
@@ -156,7 +156,7 @@
     &--2cell {
       .no-gutter-cell {
         &__title {
-          font-size: 3.2vw;
+          /* font-size: 3.2vw; */
         }
       }
     }

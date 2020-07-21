@@ -1,71 +1,75 @@
-<header class="page-header page-header--article page-header--image-bg$if(banner)$ lozad-container lozad-container--light-peach$endif$">
-    <div class="page-header__outer">
-        <div class="page-header__container">
-            $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
+<header
+  class="page-header page-header--article page-header--image-bg$if(banner)$ lozad-container lozad-container--light-peach$endif$">
+  <div class="page-header__outer">
+    <div class="page-header__container">
+      $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
 
-            $if(subtitle)$<p class="page-header__content">$subtitle$</p>$endif$
+      $if(subtitle)$<p class="page-header__content">$subtitle$</p>$endif$
 
-            <a href="#top-section" class="link-icon link-icon--arrow-down link-icon--large">
-                <span class="icon dragonfly-arrow"></span>
-            </a>
-        </div>
+      <a href="#top-section" class="link-icon link-icon--arrow-down link-icon--large">
+        <span class="icon dragonfly-arrow"></span>
+      </a>
     </div>
-    <div class="background-image bg-light-peach$if(banner)$ lozad lozad-image$endif$"$if(banner)$ data-background-image="$banner$"$endif$></div>
+  </div>
+  <div class="background-image bg-light-peach$if(banner)$ lozad lozad-image$endif$" $if(banner)$
+    data-background-image="$banner$" $endif$></div>
 </header>
 
 
 <article id="top-section" class="article bg-light-peach">
-    <div class="px-6">
-        <div class="sticky-container container mx-auto pt-24 flex flex-col items-start lg:flex-row">
-            <div class="sticky-container__body body-content body-content--article flex-grow my-0">
-                $body$
-            </div>
-            <aside class="sidebar sticky-sidebar ml-auto mr-0">
-                <div class="sticky-container__element w-56">
-                    $if(author)$
-                    $if(quote)$
-                    <blockquote class="sidebar-caption ruled-heading">
+  <div class="px-6">
+    <div class="sticky-container container mx-auto pt-24 flex flex-col items-start lg:flex-row">
+      <div class="sticky-container__body body-content body-content--article flex-grow my-0">
+        $body$
+      </div>
+      <aside class="sidebar sticky-sidebar ml-auto mr-0">
+        <div class="sticky-container__element w-56">
+          $if(author)$
 
-                        <p>$quote$</p>
+          <blockquote class="sidebar-caption ruled-heading">
+            $if(quote)$
+            <p>$quote$</p>
 
-                        <cite>
-                            $for(author)$
-                            <a href="$pageurl$" class="no-gutter-cell person-tile person-tile--singular">
-                                $if(teaserImageMedium)$
-                                    <img class="sticky-lozad" data-src="$teaserImageMedium$" width="100%" height="auto" />
-                                $endif$
-                                <h2 class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full">
-                                    $firstname$<br>
-                                    $lastname$<br>
-                                    <br>
-                                    <em>$role$</em>
-                                </h2>
-                            </a>
-                            $endfor$
-                        </cite>
+            <cite>
+              $endif$
+              $for(author)$
+              <a href="$pageurl$" class="no-gutter-cell person-tile person-tile--singular">
+                $if(teaserImageMedium)$
+                <img class="sticky-lozad" data-src="$teaserImageMedium$" width="100%" height="auto" />
+                $endif$
+                <h2 class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full">
+                  $firstname$<br>
+                  $lastname$<br>
+                  <br>
+                  <em>$role$</em>
+                </h2>
+              </a>
+              $endfor$
+              $if(quote)$
+            </cite>
+            $endif$
+          </blockquote>
 
-                    </blockquote>
-                    $endif$
 
-                    $endif$
-                </div>
-            </aside>
+          $endif$
         </div>
+      </aside>
     </div>
+  </div>
 
-    $if(tiles)$
-    <div class="px-6">
-        <section class="container mx-auto what-we-do-section">
-            <header class="what-we-do-section__intro">
-                <h2 class="what-we-do-section__intro__title">Related projects</h2>
-            </header>
+  $if(tiles)$
+  <div>
+    <section class="what-we-do-section">
+      <header class="what-we-do-section__intro container mx-auto">
+        <h2 class="what-we-do-section__intro__title px-6">Related projects</h2>
+      </header>
 
-            <div class="what-we-do-section__projects">
-                $for(tiles)$
-                $partial("templates/_related-project-tile.html")$
-                $endfor$
-            </div>
-        </section>
-    </div>
-    $endif$
+      <div class="what-we-do-section__projects collection-grid collection-grid--no-bottom list">
+        $for(tiles)$
+        $partial("templates/_tile.html")$
+        $endfor$
+      </div>
+    </section>
+  </div>
+  $endif$
 </article>
