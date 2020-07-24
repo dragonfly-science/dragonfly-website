@@ -9,10 +9,11 @@ largely unknown. In addition, current estimates of seabird bycatch within New Ze
 Exclusive Economic Zone lack distribution data for the majority of species, with model
 estimates based on the assumption that seabird distributions are spatially uniform, at
 least within large areas. Statistical bycatch models could be greatly improved if observed
-captures could be related to the number of seabirds present around fishing vessels. Counts
-of the number of seabirds present around commercial fishing vessels in New Zealand waters
-have been carried out by government observers in a relatively consistent framework, and
-recorded on paper forms. Another type of counts by observers were recorded on Nomad
+captures could be related to the number of seabirds present around fishing vessels. 
+
+Counts of the number of seabirds present around commercial fishing vessels in New Zealand
+waters have been carried out by government observers in a relatively consistent framework,
+and recorded on paper forms. Another type of counts by observers were recorded on Nomad
 electronic devices under a different protocol. The data from 2007--08 to 2018--19 in both
 datasets were processed and groomed to correct inconsistencies and mistakes made during
 the data collection. Here, a summary of seabird abundance and distribution data are
