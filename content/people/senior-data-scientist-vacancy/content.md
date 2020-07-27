@@ -56,7 +56,7 @@ is currently limited immigration to New Zealand, however highly-qualified
 applicants may be eligible to enter New Zealand under the "other critical worker"
 category.
 
-Applications close at 9 am, Monday August 17.
+Applications close at 9 am, Monday August 17, 2020.
 
 
 ## About Dragonfly Data Science
