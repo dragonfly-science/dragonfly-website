@@ -3,8 +3,9 @@ title: Senior data scientist
 sortorder: "0"
 tag: vacancies
 teaser: ""
-banner: https://www.dragonfly.co.nz/images/dragonfly-wing-short.png
+banner: /people/early-career-fisheries-scientist/dragonfly-wing-thin.png
 ---
+
 
 We are looking for an experienced data scientist who is skilled in the
 development and application of machine learning methods to natural language
@@ -28,10 +29,11 @@ to include models of natural language understanding (that could be used, for
 example, to respond to queries in te reo Māori), and to be applied in
 multilingual contexts (such as a mix of te reo Māori and New Zealand English). 
 
-Papa Reo is led by Te Hiku Media, in collaboration with Dragonfly Data Science,
+Papa Reo is led by [Te Hiku Media](https://tehiku.nz), in collaboration with Dragonfly Data Science,
 with the Mozilla machine learning team, and with university researchers. The
-seven-year programme is funded by the New Zealand Ministry for Business
-Innovation and Employment’s Strategic Science Fund, which aims to increase New
+seven-year programme is funded by the New Zealand Ministry of Business,
+Innovation & Employment’s [Strategic Science Investment Fund](https://www.mbie.govt.nz/science-and-technology/science-and-innovation/funding-information-and-opportunities/investment-funds/strategic-science-investment-fund/), 
+which aims to increase New
 Zealand’s data science capability. The role will also include collaboration and
 mentoring of junior researchers. The work will include publication in the
 primary literature, and academic experience is welcomed. 
