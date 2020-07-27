@@ -3,7 +3,7 @@ title: Senior data scientist
 sortorder: "0"
 tag: vacancies
 teaser: ""
-banner: /content/people/senior-data-scientist-vacancy/dragonfly-wing-thin.png
+banner: /content/people/2020-07-28-senior-data-scientist-vacancy/dragonfly-wing-thin.png
 ---
 
 
