@@ -44,12 +44,12 @@ PhD students, linguists, and  academic researchers. There is also the
 opportunity to become involved with Dragonfly’s broader work in the area of
 natural language processing. 
 
-The role is offered as a permanent full-time position, with salary depending on
+The role is offered as a permanent position, with salary depending on
 experience. The role is New Zealand based. Dragonfly has an office in
 Wellington, and staff based in Auckland who are working on Papa Reo.
 
 To apply for this position, please send a cover letter (a maximum of two pages),
-a curriculum vitae and examples of recent research outputs to Edward Abraham
+a curriculum vitae to Edward Abraham
 ([edward@dragonfly.co.nz](edward@dragonfly.co.nz)). International applicants are asked to check their visa
 eligibility on the Immigration New Zealand website. Because of COVID-19, there
 is currently limited immigration to New Zealand, however highly-qualified
