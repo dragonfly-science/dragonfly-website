@@ -7,8 +7,8 @@ banner: 2020-07-28-senior-data-scientist-vacancy/dragonfly-wing-thin.png
 ---
 
 We need an experienced data scientist who is skilled in the application of
-machine learning methods to natural language problems.  Knowledge of te reo and
-tikanga Māori or other Polynesian languages is preferred. 
+machine learning methods to natural language problems.  Knowledge of 
+tikanga and te reo Māori or other Polynesian languages is preferred. 
 
 We are looking for someone with experience relevant to the development of:
 
