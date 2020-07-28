@@ -1,16 +1,16 @@
 ---
-title: Senior data scientist
+title: Senior data scientist — Papa Reo
 sortorder: "0"
 tag: vacancies
 teaser: ""
-banner: /content/people/2020-07-28-senior-data-scientist-vacancy/dragonfly-wing-thin.png
+banner: 2020-07-28-senior-data-scientist-vacancy/dragonfly-wing-thin.png
 ---
-
 
 We are looking for an experienced data scientist who is skilled in the
 development and application of machine learning methods to natural language
-problems.  Knowledge of te reo and tikanga Māori or other Polynesian languages
-is desired but is not required. 
+problems.  Relationships with Māori or Pacific island communities, and
+knowledge of te reo and tikanga Māori or other Polynesian languages are
+preferred. 
 
 We seek a data scientist with experience relevant to the development of:
 
