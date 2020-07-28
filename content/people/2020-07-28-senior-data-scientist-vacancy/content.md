@@ -1,5 +1,5 @@
 ---
-title: Senior data scientist — Papa Reo
+title: Senior data scientist
 sortorder: "0"
 tag: vacancies
 teaser: ""
