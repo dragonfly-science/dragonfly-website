@@ -6,14 +6,14 @@ phone: +64 21 989 454
 tag: edward
 title: Edward Abraham, PhD
 banner: abraham-edward/edward-abraham-letterbox.jpg
-sortorder: "1"
+sortorder: "2"
 nocite: |
   @abraham2000isd
   @abraham_effectiveness_2009
   @richard_risk_2013
 ---
 
-Edward is the founder and CEO of Dragonfly. He enjoys bringing evidence to the
+Edward started Dragonfly in 2006. He enjoys bringing evidence to the
 table, using information to make clear, principled decisions. 
 <!--more-->
 
