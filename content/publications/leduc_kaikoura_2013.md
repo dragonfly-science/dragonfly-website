@@ -4,7 +4,9 @@ tags: katrin, benthic, article
 ---
 Kaikoura Canyon, on the eastern New Zealand continental margin, is the most productive,
 non-chemosynthetic deep-sea habitat described to date, with megafaunal biomass 100-fold
-higher than those of other deep-sea habitats. The present study, which focused on free-living nematodes, provides the first comparison of faunal community structure and diversity between Kaikoura Canyon and nearby open slope habitats. Results show substantially
+higher than those of other deep-sea habitats. The present study, which focused on free-living
+nematodes, provides the first comparison of faunal community structure and diversity
+between Kaikoura Canyon and nearby open slope habitats. Results show substantially
 higher food availability in the canyon relative to open slope sediments, which probably
 reflects greater levels of primary productivity above the canyon, coupled with downwelling
 and/or topographically-induced channelling, which serves to concentrate surface-derived

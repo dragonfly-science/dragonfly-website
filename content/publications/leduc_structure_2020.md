@@ -21,4 +21,4 @@ Refractory vascular plant material by itself may not provide an adequate food su
 organisms, but may represent a complementary food resource when more labile marine phytodetritus
 is also readily available.
 
-https://aslopubs.onlinelibrary.wiley.com/doi/abs/10.1002/lno.11454
+Available at: https://aslopubs.onlinelibrary.wiley.com/doi/abs/10.1002/lno.11454.
