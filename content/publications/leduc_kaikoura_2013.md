@@ -2,4 +2,21 @@
 pdf: Leducetal_2014_KaikouraCanyon.pdf
 tags: katrin, benthic, article
 ---
-Kaikoura Canyon, on the eastern New Zealand continental margin, is the most productive, non-chemosynthetic deep-sea habitat described to date, with megafaunal biomass 100-fold higher than those of other deep-sea habitats. The present study, which focused on free-living nematodes, provides the first comparison of faunal community structure and diversity between Kaikoura Canyon and nearby open slope habitats. Results show substantially higher food availability in the canyon relative to open slope sediments, which probably reflects greater levels of primary productivity above the canyon, coupled with downwelling and/or topographically-induced channelling, which serves to concentrate surface-derived organic matter along the canyon axis. This high food availability appears to be responsible for the elevated nematode biomass in Kaikoura Canyon, with values exceeding all published nematode biomass data from canyons elsewhere. There was also markedly lower local species diversity of nematodes inside the canyon relative to the open slope habitat, as well as a distinct community structure. The canyon community was dominated by species, such as Sabateria pulchra, which were absent from the open slope and are typically associated with highly eutrophic and/or disturbed environments. The presence of these taxa, as well as the low observed diversity, is likely to reflect the high food availability, and potentially the high levels of physically and biologically induced disturbance within the canyon. Kaikoura Canyon is a relatively small habitat characterised by different environmental conditions that makes a disproportionate contribution to deep-sea diversity in the region, despite its low species richness.
+Kaikoura Canyon, on the eastern New Zealand continental margin, is the most productive,
+non-chemosynthetic deep-sea habitat described to date, with megafaunal biomass 100-fold
+higher than those of other deep-sea habitats. The present study, which focused on free-living nematodes, provides the first comparison of faunal community structure and diversity between Kaikoura Canyon and nearby open slope habitats. Results show substantially
+higher food availability in the canyon relative to open slope sediments, which probably
+reflects greater levels of primary productivity above the canyon, coupled with downwelling
+and/or topographically-induced channelling, which serves to concentrate surface-derived
+organic matter along the canyon axis. This high food availability appears to be responsible
+for the elevated nematode biomass in Kaikoura Canyon, with values exceeding all published
+nematode biomass data from canyons elsewhere. There was also markedly lower local species
+diversity of nematodes inside the canyon relative to the open slope habitat, as well
+as a distinct community structure. The canyon community was dominated by species, such as
+*Sabateria pulchra*, which were absent from the open slope and are typically associated
+with highly eutrophic and/or disturbed environments. The presence of these taxa, as well as the
+low observed diversity, is likely to reflect the high food availability, and potentially
+the high levels of physically and biologically induced disturbance within the canyon.
+Kaikoura Canyon is a relatively small habitat characterised by different environmental
+conditions that makes a disproportionate contribution to deep-sea diversity in the region,
+despite its low species richness.
