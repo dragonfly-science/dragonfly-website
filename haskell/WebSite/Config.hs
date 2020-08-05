@@ -52,6 +52,8 @@ tagDictionary = [
     ("finlay", "Finlay Thompson"),
     ("fisheries", "Fisheries"),
     ("katrin", "Katrin Berkenbusch"),
+    ("caleb", "Caleb Moses"),
+    ("laura", "Laura Tremblay-Boyer"),
     ("marine-biology", "Marine biology"),
     ("marine-mammal", "Marine mammals"),
     ("oceanography", "Oceanography"),
