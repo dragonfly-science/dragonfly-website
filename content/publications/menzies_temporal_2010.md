@@ -17,4 +17,3 @@ physically, females show a seasonally variable strategy where they avoid males i
 caches from early spring until the onset of inter-pair cooperation and the breeding season.
 
 <!--title: Temporal shifts in the pair-bond dynamics of New Zealand robins (<i>Petroica australis</i>)-->
- 
