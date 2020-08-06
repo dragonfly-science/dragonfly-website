@@ -1,7 +1,6 @@
 ---
 pdf: menzies_temporal_2010.pdf
 tags: iggy, terrestrial-ecology, article
-title: Temporal shifts in the pair-bond dynamics of New Zealand robins (<i>Petroica australis</i>)
 ---
 Winter is a challenging time for temperate insectivorous songbirds, due to colder temperatures, reduced prey
 activity and shorter diurnal foraging times. For species that are non-migratory, territorial and monogamous, winter conditions
@@ -16,3 +15,6 @@ transitional period, females steal large amounts of food hoarded by males. These
 New Zealand robins use different behavioural mechanisms to coexist on their winter territories. While males are dominant
 physically, females show a seasonally variable strategy where they avoid males in autumn and winter, and then steal male-made
 caches from early spring until the onset of inter-pair cooperation and the breeding season.
+
+<!--title: Temporal shifts in the pair-bond dynamics of New Zealand robins (<i>Petroica australis</i>)-->
+ 
