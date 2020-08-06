@@ -1,6 +1,7 @@
 ---
 pdf: menzies_temporal_2010.pdf
 tags: iggy, terrestrial-ecology, article
+title: Temporal shifts in the pair-bond dynamics of New Zealand robins (<i>Petroica australis</i>)
 ---
 Winter is a challenging time for temperate insectivorous songbirds, due to colder temperatures, reduced prey
 activity and shorter diurnal foraging times. For species that are non-migratory, territorial and monogamous, winter conditions

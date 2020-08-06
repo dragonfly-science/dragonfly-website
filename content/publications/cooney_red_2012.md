@@ -1,6 +1,7 @@
 ---
 pdf: cooney_red_2012.pdf
 tags: iggy, terrestrial-ecology, article
+title: Red leaf margins indicate increased polygodial content and function as visual signals to reduce herbivory in <i>Pseudowintera colorata</i>
 ---
 * Red-pigmented leaf margins are common, but their functional significance is unknown. We
 hypothesized that red leaf margins reduce leaf herbivory by signalling to herbivorous insects
