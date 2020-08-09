@@ -20,4 +20,4 @@ preference when light was manipulated such that leaf colour discrimination was i
 margins, rather than to olfactory signals. Our study provides direct experimental evidence for
 aposematic coloration in red leaves.
 
-<!--title: title: Red leaf margins indicate increased polygodial content and function as visual signals to reduce herbivory in <i>Pseudowintera colorata</i> -->
+<!--title: -->
