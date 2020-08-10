@@ -100,7 +100,8 @@
   }
 
   /* Variations. */
-  &--advert {
+
+  /* &--advert {
     @apply flex justify-center bg-cool-blue;
 
     &__text,
@@ -125,27 +126,33 @@
     }
   }
 
+  &--advert-full {
+    @apply max-w-full w-full;
+  } */
+
   &--overlay {
     @apply bg-center relative;
 
     &::before {
       @apply opacity-90;
 
-      background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.5) 0%,
-        rgba(0, 0, 0, 0.1) 100%
-      );
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.5) 0%,
+          rgba(0, 0, 0, 0.1) 100%
+        );
     }
 
     &::after {
       @apply opacity-0;
 
-      background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.8) 0%,
-        rgba(0, 0, 0, 0.8) 100%
-      );
+      background-image:
+        linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.8) 0%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
     }
 
     &::before,
@@ -251,14 +258,14 @@
       /* font-size: 5vw; */
     }
 
-    &--advert {
+    /* &--advert {
       &__text,
       p {
         @apply text-2/3xl max-w-3/4;
 
         line-height: 1.2em;
       }
-    }
+    } */
   }
 }
 

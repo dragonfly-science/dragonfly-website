@@ -9,6 +9,7 @@
 @import 'grid/inner-cell.src.css';
 @import 'grid/no-gutter-cell.src.css';
 @import 'grid/publication-grid.src.css';
+@import 'layout/advert.src.css';
 @import 'layout/animation-controls.src.css';
 @import 'layout/content.src.css';
 @import 'layout/call-to-action.src.css';

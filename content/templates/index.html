@@ -14,6 +14,7 @@
 
     </div>
   </div>
+
   <div class="animation-controls">
     <div class="animation-controls__header flex flex-row">
       <button class="bg-slate-grey">
@@ -23,7 +24,7 @@
       <span>Game of Life</span>
     </div>
     <div class="animation-controls__control">
-        <input type="text" autocomplete="off" pattern="[^0-9]+?(fps)" class="animation-controls__input" value="6fps" spellcheck="false" />
+        <input type="text" autocomplete="off" pattern="[^0-9]+?(fps)" class="animation-controls__input" value="2fps" spellcheck="false" />
         <div class="animation-controls__control__buttons">
           <button class="up transform -rotate-45"></button>
           <button class="down transform rotate-135"></button>
@@ -34,25 +35,30 @@
   <canvas id="gameoflife" class="game-of-life"></canvas>
 </header>
 
-<section id="top-section" class="math-paper">
-  <div class="collection-grid collection-grid--2cell collection-grid--no-bottom">
-    <div class="no-gutter-cell no-gutter-cell--advert advert">
-      <div class="inner-cell">
-        <p class="no-gutter-cell--advert__text">
-          <a href="/work">Bayesian statistics</a>, machine learning, R, and
-          Python are our tools of choice to transform data into useful and
-          refined products that help our clients make better decisions.
-        </p>
-        <a href="#contact" class="link-icon no-gutter-cell--advert__link"><span class="text">Find out more about what we do</span> <span
-            class="icon dragonfly-arrow"></span></a>
-      </div>
+<section class="advert">
+  <div class="advert__container container">
+    <div class="advert__inner">
+      <p class="advert__text">
+        <a href="/work">Bayesian statistics</a>, machine learning, R, and
+        Python are our tools of choice to transform data into useful and
+        refined products that help our clients make better decisions.
+      </p>
+      <a href="#contact" class="link-icon advert__link ml-auto">
+        <span class="text">Find out more about what we do</span>
+        <span class="icon dragonfly-arrow"></span>
+      </a>
     </div>
+  </div>
+</section>
+
+<section id="top-section" class="math-paper">
+  <div class="collection-grid collection-grid--no-bottom">
     $for(tiles)$
       $partial("templates/_tile-index.html")$
     $endfor$
     <a href="/people/" class="no-gutter-cell no-gutter-cell--bottom-aligned no-gutter-cell--overlay no-gutter-cell--title-only bg-black flex">
         <strong class="no-gutter-cell__title mb-0 mt-auto">Meet <br />the team</strong>
-        
+
         <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link ml-auto">
           <span class="icon dragonfly-arrow ml-0"></span>
         </span>
