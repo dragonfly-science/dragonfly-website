@@ -73,6 +73,10 @@ main = do
                           , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0", "-quality", "75"])
                           ]
 
+    Images.imageProcessor ( "**/teaser-large.jpg") $
+                          [ ( "960-landscape", ["-resize" , "410+960^", "-gravity", "Center", "-crop", "410+960+0+0", "-quality", "75"])
+                          ]
+
     -- People hero banners.
     Images.imageProcessor ( "people/**/*-letterbox.jpg") $
                           [ ( "banner", ["-resize" , "1900", "-gravity", "Center", "-crop", "1900", "-quality", "85"])

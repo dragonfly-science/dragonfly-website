@@ -1,19 +1,29 @@
 /* Numbersed section as seen on the what we do page. */
+.numbered-sections {
+  .numbered-section:last-of-type {
+    @apply pb-16;
+  }
+}
 .numbered-section {
-  @apply overflow-hidden px-6;
+  @apply px-8 pt-16 overflow-hidden relative;
 
   counter-increment: list-number;
+
+  &::after,
+  &::before {
+    @apply hidden;
+  }
 
   &__content {
     @apply relative w-full flex justify-center flex-col;
 
     img {
-      @apply mx-auto mt-0 mb-8;
+      @apply m-auto;
     }
   }
 
   &__heading {
-    @apply mt-10 max-w-md font-bold text-cool-blue flex pb-5;
+    @apply max-w-md font-bold text-cool-blue flex pb-5;
 
     span {
       @apply text-2xl leading-none;
@@ -35,32 +45,6 @@
 
   &__container {
     @apply block mx-auto;
-  }
-
-  &:nth-of-type(odd) {
-    .numbered-section__content {
-      &:last-child {
-        &::after {
-          @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
-
-          content: '';
-        }
-      }
-    }
-  }
-
-  &:nth-of-type(even) {
-    .numbered-section__content {
-      &:last-child {
-        @apply order-first;
-
-        &::before {
-          @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full;
-
-          content: '';
-        }
-      }
-    }
   }
 
   p {
@@ -141,7 +125,7 @@
   }
 }
 
-@screen sm {
+/* @screen sm {
   .numbered-section {
     &--no-image {
       &:nth-of-type(even) {
@@ -161,29 +145,18 @@
       }
     }
   }
-}
+} */
 
 @screen md {
   .numbered-section {
-    &__content {
-      @apply w-1/2;
+    @apply py-20;
 
-      img {
-        @apply my-16;
+    &:nth-of-type(odd) {
+      &::after {
+        @apply block absolute math-paper top-0 ml-2/3 w-full h-full z-10;
+
+        content: '';
       }
-    }
-
-    &__container {
-      @apply flex;
-    }
-
-    &__heading {
-      @apply mt-20 pr-8 max-w-lg;
-    }
-
-    &__link {
-      @apply mb-20;
-      @apply text-lg !important;
     }
 
     &:nth-of-type(even) {
@@ -191,7 +164,34 @@
         &:first-child {
           @apply pl-8;
         }
+
+        &:last-child {
+          @apply order-first;
+        }
       }
+
+      &::before {
+        @apply block absolute math-paper top-0 right-0 mr-2/3 w-full h-full z-10;
+
+        content: '';
+      }
+    }
+
+    &__content {
+      @apply w-1/2;
+    }
+
+    &__container {
+      @apply flex;
+    }
+
+    &__heading {
+      @apply pr-8 max-w-lg;
+    }
+
+    &__link {
+      @apply mb-20;
+      @apply text-lg !important;
     }
   }
 }
@@ -209,7 +209,7 @@
     }
 
     &__text {
-      @apply text-2xl;
+      @apply text-xl;
     }
 
     &__call-to-action {
@@ -222,14 +222,6 @@
           @apply pl-16;
         }
       }
-    }
-  }
-}
-
-@screen xl {
-  .numbered-section {
-    &__text {
-      @apply text-3xl;
     }
   }
 }

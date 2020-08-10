@@ -8,7 +8,27 @@
   }
 
   &__title {
-    @apply text-3xl font-bold pt-10 pb-16;
+    @apply text-3xl font-bold pt-10 pb-16 leading-none;
+  }
+
+  &--header {
+    .related-content {
+      &__title {
+        @apply text-4xl py-8;
+      }
+    }
+  }
+}
+
+@screen sm {
+  .related-content {
+    &--header {
+      .related-content {
+        &__title {
+          @apply text-6xl py-16;
+        }
+      }
+    }
   }
 }
 

@@ -4,7 +4,8 @@
       <h1 class="page-header__title">Encouraging the release of data.</h1>
 
       <p class="page-header__content">
-        Giving access to data helps make information widely available, building consensus. Where appropriate, we encourage the
+        Giving access to data helps make information widely available, building consensus. Where appropriate, we
+        encourage the
         release of open data.
       </p>
 
@@ -16,23 +17,34 @@
 </header>
 
 <a id="top-section"></a>
-$for(data)$
-<section class="numbered-section numbered-section--no-numbers bg-light-peach">
-  <div class="numbered-section__container container">
-    <div class="numbered-section__content">
-      <h2 class="numbered-section__heading"><span>$if(title)$ $title$ $endif$</span></h2>
-      <div class="numbered-section__text">
-        $if(teaser)$ $teaser$ $endif$
-      </div>
+$if(data)$
+<div class="numbered-sections">
+  $for(data)$
+  <section class="numbered-section numbered-section--no-numbers bg-light-peach">
+    <div class="numbered-section__container container">
+      <div class="numbered-section__content">
+        <h2 class="numbered-section__heading ruled-heading ruled-heading--cool-blue">
+          <span>$if(title)$ $title$ $endif$</span>
+        </h2>
+        <div class="numbered-section__text">
+          $if(teaser)$ $teaser$ $endif$
+        </div>
 
-      $if(link)$
-      <a href="$link$" class="link-icon link-icon--arrow-out numbered-section__link" target="_blank"><span class="text">Explore the data</span> <span
-          class="icon dragonfly-arrow"></span></a>
-      $endif$
+        $if(link)$
+        <div class="call-to-action-block">
+          <a href="$link$"
+            class="call-to-action__button button call-to-action__button--cool-blue link-icon link-icon--arrow-out flex justify-center"
+            target="_blank" rel="norefferer noopener">
+            <span class="text">Explore the data</span> <span class="icon dragonfly-arrow"></span>
+          </a>
+        </div>
+        $endif$
+      </div>
+      <div class="numbered-section__content scrollable">
+        <img src="$teaserImage$" class="lozad lozad-image" alt="">
+      </div>
     </div>
-    <div class="numbered-section__content scrollable">
-      <img src="$teaserImage$" class="lozad lozad-image" alt="">
-    </div>
-  </div>
-</section>
-$endfor$
+  </section>
+  $endfor$
+</div>
+$endif$

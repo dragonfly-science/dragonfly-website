@@ -14,61 +14,64 @@
   <div class="background-image bg-light-peach$if(banner)$ lozad lozad-image$endif$" $if(banner)$
     data-background-image="$banner$" $endif$></div>
 </header>
-
-$for(whatwedo)$
-$if(teaserAnchorId)$<a class="anchor" id="$teaserAnchorId$"></a>$endif$
-<section id="top-section" class="numbered-section numbered-section--no-numbers bg-light-peach">
-  <div class="numbered-section__container container">
-    <div class="numbered-section__content">
-      $if(teaserTitle)$
-      <h2 class="numbered-section__heading ruled-heading ruled-heading--cool-blue">
-        <span>$teaserTitle$</span>
-      </h2>
-      $endif$
-
-      $if(teaserIntro)$
-      <p class="numbered-section__text">
-        $teaserIntro$
-      </p>
-      $endif$
-
-      $if(pageurl)$
-      <div class="call-to-action-block">
-        <span>$teaserCTAdescriptor$</span>
-        <a href="$pageurl$" class="call-to-action__button button call-to-action__button--cool-blue">
-          $teaserCTAbutton$
-        </a>
-      </div>
-      $endif$
-
-      $if(author)$
-      $if(quote)$
-      <blockquote class="sidebar-caption ruled-heading">$quote$</blockquote>
-      $endif$
-      $for(author)$
-      <a href="$pageurl$" class="no-gutter-cell person-tile person-tile--singular">
-        <img class="sticky-lozad" data-src="$teaserImage$" width="100%" height="auto" />
-        <h2 class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full">
-          $firstname$<br>
-          $lastname$<br>
-          <br>
-          <em>$role$</em>
+$if(whatwedo)$
+<div class="numbered-sections">
+  $for(whatwedo)$
+  $if(teaserAnchorId)$<a class="anchor" id="$teaserAnchorId$"></a>$endif$
+  <section class="numbered-section numbered-section--no-numbers bg-light-peach">
+    <div class="numbered-section__container container">
+      <div class="numbered-section__content">
+        $if(teaserTitle)$
+        <h2 class="numbered-section__heading ruled-heading ruled-heading--cool-blue">
+          <span>$teaserTitle$</span>
         </h2>
-      </a>
-      $endfor$
-      $endif$
+        $endif$
 
-      $if(tiles)$
-      <p>XXXX</p>
-      $endif$
+        $if(teaserIntro)$
+        <p class="numbered-section__text">
+          $teaserIntro$
+        </p>
+        $endif$
 
+        $if(pageurl)$
+        <div class="call-to-action-block">
+          <span class="mb-2">$teaserCTAdescriptor$</span>
+          <a href="$pageurl$" class="call-to-action__button button call-to-action__button--cool-blue">
+            $teaserCTAbutton$
+          </a>
+        </div>
+        $endif$
+
+        $if(author)$
+        $if(quote)$
+        <blockquote class="sidebar-caption ruled-heading">$quote$</blockquote>
+        $endif$
+        $for(author)$
+        <a href="$pageurl$" class="no-gutter-cell person-tile person-tile--singular">
+          <img class="sticky-lozad" data-src="$teaserImage$" width="100%" height="auto" />
+          <h2 class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full">
+            $firstname$<br>
+            $lastname$<br>
+            <br>
+            <em>$role$</em>
+          </h2>
+        </a>
+        $endfor$
+        $endif$
+
+        $if(tiles)$
+        <p>XXXX</p>
+        $endif$
+
+      </div>
+      <div class="numbered-section__content scrollable">
+        <img src="$teaserImage$" class="lozad lozad-image">
+      </div>
     </div>
-    <div class="numbered-section__content scrollable">
-      <img src="$teaserImage$" class="lozad lozad-image">
-    </div>
-  </div>
-</section>
-$endfor$
+  </section>
+  $endfor$
+</div>
+$endif$
 
 <section class="list-container bg-cool-blue text-white">
   <div class="container mx-auto">
@@ -89,7 +92,7 @@ $endfor$
         $if(toolsDetails)$<p class="mb-6 text-lg">$toolsDetails$</p>$endif$
 
         <div class="call-to-action-block">
-          <span>$toolsCTADescriptor$</span>
+          <p class="font-normal text-lg mb-2">$toolsCTADescriptor$</p>
           <a href="$toolsCTALink$"
             class="call-to-action__button button call-to-action__button--white">$toolsCTAButton$</a>
         </div>

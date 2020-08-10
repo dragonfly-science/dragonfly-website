@@ -98,6 +98,7 @@ teaserImage :: Context String
 teaserImage = field "teaserImage" (getImagePath "960")
            <> field "teaserImageSmall" (getImagePath "256")
            <> field "teaserImageMedium" (getImagePath "480")
+           <> field "teaserImageLandscape" (getImagePathLrg "960-landscape")
            <> field "teaserImageCredit" (getImageMeta "credit")
            <> field "teaserImageCaption" (getImageMeta "caption")
            <> field "teaserImageTitle" (getImageMeta "title")
@@ -111,15 +112,20 @@ teaserImage = field "teaserImage" (getImagePath "960")
             base = take ((length path) - 11) path
             ident = fromFilePath $ base </> "teaser.jpg"
         fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser.jpg")))) (getRoute ident)
+    getImagePathLrg size item = do
+      let path = toFilePath (itemIdentifier item)
+          base = take ((length path) - 11) path
+          ident = fromFilePath $ base </> "teaser-large.jpg"
+      fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser-large.jpg")))) (getRoute ident)
     getImageMeta f item = do
         let path = toFilePath (itemIdentifier item)
             base = take ((length path) - 11) path
             ident = fromFilePath $ base </> "teaser.img.md"
         metaTarget <- getMetadataField ident f
         return $ fromMaybe "" metaTarget
-        
 
-    
+
+
 
 socialImage :: Context String
 socialImage = field "socialImage" getImagePath

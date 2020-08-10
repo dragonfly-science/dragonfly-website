@@ -15,29 +15,29 @@
     <div class="filtering open bg-light-peach">
       <div class="flex">
         <div class="filtering__tools filtering__tools--inline">
-            <div class="filtering__tools__header">
-                $partial("templates/_search-field.html")$
-            </div>
+          <div class="filtering__tools__header">
+            $partial("templates/_search-field.html")$
+          </div>
 
-            <div class="filtering__tools__links">
-                <div class="filtering__tags flex-grow mr-8">
-                    <span class="filtering__tags__title">By subject</span>
-                    <ul class="tag-list">
-                        <li class="tag-list__tag tag-list__tag--subject tag-list__tag--active" data-tag="">All subjects</li>
-                        <li class="tag-list__tag tag-list__tag--subject" data-tag="capability">Capability</li>
-                        <li class="tag-list__tag tag-list__tag--subject" data-tag="policy">Policy</li>
-                        <li class="tag-list__tag tag-list__tag--subject" data-tag="stats">Stats</li>
-                        <li class="tag-list__tag tag-list__tag--subject" data-tag="systems">Systems</li>
-                    </ul>
-                </div>
+          <div class="filtering__tools__links">
+            <div class="filtering__tags flex-grow mr-8">
+              <span class="filtering__tags__title">By subject</span>
+              <ul class="tag-list">
+                <li class="tag-list__tag tag-list__tag--subject tag-list__tag--active" data-tag="">All subjects</li>
+                <li class="tag-list__tag tag-list__tag--subject" data-tag="capability">Capability</li>
+                <li class="tag-list__tag tag-list__tag--subject" data-tag="policy">Policy</li>
+                <li class="tag-list__tag tag-list__tag--subject" data-tag="stats">Stats</li>
+                <li class="tag-list__tag tag-list__tag--subject" data-tag="systems">Systems</li>
+              </ul>
             </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="collection-grid collection-grid--no-bottom list">
+    <div class="collection-grid collection-grid--2cell collection-grid--no-bottom list">
       $for(work)$
-        $partial("templates/_tile.html")$
+      $partial("templates/_tile-landscape.html")$
       $endfor$
     </div>
   </div>
