@@ -189,9 +189,9 @@
     }
   }
 
-  &--news-article {
+  /* &--news-article {
     @apply m-0 !important;
-  }
+  } */
 
   &--full-width {
     > hr {

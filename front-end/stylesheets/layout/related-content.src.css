@@ -14,18 +14,18 @@
   &--header {
     .related-content {
       &__title {
-        @apply text-4xl py-8;
+        @apply text-4xl py-16;
       }
     }
   }
 }
 
-@screen sm {
+@screen md {
   .related-content {
     &--header {
       .related-content {
         &__title {
-          @apply text-6xl py-16;
+          @apply text-6xl;
         }
       }
     }
@@ -34,8 +34,20 @@
 
 @screen lg {
   .related-content {
+    &--header {
+      .related-content {
+        &__title {
+          @apply text-7xl py-32;
+        }
+      }
+    }
+  }
+}
+
+/* @screen lg {
+  .related-content {
     &__title {
       @apply text-5xl pt-24 pb-32;
     }
   }
-}
+} */

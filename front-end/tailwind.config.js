@@ -94,6 +94,7 @@ module.exports = {
       },
       maxHeight: {
         '16': '16rem',
+        '28': '28rem',
       },
       minHeight: {
         '3': '3rem',
@@ -147,6 +148,9 @@ module.exports = {
         '88': '22rem',
         '96': '24rem',
       },
+      zIndex: {
+        1: '1',
+      },
       spacing: {
         '72': '18rem',
         '80': '20rem',
@@ -172,7 +176,9 @@ module.exports = {
   },
   variants: {},
   plugins: [
-    plugin(function ({ addUtilities }) {
+    plugin(function ({
+      addUtilities
+    }) {
       const newUtilities = {
         '.translate-3d': {
           transform: 'translate3d(0,0,0)',
@@ -180,23 +186,47 @@ module.exports = {
       }
       addUtilities(newUtilities, ['responsive', 'hover'])
     }),
-    function ({ addVariant, e }) {
-      addVariant('before', ({ modifySelectors, separator }) => {
-        modifySelectors(({ className }) => {
+    function ({
+      addVariant,
+      e
+    }) {
+      addVariant('before', ({
+        modifySelectors,
+        separator
+      }) => {
+        modifySelectors(({
+          className
+        }) => {
           return `.${e(`before${separator}${className}`)}:before`
         })
       })
     },
-    function ({ addVariant, e }) {
-      addVariant('after', ({ modifySelectors, separator }) => {
-        modifySelectors(({ className }) => {
+    function ({
+      addVariant,
+      e
+    }) {
+      addVariant('after', ({
+        modifySelectors,
+        separator
+      }) => {
+        modifySelectors(({
+          className
+        }) => {
           return `.${e(`after${separator}${className}`)}:after`
         })
       })
     },
-    function ({ addVariant, e }) {
-      addVariant('last-child', ({ modifySelectors, separator }) => {
-        modifySelectors(({ className }) => {
+    function ({
+      addVariant,
+      e
+    }) {
+      addVariant('last-child', ({
+        modifySelectors,
+        separator
+      }) => {
+        modifySelectors(({
+          className
+        }) => {
           return `.${e(`last-child${separator}${className}`)}:last-child`
         })
       })

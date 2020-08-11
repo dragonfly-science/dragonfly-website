@@ -1,5 +1,5 @@
 .news-article {
-  @apply mx-auto relative px-6 z-10;
+  @apply mx-auto relative px-6 z-1;
 
   &__sidebar {
     @apply py-0 mr-24;
@@ -10,7 +10,7 @@
   }
 
   &__container {
-    @apply py-24;
+    @apply pb-24;
   }
 }
 
