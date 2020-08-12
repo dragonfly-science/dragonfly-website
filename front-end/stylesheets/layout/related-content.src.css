@@ -8,7 +8,7 @@
   }
 
   &__title {
-    @apply text-3xl font-bold pt-10 pb-16 leading-none;
+    @apply text-6xl font-bold pt-10 pb-16 leading-none;
   }
 
   &--header {

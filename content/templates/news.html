@@ -1,23 +1,25 @@
 <header
-  class="page-header page-header--article page-header--news page-header--small page-header--no-overlay bg-light-peach math-paper">
+  class="page-header page-header--article page-header--news page-header--image page-header--small page-header--no-overlay bg-light-peach math-paper">
   <div class="page-header__outer">
     <div class="page-header__container flex flex-col lg:flex-row relative">
-      <div class="page-header__inner-title">
-        $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
-        $if(date)$
-        <span class="page-header--article__date">$date$</span>
+      <div class="page-header__inner">
+        <div class="page-header__inner-title">
+          $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
+          $if(date)$
+          <span class="page-header--article__date">$date$</span>
+          $endif$
+        </div>
+
+        $if(teaserImage)$
+        $if(noImage)$
+        $else$
+        <figure class="page-header__image">
+          <img class="lozad" data-src="$teaserImage$" $if(teaserImageCaption)$
+            alt="$teaserImageCaption$$if(teaserImageCredit)$ - credit: $teaserImageCredit$$endif$" $endif$>
+        </figure>
+        $endif$
         $endif$
       </div>
-
-      $if(teaserImage)$
-      $if(noImage)$
-      $else$
-      <figure class="page-header__image">
-        <img class="lozad" data-src="$teaserImage$" $if(teaserImageCaption)$
-          alt="$teaserImageCaption$$if(teaserImageCredit)$ - credit: $teaserImageCredit$$endif$" $endif$>
-      </figure>
-      $endif$
-      $endif$
     </div>
   </div>
 </header>
@@ -25,7 +27,7 @@
 <article id="top-section" class="news-article bg-light-peach">
   <div class="news-article__container container flex flex-col items-start lg:flex-row mx-auto">
     <div class="flex flex-col lg:flex-row">
-      <div class="body-content body-content--news-article">
+      <div class="body-content">
         $body$
       </div>
     </div>

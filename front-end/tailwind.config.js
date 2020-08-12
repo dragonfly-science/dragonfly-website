@@ -83,6 +83,7 @@ module.exports = {
         '18rem': '18rem',
         '30rem': '30rem',
         '38rem': '38rem',
+        '64rem': '64rem',
         '8/10': '80%',
         '3/4': '75%',
         '2/3': '66%',
@@ -91,6 +92,11 @@ module.exports = {
         '1/4': '25%',
         '7xl': '102.5rem',
         '8xl': '120rem',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        wd: '1920px',
       },
       maxHeight: {
         '16': '16rem',
@@ -176,9 +182,7 @@ module.exports = {
   },
   variants: {},
   plugins: [
-    plugin(function ({
-      addUtilities
-    }) {
+    plugin(function ({ addUtilities }) {
       const newUtilities = {
         '.translate-3d': {
           transform: 'translate3d(0,0,0)',
@@ -186,47 +190,23 @@ module.exports = {
       }
       addUtilities(newUtilities, ['responsive', 'hover'])
     }),
-    function ({
-      addVariant,
-      e
-    }) {
-      addVariant('before', ({
-        modifySelectors,
-        separator
-      }) => {
-        modifySelectors(({
-          className
-        }) => {
+    function ({ addVariant, e }) {
+      addVariant('before', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
           return `.${e(`before${separator}${className}`)}:before`
         })
       })
     },
-    function ({
-      addVariant,
-      e
-    }) {
-      addVariant('after', ({
-        modifySelectors,
-        separator
-      }) => {
-        modifySelectors(({
-          className
-        }) => {
+    function ({ addVariant, e }) {
+      addVariant('after', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
           return `.${e(`after${separator}${className}`)}:after`
         })
       })
     },
-    function ({
-      addVariant,
-      e
-    }) {
-      addVariant('last-child', ({
-        modifySelectors,
-        separator
-      }) => {
-        modifySelectors(({
-          className
-        }) => {
+    function ({ addVariant, e }) {
+      addVariant('last-child', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
           return `.${e(`last-child${separator}${className}`)}:last-child`
         })
       })
