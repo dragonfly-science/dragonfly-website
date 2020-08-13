@@ -16,5 +16,3 @@ transitional period, females steal large amounts of food hoarded by males. These
 New Zealand robins use different behavioural mechanisms to coexist on their winter territories. While males are dominant
 physically, females show a seasonally variable strategy where they avoid males in autumn and winter, and then steal male-made
 caches from early spring until the onset of inter-pair cooperation and the breeding season.
-
-<!--title: 
