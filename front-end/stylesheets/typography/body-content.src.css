@@ -121,6 +121,10 @@
   h5,
   h6 {
     @apply font-medium leading-tight mb-4 mt-8;
+
+    &.body-content__title {
+      @apply mt-0 text-4xl;
+    }
   }
 
   h2 {
@@ -171,10 +175,6 @@
     }
   }
 
-  &__title {
-    @apply mt-0 !important;
-  }
-
   /* Variations. */
   &--article,
   &--news-article {
@@ -183,15 +183,11 @@
         @apply text-lg;
 
         &:first-of-type {
-          @apply font-medium;
+          @apply font-medium text-2xl leading-tight mb-6;
         }
       }
     }
   }
-
-  /* &--news-article {
-    @apply m-0 !important;
-  } */
 
   &--full-width {
     > hr {
@@ -238,6 +234,27 @@
     blockquote {
       p {
         @apply text-2xl;
+      }
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      &.body-content__title {
+        @apply text-5xl;
+      }
+    }
+
+    &--article,
+    &--news-article {
+      .body-content__body {
+        > p {
+          &:first-of-type {
+            @apply text-3xl;
+          }
+        }
       }
     }
   }
@@ -289,13 +306,34 @@
     figure {
       @apply -mx-6;
     }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      &.body-content__title {
+        @apply text-5xl;
+      }
+    }
+
+    &--article,
+    &--news-article {
+      .body-content__body {
+        > p {
+          &:first-of-type {
+            @apply font-medium text-3/2xl mb-6;
+
+            line-height: 1.2em;
+          }
+        }
+      }
+    }
   }
 }
 
 @screen xl {
   .body-content {
-    /* @apply ml-64; */
-
     blockquote {
       @apply mt-8 mb-8 pt-16 pb-24;
 

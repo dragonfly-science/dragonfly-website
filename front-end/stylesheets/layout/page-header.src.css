@@ -38,13 +38,13 @@
 
   &--image {
     .page-header__inner {
-      @apply flex flex-col;
+      @apply flex flex-col w-full;
     }
 
     .page-header__image {
-      @apply w-full mt-4 flex-shrink-0;
+      @apply w-full mt-4 ml-0 flex-shrink-0;
 
-      max-width: 360px;
+      max-width: 240px;
     }
   }
 
@@ -107,7 +107,6 @@
 @screen sm {
   .page-header {
     &__container {
-      /* @apply max-w-3/4; */
       @apply max-w-sm;
     }
 
@@ -191,13 +190,13 @@
       .page-header__inner {
         @apply flex-row;
 
-        min-height: 360px;
+        /* min-height: 240px; */
       }
 
       .page-header__image {
-        @apply mt-0;
+        @apply mt-0 ml-auto;
 
-        width: 360px;
+        width: 240px;
       }
 
       img {

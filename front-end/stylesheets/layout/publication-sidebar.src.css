@@ -1,0 +1,13 @@
+.publication-sidebar {
+  .button {
+    @apply text-sm whitespace-no-wrap;
+  }
+}
+
+@screen lg {
+  .publication-sidebar {
+    .button {
+      @apply w-full;
+    }
+  }
+}

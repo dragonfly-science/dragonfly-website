@@ -12,8 +12,6 @@ import TopSection from './top-section'
 import GameOfLife from './game-of-life/game-of-life'
 import StickySidebar from './sticky-sidebar'
 
-smoothscroll.polyfill()
-
 Zepto(() => {
   Columns()
   Filtering()
@@ -25,4 +23,6 @@ Zepto(() => {
   ImageCaptions()
   Footer()
   StickySidebar('.sticky-container__body', '.sticky-container__element')
+
+  setTimeout(() => smoothscroll.polyfill(), 500)
 })

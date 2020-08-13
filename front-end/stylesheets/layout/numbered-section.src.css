@@ -4,6 +4,7 @@
     @apply pb-16;
   }
 }
+
 .numbered-section {
   @apply px-8 pt-16 overflow-hidden relative;
 

@@ -8,25 +8,13 @@
   }
 
   &__title {
-    @apply text-6xl font-bold pt-10 pb-16 leading-none;
+    @apply py-16;
   }
 
   &--header {
     .related-content {
       &__title {
-        @apply text-4xl py-16;
-      }
-    }
-  }
-}
-
-@screen md {
-  .related-content {
-    &--header {
-      .related-content {
-        &__title {
-          @apply text-6xl;
-        }
+        @apply py-8;
       }
     }
   }
@@ -37,17 +25,9 @@
     &--header {
       .related-content {
         &__title {
-          @apply text-7xl py-32;
+          @apply py-16;
         }
       }
     }
   }
 }
-
-/* @screen lg {
-  .related-content {
-    &__title {
-      @apply text-5xl pt-24 pb-32;
-    }
-  }
-} */

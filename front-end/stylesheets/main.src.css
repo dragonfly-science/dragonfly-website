@@ -23,12 +23,14 @@
 @import 'layout/numbered-section.src.css';
 @import 'layout/page-header.src.css';
 @import 'layout/positioning.src.css';
+@import 'layout/publication-sidebar.src.css';
 @import 'layout/related-content.src.css';
 @import 'layout/ruled-heading.src.css';
 @import 'layout/sidebar.src.css';
 @import 'layout/sidebar-caption.src.css';
 @import 'layout/sticky-container.src.css';
 @import 'layout/sticky-sidebar.src.css';
+@import 'layout/supplementary-header.src.css';
 @import 'layout/tag-list.src.css';
 @import 'layout/tools.src.css';
 @import 'navigation/button.src.css';

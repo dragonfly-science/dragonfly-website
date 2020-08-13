@@ -21,7 +21,7 @@
 }
 
 .button--icon {
-  @apply inline-flex;
+  @apply inline-flex justify-center items-center;
 
   &__text {
     @apply mr-4;
