@@ -1,24 +1,39 @@
 ---
 title: Shellfish, sediment and data science
 ---
-Dayanitha Damodaran is working with Phil Neubauer on a range of projects related to shellfish, including ongoing research with the Pāua Industry Council and annual cockle surveys at beaches in northern New Zealand.
+Dayanitha Damodaran has recently started at Dragonfly, where she is working on a
+range of projects related to shellfish, including ongoing research with the Pāua
+Industry Council and annual bivalve surveys in northern New Zealand.
 
 <!--more-->
 
-Although they’re usually hidden in the sand, the number of shellfish matters to food gatherers and is a good way of knowing how healthy a beach or harbour is.
+The annual bivalve surveys collect population information of cockles and pipi, and also determine the
+grain size and organic content of sediment at the different intertidal sites. The current analysis of
+the multi-year data set is aimed at identifying the influence of these sediment characteristics on cockle
+populations.  
 
-During the annual surveys, the Dragonfly team has noticed that some populations have completely disappeared from areas where there is coastal erosion. Sediment from urban development, farming or forestry upstream may also be having an effect on their numbers.
+The role of sediment and its influence on bivalves was also part of Dayanitha's master's
+degree in marine biology, which she completed in May this year.
 
-Separating the effect of sedimentation from other effects (like over-harvesting) on the population trends is one goal of the analysis Dayanitha is working on. She carried out similar work in her masters degree in marine biology, which was completed in May this year.
+“I studied how shellfish (cockles and tuatua) respond to stress in their environment by
+decreasing the salinity, and increasing the temperature and sediment loading in their tanks.
+Every day I checked their behaviour, and I took weekly samples
+for dissection to see how their cells were being affected at a microscopic level.”  
 
-“I studied how shellfish (cockles and tuatua) respond to stress in their environment by decreased the salinity and increasing the temperature and sediment in their tanks. Every day I checked their behaviour and took samples for dissection weekly to see how their cells were being affected at a microscopic level.”  
+She found the biggest behavioural changes in the salinity experiments, but increased sediment
+loading caused the bivalves to die relatively quickly.
 
-She found the biggest behavioural changes in the salinity experiments, but increased sediment caused the shellfish to die quite rapidly.
+Dayanitha was particularly keen to identify and trial a behaviour response to stress in tuatua –
+how long it took for the foot to retract. Tuatua use their retractable foot to anchor themselves in the
+sediment, and their burying ability is an indication of their overall condition. Although more research is needed,
+the timing of this behavioural response is a potential method for citizen science for determining the condition
+of bivalves at local beaches and estuaries.  
 
-Dayanitha was particularly keen to identify and trial a behaviour response to stress in tuatua – how long it took for the foot to retract. Although more research is needed, this method could eventually be used by non-scientists interested in finding out about the health of shellfish on their local beaches.
+“Analysing my own data from the shellfish work ended up being one of the most fun parts of my postgrad project.
+I have a lot of data science in my family and the more stats I did, the more I enjoyed it – hence wanting to work at Dragonfly.”
 
-“Analysing my own data from the shellfish work ended up being one of the most fun parts of my postgrad project. I have a lot of data science in my family and the more stats I did, the more I enjoyed it – hence wanting to work at Dragonfly.”
-
-“It’s a really interesting place because of the people and the range of different clients. It’s giving me a unique perspective on marine science in New Zealand and how all the pieces fit together. Long-term I want to do a PhD and research in marine science, so this is great exposure and training in lots of different areas.”
+“It’s a really interesting place because of the people and the range of different clients. It’s giving me a unique perspective
+on marine science in New Zealand and how all the pieces fit together. Long-term I want to do a PhD and research in marine science,
+so working at Dragonfly is great exposure and training in lots of different areas.”
 
 [Read more about our cockle and pipi surveys in northern New Zealand](https://www.dragonfly.co.nz/news/2015-12-14-cockle-pipi-surveys.html).
