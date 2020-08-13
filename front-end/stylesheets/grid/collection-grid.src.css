@@ -10,7 +10,7 @@
     @apply max-w-full;
 
     .no-gutter-cell {
-      @apply max-w-full px-6;
+      @apply max-w-full px-8;
 
       &--advert {
         > div {
@@ -120,7 +120,9 @@
     &--2cell {
       .no-gutter-cell {
         &__title {
-          @apply max-w-3/4;
+          &.tile__title {
+            @apply max-w-2/3;
+          }
         }
 
         &__text {
@@ -143,7 +145,7 @@
         &:nth-of-type(2) {
           .no-gutter-cell__title,
           .no-gutter-cell__text {
-            @apply max-w-2/3;
+            @apply max-w-3/4;
           }
         }
       }
@@ -156,15 +158,9 @@
     &--2cell {
       .no-gutter-cell {
         &__title {
-          /* font-size: 3.2vw; */
-        }
-      }
-    }
-
-    &--articles {
-      .no-gutter-cell {
-        &__title {
-          @apply max-w-3/4;
+          &.tile__title {
+            @apply max-w-1/2;
+          }
         }
       }
     }

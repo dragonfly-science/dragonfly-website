@@ -1,4 +1,7 @@
+import { saveAs } from 'file-saver'
+
 import Engine from './engine'
+import { drawGrid } from './grid'
 
 export interface RendererOptions {
   canvasSelector?: string
@@ -123,46 +126,11 @@ class Renderer {
   }
 
   public drawGrid(): void {
-    const x =
-      this.canvas.width / 2 - ((this.canvas.width / 2) % this.pixelsPerCell)
-    const y =
-      this.canvas.height / 2 - ((this.canvas.height / 2) % this.pixelsPerCell)
-    const w = this.canvas.width / this.pixelsPerCell
-    const h = this.canvas.height / this.pixelsPerCell
-
-    for (let i = 0; i < w; i++) {
-      const newX = Math.ceil(x + i * this.pixelsPerCell)
-      const newX1 = Math.floor(x - i * this.pixelsPerCell)
-
-      this.context.beginPath()
-      this.context.strokeStyle =
-        i % 2 === 1 ? 'rgba(67, 161, 201, 0.9)' : 'rgba(67, 161, 201, 0.4)'
-      this.context.moveTo(newX, 0)
-      this.context.lineTo(newX, this.canvas.height)
-
-      if (newX !== newX1) {
-        this.context.moveTo(newX1, 0)
-        this.context.lineTo(newX1, this.canvas.height)
-      }
-      this.context.stroke()
-    }
-
-    for (let i = 0; i < h; i++) {
-      const newY = Math.ceil(y + i * this.pixelsPerCell)
-      const newY1 = Math.floor(y - i * this.pixelsPerCell)
-
-      this.context.beginPath()
-      this.context.strokeStyle =
-        i % 2 === 1 ? 'rgba(67, 161, 201, 0.9)' : 'rgba(67, 161, 201, 0.4)'
-      this.context.moveTo(0, newY)
-      this.context.lineTo(this.canvas.width, newY)
-
-      if (newY !== newY1) {
-        this.context.moveTo(0, newY1)
-        this.context.lineTo(this.canvas.width, newY1)
-      }
-      this.context.stroke()
-    }
+    drawGrid({
+      canvas: this.canvas,
+      context: this.context,
+      pixelsPerCell: this.pixelsPerCell,
+    })
   }
 
   public start(): void {
@@ -173,6 +141,58 @@ class Renderer {
 
   public stop(): void {
     this.play = false
+  }
+
+  public save(): void {
+    this.canvas.toBlob((blob) => {
+      const newImg = document.createElement('img')
+      const url = URL.createObjectURL(blob)
+      // create svg
+      //   const shouldFillRect = this.pixelsPerCell > 1
+      // for (let i = 0; i < this.engine.height; i++) {
+      //   for (let j = 0; j < this.engine.width; j++) {
+      //     if (this.engine.cellSafe(i, j)) {
+      //       const jPx = this.pixelsPerCell * j
+      //       const iPx = this.pixelsPerCell * i
+
+      //       this.context.beginPath()
+
+      //       this.context.fillStyle = this.fillStyle
+      //       this.context.lineWidth = 0
+
+      //       this.context.strokeRect(
+      //         jPx,
+      //         iPx,
+      //         this.pixelsPerCell,
+      //         this.pixelsPerCell
+      //       )
+      //       if (shouldFillRect) {
+      //         this.context.fillRect(
+      //           jPx,
+      //           iPx,
+      //           this.pixelsPerCell,
+      //           this.pixelsPerCell
+      //         )
+      //       }
+      //     }
+      //   }
+      // }
+
+      //   var html = d3.select("svg")
+      //     .attr("title", "test2")
+      //     .attr("version", 1.1)
+      //     .attr("xmlns", "http://www.w3.org/2000/svg")
+      //     .node().parentNode.innerHTML;
+
+      // var blob = new Blob([html], {type: "image/svg+xml"});
+      newImg.onload = () => {
+        // no longer need to read the blob so it's revoked
+        URL.revokeObjectURL(url)
+      }
+
+      newImg.src = url
+      document.body.appendChild(newImg)
+    }, 'image/svg+xml')
   }
 }
 

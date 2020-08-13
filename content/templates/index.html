@@ -1,4 +1,6 @@
-<header class="page-header page-header--image-based bg-light-peach relative overflow-hidden select-none">
+<header
+  class="page-header page-header--image-based bg-light-peach relative overflow-hidden select-none"
+>
   <div class="page-header__outer">
     <div class="page-header__container">
       <h1 class="page-header__title">Kia Ora</h1>
@@ -6,12 +8,16 @@
       <p class="page-header__content">
         We are an international team of data scientists and programmers who aim
         to put data to good use and make a positive impact. We’re based in
-        Wellington, New Zealand.</p>
+        Wellington, New Zealand.
+      </p>
 
-        <a href="#top-section" class="link-icon link-icon--arrow-down link-icon--large">
-          <span class="icon dragonfly-arrow"></span>
-        </a>
-
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="link-icon link-icon--arrow-down link-icon--large"
+      >
+        <span class="icon dragonfly-arrow"></span>
+      </a>
     </div>
   </div>
 
@@ -24,24 +30,48 @@
       <span>Game of Life</span>
     </div>
     <div class="animation-controls__control">
-        <input type="text" autocomplete="off" pattern="[^0-9]+?(fps)" class="animation-controls__input" value="2fps" spellcheck="false" />
-        <div class="animation-controls__control__buttons">
-          <button class="up transform -rotate-45"></button>
-          <button class="down transform rotate-135"></button>
-        </div>
+      <input
+        type="text"
+        autocomplete="off"
+        pattern="[^0-9]+?(fps)"
+        class="animation-controls__input"
+        value="2fps"
+        spellcheck="false"
+      />
+      <div class="animation-controls__control__buttons">
+        <button class="up transform -rotate-45"></button>
+        <button class="down transform rotate-135"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute right-0 bottom-0 flex mr-8 mb-8 z-10">
+    <div
+      class="bg-black mr-4 w-16 h-16 rounded-full text-white flex justify-center items-center cursor-pointer"
+      id="saveButton"
+    >
+      <i class="far fa-save"></i>
+    </div>
+
+    <div
+      class="bg-black w-16 h-16 rounded-full text-white flex justify-center items-center cursor-pointer"
+      id="pauseButton"
+    >
+      <i class="fas fa-pause"></i>
     </div>
   </div>
 
   <canvas id="gameoflife" class="game-of-life"></canvas>
+  <canvas id="blob" class="game-of-life-blob"></canvas>
 </header>
 
 <section class="advert">
   <div class="advert__container container">
     <div class="advert__inner">
       <p class="advert__text">
-        <a href="/work">Bayesian statistics</a>, machine learning, R, and
-        Python are our tools of choice to transform data into useful and
-        refined products that help our clients make better decisions.
+        <a href="/work">Bayesian statistics</a>, machine learning, R, and Python
+        are our tools of choice to transform data into useful and refined
+        products that help our clients make better decisions.
       </p>
       <a href="#contact" class="link-icon advert__link ml-auto">
         <span class="text">Find out more about what we do</span>
@@ -53,24 +83,38 @@
 
 <section id="top-section" class="math-paper">
   <div class="collection-grid collection-grid--no-bottom">
-    $for(tiles)$
-      $partial("templates/_tile-index.html")$
-    $endfor$
-    <a href="/people/" class="no-gutter-cell no-gutter-cell--bottom-aligned no-gutter-cell--overlay no-gutter-cell--title-only bg-black flex">
-        <strong class="no-gutter-cell__title mb-0 mt-auto">Meet <br />the team</strong>
+    $for(tiles)$ $partial("templates/_tile-index.html")$ $endfor$
+    <a
+      href="/people/"
+      class="no-gutter-cell no-gutter-cell--bottom-aligned no-gutter-cell--overlay no-gutter-cell--title-only bg-black flex"
+    >
+      <strong class="no-gutter-cell__title mb-0 mt-auto"
+        >Meet <br />the team</strong
+      >
 
-        <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link ml-auto">
-          <span class="icon dragonfly-arrow ml-0"></span>
-        </span>
+      <span
+        class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link ml-auto"
+      >
+        <span class="icon dragonfly-arrow ml-0"></span>
+      </span>
 
-      <div class="no-gutter-cell__image background-image lozad" data-background-image="/images/team_tile.jpg"></div>
+      <div
+        class="no-gutter-cell__image background-image lozad"
+        data-background-image="/images/team_tile.jpg"
+      ></div>
     </a>
   </div>
 </section>
 
 <section class="call-to-action call-to-action--single-column">
   <div class="call-to-action__container container">
-    <p class="supplementary-header call-to-action__text">Interested in working with us?</p>
-    <a href="#contact" class="button call-to-action__button call-to-action__button--cool-blue">Get in touch</a>
+    <p class="supplementary-header call-to-action__text">
+      Interested in working with us?
+    </p>
+    <a
+      href="#contact"
+      class="button call-to-action__button call-to-action__button--cool-blue"
+      >Get in touch</a
+    >
   </div>
 </section>

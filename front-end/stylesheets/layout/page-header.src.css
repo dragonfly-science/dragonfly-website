@@ -46,6 +46,10 @@
 
       max-width: 240px;
     }
+
+    img {
+      max-height: 30rem;
+    }
   }
 
   &--white {
@@ -189,12 +193,14 @@
     &--image {
       .page-header__inner {
         @apply flex-row;
+      }
 
-        /* min-height: 240px; */
+      .page-header__inner-title {
+        max-width: 600px;
       }
 
       .page-header__image {
-        @apply mt-0 ml-auto;
+        @apply mt-0;
 
         width: 240px;
       }
@@ -223,13 +229,23 @@
       @apply max-w-xl;
     }
 
-    /* &__container {
-      @apply ml-24;
-    } */
-
     &--news {
       .page-header__inner {
         @apply max-w-64rem;
+      }
+    }
+
+    &--image {
+      .page-header__image {
+        @apply ml-auto;
+      }
+
+      .page-header__inner-title {
+        @apply max-w-full;
+      }
+
+      img {
+        max-height: 960px;
       }
     }
   }

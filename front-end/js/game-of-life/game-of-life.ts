@@ -71,6 +71,14 @@ const gameOfLife = (): void => {
     renderer.play = true
   })
 
+  $('#pauseButton').on('click', () => {
+    renderer.play = !renderer.play
+  })
+
+  $('#saveButton').on('click', () => {
+    renderer.save()
+  })
+
   let mouseTimeout: NodeJS.Timeout = null
 
   const changeValue = (el: HTMLElement): void => {
