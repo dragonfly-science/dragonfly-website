@@ -16,6 +16,7 @@ hosted 22% fewer lepidopteran leafroller larvae than neighbouring green plants.
 between red and green plants. Overall leaf canopy colour was not a significant predictor of the number of seeds
 per fruit or of mean seed weight. This may be explained by differences in photosynthesis: green *P. colorata*
 leaves had 47% higher maximum CO<sub>2</sub> assimilation rates than matched red leaves from neighbouring plants.
+
 5.  These results indicate that the benefits of deterring insect herbivores by signalling may be balanced by the
 higher photosynthetic rate of non-signalling plants. A balance between signalling and photosynthesis is a novel
 mechanism for the maintenance of leaf colour polymorphisms in nature.
