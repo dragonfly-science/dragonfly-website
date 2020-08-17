@@ -1,5 +1,6 @@
 NPM ?=
 RUN ?=
+SHOWCONTROLS ?=
 
 npm:
-	$(RUN) bash -c 'npm $(NPM)'
+	$(RUN) bash -c 'SHOWCONTROLS=$(SHOWCONTROLS) npm $(NPM)'

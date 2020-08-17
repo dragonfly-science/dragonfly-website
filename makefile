@@ -11,7 +11,7 @@ website: $(HS) haskell/Site.hs
 	$(RUN) bash -c 'cd haskell && stack build && cp $$(stack path --local-install-root)/bin/website ../website'
 
 develop: website
-	$(RUN) bash -c 'make -C front-end NPM="run build" npm & (make -C front-end NPM="run watch:css" npm) & (make -C front-end NPM="run watch:js" npm) & (cd content && ../website watch)'
+	$(RUN) bash -c 'make -C front-end SHOWCONTROLS=1 NPM="run build:dev" npm & (make -C front-end NPM="run watch:css" npm) & (make -C front-end NPM="run watch:js" npm) & (cd content && ../website watch)'
 
 
 CONTENT := $(shell find content)

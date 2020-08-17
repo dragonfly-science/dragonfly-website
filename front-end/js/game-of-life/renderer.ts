@@ -1,3 +1,4 @@
+import * as d3 from 'd3'
 import { saveAs } from 'file-saver'
 
 import Engine from './engine'
@@ -51,10 +52,10 @@ class Renderer {
     this.frameNumber = 0
 
     // setup canvas with correct size
-    this.canvas.width = this.engine.width * this.pixelsPerCell
-    this.canvas.height = this.engine.height * this.pixelsPerCell
+    this.canvas.width = this.canvas.clientWidth
+    this.canvas.height = this.canvas.clientHeight
 
-    this.context.translate(0.5, 0.5)
+    // this.context.translate(0.5, 0.5)
 
     window.addEventListener('orientationchange', this.resize.bind(this))
     window.addEventListener('resize', this.resize.bind(this))
@@ -72,8 +73,8 @@ class Renderer {
 
     this.engine.reset(width, height)
 
-    this.canvas.width = this.engine.width * this.pixelsPerCell
-    this.canvas.height = this.engine.height * this.pixelsPerCell
+    this.canvas.width = this.canvas.clientWidth
+    this.canvas.height = this.canvas.clientHeight
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
     this.play = true
   }
@@ -144,55 +145,61 @@ class Renderer {
   }
 
   public save(): void {
-    this.canvas.toBlob((blob) => {
-      const newImg = document.createElement('img')
-      const url = URL.createObjectURL(blob)
-      // create svg
-      //   const shouldFillRect = this.pixelsPerCell > 1
-      // for (let i = 0; i < this.engine.height; i++) {
-      //   for (let j = 0; j < this.engine.width; j++) {
-      //     if (this.engine.cellSafe(i, j)) {
-      //       const jPx = this.pixelsPerCell * j
-      //       const iPx = this.pixelsPerCell * i
+    const isPlaying = this.play
+    this.stop()
 
-      //       this.context.beginPath()
+    const { height, width } = this.canvas
 
-      //       this.context.fillStyle = this.fillStyle
-      //       this.context.lineWidth = 0
+    const existing = document.querySelector('#blob > svg')
 
-      //       this.context.strokeRect(
-      //         jPx,
-      //         iPx,
-      //         this.pixelsPerCell,
-      //         this.pixelsPerCell
-      //       )
-      //       if (shouldFillRect) {
-      //         this.context.fillRect(
-      //           jPx,
-      //           iPx,
-      //           this.pixelsPerCell,
-      //           this.pixelsPerCell
-      //         )
-      //       }
-      //     }
-      //   }
-      // }
+    if (existing) {
+      existing.remove()
+    }
 
-      //   var html = d3.select("svg")
-      //     .attr("title", "test2")
-      //     .attr("version", 1.1)
-      //     .attr("xmlns", "http://www.w3.org/2000/svg")
-      //     .node().parentNode.innerHTML;
+    const svg = d3
+      .select('#blob')
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('class', 'hidden')
 
-      // var blob = new Blob([html], {type: "image/svg+xml"});
-      newImg.onload = () => {
-        // no longer need to read the blob so it's revoked
-        URL.revokeObjectURL(url)
+    svg
+      .append('rect')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr('fill', 'none')
+      .attr('stroke', 'none')
+      .attr('id', 'group')
+
+    const shouldFillRect = this.pixelsPerCell > 1
+    for (let i = 0; i < this.engine.height; i++) {
+      for (let j = 0; j < this.engine.width; j++) {
+        if (this.engine.cellSafe(i, j)) {
+          const jPx = this.pixelsPerCell * j
+          const iPx = this.pixelsPerCell * i
+
+          svg
+            .append('rect')
+            .attr('x', jPx)
+            .attr('y', iPx)
+            .attr('width', this.pixelsPerCell)
+            .attr('height', this.pixelsPerCell)
+            .attr('strokeWidth', 1)
+            .attr('stroke', shouldFillRect ? this.fillStyle : 'transparent')
+            .attr('fill', shouldFillRect ? this.fillStyle : 'transparent')
+        }
       }
+    }
 
-      newImg.src = url
-      document.body.appendChild(newImg)
-    }, 'image/svg+xml')
+    const blob = new Blob([svg.node().outerHTML], { type: 'image/svg+xml' })
+    saveAs(blob, 'game-of-life.svg')
+
+    if (isPlaying) {
+      this.togglePlay()
+    }
   }
 }
 

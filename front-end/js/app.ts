@@ -12,16 +12,18 @@ import StickySidebar from './sticky-sidebar'
 import TopSection from './top-section'
 
 Zepto(() => {
+  console.log('Process', process.env)
   Columns()
   Filtering()
   MobileMenu()
   TopSection()
   LazyLoad()
   Parallaxing()
-  GameOfLife()
   ImageCaptions()
   Footer()
   StickySidebar('.sticky-container__body', '.sticky-container__element')
 
-  setTimeout(() => smoothscroll.polyfill(), 500)
+  // setTimeout(() => smoothscroll.polyfill(), 500)
+
+  setTimeout(() => GameOfLife(), 1000)
 })
