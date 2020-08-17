@@ -1,6 +1,5 @@
 NPM ?=
-RUN ?=
 SHOWCONTROLS ?=
 
 npm:
-	$(RUN) bash -c 'SHOWCONTROLS=$(SHOWCONTROLS) npm $(NPM)'
+	SHOWCONTROLS=800 npm $(NPM)

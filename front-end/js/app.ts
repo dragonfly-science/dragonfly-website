@@ -11,8 +11,10 @@ import Parallaxing from './parallax'
 import StickySidebar from './sticky-sidebar'
 import TopSection from './top-section'
 
+import env from 'env-var'
+
 Zepto(() => {
-  console.log('Process', process.env)
+  // console.log('Process', env.get('SHOWCONTROLS').asInt())
   Columns()
   Filtering()
   MobileMenu()
