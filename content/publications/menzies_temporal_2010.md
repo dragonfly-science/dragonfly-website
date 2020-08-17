@@ -6,7 +6,9 @@ title: Temporal shifts in the pair-bond dynamics of New Zealand robins (<i>Petro
 Winter is a challenging time for temperate insectivorous songbirds, due to colder temperatures, reduced prey
 activity and shorter diurnal foraging times. For species that are non-migratory, territorial and monogamous, winter conditions
 may result in within-pair competition. However, little is known about how monogamous pairs coexist on their winter
-territories. We investigated temporal patterns in male–female interactions of the New Zealand robin (*Petroica australis*)
+territories.
+
+We investigated temporal patterns in male–female interactions of the New Zealand robin (*Petroica australis*)
 to better understand mechanisms of coexistence during winter. Previous work has shown that male robins are physically
 dominant over females and maintain priority access to food year-round. We quantified female behaviour throughout the
 2008 non-breeding season to better understand how females coexist with physically dominant males on winter territories.
