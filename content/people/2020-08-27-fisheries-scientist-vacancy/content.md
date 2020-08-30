@@ -15,15 +15,16 @@ and is comfortable performing data analyses for fisheries problems across
 different contexts. You will have a strong background in statistical modelling,
 ideally with experience at Bayesian methods.
 
-Depending on experience, responsibilities in this role include generating
-summaries of fisheries-related data from databases, analysing data using
-statistical models, building analysis frameworks for fisheries projects, or
+Depending on experience, responsibilities in this role may include generating
+summaries of fisheries-related data from databases, developing stitsical models
+of protected species bycatch, carrying out quantitative risk assessments, or
 running fisheries stock assessments. 
 
 Candidates will have an M.Sc. with some research experience, or a Ph.D. in a
-relevant field, such as fisheries, quantitative ecology, or applied statistics.
+relevant field, such as fisheries, quantitative ecology, or statistics.
 We encourage applications by recent graduates, but also value relevant work
-experience.
+experience. Māori have strong interests in New Zealand fisheries, and we encourage
+applicants with strong relationships with Te Ao Māori. 
 
 This role may require communication with a wide range of stakeholders, including
 other researchers, non-government organisations, government agencies, and
@@ -32,13 +33,11 @@ communicator, who is able to make their work relevant to a broad range of
 audiences.  Communication skills will include the ability to produce
 high-quality writing, including visually-striking and effective graphs.
 
-Māori have strong interests in New Zealand fisheries, and we encourage
-applicants with strong relationships with Te Ao Māori. 
-
 Some of our recent fisheries projects include:
 
   * research on the impact of climate change on marine ecosystems,
   * estimation of marine mammal bycatch,
+  * risk assessment of the impact of surface longline fishing on seabirds,
   * developing spatial models for New Zealand pāua (abalone) fisheries,
   * assessment of the impact of fisheries on Pacific Ocean whale shark and oceanic whitetip shark.
 
@@ -46,10 +45,9 @@ The role is offered as a permanent position, with salary depending on
 experience.  To apply for this position, please send a cover letter (a maximum
 of two pages), and a curriculum vitae to [Philipp Neubauer](mailto:philipp@dragonfly.co.nz).
 
-Because of COVID-19, there
-is currently limited immigration to New Zealand, and applicants must be eligible
+Because of COVID-19, applicants must be eligible
 to live and work in New Zealand. Please note that a similar role was advertised
-before the pandemic, and we were unable to proceed. If you wish to reconsidered,
+before the pandemic, and we were unable to proceed. If you wish to be reconsidered,
 please resubmit your application. 
 
 Applications close at 12pm on Monday, 21 September, 2020.
