@@ -50,7 +50,7 @@ to live and work in New Zealand. Please note that a similar role was advertised
 before the pandemic, and we were unable to proceed. If you wish to be reconsidered,
 please resubmit your application. 
 
-Applications close at 12 pm on Monday, 21 September, 2020.
+Applications close at 12 pm on Monday, 21 September 2020.
 
 ## About Dragonfly Data Science
 
