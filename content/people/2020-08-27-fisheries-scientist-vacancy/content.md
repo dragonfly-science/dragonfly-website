@@ -13,12 +13,12 @@ internationally.
 The ideal candidate is excited about working in fisheries and marine ecology,
 and is comfortable performing data analyses for fisheries problems across
 different contexts. You will have a strong background in statistical modelling,
-ideally with experience at Bayesian methods.
+ideally with experience applying Bayesian methods.
 
 Depending on experience, responsibilities in this role may include generating
-summaries of fisheries-related data from databases, developing stitsical models
-of protected species bycatch, carrying out quantitative risk assessments, or
-running fisheries stock assessments. 
+summaries of fisheries-related data from databases, developing statistical models
+of protected species bycatch, carrying out quantitative risk assessments, and 
+conducting fisheries stock assessments. 
 
 Candidates will have an M.Sc. with some research experience, or a Ph.D. in a
 relevant field, such as fisheries, quantitative ecology, or statistics.
@@ -37,7 +37,7 @@ Some of our recent fisheries projects include:
 
   * research on the impact of climate change on marine ecosystems,
   * estimation of marine mammal bycatch,
-  * risk assessment of the impact of surface longline fishing on seabirds,
+  * risk assessment of the impact of surface-longline fishing on seabirds,
   * developing spatial models for New Zealand pāua (abalone) fisheries,
   * assessment of the impact of fisheries on Pacific Ocean whale shark and oceanic whitetip shark.
 
@@ -50,7 +50,7 @@ to live and work in New Zealand. Please note that a similar role was advertised
 before the pandemic, and we were unable to proceed. If you wish to be reconsidered,
 please resubmit your application. 
 
-Applications close at 12pm on Monday, 21 September, 2020.
+Applications close at 12 pm on Monday, 21 September, 2020.
 
 ## About Dragonfly Data Science
 
