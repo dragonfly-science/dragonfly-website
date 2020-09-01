@@ -45,7 +45,7 @@ The role is offered as a permanent position, with salary depending on
 experience.  To apply for this position, please send a cover letter (a maximum
 of two pages), and a curriculum vitae to [Philipp Neubauer](mailto:philipp@dragonfly.co.nz).
 
-Because of COVID-19, applicants must currently live and be eligible to work in New Zealand or be eligible to return to New Zealand (i.e., be citizen a resident). Please note that a similar role was advertised before the pandemic, and we were unable to proceed. If you wish to be reconsidered, please resubmit your application. 
+Because of COVID-19, applicants must currently live and be eligible to work in New Zealand or be eligible to return to New Zealand (i.e., be citizen or a resident). Please note that a similar role was advertised before the pandemic, and we were unable to proceed. If you wish to be reconsidered, please resubmit your application. 
 
 Applications close at 12 pm on Monday, 21 September 2020.
 
