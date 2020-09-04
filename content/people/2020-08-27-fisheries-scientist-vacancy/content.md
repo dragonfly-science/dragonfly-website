@@ -2,6 +2,7 @@
 title: Fisheries scientist
 sortorder: "0"
 tag: vacancies
+teaser: 2020-08-27-fisheries-scientist-vacancy/dragonfly-wing-thin.png
 banner: 2020-08-27-fisheries-scientist-vacancy/dragonfly-wing-thin.png
 ---
 We are looking for a fisheries scientist with data analysis and statistical
