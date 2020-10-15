@@ -1,5 +1,5 @@
 ---
-title: "Causal specificity and the instructive--permissive distinction"
+title: "Causal specificity and the instructive–permissive distinction"
 tags: brett, philosophy, article
 ---
 
