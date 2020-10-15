@@ -7,4 +7,4 @@ I use some recent formal work on measuring causation to explore a suggestion by 
 
 I construct a novel model that expresses in a simple and tractable way the relevant causal structure of biological development and then use a measure of causal specificity to analyse the model. I show that the permissive-instructive distinction cannot be captured by simply contrasting the specificity of two causes as Woodward proposes, and instead introduce an alternative, hierarchical approach to analysing the interaction between two causes. The resulting analysis highlights the importance of focusing on gene regulation, rather than just the coding regions, when analysing the distinctive causal power of genes.
 
-Available at: https://www.dropbox.com/s/gpl3tm88rcnmqwj/Calcott_2017_Causal_specificity_and_the_instructive%E2%80%93permissive_distinction_.pdf?dl=0.
+[Available at:] (https://www.dropbox.com/s/gpl3tm88rcnmqwj/Calcott_2017_Causal_specificity_and_the_instructive%E2%80%93permissive_distinction_.pdf?dl=0).
