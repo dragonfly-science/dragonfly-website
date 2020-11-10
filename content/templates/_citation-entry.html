@@ -1,16 +1,20 @@
-<li class="post-wrapper year-$year$ tag $if(tags)$ $for(tags)$ tag-$tag$ $endfor$ $endif$">
+<li class="post-wrapper $if(year)$year-$year$ $endif$tag $if(tags)$ $for(tags)$ tag-$tag$ $endfor$ $endif$">
+  $if(year)$
   <div class="citation-year">
     <h2>$year$</h2>
   </div>
+  $endif$
   <div class="post">
     $if(title)$
       <a href="/publications/$id$.html">
         <h3>$title$</h3>
       </a>
     $endif$
+    $if(citation)$
     <div class="citation">
       $citation$
     </div>
+    $endif$
     <div class="tagslugs hidden">    
         $if(tags)$ $for(tags)$ $tag$ $endfor$ $endif$    
     </div>
