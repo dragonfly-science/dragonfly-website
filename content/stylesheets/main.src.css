@@ -1,0 +1,41 @@
+/* Import Tailwind base */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'utilities/base.src.css';
+
+/* Import Partials */
+@import 'grid/collection-grid.src.css';
+@import 'grid/grid-cell.src.css';
+@import 'grid/inner-cell.src.css';
+@import 'grid/no-gutter-cell.src.css';
+@import 'grid/publication-grid.src.css';
+@import 'layout/animation-controls.src.css';
+@import 'layout/content.src.css';
+@import 'layout/call-to-action.src.css';
+@import 'layout/citation-year.src.css';
+@import 'layout/filtering.src.css';
+@import 'layout/game-of-life.src.css';
+@import 'layout/list-container.src.css';
+@import 'layout/main-footer.src.css';
+@import 'layout/news-article.src.css';
+@import 'layout/numbered-section.src.css';
+@import 'layout/page-header.src.css';
+@import 'layout/positioning.src.css';
+@import 'layout/related-content.src.css';
+@import 'layout/ruled-heading.src.css';
+@import 'layout/sidebar.src.css';
+@import 'layout/sidebar-caption.src.css';
+@import 'layout/sticky-container.src.css';
+@import 'layout/sticky-sidebar.src.css';
+@import 'layout/tag-list.src.css';
+@import 'layout/tools.src.css';
+@import 'layout/what-we-do-section.src.css';
+@import 'navigation/button.src.css';
+@import 'navigation/link-icon.src.css';
+@import 'navigation/main-nav.src.css';
+@import 'tiles/person-tile.src.css';
+@import 'tiles/publication.src.css';
+@import 'tiles/what-we-do.src.css';
+@import 'typography/body-content.src.css';
+@import 'utilities/utilities.src.css';
+@import 'tailwindcss/utilities';
