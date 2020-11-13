@@ -1,4 +1,4 @@
-<li class="post-wrapper$if(year)$ year-$year$$endif$ tag $if(tags)$ $for(tags)$ tag-$tag$ $endfor$ $endif$">
+<li class="post-wrapper $if(year)$year-$year$ $endif$tag $if(tags)$ $for(tags)$ tag-$tag$ $endfor$ $endif$">
   $if(year)$
   <div class="citation-year">
     <h2>$year$</h2>
@@ -16,7 +16,7 @@
     </div>
     $endif$
     <div class="tagslugs hidden">
-      $if(tags)$ $for(tags)$ $tag$ $endfor$ $endif$
+        $if(tags)$ $for(tags)$ $tag$ $endfor$ $endif$
     </div>
     $if(pdf)$
     <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="highlight">

@@ -41,6 +41,7 @@ case "$MODE" in
   clean)
     hakyll clean
     cd $BASEDIR/haskell && stack clean
+    cd $BASEDIR/content/stylesheets && rm *.css*
     ;;
   ghci)
     cd $BASEDIR/haskell && stack ghci
