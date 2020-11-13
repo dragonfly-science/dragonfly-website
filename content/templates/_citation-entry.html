@@ -6,26 +6,26 @@
   $endif$
   <div class="post">
     $if(title)$
-      <a href="/publications/$id$.html">
-        <h3>$title$</h3>
-      </a>
+    <a href="/publications/$id$.html">
+      <h3>$title$</h3>
+    </a>
     $endif$
     $if(citation)$
     <div class="citation">
       $citation$
     </div>
     $endif$
-    <div class="tagslugs hidden">    
-        $if(tags)$ $for(tags)$ $tag$ $endfor$ $endif$    
+    <div class="tagslugs hidden">
+        $if(tags)$ $for(tags)$ $tag$ $endfor$ $endif$
     </div>
     $if(pdf)$
-      <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="highlight">
-        <i class="fa fa-file-pdf-o"></i>  Download PDF
-      </a>
+    <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="highlight">
+      <i class="fa fa-file-pdf-o"></i> Download PDF
+    </a>
     $endif$
     $if(hasBody)$
-      $if(pdf)$ | $endif$
-      <a href="/publications/$id$.html" class="read-more">Read more</a>
+    $if(pdf)$ | $endif$
+    <a href="/publications/$id$.html" class="read-more">Read more</a>
     $endif$
   </div>
   $partial("templates/_top.html")$
