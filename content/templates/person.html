@@ -1,9 +1,11 @@
-<div class="hero" id="hero-$tag$"> 
+<div class="hero" id="hero-$tag$">
   <img src="$banner$" width="100%"/>
 </div>
 <div class="container post-detail">
   <div class="heading wide">
-    <h2 id="title-$tag$">$title$</h2>
+    $if(title)$
+    <h2 id="title-$if(tag)$tag$$endif$">$title$</h2>
+    $endif$
     <div class="details">
       $if(email)$
         <p>Email <a href="mailto:$email$">$email$</a><p>
