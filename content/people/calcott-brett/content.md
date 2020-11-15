@@ -1,5 +1,5 @@
 ---
-title: Brett Calcott
+title: Brett Calcott, PhD
 email: brett@dragonfly.co.nz
 firstname: Brett
 lastname: Calcott
