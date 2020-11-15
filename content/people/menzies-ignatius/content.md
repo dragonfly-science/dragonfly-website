@@ -3,12 +3,14 @@ title: Ignatius Menzies, PhD
 email: iggy@dragonfly.co.nz
 firstname: Ignatius
 lastname: Menzies
-mobile: ''
+mobile: ""
 tag: ignatius
 banner: menzies-ignatius/ignatius-menzies-letterbox.jpg
 nocite: |
 ---
+
 Iggy is reproducible research lead at Dragonfly. He is a data scientist with experience in the public and private sectors and a background in ecology.
+
 <!--more-->
 
 Before joining Dragonfly in 2020 Iggy worked as a developer in the public sector digital team at Datacom and as the data science lead in the environmental reporting team at the Ministry for the Environment. In his PhD from Victoria University of Wellington, Iggy studied whether non-green leaf colour in plants is used to reduce browsing by herbivores.

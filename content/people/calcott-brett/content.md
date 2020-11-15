@@ -3,12 +3,14 @@ title: Brett Calcott, PhD
 email: brett@dragonfly.co.nz
 firstname: Brett
 lastname: Calcott
-mobile: ''
+mobile: ""
 tag: brett
 banner: calcott-brett/brett-calcott-letterbox.jpg
 nocite: |
 ---
+
 Brett is a senior data scientist with experience in software development, data wrangling, machine learning, and the philosophy of science.
+
 <!--more-->
 
 During a 30-year career, Brett has enjoyed a diverse mix of professional and academic roles. Particular achievements include co-authoring software to reconstruct the evolutionary past of a species (now used by used by thousands of biologists) and building a system to analyse a network of billions of financial transactions in small businesses across Australasia. He has also published papers in topics ranging from the impact of microbiome research on society to measuring causal influence in biological systems.

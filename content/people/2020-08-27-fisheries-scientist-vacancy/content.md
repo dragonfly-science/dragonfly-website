@@ -2,8 +2,8 @@
 title: Fisheries scientist
 sortorder: "0"
 tag: vacancies
-teaser: ""
-banner: 2020-07-28-fisheries-scientist-vacancy/dragonfly-wing-thin.png
+teaser: 2020-08-27-fisheries-scientist-vacancy/dragonfly-wing-thin.png
+banner: 2020-08-27-fisheries-scientist-vacancy/dragonfly-wing-thin.png
 ---
 We are looking for a fisheries scientist with data analysis and statistical
 modelling skills to contribute to projects related to fisheries and their
@@ -47,7 +47,7 @@ of two pages), and a curriculum vitae to [Philipp Neubauer](mailto:philipp@drago
 
 Because of COVID-19, applicants must currently live and be eligible to work in New Zealand or be eligible to return to New Zealand (i.e., be a citizen or resident). Please note that a similar role was advertised before the pandemic, and we were unable to proceed. If you wish to be reconsidered, please resubmit your application. 
 
-Applications close at 12 pm on Monday, 21 September 2020.
+Applications close at 12 pm on Monday, 28 September 2020.
 
 ## About Dragonfly Data Science
 
