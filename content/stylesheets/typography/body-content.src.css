@@ -1,0 +1,326 @@
+/* Body content container styles. */
+.body-content {
+  @apply ml-0 my-6 max-w-3xl text-lg;
+
+  p {
+    @apply mb-6;
+  }
+
+  a {
+    @apply transition-all ease-out-quart;
+  }
+
+  img {
+    @apply block my-6 mx-auto opacity-0;
+    @apply transition-all ease-out-quart delay-100;
+
+    line-height: 0;
+    font-size: 0;
+
+    &.loaded {
+      @apply opacity-100;
+    }
+  }
+
+  figure {
+    @apply my-6 flex justify-center flex-col relative;
+
+    &::after {
+      @apply absolute block top-0 left-0 w-full h-full bg-black opacity-025 z-0;
+
+      background-blend-mode: multiply;
+      content: '';
+    }
+
+    * {
+      @apply z-10;
+    }
+
+    img {
+      @apply my-0;
+    }
+
+    figcaption {
+      @apply text-sm italic block pt-2 bg-light-peach;
+    }
+  }
+
+  blockquote,
+  blockquote + p > cite {
+    @apply bg-cool-blue text-white w-full block;
+    @apply px-10 py-12 ml-0 mb-8;
+  }
+
+  blockquote {
+    @apply mt-8;
+
+    &.person-blockquote {
+      @apply flex bg-slate-grey bg-opacity-25;
+
+      .person-tile {
+        @apply mr-8;
+
+        img {
+          @apply m-0;
+        }
+      }
+    }
+
+    + p {
+      > cite {
+        @apply -mt-24 font-normal not-italic;
+
+        &::before {
+          @apply inline-block mr-1;
+
+          content: '\2014';
+        }
+      }
+    }
+
+    p {
+      @apply mb-2 text-xl font-medium italic leading-tight;
+
+      &:first-of-type {
+        &::before {
+          @apply inline;
+
+          content: '"';
+        }
+      }
+
+      &:last-of-type {
+        @apply mb-0;
+
+        &::after {
+          @apply inline;
+
+          content: '"';
+        }
+      }
+    }
+
+    &:nth-of-type(even) {
+      @apply bg-black ml-auto;
+
+      + p > cite {
+        @apply bg-black ml-auto;
+      }
+    }
+  }
+
+  > p {
+    &:first-of-type {
+      @apply font-medium text-2xl leading-tight mb-6;
+    }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium leading-tight mb-4 mt-8;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg font-bold;
+  }
+
+  h5 {
+    @apply text-lg;
+  }
+
+  h6 {
+    @apply text-base font-bold;
+  }
+
+  a,
+  p > a,
+  li > a {
+    @apply underline;
+
+    &:hover {
+      @apply no-underline;
+    }
+  }
+
+  ul {
+    @apply list-disc my-2 mx-4;
+  }
+
+  > hr {
+    &:last-of-type {
+      @apply bg-slate-grey h-1 max-w-lg mt-20 mb-4;
+
+      + p {
+        @apply text-xl font-bold;
+      }
+
+      ~ * {
+        @apply max-w-lg;
+      }
+    }
+  }
+
+  &__title {
+    @apply mt-0 !important;
+  }
+
+  /* Variations. */
+  &--article,
+  &--news-article {
+    .body-content__body {
+      > p {
+        @apply text-lg;
+
+        &:first-of-type {
+          @apply font-medium;
+        }
+      }
+    }
+  }
+
+  &--news-article {
+    @apply m-0 !important;
+  }
+
+  &--full-width {
+    > hr {
+      &:last-of-type {
+        @apply bg-slate-grey h-1 max-w-lg mt-20 mb-4;
+
+        + p {
+          @apply font-normal;
+        }
+
+        ~ * {
+          @apply max-w-full;
+        }
+      }
+    }
+  }
+
+  &--no-sidebar {
+    /* @apply ml-64; */
+  }
+
+  &--bottomless {
+    @apply mb-0;
+  }
+}
+
+@screen sm {
+  .body-content {
+    blockquote,
+    blockquote + p > cite {
+      @apply w-3/4;
+    }
+  }
+}
+
+@screen md {
+  .body-content {
+    > p {
+      &:first-of-type {
+        @apply text-3xl;
+      }
+    }
+
+    blockquote {
+      p {
+        @apply text-2xl;
+      }
+    }
+  }
+}
+
+@screen lg {
+  .body-content {
+    @apply my-24;
+
+    > p {
+      &:first-of-type {
+        @apply font-medium text-3/2xl mb-6;
+
+        line-height: 1.2em;
+      }
+    }
+
+    h2 {
+      @apply text-3xl;
+    }
+
+    h3 {
+      @apply text-2xl;
+    }
+
+    h4 {
+      @apply text-xl;
+    }
+
+    h5 {
+      @apply text-lg;
+    }
+
+    h6 {
+      @apply text-base font-bold;
+    }
+
+    blockquote {
+      p {
+        @apply text-2xl;
+      }
+    }
+
+    blockquote,
+    blockquote + p > cite {
+      @apply -ml-16 px-16;
+    }
+
+    figure {
+      @apply -mx-6;
+    }
+  }
+}
+
+@screen xl {
+  .body-content {
+    blockquote,
+    blockquote + p > cite {
+      @apply pr-24 pl-32 -ml-1/2 w-full;
+    }
+
+    blockquote {
+      @apply mt-8 mb-8 pt-16 pb-24;
+
+      + p > cite {
+        @apply -mt-32;
+      }
+
+      &:nth-of-type(even) {
+        @apply -mr-1/2 ml-auto pl-24 pr-32;
+
+        + p > cite {
+          @apply -mr-1/2 ml-auto pl-24 pr-32;
+        }
+      }
+    }
+
+    figure {
+      @apply -mx-12;
+    }
+
+    &--no-sidebar {
+      @apply ml-64;
+    }
+  }
+}
