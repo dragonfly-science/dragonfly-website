@@ -6,7 +6,7 @@
           $bannerTitleLine1$<br>
           $if(bannerTitleLine2)$$bannerTitleLine2$$endif$
         $else$
-          $firstname$<br>
+          $if(firstname)$$firstname$$endif$<br>
           $lastname$
         $endif$
         $if(honour)$<br>
