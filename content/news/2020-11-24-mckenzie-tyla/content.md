@@ -7,7 +7,7 @@ Two newly minted marine biologists are the newest people to join our crew, havin
 
 Tyla Hill-Moana credits her dad with sparking her love of the sea.
 
-“He likes to dive a lot and we grew up going to the ocean quite often. My family are big kaimona lovers – kina, mussels, crayfish, pāua, but I’d rather give what I¬ catch to family or mates.”
+“He likes to dive a lot and we grew up going to the ocean quite often. My family are big kaimona lovers – kina, mussels, crayfish, pāua, but I’d rather give what I catch to family or mates.”
 
 Tyla went to Te Wharekura o Rakaumangamanga and Ngā Taiātea Wharekura in Waikato and then moved to Wellington. She has a bachelor’s degree in marine biology and Māori from Victoria University of Wellington and this year she’s been working towards a Master of Marine Conservation.
 
