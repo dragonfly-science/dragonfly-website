@@ -21,7 +21,7 @@ Kawakawa Bay (West), Mangawhai Harbour, Mill Bay, Ngunguru Estuary, Ōhiwa Harbo
 All of the 2018–19 survey sites contained cockle populations, with most sites supporting notable population
 sizes. Abundance estimates ranged from 3.46 million (CV: 12.25%) cockles at Ruakaka Estuary
 to 222.41 million (CV: 17.52%) cockles at Kawakawa Bay (West). The corresponding density estimates
-were between 88 cockles per m2 at Ruakaka Estuary and 1997 cockles per m<sup>2</sup> at Ngunguru Estuary.
+were between 88 cockles per mm<sup>2</sup> at Ruakaka Estuary and 1997 cockles per m<sup>2</sup> at Ngunguru Estuary.
 Density estimates were also high (>1000 individuals per m<sup>2</sup>) at Whangapoua, Mangawhai and
 Whangamatā harbours.
 
