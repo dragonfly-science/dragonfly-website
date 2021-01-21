@@ -1,7 +1,7 @@
 ---
 pdf: neubauer_management_2021.pdf
 tags: philipp, paua, fisheries, dragonfly, benthic, report, review
-title: Pāua management procedure: review of current state and prospects for wider application.
+title: "Pāua management procedure: review of current state and prospects for wider application"
 ---
 Management procedures (MPs) are increasingly being used in fisheries management to link
 resource assessments to a set of rules  that formalise the setting of allowable catches.
