@@ -44,7 +44,7 @@ of Buller’s albatrosses, 213 (95% c.i.: 143–322) captures of sooty shearwate
 For eight of the ten modelled species groups, the total number of estimated captures decreased between
 2002–03 and 2017–18. The exceptions were white-chinned petrel and grey petrel, for which the total
 number of estimated captures did not show a clear decrease over this time period. When estimated captures in 2017–18 were compared with estimates in 2006–07, after mandatory mitigation measures were
-introduced in trawl fisheries in January 2006), the former estimates were similar to those in 2006–07
+introduced in trawl fisheries in January 2006, the former estimates were similar to those in 2006–07
 for many species. Capture estimates for all species groups combined showed a clear decrease over the
 assessment period, with the lowest mean number of seabird captures in the reporting period in 2017–18.
 These decreases were largely determined by marked decreases in fishing effort.
