@@ -2,6 +2,8 @@
 title: Working at Dragonfly
 sortorder: "1000"
 tag: vacancies
+firstname: Firstname
+lastname: Lastname
 banner: vacancies/vacancies-letterbox.jpg
 ---
 
@@ -26,27 +28,9 @@ all our work.
 We are an inclusive and friendly company, focused on collaboration and
 innovation.  We strive to provide an excellent work environment.
 
-### Graduate data scientist
+### Senior data scientist
 
-This position is an entry-level role. You will work alongside senior data
-scientists to prepare work for our clients. We are seeking candidates who are
-efficient, productive, and fast learners. The work will range widely, including
-initial data exploration, model development (Bayesian and/or ML), data
-visualisation, and preparing presentations and reports. We use reproducible
-methods, and you will be writing code.
+You can find more information [here](senior-data-scientist.html).
 
-You can find more information [here](graduate-data-scientist.html).
-
-Applications close on Saturday, 14 March 2020.
-
-### Early-career fisheries scientist
-
-We are looking for an early-career fisheries scientist with data analysis and
-modelling skills to contribute to projects related to fisheries and their
-environmental impacts (e.g., bycatch) in New Zealand and internationally.
-
-You can find more information [here](early-career-fisheries-scientist.html).
-
-Applications close on Saturday, 14 March 2020.
-
+Applications close on Saturday, 22 March 2021.
 
