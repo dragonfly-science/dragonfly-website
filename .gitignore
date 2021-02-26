@@ -1,13 +1,13 @@
 haskell/stack.yaml.lock
 _site/
-website
+/website
 content/stylesheets/dragonfly.css
-content/fonts/dragonfly.eot
-content/fonts/dragonfly.ttf
-content/fonts/dragonfly.woff
+content/fonts
 node_modules
 app.bundle.*
 .cache/
 .stack-work
 *.css.map
 content/scripts/
+static-site.tgz
+dragonfly-website

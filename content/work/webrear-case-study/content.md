@@ -1,19 +1,27 @@
 ---
-title: Data visualisation makes information accessible
-short-title: Data visualisation
+title: Displaying information beautifully
+short-title: Displaying information beautifully
 banner-image: /work/webrear-case-study/ipad.jpg
-quote: I believe Dragonfly’s interactive is one of the best visualisations of public data in New Zealand.
-quote-attribution: Harkanwal Singh, Data Editor, New Zealand Herald
+quote: >
+  I believe Dragonfly’s interactive is one of the best visualisations of
+  public data in New Zealand.
+quote-attribution: |
+  Harkanwal Singh,
+  Data Editor,
+  New Zealand Herald
 logo: /work/webrear-case-study/mbie-logo.png
-summary: An intuitive website and iPad app to explore New Zealand's economic results.
+summary: makes it easy for anyone to explore New Zealand's economic data
 tags: systems 
 project-link: http://webrear.mbie.govt.nz/summary/new-zealand
 project-link-text: View project
 project-link-title: Explore New Zealand’s regional economies
+CTADescriptor: some text
+CTAButton: read more
 ---
 
-This project for the Ministry of Business, Innovation and Employment put data on New Zealand’s regional
-economies online, making the information widely available. We created a desktop version and iPad and mobile apps to help people explore the data. 
+This project put data on New Zealand’s regional economies online, making the 
+information widely available. We created a desktop version and iPad and mobile
+apps to help people explore the numbers.
 
 <!--more-->
 

@@ -2,6 +2,7 @@
 email: katrin@dragonfly.co.nz
 firstname: Katrin
 lastname: Berkenbusch
+role: Marine scientist
 mobile: ''
 tag: katrin
 honour: PhD

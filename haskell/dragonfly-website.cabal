@@ -25,6 +25,7 @@ executable website
                      , WebSite.People
                      , WebSite.Publications
                      , WebSite.Work
+                     , WebSite.WhatWeDo
                      , WebSite.Util
   other-extensions:    OverloadedStrings, RecordWildCards, TupleSections, QuasiQuotes
   build-depends:       base

@@ -1,0 +1,19 @@
+<header class="page-header page-header--reversed bg-cool-blue math-paper math-paper--reverse">
+  <div class="page-header__outer">
+    <div class="page-header__container text-white">
+      <h1 class="page-header__title">$title$</h1>
+
+      <div class="page-header__content">
+        <p>$introduction$</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="top-section" class="math-paper">
+  <div class="collection-grid collection-grid--articles collection-grid--no-bottom list">
+    $for(work)$
+    $partial("templates/_tile.html")$
+    $endfor$
+  </div>
+</section>

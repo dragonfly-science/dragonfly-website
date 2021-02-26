@@ -2,20 +2,22 @@
 email: edward@dragonfly.co.nz
 firstname: Edward
 lastname: Abraham
+role: Founder & CEO
 phone: +64 21 989 454
 tag: edward
 honour: PhD
 title: Edward Abraham, PhD
 banner: abraham-edward/edward-abraham-letterbox.jpg
-sortorder: "1"
+sortorder: "2"
 nocite: |
-  @abraham2000isd
-  @abraham_effectiveness_2009
-  @richard_risk_2013
+    @abraham2000isd
+    @abraham_effectiveness_2009
+    @richard_risk_2013
 ---
 
-Edward is the founder and CEO of Dragonfly. He enjoys bringing evidence to the
+Edward started Dragonfly in 2006. He enjoys bringing evidence to the
 table, using information to make clear, principled decisions.
+
 <!--more-->
 
 Since founding the company in 2006, Edward and the growing Dragonfly team have used their skills to
@@ -32,4 +34,3 @@ the physical and biological environment. Since starting Dragonfly, he has focuss
 > resulting in principled decisions that make best use of available information.
 
 ### Selected publications
-

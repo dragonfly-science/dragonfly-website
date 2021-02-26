@@ -1,5 +1,9 @@
 # Dragonfly website
 
+# Redevelopment
+
+Redevelopment is happening on the `staging' branch.
+
 ## Open code
 
 This is the repository for the website of [Dragonfly Data Science](http://www.dragonfly.co.nz). You are welcome to report any issues with the website, through [GitHub](https://github.com/dragonfly-science/website/issues). If you really enjoy fixing other peoples' stuff, pull requests would also be appreciated!
@@ -113,4 +117,7 @@ The release branch is automatically deployed. You can manually merge from master
 pull request. Creating a pull request on github from the master branch to the release branch
 is the preferred method of deploying.
 
+# Redevelopment
+
+New front end development is taking place on the staging branch.
 

@@ -1,0 +1,5 @@
+NPM ?=
+SHOWCONTROLS ?=
+
+npm:
+	SHOWCONTROLS=800 npm $(NPM)

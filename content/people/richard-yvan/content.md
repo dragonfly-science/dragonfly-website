@@ -3,6 +3,7 @@ title: Yvan Richard
 email: yvan@dragonfly.co.nz
 firstname: Yvan
 lastname: Richard
+role: Data scientist
 title: Yvan Richard, PhD
 honour: PhD
 mobile: ''

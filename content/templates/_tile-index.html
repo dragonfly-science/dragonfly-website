@@ -12,8 +12,9 @@ $endif$
     $else$
         <span class="no-gutter-cell__tag">&nbsp;</span>
     $endif$
+    $if(title)$
     <strong class="no-gutter-cell__title">$title$</strong>
-
+    $endif$
     $if(teaser)$
         <div class="no-gutter-cell__text">$teaser$</div>
     $endif$
@@ -22,7 +23,7 @@ $endif$
         <span class="icon dragonfly-arrow ml-0 mt-4"></span>
     </span>
 
-    <div class="no-gutter-cell__image background-image lozad" data-background-image="$teaserImage$"></div>
+    <div class="no-gutter-cell__image no-gutter-cell__image--large background-image lozad" data-background-image="$teaserImage$"></div>
 $if(pageurl)$
 </a>
 $else$

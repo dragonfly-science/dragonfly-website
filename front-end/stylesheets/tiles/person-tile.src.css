@@ -1,0 +1,160 @@
+.person-tile {
+  @apply overflow-hidden relative flex flex-row items-end;
+  @apply transition-all duration-500 ease-out-quart min-h-30;
+
+  filter: grayscale(100%) sepia(50%);
+
+  &__image {
+    @apply bg-top;
+  }
+
+  &__link {
+    @apply relative ml-auto z-20;
+  }
+
+  &__title {
+    @apply mb-0 z-10 max-w-3/4;
+
+    font-size: 8vw;
+  }
+
+  /* Variations */
+  &--advert {
+    @apply flex flex-row items-end bg-greeny-blue text-white;
+
+    filter: none;
+
+    &:hover {
+      @apply bg-cool-blue;
+    }
+
+    &::before {
+      @apply hidden;
+    }
+  }
+
+  &--singular {
+    @apply min-h-0 max-w-full w-56 overflow-visible flex-col p-0;
+
+    img {
+      @apply relative z-0;
+
+      &::before {
+        @apply absolute bottom-0 left-0 w-full h-full z-10 block;
+        @apply transition-all duration-500 ease-out-quart;
+
+        content: '';
+        background-blend-mode: multiply;
+        background:
+          linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0) 100%
+          );
+      }
+
+      + h2 {
+        @apply hidden;
+      }
+
+      &.loaded {
+        + h2 {
+          @apply block;
+        }
+      }
+    }
+
+    .person-tile__title {
+      @apply text-xl leading-none font-medium;
+    }
+
+    .person-tile__role {
+      @apply block mt-4;
+    }
+
+    &:hover {
+      .no-gutter-cell__text {
+        @apply opacity-100 mb-16;
+      }
+
+      .no-gutter-cell__link {
+        .icon {
+          @apply mr-0;
+        }
+      }
+    }
+  }
+
+  &::before {
+    @apply absolute bottom-0 left-0 w-full h-full z-10 block;
+    @apply transition-all duration-500 ease-out-quart;
+
+    content: '';
+    background-blend-mode: multiply;
+    background:
+      linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+  }
+
+  &:hover {
+    filter: grayscale(0) sepia(0);
+
+    &::before {
+      background:
+        linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    .person-tile__title {
+      @apply mb-0;
+    }
+
+    .no-gutter-cell__image {
+      transform: translate3d(-50%, -50%, 0) scale(1.03);
+    }
+  }
+}
+
+@screen sm {
+  .person-tile {
+    &__title {
+      font-size: 5vw;
+    }
+  }
+}
+
+@screen md {
+  .person-tile {
+    &__title {
+      font-size: 4vw;
+    }
+  }
+}
+
+@screen lg {
+  .person-tile {
+    &__title {
+      font-size: 3.25vw;
+    }
+  }
+}
+
+@screen xl {
+  .person-tile {
+    @apply w-1/4;
+
+    &__title {
+      font-size: 2.2vw;
+    }
+
+    &--singular {
+      @apply w-full;
+    }
+  }
+}

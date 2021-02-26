@@ -1,16 +1,23 @@
 ---
-short-title: Who's eating who
-title: Statistical modelling for working out who's eating who
-summary: An ongoing partnership is creating new tools for working out who's eating who.
+short-title: New tools to figure out who's eating who
+title: New tools to figure out who's eating who
+summary: improve our understanding of how fishing affects marine ecosystems
 tags: capability
 banner-image: /work/predator-prey/sardines.jpg
-quote: Dragonfly is such a great organisation to work with. They work very efficiently and we always get a fantastic product out of it.
+quote: >
+  Dragonfly is such a great organisation to work with. They work very
+  efficiently and we always get a fantastic product out of it.
 quote-attribution: Dr Olaf Jensen, Institute of Marine and Coastal Sciences
 logo: /work/predator-prey/rutgers.jpg
 project-link: https://peerj.com/articles/920.pdf
 project-link-text: Read the paper
+CTADescriptor: some text
+CTAButton: read more
 ---
-Figuring out predator-prey relationships (or who’s eating who) in a marine ecosystem is fundamental for understanding ecosystems, and is increasingly recognised as an important aspect of managing fisheries. Knowing how strong the interactions between different species are, can be helpful in deciding how much of a predator or prey species can be harvested without adversely affecting the other. 
+A good understanding of marine predator-prey relationships is important for
+managing fisheries. Using statistical analysis we can model the strength of
+interactions between different species to help decide how much of a predator or
+prey species can be harvested without adversely affecting the other.
 
 <!--more-->
 

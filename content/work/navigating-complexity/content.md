@@ -1,14 +1,20 @@
 ---
-short-title: Navigating complexity
-title: Collaborative data analysis for fisheries research
-summary: Long term development of data anaysis systems is supporting sustainable fisheries management.
+short-title: Sensible, well-built data management systems
+title: Sensible, well-built data management systems
+summary: have enduring value for sustainably managing our fisheries
 tags: systems
 banner-image: /work/navigating-complexity/fish-factory.jpg
-quote: We sat down together and discussed a concept. Then Dragonfly came up with some absolutely key ideas that have really made our system what it is.
+quote: >
+  We sat down together and discussed a concept. Then Dragonfly came up with some
+  absolutely key ideas that have really made our system what it is.
 quote-attribution: David Middleton, Chief Executive, Trident Systems
 logo: /work/navigating-complexity/trident-logo.png
+CTADescriptor: some text
+CTAButton: read more
 ---
-Sustainable management based on robust analyses of well managed data is critically important to fishers and fishery managers in New Zealand. We support Trident Systems’ commitment to collecting better data – and getting more value from that data – to benefit the country’s fisheries.
+Robust analysis of well-managed data is critically important to fishers and
+fishery managers in New Zealand. We support a commitment to collecting better
+data – and getting more value from that data – to benefit our fisheries.
 
 <!--more-->
 

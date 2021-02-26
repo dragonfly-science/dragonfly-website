@@ -25,6 +25,7 @@ import           Data.Maybe
 import           Data.Monoid          ((<>))
 import           System.FilePath      (replaceExtension, takeBaseName, takeDirectory)
 import           Text.CSL.Reference   (Reference)
+import           Text.Read            (readMaybe)
 
 import           WebSite.Bibliography
 import           WebSite.Config
@@ -94,13 +95,37 @@ itemCtx  = listContextWith "tags" tagContext
         <> defaultContext
 
 teaserImage :: Context String
-teaserImage = field "teaserImage" getImagePath
+teaserImage = field "teaserImage" (getImagePath "960")
+           <> field "teaserImageSmall" (getImagePath "256")
+           <> field "teaserImageMedium" (getImagePath "480")
+           <> field "teaserImageLandscape" (getImagePathLrg "960-landscape")
+           <> field "teaserImageCredit" (getImageMeta "credit")
+           <> field "teaserImageCaption" (getImageMeta "caption")
+           <> field "teaserImageTitle" (getImageMeta "title")
+           <> field "teaserImageCreditLink" (getImageMeta "link")
+           <> field "teaserImageType" (getImageMeta "type")
+           <> field "teaserImageWidth" (getImageMeta "width")
+           <> field "teaserImageHeight" (getImageMeta "height")
   where
-    getImagePath item = do
+    getImagePath size item = do
         let path = toFilePath (itemIdentifier item)
             base = take ((length path) - 11) path
             ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" (toUrl . (flip replaceFileName "960-teaser.jpg"))) (getRoute ident)
+        fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser.jpg")))) (getRoute ident)
+    getImagePathLrg size item = do
+      let path = toFilePath (itemIdentifier item)
+          base = take ((length path) - 11) path
+          ident = fromFilePath $ base </> "teaser-large.jpg"
+      fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser-large.jpg")))) (getRoute ident)
+    getImageMeta f item = do
+        let path = toFilePath (itemIdentifier item)
+            base = take ((length path) - 11) path
+            ident = fromFilePath $ base </> "teaser.img.md"
+        metaTarget <- getMetadataField ident f
+        return $ fromMaybe "" metaTarget
+
+
+
 
 socialImage :: Context String
 socialImage = field "socialImage" getImagePath

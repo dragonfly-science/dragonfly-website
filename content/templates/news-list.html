@@ -1,19 +1,16 @@
 <header class="page-header page-header--reversed bg-cool-blue math-paper math-paper--reverse">
   <div class="page-header__outer">
     <div class="page-header__container text-white">
-      <h1 class="page-header__title">Latest news</h1>
+      <h1 class="page-header__title">$title$</h1>
 
       <div class="page-header__content">
-        <p>
-          We like to tell our stories about the work we do for clients, and 
-          the diverse projects we're involved in.
-        </p>
+        <p>$introduction$</p>
       </div>
     </div>
   </div>
 </header>
 
-<section id="top-section" class="math-paper">
+<section id="top-section">
   <div id="filter-list" data-type="news article">
     <div class="filtering bg-light-peach">
       <div class="flex">
@@ -25,11 +22,10 @@
       </div>
     </div>
 
-    <div class="collection-grid collection-grid--articles collection-grid--no-bottom list">
+    <div class="collection-grid collection-grid--no-bottom list bg-black">
       $for(news)$
-        $partial("templates/_tile.html")$
+      $partial("templates/_tile.html")$
       $endfor$
     </div>
   </div>
 </section>
-

@@ -1,0 +1,21 @@
+.news-article {
+  @apply mx-auto relative px-6 z-1;
+
+  &__sidebar {
+    @apply py-0 mr-24;
+
+    &.sidebar {
+      @apply py-0;
+    }
+  }
+
+  &__container {
+    @apply pb-24;
+  }
+}
+
+@screen md {
+  .news-article {
+    @apply px-8;
+  }
+}

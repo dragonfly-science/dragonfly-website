@@ -3,6 +3,7 @@ title: Caleb Moses
 email: caleb@dragonfly.co.nz
 firstname: Caleb
 lastname: Moses
+role: Mathmatician
 mobile: ''
 tag: caleb
 title: Caleb Moses

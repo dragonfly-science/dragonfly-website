@@ -1,7 +1,7 @@
 <header class="page-header page-header--news page-header--article page-header--small page-header--no-overlay bg-light-peach math-paper">
   <div class="page-header__outer">
     <div class="page-header__container flex flex-col">
-      $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
+      $if(title)$<h1 class="page-header__title max-w-full w-full">$title$</h1>$endif$
     </div>
   </div>
 </header>
@@ -10,14 +10,14 @@
   <div class="bg-light-peach px-6">
     <div class="container mx-auto flex flex-col lg:flex-row">
       <div class="body-content body-content--article body-content--full-width">
-          $if(citation)$  
+          $if(citation)$
             <div class="body-content__citation">
                 <h2 class="body-content__title">Citation</h2>
                 $citation$
             </div>
           $endif$
           $if(citation)$
-          <h3>Summary</h3>
+          <h3 class="body-content__title">Summary</h3>
           $else$
           <h2 class="body-content__title">Summary</h2>
           $endif$
@@ -26,14 +26,7 @@
           </div>
       </div>
 
-      <aside class="sidebar">
-          $if(pdf)$
-            <span class="block font-bold mb-2">Download</span>
-            <a class="relative z-20 transition-all transition-ease-out-quart hover:text-cool-blue" href="//files.dragonfly.co.nz/publications/pdf/$pdf$">
-              <i class="dragonfly-pdf mr-2"></i> PDF
-            </a>
-          $endif$
-          
+      <aside class="sidebar publication-sidebar">
           $if(tags)$
             <h3 class="mt-4 mb-2 font-bold">Tags</h3>
             <nav class="tag-list">
@@ -43,11 +36,18 @@
             </nav>
           $endif$
 
-          <a href="/publications" class="button button--slate-grey button--rounded button--icon button--icon-left button--small hover:button--white-slate-grey mt-4 justify-center mx-auto table w-auto sm:flex sm:w-full">
-            <span class="button--icon-left__icon dragonfly-arrow rotate-180"></span>
-            <span class="button--icon-left__text">All publications</span>
+          $if(pdf)$
+            <a class="relative z-20 button call-to-action__button call-to-action__button--cool-blue button--icon button--icon-left mt-8" href="//files.dragonfly.co.nz/publications/pdf/$pdf$">
+              <span class="button--icon-left__icon dragonfly-pdf"></span>
+            <span class="button--icon-left__text">download report</span>
+            </a>
+          $endif$
+
+          <a href="/publications" class="button call-to-action__button call-to-action__button--slate-grey button--icon button--icon-left mt-4">
+            <span class="button--icon-left__icon dragonfly-arrow transform rotate-180"></span>
+            <span class="button--icon-left__text">all publications</span>
           </a>
-         
+
       </aside>
     </div>
   </div>

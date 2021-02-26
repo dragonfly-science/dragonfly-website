@@ -1,15 +1,21 @@
 ---
-title: Data science capability building
-short-title: Capability building
+title: Repeatable, automated reporting
+short-title: Repeatable, automated reporting
+summary: is more collaborative and efficient for data-rich reports
 banner-image: /work/reporting-case-study/electricity-use-and-demand.png
-summary: A system to efficiently produce data-rich, collaborative reports.
 tags: capability
-quote: If I have another chance to work with Dragonfly I won't hesitate to say yes. No question. 
-quote-attribution: Vij Kooyela, Senior Analyst, Ministry of Business, Innovation and Employment 
+quote: >
+  If I have another chance to work with Dragonfly I won't hesitate to say yes.
+  No question. 
+quote-attribution: >
+  Vij Kooyela, Senior Analyst, Ministry of Business, Innovation and Employment 
 logo: /work/reporting-case-study/mbie-logo.png
+CTADescriptor: some text
+CTAButton: read more
 ---
-One of our strengths is a focus on repeatable, automated reporting. We worked with the Sector Performance
-team at the Ministry of Business, Innovation & Employment (MBIE) to improve their data analysis processes and make their reporting more collaborative and efficient.
+We used our expertise in reproducible reporting to improve a team's data
+analysis processes, saving them significant time and effort on their 
+regular reports.  
 <!--more-->
 
 ## A complex report 

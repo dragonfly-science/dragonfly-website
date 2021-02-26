@@ -1,5 +1,8 @@
 ---
-title: Our work
+title: Projects
+introduction: >
+  Browse our recent work to see the kinds of things we do. Data managment,
+  statistical analysis and machine learning are all there in the mix.
 ---
 
 

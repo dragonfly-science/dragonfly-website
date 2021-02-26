@@ -1,15 +1,24 @@
 ---
-title: Spatial modelling of koala
-short-title: Spatial modelling
-quote: Dragonfly’s expertise in working with uncertain data sets was the key driver in choosing them as a contractor.
-quote-attribution: Dr Richard Seaton, Department of Environment and Heritage Protection, Queensland
-summary: A technical review of the statistical methods used in a koala population study. 
+short-title: Technical review of a population study
+title: Technical review of a population study
+summary: confirmed that koala population data had been correctly analysed
+quote: >
+    Dragonfly’s expertise in working with uncertain data sets was the key driver
+    in choosing them as a contractor.
+quote-attribution: >
+    Dr Richard Seaton, 
+    Department of Environment and Heritage Protection, 
+    Queensland
 tags: stats, capability
 banner-image: /work/technical-review-case-study/koala.jpg
 logo: /work/technical-review-case-study/queensland-government.png
+CTADescriptor: some text
+CTAButton: read more
 ---
 
-We reviewed a koala population study for the Department of Environment and Heritage Protection in Queensland. The technical review checked that their client had used appropriate spatial modelling and data analysis methods and that the report's conclusions were fair. 
+We reviewed a koala population study, checking that the report authors had used
+appropriate spatial modelling and data analysis methods, and that its
+conclusions were fair.
 <!--more-->
 
 ### Koala population modelling in southeast Queensland

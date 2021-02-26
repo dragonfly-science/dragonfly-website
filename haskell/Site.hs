@@ -19,6 +19,7 @@ import qualified WebSite.People       as People
 import qualified WebSite.Publications as Publications
 import           WebSite.Validate     (validatePage)
 import qualified WebSite.Work         as Work
+import qualified WebSite.WhatWeDo     as WhatWeDo
 
 config :: Configuration
 config = defaultConfiguration
@@ -65,16 +66,24 @@ main = do
                           , ("1600", ["-resize" , "1600"])
                           ]
     Images.imageProcessor ( "**/teaser.jpg") $
-                          [ ( "1200", ["-resize" , "1200+600^", "-gravity", "Center", "-crop", "1200+6000+0+0", "-quality", "75"])
-                          , ( "960", ["-resize" , "960+960^", "-gravity", "Center", "-crop", "960+960+0+0", "-quality", "75"])
-                          , ( "480", ["-resize" , "600+600^", "-gravity", "Center", "-crop", "600+600+0+0", "-quality", "75"])
+                          [ ( "1200", ["-resize" , "1200x600^", "-gravity", "Center", "-crop", "1200x600+0+0", "-quality", "75"])
+                          , ( "960", ["-resize" , "960x960^", "-gravity", "Center", "-crop", "960x960+0+0", "-quality", "75"])
+                          , ( "480", ["-resize" , "600x600^", "-gravity", "Center", "-crop", "600x600+0+0", "-quality", "75"])
                           , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
                           , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0", "-quality", "75"])
                           ]
 
+    Images.imageProcessor ( "**/teaser-large.jpg") $
+                          [ ( "960-landscape", ["-resize" , "410+960^", "-gravity", "Center", "-crop", "410+960+0+0", "-quality", "75"])
+                          ]
 
-    --Images.imageProcessor ( "**/*.pdf") $
-    --                      [ ( "256", ["-density" , "100", "-resize", "256x256^", "-crop", "256x256+0+0"])
+    -- People hero banners.
+    Images.imageProcessor ( "people/**/*-letterbox.jpg") $
+                          [ ( "banner", ["-resize" , "1900", "-gravity", "Center", "-crop", "1900", "-quality", "85"])
+                          ]
+
+    -- Images.imageProcessor ( "**/*.pdf") $
+    --                      [ ( "480", ["-density" , "100", "-resize", "480x480^", "-crop", "480x480+0+0"])
     --                      ]
 
     -- Home page
@@ -116,18 +125,12 @@ main = do
     -- Publications section
     Publications.rules
 
-    -- Contact page
-    match "pages/what-we-do.html" $ do
-        route $ constRoute "what-we-do.html"
-        compile $ do
-            ctx <- baseContext "what-we-do"
-            getResourceBody
-                >>= applyAsTemplate ctx
-                >>= loadAndApplyTemplate "templates/default.html" ctx
+    -- What we do section
+    WhatWeDo.rules
 
     -- Standalone pages
     match "pages/*.html" $ do
-        route $ setExtension "html"
+        route $ setExtension ""
         compile $ do
             ctx  <- baseContext "index"
             getResourceBody
