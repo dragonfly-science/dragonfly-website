@@ -1,0 +1,75 @@
+/*  Animation controls for the game of life. */
+.animation-controls {
+  @apply absolute z-20 bg-slate-grey text-white flex flex-col w-full;
+  @apply max-w-14rem -mr-56 right-0 transition-all;
+
+  top: 28px;
+
+  button {
+    &:active,
+    &:focus {
+      @apply outline-none;
+    }
+  }
+
+  &.open {
+    @apply mr-0;
+
+    .animation-controls__header {
+      button {
+        .dragonfly-close {
+          @apply block;
+        }
+
+        .dragonfly-hamburger {
+          @apply hidden;
+        }
+      }
+    }
+  }
+
+  &__header {
+    @apply shadow-lg;
+
+    button {
+      @apply -ml-8 bg-slate-grey block w-8 shadow-lg transition-all;
+
+      &:hover {
+        @apply w-10 -ml-10;
+      }
+
+      .dragonfly-close {
+        @apply hidden;
+      }
+    }
+
+    span {
+      @apply flex-grow px-4 py-2 font-medium text-sm leading-none block my-auto;
+    }
+  }
+
+  &__control {
+    @apply flex flex-row bg-cool-blue shadow-lg text-sm text-slate-grey;
+
+    &__buttons {
+      @apply flex flex-col py-4 mr-4 justify-between;
+    }
+
+    button {
+      @apply relative border-t border-r border-slate-grey w-2 h-2 block;
+    }
+
+    input {
+      @apply mx-4 my-2 w-8 flex-grow text-right font-bold;
+    }
+  }
+
+  &__input {
+    @apply bg-cool-blue;
+
+    &:active,
+    &:focus {
+      @apply outline-none;
+    }
+  }
+}

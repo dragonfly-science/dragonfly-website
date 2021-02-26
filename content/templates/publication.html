@@ -1,16 +1,16 @@
 <div class="container post-detail">
   $if(title)$
-    <div class="heading wide">
-      <h2>$title$</h2>
-    </div>
+  <div class="heading wide">
+    <h2>$title$</h2>
+  </div>
   $endif$
   <div class="sidebar">
     $if(pdf)$
-      <h3 class="download">
-        <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$">
-          <i class="fa fa-file-pdf-o" style="display:inline"></i> PDF
-        </a>
-      </h3>
+    <h3 class="download">
+      <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$">
+        <i class="fa fa-file-pdf-o" style="display:inline"></i> PDF
+      </a>
+    </h3>
     $endif$
     <!--
     # Uncomment this when the tagging mechanism is working fully
@@ -23,8 +23,10 @@
     -->
   </div>
   <div class="content">
+    $if(citation)$
     <h3>Citation</h3>
     <p>$citation$</p>
+    $endif$
     <h3>Summary</h3>
     $body$
   </div>
