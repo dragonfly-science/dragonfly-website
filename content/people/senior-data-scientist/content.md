@@ -24,7 +24,7 @@ Applicants are expected to have
 
 The role is offered as a permanent position, with salary depending on
 experience. The role is New Zealand based. Dragonfly has an office in
-Wellington, but we can allow working from other centres.
+Wellington, but staff can also work from other centres.
 
 To apply for this position, please send a cover letter (a maximum of two pages)
 and a curriculum vitae to [Finlay Thompson <finlay@dragonfly.co.nz>](mailto:finlay@dragonfly.co.nz).
