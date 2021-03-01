@@ -8,7 +8,6 @@ banner: vacancies/vacancies-letterbox.jpg
 ---
 
 Would you like to join the Dragonfly Data Science team ?
-
 <!--more-->
 
 Dragonfly Data Science is a dynamic data science company with a range of public

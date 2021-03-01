@@ -5,7 +5,7 @@ tag: vacancies
 teaser: ""
 firstname: Senior data
 lastname: scientist
-banner: graduate-data-scientist/vacancies-letterbox.jpg
+banner: senior-data-scientist/vacancies-letterbox.jpg
 ---
 
 We are looking for an experienced data scientist who is skilled in the

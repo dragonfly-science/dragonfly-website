@@ -10,7 +10,6 @@ nocite: |
 ---
 
 Simon is a lead front-end developer at Dragonfly who loves to combine great design with a seamless user experience.
-
 <!--more-->
 
 He is a seasoned visual designer and developer, having worked at a number of digital agencies before joining Dragonfly. Six years were spent at [Salted Herring](https://www.saltedherring.design/).
