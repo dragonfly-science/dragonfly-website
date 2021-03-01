@@ -15,11 +15,12 @@ on a wide range of projects. We are looking for someone who can work in a team,
 but also lead work streams when required.
 
 Applicants are expected to have
- * in-depth understanding of - and practice with - statistical modelling,
- * knowledge of modern software development practice,
- * the ability to communicate scientific and mathematical ideas,
- * strong written and verbal communication skills,
- * a graduate degree in a quantitative science, or equivalent experience.
+
+  - an in-depth understanding of, and practice with, statistical modelling,
+  - a knowledge of modern software development practice,
+  - the ability to communicate scientific and mathematical ideas,
+  - strong written and verbal communication skills,
+  - a graduate degree in a quantitative science, or equivalent experience.
 
 The role is offered as a permanent position, with salary depending on
 experience. The role is New Zealand based. Dragonfly has an office in
