@@ -30,8 +30,7 @@ To apply for this position, please send a cover letter (a maximum of two pages)
 and a curriculum vitae to [Finlay Thompson <finlay@dragonfly.co.nz>](mailto:finlay@dragonfly.co.nz).
 International applicants are asked to check their visa eligibility on the
 Immigration New Zealand website. Because of COVID-19, there is currently
-limited immigration to New Zealand, however highly-qualified applicants may be
-eligible to enter New Zealand under the critical worker category.
+limited immigration to New Zealand.
 
 Applications close at 5pm, Monday March 22, 2021
 
