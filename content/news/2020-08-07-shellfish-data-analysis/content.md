@@ -10,7 +10,7 @@ Industry Council and annual bivalve surveys in northern New Zealand.
 The annual bivalve surveys collect population information of cockles and pipi, and also determine the
 grain size and organic content of sediment at the different intertidal sites. The current analysis of
 the multi-year data set is aimed at identifying the influence of these sediment characteristics on cockle
-populations.  
+populations.
 
 The role of sediment and its influence on bivalves was also part of Dayanitha's master's
 degree in marine biology, which she completed in May this year.
@@ -18,7 +18,7 @@ degree in marine biology, which she completed in May this year.
 “I studied how shellfish (cockles and tuatua) respond to stress in their environment by
 decreasing the salinity, and increasing the temperature and sediment loading in their tanks.
 Every day I checked their behaviour, and I took weekly samples
-for dissection to see how their cells were being affected at a microscopic level.”  
+for dissection to see how their cells were being affected at a microscopic level.”
 
 She found the biggest behavioural changes in the salinity experiments, but increased sediment
 loading caused the bivalves to die relatively quickly.
@@ -27,7 +27,7 @@ Dayanitha was particularly keen to identify and trial a behaviour response to st
 how long it took for the foot to retract. Tuatua use their retractable foot to anchor themselves in the
 sediment, and their burying ability is an indication of their overall condition. Although more research is needed,
 the timing of this behavioural response is a potential method for citizen science for determining the condition
-of bivalves at local beaches and estuaries.  
+of bivalves at local beaches and estuaries.
 
 “Analysing my own data from the shellfish work ended up being one of the most fun parts of my postgrad project.
 I have a lot of data science in my family and the more stats I did, the more I enjoyed it – hence wanting to work at Dragonfly.”

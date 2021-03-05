@@ -10,7 +10,6 @@ nocite:
 ---
 
 Pep is design lead at Dragonfly. He applies a robust design process to our digital products and projects, ensuring that the end results are engaging and intuitive – even for our complex and abstract stories. Pep is also a digital design consultant for his agency Salted Herring.
-
 <!--more-->
 
 Pep’s collaboration with Dragonfly began about 10 years ago but he has designed and art-directed digital projects for more than 20 years. Projects include the Regional Economic Activity Report, a bycatch management information tool and Kōkako, an award-winning language tracking app.
