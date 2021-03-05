@@ -7,6 +7,10 @@ tiles:
   - work/INZ-case-study/content.md
   - news/2019-09-25-whitetip-assessment/content.md
   - work/webrear-case-study/content.md
+sections:
+  - what-we-do.md
+  - people.md
+  - work.md
 ---
 
 # Dragonfly Data Science

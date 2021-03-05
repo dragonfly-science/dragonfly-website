@@ -65,6 +65,8 @@
   <div id="blob" class="game-of-life-blob absolute top-0 left-0 z-0 min-w-full h-full"></div>
 </header>
 
+<!--
+
 <section class="advert">
   <div class="advert__container container">
     <div class="advert__inner">
@@ -80,29 +82,18 @@
     </div>
   </div>
 </section>
+-->
+
+
+<div class="numbered-sections">
+  $for(sections)$
+    $partial("templates/_numbered-section.html")$
+  $endfor$
+</div>
 
 <section id="top-section" class="math-paper">
   <div class="collection-grid collection-grid--no-bottom">
     $for(tiles)$ $partial("templates/_tile-index.html")$ $endfor$
-    <a
-      href="/people/"
-      class="no-gutter-cell no-gutter-cell--bottom-aligned no-gutter-cell--overlay no-gutter-cell--title-only bg-black flex"
-    >
-      <strong class="no-gutter-cell__title mb-0 mt-auto"
-        >Meet <br />the team</strong
-      >
-
-      <span
-        class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link ml-auto"
-      >
-        <span class="icon dragonfly-arrow ml-0"></span>
-      </span>
-
-      <div
-        class="no-gutter-cell__image background-image lozad"
-        data-background-image="/images/team_tile.jpg"
-      ></div>
-    </a>
   </div>
 </section>
 

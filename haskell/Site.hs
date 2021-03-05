@@ -96,6 +96,14 @@ main = do
             work   <- Work.list 3
             news   <- News.list 6
 
+            -- Section definition
+            let getSections itm = do
+                  md <- getMetadata (itemIdentifier itm)
+                  case lookupStringList "sections" md of
+                    Just sections -> mapM (load . fromFilePath) sections
+                    Nothing -> return []
+                sections = listFieldWith "sections" itemCtx getSections
+
             -- Tile definition
             let getTiles itm = do
                   md <- getMetadata (itemIdentifier itm)
@@ -104,7 +112,14 @@ main = do
                     Nothing -> return []
                 tiles = listFieldWith "tiles" itemCtx getTiles
 
-            let ctx = base <> people <> work <> news <> bubbles <> tiles
+            let ctx = base
+                   <> people
+                   <> work
+                   <> news
+                   <> bubbles
+                   <> tiles
+                   <> sections
+
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
