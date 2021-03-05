@@ -1,11 +1,11 @@
 ---
 title: One Dragonfly, three owners
 ---
-
-<!--more-->
 In November 2020, Edward brought in Finlay Thompson and Philipp Neubauer as
 fellow directors. Finlay is now also the chief executive, responsible for the
 day-to-day management of the company.
+
+<!--more-->
 
 Edward started Dragonfly in 2006 when he began contract analysis work for the
 Ministry for Primary Industries. Finlay was the first employee, joining
