@@ -42,7 +42,7 @@ In PAU 5B, the proposed rule could be used to motivate an increase in TACC,
 as all scenarios suggest continued rebuilding of biomass towards a level near
 60% of spawning stock biomass and catch-per-unit-effort (CPUE) around
 50 kg/h. In PAU 5A, the proposed control rules would likely  lead to
-steady increases in biomass to levels well above 40% of SSB<sub>0</sub>.  
+steady increases in biomass to levels well above 40% of SSB<sub>0</sub>.
 Nevertheless, the rules also suggested that the current shelving needs to
 be maintained under conservative management objectives.
 

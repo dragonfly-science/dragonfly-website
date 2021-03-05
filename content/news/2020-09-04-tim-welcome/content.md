@@ -15,9 +15,9 @@ Tim was the first employee at Dot Loves Data 6 years ago – the business grew t
 
 Tim learned to code to support humanitarian causes. His first code contribution was to the [Sahana disaster management system](https://sahanafoundation.org/). He remains a voting member of the [Humanitarian OpenStreetMap Team](https://www.hotosm.org/) and has been part of global disaster mapping efforts worldwide.
 
-In early 2011, he helped set up the Christchurch Recovery Map after the Canterbury earthquakes. Using volunteers, the website made real-time information available like where people could access water and petrol and which schools or shops were open.  
+In early 2011, he helped set up the Christchurch Recovery Map after the Canterbury earthquakes. Using volunteers, the website made real-time information available like where people could access water and petrol and which schools or shops were open.
 
-Tim is vice-president of the New Zealand Open Source Society and has made contributions to more than 150 open source packages. Other work has included experience in using data to help government agencies and businesses find out how much impact their public profile is having. 
+Tim is vice-president of the New Zealand Open Source Society and has made contributions to more than 150 open source packages. Other work has included experience in using data to help government agencies and businesses find out how much impact their public profile is having.
 
 Tim has two young children, is about to give birth to a non-fiction book and, if time allowed, he’d be training for his next ultramarathon.
 

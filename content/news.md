@@ -6,5 +6,3 @@ introduction: >
 ---
 
 # News
-
-

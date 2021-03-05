@@ -9,13 +9,13 @@ His journey started at Ship Cove in the Marlborough Sounds just after Christmas 
 
 Many trail walkers take on the challenge for a particular reason. Although there was nothing specific for Edward, he says sorting out his late parents affairs and selling the family farm had got him thinking.
 
-“Tramping was something we used to do together and I thought it would be cool to do some more of that. And none of us are getting any younger.”  
+“Tramping was something we used to do together and I thought it would be cool to do some more of that. And none of us are getting any younger.”
 
 Discovering new parts of Aotearoa he knew nothing about, making friends with fellow walkers and staying in tramping huts were highlights. In a post from the trail he wrote, “The huts are a highlight. A leftover from socialist utopia New Zealand, full of history. A great thing about DOC huts is that the interiors are never refurbished so they keep their feeling.”
 
 His photos feature beautiful native plants, views and new young Irish and Scottish walking friends – including meals and celebrations as they made it to another town.
 
-“I liked the rhythm. You can be alone all day but you catch up with people at night.”  
+“I liked the rhythm. You can be alone all day but you catch up with people at night.”
 
 ![Crossing one of the many South Island rivers](/news/2020-03-12-te-araroa/wading-river.jpg)
 
