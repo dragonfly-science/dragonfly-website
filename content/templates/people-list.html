@@ -25,7 +25,7 @@
     $for(people)$
     <a href="$pageurl$" class="no-gutter-cell person-tile bg-black">
       <h2 class="no-gutter-cell__title person-tile__title">
-        $firstname$<br>
+        $if(firstname)$$firstname$$endif$<br>
         $lastname$$if(honour)$<br>
         <span class="font-light">$honour$</span>$endif$
       </h2>

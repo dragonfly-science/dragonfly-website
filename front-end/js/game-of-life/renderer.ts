@@ -146,6 +146,7 @@ class Renderer {
 
   public save(): void {
     const isPlaying = this.play
+
     this.stop()
 
     const { height, width } = this.canvas

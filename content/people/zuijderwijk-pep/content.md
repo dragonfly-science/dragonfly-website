@@ -6,13 +6,16 @@ lastname: Zuijderwijk
 role: Designer
 bannerTitleLine1: Pep
 bannerTitleLine2: Zuijderwijk [Zow-der-vaik]
-mobile: ''
+mobile: ""
 tag: pep
 banner: zuijderwijk-pep/banner-pep-zuiderwijk-letterbox.jpg
 ---
-Pep is design lead at Dragonfly, and a digital design consultant for his agency 
-Salted Herring. 
+
+Pep is design lead at Dragonfly, and a digital design consultant for his agency
+Salted Herring.
+
 <!-- more -->
+
 He is responsible for applying a robust design process to our digital products &
 projects. This ultimately ensures an intuitive and engaging user-experience in
 the often very complex and abstract [models/data sets/stories] we create.
@@ -32,17 +35,17 @@ work. Some of the clients include: Whittaker’s Chocolate, the Asia NZ
 Foundation, the NZ Festival, Totara Learn, ComplyWith and many SaaS start-ups.
 Find more on [saltedherring.design](https://saltedherring.design)
 
-> Design can turn abstract data into compelling and meaningful stories that have 
-the power to shift perspectives and change behaviour. This is what excites me
-about working with the team at Dragonfly.
+> Design can turn abstract data into compelling and meaningful stories that have
+> the power to shift perspectives and change behaviour. This is what excites me
+> about working with the team at Dragonfly.
 
 **Awards include:**
 
 Designers Institute of New Zealand Best Awards:
 
-* Purple Pin (Best of Interactive)
-* 3x Gold Pin
-* 1x Silver
-* 3 bronze
-* 7 finalists
-* Judged design awards, interactive category in 2018 and 2009.
+- Purple Pin (Best of Interactive)
+- 3x Gold Pin
+- 1x Silver
+- 3 bronze
+- 7 finalists
+- Judged design awards, interactive category in 2018 and 2009.

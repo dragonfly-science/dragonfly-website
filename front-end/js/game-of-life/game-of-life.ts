@@ -72,7 +72,7 @@ const gameOfLife = (): void => {
   })
 
   $('#pauseButton').on('click', () => {
-    renderer.play = !renderer.play
+    renderer.togglePlay()
   })
 
   $('#saveButton').on('click', () => {

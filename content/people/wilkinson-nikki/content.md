@@ -4,12 +4,14 @@ email: nikki@dragonfly.co.nz
 firstname: Nikki
 lastname: Wilkinson
 role: Data scientist
-mobile: ''
+mobile: ""
 tag: nikki
 banner: wilkinson-nikki/nikki-wilkinson-letterbox.jpg
 ---
+
 Nikki is a data scientist at Dragonfly and has a strong interest in machine learning
 and artificial intelligence.
+
 <!--more-->
 
 She has a Bachelor of Science degree in mathematics and statistics (including a
@@ -21,5 +23,5 @@ Nikki believes that considering security and ethics when managing data is
 becoming more and more important.
 
 > When you're dealing with data, you have to remember the people behind it and
-what you're doing it for. There’s always a story behind the data - it's not just
-numbers.
+> what you're doing it for. There’s always a story behind the data - it's not just
+> numbers.
