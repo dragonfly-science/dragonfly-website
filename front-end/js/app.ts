@@ -12,7 +12,6 @@ import StickySidebar from './sticky-sidebar'
 import TopSection from './top-section'
 
 Zepto(() => {
-  console.log('Process', process.env)
   Columns()
   Filtering()
   MobileMenu()
@@ -22,8 +21,5 @@ Zepto(() => {
   ImageCaptions()
   Footer()
   StickySidebar('.sticky-container__body', '.sticky-container__element')
-
-  // setTimeout(() => smoothscroll.polyfill(), 500)
-
   setTimeout(() => GameOfLife(), 1000)
 })

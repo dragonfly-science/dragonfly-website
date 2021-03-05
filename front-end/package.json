@@ -93,7 +93,7 @@
     "build:fonts": "postcss ../content/fonts/dragonfly.css --env production -o _site/fonts/dragonfly.css",
     "build:js": "webpack --mode=production",
     "build": "npm run css & npm run fonts & npm run build:js",
-    "build:dev": "npm run css & npm run fonts & SHOWMENU=1 npm run build:js",
+    "build:dev": "npm run css & npm run fonts & npm run build:js",
     "check-types": "tsc",
     "css": "postcss ./stylesheets/main.src.css --env production -o ../content/stylesheets/dragonfly.css",
     "eslint": "eslint \"./js/**/*.ts\"",
@@ -109,7 +109,7 @@
     "ts:lint": "tslint -c tslint.json './js/**/*.ts'",
     "watch": "npm run watch:css & npm run watch:js",
     "watch:css": "postcss ./stylesheets/main.src.css --env development -m -o ../content/stylesheets/dragonfly.css -w",
-    "watch:js": "webpack -w"
+    "watch:js": "SHOWCONTROLS=$(SHOWCONTROLS) webpack -w"
   },
   "author": "",
   "license": "MIT",
