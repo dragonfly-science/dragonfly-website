@@ -9,8 +9,7 @@ banner: senior-data-scientist/vacancies-letterbox.jpg
 ---
 
 We are looking for an experienced data scientist who is skilled in the
-development and application of statistical modelling. Experience using natural language
-processing or machine learning is desirable, but not essential. We are looking for
+development and application of statistical modelling. We are looking for
 someone who can work in a team, but also lead work streams when required.
 
 Applicants are expected to have:
@@ -20,6 +19,11 @@ Applicants are expected to have:
   - the ability to communicate scientific and mathematical ideas,
   - strong written and verbal communication skills,
   - a graduate degree in a quantitative science, or equivalent experience.
+
+Initially this role will support our work with a government client to support
+the development algorithms that assist automated decision making. Other
+projects include statistical modelling and machine learning development across
+a wide range of applications.
 
 The role is offered as a permanent position, with salary depending on
 experience. The role is based in New Zealand. Dragonfly has an office in
