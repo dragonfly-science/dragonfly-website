@@ -10,20 +10,20 @@ banner: senior-data-scientist/vacancies-letterbox.jpg
 
 We are looking for an experienced data scientist who is skilled in the
 development and application of statistical modelling. Experience using natural language
-processing or machine learning is desirable, but not essential. We have a team
-of 18 data scientists working on a wide range of projects. We are looking for
+processing or machine learning is desirable, but not essential. Our current team
+includes 18 data scientists working on a wide range of projects. We are looking for
 someone who can work in a team, but also lead work streams when required.
 
-Applicants are expected to have
+Applicants are expected to have:
 
   - an in-depth understanding of, and practice with, statistical modelling,
-  - a knowledge of modern software development practice,
+  - knowledge of modern software development practice,
   - the ability to communicate scientific and mathematical ideas,
   - strong written and verbal communication skills,
   - a graduate degree in a quantitative science, or equivalent experience.
 
 The role is offered as a permanent position, with salary depending on
-experience. The role is New Zealand based. Dragonfly has an office in
+experience. The role is based in New Zealand. Dragonfly has an office in
 Wellington, but staff can also work from other centres.
 
 To apply for this position, please send a cover letter (a maximum of two pages)
@@ -32,7 +32,7 @@ International applicants are asked to check their visa eligibility on the
 Immigration New Zealand website. Because of COVID-19, there is currently
 limited immigration to New Zealand.
 
-Applications close at 5pm, Monday March 22, 2021
+Applications close at 5 pm on Monday, 22 March 2021.
 
 
 ### About Dragonfly Data Science
