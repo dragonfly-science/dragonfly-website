@@ -20,14 +20,14 @@ Applicants are expected to have:
   - strong written and verbal communication skills,
   - a graduate degree in a quantitative science, or equivalent experience.
 
-Initially this role will support our work with a government client to support
-the development algorithms that assist automated decision making. Other
-projects include statistical modelling and machine learning development across
+Initially, this role will support our work with a government client to support
+the development of algorithms that assist automated decision making. Other
+projects include statistical modelling and the development of machine learning across
 a wide range of applications.
 
 The role is offered as a permanent position, with salary depending on
 experience. The role is based in New Zealand. Dragonfly has an office in
-Wellington, but staff can also work from other centres.
+Wellington, with staff also working from other centres.
 
 To apply for this position, please send a cover letter (a maximum of two pages)
 and a curriculum vitae to [Finlay Thompson <finlay@dragonfly.co.nz>](mailto:finlay@dragonfly.co.nz).
