@@ -10,8 +10,7 @@ banner: senior-data-scientist/vacancies-letterbox.jpg
 
 We are looking for an experienced data scientist who is skilled in the
 development and application of statistical modelling. Experience using natural language
-processing or machine learning is desirable, but not essential. Our current team
-includes 18 data scientists working on a wide range of projects. We are looking for
+processing or machine learning is desirable, but not essential. We are looking for
 someone who can work in a team, but also lead work streams when required.
 
 Applicants are expected to have:
