@@ -12,6 +12,7 @@ module WebSite.Bibliography (
   reverseRefAuthors,
 ) where
 
+import Debug.Trace
 
 import           Control.Monad      ((>=>))
 import           Data.Default       (def)
@@ -21,6 +22,9 @@ import           Text.CSL.Reference (Reference)
 import qualified Text.CSL.Reference as Ref
 import           Text.CSL.Style     (Agent (..), Formatted (unFormatted))
 import           Text.Pandoc.Shared (stringify)
+import           Text.Pandoc.Options (ReaderOptions(readerExtensions)
+                                     ,enableExtension
+                                     ,Extension(Ext_citations))
 
 import           WebSite.Config
 
@@ -34,8 +38,11 @@ renderPandocBiblio
     -> Item String
     -> Compiler (Item String)
 renderPandocBiblio csl bib =
-    readPandocBiblio def csl bib >=> return . writePandocWith htm5Writer
-
+    readPandocBiblio ropt csl bib >=> return . writePandocWith htm5Writer
+    where ropt = defaultHakyllReaderOptions
+            { -- The following option enables citation rendering
+              readerExtensions = enableExtension Ext_citations $ readerExtensions defaultHakyllReaderOptions
+            }
 -- | Look up the BibTeX ID part of an identifier in a bibliography to see if
 -- there is a reference.
 lookupRef :: Identifier -> Item Biblio -> Maybe Reference
