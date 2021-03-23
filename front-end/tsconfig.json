@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     // Target latest version of ECMAScript.
     "target": "es2020",
     // Search under node_modules for non-relative imports.
@@ -15,12 +16,13 @@
     "isolatedModules": true,
     // Import non-ES modules as default imports.
     "esModuleInterop": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./js/types"
-    ]
+    "typeRoots": ["./node_modules/@types", "./src/js/types"],
+    "paths": {
+      "~game-of-life/*": ["./src/js/game-of-life/*"],
+      "~types/*": ["./src/js/types/*"],
+      "~root/*": ["./src/js/*"]
+    }
   },
-  "include": [
-    "./js"
-  ]
+  "include": ["src/js/**/*"],
+  "exclude": ["node_modules/**/*"]
 }

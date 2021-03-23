@@ -1,5 +1,4 @@
-FROM ubuntu:18.04
-MAINTAINER finlay@dragonfly.co.nz
+FROM node:buster
 
 RUN apt-get update
 RUN apt-get install -y build-essential zlib1g-dev curl
@@ -27,20 +26,14 @@ RUN apt-get install -y locales
 RUN localedef -i en_NZ -c -f UTF-8 -A /usr/share/locale/locale.alias en_NZ.UTF-8
 
 RUN apt-get install -y graphicsmagick-imagemagick-compat entr
-
-RUN curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
-RUN bash nodesource_setup.sh
-RUN apt-get install -y nodejs
-ENV PATH /node_modules/.bin:$PATH
-
 RUN apt-get update
-RUN apt-get install -y libjpeg8
+RUN apt-get install -y libjpeg-dev libjpeg62-turbo
 
 RUN mkdir /.config
 RUN chmod -R o+w /.config
 RUN mkdir /.npm
 RUN chmod -R o+w /.npm
 
-ADD package.json .
-ADD package-lock.json .
-RUN npm install --no-optional && npm cache clean --force
+ADD ./front-end/package.json .
+ADD ./front-end/package-lock.json .
+RUN npm install --no-optional

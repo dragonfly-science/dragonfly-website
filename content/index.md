@@ -8,9 +8,11 @@ tiles:
   - news/2019-09-25-whitetip-assessment/content.md
   - work/webrear-case-study/content.md
 sections:
-  - what-we-do.md
-  - people.md
-  - work.md
+  - landing-pages/what-we-do/content.md
+  - landing-pages/who-we-are/content.md
+  - landing-pages/work/content.md
+sectionTitle: Latest News
+sectionLeft: true
 ---
 
 # Dragonfly Data Science

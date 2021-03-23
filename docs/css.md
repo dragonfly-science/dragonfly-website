@@ -1,6 +1,6 @@
 # CSS
 
-CSS for the website is written for postcss (https://postcss.org/), primarily 
+CSS for the website is written for postcss (https://postcss.org/), primarily
 using the following pluigns:
 
 + autoprefixer
@@ -18,14 +18,15 @@ sass), can be nested.
 
 <!-- code_chunk_output -->
 
-- [Tailwind](#tailwind)
-- [Fonts](#fonts)
-- [Code location](#code-location)
-- [Structure](#structure)
-- [Methodology](#methodology)
-  - [Naming convention](#naming-convention)
-  - [Responsiveness](#responsiveness)
-- [PurgeCSS](#purgecss)
+- [CSS](#css)
+  - [Tailwind](#tailwind)
+  - [Fonts](#fonts)
+  - [Code location](#code-location)
+  - [Structure](#structure)
+  - [Methodology](#methodology)
+    - [Naming convention](#naming-convention)
+    - [Responsiveness](#responsiveness)
+  - [PurgeCSS](#purgecss)
 
 <!-- /code_chunk_output -->
 
@@ -43,7 +44,7 @@ It can be further customised via the `/tailwind.config.js` file.
 
 The site uses the font `Omnes Pro` which is loaded from typekit.
 
-There is also a custom font (called `dragonfly`) which is built from the svg 
+There is also a custom font (called `dragonfly`) which is built from the svg
 images in the `/images/icons` folder. It is built via a npm module `glyphs2font`
 which is called from the main `make develop` command. If you need to run this
 manually it can be called via `npm run fonts`.
@@ -99,7 +100,7 @@ the `@apply` function - e.g.:
 
 ### Naming convention
 
-We use the **BEM** naming comvention (http://getbem.com/naming/)
+We use the **BEM** naming convention (http://getbem.com/naming/)
 
 ### Responsiveness
 
@@ -163,6 +164,6 @@ blocks for each, rather than adding breakpoints within the code. e.g:
 ## PurgeCSS
 
 When the css is compiled for production, any unused css is removed via purgecss
-(https://www.purgecss.com/). It scans the html documents & templates & strips 
+(https://www.purgecss.com/). It scans the html documents & templates & strips
 out any css that is not in use (Tailwind can be especially large if not
 compressed).

@@ -1,0 +1,48 @@
+version: "3"
+services:
+  website_npm:
+    image: ${IMAGE}
+    restart: unless-stopped
+    networks:
+      - dragonfly_website
+    volumes:
+      - $PWD/content:/work/content:delegated
+      - $PWD/front-end:/work/front-end:delegated
+      - $PWD/_site/assets:/work/_site/assets:delegated
+    working_dir: /work
+    ulimits:
+      nofile:
+        soft: 524288
+        hard: 524288
+    command: >
+      bash -c "
+      cd /work/front-end &&
+      npm install &&
+      npm run watch
+      "
+  website_haskell:
+    image: ${IMAGE}
+    restart: unless-stopped
+    ports:
+      - 8000:8000
+    volumes:
+      - $PWD:/work:delegated
+    ulimits:
+      nofile:
+        soft: 524288
+        hard: 524288
+    command: >
+      bash -c "
+      cd /work/haskell &&
+      stack build &&
+      cp $$(stack path --local-install-root)/bin/website ../website &&
+      cd ../content && ../website watch
+      "
+    networks:
+      - dragonfly_website
+    depends_on:
+      - website_npm
+
+networks:
+  dragonfly_website:
+    external: true

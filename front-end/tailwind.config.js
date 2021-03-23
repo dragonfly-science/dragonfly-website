@@ -1,7 +1,13 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  purge: false,
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: ['../_site/**/*.html'],
+    options: {
+      safelist: [/^tag-list__tag/, /^no-gutter-cell__text/, /^tile__citation/],
+    },
+  },
   theme: {
     fontFamily: {
       display: [
@@ -57,19 +63,21 @@ module.exports = {
       margin: {
         '12rem': '12rem',
         '-12rem': '-12rem',
-        '28': '7rem',
+        28: '7rem',
         '-28': '-7rem',
         '2/3': '66%',
         '1/2': '50%',
         '1/3': '33%',
+        '3/4': '75%',
         '-2/3': '-66%',
         '-1/2': '-50%',
         '-1/3': '-33%',
-        '72': '18rem',
-        '80': '20rem',
-        '88': '22rem',
-        '96': '24rem',
-        '104': '28rem',
+        '-3/4': '75%',
+        72: '18rem',
+        80: '20rem',
+        88: '22rem',
+        96: '24rem',
+        104: '28rem',
         '-72': '-18rem',
         '-80': '-20rem',
         '-88': '-22rem',
@@ -99,35 +107,32 @@ module.exports = {
         wd: '1920px',
       },
       maxHeight: {
-        '16': '16rem',
-        '28': '28rem',
+        16: '16rem',
+        28: '28rem',
       },
       minHeight: {
-        '3': '3rem',
-        '16': '16rem',
-        '20': '20rem',
-        '24': '24rem',
-        '30': '30rem',
-        '36': '36rem',
+        3: '3rem',
+        16: '16rem',
+        20: '20rem',
+        24: '24rem',
+        30: '30rem',
+        36: '36rem',
       },
       opacity: {
-        '10': '0.1',
+        10: '0.1',
         '025': '0.025',
-        '80': '0.8',
-        '90': '0.9',
+        80: '0.8',
+        90: '0.9',
       },
       rotate: {
-        '0': '0',
-        '135': '135deg',
-      },
-      screens: {
-        wd: '104rem',
+        0: '0',
+        135: '135deg',
       },
       transitionDuration: {
-        '250': '250ms',
+        250: '250ms',
       },
       transitionDelay: {
-        '0': '0ms',
+        0: '0ms',
       },
       transitionProperty: {
         all: 'all',
@@ -149,19 +154,19 @@ module.exports = {
         'in-quart': 'easeInQuart',
       },
       width: {
-        '72': '18rem',
-        '80': '20rem',
-        '88': '22rem',
-        '96': '24rem',
+        72: '18rem',
+        80: '20rem',
+        88: '22rem',
+        96: '24rem',
       },
       zIndex: {
         1: '1',
       },
       spacing: {
-        '72': '18rem',
-        '80': '20rem',
-        '88': '22rem',
-        '96': '24rem',
+        72: '18rem',
+        80: '20rem',
+        88: '22rem',
+        96: '24rem',
         '12rem': '12rem',
         '14rem': '14rem',
         '16rem': '16rem',
@@ -180,7 +185,6 @@ module.exports = {
       },
     },
   },
-  variants: {},
   plugins: [
     plugin(function ({ addUtilities }) {
       const newUtilities = {

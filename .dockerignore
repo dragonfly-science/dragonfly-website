@@ -1,6 +1,5 @@
-**
 !haskell/stack.yaml
 !haskell/dragonfly-website.cabal
-!package.json
-!package-lock.json
-
+docs
+_site
+.cache

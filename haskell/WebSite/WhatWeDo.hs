@@ -22,7 +22,7 @@ import           WebSite.Validate     (validatePage)
 config = CollectionConfig
        { baseName            = "whatwedo"
        , indexTemplate       = "what-we-do/index.html"
-       , indexPattern        = "what-we-do.md"
+       , indexPattern        = "landing-pages/what-we-do/content.md"
        , collectionPattern   = "what-we-do/**/content.md"
        , collectionTemplate  = "templates/what-we-do-list.html"
        , pageTemplate        = "templates/what-we-do.html"
@@ -41,7 +41,7 @@ rules = do
             base <- baseContext (baseName config)
             pages <- getList config 1000
 
-            let  ctx = base <> pages
+            let  ctx = base <> teaserImage <> pages
             scholmdCompiler
                 >>= loadAndApplyTemplate (collectionTemplate config) ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx

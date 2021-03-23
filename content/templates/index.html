@@ -62,34 +62,17 @@
   </div>
 
   <canvas id="gameoflife" class="game-of-life"></canvas>
-  <div id="blob" class="game-of-life-blob absolute top-0 left-0 z-0 min-w-full h-full"></div>
+  <div
+    id="blob"
+    class="game-of-life-blob absolute top-0 left-0 z-0 min-w-full h-full"
+  ></div>
 </header>
 
-<!--
-
-<section class="advert">
-  <div class="advert__container container">
-    <div class="advert__inner">
-      <p class="advert__text">
-        <a href="/work">Bayesian statistics</a>, machine learning, R, and Python
-        are our tools of choice to transform data into useful and refined
-        products that help our clients make better decisions.
-      </p>
-      <a href="#contact" class="link-icon advert__link ml-auto">
-        <span class="text">Find out more about what we do</span>
-        <span class="icon dragonfly-arrow"></span>
-      </a>
-    </div>
-  </div>
-</section>
--->
-
-
-<div class="numbered-sections">
-  $for(sections)$
-    $partial("templates/_numbered-section.html")$
-  $endfor$
+$if(sections)$
+<div class="numbered-sections pb-16 lg:pb-48 bg-light-peach">
+  $for(sections)$ $partial("templates/_numbered-section.html")$ $endfor$
 </div>
+$endif$ $partial("templates/_title.html")$
 
 <section id="top-section" class="math-paper">
   <div class="collection-grid collection-grid--no-bottom">

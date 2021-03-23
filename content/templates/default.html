@@ -1,99 +1,112 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#" xml:lang="en-nz" lang="en-nz" id="top">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  prefix="og: http://ogp.me/ns#"
+  xml:lang="en-nz"
+  lang="en-nz"
+  id="top"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dragonfly Data Science$if(title)$ - $title$ $endif$</title>
+    $if(og-title)$
+    <meta property="og:title" content="$og-title$" />
+    $else$
+    <meta property="og:title" content="Dragonfly Data Science: $title$" />
+    $endif$
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.dragonfly.co.nz$url$" />
+    $if(socialImage)$
+    <meta
+      property="og:image"
+      content="https://www.dragonfly.co.nz$socialImage$"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="6000" />
+    $else$
+    <meta
+      property="og:image"
+      content="https://www.dragonfly.co.nz/images/dragonfly-wing-short.png"
+    />
+    <meta property="og:image:width" content="878" />
+    <meta property="og:image:height" content="287" />
+    $endif$ $if(og-description)$
+    <meta property="og:description" content="$og-description$" />
+    $else$ $if(description)$
+    <meta property="og:description" content="$description$" />
+    $endif$ $endif$ $if(description)$
+    <meta name="description" content="$description$" />
+    $else$ $if(og-description)$
+    <meta name="description" content="$og-description$" />
+    $endif$ $endif$
+    <!-- Google Analytics -->
+    <script>
+      window.ga =
+        window.ga ||
+        function () {
+          (ga.q = ga.q || []).push(arguments);
+        };
+      ga.l = +new Date();
+      ga("create", "UA-441953-1", "auto");
+      ga("send", "pageview");
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <!-- End Google Analytics -->
 
-<head>
-  <meta charset='utf-8' />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Dragonfly Data Science$if(title)$ - $title$ $endif$</title>
-  $if(og-title)$
-  <meta property="og:title" content="$og-title$" />
-  $else$
-  <meta property="og:title" content="Dragonfly Data Science: $title$" />
-  $endif$
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.dragonfly.co.nz$url$" />
-  $if(socialImage)$
-  <meta property="og:image" content="https://www.dragonfly.co.nz$socialImage$" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="6000" />
-  $else$
-  <meta property="og:image" content="https://www.dragonfly.co.nz/images/dragonfly-wing-short.png" />
-  <meta property="og:image:width" content="878" />
-  <meta property="og:image:height" content="287" />
-  $endif$
-  $if(og-description)$
-  <meta property="og:description" content="$og-description$" />
-  $else$
-  $if(description)$
-  <meta property="og:description" content="$description$" />
-  $endif$
-  $endif$
-  $if(description)$
-  <meta name="description" content="$description$" />
-  $else$
-  $if(og-description)$
-  <meta name="description" content="$og-description$" />
-  $endif$
-  $endif$
-  <!-- Google Analytics -->
-  <script>
-    window.ga = window.ga || function () {
-      (ga.q = ga.q || []).push(arguments)
-    };
-    ga.l = +new Date;
-    ga('create', 'UA-441953-1', 'auto');
-    ga('send', 'pageview');
+    <link rel="stylesheet" type="text/css" href="/fonts/dragonfly.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/dragonfly-styles.css"
+    />
+    <link rel="preconnect" href="//use.typekit.net" />
+    <link rel="preconnect" href="https://kit.fontawesome.com" />
 
-  </script>
-  <script async src='https://www.google-analytics.com/analytics.js'></script>
-  <!-- End Google Analytics -->
-
-  <link rel="stylesheet" type="text/css" href="/fonts/dragonfly.css" />
-  <link rel="stylesheet" type="text/css" href="/assets/dragonfly.css" />
-  <link rel="preconnect" href="//use.typekit.net">
-  <link rel="prefetch" href="/assets/vendors~main.bundle.js">
-  <link rel="preconnect" href="https://kit.fontawesome.com">
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  <script type="text/javascript" src="//use.typekit.net/tjp2nro.js"></script>
-  <script type="text/javascript">
-    try {
-      Typekit.load();
-    } catch (e) {}
+    <script type="text/javascript" src="//use.typekit.net/tjp2nro.js"></script>
+    <script type="text/javascript">
+      try {
+        Typekit.load();
+      } catch (e) {}
+    </script>
 
-  </script>
+    <script src="/assets/app.js" defer></script>
 
-  <script src="/assets/vendors~main.bundle.js" defer></script>
-  <script src="/assets/app.bundle.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/91c94908d2.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/91c94908d2.js" crossorigin="anonymous"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Dragonfly Data Science",
+        "url": "http://www.dragonfly.co.nz",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+64-4-385-9285"
+          }
+        ]
+      }
+    </script>
+  </head>
 
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": "Dragonfly Data Science",
-      "url": "http://www.dragonfly.co.nz",
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "telephone": "+64-4-385-9285"
-      }]
-    }
-
-  </script>
-</head>
-
-<body class="font-body">
-  $partial("templates/_menu.html")$
-  <main class="main mt-12 relative z-20 overflow-hidden lg:mt-24 section-$section$" id="main-container">
-    $body$
-  </main>
-  $partial("templates/_footer.html")$
-</body>
-
+  <body class="font-body">
+    $partial("templates/_menu.html")$
+    <main
+      class="main mt-12 relative z-20 overflow-hidden lg:mt-24 section-$section$"
+      id="main-container"
+    >
+      $body$
+    </main>
+    $partial("templates/_footer.html")$
+  </body>
 </html>

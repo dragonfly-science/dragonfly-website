@@ -1,0 +1,99 @@
+.math-paper {
+  /* prettier-ignore */
+  background-image:
+    linear-gradient(
+      rgba(67, 161, 201, 0.9) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(67, 161, 201, 0.9) 1px, transparent 1px),
+    linear-gradient(rgba(67, 161, 201, 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(67, 161, 201, 0.4) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 25px 25px, 25px 25px, 50px 50px, 50px 50px;
+  background-attachment: fixed, fixed, fixed, fixed;
+}
+
+.math-paper--origin {
+  /* prettier-ignore */
+  background-position:
+    calc(50% - 25px) calc(50% - 25px),
+    calc(50% - 25px) calc(50% - 25px),
+    calc(50% - 50px) calc(50% - 50px),
+    calc(50% - 50px) calc(50% - 50px);
+}
+
+.math-paper--reverse {
+  /* prettier-ignore */
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.2) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+}
+
+/* for left / right math paper */
+.math-paper--left,
+.math-paper--left--small {
+  &::after {
+    @apply block absolute math-paper top-0 right-0 w-full h-full z-0;
+
+    content: '';
+  }
+}
+
+.math-paper--left {
+  &::after {
+    @apply mr-2/3;
+  }
+}
+
+.math-paper--left--small {
+  &::after {
+    @apply mr-1/2 lg:mr-3/4;
+  }
+}
+
+.math-paper--right {
+  &::before {
+    @apply block absolute math-paper top-0 ml-2/3 w-full h-full z-0;
+
+    content: '';
+  }
+}
+
+/* For use with lozad. */
+.background-image,
+.lozad-image {
+  @apply opacity-0;
+  @apply transition-opacity delay-500 duration-500 ease-out-quart;
+
+  &.loaded {
+    @apply opacity-100 transition-all;
+  }
+}
+
+.lozad-container {
+  @apply relative;
+
+  &::before {
+    @apply absolute top-0 left-0 w-full h-full bg-black block z-10;
+    @apply transition-bg duration-500;
+
+    content: '';
+  }
+
+  &.loaded {
+    &::before {
+      @apply bg-transparent;
+    }
+  }
+
+  &--light-peach {
+    &::before {
+      @apply bg-light-peach;
+    }
+  }
+}

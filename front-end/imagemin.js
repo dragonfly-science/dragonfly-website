@@ -13,9 +13,13 @@ fs.recurse(
     'work/**/*.{jpg,png,svg}',
     'what-we-do/**/*.{jpg,png,svg}',
   ],
-  (filepath, filename, relative) => {
+  (filepath, filename) => {
+    if (!filename) {
+      return
+    }
+
     const dir = filepath.substr(0, filepath.lastIndexOf('/'))
-    const ext = relative.substr(relative.indexOf('.'))
+    const ext = filename.substr(filename.indexOf('.'))
 
     async function process() {
       let plugins = []

@@ -8,7 +8,7 @@ import           WebSite.Collection
 config = CollectionConfig
        { baseName            = "work"
        , indexTemplate       = "work/index.html"
-       , indexPattern        = "work.md"
+       , indexPattern        = "landing-pages/work/content.md"
        , collectionPattern   = "work/**/content.md"
        , collectionTemplate  = "templates/post-list.html"
        , pageTemplate        = "templates/post.html"

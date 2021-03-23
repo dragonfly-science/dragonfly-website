@@ -111,7 +111,7 @@ teaserImage = field "teaserImage" (getImagePath "960")
         let path = toFilePath (itemIdentifier item)
             base = take ((length path) - 11) path
             ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser.jpg")))) (getRoute ident)
+        fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser.jpg")))) (getRoute $ ident)
     getImagePathLrg size item = do
       let path = toFilePath (itemIdentifier item)
           base = take ((length path) - 11) path
