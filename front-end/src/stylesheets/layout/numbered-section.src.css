@@ -11,23 +11,27 @@
   }
 
   &__content {
-    @apply relative w-full flex justify-center flex-col z-1;
+    @apply relative flex justify-center flex-col flex-grow z-1;
+
+    &--img {
+      @apply block flex-shrink-0 max-w-full;
+    }
 
     img {
-      @apply m-auto;
+      @apply m-0;
     }
   }
 
   &__heading {
-    @apply max-w-md font-bold text-cool-blue flex pb-5;
+    @apply max-w-md font-bold text-slate-grey flex pb-5;
 
     span {
-      @apply text-2xl leading-none;
+      @apply text-3xl leading-none;
     }
   }
 
   &__text {
-    @apply text-lg font-medium leading-tight max-w-xl pr-8;
+    @apply text-lg font-medium leading-tight max-w-xl;
   }
 
   &__link {
@@ -41,6 +45,12 @@
 
   &__container {
     @apply block mx-auto;
+  }
+
+  &__heading,
+  &__text,
+  &__container .call-to-action-block {
+    @apply max-w-sm;
   }
 
   p {
@@ -121,7 +131,7 @@
   }
 }
 
-@screen md {
+@screen lg {
   .numbered-section {
     @apply pt-20;
 
@@ -142,27 +152,36 @@
     &:nth-of-type(even) {
       @apply math-paper--right;
 
-      .numbered-section__content {
-        &:first-child {
-          @apply pr-6;
-        }
+      .numbered-section {
+        &__content {
+          &:first-child {
+            @apply pr-6;
+          }
 
-        &:last-child {
-          @apply pl-8;
+          &:last-child {
+            @apply pl-8;
+          }
         }
       }
-    }
-
-    &__content {
-      @apply w-1/2;
+      .numbered-section__heading,
+      .numbered-section__text,
+      .call-to-action-block {
+        @apply ml-auto text-right;
+      }
     }
 
     &__container {
       @apply flex;
     }
 
-    &__heading {
-      @apply pr-8 max-w-lg;
+    /* &__heading {
+      @apply pr-8;
+    } */
+
+    &__content {
+      &--img {
+        @apply max-w-sm;
+      }
     }
 
     &__link {
@@ -172,7 +191,7 @@
   }
 }
 
-@screen lg {
+@screen xl {
   .numbered-section {
     &:nth-of-type(odd) {
       .numbered-section__content {
@@ -204,7 +223,7 @@
       }
 
       span {
-        @apply text-4/2xl;
+        @apply text-5xl;
       }
     }
 

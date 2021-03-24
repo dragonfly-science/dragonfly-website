@@ -11,6 +11,8 @@ sections:
   - landing-pages/what-we-do/content.md
   - landing-pages/who-we-are/content.md
   - landing-pages/work/content.md
+testimonials:
+  - testimonials/tmp-testimonial.md
 sectionTitle: Latest News
 sectionLeft: true
 ---
@@ -27,5 +29,3 @@ presentation and publication.
 Our combined backgrounds in quantitative biology, mathematics, physics and
 computer science will ensure your data are expertly handled, so the results
 become a platform for understanding and evidence-based decision making.
-
-

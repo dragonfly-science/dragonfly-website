@@ -10,9 +10,9 @@ title: Edward Abraham, PhD
 banner: abraham-edward/edward-abraham-letterbox.jpg
 sortorder: "2"
 nocite: |
-    @abraham2000isd
-    @abraham_effectiveness_2009
-    @richard_risk_2013
+  @abraham2000isd
+  @abraham_effectiveness_2009
+  @richard_risk_2013
 ---
 
 Edward started Dragonfly in 2006. He enjoys bringing evidence to the

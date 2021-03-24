@@ -112,6 +112,14 @@ main = do
                     Nothing -> return []
                 tiles = listFieldWith "tiles" itemCtx getTiles
 
+            -- Testimonials definition
+            let getTestimonials itm = do
+                  md <- getMetadata (itemIdentifier itm)
+                  case lookupStringList "testimonials" md of
+                    Just testimonials -> mapM (load . fromFilePath) testimonials
+                    Nothing -> return []
+                testimonials = listFieldWith "testimonials" itemCtx getTestimonials
+
             let ctx = base
                    <> people
                    <> work
@@ -119,6 +127,7 @@ main = do
                    <> bubbles
                    <> tiles
                    <> sections
+                   <> testimonials
 
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
@@ -153,14 +162,14 @@ main = do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
 
     -- Sass based stylesheets
-    match "stylesheets/dragonfly.css" $ do
-        route $ constRoute "assets/dragonfly.css"
-        compile copyFileCompiler
+    -- match "stylesheets/dragonfly.css" $ do
+    --     route $ constRoute "assets/dragonfly.css"
+    --     compile copyFileCompiler
 
     -- Scripts
-    match "scripts/*.js" $ do
-        route $ gsubRoute "scripts/" (const "assets/")
-        compile copyFileCompiler
+    -- match "scripts/*.js" $ do
+    --     route $ gsubRoute "scripts/" (const "assets/")
+    --     compile copyFileCompiler
 
     match "favicon.ico" $ do
         route idRoute

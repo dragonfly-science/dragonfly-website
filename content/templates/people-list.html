@@ -1,17 +1,25 @@
-<header class="page-header page-header--article page-header--image-bg lozad-container lozad-container--light-peach">
+<header
+  class="page-header page-header--article page-header--image-bg lozad-container lozad-container--light-peach"
+>
   <div class="page-header__outer">
-    <div class="page-header__container">
+    <div class="page-header__container container">
       <h1 class="page-header__title">$title$</h1>
 
       <p class="page-header__content">$introduction$</p>
 
-      <a href="#top-section" tabindex="-1" class="link-icon link-icon--arrow-down link-icon--large">
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="link-icon link-icon--arrow-down link-icon--large"
+      >
         <span class="icon dragonfly-arrow"></span>
       </a>
-
     </div>
   </div>
-  <div class="background-image lozad lozad-image bg-light-peach" data-background-image="/images/team_header.jpg"></div>
+  <div
+    class="background-image lozad lozad-image bg-light-peach"
+    data-background-image="/images/team_header.jpg"
+  ></div>
 </header>
 
 $partial("templates/_title.html")$
@@ -21,17 +29,21 @@ $partial("templates/_title.html")$
     $for(people)$
     <a href="$pageurl$" class="no-gutter-cell person-tile bg-black">
       <h2 class="no-gutter-cell__title person-tile__title">
-        $if(firstname)$$firstname$$endif$<br>
-        $lastname$$if(honour)$<br>
+        $if(firstname)$$firstname$$endif$<br />
+        $lastname$$if(honour)$<br />
         <span class="font-light">$honour$</span>$endif$
       </h2>
 
-      <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link person-tile__link">
+      <span
+        class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link person-tile__link"
+      >
         <span class="icon dragonfly-arrow"></span>
       </span>
 
-      <div class="no-gutter-cell__image person-tile__image background-image lozad"
-        data-background-image="$teaserImage$"></div>
+      <div
+        class="no-gutter-cell__image person-tile__image background-image lozad"
+        data-background-image="$teaserImage$"
+      ></div>
     </a>
     $endfor$
   </div>
@@ -39,7 +51,13 @@ $partial("templates/_title.html")$
 
 <section class="call-to-action call-to-action--single-column">
   <div class="call-to-action__container container">
-    <p class="supplementary-header call-to-action__text">Seem like the team for you?</p>
-    <a href="#contact" class="button call-to-action__button call-to-action__button--cool-blue">Join us</a>
+    <p class="supplementary-header call-to-action__text">
+      Seem like the team for you?
+    </p>
+    <a
+      href="#contact"
+      class="button call-to-action__button call-to-action__button--cool-blue"
+      >Join us</a
+    >
   </div>
 </section>

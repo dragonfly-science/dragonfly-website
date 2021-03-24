@@ -27,10 +27,6 @@ services:
       - 8000:8000
     volumes:
       - $PWD:/work:delegated
-    ulimits:
-      nofile:
-        soft: 524288
-        hard: 524288
     command: >
       bash -c "
       cd /work/haskell &&
@@ -38,6 +34,7 @@ services:
       cp $$(stack path --local-install-root)/bin/website ../website &&
       cd ../content && ../website watch
       "
+    tty: true
     networks:
       - dragonfly_website
     depends_on:
