@@ -97,6 +97,7 @@ class Renderer {
           this.context.beginPath()
 
           this.context.fillStyle = this.fillStyle
+          this.context.strokeStyle = this.fillStyle
           this.context.lineWidth = 0
 
           this.context.strokeRect(
@@ -127,11 +128,11 @@ class Renderer {
   }
 
   public drawGrid(): void {
-    drawGrid({
-      canvas: this.canvas,
-      context: this.context,
-      pixelsPerCell: this.pixelsPerCell,
-    })
+    // drawGrid({
+    //   canvas: this.canvas,
+    //   context: this.context,
+    //   pixelsPerCell: this.pixelsPerCell,
+    // })
   }
 
   public start(): void {

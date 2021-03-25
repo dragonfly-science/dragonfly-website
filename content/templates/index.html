@@ -1,74 +1,4 @@
-<header
-  class="page-header page-header--image-based bg-light-peach relative overflow-hidden select-none"
->
-  <div class="page-header__outer">
-    <div class="page-header__container">
-      <h1 class="page-header__title">Kia Ora</h1>
-
-      <p class="page-header__content">
-        We are an international team of data scientists and programmers who aim
-        to put data to good use and make a positive impact. We’re based in
-        Wellington, New Zealand.
-      </p>
-
-      <a
-        href="#top-section"
-        tabindex="-1"
-        class="link-icon link-icon--arrow-down link-icon--large"
-      >
-        <span class="icon dragonfly-arrow"></span>
-      </a>
-    </div>
-  </div>
-
-  <div class="animation-controls">
-    <div class="animation-controls__header flex flex-row">
-      <button class="bg-slate-grey">
-        <i class="dragonfly-hamburger"></i>
-        <i class="dragonfly-close"></i>
-      </button>
-      <span>Game of Life</span>
-    </div>
-    <div class="animation-controls__control">
-      <input
-        type="text"
-        autocomplete="off"
-        pattern="[^0-9]+?(fps)"
-        class="animation-controls__input"
-        value="2fps"
-        spellcheck="false"
-      />
-      <div class="animation-controls__control__buttons">
-        <button class="up transform -rotate-45"></button>
-        <button class="down transform rotate-135"></button>
-      </div>
-    </div>
-  </div>
-
-  <div id="saveControls" class="absolute right-0 bottom-0 flex mr-8 mb-8 z-10">
-    <div
-      class="bg-black mr-4 w-16 h-16 rounded-full text-white flex justify-center items-center cursor-pointer"
-      id="saveButton"
-    >
-      <i class="far fa-save"></i>
-    </div>
-
-    <div
-      class="bg-black w-16 h-16 rounded-full text-white flex justify-center items-center cursor-pointer"
-      id="pauseButton"
-    >
-      <i class="fas fa-pause"></i>
-    </div>
-  </div>
-
-  <canvas id="gameoflife" class="game-of-life"></canvas>
-  <div
-    id="blob"
-    class="game-of-life-blob absolute top-0 left-0 z-0 min-w-full h-full"
-  ></div>
-</header>
-
-$if(sections)$
+$partial("templates/_game-of-life.html")$ $if(sections)$
 <div class="numbered-sections pb-16 lg:pb-48 bg-light-peach">
   $for(sections)$ $partial("templates/_numbered-section.html")$ $endfor$
 </div>
@@ -80,15 +10,58 @@ $endif$ $partial("templates/_title.html")$
   </div>
 </section>
 
-<section class="call-to-action call-to-action--single-column">
-  <div class="call-to-action__container container">
-    <p class="supplementary-header call-to-action__text">
-      Interested in working with us?
-    </p>
-    <a
-      href="#contact"
-      class="button call-to-action__button call-to-action__button--cool-blue"
-      >Get in touch</a
-    >
+<section
+  class="math-paper math-paper--reverse bg-cool-blue py-12 px-8 lg:pt-24"
+>
+  <div class="container mx-auto">
+    <div class="flex flex-col text-white lg:flex-row">
+      <div class="hidden justify-center items-center lg:flex">
+        <span
+          class="link-icon link-icon--xl transform origin-center -rotate-180"
+        >
+          <span class="icon dragonfly-arrow"></span>
+        </span>
+      </div>
+
+      $if(testimonials)$
+      <div class="flex-grow text-center lg:px-12">
+        $for(testimonials)$
+        <blockquote>
+          <div class="max-w-md mx-auto">
+            <p class="text-2xl italic lg:text-3xl">$quote_short$</p>
+            $if(citation_name)$
+            <cite class="block pt-8">
+              - $citation_name$<br />
+              $if(citation_position)$$citation_position$,
+              $endif$$if(citation_organistaion)$$citation_organisation$.$endif$
+            </cite>
+            $endif$
+          </div>
+        </blockquote>
+        $endfor$
+      </div>
+      $endif$
+
+      <div class="hidden justify-center items-center lg:flex">
+        <span class="link-icon link-icon--xl">
+          <span class="icon dragonfly-arrow"></span>
+        </span>
+      </div>
+
+      <div class="flex flex-row mx-auto mt-8 lg:hidden">
+        <div class="flex justify-center items-center mr-8">
+          <span
+            class="link-icon link-icon--xl transform origin-center -rotate-180"
+          >
+            <span class="icon dragonfly-arrow"></span>
+          </span>
+        </div>
+        <div class="flex justify-center items-center">
+          <span class="link-icon link-icon--xl">
+            <span class="icon dragonfly-arrow"></span>
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

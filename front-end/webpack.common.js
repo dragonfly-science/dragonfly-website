@@ -14,6 +14,10 @@ module.exports = {
       import: './src/stylesheets/main.src.css',
     },
   },
+  cache: {
+    type: 'filesystem',
+    cacheLocation: path.resolve(__dirname, '.test_cache'),
+  },
   output: {
     path: path.resolve(__dirname, '../_site/assets'),
   },

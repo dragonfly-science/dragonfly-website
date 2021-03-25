@@ -9,11 +9,17 @@ services:
       - $PWD/content:/work/content:delegated
       - $PWD/front-end:/work/front-end:delegated
       - $PWD/_site/assets:/work/_site/assets:delegated
+      - $DOCKER_CACHE/npm:/root/.npm:cached
+      - $WEPACK_CACHE:$WEBPACK_CONTAINER_CACHE:cached
     working_dir: /work
+    depends_on:
+      - website_haskell
     ulimits:
       nofile:
         soft: 524288
         hard: 524288
+    environment:
+      - WEBPACK_CONTAINER_CACHE=$WEBPACK_CONTAINER_CACHE
     command: >
       bash -c "
       cd /work/front-end &&
@@ -27,10 +33,6 @@ services:
       - 8000:8000
     volumes:
       - $PWD:/work:delegated
-    ulimits:
-      nofile:
-        soft: 524288
-        hard: 524288
     command: >
       bash -c "
       cd /work/haskell &&
@@ -38,10 +40,9 @@ services:
       cp $$(stack path --local-install-root)/bin/website ../website &&
       cd ../content && ../website watch
       "
+    tty: true
     networks:
       - dragonfly_website
-    depends_on:
-      - website_npm
 
 networks:
   dragonfly_website:

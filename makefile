@@ -7,13 +7,21 @@ RUN ?= docker run --rm -it \
               -w /work \
               -v $$(pwd):/work:delegated \
               $(IMAGE)
+DOCKER_CACHE ?= $$HOME/docker-cache
+WEPACK_CACHE ?= $(DOCKER_CACHE)/webpack-cache
+WEBPACK_CONTAINER_CACHE ?= /root/webpack
 
 network:
 	docker network inspect dragonfly_website >/dev/null 2>&1 || \
     docker network create --driver bridge dragonfly_website
 
 up: network
-	IMAGE=$(IMAGE) docker-compose up --remove-orphans
+	mkdir -p _site/assets
+	IMAGE=$(IMAGE) \
+		DOCKER_CACHE=$(DOCKER_CACHE) \
+		WEPACK_CACHE=$(WEPACK_CACHE) \
+		WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) \
+		docker-compose up --remove-orphans
 
 develop: up
 

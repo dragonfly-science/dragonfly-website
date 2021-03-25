@@ -1,25 +1,37 @@
 <header
-  class="page-header page-header--article page-header--image-bg$if(banner)$ lozad-container lozad-container--light-peach$endif$">
+  class="page-header page-header--article page-header--image-bg$if(banner)$ lozad-container lozad-container--light-peach$endif$"
+>
   <div class="page-header__outer">
-    <div class="page-header__container">
-      $if(title)$<h1 class="page-header__title">$title$</h1>$endif$
+    <div class="page-header__container container">
+      $if(title)$
+      <h1 class="page-header__title">$title$</h1>
+      $endif$ $if(introduction)$
+      <p class="page-header__content">$introduction$</p>
+      $endif$
 
-      $if(introduction)$<p class="page-header__content">$introduction$</p>$endif$
-
-      <a href="#top-section" tabindex="-1" class="link-icon link-icon--arrow-down link-icon--large">
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="link-icon link-icon--arrow-down link-icon--large"
+      >
         <span class="icon dragonfly-arrow"></span>
       </a>
     </div>
   </div>
-  <div class="background-image bg-light-peach$if(banner)$ lozad lozad-image$endif$" $if(banner)$
-    data-background-image="$banner$" $endif$></div>
+  <div
+    class="background-image bg-light-peach$if(banner)$ lozad lozad-image$endif$"
+    $if(banner)$
+    data-background-image="$banner$"
+    $endif$
+  ></div>
 </header>
 $if(whatwedo)$
 <div class="numbered-sections">
-  $for(whatwedo)$
-  $if(teaserAnchorId)$<a class="anchor" id="$teaserAnchorId$"></a>$endif$
-    $partial("templates/_numbered-section.html")$
-  $endfor$
+  $for(whatwedo)$ $if(teaserAnchorId)$<a
+    class="anchor"
+    id="$teaserAnchorId$"
+  ></a
+  >$endif$ $partial("templates/_numbered-section.html")$ $endfor$
 </div>
 $endif$
 
@@ -31,55 +43,136 @@ $endif$
         <h2 class="list-container__title ruled-heading ruled-heading--white">
           <span class="block">$toolsTitle$</span>
         </h2>
-        $endif$
-
-        $if(toolsDetails)$
+        $endif$ $if(toolsDetails)$
         <h3 class="tools__intro__heading">
           <span>$toolsIntro$</span>
         </h3>
+        $endif$ $if(toolsDetails)$
+        <p class="mb-6 text-lg">$toolsDetails$</p>
         $endif$
-
-        $if(toolsDetails)$<p class="mb-6 text-lg">$toolsDetails$</p>$endif$
 
         <div class="call-to-action-block">
           <p class="font-normal text-lg mb-2">$toolsCTADescriptor$</p>
-          <a href="$toolsCTALink$"
-            class="call-to-action__button button call-to-action__button--white">$toolsCTAButton$</a>
+          <a
+            href="$toolsCTALink$"
+            class="call-to-action__button button call-to-action__button--white"
+            >$toolsCTAButton$</a
+          >
         </div>
       </div>
       <div class="tools__list">
-        <a class="tools__tool fab fa-r-project" href="https://www.r-project.org/" target="_blank" title="R"
-          aria-hidden="true"></a>
-        <a class="tools__tool fab fa-python" href="https://www.python.org/" target="_blank" aria-hidden="true"
-          title="python"></a>
-        <a class="tools__tool fab fa-docker" href="https://www.docker.com" target="_blank" title="Docker"
-          aria-hidden="true"></a>
-        <a class="tools__tool fab fa-github" href="https://github.com" target="_blank" title="GitHub"
-          aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-gatsby" href="https://www.gatsbyjs.org" target="_blank" title="Gatsby"
-          aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-elm" href="https://elm-lang.org" target="_blank" title="Elm"
-          aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-django" href="https://www.djangoproject.com/" target="_blank" title="Django"
-          aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-latex" href="https://www.latex-project.org/" target="_blank" title="LaTeX"
-          aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-haskell" href="https://www.haskell.org/" target="_blank" title="Haskell"
-          aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-tensorflow" href="https://www.tensorflow.org/" target="_blank"
-          title="Tensorflow" aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-rstudio" href="https://rstudio.com/" target="_blank" title="R Studio"
-          aria-hidden="true"></a>
-        <a class="tools__tool fab fa-react" href="https://reactjs.org/" target="_blank" title="React"
-          aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-postgresql" href="https://www.postgresql.org/" target="_blank"
-          title="PostgreSQL" aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-qgis" href="https://www.qgis.org/en/site/" target="_blank" title="QGIS"
-          aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-stan" href="https://mc-stan.org/" target="_blank" title="Stan"
-          aria-hidden="true"></a>
-        <a class="tools__tool dragonfly-pytorch" href="https://pytorch.org/" target="_blank" title="PyTorch"
-          aria-hidden="true"></a>
+        <a
+          class="tools__tool fab fa-r-project"
+          href="https://www.r-project.org/"
+          target="_blank"
+          title="R"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool fab fa-python"
+          href="https://www.python.org/"
+          target="_blank"
+          aria-hidden="true"
+          title="python"
+        ></a>
+        <a
+          class="tools__tool fab fa-docker"
+          href="https://www.docker.com"
+          target="_blank"
+          title="Docker"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool fab fa-github"
+          href="https://github.com"
+          target="_blank"
+          title="GitHub"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-gatsby"
+          href="https://www.gatsbyjs.org"
+          target="_blank"
+          title="Gatsby"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-elm"
+          href="https://elm-lang.org"
+          target="_blank"
+          title="Elm"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-django"
+          href="https://www.djangoproject.com/"
+          target="_blank"
+          title="Django"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-latex"
+          href="https://www.latex-project.org/"
+          target="_blank"
+          title="LaTeX"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-haskell"
+          href="https://www.haskell.org/"
+          target="_blank"
+          title="Haskell"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-tensorflow"
+          href="https://www.tensorflow.org/"
+          target="_blank"
+          title="Tensorflow"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-rstudio"
+          href="https://rstudio.com/"
+          target="_blank"
+          title="R Studio"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool fab fa-react"
+          href="https://reactjs.org/"
+          target="_blank"
+          title="React"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-postgresql"
+          href="https://www.postgresql.org/"
+          target="_blank"
+          title="PostgreSQL"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-qgis"
+          href="https://www.qgis.org/en/site/"
+          target="_blank"
+          title="QGIS"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-stan"
+          href="https://mc-stan.org/"
+          target="_blank"
+          title="Stan"
+          aria-hidden="true"
+        ></a>
+        <a
+          class="tools__tool dragonfly-pytorch"
+          href="https://pytorch.org/"
+          target="_blank"
+          title="PyTorch"
+          aria-hidden="true"
+        ></a>
       </div>
     </div>
   </div>

@@ -11,3 +11,4 @@ app.bundle.*
 content/scripts/
 static-site.tgz
 dragonfly-website
+dist

@@ -15,7 +15,7 @@
   }
 
   &__outer {
-    @apply mx-auto relative px-6 z-10;
+    @apply mx-auto relative z-10;
     @apply transition-color duration-500;
   }
 
@@ -110,10 +110,6 @@
 
 @screen sm {
   .page-header {
-    &__container {
-      @apply max-w-sm;
-    }
-
     &__content {
       @apply pr-6;
     }
@@ -122,14 +118,6 @@
 
 @screen md {
   .page-header {
-    &__container {
-      @apply max-w-md;
-    }
-
-    &__outer {
-      @apply px-8;
-    }
-
     &__title {
       @apply text-6xl;
     }
@@ -166,16 +154,8 @@
       @apply text-8xl;
     }
 
-    &__container {
-      @apply max-w-lg;
-    }
-
     &__content {
       @apply text-2/3xl pt-12 leading-tighter;
-    }
-
-    &__outer {
-      @apply px-24;
     }
 
     &--article {
@@ -225,10 +205,6 @@
 
 @screen xl {
   .page-header {
-    &__container {
-      @apply max-w-xl;
-    }
-
     &--news {
       .page-header__inner {
         @apply max-w-64rem;

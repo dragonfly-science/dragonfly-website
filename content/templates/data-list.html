@@ -1,15 +1,18 @@
 <header class="page-header bg-light-peach math-paper">
   <div class="page-header__outer">
-    <div class="page-header__container">
+    <div class="page-header__container container">
       <h1 class="page-header__title">Encouraging the release of data.</h1>
 
       <p class="page-header__content">
-        Giving access to data helps make information widely available, building consensus. Where appropriate, we
-        encourage the
-        release of open data.
+        Giving access to data helps make information widely available, building
+        consensus. Where appropriate, we encourage the release of open data.
       </p>
 
-      <a href="#top-section" tabindex="-1" class="link-icon link-icon--large link-icon--arrow-down">
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="link-icon link-icon--large link-icon--arrow-down"
+      >
         <span class="icon dragonfly-arrow"></span>
       </a>
     </div>
@@ -23,25 +26,29 @@ $if(data)$
   <section class="numbered-section numbered-section--no-numbers bg-light-peach">
     <div class="numbered-section__container container">
       <div class="numbered-section__content">
-        <h2 class="numbered-section__heading ruled-heading ruled-heading--cool-blue">
+        <h2
+          class="numbered-section__heading ruled-heading ruled-heading--cool-blue"
+        >
           <span>$if(title)$ $title$ $endif$</span>
         </h2>
-        <div class="numbered-section__text">
-          $if(teaser)$ $teaser$ $endif$
-        </div>
+        <div class="numbered-section__text">$if(teaser)$ $teaser$ $endif$</div>
 
         $if(link)$
         <div class="call-to-action-block">
-          <a href="$link$"
+          <a
+            href="$link$"
             class="call-to-action__button button call-to-action__button--cool-blue link-icon link-icon--arrow-out flex justify-center"
-            target="_blank" rel="norefferer noopener">
-            <span class="text">Explore the data</span> <span class="icon dragonfly-arrow"></span>
+            target="_blank"
+            rel="norefferer noopener"
+          >
+            <span class="text">Explore the data</span>
+            <span class="icon dragonfly-arrow"></span>
           </a>
         </div>
         $endif$
       </div>
       <div class="numbered-section__content scrollable">
-        <img src="$teaserImage$" class="lozad lozad-image" alt="">
+        <img src="$teaserImage$" class="lozad lozad-image" alt="" />
       </div>
     </div>
   </section>
