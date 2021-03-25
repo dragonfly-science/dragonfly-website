@@ -125,9 +125,9 @@ main = do
                    <> work
                    <> news
                    <> bubbles
+                   <> testimonials
                    <> tiles
                    <> sections
-                   <> testimonials
 
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
