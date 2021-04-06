@@ -12,7 +12,7 @@ sections:
   - landing-pages/who-we-are/content.md
   - landing-pages/work/content.md
 testimonials:
-  - testimonials/tmp-testimonial.md
+  - testimonials/tmp-testimonial/content.md
 sectionTitle: Latest News
 sectionLeft: true
 ---

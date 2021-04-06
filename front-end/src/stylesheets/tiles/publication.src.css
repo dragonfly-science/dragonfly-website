@@ -24,7 +24,7 @@
   }
 
   &__citation {
-    @apply mb-6 text-base leading-none;
+    @apply mb-6 text-base leading-none break-words;
   }
 
   &__footer {
@@ -33,7 +33,7 @@
 
   &__pdf {
     @apply transition-color ease-out-quart duration-500 z-20 relative flex flex-row;
-    @apply text-sm leading-none;
+    @apply text-sm leading-none items-center;
 
     &:hover {
       @apply text-cool-blue;
@@ -91,11 +91,7 @@
     @apply mr-0;
 
     &__title {
-      @apply text-2xl;
-    }
-
-    &__citation {
-      @apply text-xl;
+      @apply text-2xl leading-none;
     }
   }
 }

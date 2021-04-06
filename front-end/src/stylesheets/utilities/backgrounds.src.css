@@ -2,12 +2,12 @@
   /* prettier-ignore */
   background-image:
     linear-gradient(
-      rgba(67, 161, 201, 0.9) 1px,
+      rgba(67, 161, 201, 0.45) 1px,
       transparent 1px
     ),
-    linear-gradient(90deg, rgba(67, 161, 201, 0.9) 1px, transparent 1px),
-    linear-gradient(rgba(67, 161, 201, 0.4) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(67, 161, 201, 0.4) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(67, 161, 201, 0.45) 1px, transparent 1px),
+    linear-gradient(rgba(67, 161, 201, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(67, 161, 201, 0.2) 1px, transparent 1px);
   background-size: 50px 50px;
   background-position: 25px 25px, 25px 25px, 50px 50px, 50px 50px;
   background-attachment: fixed, fixed, fixed, fixed;

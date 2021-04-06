@@ -119,6 +119,16 @@
         content: '';
       }
     }
+
+    &:nth-of-type(even) {
+      .numbered-section__heading {
+        &.ruled-heading {
+          &:after {
+            @apply right-0 left-auto;
+          }
+        }
+      }
+    }
   }
 
   .scrollable {
@@ -165,8 +175,14 @@
       }
       .numbered-section__heading,
       .numbered-section__text,
-      .call-to-action-block {
+      .numbered-section__container .call-to-action-block {
         @apply ml-auto text-right;
+      }
+
+      .numbered-section__container .call-to-action-block {
+        .button {
+          @apply ml-auto mr-0;
+        }
       }
     }
 
