@@ -109,7 +109,7 @@
     "stylelint:lint": "stylelint src/stylesheets/**/*.src.css",
     "ts:lint": "tslint -c tslint.json 'src/js/**/*.ts'",
     "prewatch": "rm -f ../site/assets/* && npm run fonts",
-    "watch": "webpack --env dev --env cacheLocation=$WEBPACK_CONTAINER_CACHE --progress --watch --config ./webpack.dev.js"
+    "watch": "webpack --env dev --env cacheLocation=$WEBPACK_CONTAINER_CACHE --watch --config ./webpack.dev.js"
   },
   "author": "Dragonfly Data Science",
   "license": "MIT",

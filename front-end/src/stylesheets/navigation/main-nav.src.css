@@ -27,20 +27,20 @@
 
         &::after {
           @apply transition-all;
-
-          /* @apply h-1; */
         }
       }
     }
 
     ul {
-      @apply block w-full relative;
+      @apply block bg-white;
+    }
 
-      li {
-        a {
-          &::after {
-            @apply hidden;
-          }
+    li {
+      @apply pb-2;
+
+      a {
+        &::after {
+          @apply hidden;
         }
       }
     }
@@ -58,14 +58,6 @@
   &__container {
     @apply flex flex-col h-full w-full items-center overflow-x-auto my-8;
   }
-
-  /* &__button {
-    @apply text-slate-grey text-sm font-medium hidden leading-none transition-all;
-
-    &:hover {
-      @apply text-cool-blue underline;
-    }
-  } */
 
   /* prettier-ignore */
   &[data-section='work'] .main-nav__link[class*='section--work'],
@@ -86,6 +78,10 @@
       @apply no-underline;
     }
   }
+
+  .mobile-hidden {
+    @apply hidden;
+  }
 }
 
 @responsive {
@@ -101,20 +97,8 @@
     @apply opacity-100 h-auto flex-row mt-0 left-auto py-0 w-auto top-auto;
     @apply relative justify-start items-center;
 
-    /* prettier-ignore */
-    &[data-section='work'] .main-nav__link[class*='section--work'],
-    &[data-section='whatwedo'] .main-nav__link[class*='section--what-we-do'],
-    &[data-section='people'] .main-nav__link[class*='section--people'],
-    &[data-section='news'] .main-nav__link[class*='section--news'],
-    &[data-section='data'] .main-nav__link[class*='section--data'],
-    &[data-section='publications'] .main-nav__link[class*='section--publications'] {
-      &::after {
-        @apply h-1;
-      }
-    }
-
     &__link {
-      @apply text-left w-auto mr-16 pb-0 h-full flex items-center;
+      @apply text-left w-auto mr-16 pb-0 h-full;
       @apply justify-center relative;
 
       &::after {
@@ -124,19 +108,11 @@
       }
 
       &:hover {
-        /* &:after {
-                    @apply h-1;
-                } */
-
         > ul {
-          @apply ease-out-quart;
+          @apply ease-out-quart py-4;
 
-          /* max-height: 1000px; */
-          top: 100%;
-
-          li {
-            /* @apply h-6; */
-          }
+          transform: perspective(75em) rotateX(0deg);
+          max-height: 1000px;
         }
       }
 
@@ -154,25 +130,22 @@
       }
 
       ul {
-        @apply bg-white absolute m-0 ease-in-quart;
-        @apply transition-top pt-3 pb-6 overflow-hidden;
+        @apply -ml-6 min-w-max max-w-30rem shadow-xl origin-top transition;
+        @apply absolute max-h-0 overflow-hidden;
 
-        /* max-height: 0; */
-        top: -100%;
-        width: calc(100% + 5rem);
-        z-index: -1;
+        transform: perspective(75em) rotateX(-90deg);
 
-        li {
-          @apply whitespace-nowrap px-6;
+        a {
+          @apply leading-tight text-base;
 
-          a {
-            @apply leading-snug;
-
-            &:hover {
-              @apply text-cool-blue;
-            }
+          &:hover {
+            @apply text-cool-blue;
           }
         }
+      }
+
+      li {
+        @apply px-6 pb-0;
       }
     }
 
@@ -199,6 +172,22 @@
 
     &__container {
       @apply flex-row mx-auto w-auto overflow-visible my-0;
+    }
+
+    /* prettier-ignore */
+    &[data-section='work'] .main-nav__link[class*='section--work'],
+    &[data-section='whatwedo'] .main-nav__link[class*='section--what-we-do'],
+    &[data-section='people'] .main-nav__link[class*='section--people'],
+    &[data-section='news'] .main-nav__link[class*='section--news'],
+    &[data-section='data'] .main-nav__link[class*='section--data'],
+    &[data-section='publications'] .main-nav__link[class*='section--publications'] {
+      &::after {
+        @apply h-1;
+      }
+    }
+
+    .mobile-hidden {
+      @apply block;
     }
   }
 }

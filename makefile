@@ -15,13 +15,15 @@ network:
 	docker network inspect dragonfly_website >/dev/null 2>&1 || \
     docker network create --driver bridge dragonfly_website
 
-up: network
+.env:
+	echo IMAGE=$(IMAGE) >> .env
+	echo DOCKER_CACHE=$(DOCKER_CACHE) >> .env
+	echo WEPACK_CACHE=$(WEPACK_CACHE) >> .env
+	echo WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) >> .env
+
+up: network .env
 	mkdir -p _site/assets
-	IMAGE=$(IMAGE) \
-		DOCKER_CACHE=$(DOCKER_CACHE) \
-		WEPACK_CACHE=$(WEPACK_CACHE) \
-		WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) \
-		docker-compose up --remove-orphans
+	docker-compose up --remove-orphans
 
 develop: up
 
@@ -62,9 +64,9 @@ static:
 	$(RUN) bash -c 'cd front-end && npm run staging'
 
 clean:
-	rm -f website && rm -rf _site .cache && \
-	rm -f content/stylesheets/dragonfly.css* && \
-	rm -f content/fonts/*.css
+	rm -f website _site .cache .env \
+				content/stylesheets/dragonfly.css* \
+				content/fonts/*.css
 
 compress:
 	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'

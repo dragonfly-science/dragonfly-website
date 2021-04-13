@@ -1,6 +1,10 @@
 version: "3"
 services:
   website_npm:
+    deploy:
+      resources:
+        reservations:
+          memory: 1G
     image: ${IMAGE}
     restart: unless-stopped
     networks:
