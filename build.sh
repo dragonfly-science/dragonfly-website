@@ -3,6 +3,8 @@
 set -ex
 
 export RUN=
+export RUN_WEB=
+export CI=true
 
 make clean
 make build

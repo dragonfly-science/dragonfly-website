@@ -1,20 +1,41 @@
 version: "3"
 services:
-  website_npm:
-    deploy:
-      resources:
-        reservations:
-          memory: 1G
-    image: ${IMAGE}
+  npm_base:
+    image: dragonfly-website
+    build:
+      context: ./front-end
+  npm:
+    extends:
+      service: npm_base
+    ports:
+      - 8000:8000
+      - 3000:3000
+    volumes:
+      - $PWD/content:/work/content:cached
+      - $PWD/front-end:/work/front-end:delegated
+      - $PWD/_site:/work/_site:delegated
+      - nodemodules:/work/front-end/node_modules
+    working_dir: /work/
+    profiles:
+      - build
+  website:
+    image: $IMAGE
+    volumes:
+      - $PWD:/work/
+    working_dir: /work/
+    profiles:
+      - build
+  watch:
+    extends:
+      service: npm_base
     restart: unless-stopped
-    networks:
-      - dragonfly_website
     volumes:
       - $PWD/content:/work/content:delegated
       - $PWD/front-end:/work/front-end:delegated
       - $PWD/_site/assets:/work/_site/assets:delegated
       - $DOCKER_CACHE/npm:/root/.npm:cached
       - $WEPACK_CACHE:$WEBPACK_CONTAINER_CACHE:cached
+      - nodemodules:/work/front-end/node_modules
     working_dir: /work
     depends_on:
       - website_haskell
@@ -26,17 +47,16 @@ services:
       - WEBPACK_CONTAINER_CACHE=$WEBPACK_CONTAINER_CACHE
     command: >
       bash -c "
-      cd /work/front-end &&
-      npm install &&
-      npm run watch
+      cd /work/front-end && npm run watch
       "
   website_haskell:
-    image: ${IMAGE}
+    image: $IMAGE
     restart: unless-stopped
     ports:
       - 8000:8000
     volumes:
       - $PWD:/work:delegated
+    working_dir: /work/
     command: >
       bash -c "
       cd /work/haskell &&
@@ -45,9 +65,6 @@ services:
       cd ../content && ../website watch
       "
     tty: true
-    networks:
-      - dragonfly_website
 
-networks:
-  dragonfly_website:
-    external: true
+volumes:
+  nodemodules:

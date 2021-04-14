@@ -123,7 +123,7 @@
     &:nth-of-type(even) {
       .numbered-section__heading {
         &.ruled-heading {
-          &:after {
+          &::after {
             @apply right-0 left-auto;
           }
         }
@@ -173,6 +173,7 @@
           }
         }
       }
+
       .numbered-section__heading,
       .numbered-section__text,
       .numbered-section__container .call-to-action-block {

@@ -11,7 +11,9 @@ module.exports = ({ env }) => {
       require('postcss-nested')(),
       require('tailwindcss')('./tailwind.config.js'),
       require('autoprefixer')(),
-      env === 'production' ? require('cssnano')() : false,
+      // env === 'production' ? require('cssnano')({
+      //   preset: 'default'
+      // }) : false,
     ],
   }
 }

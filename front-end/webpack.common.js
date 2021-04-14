@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
+const { ESBuildMinifyPlugin } = require('esbuild-loader')
 
 module.exports = {
   mode: 'development',
@@ -14,34 +15,43 @@ module.exports = {
       import: './src/stylesheets/main.src.css',
     },
   },
-  cache: {
-    type: 'filesystem',
-    cacheLocation: path.resolve(__dirname, '.test_cache'),
-  },
   output: {
     path: path.resolve(__dirname, '../_site/assets'),
   },
+  optimization: {
+    minimizer: [
+      new ESBuildMinifyPlugin({
+        target: 'es2015',
+        css: true,
+      }),
+    ],
+  },
   module: {
-    unsafeCache: true,
     rules: [
       {
-        test: /\.ts$/,
-        use: ['babel-loader', 'ts-loader'],
+        test: /(\.ts)$/,
+        exclude: /node_modules/,
+        loader: 'esbuild-loader',
+        options: {
+          loader: 'ts',
+          target: 'es2015',
+        },
       },
       {
-        test: /\.css$/,
+        test: /(\.css)$/,
+        include: /node_modules/,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: false,
-              postcssOptions: {
-                config: path.resolve(__dirname, 'postcss.config.js'),
-              },
-            },
-          },
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { url: false } },
+        ],
+      },
+      {
+        test: /(\.css)$/,
+        exclude: /node_modules/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { importLoaders: 1, url: false } },
+          'postcss-loader',
         ],
       },
     ],
@@ -55,7 +65,6 @@ module.exports = {
   },
   watchOptions: {
     ignored: /node_modules/,
-    poll: true,
   },
   plugins: [
     new webpack.ProvidePlugin({

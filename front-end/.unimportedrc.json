@@ -1,0 +1,28 @@
+{
+  "ignoreUnresolved": [],
+  "ignoreUnimported": [],
+  "ignoreUnused": [
+    "@types/d3",
+    "@types/file-saver",
+    "@types/pluralize",
+    "file-system",
+    "imagemin",
+    "imagemin-cli",
+    "imagemin-jpegoptim",
+    "imagemin-pngquant",
+    "imagemin-svgo",
+    "resolve-cwd",
+    "tailwindcss",
+    "zepto"
+  ],
+  "ignorePatterns": [
+    "**/node_modules/**",
+    "**/*.stories.{js,jsx,ts,tsx}",
+    "**/*.tests.{js,jsx,ts,tsx}",
+    "**/*.test.{js,jsx,ts,tsx}",
+    "**/*.spec.{js,jsx,ts,tsx}",
+    "**/tests/**",
+    "**/__tests__/**",
+    "**/*.d.ts"
+  ]
+}

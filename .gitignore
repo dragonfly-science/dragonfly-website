@@ -12,3 +12,6 @@ content/scripts/
 static-site.tgz
 dragonfly-website
 dist
+.env
+build-website
+.test_cache
