@@ -12,6 +12,8 @@ RUN npm install -g glyphs2font
 RUN npm install -g eslint-cli
 RUN npm install -g graceful-fs
 RUN npm install -g serve
+# RUN npm install -g bin-build
+RUN npm install -g jpegoptim-bin
 
 # ADD ./package.json /tmp
 # ADD ./package-lock.json /tmp

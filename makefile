@@ -26,7 +26,8 @@ ifneq ($(CI), true)
 	echo WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) >> .env
 endif
 
-up: setup-npm .env install
+# (cd front-end && npm watch) &
+up: .env install
 	mkdir -p _site/assets
 	docker-compose up --remove-orphans
 
@@ -34,6 +35,7 @@ develop: up
 
 down:
 	docker-compose down
+	docker volume rm dragonfly-website_nfsmount
 
 docker:
 	docker build --tag $(IMAGE) .
@@ -46,7 +48,7 @@ push:
 
 # NPM Commands
 install:
-	$(RUN) bash -c "cd /work/front-end && npm i"
+	$(RUN) bash -c "cd /work/front-end && npm install"
 
 build-npm: build-website
 	$(RUN) bash -c 'cd front-end && npm i && npm run build'

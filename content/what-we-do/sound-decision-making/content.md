@@ -1,15 +1,15 @@
 ---
-title: Evidence for sound decision-making
+title: Sound decision-making
 subtitle: >
   We enable evidence based policy. Good research and analysis builds consensus
   between stakeholders, and enables the development of policy that makes best
   use of available information.
-author: 
+author:
   - people/abraham-edward/content.md
-teaserTitle: Evidence for sound decision-making
+teaserTitle: Sound decision-making
 teaserIntro: >
-    Great policy is rooted in sound research and data analysis. Having a trusted
-    information base enables people to come together and make good decisions.
+  Great policy is rooted in sound research and data analysis. Having a trusted
+  information base enables people to come together and make good decisions.
 teaserCTAdescriptor: View some examples from our clients
 teaserCTAbutton: Read more
 teaserAnchorId: policy
@@ -21,6 +21,7 @@ tiles:
   - work/seabird-risk/content.md
   - work/warp-strike/content.md
 ---
+
 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper.
 
 Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.

@@ -1,5 +1,5 @@
 ---
-title: Statistical analysis
+title: Machine learning
 subtitle: >
   We are experts at statistical analysis. Our speciality is modern Bayesian
   methods, which allow uncertainty to be carried all the way through from
@@ -10,7 +10,7 @@ quote: >
   The power of modern Bayesian methods enables us to reach higher, more
   objective probability. We use these methods to transform data and squeeze
   the juice out of it.
-teaserTitle: Statistical analysis
+teaserTitle: Machine learning
 teaserIntro: >
   The power of modern Bayesian methods enables us to reach higher, more
   objective probability. We use these methods to transform data and squeeze
