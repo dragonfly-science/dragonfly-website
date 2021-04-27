@@ -8,7 +8,7 @@ North Island. Incidental captures of protected species, such as seabirds, are
 recorded by fishers and also by government fisheries observers when they are
 onboard commercial vessels.  Nevertheless, the rates of these incidental
 captures are uncertain, as fisher-reported records may be incomplete
-and observer coverage of these bottom-longline fisheries is variable.  
+and observer coverage of these bottom-longline fisheries is variable.
 
 For this reason, a pilot electronic monitoring programme was implemented in October
 2016 (the 2016–17 fishing year) in bottom-longline fisheries targeting

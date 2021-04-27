@@ -19,7 +19,7 @@ Iggy says a major motivator for him to promote reproducible research is people�
 
 At Datacom, Iggy says he’s enjoyed a great team and manager, and the problem solving aspect of software development.
 
-“I like the discrete challenges you get in coding, like making a button do a specific thing or fixing some broken functionality. But bigger than that too, like how can you use data and design to make peoples’ lives easier or to answer gnarly questions, and how can the answers inform policy and produce better outcomes.” 
+“I like the discrete challenges you get in coding, like making a button do a specific thing or fixing some broken functionality. But bigger than that too, like how can you use data and design to make peoples’ lives easier or to answer gnarly questions, and how can the answers inform policy and produce better outcomes.”
 
 Those same issues are set to engage him at Dragonfly as well. As he says, it’s the perennial challenge – we’ve got this data but what does it mean?
 

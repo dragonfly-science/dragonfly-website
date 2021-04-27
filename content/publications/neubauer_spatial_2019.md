@@ -1,8 +1,7 @@
 ---
 pdf: neubauer_spatial_2019.pdf
 tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
-title: Development and application of a spatial stock assessment model for pāua
-(Haliotis iris)
+title: Development and application of a spatial stock assessment model for pāua (Haliotis iris)
 ---
 A spatial assessment model for pāua (*Haliotis iris*) was developed to better incorporate the effect of
 demographic variability and spatial catch patterns on pāua population dynamics, and to facilitate spatial

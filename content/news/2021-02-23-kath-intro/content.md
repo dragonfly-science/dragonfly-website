@@ -13,6 +13,6 @@ About 10 years ago Kath changed career and went back to university to study scie
 
 That attitude has seen Kath retain a strong commitment to communicating the stories behind the statistics. That way, she says, people are better informed about what models are based on and how they can interpret the findings.
 
-Kath was attracted to working at Dragonfly because of the company’s use of reproducible methods and an emphasis on science being useful. She also likes Dragonfly’s commitment to being a fair and equitable workplace.  
+Kath was attracted to working at Dragonfly because of the company’s use of reproducible methods and an emphasis on science being useful. She also likes Dragonfly’s commitment to being a fair and equitable workplace.
 
 “We design fish surveys and population models so they are representative of the range of individuals and the environment we’re researching. Maybe the same goes for how we understand our world? I wonder what great ideas we might miss if the people doing the science do not reflect the diversity of our community.”

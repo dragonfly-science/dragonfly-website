@@ -21,7 +21,7 @@ all individuals observed caught were recorded as dead.
 
 The highest number of observed captures were pinnipeds, with New Zealand fur seal featuring
 the most frequently in observer records.
-Observed captures of this species were high in trawl fisheries and also in surface longline.  
+Observed captures of this species were high in trawl fisheries and also in surface longline.
 New Zealand sea lion was almost exclusively caught in trawl. Common dolphin was the most frequently observed cetacean
 species, followed by long-finned pilot whale and dusky dolphin.
 
@@ -51,7 +51,7 @@ research highlight the challenges of testing the  efficacy and effectiveness of 
  species- and fishery-specific.
 
 Mitigation techniques for New Zealand fisheries include exclusion devices that are currently in
-use in subantarctic trawl fisheries to mitigate the bycatch of New Zealand sea lion.  
+use in subantarctic trawl fisheries to mitigate the bycatch of New Zealand sea lion.
 Exclusion devices have also been trialled in other New Zealand trawl fisheries to reduce
 incidental captures of New Zealand fur seal.  Although these limited trials did not indicate
 the suitability of exclusion devices,
@@ -63,7 +63,7 @@ prevent common dolphin bycatch.  The lack of systematic data of their use and of
 operational aspects means that their effectiveness remains untested.  Furthermore, the acoustic deterrent devices
 are  used in combination with other measures in this fishery, precluding the assessment of individual measures.
 
-For longline, set-net, pot (and trap) and purse-seine fisheries, bycatch mitigation options remain limited, and  
+For longline, set-net, pot (and trap) and purse-seine fisheries, bycatch mitigation options remain limited, and
 research to date has been unable to identify technical approaches and gear modifications that would have potential
 in a New Zealand context. Although acoustic deterrent devices have been shown to be effective in preventing
 bycatch of some small cetacean species in set-net fisheries, research to date does not support their use as a mitigation

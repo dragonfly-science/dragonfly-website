@@ -17,14 +17,14 @@ ideally with experience applying Bayesian methods.
 
 Depending on experience, responsibilities in this role may include generating
 summaries of fisheries-related data from databases, developing statistical models
-of protected species bycatch, carrying out quantitative risk assessments, and 
-conducting fisheries stock assessments. 
+of protected species bycatch, carrying out quantitative risk assessments, and
+conducting fisheries stock assessments.
 
 Candidates will have an M.Sc. with some research experience, or a Ph.D. in a
 relevant field, such as fisheries, quantitative ecology, or statistics.
 We encourage applications by recent graduates, but also value relevant work
 experience. Māori have strong interests in New Zealand fisheries, and we encourage
-applicants with strong relationships with Te Ao Māori. 
+applicants with strong relationships with Te Ao Māori.
 
 This role may require communication with a wide range of stakeholders, including
 other researchers, non-government organisations, government agencies, and
@@ -45,7 +45,7 @@ The role is offered as a permanent position, with salary depending on
 experience.  To apply for this position, please send a cover letter (a maximum
 of two pages), and a curriculum vitae to [Philipp Neubauer](mailto:philipp@dragonfly.co.nz).
 
-Because of COVID-19, applicants must currently live and be eligible to work in New Zealand or be eligible to return to New Zealand (i.e., be a citizen or resident). Please note that a similar role was advertised before the pandemic, and we were unable to proceed. If you wish to be reconsidered, please resubmit your application. 
+Because of COVID-19, applicants must currently live and be eligible to work in New Zealand or be eligible to return to New Zealand (i.e., be a citizen or resident). Please note that a similar role was advertised before the pandemic, and we were unable to proceed. If you wish to be reconsidered, please resubmit your application.
 
 Applications close at 12 pm on Monday, 28 September 2020.
 
@@ -67,4 +67,3 @@ data visualisations.
 
 We are an inclusive and friendly company, focused on collaboration and
 innovation.  We strive to provide a positive and supportive work environment.
-
