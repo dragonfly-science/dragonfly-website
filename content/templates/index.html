@@ -1,10 +1,10 @@
 $partial("templates/_game-of-life.html")$ $if(sections)$
-<div class="numbered-sections pb-16 lg:pb-48 bg-light-peach">
+<div id="top-section" class="numbered-sections pb-16 lg:pb-48 bg-light-peach">
   $for(sections)$ $partial("templates/_numbered-section.html")$ $endfor$
 </div>
 $endif$ $partial("templates/_title.html")$
 
-<section id="top-section" class="math-paper">
+<section class="math-paper">
   <div class="collection-grid collection-grid--no-bottom">
     $for(tiles)$ $partial("templates/_tile-index.html")$ $endfor$
   </div>

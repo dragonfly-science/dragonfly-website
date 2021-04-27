@@ -8,18 +8,18 @@
     linear-gradient(90deg, rgba(67, 161, 201, 0.45) 1px, transparent 1px),
     linear-gradient(rgba(67, 161, 201, 0.2) 1px, transparent 1px),
     linear-gradient(90deg, rgba(67, 161, 201, 0.2) 1px, transparent 1px);
-  background-size: 50px 50px;
-  background-position: 25px 25px, 25px 25px, 50px 50px, 50px 50px;
+  background-size: 64px 64px;
+  background-position: 32px 32px, 32px 32px, 64px 64px, 64px 64px;
   background-attachment: fixed, fixed, fixed, fixed;
 }
 
 .math-paper--origin {
   /* prettier-ignore */
   background-position:
-    calc(50% - 25px) calc(50% - 25px),
-    calc(50% - 25px) calc(50% - 25px),
-    calc(50% - 50px) calc(50% - 50px),
-    calc(50% - 50px) calc(50% - 50px);
+    calc(50% - 32px) calc(50% - 32px),
+    calc(50% - 32px) calc(50% - 32px),
+    calc(50% - 64px) calc(50% - 64px),
+    calc(50% - 64px) calc(50% - 64px);
 }
 
 .math-paper--reverse {

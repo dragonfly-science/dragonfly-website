@@ -1,4 +1,4 @@
 /* game of life canvas. */
 .game-of-life {
-  @apply absolute top-0 left-0 z-0 min-w-full h-full;
+  @apply absolute top-0 left-0 z-1 min-w-full h-full;
 }

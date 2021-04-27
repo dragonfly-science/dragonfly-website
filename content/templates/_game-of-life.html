@@ -1,5 +1,5 @@
 <header
-  class="page-header page-header--image-based bg-white math-paper relative overflow-hidden select-none -mt-12 lg:-mt-24"
+  class="page-header page-header--home mx-auto bg-white math-paper relative overflow-hidden select-none -mt-12 lg:-mt-24"
 >
   <div class="page-header__outer pt-12 lg:pt-24">
     <div class="page-header__container container">
@@ -62,6 +62,18 @@
   </div>
 
   <canvas id="gameoflife" class="game-of-life"></canvas>
+
+  <div class="math-paper absolute top-0 left-0 w-full h-full z-1"></div>
+
+  <video
+    class="absolute top-0 left-0 z-0 object-cover w-full mt-12 lg:mt-24"
+    autoplay
+    loop
+    muted
+  >
+    <source src="/images/Albatross5.mp4" type="video/mp4" />
+  </video>
+
   <div
     id="blob"
     class="game-of-life-blob absolute top-0 left-0 z-0 min-w-full h-full"

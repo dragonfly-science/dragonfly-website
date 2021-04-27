@@ -12,7 +12,7 @@ const gameOfLife = (): void => {
   const options: RendererOptions = {
     canvasSelector: '#gameoflife',
     desiredFPS: parseInt($('.animation-controls__input').val(), 10),
-    pixelsPerCell: 25,
+    pixelsPerCell: 32,
     fillStyle: '#43A1C9',
   }
   const canvas: HTMLCanvasElement = document.querySelector(
