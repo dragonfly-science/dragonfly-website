@@ -158,10 +158,15 @@
 
 @screen lg {
   .page-header {
-    @apply py-20;
+    @apply h-44;
 
     &__title {
       @apply text-8xl;
+    }
+
+    &__title,
+    &__content {
+      @apply max-w-5/2;
     }
 
     &__content {

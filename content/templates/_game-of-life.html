@@ -1,8 +1,8 @@
 <header
-  class="page-header page-header--home mx-auto bg-white math-paper relative overflow-hidden select-none -mt-12 lg:-mt-24"
+  class="page-header outer-container bg-white relative overflow-hidden select-none flex"
 >
-  <div class="page-header__outer pt-12 lg:pt-24">
-    <div class="page-header__container container">
+  <div class="page-header__outer mt-auto">
+    <div class="page-header__container text-white">
       <h1 class="page-header__title">Kia Ora</h1>
 
       <p class="page-header__content">
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="animation-controls mt-12 lg:mt-24">
+  <div class="animation-controls">
     <div class="animation-controls__header flex flex-row">
       <button class="bg-slate-grey">
         <i class="dragonfly-hamburger"></i>
@@ -63,15 +63,15 @@
 
   <canvas id="gameoflife" class="game-of-life"></canvas>
 
-  <div class="math-paper absolute top-0 left-0 w-full h-full z-1"></div>
+  <div class="math-paper--screen absolute top-0 left-0 w-full h-full z-1"></div>
 
   <video
-    class="absolute top-0 left-0 z-0 object-cover w-full mt-12 lg:mt-24"
+    class="absolute top-0 left-0 z-0 object-cover w-full h-full"
     autoplay
     loop
     muted
   >
-    <source src="/images/Albatross5.mp4" type="video/mp4" />
+    <source src="/images/HomeMix.mp4" type="video/mp4" />
   </video>
 
   <div

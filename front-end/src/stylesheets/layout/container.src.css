@@ -1,0 +1,4 @@
+.outer-container {
+  @apply w-full mx-auto;
+  max-width: theme('screens.2xl');
+}

@@ -1,9 +1,8 @@
 /* Numbersed section as seen on the what we do page. */
 .numbered-section {
-  @apply px-8 pt-16 overflow-hidden relative;
+  @apply px-8 pt-16 overflow-hidden relative border-b border-light-grey;
 
   counter-increment: list-number;
-  border-bottom: 1px solid rgba(67, 161, 201, 0.9);
 
   &::after,
   &::before {
@@ -31,7 +30,7 @@
   }
 
   &__text {
-    @apply text-lg font-medium leading-tight max-w-xl;
+    @apply text-xl font-medium leading-tight max-w-xl;
   }
 
   &__link {
@@ -148,13 +147,17 @@
     &:nth-of-type(odd) {
       @apply math-paper--left;
 
-      .numbered-section__content {
-        &:first-child {
-          @apply pl-6;
-        }
+      .numbered-section {
+        &__content {
+          &:first-child {
+            @apply pl-6;
+          }
 
-        &:last-child {
-          @apply order-first pr-8;
+          &:last-child {
+            @apply order-first pr-8;
+          }
+
+          @apply ml-auto;
         }
       }
     }
@@ -172,17 +175,9 @@
             @apply pl-8;
           }
         }
-      }
 
-      .numbered-section__heading,
-      .numbered-section__text,
-      .numbered-section__container .call-to-action-block {
-        @apply ml-auto text-right;
-      }
-
-      .numbered-section__container .call-to-action-block {
-        .button {
-          @apply ml-auto mr-0;
+        &__content-wrapper {
+          @apply ml-auto;
         }
       }
     }
@@ -191,14 +186,18 @@
       @apply flex;
     }
 
-    /* &__heading {
-      @apply pr-8;
-    } */
+    &__text {
+      @apply text-2/3xl leading-tighter;
+    }
 
     &__content {
       &--img {
         @apply max-w-sm;
       }
+    }
+
+    &__content-wrapper {
+      @apply max-w-5/3;
     }
 
     &__link {
@@ -242,10 +241,6 @@
       span {
         @apply text-5xl;
       }
-    }
-
-    &__text {
-      @apply text-xl;
     }
 
     &__call-to-action {

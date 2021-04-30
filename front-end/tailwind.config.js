@@ -69,6 +69,9 @@ module.exports = {
         '9xl': '7rem',
         '9/2xl': '7.5rem',
       },
+      height: {
+        44: '44rem',
+      },
       lineHeight: {
         tighter: '1.2em',
       },
@@ -107,7 +110,9 @@ module.exports = {
         '8/10': '80%',
         '3/4': '75%',
         '2/3': '66%',
+        '5/3': '60%',
         '1/2': '50%',
+        '5/2': '40%',
         '1/3': '33%',
         '1/4': '25%',
         '7xl': '102.5rem',
@@ -121,6 +126,7 @@ module.exports = {
       maxHeight: {
         16: '16rem',
         28: '28rem',
+        44: '44rem',
       },
       minHeight: {
         3: '3rem',
@@ -167,6 +173,7 @@ module.exports = {
         'in-quart': 'easeInQuart',
       },
       width: {
+        '1/5': '20%',
         72: '18rem',
         80: '20rem',
         88: '22rem',
