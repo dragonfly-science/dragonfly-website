@@ -8,7 +8,7 @@ phone: +64 21 426 878
 tag: finlay
 title: Finlay Thompson, PhD
 honour: PhD
-banner: thompson-finlay/finlay-thompson-letterbox.jpg
+banner: thompson-finlay/finlay-thompson.jpg
 sortorder: "1"
 nocite: |
   @thompson_mammals_95-12
@@ -17,6 +17,7 @@ nocite: |
 
 Finlay is the CEO of Dragonfly. As a mathematician, he brings an insightful rigour
 to solving analytical and technical problems.
+
 <!--more-->
 
 Finlay has extensive experience as a database and software developer. He leads
@@ -35,10 +36,10 @@ and [Victoria University of Wellington](http://www.victoria.ac.nz/sms),
 then worked in Wellington's IT industry before joining Dragonfly in 2008.
 
 > I think decision making should be supported with the best available
-information. Data collection can be an expensive
-investment for any organisation, so getting the most from that data
-is essential. In the long run, robust analysis will produce a better return on
-investment. It's gratifying to see our work being used to inform key commercial and
-government decisions.
+> information. Data collection can be an expensive
+> investment for any organisation, so getting the most from that data
+> is essential. In the long run, robust analysis will produce a better return on
+> investment. It's gratifying to see our work being used to inform key commercial and
+> government decisions.
 
 ### Selected publications

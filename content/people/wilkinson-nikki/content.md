@@ -6,7 +6,7 @@ lastname: Wilkinson
 role: Data scientist
 mobile: ""
 tag: nikki
-banner: wilkinson-nikki/nikki-wilkinson-letterbox.jpg
+banner: wilkinson-nikki/nikki-wilkinson.jpg
 ---
 
 Nikki is a data scientist at Dragonfly and has a strong interest in machine learning

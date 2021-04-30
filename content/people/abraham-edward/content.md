@@ -7,7 +7,7 @@ phone: +64 21 989 454
 tag: edward
 honour: PhD
 title: Edward Abraham, PhD
-banner: abraham-edward/edward-abraham-letterbox.jpg
+banner: abraham-edward/edward-abraham.jpg
 sortorder: "2"
 nocite: |
   @abraham2000isd

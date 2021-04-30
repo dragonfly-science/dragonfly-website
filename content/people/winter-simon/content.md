@@ -3,13 +3,13 @@ title: Simon Winter
 email: simon@dragonfly.co.nz
 firstname: Simon
 lastname: Winter
-role: Front-end developer
+role: Senior developer
 mobile: ""
 tag: simon
-banner: winter-simon/simon-winter-letterbox.jpg
+banner: winter-simon/simon-winter.jpg
 ---
 
-Simon is lead front-end developer at Dragonfly who loves to combine great design
+Simon is senior developer at Dragonfly who loves to combine great design
 with a seamless user experience.
 
 <!--more-->
