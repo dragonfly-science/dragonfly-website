@@ -5,7 +5,7 @@ firstname: McKenzie
 lastname: Tornquist
 mobile: ""
 tag: mckenzie
-banner: tornquist-mckenzie/mckenzie-tornquist-letterbox.jpg
+banner: tornquist-mckenzie/mckenzie-tornquist.jpg
 nocite: |
 ---
 

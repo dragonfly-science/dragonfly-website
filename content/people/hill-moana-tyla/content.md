@@ -5,7 +5,7 @@ firstname: Tyla
 lastname: Hill-Moana
 mobile: ""
 tag: tyla
-banner: hill-moana-tyla/tyla-hill-moana-letterbox.jpg
+banner: hill-moana-tyla/tyla-hill-moana.jpg
 nocite: |
 ---
 
@@ -19,4 +19,4 @@ While continuing to practice her coding skills with the team, she is also helpin
 
 Tyla says she carries this proverb with her.
 
-> Kia tipu, kia hua, kia puāwai – to grow, to prosper, to sustain. This describes my journey into the world of data science where there are many pūkenga (skills) and mātauranga (knowledge) to grab hold of. I’m looking forward to the future and where data science will take us.”
+> Kia tipu, kia hua, kia puāwai – to grow, to prosper, to sustain. This describes my journey into the world of data science where there are many pūkenga (skills) and mātauranga (knowledge) to grab hold of. I’m looking forward to the future and where data science will take us.
