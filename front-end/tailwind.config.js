@@ -39,6 +39,7 @@ module.exports = {
     colors: {
       beige: '#d2cec3',
       'cool-blue': '#43A1C9',
+      'dark-jungle-green': '#1D1E21',
       'dark-peach': '#EB7A59',
       'faded-purple': '#A3649B',
       'faded-red': '#CF4547',

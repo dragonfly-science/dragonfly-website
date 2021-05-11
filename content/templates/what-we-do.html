@@ -1,5 +1,8 @@
 <header
-  class="page-header page-header--article page-header--image-bg$if(banner)$ lozad-container lozad-container--light-peach$endif$"
+  class="
+    page-header page-header--article page-header--image-bg$if(banner)$
+    lozad-container lozad-container--light-peach$endif$
+  "
 >
   <div class="page-header__outer">
     <div class="page-header__container container">
@@ -29,10 +32,23 @@
 <article id="top-section" class="article bg-light-peach">
   <div class="px-6">
     <div
-      class="sticky-container container mx-auto pt-24 flex flex-col items-start lg:flex-row"
+      class="
+        sticky-container
+        container
+        mx-auto
+        pt-24
+        flex flex-col
+        items-start
+        lg:flex-row
+      "
     >
       <div
-        class="sticky-container__body body-content body-content--article flex-grow my-0"
+        class="
+          sticky-container__body
+          body-content body-content--article
+          flex-grow
+          my-0
+        "
       >
         $body$
       </div>
@@ -59,7 +75,15 @@
                 />
                 $endif$
                 <h2
-                  class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full"
+                  class="
+                    person-tile__title
+                    absolute
+                    bottom-0
+                    left-0
+                    p-4
+                    w-full
+                    max-w-full
+                  "
                 >
                   $firstname$<br />
                   $lastname$<br />
@@ -79,13 +103,30 @@
   </div>
 
   $if(tiles)$
-  <div class="related-content relative z-10 math-paper">
-    <header class="related-content__header container">
-      <h2 class="supplementary-header related-content__title">
+  <div class="related-content related-content--header math-paper--left--small">
+    <header class="related-content__header outer-container">
+      <h2
+        class="
+          supplementary-header supplementary-header--large
+          related-content__title
+        "
+      >
         Related projects
       </h2>
     </header>
-    <div class="collection-grid collection-grid--no-bottom list">
+  </div>
+
+  <div class="w-full bg-jungle-green">
+    <div
+      class="
+        collection-grid collection-grid--no-bottom
+        list
+        outer-container
+        px-8
+        lg:px-32
+        2xl:px-8
+      "
+    >
       $for(tiles)$ $partial("templates/_tile.html")$ $endfor$
     </div>
   </div>

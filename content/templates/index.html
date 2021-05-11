@@ -4,8 +4,16 @@ $partial("templates/_game-of-life.html")$ $if(sections)$
 </div>
 $endif$ $partial("templates/_title.html")$
 
-<section class="math-paper">
-  <div class="collection-grid collection-grid--no-bottom">
+<section class="bg-jungle-green">
+  <div
+    class="
+      collection-grid collection-grid--no-bottom
+      outer-container
+      px-8
+      lg:px-32
+      2xl:px-8
+    "
+  >
     $for(tiles)$ $partial("templates/_tile-index.html")$ $endfor$
   </div>
 </section>

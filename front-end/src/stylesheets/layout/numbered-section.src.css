@@ -1,6 +1,6 @@
-/* Numbersed section as seen on the what we do page. */
+/* Numbered section as seen on the what we do page. */
 .numbered-section {
-  @apply px-8 pt-16 overflow-hidden relative border-b border-light-grey;
+  @apply pt-16 overflow-hidden relative border-b border-light-grey;
 
   counter-increment: list-number;
 
@@ -17,7 +17,7 @@
     }
 
     img {
-      @apply m-0;
+      @apply mt-8 mb-0 mx-auto;
     }
   }
 
@@ -25,12 +25,13 @@
     @apply max-w-md font-bold text-slate-grey flex pb-5;
 
     span {
-      @apply text-3xl leading-none;
+      @apply text-2xl leading-none;
     }
   }
 
   &__text {
-    @apply text-xl font-medium leading-tight max-w-xl;
+    @apply text-xl leading-tighter;
+    /* @apply text-2xl font-medium leading-tight max-w-xl; */
   }
 
   &__link {
@@ -43,14 +44,14 @@
   }
 
   &__container {
-    @apply block mx-auto;
+    @apply block w-full mx-auto px-8;
   }
 
-  &__heading,
+  /* &__heading,
   &__text,
   &__container .call-to-action-block {
     @apply max-w-sm;
-  }
+  } */
 
   p {
     @apply mb-4;
@@ -140,6 +141,20 @@
   }
 }
 
+@screen md {
+  .numbered-section {
+    &__text {
+      @apply text-2/3xl leading-tighter;
+    }
+
+    &__heading {
+      span {
+        @apply text-2/3xl leading-tighter;
+      }
+    }
+  }
+}
+
 @screen lg {
   .numbered-section {
     @apply pt-20;
@@ -183,22 +198,26 @@
     }
 
     &__container {
-      @apply flex;
+      @apply flex px-32;
     }
 
-    &__text {
+    /* &__text {
       @apply text-2/3xl leading-tighter;
-    }
+    } */
 
     &__content {
       &--img {
-        @apply max-w-sm;
+        @apply max-w-1/2;
+
+        img {
+          @apply mt-0;
+        }
       }
     }
 
-    &__content-wrapper {
+    /* &__content-wrapper {
       @apply max-w-5/3;
-    }
+    } */
 
     &__link {
       @apply mb-20;
@@ -245,6 +264,14 @@
 
     &__call-to-action {
       @apply mb-0;
+    }
+  }
+}
+
+@screen 2xl {
+  .numbered-section {
+    &__container {
+      @apply px-8;
     }
   }
 }

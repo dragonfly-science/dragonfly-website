@@ -1,10 +1,10 @@
 /* Navigation section at bottom of a page, linking users to related content.
  - e.g. projects, news etc. */
 .related-content {
-  @apply px-8 bg-light-peach;
+  @apply bg-light-peach;
 
   &__header {
-    @apply mx-auto;
+    @apply mx-auto px-8;
   }
 
   &__title {
@@ -28,7 +28,29 @@
 
 @screen lg {
   .related-content {
+    &__header {
+      @apply px-32;
+    }
+
     &--header {
+
+      .related-content {
+        &__title {
+          @apply py-8;
+        }
+      }
+    }
+  }
+}
+
+@screen 2xl {
+  .related-content {
+    &__header {
+      @apply px-8;
+    }
+
+    &--header {
+
       .related-content {
         &__title {
           @apply py-16;

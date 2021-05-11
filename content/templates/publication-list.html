@@ -1,93 +1,253 @@
-<header class="page-header page-header--reversed bg-cool-blue math-paper math-paper--reverse">
+<header
+  class="
+    page-header page-header--small page-header--reversed
+    bg-cool-blue
+    math-paper math-paper--reverse
+  "
+>
   <div class="page-header__outer">
     <div class="page-header__container text-white">
       <h1 class="page-header__title">Publications</h1>
 
       <div class="page-header__content">
-          <h2>
-              We communicate our findings.
-            </h2>
-            <p>
-                We write reports, give presentations, and publish in the scientific literature. Browse or search this list of publicly available reports, presentations, and journal articles by
-                Dragonfly staff.
-            </p>
+        <h2>We communicate our findings.</h2>
+        <p>
+          We write reports, give presentations, and publish in the scientific
+          literature. Browse or search this list of publicly available reports,
+          presentations, and journal articles by Dragonfly staff.
+        </p>
       </div>
     </div>
   </div>
 </header>
 
-
 <div id="filter-list" data-type="publication">
   <div class="filtering bg-light-peach">
-    <div class="flex">
+    <div class="flex outer-container px-8 lg:px-32 2xl:px-8">
       <div class="filtering__tools">
         <div class="filtering__tools__header">
-            $partial("templates/_search-field.html")$
+          $partial("templates/_search-field.html")$
 
-            <div class="filtering__buttons xl:ml-0">
-                <button
-                  class="filtering__button outline-none text-cool-blue text-lg font-bold pt-2"
-                  title="show/hide filter options"
-                >
-                  filters
-                  <span class="ml-1 fas fa-plus rotate-0 transform transition duration-300"></span>
-                </button>
-            </div>
+          <div class="filtering__buttons xl:ml-0">
+            <button
+              class="
+                filtering__button
+                outline-none
+                text-cool-blue text-lg
+                font-bold
+                pt-2
+              "
+              title="show/hide filter options"
+            >
+              filters
+              <span
+                class="
+                  ml-1
+                  fas
+                  fa-plus
+                  rotate-0
+                  transform
+                  transition
+                  duration-300
+                "
+              ></span>
+            </button>
+          </div>
         </div>
 
         <div class="filtering__tools__links">
-            <div class="filtering__tags flex-grow mr-8">
-              <span class="filtering__tags__title">By author</span>
-              <ul class="tag-list">
-                <li class="tag-list__tag tag-list__tag--author tag-list__tag--active" data-tag="">All authors</li>
-                <li class="tag-list__tag tag-list__tag--author" data-tag="dragonfly">Dragonfly work</li>
-                <li class="tag-list__tag tag-list__tag--author" data-tag="edward">Edward Abraham</li>
-                <li class="tag-list__tag tag-list__tag--author" data-tag="katrin">Katrin Berkenbusch</li>
-                <li class="tag-list__tag tag-list__tag--author" data-tag="laura">Laura Tremblay-Boyer</li>
-                <li class="tag-list__tag tag-list__tag--author" data-tag="richard">Richard Mansfield</li>
-                <li class="tag-list__tag tag-list__tag--author" data-tag="philipp">Philipp Neubauer</li>
-                <li class="tag-list__tag tag-list__tag--author" data-tag="yvan">Yvan Richard</li>
-                <li class="tag-list__tag tag-list__tag--author" data-tag="finlay">Finlay Thompson</li>
-              </ul>
-            </div>
+          <div class="filtering__tags flex-grow mr-8">
+            <span class="filtering__tags__title">By author</span>
+            <ul class="tag-list">
+              <li
+                class="
+                  tag-list__tag tag-list__tag--author tag-list__tag--active
+                "
+                data-tag=""
+              >
+                All authors
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--author"
+                data-tag="dragonfly"
+              >
+                Dragonfly work
+              </li>
+              <li class="tag-list__tag tag-list__tag--author" data-tag="edward">
+                Edward Abraham
+              </li>
+              <li class="tag-list__tag tag-list__tag--author" data-tag="katrin">
+                Katrin Berkenbusch
+              </li>
+              <li class="tag-list__tag tag-list__tag--author" data-tag="laura">
+                Laura Tremblay-Boyer
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--author"
+                data-tag="richard"
+              >
+                Richard Mansfield
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--author"
+                data-tag="philipp"
+              >
+                Philipp Neubauer
+              </li>
+              <li class="tag-list__tag tag-list__tag--author" data-tag="yvan">
+                Yvan Richard
+              </li>
+              <li class="tag-list__tag tag-list__tag--author" data-tag="finlay">
+                Finlay Thompson
+              </li>
+            </ul>
+          </div>
 
-            <div class="filtering__tags flex-grow mr-8">
-              <span class="filtering__tags__title">By subject</span>
-              <ul class="tag-list">
-                <li class="tag-list__tag tag-list__tag--subject tag-list__tag--active" data-tag="">All subjects</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="assessment">Assessment</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="benthic">Benthic</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="bycatch">Bycatch</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="marine-biology">Marine biology</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="fisheries">Fisheries</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="marine-mammal">Marine mammals</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="oceanography">Oceanography</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="risk-assessment">Risk assessment</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="seabird">Seabirds</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="theoretical-biology">Theoretical biology</li>
-                <li class="tag-list__tag tag-list__tag--subject" data-tag="theoretical-physics">Theoretical physics</li>
-              </ul>
-            </div>
+          <div class="filtering__tags flex-grow mr-8">
+            <span class="filtering__tags__title">By subject</span>
+            <ul class="tag-list">
+              <li
+                class="
+                  tag-list__tag tag-list__tag--subject tag-list__tag--active
+                "
+                data-tag=""
+              >
+                All subjects
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="assessment"
+              >
+                Assessment
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="benthic"
+              >
+                Benthic
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="bycatch"
+              >
+                Bycatch
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="marine-biology"
+              >
+                Marine biology
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="fisheries"
+              >
+                Fisheries
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="marine-mammal"
+              >
+                Marine mammals
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="oceanography"
+              >
+                Oceanography
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="risk-assessment"
+              >
+                Risk assessment
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="seabird"
+              >
+                Seabirds
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="theoretical-biology"
+              >
+                Theoretical biology
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="theoretical-physics"
+              >
+                Theoretical physics
+              </li>
+            </ul>
+          </div>
 
-            <div class="filtering__tags flex-grow-0">
-              <span class="filtering__tags__title whitespace-no-wrap">By publication type</span>
-              <ul class="tag-list">
-                <li class="tag-list__tag tag-list__tag--publication-type tag-list__tag--active" data-tag="">All types</li>
-                <li class="tag-list__tag tag-list__tag--publication-type tag-list__tag--article" data-tag="article">Article</li>
-                <li class="tag-list__tag tag-list__tag--publication-type tag-list__tag--report" data-tag="report">Report</li>
-                <li class="tag-list__tag tag-list__tag--publication-type tag-list__tag--presentation" data-tag="presentation">Presentation</li>
-              </ul>
-            </div>
+          <div class="filtering__tags flex-grow-0">
+            <span class="filtering__tags__title whitespace-no-wrap"
+              >By publication type</span
+            >
+            <ul class="tag-list">
+              <li
+                class="
+                  tag-list__tag
+                  tag-list__tag--publication-type
+                  tag-list__tag--active
+                "
+                data-tag=""
+              >
+                All types
+              </li>
+              <li
+                class="
+                  tag-list__tag
+                  tag-list__tag--publication-type
+                  tag-list__tag--article
+                "
+                data-tag="article"
+              >
+                Article
+              </li>
+              <li
+                class="
+                  tag-list__tag
+                  tag-list__tag--publication-type
+                  tag-list__tag--report
+                "
+                data-tag="report"
+              >
+                Report
+              </li>
+              <li
+                class="
+                  tag-list__tag
+                  tag-list__tag--publication-type
+                  tag-list__tag--presentation
+                "
+                data-tag="presentation"
+              >
+                Presentation
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <section id="top-section" class="bg-light-peach math-paper">
-    <div class="collection-grid publication-grid list">
-      $for(publications)$
-        $partial("templates/_citation-entry.html")$
-      $endfor$
+    <div
+      class="
+        collection-grid
+        publication-grid
+        list
+        outer-container
+        px-8
+        lg:px-32
+        2xl:px-8
+      "
+    >
+      $for(publications)$ $partial("templates/_citation-entry.html")$ $endfor$
     </div>
   </section>
 </div>

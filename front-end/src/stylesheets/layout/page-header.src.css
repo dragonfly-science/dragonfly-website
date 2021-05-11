@@ -1,5 +1,5 @@
 .page-header {
-  @apply w-full py-16 px-8 bg-cover;
+  @apply w-full bg-cover flex;
 
   /* Elements. */
   &__title {
@@ -15,8 +15,10 @@
   }
 
   &__outer {
-    @apply mx-auto relative z-10;
+    @apply py-16 px-8 relative z-10 mt-auto;
     @apply transition-color duration-500;
+    @apply w-full mx-auto;
+    max-width: theme('screens.2xl');
   }
 
   /* Modifiers. */
@@ -90,9 +92,9 @@
     }
   }
 
-  &--small {
+  /* &--small {
     @apply py-8;
-  }
+  } */
 
   &--home {
     @apply max-w-full;
@@ -128,12 +130,20 @@
 
 @screen md {
   .page-header {
+    &__title,
+    &__content {
+      @apply max-w-2/3;
+    }
+
     &__title {
       @apply text-6xl;
     }
 
-    &__title,
     &__content {
+      @apply text-2/3xl pt-12 leading-tighter;
+    }
+
+    &__title {
       @apply max-w-1/2;
     }
 
@@ -160,17 +170,17 @@
   .page-header {
     @apply h-44;
 
+    &__outer {
+      @apply px-32;
+    }
+
     &__title {
       @apply text-8xl;
     }
 
     &__title,
     &__content {
-      @apply max-w-5/2;
-    }
-
-    &__content {
-      @apply text-2/3xl pt-12 leading-tighter;
+      @apply max-w-full;
     }
 
     &--article {
@@ -183,6 +193,10 @@
       .page-header__title {
         @apply mb-0;
       }
+    }
+
+    &--small {
+      @apply h-auto;
     }
 
     &--image {
@@ -207,9 +221,9 @@
       }
     }
 
-    &--small {
+    /* &--small {
       @apply py-16 !important;
-    }
+    } */
 
     &--image-bg,
     &--home,
@@ -227,6 +241,11 @@
 
 @screen xl {
   .page-header {
+    &__title,
+    &__content {
+      @apply max-w-2/3;
+    }
+
     &--news {
       .page-header__inner {
         @apply max-w-64rem;
@@ -252,7 +271,12 @@
 @screen 2xl {
   .page-header {
     &__outer {
-      max-width: 1920px;
+      @apply px-8;
+    }
+
+    &__title,
+    &__content {
+      @apply max-w-1/2;
     }
   }
 }

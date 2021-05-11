@@ -225,7 +225,6 @@
 @screen md {
   .no-gutter-cell {
     @apply w-1/2;
-
     &__title {
       /* font-size: 5vw; */
     }
@@ -251,7 +250,7 @@
   }
 }
 
-@screen xl {
+@screen 2xl {
   .no-gutter-cell {
     @apply min-h-30 w-1/4;
 

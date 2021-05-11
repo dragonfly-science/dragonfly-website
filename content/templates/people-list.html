@@ -1,5 +1,8 @@
 <header
-  class="page-header page-header--article page-header--image-bg lozad-container lozad-container--light-peach"
+  class="
+    page-header page-header--article page-header--image-bg
+    lozad-container lozad-container--light-peach
+  "
 >
   <div class="page-header__outer">
     <div class="page-header__container container">
@@ -24,8 +27,16 @@
 
 $partial("templates/_title.html")$
 
-<section id="top-section" class="bg-black">
-  <div class="collection-grid collection-grid--no-bottom">
+<section id="top-section" class="bg-jungle-green">
+  <div
+    class="
+      collection-grid collection-grid--no-bottom
+      outer-container
+      px-8
+      lg:px-32
+      2xl:px-8
+    "
+  >
     $for(people)$
     <a href="$pageurl$" class="no-gutter-cell person-tile bg-black">
       <h2 class="no-gutter-cell__title person-tile__title">
@@ -35,7 +46,12 @@ $partial("templates/_title.html")$
       </h2>
 
       <span
-        class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link person-tile__link"
+        class="
+          link-icon
+          no-gutter-cell__link
+          no-gutter-cell--overlay__link
+          person-tile__link
+        "
       >
         <span class="icon dragonfly-arrow"></span>
       </span>
