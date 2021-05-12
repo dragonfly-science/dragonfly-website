@@ -27,7 +27,7 @@
 
 $partial("templates/_title.html")$
 
-<section id="top-section" class="bg-jungle-green">
+<section id="top-section" class="bg-dark-jungle-green">
   <div
     class="
       collection-grid collection-grid--no-bottom
@@ -39,22 +39,35 @@ $partial("templates/_title.html")$
   >
     $for(people)$
     <a href="$pageurl$" class="no-gutter-cell person-tile bg-black">
-      <h2 class="no-gutter-cell__title person-tile__title">
-        $if(firstname)$$firstname$$endif$<br />
-        $lastname$$if(honour)$<br />
-        <span class="font-light">$honour$</span>$endif$
-      </h2>
+      <div class="h-full w-full flex flex-row">
+        <h2
+          class="
+            no-gutter-cell__title
+            person-tile__title
+            mt-auto
+            flex-grow
+            mr-8
+          "
+        >
+          $if(firstname)$$firstname$$endif$<br />
+          $lastname$$if(honour)$<br />
+          <span class="font-light">$honour$</span>$endif$
+        </h2>
 
-      <span
-        class="
-          link-icon
-          no-gutter-cell__link
-          no-gutter-cell--overlay__link
-          person-tile__link
-        "
-      >
-        <span class="icon dragonfly-arrow"></span>
-      </span>
+        <span
+          class="
+            link-icon
+            no-gutter-cell__link
+            no-gutter-cell--overlay__link
+            person-tile__link
+            w-10
+            mt-auto
+            flex-shrink-none
+          "
+        >
+          <span class="icon dragonfly-arrow mt-2"></span>
+        </span>
+      </div>
 
       <div
         class="no-gutter-cell__image person-tile__image background-image lozad"

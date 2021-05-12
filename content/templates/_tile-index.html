@@ -1,27 +1,35 @@
 $if(pageurl)$
-    <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay">
+    <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay list-tile tile">
 $else$
     $if(url)$
-        <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay">
+        <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay list-tile tile">
     $else$
-        <div class="no-gutter-cell no-gutter-cell--overlay">
+        <div class="no-gutter-cell no-gutter-cell--overlay list-tile tile">
     $endif$
 $endif$
-    $if(section)$
-        <span class="no-gutter-cell__tag">$section$</span>
-    $else$
-        <span class="no-gutter-cell__tag">&nbsp;</span>
-    $endif$
-    $if(title)$
-    <strong class="no-gutter-cell__title">$title$</strong>
-    $endif$
-    $if(teaser)$
-        <div class="no-gutter-cell__text">$teaser$</div>
-    $endif$
+    <div class="flex flex-row h-full">
+      <div class="flex flex-col h-full mr-8">
+        $if(section)$
+            <span class="no-gutter-cell__tag">$section$</span>
+        $else$
+            <span class="no-gutter-cell__tag">&nbsp;</span>
+        $endif$
+        <div class="no-gutter-cell__inner">
+          $if(title)$
+          <strong class="no-gutter-cell__title">$title$</strong>
+          $endif$
+          $if(teaser)$
+              <div class="no-gutter-cell__text">$teaser$</div>
+          $endif$
+        </div>
+      </div>
 
-    <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link">
-        <span class="icon dragonfly-arrow ml-0 mt-4"></span>
-    </span>
+      <div class="tagslugs hidden">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
+
+      <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link block flex-shrink-0 mt-auto w-10">
+          <span class="icon dragonfly-arrow ml-0 mt-4"></span>
+      </span>
+    </div>
 
     <div class="no-gutter-cell__image no-gutter-cell__image--large background-image lozad" data-background-image="$teaserImage$"></div>
 $if(pageurl)$

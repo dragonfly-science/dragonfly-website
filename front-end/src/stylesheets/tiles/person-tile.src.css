@@ -15,7 +15,7 @@
   &__title {
     @apply mb-0 z-10 max-w-3/4;
 
-    font-size: 8vw;
+    /* font-size: 8vw; */
   }
 
   /* Variations */
@@ -34,7 +34,7 @@
   }
 
   &--singular {
-    @apply min-h-0 max-w-full w-56 overflow-visible flex-col p-0;
+    @apply h-full min-h-0 max-w-full w-56 overflow-visible flex-col p-0;
 
     img {
       @apply relative z-0;
@@ -129,7 +129,7 @@
 @screen sm {
   .person-tile {
     &__title {
-      font-size: 5vw;
+      /* font-size: 5vw; */
     }
   }
 }
@@ -137,7 +137,7 @@
 @screen md {
   .person-tile {
     &__title {
-      font-size: 4vw;
+      /* font-size: 4vw; */
     }
   }
 }
@@ -145,17 +145,17 @@
 @screen lg {
   .person-tile {
     &__title {
-      font-size: 3.25vw;
+      /* font-size: 3.25vw; */
     }
   }
 }
 
 @screen xl {
   .person-tile {
-    @apply w-1/4;
+    /* @apply w-1/4; */
 
     &__title {
-      font-size: 2.2vw;
+      /* font-size: 2.2vw; */
     }
 
     &--singular {

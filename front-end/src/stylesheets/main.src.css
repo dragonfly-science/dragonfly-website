@@ -37,6 +37,7 @@
 @import 'navigation/button.src.css';
 @import 'navigation/link-icon.src.css';
 @import 'navigation/main-nav.src.css';
+@import 'tiles/tile.src.css';
 @import 'tiles/person-tile.src.css';
 @import 'tiles/publication.src.css';
 @import 'tiles/what-we-do.src.css';
