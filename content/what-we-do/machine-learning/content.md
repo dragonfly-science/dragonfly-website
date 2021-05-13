@@ -15,9 +15,9 @@ teaserIntro: >
   The power of modern Bayesian methods enables us to reach higher, more
   objective probability. We use these methods to transform data and squeeze
   the juice out of it.
-teaserCTAdescriptor: See how and why we use them
 teaserCTAbutton: Read more
 teaserAnchorId: stats
+teaserAlt: /what-we-do/machine-learning/teaser.png
 sortorder: 1
 banner: /images/whatwedo_header.jpg
 tiles:

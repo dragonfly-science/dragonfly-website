@@ -4,15 +4,15 @@ subtitle: >
   We build systems for data. Our statistical work is supported by excellent
   technical database and software development skills. We develop operational
   systems to allow organisations to get ongoing value from their data.
-author: 
+author:
   - people/mansfield-richard/content.md
 teaserTitle: Systems for data
 teaserIntro: >
-    Data is precious. We build robust databases and software systems to collect,
-    store and manage your data properly and securely.
-teaserCTAdescriptor: Read about our ethos and experience
+  Data is precious. We build robust databases and software systems to collect,
+  store and manage your data properly and securely.
 teaserCTAbutton: Read more
 teaserAnchorId: systems
+teaserAlt: /what-we-do/systems-for-data/teaser.png
 banner: /images/whatwedo_header.jpg
 sortorder: 2
 tiles:
@@ -21,6 +21,7 @@ tiles:
   - work/navigating-complexity/content.md
   - work/webrear-case-study/content.md
 ---
+
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
 
 Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper.

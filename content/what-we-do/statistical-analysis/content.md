@@ -15,10 +15,10 @@ teaserIntro: >
   The power of modern Bayesian methods enables us to reach higher, more
   objective probability. We use these methods to transform data and squeeze
   the juice out of it.
-teaserCTAdescriptor: See how and why we use them
 teaserCTAbutton: Read more
 teaserAnchorId: stats
 sortorder: 1
+teaserAlt: /what-we-do/statistical-analysis/teaser.png
 banner: /images/whatwedo_header.jpg
 tiles:
   - work/delphi-case-study/content.md

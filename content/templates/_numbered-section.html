@@ -1,5 +1,9 @@
 <section
-  class="numbered-section numbered-section--no-numbers bg-light-peach outer-container"
+  class="
+    numbered-section numbered-section--no-numbers
+    bg-light-peach
+    outer-container
+  "
 >
   <div class="numbered-section__container">
     <div class="numbered-section__content">
@@ -21,7 +25,11 @@
           <span class="mb-2">$teaserCTAdescriptor$</span>
           <a
             href="$pageurl$"
-            class="call-to-action__button button call-to-action__button--cool-blue"
+            class="
+              call-to-action__button
+              button
+              call-to-action__button--cool-blue
+            "
           >
             $teaserCTAbutton$
           </a>
@@ -30,7 +38,11 @@
         <div class="call-to-action-block">
           <a
             href="$url$"
-            class="call-to-action__button button call-to-action__button--cool-blue"
+            class="
+              call-to-action__button
+              button
+              call-to-action__button--cool-blue
+            "
           >
             find out more
           </a>
@@ -49,7 +61,15 @@
             height="auto"
           />
           <h2
-            class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full"
+            class="
+              person-tile__title
+              absolute
+              bottom-0
+              left-0
+              p-4
+              w-full
+              max-w-full
+            "
           >
             $firstname$<br />
             $lastname$<br />
@@ -61,9 +81,16 @@
       </div>
     </div>
     <div
-      class="numbered-section__content numbered-section__content--img scrollable"
+      class="
+        numbered-section__content numbered-section__content--img
+        scrollable
+      "
     >
+      $if(teaserImageMedium)$
       <img src="$teaserImageMedium$" class="lozad lozad-image" />
+      $endif$ $if(teaserAlt)$
+      <img src="$teaserAlt$" class="lozad lozad-image" />
+      $endif$
     </div>
   </div>
 </section>
