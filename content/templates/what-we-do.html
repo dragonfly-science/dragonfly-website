@@ -1,33 +1,4 @@
-<header
-  class="
-    page-header page-header--article page-header--image-bg$if(banner)$
-    lozad-container lozad-container--light-peach$endif$
-  "
->
-  <div class="page-header__outer">
-    <div class="page-header__container container">
-      $if(title)$
-      <h1 class="page-header__title">$title$</h1>
-      $endif$ $if(subtitle)$
-      <p class="page-header__content">$subtitle$</p>
-      $endif$
-
-      <a
-        href="#top-section"
-        tabindex="-1"
-        class="link-icon link-icon--arrow-down link-icon--large"
-      >
-        <span class="icon dragonfly-arrow"></span>
-      </a>
-    </div>
-  </div>
-  <div
-    class="background-image bg-light-peach$if(banner)$ lozad lozad-image$endif$"
-    $if(banner)$
-    data-background-image="$banner$"
-    $endif$
-  ></div>
-</header>
+$partial("templates/_page-header-small.html")$
 
 <article id="top-section" class="article bg-light-peach">
   <div class="px-6">

@@ -1,21 +1,4 @@
-<header
-  class="
-    page-header page-header--small page-header--reversed
-    bg-cool-blue
-    math-paper math-paper--reverse
-  "
->
-  <div class="page-header__outer">
-    <div class="page-header__container text-white">
-      $if(title)$
-      <h1 class="page-header__title">$title$</h1>
-      $endif$ $if(introduction)$
-      <p class="page-header__content">$introduction$</p>
-      $endif$
-    </div>
-  </div>
-</header>
-$if(whatwedo)$
+$partial("templates/_page-header-small.html")$ $if(whatwedo)$
 <div class="numbered-sections">
   $for(whatwedo)$ $if(teaserAnchorId)$<a
     class="anchor"

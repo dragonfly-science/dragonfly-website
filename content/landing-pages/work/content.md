@@ -1,12 +1,12 @@
 ---
 title: Projects
-introduction: >
+subtitle: >
   Browse our recent work to see the kinds of things we do. Data managment,
   statistical analysis and machine learning are all there in the mix.
 ---
 
-
 # What we do
+
 <!--
 We provide the analysis needed to make decisions. Decisions that use the best
 available information. Decisions that allow
@@ -34,4 +34,3 @@ and sell them globally
 -->
 
 # Case studies
-
