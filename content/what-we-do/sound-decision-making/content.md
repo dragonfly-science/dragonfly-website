@@ -12,7 +12,6 @@ teaserIntro: >
   information base enables people to come together and make good decisions.
 teaserCTAbutton: Read more
 teaserAnchorId: policy
-teaserAlt: /what-we-do/sound-decision-making/teaser.png
 banner: /images/whatwedo_header.jpg
 sortorder: 3
 tiles:

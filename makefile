@@ -38,13 +38,13 @@ down:
 	docker volume rm dragonfly-website_nfsmount
 
 docker:
-	docker build --tag $(IMAGE) .
+	docker-compose build
 
 pull:
-	docker pull $(IMAGE)
+	docker-compose pull website_haskell
 
 push:
-	docker push $(IMAGE)
+	docker-compose push website_haskell
 
 # NPM Commands
 install:
@@ -74,6 +74,9 @@ clean:
 	rm -rf website _site .cache .env \
 				content/fonts/*.css \
 				build-website
+
+clean-cache: website
+	$(RUN_WEB) bash -c './website clean'
 
 compress:
 	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'

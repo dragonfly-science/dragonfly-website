@@ -13,10 +13,12 @@ module WebSite.Context (
 
 import Debug.Trace
 
+import           Control.Applicative
 import           Control.Monad
 import           Data.Aeson
 import           Data.List
 import           System.FilePath
+import           System.Directory (doesFileExist)
 
 import qualified Data.Map             as M
 import qualified Data.HashMap.Strict  as HM
@@ -43,7 +45,7 @@ baseContext section = do
                                     then takeDirectory path
                                     else path)
     return $  dateField  "date"   "%B %e, %Y"
-           <> constField "jquery" "//ajax.googleapis.com/ajax/libs/jquery/2.0.3"
+          --  <> constField "jquery" "//ajax.googleapis.com/ajax/libs/jquery/2.0.3"
            <> constField "section" section
            <> constField ("on-" ++ takeBaseName path) ""
            <> bodyField "body"
@@ -110,8 +112,22 @@ teaserImage = field "teaserImage" (getImagePath "960")
     getImagePath size item = do
         let path = toFilePath (itemIdentifier item)
             base = take ((length path) - 11) path
-            ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser.jpg")))) (getRoute $ ident)
+            -- ext = drop ((length path) - 3) path
+            jpg = fromFilePath $ base </> "teaser.jpg"
+            ident = do
+              exists <- doesFileExist $ base </> "teaser.jpg"
+              case exists of
+                True -> "jpg"
+                False -> "png"
+            -- ident = case jpg of
+            --           True -> fromFilePath $ base </-> "teaser.jpg"
+            --           False -> fromFilePath $ base </> "teaser.png"
+            -- ext = "jpg"
+
+        fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser." ++ "jpg")))) (getRoute jpg)
+
+
+
     getImagePathLrg size item = do
       let path = toFilePath (itemIdentifier item)
           base = take ((length path) - 11) path

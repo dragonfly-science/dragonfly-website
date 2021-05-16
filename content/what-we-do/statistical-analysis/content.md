@@ -18,7 +18,6 @@ teaserIntro: >
 teaserCTAbutton: Read more
 teaserAnchorId: stats
 sortorder: 1
-teaserAlt: /what-we-do/statistical-analysis/teaser.png
 banner: /images/whatwedo_header.jpg
 tiles:
   - work/delphi-case-study/content.md

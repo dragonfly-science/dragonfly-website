@@ -6,7 +6,7 @@ RUN curl -sSL https://get.haskellstack.org/ | sh
 ENV PATH /root/.local/bin:$PATH
 ENV STACK_ROOT /stack
 RUN stack upgrade --binary-only
-ARG NPM_VERSION=7.9.0
+ARG NPM_VERSION=7.13.0
 
 ENV TZ=Pacific/Auckland
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone

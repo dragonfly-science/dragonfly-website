@@ -12,7 +12,6 @@ teaserIntro: >
   store and manage your data properly and securely.
 teaserCTAbutton: Read more
 teaserAnchorId: systems
-teaserAlt: /what-we-do/systems-for-data/teaser.png
 banner: /images/whatwedo_header.jpg
 sortorder: 2
 tiles:

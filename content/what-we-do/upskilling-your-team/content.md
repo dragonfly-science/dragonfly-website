@@ -13,7 +13,6 @@ teaserIntro: >
   with the tricky stuff.
 teaserCTAbutton: Read more
 teaserAnchorId: capability
-teaserAlt: /what-we-do/upskilling-your-team/teaser.png
 banner: /images/whatwedo_header.jpg
 sortorder: 4
 tiles:

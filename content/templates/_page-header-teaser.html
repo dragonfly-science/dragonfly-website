@@ -1,0 +1,14 @@
+<header class="page-header page-header--teaser bg-slate-grey">
+  <div class="page-header__outer flex">
+    <div class="text-white">
+      $if(title)$
+      <h1 class="page-header__title">$title$</h1>
+      $endif$ $if(subtitle)$
+      <p class="page-header__content">$subtitle$</p>
+      $endif$
+    </div>
+    $if(teaserImageMedium)$
+    <img src="$teaserImageMedium$" class="" />
+    $endif$
+  </div>
+</header>

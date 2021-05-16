@@ -72,6 +72,13 @@ main = do
                           , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
                           , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0", "-quality", "75"])
                           ]
+    Images.imageProcessor ( "**/teaser.png") $
+                          [ ( "1200", ["-resize" , "1200x600^", "-gravity", "Center", "-crop", "1200x600+0+0", "-quality", "75"])
+                          , ( "960", ["-resize" , "960x960^", "-gravity", "Center", "-crop", "960x960+0+0", "-quality", "75"])
+                          , ( "480", ["-resize" , "600x600^", "-gravity", "Center", "-crop", "600x600+0+0", "-quality", "75"])
+                          , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
+                          , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0", "-quality", "75"])
+                          ]
 
     Images.imageProcessor ( "**/teaser-large.jpg") $
                           [ ( "960-landscape", ["-resize" , "410+960^", "-gravity", "Center", "-crop", "410+960+0+0", "-quality", "75"])
@@ -160,16 +167,6 @@ main = do
             getResourceBody
                 >>= applyAsTemplate ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
-
-    -- Sass based stylesheets
-    -- match "stylesheets/dragonfly.css" $ do
-    --     route $ constRoute "assets/dragonfly.css"
-    --     compile copyFileCompiler
-
-    -- Scripts
-    -- match "scripts/*.js" $ do
-    --     route $ gsubRoute "scripts/" (const "assets/")
-    --     compile copyFileCompiler
 
     match "favicon.ico" $ do
         route idRoute

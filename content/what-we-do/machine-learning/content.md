@@ -17,7 +17,6 @@ teaserIntro: >
   the juice out of it.
 teaserCTAbutton: Read more
 teaserAnchorId: stats
-teaserAlt: /what-we-do/machine-learning/teaser.png
 sortorder: 1
 banner: /images/whatwedo_header.jpg
 tiles:
