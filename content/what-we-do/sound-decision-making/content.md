@@ -11,8 +11,9 @@ teaserIntro: >
   Great policy is rooted in sound research and data analysis. Having a trusted
   information base enables people to come together and make good decisions.
 teaserCTAbutton: Read more
+teaserImageType: png
 teaserAnchorId: policy
-banner: /images/whatwedo_header.jpg
+teaserImageType: png
 sortorder: 3
 tiles:
   - work/delphi-case-study/content.md

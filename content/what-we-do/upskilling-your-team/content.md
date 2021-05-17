@@ -13,7 +13,7 @@ teaserIntro: >
   with the tricky stuff.
 teaserCTAbutton: Read more
 teaserAnchorId: capability
-banner: /images/whatwedo_header.jpg
+teaserImageType: png
 sortorder: 4
 tiles:
   - work/nms-case-study/content.md

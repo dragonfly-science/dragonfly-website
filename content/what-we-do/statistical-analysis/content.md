@@ -18,7 +18,6 @@ teaserIntro: >
 teaserCTAbutton: Read more
 teaserAnchorId: stats
 sortorder: 1
-banner: /images/whatwedo_header.jpg
 tiles:
   - work/delphi-case-study/content.md
   - work/seabird-risk/content.md

@@ -109,25 +109,16 @@ teaserImage = field "teaserImage" (getImagePath "960")
            <> field "teaserImageWidth" (getImageMeta "width")
            <> field "teaserImageHeight" (getImageMeta "height")
   where
+    getTeaserType item = do
+      metaTarget <- getMetadataField (itemIdentifier item) "teaserImageType"
+      return $ fromMaybe "jpg" $ metaTarget
     getImagePath size item = do
+        ext <- getTeaserType item
         let path = toFilePath (itemIdentifier item)
             base = take ((length path) - 11) path
-            -- ext = drop ((length path) - 3) path
-            jpg = fromFilePath $ base </> "teaser.jpg"
-            ident = do
-              exists <- doesFileExist $ base </> "teaser.jpg"
-              case exists of
-                True -> "jpg"
-                False -> "png"
-            -- ident = case jpg of
-            --           True -> fromFilePath $ base </-> "teaser.jpg"
-            --           False -> fromFilePath $ base </> "teaser.png"
-            -- ext = "jpg"
+            ident = fromFilePath $ base </> ("teaser." ++ ext)
 
-        fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser." ++ "jpg")))) (getRoute jpg)
-
-
-
+        fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser." ++ ext)))) (getRoute ident)
     getImagePathLrg size item = do
       let path = toFilePath (itemIdentifier item)
           base = take ((length path) - 11) path

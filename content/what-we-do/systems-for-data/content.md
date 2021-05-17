@@ -12,7 +12,7 @@ teaserIntro: >
   store and manage your data properly and securely.
 teaserCTAbutton: Read more
 teaserAnchorId: systems
-banner: /images/whatwedo_header.jpg
+teaserImageType: png
 sortorder: 2
 tiles:
   - work/INZ-case-study/content.md

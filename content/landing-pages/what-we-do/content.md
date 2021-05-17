@@ -10,6 +10,7 @@ introduction: >
   advice on data architecture.
 banner: /images/whatwedo_header.jpg
 teaser: teaser.png
+teaserImageType: png
 toolsTitle: We love good tools
 toolsIntro: >
   These are our favourites – open source, refined, trusted. With them at our
