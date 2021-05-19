@@ -16,7 +16,7 @@ RUN = docker-compose --profile build run --rm npm
 RUN_WEB = docker-compose --profile build run --publish 3000:3000 --rm website
 endif
 
-all: .env install build
+all: .env .install build
 
 .env:
 ifneq ($(CI), true)
@@ -26,8 +26,7 @@ ifneq ($(CI), true)
 	echo WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) >> .env
 endif
 
-# (cd front-end && npm watch) &
-up: .env install
+up: .env .install
 	mkdir -p _site/assets
 	docker-compose up --remove-orphans
 
@@ -35,7 +34,6 @@ develop: up
 
 down:
 	docker-compose down
-	docker volume rm dragonfly-website_nfsmount
 
 docker:
 	docker-compose build
@@ -47,8 +45,9 @@ push:
 	docker-compose push website_haskell
 
 # NPM Commands
-install:
-	$(RUN) bash -c "cd /work/front-end && npm install"
+.install:
+	$(RUN) bash -c "cd /work/front-end && npm install && npm audit fix"
+	touch $@
 
 build-npm: build-website
 	$(RUN) bash -c 'cd front-end && npm i && npm run build'
@@ -71,7 +70,7 @@ build: build-website build-npm
 
 # Utility commands
 clean:
-	rm -rf website _site .cache .env \
+	rm -rf website _site .env .install \
 				content/fonts/*.css \
 				build-website
 

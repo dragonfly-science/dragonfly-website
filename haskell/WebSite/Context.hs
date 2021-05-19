@@ -100,6 +100,7 @@ teaserImage :: Context String
 teaserImage = field "teaserImage" (getImagePath "960")
            <> field "teaserImageSmall" (getImagePath "256")
            <> field "teaserImageMedium" (getImagePath "480")
+           <> field "teaserImageLarge" (getImagePath "600")
            <> field "teaserImageLandscape" (getImagePathLrg "960-landscape")
            <> field "teaserImageCredit" (getImageMeta "credit")
            <> field "teaserImageCaption" (getImageMeta "caption")

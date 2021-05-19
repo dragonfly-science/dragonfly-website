@@ -6,7 +6,7 @@ module.exports = (env) => {
   return merge(common, {
     mode: 'development',
     watchOptions: {
-      ignored: /node_modules/,
+      ignored: '**/node_modules',
     },
   })
 }

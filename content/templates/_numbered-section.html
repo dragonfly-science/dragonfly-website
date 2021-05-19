@@ -1,94 +1,47 @@
-<section
-  class="
-    numbered-section numbered-section--no-numbers
-    bg-light-peach
-    outer-container
-  "
->
-  <div class="numbered-section__container">
-    <div class="numbered-section__content">
-      <div class="numbered-section__content-wrapper">
-        $if(teaserTitle)$
-        <h2 class="numbered-section__heading">
-          <span>$teaserTitle$</span>
-        </h2>
-        $else$
-        <h2 class="numbered-section__heading">
-          <span>$title$</span>
-        </h2>
-        $endif$ $if(teaserIntro)$
-        <p class="numbered-section__text">$teaserIntro$</p>
-        $else$
-        <p class="numbered-section__text">$introduction$</p>
-        $endif$ $if(pageurl)$
-        <div class="call-to-action-block">
-          <span class="mb-2">$teaserCTAdescriptor$</span>
-          <a
-            href="$pageurl$"
-            class="
-              call-to-action__button
-              button
-              call-to-action__button--cool-blue
-            "
-          >
-            $teaserCTAbutton$
-          </a>
-        </div>
-        $else$ $if(url)$
-        <div class="call-to-action-block">
-          <a
-            href="$url$"
-            class="
-              call-to-action__button
-              button
-              call-to-action__button--cool-blue
-            "
-          >
-            find out more
-          </a>
-        </div>
-        $endif$ $endif$ $if(author)$ $if(quote)$
-        <blockquote class="sidebar-caption ruled-heading">$quote$</blockquote>
-        $endif$ $for(author)$
-        <a
-          href="$pageurl$"
-          class="no-gutter-cell person-tile person-tile--singular"
-        >
-          <img
-            class="sticky-lozad"
-            data-src="$teaserImage$"
-            width="100%"
-            height="auto"
-          />
-          <h2
-            class="
-              person-tile__title
-              absolute
-              bottom-0
-              left-0
-              p-4
-              w-full
-              max-w-full
-            "
-          >
-            $firstname$<br />
-            $lastname$<br />
-            <br />
-            <em>$role$</em>
+<section class="numbered-section numbered-section--no-numbers bg-light-peach">
+  <div class="outer-container px-8 lg:px-32 2xl:px-8">
+    <div class="numbered-section__container">
+      <div class="numbered-section__content">
+        <div class="numbered-section__content-wrapper">
+          $if(teaserTitle)$
+          <h2 class="numbered-section__heading">
+            <span>$teaserTitle$</span>
           </h2>
-        </a>
-        $endfor$ $endif$
+          $else$
+          <h2 class="numbered-section__heading">
+            <span>$title$</span>
+          </h2>
+          $endif$ $if(teaserIntro)$
+          <p class="numbered-section__text">$teaserIntro$</p>
+          $else$
+          <p class="numbered-section__text">$introduction$</p>
+          $endif$
+
+          <div class="call-to-action-block">
+            <a
+              href="$pageurl$"
+              class="
+                call-to-action__button
+                button
+                call-to-action__button--cool-blue
+              "
+            >
+              $if(teaserCTAbutton)$ $teaserCTAbutton$ $else$ find out more
+              $endif$
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div
-      class="
-        numbered-section__content numbered-section__content--img
-        scrollable
-      "
-    >
-      $if(teaserImageMedium)$
-      <img src="$teaserImageMedium$" class="lozad lozad-image" />
-      $endif$
+      <div
+        class="
+          numbered-section__content numbered-section__content--img
+          scrollable
+        "
+      >
+        $if(teaserImageLarge)$
+        <img src="$teaserImageLarge$" class="lozad lozad-image" />
+        $endif$
+      </div>
     </div>
   </div>
 </section>

@@ -13,7 +13,7 @@
     @apply relative flex justify-center flex-col flex-grow z-1;
 
     &--img {
-      @apply block flex-shrink-0 max-w-full;
+      @apply block flex-shrink-0 w-full;
     }
 
     img {
@@ -44,14 +44,8 @@
   }
 
   &__container {
-    @apply block w-full mx-auto px-8;
+    @apply block w-full mx-auto;
   }
-
-  /* &__heading,
-  &__text,
-  &__container .call-to-action-block {
-    @apply max-w-sm;
-  } */
 
   p {
     @apply mb-4;
@@ -170,6 +164,10 @@
 
           &:last-child {
             @apply order-first pr-8;
+
+            img {
+              @apply mr-auto ml-0;
+            }
           }
 
           @apply ml-auto;
@@ -188,6 +186,10 @@
 
           &:last-child {
             @apply pl-8;
+
+            img {
+              @apply ml-auto mr-0;
+            }
           }
         }
 
@@ -198,26 +200,20 @@
     }
 
     &__container {
-      @apply flex px-32;
+      @apply flex;
     }
 
-    /* &__text {
-      @apply text-2/3xl leading-tighter;
-    } */
-
     &__content {
+      @apply max-w-1/2;
+
       &--img {
-        @apply max-w-1/2;
+        @apply w-120 max-w-5/3 ml-auto;
 
         img {
           @apply mt-0;
         }
       }
     }
-
-    /* &__content-wrapper {
-      @apply max-w-5/3;
-    } */
 
     &__link {
       @apply mb-20;
@@ -264,14 +260,6 @@
 
     &__call-to-action {
       @apply mb-0;
-    }
-  }
-}
-
-@screen 2xl {
-  .numbered-section {
-    &__container {
-      @apply px-8;
     }
   }
 }

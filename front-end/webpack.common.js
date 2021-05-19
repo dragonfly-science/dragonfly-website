@@ -4,6 +4,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 const { ESBuildMinifyPlugin } = require('esbuild-loader')
 
+const isDev = process.env.NODE_ENV !== 'production'
+
 module.exports = {
   mode: 'development',
   entry: {
@@ -19,12 +21,15 @@ module.exports = {
     path: path.resolve(__dirname, '../_site/assets'),
   },
   optimization: {
-    minimizer: [
-      new ESBuildMinifyPlugin({
-        target: 'es2015',
-        css: true,
-      }),
-    ],
+    minimize: !isDev,
+    minimizer: !isDev
+      ? [
+          new ESBuildMinifyPlugin({
+            target: 'es2015',
+            css: true,
+          }),
+        ]
+      : [],
   },
   module: {
     rules: [

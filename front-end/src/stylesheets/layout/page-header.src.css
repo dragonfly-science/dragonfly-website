@@ -92,10 +92,6 @@
     }
   }
 
-  /* &--small {
-    @apply py-8;
-  } */
-
   &--home {
     @apply max-w-full;
 
@@ -103,6 +99,15 @@
 
     video {
       height: calc(100% - 48px);
+    }
+  }
+
+  &--teaser {
+    @apply math-paper--right;
+    .page-header {
+      &__outer {
+        @apply mb-auto mt-0 pt-28;
+      }
     }
   }
 

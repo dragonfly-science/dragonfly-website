@@ -17,6 +17,7 @@ teaserIntro: >
   the juice out of it.
 teaserCTAbutton: Read more
 teaserAnchorId: stats
+teaserImageType: png
 sortorder: 1
 tiles:
   - work/delphi-case-study/content.md
