@@ -38,9 +38,11 @@
           scrollable
         "
       >
-        $if(teaserImageLarge)$
+        $if(teaserSVG)$
+        <img src="$teaserSVG$" class="lozad lozad-image" />
+        $else$ $if(teaserImageLarge)$
         <img src="$teaserImageLarge$" class="lozad lozad-image" />
-        $endif$
+        $endif$ $endif$
       </div>
     </div>
   </div>

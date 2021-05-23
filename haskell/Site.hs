@@ -40,7 +40,7 @@ main = do
     match (fromList [bibIdentifier]) $ compile biblioCompiler
 
     match "**/*.img.md" $ compile scholmdCompiler
-    match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png" .||. "**/*.csv" .||. "fonts/*") $ do
+    match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png" .||. "**/*.svg" .||. "**/*.csv" .||. "fonts/*") $ do
         route idRoute
         compile copyFileCompiler
 
@@ -71,6 +71,7 @@ main = do
                           , ( "480", ["-resize" , "480x480^", "-gravity", "Center", "-crop", "480x480+0+0", "-quality", "75"])
                           , ( "600", ["-resize" , "600x600^", "-gravity", "Center", "-crop", "600x600+0+0", "-quality", "75"])
                           , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
+                          , ( "200", ["-resize" , "200x230^", "-gravity", "Center", "-crop", "200x230+0+0", "-quality", "75"])
                           , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0", "-quality", "75"])
                           ]
     Images.imageProcessor ( "**/teaser.png") $

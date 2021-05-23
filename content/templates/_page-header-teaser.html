@@ -1,14 +1,27 @@
 <header class="page-header page-header--teaser bg-slate-grey">
-  <div class="page-header__outer flex">
-    <div class="text-white">
+  <div class="page-header__outer flex flex-col md:flex-row">
+    <div class="text-white flex-grow mr-16">
       $if(title)$
       <h1 class="page-header__title">$title$</h1>
       $endif$ $if(subtitle)$
       <p class="page-header__content">$subtitle$</p>
       $endif$
     </div>
-    $if(teaserImageMedium)$
-    <img src="$teaserImageMedium$" />
-    $endif$
+    <div
+      class="
+        flex-grow flex-shrink-0
+        h-full
+        w-full
+        my-auto
+        md:max-w-5/2
+        lg:max-w-1/2
+      "
+    >
+      $if(bannerSVG)$
+      <img src="$bannerSVG$" class="mx-auto" />
+      $else$ $if(teaserImageMedium)$
+      <img src="$teaserImageMedium$" class="mx-auto" />
+      $endif$ $endif$
+    </div>
   </div>
 </header>

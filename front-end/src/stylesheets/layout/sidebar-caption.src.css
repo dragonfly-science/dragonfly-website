@@ -1,7 +1,9 @@
 .sidebar-caption {
-  @apply italic font-medium text-base mb-8 mt-12 px-4 leading-tight;
+  p {
+    @apply italic font-medium text-base mb-8 leading-tight text-cool-blue;
+  }
 
   cite {
-    @apply text-xs mt-4 leading-none block;
+    @apply mt-5 leading-none block not-italic;
   }
 }

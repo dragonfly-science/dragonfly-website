@@ -13,7 +13,8 @@ teaserIntro: >
   with the tricky stuff.
 teaserCTAbutton: Read more
 teaserAnchorId: capability
-teaserImageType: png
+teaserSVG: /what-we-do/upskilling-your-team/WWD_Skills1.svg
+bannerSVG: /what-we-do/upskilling-your-team/WWD_Skills2.svg
 sortorder: 4
 tiles:
   - work/nms-case-study/content.md

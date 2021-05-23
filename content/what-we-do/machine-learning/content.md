@@ -10,8 +10,9 @@ quote: >
   The power of modern Bayesian methods enables us to reach higher, more
   objective probability. We use these methods to transform data and squeeze
   the juice out of it.
-teaserImageType: png
 teaserTitle: Machine learning
+teaserSVG: /what-we-do/machine-learning/WWD_Learning1.svg
+bannerSVG: /what-we-do/machine-learning/WWD_Learning2.svg
 teaserIntro: >
   The power of modern Bayesian methods enables us to reach higher, more
   objective probability. We use these methods to transform data and squeeze

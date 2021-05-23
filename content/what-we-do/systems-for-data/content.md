@@ -12,7 +12,8 @@ teaserIntro: >
   store and manage your data properly and securely.
 teaserCTAbutton: Read more
 teaserAnchorId: systems
-teaserImageType: png
+teaserSVG: /what-we-do/systems-for-data/WWD_Systems1.svg
+bannerSVG: /what-we-do/systems-for-data/WWD_Systems2.svg
 sortorder: 2
 tiles:
   - work/INZ-case-study/content.md

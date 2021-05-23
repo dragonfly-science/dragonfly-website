@@ -13,7 +13,8 @@ teaserIntro: >
 teaserCTAbutton: Read more
 teaserImageType: png
 teaserAnchorId: policy
-teaserImageType: png
+teaserSVG: /what-we-do/sound-decision-making/WWD_Decisions1.svg
+bannerSVG: /what-we-do/sound-decision-making/WWD_Decisions2.svg
 sortorder: 3
 tiles:
   - work/delphi-case-study/content.md

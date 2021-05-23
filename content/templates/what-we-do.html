@@ -1,13 +1,15 @@
 $partial("templates/_page-header-teaser.html")$
 
 <article id="top-section" class="article bg-light-peach">
-  <div class="px-6">
+  <div class="px-8">
     <div
       class="
         sticky-container
         container
         mx-auto
-        pt-24
+        py-24
+        lg:pt-48
+        lg:pb-40
         flex flex-col
         items-start
         lg:flex-row
@@ -23,43 +25,35 @@ $partial("templates/_page-header-teaser.html")$
       >
         $body$
       </div>
-      <aside class="sidebar sticky-sidebar ml-auto mr-0">
-        <div class="sticky-container__element w-56">
+      <aside class="sidebar sticky-sidebar mt-2 w-48 ml-32 mr-0">
+        <div class="sticky-container__element m-0 w-48">
           $if(author)$
 
-          <blockquote class="sidebar-caption ruled-heading">
+          <blockquote class="sidebar-caption border-t-4 border-cool-blue pt-5">
             $if(quote)$
             <p>$quote$</p>
 
             <cite>
               $endif$ $for(author)$
-              <a
-                href="$pageurl$"
-                class="no-gutter-cell person-tile person-tile--singular"
-              >
+              <a href="$pageurl$" class="author w-full">
                 $if(teaserImageSmall)$
-                <img
-                  class="sticky-lozad"
-                  data-src="$teaserImageSmall$"
-                  width="100%"
-                  height="auto"
-                />
+                <div class="person-tile min-h-0">
+                  <img
+                    class="sticky-lozad h-56"
+                    data-src="$teaserImageThumbnail$"
+                  />
+                </div>
                 $endif$
-                <h2
-                  class="
-                    person-tile__title
-                    absolute
-                    bottom-0
-                    left-0
-                    p-4
-                    w-full
-                    max-w-full
-                  "
-                >
-                  $firstname$<br />
-                  $lastname$<br />
-                  <br />
-                  <em>$role$</em>
+                <h2 class="flex flex-row pt-5">
+                  <div class="flex flex-col">
+                    <span class="text-lg font-bold"
+                      >$firstname$ $lastname$</span
+                    >
+                    <span>$role$</span>
+                  </div>
+                  <span class="ml-auto pl-4 pt-3">
+                    <span class="icon dragonfly-arrow ml-0"></span>
+                  </span>
                 </h2>
               </a>
               $endfor$ $if(quote)$

@@ -1,18 +1,18 @@
 /* layout of body-content area. */
 
 @screen lg {
-  .sidebar {
+  /* .sidebar {
     + .body-content {
       @apply ml-40;
     }
-  }
+  } */
 }
 
 @screen lg {
   .body-content {
-    + .sidebar {
+    /* + .sidebar {
       @apply ml-24;
-    }
+    } */
   }
 }
 

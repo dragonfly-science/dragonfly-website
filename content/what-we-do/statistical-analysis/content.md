@@ -17,7 +17,8 @@ teaserIntro: >
   the juice out of it.
 teaserCTAbutton: Read more
 teaserAnchorId: stats
-teaserImageType: png
+teaserSVG: /what-we-do/statistical-analysis/WWD_Statistical1.svg
+bannerSVG: /what-we-do/statistical-analysis/WWD_Statistical2.svg
 sortorder: 1
 tiles:
   - work/delphi-case-study/content.md
