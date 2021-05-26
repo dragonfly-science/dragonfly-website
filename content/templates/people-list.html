@@ -1,5 +1,8 @@
 <header
-  class="page-header page-header--article page-header--image-bg lozad-container lozad-container--light-peach"
+  class="
+    page-header page-header--article page-header--image-bg
+    lozad-container lozad-container--light-peach
+  "
 >
   <div class="page-header__outer">
     <div class="page-header__container container">
@@ -16,10 +19,12 @@
       </a>
     </div>
   </div>
+  $if(banner)$
   <div
     class="background-image lozad lozad-image bg-light-peach"
-    data-background-image="/images/team_header.jpg"
+    data-background-image="$banner$"
   ></div>
+  $endif$
 </header>
 
 $partial("templates/_title.html")$
@@ -35,7 +40,12 @@ $partial("templates/_title.html")$
       </h2>
 
       <span
-        class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link person-tile__link"
+        class="
+          link-icon
+          no-gutter-cell__link
+          no-gutter-cell--overlay__link
+          person-tile__link
+        "
       >
         <span class="icon dragonfly-arrow"></span>
       </span>

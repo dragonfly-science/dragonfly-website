@@ -1,7 +1,7 @@
 /* Navigation section at bottom of a page, linking users to related content.
  - e.g. projects, news etc. */
 .related-content {
-  @apply px-8 bg-light-peach;
+  @apply bg-light-peach;
 
   &__header {
     @apply mx-auto;

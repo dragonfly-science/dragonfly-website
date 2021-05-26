@@ -5,7 +5,7 @@ $partial("templates/_game-of-life.html")$ $if(sections)$
 $endif$ $partial("templates/_title.html")$
 
 <section class="math-paper">
-  <div class="collection-grid collection-grid--no-bottom">
+  <div class="collection-grid collection-grid--no-bottom outer-container px-8">
     $for(tiles)$ $partial("templates/_tile-index.html")$ $endfor$
   </div>
 </section>
