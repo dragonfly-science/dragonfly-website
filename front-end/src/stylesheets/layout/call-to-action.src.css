@@ -29,7 +29,7 @@
       @apply button--slate-grey;
 
       &:hover {
-        @apply button--light-peach;
+        @apply button--cool-blue;
       }
     }
   }

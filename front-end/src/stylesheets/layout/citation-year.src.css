@@ -1,9 +1,10 @@
 .citation-year {
   @apply text-left text-4xl font-medium leading-none hidden;
-  @apply bg-transparent;
+  @apply bg-cool-blue text-white h-16;
 
   &__text {
     @apply px-6 flex flex-col justify-between;
+    @apply pb-10 pt-20;
 
     .link-icon {
       @apply mt-10;
@@ -317,19 +318,9 @@
   }
 }
 
-@screen sm {
-  .citation-year {
-    @apply bg-cool-blue text-white;
-
-    &__text {
-      @apply pb-10 pt-20;
-    }
-  }
-}
-
 @screen lg {
   .citation-year {
-    @apply text-7xl mr-0;
+    @apply text-7xl mr-0 h-auto;
 
     &__text {
       @apply pt-20 pb-12;
@@ -345,6 +336,6 @@
 
 @screen xl {
   .citation-year {
-    @apply mr-8;
+    /* @apply mr-8; */
   }
 }

@@ -4,10 +4,11 @@ date: 2010-12-01
 nocite: |
   @thompson_dolphin_2010
 ---
+
 Estimates of common dolphin bycatch in the the jack mackerel trawl
 fishery over a 13-year period were recently published by Dragonfly
 in a report based on data from 1995 to 2009. Common dolphins
-(*Delphinus delphis*) are the most frequently observed cetacean caught
+(_Delphinus delphis_) are the most frequently observed cetacean caught
 in New Zealand trawl fisheries.
 
 <!--more-->
@@ -32,7 +33,7 @@ probability of a dolphin capture event occurring, and if a capture
 event did occur, the number of dolphins killed.
 
 The model also explored several factors that might contribute to
-dolphin captures.  The strongest relationship was between dolphin
+dolphin captures. The strongest relationship was between dolphin
 captures and the headline depth (depth of the top of the trawl net).
 
 “We found that dolphins were more likely to be caught when the
@@ -59,4 +60,3 @@ published in the New Zealand Aquatic Environment and Biodiversity
 series, No 63.
 
 ###Reference
-

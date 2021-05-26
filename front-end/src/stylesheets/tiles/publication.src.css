@@ -1,5 +1,5 @@
 .publication-tile {
-  @apply flex flex-col relative;
+  @apply flex flex-col relative border-b border-r border-very-light-pink;
 
   &__title,
   &__citation,
@@ -98,6 +98,6 @@
 
 @screen xl {
   .publication-tile {
-    @apply mr-8;
+    /* @apply mr-8; */
   }
 }

@@ -46,7 +46,7 @@ push:
 
 # NPM Commands
 .install:
-	$(RUN) bash -c "cd /work/front-end && npm install && npm audit fix"
+	$(RUN) bash -c "cd /work/front-end && npm install"
 	touch $@
 
 build-npm: build-website
@@ -70,7 +70,7 @@ build: build-website build-npm
 
 # Utility commands
 clean:
-	rm -rf website _site .env .install \
+	rm -rf website _site .env .install .cache \
 				content/fonts/*.css \
 				build-website
 
@@ -79,3 +79,6 @@ clean-cache: website
 
 compress:
 	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'
+
+interact:
+	$(RUN) bash

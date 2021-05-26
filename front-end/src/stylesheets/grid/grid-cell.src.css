@@ -1,22 +1,22 @@
 /* Grid cells that are intended to utilise gutters. */
 .grid-cell {
-  @apply bg-white mb-8 w-full max-w-full;
+  @apply bg-white w-full max-w-full min-h-30;
 }
 
 @screen sm {
   .grid-cell {
-    max-width: calc(50% - 1rem);
-  }
-}
-
-@screen lg {
-  .grid-cell {
-    max-width: calc(33% - 1rem);
+    @apply max-w-1/2;
   }
 }
 
 @screen xl {
   .grid-cell {
-    max-width: calc(25% - 2rem);
+    max-width: 33.3%;
+  }
+}
+
+@screen 2xl {
+  .grid-cell {
+    @apply max-w-1/4;
   }
 }

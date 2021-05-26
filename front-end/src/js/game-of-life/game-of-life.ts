@@ -11,7 +11,7 @@ declare let window: GameofLifeWindow
 const gameOfLife = (): void => {
   const options: RendererOptions = {
     canvasSelector: '#gameoflife',
-    desiredFPS: parseInt($('.animation-controls__input').val(), 10),
+    desiredFPS: 3,
     pixelsPerCell: 32,
     fillStyle: 'rgba(67, 161, 201, 0.7)',
   }
@@ -72,13 +72,13 @@ const gameOfLife = (): void => {
     }
   )
 
-  $('#pauseButton').on('click', () => {
-    renderer.togglePlay()
-  })
+  // $('#pauseButton').on('click', () => {
+  //   renderer.togglePlay()
+  // })
 
-  $('#saveButton').on('click', () => {
-    renderer.save()
-  })
+  // $('#saveButton').on('click', () => {
+  //   renderer.save()
+  // })
 
   let mouseTimeout: NodeJS.Timeout = null
 

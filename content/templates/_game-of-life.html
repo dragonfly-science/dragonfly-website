@@ -15,67 +15,6 @@
     </div>
   </div>
 
-  <div class="animation-controls">
-    <div class="animation-controls__header flex flex-row">
-      <button class="bg-slate-grey">
-        <i class="dragonfly-hamburger"></i>
-        <i class="dragonfly-close"></i>
-      </button>
-      <span>Game of Life</span>
-    </div>
-    <div class="animation-controls__control">
-      <input
-        type="text"
-        autocomplete="off"
-        pattern="[^0-9]+?(fps)"
-        class="animation-controls__input"
-        value="2fps"
-        spellcheck="false"
-      />
-      <div class="animation-controls__control__buttons">
-        <button class="up transform -rotate-45"></button>
-        <button class="down transform rotate-135"></button>
-      </div>
-    </div>
-  </div>
-
-  <div id="saveControls" class="absolute right-0 bottom-0 flex mr-8 mb-8 z-10">
-    <div
-      class="
-        bg-black
-        mr-4
-        w-16
-        h-16
-        rounded-full
-        text-white
-        flex
-        justify-center
-        items-center
-        cursor-pointer
-      "
-      id="saveButton"
-    >
-      <i class="far fa-save"></i>
-    </div>
-
-    <div
-      class="
-        bg-black
-        w-16
-        h-16
-        rounded-full
-        text-white
-        flex
-        justify-center
-        items-center
-        cursor-pointer
-      "
-      id="pauseButton"
-    >
-      <i class="fas fa-pause"></i>
-    </div>
-  </div>
-
   <canvas id="gameoflife" class="game-of-life"></canvas>
 
   <div class="math-paper--screen absolute top-0 left-0 w-full h-full z-1"></div>

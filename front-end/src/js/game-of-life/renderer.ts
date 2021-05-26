@@ -1,5 +1,5 @@
 import * as d3 from 'd3'
-import { saveAs } from 'file-saver'
+// import { saveAs } from 'file-saver'
 
 import Engine from '~game-of-life/engine'
 import { drawGrid } from '~game-of-life/grid'
@@ -145,64 +145,64 @@ class Renderer {
     this.play = false
   }
 
-  public save(): void {
-    const isPlaying = this.play
+  // public save(): void {
+  //   const isPlaying = this.play
 
-    this.stop()
+  //   this.stop()
 
-    const { height, width } = this.canvas
+  //   const { height, width } = this.canvas
 
-    const existing = document.querySelector('#blob > svg')
+  //   const existing = document.querySelector('#blob > svg')
 
-    if (existing) {
-      existing.remove()
-    }
+  //   if (existing) {
+  //     existing.remove()
+  //   }
 
-    const svg = d3
-      .select('#blob')
-      .append('svg')
-      .attr('width', width)
-      .attr('height', height)
-      .attr('viewBox', `0 0 ${width} ${height}`)
-      .attr('class', 'hidden')
+  //   const svg = d3
+  //     .select('#blob')
+  //     .append('svg')
+  //     .attr('width', width)
+  //     .attr('height', height)
+  //     .attr('viewBox', `0 0 ${width} ${height}`)
+  //     .attr('class', 'hidden')
 
-    svg
-      .append('rect')
-      .attr('width', width)
-      .attr('height', height)
-      .attr('x', 0)
-      .attr('y', 0)
-      .attr('fill', 'none')
-      .attr('stroke', 'none')
-      .attr('id', 'group')
+  //   svg
+  //     .append('rect')
+  //     .attr('width', width)
+  //     .attr('height', height)
+  //     .attr('x', 0)
+  //     .attr('y', 0)
+  //     .attr('fill', 'none')
+  //     .attr('stroke', 'none')
+  //     .attr('id', 'group')
 
-    const shouldFillRect = this.pixelsPerCell > 1
-    for (let i = 0; i < this.engine.height; i++) {
-      for (let j = 0; j < this.engine.width; j++) {
-        if (this.engine.cellSafe(i, j)) {
-          const jPx = this.pixelsPerCell * j
-          const iPx = this.pixelsPerCell * i
+  //   const shouldFillRect = this.pixelsPerCell > 1
+  //   for (let i = 0; i < this.engine.height; i++) {
+  //     for (let j = 0; j < this.engine.width; j++) {
+  //       if (this.engine.cellSafe(i, j)) {
+  //         const jPx = this.pixelsPerCell * j
+  //         const iPx = this.pixelsPerCell * i
 
-          svg
-            .append('rect')
-            .attr('x', jPx)
-            .attr('y', iPx)
-            .attr('width', this.pixelsPerCell)
-            .attr('height', this.pixelsPerCell)
-            .attr('strokeWidth', 1)
-            .attr('stroke', shouldFillRect ? this.fillStyle : 'transparent')
-            .attr('fill', shouldFillRect ? this.fillStyle : 'transparent')
-        }
-      }
-    }
+  //         svg
+  //           .append('rect')
+  //           .attr('x', jPx)
+  //           .attr('y', iPx)
+  //           .attr('width', this.pixelsPerCell)
+  //           .attr('height', this.pixelsPerCell)
+  //           .attr('strokeWidth', 1)
+  //           .attr('stroke', shouldFillRect ? this.fillStyle : 'transparent')
+  //           .attr('fill', shouldFillRect ? this.fillStyle : 'transparent')
+  //       }
+  //     }
+  //   }
 
-    const blob = new Blob([svg.node().outerHTML], { type: 'image/svg+xml' })
-    saveAs(blob, 'game-of-life.svg')
+  //   const blob = new Blob([svg.node().outerHTML], { type: 'image/svg+xml' })
+  //   // saveAs(blob, 'game-of-life.svg')
 
-    if (isPlaying) {
-      this.togglePlay()
-    }
-  }
+  //   if (isPlaying) {
+  //     this.togglePlay()
+  //   }
+  // }
 }
 
 export { Renderer as default }

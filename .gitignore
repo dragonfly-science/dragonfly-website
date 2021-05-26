@@ -1,7 +1,6 @@
 haskell/stack.yaml.lock
 _site/
 /website
-content/stylesheets/dragonfly.css
 content/fonts
 node_modules
 app.bundle.*
