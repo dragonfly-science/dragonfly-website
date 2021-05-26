@@ -1,7 +1,11 @@
 ---
-title: Home
+title: Kia Ora
 og-title: Dragonfly Data Science
 og-description: Good decisions using data
+introduction: >
+  We are an international team of data scientists and programmers who aim
+  to put data to good use and make a positive impact. We’re based in
+  Wellington, New Zealand.
 tiles:
   - news/2017-08-14-kakapo-two/content.md
   - work/INZ-case-study/content.md
@@ -16,16 +20,3 @@ testimonials:
 sectionTitle: Latest News
 sectionLeft: true
 ---
-
-# Dragonfly Data Science
-
-Dragonfly Data Science carries out independent statistical modelling and
-analysis.
-
-We offer a complete data collection and analysis service but can also
-contribute at any stage of your project, from scoping and design through to
-presentation and publication.
-
-Our combined backgrounds in quantitative biology, mathematics, physics and
-computer science will ensure your data are expertly handled, so the results
-become a platform for understanding and evidence-based decision making.

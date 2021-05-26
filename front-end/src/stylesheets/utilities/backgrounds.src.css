@@ -23,7 +23,7 @@
   background-position: var(--math-paper-half) var(--math-paper-half),
     var(--math-paper-half) var(--math-paper-half),
     var(--math-grid) var(--math-grid), var(--math-grid) var(--math-grid);
-  /* background-attachment: fixed, fixed, fixed, fixed; */
+  background-attachment: fixed, fixed, fixed, fixed;
 }
 
 .math-paper--screen {
@@ -33,7 +33,7 @@
   background-position: var(--math-paper-half) var(--math-paper-half),
     var(--math-paper-half) var(--math-paper-half),
     var(--math-grid) var(--math-grid), var(--math-grid) var(--math-grid);
-  /* background-attachment: fixed, fixed, fixed, fixed; */
+  background-attachment: fixed, fixed, fixed, fixed;
 }
 
 .math-paper--origin {

@@ -1,10 +1,10 @@
 $if(pageurl)$
-<a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay list-tile">
+<a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay list-tile tile">
   $else$
   $if(url)$
-  <a href="$url$" class="no-gutter-cell no-gutter-cell--overlay list-tile">
+  <a href="$url$" class="no-gutter-cell no-gutter-cell--overlay list-tile tile">
     $else$
-    <div class="no-gutter-cell no-gutter-cell--overlay list-tile">
+    <div class="no-gutter-cell no-gutter-cell--overlay list-tile tile">
       $endif$
       $endif$
       $if(published)$
@@ -16,17 +16,19 @@ $if(pageurl)$
       <span class="no-gutter-cell__tag">&nbsp;</span>
       $endif$
       $endif$
-      $if(title)$
-      <strong class="no-gutter-cell__title tile__title">$title$</strong>
-      $endif$
+      <div class="no-gutter-cell__inner">
+        $if(title)$
+        <strong class="no-gutter-cell__title tile__title">$title$</strong>
+        $endif$
 
-      $if(summary)$
-      <div class="no-gutter-cell__text tile__citation">$summary$</div>
-      $else$
-      $if(teaser)$
-      <div class="no-gutter-cell__text tile__citation">$teaser$</div>
-      $endif$
-      $endif$
+        $if(summary)$
+        <div class="no-gutter-cell__text tile__citation">$summary$</div>
+        $else$
+        $if(teaser)$
+        <div class="no-gutter-cell__text tile__citation">$teaser$</div>
+        $endif$
+        $endif$
+      </div>
 
       <div class="tagslugs hidden">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
 

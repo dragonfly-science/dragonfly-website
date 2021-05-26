@@ -10,10 +10,11 @@ teaserTitle: Sound decision-making
 teaserIntro: >
   Great policy is rooted in sound research and data analysis. Having a trusted
   information base enables people to come together and make good decisions.
-teaserCTAdescriptor: View some examples from our clients
 teaserCTAbutton: Read more
+teaserImageType: png
 teaserAnchorId: policy
-banner: /images/whatwedo_header.jpg
+teaserSVG: /what-we-do/sound-decision-making/WWD_Decisions1.svg
+bannerSVG: /what-we-do/sound-decision-making/WWD_Decisions2.svg
 sortorder: 3
 tiles:
   - work/delphi-case-study/content.md

@@ -13,10 +13,12 @@ module WebSite.Context (
 
 import Debug.Trace
 
+import           Control.Applicative
 import           Control.Monad
 import           Data.Aeson
 import           Data.List
 import           System.FilePath
+import           System.Directory (doesFileExist)
 
 import qualified Data.Map             as M
 import qualified Data.HashMap.Strict  as HM
@@ -43,7 +45,7 @@ baseContext section = do
                                     then takeDirectory path
                                     else path)
     return $  dateField  "date"   "%B %e, %Y"
-           <> constField "jquery" "//ajax.googleapis.com/ajax/libs/jquery/2.0.3"
+          --  <> constField "jquery" "//ajax.googleapis.com/ajax/libs/jquery/2.0.3"
            <> constField "section" section
            <> constField ("on-" ++ takeBaseName path) ""
            <> bodyField "body"
@@ -96,8 +98,10 @@ itemCtx  = listContextWith "tags" tagContext
 
 teaserImage :: Context String
 teaserImage = field "teaserImage" (getImagePath "960")
+           <> field "teaserImageThumbnail" (getImagePath "200")
            <> field "teaserImageSmall" (getImagePath "256")
            <> field "teaserImageMedium" (getImagePath "480")
+           <> field "teaserImageLarge" (getImagePath "600")
            <> field "teaserImageLandscape" (getImagePathLrg "960-landscape")
            <> field "teaserImageCredit" (getImageMeta "credit")
            <> field "teaserImageCaption" (getImageMeta "caption")
@@ -107,11 +111,16 @@ teaserImage = field "teaserImage" (getImagePath "960")
            <> field "teaserImageWidth" (getImageMeta "width")
            <> field "teaserImageHeight" (getImageMeta "height")
   where
+    getTeaserType item = do
+      metaTarget <- getMetadataField (itemIdentifier item) "teaserImageType"
+      return $ fromMaybe "jpg" $ metaTarget
     getImagePath size item = do
+        ext <- getTeaserType item
         let path = toFilePath (itemIdentifier item)
             base = take ((length path) - 11) path
-            ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser.jpg")))) (getRoute $ ident)
+            ident = fromFilePath $ base </> ("teaser." ++ ext)
+
+        fmap (maybe "" (toUrl . (flip replaceFileName (size ++ "-teaser." ++ ext)))) (getRoute ident)
     getImagePathLrg size item = do
       let path = toFilePath (itemIdentifier item)
           base = take ((length path) - 11) path

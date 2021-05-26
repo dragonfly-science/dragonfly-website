@@ -1,5 +1,5 @@
 .page-header {
-  @apply w-full py-16 px-8 bg-cover;
+  @apply w-full bg-cover flex overflow-hidden relative;
 
   /* Elements. */
   &__title {
@@ -15,8 +15,10 @@
   }
 
   &__outer {
-    @apply mx-auto relative z-10;
+    @apply py-16 px-8 relative z-10 mt-auto;
     @apply transition-color duration-500;
+    @apply w-full mx-auto;
+    max-width: theme('screens.2xl');
   }
 
   /* Modifiers. */
@@ -90,10 +92,6 @@
     }
   }
 
-  &--small {
-    @apply py-8;
-  }
-
   &--home {
     @apply max-w-full;
 
@@ -101,6 +99,16 @@
 
     video {
       height: calc(100% - 48px);
+    }
+  }
+
+  &--teaser {
+    @apply math-paper--right min-h-0;
+
+    .page-header {
+      &__outer {
+        @apply mb-auto mt-0 py-28;
+      }
     }
   }
 
@@ -129,12 +137,11 @@
 @screen md {
   .page-header {
     &__title {
-      @apply text-6xl;
+      @apply text-6xl max-w-1/2;
     }
 
-    &__title,
     &__content {
-      @apply max-w-1/2;
+      @apply text-2/3xl pt-12 leading-tighter max-w-2/3;
     }
 
     &--article {
@@ -153,12 +160,29 @@
         }
       }
     }
+
+    &--teaser {
+      .page-header {
+        &__content,
+        &__title {
+          @apply max-w-full;
+        }
+
+        &__content {
+          @apply mb-0;
+        }
+      }
+    }
   }
 }
 
 @screen lg {
   .page-header {
-    @apply h-44;
+    @apply min-h-44;
+
+    &__outer {
+      @apply px-32;
+    }
 
     &__title {
       @apply text-8xl;
@@ -166,11 +190,7 @@
 
     &__title,
     &__content {
-      @apply max-w-5/2;
-    }
-
-    &__content {
-      @apply text-2/3xl pt-12 leading-tighter;
+      @apply max-w-full;
     }
 
     &--article {
@@ -183,6 +203,10 @@
       .page-header__title {
         @apply mb-0;
       }
+    }
+
+    &--small {
+      @apply min-h-0;
     }
 
     &--image {
@@ -207,10 +231,6 @@
       }
     }
 
-    &--small {
-      @apply py-16 !important;
-    }
-
     &--image-bg,
     &--home,
     &.jarallax {
@@ -222,11 +242,19 @@
         height: calc(100% - 96px);
       }
     }
+
+    &--teaser {
+    }
   }
 }
 
 @screen xl {
   .page-header {
+    &__title,
+    &__content {
+      @apply max-w-2/3;
+    }
+
     &--news {
       .page-header__inner {
         @apply max-w-64rem;
@@ -246,13 +274,21 @@
         max-height: 960px;
       }
     }
+
+    &--teaser {
+    }
   }
 }
 
 @screen 2xl {
   .page-header {
     &__outer {
-      max-width: 1920px;
+      @apply px-8;
+    }
+
+    &__title,
+    &__content {
+      @apply max-w-1/2;
     }
   }
 }

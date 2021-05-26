@@ -1,8 +1,4 @@
 <div class="collection-grid collection-grid--4cell collection-grid--no-bottom">
-  $for(bubbles_prev)$
-    $partial("templates/_tile.html")$
-  $endfor$
-  $for(bubbles_next)$
-    $partial("templates/_tile.html")$
-  $endfor$
+  $for(bubbles_prev)$ $partial("templates/_tile-index.html")$ $endfor$
+  $for(bubbles_next)$ $partial("templates/_tile-index.html")$ $endfor$
 </div>

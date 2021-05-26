@@ -1,70 +1,59 @@
-<header
-  class="page-header page-header--article page-header--image-bg$if(banner)$ lozad-container lozad-container--light-peach$endif$"
->
-  <div class="page-header__outer">
-    <div class="page-header__container container">
-      $if(title)$
-      <h1 class="page-header__title">$title$</h1>
-      $endif$ $if(subtitle)$
-      <p class="page-header__content">$subtitle$</p>
-      $endif$
-
-      <a
-        href="#top-section"
-        tabindex="-1"
-        class="link-icon link-icon--arrow-down link-icon--large"
-      >
-        <span class="icon dragonfly-arrow"></span>
-      </a>
-    </div>
-  </div>
-  <div
-    class="background-image bg-light-peach$if(banner)$ lozad lozad-image$endif$"
-    $if(banner)$
-    data-background-image="$banner$"
-    $endif$
-  ></div>
-</header>
+$partial("templates/_page-header-teaser.html")$
 
 <article id="top-section" class="article bg-light-peach">
-  <div class="px-6">
+  <div class="px-8">
     <div
-      class="sticky-container container mx-auto pt-24 flex flex-col items-start lg:flex-row"
+      class="
+        sticky-container
+        container
+        mx-auto
+        py-24
+        lg:pt-48
+        lg:pb-40
+        flex flex-col
+        items-start
+        lg:flex-row
+      "
     >
       <div
-        class="sticky-container__body body-content body-content--article flex-grow my-0"
+        class="
+          sticky-container__body
+          body-content body-content--article
+          flex-grow
+          my-0
+        "
       >
         $body$
       </div>
-      <aside class="sidebar sticky-sidebar ml-auto mr-0">
-        <div class="sticky-container__element w-56">
+      <aside class="sidebar sticky-sidebar mt-2 w-48 ml-32 mr-0">
+        <div class="sticky-container__element m-0 w-48">
           $if(author)$
 
-          <blockquote class="sidebar-caption ruled-heading">
+          <blockquote class="sidebar-caption border-t-4 border-cool-blue pt-5">
             $if(quote)$
             <p>$quote$</p>
 
             <cite>
               $endif$ $for(author)$
-              <a
-                href="$pageurl$"
-                class="no-gutter-cell person-tile person-tile--singular"
-              >
-                $if(teaserImageMedium)$
-                <img
-                  class="sticky-lozad"
-                  data-src="$teaserImageMedium$"
-                  width="100%"
-                  height="auto"
-                />
+              <a href="$pageurl$" class="author w-full">
+                $if(teaserImageSmall)$
+                <div class="person-tile min-h-0">
+                  <img
+                    class="sticky-lozad h-56"
+                    data-src="$teaserImageThumbnail$"
+                  />
+                </div>
                 $endif$
-                <h2
-                  class="person-tile__title absolute bottom-0 left-0 p-4 w-full max-w-full"
-                >
-                  $firstname$<br />
-                  $lastname$<br />
-                  <br />
-                  <em>$role$</em>
+                <h2 class="flex flex-row pt-5">
+                  <div class="flex flex-col">
+                    <span class="text-lg font-bold"
+                      >$firstname$ $lastname$</span
+                    >
+                    <span>$role$</span>
+                  </div>
+                  <span class="ml-auto pl-4 pt-3">
+                    <span class="icon dragonfly-arrow ml-0"></span>
+                  </span>
                 </h2>
               </a>
               $endfor$ $if(quote)$
@@ -79,14 +68,31 @@
   </div>
 
   $if(tiles)$
-  <div class="related-content relative z-10 math-paper">
-    <header class="related-content__header container">
-      <h2 class="supplementary-header related-content__title">
+  <div class="related-content related-content--header math-paper--left--small">
+    <header class="related-content__header outer-container">
+      <h2
+        class="
+          supplementary-header supplementary-header--large
+          related-content__title
+        "
+      >
         Related projects
       </h2>
     </header>
-    <div class="collection-grid collection-grid--no-bottom list">
-      $for(tiles)$ $partial("templates/_tile.html")$ $endfor$
+  </div>
+
+  <div class="w-full bg-dark-jungle-green">
+    <div
+      class="
+        collection-grid collection-grid--no-bottom
+        list
+        outer-container
+        px-8
+        lg:px-32
+        2xl:px-8
+      "
+    >
+      $for(tiles)$ $partial("templates/_tile-index.html")$ $endfor$
     </div>
   </div>
   $endif$

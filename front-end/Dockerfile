@@ -1,6 +1,6 @@
 FROM node:buster
 
-ARG NPM_VERSION=7.9.0
+ARG NPM_VERSION=7.13.0
 
 RUN mkdir /.config
 RUN chmod -R o+w /.config

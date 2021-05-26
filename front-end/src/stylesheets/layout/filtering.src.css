@@ -2,8 +2,7 @@
 .filtering {
   &__tools {
     @apply my-8 mx-auto flex-grow flex flex-col;
-    @apply max-w-7xl;
-    @apply p-6;
+    @apply py-6;
 
     &__header {
       @apply flex flex-row;
@@ -72,7 +71,7 @@
 
   /* Variations. */
   &__tools--inline {
-    @apply flex flex-col max-w-full px-6;
+    @apply flex flex-col max-w-full;
 
     .filtering__tags {
       @apply mb-0;
@@ -159,7 +158,7 @@
 @screen xl {
   .filtering {
     &__tools {
-      @apply px-12;
+      /* @apply px-12; */
     }
 
     &__search {

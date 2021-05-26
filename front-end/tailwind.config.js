@@ -39,6 +39,7 @@ module.exports = {
     colors: {
       beige: '#d2cec3',
       'cool-blue': '#43A1C9',
+      'dark-jungle-green': '#1D1E21',
       'dark-peach': '#EB7A59',
       'faded-purple': '#A3649B',
       'faded-red': '#CF4547',
@@ -70,6 +71,7 @@ module.exports = {
         '9/2xl': '7.5rem',
       },
       height: {
+        30: '30rem',
         44: '44rem',
       },
       lineHeight: {
@@ -117,6 +119,8 @@ module.exports = {
         '1/4': '25%',
         '7xl': '102.5rem',
         '8xl': '120rem',
+        100: '28rem',
+        104: '30rem',
         sm: '640px',
         md: '768px',
         lg: '1024px',
@@ -178,6 +182,11 @@ module.exports = {
         80: '20rem',
         88: '22rem',
         96: '24rem',
+        100: '28rem',
+        104: '30rem',
+        108: '32rem',
+        116: '36rem',
+        120: '38rem',
       },
       zIndex: {
         1: '1',

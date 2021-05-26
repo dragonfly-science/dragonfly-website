@@ -1,5 +1,9 @@
 ---
 title: What we do
+subtitle: >
+  We help our clients use their data to make the best decisions. This involves a
+  range of services from building sophisticated reporting tools to giving expert
+  advice on data architecture.
 introduction: >
   We help our clients use their data to make the best decisions. This involves a
   range of services from building sophisticated reporting tools to giving expert

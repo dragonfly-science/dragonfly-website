@@ -11,15 +11,15 @@ quote: >
   objective probability. We use these methods to transform data and squeeze
   the juice out of it.
 teaserTitle: Machine learning
+teaserSVG: /what-we-do/machine-learning/WWD_Learning1.svg
+bannerSVG: /what-we-do/machine-learning/WWD_Learning2.svg
 teaserIntro: >
   The power of modern Bayesian methods enables us to reach higher, more
   objective probability. We use these methods to transform data and squeeze
   the juice out of it.
-teaserCTAdescriptor: See how and why we use them
 teaserCTAbutton: Read more
-teaserAnchorId: stats
+teaserAnchorId: machine-learning
 sortorder: 1
-banner: /images/whatwedo_header.jpg
 tiles:
   - work/delphi-case-study/content.md
   - work/seabird-risk/content.md
