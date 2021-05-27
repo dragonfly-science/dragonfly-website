@@ -58,7 +58,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        '3xl': '20px 30px 40px 3px rgba(0,0,0,.3)',
+        '3xl': '0 0 40px 3px rgba(0,0,0,.3)',
       },
       fontSize: {
         '2/3xl': '1.6rem',

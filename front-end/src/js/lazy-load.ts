@@ -22,19 +22,7 @@ const LazyLoad = (): void => {
           parent.classList.add('loaded')
         }
 
-        // remove transition delay on the item so that
-        // mouse interactions work as expected.
-        setTimeout(() => {
-          el.style.transitionDelay = '0ms'
-
-          // If this is a header, transition the text colour to white.
-          const parent = el.parentElement
-
-          if (parent.classList.contains('page-header--image-bg')) {
-            parent.classList.add('page-header--white')
-          }
-        }, 600)
-      }, 900 * Math.random())
+      }, 200)
     },
   }
   const observer = lozad('.lozad', options)

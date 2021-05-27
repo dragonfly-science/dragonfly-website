@@ -88,7 +88,7 @@
 .background-image,
 .lozad-image {
   @apply opacity-0;
-  @apply transition-opacity delay-500 duration-500 ease-out-quart;
+  @apply transition-opacity duration-500 ease-in-quart;
 
   &.loaded {
     @apply opacity-100 transition-all;
@@ -114,6 +114,12 @@
   &--light-peach {
     &::before {
       @apply bg-light-peach;
+    }
+  }
+
+  &--slate-grey {
+    &::before {
+      @apply bg-slate-grey;
     }
   }
 }

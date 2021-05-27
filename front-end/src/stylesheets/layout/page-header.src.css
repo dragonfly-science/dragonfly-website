@@ -77,7 +77,25 @@
   }
 
   &--image-bg {
-    @apply bg-light-peach;
+    @apply bg-slate-grey;
+
+    .background-image {
+      @apply max-w-wd w-full mx-auto my-0;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+    }
+
+    &.loaded {
+      @apply text-white;
+
+      .background-image {
+        @apply bg-slate-grey;
+
+        &.loaded {
+          @apply opacity-80;
+        }
+      }
+    }
   }
 
   &--no-overlay {

@@ -1,4 +1,30 @@
 .outer-container {
   @apply w-full mx-auto;
   max-width: theme('screens.2xl');
+
+  &--tile-list {
+    .no-gutter-cell {
+      @apply w-full;
+    }
+  }
+}
+
+@screen md {
+  .outer-container {
+    &--tile-list {
+      .no-gutter-cell {
+        @apply w-1/2;
+      }
+    }
+  }
+}
+
+@screen xl {
+  .outer-container {
+    &--tile-list {
+      .no-gutter-cell {
+        @apply w-1/4;
+      }
+    }
+  }
 }
