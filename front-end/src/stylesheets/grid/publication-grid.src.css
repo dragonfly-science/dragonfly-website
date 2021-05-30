@@ -1,18 +1,10 @@
 .publication-grid {
-  /* @apply max-w-7xl !important; */
   @apply pt-6 pb-24;
   @apply justify-between;
 }
 
-@screen lg {
-  .publication-grid {
-    /* @apply justify-start; */
-  }
-}
-
 @screen xl {
   .publication-grid {
-    /* @apply px-12; */
     @apply justify-start;
   }
 }

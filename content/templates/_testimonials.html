@@ -1,0 +1,53 @@
+$if(testimonials)$
+<section class="math-paper math-paper--reverse bg-cool-blue py-12 lg:pt-24">
+  <div class="outer-container px-8 mx-auto">
+    <div class="flex flex-col text-white lg:flex-row">
+      <div class="hidden justify-center items-center lg:flex">
+        <span
+          class="link-icon link-icon--xl transform origin-center -rotate-180"
+        >
+          <span class="icon dragonfly-arrow"></span>
+        </span>
+      </div>
+
+      <div class="flex-grow text-center lg:px-12">
+        $for(testimonials)$
+        <blockquote>
+          <div class="max-w-md mx-auto">
+            <p class="text-2xl italic lg:text-3xl">$quote_short$</p>
+            $if(citation_name)$
+            <cite class="block pt-8">
+              - $citation_name$<br />
+              $if(citation_position)$$citation_position$, $endif$
+              $if(citation_organisation)$$citation_organisation$.$endif$
+            </cite>
+            $endif$
+          </div>
+        </blockquote>
+        $endfor$
+      </div>
+
+      <div class="hidden justify-center items-center lg:flex">
+        <span class="link-icon link-icon--xl">
+          <span class="icon dragonfly-arrow"></span>
+        </span>
+      </div>
+
+      <div class="flex flex-row mx-auto mt-8 lg:hidden">
+        <div class="flex justify-center items-center mr-8">
+          <span
+            class="link-icon link-icon--xl transform origin-center -rotate-180"
+          >
+            <span class="icon dragonfly-arrow"></span>
+          </span>
+        </div>
+        <div class="flex justify-center items-center">
+          <span class="link-icon link-icon--xl">
+            <span class="icon dragonfly-arrow"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+$endif$

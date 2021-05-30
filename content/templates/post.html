@@ -1,4 +1,9 @@
-<header class="page-header page-header--article page-header--image-bg">
+<header
+  class="
+    page-header page-header--image-bg page-header--article
+    lozad-container lozad-container--slate-grey
+  "
+>
   <div class="page-header__outer">
     <div class="page-header__container container">
       $if(title)$
@@ -18,7 +23,7 @@
   </div>
 
   <div
-    class="background-image bg-light-peach$if(banner-image)$ lozad lozad-image$endif$"
+    class="background-image $if(banner-image)$ lozad lozad-image$endif$"
     $if(banner-image)$
     data-background-image="$banner-image$"
     $endif$
@@ -39,7 +44,10 @@
         <a
           href="$project-link$"
           target="_blank"
-          class="button button--cool-blue button--rounded button--icon button--small hover:button--white"
+          class="
+            button button--cool-blue button--rounded button--icon button--small
+            hover:button--white
+          "
         >
           <span class="button--icon__text"
             >$if(project-link-text)$$project-link-text$$else$Visit

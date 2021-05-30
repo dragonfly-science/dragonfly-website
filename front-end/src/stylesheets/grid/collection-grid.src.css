@@ -7,28 +7,8 @@
   }
 
   &--2cell {
-    @apply max-w-full;
-
     .no-gutter-cell {
-      @apply max-w-full px-8;
-
-      &--advert {
-        > div {
-          @apply max-w-full;
-        }
-      }
-    }
-  }
-
-  &--4cell {
-    @apply max-w-full;
-
-    .no-gutter-cell {
-      @apply max-w-full;
-
-      &__title {
-        /* font-size: 8vw; */
-      }
+      @apply w-full;
     }
   }
 
@@ -55,18 +35,7 @@
 
     &--2cell {
       .no-gutter-cell {
-        @apply max-w-1/2;
-      }
-    }
-
-    &--4cell,
-    &--articles {
-      .no-gutter-cell {
-        @apply max-w-1/2;
-
-        &__title {
-          /* font-size: 6vw; */
-        }
+        @apply w-1/2;
       }
     }
   }
@@ -80,36 +49,9 @@
       @apply pb-0;
     }
 
-    &--articles {
-      .no-gutter-cell {
-        .no-gutter-cell__title {
-          /* font-size: 3vw; */
-        }
-
-        &:nth-of-type(1),
-        &:nth-of-type(2) {
-          @apply max-w-1/2 w-full px-24 !important;
-
-          .no-gutter-cell__title {
-            /* font-size: 3.2vw; */
-          }
-        }
-      }
-    }
-
     &--2cell {
       .no-gutter-cell {
-        @apply max-w-1/2 w-full px-24 !important;
-
-        &__text {
-          @apply max-w-full !important;
-        }
-      }
-
-      &--advert {
-        > div {
-          @apply max-w-8/10 !important;
-        }
+        @apply w-1/2;
       }
     }
   }
@@ -119,48 +61,18 @@
   .collection-grid {
     &--2cell {
       .no-gutter-cell {
-        &__title {
-          &.tile__title {
-            @apply max-w-2/3;
-          }
-        }
-
-        &__text {
-          @apply max-w-2/3 !important;
-        }
-      }
-    }
-
-    &--4cell {
-      .no-gutter-cell {
-        &__title {
-          /* font-size: 3.2vw !important; */
-        }
-      }
-    }
-
-    &--articles {
-      .no-gutter-cell {
-        &:nth-of-type(1),
-        &:nth-of-type(2) {
-          .no-gutter-cell__title,
-          .no-gutter-cell__text {
-            @apply max-w-3/4;
-          }
-        }
+        @apply w-1/2;
       }
     }
   }
 }
 
-@screen 2xl {
+@screen xl {
   .collection-grid {
     &--2cell {
       .no-gutter-cell {
-        &__title {
-          &.tile__title {
-            @apply max-w-1/2;
-          }
+        &__inner {
+          @apply max-w-5/3;
         }
       }
     }

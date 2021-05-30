@@ -19,8 +19,7 @@ toolsDetails: >
   analysis tools.
   <br>
   Would your project benefit from our skills?
-toolsCTADescriptor: >
-  How about a chat over coffee to find out?
+teaserCTALink: /what-we-do/
 toolsCTALink: "#contact"
 toolsCTAButton: contact us
 ---

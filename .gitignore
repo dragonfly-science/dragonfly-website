@@ -12,6 +12,6 @@ static-site.tgz
 dragonfly-website
 dist
 .env
-build-website
+.build*
 .test_cache
 .install

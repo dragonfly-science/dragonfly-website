@@ -24,6 +24,7 @@ executable website
                      , WebSite.News
                      , WebSite.People
                      , WebSite.Publications
+                     , WebSite.Testimonials
                      , WebSite.Work
                      , WebSite.WhatWeDo
                      , WebSite.Util

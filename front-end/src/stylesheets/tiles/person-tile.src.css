@@ -14,8 +14,6 @@
 
   &__title {
     @apply mb-0 z-10 max-w-3/4;
-
-    /* font-size: 8vw; */
   }
 
   /* Variations */
@@ -32,60 +30,6 @@
       @apply hidden;
     }
   }
-
-  /* &--singular {
-    @apply h-full min-h-0 max-w-full w-full overflow-visible flex-col p-0;
-
-    img {
-      @apply relative z-0;
-
-      &::before {
-        @apply absolute bottom-0 left-0 w-full h-full z-10 block;
-        @apply transition-all duration-500 ease-out-quart;
-
-        content: '';
-        background-blend-mode: multiply;
-
-        // prettier-ignore
-        background:
-          linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.6) 0%,
-            rgba(0, 0, 0, 0) 100%
-          );
-      }
-
-      + h2 {
-        @apply hidden;
-      }
-
-      &.loaded {
-        + h2 {
-          @apply block;
-        }
-      }
-    }
-
-    .person-tile__title {
-      @apply text-xl leading-none font-medium;
-    }
-
-    .person-tile__role {
-      @apply block mt-4;
-    }
-
-    &:hover {
-      .no-gutter-cell__text {
-        @apply opacity-100 mb-16;
-      }
-
-      .no-gutter-cell__link {
-        .icon {
-          @apply mr-0;
-        }
-      }
-    }
-  } */
 
   &::before {
     @apply absolute bottom-0 left-0 w-full h-full z-10 block;
@@ -122,44 +66,6 @@
 
     .no-gutter-cell__image {
       transform: translate3d(-50%, -50%, 0) scale(1.03);
-    }
-  }
-}
-
-@screen sm {
-  .person-tile {
-    &__title {
-      /* font-size: 5vw; */
-    }
-  }
-}
-
-@screen md {
-  .person-tile {
-    &__title {
-      /* font-size: 4vw; */
-    }
-  }
-}
-
-@screen lg {
-  .person-tile {
-    &__title {
-      /* font-size: 3.25vw; */
-    }
-  }
-}
-
-@screen xl {
-  .person-tile {
-    /* @apply w-1/4; */
-
-    &__title {
-      /* font-size: 2.2vw; */
-    }
-
-    &--singular {
-      /* @apply w-full; */
     }
   }
 }

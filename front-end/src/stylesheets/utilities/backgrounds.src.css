@@ -91,7 +91,19 @@
   @apply transition-opacity duration-500 ease-in-quart;
 
   &.loaded {
-    @apply opacity-100 transition-all;
+    @apply transition-all;
+  }
+}
+
+.background-image {
+  &.loaded {
+    @apply opacity-80;
+  }
+}
+
+.lozad-image {
+  &.loaded {
+    @apply opacity-100;
   }
 }
 

@@ -17,6 +17,7 @@ import qualified WebSite.Images       as Images
 import qualified WebSite.News         as News
 import qualified WebSite.People       as People
 import qualified WebSite.Publications as Publications
+import qualified WebSite.Testimonials as Testimonials
 import           WebSite.Validate     (validatePage)
 import qualified WebSite.Work         as Work
 import qualified WebSite.WhatWeDo     as WhatWeDo
@@ -40,7 +41,14 @@ main = do
     match (fromList [bibIdentifier]) $ compile biblioCompiler
 
     match "**/*.img.md" $ compile scholmdCompiler
-    match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png" .||. "**/*.svg" .||. "**/*.csv" .||. "fonts/*") $ do
+    match ("images/*"
+          .||. "google*.html"
+          .||. "**/*.jpg"
+          .||. "**/*.png"
+          .||. "**/*.svg"
+          .||. "**/*.csv"
+          .||. "fonts/*"
+          .||. "landing-pages/**/banner-images/*") $ do
         route idRoute
         compile copyFileCompiler
 
@@ -161,6 +169,10 @@ main = do
 
     -- What we do section
     WhatWeDo.rules
+
+    -- Testimonials
+    Testimonials.rules
+
 
     -- Standalone pages
     match "pages/*.html" $ do

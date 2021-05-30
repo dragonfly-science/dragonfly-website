@@ -16,7 +16,7 @@ RUN = docker-compose --profile build run --rm npm
 RUN_WEB = docker-compose --profile build run --publish 3000:3000 --rm website
 endif
 
-all: .env .install build
+all: .env .install build run
 
 .env:
 ifneq ($(CI), true)
@@ -26,11 +26,16 @@ ifneq ($(CI), true)
 	echo WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) >> .env
 endif
 
-up: .env .install
+_site/assets:
 	mkdir -p _site/assets
+
+up: .env .install _site/assets
 	docker-compose up --remove-orphans
 
 develop: up
+
+run: .env .build-static _site/assets
+	docker-compose up --remove-orphans website_haskell
 
 down:
 	docker-compose down
@@ -49,8 +54,13 @@ push:
 	$(RUN) bash -c "cd /work/front-end && npm install"
 	touch $@
 
-build-npm: build-website
-	$(RUN) bash -c 'cd front-end && npm i && npm run build'
+.build-npm: .install .build-website
+	$(RUN) bash -c 'cd front-end && npm run build'
+	touch $@
+
+.build-static: .install
+	$(RUN) bash -c 'cd front-end && npm run build:static'
+	touch $@
 
 static:
 	$(RUN_WEB) bash -c 'cd front-end && npm run staging'
@@ -61,18 +71,18 @@ website: $(HS) haskell/Site.hs
 		stack build && \
 		cp $$(stack path --local-install-root)/bin/website ../website'
 
-build-website: website
+.build-website: website
 	$(RUN_WEB) bash -c 'cd ./content && ../website build'
 	touch $@
 
 .PHONY: build
-build: build-website build-npm
+build: .build-website .build-npm
 
 # Utility commands
 clean:
 	rm -rf website _site .env .install .cache \
 				content/fonts/*.css \
-				build-website
+				.build*
 
 clean-cache: website
 	$(RUN_WEB) bash -c './website clean'

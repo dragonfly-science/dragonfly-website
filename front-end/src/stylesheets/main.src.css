@@ -6,7 +6,6 @@
 /* Import Partials */
 @import 'grid/collection-grid.src.css';
 @import 'grid/grid-cell.src.css';
-@import 'grid/inner-cell.src.css';
 @import 'grid/no-gutter-cell.src.css';
 @import 'grid/publication-grid.src.css';
 @import 'layout/advert.src.css';
