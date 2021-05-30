@@ -51,7 +51,7 @@ push:
 
 # NPM Commands
 .install:
-	$(RUN) bash -c "cd /work/front-end && npm install"
+	$(RUN) bash -c "cd front-end && npm install"
 	touch $@
 
 .build-npm: .install .build-website
