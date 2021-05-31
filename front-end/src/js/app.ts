@@ -1,5 +1,6 @@
 import smoothscroll from 'smoothscroll-polyfill'
 
+import Carousel from '~root/carousel'
 import Columns from '~root/_2column-grid'
 import Filtering from '~root/filtering'
 import Footer from '~root/footer'
@@ -22,4 +23,5 @@ Zepto(() => {
   Footer()
   StickySidebar('.sticky-container__body', '.sticky-container__element')
   setTimeout(() => GameOfLife(), 1000)
+  Carousel('carousel-images')
 })

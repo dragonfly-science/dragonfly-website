@@ -21,8 +21,13 @@
   </div>
   $if(banner)$
   <div
+    id="carousel-images"
     class="background-image lozad lozad-image"
     data-background-image="$banner$"
+    data-banner-folder="$if(bannerFolder)$$bannerFolder$$endif$"
+    data-banner-pattern="$if(bannerNamePattern)$$bannerNamePattern$$endif$"
+    data-banner-count="$if(bannerCount)$$bannerCount$$endif$"
+    data-banner-padding="$if(bannerIndexPadding)$$bannerIndexPadding$$endif$"
   ></div>
   $endif$
 </header>
