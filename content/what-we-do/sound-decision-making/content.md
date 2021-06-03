@@ -1,15 +1,14 @@
 ---
 title: Sound decision-making
 subtitle: >
-  We enable evidence based policy. Good research and analysis builds consensus
-  between stakeholders, and enables the development of policy that makes best
-  use of available information.
+  All decisions are based on the best information available. Our ethos is to make sure people are able to use the information they have and are not basing their actions on hearsay.
 author:
   - people/abraham-edward/content.md
+quote: >
+    We are big fans of Bayesian methods. One great feature is that they allow you to bring data as well as peoples’ strongly held views to an analysis. Those views can then be evaluated systematically as part of a framework. That’s powerful.
 teaserTitle: Sound decision-making
 teaserIntro: >
-  Great policy is rooted in sound research and data analysis. Having a trusted
-  information base enables people to come together and make good decisions.
+  All decisions are based on the best information available. Our ethos is to make sure people are able to use the information they have and are not basing their actions on hearsay.
 teaserCTAbutton: Read more
 teaserImageType: png
 teaserAnchorId: policy
@@ -23,8 +22,6 @@ tiles:
   - work/warp-strike/content.md
 ---
 
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper.
+Some of our work touches areas where different groups have conflicting values and opposing views. If people come to an issue with emotional arguments, they’re never going to align. We’ve found that providing information has been really constructive for bringing people together and providing a basis for moving forward.
 
-Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.
-
-Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+One example is risk analysis – it’s about being able to look at the uncertainties and take a broad view across a whole issue. By putting everything in an analysis framework you can address all the issues systematically, then focus on the areas where there is evidence of a problem.

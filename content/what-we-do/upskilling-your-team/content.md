@@ -1,16 +1,14 @@
 ---
 title: Upskilling your team
 subtitle: >
-  We enjoy transferring our skills. We work openly with clients, and enjoy
-  transferring our skills to the teams we work with. We help people develop
-  efficient processes for carrying out high quality, reliable analysis.
+  We work openly with clients and enjoy transferring our skills. The processes we use in our work can help lift the efficiency and quality of your analysis and reporting.
 author:
-  - people/thompson-finlay/content.md
+  - people/menzies-ignatius/content.md
+quote: >
+  By working with your team, we can close the gap between our expertise and the knowledge needed to carry on the project when we’re done. It can also be really stimulating for people to learn new skills and a lot more effective than us providing hand-over documents and seminars.
 teaserTitle: Upskilling your team
 teaserIntro: >
-  We're not about keeping everything to ourselves. Our style is to get things
-  set up right, walk alongside as long as you need us, and be there to help
-  with the tricky stuff.
+  We work openly with clients and enjoy transferring our skills. The processes we use in our work can help lift the efficiency and quality of your analysis and reporting.
 teaserCTAbutton: Read more
 teaserAnchorId: capability
 teaserSVG: /what-we-do/upskilling-your-team/WWD_Skills1.svg
@@ -18,13 +16,13 @@ bannerSVG: /what-we-do/upskilling-your-team/WWD_Skills2.svg
 sortorder: 4
 tiles:
   - work/nms-case-study/content.md
-  - work/predator-prey/content.md
   - work/reporting-case-study/content.md
+  - work/predator-prey/content.md
   - work/technical-review-case-study/content.md
 ---
 
-Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+We’re often asked to help clients move to a reproducible, code-based approach to research, analysis and reporting. This approach is integral to how we do things at Dragonfly. We learned it from the software development industry but always felt we should share it with our clients rather than keeping it to ourselves.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+At the start of an assignment we typically work closely with a client – it’s an opportunity for us to learn the mechanics of the project and for the client to become familiar with our behaviours and tools. Over time there’s a gradual decrease in the input needed from us as capability builds.
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.
+The value of a reproducible approach increases in the ensuing years as repeated analyses and reports are completed. Clients report that fewer people were needed to do the work, and that analysts’ time was liberated to spend on other things, like improving their systems.

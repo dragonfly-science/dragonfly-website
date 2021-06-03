@@ -1,36 +1,28 @@
 ---
 title: Machine learning
 subtitle: >
-  We are experts at statistical analysis. Our speciality is modern Bayesian
-  methods, which allow uncertainty to be carried all the way through from
-  analysis to decision making.
+  When you’re trying to extract information from large amounts of complex, real-world data, chances are you’ll need to use machine learning.
 author:
-  - people/richard-yvan/content.md
+  - people/ndegwa-kiarie/content.md
 quote: >
-  The power of modern Bayesian methods enables us to reach higher, more
-  objective probability. We use these methods to transform data and squeeze
-  the juice out of it.
+  This is a rapidly developing area – it’s an exciting time to be working in the field. It’s also essential for us to keep up with the state of the art and continue to innovate and push the field forward.
 teaserTitle: Machine learning
 teaserSVG: /what-we-do/machine-learning/WWD_Learning1.svg
 bannerSVG: /what-we-do/machine-learning/WWD_Learning2.svg
 teaserIntro: >
-  The power of modern Bayesian methods enables us to reach higher, more
-  objective probability. We use these methods to transform data and squeeze
-  the juice out of it.
+  When you’re trying to extract information from large amounts of complex, real-world data, chances are you’ll need to use machine learning.
 teaserCTAbutton: Read more
 teaserAnchorId: machine-learning
 sortorder: 1
 tiles:
-  - work/delphi-case-study/content.md
+  - work/TMP-case-study/content.md
   - work/seabird-risk/content.md
   - work/technical-review-case-study/content.md
   - work/warp-strike/content.md
 ---
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+Machine learning tends to outperform traditional handcrafted analysis systems because unlike humans, it doesn’t make any assumptions about the data. It can take raw text or data from sensors (like cameras and microphones) and classify and organise it to provide the information needed for decision-making.
 
-Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+We’re currently using machine learning with really diverse datasets, which are big and messy. Our customised models and methods are helping clients find themes in large amounts of text, analyse forest satellite data and work on speech recognition.
 
-Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna.
+While more data means we can use bigger models and get better results, large models quickly become an engineering problem. There’s a challenge for us here to write code that interacts with the specialised hardware very efficiently.

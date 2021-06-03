@@ -1,15 +1,14 @@
 ---
 title: Systems for data
 subtitle: >
-  We build systems for data. Our statistical work is supported by excellent
-  technical database and software development skills. We develop operational
-  systems to allow organisations to get ongoing value from their data.
+  Everybody’s data has value, and it needs to be kept safe, accessible and possibly open. We build well-managed systems that meet all these requirements.    
 author:
-  - people/mansfield-richard/content.md
+  - people/moses-caleb/content.md
+quote: >
+  Having data stored in the correct way is foundational. Databases open up a whole bunch of possibilities for automation and reproducibility. This is this is kind of work where Dragonfly really excels.
 teaserTitle: Systems for data
 teaserIntro: >
-  Data is precious. We build robust databases and software systems to collect,
-  store and manage your data properly and securely.
+  Everybody’s data has value, and it needs to be kept safe, accessible and possibly open. We build well-managed systems that meet all these requirements.
 teaserCTAbutton: Read more
 teaserAnchorId: systems
 teaserSVG: /what-we-do/systems-for-data/WWD_Systems1.svg
@@ -22,8 +21,8 @@ tiles:
   - work/webrear-case-study/content.md
 ---
 
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus.
+The Dragonfly model is go from the data to the end result, building a pipeline to get there. We talk to clients about what they want and always treat their data with respect.
 
-Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Vestibulum id ligula porta felis euismod semper.
+Information inevitably gets lost if you’re not keeping track of everything and storing it in the right way. That can be costly in both money and time. But if we help to categorise, organise and index the information, everything that goes in and everything that comes out looks a certain way, and is reliable. After that we can iterate and improve on it.
 
-Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+We don’t like to do things manually or in a tedious fashion. Let the computer do the things it’s good at! Automation is about not doing the same thing twice if you don’t have to – but doing it right the first time. We can lead more productive lives by automating the work that nobody wants to do.
