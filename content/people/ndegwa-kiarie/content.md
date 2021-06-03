@@ -3,10 +3,10 @@ title: Kiarie Ndegwa
 email: kiarie@dragonfly.co.nz
 firstname: Kiarie
 lastname: Ndegwa
+role: ""
 mobile: ""
 tag: kiarie
 banner: ndegwa-kiarie/kiarie-ndegwa-letterbox.jpg
-nocite: |
 ---
 
 Kiarie is an engineer with a background in machine learning, experimental laser physics and electronics engineering.
