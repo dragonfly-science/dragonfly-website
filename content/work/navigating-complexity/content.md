@@ -1,7 +1,7 @@
 ---
 short-title: Sensible, well-built data management systems
 title: Sensible, well-built data management systems
-summary: have enduring value for sustainably managing our fisheries
+summary: Creating enduring tools for sustainably managing our fisheries
 tags: systems
 banner-image: /work/navigating-complexity/fish-factory.jpg
 quote: >

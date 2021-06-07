@@ -1,7 +1,7 @@
 ---
 title: Risks to seabirds were quantified
 short-title: Risks to seabirds were quantified
-summary: to guide the development of a significant New Zealand policy document.
+summary: Guiding the development of a significant New Zealand policy document
 tags: stats, policy
 banner-image: /work/seabird-risk/bullers.jpg
 quote: Dragonfly fostered an open and inclusive approach with all stakeholders.
