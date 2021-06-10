@@ -14,6 +14,7 @@ module.exports = {
           /no-gutter-cell:hover$/,
           /^transition/,
           /^duration/,
+          /^opacity/,
         ],
       },
       rejected: true,
