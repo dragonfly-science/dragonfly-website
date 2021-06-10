@@ -12,7 +12,7 @@ module.exports = {
           /tile__citation$/,
           /filtering$/,
           /no-gutter-cell:hover$/,
-          /^transition-/,
+          /^transition/,
         ],
       },
       rejected: true,
