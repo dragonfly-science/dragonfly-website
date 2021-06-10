@@ -32,6 +32,14 @@ fs.recurse(
             }),
           ]
           break
+        case '.jpeg':
+          plugins = [
+            imageminJpegoptim({
+              progressive: true,
+              max: 80,
+            }),
+          ]
+          break
         case '.png':
           plugins = [imageminPngquant()]
           break
