@@ -1,13 +1,12 @@
 ---
-title: Expert knowledge was combined fairly
-short-title: Expert knowledge was combined fairly
+title: Expert knowledge combined fairly
+short-title: Expert knowledge combined fairly
 banner-image: /work/delphi-case-study/turtle-map.png
 summary: >
-  so information about where turtles and fishing overlap could underpin
-  decision-making.
+  Information about where turtles and fishing overlap underpinned decision-making
 tags: stats, policy
 quote: >
-  Dragonfly’s timeliness of delivery was critical, and one of the reasons 
+  Dragonfly’s timeliness of delivery was critical, and one of the reasons
   the project was such a success.
 quote-attribution: >
   Neville Smith, Principal Fisheries Scientist, Pacific Community (SPC)

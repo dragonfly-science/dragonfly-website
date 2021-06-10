@@ -2,7 +2,7 @@
 title: A new language processing app
 short-title: A new language processing app
 banner-image: /work/TMP-case-study/kokako-read-out.jpg
-summary: enabled the use of te reo Māori on air to be tracked automatically.
+summary: Automatically tracking the use of te reo Māori on air 
 tags: systems
 quote: The team at Dragonfly have been great to work with. They quickly understood what we were trying to achieve and came up with a very innovative solution.
 quote-attribution: Thomas Hood, Te Māngai Pāho

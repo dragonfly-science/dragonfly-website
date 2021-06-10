@@ -1,7 +1,7 @@
 ---
 short-title: New tools to figure out who's eating who
 title: New tools to figure out who's eating who
-summary: improve our understanding of how fishing affects marine ecosystems
+summary: Improving our understanding of how fishing affects marine ecosystems
 tags: capability
 banner-image: /work/predator-prey/sardines.jpg
 quote: >
@@ -25,7 +25,7 @@ prey species can be harvested without adversely affecting the other.
 ## Creating a new model
 Two complementary chemical analyses (stable isotope and fatty acid analysis) are commonly used in marine biology to decipher the relationships between different species in a food web. Until now, the analyses could only be used separately, but we developed a new statistical method that enables them to be used together.  The combination of the methods is very powerful, showing situations where the two analyses match up, differ, or where data is lacking.  
 
-## Open to everyone 
+## Open to everyone
 
 After developing the model and publishing the method as a scientific paper, we
 released it as an open source software package. By adding documentation and
@@ -48,15 +48,10 @@ understand how to translate ecology into mathematical models, then package that 
 >
 > Based on past experience, when I’m looking at new projects with a link to developing new quantitative tools like this, I always think of Dragonfly because they are such a great organisation to work with. We have a really valuable collaboration, which I plan to continue.
 
-<cite>[Dr Olaf Jensen](http://marine.rutgers.edu/~ojensen/)<br /> 
+<cite>[Dr Olaf Jensen](http://marine.rutgers.edu/~ojensen/)<br />
 Assistant Professor<br />
-Institute of Marine and Coastal Sciences<br /> 
-Rutgers University<br /> 
-New Jersey<br /> 
+Institute of Marine and Coastal Sciences<br />
+Rutgers University<br />
+New Jersey<br />
 United States of America
 </cite>
-
-
-
-
-

@@ -1,9 +1,9 @@
 ---
 title: Better report production one step at a time
 short-title: Better report production one step at a time
-summary: Automating the production of an annual snapshot of forestry in New Zealand.
+summary: Automating the production of an annual snapshot of forestry in New Zealand
 tags: stats, policy
-banner-image: /work/seabird-risk/bullers.jpg
+banner-image: /work/NEFD-case-study/forest-hillsides.jpg
 quote: It was very smooth sailing, and what we expected was what we got.
 quote-attribution: Kate King, Team Leader, Economic Data and Analysis, Ministry for Primary Industries | Manatū Ahu Matua
 logo: /work/NEFD-case-study/MPI-logo.png
@@ -11,7 +11,7 @@ CTADescriptor: some text
 CTAButton: read more
 ---
 
- Our work with the Ministry for Primary Industries (MPI) replaced a manual production process with an automated system. New data can now be piped in to recreate each year’s National Exotic Forest Description  – this is significantly faster, cheaper and more accurate than building the report from scratch using Word, Excel and InDesign.  
+ Our work with the Ministry for Primary Industries (MPI) replaced a manual production process with an automated system. New data can now be piped in to recreate each year’s National Exotic Forest Description – this is significantly faster, cheaper and more accurate than building the report from scratch using Word, Excel and InDesign.  
 
 <!--more-->
 

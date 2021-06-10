@@ -5,15 +5,15 @@ banner-image: /work/INZ-case-study/prediction-service.png
 quote: We worked out the cost saving from this project ... it was significant.
 quote-attribution: Steve Cantlon, Principal Business Adviser, Immigration New Zealand
 logo: /work/INZ-case-study/inz-logo.png
-summary: can speed up the process and save staff time and money
+summary: Speeding up visa processing to save staff time and money
 tags: systems
 CTADescriptor: some text
 CTAButton: read more
 ---
 
-We built a prediction service to allocate visa applications to fast track and
+We built a prediction service to allocate visa applications to either fast track or
 review track streams, based on previous decisions. Handling applications
-appropriately brings faster and more reliable decision making.
+appropriately brings faster and more reliable decision-making.
 
 <!--more-->
 
