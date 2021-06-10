@@ -28,7 +28,7 @@ fs.recurse(
           plugins = [
             imageminJpegoptim({
               progressive: true,
-              max: 75,
+              max: 60,
             }),
           ]
           break
@@ -36,7 +36,7 @@ fs.recurse(
           plugins = [
             imageminJpegoptim({
               progressive: true,
-              max: 75,
+              max: 60,
             }),
           ]
           break
