@@ -13,6 +13,7 @@ module.exports = {
           /filtering$/,
           /no-gutter-cell:hover$/,
           /^transition/,
+          /^duration/,
         ],
       },
       rejected: true,
