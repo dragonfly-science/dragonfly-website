@@ -125,7 +125,7 @@
 
     .page-header {
       &__outer {
-        @apply mb-auto mt-0 py-28;
+        @apply py-16;
       }
     }
   }
@@ -180,10 +180,6 @@
         &__content,
         &__title {
           @apply max-w-full;
-        }
-
-        &__content {
-          @apply mb-0;
         }
       }
     }

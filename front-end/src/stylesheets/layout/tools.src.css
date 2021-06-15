@@ -2,14 +2,14 @@
   @apply flex flex-col;
 
   &__list {
-    @apply flex flex-wrap justify-between;
+    @apply flex flex-wrap justify-center;
   }
 
   &__intro {
     @apply mb-6;
 
     &__heading {
-      @apply mb-6 text-lg font-medium leading-tighter;
+      @apply mb-6 text-xl leading-tighter;
     }
   }
 
@@ -19,9 +19,15 @@
     &:hover {
       @apply text-slate-grey;
     }
+  }
+}
 
-    &:last-child {
-      @apply mr-auto;
+@screen md {
+  .tools {
+    &__intro {
+      &__heading {
+        @apply text-2/3xl leading-tighter;
+      }
     }
   }
 }
@@ -29,22 +35,13 @@
 @screen lg {
   .tools {
     @apply flex-row;
-
-    &__intro,
-    &__list {
-      @apply w-1/2;
-    }
-
     &__intro {
-      @apply mb-0 mr-16;
-
-      &__heading {
-        @apply text-2xl;
-      }
+      @apply max-w-1/2 pr-6;
     }
 
     &__list {
       @apply grid grid-cols-3 gap-x-4 gap-y-10;
+      @apply w-120 max-w-5/3 ml-auto pl-8;
     }
 
     &__tool {
@@ -63,10 +60,10 @@
       @apply grid-cols-4;
     }
 
-    &__intro {
+    /* &__intro {
       &__heading {
         @apply text-3xl;
       }
-    }
+    } */
   }
 }

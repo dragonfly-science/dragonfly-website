@@ -17,7 +17,7 @@ toolsIntro: >
 toolsDetails: >
   Within out team we have expertise will all these data science and
   analysis tools.
-  <br>
+  <br><br>
   Would your project benefit from our skills?
 teaserCTALink: /what-we-do/
 toolsCTALink: "#contact"

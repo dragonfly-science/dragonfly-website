@@ -1,6 +1,6 @@
 /* list container - a box that contains a title & 1 or more (up to 3) lists. */
 .list-container {
-  @apply py-16 px-6;
+  @apply py-12;
 
   &__title {
     @apply font-bold text-2xl mb-6 leading-none;
@@ -34,11 +34,17 @@
   }
 }
 
-@screen lg {
+@screen md {
   .list-container {
     &__title {
-      @apply text-4/2xl;
+      @apply text-2/3xl leading-tighter;
     }
+  }
+}
+
+@screen lg {
+  .list-container {
+    @apply pt-24;
 
     ul {
       @apply text-xl;
@@ -52,6 +58,10 @@
 
 @screen xl {
   .list-container {
+    &__title {
+      @apply text-5xl;
+    }
+
     ul {
       @apply text-2xl;
     }

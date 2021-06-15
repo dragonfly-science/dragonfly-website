@@ -1,4 +1,4 @@
-.news-article {
+.article {
   @apply mx-auto relative px-6 z-1;
 
   &__sidebar {
@@ -15,7 +15,7 @@
 }
 
 @screen md {
-  .news-article {
+  .article {
     @apply px-8;
   }
 }
