@@ -144,22 +144,18 @@
   }
 }
 
-@screen sm {
-  .page-header {
-    &__content {
-      @apply pr-6;
-    }
-  }
-}
-
 @screen md {
   .page-header {
+    &__outer {
+      @apply px-36;
+    }
+
     &__title {
-      @apply text-6xl max-w-1/2;
+      @apply text-8xl;
     }
 
     &__content {
-      @apply text-2/3xl pt-12 leading-tighter max-w-2/3;
+      @apply text-2/3xl pt-12 leading-tighter;
     }
 
     &--article {
@@ -198,17 +194,12 @@
   .page-header {
     @apply min-h-44;
 
-    &__outer {
-      @apply px-32;
-    }
-
     &__title {
-      @apply text-8xl;
+      @apply max-w-full;
     }
 
-    &__title,
     &__content {
-      @apply max-w-full;
+      @apply max-w-1/2;
     }
 
     &--article {
@@ -268,11 +259,6 @@
 
 @screen xl {
   .page-header {
-    &__title,
-    &__content {
-      @apply max-w-2/3;
-    }
-
     &--news {
       .page-header__inner {
         @apply max-w-64rem;

@@ -4,7 +4,7 @@ import Carousel from '~root/carousel'
 import Columns from '~root/_2column-grid'
 import Filtering from '~root/filtering'
 import Footer from '~root/footer'
-import GameOfLife from '~root/game-of-life/game-of-life'
+// import GameOfLife from '~root/game-of-life/game-of-life'
 import ImageCaptions from '~root/image-caption'
 import LazyLoad from '~root/lazy-load'
 import MobileMenu from '~root/mobile-menu'
@@ -22,6 +22,6 @@ Zepto(() => {
   ImageCaptions()
   Footer()
   StickySidebar('.sticky-container__body', '.sticky-container__element')
-  setTimeout(() => GameOfLife(), 1000)
+  // setTimeout(() => GameOfLife(), 1000)
   Carousel('carousel-images')
 })

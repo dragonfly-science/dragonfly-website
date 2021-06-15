@@ -2,7 +2,7 @@ $partial("templates/_page-header-small.html")$
 
 <div id="filter-list" data-type="publication">
   <div class="filtering bg-light-peach">
-    <div class="flex outer-container px-8 lg:px-32 2xl:px-8">
+    <div class="flex outer-container">
       <div class="filtering__tools">
         <div class="filtering__tools__header">
           $partial("templates/_search-field.html")$
@@ -215,7 +215,14 @@ $partial("templates/_page-header-small.html")$
   </div>
 
   <section id="top-section" class="bg-light-peach math-paper">
-    <div class="collection-grid publication-grid list outer-container">
+    <div
+      class="
+        collection-grid
+        publication-grid
+        list
+        outer-container outer-container--tile-list
+      "
+    >
       $for(publications)$ $partial("templates/_citation-entry.html")$ $endfor$
     </div>
   </section>

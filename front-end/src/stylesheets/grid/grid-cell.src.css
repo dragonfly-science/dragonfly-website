@@ -11,7 +11,8 @@
 
 @screen lg {
   .grid-cell {
-    width: calc(33.3% - 2px);
+    @apply w-1/3;
+    /* width: calc(33.3% - 2px); */
   }
 }
 
