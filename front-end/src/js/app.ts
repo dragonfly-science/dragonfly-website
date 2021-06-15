@@ -11,6 +11,7 @@ import MobileMenu from '~root/mobile-menu'
 import Parallaxing from '~root/parallax'
 import StickySidebar from '~root/sticky-sidebar'
 import TopSection from '~root/top-section'
+import Slideshow from '~root/slideshow'
 
 Zepto(() => {
   Columns()
@@ -24,4 +25,5 @@ Zepto(() => {
   StickySidebar('.sticky-container__body', '.sticky-container__element')
   // setTimeout(() => GameOfLife(), 1000)
   Carousel('carousel-images')
+  Slideshow('.slideshow-swiper', '.swiper-button-next', '.swiper-button-prev')
 })

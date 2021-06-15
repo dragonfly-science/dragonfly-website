@@ -8,12 +8,14 @@ $partial("templates/_page-header-small.html")$ $if(whatwedo)$
 </div>
 $endif$
 
-<section class="list-container bg-cool-blue text-white">
+<section
+  class="list-container math-paper math-paper--reverse bg-cool-blue text-white"
+>
   <div class="container outer-container mx-auto">
     <div class="list-container__lists tools">
       <div class="tools__intro">
         $if(toolsDetails)$
-        <h2 class="list-container__title ruled-heading ruled-heading--white">
+        <h2 class="list-container__title">
           <span class="block">$toolsTitle$</span>
         </h2>
         $endif$ $if(toolsDetails)$

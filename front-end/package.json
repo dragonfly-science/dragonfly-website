@@ -22,6 +22,7 @@
     "query-string": "^6.14.1",
     "scrollmagic": "^2.0.8",
     "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^6.7.0",
     "way-of-life": "^0.3.0",
     "zepto": "^1.2.0"
   },

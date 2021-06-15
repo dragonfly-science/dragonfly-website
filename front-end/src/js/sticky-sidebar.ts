@@ -22,7 +22,7 @@ const intializeStickySidebar = (
     triggerElement,
     triggerHook: 'onLeave',
     offset: 0 - header.height() - parseInt(container.css('padding-top'), 10),
-    duration,
+    duration: Math.abs(duration ?? 300),
   })
     .setPin(pinnedElement)
     .addTo(controller)

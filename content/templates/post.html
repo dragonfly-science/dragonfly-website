@@ -41,19 +41,36 @@
           class="sidebar__title mb-2 lg:text-left"
           >$project-link-title$</span
         >$endif$
+
         <a
+          class="
+            relative
+            z-20
+            button
+            call-to-action__button call-to-action__button--cool-blue
+            button--icon button--icon-left
+            mt-8
+            w-full
+            flex
+          "
           href="$project-link$"
           target="_blank"
-          class="
-            button button--cool-blue button--rounded button--icon button--small
-            hover:button--white
-          "
         >
-          <span class="button--icon__text"
-            >$if(project-link-text)$$project-link-text$$else$Visit
-            project$endif$</span
-          >
-          <span class="button--icon__icon dragonfly-arrow -rotate-45"></span>
+          <div>
+            <span class="button--icon-left__text pr-3"
+              >$if(project-link-text)$$project-link-text$$else$Visit
+              project$endif$</span
+            >
+            <span
+              class="
+                button--icon__icon
+                dragonfly-arrow
+                transform
+                inline-block
+                -rotate-45
+              "
+            ></span>
+          </div>
         </a>
         $endif$
       </aside>
