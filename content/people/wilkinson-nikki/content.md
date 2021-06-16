@@ -10,7 +10,6 @@ nocite: |
 ---
 
 Nikki is a data scientist at Dragonfly – she has a strong interest in machine learning and artificial intelligence.
-
 <!--more-->
 
 She has a Bachelor of Science degree in mathematics and statistics (including a minor in data science) from Victoria University of Wellington and previously worked as a ski instructor and a chef.

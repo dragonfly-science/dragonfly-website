@@ -3,6 +3,7 @@ pdf: neubauer_management_2021.pdf
 tags: philipp, paua, fisheries, dragonfly, benthic, report, review
 title: "Pāua management procedure: review of current state and prospects for wider application"
 ---
+
 Management procedures (MPs) are increasingly being used in fisheries management to link
 resource assessments to a set of rules  that formalise the setting of allowable catches.
 In a New Zealand context, MPs have been considered for New Zealand abalone (pāua, *Haliotis iris*) fisheries, which are managed across different quota management areas (QMAs). For example, in all QMAs of PAU 5 (southern South Island), stakeholders agreed to a set of voluntary (non-mandatory) MPs since 2016, to manage the fisheries within the current Total Allowable Commercial Catch set by Fisheries New Zealand. The MPs have been used to set shelving levels at annual general meetings based on offset-year catch-per-unit-effort (CPUE), with discussion about trends supplementing model estimates. Corresponding decisions have been based on informal synthesis of stakeholder views and trends from data. For example, in 2018, the control rule suggested that catches be increased from 35% shelving levels due to an increase in CPUE in PAU~5D. The increase was not applied after deliberations, during which divers attributed the increased CPUE to unprecedented dive conditions that could not be
@@ -19,8 +20,7 @@ Further work is required to understand changes
 from electronic reporting, particularly regarding reported effort,
 to ensure reliable standardisation. In
 addition, robust data collection systems need to be established to
-capture data for pāua destined for the live and whole-frozen trade. This data collection is necessary to
-avoid that this fishery component biases information of the overall pāua catch, and to determine its effects
+capture data for pāua destined for the live and whole-frozen trade. This data collection is necessary to avoid that this fishery component biases information of the overall pāua catch, and to determine its effects
 on pāua populations. Combined with this improved data collection,
 it is also suggested that scales of assessment and management procedures are united with
 fine-scale management initiatives, such as catch-spreading and local

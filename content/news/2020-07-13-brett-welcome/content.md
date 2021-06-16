@@ -7,7 +7,7 @@ from mid-July. Brett will be based in Auckland and visit Wellington regularly.
 <!--more-->
 
 Brett has an academic and practical background in the philosophy of science,
-biology, software engineering and data science. 
+biology, software engineering and data science.
 
 “I love big ideas and fundamental problems but I also like building things. What
 originally attracted me to philosophy was artificial intelligence – how do you
