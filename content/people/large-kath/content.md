@@ -3,6 +3,7 @@ title: Kath Large
 email: kath@dragonfly.co.nz
 firstname: Kath
 lastname: Large
+role: Fisheries scientist
 mobile: ""
 tag: kath
 banner: large-kath/kath-large-letterbox.jpg
@@ -17,4 +18,4 @@ She enjoys the technical nature of the job, particularly constructing models tha
 
 Kath most recently worked at NIWA as a fisheries analyst and modeller. She has a master of science in statistics from Victoria University of Wellington and bachelors degrees in science and applied science.
 
-> I think being inquisitive is really important, even though it can lead you down a rabbit hole sometimes. Only by taking time can we be sure our models aren’t missing anything, or be confident we've found something new if they don’t line up with what we know already. 
+> I think being inquisitive is really important, even though it can lead you down a rabbit hole sometimes. Only by taking time can we be sure our models aren’t missing anything, or be confident we've found something new if they don’t line up with what we know already.

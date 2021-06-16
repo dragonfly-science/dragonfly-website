@@ -3,6 +3,7 @@ title: Kiarie Ndegwa
 email: kiarie@dragonfly.co.nz
 firstname: Kiarie
 lastname: Ndegwa
+role: Data scientist
 mobile: ""
 tag: kiarie
 banner: ndegwa-kiarie/kiarie-ndegwa-letterbox.jpg
