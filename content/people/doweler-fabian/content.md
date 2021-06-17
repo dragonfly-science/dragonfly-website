@@ -7,6 +7,8 @@ role: Geospatial analyst
 mobile: ""
 tag: fabian
 banner: döweler-fabian/fabian-döweler.jpg
+nocite:
+  @doeweler_causes_2021
 ---
 
 Fabian is a geospatial analyst and ecologist who studies large-scale change in ecosystems with modern imaging and mapping techniques.
