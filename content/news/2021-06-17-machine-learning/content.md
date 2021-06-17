@@ -13,7 +13,7 @@ Kiarie says the distinctive feature of machine learning is that it’s data-driv
 
 “In this ‘black box’ system we don’t know what features it will generate to tell cats and dogs apart. But if we could look inside, there would probably be a strong correlation with what we’d use to identify a dog or cat – fur, snouts, ears – as well as other weird non-intuitive features that maybe we don’t understand.
 
-Kiarie explains that ‘deep learning’ is a type of machine learning. “Machine learning is a very rudimentary mimic of a neural network like a brain. The more neurons and data you have, the better your machine learning will work – it’s like having a bigger brain and more examples to learn from. The ‘deep’ refers to having multiple layers of simulated neurons in an artificial neural network.  
+Kiarie explains that ‘deep learning’ is a type of machine learning. “Deep learning algorithms are a very rudimentary mimic of a neural network like a brain. The more neurons and data you have, the better your machine learning will work – it’s like having a bigger brain and more examples to learn from. The ‘deep’ refers to having multiple layers of simulated neurons in an artificial neural network.
 
 The ethical concerns around bias in machine learning are something that Kiarie is aware of, particularly in the ways it has been used by media and social media recently.
 
@@ -32,7 +32,3 @@ skills to implement these machine learning systems. Since starting at
 Dragonfly, Kiarie has been able to take a complex model and shrink it to get it
 working on a mobile phone without losing performance. This makes the model much
 cheaper to run, and removes the need to transmit data back to the servers”.
-
-
-
-
