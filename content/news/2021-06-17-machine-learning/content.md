@@ -26,11 +26,15 @@ The ethical concerns around bias in machine learning are something that Kiarie i
 “At the moment there is lots of experimentation and research going on in the field. I follow some practitioners on Twitter, as well as the mathematicians who are trying to validate the results. It’s an exciting time. Machine learning has the potential to crack some really challenging problems, for example, processing natural language.”
 
 Dragonfly are extremely fortunate to have Kiarie working
-with us. As Edward Abraham explains, "There are not may people who are able to
+with us. As Edward Abraham explains,
+
+“There are not may people who are able to
 keep up the current literature, and who also have the software engineering
 skills to implement these machine learning systems. Since starting at
 Dragonfly, Kiarie has been able to take a complex model and shrink it to get it
 working on a mobile phone without losing performance. This makes the model much
-cheaper to run, and removes the need to transmit data back to the servers".
+cheaper to run, and removes the need to transmit data back to the servers”.
+
+
 
 
