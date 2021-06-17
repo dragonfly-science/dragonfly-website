@@ -21,8 +21,6 @@ The ethical concerns around bias in machine learning are something that Kiarie i
 
 “If we’re creating a model that’s based on spoken language, for example, we have to make sure older voices are recognised as well as younger ones, and female as well as male. Otherwise, we will create an output that’s biased towards only one part of a population.”
 
-“Although there are these powerful libraries available, the algorithms we need may have to be coded using these libraries as building blocks. Because they’re specific for the problem you’re trying to solve you can’t just pick one off the shelf. It’s an iterative process.
-
 “At the moment there is lots of experimentation and research going on in the field. I follow some practitioners on Twitter, as well as the mathematicians who are trying to validate the results. It’s an exciting time. Machine learning has the potential to crack some really challenging problems, for example, processing natural language.”
 
 Dragonfly are extremely fortunate to have Kiarie working
