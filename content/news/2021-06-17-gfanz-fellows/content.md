@@ -1,7 +1,7 @@
 ---
 title: Recognition for genomic scientists' work in COVID response
 ---
-Dragonfly has a long-standing association with Genomics for Aotearoa New Zealand (GFANZ) and last week hosted a celebration for 4 inaugural fellows.
+Dragonfly has a long-standing association with Genomics for Aotearoa New Zealand (GFANZ) and last week hosted a celebration for four inaugural fellows.
 
 <!--more-->
 
@@ -17,4 +17,9 @@ Una and Joep work at ESR. Jenny recently left ESR and now lives in Sydney. They 
 
 Besides lifetime membership of GFANZ (which Rob says is “pretty cool”), each person was presented with a taonga to wear. According to GFANZ council member Lisa Warbrick, pounamu was chosen as it has all sorts of beautiful, amazing wairua attached to it. “Our focus on genomics is represented with a carved double helix on the taonga – that was a first for my master carver!”
 
-[GFANZ](https://genomics.nz/) has several objectives including to ​promote,​ ​research,​ ​develop​ ​and​ ​apply​ ​genomics​ ​for​ ​the​ ​benefit​ ​of​ ​all​ ​society, and to ​promote​ ​and​ ​support​ ​te​ ​ao​ ​Māori​ ​and​ ​the​ ​Treaty​ ​of​ ​Waitangi​ ​as​ ​innate​ ​to​ ​New Zealand​ ​genomics. Finlay Thompson is currently their secretary. [Read more about Rob and the Dragonfly connection](https://www.dragonfly.co.nz/news/2017-08-03-rob-elshire.html).
+[GFANZ](https://genomics.nz/) has several objectives including to
+promote, research, develop and apply genomics for the benefit of all
+society, and to promote and support te ao Māori and the Treaty of Waitangi as
+innate to New Zealand genomics. Finlay Thompson is currently their secretary. 
+
+[Read more about Rob and the Dragonfly connection](https://www.dragonfly.co.nz/news/2017-08-03-rob-elshire.html).
