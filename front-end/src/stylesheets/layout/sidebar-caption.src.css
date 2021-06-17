@@ -1,9 +1,33 @@
 .sidebar-caption {
   p {
-    @apply italic font-medium text-base mb-8 leading-tight text-cool-blue;
+    @apply italic font-medium text-base mb-8 leading-tight text-cool-blue pr-8 max-w-full;
   }
 
   cite {
-    @apply mt-5 leading-none block not-italic;
+    @apply leading-none block not-italic ml-0 mr-auto;
+  }
+}
+
+@screen sm {
+  .sidebar-caption {
+    p {
+      @apply max-w-2/3;
+    }
+
+    cite {
+      @apply ml-auto mr-0;
+    }
+  }
+}
+
+@screen lg {
+  .sidebar-caption {
+    p {
+      @apply pr-0 max-w-full;
+    }
+
+    cite {
+      @apply mt-5;
+    }
   }
 }

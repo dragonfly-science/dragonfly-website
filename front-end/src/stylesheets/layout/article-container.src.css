@@ -1,0 +1,30 @@
+.article-container {
+  @apply outer-container;
+  @apply flex pt-12;
+
+  &--right-sidebar {
+    .article {
+      @apply mx-0 max-w-full;
+    }
+  }
+}
+
+@screen xl {
+  .article-container {
+    &--right-sidebar {
+      .article {
+        @apply ml-32;
+      }
+    }
+  }
+}
+
+@screen 2xl {
+  .article-container {
+    &--right-sidebar {
+      .article {
+        @apply ml-64;
+      }
+    }
+  }
+}

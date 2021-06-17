@@ -15,7 +15,7 @@ module.exports = {
           /^transition/,
           /^duration/,
           /^opacity/,
-          /^bg-/
+          /^bg-/,
         ],
       },
       rejected: true,
@@ -82,7 +82,7 @@ module.exports = {
       },
       lineHeight: {
         tighter: '1.2em',
-        '11': '2.6rem',
+        11: '2.6rem',
       },
       margin: {
         '12rem': '12rem',
@@ -201,6 +201,7 @@ module.exports = {
         1: '1',
       },
       spacing: {
+        22: '5.5rem',
         72: '18rem',
         80: '20rem',
         88: '22rem',

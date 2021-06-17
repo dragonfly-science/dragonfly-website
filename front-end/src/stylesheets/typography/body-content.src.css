@@ -1,6 +1,6 @@
 /* Body content container styles. */
 .body-content {
-  @apply ml-0 my-3 py-3 max-w-3xl text-lg;
+  @apply text-lg;
 
   p {
     @apply mb-6;
@@ -262,8 +262,6 @@
 
 @screen lg {
   .body-content {
-    @apply my-12 py-12;
-
     > p {
       &:first-of-type {
         @apply font-medium text-3/2xl mb-6;

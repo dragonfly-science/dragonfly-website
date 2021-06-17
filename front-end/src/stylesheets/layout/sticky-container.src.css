@@ -1,7 +1,17 @@
 .sticky-container {
+  @apply flex flex-col items-start;
+
   &__body {
+    /* @apply ml-0 pt-22 pb-24 mr-auto; */
+
     > p:last-child {
       @apply mb-0;
     }
+  }
+}
+
+@screen lg {
+  .sticky-container {
+    @apply flex-row;
   }
 }

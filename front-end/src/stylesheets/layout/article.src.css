@@ -1,21 +1,6 @@
 .article {
-  @apply mx-auto relative px-6 z-1;
-
-  &__sidebar {
-    @apply py-0 mr-24;
-
-    &.sidebar {
-      @apply py-0;
-    }
-  }
-
-  &__container {
-    @apply pb-24;
-  }
-}
-
-@screen md {
-  .article {
-    @apply px-8;
-  }
+  @apply relative z-1;
+  @apply mt-12 mb-8 mx-auto;
+  @apply flex-grow;
+  max-width: calc(100% - theme('spacing.64') - theme('spacing.64'));
 }

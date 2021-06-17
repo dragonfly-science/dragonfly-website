@@ -1,6 +1,17 @@
 import lozad from 'lozad'
 import ScrollMagic from 'scrollmagic'
 
+const MAX_WIDTH = 1024
+
+const enableScene = (controller: any) => () => {
+  console.log('resize', window.innerWidth, window.innerWidth < MAX_WIDTH)
+  if (window.innerWidth < MAX_WIDTH) {
+    controller.enabled(false)
+  } else {
+    controller.enabled(true)
+  }
+}
+
 const intializeStickySidebar = (
   triggerElement: string,
   pinnedElement: string
@@ -18,7 +29,7 @@ const intializeStickySidebar = (
   const duration =
     body.height() - sidebar.height() - parseInt(sidebar.css('margin-top'), 10)
 
-  new ScrollMagic.Scene({
+  const scene = new ScrollMagic.Scene({
     triggerElement,
     triggerHook: 'onLeave',
     offset: 0 - header.height() - parseInt(container.css('padding-top'), 10),
@@ -26,6 +37,10 @@ const intializeStickySidebar = (
   })
     .setPin(pinnedElement)
     .addTo(controller)
+
+  // window.addEventListener('resize', enableScene(controller))
+
+  // enableScene(controller)
 }
 
 const initTimeout = (triggerElement: string, pinnedElement: string): void => {

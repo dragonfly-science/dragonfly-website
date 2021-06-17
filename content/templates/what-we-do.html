@@ -1,70 +1,62 @@
 $partial("templates/_page-header-teaser.html")$
 
-<article id="top-section" class="article bg-light-peach">
+<section id="top-section" class="bg-light-peach">
   <div
-    class="
-      sticky-container
-      article__container
-      flex flex-col
-      items-start
-      lg:flex-row
-    "
+    class="article-container article-container--right-sidebar sticky-container"
   >
-    <div class="sticky-container__body body-content body-content--article">
-      $body$
-    </div>
-    <aside class="sidebar sticky-sidebar my-24 w-48 ml-auto mr-0">
-      <div class="sticky-container__element m-0 w-48">
-        $if(author)$
+    <article class="article sticky-container__body">
+      <div class="body-content body-content--article">$body$</div>
+    </article>
+    $if(author)$
+    <aside
+      class="sticky-container__element sidebar sticky-sidebar author-sidebar"
+    >
+      <blockquote class="author-sidebar__inner sidebar-caption">
+        $if(quote)$
+        <p>$quote$</p>
 
-        <blockquote class="sidebar-caption border-t-4 border-cool-blue pt-5">
-          $if(quote)$
-          <p>$quote$</p>
-
-          <cite>
-            $endif$ $for(author)$
-            <a href="$pageurl$" class="author w-full">
-              $if(teaserImageSmall)$
-              <div class="person-tile min-h-0">
-                <img
-                  class="sticky-lozad h-56"
-                  data-src="$teaserImageThumbnail$"
-                />
+        <cite class="flex-shrink-0">
+          $endif$ $for(author)$
+          <a href="$pageurl$" class="author w-full">
+            $if(teaserImageSmall)$
+            <div class="person-tile min-h-0">
+              <img
+                class="sticky-lozad h-56"
+                data-src="$teaserImageThumbnail$"
+              />
+            </div>
+            $endif$
+            <h2 class="flex flex-row pt-5">
+              <div class="flex flex-col">
+                <span class="text-lg font-bold">$firstname$ $lastname$</span>
+                <span>$role$</span>
               </div>
-              $endif$
-              <h2 class="flex flex-row pt-5">
-                <div class="flex flex-col">
-                  <span class="text-lg font-bold">$firstname$ $lastname$</span>
-                  <span>$role$</span>
-                </div>
-                <span class="ml-auto pl-4 pt-3">
-                  <span class="icon dragonfly-arrow ml-0"></span>
-                </span>
-              </h2>
-            </a>
-            $endfor$ $if(quote)$
-          </cite>
-          $endif$
-        </blockquote>
-
+              <span class="ml-auto pl-4 pt-3">
+                <span class="icon dragonfly-arrow ml-0"></span>
+              </span>
+            </h2>
+          </a>
+          $endfor$ $if(quote)$
+        </cite>
         $endif$
-      </div>
+      </blockquote>
     </aside>
+    $endif$
   </div>
+</section>
 
-  $if(tiles)$
-  <div class="related-content related-content--header math-paper--left--small">
-    <header class="related-content__header outer-container">
-      <h2
-        class="
-          supplementary-header supplementary-header--large
-          related-content__title
-        "
-      >
-        Related projects
-      </h2>
-    </header>
-  </div>
+$if(tiles)$
+<div class="related-content related-content--header math-paper--left--small">
+  <header class="related-content__header outer-container">
+    <h2
+      class="
+        supplementary-header supplementary-header--large
+        related-content__title
+      "
+    >
+      Related projects
+    </h2>
+  </header>
+</div>
 
-  $partial("templates/_tile-list.html")$ $endif$
-</article>
+$partial("templates/_tile-list.html")$ $endif$
