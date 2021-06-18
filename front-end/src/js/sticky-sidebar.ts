@@ -3,14 +3,58 @@ import ScrollMagic from 'scrollmagic'
 
 const MAX_WIDTH = 1024
 
-const enableScene = (controller: any) => () => {
-  console.log('resize', window.innerWidth, window.innerWidth < MAX_WIDTH)
-  if (window.innerWidth < MAX_WIDTH) {
-    controller.enabled(false)
-  } else {
-    controller.enabled(true)
+const enableScene =
+  (controller: any, scenes: any[], pinnedElement: any, triggerElement: any) =>
+  () => {
+    if (window.innerWidth < MAX_WIDTH) {
+      for (let x of scenes) {
+        if (x != null) {
+          x.destroy(true)
+          x = null
+        }
+      }
+      scenes = []
+      controller.destroy(true)
+      controller = null
+      return
+    }
+
+    if (controller && scenes.length !== 0) {
+      for (let scene of scenes) {
+        scene.refresh()
+        scene.update(true)
+      }
+
+      window.scroll()
+
+      return
+    }
+
+    const sidebars = $(pinnedElement)
+    const body = $(triggerElement)
+    const header = $('#main-header')
+    const container = $('.sticky-container')
+
+    controller = new ScrollMagic.Controller()
+
+    sidebars.forEach((sidebar: any) => {
+      let duration =
+        body.height() -
+        $(sidebar).height() -
+        parseInt($(sidebar).css('margin-top'), 10)
+      scenes.push(
+        new ScrollMagic.Scene({
+          triggerElement,
+          triggerHook: 'onLeave',
+          offset:
+            0 - header.height() - parseInt(container.css('padding-top'), 10),
+          duration: Math.abs(duration ?? 300),
+        })
+          .setPin(sidebar)
+          .addTo(controller)
+      )
+    })
   }
-}
 
 const intializeStickySidebar = (
   triggerElement: string,
@@ -18,29 +62,18 @@ const intializeStickySidebar = (
 ): void => {
   const sidebar = $(pinnedElement)
   const body = $(triggerElement)
-  const header = $('#main-header')
-  const container = $('.sticky-container')
 
   if (sidebar.length === 0 || body.length === 0) {
     return
   }
 
-  const controller = new ScrollMagic.Controller()
-  const duration =
-    body.height() - sidebar.height() - parseInt(sidebar.css('margin-top'), 10)
+  let controller: any = null
+  let scenes: any[] = []
+  const sticky = enableScene(controller, scenes, pinnedElement, triggerElement)
 
-  const scene = new ScrollMagic.Scene({
-    triggerElement,
-    triggerHook: 'onLeave',
-    offset: 0 - header.height() - parseInt(container.css('padding-top'), 10),
-    duration: Math.abs(duration ?? 300),
-  })
-    .setPin(pinnedElement)
-    .addTo(controller)
+  window.addEventListener('resize', sticky)
 
-  // window.addEventListener('resize', enableScene(controller))
-
-  // enableScene(controller)
+  sticky()
 }
 
 const initTimeout = (triggerElement: string, pinnedElement: string): void => {

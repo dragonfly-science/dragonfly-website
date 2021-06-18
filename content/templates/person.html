@@ -34,46 +34,70 @@
   ></div>
 </header>
 
-<article id="top-section" class="article math-paper">
-  <div class="bg-light-peach px-6">
-    <div
-      class="sticky-container container mx-auto py-24 flex flex-col lg:flex-row"
-    >
-      <div
-        class="sticky-container__body body-content body-content--article my-0"
-        id="content-$tag$"
-      >
-        $body$
+<section id="top-section" class="bg-light-peach">
+  <div
+    class="article-container article-container--two-sidebars sticky-container"
+  >
+    <aside class="sticky-container__element sidebar sticky-sidebar">
+      <div class="">
+        <a
+          href="/people/"
+          class="
+            button
+            call-to-action__button call-to-action__button--cool-blue
+            button--icon button--icon-left
+          "
+        >
+          <span
+            class="button--icon-left__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="button--icon-left__text">Back to team</span>
+        </a>
       </div>
-      <aside class="sidebar sticky-sidebar">
-        <div class="sticky-container__element w-56 ml-16">
+    </aside>
+    <article class="article sticky-container__body">
+      <div class="body-content body-content--article">$body$</div>
+    </article>
+
+    <aside class="sticky-container__element sidebar sticky-sidebar">
+      <div
+        class="
+          w-full
+          ml-auto
+          flex flex-col
+          border-t-4 border-cool-blue
+          pt-5
+          items-center
+          sm:items-start
+          sm:flex-row
+          lg:w-48
+        "
+      >
+        <div class="py-2">
           $if(email)$
-          <a href="mailto:$email$">$email$</a><br />
+          <a href="mailto:$email$" class="underline hover:no-underline"
+            >$email$</a
+          ><br />
           $endif$ $if(phone)$
           <a href="tel:$phone$">$phone$</a>
           $endif$
-
-          <a
-            href="/people/"
-            class="
-              button
-              call-to-action__button call-to-action__button--slate-grey
-              button--icon button--icon-left
-              mt-8
-            "
-          >
-            <span
-              class="
-                button--icon-left__icon
-                dragonfly-arrow
-                transform
-                rotate-180
-              "
-            ></span>
-            <span class="button--icon-left__text">Back to team</span>
-          </a>
         </div>
-      </aside>
-    </div>
+        <a
+          href="/people/"
+          class="
+            button
+            call-to-action__button call-to-action__button--cool-blue
+            button--icon button--icon-left
+            sm:ml-auto
+            lg:hidden
+          "
+        >
+          <span
+            class="button--icon-left__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="button--icon-left__text">Back to team</span>
+        </a>
+      </div>
+    </aside>
   </div>
-</article>
+</section>

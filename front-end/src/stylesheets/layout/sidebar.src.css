@@ -1,5 +1,6 @@
 .sidebar {
-  @apply py-24 text-lg leading-normal w-full max-w-full;
+  /* @apply py-24; */
+  @apply text-base font-medium leading-normal w-full max-w-full text-cool-blue;
 
   .button {
     @apply no-underline;
@@ -22,6 +23,6 @@
 
 @screen lg {
   .sidebar {
-    @apply w-64;
+    /* @apply w-64; */
   }
 }

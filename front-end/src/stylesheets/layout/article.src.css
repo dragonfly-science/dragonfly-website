@@ -1,6 +1,17 @@
 .article {
   @apply relative z-1;
   @apply mt-12 mb-8 mx-auto;
-  @apply flex-grow;
-  max-width: calc(100% - theme('spacing.64') - theme('spacing.64'));
+  @apply flex-grow max-w-full;
+}
+
+@screen xl {
+  .article {
+    max-width: calc(100% - theme('spacing.64'));
+  }
+}
+
+@screen 2xl {
+  .article {
+    max-width: calc(100% - theme('spacing.64') - theme('spacing.64'));
+  }
 }
