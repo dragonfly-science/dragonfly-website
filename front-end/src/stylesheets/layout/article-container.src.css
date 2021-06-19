@@ -1,6 +1,6 @@
 .article-container {
   @apply outer-container;
-  @apply flex pt-12;
+  @apply flex pt-16;
 
   &--right-sidebar {
     .article {
@@ -25,6 +25,12 @@
         @apply hidden;
       }
     } */
+  }
+}
+
+@screen md {
+  .article-container {
+    @apply pt-12;
   }
 }
 

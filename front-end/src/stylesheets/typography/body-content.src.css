@@ -291,14 +291,26 @@
     }
 
     blockquote {
+      &:nth-of-type(even) {
+        @apply -mr-24 pr-24;
+      }
+
       p {
         @apply text-2xl;
+      }
+
+      &:nth-of-type(even) {
+        @apply ml-auto pl-12;
+
+        + p > cite {
+          @apply ml-auto;
+        }
       }
     }
 
     blockquote,
     blockquote + p > cite {
-      @apply -ml-16 px-16;
+      @apply -ml-24 pl-24 w-full;
     }
 
     figure {
@@ -340,17 +352,13 @@
       }
 
       &:nth-of-type(even) {
-        @apply -mr-1/2 ml-auto pl-24 pr-32;
-
-        + p > cite {
-          @apply -mr-1/2 ml-auto pl-24 pr-32;
-        }
+        @apply -mr-36 pr-36;
       }
     }
 
     blockquote,
     blockquote + p > cite {
-      @apply pr-24 pl-32 -ml-1/2 w-full;
+      @apply -ml-36 pl-36 w-full;
     }
 
     figure {
@@ -359,6 +367,19 @@
 
     &--no-sidebar {
       @apply ml-64;
+    }
+  }
+}
+
+@screen 2xl {
+  .body-content {
+    blockquote,
+    blockquote + p > cite {
+      @apply pl-64 -ml-64;
+
+      &:nth-of-type(even) {
+        @apply -mr-64 pr-64;
+      }
     }
   }
 }

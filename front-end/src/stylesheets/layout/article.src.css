@@ -1,7 +1,13 @@
 .article {
   @apply relative z-1;
-  @apply mt-12 mb-8 mx-auto;
+  @apply mt-0 mb-8 mx-auto;
   @apply flex-grow max-w-full;
+}
+
+@screen md {
+  .article {
+    @apply mt-12;
+  }
 }
 
 @screen xl {

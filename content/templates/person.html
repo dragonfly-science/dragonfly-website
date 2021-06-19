@@ -39,21 +39,21 @@
     class="article-container article-container--two-sidebars sticky-container"
   >
     <aside class="sticky-container__element sidebar sticky-sidebar">
-      <div class="">
-        <a
-          href="/people/"
-          class="
-            button
-            call-to-action__button call-to-action__button--cool-blue
-            button--icon button--icon-left
-          "
-        >
-          <span
-            class="button--icon-left__icon dragonfly-arrow transform rotate-180"
-          ></span>
-          <span class="button--icon-left__text">Back to team</span>
-        </a>
-      </div>
+      <a
+        href="/people/"
+        class="
+          button
+          call-to-action__button call-to-action__button--cool-blue
+          button--icon button--icon-left
+          hidden
+          xl:flex
+        "
+      >
+        <span
+          class="button--icon-left__icon dragonfly-arrow transform rotate-180"
+        ></span>
+        <span class="button--icon-left__text">Back to team</span>
+      </a>
     </aside>
     <article class="article sticky-container__body">
       <div class="body-content body-content--article">$body$</div>
@@ -70,10 +70,11 @@
           items-center
           sm:items-start
           sm:flex-row
+          lg:flex-col
           lg:w-48
         "
       >
-        <div class="py-2">
+        <div class="pt-2 pb-5">
           $if(email)$
           <a href="mailto:$email$" class="underline hover:no-underline"
             >$email$</a
@@ -89,7 +90,7 @@
             call-to-action__button call-to-action__button--cool-blue
             button--icon button--icon-left
             sm:ml-auto
-            lg:hidden
+            2xl:hidden
           "
         >
           <span

@@ -151,19 +151,11 @@
     }
 
     &__title {
-      @apply text-8xl;
+      @apply text-6xl;
     }
 
     &__content {
       @apply text-2/3xl pt-12 leading-tighter;
-    }
-
-    &--article {
-      .page-header__title {
-        + .link-icon {
-          @apply mt-20;
-        }
-      }
     }
 
     &--image {
@@ -191,16 +183,23 @@
     @apply min-h-44;
 
     &__title {
-      @apply max-w-full;
+      @apply max-w-full text-8xl;
     }
 
     &__content {
       @apply max-w-1/2;
     }
 
-    &--article {
+    /* &--article {
       .page-header__title {
         @apply text-7xl;
+      }
+    } */
+    &--article {
+      .page-header__title {
+        + .link-icon {
+          @apply mt-20;
+        }
       }
     }
 
@@ -273,9 +272,6 @@
       img {
         max-height: 960px;
       }
-    }
-
-    &--teaser {
     }
   }
 }

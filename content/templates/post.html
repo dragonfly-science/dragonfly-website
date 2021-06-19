@@ -30,15 +30,36 @@
   ></div>
 </header>
 
-<article id="top-section" class="article math-paper">
-  <div class="bg-light-peach px-6">
-    <div class="container mx-auto flex flex-col lg:flex-row">
+<section id="top-section" class="bg-light-peach">
+  <div
+    class="article-container article-container--right-sidebar sticky-container"
+  >
+    <article class="article sticky-container__body">
       <div class="body-content body-content--article">$body$</div>
-      <aside class="sidebar text-center lg:text-left">
+    </article>
+
+    <aside class="sticky-container__element sidebar sticky-sidebar">
+      <div
+        class="
+          w-full
+          ml-auto
+          flex flex-col
+          border-t-4 border-cool-blue
+          pt-5
+          items-center
+          sm:items-start
+          sm:flex-row
+          lg:flex-col
+          lg:w-48
+        "
+      >
         $if(logo)$
-        <img src="$logo$" class="mx-auto mb-8" />
+        <img
+          src="$logo$"
+          class="mx-auto mb-8 max-w-1/3 sm:ml-0 lg:mr-0 lg:max-w-full"
+        />
         $endif$ $if(project-link)$ $if(project-link-title)$<span
-          class="sidebar__title mb-2 lg:text-left"
+          class="hidden mb-4 leading-tight lg:text-left lg:inline-block"
           >$project-link-title$</span
         >$endif$
 
@@ -46,20 +67,19 @@
           class="
             relative
             z-20
-            button
+            button button--small
             call-to-action__button call-to-action__button--cool-blue
             button--icon button--icon-left
-            mt-8
-            w-full
-            flex
+            lg:w-full
+            sm:ml-auto
           "
           href="$project-link$"
           target="_blank"
         >
           <div>
-            <span class="button--icon-left__text pr-3"
-              >$if(project-link-text)$$project-link-text$$else$Visit
-              project$endif$</span
+            <span class="button--icon-left__text pr-2"
+              >$if(project-link-text)$$project-link-text$$else$View
+              work$endif$</span
             >
             <span
               class="
@@ -73,10 +93,10 @@
           </div>
         </a>
         $endif$
-      </aside>
-    </div>
+      </div>
+    </aside>
   </div>
-</article>
+</section>
 
 <div class="related-content math-paper">
   <header class="related-content__header container">

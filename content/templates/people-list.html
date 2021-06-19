@@ -82,15 +82,25 @@ $partial("templates/_title.html")$
   </div>
 </section>
 
-<section class="call-to-action call-to-action--single-column">
+$if(CTASection)$
+<section
+  class="
+    call-to-action call-to-action--single-column
+    math-paper math-paper--reverse
+    bg-cool-blue
+    text-white
+  "
+>
   <div class="call-to-action__container container">
-    <p class="supplementary-header call-to-action__text">
-      Seem like the team for you?
-    </p>
+    $if(CTATitle)$
+    <p class="supplementary-header call-to-action__text">$CTATitle$</p>
+    $endif$ $if(CTAButtonTitle)$
     <a
-      href="#contact"
-      class="button call-to-action__button call-to-action__button--cool-blue"
-      >Join us</a
+      href="$if(CTAButtonLink)$$CTAButtonLink$$else$#$endif$"
+      class="button call-to-action__button call-to-action__button--white"
+      >$CTAButtonTitle$</a
     >
+    $endif$
   </div>
 </section>
+$endif$
