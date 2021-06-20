@@ -61,11 +61,18 @@
   }
 
   &__buttons {
-    @apply flex-grow-0 flex-shrink-0 ml-4 flex justify-between flex-col;
+    @apply flex-grow-0 flex-shrink-0 ml-auto flex justify-between flex-col;
 
     button {
-      @apply outline-none !important;
-      @apply transition-max-height ease-out-quart;
+      @apply button button--outline border-cool-blue rounded-r pt-2 pb-2 pr-4;
+      @apply transition-all ease-out-quart;
+      @apply outline-none text-cool-blue text-base;
+      @apply leading-tight;
+
+      @apply hover:text-white hover:bg-slate-grey hover:border-slate-grey;
+    }
+
+    &__icon {
     }
   }
 
@@ -115,7 +122,7 @@
 
     &__tools {
       &__links {
-        @apply mr-32;
+        /* @apply mr-32; */
       }
     }
 
@@ -152,6 +159,12 @@
         }
       }
     }
+
+    &__buttons {
+      button {
+        @apply rounded;
+      }
+    }
   }
 }
 
@@ -166,7 +179,7 @@
     }
 
     &__buttons {
-      @apply mr-8;
+      /* @apply mr-8; */
     }
   }
 }

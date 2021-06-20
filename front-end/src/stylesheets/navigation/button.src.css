@@ -10,6 +10,10 @@
   @apply px-3 pt-3 pb-4;
 }
 
+.button--outline {
+  @apply bg-transparent border-2;
+}
+
 .button--rounded {
   @apply rounded;
 }
