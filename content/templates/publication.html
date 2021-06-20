@@ -1,55 +1,126 @@
-<header class="page-header page-header--news page-header--article page-header--small page-header--no-overlay bg-light-peach math-paper">
+<header
+  class="
+    page-header
+    page-header--article
+    page-header--small
+    bg-light-peach
+    math-paper
+  "
+>
   <div class="page-header__outer">
-    <div class="page-header__container flex flex-col">
-      $if(title)$<h1 class="page-header__title max-w-full w-full">$title$</h1>$endif$
+    <div class="page-header__container">
+      $if(title)$
+      <div class="page-header--article__text lg:max-w-full 2xl:max-w-3/4">
+        <h1 class="page-header__title max-w-full w-full">$title$</h1>
+      </div>
+      $endif$
     </div>
   </div>
 </header>
 
-<article id="top-section" class="article">
-  <div class="bg-light-peach px-6">
-    <div class="container mx-auto flex flex-col lg:flex-row">
-      <div class="body-content body-content--article body-content--full-width">
-          $if(citation)$
-            <div class="body-content__citation">
-                <h2 class="body-content__title">Citation</h2>
-                $citation$
-            </div>
-          $endif$
-          $if(citation)$
-          <h3 class="body-content__title">Summary</h3>
-          $else$
-          <h2 class="body-content__title">Summary</h2>
-          $endif$
-          <div class="body-content__body">
-              $body$
-          </div>
+<section id="top-section" class="bg-light-peach">
+  <div
+    class="article-container article-container--two-sidebars sticky-container"
+  >
+    <aside class="sticky-container__element sidebar sticky-sidebar">
+      <a
+        href="/people/"
+        class="
+          button
+          call-to-action__button call-to-action__button--cool-blue
+          button--icon button--icon-left
+          hidden
+          xl:flex
+        "
+      >
+        <span
+          class="button--icon-left__icon dragonfly-arrow transform rotate-180"
+        ></span>
+        <span class="button--icon-left__text">Back to team</span>
+      </a>
+    </aside>
+
+    <article class="article sticky-container__body">
+      <div
+        class="
+          body-content body-content--full-width body-content--no-introduction
+        "
+      >
+        $if(citation)$
+        <div class="body-content__citation">
+          <h2 class="body-content__title">Citation</h2>
+          $citation$
+        </div>
+        $endif$ $if(citation)$
+        <h3 class="body-content__title">Summary</h3>
+        $else$
+        <h2 class="body-content__title">Summary</h2>
+        $endif$
+        <div class="body-content__body">$body$</div>
       </div>
+    </article>
 
-      <aside class="sidebar publication-sidebar">
-          $if(tags)$
-            <h3 class="mt-4 mb-2 font-bold">Tags</h3>
-            <nav class="tag-list">
-            $for(tags)$
-              <a href="/publications/?tags=$tag$" class="tag-list__tag tag-list__tag--$tag$ no-underline">$tagDisplay$</a>
-            $endfor$
-            </nav>
+    <aside class="sticky-container__element sidebar sticky-sidebar">
+      <div
+        class="
+          w-full
+          ml-auto
+          flex flex-col
+          border-t-4 border-cool-blue
+          pt-5
+          items-center
+          sm:items-start
+          sm:flex-row
+          lg:flex-col
+          lg:w-48
+        "
+      >
+        $if(tags)$
+        <h3 class="mb-2 text-slate-grey">Tags</h3>
+        <nav class="tag-list">
+          $for(tags)$
+          $if(tagDisplay)$
+          <a
+            href="/publications/?tags=$tag$"
+            class="tag-list__tag tag-list__tag--$tag$ no-underline"
+            >$tagDisplay$</a
+          >
           $endif$
+          $endfor$
+        </nav>
+        $endif$ $if(pdf)$
+        <a
+          class="
+            relative
+            z-20
+            button
+            call-to-action__button call-to-action__button--cool-blue
+            button--icon button--icon-left
+            mt-8
+          "
+          href="//files.dragonfly.co.nz/publications/pdf/$pdf$"
+        >
+          <span class="button--icon-left__icon dragonfly-pdf"></span>
+          <span class="button--icon-left__text">download report</span>
+        </a>
+        $endif$
 
-          $if(pdf)$
-            <a class="relative z-20 button call-to-action__button call-to-action__button--cool-blue button--icon button--icon-left mt-8" href="//files.dragonfly.co.nz/publications/pdf/$pdf$">
-              <span class="button--icon-left__icon dragonfly-pdf"></span>
-            <span class="button--icon-left__text">download report</span>
-            </a>
-          $endif$
-
-          <a href="/publications" class="button call-to-action__button call-to-action__button--slate-grey button--icon button--icon-left mt-4">
-            <span class="button--icon-left__icon dragonfly-arrow transform rotate-180"></span>
-            <span class="button--icon-left__text">all publications</span>
-          </a>
-
-      </aside>
-    </div>
+        <a
+          href="/publications"
+          class="
+            button
+            call-to-action__button call-to-action__button--slate-grey
+            button--icon button--icon-left
+            mt-4
+            sm:ml-auto
+            2xl:hidden
+          "
+        >
+          <span
+            class="button--icon-left__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="button--icon-left__text">all publications</span>
+        </a>
+    </aside>
   </div>
-</article>
-
+</section>

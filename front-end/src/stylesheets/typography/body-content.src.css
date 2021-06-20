@@ -189,6 +189,22 @@
     }
   }
 
+  &--no-introduction {
+    .body-content__body {
+      > p {
+        @apply text-lg;
+
+        &:first-of-type {
+          @apply font-normal text-lg;
+        }
+
+        &:last-of-type {
+          @apply mb-0;
+        }
+      }
+    }
+  }
+
   &--full-width {
     > hr {
       &:last-of-type {
