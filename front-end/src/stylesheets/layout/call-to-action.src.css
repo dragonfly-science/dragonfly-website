@@ -13,7 +13,7 @@
       @apply button--cool-blue;
 
       &:hover {
-        @apply button--white;
+        @apply button--slate-grey;
       }
     }
 

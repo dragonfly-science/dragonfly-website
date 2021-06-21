@@ -1,5 +1,5 @@
 .publication-grid {
-  @apply pt-6 pb-24;
+  @apply pt-0 pb-24;
   @apply justify-between;
 }
 

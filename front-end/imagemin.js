@@ -7,11 +7,13 @@ const fs = require('file-system')
 fs.recurse(
   '../_site',
   [
-    'images/**/*.{jpg,png,svg}',
-    'news/**/*.{jpg,png,svg}',
-    'people/**/*.{jpg,png,svg}',
-    'work/**/*.{jpg,png,svg}',
-    'what-we-do/**/*.{jpg,png,svg}',
+    'images/**/*.{jpg,jpeg,png,svg}',
+    'landing-pages/**/*.{jpg,jpeg,png,svg}',
+    'news/**/*.{jpg,jpeg,png,svg}',
+    'people/**/*.{jpg,jpeg,png,svg}',
+    'resources/**/*.{jpg,jpeg,png,svg}',
+    'what-we-do/**/*.{jpg,jpeg,png,svg}',
+    'work/**/*.{jpg,jpeg,png,svg}',
   ],
   (filepath, filename) => {
     if (!filename) {
@@ -28,7 +30,15 @@ fs.recurse(
           plugins = [
             imageminJpegoptim({
               progressive: true,
-              max: 60,
+              max: 75,
+            }),
+          ]
+          break
+        case '.jpeg':
+          plugins = [
+            imageminJpegoptim({
+              progressive: true,
+              max: 75,
             }),
           ]
           break

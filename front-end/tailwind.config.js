@@ -12,6 +12,10 @@ module.exports = {
           /tile__citation$/,
           /filtering$/,
           /no-gutter-cell:hover$/,
+          /^transition/,
+          /^duration/,
+          /^opacity/,
+          /^bg-/,
         ],
       },
       rejected: true,
@@ -63,6 +67,7 @@ module.exports = {
       fontSize: {
         '2/3xl': '1.6rem',
         '3/2xl': '2rem',
+        '4/3xl': '2.4rem',
         '4/2xl': '2.5rem',
         '6/2xl': '4.5rem',
         '7xl': '5rem',
@@ -77,6 +82,7 @@ module.exports = {
       },
       lineHeight: {
         tighter: '1.2em',
+        11: '2.6rem',
       },
       margin: {
         '12rem': '12rem',
@@ -132,10 +138,23 @@ module.exports = {
         16: '16rem',
         28: '28rem',
         30: '30rem',
+        42: '42rem',
         44: '44rem',
       },
       minHeight: {
         3: '3rem',
+        16: '16rem',
+        20: '20rem',
+        24: '24rem',
+        30: '30rem',
+        36: '36rem',
+        44: '44rem',
+      },
+      minWidth: {
+        3: '3rem',
+        12: '12rem',
+        '12/5': '12.5rem',
+        14: '14rem',
         16: '16rem',
         20: '20rem',
         24: '24rem',
@@ -194,6 +213,7 @@ module.exports = {
         1: '1',
       },
       spacing: {
+        22: '5.5rem',
         72: '18rem',
         80: '20rem',
         88: '22rem',

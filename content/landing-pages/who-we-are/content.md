@@ -10,4 +10,8 @@ bannerFolder: /landing-pages/who-we-are/banner-images
 bannerNamePattern: team_${index}.jpeg
 bannerCount: 10
 bannerIndexPadding: true
+CTASection: true
+CTATitle: Seem like the team for you?
+CTAButtonTitle: Contact us
+CTAButtonLink: "#contact"
 ---

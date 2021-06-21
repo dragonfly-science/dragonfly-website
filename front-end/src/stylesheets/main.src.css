@@ -10,6 +10,9 @@
 @import 'grid/publication-grid.src.css';
 @import 'layout/advert.src.css';
 @import 'layout/animation-controls.src.css';
+@import 'layout/article.src.css';
+@import 'layout/article-container.src.css';
+@import 'layout/author-sidebar.src.css';
 @import 'layout/content.src.css';
 @import 'layout/call-to-action.src.css';
 @import 'layout/citation-year.src.css';
@@ -19,7 +22,6 @@
 @import 'layout/list-container.src.css';
 @import 'layout/main-footer.src.css';
 @import 'layout/modal.src.css';
-@import 'layout/news-article.src.css';
 @import 'layout/numbered-section.src.css';
 @import 'layout/page-header.src.css';
 @import 'layout/positioning.src.css';

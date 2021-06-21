@@ -4,6 +4,8 @@ email: iggy@dragonfly.co.nz
 firstname: Ignatius
 lastname: Menzies
 mobile: ""
+role: ""
+honour: PhD
 tag: ignatius
 banner: menzies-ignatius/ignatius-menzies.jpg
 nocite: |

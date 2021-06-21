@@ -1,11 +1,17 @@
 .outer-container {
-  @apply w-full mx-auto;
+  @apply w-full mx-auto px-8;
   max-width: theme('screens.2xl');
 
   &--tile-list {
+    @apply px-0;
+
     .no-gutter-cell {
       @apply w-full;
     }
+  }
+
+  &--zero-padding {
+    @apply px-0;
   }
 }
 
@@ -15,6 +21,24 @@
       .no-gutter-cell {
         @apply w-1/2;
       }
+    }
+  }
+}
+
+@screen md {
+  .outer-container {
+    @apply px-36;
+
+    &--no-padding {
+      @apply px-8;
+    }
+
+    &--tile-list {
+      @apply px-0;
+    }
+
+    &--zero-padding {
+      @apply px-0;
     }
   }
 }
@@ -43,6 +67,16 @@
           @apply flex;
         }
       }
+    }
+  }
+}
+
+@screen 2xl {
+  .outer-container {
+    @apply px-8;
+
+    &--tile-list {
+      @apply px-0;
     }
   }
 }

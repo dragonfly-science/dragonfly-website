@@ -1,13 +1,18 @@
 .publication-tile {
   @apply flex flex-col relative border-b border-r border-very-light-pink;
 
+  &__header {
+    .tag-list__tag {
+      @apply px-6;
+    }
+  }
+
   &__title,
   &__citation,
   &__footer {
     @apply max-w-lg;
   }
 
-  &__tag-list,
   &__title,
   &__citation,
   &__footer {
