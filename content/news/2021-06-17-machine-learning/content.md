@@ -1,7 +1,7 @@
 ---
 title: Machine learning and deep learning
 ---
-Kiarie Ndegwa recently joined Dragonfly from CSIRO in Canberra, Australia. He studied machine learning in his master’s degree and has used the technique in diverse settings to solve large, messy data problems.  Here, he explains the basics.
+Kiarie Ndegwa recently joined Dragonfly from CSIRO in Canberra, Australia and has used machine learning techniques in diverse settings to solve large, messy data problems.  Here, he explains the basics.
 
 <!--more-->
 
