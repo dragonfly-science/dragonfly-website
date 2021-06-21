@@ -11,7 +11,7 @@ The new fellows have all used their expertise in science – and genomics in par
 
 GFANZ president Rob Elshire says, “Many of us work in genomic science but sometimes things happen that enable people to shine and do amazing stuff. I can’t imagine a better time to recognise those people.”
 
-Una and Joep work at ESR. Jenny recently left ESR and now lives in Sydney. They were all involved in improving infrastructure and setting up protocols and systems to sequence and share the genomes of COVID-19 samples. Their work with scientists in New Zealand and internationally has been used for surveillance, contact tracing, modelling and research. Siouxsie is based at the University of Auckland and has presented timely and sensible information for the public throughout the pandemic.
+ESR's COVID-19 genome sequencing and international data sharing has been instrumental in New Zealand's COVID response. Una and Joep work at ESR, and Jenny also worked there before moving to Sydney in 2019. Their contributions to improving the IT infrastructure and setting up protocols made the COVID work possible. Siouxsie is based at the University of Auckland and has presented timely and sensible information for the public throughout the pandemic.
 
 “Going ‘above and beyond’ characterises the contributions all these people have made. I can’t overstate the wonderful things they have done and how grateful we are for them.”
 
