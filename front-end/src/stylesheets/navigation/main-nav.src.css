@@ -11,9 +11,21 @@
   &__link {
     @apply w-full text-center pb-2 relative;
 
+    &:first-child {
+      @apply mt-12;
+    }
+
+    &:last-child {
+      @apply mt-20 text-dark-grey;
+
+      a {
+        @apply text-dark-grey font-normal text-lg;
+      }
+    }
+
     a {
-      @apply text-slate-grey text-lg font-medium leading-none static;
-      @apply transition-all underline;
+      @apply text-cool-blue text-2xl font-semibold leading-none static;
+      @apply transition-all;
 
       &::after {
         @apply w-full bg-cool-blue transition-all ease-out-quart;
@@ -23,7 +35,7 @@
       }
 
       &:hover {
-        @apply no-underline text-cool-blue;
+        @apply no-underline text-slate-grey;
 
         &::after {
           @apply transition-all;
@@ -33,6 +45,12 @@
 
     ul {
       @apply block bg-white;
+
+      li {
+        &:nth-child(2) {
+          @apply pb-0;
+        }
+      }
     }
 
     li {
@@ -116,11 +134,20 @@
         }
       }
 
+      &:first-child,
+      &:last-child {
+        @apply mt-0;
+      }
+
       a {
-        @apply flex w-full h-full items-center;
+        @apply text-slate-grey flex w-full h-full font-medium items-center underline;
 
         &::after {
           @apply absolute top-0 w-full block bg-cool-blue;
+        }
+
+        &:hover {
+          @apply text-cool-blue;
         }
       }
 

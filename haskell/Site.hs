@@ -76,6 +76,7 @@ main = do
     Images.imageProcessor ( "**/teaser.jpg") $
                           [ ( "1200", ["-resize" , "1200x600^", "-gravity", "Center", "-crop", "1200x600+0+0", "-quality", "75"])
                           , ( "960", ["-resize" , "960x960^", "-gravity", "Center", "-crop", "960x960+0+0", "-quality", "75"])
+                          , ( "960600", ["-resize" , "960x600^", "-gravity", "Center", "-crop", "960x600+0+0", "-quality", "75"])
                           , ( "480", ["-resize" , "480x480^", "-gravity", "Center", "-crop", "480x480+0+0", "-quality", "75"])
                           , ( "600", ["-resize" , "600x600^", "-gravity", "Center", "-crop", "600x600+0+0", "-quality", "75"])
                           , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
@@ -85,6 +86,7 @@ main = do
     Images.imageProcessor ( "**/teaser.png") $
                           [ ( "1200", ["-resize" , "1200x600^", "-gravity", "Center", "-crop", "1200x600+0+0", "-quality", "75"])
                           , ( "960", ["-resize" , "960x960^", "-gravity", "Center", "-crop", "960x960+0+0", "-quality", "75"])
+                          , ( "960600", ["-resize" , "960x600^", "-gravity", "Center", "-crop", "960x600+0+0", "-quality", "75"])
                           , ( "480", ["-resize" , "480x480^", "-gravity", "Center", "-crop", "480x480+0+0", "-quality", "75"])
                           , ( "600", ["-resize" , "600x600^", "-gravity", "Center", "-crop", "600x600+0+0", "-quality", "75"])
                           , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])

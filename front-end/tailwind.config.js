@@ -56,6 +56,7 @@ module.exports = {
       'pale-teal': '#9DC4A9',
       'slate-grey': '#565659',
       'very-light-pink': '#E7E7E7',
+      'dark-grey': '#A7AAA9',
       white: '#FFFFFF',
       black: '#000000',
       transparent: 'transparent',

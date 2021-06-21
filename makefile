@@ -24,12 +24,17 @@ ifneq ($(CI), true)
 	echo DOCKER_CACHE=$(DOCKER_CACHE) >> .env
 	echo WEPACK_CACHE=$(WEPACK_CACHE) >> .env
 	echo WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) >> .env
+	echo UID=$(shell id -u) >> .env
+	echo GID=$(shell id -g) >> .env
 endif
 
-_site/assets:
+_site:
+	mkdir -p _site
+
+_site/assets: _site
 	mkdir -p _site/assets
 
-up: .env .install _site/assets
+up: .env .install
 	docker-compose up --remove-orphans
 
 develop: up
@@ -50,7 +55,7 @@ push:
 	docker-compose push website_haskell
 
 # NPM Commands
-.install:
+.install: _site/assets
 	$(RUN) bash -c "cd front-end && npm install"
 	touch $@
 
@@ -62,7 +67,7 @@ push:
 	$(RUN) bash -c 'cd front-end && npm run build:static'
 	touch $@
 
-static:
+static: _site/assets
 	$(RUN_WEB) bash -c 'cd front-end && npm run staging'
 
 # Build commands
@@ -84,7 +89,7 @@ build: .build-website .build-npm
 
 
 # Utility commands
-clean:
+clean: down
 	rm -rf website _site .env .install .cache \
 				content/fonts/*.css \
 				.build*
