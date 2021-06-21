@@ -3,7 +3,7 @@ title: Kath Large
 email: kath@dragonfly.co.nz
 firstname: Kath
 lastname: Large
-role: ""
+role: Fisheries scientist
 mobile: ""
 tag: kath
 banner: large-kath/kath-large-letterbox.jpg

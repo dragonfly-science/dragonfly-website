@@ -3,7 +3,7 @@ title: Caleb Moses
 email: caleb@dragonfly.co.nz
 firstname: Caleb
 lastname: Moses
-role: Mathmatician
+role: Mathematician
 mobile: ''
 tag: caleb
 title: Caleb Moses
@@ -22,7 +22,7 @@ mathematics from the University of Auckland. During his studies Caleb
 researched mathematical physics and fractal geometry, which contributed
 to his understanding of the latest statistical models. Caleb is
 passionate about language. He speaks Japanese fluently and is currently
-learning Te Reo Māori and Korean. 
+learning te reo Māori and Korean. 
 
 Developing applications of machine learning technologies is a particular
 focus of his work at Dragonfly.
@@ -32,4 +32,3 @@ focus of his work at Dragonfly.
 domains. You can use artificial intelligence to work with words, images or sound. It's a
 powerful tool but it carries a responsibility to use the knowledge we
 gain ethically.
-

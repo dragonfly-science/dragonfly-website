@@ -2,7 +2,7 @@
 email: edward@dragonfly.co.nz
 firstname: Edward
 lastname: Abraham
-role: Founder & CEO
+role: Founder & director
 phone: +64 21 989 454
 tag: edward
 honour: PhD
