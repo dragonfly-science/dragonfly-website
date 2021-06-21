@@ -39,62 +39,46 @@
       <div class="body-content body-content--article">$body$</div>
     </article>
 
-    <aside class="sticky-container__element sidebar sticky-sidebar">
-      <div
-        class="
-          w-full
-          ml-auto
-          flex flex-col
-          border-t-4 border-cool-blue
-          pt-5
-          items-center
-          sm:items-start
-          sm:flex-row
-          lg:flex-col
-          lg:w-48
-        "
-      >
-        $if(logo)$
-        <img
-          src="$logo$"
-          class="mx-auto mb-8 max-w-1/3 sm:ml-0 lg:mr-0 lg:max-w-full"
-        />
-        $endif$ $if(project-link)$ $if(project-link-title)$<span
-          class="hidden mb-4 leading-tight lg:text-left lg:inline-block"
-          >$project-link-title$</span
-        >$endif$
-
-        <a
-          class="
-            relative
-            z-20
-            button button--small
-            call-to-action__button call-to-action__button--cool-blue
-            button--icon button--icon-left
-            lg:w-full
-            sm:ml-auto
-          "
-          href="$project-link$"
-          target="_blank"
-        >
-          <div>
-            <span class="button--icon-left__text pr-2"
-              >$if(project-link-text)$$project-link-text$$else$View
-              work$endif$</span
-            >
-            <span
-              class="
-                button--icon__icon
-                dragonfly-arrow
-                transform
-                inline-block
-                -rotate-45
-              "
-            ></span>
-          </div>
-        </a>
-        $endif$
+    <aside class="sticky-container__element sidebar sidebar--right">
+      <div class="sidebar__inner">
+        <div class="sidebar__inner__text">
+          $if(logo)$
+          <img
+            src="$logo$"
+            class="mx-auto max-w-1/3 sm:ml-0 lg:mr-0 lg:max-w-full"
+          />
+          $endif$
+        </div>
+        $if(project-link)$
+        <div class="sidebar__inner__buttons">
+          $if(project-link-title)$<span
+            class="hidden mb-4 leading-tight lg:text-left lg:inline-block"
+            >$project-link-title$</span
+          >$endif$
+          <a
+            class="button button--icon button--icon-left"
+            href="$project-link$"
+            target="_blank"
+          >
+            <div>
+              <span class="button--icon-left__text pr-2"
+                >$if(project-link-text)$$project-link-text$$else$View
+                work$endif$</span
+              >
+              <span
+                class="
+                  button--icon__icon
+                  dragonfly-arrow
+                  transform
+                  inline-block
+                  -rotate-45
+                "
+              ></span>
+            </div>
+          </a>
+        </div>
       </div>
+      $endif$
     </aside>
   </div>
 </section>

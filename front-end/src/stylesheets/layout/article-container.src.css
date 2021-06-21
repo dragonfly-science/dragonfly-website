@@ -15,16 +15,11 @@
 
     .scrollmagic-pin-spacer {
       &:first-of-type {
-        .sticky-sidebar {
+        .sidebar {
           @apply hidden;
         }
       }
     }
-    /* .sticky-sidebar {
-      &:first-of-type {
-        @apply hidden;
-      }
-    } */
   }
 }
 
@@ -39,7 +34,7 @@
     &--two-sidebars {
       .scrollmagic-pin-spacer {
         &:first-of-type {
-          .sticky-sidebar {
+          .sidebar {
             @apply flex;
           }
         }

@@ -1,8 +1,6 @@
 <header
   class="
-    page-header
-    page-header--article
-    page-header--small
+    page-header page-header--article page-header--small
     bg-light-peach
     math-paper
   "
@@ -22,22 +20,15 @@
   <div
     class="article-container article-container--two-sidebars sticky-container"
   >
-    <aside class="sticky-container__element sidebar sticky-sidebar">
-      <a
-        href="/people/"
-        class="
-          button
-          call-to-action__button call-to-action__button--cool-blue
-          button--icon button--icon-left
-          hidden
-          xl:flex
-        "
-      >
-        <span
-          class="button--icon-left__icon dragonfly-arrow transform rotate-180"
-        ></span>
-        <span class="button--icon-left__text">Back to team</span>
-      </a>
+    <aside class="sticky-container__element sidebar sidebar--left">
+      <div class="sidebar__inner">
+        <a href="/publications/" class="button">
+          <span
+            class="button--icon-left__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="button--icon-left__text">Publications</span>
+        </a>
+      </div>
     </aside>
 
     <article class="article sticky-container__body">
@@ -60,67 +51,56 @@
       </div>
     </article>
 
-    <aside class="sticky-container__element sidebar sticky-sidebar">
-      <div
-        class="
-          w-full
-          ml-auto
-          flex flex-col
-          border-t-4 border-cool-blue
-          pt-5
-          items-center
-          sm:items-start
-          sm:flex-row
-          lg:flex-col
-          lg:w-48
-        "
-      >
-        $if(tags)$
-        <h3 class="mb-2 text-slate-grey">Tags</h3>
-        <nav class="tag-list">
-          $for(tags)$
-          $if(tagDisplay)$
-          <a
-            href="/publications/?tags=$tag$"
-            class="tag-list__tag tag-list__tag--$tag$ no-underline"
-            >$tagDisplay$</a
-          >
-          $endif$
-          $endfor$
-        </nav>
-        $endif$ $if(pdf)$
-        <a
-          class="
-            relative
-            z-20
-            button
-            call-to-action__button call-to-action__button--cool-blue
-            button--icon button--icon-left
-            mt-8
-          "
-          href="//files.dragonfly.co.nz/publications/pdf/$pdf$"
-        >
-          <span class="button--icon-left__icon dragonfly-pdf"></span>
-          <span class="button--icon-left__text">download report</span>
-        </a>
-        $endif$
+    <aside class="sticky-container__element sidebar sidebar--right">
+      <div class="sidebar__inner">
+        <div class="sidebar__inner__text">
+          $if(tags)$
+          <h3 class="mb-2 text-slate-grey">Tags</h3>
+          <nav class="tag-list">
+            $for(tags)$ $if(tagDisplay)$
+            <a
+              href="/publications/?tags=$tag$"
+              class="tag-list__tag tag-list__tag--$tag$ no-underline"
+              >$tagDisplay$</a
+            >
+            $endif$ $endfor$
+          </nav>
+          $endif$ $if(pdf)$
+        </div>
 
-        <a
-          href="/publications"
-          class="
-            button
-            call-to-action__button call-to-action__button--slate-grey
-            button--icon button--icon-left
-            mt-4
-            sm:ml-auto
-            2xl:hidden
-          "
-        >
-          <span
-            class="button--icon-left__icon dragonfly-arrow transform rotate-180"
-          ></span>
-          <span class="button--icon-left__text">all publications</span>
-        </a>
+        <div class="sidebar__inner__buttons">
+          <a
+            class="button button--icon button--icon-left"
+            href="//files.dragonfly.co.nz/publications/pdf/$pdf$"
+          >
+            <span
+              class="
+                button--icon-left__icon
+                dragonfly-arrow
+                transform
+                rotate-90
+              "
+            ></span>
+            <span class="button--icon-left__text">Download</span>
+          </a>
+          $endif$
+
+          <a
+            href="/publications"
+            class="button button--navigate button--icon button--icon-left"
+          >
+            <span
+              class="
+                button--icon-left__icon
+                dragonfly-arrow
+                transform
+                rotate-180
+              "
+            ></span>
+            <span class="button--icon-left__text">Publications</span>
+          </a>
+        </div>
+      </div>
     </aside>
   </div>
 </section>

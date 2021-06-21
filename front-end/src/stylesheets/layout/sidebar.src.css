@@ -1,28 +1,145 @@
 .sidebar {
-  /* @apply py-24; */
-  @apply text-base font-medium leading-normal w-full max-w-full text-cool-blue;
+  @apply text-base font-medium leading-normal;
+  @apply w-full max-w-full text-cool-blue mb-8;
+  @apply flex flex-col items-center;
+
+  &__inner {
+    @apply w-full flex flex-col;
+
+    &__text {
+      @apply mr-8 mb-5;
+    }
+
+    &__buttons {
+      @apply w-full;
+
+      .button {
+        @apply mb-2;
+      }
+    }
+  }
 
   .button {
-    @apply no-underline;
+    @apply button--small button--rounded button--cool-blue w-full text-center;
+
+    &:hover {
+      @apply button--slate-grey;
+    }
+
+    * {
+      @apply whitespace-nowrap;
+    }
   }
 
-  &__title {
-    @apply block font-bold leading-none text-base;
+  &--left {
+    @apply hidden;
+
+    .sidebar__inner {
+      @apply mr-auto;
+    }
+
+    .button {
+      @apply hidden;
+    }
   }
 
-  &--graph {
-    @apply relative;
+  &--right {
+    .sidebar__inner {
+      @apply ml-auto border-t-4 border-cool-blue pt-5;
 
-    &::after {
-      @apply block absolute math-paper top-0 ml-2/3 w-full h-full;
+      &__text {
+        @apply mx-auto text-center;
+      }
 
-      content: '';
+      &__buttons {
+        @apply mb-auto mx-auto max-w-14rem;
+      }
+    }
+  }
+}
+
+/* Hack to override sticky-sidbar initial non-js setup. */
+.wf-active {
+  .sidebar {
+    &--left {
+      @apply flex;
+    }
+  }
+}
+
+@screen sm {
+  .sidebar {
+    @apply items-start flex-row;
+
+    &__inner {
+      @apply flex-row;
+    }
+
+    &--right {
+      .sidebar__inner {
+        @apply ml-0;
+
+        &__text {
+          @apply ml-0 text-left;
+        }
+
+        &__buttons {
+          @apply ml-auto mr-0;
+        }
+      }
+      .button {
+        @apply mt-0 mr-0;
+      }
     }
   }
 }
 
 @screen lg {
   .sidebar {
-    /* @apply w-64; */
+    @apply w-64 mt-14 flex-shrink-0;
+
+    .button {
+      @apply w-full;
+    }
+
+    &__inner {
+      @apply w-48 flex-col;
+
+      &__text {
+        @apply mr-0 mb-5;
+      }
+    }
+
+    &--right {
+      .sidebar__inner {
+        @apply flex-col ml-auto;
+      }
+    }
+  }
+}
+
+@screen xl {
+  .sidebar {
+    &__inner {
+      &__buttons {
+        @apply max-w-full;
+      }
+    }
+
+    &--left {
+      .button {
+        @apply flex;
+      }
+    }
+  }
+}
+
+@screen 2xl {
+  .sidebar {
+    &--right {
+      .button--navigate {
+        @apply hidden;
+      }
+    }
   }
 }
