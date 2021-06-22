@@ -89,7 +89,7 @@ build: .build-website .build-npm
 
 
 # Utility commands
-clean: down
+clean:
 	rm -rf website _site .env .install .cache \
 				content/fonts/*.css \
 				.build*
