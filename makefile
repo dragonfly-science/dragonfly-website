@@ -94,6 +94,8 @@ clean:
 				content/fonts/*.css \
 				.build*
 
+full-clean: down clean
+
 clean-cache: website
 	$(RUN_WEB) bash -c './website clean'
 

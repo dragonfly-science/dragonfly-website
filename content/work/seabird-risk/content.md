@@ -3,7 +3,7 @@ title: Risks to seabirds were quantified
 short-title: Risks to seabirds were quantified
 summary: Guiding the development of a significant New Zealand policy document
 tags: stats, policy
-banner-image: /work/seabird-risk/bullers.jpg
+banner-image: /work/seabird-risk/banner.jpg
 quote: Dragonfly fostered an open and inclusive approach with all stakeholders.
 quote-attribution: Bob Zuur, Marine Advocate, WWF-New Zealand
 logo: /work/seabird-risk/MPI-logo.png
