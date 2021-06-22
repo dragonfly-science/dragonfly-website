@@ -52,6 +52,10 @@
     &--2cell {
       .no-gutter-cell {
         @apply w-1/2;
+
+        &__title {
+          @apply text-5xl;
+        }
       }
     }
   }
@@ -62,15 +66,7 @@
     &--2cell {
       .no-gutter-cell {
         @apply w-1/2;
-      }
-    }
-  }
-}
 
-@screen xl {
-  .collection-grid {
-    &--2cell {
-      .no-gutter-cell {
         &__inner {
           @apply max-w-5/3;
         }

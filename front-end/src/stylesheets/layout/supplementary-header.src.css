@@ -11,7 +11,7 @@
 @screen xl {
   .supplementary-header {
     &--large {
-      @apply text-6/2xl;
+      @apply text-5xl;
     }
   }
 }
