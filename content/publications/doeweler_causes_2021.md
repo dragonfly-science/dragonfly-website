@@ -7,4 +7,4 @@ At the abrupt ecotone between the upper limit of southern beech forests in New Z
 
 Further, it is unknown when the beech forest-subalpine ecotone will respond to such changes in the future. Critical to predicting change is understanding the abiotic and biotic factors that limit recruitment of individual trees above the treeline. To address this, this thesis research aimed to further elucidate the role of subalpine microhabitat variability in controlling forest regeneration patterns in abrupt treeline ecotones.
 
-[PhD thesis vailable at:](https://openrepository.aut.ac.nz/handle/10292/14038).
+[PhD thesis available here](https://openrepository.aut.ac.nz/handle/10292/14038).
