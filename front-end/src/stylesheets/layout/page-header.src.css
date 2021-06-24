@@ -148,6 +148,12 @@
       &__image {
         @apply max-w-3/4 flex;
       }
+
+      .page-header {
+        &__title {
+          @apply text-5xl;
+        }
+      }
     }
   }
 }
@@ -216,14 +222,14 @@
       }
 
       .page-header {
-        &__title {
-          @apply text-5xl;
-        }
-
         &__title,
         &__content {
           @apply max-w-full;
         }
+
+        /* &__title {
+          @apply text-6/2xl;
+        } */
       }
     }
 
@@ -253,6 +259,12 @@
       &__image {
         @apply mb-0;
       }
+
+      .page-header {
+        &__title {
+          @apply text-6/2xl;
+        }
+      }
     }
   }
 }
@@ -266,6 +278,9 @@
     &__title,
     &__content {
       @apply max-w-1/2;
+    }
+
+    &--article {
     }
   }
 }
