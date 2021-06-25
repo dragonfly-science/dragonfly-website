@@ -86,7 +86,11 @@
 
   &--article {
     &__image {
-      @apply max-w-3/4 flex-grow flex-shrink-0 h-full w-full my-auto mt-8;
+      @apply max-w-full flex-grow flex-shrink-0 h-full w-full my-auto mt-8;
+
+      img {
+        @apply max-w-3/4 mx-auto my-0;
+      }
     }
 
     .page-header__outer {
@@ -146,7 +150,7 @@
 
     &--article {
       &__image {
-        @apply max-w-3/4 flex;
+        @apply max-w-full flex;
       }
 
       .page-header {
@@ -215,6 +219,10 @@
 
       &__image {
         @apply max-w-1/2 mt-auto;
+
+        img {
+          @apply max-w-full;
+        }
       }
 
       .page-header__outer {

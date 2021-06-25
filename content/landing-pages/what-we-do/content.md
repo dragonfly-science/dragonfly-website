@@ -13,12 +13,9 @@ teaserSVG: /what-we-do/statistical-analysis/WWD_Statistical1.svg
 toolsTitle: We love good tools
 toolsIntro: >
   These are our favourites – open source, refined, trusted. With them at our
-  fingertips, we can do magic with data.
-toolsDetails: >
-  Within out team we have expertise will all these data science and
-  analysis tools.
-  <br><br>
-  Would your project benefit from our skills?
+  fingertips, we can do magic with data. Within our team we have expertise with
+  all these data science and analysis tools.
+toolsDetails: Would your project benefit from our skills?
 teaserCTALink: /what-we-do/
 toolsCTALink: "#contact"
 toolsCTAButton: contact us
