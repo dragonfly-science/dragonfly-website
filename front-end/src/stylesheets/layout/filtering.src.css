@@ -5,7 +5,15 @@
     @apply py-6;
 
     &__header {
-      @apply flex flex-row;
+      @apply flex flex-col;
+
+      .filtering__buttons {
+        @apply w-full ml-0 mt-4;
+
+        button {
+           @apply w-auto mx-auto;
+        }
+      }
     }
 
     &__links {
@@ -64,7 +72,8 @@
     @apply flex-grow-0 flex-shrink-0 ml-auto flex justify-between flex-col;
 
     button {
-      @apply button button--outline border-cool-blue rounded-r pt-2 pb-2 pr-4;
+      @apply button button--outline border-cool-blue rounded pt-2 pb-2 pr-4;
+      @apply flex items-center justify-between;
       @apply transition-all ease-out-quart;
       @apply outline-none text-cool-blue text-base;
       @apply leading-tight;
@@ -91,6 +100,10 @@
     &__tools {
       &__header {
         @apply flex-row;
+
+        .filtering__buttons {
+          @apply mt-0 w-auto ml-4;
+        }
       }
 
       &__links {
@@ -121,9 +134,10 @@
     }
 
     &__tools {
-      &__links {
-        /* @apply mr-32; */
+      &__header {
+        @apply flex-row justify-between;
       }
+
     }
 
     &__title {
