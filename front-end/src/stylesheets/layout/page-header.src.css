@@ -86,7 +86,7 @@
 
   &--article {
     &__image {
-      @apply max-w-full flex-grow flex-shrink-0 h-full w-full my-auto mt-8;
+      @apply max-w-full flex-grow h-full w-full my-auto mt-8;
 
       img {
         @apply max-w-3/4 mx-auto my-0;
@@ -221,11 +221,11 @@
         @apply max-w-1/2 mt-auto;
 
         img {
-          @apply max-w-full;
+          @apply max-w-full max-h-full;
 
-          /* &.page-header--article__image--small {
-            @apply max-w-30rem;
-          } */
+          &.page-header--article__image--small {
+            @apply mt-auto;
+          }
         }
       }
 
