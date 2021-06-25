@@ -6,6 +6,7 @@ lastname: Macdonald
 mobile: ""
 tag: henry
 banner: macdonald-henry/henry-macdonald-letterbox.jpg
+sortorder: 0
 nocite: |
 ---
 

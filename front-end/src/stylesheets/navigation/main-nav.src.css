@@ -163,7 +163,7 @@
         transform: perspective(75em) rotateX(-90deg);
 
         a {
-          @apply leading-tight text-base;
+          @apply text-base leading-snug;
 
           &:hover {
             @apply text-cool-blue;
