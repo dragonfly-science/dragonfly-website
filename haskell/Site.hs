@@ -188,3 +188,5 @@ main = do
     match "favicon.ico" $ do
         route idRoute
         compile copyFileCompiler
+
+    -- TO DO - add site map.xml - see: https://www.rohanjain.in/hakyll-sitemap/

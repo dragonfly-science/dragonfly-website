@@ -7,9 +7,9 @@ services:
       - 3000:3000
     volumes:
       - $PWD/content:/work/content:cached
-      - $PWD/front-end:/work/front-end:delegated
+      - $PWD/front-end:/work/front-end:cached
       - $PWD/_site:/work/_site
-      - nodemodules:/work/front-end/node_modules
+      - nodemodules:/work/front-end/node_modules:cached
     working_dir: /work/
     profiles:
       - build
@@ -24,12 +24,12 @@ services:
     image: $IMAGE
     restart: unless-stopped
     volumes:
-      - $PWD/content:/work/content:delegated
-      - $PWD/front-end:/work/front-end:delegated
-      - $PWD/_site/assets:/work/_site/assets:delegated
+      - $PWD/content:/work/content:cached
+      - $PWD/front-end:/work/front-end:cached
+      - $PWD/_site/assets:/work/_site/assets:cached
       - $DOCKER_CACHE/npm:/root/.npm:cached
       - $WEPACK_CACHE:$WEBPACK_CONTAINER_CACHE:cached
-      - nodemodules:/work/front-end/node_modules
+      - nodemodules:/work/front-end/node_modules:cached
     working_dir: /work
     depends_on:
       - website_haskell
@@ -51,7 +51,7 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - $PWD:/work:delegated
+      - $PWD:/work:cached
     working_dir: /work/
     command: >
       bash -c "

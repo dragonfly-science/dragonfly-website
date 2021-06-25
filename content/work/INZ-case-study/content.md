@@ -1,7 +1,7 @@
 ---
 title: Predicting which visa applications to fast-track
 short-title: Predicting which visa applications to fast-track
-banner-image: /work/INZ-case-study/prediction-service.png
+banner-image: /work/INZ-case-study/banner.jpg
 quote: We worked out the cost saving from this project ... it was significant.
 quote-attribution: Steve Cantlon, Principal Business Adviser, Immigration New Zealand
 logo: /work/INZ-case-study/inz-logo.png

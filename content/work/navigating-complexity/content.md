@@ -3,7 +3,7 @@ short-title: Sensible, well-built data management systems
 title: Sensible, well-built data management systems
 summary: Creating enduring tools for sustainably managing our fisheries
 tags: systems
-banner-image: /work/navigating-complexity/fish-factory.jpg
+banner-image: /work/navigating-complexity/banner.jpg
 quote: >
   We sat down together and discussed a concept. Then Dragonfly came up with some
   absolutely key ideas that have really made our system what it is.
@@ -12,14 +12,15 @@ logo: /work/navigating-complexity/trident-logo.png
 CTADescriptor: some text
 CTAButton: read more
 ---
+
 Robust analysis of well-managed data is critically important to fishers and
 fishery managers in New Zealand. We support a commitment to collecting better
 data – and getting more value from that data – to benefit our fisheries.
 
 <!--more-->
 
-
 ### Data collection and management
+
 Trident coordinates the collection of catch sampling data for a range of inshore fisheries. They work with licenced fish receivers, who sample the age and length of the fish in selected landings. These data are used for stock assessments and for fisheries management.
 
 We built a database with a web interface to receive and store the fisheries catch sampling data. The website is a key communication tool for Trident, generating email alerts, tracking sampling programme targets, and providing documentation and training resources for the fish receivers. The web interface and data entry process were designed to be as simple, error-free and reliable as possible.

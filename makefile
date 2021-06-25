@@ -1,56 +1,73 @@
-TAG := lts-ubuntu-12.26-v6
+TAG := lts-ubuntu-12.26-v7
 IMAGE := dragonflyscience/dragonfly-website:$(TAG)
 
 HS := $(shell find haskell/WebSite -name *.hs)
 
 RUN ?=
 RUN_WEB ?=
+UP ?=
 CI ?=
+
+# caching for npm & webpack
 DOCKER_CACHE ?= $$HOME/docker-cache
 WEPACK_CACHE ?= $(DOCKER_CACHE)/webpack-cache
 WEBPACK_CONTAINER_CACHE ?= /root/webpack
 
-# Process args, to build up the docker command
+# Process args, to build up the docker commands
 ifneq ($(CI), true)
 RUN = docker-compose --profile build run --rm npm
 RUN_WEB = docker-compose --profile build run --publish 3000:3000 --rm website
+UP = docker-compose up --remove-orphans --no-build
 endif
 
 all: .env .install build run
 
+# Build out .env file for docker-compose
 .env:
 ifneq ($(CI), true)
 	echo IMAGE=$(IMAGE) >> .env
 	echo DOCKER_CACHE=$(DOCKER_CACHE) >> .env
 	echo WEPACK_CACHE=$(WEPACK_CACHE) >> .env
 	echo WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) >> .env
-	# echo UID=$(shell id -u) >> .env
-	# echo GID=$(shell id -g) >> .env
 endif
 
 _site/assets:
 	$(RUN) bash -c "mkdir -p _site/assets"
 	touch $@/dragonfly-app.css
 
-up: .env .build-npm
-	docker-compose up --remove-orphans
+# Runs in full develop mode - npm watching & rebuilding
+# as css & ts change.
+develop: .env .build-npm
+	$(UP)
 
-develop: up
 
+# Runs statically built version of the site - only watches
+# for changes to content.
 run: .env .build-static _site/assets
-	docker-compose up --remove-orphans website_haskell
+	$(UP) website_haskell
 
 down:
+ifneq ($(CI), true)
 	docker-compose down
+endif
 
-docker:
-	docker-compose build
+PHONY: docker
+docker: .docker
+.docker:
+ifneq ($(CI), true)
+	docker-compose build website_haskell
+	touch $@
+endif
 
 pull:
+ifneq ($(CI), true)
 	docker-compose pull website_haskell
+endif
 
-push:
+push: .docker
+ifneq ($(CI), true)
 	docker-compose push website_haskell
+endif
 
 # NPM Commands
 .install: _site/assets
@@ -85,6 +102,9 @@ build: .build-website .build-npm
 	$(RUN) bash -c 'cd front-end && npm run imagemin'
 	touch $@
 
+compress: .images
+	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'
+
 
 # Utility commands
 clean:
@@ -96,9 +116,6 @@ full-clean: down clean
 
 clean-cache: website
 	$(RUN_WEB) bash -c './website clean'
-
-compress: .images
-	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'
 
 interact:
 	$(RUN) bash

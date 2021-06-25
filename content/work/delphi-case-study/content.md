@@ -1,7 +1,7 @@
 ---
 title: Expert knowledge combined fairly
 short-title: Expert knowledge combined fairly
-banner-image: /work/delphi-case-study/turtle-map.png
+banner-image: /work/delphi-case-study/banner.jpg
 summary: >
   Information about where turtles and fishing overlap underpinned decision-making
 tags: stats, policy

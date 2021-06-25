@@ -1,7 +1,7 @@
 ---
 title: Automating data input and verification
 short-title: Automating data input and verification
-banner-image: /work/nms-case-study/roseneath.png
+banner-image: /work/nms-case-study/banner.jpg
 quote: I really valued Dragonfly’s exquisite communication skills – they are also excellent listeners. I found them to be passionate, talented and good company.
 quote-attribution: Dr Ignatius Menzies, Manatū Mō Te Taiao
 logo: /work/nms-case-study/mfe-logo.png
