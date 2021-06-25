@@ -17,12 +17,16 @@
 
   <div class="math-paper--screen absolute top-0 left-0 w-full h-full z-1"></div>
 
+  $if(video)$
   <video
     class="absolute top-0 left-0 z-0 object-cover w-full h-full"
+    $if(videoPoster)$poster="$videoPoster$"
+    $endif$
     autoplay
     loop
     muted
   >
-    <source src="/images/HomeMix.mp4" type="video/mp4" />
+    <source src="$video$" type="video/mp4" />
   </video>
+  $endif$
 </header>

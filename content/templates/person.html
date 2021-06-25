@@ -12,8 +12,9 @@
       <h1 class="page-header__title">
         $if(bannerTitleLine1)$ $bannerTitleLine1$<br />
         $if(bannerTitleLine2)$$bannerTitleLine2$$endif$
-        $if(bannerTitleLine3)$<br />$bannerTitleLine3$$endif$ $else$
-        $if(firstname)$$firstname$$endif$<br />
+        $if(bannerTitleLine3)$<br /><span class="font-normal"
+          >$bannerTitleLine3$</span
+        >$endif$ $else$ $if(firstname)$$firstname$$endif$<br />
         $lastname$ $endif$ $if(honour)$<br />
         <span class="font-light">$honour$</span>$endif$
       </h1>

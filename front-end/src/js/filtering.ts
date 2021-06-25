@@ -257,10 +257,12 @@ const Publications = (): void => {
   })
 
   // Set up filtering.
-  $('.filtering__hamburger, .filtering__button').on(
+  $('.filtering__button').on(
     'click',
     function (this: HTMLElement, e) {
       e.preventDefault()
+
+      $(this).toggleClass('opened')
 
       const filters = $(this).parents('.filtering')
 

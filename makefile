@@ -24,17 +24,15 @@ ifneq ($(CI), true)
 	echo DOCKER_CACHE=$(DOCKER_CACHE) >> .env
 	echo WEPACK_CACHE=$(WEPACK_CACHE) >> .env
 	echo WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) >> .env
-	echo UID=$(shell id -u) >> .env
-	echo GID=$(shell id -g) >> .env
+	# echo UID=$(shell id -u) >> .env
+	# echo GID=$(shell id -g) >> .env
 endif
 
-_site:
-	mkdir -p _site
+_site/assets:
+	$(RUN) bash -c "mkdir -p _site/assets"
+	touch $@/dragonfly-app.css
 
-_site/assets: _site
-	mkdir -p _site/assets
-
-up: .env .install
+up: .env .build-npm
 	docker-compose up --remove-orphans
 
 develop: up
@@ -59,7 +57,7 @@ push:
 	$(RUN) bash -c "cd front-end && npm install"
 	touch $@
 
-.build-npm: .install .build-website
+.build-npm: .install
 	$(RUN) bash -c 'cd front-end && npm run build'
 	touch $@
 

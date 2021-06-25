@@ -1,19 +1,14 @@
 version: "3"
 services:
-  npm_base:
-    image: dragonfly-website
-    build:
-      context: ./front-end
   npm:
-    extends:
-      service: npm_base
+    image: $IMAGE
     ports:
       - 8000:8000
       - 3000:3000
     volumes:
       - $PWD/content:/work/content:cached
       - $PWD/front-end:/work/front-end:delegated
-      - $PWD/_site:/work/_site:delegated
+      - $PWD/_site:/work/_site
       - nodemodules:/work/front-end/node_modules
     working_dir: /work/
     profiles:
@@ -26,8 +21,7 @@ services:
     profiles:
       - build
   watch:
-    extends:
-      service: npm_base
+    image: $IMAGE
     restart: unless-stopped
     volumes:
       - $PWD/content:/work/content:delegated
@@ -51,6 +45,8 @@ services:
       "
   website_haskell:
     image: $IMAGE
+    build:
+      context: .
     restart: unless-stopped
     ports:
       - 8000:8000

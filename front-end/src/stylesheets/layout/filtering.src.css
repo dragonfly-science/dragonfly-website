@@ -8,10 +8,10 @@
       @apply flex flex-col;
 
       .filtering__buttons {
-        @apply w-full ml-0 mt-4;
+        @apply w-full max-w-11rem ml-0 mt-4;
 
         button {
-           @apply w-auto mx-auto;
+           @apply w-full;
         }
       }
     }
@@ -85,6 +85,22 @@
     }
   }
 
+  &__button {
+    &__label {
+      &:before {
+        content: attr(data-show);
+      }
+    }
+
+    &.opened {
+      .filtering__button__label {
+        &:before {
+          content: attr(data-hide);
+        }
+      }
+    }
+  }
+
   /* Variations. */
   &__tools--inline {
     @apply flex flex-col max-w-full;
@@ -102,7 +118,7 @@
         @apply flex-row;
 
         .filtering__buttons {
-          @apply mt-0 w-auto ml-4;
+          @apply mt-0 ml-4;
         }
       }
 

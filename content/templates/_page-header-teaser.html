@@ -1,6 +1,8 @@
-<header class="page-header page-header--teaser bg-slate-grey">
+<header
+  class="page-header page-header--teaser page-header--article bg-slate-grey"
+>
   <div class="page-header__outer flex flex-col md:flex-row">
-    <div class="text-white flex-grow mr-16 mt-auto">
+    <div class="page-header--article__text text-white flex-grow mt-auto">
       $if(title)$
       <h1 class="page-header__title">$title$</h1>
       $endif$ $if(subtitle)$
@@ -14,23 +16,25 @@
         <span class="icon dragonfly-arrow"></span>
       </a>
     </div>
-    <div
-      class="
-        hidden
-        flex-grow flex-shrink-0
-        h-full
-        w-full
-        my-auto
-        md:max-w-5/2
-        lg:max-w-1/2
-        lg:flex
-        xl:mb-0
-      "
-    >
+    <div class="page-header--article__image">
       $if(bannerSVG)$
-      <img src="$bannerSVG$" class="mx-auto max-w-30rem" />
-      $else$ $if(teaserImageMedium)$
-      <img src="$teaserImageMedium$" class="mx-auto max-w-30rem" />
+      <figure class="w-full">
+        $else$ $if(teaserImageMedium)$
+        <figure class="w-full">
+          $endif$ $endif$ $if(bannerSVG)$
+          <img
+            data-src="$bannerSVG$"
+            class="lozad page-header--article__image--small"
+          />
+          $else$ $if(teaserImageMedium)$
+          <img
+            data-src="$teaserImageMedium$"
+            class="lozad page-header--article__image--small"
+          />
+          $endif$ $endif$ $if(bannerSVG)$
+        </figure>
+        $else$ $if(teaserImageMedium)$
+      </figure>
       $endif$ $endif$
     </div>
   </div>

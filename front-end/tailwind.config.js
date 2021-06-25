@@ -110,6 +110,7 @@ module.exports = {
         '-104': '-28rem',
       },
       maxWidth: {
+        '11rem': '11rem',
         '12rem': '12rem',
         '14rem': '14rem',
         '16rem': '16rem',

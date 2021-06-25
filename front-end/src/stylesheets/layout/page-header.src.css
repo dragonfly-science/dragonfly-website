@@ -222,6 +222,10 @@
 
         img {
           @apply max-w-full;
+
+          /* &.page-header--article__image--small {
+            @apply max-w-30rem;
+          } */
         }
       }
 
