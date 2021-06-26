@@ -1,10 +1,12 @@
 .sidebar-caption {
+  @apply flex flex-col;
+
   p {
-    @apply italic font-medium text-base mb-8 leading-tight text-cool-blue pr-8 max-w-full;
+    @apply italic font-medium text-base mb-8 leading-none text-cool-blue pr-8 max-w-full text-left;
   }
 
   cite {
-    @apply leading-none block not-italic ml-0 mr-auto;
+    @apply leading-none block not-italic ml-0 mr-auto max-w-max text-left;
   }
 }
 
@@ -15,7 +17,15 @@
     }
 
     cite {
-      @apply ml-auto mr-0;
+      @apply ml-0 mr-auto;
+    }
+  }
+}
+
+@screen sm {
+  .sidebar-caption {
+    p {
+      @apply max-w-full;
     }
   }
 }
@@ -23,7 +33,7 @@
 @screen lg {
   .sidebar-caption {
     p {
-      @apply pr-0 max-w-full;
+      @apply pr-0 leading-tight;
     }
 
     cite {

@@ -43,11 +43,11 @@
   >
     <aside class="sticky-container__element sidebar sidebar--left">
       <div class="sidebar__inner">
-        <a href="/people/" class="button button--icon button--icon-left">
+        <a href="/people/" class="navigation-button">
           <span
-            class="button--icon-left__icon dragonfly-arrow transform rotate-180"
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
           ></span>
-          <span class="button--icon-left__text">Back to team</span>
+          <span class="navigation-button__label">Back to people</span>
         </a>
       </div>
     </aside>
@@ -57,7 +57,13 @@
 
     <aside class="sticky-container__element sidebar sidebar--right">
       <div class="sidebar__inner">
-        <div class="sidebar__inner__text">
+        <a href="/people/" class="navigation-button">
+          <span
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="navigation-button__label">Back to people</span>
+        </a>
+        <div class="sidebar__inner__text sidebar__inner__border">
           $if(email)$
           <a href="mailto:$email$" class="underline hover:no-underline"
             >$email$</a
@@ -66,22 +72,9 @@
           <a href="tel:$phone$">$phone$</a>
           $endif$
         </div>
-        <div class="sidebar__inner__buttons">
-          <a
-            href="/people/"
-            class="button button--icon button--icon-left button--navigate"
-          >
-            <span
-              class="
-                button--icon-left__icon
-                dragonfly-arrow
-                transform
-                rotate-180
-              "
-            ></span>
-            <span class="button--icon-left__text">Who we are</span>
-          </a>
-        </div>
+        <!-- <div class="sidebar__inner__buttons">
+
+        </div> -->
       </div>
     </aside>
   </div>

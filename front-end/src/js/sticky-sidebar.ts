@@ -39,12 +39,7 @@ const enableScene =
     if (controller && scenes.length !== 0) {
       for (let scene of scenes) {
         scene.scene.enabled($(scene.sidebar).css('display') !== 'none')
-        // console.log(
-        //   $(scene.sidebar),
-        //   $(scene.sidebar).css('display') !== 'none'
-        // )
         scene.scene.refresh()
-        // scene.scene.update(true)
       }
 
       controller.update(true)
