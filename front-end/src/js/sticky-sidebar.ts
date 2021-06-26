@@ -7,21 +7,23 @@ const MAX_DURATION = 300
 const getDuration = (body: any, sidebar: any) => () => {
   const marginTop = $(sidebar).css('margin-top')
 
-  return Math.abs(
+  const duration = Math.abs(
     body.height() -
       $(sidebar).height() -
       parseInt(marginTop === 'auto' ? 0 : marginTop, 10)
   )
+
+  return duration
 }
 
 const enableScene =
   (controller: any, scenes: any[], pinnedElement: any, triggerElement: any) =>
   () => {
     if (window.innerWidth < MAX_WIDTH) {
-      for (let x of scenes) {
-        if (x !== null) {
-          x.destroy(true)
-          x = null
+      for (let scene of scenes) {
+        if (scene.scene !== null) {
+          scene.scene.destroy(true)
+          scene.scene = null
         }
       }
       scenes = []
@@ -36,9 +38,16 @@ const enableScene =
 
     if (controller && scenes.length !== 0) {
       for (let scene of scenes) {
-        scene.refresh()
-        scene.update(true)
+        scene.scene.enabled($(scene.sidebar).css('display') !== 'none')
+        // console.log(
+        //   $(scene.sidebar),
+        //   $(scene.sidebar).css('display') !== 'none'
+        // )
+        scene.scene.refresh()
+        // scene.scene.update(true)
       }
+
+      controller.update(true)
 
       window.scroll()
 
@@ -53,8 +62,9 @@ const enableScene =
     controller = new ScrollMagic.Controller()
 
     sidebars.forEach((sidebar: any) => {
-      scenes.push(
-        new ScrollMagic.Scene({
+      scenes.push({
+        sidebar,
+        scene: new ScrollMagic.Scene({
           triggerElement,
           triggerHook: 'onLeave',
           offset:
@@ -62,8 +72,8 @@ const enableScene =
           duration: getDuration(body, sidebar),
         })
           .setPin(sidebar)
-          .addTo(controller)
-      )
+          .addTo(controller),
+      })
     })
   }
 
@@ -88,7 +98,8 @@ const intializeStickySidebar = (
 }
 
 const initTimeout = (triggerElement: string, pinnedElement: string): void => {
-  setTimeout(intializeStickySidebar, 500, triggerElement, pinnedElement)
+  // setTimeout(intializeStickySidebar, 500, triggerElement, pinnedElement)
+  intializeStickySidebar(triggerElement, pinnedElement)
 }
 
 const StickySidebar = (triggerElement: string, pinnedElement: string): void => {

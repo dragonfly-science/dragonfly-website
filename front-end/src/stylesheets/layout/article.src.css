@@ -10,13 +10,13 @@
   }
 }
 
-@screen xl {
+@screen lg {
   .article {
     max-width: calc(100% - theme('spacing.64'));
   }
 }
 
-@screen 2xl {
+@screen xl {
   .article {
     max-width: calc(100% - theme('spacing.64') - theme('spacing.64'));
   }

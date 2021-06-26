@@ -32,7 +32,8 @@
   }
 
   &--left {
-    @apply hidden;
+    /* @apply hidden; */
+    @apply w-0 max-w-0 overflow-hidden;
 
     .sidebar__inner {
       @apply mr-auto;
@@ -59,13 +60,13 @@
 }
 
 /* Hack to override sticky-sidbar initial non-js setup. */
-.wf-active {
+/* .wf-active {
   .sidebar {
     &--left {
       @apply flex;
     }
   }
-}
+} */
 
 @screen sm {
   .sidebar {
@@ -127,6 +128,8 @@
     }
 
     &--left {
+      @apply max-w-full;
+
       .button {
         @apply flex;
       }
