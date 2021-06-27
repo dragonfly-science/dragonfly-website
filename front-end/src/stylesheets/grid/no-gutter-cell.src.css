@@ -10,14 +10,18 @@
     @apply uppercase text-sm block mb-1;
   }
 
+  &__title,
+  &__text {
+    @apply transition-all ease-in duration-100;
+  }
+
   &__title {
     @apply font-bold;
-    @apply transition-all ease-out-quart;
     @apply text-3xl leading-none;
   }
 
   &__text {
-    @apply opacity-0 transition-all ease-out-quart;
+    @apply opacity-0;
     @apply mb-8 overflow-hidden;
 
     display: -webkit-box;
@@ -52,7 +56,7 @@
   &__image {
     @apply absolute z-0 !important;
     @apply bg-cover bg-top;
-    @apply transition-all ease-out-quart;
+    @apply transition-all duration-200 ease-in-quart;
 
     width: 100%;
     height: 100%;
@@ -91,6 +95,14 @@
         transform: translate3d(-50%, -50%, 0) scale(1.15);
       }
     }
+
+    .no-gutter-cell {
+      &__title,
+      &__text {
+        @apply ease-in-quart duration-300;
+      }
+    }
+
 
     .no-gutter-cell__inner {
       .no-gutter-cell__text {
