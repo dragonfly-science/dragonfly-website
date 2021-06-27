@@ -4,11 +4,9 @@ title: New tools to figure out who's eating who
 summary: Improving our understanding of how fishing affects marine ecosystems
 tags: capability
 banner-image: /work/predator-prey/sardines.jpg
-quote: >
-  Dragonfly is such a great organisation to work with. They work very
-  efficiently and we always get a fantastic product out of it.
-quote-attribution: Dr Olaf Jensen, Institute of Marine and Coastal Sciences
 logo: /work/predator-prey/rutgers.png
+testimonial:
+  - testimonials/predator-prey-testimonial/content.md
 project-link: https://peerj.com/articles/920.pdf
 project-link-text: Read the paper
 CTADescriptor: some text
@@ -42,18 +40,3 @@ These include interactions between marlin and the sardine fishery off the coast
 of Baja California and the ongoing effects of the 2010 Deepwater Horizon oil
 spill on affected ecosystems, where the lab has set out to study an entire food
 web in the Gulf of Mexico using this tool.
-
-> New laboratory techniques create new data streams, so interpreting that data is the next challenge. That’s a place where Dragonfly really shines. They
-> understand how to translate ecology into mathematical models, then package that model so others can use it.
->
-> The ability to package a model so it’s easily transferable to other researchers is very new for my lab, and very exciting. Making models into a public resource really extends the impact and the reach of our research.
->
-> Based on past experience, when I’m looking at new projects with a link to developing new quantitative tools like this, I always think of Dragonfly because they are such a great organisation to work with. We have a really valuable collaboration, which I plan to continue.
-
-<cite>[Dr Olaf Jensen](http://marine.rutgers.edu/~ojensen/)<br />
-Assistant Professor<br />
-Institute of Marine and Coastal Sciences<br />
-Rutgers University<br />
-New Jersey<br />
-United States of America
-</cite>

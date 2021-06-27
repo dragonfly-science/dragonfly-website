@@ -3,11 +3,9 @@ short-title: Sensible, well-built data management systems
 title: Sensible, well-built data management systems
 summary: Creating enduring tools for sustainably managing our fisheries
 tags: systems
+testimonial:
+  - testimonials/navigating-complexity-testimonial/content.md
 banner-image: /work/navigating-complexity/banner.jpg
-quote: >
-  We sat down together and discussed a concept. Then Dragonfly came up with some
-  absolutely key ideas that have really made our system what it is.
-quote-attribution: David Middleton, Chief Executive, Trident Systems
 logo: /work/navigating-complexity/trident-logo.png
 CTADescriptor: some text
 CTAButton: read more
@@ -34,14 +32,3 @@ To support this collaborative approach, we developed a code-based tool for Tride
 ### Ongoing development
 
 Before we developed <i>Pisces</i>, we met with Trident, talked about what they wanted and came up with a range of ideas to try out. Together we chose one to take through a proof of concept stage, which Trident then decided to progress. They have committed to its continued development in a collaborative process that will allow new research providers and databases to be incorporated in the future.
-
-> What we particularly value about Dragonfly is their combination of statistical analysis skills and IT skills. They have a good perspective on why we are doing the IT work.
->
-> The tools they build are easy to use and work well. Fisheries scientists have always had to have good IT skills, but it’s fairly unique that they are as polished as Dragonfly’s, in terms of producing IT products and website front ends.
->
-> <i>Pisces</i> gives us the opportunity to collaborate on analyses to a far greater extent. We feel it’s a really powerful tool for rapid data analysis. We’re doing simple analyses now that we wouldn’t have bothered with in the past because the process was too time consuming. We’re also doing the complex analyses where we rely on Pisces to ensure reproducibility.”
-
-<cite>David Middleton<br />
-Chief Executive<br />
-Trident Systems
-</cite>

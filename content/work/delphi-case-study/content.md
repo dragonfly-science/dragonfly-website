@@ -5,11 +5,8 @@ banner-image: /work/delphi-case-study/banner.jpg
 summary: >
   Information about where turtles and fishing overlap underpinned decision-making
 tags: stats, policy
-quote: >
-  Dragonfly’s timeliness of delivery was critical, and one of the reasons
-  the project was such a success.
-quote-attribution: >
-  Neville Smith, Principal Fisheries Scientist, Pacific Community (SPC)
+testimonial:
+  - testimonials/delphi-testimonial/content.md
 project-link: http://www.fao.org/fileadmin/user_upload/common_oceans/docs/Tuna/TurtleMeetingsFinalReport.pdf
 project-link-text: open report
 logo: /work/delphi-case-study/Pacific-Community-logo.png
@@ -73,19 +70,3 @@ The Delphi method is a way of integrating information from experts that can
 be applied in a range of sectors. It allows experts to independently
 contribute information, highlighting where
 participants agree or disagree, and showing where information is lacking.
-
-> At our workshops we have people from 20 countries looking at us across the
-> table, so if something doesn’t get done on time or to the required standard,
-> there’s nowhere to hide. The Dragonfly team certainly delivered for us.
->
-> Like many people, I’m a visual thinker and the Delphi graphics really drew the
-> best out of us in terms of response, as opposed to a written survey.
->
-> Everyone was very happy with what they got out of it. By the end of the
-> process, people were comfortable to say that this is the best available
-> information for our purposes – that this is the input we need for the models.
-
-<cite>Neville Smith<br />
-Principal Fisheries Scientist<br />
-Fisheries and Ecosystem Monitoring and Analysis<br />
-Pacific Community (SPC).</cite>

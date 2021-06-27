@@ -37,7 +37,7 @@ _site/assets:
 
 # Runs in full develop mode - npm watching & rebuilding
 # as css & ts change.
-develop: .env .build-npm
+develop: .env .install _site/assets
 	$(UP)
 
 
@@ -70,7 +70,7 @@ ifneq ($(CI), true)
 endif
 
 # NPM Commands
-.install: _site/assets
+.install:
 	$(RUN) bash -c "cd front-end && npm install"
 	touch $@
 

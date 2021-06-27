@@ -4,8 +4,8 @@ short-title: A new language processing app
 banner-image: /work/TMP-case-study/kokako-read-out.jpg
 summary: Automatically tracking the use of te reo Māori on air
 tags: systems
-quote: The team at Dragonfly have been great to work with. They quickly understood what we were trying to achieve and came up with a very innovative solution.
-quote-attribution: Thomas Hood, Te Māngai Pāho
+testimonial:
+  - testimonials/tmp-testimonial/content.md
 logo: /work/TMP-case-study/tmp-logo.png
 project-link: https://kokako.co
 project-link-text: View work
@@ -35,16 +35,3 @@ The recurrent neural network achieves more than 95% accuracy in detecting each l
 We were pleased to work with Wellington digital design agency [Salted Herring](https://www.saltedherring.com/) on this project, who designed the user interface and created the brand identity. We worked together on the front-end development. [Kōkako](https://kokako.co/) was named a Supreme Winner in the interactive category of the [2016 Best Design Awards](https://bestawards.co.nz/interactive/applications/salted-herring/kokako-language-tracking/) and awarded a Purple Pin.
 
 [Watch a Native Affairs, Maōri TV interview about this project](https://www.dragonfly.co.nz/news/2016-10-17-kokako-is-the-best.html).
-
-> The team at Dragonfly have been great to work with. They quickly understood what
-> we were trying to achieve and came up with a very innovative solution.
->
-> In fact, their prototype attracted a lot of interest nationally and internationally
-> before we even had a chance to put it into operation.
->
-> Dragonfly took an idea and turned it into something pretty special. They made this
-> project happen for us.
-
-<cite>Thomas Hood<br />
-Manager Corporate Services<br />
-Te Māngai Pāho.</cite>

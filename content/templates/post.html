@@ -46,7 +46,18 @@
       </div>
     </aside>
     <article class="article sticky-container__body">
-      <div class="body-content body-content--article">$body$</div>
+      <div class="body-content body-content--article">
+        $body$ $if(quote)$ $for(quote)$
+        <blockquote>
+          $body$
+          <cite>
+            $citation_name$<br />
+            $citation_position$<br />
+            $citation_organisation$
+          </cite>
+        </blockquote>
+        $endfor$ $endif$
+      </div>
     </article>
 
     <aside class="sticky-container__element sidebar sidebar--right">
