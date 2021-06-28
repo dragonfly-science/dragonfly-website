@@ -97,8 +97,15 @@ website: $(HS) haskell/Site.hs
 	$(RUN) bash -c 'cp -rf ./content/fonts ./_site'
 	touch $@
 
+.robots: deployment
+ifneq ($(PRODUCTION), true)
+	$(RUN) bash -c 'cp -f deployment/robots.staging.txt _site/robots.txt'
+else
+	$(RUN) bash -c 'cp -f deployment/robots.production.txt _site/robots.txt'
+endif
+
 .PHONY: build
-build: .env .build-website
+build: .env .build-website .robots
 
 .images: .install
 	$(RUN) bash -c 'cd front-end && npm run imagemin'

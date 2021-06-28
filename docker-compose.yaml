@@ -9,6 +9,7 @@ services:
       - $PWD/content:/work/content:cached
       - $PWD/front-end:/work/front-end:cached
       - $PWD/_site:/work/_site
+      - $PWD/deployment:/work/deployment
       - nodemodules:/work/front-end/node_modules:cached
     working_dir: /work/
     profiles:
@@ -25,6 +26,7 @@ services:
     restart: unless-stopped
     volumes:
       - $PWD/content:/work/content:cached
+      - $PWD/deployment:/work/deployment
       - $PWD/front-end:/work/front-end:cached
       - $PWD/_site/assets:/work/_site/assets:cached
       - $DOCKER_CACHE/npm:/root/.npm:cached
