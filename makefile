@@ -91,12 +91,12 @@ website: $(HS) haskell/Site.hs
 		stack build && \
 		cp $$(stack path --local-install-root)/bin/website ../website'
 
-.build-website: website
+.build-website: website .build-npm
 	$(RUN_WEB) bash -c 'cd ./content && ../website build'
 	touch $@
 
 .PHONY: build
-build: .build-website .build-npm
+build: .build-website
 
 .images: .install
 	$(RUN) bash -c 'cd front-end && npm run imagemin'
