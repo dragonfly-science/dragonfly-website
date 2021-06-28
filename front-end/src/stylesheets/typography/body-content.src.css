@@ -45,7 +45,7 @@
     }
   }
 
-  blockquote,
+  /* blockquote,
   blockquote + p > cite {
     @apply bg-cool-blue text-white w-full block;
     @apply px-10 py-12 ml-0 mb-8;
@@ -107,7 +107,7 @@
         @apply bg-black ml-auto;
       }
     }
-  }
+  } */
 
   > p {
     &:first-of-type {
@@ -221,23 +221,19 @@
     }
   }
 
-  &--no-sidebar {
-    /* @apply ml-64; */
-  }
-
   &--bottomless {
     @apply mb-0;
   }
 }
 
-@screen sm {
+/* @screen sm {
   .body-content {
     blockquote,
     blockquote + p > cite {
       @apply w-3/4;
     }
   }
-}
+} */
 
 @screen md {
   .body-content {
@@ -247,11 +243,11 @@
       }
     }
 
-    blockquote {
+    /* blockquote {
       p {
         @apply text-2xl;
       }
-    }
+    } */
 
     h2,
     h3,
@@ -306,7 +302,7 @@
       @apply text-base font-bold;
     }
 
-    blockquote {
+    /* blockquote {
       &:nth-of-type(even) {
         @apply -mr-24 pr-24;
       }
@@ -322,12 +318,12 @@
           @apply ml-auto;
         }
       }
-    }
+    } */
 
-    blockquote,
+    /* blockquote,
     blockquote + p > cite {
       @apply -ml-24 pl-24 w-full;
-    }
+    } */
 
     figure {
       @apply -mx-6;
@@ -360,7 +356,7 @@
 
 @screen xl {
   .body-content {
-    blockquote {
+    /* blockquote {
       @apply mt-8 mb-8 pt-16 pb-24;
 
       + p > cite {
@@ -375,7 +371,7 @@
     blockquote,
     blockquote + p > cite {
       @apply -ml-36 pl-36 w-full;
-    }
+    } */
 
     figure {
       @apply -mx-12;
@@ -387,7 +383,7 @@
   }
 }
 
-@screen 2xl {
+/* @screen 2xl {
   .body-content {
     blockquote,
     blockquote + p > cite {
@@ -398,4 +394,4 @@
       }
     }
   }
-}
+} */
