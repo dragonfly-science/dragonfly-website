@@ -91,12 +91,14 @@ website: $(HS) haskell/Site.hs
 		stack build && \
 		cp $$(stack path --local-install-root)/bin/website ../website'
 
-.build-website: website .build-npm
+.build-website: .install website _site/assets
 	$(RUN_WEB) bash -c 'cd ./content && ../website build'
+	$(RUN) bash -c 'cd front-end && npm run build'
+	$(RUN) bash -c 'cp -rf ./content/fonts ./_site'
 	touch $@
 
 .PHONY: build
-build: .build-website
+build: .env .build-website
 
 .images: .install
 	$(RUN) bash -c 'cd front-end && npm run imagemin'
@@ -109,7 +111,7 @@ compress: .images
 # Utility commands
 clean:
 	rm -rf website _site .env .install .cache \
-				content/fonts/*.css \
+				content/fonts \
 				.build*
 
 full-clean: down clean
