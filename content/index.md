@@ -25,6 +25,6 @@ testimonials:
   - testimonials/predator-prey-testimonial/content.md
 sectionTitle: Latest News
 sectionLeft: true
-video: /images/video/HomeMix.mp4
+video: /images/video/HomeMix3.mp4
 videoPoster: /images/video/homepage-video-placeholder.jpg
 ---
