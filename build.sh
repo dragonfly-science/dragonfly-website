@@ -14,7 +14,7 @@ cp static-site.tgz /output
 
 # If AWS, sync to s3 & optionally invalidate cloudflare cache.
 # Otherwise, publish to gorbachev.
-if [[ -v AWS_ACCESS_KEY_ID && -v AWS_BUCKET && AWS_SECRET_ACCESS_KEY]]; then
+if [[ -v AWS_ACCESS_KEY_ID && -v AWS_BUCKET && -v AWS_SECRET_ACCESS_KEY ]]; then
   aws s3 sync _site ${AWS_BUCKET}
 
   if [[ -v AWS_CLOUDFRONT_ID ]]; then
