@@ -9,6 +9,7 @@ summary: Speeding up visa processing to save staff time and money
 tags: systems
 CTADescriptor: some text
 CTAButton: read more
+published: 2021-06-27
 ---
 
 We built a prediction service to allocate visa applications to either fast track or

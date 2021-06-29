@@ -15,7 +15,10 @@
     $if(og-title)$
     <meta property="og:title" content="$og-title$" />
     $else$
-    <meta property="og:title" content="Dragonfly Data Science: $title$" />
+    <meta
+      property="og:title"
+      content="Dragonfly Data Science$if(title)$: $title$$endif$"
+    />
     $endif$
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.dragonfly.co.nz$url$" />
@@ -102,7 +105,15 @@
   <body class="font-body">
     $partial("templates/_menu.html")$
     <main
-      class="main mt-12 relative z-20 overflow-hidden lg:mt-24 section-$section$"
+      class="
+        main
+        mt-12
+        relative
+        z-20
+        overflow-hidden
+        lg:mt-24
+        section-$section$
+      "
       id="main-container"
     >
       $body$

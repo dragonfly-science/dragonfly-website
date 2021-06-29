@@ -25,3 +25,8 @@ if [[ -v AWS_ACCESS_KEY_ID && -v AWS_BUCKET && -v AWS_SECRET_ACCESS_KEY ]]; then
 else
   cp -rf _site/* /publish
 fi
+
+# Ping google with updated sitemap
+if [[ -v PUBLISH_SITEMAP ]]; then
+  https://www.google.com/ping?sitemap=https://www.dragonfly.co.nz/sitemap.xml
+fi

@@ -2,6 +2,7 @@
 
 import Debug.Trace
 
+import           Control.Monad
 import           Data.Monoid          ((<>))
 import           Data.Foldable        (forM_)
 import           System.Process
@@ -12,6 +13,7 @@ import           Hakyll
 import           WebSite.Compilers
 import           WebSite.Config
 import           WebSite.Context
+import           WebSite.SiteMap
 import qualified WebSite.Data         as Data
 import qualified WebSite.Images       as Images
 import qualified WebSite.News         as News
@@ -29,7 +31,6 @@ config = defaultConfiguration
   , storeDirectory       = "../.cache"
   , tmpDirectory         = "../.cache/tmp"
   }
-
 
 main :: IO ()
 main = do
@@ -189,4 +190,23 @@ main = do
         route idRoute
         compile copyFileCompiler
 
-    -- TO DO - add site map.xml - see: https://www.rohanjain.in/hakyll-sitemap/
+    create ["sitemap.xml"] $ do
+        route idRoute
+        compile $ do
+            news <- recentFirst =<< loadAll ("news/**/*.md")
+            people <- loadAll ("people/**/*.md")
+            publications <- loadAll ("publications/*.md")
+            what <- loadAll ("what-we-do/**/*.md")
+            work <- loadAll ("work/**/*.md")
+
+            let pages = news
+                     <> people
+                     <> publications
+                     <> what
+                     <> work
+                sitemapCtx =
+                    constField "root" root <>
+                    listField "pages" postCtx (return $ trace ("pages: " ++ show pages) pages)
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx

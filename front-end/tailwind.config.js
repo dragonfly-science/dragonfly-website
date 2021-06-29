@@ -16,6 +16,7 @@ module.exports = {
           /^duration/,
           /^opacity/,
           /^bg-/,
+          /^rotate-/,
         ],
       },
       rejected: true,

@@ -28,6 +28,7 @@ executable website
                      , WebSite.Work
                      , WebSite.WhatWeDo
                      , WebSite.Util
+                     , WebSite.SiteMap
   other-extensions:    OverloadedStrings, RecordWildCards, TupleSections, QuasiQuotes
   build-depends:       base
                      , aeson
