@@ -21,7 +21,7 @@ tiles:
   - work/technical-review-case-study/content.md
 ---
 
-We’re often asked to help clients move to a reproducible, code-based approach to research, analysis and reporting. This approach is integral to how we do things at Dragonfly. We learned it from the software development industry but always felt we should share it with our clients rather than keeping it to ourselves.
+We are often asked to help clients move to a reproducible, code-based approach to research, analysis and reporting. This approach is integral to how we do things at Dragonfly. We learned it from the software development industry but always felt we should share it with our clients rather than keeping it to ourselves.
 
 At the start of an assignment we typically work closely with a client – it’s an opportunity for us to learn the mechanics of the project and for the client to become familiar with our behaviours and tools. Over time there’s a gradual decrease in the input needed from us as capability builds.
 
