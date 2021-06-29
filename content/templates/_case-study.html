@@ -3,7 +3,7 @@
     <img src="$teaserImage$" />
   </a>
   <a href="$pageurl$">
-    <h4 class="highlight">$if(short-title)$ $short-title$ $else$ $title$ $endif$</h4>
+    <h4 class="highlight">$if(short-title)$ $short-title$ $else$ $if(title)$ $title$ $endif$ $endif$</h4>
     <p>$if(summary)$
       $summary$
     $else$

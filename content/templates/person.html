@@ -1,22 +1,80 @@
-<div class="hero" id="hero-$tag$">
-  <img src="$banner$" width="100%"/>
-</div>
-<div class="container post-detail">
-  <div class="heading wide">
-    $if(title)$
-    <h2 id="title-$if(tag)$$tag$$endif$">$title$</h2>
-    $endif$
-    <div class="details">
-      $if(email)$
-        <p>Email <a href="mailto:$email$">$email$</a><p>
-      $endif$
-      $if(phone)$
-        <p>Call $firstname$ on <a href="tel:$phone$">$phone$</a><p>
-      $endif$
+<header
+  class="
+    page-header page-header--image-bg
+    lozad-container lozad-container--slate-grey
+    text-white
+    $if(firstname)$person-$firstname$$endif$
+  "
+  id="hero-$tag$"
+>
+  <div class="page-header__outer">
+    <div class="page-header__container flex flex-col">
+      <h1 class="page-header__title">
+        $if(bannerTitleLine1)$ $bannerTitleLine1$<br />
+        $if(bannerTitleLine2)$$bannerTitleLine2$$endif$
+        $if(bannerTitleLine3)$<br /><span class="font-normal"
+          >$bannerTitleLine3$</span
+        >$endif$ $else$ $if(firstname)$$firstname$$endif$<br />
+        $lastname$ $endif$ $if(honour)$<br />
+        <span class="font-light">$honour$</span>$endif$
+      </h1>
+
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="link-icon link-icon--arrow-down link-icon--large"
+      >
+        <span class="icon dragonfly-arrow"></span>
+      </a>
     </div>
   </div>
-  <div class="wide post-body" id="content-$tag$">
-    $body$
+
+  <div
+    class="background-image $if(banner)$ lozad lozad-image$endif$"
+    $if(banner)$
+    data-background-image="$banner$"
+    $endif$
+  ></div>
+</header>
+
+<section id="top-section" class="bg-light-peach">
+  <div
+    class="article-container article-container--two-sidebars sticky-container"
+  >
+    <aside class="sticky-container__element sidebar sidebar--left">
+      <div class="sidebar__inner">
+        <a href="/people/" class="navigation-button">
+          <span
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="navigation-button__label">Back to people</span>
+        </a>
+      </div>
+    </aside>
+    <article class="article sticky-container__body">
+      <div class="body-content body-content--article body-content--has-quote">
+        $body$
+      </div>
+    </article>
+
+    <aside class="sticky-container__element sidebar sidebar--right">
+      <div class="sidebar__inner">
+        <a href="/people/" class="navigation-button">
+          <span
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="navigation-button__label">Back to people</span>
+        </a>
+        <div class="sidebar__inner__text sidebar__inner__border">
+          $if(email)$
+          <a href="mailto:$email$" class="underline hover:no-underline"
+            >$email$</a
+          ><br />
+          $endif$ $if(phone)$
+          <a href="tel:$phone$">$phone$</a>
+          $endif$
+        </div>
+      </div>
+    </aside>
   </div>
-</div>
-$partial("templates/_bubble-navigation.html")$
+</section>

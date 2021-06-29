@@ -1,21 +1,28 @@
 {-# LANGUAGE OverloadedStrings #-}
 
+import Debug.Trace
+
+import           Control.Monad
 import           Data.Monoid          ((<>))
+import           Data.Foldable        (forM_)
 import           System.Process
-import System.Exit
+import           System.Exit
 
 import           Hakyll
 
 import           WebSite.Compilers
 import           WebSite.Config
 import           WebSite.Context
+import           WebSite.SiteMap
 import qualified WebSite.Data         as Data
 import qualified WebSite.Images       as Images
 import qualified WebSite.News         as News
 import qualified WebSite.People       as People
 import qualified WebSite.Publications as Publications
+import qualified WebSite.Testimonials as Testimonials
 import           WebSite.Validate     (validatePage)
 import qualified WebSite.Work         as Work
+import qualified WebSite.WhatWeDo     as WhatWeDo
 
 config :: Configuration
 config = defaultConfiguration
@@ -24,7 +31,6 @@ config = defaultConfiguration
   , storeDirectory       = "../.cache"
   , tmpDirectory         = "../.cache/tmp"
   }
-
 
 main :: IO ()
 main = do
@@ -36,7 +42,15 @@ main = do
     match (fromList [bibIdentifier]) $ compile biblioCompiler
 
     match "**/*.img.md" $ compile scholmdCompiler
-    match ("images/*" .||.  "google*.html" .||. "**/*.jpg" .||. "**/*.png" .||. "**/*.csv") $ do
+    match ("images/*"
+          .||. "google*.html"
+          .||. "**/*.jpg"
+          .||. "**/*.png"
+          .||. "**/*.svg"
+          .||. "**/*.csv"
+          .||. "**/*.mp4"
+          .||. "fonts/*"
+          .||. "landing-pages/**/banner-images/*") $ do
         route idRoute
         compile copyFileCompiler
 
@@ -62,12 +76,35 @@ main = do
                           , ("1600", ["-resize" , "1600"])
                           ]
     Images.imageProcessor ( "**/teaser.jpg") $
-                          [ ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0"])
-                          , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0"])
+                          [ ( "1200", ["-resize" , "1200x600^", "-gravity", "Center", "-crop", "1200x600+0+0", "-quality", "75"])
+                          , ( "960", ["-resize" , "960x960^", "-gravity", "Center", "-crop", "960x960+0+0", "-quality", "75"])
+                          , ( "960800", ["-resize" , "960x800^", "-gravity", "Center", "-crop", "960x800+0+0", "-quality", "75"])
+                          , ( "480", ["-resize" , "480x480^", "-gravity", "Center", "-crop", "480x480+0+0", "-quality", "75"])
+                          , ( "600", ["-resize" , "600x600^", "-gravity", "Center", "-crop", "600x600+0+0", "-quality", "75"])
+                          , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
+                          , ( "200", ["-resize" , "200x230^", "-gravity", "Center", "-crop", "200x230+0+0", "-quality", "75"])
+                          ]
+    Images.imageProcessor ( "**/teaser.png") $
+                          [ ( "1200", ["-resize" , "1200x600^", "-gravity", "Center", "-crop", "1200x600+0+0", "-quality", "75"])
+                          , ( "960", ["-resize" , "960x960^", "-gravity", "Center", "-crop", "960x960+0+0", "-quality", "75"])
+                          , ( "960800", ["-resize" , "960x800^", "-gravity", "Center", "-crop", "960x800+0+0", "-quality", "75"])
+                          , ( "480", ["-resize" , "480x480^", "-gravity", "Center", "-crop", "480x480+0+0", "-quality", "75"])
+                          , ( "600", ["-resize" , "600x600^", "-gravity", "Center", "-crop", "600x600+0+0", "-quality", "75"])
+                          , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
+                          , ( "200", ["-resize" , "200x230^", "-gravity", "Center", "-crop", "200x230+0+0", "-quality", "75"])
                           ]
 
-    --Images.imageProcessor ( "**/*.pdf") $
-    --                      [ ( "256", ["-density" , "100", "-resize", "256x256^", "-crop", "256x256+0+0"])
+    Images.imageProcessor ( "**/teaser-large.jpg") $
+                          [ ( "960-landscape", ["-resize" , "410+960^", "-gravity", "Center", "-crop", "410+960+0+0", "-quality", "75"])
+                          ]
+
+    -- People hero banners.
+    Images.imageProcessor ( "people/**/*-letterbox.jpg") $
+                          [ ( "banner", ["-resize" , "1900", "-gravity", "Center", "-crop", "1900", "-quality", "85"])
+                          ]
+
+    -- Images.imageProcessor ( "**/*.pdf") $
+    --                      [ ( "480", ["-density" , "100", "-resize", "480x480^", "-crop", "480x480+0+0"])
     --                      ]
 
     -- Home page
@@ -79,7 +116,40 @@ main = do
             bubbles <- People.bubbles
             work   <- Work.list 3
             news   <- News.list 6
-            let ctx = base <> people <> work <> news <> bubbles
+
+            -- Section definition
+            let getSections itm = do
+                  md <- getMetadata (itemIdentifier itm)
+                  case lookupStringList "sections" md of
+                    Just sections -> mapM (load . fromFilePath) sections
+                    Nothing -> return []
+                sections = listFieldWith "sections" itemCtx getSections
+
+            -- Tile definition
+            let getTiles itm = do
+                  md <- getMetadata (itemIdentifier itm)
+                  case lookupStringList "tiles" md of
+                    Just tiles -> mapM (load . fromFilePath) tiles
+                    Nothing -> return []
+                tiles = listFieldWith "tiles" itemCtx getTiles
+
+            -- Testimonials definition
+            let getTestimonials itm = do
+                  md <- getMetadata (itemIdentifier itm)
+                  case lookupStringList "testimonials" md of
+                    Just testimonials -> mapM (load . fromFilePath) testimonials
+                    Nothing -> return []
+                testimonials = listFieldWith "testimonials" itemCtx getTestimonials
+
+            let ctx = base
+                   <> people
+                   <> work
+                   <> news
+                   <> bubbles
+                   <> testimonials
+                   <> tiles
+                   <> sections
+
             scholmdCompiler
                 >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
@@ -95,39 +165,48 @@ main = do
     News.rules
 
     -- Data section
-    Data.rules
+    -- Data.rules
 
     -- Publications section
     Publications.rules
 
-    -- Contact page
-    match "pages/contact.html" $ do
-        route $ constRoute "contact/index.html"
-        compile $ do
-            ctx <- baseContext "contact"
-            scholmdCompiler
-                >>= loadAndApplyTemplate "templates/default.html" ctx
-                >>= validatePage
+    -- What we do section
+    WhatWeDo.rules
+
+    -- Testimonials
+    Testimonials.rules
+
 
     -- Standalone pages
     match "pages/*.html" $ do
-        route $ setExtension "html"
+        route $ setExtension ""
         compile $ do
             ctx  <- baseContext "index"
             getResourceBody
                 >>= applyAsTemplate ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
 
-    -- Sass based stylesheets
-    match "stylesheets/dragonfly.css" $ do
-        route $ constRoute "assets/dragonfly.css"
-        compile copyFileCompiler
-
-    -- Scripts
-    match "scripts/dragonfly.js" $ do
-        route $ constRoute "assets/dragonfly.js"
-        compile copyFileCompiler
-
     match "favicon.ico" $ do
         route idRoute
         compile copyFileCompiler
+
+    create ["sitemap.xml"] $ do
+        route idRoute
+        compile $ do
+            news <- recentFirst =<< loadAll ("news/**/*.md")
+            people <- loadAll ("people/**/*.md")
+            publications <- loadAll ("publications/*.md")
+            what <- loadAll ("what-we-do/**/*.md")
+            work <- loadAll ("work/**/*.md")
+
+            let pages = news
+                     <> people
+                     <> publications
+                     <> what
+                     <> work
+                sitemapCtx =
+                    constField "root" root <>
+                    listField "pages" postCtx (return $ trace ("pages: " ++ show pages) pages)
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx

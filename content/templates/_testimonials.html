@@ -1,0 +1,87 @@
+$if(testimonials)$
+<section
+  class="
+    testimonials
+    math-paper math-paper--reverse
+    bg-cool-blue
+    py-12
+    lg:pt-24
+  "
+>
+  <div class="outer-container outer-container--no-padding mx-auto">
+    <div class="flex flex-col text-white lg:flex-row">
+      <div class="hidden justify-center items-center lg:flex">
+        <span
+          class="
+            swiper-button-prev
+            link-icon link-icon--xl
+            transform
+            origin-center
+            -rotate-180
+          "
+        >
+          <span class="icon dragonfly-arrow"></span>
+        </span>
+      </div>
+
+      <div
+        class="
+          flex-grow
+          text-center
+          swiper-container
+          slideshow-swiper
+          max-w-full
+          overflow-hidden
+          lg:px-12
+        "
+      >
+        <div class="swiper-wrapper ease-in-out inline-flex">
+          $for(testimonials)$
+          <blockquote class="swiper-slide flex">
+            <div class="m-auto max-w-3/4">
+              <p class="text-2xl italic xl:text-4/3xl xl:leading-11">
+                $quote_short$
+              </p>
+              $if(citation_name)$
+              <cite class="block pt-8 not-italic xl:text-lg">
+                - $citation_name$<br />
+                $if(citation_position)$$citation_position$, $endif$
+                $if(citation_organisation)$$citation_organisation$.$endif$
+              </cite>
+              $endif$
+            </div>
+          </blockquote>
+          $endfor$
+        </div>
+      </div>
+
+      <div class="hidden justify-center items-center lg:flex">
+        <span class="swiper-button-next link-icon link-icon--xl">
+          <span class="icon dragonfly-arrow"></span>
+        </span>
+      </div>
+
+      <div class="flex flex-row mx-auto mt-8 lg:hidden">
+        <div class="flex justify-center items-center mr-8">
+          <span
+            class="
+              swiper-button-prev
+              link-icon link-icon--xl
+              transform
+              origin-center
+              -rotate-180
+            "
+          >
+            <span class="icon dragonfly-arrow"></span>
+          </span>
+        </div>
+        <div class="swiper-button-next flex justify-center items-center">
+          <span class="link-icon link-icon--xl">
+            <span class="icon dragonfly-arrow"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+$endif$

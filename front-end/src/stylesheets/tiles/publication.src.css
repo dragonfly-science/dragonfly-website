@@ -1,0 +1,108 @@
+.publication-tile {
+  @apply flex flex-col relative border-b border-r border-very-light-pink;
+
+  &__header {
+    .tag-list__tag {
+      @apply px-6;
+    }
+  }
+
+  &__title,
+  &__citation,
+  &__footer {
+    @apply max-w-lg;
+  }
+
+  &__title,
+  &__citation,
+  &__footer {
+    @apply px-6;
+  }
+
+  &__header + .publication-tile__title {
+    @apply mt-10;
+  }
+
+  &__title {
+    @apply text-xl font-bold leading-none no-underline mb-6;
+    @apply transition-all duration-250;
+  }
+
+  &__citation {
+    @apply mb-6 text-base leading-none break-words;
+  }
+
+  &__footer {
+    @apply mb-8 mt-auto w-full;
+  }
+
+  &__pdf {
+    @apply transition-color ease-out-quart duration-500 z-20 relative flex flex-row;
+    @apply text-sm leading-none items-center;
+
+    &:hover {
+      @apply text-cool-blue;
+    }
+
+    span {
+      @apply mr-2;
+    }
+
+    i {
+      @apply not-italic;
+    }
+  }
+
+  &__details {
+    @apply absolute z-10 w-full h-full;
+    @apply transition-all duration-250 shadow-none;
+
+    font-size: 0;
+    line-height: 0;
+    text-indent: -40000px;
+
+    &:hover {
+      @apply shadow-3xl;
+    }
+  }
+
+  &__read-more {
+    @apply transition-all duration-250;
+  }
+
+  &:hover {
+    .publication-tile__read-more,
+    .publication-tile__title {
+      @apply text-cool-blue;
+    }
+  }
+
+  hr {
+    @apply hidden;
+  }
+}
+
+@screen sm {
+  .publication-tile {
+    &__title,
+    &__citation {
+      @apply mr-4 max-w-full;
+    }
+  }
+}
+
+@screen lg {
+  .publication-tile {
+    @apply mr-0;
+
+    &__title {
+      @apply text-2xl leading-none;
+    }
+  }
+}
+
+@screen xl {
+  .publication-tile {
+    /* @apply mr-8; */
+  }
+}

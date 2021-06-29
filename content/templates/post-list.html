@@ -1,59 +1,19 @@
-<div class="container">
-  <a class="anchor" id="stats"></a>
-  <div class="wide padded-section">
-      <h2>
-        We are experts at statistical analysis.
-      </h2>
-      <p class="lead">
-        Our speciality is modern Bayesian methods, which allow uncertainty to be carried all the way through from analysis to decision making. 
-      </p>
-    <div class="porthole-grid four-columns">
-        $for(tag_stats)$ 
-          $partial("templates/_case-study.html")$
-        $endfor$
+$partial("templates/_page-header-small.html")$
+
+<section id="top-section" class="bg-dark-jungle-green">
+    <div class="w-full">
+      <div class="collection-grid collection-grid--2cell collection-grid--no-bottom list outer-container outer-container--tile-list-2">
+      $for(work)$
+      $partial("templates/_tile-index.html")$
+      $endfor$
+    </div>
     </div>
   </div>
-  <div class="wide padded-section">
-    <a class="anchor" id="systems"></a>
-      <h2>
-        We build systems for data.
-      </h2>
-      <p class="lead">
-        Our statistical work is supported by excellent technical database and software development skills.
-        We develop operational systems to allow organisations to get ongoing value from their data.
-      </p>
-    <div class="porthole-grid four-columns">
-        $for(tag_systems)$ 
-          $partial("templates/_case-study.html")$
-        $endfor$
-    </div>
+</section>
+
+<section class="call-to-action call-to-action--single-column">
+  <div class="call-to-action__container container">
+    <p class="supplementary-header call-to-action__text">Sound like the sort of thing you're after?</p>
+    <a href="#contact" class="button call-to-action__button call-to-action__button--cool-blue">Get in touch</a>
   </div>
-  <div class="wide padded-section">
-    <a class="anchor" id="policy"></a>
-      <h2>
-        We enable evidence based policy.
-      </h2>
-      <p class="lead">
-        Good research and analysis builds consensus between stakeholders, and enables the development of policy that makes best use of available information.
-      </p>
-    <div class="porthole-grid four-columns">
-        $for(tag_policy)$ 
-          $partial("templates/_case-study.html")$
-        $endfor$
-    </div>
-  </div>
-  <div class="wide padded-section">
-    <a class="anchor" id="capability"></a>
-      <h2>
-        We enjoy transferring our skills.
-      </h2>
-      <p class="lead">
-        We work openly with clients, and enjoy transferring our skills to the teams we work with. We help people develop efficient processes for carrying out high quality, reliable analysis.
-      </p>
-    <div class="porthole-grid four-columns">
-        $for(tag_capability)$ 
-          $partial("templates/_case-study.html")$
-        $endfor$
-    </div>
-  </div>
-</div>
+</section>

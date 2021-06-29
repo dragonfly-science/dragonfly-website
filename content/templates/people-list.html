@@ -1,35 +1,107 @@
-<div class="container">
-  <div class="wide">
-    <h2>
-      We are scientists who believe in being useful.
-    </h2>
-    <p class="lead">
-      Our technical skills include statistical analysis, database design and administration, data visualisation, and software development. We have wide experience in marine science, theoretical physics, mathematics, and ecology.
-    </p>
-  <!-- <div class="index-banner-text">
-    <div class="container">
-        <div class="wide">
-          <a href="/people/2020-08-27-fisheries-scientist-vacancy.html">
-            <p>
-	    We are currently looking for a fisheries scientist to work on projects related to fisheries and their environmental impacts
-	    <span class="read-more" style="color: white"> Read more</span>
-            </p>
-          </a>
-        </div>
-     </div>
-  </div> -->
-    <a class="anchor" id="staff"></a>
-    <div class="porthole-grid three-columns">
-      $for(people)$
-        <div class="porthole">
-          <a href="$pageurl$">
-            <img src="$teaserImage$" />
-          </a>
-          <h4><a href="$pageurl$">$title$</a></h4>
-          $teaser$
-          <a href="$pageurl$" class="read-more">Read more</a>
-        </div>
-      $endfor$
+<header
+  class="
+    page-header page-header--image-bg
+    lozad-container lozad-container--slate-grey
+    text-white
+  "
+>
+  <div class="page-header__outer">
+    <div class="page-header__container container">
+      <h1 class="page-header__title">$if(title)$$title$$endif$</h1>
+
+      <p class="page-header__content">$introduction$</p>
+
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="link-icon link-icon--arrow-down link-icon--large"
+      >
+        <span class="icon dragonfly-arrow"></span>
+      </a>
     </div>
   </div>
-</div>
+  $if(banner)$
+  <div
+    id="carousel-images"
+    class="background-image lozad lozad-image"
+    data-background-image="$banner$"
+    data-banner-folder="$if(bannerFolder)$$bannerFolder$$endif$"
+    data-banner-pattern="$if(bannerNamePattern)$$bannerNamePattern$$endif$"
+    data-banner-count="$if(bannerCount)$$bannerCount$$endif$"
+    data-banner-padding="$if(bannerIndexPadding)$$bannerIndexPadding$$endif$"
+  ></div>
+  $endif$
+</header>
+
+$partial("templates/_title.html")$
+
+<section id="top-section" class="bg-dark-jungle-green">
+  <div
+    class="
+      collection-grid collection-grid--no-bottom
+      outer-container outer-container--tile-list
+    "
+  >
+    $for(people)$
+    <a href="$pageurl$" class="no-gutter-cell person-tile bg-dark-jungle-green">
+      <div class="h-full w-full flex flex-row">
+        <h2
+          class="
+            no-gutter-cell__title
+            person-tile__title
+            mt-auto
+            flex-grow
+            mr-8
+          "
+        >
+          $if(firstname)$$firstname$$endif$<br />
+          $lastname$$if(honour)$<br />
+          <span class="font-light">$honour$</span>$endif$
+        </h2>
+
+        <span
+          class="
+            link-icon
+            no-gutter-cell__link
+            no-gutter-cell--overlay__link
+            person-tile__link
+            w-10
+            mt-auto
+            flex-shrink-none
+          "
+        >
+          <span class="icon dragonfly-arrow mt-2"></span>
+        </span>
+      </div>
+
+      <div
+        class="no-gutter-cell__image person-tile__image background-image lozad"
+        data-background-image="$teaserImage$"
+      ></div>
+    </a>
+    $endfor$
+  </div>
+</section>
+
+$if(CTASection)$
+<section
+  class="
+    call-to-action call-to-action--single-column
+    math-paper math-paper--reverse
+    bg-cool-blue
+    text-white
+  "
+>
+  <div class="call-to-action__container container">
+    $if(CTATitle)$
+    <p class="supplementary-header call-to-action__text">$CTATitle$</p>
+    $endif$ $if(CTAButtonTitle)$
+    <a
+      href="$if(CTAButtonLink)$$CTAButtonLink$$else$#$endif$"
+      class="button call-to-action__button call-to-action__button--white"
+      >$CTAButtonTitle$</a
+    >
+    $endif$
+  </div>
+</section>
+$endif$

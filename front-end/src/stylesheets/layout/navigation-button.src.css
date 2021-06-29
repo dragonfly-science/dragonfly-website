@@ -1,0 +1,12 @@
+.navigation-button {
+  @apply text-base leading-none py-4 text-cool-blue;
+  @apply flex items-center justify-between transition-color;
+
+  &:hover {
+    @apply text-slate-grey;
+  }
+
+  &__label {
+    @apply pl-4;
+  }
+}

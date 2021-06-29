@@ -1,31 +1,120 @@
-<div class="post-banner-image" style='background-image: url("$banner-image$")'>
-  $if(quote)$
-    <div class="post-banner-overlay"></div>
-    <div class="container">
-    <div class="wide">
-      <blockquote>
-        <p>$quote$</p>
-        <cite>$quote-attribution$</cite>
-      </blockquote>
+<header
+  class="
+    page-header page-header--image-bg
+    lozad-container lozad-container--slate-grey
+    text-white
+  "
+>
+  <div class="page-header__outer">
+    <div class="page-header__container container">
+      $if(title)$
+      <h1 class="page-header__title">$title$</h1>
+      $endif$ $if(summary)$
+      <p class="page-header__content">$summary$</p>
+      $endif$
+
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="link-icon link-icon--large link-icon--arrow-down"
+      >
+        <span class="icon dragonfly-arrow"></span>
+      </a>
     </div>
-    </div>
-  $endif$
-</div>
-<div class="container post-detail">
-  $if(title)$
-    <div class="heading wide">
-      <h2>$title$</h2>
-    </div>
-  $endif$
-  <div class="sidebar">
-    $if(logo)$
-      <div class="post-info">
-        <img src="$logo$">
-      </div>
+  </div>
+
+  <div
+    class="background-image $if(banner-image)$ lozad lozad-image$endif$"
+    $if(banner-image)$
+    data-background-image="$banner-image$"
     $endif$
+  ></div>
+</header>
+
+<section id="top-section" class="bg-light-peach">
+  <div
+    class="article-container article-container--two-sidebars sticky-container"
+  >
+    <aside class="sticky-container__element sidebar sidebar--left">
+      <div class="sidebar__inner">
+        <a href="/work/" class="navigation-button">
+          <span
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="navigation-button__label">Back to projects</span>
+        </a>
+      </div>
+    </aside>
+    <article class="article sticky-container__body">
+      <div class="body-content body-content--article">
+        $body$ $if(quote)$ $for(quote)$
+        <blockquote class="quote">
+          $body$
+          <cite>
+            $citation_name$<br />
+            $citation_position$<br />
+            $citation_organisation$
+          </cite>
+        </blockquote>
+        $endfor$ $endif$
+      </div>
+    </article>
+
+    <aside class="sticky-container__element sidebar sidebar--right">
+      <div class="sidebar__inner sm:flex-col lg:flex-row">
+        <a
+          href="/work/"
+          class="navigation-button navigation-button--publications"
+        >
+          <span
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="navigation-button__label">Back to projects</span>
+        </a>
+        <div class="sidebar__inner__text sidebar__inner__border">
+          $if(logo)$
+          <img src="$logo$" class="mx-auto block max-w-1/3 lg:max-w-full" />
+          $endif$
+        </div>
+        $if(project-link)$
+        <div class="sidebar__inner__buttons">
+          $if(project-link-title)$<span
+            class="hidden mb-4 leading-tight lg:text-left lg:inline-block"
+            >$project-link-title$</span
+          >$endif$
+          <a
+            class="button button--icon button--icon-left"
+            href="$project-link$"
+            target="_blank"
+          >
+            <div>
+              <span class="button--icon-left__text pr-2"
+                >$if(project-link-text)$$project-link-text$$else$View
+                work$endif$</span
+              >
+              <span
+                class="
+                  button--icon__icon
+                  dragonfly-arrow
+                  transform
+                  inline-block
+                  -rotate-45
+                "
+              ></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      $endif$
+    </aside>
   </div>
-  <div class="content post-body">
-    $body$
-  </div>
+</section>
+
+<div class="related-content math-paper">
+  <header class="related-content__header container">
+    <h2 class="supplementary-header related-content__title">
+      You might also like these projects
+    </h2>
+  </header>
+  $partial("templates/_bubble-navigation.html")$
 </div>
-$partial("templates/_bubble-navigation.html")$

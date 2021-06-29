@@ -1,0 +1,41 @@
+<header
+  class="page-header page-header--teaser page-header--article bg-slate-grey"
+>
+  <div class="page-header__outer flex flex-col md:flex-row md:mt-0 lg:max-h-44">
+    <div class="page-header--article__text text-white flex-grow mt-auto">
+      $if(title)$
+      <h1 class="page-header__title">$title$</h1>
+      $endif$ $if(subtitle)$
+      <p class="page-header__content">$subtitle$</p>
+      $endif$
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="link-icon link-icon--arrow-down link-icon--large"
+      >
+        <span class="icon dragonfly-arrow"></span>
+      </a>
+    </div>
+    <div class="page-header--article__image lg:mt-auto">
+      $if(bannerSVG)$
+      <figure class="w-full flex">
+        $else$ $if(teaserImageMedium)$
+        <figure class="w-full flex">
+          $endif$ $endif$ $if(bannerSVG)$
+          <img
+            data-src="$bannerSVG$"
+            class="lozad page-header--article__image--small"
+          />
+          $else$ $if(teaserImageMedium)$
+          <img
+            data-src="$teaserImageMedium$"
+            class="lozad page-header--article__image--small"
+          />
+          $endif$ $endif$ $if(bannerSVG)$
+        </figure>
+        $else$ $if(teaserImageMedium)$
+      </figure>
+      $endif$ $endif$
+    </div>
+  </div>
+</header>

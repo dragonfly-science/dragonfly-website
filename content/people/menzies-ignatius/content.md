@@ -4,12 +4,14 @@ email: iggy@dragonfly.co.nz
 firstname: Ignatius
 lastname: Menzies
 mobile: ""
+role: ""
+honour: PhD
 tag: ignatius
-banner: menzies-ignatius/ignatius-menzies-letterbox.jpg
+banner: menzies-ignatius/ignatius-menzies.jpg
 nocite: |
 ---
 
-Iggy is reproducible research lead at Dragonfly. He is a data scientist with experience in the public and private sectors and a background in ecology.
+Iggy is reproducible research lead at Dragonfly. He is a data scientist with public and private sector experience, and a background in ecology.
 
 <!--more-->
 

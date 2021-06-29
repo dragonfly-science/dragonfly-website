@@ -1,0 +1,41 @@
+/* Navigation section at bottom of a page, linking users to related content.
+ - e.g. projects, news etc. */
+.related-content {
+  @apply bg-light-peach;
+
+  &__header {
+    @apply mx-auto;
+  }
+
+  &__title {
+    @apply py-16;
+  }
+
+  &--header {
+    @apply relative z-10;
+
+    > * {
+      @apply relative z-1;
+    }
+
+    .related-content {
+      &__title {
+        @apply py-8;
+      }
+    }
+  }
+}
+
+@screen xl {
+  .related-content {
+    &--header {
+      .related-content {
+        &__title {
+          @apply py-16;
+        }
+      }
+    }
+  }
+}
+
+

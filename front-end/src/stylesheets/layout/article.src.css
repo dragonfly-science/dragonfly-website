@@ -1,0 +1,23 @@
+.article {
+  @apply relative z-1;
+  @apply mt-0 mb-8 mx-auto;
+  @apply flex-grow max-w-full;
+}
+
+@screen md {
+  .article {
+    @apply mt-12;
+  }
+}
+
+@screen lg {
+  .article {
+    max-width: calc(100% - theme('spacing.64'));
+  }
+}
+
+@screen xl {
+  .article {
+    max-width: calc(100% - theme('spacing.64') - theme('spacing.64'));
+  }
+}

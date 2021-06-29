@@ -1,0 +1,68 @@
+.quote,
+.body-content--has-quote blockquote {
+  @apply mt-8;
+  @apply bg-cool-blue text-white w-auto block;
+  @apply px-10 py-12 ml-0 mb-8;
+  @apply -ml-8 -mr-8;
+
+  p {
+    @apply mb-2 text-xl font-medium italic leading-tight;
+
+    &:first-of-type {
+      &::before {
+        @apply inline;
+
+        content: '"';
+      }
+    }
+
+    &:last-of-type {
+      @apply mb-0;
+
+      &::after {
+        @apply inline;
+
+        content: '"';
+      }
+    }
+  }
+
+  cite {
+    @apply mt-4 block leading-tight;
+  }
+}
+
+@screen md {
+  .quote,
+  .body-content--has-quote blockquote {
+    p {
+      @apply text-2xl;
+    }
+  }
+}
+
+@screen lg {
+  .quote {
+    @apply -ml-28 pl-28 w-auto;
+
+    p {
+      @apply text-2xl;
+    }
+  }
+}
+
+@screen xl {
+  .quote,
+  .body-content--has-quote blockquote {
+    @apply mt-8 mb-8 pt-16 pb-24;
+    @apply -ml-64 pl-64 w-auto;
+  }
+}
+
+@screen 2xl {
+  .quote,
+  .body-content--has-quote blockquote {
+    @apply pl-64 -ml-64;
+    width: calc(75% + theme('spacing.64'));
+  }
+}

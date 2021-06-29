@@ -5,7 +5,7 @@ Kākāpō, New Zealand’s large, flightless, nocturnal parrots generate few off
 
 <!--more-->
 
-Dragonfly is currently scoping the project and Edward recently spent a few days with the team on Codfish Island/Whenua Hou, off Stewart Island/Rakiura, to research and plan the work. 
+Dragonfly is currently scoping the project and Edward recently spent a few days with the team on Codfish Island/Whenua Hou, off Stewart Island/Rakiura, to research and plan the work.
 
 ![Edward helped with some fieldwork while on the island. Credit Andrew Digby, Department of Conservation.](/news/2017-08-14-kakapo-two/ed-kakapo.jpg)
 

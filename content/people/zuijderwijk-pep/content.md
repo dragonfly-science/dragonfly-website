@@ -1,31 +1,52 @@
 ---
-title: Pep Zuijderwijk [Zow-der-vai-k]
-email: pep@saltedherring.com
-firstname: People
+title: Pep Zuijderwijk
+email: pep@saltedherring.design
+firstname: Pep
 lastname: Zuijderwijk
+role: Designer
+bannerTitleLine1: Pep
+bannerTitleLine2: Zuijderwijk
+bannerTitleLine3: "[Zow-der-vaik]"
 mobile: ""
 tag: pep
-banner: zuijderwijk-pep/pep-zuijderwijk-letterbox.jpg
-nocite:
+banner: zuijderwijk-pep/pep-zuijderwijk.jpg
 ---
 
-Pep is design lead at Dragonfly. He applies a robust design process to our digital products and projects, ensuring that the end results are engaging and intuitive – even for our complex and abstract stories. Pep is also a digital design consultant for his agency Salted Herring.
+Pep is design lead at Dragonfly, and a digital design consultant for his agency
+Salted Herring.
 
-<!--more-->
+<!-- more -->
 
-Pep’s collaboration with Dragonfly began about 10 years ago but he has designed and art-directed digital projects for more than 20 years. Projects include the Regional Economic Activity Report, a bycatch management information tool and Kōkako, an award-winning language tracking app.
+He is responsible for applying a robust design process to our digital products &
+projects. This ultimately ensures an intuitive and engaging user-experience in
+the often very complex and abstract [models/data sets/stories] we create.
 
-After graduating with honours in graphic design at the Royal Academy of Arts in The Netherlands, Pep worked as a digital designer at agencies in The Hague, Wellington, London and Amsterdam.
+He has been designing and art directing digital projects for over 20 years and
+began collaborating with Dragonfly around 10 years ago. Some of the projects he
+has been involved with are MBIE's Regional Economic Activity Report, the Bycatch
+Management Information Tool, and Kōkako Language Tracking Tool, which won NZ's
+most prestigious interactive design award, the BeST Purple Pin in 2016.
 
-He started [Salted Herring](saltedherring.design) in 2007 when he moved back to New Zealand and with partner Kate Handley, built it into a studio with a reputation for delivering distinctive, effective and highly crafted digital work. Clients have included: Whittaker’s Chocolate, Asia New Zealand Foundation, New Zealand Festival, Totara Learn, ComplyWith and many software as a service companies.
+After graduating with honours in graphic design at the Royal Academy of Arts in
+The Netherlands, Pep worked as a digital designer at agencies in the Hague,
+Wellington, London and Amsterdam. He started Salted Herring in 2007 when he
+moved back to NZ and with partner Kate Handley, built it into a studio with a
+reputation for delivering distinctive, effective and highly crafted digital
+work. Some of the clients include: Whittaker's Chocolate, the Asia NZ
+Foundation, the NZ Festival, Totara Learn, ComplyWith and many SaaS start-ups.
+Find more on [saltedherring.design](https://saltedherring.design)
 
-### Awards
+> Design can turn abstract data into compelling and meaningful stories that have
+> the power to shift perspectives and change behaviour. This is what excites me
+> about working with the team at Dragonfly.
 
-Designers Institute of New Zealand Best Awards:<br/>
-Purple Pin, 2016 for Kōkako ([see Machine learning for language identification](https://www.dragonfly.co.nz/work/TMP-case-study.html))<br/>
-Gold Pins – 3<br/>
-Silver Pin<br/>
-Bronze Pins – 3<br/>
-Finalist – 7<br/>
+**Awards include:**
 
-Judge of design awards, interactive category: 2018 and 2009.
+Designers Institute of New Zealand Best Awards:
+
+- Purple Pin (Best of Interactive)
+- 3x Gold Pin
+- 1x Silver
+- 3 bronze
+- 7 finalists
+- Judged design awards, interactive category in 2018 and 2009.
