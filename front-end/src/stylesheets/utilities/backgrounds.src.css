@@ -99,7 +99,7 @@
   @apply bg-cover bg-top;
 
   &.loaded {
-    @apply opacity-80;
+    @apply opacity-85;
   }
 }
 
