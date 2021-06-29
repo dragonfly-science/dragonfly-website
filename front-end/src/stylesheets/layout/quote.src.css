@@ -1,9 +1,7 @@
 .quote,
 .body-content--has-quote blockquote {
-  @apply mt-8;
   @apply bg-cool-blue text-white w-auto block;
-  @apply px-10 py-12 ml-0 mb-8;
-  @apply -ml-8 -mr-8;
+  @apply px-8 py-12 mt-8 mb-8 -ml-8 -mr-8;
 
   p {
     @apply mb-2 text-xl font-medium italic leading-tight;
@@ -32,9 +30,18 @@
   }
 }
 
+@screen sm {
+  .quote,
+  .body-content--has-quote blockquote {
+    @apply px-16 mx-0;
+  }
+}
+
 @screen md {
   .quote,
   .body-content--has-quote blockquote {
+    @apply px-16;
+
     p {
       @apply text-2xl;
     }
@@ -43,7 +50,7 @@
 
 @screen lg {
   .quote {
-    @apply -ml-28 pl-28 w-auto;
+    @apply py-20 px-20;
 
     p {
       @apply text-2xl;
@@ -54,15 +61,13 @@
 @screen xl {
   .quote,
   .body-content--has-quote blockquote {
-    @apply mt-8 mb-8 pt-16 pb-24;
-    @apply -ml-64 pl-64 w-auto;
+    @apply mt-8 mb-8 px-16;
   }
 }
 
 @screen 2xl {
   .quote,
   .body-content--has-quote blockquote {
-    @apply pl-64 -ml-64;
-    width: calc(75% + theme('spacing.64'));
+    @apply py-20 px-32;
   }
 }

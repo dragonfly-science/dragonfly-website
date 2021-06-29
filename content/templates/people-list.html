@@ -32,76 +32,85 @@
   ></div>
   $endif$
 </header>
+<div class="relative">
+  $partial("templates/_title.html")$
 
-$partial("templates/_title.html")$
+  <section id="top-section" class="bg-dark-jungle-green">
+    <div
+      class="
+        collection-grid collection-grid--no-bottom
+        outer-container outer-container--tile-list
+      "
+    >
+      $for(people)$
+      <a
+        href="$pageurl$"
+        class="no-gutter-cell person-tile bg-dark-jungle-green"
+      >
+        <div class="h-full w-full flex flex-row">
+          <h2
+            class="
+              no-gutter-cell__title
+              person-tile__title
+              mt-auto
+              flex-grow
+              mr-8
+            "
+          >
+            $if(firstname)$$firstname$$endif$<br />
+            $lastname$$if(honour)$<br />
+            <span class="font-light">$honour$</span>$endif$
+          </h2>
 
-<section id="top-section" class="bg-dark-jungle-green">
-  <div
+          <span
+            class="
+              link-icon
+              no-gutter-cell__link
+              no-gutter-cell--overlay__link
+              person-tile__link
+              w-10
+              mt-auto
+              flex-shrink-none
+            "
+          >
+            <span class="icon dragonfly-arrow mt-2"></span>
+          </span>
+        </div>
+
+        <div
+          class="
+            no-gutter-cell__image
+            person-tile__image
+            background-image
+            lozad
+          "
+          data-background-image="$teaserImage$"
+        ></div>
+      </a>
+      $endfor$
+    </div>
+  </section>
+
+  $if(CTASection)$
+  <section
     class="
-      collection-grid collection-grid--no-bottom
-      outer-container outer-container--tile-list
+      call-to-action call-to-action--single-column
+      math-paper math-paper--reverse
+      bg-cool-blue
+      text-white
     "
   >
-    $for(people)$
-    <a href="$pageurl$" class="no-gutter-cell person-tile bg-dark-jungle-green">
-      <div class="h-full w-full flex flex-row">
-        <h2
-          class="
-            no-gutter-cell__title
-            person-tile__title
-            mt-auto
-            flex-grow
-            mr-8
-          "
-        >
-          $if(firstname)$$firstname$$endif$<br />
-          $lastname$$if(honour)$<br />
-          <span class="font-light">$honour$</span>$endif$
-        </h2>
-
-        <span
-          class="
-            link-icon
-            no-gutter-cell__link
-            no-gutter-cell--overlay__link
-            person-tile__link
-            w-10
-            mt-auto
-            flex-shrink-none
-          "
-        >
-          <span class="icon dragonfly-arrow mt-2"></span>
-        </span>
-      </div>
-
-      <div
-        class="no-gutter-cell__image person-tile__image background-image lozad"
-        data-background-image="$teaserImage$"
-      ></div>
-    </a>
-    $endfor$
-  </div>
-</section>
-
-$if(CTASection)$
-<section
-  class="
-    call-to-action call-to-action--single-column
-    math-paper math-paper--reverse
-    bg-cool-blue
-    text-white
-  "
->
-  <div class="call-to-action__container container">
-    $if(CTATitle)$
-    <p class="supplementary-header call-to-action__text">$CTATitle$</p>
-    $endif$ $if(CTAButtonTitle)$
-    <a
-      href="$if(CTAButtonLink)$$CTAButtonLink$$else$#$endif$"
-      class="button call-to-action__button call-to-action__button--white"
-      >$CTAButtonTitle$</a
-    >
-    $endif$
-  </div>
-</section>
-$endif$
+    <div class="call-to-action__container container">
+      $if(CTATitle)$
+      <p class="supplementary-header call-to-action__text">$CTATitle$</p>
+      $endif$ $if(CTAButtonTitle)$
+      <a
+        href="$if(CTAButtonLink)$$CTAButtonLink$$else$#$endif$"
+        class="button call-to-action__button call-to-action__button--white"
+        >$CTAButtonTitle$</a
+      >
+      $endif$
+    </div>
+  </section>
+  $endif$
+</div>

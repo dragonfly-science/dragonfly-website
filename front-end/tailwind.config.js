@@ -83,7 +83,7 @@ module.exports = {
         44: '44rem',
       },
       lineHeight: {
-        tighter: '1.2em',
+        tighter: '1.2',
         11: '2.6rem',
       },
       margin: {
@@ -117,6 +117,7 @@ module.exports = {
         '16rem': '16rem',
         '18rem': '18rem',
         '30rem': '30rem',
+        '37/5rem': '37.5rem',
         '38rem': '38rem',
         '64rem': '64rem',
         '8/10': '80%',
@@ -143,6 +144,8 @@ module.exports = {
         30: '30rem',
         42: '42rem',
         44: '44rem',
+        104: '26rem',
+        106: '28rem',
       },
       minHeight: {
         3: '3rem',

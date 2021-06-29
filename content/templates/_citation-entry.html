@@ -1,62 +1,69 @@
 <div class="grid-cell citation-year$if(year)$ citation-year--$year$$endif$">
-  <div class="citation-year__text">
-      $if(year)$$year$$endif$
-  </div>
+  <div class="citation-year__text">$if(year)$$year$$endif$</div>
 
   <div class="hidden">
     $if(title)$
-      <span>$title$</span>
-    $endif$
-
-    $if(citation)$
-    <div class="publication-tile__citation">
-      $citation$
-    </div>
+    <span>$title$</span>
+    $endif$ $if(citation)$
+    <div class="publication-tile__citation">$citation$</div>
     $endif$
 
     <div class="tagslugs">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
   </div>
 </div>
 
-
-<div class="publication-tile grid-cell list-tile$if(year)$ year-$year$$endif$ tag$if(tags)$$for(tags)$ tag-$tag$$endfor$$endif$">
+<div
+  class="
+    publication-tile
+    grid-cell
+    list-tile$if(year)$
+    year-$year$$endif$
+    tag$if(tags)$$for(tags)$
+    tag-$tag$$endfor$$endif$
+  "
+>
   <header class="publication-tile__header">
     $if(tags)$
     <ul class="tag-list tag-list--publication-tile publication-tile__tag-list">
-        $for(tags)$
-        <li class="tag-list__tag tag-list__tag--$tag$ tag-list__tag--$tag$-active">$tag$</li>
-        $endfor$
+      $for(tags)$
+      <li
+        class="tag-list__tag tag-list__tag--$tag$ tag-list__tag--$tag$-active"
+      >
+        $tag$
+      </li>
+      $endfor$
     </ul>
     $endif$
   </header>
 
-    $if(title)$
-      <div class="publication-tile__title tile__tile block">
-        <h3>$title$</h3>
-      </div>
-    $endif$
+  $if(title)$
+  <div class="publication-tile__title tile__tile block">
+    <h3>$title$</h3>
+  </div>
+  $endif$ $if(citation)$
+  <div class="publication-tile__citation tile__citation">$citation$</div>
+  $endif$
 
-    $if(citation)$
-    <div class="publication-tile__citation tile__citation">
-      $citation$
+  <div class="tagslugs hidden">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
+
+  <footer class="publication-tile__footer flex justify-between items-center">
+    $if(pdf)$
+    <a
+      href="//files.dragonfly.co.nz/publications/pdf/$pdf$"
+      class="publication-tile__pdf button-link"
+    >
+      <span class="dragonfly-pdf text-3xl"></span>
+      <i>Download<br />report</i>
+    </a>
+    $endif$ $if(hasBody)$
+    <div class="publication-tile__read-more text-sm">
+      read more <span class="ml-1 icon dragonfly-arrow"></span>
     </div>
     $endif$
-
-    <div class="tagslugs hidden">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
-
-    <footer class="publication-tile__footer flex justify-between items-center">
-      $if(pdf)$
-        <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$" class="publication-tile__pdf button-link">
-          <span class="dragonfly-pdf text-3xl"></span>
-          <i>Download<br>report</i>
-        </a>
-      $endif$
-      $if(hasBody)$
-        <div class="publication-tile__read-more text-sm">read more <span class="ml-1 icon dragonfly-arrow"></span></div>
-      $endif$
   </footer>
   $if(hasBody)$
-    <a class="publication-tile__details" href="/publications/$id$.html">read more</a>
+  <a class="publication-tile__details" href="/publications/$id$.html"
+    >read more</a
+  >
   $endif$
 </div>
-

@@ -65,7 +65,7 @@
   }
 
   &__label {
-    @apply font-medium text-lg block;
+    @apply font-medium block;
     @apply transition-all;
 
     &:hover {
@@ -93,7 +93,7 @@
 
     > a,
     .main-nav__label {
-      @apply no-underline;
+      @apply no-underline text-lg;
     }
   }
 
@@ -163,7 +163,7 @@
         transform: perspective(75em) rotateX(-90deg);
 
         a {
-          @apply text-base leading-snug;
+          /* @apply text-base leading-snug; */
 
           &:hover {
             @apply text-cool-blue;

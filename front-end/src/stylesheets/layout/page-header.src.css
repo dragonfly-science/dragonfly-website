@@ -70,7 +70,8 @@
     width: 1600px;
 
     video {
-      height: calc(100% - 48px);
+      @apply object-cover;
+      /* height: calc(100% - 48px); */
     }
   }
 
@@ -99,8 +100,17 @@
   }
 
   /* Additional Elements. */
+  .lozad-image,
+  .video {
+    @apply fixed h-full w-full opacity-85 top-0 left-0 mt-12;
+  }
+
+  .video {
+    @apply z-0 object-cover max-h-106 w-full h-full opacity-85;
+  }
+
   .lozad-image {
-    @apply absolute h-full w-full bg-cover top-0 left-0;
+    @apply bg-cover max-h-44;
   }
 
   .link-icon {
@@ -248,6 +258,15 @@
     .link-icon {
       @apply mt-16;
     }
+
+    .lozad-image,
+    .video {
+      @apply mt-24;
+    }
+
+    .video {
+      @apply max-h-44;
+    }
   }
 }
 
@@ -293,6 +312,17 @@
     }
 
     &--article {
+      &__image {
+        &--news {
+          @apply max-w-37/5rem;
+        }
+      }
+
+      &__text {
+        &--news {
+          @apply max-w-full;
+        }
+      }
     }
   }
 }

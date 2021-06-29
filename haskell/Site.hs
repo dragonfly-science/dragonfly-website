@@ -1,7 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import Debug.Trace
-
 import           Control.Monad
 import           Data.Monoid          ((<>))
 import           Data.Foldable        (forM_)
@@ -206,7 +204,7 @@ main = do
                      <> work
                 sitemapCtx =
                     constField "root" root <>
-                    listField "pages" postCtx (return $ trace ("pages: " ++ show pages) pages)
+                    listField "pages" postCtx (return pages)
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
