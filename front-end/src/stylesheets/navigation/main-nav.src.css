@@ -1,6 +1,6 @@
 .main-nav {
   @apply flex flex-col top-0 flex-grow justify-center absolute w-full;
-  @apply left-0 bg-white h-0 mt-12 opacity-0 transition-all;
+  @apply left-0 bg-white h-0 mt-12 opacity-0 transition-all z-60;
 
   &.open {
     @apply opacity-100;

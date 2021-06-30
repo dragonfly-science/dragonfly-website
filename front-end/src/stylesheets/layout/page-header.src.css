@@ -52,7 +52,7 @@
         @apply bg-slate-grey;
 
         &.loaded {
-          @apply opacity-80;
+          @apply opacity-85;
         }
       }
     }
@@ -248,10 +248,6 @@
         &__content {
           @apply max-w-full;
         }
-
-        /* &__title {
-          @apply text-6/2xl;
-        } */
       }
     }
 

@@ -218,6 +218,8 @@ module.exports = {
       },
       zIndex: {
         1: '1',
+        60: '60',
+        100: '100',
       },
       spacing: {
         22: '5.5rem',

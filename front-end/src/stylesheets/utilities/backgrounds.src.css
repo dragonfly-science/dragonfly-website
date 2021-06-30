@@ -136,4 +136,10 @@
       @apply bg-slate-grey;
     }
   }
+
+  &--dark-jungle-green {
+    &::before {
+      @apply bg-dark-jungle-green;
+    }
+  }
 }
