@@ -93,7 +93,7 @@
 
     > a,
     .main-nav__label {
-      @apply no-underline text-lg;
+      @apply no-underline;
     }
   }
 
