@@ -14,8 +14,8 @@ CTADescriptor: some text
 CTAButton: read more
 ---
 
-We built a prediction service to allocate visa applications to either fast track or
-review track streams, based on previous decisions. Handling applications
+We built a prediction service to allocate visa applications to either fast track
+ or review track streams, based on previous decisions. Handling applications
 appropriately brings faster and more reliable decision-making.
 
 <!--more-->
@@ -34,11 +34,14 @@ is warranted.
 
 Since all applications are graded, management can decide where they place the cut-
 off between fast track and review track applications. This feature of the system
-allows INZ to choose a level of risk for the visa processing that meets their business
-criteria. It also enables workflow and resources to be managed.
+allows INZ to choose a level of risk for the visa processing that meets their
+business criteria. It also enables workflow and resources to be managed.
 
 ### How we did it
 
-Analysis and predictive modelling were carried out by Dragonfly, with technical review from staff at Victoria University. We then ported
-the model into the INZ operational environment, running it against a near real-time copy of their database, and delivering predictions
-within 10 minutes of applications being entered into the system. The prediction service makes use of data from past applications, delivering ongoing value to Immigration New Zealand.
+Analysis and predictive modelling were carried out by Dragonfly, with technical
+ review from staff at Victoria University. We then ported the model into the INZ
+ operational environment, running it against a near real-time copy of their
+ database, and delivering predictions within 10 minutes of applications being
+ entered into the system. The prediction service makes use of data from past
+ applications, delivering ongoing value to Immigration New Zealand.

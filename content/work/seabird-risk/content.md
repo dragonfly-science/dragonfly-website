@@ -7,6 +7,9 @@ banner-image: /work/seabird-risk/banner.jpg
 testimonial:
   - testimonials/seabird-risk-testimonial/content.md
 logo: /work/seabird-risk/MPI-logo.png
+description: >
+  Our assessment of the risk posed to seabird populations from New Zealand’s
+  commercial fisheries provided critical information for government policy.
 CTADescriptor: some text
 CTAButton: read more
 ---
@@ -21,20 +24,26 @@ industry.
 
 ### Risk evaluation leads policy
 
-We carried out a risk assessment for the New Zealand Ministry for Primary Industries, using a consistent
-framework to evaluate the risk to seabird populations from New Zealand commercial fisheries. There are over 70 seabird
-species that breed in the New Zealand region. By including all these seabirds in the
-risk assessment, the Ministry was able to prioritise management actions. The risk assessment highlights
-where more information is required to reduce uncertainty, and where actions need to be taken to reduce seabird mortalities.
+We carried out a risk assessment for the Ministry for Primary Industries,
+using a consistent framework to evaluate the risk to seabird populations from
+New Zealand commercial fisheries. More than 70 seabird species breed in the
+New Zealand region. By including all these seabirds in the
+risk assessment, the Ministry was able to prioritise management actions.
+The risk assessment highlights where more information is required to reduce
+ uncertainty, and where actions need to be taken to reduce seabird mortalities.
 
 ### A Bayesian approach
 
-Information on many seabird species is poor. By using Bayesian statistical modelling, we were able to work with
-the available data to produce consistent results. There are many stakeholders with an interest in seabird
-bycatch, including government agencies, the fishing industry and national and international Non-Governmental Organisations.
+Information on many seabird species is poor. By using Bayesian statistical
+modelling, we were able to work with the available data to produce consistent
+results. There are many stakeholders with an interest in seabird
+bycatch, including government agencies, the fishing industry and national
+and international non-governmental organisations.
 A clear, principled approach allowed us to build the trust of the stakeholders.
 
 ### Supporting policy and certification
 
-The risk assessment supports government policy in this area, and is in turn used to demonstrate their commitment internationally. The assessment
-is used by the fishing industry to support the certification of New Zealand fisheries as sustainable, increasing the value of those fisheries.
+The risk assessment supports government policy in this area, and is in turn used
+ to demonstrate their commitment internationally. The assessment
+is used by the fishing industry to support the certification of New Zealand
+ fisheries as sustainable, increasing the value of those fisheries.
