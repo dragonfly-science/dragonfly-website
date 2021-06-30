@@ -8,8 +8,12 @@ tags: stats, policy
 testimonial:
   - testimonials/delphi-testimonial/content.md
 project-link: http://www.fao.org/fileadmin/user_upload/common_oceans/docs/Tuna/TurtleMeetingsFinalReport.pdf
-project-link-text: open report
+project-link-text: Download report
 logo: /work/delphi-case-study/Pacific-Community-logo.png
+description: >
+  A survey using the Delphi method was used to map the distribution of four
+  species of sea turtle. The maps fed into simulations of interactions with
+  fisheries.
 CTADescriptor: some text
 CTAButton: read more
 ---

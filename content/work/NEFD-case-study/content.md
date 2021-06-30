@@ -7,6 +7,8 @@ banner-image: /work/NEFD-case-study/banner.jpg
 testimonial:
   - testimonials/nefd-testimonial/content.md
 logo: /work/NEFD-case-study/MPI-logo.png
+project-link: https://www.mpi.govt.nz/dmsdocument/43540-2020-NEFD-report
+project-link-text: Download 2020 report
 CTADescriptor: some text
 CTAButton: read more
 ---

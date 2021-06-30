@@ -8,8 +8,9 @@ logo: /work/webrear-case-study/mbie-logo.png
 summary: Making it easy for anyone to explore New Zealand's economic data
 tags: systems
 project-link: http://webrear.mbie.govt.nz/summary/new-zealand
-project-link-text: View work
-project-link-title: Explore New Zealand’s regional economies
+project-link-text: View project
+description: >
+  We worked with MBIE to publish the Regional Economic Activity Report online for the first time. A desktop version and iPad and mobile apps were produced.
 CTADescriptor: some text
 CTAButton: read more
 ---

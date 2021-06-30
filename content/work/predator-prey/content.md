@@ -8,7 +8,11 @@ logo: /work/predator-prey/rutgers.png
 testimonial:
   - testimonials/predator-prey-testimonial/content.md
 project-link: https://peerj.com/articles/920.pdf
-project-link-text: Read the paper
+project-link-text: Download publication
+description: >
+  We used statistical analysis to model the strength of
+  interactions between different species to inform how much of a predator or
+  prey species could be harvested.
 CTADescriptor: some text
 CTAButton: read more
 ---
