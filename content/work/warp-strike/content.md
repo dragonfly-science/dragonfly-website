@@ -7,6 +7,9 @@ banner-image: /work/warp-strike/streamers.jpg
 testimonial:
   - testimonials/warp-strike-testimonial/content.md
 logo: /work/seabird-risk/MPI-logo.png
+description: >
+  Our assessment of the risk posed to seabird populations from New Zealand’s
+  commercial fisheries provided critical information for government policy.
 CTADescriptor: some text
 CTAButton: read more
 ---
@@ -18,7 +21,11 @@ method was the most effective at reducing the number of albatross killed in traw
 
 ### Albatross interactions with trawl warps
 
-Globally, albatross populations are in decline because they are killed by fishing operations. For albatross populations to recover, these fatalities must be reduced. In trawl fisheries, the warps (cables that connect trawling gear to a vessel) can strike and kill albatross that are feeding behind the vessel.
+Globally, albatross populations are in decline because they are killed by
+fishing operations. For albatross populations to recover, these fatalities
+must be reduced. In trawl fisheries, the warps (cables that connect trawling
+  gear to a vessel) can strike and kill albatross that are feeding behind the
+  vessel.
 
 ### Finding the best device
 
@@ -40,10 +47,13 @@ recommendation to fisheries managers.
 
 ### Statistical models show a clear winner
 
-The statistical models demonstrated that streamer lines behind the vessel were by far the best way to keep the birds away from the warps. The analysis showed a 90% reduction in bird strikes when
+The statistical models demonstrated that streamer lines behind the vessel were
+ by far the best way to keep the birds away from the warps. The analysis showed
+  a 90% reduction in bird strikes when
 they were used.
 
-Since the experiment, the use of streamer lines has increased and a decrease in the bycatch of white-capped
+Since the experiment, the use of streamer lines has increased and a decrease
+ in the bycatch of white-capped
 albatross has been observed. This work has also
 contributed to international recommendations for reducing bird strike behind
 trawlers.
