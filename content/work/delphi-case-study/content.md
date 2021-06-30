@@ -11,7 +11,7 @@ quote: >
 quote-attribution: >
   Neville Smith, Principal Fisheries Scientist, Pacific Community (SPC)
 project-link: http://www.fao.org/fileadmin/user_upload/common_oceans/docs/Tuna/TurtleMeetingsFinalReport.pdf
-project-link-text: open report
+project-link-text: Download report
 logo: /work/delphi-case-study/Pacific-Community-logo.jpg
 CTADescriptor: some text
 CTAButton: read more

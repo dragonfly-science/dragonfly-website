@@ -9,9 +9,10 @@ summary: >
   Streamlining the processing of resource consent applications at a national
   scale  
 tags: capability
-project-link: http://www.mfe.govt.nz/rma/rma-monitoring
-project-link-text: View key data
-project-link-title: Access key data from the National Monitoring System
+project-link: https://environment.govt.nz/what-government-is-doing/areas-of-work/rma/national-monitoring-system/
+project-link-text: View project
+description: >
+  A reusable code-based system was developed to help collate data from the 40,000 resource consent applications that are made annually in New Zealand. 
 CTADescriptor: some text
 CTAButton: read more
 ---
@@ -69,5 +70,3 @@ MfE is also able to release the compiled data much faster. This typically took m
 Data Science Lead <br />
 Environmental Reporting <br />
 Ministry for the Environment – Manatū Mō Te Taiao </cite>
-
-[Access key data from the National Monitoring System](http://www.mfe.govt.nz/rma/rma-monitoring).

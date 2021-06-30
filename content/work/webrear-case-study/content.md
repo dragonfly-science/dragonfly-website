@@ -14,7 +14,8 @@ summary: Making it easy for anyone to explore New Zealand's economic data
 tags: systems
 project-link: http://webrear.mbie.govt.nz/summary/new-zealand
 project-link-text: View project
-project-link-title: Explore New Zealand’s regional economies
+description: >
+  We worked with MBIE to publish the Regional Economic Activity Report online for the first time. A desktop version and iPad and mobile apps were produced.
 CTADescriptor: some text
 CTAButton: read more
 ---
@@ -49,8 +50,6 @@ To successfully deliver the project, we worked with a large team of up to 30 peo
 externally. We were able to coordinate this team and deliver the website, following an
 extremely tight timetable to meet
 the Minister’s release date.
-
-[Explore New Zealand’s regional economies here.](http://webrear.mbie.govt.nz/summary/new-zealand)
 
 
 > I believe Dragonfly’s interactive is one of the best visualisations of

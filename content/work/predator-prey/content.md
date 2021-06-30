@@ -10,7 +10,11 @@ quote: >
 quote-attribution: Dr Olaf Jensen, Institute of Marine and Coastal Sciences
 logo: /work/predator-prey/rutgers.jpg
 project-link: https://peerj.com/articles/920.pdf
-project-link-text: Read the paper
+project-link-text: Download publication
+description: >
+  We used statistical analysis to model the strength of
+  interactions between different species to inform how much of a predator or
+  prey species could be harvested.
 CTADescriptor: some text
 CTAButton: read more
 ---

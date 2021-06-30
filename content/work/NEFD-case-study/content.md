@@ -7,6 +7,8 @@ banner-image: /work/NEFD-case-study/forest-hillsides.jpg
 quote: It was very smooth sailing, and what we expected was what we got.
 quote-attribution: Kate King, Team Leader, Economic Data and Analysis, Ministry for Primary Industries | Manatū Ahu Matua
 logo: /work/NEFD-case-study/MPI-logo.png
+project-link: https://www.mpi.govt.nz/dmsdocument/43540-2020-NEFD-report
+project-link-text: Download 2020 report
 CTADescriptor: some text
 CTAButton: read more
 ---
