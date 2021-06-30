@@ -48,4 +48,14 @@ externally. We were able to coordinate this team and deliver the website, follow
 extremely tight timetable to meet
 the Minister’s release date.
 
-[Explore New Zealand’s regional economies here.](http://webrear.mbie.govt.nz/summary/new-zealand)
+> I believe Dragonfly’s interactive is one of the best visualisations of
+> public data in New Zealand.
+> It presents different dimensions of the data and puts things in perspective by
+> highlighting the relationship between various areas.
+>
+> And just from a technical perspective, I think it’s a very polished product.
+
+<cite>Harkanwal Singh<br />
+Data Editor<br />
+New Zealand Herald.</cite>
+
