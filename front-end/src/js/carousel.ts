@@ -28,7 +28,7 @@ const Carousel = async (targetId: string): Promise<void> => {
 
   const loaded = res.every((i: number) => i === 200)
 
-  const baseCSS = 'w-full h-full bg-black transition-opacity ease-in-out duration-500 opacity-0 absolute top-0 left-0 bg-cover z-0'
+  const baseCSS = 'w-full h-full bg-black transition-opacity ease-in-out duration-500 opacity-0 absolute top-0 left-0 bg-cover bg-center z-0'
 
   // if loaded, then start loading in the slideshow.
   const first = document.createElement("div")
@@ -59,9 +59,7 @@ const Carousel = async (targetId: string): Promise<void> => {
       first.classList.replace('opacity-100', 'opacity-0')
       first.classList.replace('z-20', 'z-0')
     }
-
-
-  }, 5000)
+  }, 4000)
 
 }
 

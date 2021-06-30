@@ -2,32 +2,24 @@ $partial("templates/_page-header-small.html")$
 
 <div id="filter-list" data-type="publication">
   <div class="filtering bg-light-peach">
-    <div class="flex outer-container px-8 lg:px-32 2xl:px-8">
+    <div class="flex outer-container">
       <div class="filtering__tools">
         <div class="filtering__tools__header">
           $partial("templates/_search-field.html")$
 
-          <div class="filtering__buttons xl:ml-0">
-            <button
-              class="
-                filtering__button
-                outline-none
-                text-cool-blue text-lg
-                font-bold
-                pt-2
-              "
-              title="show/hide filter options"
-            >
-              filters
+          <div class="filtering__buttons">
+            <button class="filtering__button" title="show/hide filter options">
+              <span class="inline-block mr-6">Show filters</span>
+
               <span
                 class="
-                  ml-1
+                  filtering__buttons__icon
                   fas
                   fa-plus
                   rotate-0
                   transform
-                  transition
-                  duration-300
+                  transition-all
+                  ease-out-quart
                 "
               ></span>
             </button>
@@ -58,14 +50,23 @@ $partial("templates/_page-header-small.html")$
               <li class="tag-list__tag tag-list__tag--author" data-tag="katrin">
                 Katrin Berkenbusch
               </li>
-              <li class="tag-list__tag tag-list__tag--author" data-tag="laura">
-                Laura Tremblay-Boyer
+              <li class="tag-list__tag tag-list__tag--author" data-tag="brett">
+                Bret Calcott
+              </li>
+              <li class="tag-list__tag tag-list__tag--author" data-tag="fabian">
+                Fabian Döweler
               </li>
               <li
                 class="tag-list__tag tag-list__tag--author"
                 data-tag="richard"
               >
                 Richard Mansfield
+              </li>
+              <li class="tag-list__tag tag-list__tag--author" data-tag="iggy">
+                Ignatius Menzies
+              </li>
+              <li class="tag-list__tag tag-list__tag--author" data-tag="caleb">
+                Caleb Moses
               </li>
               <li
                 class="tag-list__tag tag-list__tag--author"
@@ -78,6 +79,9 @@ $partial("templates/_page-header-small.html")$
               </li>
               <li class="tag-list__tag tag-list__tag--author" data-tag="finlay">
                 Finlay Thompson
+              </li>
+              <li class="tag-list__tag tag-list__tag--author" data-tag="laura">
+                Laura Tremblay-Boyer
               </li>
             </ul>
           </div>
@@ -98,6 +102,12 @@ $partial("templates/_page-header-small.html")$
                 data-tag="assessment"
               >
                 Assessment
+              </li>
+              <li
+                class="tag-list__tag tag-list__tag--subject"
+                data-tag="bayesian"
+              >
+                Bayesian
               </li>
               <li
                 class="tag-list__tag tag-list__tag--subject"
@@ -162,8 +172,8 @@ $partial("templates/_page-header-small.html")$
             </ul>
           </div>
 
-          <div class="filtering__tags flex-grow-0">
-            <span class="filtering__tags__title whitespace-no-wrap"
+          <div class="filtering__tags flex-grow lg:min-w-12/5">
+            <span class="filtering__tags__title inline-block whitespace-nowrap"
               >By publication type</span
             >
             <ul class="tag-list">
@@ -215,7 +225,14 @@ $partial("templates/_page-header-small.html")$
   </div>
 
   <section id="top-section" class="bg-light-peach math-paper">
-    <div class="collection-grid publication-grid list outer-container">
+    <div
+      class="
+        collection-grid
+        publication-grid
+        list
+        outer-container outer-container--tile-list
+      "
+    >
       $for(publications)$ $partial("templates/_citation-entry.html")$ $endfor$
     </div>
   </section>

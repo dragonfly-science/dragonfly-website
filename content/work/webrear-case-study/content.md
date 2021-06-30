@@ -27,15 +27,17 @@ apps to help people explore the numbers.
 <!--more-->
 
 ### Economic activity by region
+
 The Regional Economic Activity Report presents data on a broad range of
 economic activity in New Zealand. As part of the government’s Business Growth Agenda,
 Minister Steven Joyce
 wanted to make the report accessible to a wider audience by creating an
-online version.  Regional and city council staff had also requested access to more detailed
+online version. Regional and city council staff had also requested access to more detailed
 information,
 to inform their policy and planning around resources, permitting, and business management.
 
-### How we made it happen  
+### How we made it happen
+
 We built an interactive desktop version of the report, which was
 then released as an iPad and mobile app. A single source of data flows through to the report,
 the website, and the apps, to ensure the integrity of the data across all the

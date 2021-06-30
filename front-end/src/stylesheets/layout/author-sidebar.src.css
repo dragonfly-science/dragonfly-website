@@ -1,0 +1,32 @@
+.author-sidebar {
+  &.sidebar {
+    @apply w-full max-w-12rem mx-auto;
+  }
+
+  &__inner {
+    @apply m-0 ml-auto w-full border-t-4 border-cool-blue pt-5 flex flex-col;
+  }
+}
+
+@screen sm {
+  .author-sidebar {
+    &.sidebar {
+      @apply max-w-full mx-0;
+    }
+    &__inner {
+      @apply flex-row;
+    }
+  }
+}
+
+@screen lg {
+  .author-sidebar {
+    &.sidebar {
+      @apply w-64;
+    }
+
+    &__inner {
+      @apply w-48 flex-col;
+    }
+  }
+}

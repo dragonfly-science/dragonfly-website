@@ -78,6 +78,11 @@ website: $(HS) haskell/Site.hs
 .PHONY: build
 build: .build-website .build-npm
 
+.images: .install
+	$(RUN) bash -c 'cd front-end && npm run imagemin'
+	touch $@
+
+
 # Utility commands
 clean:
 	rm -rf website _site .env .install .cache \
@@ -87,7 +92,7 @@ clean:
 clean-cache: website
 	$(RUN_WEB) bash -c './website clean'
 
-compress:
+compress: .images
 	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'
 
 interact:

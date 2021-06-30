@@ -13,6 +13,8 @@ quote-attribution: >
 project-link: http://www.fao.org/fileadmin/user_upload/common_oceans/docs/Tuna/TurtleMeetingsFinalReport.pdf
 project-link-text: Download report
 logo: /work/delphi-case-study/Pacific-Community-logo.jpg
+description: >
+  A survey using the Delphi method was used to map the distribution of four species of sea turtle. The maps fed into simulations of interactions with fisheries. 
 CTADescriptor: some text
 CTAButton: read more
 ---
@@ -32,7 +34,7 @@ appropriately.
 We developed an online survey method to allow experts contribute their knowledge
 independently. The experts coloured maps of the Pacific Ocean,
 according to their perceptions of turtle abundance. A statistical model was
-then used to combine the maps, producing estimates of relative abudance and the
+then used to combine the maps, producing estimates of relative abundance and the
 associated uncertainty.  
 
 

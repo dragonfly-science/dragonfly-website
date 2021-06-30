@@ -12,7 +12,7 @@ tags: capability
 project-link: https://environment.govt.nz/what-government-is-doing/areas-of-work/rma/national-monitoring-system/
 project-link-text: View project
 description: >
-  A reusable code-based system was developed to help collate data from the 40,000 resource consent applications that are made annually in New Zealand. 
+  A reusable code-based system was developed to help collate data from the 40,000 resource consent applications that are made annually in New Zealand.
 CTADescriptor: some text
 CTAButton: read more
 ---

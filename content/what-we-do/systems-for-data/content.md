@@ -1,7 +1,7 @@
 ---
 title: Systems for data
 subtitle: >
-  Everybody’s data has value, and it needs to be kept safe, accessible and possibly open. We build well-managed systems that meet all these requirements.    
+  Everybody’s data has value, and it needs to be kept safe, accessible and possibly open. We build well-managed systems that meet all these requirements.
 author:
   - people/moses-caleb/content.md
 quote: >

@@ -17,7 +17,7 @@
 }
 
 @screen xl {
-  .body-content {
+  /* .body-content {
     @apply ml-64 !important;
-  }
+  } */
 }

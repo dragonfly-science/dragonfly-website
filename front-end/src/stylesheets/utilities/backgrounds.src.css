@@ -96,6 +96,8 @@
 }
 
 .background-image {
+  @apply bg-cover bg-top;
+
   &.loaded {
     @apply opacity-80;
   }

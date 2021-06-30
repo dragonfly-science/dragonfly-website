@@ -1,7 +1,8 @@
 <header
   class="
-    page-header page-header--article page-header--image-bg
+    page-header page-header--image-bg
     lozad-container lozad-container--slate-grey
+    text-white
   "
 >
   <div class="page-header__outer">
@@ -35,7 +36,12 @@
 $partial("templates/_title.html")$
 
 <section id="top-section" class="bg-dark-jungle-green">
-  <div class="collection-grid collection-grid--no-bottom outer-container">
+  <div
+    class="
+      collection-grid collection-grid--no-bottom
+      outer-container outer-container--tile-list
+    "
+  >
     $for(people)$
     <a href="$pageurl$" class="no-gutter-cell person-tile bg-dark-jungle-green">
       <div class="h-full w-full flex flex-row">
@@ -77,15 +83,25 @@ $partial("templates/_title.html")$
   </div>
 </section>
 
-<section class="call-to-action call-to-action--single-column">
+$if(CTASection)$
+<section
+  class="
+    call-to-action call-to-action--single-column
+    math-paper math-paper--reverse
+    bg-cool-blue
+    text-white
+  "
+>
   <div class="call-to-action__container container">
-    <p class="supplementary-header call-to-action__text">
-      Seem like the team for you?
-    </p>
+    $if(CTATitle)$
+    <p class="supplementary-header call-to-action__text">$CTATitle$</p>
+    $endif$ $if(CTAButtonTitle)$
     <a
-      href="#contact"
-      class="button call-to-action__button call-to-action__button--cool-blue"
-      >Join us</a
+      href="$if(CTAButtonLink)$$CTAButtonLink$$else$#$endif$"
+      class="button call-to-action__button call-to-action__button--white"
+      >$CTAButtonTitle$</a
     >
+    $endif$
   </div>
 </section>
+$endif$

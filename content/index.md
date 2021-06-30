@@ -17,6 +17,12 @@ sections:
   - landing-pages/work/content.md
 testimonials:
   - testimonials/tmp-testimonial/content.md
+  - testimonials/delphi-testimonial/content.md
+  - testimonials/inz-testimonial/content.md
+  - testimonials/navigating-complexity-testimonial/content.md
+  - testimonials/nefd-testimonial/content.md
+  - testimonials/paua-management-testimonial/content.md
+  - testimonials/predator-prey-testimonial/content.md
 sectionTitle: Latest News
 sectionLeft: true
 ---

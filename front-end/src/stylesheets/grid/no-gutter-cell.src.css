@@ -42,7 +42,7 @@
   }
 
   &__inner {
-    @apply mt-auto;
+    @apply mt-auto mb-1;
 
     .no-gutter-cell__text {
       @apply mb-0 max-h-0 h-auto overflow-y-hidden opacity-100 transition-all duration-500;
@@ -94,8 +94,7 @@
 
     .no-gutter-cell__inner {
       .no-gutter-cell__text {
-        @apply max-h-44 mt-4 mb-4;
-        /* transition: max-height 0.7s; */
+        @apply max-h-42 mt-4 mb-4;
       }
     }
 
@@ -219,6 +218,10 @@
 @screen xl {
   .no-gutter-cell {
     @apply w-1/4;
+
+    &__title {
+      @apply text-4/3xl leading-11;
+    }
   }
 }
 
