@@ -29,8 +29,6 @@
 @screen lg {
   .related-content {
     &__title {
-      @apply px-0;
-
       &.supplementary-header {
         @apply text-left;
       }
@@ -49,5 +47,3 @@
     }
   }
 }
-
-

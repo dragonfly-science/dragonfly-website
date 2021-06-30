@@ -45,73 +45,13 @@
     }
   }
 
-  /* blockquote,
-  blockquote + p > cite {
-    @apply bg-cool-blue text-white w-full block;
-    @apply px-10 py-12 ml-0 mb-8;
-  }
-
-  blockquote {
-    @apply mt-8;
-
-    &.person-blockquote {
-      @apply flex bg-slate-grey bg-opacity-25;
-
-      .person-tile {
-        @apply mr-8;
-
-        img {
-          @apply m-0;
-        }
-      }
-    }
-
-    + p {
-      > cite {
-        @apply -mt-24 font-normal not-italic;
-
-        &::before {
-          @apply inline-block mr-1;
-
-          content: '\2014';
-        }
-      }
-    }
-
-    p {
-      @apply mb-2 text-xl font-medium italic leading-tight;
-
-      &:first-of-type {
-        &::before {
-          @apply inline;
-
-          content: '"';
-        }
-      }
-
-      &:last-of-type {
-        @apply mb-0;
-
-        &::after {
-          @apply inline;
-
-          content: '"';
-        }
-      }
-    }
-
-    &:nth-of-type(even) {
-      @apply bg-black ml-auto;
-
-      + p > cite {
-        @apply bg-black ml-auto;
-      }
-    }
-  } */
-
   > p {
     &:first-of-type {
       @apply font-medium text-2xl leading-tight mb-6;
+
+      + section {
+        @apply mt-12;
+      }
     }
   }
 
@@ -226,15 +166,6 @@
   }
 }
 
-/* @screen sm {
-  .body-content {
-    blockquote,
-    blockquote + p > cite {
-      @apply w-3/4;
-    }
-  }
-} */
-
 @screen md {
   .body-content {
     > p {
@@ -242,12 +173,6 @@
         @apply text-3xl;
       }
     }
-
-    /* blockquote {
-      p {
-        @apply text-2xl;
-      }
-    } */
 
     h2,
     h3,
@@ -302,29 +227,6 @@
       @apply text-base font-bold;
     }
 
-    /* blockquote {
-      &:nth-of-type(even) {
-        @apply -mr-24 pr-24;
-      }
-
-      p {
-        @apply text-2xl;
-      }
-
-      &:nth-of-type(even) {
-        @apply ml-auto pl-12;
-
-        + p > cite {
-          @apply ml-auto;
-        }
-      }
-    } */
-
-    /* blockquote,
-    blockquote + p > cite {
-      @apply -ml-24 pl-24 w-full;
-    } */
-
     figure {
       @apply -mx-6;
     }
@@ -356,23 +258,6 @@
 
 @screen xl {
   .body-content {
-    /* blockquote {
-      @apply mt-8 mb-8 pt-16 pb-24;
-
-      + p > cite {
-        @apply -mt-32;
-      }
-
-      &:nth-of-type(even) {
-        @apply -mr-36 pr-36;
-      }
-    }
-
-    blockquote,
-    blockquote + p > cite {
-      @apply -ml-36 pl-36 w-full;
-    } */
-
     figure {
       @apply -mx-12;
     }
@@ -382,16 +267,3 @@
     }
   }
 }
-
-/* @screen 2xl {
-  .body-content {
-    blockquote,
-    blockquote + p > cite {
-      @apply pl-64 -ml-64;
-
-      &:nth-of-type(even) {
-        @apply -mr-64 pr-64;
-      }
-    }
-  }
-} */
