@@ -7,6 +7,9 @@ testimonial:
 logo: /work/INZ-case-study/inz-logo.png
 summary: Speeding up visa processing to save staff time and money
 tags: systems
+description: >
+  The front-end triage system we built for Immigration New Zealand can
+  automatically assess each visa application and speed up processing.
 CTADescriptor: some text
 CTAButton: read more
 ---
@@ -21,9 +24,10 @@ appropriately brings faster and more reliable decision-making.
 
 A labour intensive application system at Immigration New Zealand (INZ)
 was requiring growing numbers of staff to meet an
-increasing demand for visas. We were contracted to build a front-end triage system to automatically assess each
-visa application upfront. This initial risk assessment grades applications into those that can
-be safely fast tracked and those where a more thorough investigation of the applicant
+increasing demand for visas. We were contracted to build a front-end triage
+system to automatically assess each visa application upfront. This initial risk
+assessment grades applications into those that can be safely fast tracked and
+those where a more thorough investigation of the applicant
 is warranted.
 
 ### Ongoing value from data
