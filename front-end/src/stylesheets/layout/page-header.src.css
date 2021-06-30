@@ -11,7 +11,7 @@
   }
 
   &__content {
-    @apply text-xl pt-6 mb-8 leading-tight font-medium max-w-full;
+    @apply text-xl pt-6 leading-tight font-medium max-w-full;
   }
 
   &__outer {
@@ -26,12 +26,6 @@
     .page-header__inner {
       @apply flex flex-col w-full;
     }
-
-    /* .page-header__image {
-      @apply w-full mt-4 ml-0 flex-shrink-0;
-
-      max-width: 240px;
-    } */
 
     img {
       max-height: 30rem;
@@ -76,7 +70,8 @@
     width: 1600px;
 
     video {
-      height: calc(100% - 48px);
+      @apply object-cover;
+      /* height: calc(100% - 48px); */
     }
   }
 
@@ -92,7 +87,11 @@
 
   &--article {
     &__image {
-      @apply max-w-3/4 flex-grow flex-shrink-0 h-full w-full my-auto mt-8;
+      @apply max-w-full flex-grow h-full w-full my-auto mt-8;
+
+      img {
+        @apply max-w-3/4 mx-auto my-0;
+      }
     }
 
     .page-header__outer {
@@ -101,8 +100,21 @@
   }
 
   /* Additional Elements. */
+  .lozad-image,
+  .video {
+    @apply fixed h-full w-full opacity-85 top-0 left-0 mt-12;
+  }
+
+  .video {
+    @apply z-0 object-cover max-h-106 w-full h-full opacity-85;
+  }
+
   .lozad-image {
-    @apply absolute h-full w-full bg-cover top-0 left-0;
+    @apply bg-cover max-h-44;
+  }
+
+  .link-icon {
+    @apply mt-8;
   }
 
   a {
@@ -148,7 +160,13 @@
 
     &--article {
       &__image {
-        @apply max-w-3/4 flex;
+        @apply max-w-full flex;
+      }
+
+      .page-header {
+        &__title {
+          @apply text-5xl;
+        }
       }
     }
   }
@@ -163,7 +181,7 @@
     }
 
     &__content {
-      @apply max-w-1/2 pt-12 mb-16;
+      @apply max-w-1/2 pt-12;
     }
 
     &--small {
@@ -211,6 +229,14 @@
 
       &__image {
         @apply max-w-1/2 mt-auto;
+
+        img {
+          @apply max-w-full max-h-full;
+
+          &.page-header--article__image--small {
+            @apply mt-auto;
+          }
+        }
       }
 
       .page-header__outer {
@@ -218,15 +244,28 @@
       }
 
       .page-header {
-        &__title {
-          @apply text-5xl;
-        }
-
         &__title,
         &__content {
           @apply max-w-full;
         }
+
+        /* &__title {
+          @apply text-6/2xl;
+        } */
       }
+    }
+
+    .link-icon {
+      @apply mt-16;
+    }
+
+    .lozad-image,
+    .video {
+      @apply mt-24;
+    }
+
+    .video {
+      @apply max-h-44;
     }
   }
 }
@@ -251,6 +290,12 @@
       &__image {
         @apply mb-0;
       }
+
+      .page-header {
+        &__title {
+          @apply text-6/2xl;
+        }
+      }
     }
   }
 }
@@ -264,6 +309,20 @@
     &__title,
     &__content {
       @apply max-w-1/2;
+    }
+
+    &--article {
+      &__image {
+        &--news {
+          @apply max-w-37/5rem;
+        }
+      }
+
+      &__text {
+        &--news {
+          @apply max-w-full;
+        }
+      }
     }
   }
 }

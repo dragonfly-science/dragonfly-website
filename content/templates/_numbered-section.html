@@ -9,7 +9,7 @@
           </h2>
           $else$
           <h2 class="numbered-section__heading">
-            <span>$title$</span>
+            <span>$if(title)$$title$$endif$</span>
           </h2>
           $endif$ $if(teaserIntro)$
           <p class="numbered-section__text">$teaserIntro$</p>
@@ -26,7 +26,7 @@
                 call-to-action__button--cool-blue
               "
             >
-              $if(teaserCTAbutton)$ $teaserCTAbutton$ $else$ find out more
+              $if(teaserCTAbutton)$ $teaserCTAbutton$ $else$ Find out more
               $endif$
             </a>
           </div>
@@ -39,9 +39,12 @@
         "
       >
         $if(teaserSVG)$
-        <img src="$teaserSVG$" class="lozad lozad-image max-w-38rem" />
-        $else$ $if(teaserImageLarge)$
-        <img src="$teaserImageLarge$" class="lozad lozad-image max-w-38rem" />
+        <img src="$teaserSVG$" class="lozad lozad-image w-full" />
+        $else$ $if(teaserImageLargeLandscape)$
+        <img
+          src="$teaserImageLargeLandscape$"
+          class="lozad lozad-image w-full"
+        />
         $endif$ $endif$
       </div>
     </div>

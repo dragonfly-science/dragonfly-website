@@ -15,12 +15,11 @@ to the website’s design elements or to any photography, imagery, or publicatio
 Copyright of those specific items may not be held by Dragonfly Limited. Unless indicated
 otherwise, those specific items may not be re-used without express permission.
 
-
 ## Hakyll and Docker
 
 The site is statically generated from the source. This means that it is compiled,
 and produces static files that are bundled up and served from the webserver. It uses the [Hakyll](http://jaspervdj.be/hakyll/index.html) static site library,
-which is managed by the code in the `haskell/` directory.  There is some [Docker](http://www.docker.com)
+which is managed by the code in the `haskell/` directory. There is some [Docker](http://www.docker.com)
 magic going on to get a build system up and running on a linux server. Ideally, you can check out the
 code and run `make develop` to get started.
 
@@ -31,8 +30,8 @@ code and run `make develop` to get started.
 There is no database behind the site (other than the git repository). This means the website is static, and fully versioned. with all the collaborative benefits of git available.The content for the site is organised under the `content/` folder. Most of the folders there should be fairly self explanatory. If you need to edit the site,
 these are the files to make changes to.
 
-For example, to add a new new post you need to create a new file and directory
-in the `content/posts/` directory.
+For example, to add a new news post you need to create a new file and directory
+in the `content/news/` directory.
 
 `2015-01-02-my-exciting-blog-post.md`
 
@@ -44,13 +43,14 @@ A directory where all other associated files can go, such as a image files and t
 
 #### Adding news posts
 
-- `teaser.jpg` - ideally a square image at 500x500px
+- `teaser.jpg` - ideally a square image at 960px x 9060p
 - banner - link this in the `banner-image` section of the front matter
 - Avoid using bigger headings than an H3
 
 #### Adding case studies
 
 Mandatory fields:
+
 - `title`
 - `banner-image`
 - `teaser.jpg` - ideally a square image at 500x500px
@@ -62,55 +62,6 @@ The file `haskell/Site.hs` defines how to interpret the files, and how to map
 them to urls (routes), which templates to use, and what fields are defined
 in the templates.
 
-#### Version and user control is managed by git
-
-One big advantage with this approach comes from git and
-[GitHub](https://www.github.com/dragonfly-science), which gives us good version
-control and user management respectively. When code changes are pushed to the master branch of the
-[GitHub repo](https://www.github.com/dragonfly-science/website), our
-continuous integration system will update the [staging site](https://www-dev.dragonfly.co.nz).
-This takes less than a minute. If you are collaborating with us, we can give you a username and
-password for the staging site.
-
-#### HTML templates, CSS & JavaScript
-
-HTML templates for the project are in `content/templates`. A typical page has the following structure:
-```
-<html>
-  <head>
-  </head>
-  <body>
-    <header>
-      <nav>
-      </nav>
-    </header>
-    <main>
-      <div class="container">
-        <div class="wide"></div>
-      </div>
-      <div class="container">
-        <div class="side-bar"></div>
-        <div class="content"></div>
-      <!-- </div> -->
-    </main>
-    <footer>
-      <div class="container">
-      </div>
-    </footer>
-  </body>
-</html>
-```
-
-The html body is divided into three components: the header, which contains the
-navigation, the main block, which contains most of the page, and the footer,
-which contains the contact information. The container element sets the margins, and all
-content that is not full width should be inside a container block. Typical page
-content is inside a wide or a content block. The default template includes everything outside
-the main block. Page templates should include container and content blocks as appropriate.
-
-+ [css documentation](docs/css.md)
-+ [JS documentation](docs/js.md)
-
 ### Deployment is from the release branch
 
 The release branch is automatically deployed. You can manually merge from master or create a
@@ -120,4 +71,3 @@ is the preferred method of deploying.
 # Redevelopment
 
 New front end development is taking place on the staging branch.
-

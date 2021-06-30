@@ -1,3 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61">
-    <path fill="#43A1C9" fill-rule="evenodd" d="M53.901 2L29.893 26.008l-24-24-3.536 3.535 24 24.001L2 53.901l3.535 3.535 24.358-24.357 25.421 25.42 3.535-3.535-25.421-25.42L57.436 5.535z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 61 61" style="enable-background:new 0 0 61 61;" xml:space="preserve">
+<g>
+	<polygon class="st0" points="28,0.8 28,27.8 0.1,27.8 0.1,32.8 28,32.8 28,60.2 33,60.2 33,32.8 60.9,32.8 60.9,27.8
+		33,27.8 33,0.8 	"/>
+</g>
 </svg>

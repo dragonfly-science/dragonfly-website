@@ -5,7 +5,8 @@ firstname: Pep
 lastname: Zuijderwijk
 role: Designer
 bannerTitleLine1: Pep
-bannerTitleLine2: Zuijderwijk [Zow-der-vaik]
+bannerTitleLine2: Zuijderwijk
+bannerTitleLine3: "[Zow-der-vaik]"
 mobile: ""
 tag: pep
 banner: zuijderwijk-pep/pep-zuijderwijk.jpg

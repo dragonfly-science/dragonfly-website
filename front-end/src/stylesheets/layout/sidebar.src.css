@@ -7,7 +7,7 @@
     @apply w-full flex flex-col;
 
     &__text {
-      @apply mr-8 mb-5;
+      @apply mr-8 mb-5 w-full leading-snug;
     }
 
     &__buttons {
@@ -31,8 +31,14 @@
     }
   }
 
+  .navigation-button {
+    @apply overflow-hidden max-h-16 py-4 mb-1 ease-in duration-200 w-auto mx-auto;
+
+    transition-property: margin-bottom, max-height, color, padding;
+  }
+
   &--left {
-    @apply hidden;
+    @apply w-0 max-w-0 overflow-hidden;
 
     .sidebar__inner {
       @apply mr-auto;
@@ -45,7 +51,8 @@
 
   &--right {
     .sidebar__inner {
-      @apply ml-auto border-t-4 border-cool-blue pt-5;
+      @apply ml-auto;
+      @apply border-t-4 border-cool-blue pt-5;
 
       &__text {
         @apply mx-auto text-center;
@@ -58,18 +65,17 @@
   }
 }
 
-/* Hack to override sticky-sidbar initial non-js setup. */
-.wf-active {
-  .sidebar {
-    &--left {
-      @apply flex;
-    }
-  }
-}
-
 @screen sm {
   .sidebar {
     @apply items-start flex-row;
+
+    .navigation-button {
+      @apply mr-4 py-0 mb-auto;
+
+      &--publications {
+        @apply py-4 mb-1 mx-auto;
+      }
+    }
 
     &__inner {
       @apply flex-row;
@@ -80,11 +86,7 @@
         @apply ml-0;
 
         &__text {
-          @apply ml-0 text-left;
-        }
-
-        &__buttons {
-          @apply ml-auto mr-0;
+          @apply leading-none;
         }
       }
       .button {
@@ -102,17 +104,26 @@
       @apply w-full;
     }
 
+    .navigation-button {
+      @apply mb-1 mr-0 pb-4 w-full;
+    }
+
     &__inner {
       @apply w-48 flex-col;
 
-      &__text {
-        @apply mr-0 mb-5;
+      &__border {
+        @apply border-t-4 border-cool-blue pt-5;
       }
     }
 
     &--right {
       .sidebar__inner {
         @apply flex-col ml-auto;
+        @apply border-t-0 pt-0;
+
+        &__text {
+          @apply mr-0 mb-5 leading-snug ml-0 text-left;
+        }
       }
     }
   }
@@ -127,14 +138,22 @@
     }
 
     &--left {
+      @apply max-w-full;
+
       .button {
         @apply flex;
+      }
+    }
+
+    &--right {
+      .navigation-button {
+        @apply max-h-0 mb-0 py-0;
       }
     }
   }
 }
 
-@screen 2xl {
+/* @screen 2xl {
   .sidebar {
     &--right {
       .button--navigate {
@@ -142,4 +161,4 @@
       }
     }
   }
-}
+} */

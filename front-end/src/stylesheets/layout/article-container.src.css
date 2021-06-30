@@ -15,9 +15,8 @@
 
     .scrollmagic-pin-spacer {
       &:first-of-type {
-        .sidebar {
-          @apply hidden;
-        }
+        min-width: 0 !important;
+        @apply w-0 max-w-0 overflow-hidden;
       }
     }
   }
@@ -29,14 +28,13 @@
   }
 }
 
-@screen 2xl {
+@screen xl {
   .article-container {
     &--two-sidebars {
       .scrollmagic-pin-spacer {
         &:first-of-type {
-          .sidebar {
-            @apply flex;
-          }
+          min-width: auto !important;
+          @apply w-auto max-w-16rem;
         }
       }
     }

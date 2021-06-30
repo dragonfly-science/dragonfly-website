@@ -5,6 +5,7 @@ firstname: Tim
 lastname: McNamara
 mobile: ""
 tag: tim
+sortorder: "0"
 banner: mcnamara-tim/tim-mcnamara-letterbox.jpg
 nocite: |
 ---

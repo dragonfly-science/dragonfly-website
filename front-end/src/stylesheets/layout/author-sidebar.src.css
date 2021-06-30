@@ -1,20 +1,34 @@
 .author-sidebar {
-  &.sidebar {
-    @apply w-full max-w-12rem mx-auto;
-  }
-
   &__inner {
-    @apply m-0 ml-auto w-full border-t-4 border-cool-blue pt-5 flex flex-col;
+    @apply m-0 ml-auto w-full flex flex-row;
+
+    &__text {
+      @apply text-left;
+    }
   }
 }
 
 @screen sm {
   .author-sidebar {
-    &.sidebar {
+    /* &.sidebar {
       @apply max-w-full mx-0;
-    }
+    } */
     &__inner {
-      @apply flex-row;
+      @apply flex-col;
+
+      /* &__text {
+        @apply text-left;
+      } */
+    }
+  }
+}
+
+@screen md {
+  .author-sidebar {
+    &.sidebar {
+      &__inner {
+        @apply flex-row;
+      }
     }
   }
 }

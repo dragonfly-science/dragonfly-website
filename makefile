@@ -1,23 +1,28 @@
-TAG := lts-ubuntu-12.26-v6
+TAG := lts-ubuntu-12.26-v7
 IMAGE := dragonflyscience/dragonfly-website:$(TAG)
 
 HS := $(shell find haskell/WebSite -name *.hs)
 
 RUN ?=
 RUN_WEB ?=
+UP ?=
 CI ?=
+
+# caching for npm & webpack
 DOCKER_CACHE ?= $$HOME/docker-cache
 WEPACK_CACHE ?= $(DOCKER_CACHE)/webpack-cache
 WEBPACK_CONTAINER_CACHE ?= /root/webpack
 
-# Process args, to build up the docker command
+# Process args, to build up the docker commands
 ifneq ($(CI), true)
 RUN = docker-compose --profile build run --rm npm
 RUN_WEB = docker-compose --profile build run --publish 3000:3000 --rm website
+UP = docker-compose up --remove-orphans --no-build
 endif
 
 all: .env .install build run
 
+# Build out .env file for docker-compose
 .env:
 ifneq ($(CI), true)
 	echo IMAGE=$(IMAGE) >> .env
@@ -27,34 +32,49 @@ ifneq ($(CI), true)
 endif
 
 _site/assets:
-	mkdir -p _site/assets
+	$(RUN) bash -c "mkdir -p _site/assets"
+	touch $@/dragonfly-app.css
 
-up: .env .install _site/assets
-	docker-compose up --remove-orphans
+# Runs in full develop mode - npm watching & rebuilding
+# as css & ts change.
+develop: .env .install _site/assets
+	$(UP)
 
-develop: up
 
+# Runs statically built version of the site - only watches
+# for changes to content.
 run: .env .build-static _site/assets
-	docker-compose up --remove-orphans website_haskell
+	$(UP) website_haskell
 
 down:
+ifneq ($(CI), true)
 	docker-compose down
+endif
 
-docker:
-	docker-compose build
+PHONY: docker
+docker: .docker
+.docker:
+ifneq ($(CI), true)
+	docker-compose build website_haskell
+	touch $@
+endif
 
 pull:
+ifneq ($(CI), true)
 	docker-compose pull website_haskell
+endif
 
-push:
+push: .docker
+ifneq ($(CI), true)
 	docker-compose push website_haskell
+endif
 
 # NPM Commands
 .install:
 	$(RUN) bash -c "cd front-end && npm install"
 	touch $@
 
-.build-npm: .install .build-website
+.build-npm: .install
 	$(RUN) bash -c 'cd front-end && npm run build'
 	touch $@
 
@@ -62,7 +82,7 @@ push:
 	$(RUN) bash -c 'cd front-end && npm run build:static'
 	touch $@
 
-static:
+static: _site/assets
 	$(RUN_WEB) bash -c 'cd front-end && npm run staging'
 
 # Build commands
@@ -71,29 +91,40 @@ website: $(HS) haskell/Site.hs
 		stack build && \
 		cp $$(stack path --local-install-root)/bin/website ../website'
 
-.build-website: website
+.build-website: .install website _site/assets
 	$(RUN_WEB) bash -c 'cd ./content && ../website build'
+	$(RUN) bash -c 'cd front-end && npm run build'
+	$(RUN) bash -c 'cp -rf ./content/fonts ./_site'
 	touch $@
 
+.robots: deployment
+ifneq ($(PRODUCTION), true)
+	$(RUN) bash -c 'cp -f deployment/robots.staging.txt _site/robots.txt'
+else
+	$(RUN) bash -c 'cp -f deployment/robots.production.txt _site/robots.txt'
+endif
+
 .PHONY: build
-build: .build-website .build-npm
+build: .env .build-website .robots
 
 .images: .install
 	$(RUN) bash -c 'cd front-end && npm run imagemin'
 	touch $@
 
+compress: .images
+	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'
+
 
 # Utility commands
 clean:
 	rm -rf website _site .env .install .cache \
-				content/fonts/*.css \
+				content/fonts \
 				.build*
+
+full-clean: down clean
 
 clean-cache: website
 	$(RUN_WEB) bash -c './website clean'
-
-compress: .images
-	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'
 
 interact:
 	$(RUN) bash

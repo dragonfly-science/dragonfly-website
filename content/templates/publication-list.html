@@ -9,13 +9,16 @@ $partial("templates/_page-header-small.html")$
 
           <div class="filtering__buttons">
             <button class="filtering__button" title="show/hide filter options">
-              <span class="inline-block mr-6">Show filters</span>
+              <span
+                class="inline-block mr-6 filtering__button__label"
+                data-show="Show filters"
+                data-hide="Hide filters"
+              ></span>
 
               <span
                 class="
                   filtering__buttons__icon
-                  fas
-                  fa-plus
+                  dragonfly-close
                   rotate-0
                   transform
                   transition-all

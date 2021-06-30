@@ -1,7 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-import Debug.Trace
-
+import           Control.Monad
 import           Data.Monoid          ((<>))
 import           Data.Foldable        (forM_)
 import           System.Process
@@ -12,6 +11,7 @@ import           Hakyll
 import           WebSite.Compilers
 import           WebSite.Config
 import           WebSite.Context
+import           WebSite.SiteMap
 import qualified WebSite.Data         as Data
 import qualified WebSite.Images       as Images
 import qualified WebSite.News         as News
@@ -30,7 +30,6 @@ config = defaultConfiguration
   , tmpDirectory         = "../.cache/tmp"
   }
 
-
 main :: IO ()
 main = do
   hakyllWith config $ do
@@ -47,6 +46,7 @@ main = do
           .||. "**/*.png"
           .||. "**/*.svg"
           .||. "**/*.csv"
+          .||. "**/*.mp4"
           .||. "fonts/*"
           .||. "landing-pages/**/banner-images/*") $ do
         route idRoute
@@ -76,19 +76,20 @@ main = do
     Images.imageProcessor ( "**/teaser.jpg") $
                           [ ( "1200", ["-resize" , "1200x600^", "-gravity", "Center", "-crop", "1200x600+0+0", "-quality", "75"])
                           , ( "960", ["-resize" , "960x960^", "-gravity", "Center", "-crop", "960x960+0+0", "-quality", "75"])
+                          , ( "960800", ["-resize" , "960x800^", "-gravity", "Center", "-crop", "960x800+0+0", "-quality", "75"])
                           , ( "480", ["-resize" , "480x480^", "-gravity", "Center", "-crop", "480x480+0+0", "-quality", "75"])
                           , ( "600", ["-resize" , "600x600^", "-gravity", "Center", "-crop", "600x600+0+0", "-quality", "75"])
                           , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
                           , ( "200", ["-resize" , "200x230^", "-gravity", "Center", "-crop", "200x230+0+0", "-quality", "75"])
-                          , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0", "-quality", "75"])
                           ]
     Images.imageProcessor ( "**/teaser.png") $
                           [ ( "1200", ["-resize" , "1200x600^", "-gravity", "Center", "-crop", "1200x600+0+0", "-quality", "75"])
                           , ( "960", ["-resize" , "960x960^", "-gravity", "Center", "-crop", "960x960+0+0", "-quality", "75"])
+                          , ( "960800", ["-resize" , "960x800^", "-gravity", "Center", "-crop", "960x800+0+0", "-quality", "75"])
                           , ( "480", ["-resize" , "480x480^", "-gravity", "Center", "-crop", "480x480+0+0", "-quality", "75"])
                           , ( "600", ["-resize" , "600x600^", "-gravity", "Center", "-crop", "600x600+0+0", "-quality", "75"])
                           , ( "256", ["-resize" , "256x256^", "-gravity", "Center", "-crop", "256x256+0+0", "-quality", "75"])
-                          , ( "100", ["-resize" , "100x100^", "-gravity", "Center", "-crop", "100x100+0+0", "-quality", "75"])
+                          , ( "200", ["-resize" , "200x230^", "-gravity", "Center", "-crop", "200x230+0+0", "-quality", "75"])
                           ]
 
     Images.imageProcessor ( "**/teaser-large.jpg") $
@@ -186,3 +187,24 @@ main = do
     match "favicon.ico" $ do
         route idRoute
         compile copyFileCompiler
+
+    create ["sitemap.xml"] $ do
+        route idRoute
+        compile $ do
+            news <- recentFirst =<< loadAll ("news/**/*.md")
+            people <- loadAll ("people/**/*.md")
+            publications <- loadAll ("publications/*.md")
+            what <- loadAll ("what-we-do/**/*.md")
+            work <- loadAll ("work/**/*.md")
+
+            let pages = news
+                     <> people
+                     <> publications
+                     <> what
+                     <> work
+                sitemapCtx =
+                    constField "root" root <>
+                    listField "pages" postCtx (return pages)
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx

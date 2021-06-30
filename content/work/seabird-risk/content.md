@@ -3,9 +3,9 @@ title: Risks to seabirds were quantified
 short-title: Risks to seabirds were quantified
 summary: Guiding the development of a significant New Zealand policy document
 tags: stats, policy
-banner-image: /work/seabird-risk/bullers.jpg
-quote: Dragonfly fostered an open and inclusive approach with all stakeholders.
-quote-attribution: Bob Zuur, Marine Advocate, WWF-New Zealand
+banner-image: /work/seabird-risk/banner.jpg
+testimonial:
+  - testimonials/seabird-risk-testimonial/content.md
 logo: /work/seabird-risk/MPI-logo.png
 CTADescriptor: some text
 CTAButton: read more
@@ -38,12 +38,3 @@ A clear, principled approach allowed us to build the trust of the stakeholders.
 
 The risk assessment supports government policy in this area, and is in turn used to demonstrate their commitment internationally. The assessment
 is used by the fishing industry to support the certification of New Zealand fisheries as sustainable, increasing the value of those fisheries.
-
-> In assessing the risk of commercial fisheries to New Zealand’s seabird populations,
-> Dragonfly bridged the gap between science and its associated uncertainties, and policy
-> and its inherent conflicts. They fostered an open and inclusive approach with all stakeholders.
->
-> The assessment exercise has given us a new perspective on the risks posed by commercial fisheries, and in particular highlighted risks facing seabirds in New Zealand’s inshore fisheries.
-
-<cite>Bob Zuur<br />
-Marine Advocate<br />WWF-New Zealand.</cite>

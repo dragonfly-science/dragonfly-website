@@ -22,11 +22,11 @@
   >
     <aside class="sticky-container__element sidebar sidebar--left">
       <div class="sidebar__inner">
-        <a href="/publications/" class="button">
+        <a href="/publications/" class="navigation-button">
           <span
-            class="button--icon-left__icon dragonfly-arrow transform rotate-180"
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
           ></span>
-          <span class="button--icon-left__text">Publications</span>
+          <span class="navigation-button__label">Back to publications</span>
         </a>
       </div>
     </aside>
@@ -52,8 +52,18 @@
     </article>
 
     <aside class="sticky-container__element sidebar sidebar--right">
-      <div class="sidebar__inner">
-        <div class="sidebar__inner__text">
+      <div class="sidebar__inner sm:flex-col lg:flex-row">
+        <a
+          href="/publications/"
+          class="navigation-button navigation-button--publications"
+        >
+          <span
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="navigation-button__label">Back to publications</span>
+        </a>
+
+        <div class="sidebar__inner__text sidebar__inner__border">
           $if(tags)$
           <h3 class="mb-2 text-slate-grey">Tags</h3>
           <nav class="tag-list">
@@ -68,7 +78,7 @@
           $endif$ $if(pdf)$
         </div>
 
-        <div class="sidebar__inner__buttons">
+        <div class="sidebar__inner__buttons mx-auto">
           <a
             class="button button--icon button--icon-left"
             href="//files.dragonfly.co.nz/publications/pdf/$pdf$"
@@ -84,21 +94,6 @@
             <span class="button--icon-left__text">Download</span>
           </a>
           $endif$
-
-          <a
-            href="/publications"
-            class="button button--navigate button--icon button--icon-left"
-          >
-            <span
-              class="
-                button--icon-left__icon
-                dragonfly-arrow
-                transform
-                rotate-180
-              "
-            ></span>
-            <span class="button--icon-left__text">Publications</span>
-          </a>
         </div>
       </div>
     </aside>

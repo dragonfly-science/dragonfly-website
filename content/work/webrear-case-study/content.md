@@ -2,13 +2,8 @@
 title: Displaying information beautifully
 short-title: Displaying information beautifully
 banner-image: /work/webrear-case-study/ipad.jpg
-quote: >
-  I believe Dragonfly’s interactive is one of the best visualisations of
-  public data in New Zealand.
-quote-attribution: |
-  Harkanwal Singh,
-  Data Editor,
-  New Zealand Herald
+testimonial:
+  - testimonials/webrear-testimonial/content.md
 logo: /work/webrear-case-study/mbie-logo.png
 summary: Making it easy for anyone to explore New Zealand's economic data
 tags: systems
@@ -53,7 +48,6 @@ externally. We were able to coordinate this team and deliver the website, follow
 extremely tight timetable to meet
 the Minister’s release date.
 
-
 > I believe Dragonfly’s interactive is one of the best visualisations of
 > public data in New Zealand.
 > It presents different dimensions of the data and puts things in perspective by
@@ -64,3 +58,4 @@ the Minister’s release date.
 <cite>Harkanwal Singh<br />
 Data Editor<br />
 New Zealand Herald.</cite>
+

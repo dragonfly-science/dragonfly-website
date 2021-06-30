@@ -8,7 +8,7 @@
   }
 
   &__title {
-    @apply py-16;
+    @apply py-16 px-8;
   }
 
   &--header {
@@ -21,6 +21,18 @@
     .related-content {
       &__title {
         @apply py-8;
+      }
+    }
+  }
+}
+
+@screen lg {
+  .related-content {
+    &__title {
+      @apply px-0;
+
+      &.supplementary-header {
+        @apply text-left;
       }
     }
   }

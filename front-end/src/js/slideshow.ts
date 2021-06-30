@@ -2,7 +2,7 @@ import Swiper from 'swiper/bundle'
 // import Swiper styles
 import 'swiper/swiper-bundle.css'
 
-const Slideshow = (target: string, next: string, prev: string): void => {
+const Slideshow = (target: string, next: string, prev: string): Swiper => {
   const [targetEl, nextEl, prevEl] = [
     document.querySelector(target),
     document.querySelector(next),
@@ -13,7 +13,7 @@ const Slideshow = (target: string, next: string, prev: string): void => {
     return
   }
 
-  var swiper = new Swiper(target, {
+  return new Swiper(target, {
     slidesPerView: 1,
     loop: true,
     pagination: false,

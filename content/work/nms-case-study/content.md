@@ -1,9 +1,9 @@
 ---
 title: Automating data input and verification
 short-title: Automating data input and verification
-banner-image: /work/nms-case-study/roseneath.png
-quote: I really valued Dragonfly’s exquisite communication skills – they are also excellent listeners. I found them to be passionate, talented and good company.
-quote-attribution: Dr Ignatius Menzies, Manatū Mō Te Taiao
+banner-image: /work/nms-case-study/banner.jpg
+testimonial:
+  - testimonials/nms-testimonial/content.md
 logo: /work/nms-case-study/mfe-logo.png
 summary: >
   Streamlining the processing of resource consent applications at a national
@@ -70,3 +70,4 @@ MfE is also able to release the compiled data much faster. This typically took m
 Data Science Lead <br />
 Environmental Reporting <br />
 Ministry for the Environment – Manatū Mō Te Taiao </cite>
+

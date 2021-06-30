@@ -16,6 +16,7 @@ module.exports = {
           /^duration/,
           /^opacity/,
           /^bg-/,
+          /^rotate-/,
         ],
       },
       rejected: true,
@@ -56,6 +57,7 @@ module.exports = {
       'pale-teal': '#9DC4A9',
       'slate-grey': '#565659',
       'very-light-pink': '#E7E7E7',
+      'dark-grey': '#A7AAA9',
       white: '#FFFFFF',
       black: '#000000',
       transparent: 'transparent',
@@ -81,7 +83,7 @@ module.exports = {
         44: '44rem',
       },
       lineHeight: {
-        tighter: '1.2em',
+        tighter: '1.2',
         11: '2.6rem',
       },
       margin: {
@@ -109,11 +111,13 @@ module.exports = {
         '-104': '-28rem',
       },
       maxWidth: {
+        '11rem': '11rem',
         '12rem': '12rem',
         '14rem': '14rem',
         '16rem': '16rem',
         '18rem': '18rem',
         '30rem': '30rem',
+        '37/5rem': '37.5rem',
         '38rem': '38rem',
         '64rem': '64rem',
         '8/10': '80%',
@@ -140,6 +144,8 @@ module.exports = {
         30: '30rem',
         42: '42rem',
         44: '44rem',
+        104: '26rem',
+        106: '28rem',
       },
       minHeight: {
         3: '3rem',
@@ -166,6 +172,7 @@ module.exports = {
         10: '0.1',
         '025': '0.025',
         80: '0.8',
+        85: '0.85',
         90: '0.9',
       },
       rotate: {
@@ -214,6 +221,7 @@ module.exports = {
       },
       spacing: {
         22: '5.5rem',
+        28: '7rem',
         72: '18rem',
         80: '20rem',
         88: '22rem',

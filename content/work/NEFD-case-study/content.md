@@ -3,9 +3,9 @@ title: Better report production one step at a time
 short-title: Better report production one step at a time
 summary: Automating the production of an annual snapshot of forestry in New Zealand
 tags: stats, policy
-banner-image: /work/NEFD-case-study/forest-hillsides.jpg
-quote: It was very smooth sailing, and what we expected was what we got.
-quote-attribution: Kate King, Team Leader, Economic Data and Analysis, Ministry for Primary Industries | Manatū Ahu Matua
+banner-image: /work/NEFD-case-study/banner.jpg
+testimonial:
+  - testimonials/nefd-testimonial/content.md
 logo: /work/NEFD-case-study/MPI-logo.png
 project-link: https://www.mpi.govt.nz/dmsdocument/43540-2020-NEFD-report
 project-link-text: Download 2020 report
@@ -13,7 +13,7 @@ CTADescriptor: some text
 CTAButton: read more
 ---
 
- Our work with the Ministry for Primary Industries (MPI) replaced a manual production process with an automated system. New data can now be piped in to recreate each year’s National Exotic Forest Description – this is significantly faster, cheaper and more accurate than building the report from scratch using Word, Excel and InDesign.  
+Our work with the Ministry for Primary Industries (MPI) replaced a manual production process with an automated system. New data can now be piped in to recreate each year’s National Exotic Forest Description – this is significantly faster, cheaper and more accurate than building the report from scratch using Word, Excel and InDesign.
 
 <!--more-->
 
@@ -46,17 +46,4 @@ Before this project, late changes to the NEFD had to be made manually after the 
 The new coded, reproducible approach allows late changes to be accommodated much more easily, with assurance that they have been incorporated transparently and consistently throughout the report.
 Besides a PDF to publish online, we created code to create print-ready and Word versions of the report, and data tables formatted to MPI’s in-house style. New images and future changes to the design can also be incorporated in the code simply and easily.
 
-MPI has estimated that the new approach has reduced the time taken to produce the report by 4 weeks, which is a significant saving for the team.  
-
-
-> I’d call and they’d respond. We were always able to contact Dragonfly and have a chat about what was going on. I really appreciated that. I’ve managed a lot of contracts and I haven’t had that before.
-
-> This project was a good place to start and enabled us to get a win on the table. It has potentially future proofed the report production down the track, which will save even more time in the following years. It’s also reduced our dependence on having senior staff available for the data analysis.
-
-> Dragonfly staff were constantly communicating what was needed and whose responsibility it was to do what. I’m notoriously hard to pin down, so they worked with the people I delegated to make the decisions that were needed. We got the report published on time – and it was great!
-
-
-<cite>Kate King<br />
-Team Leader<br />
-Economic Data and Analysis<br />
-Ministry for Primary Industries | Manatū Ahu Matua.</cite>
+MPI has estimated that the new approach has reduced the time taken to produce the report by 4 weeks, which is a significant saving for the team.

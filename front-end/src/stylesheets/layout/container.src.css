@@ -2,7 +2,8 @@
   @apply w-full mx-auto px-8;
   max-width: theme('screens.2xl');
 
-  &--tile-list {
+  &--tile-list,
+  &--tile-list-2 {
     @apply px-0;
 
     .no-gutter-cell {
@@ -17,7 +18,8 @@
 
 @screen sm {
   .outer-container {
-    &--tile-list {
+    &--tile-list,
+    &--tile-list-2 {
       .no-gutter-cell {
         @apply w-1/2;
       }
@@ -33,7 +35,8 @@
       @apply px-8;
     }
 
-    &--tile-list {
+    &--tile-list,
+    &--tile-list-2 {
       @apply px-0;
     }
 
@@ -53,6 +56,10 @@
           @apply hidden;
         }
       }
+    }
+
+    &--tile-list-2 {
+
     }
   }
 }
@@ -75,7 +82,8 @@
   .outer-container {
     @apply px-8;
 
-    &--tile-list {
+    &--tile-list,
+    &--tile-list-2 {
       @apply px-0;
     }
   }

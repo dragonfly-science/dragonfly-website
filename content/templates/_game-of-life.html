@@ -1,7 +1,9 @@
-<header class="page-header relative overflow-hidden select-none flex">
+<header
+  class="page-header bg-slate-grey relative overflow-hidden select-none flex"
+>
   <div class="page-header__outer">
     <div class="page-header__container text-white">
-      <h1 class="page-header__title">$title$</h1>
+      <h1 class="page-header__title">$if(title)$$title$$endif$</h1>
 
       <p class="page-header__content">$introduction$</p>
 
@@ -15,21 +17,18 @@
     </div>
   </div>
 
-  <canvas id="gameoflife" class="game-of-life"></canvas>
-
   <div class="math-paper--screen absolute top-0 left-0 w-full h-full z-1"></div>
 
+  $if(video)$
   <video
-    class="absolute top-0 left-0 z-0 object-cover w-full h-full"
+    class="video"
+    $if(videoPoster)$poster="$videoPoster$"
+    $endif$
     autoplay
     loop
     muted
   >
-    <source src="/images/HomeMix.mp4" type="video/mp4" />
+    <source src="$video$" type="video/mp4" />
   </video>
-
-  <div
-    id="blob"
-    class="game-of-life-blob absolute top-0 left-0 z-0 min-w-full h-full"
-  ></div>
+  $endif$
 </header>

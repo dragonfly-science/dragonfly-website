@@ -11,8 +11,10 @@
     <div class="page-header__container flex flex-col">
       <h1 class="page-header__title">
         $if(bannerTitleLine1)$ $bannerTitleLine1$<br />
-        $if(bannerTitleLine2)$$bannerTitleLine2$$endif$ $else$
-        $if(firstname)$$firstname$$endif$<br />
+        $if(bannerTitleLine2)$$bannerTitleLine2$$endif$
+        $if(bannerTitleLine3)$<br /><span class="font-normal"
+          >$bannerTitleLine3$</span
+        >$endif$ $else$ $if(firstname)$$firstname$$endif$<br />
         $lastname$ $endif$ $if(honour)$<br />
         <span class="font-light">$honour$</span>$endif$
       </h1>
@@ -35,27 +37,35 @@
   ></div>
 </header>
 
-<section id="top-section" class="bg-light-peach">
+<section id="top-section" class="bg-light-peach relative">
   <div
     class="article-container article-container--two-sidebars sticky-container"
   >
     <aside class="sticky-container__element sidebar sidebar--left">
       <div class="sidebar__inner">
-        <a href="/people/" class="button button--icon button--icon-left">
+        <a href="/people/" class="navigation-button">
           <span
-            class="button--icon-left__icon dragonfly-arrow transform rotate-180"
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
           ></span>
-          <span class="button--icon-left__text">Back to team</span>
+          <span class="navigation-button__label">Back to people</span>
         </a>
       </div>
     </aside>
     <article class="article sticky-container__body">
-      <div class="body-content body-content--article">$body$</div>
+      <div class="body-content body-content--article body-content--has-quote">
+        $body$
+      </div>
     </article>
 
     <aside class="sticky-container__element sidebar sidebar--right">
       <div class="sidebar__inner">
-        <div class="sidebar__inner__text">
+        <a href="/people/" class="navigation-button">
+          <span
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="navigation-button__label">Back to people</span>
+        </a>
+        <div class="sidebar__inner__text sidebar__inner__border">
           $if(email)$
           <a href="mailto:$email$" class="underline hover:no-underline"
             >$email$</a
@@ -63,22 +73,6 @@
           $endif$ $if(phone)$
           <a href="tel:$phone$">$phone$</a>
           $endif$
-        </div>
-        <div class="sidebar__inner__buttons">
-          <a
-            href="/people/"
-            class="button button--icon button--icon-left button--navigate"
-          >
-            <span
-              class="
-                button--icon-left__icon
-                dragonfly-arrow
-                transform
-                rotate-180
-              "
-            ></span>
-            <span class="button--icon-left__text">Who we are</span>
-          </a>
         </div>
       </div>
     </aside>

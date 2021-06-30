@@ -6,7 +6,7 @@
   "
 >
   <div class="page-header__outer">
-    <div class="page-header--article__text">
+    <div class="page-header--article__text page-header--article__text--news">
       $if(title)$
       <h1 class="page-header__title">$title$</h1>
       $endif$ $if(date)$
@@ -20,7 +20,7 @@
         <span class="icon dragonfly-arrow"></span>
       </a>
     </div>
-    <div class="page-header--article__image">
+    <div class="page-header--article__image page-header--article__image--news">
       $if(teaserImage)$ $if(noImage)$ $else$
       <figure class="">
         <img
@@ -39,7 +39,9 @@
 <section id="top-section" class="bg-light-peach">
   <div class="article-container">
     <article class="article">
-      <div class="body-content body-content--article">$body$</div>
+      <div class="body-content body-content--article body-content--has-quote">
+        $body$
+      </div>
     </article>
   </div>
 </section>
