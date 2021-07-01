@@ -7,6 +7,9 @@ tags: policy
 testimonial:
   - testimonials/paua-management-testimonial/content.md
 logo: /work/paua-management-case-study/pic-logo.png
+description: >
+  The web-based system we built for the pāua industry provides timely
+   information that allows fishers to manage the resource sustainably.
 CTADescriptor: some text
 CTAButton: read more
 ---
@@ -21,15 +24,18 @@ responsive, well-informed management.
 
 Good information is essential for the sustainable management of fisheries.
 The Pāua Industry Council helps manage catch in New Zealand pāua fisheries, to
-ensure that the populations remain healthy. Pāua divers collect data on each individual dive. From this fishing data,
+ensure that the populations remain healthy. Pāua divers collect data on each
+ individual dive. From this fishing data,
 we are able to map the fishery and monitor its performance, reef by reef.
 
 ### Statistical analysis supports decision making
 
-Deciding whether to increase or decrease catches is a tough trade-off for fisheries. Decreasing catches puts
-short-term financial pressure on the fishers, but increasing catches may affect the longer-term sustainability.
-We carry out the statistical
-analysis needed to interpret the fisheries data, providing the advice the fishers need to balance profitability with the long term health of the population.
+Deciding whether to increase or decrease catches is a tough trade-off for
+fisheries. Decreasing catches puts short-term financial pressure on the fishers,
+ but increasing catches may affect the longer-term sustainability.
+We carry out the statistical analysis needed to interpret the fisheries data,
+ providing the advice fishers need to balance profitability with the long term
+  health of the population.
 
 ### Daily catch data displayed
 
@@ -40,9 +46,10 @@ system, which allows fishers to make decisions on where to fish to avoid
 depleting the fishery.
 
 The information is of high commercial
-value to the fishers, and we have developed processes that maintain the privacy of individual
-fisher’s data, while allowing high level summaries to be shared across the industry. The system
-is deployed on the [Catalyst Cloud](http://www.catalyst.net.nz/catalyst-cloud), an
+value to the fishers, and we have developed processes that maintain the privacy
+ of individual fisher’s data, while allowing high level summaries to be shared
+  across the industry. The system is deployed on the
+   [Catalyst Cloud](http://www.catalyst.net.nz/catalyst-cloud), an
 affordable and secure New Zealand cloud computing service.
 
 ### Ensuring sustainability
