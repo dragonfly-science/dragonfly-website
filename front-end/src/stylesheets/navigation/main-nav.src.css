@@ -139,7 +139,7 @@
 
         .main-nav__label {
           img {
-            @apply rotate-180;
+            @apply rotate-180 pb-1;
           }
         }
       }
@@ -196,7 +196,7 @@
       }
 
       img {
-        @apply block ml-4 w-3 pt-1 transform rotate-0 pb-1 transition-all;
+        @apply block ml-4 w-3 pt-1 transform rotate-0 transition-all;
       }
     }
 
