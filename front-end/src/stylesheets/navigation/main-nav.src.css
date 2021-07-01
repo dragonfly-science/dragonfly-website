@@ -71,6 +71,10 @@
     &:hover {
       @apply text-cool-blue;
     }
+
+    img {
+      @apply hidden;
+    }
   }
 
   &__container {
@@ -132,6 +136,12 @@
           transform: perspective(75em) rotateX(0deg);
           max-height: 1000px;
         }
+
+        .main-nav__label {
+          img {
+            @apply rotate-180;
+          }
+        }
       }
 
       &:first-child,
@@ -181,19 +191,12 @@
       @apply relative z-10 text-slate-grey text-lg leading-none static;
       @apply w-full h-full underline;
 
-      &::after {
-        @apply inline-block border-black border-r border-b ml-4 relative;
-        @apply top-auto h-2 w-2 transform rotate-45 transition-all;
-
-        content: '';
-      }
-
       &:hover {
         @apply text-cool-blue;
+      }
 
-        &::after {
-          @apply border-cool-blue;
-        }
+      img {
+        @apply block ml-4 w-3 pt-1 transform rotate-0 pb-1 transition-all;
       }
     }
 
