@@ -56,6 +56,16 @@
         }
       }
     }
+
+    &.page-header--default-opacity {
+      &.loaded {
+        .background-image {
+          &.loaded {
+            @apply opacity-85;
+          }
+        }
+      }
+    }
   }
 
   &--reversed {
@@ -106,7 +116,7 @@
   }
 
   .video {
-    @apply z-0 object-cover max-h-106 w-full h-full opacity-70;
+    @apply z-0 object-cover max-h-106 w-full h-full opacity-70 pointer-events-none;
   }
 
   .lozad-image {
@@ -261,7 +271,7 @@
     }
 
     .video {
-      @apply max-h-44;
+      @apply max-h-44 pointer-events-auto;
     }
   }
 }
