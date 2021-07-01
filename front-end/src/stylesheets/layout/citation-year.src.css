@@ -1,10 +1,10 @@
 .citation-year {
   @apply text-left text-4xl font-medium leading-none hidden;
-  @apply bg-slate-grey text-white h-16;
+  @apply bg-slate-grey text-white min-h-12 items-center;
 
   &__text {
     @apply px-6 flex flex-col justify-between;
-    @apply pb-10 pt-20 opacity-50;
+    @apply opacity-50;
 
     .link-icon {
       @apply mt-10;
@@ -314,6 +314,16 @@
 
     + .year-1989 + .citation-year--1989 {
       @apply hidden;
+    }
+  }
+}
+
+@screen md {
+  .citation-year {
+    @apply items-start;
+
+    &__text {
+      @apply pb-10 pt-20;
     }
   }
 }
