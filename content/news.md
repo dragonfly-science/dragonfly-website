@@ -1,8 +1,8 @@
 ---
-title: Latest news
+title: News
 subtitle: >
-  We love to tell stories about the work we do for clients and the diverse
-  projects we're involved in.
+  We love to tell stories about the work we do and the projects we contribute
+   to.
 ---
 
 # News
