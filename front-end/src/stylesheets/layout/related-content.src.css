@@ -8,7 +8,7 @@
   }
 
   &__title {
-    @apply py-16 px-8;
+    @apply py-16;
   }
 
   &--header {
