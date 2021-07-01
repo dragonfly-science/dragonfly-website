@@ -1,13 +1,13 @@
 ---
 title: What we do
 subtitle: >
-  We help our clients use their data to make the best decisions. This involves a
-  range of services from building sophisticated reporting tools to giving expert
-  advice on data architecture.
+We help clients use their data to make excellent decisions. With the tools at
+ our fingertips we can analyse big datasets, build sophisticated reporting
+  systems, give advice on data architecture, and lots more.
 introduction: >
-  We help our clients use their data to make the best decisions. This involves a
-  range of services from building sophisticated reporting tools to giving expert
-  advice on data architecture.
+  WWe help clients use their data to make excellent decisions. With the tools at
+   our fingertips we can analyse big datasets, build sophisticated reporting
+    systems, give advice on data architecture, and lots more.
 banner: /landing-pages/what-we-do/banner.jpg
 teaserSVG: /what-we-do/statistical-analysis/WWD_Statistical1.svg
 toolsTitle: We love good tools

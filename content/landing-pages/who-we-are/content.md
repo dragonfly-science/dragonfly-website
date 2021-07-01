@@ -1,8 +1,8 @@
 ---
 title: Who we are
 introduction: >
-  We are a friendly team of scientists, programmers, mathematicians
-  and engineers who share a passion for putting data to good use.
+  We are an international team of scientists, programmers, mathematicians and
+   engineers based in Wellington, New Zealand.
 sectionTitle: Meet the team
 banner: /landing-pages/who-we-are/banner-images/team_placeholder.jpeg
 teaserCTALink: /people/
@@ -11,7 +11,7 @@ bannerNamePattern: team_${index}.jpeg
 bannerCount: 10
 bannerIndexPadding: true
 CTASection: true
-CTATitle: Seem like the team for you?
+CTATitle: Do we seem like the team for you?
 CTAButtonTitle: Contact us
 CTAButtonLink: "#contact"
 ---

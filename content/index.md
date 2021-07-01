@@ -1,11 +1,12 @@
 ---
-title: Kia Ora
+title: Kia ora
 og-title: Dragonfly Data Science
 og-description: Good decisions using data
 introduction: >
-  We are an international team of data scientists and programmers who aim
-  to put data to good use and make a positive impact. We’re based in
-  Wellington, New Zealand.
+  We apply scientific rigour to data management and analysis, with the big goal
+   of making a positive difference in the world. 
+Get our expert help to put your data to good use.
+
 tiles:
   - news/2017-08-14-kakapo-two/content.md
   - work/INZ-case-study/content.md
