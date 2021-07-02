@@ -8,6 +8,7 @@
 @import 'grid/grid-cell.src.css';
 @import 'grid/no-gutter-cell.src.css';
 @import 'grid/publication-grid.src.css';
+@import 'grid/related-grid.src.css';
 @import 'layout/advert.src.css';
 @import 'layout/animation-controls.src.css';
 @import 'layout/article.src.css';

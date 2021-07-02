@@ -25,7 +25,7 @@
 
   &--is-open {
     @apply fixed w-full h-full;
-    @apply z-50 !important;
+    @apply z-100 !important;
 
     max-height: 100vh;
 

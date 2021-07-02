@@ -65,3 +65,6 @@ glyphs:
   - glyph: ../content/images/icons/qgis.svg
     name: qgis
     code: 0xE017
+  - glyph: ../content/images/icons/chevron.svg
+    name: chevron
+    code: 0xE018

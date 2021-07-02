@@ -2,6 +2,8 @@
   @apply flex flex-col relative border-b border-r border-very-light-pink;
 
   &__header {
+    @apply absolute;
+
     .tag-list__tag {
       @apply px-6;
     }
@@ -20,7 +22,7 @@
   }
 
   &__header + .publication-tile__title {
-    @apply mt-10;
+    @apply mt-20;
   }
 
   &__title {

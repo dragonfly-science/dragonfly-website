@@ -8,9 +8,9 @@ const MobileMenu = (): void => {
     wrapper.toggleClass('open')
 
     if (wrapper.is('.open')) {
-      $(this).addClass('dragonfly-close').removeClass('dragonfly-hamburger')
+      $(this).addClass('dragonfly-close transform rotate-45').removeClass('dragonfly-hamburger')
     } else {
-      $(this).addClass('dragonfly-hamburger').removeClass('dragonfly-close')
+      $(this).addClass('dragonfly-hamburger').removeClass('dragonfly-close transform rotate-45')
     }
   })
 }

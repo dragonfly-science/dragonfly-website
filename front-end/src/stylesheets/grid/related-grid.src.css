@@ -1,0 +1,24 @@
+@screen lg {
+  .related-grid {
+    &.outer-container--tile-list {
+      .no-gutter-cell {
+        &:nth-child(n+4) {
+          @apply hidden;
+        }
+      }
+    }
+  }
+}
+
+
+@screen xl {
+  .related-grid {
+    &.outer-container--tile-list {
+      .no-gutter-cell {
+        &:nth-child(n+4) {
+          @apply flex;
+        }
+      }
+    }
+  }
+}

@@ -149,6 +149,7 @@ module.exports = {
       },
       minHeight: {
         3: '3rem',
+        12: '12rem',
         16: '16rem',
         20: '20rem',
         24: '24rem',
@@ -218,6 +219,8 @@ module.exports = {
       },
       zIndex: {
         1: '1',
+        60: '60',
+        100: '100',
       },
       spacing: {
         22: '5.5rem',

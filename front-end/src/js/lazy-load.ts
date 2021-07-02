@@ -1,15 +1,5 @@
 import lozad from 'lozad'
 
-// const getClosest = (elem: Element, selector: string): HTMLElement => {
-//   for (; elem && elem !== document; elem = elem.parentNode) {
-//     elem.ge
-//     // if (elem.class.matches(selector)) {
-//     //   return elem
-//     // }
-//   }
-//   return null
-// }
-
 const LazyLoad = (): void => {
   const options = {
     rootMargin: '1000px 0px',

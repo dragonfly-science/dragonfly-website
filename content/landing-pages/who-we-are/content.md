@@ -2,7 +2,7 @@
 title: Who we are
 introduction: >
   We are an international team of scientists, programmers, mathematicians and
-   engineers based in Wellington, Aotearoa New Zealand.
+  engineers based in Wellington, Aotearoa New Zealand.
 sectionTitle: Meet the team
 banner: /landing-pages/who-we-are/banner-images/team_placeholder.jpeg
 teaserCTALink: /people/

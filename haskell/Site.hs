@@ -101,10 +101,6 @@ main = do
                           [ ( "banner", ["-resize" , "1900", "-gravity", "Center", "-crop", "1900", "-quality", "85"])
                           ]
 
-    -- Images.imageProcessor ( "**/*.pdf") $
-    --                      [ ( "480", ["-density" , "100", "-resize", "480x480^", "-crop", "480x480+0+0"])
-    --                      ]
-
     -- Home page
     match "index.md" $ do
         route $ constRoute "index.html"
@@ -177,7 +173,7 @@ main = do
 
     -- Standalone pages
     match "pages/*.html" $ do
-        route $ setExtension ""
+        route $ setExtension "html"
         compile $ do
             ctx  <- baseContext "index"
             getResourceBody

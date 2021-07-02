@@ -11,6 +11,7 @@ import Parallaxing from '~root/parallax'
 import StickySidebar from '~root/sticky-sidebar'
 import TopSection from '~root/top-section'
 import Slideshow from '~root/slideshow'
+import video from '~root/video'
 
 Zepto(() => {
   Filtering()
@@ -28,4 +29,5 @@ Zepto(() => {
     '.swiper-button-prev'
   )
   OnScreen(swiper)
+  video()
 })
