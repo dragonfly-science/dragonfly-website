@@ -18,4 +18,5 @@ dist
 .docker
 
 docker/*
+docker
 content/stylesheets/*
