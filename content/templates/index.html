@@ -2,5 +2,15 @@ $partial("templates/_game-of-life.html")$ $if(sections)$
 <div id="top-section" class="numbered-sections bg-light-peach relative">
   $for(sections)$ $partial("templates/_numbered-section.html")$ $endfor$
 </div>
-$endif$ $partial("templates/_title.html")$
-$partial("templates/_tile-list.html")$ $partial("templates/_testimonials.html")$
+$endif$ $partial("templates/_title.html")$ $if(news)$
+<div class="w-full bg-dark-jungle-green relative">
+  <div
+    class="
+      collection-grid collection-grid--no-bottom
+      outer-container outer-container--tile-list
+    "
+  >
+    $for(news)$ $partial("templates/_tile-index.html")$ $endfor$
+  </div>
+</div>
+$endif$ $partial("templates/_testimonials.html")$
