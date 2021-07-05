@@ -6,9 +6,12 @@ author:
   - people/abraham-edward/content.md
 quote: >
   We are big fans of Bayesian methods. One great feature is that they allow you to bring data as well as peoples’ strongly held views to an analysis. Those views can then be evaluated systematically as part of a framework. That’s powerful.
+description: >
+  Why we use Bayesian methods to help clients make the best possible decisions.   
 teaserTitle: Sound decision-making
 teaserIntro: >
-  All decisions are based on the best information available. Our ethos is to make sure people are able to use the information they have and are not basing their actions on hearsay.
+  All decisions are based on the best information available. Our ethos is to make sure people are able to use the 
+  information they have and are not basing their actions on hearsay.
 teaserCTAbutton: Read more
 teaserImageType: png
 teaserAnchorId: policy

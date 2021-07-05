@@ -5,7 +5,10 @@ subtitle: >
 author:
   - people/large-kath/content.md
 quote: >
-  A good relationship with our clients is essential – both to find out what they want and what expertise they can contribute to the project. We also have relationships with scientific and industry experts to help us understand the data we’re looking at.
+  A good relationship with our clients is essential – both to find out what they want and what expertise they can contribute to the project. 
+  We also have relationships with scientific and industry experts to help us understand the data we’re looking at.
+description: >
+  Why we use statistical analysis in our computer models of complex real-world situations. 
 teaserTitle: Statistical analysis
 teaserIntro: >
   Statistical analysis is a very useful tool because it allows us to incorporate information we don’t have into a model.
