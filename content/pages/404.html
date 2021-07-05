@@ -1,22 +1,38 @@
 ---
 title: 404
 ---
-<header class="page-header bg-light-peach math-paper">
-    <div class="container mx-auto">
-        <div class="page-header__container">
-            <h1 class="page-header__title">Nothing to see here!</h1>
-        </div>
+
+<header
+  class="
+    page-header page-header--small page-header--article
+    bg-light-peach
+    math-paper
+  "
+>
+  <div class="page-header__outer">
+    <div class="page-header--article__text page-header--article__text--news">
+      <h1 class="page-header__title">Nothing to see here</h1>
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="link-icon link-icon--arrow-down link-icon--large"
+      >
+        <span class="icon dragonfly-arrow"></span>
+      </a>
     </div>
+  </div>
 </header>
 
-<article id="top-section" class="article math-paper">
-    <div class="bg-light-peach px-6">
-        <div class="container mx-auto flex flex-col lg:flex-row">
-            <div class="body-content body-content--article">
-                    <p>Sorry, you seem to have followed an out of date link, or have 
-                        typed something in not quite right. 
-                        Try starting again at our <a href="/">home page</a>.</p>
-            </div>
-        </div>
-    </div>
-</article>
+<section id="top-section" class="bg-light-peach">
+  <div class="article-container">
+    <article class="article">
+      <div class="body-content body-content--article body-content--has-quote">
+        <p>
+          Sorry, you seem to have followed an out of date link, or have typed in
+          something not quite right. Try starting again at our
+          <a href="/">home page</a>.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
