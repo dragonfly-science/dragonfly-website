@@ -79,18 +79,8 @@ const Carousel = async (targetId: string): Promise<void> => {
 
     if (mod % 2 === 1) {
       displayFrames(urls[mod], 'first')
-      // first.style.backgroundImage = `url(${urls[mod]})`
-      // first.classList.replace('opacity-0', 'opacity-100')
-      // first.classList.replace('z-0', 'z-1')
-      // second.classList.replace('opacity-100', 'opacity-0')
-      // second.classList.replace('z-1', 'z-0')
     } else {
       displayFrames(urls[mod], 'second')
-      // second.style.backgroundImage = `url(${urls[mod]})`
-      // second.classList.replace('opacity-0', 'opacity-100')
-      // second.classList.replace('z-0', 'z-1')
-      // first.classList.replace('opacity-100', 'opacity-0')
-      // first.classList.replace('z-1', 'z-0')
     }
   }, 4000)
 
