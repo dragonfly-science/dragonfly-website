@@ -9,6 +9,8 @@ quote: >
 teaserTitle: Machine learning
 teaserSVG: /what-we-do/machine-learning/WWD_Learning1.svg
 bannerSVG: /what-we-do/machine-learning/WWD_Learning2.svg
+description: >
+  Why we use machine learning to extract information from large amounts of complex, real-world data.
 teaserIntro: >
   When you’re trying to extract information from large amounts of complex, real-world data, chances are you’ll need to use machine learning.
 teaserCTAbutton: Read more

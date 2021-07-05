@@ -6,6 +6,8 @@ author:
   - people/moses-caleb/content.md
 quote: >
   Having data stored in the correct way is foundational. Databases open up a whole bunch of possibilities for automation and reproducibility. This is this is kind of work where Dragonfly really excels.
+description: >
+  Why we believe information should be stored, categorised, organised and indexed correctly.  
 teaserTitle: Systems for data
 teaserIntro: >
   Everybody’s data has value, and it needs to be kept safe, accessible and possibly open. We build well-managed systems that meet all these requirements.
