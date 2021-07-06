@@ -7,6 +7,9 @@ role: Geospatial analyst
 honour: "PhD"
 mobile: ""
 tag: fabian
+description: >
+  Fabian is a geospatial analyst and ecologist who studies large-scale change in
+  ecosystems with modern imaging and mapping techniques.
 banner: doweler-fabian/fabian-doweler.jpg
 nocite: |
   @doeweler_causes_2021
@@ -22,7 +25,7 @@ map changes across landscapes. Fabian has a particular interest in the impacts
 of climate change on shifts in the boundaries of ecosystems.
 
 Fabian has a PhD from Auckland University of Technology. For his thesis, he
-studied abrupt treeline patterns in the Southern Alps using a combination of
+studied abrupt tree-line patterns in the Southern Alps using a combination of
 drone imagery, plant physiology and agent-based modelling. Before coming to
 New Zealand, Fabian was part of the EnvEuro masters programme. He majored in
 climate change and water resources, and studied the effects of coastal erosion
