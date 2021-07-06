@@ -6,6 +6,9 @@ lastname: Wilcox
 role: Science writer
 mobile: ""
 tag: sarah
+description: >
+  Sarah is a science writer who enjoys interpreting science and technical
+  information for the public.
 banner: wilcox-sarah/sarah-wilcox.jpg
 ---
 
