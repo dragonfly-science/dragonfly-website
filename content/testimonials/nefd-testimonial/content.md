@@ -4,7 +4,7 @@ introduction: ""
 quote_short: >
   It was very smooth sailing, and what we expected was what we got.
 citation_name: Kate King
-citation_position: Chief Executive
+citation_position: Team Leader 
 citation_organisation: >
   Economic Data and Analysis, Ministry for Primary Industries | Manatū Ahu Matua
 ---
