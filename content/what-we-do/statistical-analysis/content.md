@@ -23,9 +23,9 @@ tiles:
   - work/warp-strike/content.md
 ---
 
-From fisheries management to triaging immigration applications, all decision-making has to happen with imperfect knowledge. 
+From fisheries management to triaging immigration applications, all decision-making has to happen with imperfect knowledge. That means we build models that incorporate clearly stated assumptions and make the best use of the available data to quantify the uncertainties. 
 
-Using the data available, we build models that quantify the uncertainties and clearly state and incorporate the assumptions made. This process of model development and application enables our clients to evaluate all the possible outcomes. They are then able to make the best decision, confident that it's backed up by data and sound, transparent analysis.
+This process of model development and application enables our clients to evaluate all the possible outcomes. They are then able to make the best decision, confident that it's backed up by data and sound, transparent analysis.
 
 We are experts at applying Bayesian statistical models to complex real-world situations. The models incorporate prior information and system knowledge, as well as relevant subject matter expertise. 
 
