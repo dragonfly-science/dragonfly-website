@@ -20,7 +20,7 @@ Philipp is a Dragonfly director and fisheries scientist. His expertise is in usi
 
 <!--more-->
 
-Recent work has included stock assessments of New Zealand pāua (abalone) for Fisheries New Zealand and risk assessments of the threatened whale shark and oceanic whitetip shark for the Western and Central Pacific Fisheries Commission. Philipp is a member and reviewer for several Fisheries New Zealand working groups – the Rock Lobster, Shellfish and Statistics & Assessment Methods working groups.
+Recent work has included stock assessments of New Zealand pāua (abalone) for Fisheries New Zealand and risk assessments of the threatened whale shark and oceanic whitetip shark for the Western and Central Pacific Fisheries Commission. Philipp is a member and reviewer for several Fisheries New Zealand working groups – including the Rock Lobster, Shellfish and Statistics & Assessment Methods working groups.
 
 Two of the most comprehensive impacts on marine life globally are overfishing and climate change. Since receiving a 2014 Marsden Fast-Start grant, Philipp has used eco-physiological models to research the combined effects of fishing and climate on fished ecosystems. His previous work, published in [Science](http://www.sciencemag.org/content/340/6130/347.abstract), showed that most fisheries bounce back when fishing is reduced to sustainable levels.  
 
