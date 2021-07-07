@@ -24,6 +24,6 @@ tiles:
   - work/warp-strike/content.md
 ---
 
-We use statistical models to help clients make decisions in an uncertain world - from fisheries management to investment decisions, all decision-making happens with imperfect knowledge. Statistical models help us quantify uncertainties, and evaluate alternative decisions. 
+We use statistical models to help clients make decisions in an uncertain world - from fisheries management to investment choices, all decision-making happens with imperfect knowledge. Statistical models help us quantify uncertainties, and evaluate alternative decisions. 
 
-We are experts at applying Bayesian statistical models, incorporating domain expert knowledge, prior information and system knowledge into often complex models. These models allow us to clearly state and quantify assumptions, and evaluate all potential outcomes. This process of model-development and application leads to transparent, principled decisions that are backed up by data and sound, transparent analysis.
+We are experts at applying Bayesian statistical models, incorporating domain expertise, prior information and system knowledge into often complex models. These models allow us to clearly state and quantify assumptions, and evaluate all potential outcomes. This process of model-development and application leads to principled decisions that are backed up by data and sound, transparent analysis.
