@@ -1,15 +1,17 @@
 ---
 title: What we do
 subtitle: >
-We help clients use their data to make excellent decisions. With the tools at
- our fingertips we can analyse big datasets, build sophisticated reporting
+  We help clients use their data to make excellent decisions. With the tools at
+  our fingertips we can analyse big datasets, build sophisticated reporting
   systems, give advice on data architecture, and lots more.
 introduction: >
-  WWe help clients use their data to make excellent decisions. With the tools at
-   our fingertips we can analyse big datasets, build sophisticated reporting
-    systems, give advice on data architecture, and lots more.
+  We help clients use their data to make excellent decisions. With the tools at
+  our fingertips we can analyse big datasets, build sophisticated reporting
+  systems, give advice on data architecture, and lots more.
 banner: /landing-pages/what-we-do/banner.jpg
 teaserSVG: /what-we-do/statistical-analysis/WWD_Statistical1.svg
+description: >
+  We help clients use their data to make excellent decisions. 
 toolsTitle: We love good tools
 toolsIntro: >
   These are our favourites – open source, refined, trusted. With them at our
