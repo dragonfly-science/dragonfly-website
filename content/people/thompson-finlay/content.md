@@ -10,7 +10,7 @@ title: Finlay Thompson, PhD
 honour: PhD
 description: >
   Finlay is the CEO and a director of Dragonfly. As a mathematician, he brings an
- insightful rigour to solving analytical and technical problems.
+  insightful rigour to solving analytical and technical problems.
 banner: thompson-finlay/finlay-thompson.jpg
 sortorder: "1"
 nocite: |
@@ -19,7 +19,7 @@ nocite: |
 ---
 
 Finlay is the CEO and a director of Dragonfly. As a mathematician, he brings an
- insightful rigour to solving analytical and technical problems.
+insightful rigour to solving analytical and technical problems.
 
 <!--more-->
 
@@ -30,10 +30,10 @@ statistical solutions work in practice.
 
 Finlay is experienced in Bayesian analysis and has carried out statistical
 modelling in diverse projects including estimates of the number of leaky
- homes in the country and marine mammal bycatch in New Zealand's
- fisheries. He believes that automated approaches can massively increase the
- quality, reproducibility and productivity of analytical systems – and bring
-  significant savings to clients.
+homes in the country and marine mammal bycatch in New Zealand's
+fisheries. He believes that automated approaches can massively increase the
+quality, reproducibility and productivity of analytical systems – and bring
+significant savings to clients.
 
 Finlay researched four-dimensional algebra and geometry for his PhD in
 mathematics at [SISSA](http://sissa.it), Italy. He completed post-docs at [CIMAT](http://www.cimat.mx/) in Mexico
