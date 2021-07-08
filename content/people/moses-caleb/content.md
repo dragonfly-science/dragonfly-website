@@ -7,10 +7,14 @@ role: Mathematician
 mobile: ''
 tag: caleb
 title: Caleb Moses
+description: >
+  Caleb is a Māori mathematician from the Hokianga region whose
+  interests are machine learning, language and automation.
 banner: moses-caleb/caleb-moses-letterbox.jpg
 ---
 Caleb is a Māori mathematician from the Hokianga region whose
 interests are machine learning, language and automation.
+
 <!--more-->
 
 Before joining Dragonfly in 2018 he worked at Stats NZ in a
@@ -22,7 +26,7 @@ mathematics from the University of Auckland. During his studies Caleb
 researched mathematical physics and fractal geometry, which contributed
 to his understanding of the latest statistical models. Caleb is
 passionate about language. He speaks Japanese fluently and is currently
-learning te reo Māori and Korean. 
+learning te reo Māori and Korean.
 
 Developing applications of machine learning technologies is a particular
 focus of his work at Dragonfly.

@@ -6,6 +6,9 @@ lastname: Wilkinson
 role: Data scientist
 mobile: ""
 tag: nikki
+description: >
+  Nikki is a data scientist with a strong interest in machine learning
+  and artificial intelligence.
 banner: wilkinson-nikki/nikki-wilkinson.jpg
 ---
 

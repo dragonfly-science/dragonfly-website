@@ -20,7 +20,7 @@ const Carousel = async (targetId: string): Promise<void> => {
     return
   }
 
-  const { bannerCount, backgroundImage, bannerFolder, bannerPattern } = carousel.dataset
+  const { bannerCount, bannerFolder, bannerPattern } = carousel.dataset
 
   let urls = Array(+bannerCount).fill('').map((_, i: number): string => {
     let s = `${bannerFolder}/`
@@ -59,20 +59,23 @@ const Carousel = async (targetId: string): Promise<void> => {
 
   const displayFrames = reOrderFrames(first, second)
 
-  // reOrderFrames(first, urls, second)
   displayFrames(urls[0], 'first')
 
 
-  // // load remainder
+  // load remainder
   const res = await Promise.all(urls.slice(1).map(u=>fetch(u))).then(responses =>
     Promise.all(responses.map(res => res.status))
   )
 
   const loaded = res.every((i: number) => i === 200)
 
+  if (!loaded) {
+    return
+  }
+
   let current = 0
 
-  // // convert to request animation frame.
+  // convert to request animation frame.
   setInterval(() => {
     const index = ++current
     const mod = index % urls.length
