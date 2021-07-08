@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2020",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@types", "./src/js/types"],
+    "paths": {
+      "~game-of-life/*": ["./src/js/game-of-life/*"],
+      "~types/*": ["./src/js/types/*"],
+      "~root/*": ["./src/js/*"]
+    }
+  },
+  "include": ["src/js/**/*"],
+}

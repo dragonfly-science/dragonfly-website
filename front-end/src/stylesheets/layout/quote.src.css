@@ -1,0 +1,73 @@
+.quote,
+.body-content--has-quote blockquote {
+  @apply bg-cool-blue text-white w-auto block;
+  @apply px-8 py-12 mt-8 mb-8 -ml-8 -mr-8;
+
+  p {
+    @apply mb-2 text-xl font-medium italic leading-tight;
+
+    &:first-of-type {
+      &::before {
+        @apply inline;
+
+        content: '"';
+      }
+    }
+
+    &:last-of-type {
+      @apply mb-0;
+
+      &::after {
+        @apply inline;
+
+        content: '"';
+      }
+    }
+  }
+
+  cite {
+    @apply mt-4 block leading-tight;
+  }
+}
+
+@screen sm {
+  .quote,
+  .body-content--has-quote blockquote {
+    @apply px-16 mx-0;
+  }
+}
+
+@screen md {
+  .quote,
+  .body-content--has-quote blockquote {
+    @apply px-16;
+
+    p {
+      @apply text-2xl;
+    }
+  }
+}
+
+@screen lg {
+  .quote {
+    @apply py-20 px-20;
+
+    p {
+      @apply text-2xl;
+    }
+  }
+}
+
+@screen xl {
+  .quote,
+  .body-content--has-quote blockquote {
+    @apply mt-8 mb-8 px-16;
+  }
+}
+
+@screen 2xl {
+  .quote,
+  .body-content--has-quote blockquote {
+    @apply py-20 px-32;
+  }
+}

@@ -1,33 +1,101 @@
-<div class="container post-detail">
-  $if(title)$
-  <div class="heading wide">
-    <h2>$title$</h2>
+<header
+  class="
+    page-header page-header--article page-header--small
+    bg-light-peach
+    math-paper
+  "
+>
+  <div class="page-header__outer">
+    <div class="page-header__container">
+      $if(title)$
+      <div class="page-header--article__text lg:max-w-full 2xl:max-w-3/4">
+        <h1 class="page-header__title max-w-full w-full">$title$</h1>
+      </div>
+      $endif$
+    </div>
   </div>
-  $endif$
-  <div class="sidebar">
-    $if(pdf)$
-    <h3 class="download">
-      <a href="//files.dragonfly.co.nz/publications/pdf/$pdf$">
-        <i class="fa fa-file-pdf-o" style="display:inline"></i> PDF
-      </a>
-    </h3>
-    $endif$
-    <!--
-    # Uncomment this when the tagging mechanism is working fully
-    $if(tags)$
-      <h3>Tags:</h3>
-      $for(tags)$
-        <a href="/publications/?tag=$tag$">$tagDisplay$</a>
-      $endfor$
-    $endif$
-    -->
+</header>
+
+<section id="top-section" class="bg-light-peach">
+  <div
+    class="article-container article-container--two-sidebars sticky-container"
+  >
+    <aside class="sticky-container__element sidebar sidebar--left">
+      <div class="sidebar__inner">
+        <a href="/publications/" class="navigation-button">
+          <span
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="navigation-button__label">Back to publications</span>
+        </a>
+      </div>
+    </aside>
+
+    <article class="article sticky-container__body">
+      <div
+        class="
+          body-content body-content--full-width body-content--no-introduction
+        "
+      >
+        $if(citation)$
+        <div class="body-content__citation">
+          <h2 class="body-content__title">Citation</h2>
+          $citation$
+        </div>
+        $endif$ $if(citation)$
+        <h3 class="body-content__title">Summary</h3>
+        $else$
+        <h2 class="body-content__title">Summary</h2>
+        $endif$
+        <div class="body-content__body">$body$</div>
+      </div>
+    </article>
+
+    <aside class="sticky-container__element sidebar sidebar--right">
+      <div class="sidebar__inner sm:flex-col lg:flex-row">
+        <a
+          href="/publications/"
+          class="navigation-button navigation-button--publications"
+        >
+          <span
+            class="navigation-button__icon dragonfly-arrow transform rotate-180"
+          ></span>
+          <span class="navigation-button__label">Back to publications</span>
+        </a>
+
+        <div class="sidebar__inner__text sidebar__inner__border">
+          $if(tags)$
+          <h3 class="mb-2 text-slate-grey">Tags</h3>
+          <nav class="tag-list">
+            $for(tags)$ $if(tagDisplay)$
+            <a
+              href="/publications/?tags=$tag$"
+              class="tag-list__tag tag-list__tag--$tag$ no-underline"
+              >$tagDisplay$</a
+            >
+            $endif$ $endfor$
+          </nav>
+          $endif$ $if(pdf)$
+        </div>
+
+        <div class="sidebar__inner__buttons mx-auto">
+          <a
+            class="button button--icon button--icon-left"
+            href="//files.dragonfly.co.nz/publications/pdf/$pdf$"
+          >
+            <span
+              class="
+                button--icon-left__icon
+                dragonfly-arrow
+                transform
+                rotate-90
+              "
+            ></span>
+            <span class="button--icon-left__text">Download</span>
+          </a>
+          $endif$
+        </div>
+      </div>
+    </aside>
   </div>
-  <div class="content">
-    $if(citation)$
-    <h3>Citation</h3>
-    <p>$citation$</p>
-    $endif$
-    <h3>Summary</h3>
-    $body$
-  </div>
-</div>
+</section>

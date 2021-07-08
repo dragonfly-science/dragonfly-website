@@ -22,7 +22,6 @@ import qualified Data.Set                as S
 import           Data.Time.Calendar      (toModifiedJulianDay)
 import           Data.Time.Clock         (utctDay)
 import           Data.Time.Locale.Compat (defaultTimeLocale)
-import           System.FilePath
 
 import           Hakyll
 
@@ -56,12 +55,12 @@ makeRules cc = do
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= validatePage
 
-    match (collectionPattern cc) $ version "full" $ do
+    match (collectionPattern cc) $ do
         compile $ do
             scholmdCompiler
                 >>= saveSnapshot "content"
 
-    match (collectionPattern cc) $ do
+    match (collectionPattern cc) $ version "output" $ do
         route $ gsubRoute "/content.md" (const ".html")
         compile $ do
             ident <- getUnderlying
@@ -70,7 +69,7 @@ makeRules cc = do
             pages <- getList cc 1000
             bubbles <- getBubbles cc (Just ident)
             pandoc <- readScholmd
-            let ctx = base <> teaserImage <> actualbodyField "actualbody" <> pages <> bubbles
+            let ctx = base <> teaserImage <> socialImage <> actualbodyField "actualbody" <> pages <> bubbles
             writeScholmd pandoc
                 >>= loadAndApplyTemplate "templates/append-publications.html" ctx
                 >>= loadAndApplyTemplate (pageTemplate cc) ctx
@@ -89,7 +88,7 @@ sortorder i = do
 
 getList :: CollectionConfig -> Int ->  Compiler (Context String)
 getList cc limit = do
-    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
+    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasNoVersion) "content"
     let filterItems i = liftM (maybe True (/="0")) $ getMetadataField i "sortorder"
     snaps' <- sortItemsBy sortorder =<< filterItemsBy filterItems snaps
     let l = length snaps'
@@ -100,7 +99,7 @@ getList cc limit = do
 
 getBubbles :: CollectionConfig -> Maybe Identifier -> Compiler (Context String)
 getBubbles cc mident = do
-    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
+    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasNoVersion) "content"
     let sortorder i = liftM (fromMaybe "666") $ getMetadataField i "sortorder"
     let filterItems i = liftM (maybe True (/="0")) $ getMetadataField i "sortorder"
     snaps' <- sortItemsBy sortorder =<< filterItemsBy filterItems snaps
@@ -108,20 +107,19 @@ getBubbles cc mident = do
         all = cycle snaps'
         lu = [ (itemIdentifier this, (prev, next))
              | (prev, this, next) <- take l $ drop (l-1) $ zip3 all (drop 1 all) (drop 2 all) ]
-        snaps'' = maybe (take 7 snaps') id $ do
+        snaps'' = maybe (take 5 snaps') id $ do
                     ident <- mident
-                    let ident' = setVersion (Just "full") ident
+                    let ident' = setVersion Nothing ident
                     idx <- findIndex (\i -> ident' == itemIdentifier i) snaps'
                     let (before, after) = splitAt (idx + l) (cycle snaps')
-                    return $ reverse (take 3 (reverse before)) ++ take 4 after
-        previous = listField "bubbles_prev" (pageIndexCtx lu)(return (take 3 snaps''))
-        this     = listField "bubbles_this" (pageIndexCtx lu)(return (take 1 $ drop 3 snaps''))
-        next     = listField "bubbles_next" (pageIndexCtx lu)(return (take 3 $ drop 4 snaps''))
-    return  $ previous <> this <> next
+                    return $ reverse (take 2 (reverse before)) ++ take 3 after
+        previous = listField "bubbles_prev" (pageIndexCtx lu)(return (take 2 snaps''))
+        next     = listField "bubbles_next" (pageIndexCtx lu)(return (take 2 $ drop 3 snaps''))
+    return  $ previous <> next
 
 getTagLists :: CollectionConfig -> Compiler (Context String)
 getTagLists cc = do
-    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasVersion "full") "content"
+    snaps <- loadAllSnapshots (collectionPattern cc .&&. hasNoVersion) "content"
 
     -- Get all the tags together, and find unique tags
     let tags :: S.Set String -> Item String -> Compiler (S.Set String)
@@ -144,14 +142,6 @@ getTagLists cc = do
     foldM tagList mempty uniquetags
 
 
-itemCtx :: Context String
-itemCtx  = listContextWith "tags" tagContext
-        <> defaultContext
-        <> teaserImage
-        <> teaserField "teaser" "content"
-        <> pageUrlField "pageurl"
-        <> dateField "published" "%B %d, %Y"
-
 
 type PreviousNextMap = [(Identifier, (Item String, Item String))]
 pageIndexCtx :: PreviousNextMap -> Context String
@@ -169,14 +159,6 @@ next lu =
     let lup item = return $ fmap snd $ maybeToList $ lookup (itemIdentifier item) lu
     in  listFieldWith "next" (pageIndexCtx []) lup
 
-teaserImage :: Context String
-teaserImage = field "teaserImage" getImagePath
-  where
-    getImagePath item = do
-        let path = toFilePath (itemIdentifier item)
-            base = take ((length path) - 11) path
-            ident = fromFilePath $ base </> "teaser.jpg"
-        fmap (maybe "" (toUrl . (flip replaceFileName "256-teaser.jpg"))) (getRoute ident)
 
 -- Sort items by a monadic ordering function
 sortItemsBy :: (Ord b, Monad m) => (Identifier -> m b) -> [Item a] -> m [Item a]

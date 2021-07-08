@@ -1,20 +1,27 @@
 ---
-title: Home
+title: Kia ora
 og-title: Dragonfly Data Science
-og-description: Good decisions using data
+description: >
+  Dragonfly Data Science apply rigour to data management and analysis, with the
+  big goal of making a positive difference in the world.
+introduction: >
+  We apply scientific rigour to data management and analysis, with the big goal
+  of making a positive difference in the world. Get our expert help to put your
+  data to good use.
+sections:
+  - landing-pages/what-we-do/content.md
+  - landing-pages/who-we-are/content.md
+  - landing-pages/work/content.md
+testimonials:
+  - testimonials/tmp-testimonial/content.md
+  - testimonials/delphi-testimonial/content.md
+  - testimonials/inz-testimonial/content.md
+  - testimonials/navigating-complexity-testimonial/content.md
+  - testimonials/nefd-testimonial/content.md
+  - testimonials/paua-management-testimonial/content.md
+  - testimonials/predator-prey-testimonial/content.md
+sectionTitle: Latest News
+sectionLeft: true
+video: /images/video/HomeMixFinal2.mp4
+videoPoster: /images/video/homepage-video-placeholder.jpg
 ---
-
-# Dragonfly Data Science
-
-Dragonfly Data Science carries out independent statistical modelling and
-analysis.
-
-We offer a complete data collection and analysis service but can also
-contribute at any stage of your project, from scoping and design through to
-presentation and publication.
-
-Our combined backgrounds in quantitative biology, mathematics, physics and
-computer science will ensure your data are expertly handled, so the results
-become a platform for understanding and evidence-based decision making.
-
-

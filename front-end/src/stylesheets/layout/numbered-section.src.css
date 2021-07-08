@@ -1,0 +1,274 @@
+/* Numbered section as seen on the what we do page. */
+.numbered-section {
+  @apply pt-16 overflow-hidden relative border-b border-light-grey;
+
+  counter-increment: list-number;
+
+  &::after,
+  &::before {
+    @apply hidden;
+  }
+
+  &__content {
+    @apply relative flex justify-center flex-col flex-grow z-1 order-last;
+
+    &--img {
+      @apply block flex-shrink-0 w-full order-first;
+    }
+
+    img {
+      @apply mt-0 mb-8 mx-auto max-w-full;
+    }
+  }
+
+  &__heading {
+    @apply max-w-md font-bold text-slate-grey flex pb-5;
+
+    span {
+      @apply text-2xl leading-none;
+    }
+  }
+
+  &__text {
+    @apply text-xl leading-tighter;
+  }
+
+  &__link {
+    @apply mt-8 font-bold underline mb-10;
+    @apply text-sm !important;
+
+    &:hover {
+      @apply no-underline;
+    }
+  }
+
+  &__container {
+    @apply flex flex-col w-full mx-auto;
+  }
+
+  p {
+    @apply mb-4;
+
+    &:last-of-type {
+      @apply mb-0;
+    }
+  }
+
+  /* Variations. */
+  &--no-image {
+    &:nth-of-type(even) {
+      @apply overflow-hidden;
+
+      .numbered-section__container {
+        @apply relative;
+
+        &::before {
+          @apply hidden;
+
+          content: '';
+        }
+      }
+
+      .numbered-section__content {
+        @apply ml-auto;
+
+        &:last-child {
+          &::before {
+            @apply hidden;
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(odd) {
+      @apply overflow-hidden;
+
+      .numbered-section__container {
+        @apply relative;
+
+        &::after {
+          @apply hidden;
+
+          content: '';
+        }
+      }
+
+      .numbered-section__content {
+        &:last-child {
+          &::after {
+            @apply hidden;
+          }
+        }
+      }
+    }
+  }
+
+  &--no-numbers {
+    .numbered-section__heading {
+      &::before,
+      &::after {
+        @apply mr-0;
+
+        content: '';
+      }
+    }
+
+    &:nth-of-type(even) {
+      .numbered-section__heading {
+        &.ruled-heading {
+          &::after {
+            @apply right-0 left-auto;
+          }
+        }
+      }
+    }
+  }
+
+  .scrollable {
+    .lozad-image {
+      &.loaded {
+        @apply delay-0;
+        @apply ease-linear;
+      }
+    }
+  }
+}
+
+@screen sm {
+  .numbered-section {
+    &__content {
+      img {
+        @apply max-w-3/4;
+      }
+    }
+  }
+}
+
+@screen md {
+  .numbered-section {
+    &__text {
+      @apply text-2/3xl leading-tighter;
+    }
+
+    &__heading {
+      span {
+        @apply text-2/3xl leading-tighter;
+      }
+    }
+  }
+}
+
+@screen lg {
+  .numbered-section {
+    @apply pt-20;
+
+    &:nth-of-type(odd) {
+      @apply math-paper--left;
+
+      .numbered-section {
+        &__content {
+          &:first-child {
+            @apply pl-6;
+          }
+
+          &:last-child {
+            @apply order-first pr-8;
+
+            img {
+              @apply mr-auto ml-0;
+            }
+          }
+
+          @apply ml-auto;
+        }
+      }
+    }
+
+    &:nth-of-type(even) {
+      @apply math-paper--right;
+
+      .numbered-section {
+        &__content {
+          &:first-child {
+            @apply pr-6;
+          }
+
+          &--img {
+            @apply pl-8 order-last;
+
+            img {
+              @apply ml-auto mr-0;
+            }
+          }
+        }
+
+        &__content-wrapper {
+          @apply ml-auto;
+        }
+      }
+    }
+
+    &__container {
+      @apply flex-row;
+    }
+
+    &__content {
+      @apply max-w-1/2;
+
+      &--img {
+        @apply w-120 max-w-5/3 ml-auto;
+
+        img {
+          @apply my-0 max-w-38rem mx-auto;
+        }
+      }
+    }
+
+    &__link {
+      @apply mb-20;
+      @apply text-lg !important;
+    }
+  }
+}
+
+@screen xl {
+  .numbered-section {
+    &:nth-of-type(odd) {
+      .numbered-section__content {
+        &:first-child {
+          @apply pl-8;
+        }
+
+        &:last-child {
+          @apply pr-16;
+        }
+      }
+    }
+
+    &:nth-of-type(even) {
+      .numbered-section__content {
+        &:first-child {
+          @apply pr-8;
+        }
+
+        &:last-child {
+          @apply pl-16;
+        }
+      }
+    }
+
+    &__heading {
+      &::before {
+        @apply text-8xl;
+      }
+
+      span {
+        @apply text-5xl;
+      }
+    }
+
+    &__call-to-action {
+      @apply mb-0;
+    }
+  }
+}

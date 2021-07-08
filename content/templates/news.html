@@ -1,39 +1,62 @@
-$if(banner-image)$
-  <div class="post-banner-image" style='background-image: url("$banner-image$")'>
-  </div>
-$endif$
-<div class="container post-detail">
-  <div class="sidebar">
-   <div class="post-top-image">
-     <div class="porthole" style="background-image: url('$teaserImage$');"></div>
-   </div>
-  </div>
-  <div class="heading content">
-   $if(title)$
-    <h2>$title$</h2>
-   $endif$
-   <div class="details">
-    $if(date)$
-      <p>$date$</p>
-    $endif$
-    $if(author)$
-      <p>$author$</p>
-    $endif$
+<header
+  class="
+    page-header page-header--small page-header--article
+    bg-light-peach
+    math-paper
+  "
+>
+  <div class="page-header__outer">
+    <div class="page-header--article__text page-header--article__text--news">
+      $if(title)$
+      <h1 class="page-header__title">$title$</h1>
+      $endif$ $if(date)$
+      <p class="page-header__content">$date$</p>
+      $endif$
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="link-icon link-icon--arrow-down link-icon--large"
+      >
+        <span class="icon dragonfly-arrow"></span>
+      </a>
+    </div>
+    <div class="page-header--article__image page-header--article__image--news">
+      $if(teaserImage)$ $if(noImage)$ $else$
+      <figure class="">
+        <img
+          class="lozad"
+          data-src="$teaserImage$"
+          $if(teaserImageCaption)$
+          alt="$teaserImageCaption$$if(teaserImageCredit)$ - credit: $teaserImageCredit$$endif$"
+          $endif$
+        />
+      </figure>
+      $endif$ $endif$
     </div>
   </div>
-  $if(logo)$
-    <div class="sidebar">
-      <div class="post-info">
-          <img src="$logo$">
+</header>
+
+<section id="top-section" class="bg-light-peach">
+  <div class="article-container">
+    <article class="article">
+      <div class="body-content body-content--article body-content--has-quote">
+        $body$
       </div>
-    </div>
-    <div class="content post-body">
-      $body$
-    </div>
-  $else$
-    <div class="narrow post-body">
-      $body$
-    </div>
-  $endif$
+    </article>
+  </div>
+</section>
+
+<div class="related-content related-content--header math-paper--left--small">
+  <header class="related-content__header outer-container">
+    <h2
+      class="
+        supplementary-header supplementary-header--large
+        related-content__title
+      "
+    >
+      You might also like these stories
+    </h2>
+  </header>
 </div>
+
 $partial("templates/_bubble-navigation.html")$

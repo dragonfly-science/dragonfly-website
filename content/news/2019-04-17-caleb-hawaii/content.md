@@ -65,9 +65,9 @@ information repositories that exist for indigenous knowledge. He also said it
 was interesting to see and hear about different international perspectives on
 how knowledge can be cared for and used. 
 
-“In New Zealand we focus a lot on how we can make things better here and because
-of that I think we tend to be ahead of the curve, especially in indigenous
-matters.” 
+> In New Zealand we focus a lot on how we can make things better here and because
+> of that I think we tend to be ahead of the curve, especially in indigenous
+> matters.
 
 Read more about the [indigenous protocols and artificial intelligence
 workshop](https://www.ics.hawaii.edu/2019/03/indigenous-protocols-and-artificial-intelligence/) or about the 

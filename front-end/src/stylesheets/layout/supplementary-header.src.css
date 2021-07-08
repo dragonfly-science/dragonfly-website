@@ -1,0 +1,17 @@
+.supplementary-header {
+  @apply text-4xl font-bold leading-none w-full text-center;
+}
+
+@screen lg {
+  .supplementary-header {
+    @apply text-5xl;
+  }
+}
+
+@screen xl {
+  .supplementary-header {
+    &--large {
+      @apply text-5xl;
+    }
+  }
+}

@@ -31,7 +31,7 @@ Other scientists were involved in the year-long project. “Felipe Carvalho from
 
 Philip Neubauer helped with the Bayesian approach to the catch reconstruction. “He did a whole separate study testing different methods for data-poor assessments. These could be used to track shark populations between the more rigorous 5-yearly stock assessments.”
 
-###More information
+### More information
 
 * [Whitetip stock assessment report](https://www.wcpfc.int/node/42932)
 * [Input descriptions, especially the historical catch reconstruction and catch scenarios](https://www.wcpfc.int/node/43122)

@@ -1,28 +1,128 @@
-<header class="responsive-navigation">
-  <div class="responsive-navigation-wrapper" data-section="$section$" id="js-responsive-navigation-menu">
-    <a href="" class="responsive-navigation-menu-button">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </a>
-    <a href="/" class="logo"></a>
-    <nav>
-      <ul class="responsive-navigation-menu">
-        <li class="nav-link" data-section="work"><a href="/work/">What we do</a></li>
-        <li class="nav-link" data-section="people"><a href="/people/">Who we are</a></li>
-        <li class="nav-link" data-section="news"><a href="/news/">News</a></li>
-        <li class="nav-link" data-section="data"><a href="/data/">Data</a></li>
-        <li class="nav-link" data-section="publications"><a href="/publications/">Publications</a></li>
-        <li class="nav-link" data-section="contact"><a href="#contact">Get in touch</a></li>
-        <div class="contact-text">
-            <a href="tel:+6421426878">+64 (0)21 426 878</a><br>
-          <a href="mailto:hello@dragonfly.co.nz">hello@dragonfly.co.nz</a><br>
-          <a href="https://www.google.com/maps/place/158+Victoria+St,+Te+Aro,+Wellington+6011,+New+Zealand/@-41.2917782,174.7744558,17z">
-          <span>Level 4, 158 Victoria St,</span><br>
-          <span>Wellington,</span><br>
-          <span>New Zealand</span></a>
-        </div>
+<header
+  class="main-header fixed h-12 top-0 bg-white w-full z-60 lg:h-24"
+  id="main-header"
+>
+  <div
+    class="
+      flex-col
+      h-12
+      outer-container outer-container--no-padding
+      bg-white
+      flex
+      justify-center
+      lg:h-24 lg:flex-row
+    "
+    id="js-responsive-navigation-menu"
+  >
+    <div class="logo items-center flex">
+      <a href="/" class="my-3 lg:my-auto mr-2" aria-label="back to home page">
+        <img src="/images/dragonfly-small.svg" class="max-h-6 lg:hidden" />
+        <img
+          src="/images/dragonfly-logo-rgb.svg"
+          class="
+            hidden
+            max-w-full
+            h-6
+            w-auto
+            lg:block lg:max-w-12rem lg:w-full lg:h-24 lg:h-auto
+          "
+          alt="Dragonfly logo"
+        />
+      </a>
+      <span
+        class="
+          mobile-menu
+          dragonfly-hamburger
+          text-2xl
+          cursor-pointer
+          text-cool-blue
+          my-3
+          ml-auto
+          lg:hidden
+        "
+      ></span>
+    </div>
+
+    <nav class="main-nav lg:closed" data-section="$section$">
+      <ul class="main-nav__container">
+        <li class="main-nav__link section--what-we-do" data-section="whatwedo">
+          <span class="main-nav__label">
+            <a href="/what-we-do/">What we do</a
+            ><img src="/images/icons/chevron.svg" />
+          </span>
+
+          <ul class="mobile-hidden">
+            <li>
+              <a href="/what-we-do/statistical-analysis.html"
+                >Statistical analysis</a
+              >
+            </li>
+            <li>
+              <a href="/what-we-do/systems-for-data.html">Systems for data</a>
+            </li>
+            <li>
+              <a href="/what-we-do/machine-learning.html">Machine learning</a>
+            </li>
+            <li>
+              <a href="/what-we-do/sound-decision-making.html"
+                >Sound decision-making</a
+              >
+            </li>
+            <li>
+              <a href="/what-we-do/upskilling-your-team.html"
+                >Upskilling your team</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li
+          class="
+            main-nav__link
+            section--work section--data section--publications
+          "
+          data-section="work"
+        >
+          <span class="main-nav__label hidden lg:flex"
+            >Our work<img src="/images/icons/chevron.svg"
+          /></span>
+          <ul>
+            <li>
+              <a href="/work/">Projects</a>
+            </li>
+            <li>
+              <a href="/publications/">Publications</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__link section--people" data-section="people">
+          <a href="/people/">Who we are</a>
+        </li>
+        <li class="main-nav__link section--news mr-0" data-section="news">
+          <a href="/news/">News</a>
+        </li>
+        <li class="main-nav__link lg:hidden">
+          <span class="font-bold text-lg block pb-1">Get in touch</span>
+          <a href="tel:+6443859285">+64 (0)4 385 9285</a><br />
+          <a href="mailto:hello@dragonfly.co.nz">hello@dragonfly.co.nz</a><br />
+          <a href="https://goo.gl/maps/XHdWy5kXSap3VdNS8">
+            <span>Level 4, 158 Victoria St,</span><br />
+            <span>Wellington,</span><br />
+            <span>New Zealand</span>
+          </a>
+        </li>
       </ul>
+
+      <a
+        href="#contact"
+        class="
+          main-nav__button
+          hidden
+          lg:block
+          button
+          call-to-action__button call-to-action__button--slate-grey
+        "
+        >Get in touch</a
+      >
     </nav>
   </div>
 </header>
