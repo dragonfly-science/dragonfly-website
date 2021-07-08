@@ -6,6 +6,9 @@ lastname: Winter
 role: Senior developer
 mobile: ""
 tag: simon
+description: >
+  Simon is senior developer at Dragonfly who loves to combine great design
+  with a seamless user experience.
 banner: winter-simon/simon-winter.jpg
 ---
 

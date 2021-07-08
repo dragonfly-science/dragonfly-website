@@ -9,32 +9,37 @@ bannerTitleLine2: Zuijderwijk
 bannerTitleLine3: "[Zow-der-vaik]"
 mobile: ""
 tag: pep
+description: >
+  Pep is design lead at Dragonfly, and a digital design consultant for his agency
+  Salted Herring.
 banner: zuijderwijk-pep/pep-zuijderwijk.jpg
 ---
 
-Pep is design lead at Dragonfly, and a digital design consultant for his agency
+Pep is design lead at Dragonfly and a digital design consultant for his agency
 Salted Herring.
 
 <!-- more -->
 
-He is responsible for applying a robust design process to our digital products &
-projects. This ultimately ensures an intuitive and engaging user-experience in
-the often very complex and abstract [models/data sets/stories] we create.
+He is responsible for applying a robust design process to our digital products and
+projects. This ensures an intuitive and engaging user experience in
+the often very complex and abstract models, products and stories we create.
 
-He has been designing and art directing digital projects for over 20 years and
-began collaborating with Dragonfly around 10 years ago. Some of the projects he
-has been involved with are MBIE's Regional Economic Activity Report, the Bycatch
-Management Information Tool, and Kōkako Language Tracking Tool, which won NZ's
-most prestigious interactive design award, the BeST Purple Pin in 2016.
+Pep has been designing and art-directing digital projects for more than 20 years,
+and began collaborating with Dragonfly in 2020. He has been involved in
+the [Regional Economic Activity Report](https://www.dragonfly.co.nz/work/webrear-case-study.html),
+a bycatch management information tool and the
+[Kōkako language tracking tool](https://www.dragonfly.co.nz/work/TMP-case-study.html),
+which won New Zealand's most prestigious interactive design award, the BeST
+Purple Pin, in 2016.
 
 After graduating with honours in graphic design at the Royal Academy of Arts in
 The Netherlands, Pep worked as a digital designer at agencies in the Hague,
 Wellington, London and Amsterdam. He started Salted Herring in 2007 when he
-moved back to NZ and with partner Kate Handley, built it into a studio with a
-reputation for delivering distinctive, effective and highly crafted digital
-work. Some of the clients include: Whittaker's Chocolate, the Asia NZ
-Foundation, the NZ Festival, Totara Learn, ComplyWith and many SaaS start-ups.
-Find more on [saltedherring.design](https://saltedherring.design)
+moved back to New Zealand. With his partner Kate Handley, he built it into a
+studio with a reputation for delivering distinctive, effective and highly
+crafted digital work. Some clients include: Whittaker's Chocolate, the Asia New Zealand
+Foundation, the New Zealand Festival, Totara, ComplyWith and other SaaS start-ups.
+See [saltedherring.design](https://saltedherring.design)
 
 > Design can turn abstract data into compelling and meaningful stories that have
 > the power to shift perspectives and change behaviour. This is what excites me

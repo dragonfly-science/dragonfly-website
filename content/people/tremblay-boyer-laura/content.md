@@ -6,6 +6,9 @@ lastname: Tremblay-Boyer
 role: Fisheries scientist
 mobile: ""
 tag: laura
+description: >
+  Laura is a fisheries scientist at Dragonfly. She is an experienced statistical
+  modeller with a background in environmental biology.
 banner: tremblay-boyer-laura/laura-tremblay-boyer.jpg
 nocite: |
   @houssard2019model
@@ -14,7 +17,8 @@ nocite: |
   @tremblay2016review
 ---
 
-Laura is a fisheries scientist at Dragonfly. She is an experienced statistical modeller with a background in environmental biology.
+Laura is a fisheries scientist at Dragonfly. She is an experienced statistical
+ modeller with a background in environmental biology.
 
 <!--more-->
 
@@ -26,7 +30,7 @@ species including sharks, billfish and rays.
 
 Laura graduated with a MSc in fisheries science from the University of British
 Columbia in Vancouver and is currently completing her PhD thesis. Her PhD
-research used spatio-temporal models to document range shifts in tuna and
+research used spatiotemporal models to document range shifts in tuna and
 billfish in the Pacific. While at SPC, she used multivariate methods to map the
 complex interactions between industrial tuna fisheries and artisanal reef
 fisheries in Pacific nations.
