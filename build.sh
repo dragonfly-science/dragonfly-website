@@ -29,5 +29,5 @@ fi
 
 # Ping google with updated sitemap
 if [[ -v PUBLISH_SITEMAP ]]; then
-  https://www.google.com/ping?sitemap=https://www.dragonfly.co.nz/sitemap.xml
+  curl https://www.google.com/ping?sitemap=https://www.dragonfly.co.nz/sitemap.xml
 fi
