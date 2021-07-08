@@ -1,17 +1,16 @@
 ---
 title: Statistical analysis
 subtitle: >
-  Statistical analysis is a very useful tool because it allows us to incorporate information we don’t have into a model.
+  Statistical analysis allows us to deal with uncertainty in a principled way. This enables clients to make the best decision in an uncertain world.
 author:
   - people/large-kath/content.md
 quote: >
-  A good relationship with our clients is essential – both to find out what they want and what expertise they can contribute to the project. 
-  We also have relationships with scientific and industry experts to help us understand the data we’re looking at.
+    We really value our relationships with scientific and industry experts to help us understand the data we’re analysing. A good two-way relationship with clients is also essential – it enables us to find out what they need as well as what expertise they can contribute to the project. 
 description: >
-  Why we use statistical analysis in our computer models of complex real-world situations. 
+  Why we use statistical analysis in our analyses of complex real-world situations. 
 teaserTitle: Statistical analysis
 teaserIntro: >
-  Statistical analysis is a very useful tool because it allows us to incorporate information we don’t have into a model.
+  Statistical analysis allows us to deal with uncertainty in a principled way. This enables clients to make the best decision in an uncertain world.
 teaserCTAbutton: Read more
 teaserAnchorId: stats
 teaserSVG: /what-we-do/statistical-analysis/WWD_Statistical1.svg
@@ -24,8 +23,15 @@ tiles:
   - work/warp-strike/content.md
 ---
 
-We use models to make sense of a part of the world when we don’t know everything about it. If we know a particular variable exists but not its exact value, we can use statistical analysis to incorporate a range of possible values into a model.
+From fisheries management to triaging immigration applications, all decision-making has to happen with imperfect knowledge. That means we build models that incorporate clearly stated assumptions and make the best use of the available data to quantify the uncertainties. 
 
-Our clients often use models to predict what could happen in the future if some of the values changed. Models can show how different management alters the status of a resource – including making the resource more sustainable. Decision-making is more robust if you can predict what’s likely to happen in the next 5 years based on what you’re doing now.
+This process of model development and application enables our clients to evaluate all the possible outcomes. They are then able to make the best decision, confident that it's backed up by data and sound, transparent analysis.
 
-While we often use simple methods and open source software at Dragonfly, we put them together in ways that are very well thought through. With really good systems, there’s no need to start from scratch every time. Instead, we can use new information and innovate to build a model that’s even closer to reality.
+We are experts at applying Bayesian statistical models to complex real-world situations. The models incorporate prior information and system knowledge, as well as relevant subject matter expertise. 
+
+
+
+
+ 
+
+
