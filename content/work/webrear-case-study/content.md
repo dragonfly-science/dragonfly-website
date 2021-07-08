@@ -28,16 +28,18 @@ The Regional Economic Activity Report presents data on a broad range of
 economic activity in New Zealand. As part of the government’s Business Growth
 Agenda, Minister Steven Joyce wanted to make the report accessible to a wider
 audience by creating an online version. Regional and city council staff had also
- requested access to more detailed information, to inform their policy and
- planning around resources, permitting, and business management.
+requested access to more detailed information, to inform their policy and
+planning around resources, permitting, and business management.
+
+![](/work/webrear-case-study/REAR_casestudy_image1.jpg)
 
 ### How we made it happen
 
 We built an interactive desktop version of the report, which was
 then released as an iPad and mobile app. A single source of data flows through
- to the report, the website, and the apps, to ensure the integrity of the data
- across all the presentations. We worked with digital design agency
-  [Salted Herring](http://www.saltedherring.com) to create a look and feel that
+to the report, the website, and the apps, to ensure the integrity of the data
+across all the presentations. We worked with digital design agency
+[Salted Herring](http://www.saltedherring.com) to create a look and feel that
 matched the Ministry’s own styles. Charts and maps were drawn using the
 statistical software R, and we used the EmberJS web framework to create a
 responsive, dynamic website that could also be cost-effectively delivered as a
@@ -47,6 +49,8 @@ mobile app.
 
 To successfully deliver the project, we worked with a large team of up to 30
 people across the Ministry for Business, Innovation and Employment (MBIE)
- and externally. We were able to coordinate this team and
+and externally. We were able to coordinate this team and
 deliver the website, following an extremely tight timetable to meet
 the Minister’s release date.
+
+![](/work/webrear-case-study/REAR_casestudy_image2.jpg)

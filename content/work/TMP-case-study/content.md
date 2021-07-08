@@ -32,34 +32,37 @@ purposes, is often delivered in specific blocks of time. Broadcasters, however,
 report that this inhibits a natural use of the language and drives away
 audiences that might enjoy a more bilingual style.
 
+![](/work/TMP-case-study/Kokako_case_image1.jpg)
+
 ### An automated system
 
 Te Māngai Pāho was looking for an automated and more flexible system to replace
- their labour intensive random manual monitoring system. We used machine
-  learning methods (in this case recurrent neural networks) to develop a system
-   that classifies radio as either being te reo, English, or music. The
-   classification is continuous (made many times a second), and the system
-   follows speakers as they flip between languages coding Māori in red, English
-    in blue and music in purple.
+their labour intensive random manual monitoring system. We used machine
+learning methods (in this case recurrent neural networks) to develop a system
+that classifies radio as either being te reo, English, or music. The
+classification is continuous (made many times a second), and the system
+follows speakers as they flip between languages coding Māori in red, English
+in blue and music in purple.
 
 ### Fast and accurate language identification
 
 The recurrent neural network achieves more than 95% accuracy in detecting each
- language and music, and can process three hours of audio in less than a minute.
-  A set of manually labelled data was required to train the system, but once
-   trained, the system is able to keep classifying new data as it arrives.
-    This machine learning technique is well suited to other audio, video or
-     streaming data classification tasks.
+language and music, and can process three hours of audio in less than a minute.
+A set of manually labelled data was required to train the system, but once
+trained, the system is able to keep classifying new data as it arrives.
+This machine learning technique is well suited to other audio, video or
+streaming data classification tasks.
 
 ### Partnership with Salted Herring
 
 We were pleased to work with Wellington digital design agency
- [Salted Herring](https://www.saltedherring.com/) on this project, who designed
-  the user interface and created the brand identity. We worked together on the
-   front-end development. [Kōkako](https://kokako.co/) was named a Supreme
-   Winner in the interactive category of the
-    [2016 Best Design Awards](https://bestawards.co.nz/interactive/applications/salted-herring/kokako-language-tracking/)
-    and awarded a Purple Pin.
+[Salted Herring](https://www.saltedherring.com/) on this project, who designed
+the user interface and created the brand identity. We worked together on the
+front-end development. [Kōkako](https://kokako.co/) was named a Supreme
+Winner in the interactive category of the
+[2016 Best Design Awards](https://bestawards.co.nz/interactive/applications/salted-herring/kokako-language-tracking/)
+and awarded a Purple Pin.
 
-[Watch a Native Affairs, Maōri TV interview about this project]
-(https://www.dragonfly.co.nz/news/2016-10-17-kokako-is-the-best.html).
+[Watch a Native Affairs, Maōri TV interview about this project](https://www.dragonfly.co.nz/news/2016-10-17-kokako-is-the-best.html).
+
+![](/work/TMP-case-study/Kokako_case_image2.jpg)

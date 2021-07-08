@@ -109,7 +109,7 @@ main = do
             people <- People.list 1000
             bubbles <- People.bubbles
             work   <- Work.list 3
-            news   <- News.list 6
+            news   <- News.list 4
 
             -- Section definition
             let getSections itm = do
