@@ -1,6 +1,10 @@
 import fetch from 'cross-fetch'
 
-const reOrderFrames = (first: HTMLDivElement, second: HTMLDivElement) => (url: string, top: 'first' | 'second') => {
+const TIMEOUT: number = 4000
+const FRAMES_PER_SECOND: number = 250
+
+
+const reOrderFrames = (first: HTMLDivElement, second: HTMLDivElement) => (url: string, top: 'first' | 'second'): void => {
   const [ next, previous ] = [
     top === 'first' ? first : second,
     top === 'first' ? second : first
@@ -13,6 +17,10 @@ const reOrderFrames = (first: HTMLDivElement, second: HTMLDivElement) => (url: s
   previous.classList.replace('z-10', 'z-0')
 }
 
+const loadFrame = (el: HTMLDivElement, url: string): void => {
+  el.style.backgroundImage = `url(${url})`
+}
+
 const Carousel = async (targetId: string): Promise<void> => {
   const carousel = document.getElementById(targetId)
 
@@ -21,6 +29,7 @@ const Carousel = async (targetId: string): Promise<void> => {
   }
 
   const { bannerCount, bannerFolder, bannerPattern } = carousel.dataset
+  let timeoutCompleted = false
 
   let urls = Array(+bannerCount).fill('').map((_, i: number): string => {
     let s = `${bannerFolder}/`
@@ -54,16 +63,26 @@ const Carousel = async (targetId: string): Promise<void> => {
   carousel.appendChild(first)
   carousel.appendChild(second)
 
-  // load first
+  if (urls.length < 2) {
+    return
+  }
+
+  // load first & second
   await fetch(urls[0])
+  await fetch(urls[1])
 
   const displayFrames = reOrderFrames(first, second)
 
   displayFrames(urls[0], 'first')
 
+  setTimeout(() => {
+    displayFrames(urls[1], 'second')
+    timeoutCompleted = true
+  }, TIMEOUT)
+
 
   // load remainder
-  const res = await Promise.all(urls.slice(1).map(u=>fetch(u))).then(responses =>
+  const res = await Promise.all(urls.slice(2).map(u=>fetch(u))).then(responses =>
     Promise.all(responses.map(res => res.status))
   )
 
@@ -73,20 +92,28 @@ const Carousel = async (targetId: string): Promise<void> => {
     return
   }
 
-  let current = 0
+  let current = 1
+  let counter = 0
 
-  // convert to request animation frame.
-  setInterval(() => {
-    const index = ++current
-    const mod = index % urls.length
+  const draw = () => {
+    if (timeoutCompleted) {
+      if (counter++ >= FRAMES_PER_SECOND) {
+        counter = 0
+        const index = ++current
+        const mod = index % urls.length
 
-    if (mod % 2 === 1) {
-      displayFrames(urls[mod], 'first')
-    } else {
-      displayFrames(urls[mod], 'second')
+        if (mod % 2 === 0) {
+          displayFrames(urls[mod], 'first')
+        } else {
+          displayFrames(urls[mod], 'second')
+        }
+      }
     }
-  }, 4000)
 
+    requestAnimationFrame(draw)
+  }
+
+  draw()
 }
 
 export default Carousel

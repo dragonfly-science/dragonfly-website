@@ -15,12 +15,16 @@
   /* Variations */
   &--modal {
     @apply fixed top-0 left-0 h-full w-full z-50 pointer-events-none opacity-0;
-    @apply transition-all ease-out-quart duration-500 pt-10;
+    @apply transition-all ease-out-quart duration-500 pt-10 overflow-y-scroll flex-col;
 
     .dragonfly-close,
     .dragonfly-logo {
       @apply block !important;
     }
+
+    /* .dragonfly-close {
+      @apply fixed mr-4 mt-8;
+    } */
   }
 
   &--is-open {
@@ -42,6 +46,11 @@
     }
   }
 
+  &__inner {
+    @apply flex flex-row justify-between items-center mb-8 fixed top-0 left-0;
+    @apply w-full px-8 bg-black;
+  }
+
   address {
     @apply not-italic;
   }
@@ -49,6 +58,10 @@
   .dragonfly-close,
   .dragonfly-logo {
     @apply hidden;
+  }
+
+  .outer-container {
+    @apply pt-16;
   }
 }
 
@@ -71,6 +84,10 @@
     &__detail {
       @apply mx-0;
     }
+
+    &__inner {
+      @apply relative px-0;
+    }
   }
 }
 
@@ -78,8 +95,18 @@
   .main-footer {
     @apply text-lg;
 
+    &__inner {
+
+      top: unset;
+      left: unset;
+    }
+
     &--modal {
-      @apply flex;
+      @apply flex flex-row;
+
+      /* .dragonfly-close {
+        @apply absolute mr-0 mt-0;
+      } */
     }
 
     &__detail {
