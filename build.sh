@@ -15,7 +15,8 @@ cp static-site.tgz /output
 # If AWS, sync to s3 & optionally invalidate cloudflare cache.
 # Otherwise, publish to gorbachev.
 if [[ -v AWS_ACCESS_KEY_ID && -v AWS_BUCKET && -v AWS_SECRET_ACCESS_KEY ]]; then
-  aws s3 sync _site s3://${AWS_BUCKET} --acl public-read
+  aws s3 sync _site s3://${AWS_BUCKET} --acl public-read --delete \
+    --only-show-errors
 
   if [[ -v AWS_CLOUDFRONT_ID ]]; then
     aws cloudfront create-invalidation \
@@ -28,5 +29,5 @@ fi
 
 # Ping google with updated sitemap
 if [[ -v PUBLISH_SITEMAP ]]; then
-  https://www.google.com/ping?sitemap=https://www.dragonfly.co.nz/sitemap.xml
+  curl https://www.google.com/ping?sitemap=https://www.dragonfly.co.nz/sitemap.xml
 fi
