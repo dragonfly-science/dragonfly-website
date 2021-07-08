@@ -2,12 +2,9 @@
 title: Kia ora
 og-title: Dragonfly Data Science
 description: >
-  Dragonfly Data Science apply rigour to data management and analysis, with the
-  big goal of making a positive difference in the world.
-introduction: >
-  We apply scientific rigour to data management and analysis, with the big goal
-  of making a positive difference in the world. Get our expert help to put your
-  data to good use.
+  We do good things with data. 
+introduction: >	
+  We do good things with data. 
 sections:
   - landing-pages/what-we-do/content.md
   - landing-pages/who-we-are/content.md

@@ -1,24 +1,19 @@
 ---
 title: What we do
 subtitle: >
-  We help clients use their data to make excellent decisions. With the tools at
-  our fingertips we can analyse big datasets, build sophisticated reporting
-  systems, give advice on data architecture, and lots more.
+  We specialise in statistical analysis and machine learning, supported by solid software engineering, clear communication, and a sprinkle of creative flair.
 introduction: >
-  We help clients use their data to make excellent decisions. With the tools at
-  our fingertips we can analyse big datasets, build sophisticated reporting
-  systems, give advice on data architecture, and lots more.
+  We specialise in statistical analysis and machine learning, supported by solid software engineering, clear communication, and a sprinkle of creative flair.
 banner: /landing-pages/what-we-do/banner.jpg
 teaserSVG: /what-we-do/statistical-analysis/WWD_Statistical1.svg
 description: >
-  We help clients use their data to make excellent decisions. 
+  We specialise in statistical analysis and machine learning, supported by solid software engineering, clear communication, and a sprinkle of creative flair.
 toolsTitle: We love good tools
 toolsIntro: >
-  These are our favourites – open source, refined, trusted. With them at our
-  fingertips, we can do magic with data. Within our team we have expertise with
-  all these data science and analysis tools.
-toolsDetails: Would your project benefit from our skills?
+  These are our favourites — open source, powerful, and up to the minute.
+  We use these tools to get the best from data.
+toolsDetails: Would you benefit from our expertise?
 teaserCTALink: /what-we-do/
 toolsCTALink: "#contact"
-toolsCTAButton: contact us
+toolsCTAButton: Contact us
 ---

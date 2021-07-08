@@ -16,3 +16,7 @@ dist
 .test_cache
 .install
 .docker
+
+docker/*
+docker
+content/stylesheets/*
