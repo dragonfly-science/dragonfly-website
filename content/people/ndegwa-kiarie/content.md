@@ -21,9 +21,7 @@ Before joining Dragonfly he worked as a senior data scientist at
 [CSIRO](https://www.csiro.au/en/), applying machine learning to networked data.
 This had wide-ranging uses from detecting fraud in large transactional networks
  to extracting information from complex patterns in social networks such as
- Twitter. Previous roles were
- at [Udacity's](https://medium.com/udacity/our-very-own-grand-challenge-b004a9863024)
- developing self-driving car technology and Xero, applying natural language
+ Twitter. Their previous role was at Xero, applying natural language
  processing and computer vision systems to financial data.
 
 Kiarie moved to Canberra from Nairobi in Kenya as a teenager and has a
