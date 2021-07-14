@@ -21,6 +21,6 @@ The new website includes profiles of several new staff, makes more of the images
 
 “I like the way these pages have a practitioner explaining a technical topic with a personal touch – it keeps it real. I also love the beautiful photography of the team section, so a big shout out to the very talented Carissa Corlett.”
 
-The rest of the in-house web team were the unflappable and dedicated developer[Simon Winter](https://www.dragonfly.co.nz/people/winter-simon.html) and content writer [Sarah Wilcox](https://www.dragonfly.co.nz/people/wilcox-sarah.html).
+The rest of the in-house web team were the unflappable and dedicated developer [Simon Winter](https://www.dragonfly.co.nz/people/winter-simon.html) and content writer [Sarah Wilcox](https://www.dragonfly.co.nz/people/wilcox-sarah.html).
 
 “Dragonfly has grown massively in the last 2 years, with 23 staff and associates today. I think this website reflects who they want to be for the next chapter, but stays true to their core values of humility and authenticity.”

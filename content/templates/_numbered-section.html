@@ -1,0 +1,52 @@
+<section class="numbered-section numbered-section--no-numbers bg-light-peach">
+  <div class="outer-container">
+    <div class="numbered-section__container">
+      <div class="numbered-section__content">
+        <div class="numbered-section__content-wrapper">
+          $if(teaserTitle)$
+          <h2 class="numbered-section__heading">
+            <span>$teaserTitle$</span>
+          </h2>
+          $else$
+          <h2 class="numbered-section__heading">
+            <span>$if(title)$$title$$endif$</span>
+          </h2>
+          $endif$ $if(teaserIntro)$
+          <p class="numbered-section__text">$teaserIntro$</p>
+          $else$
+          <p class="numbered-section__text">$introduction$</p>
+          $endif$
+
+          <div class="call-to-action-block">
+            <a
+              href="$if(teaserCTALink)$$teaserCTALink$$else$$pageurl$$endif$"
+              class="
+                call-to-action__button
+                button
+                call-to-action__button--cool-blue
+              "
+            >
+              $if(teaserCTAbutton)$ $teaserCTAbutton$ $else$ Find out more
+              $endif$
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          numbered-section__content numbered-section__content--img
+          scrollable
+        "
+      >
+        $if(teaserSVG)$
+        <img src="$teaserSVG$" class="lozad lozad-image w-full" />
+        $else$ $if(teaserImageLargeLandscape)$
+        <img
+          src="$teaserImageLargeLandscape$"
+          class="lozad lozad-image w-full"
+        />
+        $endif$ $endif$
+      </div>
+    </div>
+  </div>
+</section>

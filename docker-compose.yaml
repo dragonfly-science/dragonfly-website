@@ -1,0 +1,68 @@
+version: "3"
+services:
+  npm:
+    image: $IMAGE
+    ports:
+      - 8000:8000
+      - 3000:3000
+    volumes:
+      - $PWD/content:/work/content:cached
+      - $PWD/front-end:/work/front-end:cached
+      - $PWD/_site:/work/_site
+      - $PWD/deployment:/work/deployment
+      - nodemodules:/work/front-end/node_modules:cached
+    working_dir: /work/
+    profiles:
+      - build
+  website:
+    image: $IMAGE
+    volumes:
+      - $PWD:/work/
+    working_dir: /work/
+    profiles:
+      - build
+  watch:
+    image: $IMAGE
+    restart: unless-stopped
+    volumes:
+      - $PWD/content:/work/content:cached
+      - $PWD/deployment:/work/deployment
+      - $PWD/front-end:/work/front-end:cached
+      - $PWD/_site/assets:/work/_site/assets:cached
+      - $DOCKER_CACHE/npm:/root/.npm:cached
+      - $WEPACK_CACHE:$WEBPACK_CONTAINER_CACHE:cached
+      - nodemodules:/work/front-end/node_modules:cached
+    working_dir: /work
+    depends_on:
+      - website_haskell
+    ulimits:
+      nofile:
+        soft: 524288
+        hard: 524288
+    environment:
+      - WEBPACK_CONTAINER_CACHE=$WEBPACK_CONTAINER_CACHE
+    command: >
+      bash -c "
+      cd /work/front-end && npm run watch
+      "
+  website_haskell:
+    image: $IMAGE
+    build:
+      context: .
+    restart: unless-stopped
+    ports:
+      - 8000:8000
+    volumes:
+      - $PWD:/work:cached
+    working_dir: /work/
+    command: >
+      bash -c "
+      cd /work/haskell &&
+      stack build &&
+      cp $$(stack path --local-install-root)/bin/website ../website &&
+      cd ../content && ../website watch
+      "
+    tty: true
+
+volumes:
+  nodemodules:

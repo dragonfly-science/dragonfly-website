@@ -1,0 +1,63 @@
+.person-tile {
+  @apply overflow-hidden relative flex flex-row items-end;
+  @apply transition-all duration-500 ease-out-quart min-h-30;
+
+  filter: grayscale(100%) sepia(50%);
+
+  &::before {
+    @apply absolute bottom-0 left-0 w-full h-full z-10 block;
+    @apply transition-all duration-500 ease-out-quart;
+
+    content: '';
+    background-blend-mode: multiply;
+
+    /* prettier-ignore */
+    background:
+      linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+  }
+
+  &:hover {
+    filter: grayscale(0) sepia(0);
+
+    &::before {
+      /* prettier-ignore */
+      background:
+        linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    .person-tile__title {
+      @apply mb-0;
+    }
+
+    .no-gutter-cell__image {
+      @apply ease-in-quart;
+      transform: translate3d(-50%, -50%, 0) scale(1.1);
+    }
+  }
+
+  &__image {
+    @apply bg-top;
+  }
+
+  &__link {
+    @apply relative ml-auto z-20;
+  }
+
+  &__title {
+    @apply mb-0 z-10 max-w-3/4;
+  }
+
+  .no-gutter-cell {
+    &__image {
+      @apply transition-all duration-200 ease-out-quart;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<header
+  class="
+    page-header
+    bg-dark-jungle-green
+    relative
+    overflow-hidden
+    select-none
+    flex
+  "
+>
+  <div class="page-header__outer pointer-events-none">
+    <div class="page-header__container text-white">
+      <h1 class="page-header__title">$if(title)$$title$$endif$</h1>
+
+      <p class="page-header__content">$introduction$</p>
+
+      <a
+        href="#top-section"
+        tabindex="-1"
+        class="
+          link-icon link-icon--arrow-down link-icon--large
+          pointer-events-auto
+        "
+      >
+        <span class="icon dragonfly-arrow"></span>
+      </a>
+    </div>
+  </div>
+
+  <div
+    class="
+      math-paper--screen
+      absolute
+      top-0
+      left-0
+      w-full
+      h-full
+      z-1
+      pointer-events-none
+    "
+  ></div>
+
+  $if(video)$
+  <video
+    class="video"
+    $if(videoPoster)$poster="$videoPoster$"
+    $endif$
+    autoplay
+    loop
+    muted
+  >
+    <source src="$video$" type="video/mp4" />
+  </video>
+  $endif$
+</header>

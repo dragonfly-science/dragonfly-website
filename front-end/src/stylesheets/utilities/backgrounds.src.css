@@ -1,0 +1,145 @@
+:root {
+  /* prettier-ignore */
+  --math-paper: linear-gradient(rgba(67, 161, 201, 0.45) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(67, 161, 201, 0.45) 1px, transparent 1px),
+    linear-gradient(rgba(67, 161, 201, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(67, 161, 201, 0.2) 1px, transparent 1px);
+  /* prettier-ignore */
+  --math-paper-reverse: linear-gradient(
+      rgba(255, 255, 255, 0.2) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+
+  --math-grid: 64px;
+  --math-paper-half: 32px;
+}
+
+.math-paper {
+  background-image: var(--math-paper);
+  background-size: var(--math-grid) var(--math-grid);
+  background-position: var(--math-paper-half) var(--math-paper-half),
+    var(--math-paper-half) var(--math-paper-half),
+    var(--math-grid) var(--math-grid), var(--math-grid) var(--math-grid);
+  background-attachment: fixed, fixed, fixed, fixed;
+}
+
+.math-paper--screen {
+  background-image: var(--math-paper);
+  @apply mix-blend-screen;
+  background-size: var(--math-grid) var(--math-grid);
+  background-position: var(--math-paper-half) var(--math-paper-half),
+    var(--math-paper-half) var(--math-paper-half),
+    var(--math-grid) var(--math-grid), var(--math-grid) var(--math-grid);
+  background-attachment: fixed, fixed, fixed, fixed;
+}
+
+.math-paper--origin {
+  /* prettier-ignore */
+  background-position:
+    calc(50% - var(--math-paper-half)) calc(50% - var(--math-paper-half)),
+    calc(50% - var(--math-paper-half)) calc(50% - var(--math-paper-half)),
+    calc(50% - var(--math-grid)) calc(50% - var(--math-grid)),
+    calc(50% - var(--math-grid)) calc(50% - var(--math-grid));
+}
+
+.math-paper--reverse {
+  background-image: var(--math-paper-reverse);
+}
+
+.math-paper--reverse-screen {
+  @apply mix-blend-screen;
+  background-image: var(--math-paper-reverse);
+}
+
+/* for left / right math paper */
+.math-paper--left,
+.math-paper--left--small {
+  &::after {
+    @apply block absolute math-paper top-0 left-0 w-1/5 h-full z-0;
+
+    content: '';
+  }
+}
+
+/* .math-paper--left {
+  &::after {
+    @apply mr-2/3;
+  }
+} */
+
+/* .math-paper--left--small {
+  &::after {
+    @apply mr-1/2 lg:mr-3/4;
+  }
+} */
+
+.math-paper--right {
+  &::before {
+    @apply block absolute math-paper top-0 right-0 w-1/4 h-full z-0;
+
+    content: '';
+  }
+}
+
+/* For use with lozad. */
+.background-image,
+.lozad-image {
+  @apply opacity-0;
+  @apply transition-opacity duration-500 ease-in-quart;
+
+  &.loaded {
+    @apply transition-all;
+  }
+}
+
+.background-image {
+  @apply bg-cover bg-top;
+
+  &.loaded {
+    @apply opacity-85;
+  }
+}
+
+.lozad-image {
+  &.loaded {
+    @apply opacity-100;
+  }
+}
+
+.lozad-container {
+  @apply relative;
+
+  &::before {
+    @apply absolute top-0 left-0 w-full h-full bg-black block z-10;
+    @apply transition-bg duration-500;
+
+    content: '';
+  }
+
+  &.loaded {
+    &::before {
+      @apply bg-transparent;
+    }
+  }
+
+  &--light-peach {
+    &::before {
+      @apply bg-light-peach;
+    }
+  }
+
+  &--slate-grey {
+    &::before {
+      @apply bg-slate-grey;
+    }
+  }
+
+  &--dark-jungle-green {
+    &::before {
+      @apply bg-dark-jungle-green;
+    }
+  }
+}

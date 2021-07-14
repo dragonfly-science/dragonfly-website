@@ -1,11 +1,10 @@
 ---
 title: Publications
+subtitle: >
+  Browse or search these reports,
+  presentations and journal articles by Dragonfly staff and collaborators.
+description: >
+  Browse or search these reports,
+  presentations and journal articles by Dragonfly staff and collaborators.
+
 ---
-
-
-#
-Publications, reports, and presentations
-
-A complete list of Dragonfly publications and reports from 2007 to the present.
-
-----

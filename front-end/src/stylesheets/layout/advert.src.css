@@ -1,0 +1,54 @@
+.advert {
+  @apply flex justify-center bg-cool-blue text-white;
+  @apply py-16;
+
+  &__container {
+    @apply mr-auto px-8;
+  }
+
+  &__inner {
+    @apply max-w-full w-38rem mr-auto flex flex-col;
+  }
+
+  &__text,
+  p {
+    @apply font-normal leading-tight;
+    @apply text-xl mb-10;
+  }
+
+  a {
+    @apply underline;
+
+    &:hover {
+      @apply no-underline;
+    }
+  }
+}
+
+@screen md {
+  .advert {
+    &__text,
+    p {
+      @apply text-2xl;
+    }
+  }
+}
+
+@screen lg {
+  .advert {
+    @apply py-32;
+
+    &__container {
+      @apply mx-auto;
+    }
+
+    &__inner {
+      @apply w-64rem;
+    }
+
+    &__text,
+    p {
+      @apply text-4xl mb-24;
+    }
+  }
+}

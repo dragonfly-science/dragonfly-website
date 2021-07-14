@@ -1,16 +1,10 @@
 $body$
 $if(publications)$
-  <section class="level3" id="publications">
+  <section>
     <h3>Selected publications</h3>
-    <div class="post-list">
+    <div class="collection-grid publication-grid list">
       $for(publications)$
-        <div class="post-wrapper">
-          <div class="post">
-            <div class="post-teaser">
-              $partial("templates/_citation-entry.html")$
-            </div>
-          </div>
-        </div>
+        $partial("templates/_citation-entry.html")$
       $endfor$
     </div>
   </section>
