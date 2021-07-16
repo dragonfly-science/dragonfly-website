@@ -83,6 +83,7 @@ role that will likely evolve over time as we grow.
 - exceptional communication skills;
 - knowledge of, or interest in learning, tikanga māori
 
+<br/>
 Payroll processing experience would be advantageous.
 
 #### What we offer
