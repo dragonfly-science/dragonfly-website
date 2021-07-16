@@ -102,3 +102,5 @@ Please apply now with your CV and a cover letter letting us know why you will
 be a terrific addition to our team, and the best person for this job. We've
 partnered with Kin to fill this exciting role. For more information please
 contact Stacey Aubry on [stacey.aubry@kin.co.nz](mailto:stacey.aubry@kin.co.nz)
+
+For mre information & to apply, [view the job on seek](https://www.seek.co.nz/job/53005886)
