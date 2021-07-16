@@ -12,7 +12,7 @@ description: >
   Finlay is the CEO and a director of Dragonfly. As a mathematician, he brings an
   insightful rigour to solving analytical and technical problems.
 banner: thompson-finlay/finlay-thompson.jpg
-sortorder: "1"
+sortorder: "2"
 nocite: |
   @thompson_mammals_95-12
   @thompson_dolphin_2013
