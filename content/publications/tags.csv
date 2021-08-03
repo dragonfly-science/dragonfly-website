@@ -9,32 +9,60 @@ abraham2000isd.md, edward, oceanography, article
 abraham2001fba.md, edward, benthic, article
 abraham2002csm.md, edward, oceanography, article
 abraham2007suf.md, edward, benthic, article, sea-urchin
+abraham2009efw.md, edward, bycatch, seabird, dragonfly, article
+abraham_assessment_2017.md, edward, yvan, philipp, katrin, marine-mammal, dragonfly, report, bayesian, risk-assessment
 abraham_batching_2009.md, edward, bycatch, seabird, dragonfly, report, bayesian
 abraham_bayesian_2014.md, edward, seabird, dragonfly, presentation
 abraham_branching_2001.md, edward, benthic, article
+abraham_building_2020.md, caleb, indigenous, dragonfly, website
+abraham_cadmium_2016.md, edward, dragonfly, report
+abraham_cadmium_2018.md, edward, dragonfly, article, bayesian, cadmium, soil
+abraham_capture_2020.md, edward, recreational, fishery, bycatch, dragonfly, report
 abraham_evaluating_2008.md, edward, marine-mammal, dragonfly, report, bayesian
+abraham_evaluating_2016.md, edward, yvan, seabird, dragonfly, report
 abraham_identifying_2014.md, edward, dragonfly, presentation, acoustic
 abraham_laplacian_2001.md, edward, benthic, article
+abraham_mammals_14-15.md, edward, katrin, marine-mammal, dragonfly, report, bayesian
+abraham_mammals_17-18.md, edward, laura, katrin, marine-mammal, dragonfly, report, bayesian
+abraham_mincing_2007.md, edward, seabird, bycatch, dragonfly, presentation
 abraham_mincing_2008.md, edward, bycatch, seabird, dragonfly, report, bayesian
+abraham_mincing_2010.md, edward, dragonfly, seabird, bycatch, report
 abraham_morphological_2001.md, edward, benthic, article
 abraham_offal_2011.md, edward, yvan, finlay, seabird, bycatch, dragonfly, presentation
+abraham_overlap_2011.md, edward, yvan, black petrel, bird, fisheries, dragonfly
+abraham_overlap_2014.md, edward, yvan, dragonfly, seabird, bycatch, report
 abraham_paua2_2012.md, edward, paua, fisheries, dragonfly, presentation, benthic
 abraham_paua_2012.md, edward, paua, fisheries, dragonfly, report, benthic
+abraham_preparation_16-17.md, edward, katrin, bycatch, data, dragonfly, report
+abraham_preparation_17-18.md, edward, katrin, bycatch, data, dragonfly, report
 abraham_recreational_2010.md, edward, katrin, yvan, seabird, dragonfly, report
+abraham_recreational_2020.md, edward, recreational, fishery, bycatch, dragonfly
+abraham_relationship_2015.md, edward, philipp, dragonfly, article, bayesian, paua, benthic, marine-biology 
 abraham_seabird_2008.md, edward, seabird, bycatch, dragonfly, report, bayesian
 abraham_seabird_2012.md, edward, seabird, bycatch, dragonfly, presentation
+abraham_seabirds_02-07.md, edward, dragonfly, finlay, report, seabirds, bycatch
 abraham_seabirds_02-09.md, edward, finlay, seabird, bycatch, dragonfly, report, bayesian
+abraham_seabirds_02-14.md, edward, yvan, seabird, dragonfly, report, bayesian
+abraham_seabirds_14-15.md, edward, yvan, seabird, dragonfly, report, bayesian
+abraham_seabirds_15-16.md, edward, yvan, seabird, dragonfly, report, bayesian
+abraham_seabirds_16-17.md, edward, yvan, seabird, dragonfly, report, bayesian
+abraham_seabirds_17-18.md, edward, yvan, seabird, dragonfly, report, bayesian
 abraham_seabirds_2011.md, edward, yvan, finlay, seabird, dragonfly, presentation
+abraham_southern_2017.md, edward, yvan, risk-assessment, seabird, fisheries, dragonfly, report
 abraham_summary_2007.md, edward, seabird, bycatch, dragonfly, report
 abraham_summary_2009.md, edward, finlay, seabird, marine-mammal, dragonfly, report, bayesian
 abraham_summary_98-08.md, edward, finlay, seabird, marine-mammal, dragonfly, report
 abraham_summary_98-09.md, edward, finlay, seabird, marine-mammal, dragonfly, report, bayesian
+abraham_summary_98-13.md, edward, yvan, katrin, finlay, seabird, marine-mammal, turtle, dragonfly, report, bayesian
+abraham_takingstock_2016.md, edward, report, model, human-impacts
+abraham_trust_2015.md, edward, dragonfly, presentation
 abraham_warp_2009.md, edward, finlay, seabird, bycatch, dragonfly, report
 abraham_warp_2010.md, edward, seabird, dragonfly, report
 armstrong_avoiding_2008.md, yvan, robin, article
 armstrong_strategic_2014.md, yvan, robin, article, bayesian
 bagnall_identifying_2014.md, edward, dragonfly, acoustic, presentation
 bakker2006mcp.md, edward, oceanography, article
+baum_collapse_2011.md, philipp, fisheries, dragonfly, presentation
 bell_atsea2_2014.md, edward, seabird, dragonfly, report
 bell_atsea_2013.md, edward, seabird, dragonfly, report, bayesian
 bell_atsea_2014.md, edward, seabird, dragonfly, presentation
@@ -44,66 +72,152 @@ berkenbusch_distribution_2015.md, katrin, edward, philipp, fisheries, dragonfly,
 berkenbusch_ecosystem_2003.md, katrin, benthic, article
 berkenbusch_examination_2007.md, katrin, benthic, article
 berkenbusch_factors_1999.md, katrin, benthic, article
+berkenbusch_incidental_2009.md, katrin, edward, seabird, bycatch, dragonfly, presentation
+berkenbusch_influence_2015.md, katrin, edward, philipp, benthic, fisheries, dragonfly, presentation, shellfish
+berkenbusch_influence_2019.md, katrin, benthic, dragonfly, presentation
 berkenbusch_interactions_2007.md, katrin, benthic, article
-berkenbusch_intertidal_2015.md, katrin, edward, philipp, fisheries, dragonfly, benthic, report
+berkenbusch_intertidal2_2015.md, katrin, philipp, fisheries, dragonfly, benthic, report, shellfish
+berkenbusch_intertidal_2015.md, katrin, edward, philipp, fisheries, dragonfly, benthic, report, shellfish
+berkenbusch_intertidal_2016.md, katrin, philipp, fisheries, dragonfly, benthic, report, shellfish
+berkenbusch_intertidal_2017.md, katrin, philipp, fisheries, dragonfly, benthic, report, shellfish
+berkenbusch_intertidal_2018.md, katrin, philipp, fisheries, dragonfly, benthic, report, shellfish
+berkenbusch_intertidal_2019.md, katrin, philipp, fisheries, dragonfly, benthic, report, shellfish
+berkenbusch_intertidal_2020.md, katrin, philipp, fisheries, dragonfly, benthic, report, shellfish
 berkenbusch_intraspecific_2000.md, katrin, benthic, article
 berkenbusch_latitudinal_2000.md, katrin, benthic, article
 berkenbusch_new_2013.md, katrin, edward, marine-mammal, risk-assessment, dragonfly, report
+berkenbusch_population_1998.md, katrin, benthic, article
+berkenbusch_regional_2019.md, katrin, benthic, seagrass, shrimp, dragonfly, presentation
 berkenbusch_temporal_2000.md, katrin, benthic, article
+berkenbusch_thin_2002.md, katrin, benthic, report
+berkenbusch_toheroa_2018.md, katrin, philipp, fisheries, dragonfly, benthic, report
 boulton_effect_2010.md, yvan, robin, article
 boulton_influence_2008.md, yvan, robin, article
 boyd2000mpb.md, edward, oceanography, article
 boyd2001imc.md, edward, oceanography, article
 boyd2004daf.md, edward, oceanography, article
+calcott_causal_2017.md, brett, philosophy, article
+calcott_creation_2014.md, brett, philosophy, article
+calcott_engineering_2015.md, brett, philosophy, article
+calcott_further_2019.md, brett, philosophy, article
+calcott_signals_2020.md, brett, philosophy, article
+cooney_red_2012.md, iggy, terrestrial-ecology, article
+debski_seabirds_2016.md, edward, yvan, dragonfly, seabirds, report
+doeweler_causes_2021.md, fabian, bayesian, geospatial, ecology
+frandsen_automatic_2015.md, brett, philosophy, article
 frean2001rsp.md, edward, theoretical-biology, article
 frean2001vms.md, edward, theoretical-biology, article
 frean2004aae.md, edward, theoretical-biology, article
+gibbs_evaluation_2001.md, katrin, benthic, report
+goerlitz_distribution_2013.md, katrin, benthic, article
+goerlitz_lugworm_2015.md, katrin, benthic, article
+gove_prey_2019.md, philipp, article
+griffiths_measuring_2015.md, brett, philosophy, article
 grove_distribution_2006.md, katrin, benthic, article
 guitierrez_physical_2011.md, katrin, benthic, article
-kirby2003tsa.md, edward, fisheries, article
+hartill_review_2016.md, finlay, dragonfly, fisheries
+harvey_solas_2011.md, edward, article
+jensen_improving_2014.md, philipp, fisheries, dragonfly, presentation
+lanfear_partitionfinder_2017.md, brett, philosophy, article
 law2003ved.md, edward, oceanography, article
 law2005fps.md, edward, oceanography, article
 law2006pea.md, edward, oceanography, article
 leduc_abundance_2010.md, katrin, benthic, article
+leduc_effect_2014.md, katrin, benthic, article
 leduc_kaikoura_2013.md, katrin, benthic, article
+leduc_structure_2020.md, katrin, benthic, article
+lewis_indigenous_2020.md, caleb, dragonfly
 lewis_using_2009.md, yvan, robin, article
+loerz_review_2012.md, katrin, benthic, report
 lohrer_terrestrially_2004.md, katrin, benthic, article
 macdiarmid_individual_2006.md, edward, benthic, theoretical-biology, article
+macdiarmid_topdown_2016.md, edward, report, model, predator
 mansfield-stability-2006.md, richard, theoretical-biology, report
+mccowan_paua_2018.md, philipp, paua, fisheries, dragonfly, benthic, report
+menzies_food_2008.md, iggy, terrestrial-ecology, article
+menzies_leaf_2016.md, iggy, terrestrial-ecology, article
+menzies_temporal_2010.md, iggy, terrestrial-ecology, article
 middleton_efficacy_2007.md, edward, seabird, bycatch, dragonfly, report
 middleton_managing_2012.md, edward, seabird, bycatch, dragonfly, presentation
 miller_characterisation_2011.md, edward, fisheries, benthic, report, bayesian
 mills_seagrass_2009.md, katrin, benthic, article
+mongin_winter_2009.md, edward, dragonfly, oceanography, article
 moore2003pcp.md, edward, oceanography, article
 morgan_using_2010.md, yvan, robin, article
+morrison_linking_2014.md, katrin, benthic, report
+moses_integrated_2020.md, caleb, article
 neubauer2013inferring.md, philipp, bayesian, article
 neubauer2013resilience.md, philipp, fisheries, article, bayesian
+neubauer_2017_paua.md, philipp, paua, fisheries, dragonfly, benthic, report, bayesian
+neubauer_alternative_2019.md, philipp, yvan, laura, dragonfly, assessment, report
+neubauer_assessing_2015.md, philipp, edward, yvan, paua, fisheries, dragonfly, benthic, report, bayesian
 neubauer_bayesian_2015.md, philipp, bayesian, dragonfly, article
+neubauer_delphi_2016.md, philipp, edward, katrin, chris, dragonfly, report, bayesian
+neubauer_development_2012.md, philipp, bayesian, marine-biology, ecology
+neubauer_development_2019.md, philipp, paua, fisheries, dragonfly, benthic, report, bayesian
+neubauer_diverse_2017.md, philipp, article
+neubauer_drivers_2018.md, philipp, article
+neubauer_estimating_2014.md, philipp, bayesian, dragonfly, presentation
 neubauer_estimating_2015.md, philipp, fisheries, dragonfly, presentation, bayesian
+neubauer_input_2019.md, philipp, paua, fisheries, dragonfly, benthic, report, bayesian
+neubauer_investigating_2018.md, philipp, article
+neubauer_management_2021.md, philipp, paua, fisheries, dragonfly, benthic, report, review
+neubauer_oxford_2013.md, philipp, fisheries, presentation
+neubauer_patterns_2015-1.md, philipp, fisheries, bayesian, dragonfly, presentation
+neubauer_patterns_2015.md, philipp, fisheries, dragonfly, presentation
+neubauer_paua5d_2019.md, philipp, laura, paua, fisheries, dragonfly, benthic, report, bayesian
+neubauer_paua_2017.md, philipp, paua, fisheries, dragonfly, benthic, report, bayesian
+neubauer_predictability_2015.md, philipp, edward, katrin, dragonfly, benthic, fisheries, shellfish, bayesian
+neubauer_ram_2012.md, philipp, fisheries, dragonfly, presentation
 neubauer_scale-dependent_2010.md, philipp, marine-biology, article
+neubauer_spatial_2019.md, philipp, paua, fisheries, dragonfly, benthic, report, bayesian
+neubauer_survival_2012.md, philipp, fisheries, dragonfly, presentation
+neubauer_thermal_2019.md, philipp, article
 neubauer_using_2014.md, philipp, edward, paua, fisheries, dragonfly, benthic, report, bayesian
+ochi_preliminary_2018.md, edward, yvan, risk, albatross, fisheries, dragonfly, report
+parke_cautionary_2018.md, brett, philosophy, article
+payne_uncertainties_2015.md, philipp, article
+pierre_assessment2_2014.md, yvan, edward, seabird, bycatch, dragonfly, presentation
 pierre_assessment_2014.md, yvan, edward, seabird, bycatch, dragonfly, report
 pierre_characterisation_2014.md, finlay, dragonfly, seabird, bycatch, presentation
-pierre_controlling_2012.md, seabird, dragonfly, bycatch, seabird, article, bayesian
+pierre_controlling_2012.md, edward, yvan, seabird, dragonfly, bycatch, article, bayesian
 pierre_inshore_2013.md, finlay, edward, seabird, bycatch, dragonfly, presentation
 pierre_interactions_2010.md, edward, seabird, bycatch, dragonfly, article, bayesian
-pierre_novel_2015.md, edward, seabird, bycatch, dragonfly, report, bayesian
+pierre_novel2_2014.md, edward, seabird, bycatch, dragonfly, presentation
+pierre_novel_2014.md, edward, seabird, bycatch, dragonfly, report, bayesian
+pierre_novel_2015.md, edward, seabird, bycatch, dragonfly, report
+pierre_optimisation2_2014.md, finlay, richard, seabird, bycatch, dragonfly, presentation
+pierre_optimisation_2014.md, finlay, richard, seabird, bycatch, dragonfly, report
+pierre_optimisation_2015.md, finlay, richard, seabird, bycatch, dragonfly, report
 pierre_reducing_2012.md, edward, yvan, seabird, bycatch, presentation
+pierre_reducing_2013.md, finlay, edward, seabird, bycatch, dragonfly, report
 pierre_reducing_emu_2012.md, edward, seabird, bycatch, dragonfly, article, bayesian
 pierre_seabird_2013.md, finlay, edward, seabird, bycatch, dragonfly, report, bayesian
+pierre_seabird_2013b.md, seabird, bycatch, dragonfly, report
 pierre_seabird_2014.md, finlay, seabird, fisheries, dragonfly, report
 richard2010cost.md, yvan, robin, article
 richard_application_2013.md, yvan, edward, risk-assessment, seabird, dragonfly, report
 richard_assessment2_2011.md, yvan, edward, risk-assessment, seabird, dragonfly, report
 richard_assessment_2011a.md, yvan, edward, risk-assessment, seabird, dragonfly, report, bayesian
+richard_assessment_2016-17.md, yvan, edward, katrin, risk-assessment, seabird, fisheries, dragonfly, report
 richard_counts_2011.md, yvan, edward, seabird, dragonfly, report
 richard_counts_2020.md, yvan, edward, seabird, dragonfly, report
+richard_data_2013.md, yvan, dragonfly, presentation
 richard_demographic_2015.md, dragonfly, seabird, yvan, edward, article, bayesian
 richard_demography_2007.md, yvan, robin, report, bayesian
 richard_importance_2010.md, yvan, robin, theoretical-biology, article
-richard_preliminary_2011.md, yvan, edward, seabird, bycatch, dragonfly, report
+richard_risk1_2017.md, yvan, edward, katrin, risk-assessment, seabird, fisheries, dragonfly, report
 richard_risk2_2013.md, yvan, edward, risk-assessment, seabird, fisheries, dragonfly, report
+richard_risk2_2015.md, edward, yvan, dragonfly, seabird, bycatch, report, risk-assessment
+richard_risk2_2017.md, yvan, edward, katrin, dragonfly, seabird, bycatch, report, risk-assessment
+richard_risk_2012.md, yvan, edward, risk-assessment, seabird, bycatch, dragonfly, presentation
 richard_risk_2013.md, yvan, edward, risk-assessment, seabird, fisheries, dragonfly, report
+richard_risk_2015.md, edward, yvan, dragonfly, seabird, bycatch, report, risk-assessment
+richard_seasonality_2014.md, yvan, johanna, edward, seabird, dragonfly, report
+richard_sensitivity_2017.md, yvan, edward, risk-assessment, sensitivity, fisheries, dragonfly, report
+rosli_differences_2016.md, katrin, benthic, meiofauna, article
+rowden_review_2012.md, katrin, benthic, report
+sharp_new_2013.md, yvan, edward, seabird, bycatch, risk-assessment, dragonfly, report
 sharples2001itd.md, edward, oceanography, article
 stevens2005oss.md, edward, oceanography, article
 thompson_dolphin_2009.md, finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
@@ -113,12 +227,20 @@ thompson_dolphin_95-08.md, finlay, edward, marine-mammal, bycatch, dragonfly, re
 thompson_furseals_02-08.md, finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
 thompson_furseals_02-09.md, finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
 thompson_mammals_95-11.md, finlay, katrin, edward, marine-mammal, bycatch, dragonfly, report, bayesian
+thompson_mammals_95-12.md, finlay, katrin, edward, marine-mammal, bycatch, dragonfly, report, bayesian
+thompson_preparation_2016.md, finlay, edward, katrin, bycatch, dragonfly, report
+thompson_querying_2015.md, finlay, dragonfly, presentation
 thompson_reported_2015.md, finlay, katrin, marine-mammal, dragonfly, report
 thompson_seabird_2009.md, finlay, edward, presentation, dragonfly, bayesian
 thompson_sealions_95-07.md, finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
 thompson_sealions_95-08.md, finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
 thompson_sealions_95-09.md, finlay, edward, marine-mammal, bycatch, dragonfly, report, bayesian
 thompson_six_2009.md, finlay, edward, seabird, marine-mammal, bycatch, dragonfly, report
+tremblay-boyer_characterisation_2020.md, laura, katrin, dragonfly, marine-mammals, bycatch, mitigation, report
+tremblay-boyer_data_2020.md, laura, katrin, dragonfly, assessment, report
+tremblay-boyer_increased_2020.md, laura, edward, katrin, electronic-monitoring, seabird, fisheries, dragonfly, report
+tremblay-boyer_oceanic_2019.md, philipp, laura, dragonfly, assessment, report
+tremblay-boyer_owtinputs_2019.md, philipp, laura, dragonfly, assessment, report
 trull2001cas.md, edward, oceanography, article
 waugh2006svs.md, edward, oceanography, article
 waugh2008sgs.md, edward, oceanography, dragonfly, article
