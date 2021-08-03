@@ -4,7 +4,7 @@ introduction: ""
 quote_short: >
   It was very smooth sailing, and what we expected was what we got.
 citation_name: Kate King
-citation_position: Team Leader 
+citation_position: Team Leader
 citation_organisation: >
   Economic Data and Analysis, Ministry for Primary Industries | Manatū Ahu Matua
 ---
@@ -18,7 +18,7 @@ table. It has potentially future proofed the report production down the track,
 which will save even more time in the following years. It's also reduced our
 dependence on having senior staff available for the data analysis.
 
-Dragonfly staff were constantly communicating what was needed and whose
-responsibility it was to do what. I'm notoriously hard to pin down, so they
+Iggy was constantly communicating what was needed and whose
+responsibility it was to do what. I'm notoriously hard to pin down, so he
 worked with the people I delegated to make the decisions that were needed.
 We got the report published on time – and it was great!
