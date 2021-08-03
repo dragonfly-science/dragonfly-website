@@ -70,7 +70,9 @@ tagDictionary = [
     ("shellfish", "Shellfish"),
     ("theoretical-biology", "Theoretical biology"),
     ("theoretical-physics", "Theoretical physics"),
-    ("yvan", "Yvan Richard")
+    ("yvan", "Yvan Richard"),
+    ("caleb", "Caleb Moses"),
+    ("fabian", "Fabian Döweler")
     ]
 
 cslIdentifier, cslNoBibIdentifier :: Identifier
