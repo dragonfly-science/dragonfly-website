@@ -61,7 +61,7 @@ support for the WCPFC. Dr Philip Neubauer travelled to Hawaii to attend the
 workshop and present an explanation of the mathematics underlying the new maps.
 
 
-![](/work/TMP-case-study/Turtle_map_combined.jpg)
+![](/work/delphi-case-study/Turtle_map_combined.jpg)
 
 The turtle workshop was supported by the Common Oceans ABNJ Tuna Project and
 SPC. WCPFC is the international organisation responsible for the management of
