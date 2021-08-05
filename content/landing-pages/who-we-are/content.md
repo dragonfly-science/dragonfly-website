@@ -1,7 +1,9 @@
 ---
 title: Who we are
 introduction: >
-  We are a team of scientists, programmers, and dreamers based in Aotearoa New Zealand.
+  We're a passionate bunch of maths geeks, 
+  inspired scientists, data nerds, and nature lovers 
+  who share a purpose of putting data to good use.  
 sectionTitle: Meet the team
 banner: /landing-pages/who-we-are/banner-images/team_placeholder.jpeg
 teaserCTALink: /people/
