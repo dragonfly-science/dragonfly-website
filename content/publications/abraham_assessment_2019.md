@@ -1,6 +1,6 @@
 ---
 pdf: abraham_assessment_2019.pdf
-tags: edward, yvan, seabird, dragonfly, report, bayesian, risk-assessment
+tags: edward, yvan, seabird, dragonfly, report, risk-assessment
 ---
 
 Assessing the bycatch of seabirds is a key step in understanding the impact of fishing on their populations. In this analysis, we used the seabird risk assessment methodology that was developed in New Zealand to estimate the bycatch of 26 albatross and petrel taxa that breed in the Southern Hemisphere. The bycatch estimates were related to population productivity to estimate the impact of surface longline fishing on the populations.
