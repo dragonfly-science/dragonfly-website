@@ -1,0 +1,116 @@
+.main-footer {
+  @apply relative bottom-0 left-0 transition-max-height duration-500;
+  @apply w-full z-50 bg-black text-white leading-snug px-8 text-center flex items-center;
+
+  max-height: 3000px;
+
+  &__detail {
+    @apply w-full mx-auto mb-8;
+
+    > span {
+      @apply block mb-4 font-bold opacity-50;
+    }
+  }
+
+  /* Variations */
+  &--modal {
+    @apply fixed top-0 left-0 h-full w-full z-50 pointer-events-none opacity-0;
+    @apply transition-all ease-out-quart duration-500 pt-10 overflow-y-scroll flex-col;
+
+    .dragonfly-close,
+    .dragonfly-logo {
+      @apply block !important;
+    }
+
+    /* .dragonfly-close {
+      @apply fixed mr-4 mt-8;
+    } */
+  }
+
+  &--is-open {
+    @apply fixed w-full h-full;
+    @apply z-100 !important;
+
+    max-height: 100vh;
+
+    &.main-footer--modal {
+      @apply pointer-events-auto opacity-100 pt-0;
+    }
+  }
+
+  a {
+    @apply underline;
+
+    &:hover {
+      @apply no-underline;
+    }
+  }
+
+  &__inner {
+    @apply flex flex-row justify-between items-center mb-8 fixed top-0 left-0;
+    @apply w-full px-8 bg-black;
+  }
+
+  address {
+    @apply not-italic;
+  }
+
+  .dragonfly-close,
+  .dragonfly-logo {
+    @apply hidden;
+  }
+
+  .outer-container {
+    @apply pt-16;
+  }
+}
+
+@screen sm {
+  .main-footer {
+    @apply text-left;
+
+    &__detail {
+      @apply w-1/2;
+
+      span {
+        @apply mb-8;
+      }
+    }
+  }
+}
+
+@screen md {
+  .main-footer {
+    &__detail {
+      @apply mx-0;
+    }
+
+    &__inner {
+      @apply relative px-0;
+    }
+  }
+}
+
+@screen lg {
+  .main-footer {
+    @apply text-lg;
+
+    &__inner {
+
+      top: unset;
+      left: unset;
+    }
+
+    &--modal {
+      @apply flex flex-row;
+
+      /* .dragonfly-close {
+        @apply absolute mr-0 mt-0;
+      } */
+    }
+
+    &__detail {
+      @apply w-auto;
+    }
+  }
+}

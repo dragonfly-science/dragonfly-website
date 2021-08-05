@@ -1,7 +1,8 @@
 ---
-pdf: Abraham-AEBR-2017-189-Marine-mammal-risk-assessment.pdf 
+pdf: Abraham-AEBR-2017-189-Marine-mammal-risk-assessment.pdf
 tags: edward, yvan, philipp, katrin, marine-mammal, dragonfly, report, bayesian, risk-assessment
 ---
+
 This study provides an assessment of the impact of fishing-related fatalities on
 the populations of 35 marine mammal (sub)species that inhabit New Zealand
 waters. The assessment included mortalities caused by trawl, longline, set-net
@@ -27,7 +28,7 @@ derived for averaged fishing effort over the three-year period from 2012–13 to
 2014–15. The scope of this assessment did not include fishing methods without
 routine observer coverage, even where marine mammal interactions are known to
 occur. In particular, the entanglement of marine mammals in the rock lobster
-(*Jasus edwardsii*) pot fishery was not included in this study.
+(_Jasus edwardsii_) pot fishery was not included in this study.
 
 Estimation of the PST required information on the maximum growth rate and the
 total population size for each of the 35 marine mammal taxa included in this

@@ -1,0 +1,43 @@
+$if(pageurl)$
+    <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay list-tile tile bg-dark-jungle-green">
+$else$
+    $if(url)$
+        <a href="$pageurl$" class="no-gutter-cell no-gutter-cell--overlay list-tile tile">
+    $else$
+        <div class="no-gutter-cell no-gutter-cell--overlay list-tile tile">
+    $endif$
+$endif$
+    <div class="flex flex-row h-full">
+      <div class="flex flex-col h-full pr-8 overflow-hidden">
+        $if(section)$
+            <span class="no-gutter-cell__tag">$section$</span>
+        $else$
+            <span class="no-gutter-cell__tag">&nbsp;</span>
+        $endif$
+        <div class="no-gutter-cell__inner">
+          $if(title)$
+          <strong class="no-gutter-cell__title tile__title">$title$</strong>
+          $endif$
+          $if(teaser)$
+              <div class="no-gutter-cell__text tile__citation">$teaser$</div>
+          $endif$
+        </div>
+      </div>
+
+      <div class="tagslugs hidden">$if(tags)$$for(tags)$$tag$ $endfor$$endif$</div>
+
+      <span class="link-icon no-gutter-cell__link no-gutter-cell--overlay__link block flex-shrink-0 mt-auto w-10">
+          <span class="icon dragonfly-arrow ml-0 mt-4"></span>
+      </span>
+    </div>
+
+    <div class="no-gutter-cell__image no-gutter-cell__image--large background-image lozad" data-background-image="$teaserImage$"></div>
+$if(pageurl)$
+</a>
+$else$
+    $if(url)$
+</a>
+    $else$
+</div>
+    $endif$
+$endif$

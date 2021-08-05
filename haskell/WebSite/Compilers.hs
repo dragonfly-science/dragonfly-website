@@ -7,19 +7,15 @@ module WebSite.Compilers (
   imageCredits,
 ) where
 
-import           Data.Default           (def)
-
 import           Hakyll
-
 import           Text.Pandoc.Definition
-
 import           WebSite.Config
 
 readScholmd :: Compiler (Item Pandoc)
 readScholmd = do
     csl <- load cslIdentifier
     bib <- load bibIdentifier
-    Item i pd <- readPandocBiblio def csl bib =<< getResourceString
+    Item i pd <- readPandocBiblio defaultHakyllReaderOptions csl bib =<< getResourceString
     let Pandoc m pdbs = pd
     if length pdbs == 1
         then makeItem ( Pandoc  nullMeta  [])

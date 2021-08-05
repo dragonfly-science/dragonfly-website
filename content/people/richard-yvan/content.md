@@ -3,27 +3,50 @@ title: Yvan Richard, PhD
 email: yvan@dragonfly.co.nz
 firstname: Yvan
 lastname: Richard
+role: Data scientist
+title: Yvan Richard, PhD
+honour: PhD
 mobile: ''
 tag: yvan
-banner: richard-yvan/yvan-richard-letterbox.jpg
+description: >
+  Yvan is an environmental data scientist who specialises in using statistical
+   computing software to solve complex problems.
+banner: richard-yvan/richard-yvan.jpg
 nocite: |
   @richard_risk_2013
   @richard_demographic_2013
 ---
-Yvan is an ecologist who specialises in using statistical computing software to solve complex problems in ecology and natural language processing.
+
+Yvan is an environmental data scientist who specialises in using statistical
+computing software to solve complex problems.
+
 <!--more-->
 
-At Dragonfly, Yvan has focussed on seabird bycatch issues, leading the development of a seabird risk assessment that studies the interactions between fisheries and all of New Zealand's seabirds in a consistent framework. This risk assessment is
-used by the Ministry for Primary Industries as a foundation for their management
-of seabird bycatch.
+He joined Dragonfly in 2010 and initially worked on issues related to seabird
+bycatch. Yvan led the development of a seabird risk assessment that studies the
+interactions between fisheries and all of New Zealand's seabirds in a consistent
+framework. This risk assessment has been used by the Ministry for Primary
+Industries and other countries as a foundation for their management of seabird
+bycatch.
+
+Other ecological work has included developing models and simulations of
+population dynamics for albatross and kākāpō, and analysing tracking data using
+geographic information systems (GIS).
+
+In parallel, Yvan has grown an interest in natural language processing and
+developed a machine-learning-based framework to analyse unstructured text. This
+tool has been used to analyse public submissions on parliamentary bills.
+
+Raised in France, Yvan moved to New Zealand in 2002 to study for a PhD and
+postdoc in ecology at [Massey University](http://www.massey.ac.nz/massey/learning/colleges/college-of-sciences/research/agriculture-environment-research/ecology/ecology.cfm). He
+continues to apply the techniques and methods he learned, including Bayesian
+analysis, machine learning, R, spatial analysis and capture-recapture models to
+problem-solving in business, government and other contexts.
 
 
-The techniques and methods he learned from work in ecology (including Bayesian analysis,
-and machine learning, spatial analysis, and capture-recapture models) translate perfectly into other contexts, such as business and government. Yvan’s expertise with R (a software environment for statistical computing and graphics) is particularly sought after to display information simply and beautifully.
-
-Raised in France, Yvan moved to New Zealand in 2002 to study for a PhD and postdoc in ecology at [Massey University](http://www.massey.ac.nz/massey/learning/colleges/college-of-sciences/research/agriculture-environment-research/ecology/ecology.cfm), using North Island robins to study habitat fragmentation. He joined Dragonfly in 2010.
-
-
->With the collection of bright minds and different skills at Dragonfly, we work together to crack what can seem like impossible problems, turning data into a meaningful story that directly informs action. We are constantly pushing the boundaries.
+> With the collection of bright minds and different skills at Dragonfly,
+we work together to crack what can seem like impossible problems, turning data
+ into a meaningful story that directly informs action. We are constantly pushing
+  the boundaries.
 
 ### Selected publications

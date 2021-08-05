@@ -12,8 +12,7 @@ import           Text.Pandoc.Options (WriterOptions (..))
 -- | Options for an HTML5 Pandoc writer
 htm5Writer :: WriterOptions
 htm5Writer = defaultHakyllWriterOptions
-    { writerHtml5       = True
-    , writerSectionDivs = True
+    { writerSectionDivs = True
     }
 
 
@@ -43,16 +42,17 @@ tagDictionary :: [(String, String)]
 tagDictionary = [
     ("acoustic", "Acoustic monitoring"),
     ("article", "Article"),
+    ("assessment", "Assessment"),
     ("bayesian", "Bayesian"),
     ("benthic", "Benthic"),
     ("bycatch", "Bycatch"),
+    ("data", "Data"),
     ("dragonfly", "Dragonfly"),
     ("ecology", "Ecology"),
     ("edward", "Edward Abraham"),
     ("finlay", "Finlay Thompson"),
     ("fisheries", "Fisheries"),
     ("katrin", "Katrin Berkenbusch"),
-    ("caleb", "Caleb Moses"),
     ("laura", "Laura Tremblay-Boyer"),
     ("marine-biology", "Marine biology"),
     ("marine-mammal", "Marine mammals"),
@@ -70,14 +70,10 @@ tagDictionary = [
     ("shellfish", "Shellfish"),
     ("theoretical-biology", "Theoretical biology"),
     ("theoretical-physics", "Theoretical physics"),
-    ("yvan", "Yvan Richard")
+    ("yvan", "Yvan Richard"),
+    ("caleb", "Caleb Moses"),
+    ("fabian", "Fabian Döweler")
     ]
-
--- | These are years of the publications page.
---
--- NOTE: Update this when you want to add the next year.
-publicationYears :: [Int]
-publicationYears = [2007..2017]
 
 cslIdentifier, cslNoBibIdentifier :: Identifier
 cslIdentifier      = "resources/csl/apa-note.csl"
@@ -118,10 +114,6 @@ citationsVersion = "citations"
 citationsSnapshot :: Snapshot
 citationsSnapshot = "citations"
 
--- | Identifiers for all the year groups of publications.
-allPublicationsByYearIdentifiers :: [Identifier]
-allPublicationsByYearIdentifiers =
-    map (fromFilePath . mkPublicationPath . mappend "year/" . show) publicationYears
 
 -- | Extract the reference issue year from a publication-by-year identifier
 extractRefYear :: Identifier -> Int

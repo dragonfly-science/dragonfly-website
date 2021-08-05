@@ -1,0 +1,164 @@
+.sidebar {
+  @apply text-base font-medium leading-normal;
+  @apply w-full max-w-full text-cool-blue mb-8;
+  @apply flex flex-col items-center;
+
+  &__inner {
+    @apply w-full flex flex-col;
+
+    &__text {
+      @apply mr-8 mb-5 w-full leading-snug;
+    }
+
+    &__buttons {
+      @apply w-full;
+
+      .button {
+        @apply mb-2;
+      }
+    }
+  }
+
+  .button {
+    @apply button--small button--rounded button--cool-blue w-full text-center;
+
+    &:hover {
+      @apply button--slate-grey;
+    }
+
+    * {
+      @apply whitespace-nowrap;
+    }
+  }
+
+  .navigation-button {
+    @apply overflow-hidden max-h-16 py-4 mb-1 ease-in duration-200 w-auto mx-auto;
+
+    transition-property: margin-bottom, max-height, color, padding;
+  }
+
+  &--left {
+    @apply w-0 max-w-0 overflow-hidden;
+
+    .sidebar__inner {
+      @apply mr-auto;
+    }
+
+    .button {
+      @apply hidden;
+    }
+  }
+
+  &--right {
+    .sidebar__inner {
+      @apply ml-auto;
+      @apply border-t-4 border-cool-blue pt-5;
+
+      &__text {
+        @apply mx-auto text-center;
+      }
+
+      &__buttons {
+        @apply mb-auto mx-auto max-w-14rem;
+      }
+    }
+  }
+}
+
+@screen sm {
+  .sidebar {
+    @apply items-start flex-row;
+
+    .navigation-button {
+      @apply mr-4 py-0 mb-auto;
+
+      &--publications {
+        @apply py-4 mb-1 mx-auto;
+      }
+    }
+
+    &__inner {
+      @apply flex-row;
+    }
+
+    &--right {
+      .sidebar__inner {
+        @apply ml-0;
+
+        &__text {
+          @apply leading-none;
+        }
+      }
+      .button {
+        @apply mt-0 mr-0;
+      }
+    }
+  }
+}
+
+@screen lg {
+  .sidebar {
+    @apply w-64 mt-14 flex-shrink-0;
+
+    .button {
+      @apply w-full;
+    }
+
+    .navigation-button {
+      @apply mb-1 mr-0 pb-4 w-full;
+    }
+
+    &__inner {
+      @apply w-48 flex-col;
+
+      &__border {
+        @apply border-t-4 border-cool-blue pt-5;
+      }
+    }
+
+    &--right {
+      .sidebar__inner {
+        @apply flex-col ml-auto;
+        @apply border-t-0 pt-0;
+
+        &__text {
+          @apply mr-0 mb-5 leading-snug ml-0 text-left;
+        }
+      }
+    }
+  }
+}
+
+@screen xl {
+  .sidebar {
+    &__inner {
+      &__buttons {
+        @apply max-w-full;
+      }
+    }
+
+    &--left {
+      @apply max-w-full;
+
+      .button {
+        @apply flex;
+      }
+    }
+
+    &--right {
+      .navigation-button {
+        @apply max-h-0 mb-0 py-0;
+      }
+    }
+  }
+}
+
+/* @screen 2xl {
+  .sidebar {
+    &--right {
+      .button--navigate {
+        @apply hidden;
+      }
+    }
+  }
+} */

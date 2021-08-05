@@ -1,6 +1,6 @@
 ---
 pdf: lewis_indigenous_2020.pdf
-tags: caleb, indigenous, artifical-intelligence, dragonfly, workshop
+tags: caleb, dragonfly
 ---
 This position paper on Indigenous Protocol (IP) and Artificial Intelligence (AI) is a starting place for
 those who want to design and create AI from an ethical position that centers Indigenous concerns. Each

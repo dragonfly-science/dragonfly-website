@@ -1,68 +1,130 @@
-TAG := lts-12.26-v3
+TAG := lts-ubuntu-12.26-v7
 IMAGE := dragonflyscience/dragonfly-website:$(TAG)
-RUN ?= docker run --rm -it -p 8000:8000 -u $$(id -u):$$(id -g) -w /work -v $$(pwd):/work $(IMAGE)
 
-ADD ?=
-NPM ?=
-
-## Compile the hakyll executible
 HS := $(shell find haskell/WebSite -name *.hs)
-website: $(HS) haskell/Site.hs
-	$(RUN) bash -c 'cd haskell && stack build && cp $$(stack path --local-install-root)/bin/website ../website'
 
-develop: website
-	$(RUN) bash -c 'npm run build & (cd content/stylesheets && find . -name \*.css -not -name dragonfly.css \
-		   | npm run watch:css) & (cd content && npm run watch:js) & (cd content && ../website watch)'
+RUN ?=
+RUN_WEB ?=
+UP ?=
+CI ?=
 
-CONTENT := $(shell find content)
-build: website install
-	$(RUN) bash -c 'rm -rf ./content/scripts/'
-	$(RUN) bash -c 'mkdir ./content/scripts/'
-	$(RUN) bash -c 'cd content && ../website build'
-	$(RUN) bash -c 'npm run css && npm run fonts'
-	$(RUN) bash -c 'npm run build:js && npm run build:fonts'
-	$(RUN) bash -c 'mkdir -p ./_site/assets'
-	$(RUN) bash -c 'cp ./content/stylesheets/dragonfly.css \
-		./_site/assets/dragonfly.css; \
-		cp ./content/scripts/*.js ./_site/assets/; \
-		cp -rf ./content/fonts ./_site/fonts'
+# caching for npm & webpack
+DOCKER_CACHE ?= $$HOME/docker-cache
+WEPACK_CACHE ?= $(DOCKER_CACHE)/webpack-cache
+WEBPACK_CONTAINER_CACHE ?= /root/webpack
+
+# Process args, to build up the docker commands
+ifneq ($(CI), true)
+RUN = docker-compose --profile build run --rm npm
+RUN_WEB = docker-compose --profile build run --publish 3000:3000 --rm website
+UP = docker-compose up --remove-orphans --no-build
+endif
+
+all: .env .install build run
+
+# Build out .env file for docker-compose
+.env:
+ifneq ($(CI), true)
+	echo IMAGE=$(IMAGE) >> .env
+	echo DOCKER_CACHE=$(DOCKER_CACHE) >> .env
+	echo WEPACK_CACHE=$(WEPACK_CACHE) >> .env
+	echo WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) >> .env
+endif
+
+_site/assets:
+	$(RUN) bash -c "mkdir -p _site/assets"
+	touch $@/dragonfly-app.css
+
+# Runs in full develop mode - npm watching & rebuilding
+# as css & ts change.
+develop: .env .install _site/assets
+	$(UP)
 
 
-CSS := $(shell find content/stylesheets -name *.css -not -name dragonfly.css)
-content/stylesheets/dragonfly.css: content/stylesheets/main.src.css $(CSS)
-	$(RUN) bash -c 'npm run css && npm run fonts'
+# Runs statically built version of the site - only watches
+# for changes to content.
+run: .env .build-static _site/assets
+	$(UP) website_haskell
 
-install:
-	$(RUN) bash -c 'npm install $(ADD)'
+down:
+ifneq ($(CI), true)
+	docker-compose down
+endif
 
-npm:
-	$(RUN) bash -c 'npm $(NPM)'
-
-audit:
-	$(RUN) bash -c 'npm audit fix'
-
-docker:
-	docker build --tag $(IMAGE) .
+PHONY: docker
+docker: .docker
+.docker:
+ifneq ($(CI), true)
+	docker-compose build website_haskell
+	touch $@
+endif
 
 pull:
-	docker pull $(IMAGE)
+ifneq ($(CI), true)
+	docker-compose pull website_haskell
+endif
 
-push:
-	docker push $(IMAGE)
+push: .docker
+ifneq ($(CI), true)
+	docker-compose push website_haskell
+endif
+
+# NPM Commands
+.install:
+	$(RUN) bash -c "cd front-end && npm install"
+	touch $@
+
+.build-npm: .install
+	$(RUN) bash -c 'cd front-end && npm run build'
+	touch $@
+
+.build-static: .install
+	$(RUN) bash -c 'cd front-end && npm run build:static'
+	touch $@
+
+static: _site/assets
+	$(RUN_WEB) bash -c 'cd front-end && npm run staging'
+
+# Build commands
+website: $(HS) haskell/Site.hs
+	$(RUN_WEB) bash -c 'cd haskell && \
+		stack build && \
+		cp $$(stack path --local-install-root)/bin/website ../website'
+
+.build-website: .install website _site/assets
+	$(RUN_WEB) bash -c 'cd ./content && ../website build'
+	$(RUN) bash -c 'cd front-end && npm run build'
+	$(RUN) bash -c 'cp -rf ./content/fonts ./_site'
+	touch $@
+
+.robots: deployment
+ifneq ($(PRODUCTION), true)
+	$(RUN) bash -c 'cp -f deployment/robots.staging.txt _site/robots.txt'
+else
+	$(RUN) bash -c 'cp -f deployment/robots.production.txt _site/robots.txt'
+endif
+
+.PHONY: build
+build: .env .build-website .robots
+
+.images: .install
+	$(RUN) bash -c 'cd front-end && npm run imagemin'
+	touch $@
+
+compress: .images
+	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'
+
+
+# Utility commands
+clean:
+	rm -rf website _site .env .install .cache \
+				content/fonts \
+				.build*
+
+full-clean: down clean
+
+clean-cache: website
+	$(RUN_WEB) bash -c './website clean'
 
 interact:
-	docker run -it --rm -w /work -v $(PWD):/work \
-		--net=host \
-		-e DISPLAY=$$DISPLAY \
-		-e RUN= \
-		-u $$(id -u):$$(id -g) $(IMAGE) bash
-
-
-clean:
-	rm -f website && rm -rf _site .cache && \
-	rm -f content/stylesheets/dragonfly.css* && \
-	rm -f content/fonts/* && \
-	rm -f content/scripts/*.js*
-
-compress:
-	$(RUN) bash -c 'tar -czf static-site.tgz _site/*'
+	$(RUN) bash

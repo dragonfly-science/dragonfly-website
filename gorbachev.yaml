@@ -1,1 +1,4 @@
-docker: dragonflyscience/dragonfly-website:lts-5.15publish: dragonfly-website-dev
+docker: dragonflyscience/dragonfly-website:lts-ubuntu-12.26-v7
+publish: dragonfly-website-staging
+cpus: 4
+memory: 16

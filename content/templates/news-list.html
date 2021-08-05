@@ -1,39 +1,27 @@
-<div class="container">
-  <div class="wide">
-    <h2> 
-      We like to tell our stories.
-    </h2>
-    <p class="lead">
-      We get excited about the work we do for our clients, and the diverse projects we're involved in.
-    </p>
-    <div class="post-list">
-      $for(news)$
-        <div class="post-wrapper">
-          <div class="post">
-            <div class="post-image">
-              <a href="$pageurl$">
-                <div class="post-porthole" style="background-image: url('$teaserImage$')"></div>
-              </a>
-            </div>
-            <div class="post-teaser">
-              <h4><a href="$pageurl$" class="highlight">$title$</a></h4>
-              <p class="subheading">
-                $published$
-                $if(author)$
-                  $author$
-                $endif$ 
-              </p>
-              $if(summary)$
-                $summary$
-              $else$
-                $if(teaser)$ $teaser$ $endif$
-              $endif$
-              <span><a href="$pageurl$" class="read-more">Read more</a></span>
-              $partial("templates/_top.html")$
-            </div>
+$partial("templates/_page-header-small.html")$
+
+<section id="top-section">
+  <div id="filter-list" data-type="news article">
+    <div class="filtering bg-light-peach">
+      <div class="flex outer-container">
+        <div class="filtering__tools">
+          <div class="filtering__tools__header">
+            $partial("templates/_search-field.html")$
           </div>
         </div>
-      $endfor$
+      </div>
+    </div>
+
+    <div class="bg-dark-jungle-green">
+      <div
+        class="
+          collection-grid collection-grid--no-bottom
+          list
+          outer-container outer-container--tile-list
+        "
+      >
+        $for(news)$ $partial("templates/_tile-index.html")$ $endfor$
+      </div>
     </div>
   </div>
-</div>
+</section>

@@ -1,7 +1,7 @@
 ---
 title: Machine learning and deep learning
 ---
-Kiarie Ndegwa recently joined Dragonfly from CSIRO in Canberra, Australia. He studied machine learning in his master’s degree and has used the technique in diverse settings to solve large, messy data problems.  Here, he explains the basics.
+Kiarie Ndegwa recently joined Dragonfly from CSIRO in Canberra, Australia, where he used machine learning techniques in diverse settings to solve large, messy data problems.  Here, he explains the basics.
 
 <!--more-->
 
@@ -26,8 +26,8 @@ The ethical concerns around bias in machine learning are something that Kiarie i
 The Dragonfly team is pleased to have Kiarie join
 them. As Edward Abraham explains,
 
-“There are not may people who are able to
-keep up the current literature, and who also have the software engineering
+“There are not many people who are able to
+keep up with the current literature, and who also have the software engineering
 skills to implement these machine learning systems. Since starting at
 Dragonfly, Kiarie has been able to take a complex model and shrink it to get it
 working on a mobile phone without losing performance. This feature makes the model much

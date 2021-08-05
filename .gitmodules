@@ -1,6 +1,3 @@
 [submodule "content/resources/bibliography"]
 	path = content/resources/bibliography
 	url = git@github.com:dragonfly-science/bibliography.git
-[submodule "docker"]
-	path = docker
-	url = https://github.com/dragonfly-science/website-docker-dependencies.git
