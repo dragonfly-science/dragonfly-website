@@ -1,10 +1,22 @@
 ---
 title: Projects
 subtitle: >
-  Have a look to see how we have helped our clients.
+  We have helped our clients with lots of good things over the years. 
+  Ranging from interactive reporting on New Zealand's economic
+  activity to supplying the analysis needed for sustainable
+  fisheries management. Have a look at some of the projects 
+  we've been involved with.
 introduction: >
-  Have a look to see how we have helped our clients.
+  We have helped our clients with lots of good things over the years. 
+  Ranging from supplying the analysis needed for sustainable
+  fisheries management to interactive reporting on New Zealand's 
+  economic activity. Have a look at some of the projects 
+  we've been involved with.
 description: >
-  Have a look to see how we have helped our clients.
+  We have helped our clients with lots of good things over the years. 
+  Ranging from supplying the analysis needed for sustainable
+  fisheries management to interactive reporting on New Zealand's 
+  economic activity. Have a look at some of the projects 
+  we've been involved with.
 teaserCTALink: /work/
 ---
