@@ -1,19 +1,10 @@
 ---
 title: Projects
 subtitle: >
-  We have helped our clients with lots of good things over the years. 
-  From analysis for sustainable
-  fishing, to interactive reporting on New Zealand's 
-  economy, to artificial intelligence for language recognition. 
+ Our clients are diverse and global, with ambitions to change the world. We help them shine.
 introduction: >
-  We have helped our clients with lots of good things over the years. 
-  From analysis for sustainable
-  fishing, to interactive reporting on New Zealand's 
-  economy, to artificial intelligence for language recognition. 
+ Our clients are diverse and global, with ambitions to change the world. We help them shine.
 description: >
-  We have helped our clients with lots of good things over the years. 
-  From analysis for sustainable
-  fishing, to interactive reporting on New Zealand's 
-  economy, to artificial intelligence for language recognition. 
+ Our clients are diverse and global, with ambitions to change the world. We help them shine. 
 teaserCTALink: /work/
 ---

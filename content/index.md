@@ -2,13 +2,11 @@
 title: Kia ora
 og-title: Dragonfly Data Science
 description: >
-  We are a team of scientists, programmers, and dreamers based in
-  Aotearoa New Zealand, who all share a passion for doing good 
-  things with data.
+  We are a team of scientists and dreamers based in
+  Aotearoa New Zealand, with a shared purpose of doing good with data.
 introduction: >	
-  We are a team of scientists, programmers, and dreamers based in
-  Aotearoa New Zealand, who all share a passion for doing good 
-  things with data.
+  We are a team of scientists and dreamers based in
+  Aotearoa New Zealand, with a shared purpose of doing good with data.
 sections:
   - landing-pages/what-we-do/content.md
   - landing-pages/who-we-are/content.md
