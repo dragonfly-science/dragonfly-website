@@ -10,7 +10,7 @@ citation_organisation: Department of Conservation | Te Papa Atawhai
 ---
 
 I can’t think of a more difficult species to model than albatross. They breed
-every second year, the chick goes to sea for 3–5 years, they start breeding at
+every second year, the chick goes to sea for 3–8 years, they start breeding at
 different ages and their probability of survival increases as they get older.
 It’s very complex to put that together, but this model fuses all the data in a
 really neat way.
