@@ -1,10 +1,10 @@
 ---
 title: Projects
 subtitle: >
-  Have a look to see how we have helped our clients.
+ Our clients are diverse and global, with ambitions to change the world. We help them shine.
 introduction: >
-  Have a look to see how we have helped our clients.
+ Our clients are diverse and global, with ambitions to change the world. We help them shine.
 description: >
-  Have a look to see how we have helped our clients.
+ Our clients are diverse and global, with ambitions to change the world. We help them shine. 
 teaserCTALink: /work/
 ---

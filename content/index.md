@@ -2,9 +2,11 @@
 title: Kia ora
 og-title: Dragonfly Data Science
 description: >
-  We do good things with data. 
+  We are a team of scientists and dreamers based in
+  Aotearoa New Zealand, with a shared purpose of doing good with data.
 introduction: >	
-  We do good things with data. 
+  We are a team of scientists and dreamers based in
+  Aotearoa New Zealand, with a shared purpose of doing good with data.
 sections:
   - landing-pages/what-we-do/content.md
   - landing-pages/who-we-are/content.md

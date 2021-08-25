@@ -1,9 +1,9 @@
 ---
-title: Supporting public debate with open datasets
-short-title: Supporting public debate with open datasets
+title: Open data on protected species
+short-title: Protected species data
 summary: Information about protected species bycatch and sea lion populations published online
 tags: stats, policy
-banner-image: /work/protected-species-data/banner.jpg
+banner-image: /work/protected-species-data/teaser-large.jpg
 testimonial:
   - testimonials/ps-data-testimonial/content.md
 logo: /work/protected-species-data/MPI-logo.png

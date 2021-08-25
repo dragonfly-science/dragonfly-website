@@ -54,6 +54,7 @@ tagDictionary = [
     ("fisheries", "Fisheries"),
     ("katrin", "Katrin Berkenbusch"),
     ("laura", "Laura Tremblay-Boyer"),
+    ("brett", "Brett Calcott"),
     ("marine-biology", "Marine biology"),
     ("marine-mammal", "Marine mammals"),
     ("oceanography", "Oceanography"),
@@ -70,7 +71,9 @@ tagDictionary = [
     ("shellfish", "Shellfish"),
     ("theoretical-biology", "Theoretical biology"),
     ("theoretical-physics", "Theoretical physics"),
-    ("yvan", "Yvan Richard")
+    ("yvan", "Yvan Richard"),
+    ("caleb", "Caleb Moses"),
+    ("fabian", "Fabian Döweler")
     ]
 
 cslIdentifier, cslNoBibIdentifier :: Identifier
