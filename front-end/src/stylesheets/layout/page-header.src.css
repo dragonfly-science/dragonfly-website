@@ -52,7 +52,7 @@
         @apply bg-dark-jungle-green;
 
         &.loaded {
-          @apply opacity-70;
+          @apply opacity-65;
         }
       }
     }
@@ -112,7 +112,7 @@
   /* Additional Elements. */
   .lozad-image,
   .video {
-    @apply fixed h-full w-full opacity-70 top-0 left-0 mt-12;
+    @apply fixed h-full w-full opacity-65 top-0 left-0 mt-12;
   }
 
   .video {
