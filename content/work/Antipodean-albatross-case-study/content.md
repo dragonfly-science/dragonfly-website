@@ -5,8 +5,9 @@ summary: A model and simulation tool predict the effect of different management
  strategies on this Nationally Critical species.
 tags: stats, policy
 banner-image: /work/Antipodean-albatross-case-study/DF_Projects_AntipAlbatross.jpg
+banner-cite: Antipodean albatross inside the study area. Credit Kath Walker.
 testimonial:
-  - testimonials/Antipodean-albatross/content.md
+  - testimonials/Antipodean-albatross-testimonial/content.md
 logo: /work/Antipodean-albatross-case-study/DF_Clients_DOC.png
 description: >
   We built a model and simulation tool to predict the effect of different management

@@ -3,11 +3,10 @@ title: Going fishing for accidental catches
 short-title: Going fishing for accidental catches
 summary: Streamlined reporting and data management informs protected species conservation.
 banner-image: /work/rec-fishing-bycatch/RecFishing.jpg
-banner-cite:
 tags: systems
 testimonial:
   - testimonials/rec-fishing-bycatch/content.md
-logo:
+logo: /work/rec-fishing-bycatch/DF_Clients_DOC.png
 description: >
   We created a pipeline to collect, verify, manage and visualise data about the
   accidental bycatch of marine protected species by recreational fishers.
@@ -39,7 +38,7 @@ We worked with DOC to build a system to manage the bycatch data and make it
 easier for fishers to report accidental catches or observations of bycatch.
 
 ![Pied shag in Nelson harbour with embedded fishing line
-and hook. Paul Barter, Cawthron Institute](/work/rec-fishing-bycatch/RecFishing_Shag.jpg)
+and hook.](/work/rec-fishing-bycatch/RecFishing_Shag.jpg)
 
 
 ## Reporting bycatch

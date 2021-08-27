@@ -120,7 +120,7 @@
   }
 
   .lozad-image {
-    @apply bg-cover max-h-44;
+    @apply bg-cover max-h-30;
   }
 
   .link-icon {
@@ -179,6 +179,10 @@
         }
       }
     }
+
+    /* .lozad-image {
+      @apply max-h-44;
+    } */
   }
 }
 
@@ -263,6 +267,10 @@
 
     .link-icon {
       @apply mt-16;
+    }
+
+    .lozad-image {
+      @apply max-h-full;
     }
 
     .lozad-image,
