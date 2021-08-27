@@ -4,10 +4,10 @@ short-title: Antipodean albatross population model
 summary: A model and simulation tool predict the effect of different management
  strategies on this Nationally Critical species.
 tags: stats, policy
-banner-image: /work/Antipodean-albatross-case-study/banner.jpg
+banner-image: /work/Antipodean-albatross-case-study/DF_Projects_AntipAlbatross.jpg
 testimonial:
   - testimonials/Antipodean-albatross/content.md
-logo: /work/Antipodean-albatross-case-study/DOC-logo.png
+logo: /work/Antipodean-albatross-case-study/DF_Clients_DOC.png
 description: >
   We built a model and simulation tool to predict the effect of different management
    strategies on this Nationally Critical species.
