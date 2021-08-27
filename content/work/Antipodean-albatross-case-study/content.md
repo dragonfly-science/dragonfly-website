@@ -1,6 +1,6 @@
 ---
-title: Antipodean albatross integrated population model
-short-title: Antipodean albatross integrated population model
+title: Antipodean albatross population model
+short-title: Antipodean albatross population model
 summary: A model and simulation tool predict the effect of different management
  strategies on this Nationally Critical species.
 tags: stats, policy
@@ -18,9 +18,8 @@ CTAButton: read more
 ---
 
 Action to halt the estimated annual 5 percent decline of the Antipodean albatross
-population is essential. The model and app we created allow stakeholders to
-explore the effects of different threats and management strategies. This is
-intended to help guide decisions to secure the future of the species.  
+population is essential. The integrated population model and app we created allow stakeholders to explore the effects of different threats and management
+strategies. This is intended to help guide decisions to secure the future of the species.  
 
 <!--more-->
 
