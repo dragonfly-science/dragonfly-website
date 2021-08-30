@@ -2,7 +2,7 @@
 title: nms-testimonial
 introduction: ""
 quote_short: >
-  It was very smooth sailing, and what we expected was what we got.
+  I really valued Dragonfly’s exquisite communication skills – they are also excellent listeners. I found them to be passionate, talented and good company.
 citation_name: Dr Ignatius Menzies
 citation_position: Data Science Lead
 citation_organisation: >
