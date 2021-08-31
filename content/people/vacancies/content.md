@@ -1,6 +1,6 @@
 ---
 title: Working at Dragonfly
-email: recruiting@dragonfly.co.nz
+email: work@dragonfly.co.nz
 sortorder: "1000"
 tag: vacancies
 firstname: Working at
@@ -43,4 +43,4 @@ page when they come up.
 We're always keen to meet new talented people, so please say hi if you have
 aspirations of becoming a Dragonfly one day.
 
-<a class="mx-auto w-max flex no-underline button call-to-action__button call-to-action__button--cool-blue" href="mailto:recruiting@dragonfly.co.nz?subject=I%27d%20like%20to%20talk%20about%20joining%20Dragonfly">Let's talk</a>
+<a class="mx-auto w-max flex no-underline button call-to-action__button call-to-action__button--cool-blue" href="mailto:work@dragonfly.co.nz?subject=I%27d%20like%20to%20talk%20about%20joining%20Dragonfly">Let's talk</a>
