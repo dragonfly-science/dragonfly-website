@@ -1,12 +1,13 @@
 ---
-title: Antipodean albatross integrated population model
-short-title: Antipodean albatross integrated population model
+title: Antipodean albatross population model
+short-title: Antipodean albatross population model
 summary: A model and simulation tool predict the effect of different management
  strategies on this Nationally Critical species.
 tags: stats, policy
 banner-image: /work/Antipodean-albatross-case-study/DF_Projects_AntipAlbatross.jpg
+banner-cite: Antipodean albatross inside the study area. Credit Kath Walker.
 testimonial:
-  - testimonials/Antipodean-albatross/content.md
+  - testimonials/Antipodean-albatross-testimonial/content.md
 logo: /work/Antipodean-albatross-case-study/DF_Clients_DOC.png
 description: >
   We built a model and simulation tool to predict the effect of different management
@@ -15,12 +16,12 @@ project-link: https://docnewzealand.shinyapps.io/Antipodean_albatross_IPM/
 project-link-text: View tool
 CTADescriptor: some text
 CTAButton: read more
+sortorder: 1
 ---
 
 Action to halt the estimated annual 5 percent decline of the Antipodean albatross
-population is essential. The model and app we created allow stakeholders to
-explore the effects of different threats and management strategies. This is
-intended to help guide decisions to secure the future of the species.  
+population is essential. The integrated population model and app we created allow stakeholders to explore the effects of different threats and management
+strategies. This is intended to help guide decisions to secure the future of the species.
 
 <!--more-->
 
@@ -44,7 +45,7 @@ Being able to model the effects of different management strategies (like reducin
    bycatch) was seen as a powerful tool to include stakeholders in the
    decision-making process.
 
-### Developing an integrated population model  
+### Developing an integrated population model
 
 The model uses Bayesian statistics to estimate the main demographic parameters
 that are driving the population dynamics. It takes into account the detectability
@@ -81,7 +82,7 @@ parameters in the app allows people to see for themselves what is needed – and
 what happens if the death of 100 birds can be prevented, for example.
 
 The accessibility of the app also supports transparency and agreement between
-stakeholders about which actions should be prioritised.  
+stakeholders about which actions should be prioritised.
 
 ### Complexity and uncertainty
 

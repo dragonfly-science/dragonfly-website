@@ -4,7 +4,7 @@ og-title: Dragonfly Data Science
 description: >
   We are a team of scientists and dreamers based in
   Aotearoa New Zealand, with a shared purpose of doing good with data.
-introduction: >	
+introduction: >
   We are a team of scientists and dreamers based in
   Aotearoa New Zealand, with a shared purpose of doing good with data.
 sections:
@@ -12,6 +12,7 @@ sections:
   - landing-pages/who-we-are/content.md
   - landing-pages/work/content.md
 testimonials:
+  - testimonials/Antipodean-albatross-testimonial/content.md
   - testimonials/tmp-testimonial/content.md
   - testimonials/delphi-testimonial/content.md
   - testimonials/inz-testimonial/content.md
@@ -19,7 +20,7 @@ testimonials:
   - testimonials/nefd-testimonial/content.md
   - testimonials/paua-management-testimonial/content.md
   - testimonials/predator-prey-testimonial/content.md
-sectionTitle: Latest News
+sectionTitle: Latest news
 sectionLeft: true
 video: /images/video/HomeMixFinal2.mp4
 videoPoster: /images/video/homepage-video-placeholder.jpg
