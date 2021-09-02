@@ -9,6 +9,8 @@ citation_position: Founder and director
 citation_organisation: >
   Dragonfly Data Science
 ---
+Open data builds consensus. If everyone agrees on the problem, they’re
+much more able to focus on a solution.
 
 When there’s a contentious issue of high public interest, it’s very important
 for people to know for themselves what going on, rather than relying on rumour

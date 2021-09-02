@@ -1,64 +1,100 @@
 ---
-title: Repeatable, automated reporting
-short-title: Repeatable, automated reporting
-summary: A more collaborative and efficient way to produce data-rich reports
-banner-image: /work/reporting-case-study/electricity-use-and-demand.png
-tags: capability
+title: Monitoring bycatch by recreational fishers
+short-title: Monitoring bycatch by recreational fishers
+summary: Streamlined reporting and data management informs protected species conservation.
+banner-image: /work/rec-fishing-bycatch/RecFishing.jpg
+tags: systems
 testimonial:
-  - testimonials/reporting-testimonial/content.md
-logo: /work/reporting-case-study/mbie-logo.png
+  - testimonials/rec-fishing-bycatch/content.md
+logo: /work/rec-fishing-bycatch/DF_Clients_DOC.png
 description: >
-  The preparation of a complex report was streamlined by using coded reporting
-   tools and systems. Our client’s staff were trained to use it for future reports.  
+  We created a pipeline to collect, verify, manage and visualise data about the
+  accidental bycatch of marine protected species by recreational fishers.
+project-link: https://docnewzealand.shinyapps.io/protectedspeciescatch/
+project-link-text: View app
 CTADescriptor: some text
 CTAButton: read more
+sortorder: 2
 ---
 
-We used our expertise in reproducible reporting to improve a team's data
-analysis processes. This saved significant time and effort in their regular
-report production.
+We created a pipeline to collect, verify, manage and visualise data about the
+accidental bycatch of marine protected species by recreational fishers. This data
+ management system is helping DOC better understand interactions between fishers
+ and protected species and informing management decisions.
 
 <!--more-->
 
-## A complex report
+## Bycatch happens in recreational fisheries
 
-The Regional Economic Activity Report (REAR) presents population,
-employment, GDP and annual household income information across New Zealand's
-regions and Territorial Authorities. The report is prepared annually by the
-Ministry for Business, Innovation and Employment (MBIE).
-Pulling together this complex document required many resources, and needed
- coordination between analysts, graphics,
-and communications teams.
+Recreational fishing is popular in New Zealand – several hundred thousand people
+head to the coast and ocean each year. But fishers sometimes accidentally catch
+seabirds, sharks, seals and other marine protected species.
 
-## Mentoring staff in R and LaTeX
+DOC is working towards a national goal of zero bycatch in 2050. Finding out how
+and where recreational bycatch occurs and which species are most at-risk, is
+essential for informing conservation work to meet the goal.
 
-We worked with the MBIE sector performance team to help develop the graphics for
-this report. Their analysts were using the statistical software R, and we were able to show
-the team how to use this powerful software to produce publication quality graphics,
-that met the requirements of the graphic designers.
+We worked with DOC to build a system to manage the bycatch data and make it
+easier for fishers to report accidental catches or observations of bycatch.
 
-We also introduced the team to software development practices, such as version
-control and continuous build processes.
+![Pied shag in Nelson harbour with embedded fishing line
+and hook.](/work/rec-fishing-bycatch/RecFishing_Shag.jpg)
 
-The Ministry requested our support to produce an improved printed version of
-the report using LaTeX, a powerful coded typesetting system. Together
-LaTeX and R offered significant advantages over traditional
-word processing programmes for producing this large report, which has many
-figures and tables.
 
-Because LaTeX has a coded interface, helping staff to use and manage the
-code themselves was an important part of the project. Ministry staff found our
-code and documentation easy to follow and gained
-confidence in managing it themselves. With our experience to fall back on,
-they enjoyed the fun of working with new processes.
+## Reporting bycatch
 
-## Beautiful report production
+Bycatch in recreational fisheries can be reported to DOC in several ways – email,
+ filling in a form or by making a phone call.
 
-The 2014 REAR’s very polished production has set a new standard for
-MBIE’s reporting. LaTeX allows final changes to be made quickly and easily,
-which led to the much higher quality output.
+Research with fishers in 2020 identified that most were open to reporting any
+bycatch. DOC decided to trial the use of a mobile app to make reporting easier
+and anonymous. This new method was intended to encourage fishers to report
+bycatch and provide verifiable and consistent data collection.
 
-Code also equals reproducibility and economy—future reports will be created
-by inputting new data rather than creating individual plots from scratch. The
-MBIE team believe this feature will save them 70 percent of the preparation
-time for future reports.
+We worked closely with the software development company [Xequals](https://xequals.nz/)
+to create an app. It allows fishers to report a bycatch event when they are out
+fishing or back on shore. Details about the species, fishing location and method,
+capture, and photos can be uploaded via a simple interface. The reports are anonymous.
+
+The app was successfully trialled in the Marlborough Sounds in summer 2020/2021,
+then expanded to cover the whole country in 2021.
+
+
+## Verifying a report
+
+Reports from the app arrive at an administration portal. Every new report is
+notified by an email alert to the DOC project manager, which prompts a review of
+the report. A report can be assigned a 'verified' status if the species has been
+ identified correctly and the bycatch is related to recreational fishing.
+ Unverified reports, where no image was supplied to confirm species identification,
+ or the animal’s injuries could not be confirmed as having been caused by bycatch
+ (or both), are also identified.
+
+Both verified and unverified reports are important. Verified reports are the most
+ accurate and can be used to answer questions that require high confidence in the
+ data. Unverified reports still provide valuable information for DOC to help
+ understand and manage recreational fisher interactions with protected species.
+
+## A database keeps everything together
+
+ After the verification step, bycatch reports are submitted to a database. Bycatch
+  reported to DOC by email or phone can also be added manually into the app to
+  populate the database.
+
+The database usefully consolidates all the data in one place, with standardised
+fields such as metadata, for all the entries. It prevents data being scattered in
+inboxes or spreadsheets. A simple export to other programmes allows for data analysis.
+
+## Shinyapp data visualisation
+
+After a report has been verified and included in the database, it is added to a
+shinyapp that shows the data on a map and graph. The data is public-facing and
+can be viewed by species, location, date, and fishing method. Photos are not made public.
+
+The automated system makes it easy for DOC to keep the information up to date.
+Fishers can usually see their reported bycatch on the shinyapp within a day or
+two. DOC believes the availability of the app and the fast turnaround will
+generate community enthusiasm for the monitoring project. The new system may
+also encourage fishers to report bycatch because they can see how their actions
+are contributing directly to a better understanding of interactions with
+protected species.

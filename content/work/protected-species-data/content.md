@@ -14,6 +14,7 @@ project-link: https://protectedspeciescaptures.nz/
 project-link-text: Access data
 CTADescriptor: some text
 CTAButton: read more
+sortorder: 3
 ---
 
 We worked with the Ministry for Primary Industries and the Department of
@@ -31,7 +32,7 @@ unobserved fishing.
 
 We built an interactive website so this information could be made available
 online. Users can filter the data by species, fishing method, area, year and
-vessel (see [white-chinned petrel](https://protectedspeciescaptures.nz/PSCv5a/released/white-chinned-petrel/trawl/all-vessels/eez/2018-19/) for example). 
+vessel (see [white-chinned petrel](https://protectedspeciescaptures.nz/PSCv5a/released/white-chinned-petrel/trawl/all-vessels/eez/2018-19/) for example).
 
 [Protected species bycatch in New Zealand fisheries](https://protectedspeciescaptures.nz/).
 
@@ -46,7 +47,7 @@ Tag-resight methods are used, where some sea lions are tagged as pups and future
  sightings of the same individual are recorded. Data since 1979 is available on
   the website.
 
-[Access the sea lion tag-resight data](https://sealions.dragonfly.co.nz/demographics/).  
+[Access the sea lion tag-resight data](https://sealions.dragonfly.co.nz/demographics/).
 
 ### Sea lion pup production data
 

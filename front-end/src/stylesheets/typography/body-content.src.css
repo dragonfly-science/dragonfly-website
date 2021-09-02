@@ -90,10 +90,12 @@
   a,
   p > a,
   li > a {
-    @apply underline;
+    &:not(.button) {
+      @apply underline;
 
-    &:hover {
-      @apply no-underline;
+      &:hover {
+        @apply no-underline;
+      }
     }
   }
 
