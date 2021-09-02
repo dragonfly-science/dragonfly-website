@@ -1,6 +1,6 @@
 ---
-title: Going fishing for accidental catches
-short-title: Going fishing for accidental catches
+title: Monitoring bycatch by recreational fishers
+short-title: Monitoring bycatch by recreational fishers
 summary: Streamlined reporting and data management informs protected species conservation.
 banner-image: /work/rec-fishing-bycatch/RecFishing.jpg
 tags: systems
