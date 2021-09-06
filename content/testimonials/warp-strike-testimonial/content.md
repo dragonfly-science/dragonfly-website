@@ -8,8 +8,8 @@ citation_position: Manager
 citation_organisation: Marine Conservation Services, Department of Conservation
 ---
 
-The modelling techniques that UniQuest applied to our complex data are cutting edge and evolving all the time. I was aware that Dragonfly have also been involved in creating those techniques, so were very well placed to assess how well they had been employed for us.
+I was impressed by Dragonfly’s ability to bring a quantitative approach to this real world issue.
 
-I’m not an expert in modelling so I appreciated that the review was professional, concise, and not filled with technical jargon. Because it was a logical and impartial critique of my client’s work, I sent it directly to them, which saved me a lot of time. My client found the review useful and agreed with everything that Dragonfly said needed to be done.
+Research relating to fisheries management typically doesn’t produce tidy datasets, but Dragonfly routinely works through such difficulties with aplomb.
 
-The review was provided on time and in budget – that's important to us in government with tight budgets and accountability for them.
+From the design phase to the final analysis, they linked results back to objectives and consistently produced strong, defensible outputs and delivered value for money. I also appreciated the sense of a research partnership that working with them engendered.  
