@@ -12,10 +12,10 @@ logo: /work/Antipodean-albatross-case-study/DF_Clients_DOC.png
 description: >
   We built a model and simulation tool to predict the effect of different management
    strategies on this Nationally Critical species.
-project-link: https://docnewzealand.shinyapps.io/Antipodean_albatross_IPM/
-project-link-text: View tool
+project-link: https://www.doc.govt.nz/our-work/conservation-services-programme/csp-reports/202021/integrated-population-model-of-antipodean-albatross-for-simulating-management-scenarios/
+project-link-text: Read more
 CTADescriptor: some text
-CTAButton: read more
+CTAButton: Read more
 sortorder: 1
 ---
 
