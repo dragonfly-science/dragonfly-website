@@ -45,6 +45,8 @@ Being able to model the effects of different management strategies (like reducin
    bycatch) was seen as a powerful tool to include stakeholders in the
    decision-making process.
 
+![](/work/Antipodean-albatross-case-study/Antipodean-albatross-model.png)
+
 ### Developing an integrated population model
 
 The model uses Bayesian statistics to estimate the main demographic parameters
