@@ -14,7 +14,6 @@ project-link: https://kokako.co
 project-link-text: View project
 CTADescriptor: some text
 CTAButton: read more
-testimonial: /testimonials/tmp-testimonial.md
 ---
 
 Machine learning methods are ideal for classifying streaming data rapidly. We
