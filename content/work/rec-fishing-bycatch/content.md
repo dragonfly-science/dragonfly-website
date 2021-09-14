@@ -59,7 +59,6 @@ capture, and photos can be uploaded via a simple interface. The reports are anon
 The app was successfully trialled in the Marlborough Sounds in summer 2020/2021,
 then expanded to cover the whole country in 2021.
 
-
 ## Verifying a report
 
 Reports from the app arrive at an administration portal. Every new report is
@@ -74,6 +73,8 @@ Both verified and unverified reports are important. Verified reports are the mos
  accurate and can be used to answer questions that require high confidence in the
  data. Unverified reports still provide valuable information for DOC to help
  understand and manage recreational fisher interactions with protected species.
+
+ ![](/work/rec-fishing-bycatch/app-visualisation.jpg)
 
 ## A database keeps everything together
 
