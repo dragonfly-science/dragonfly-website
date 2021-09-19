@@ -43,7 +43,7 @@ A directory where all other associated files can go, such as a image files and t
 
 #### Adding news posts
 
-- `teaser.jpg` - ideally a square image at 960px x 9060p
+- `teaser.jpg` - ideally a square image at 960px x 960p
 - banner - link this in the `banner-image` section of the front matter
 - Avoid using bigger headings than an H3
 
