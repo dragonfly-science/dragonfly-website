@@ -1,7 +1,7 @@
 ---
 title: Welcome to Rochelle, our office manager
 ---
-We’re excited to welcome Rochelle Dalziel as she takes up this new full time role at Dragonfly.
+We’re excited to welcome Rochelle Dalziel as she takes up this new full-time role at Dragonfly.
 
 <!--more-->
 
@@ -19,4 +19,4 @@ Rochelle was previously the office manager at Squiz, a similar-sized Wellington-
 
 “Because the office manager has to work closely with the whole team, we felt it was really important that the person we chose had a really good fit with our culture.”
 
-While starting a new job in the middle of a Covid-19 lockdown was not ideal, Rochelle says she is looking forward to adding value to Dragonfly’s work. “I love what Dragonfly does and I’m excited by the prospect of learning about the nuances within a research environment. I pride myself on a job well done, and I look forward to us achieving great things together.”
+While starting a new job in the middle of a COVID-19 lockdown was not ideal, Rochelle says she is looking forward to adding value to Dragonfly’s work. “I love what Dragonfly does and I’m excited by the prospect of learning about the nuances within a research environment. I pride myself on a job well done, and I look forward to us achieving great things together.”
