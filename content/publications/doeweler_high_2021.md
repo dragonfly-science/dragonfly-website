@@ -1,0 +1,11 @@
+---
+tags: fabian, bayesian, geospatial, ecology
+title: High light-induced photoinhibition is not limiting seedling establishment at abrupt treeline ecotones in New Zealand
+---
+
+Seedlings of New Zealand’s treeline-forming *Fuscospora cliffortioides* (Hook.f.) perform poorly beyond the established canopy, limiting treeline advance. To test the long-standing assumption that photoinhibition impairs regeneration in the subalpine belt of New Zealand’s Southern Alps, we assessed photosystem II (PSII) performance of seedling-sized individuals and microclimate variation. We performed diurnal, non-invasive chlorophyll-*a*-fluorescence measurements on exposed and canopy-sheltered individuals at two sites in New Zealand’s Southern Alps during summer and winter. Diurnal recordings of the effective (ΦPSII) and optimal (*F<sub>v</sub>/F<sub>m</sub>*)
+photosynthetic quantum yield were supplemented with light response curves and micro-temperature recordings. ΦPSII returned to near-optimal values around 0.8 after 30 min of shading, which rules out accumulative or long-term photoinhibition effects. The maximum electron transport rate derived from rapid light curves was significantly higher (+12%) in exposed compared with canopy-shaded individuals. Summer temperature fluctuated widely on the scree (−0.5 to 60.5 °C) and near seedlings (−2 to 26.5 °C).
+
+Our results revealed a remarkable level of light adaptation and contradict previous studies hinting at high light-induced photoinhibition as a treeline-limiting factor in the Southern Alps. By linking low ΦPSII on winter mornings, and large, sudden temperature drops in summer, we suspect that cold-induced photoinhibition might occur but the rapid recovery of ΦPSII seen across a wide temperature range makes lethal photo-oxidative damage rather unlikely. Given the demonstrably low summer frost tolerance of *F. cliffortioides*, cold-related damage resulting from frost events during the growing season or embolism induced by frost drought may offer more plausible explanations for the poor seedling establishment. Duration and frequency of these events could diminish with global warming, which may promote treeline advance.
+
+[Corrected proof available here](https://academic.oup.com/treephys/advance-article-abstract/doi/10.1093/treephys/tpab061/6270866?redirectedFrom=fulltext).
