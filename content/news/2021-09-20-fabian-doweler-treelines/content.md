@@ -46,4 +46,4 @@ tussocks, flowers, shrubs and kea”.
 
 [Read more about Fabian](/people/doweler-fabian.html) or see his [PhD thesis]( https://openrepository.aut.ac.nz/handle/10292/14038).
 
-Abrupt treeline research paper [High light-induced photoinhibition is not limiting seedling establishment at abrupt treeline ecotones in New Zealand](https://doi.org/10.1093/treephys/tpab061)
+[Döweler, F., Case, B. S., Buckley, H. L., & Bader, M. K. F. (2021). High light-induced photoinhibition is not limiting seedling establishment at abrupt treeline ecotones in New Zealand. Tree Physiology.](https://doi.org/10.1093/treephys/tpab061)
