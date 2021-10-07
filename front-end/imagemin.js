@@ -11,7 +11,7 @@ const process = async (dir, filepath, filename, ext) => {
       plugins = [
         imageminJpegoptim({
           progressive: true,
-          max: 75,
+          max: 85,
         }),
       ]
       break
@@ -19,7 +19,7 @@ const process = async (dir, filepath, filename, ext) => {
       plugins = [
         imageminJpegoptim({
           progressive: true,
-          max: 75,
+          max: 85,
         }),
       ]
       break
