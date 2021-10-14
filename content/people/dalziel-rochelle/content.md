@@ -30,6 +30,6 @@ business operations, especially in relation to people and culture.
 
 > My background in customer service and support roles has highlighted the
 > importance of having great systems in place so people are able to do their
-> best work. It'’'s also very satisfying to implement systems and processes that
+> best work. It's also very satisfying to implement systems and processes that
 > are easy and enjoyable for people to use. This often makes my job more
 > enjoyable as well, so it's a win/win!
