@@ -19,7 +19,7 @@ The opportunity, however, is a rare one, as the birds only breed after certain t
 flower en masse producing large quantities of seed (otherwise known as a ‘mast’). 
 On Whenua Hou, rimu masts trigger a breeding season.
 
-![Fabian’s field site at Mount Craigieburn](/news/2021-09-20-fabian-doweler-treelines/fieldsite.png)
+![The kākāpō, the world's only flightless parrot](/news/2021-10-14-emma-crawford-kakapo/Kakapofeeding.jpg)
 
 Rimu masts result in the kākāpō’s food of choice, the rimu fruit, littering the forest floor, 
 spurring the typically libidoless parrots into reproductive action. These masts, however, only 
@@ -34,7 +34,7 @@ the majority of the kākāpō breeding population.
 Whenua Hou, we tramped around the island each day cleaning and refilling feed stations to ensure 
 that all the birds were getting suitable nutrition for breeding.” 
 
-![[Explore a digital model of the Craigieburn field site](https://geospatialweb.aut.ac.nz/Craigieburn/Craigieburn.html)](/news/2021-09-20-fabian-doweler-treelines/cragieburn-model.png)
+![Moss was easily mistaken for kākāpō throughout the trip](/news/2021-10-14-emma-crawford-kakapo/mossball.jpg)
 
 Despite spending an entire two weeks in the kākāpō capital, Emma only spotted two of the elusive parrots
 “all of our hundreds of other kākāpō sightings ended with a disappointed sigh of, “Oh, it’s just a ball 
