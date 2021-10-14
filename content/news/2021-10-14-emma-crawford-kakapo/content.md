@@ -1,8 +1,8 @@
 ---
 title: Kākāpō Conservation on Whenua Hou
 ---
-“Being so isolated, you really sensed a feeling of what New Zealand may have been like before humans began altering the environment.”
 
+Volunteering for kākāpō conservation on Whenua Hou.
 <!--more-->
 
 Our newest team member, Emma Crawford, has had a passion for ecology for as long as she can remember. 
@@ -35,6 +35,8 @@ Whenua Hou, we tramped around the island each day cleaning and refilling feed st
 that all the birds were getting suitable nutrition for breeding.” 
 
 ![Moss was easily mistaken for kākāpō throughout the trip](/news/2021-10-14-emma-crawford-kakapo/mossball.jpg)
+
+> Being so isolated, you really sensed a feeling of what New Zealand may have been like before humans began altering the environment.
 
 Despite spending an entire two weeks in the kākāpō capital, Emma only spotted two of the elusive parrots
 “all of our hundreds of other kākāpō sightings ended with a disappointed sigh of, “Oh, it’s just a ball 
