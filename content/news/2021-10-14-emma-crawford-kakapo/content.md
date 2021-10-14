@@ -1,7 +1,7 @@
 ---
 title: Kākāpō Conservation on Whenua Hou
 ---
-How much longer will New Zealand's abrupt treelines hold out against global warming?
+“Being so isolated, you really sensed a feeling of what New Zealand may have been like before humans began altering the environment.”
 
 <!--more-->
 
