@@ -10,7 +10,7 @@ Our newest team member, Emma Crawford, has had a passion for ecology for as long
 “When I was little I was always out in the garden lifting up logs and rocks, searching for insects
 and all sorts of creatures. It’s funny, as an ecologist, I do the exact same thing now.”
 
-As a kiwi and an ecologist, Emma had always wanted to work with endangered kākāpō. 
+As a Kiwi and an ecologist, Emma had always wanted to work with endangered kākāpō. 
 Volunteer opportunities, however, only present themselves every couple of years due 
 to the parrot’s temperamental breeding patterns.
 
