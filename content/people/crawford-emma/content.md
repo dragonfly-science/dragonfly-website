@@ -22,14 +22,14 @@ she completed her undergraduate study and postgraduate diploma in Zoology at Mas
 
 <!--more-->
 
-Emma Crawford has had a passion for ecology for as long as she can remember. 
-“When I was little I was always out in the garden lifting up logs and rocks, searching for 
-insects and all sorts of creatures. It’s funny, as an ecologist, I do the exact same thing now.”
+After completing her degree in Zoology and Ecology at Massey University, 
+Emma spent three years in rural Japan, teaching English at local schools. 
+“I’ve always had a strong interest in language and culture, especially Japan”. 
 
-Emma spent most of her career in the field as a freelance ecologist, 
-bouncing between the United Kingdom and New Zealand. In the United Kingdom, 
-Emma's work involved surveying amphibians, reptiles and bats. She has also 
-completed many hours of desk-based sound analysis identifying British bats.
+Emma has spent most of her career bouncing between New Zealand and the United Kingdom
+as a freelance ecologist. Emma's work in the UK involved surveying amphibians,
+reptiles and bats. She has also completed many hours of desk-based sound analysis
+identifying British bats.
 
 Her work in New Zealand has covered bird and botanical surveys, the captive 
 rearing of kiwi chicks for Operation Nest Egg, and field and lab work for 
