@@ -40,6 +40,7 @@ her partner’s blog, Zoomology, captures their numerous adventures and encounte
 with wildlife across the globe.
 
 Emma is especially looking forward to being involved in the entirety of a project with Dragonfly.
-“Often I just collect the field data and send it off, so it's exciting to think that soon
+
+> “Often I just collect the field data and send it off, so it's exciting to think that soon
 I’ll see what actually happens to it.”
 
