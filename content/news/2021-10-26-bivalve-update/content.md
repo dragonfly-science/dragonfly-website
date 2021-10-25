@@ -26,10 +26,13 @@ In February 2020, Katrin attended a meeting with Fisheries New Zealand and the l
 “I presented the results of the monitoring and although the population appears to be stable, the seasonal closure of this beach has now been extended to be year-round. This experience brought home to me again how relevant the surveys are to people and how much the shellfish resource means to them.”
 
 ### Read more
+
 Report about sediment:
+
 * [Bivalve abundance in relation to sediment properties across northern North Island](https://files.dragonfly.co.nz/publications/pdf/neubauer_bivalve_2021.pdf)
 
 Previous new stories about our shellfish monitoring and modelling work:
+
 * [Shellfish surveys – a smarter approach](https://www.dragonfly.co.nz/news/2016-04-11-sample-smarter.html).
 * [Shellfish surveys show beach closures are working](https://www.dragonfly.co.nz/news/2015-12-14-cockle-pipi-surveys.html).
 * [Working at the beach this summer](https://www.dragonfly.co.nz/news/2014-01-15-working-beach-summer.html).
