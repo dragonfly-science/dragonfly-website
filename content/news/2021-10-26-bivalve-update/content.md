@@ -1,5 +1,5 @@
 ---
-title: Shellfish monitoring: 2021 and beyond
+title: Shellfish monitoring—2021 and beyond
 ---
 A new contract with Fisheries New Zealand will see our work surveying pipi and cockle populations across northern North Island beaches continue for another 3 years.
 
