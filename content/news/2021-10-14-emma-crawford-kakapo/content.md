@@ -17,7 +17,6 @@ to the parrot’s temperamental breeding patterns.
 Kākāpō only enter a breeding season after certain trees flower en masse, producing
 large quantities of seed and fruit (known as a “mast”). The abundance of food then spurs the parrots
 into reproductive action. These masts, however, only occur every 2 to 4 years.
-, looks
 
 ![The kākāpō, the world's only flightless parrot](/news/2021-10-14-emma-crawford-kakapo/Kakapofeeding.jpg)
 
