@@ -1,5 +1,5 @@
 ---
-title: Kākāpō Conservation on Whenua Hou
+title: Kākāpō conservation on Whenua Hou
 ---
 
 Emma Crawford spent two weeks on Whenua Hou volunteering with kākāpō
@@ -36,8 +36,9 @@ were getting suitable nutrition for breeding.”
 
 ![Moss was easily mistaken for kākāpō throughout the trip (photo taken by Emma Crawford)](/news/2021-10-14-emma-crawford-kakapo/mossball.jpg)
 
-> Being so isolated, you really sensed a feeling of what New Zealand may have been like before humans began altering the environment.
 
-Despite spending two weeks in the kākāpō “capital”, Emma only spotted two of the elusive parrots:
+Despite spending two weeks in the kākāpō capital, Emma only spotted two of the elusive parrots:
 “All of our hundreds of other kākāpō sightings ended with a disappointed sigh of,
 ‘Oh, it’s just a ball of moss…’ No offence to any bryologists out there!”
+
+> Being so isolated, you really sensed a feeling of what New Zealand may have been like before humans began altering the environment.
