@@ -5,7 +5,7 @@ The Minister of Research, Science and Innovation Megan Woods, has launched a ‘
 
 <!--more-->
 
-We worked closely with staff from the Ministry for Business, Innovation and Employment (MBIE) to produce the report. This is the first time it has been presented in a digital format.[See the 2021 Research, Science and Innovation Report](https://researchscienceinnovation.nz/).
+We worked closely with staff from the Ministry for Business, Innovation and Employment (MBIE) to produce the report. This is the first time it has been presented in a digital format. [See the 2021 Research, Science and Innovation Report](https://researchscienceinnovation.nz/).
 
 The report is based on data from a range of sources, including Stats NZ, Tertiary Education Commission, government investment and OECD data. It features a commentary on the data, dual language section headers, information panels and case studies. Responses made to the COVID-19 pandemic from MBIE and from scientists are highlighted throughout.
 
