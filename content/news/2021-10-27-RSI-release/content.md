@@ -1,6 +1,7 @@
 ---
 title: RSI report published, and it’s beautiful
 ---
+
 The Minister of Research, Science and Innovation Megan Woods, has launched a ‘state of the nation’ report on the performance of New Zealand’s research, science and innovation system.
 
 <!--more-->
@@ -16,6 +17,8 @@ Producing the report involved a team of four staff from MBIE as well as front-en
 This approach enabled the MBIE analysts to easily and safely update the data during the development process, using scripts they were already familiar with.
 
 “The front end of the report really brings the numbers to life. It looks beautiful – including on mobile devices. The graphs are really responsive, and many allow you to display data in different ways. All the data can also be downloaded for further analysis.”
+
+![An example of the beautiful charts](/news/2021-10-27-RSI-release/sankey.png)
 
 Case studies throughout demonstrate what the funding achieves in practical terms. “It's easy for the reality of science funding to get lost in the data. The diversity of case studies shows how research is tied to interesting questions related to people, situations and important issues facing New Zealand.”
 
