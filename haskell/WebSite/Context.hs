@@ -44,7 +44,7 @@ baseContext section = do
         prepareUrl path = "/" <> (if takeBaseName path == "index"
                                     then takeDirectory path
                                     else path)
-    return $  dateField  "date"   "%B %e, %Y"
+    return $  dateField  "date"   "%e %B, %Y"
           --  <> constField "jquery" "//ajax.googleapis.com/ajax/libs/jquery/2.0.3"
            <> constField "section" section
            <> constField ("on-" ++ takeBaseName path) ""
@@ -92,7 +92,7 @@ itemCtx  = listContextWith "tags" tagContext
         <> socialImage
         <> mapContext stripTags (teaserField "teaser" "content")
         <> pageUrlField "pageurl"
-        <> dateField "published" "%B %d, %Y"
+        <> dateField "published" "%d %B, %Y"
         <> sectionField "section"
         <> defaultContext
 
