@@ -23,7 +23,7 @@ she completed her undergraduate study and postgraduate diploma in Zoology at Mas
 
 After completing her degree in Zoology and Ecology at Massey University,
 Emma spent three years in rural Japan, teaching English at local schools.
-“I’ve always had a strong interest in language and culture, especially Japan”.
+"I've always had a strong interest in language and culture, especially Japan".
 
 Emma has spent most of her career bouncing between New Zealand and the United Kingdom
 as a freelance ecologist. Emma's work in the UK involved surveying amphibians,
@@ -35,8 +35,8 @@ rearing of kiwi chicks for Operation Nest Egg, and field and lab work for
 Dragonfly’s intertidal shellfish monitoring.
 
 Outside of work, Emma enjoys photography, tramping and writing. Her and
-her partner’s blog, Zoomology, captures their numerous adventures and encounters
-with wildlife across the globe.
+her partner’s blog, [Zoomology](https://zoom-ology.com/), captures their
+numerous adventures and encounters with wildlife across the globe.
 
 Emma is especially looking forward to being involved in the entirety of a project with Dragonfly.
 
