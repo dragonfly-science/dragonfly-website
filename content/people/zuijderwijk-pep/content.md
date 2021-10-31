@@ -25,7 +25,7 @@ projects. This ensures an intuitive and engaging user experience in
 the often very complex and abstract models, products and stories we create.
 
 Pep has been designing and art-directing digital projects for more than 20 years,
-and began collaborating with Dragonfly in 2020. He has been involved in
+and began collaborating with Dragonfly in 2010. He has been involved in
 the [Regional Economic Activity Report](https://www.dragonfly.co.nz/work/webrear-case-study.html),
 a bycatch management information tool and the
 [Kōkako language tracking tool](https://www.dragonfly.co.nz/work/TMP-case-study.html),
@@ -37,9 +37,7 @@ The Netherlands, Pep worked as a digital designer at agencies in the Hague,
 Wellington, London and Amsterdam. He started Salted Herring in 2007 when he
 moved back to New Zealand. With his partner Kate Handley, he built it into a
 studio with a reputation for delivering distinctive, effective and highly
-crafted digital work. Some clients include: Whittaker's Chocolate, the Asia New Zealand
-Foundation, the New Zealand Festival, Totara, ComplyWith and other SaaS start-ups.
-See [saltedherring.design](https://saltedherring.design)
+crafted digital work. See [saltedherring.design](https://saltedherring.design)
 
 > Design can turn abstract data into compelling and meaningful stories that have
 > the power to shift perspectives and change behaviour. This is what excites me
@@ -48,7 +46,6 @@ See [saltedherring.design](https://saltedherring.design)
 **Awards include:**
 
 Designers Institute of New Zealand Best Awards:
-
 - Purple Pin (Best of Interactive)
 - 3x Gold Pin
 - 1x Silver
