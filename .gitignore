@@ -20,3 +20,13 @@ dist
 docker/*
 docker
 content/stylesheets/*
+
+*.rds
+*.rdata
+*.txt
+generated/
+.last-project
+most-similar-documents.json
+unsupervised-text-analysis_*
+.ran
+deck-map.html
