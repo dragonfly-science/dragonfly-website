@@ -1,5 +1,5 @@
 ---
-title: Kākāpō Conservation on Whenua Hou
+title: Kākāpō conservation on Whenua Hou
 ---
 
 Emma Crawford spent two weeks on Whenua Hou volunteering with kākāpō
@@ -18,7 +18,7 @@ Kākāpō only enter a breeding season after certain trees flower en masse, prod
 large quantities of seed and fruit (known as a “mast”). The abundance of food then spurs the parrots
 into reproductive action. These masts, however, only occur every 2 to 4 years.
 
-![The kākāpō, the world's only flightless parrot](/news/2021-10-14-emma-crawford-kakapo/Kakapofeeding.jpg)
+![The kākāpō, the world's only flightless parrot (photo taken by Tom Miles)](/news/2021-10-14-emma-crawford-kakapo/kakapofeeding.jpg)
 
 After a much anticipated wait, 2019 was a mega mast year, and Emma and her partner
 Tom were able to volunteer at Whenua Hou (Codfish Island). “There is no public access
@@ -34,10 +34,11 @@ we tramped around the island each day, cleaning and refilling feed stations to e
 were getting suitable nutrition for breeding.”
 
 
-![Moss was easily mistaken for kākāpō throughout the trip](/news/2021-10-14-emma-crawford-kakapo/mossball.jpg)
+![Moss was easily mistaken for kākāpō throughout the trip (photo taken by Emma Crawford)](/news/2021-10-14-emma-crawford-kakapo/mossball.jpg)
 
-> Being so isolated, you really sensed a feeling of what New Zealand may have been like before humans began altering the environment.
 
-Despite spending two weeks in the kākāpō “capital”, Emma only spotted two of the elusive parrots:
+Despite spending two weeks in the kākāpō capital, Emma only spotted two of the elusive parrots:
 “All of our hundreds of other kākāpō sightings ended with a disappointed sigh of,
 ‘Oh, it’s just a ball of moss…’ No offence to any bryologists out there!”
+
+> Being so isolated, you really sensed a feeling of what New Zealand may have been like before humans began altering the environment.
