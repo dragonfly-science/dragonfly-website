@@ -24,22 +24,8 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      display: [
-        'omnes-pro',
-        '"Helvetica Neue"',
-        'Helvetica',
-        'Roboto',
-        'Arial',
-        'sans-serif',
-      ],
-      body: [
-        'omnes-pro',
-        '"Helvetica Neue"',
-        'Helvetica',
-        'Roboto',
-        'Arial',
-        'sans-serif',
-      ],
+      display: ['"IBM Plex Sans"', 'sans-serif'],
+      body: ['"IBM Plex Sans"', 'sans-serif'],
     },
     colors: {
       beige: '#d2cec3',
