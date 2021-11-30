@@ -3,7 +3,7 @@ title: Emma Crawford
 email: emma@dragonfly.co.nz
 firstname: Emma
 lastname: Crawford
-role: Assistant Researcher
+role: Research assistant
 honour: ""
 mobile: ""
 tag: emma
@@ -16,29 +16,20 @@ nocite: |
   @crawford_causes_2021
 ---
 
-Emma has spent most of her career working as a freelance ecologist,
-she completed her undergraduate study and postgraduate diploma in Zoology at Massey University.
+Emma is a research assistant at Dragonfly. She enjoys collecting and analysing
+data and the opportunity to be involved throughout the process.
 
 <!--more-->
 
-After completing her degree in Zoology and Ecology at Massey University,
-Emma spent three years in rural Japan, teaching English at local schools.
-"I've always had a strong interest in language and culture, especially Japan".
+Emma has been a part of our shellfish monitoring survey team since 2017. Before
+ joining us she worked as a freelance ecologist in the United Kingdom and in
+ New Zealand, surveying diverse species of amphibians, reptiles, bats, plants
+ and birds for various environmental consultancies. Emma has also been involved
+ in captive-rearing kiwi chicks for Operation Nest Egg and as a volunteer with
+ the Kākāpō Recovery Programme.
 
-Emma has spent most of her career bouncing between New Zealand and the United Kingdom
-as a freelance ecologist. Emma's work in the UK involved surveying amphibians,
-reptiles and bats. She has also completed many hours of desk-based sound analysis
-identifying British bats.
+She has a bachelor of science in ecology and zoology and a postgraduate diploma
+ in zoology from Massey University. After completing her studies Emma spent
+ 3 years teaching English in rural Japanese schools.
 
-Her work in New Zealand has covered bird and botanical surveys, the captive
-rearing of kiwi chicks for Operation Nest Egg, and field and lab work for
-Dragonfly’s intertidal shellfish monitoring.
-
-Outside of work, Emma enjoys photography, tramping and writing. Her and
-her partner’s blog, [Zoomology](https://zoom-ology.com/), captures their
-numerous adventures and encounters with wildlife across the globe.
-
-Emma is especially looking forward to being involved in the entirety of a project with Dragonfly.
-
-> Often I just collect the field data and send it off, so it's exciting to think
-> that soon I'll see what actually happens to it.
+> I love being hands-on in the field and in the lab – it’s exciting to see science in action. Being involved in projects that help us better understand the natural world, as well as our impacts on it, is very > important to me.
