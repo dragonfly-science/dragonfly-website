@@ -22,7 +22,7 @@ compared with the highest density at Raglan Harbour of 1716 cockles per m<sup>2<
 relatively high cockle densities (>1000 individuals per m<sup>2</sup>) were Bowentown Beach, Pataua Estuary,
 Tairua Harbour and Whitianga Harbour.
 
-Within the cockle populations, large individuals (30 mm shell length) were generally scarce, and their
+Within the cockle populations, large individuals (≥30 mm shell length) were generally scarce, and their
 abundance and density estimates typically had high uncertainty. Their highest density estimate was 98
 cockles per m<sup>2</sup> at Umupuia Beach, followed by density estimates at Eastern Beach and Cockle Bay of 77
 and 75 cockles per m<sup>2</sup>, respectively. At the remaining sites, this size class was absent or only occurred
@@ -40,7 +40,7 @@ sites with high pipi densities (i.e., >100 individuals per m<sup>2</sup>) were W
 followed by Tairua Harbour (309 pipi per m<sup>2</sup>) and Whitianga Harbour (163 pipi per m<sup>2</sup>). All other pipi
 populations occurred at densities of 41 pipi per m<sup>2</sup> or less.
 
-Little Waihi Estuary was the only site in 2019–20 with notable numbers of large pipi (50 mm shell
+Little Waihi Estuary was the only site in 2019–20 with notable numbers of large pipi (≥50 mm shell
 length), and their density estimate in this estuary was 93 (CV: 18.74%) large pipi per m<sup>2</sup>. The next highest
 estimate was 16 (CV: 19.02%) large pipi per m<sup>2</sup> at Whitianga Harbour. Large pipi estimates at
 the remaining sites were markedly lower (i.e., less than seven large individuals per m<sup>2</sup>) and had high
