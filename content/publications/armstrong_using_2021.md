@@ -1,6 +1,7 @@
 ---
 tags: yvan, robin, article
-title: "Using experimental reintroductions to resolve the roles of habitat quality and metapopulation dynamics on patch occupancy in fragmented landscapes"
+title: "Using experimental reintroductions to resolve the roles of habitat
+quality and metapopulation dynamics on patch occupancy in fragmented landscapes"
 ---
 Declines of species in fragmented landscapes can potentially be reversed either
 by restoring connectivity or restoring local habitat quality. Models fitted to
@@ -24,4 +25,5 @@ fragments. This variation in λ largely explained the original occupancy pattern
  illustrate that inferences from snapshot occupancy should be treated with
  caution and subjected to testing through experimental reintroductions in
  selected model systems.
- 
+
+ Available at: https://
