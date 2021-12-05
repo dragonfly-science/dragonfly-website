@@ -2,7 +2,7 @@
 title: Kākāpō conservation on Whenua Hou
 ---
 
-Emma Crawford spent two weeks on Whenua Hou volunteering with kākāpō
+Emma Crawford spent 2 weeks on Whenua Hou volunteering with the Kākāpō Recovery Programme.
 <!--more-->
 
 
@@ -15,30 +15,30 @@ Volunteer opportunities, however, only present themselves every couple of years 
 to the parrot’s temperamental breeding patterns.
 
 Kākāpō only enter a breeding season after certain trees flower en masse, producing
-large quantities of seed and fruit (known as a “mast”). The abundance of food then spurs the parrots
-into reproductive action. These masts, however, only occur every 2 to 4 years.
+large quantities of seed and fruit (known as a mast). The abundance of food spurs the parrots
+into reproductive action. These masts occur every 2–4 years.
 
-![The kākāpō, the world's only flightless parrot (photo taken by Tom Miles)](/news/2021-10-14-emma-crawford-kakapo/kakapofeeding.jpg)
+![Kākāpō are the world's only flightless, nocturnal parrot. Image: Tom Miles)](/news/2021-10-14-emma-crawford-kakapo/kakapofeeding.jpg)
 
-After a much anticipated wait, 2019 was a mega mast year, and Emma and her partner
-Tom were able to volunteer at Whenua Hou (Codfish Island). “There is no public access
-to Whenua Hou. As predators have been eradicated on the island, the quarantine procedure
-is very strict to ensure no stowaways are transported accidentally.”
+After a much anticipated wait, 2019 was a mega-mast year and Emma and her partner
+Tom were able to volunteer at Whenua Hou (Codfish Island).
+
+“There is no public access to Whenua Hou. As predators have been eradicated on the island, the quarantine procedure is very strict to ensure no stowaways are transported accidentally.”
 
 The island, west of Rakiura Stewart Island, is a predator-free sanctuary for many native
 New Zealand species, such as mottled petrel, Fiordland crested penguin, Campbell Island teal,
 and the endemic Codfish Island fernbird. It also hosts the largest population of kākāpō in New Zealand.
 
-“We applied to volunteer to help with the supplementary feed out. During the two weeks we were on Whenua Hou,
-we tramped around the island each day, cleaning and refilling feed stations to ensure that all the birds
+“We helped with the supplementary feed-out. During the 2 weeks we were on Whenua Hou,
+we tramped around the island each day, cleaning and refilling feed stations to ensure all the birds
 were getting suitable nutrition for breeding.”
 
+“Being so isolated, you really sensed a feeling of what New Zealand may have been like before humans began altering the environment.”
 
-![Moss was easily mistaken for kākāpō throughout the trip (photo taken by Emma Crawford)](/news/2021-10-14-emma-crawford-kakapo/mossball.jpg)
+![Moss was easily mistaken for kākāpō throughout the trip. Image: Emma Crawford)](/news/2021-10-14-emma-crawford-kakapo/mossball.jpg)
 
-
-Despite spending two weeks in the kākāpō capital, Emma only spotted two of the elusive parrots:
+Despite spending time in the kākāpō capital, Emma only spotted two of the elusive parrots.
 “All of our hundreds of other kākāpō sightings ended with a disappointed sigh of,
-‘Oh, it’s just a ball of moss…’ No offence to any bryologists out there!”
+‘Oh, it’s just a ball of moss…’ but no offence to any bryologists out there!”
 
-> Being so isolated, you really sensed a feeling of what New Zealand may have been like before humans began altering the environment.
+[Read more or contact Emma.](/people/crawford-emma.html)
