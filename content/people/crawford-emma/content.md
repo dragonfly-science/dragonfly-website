@@ -32,4 +32,4 @@ She has a bachelor of science in ecology and zoology and a postgraduate diploma
  in zoology from Massey University. After completing her studies Emma spent
  3 years teaching English in rural Japanese schools.
 
-> I love being hands-on in the field and in the lab – it’s exciting to see science in action. Being involved in projects that help us better understand the natural world, as well as our impacts on it, is very > important to me.
+> I love being hands-on in the field and in the lab – it’s exciting to see science in action. Being involved in projects that help us better understand the natural world, as well as our impacts on it, is very important to me.
