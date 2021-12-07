@@ -38,7 +38,8 @@ and climate change are additional threats.
 
 ### A simulation tool to guide decision-making
 
-understand the future trajectory of the Antipodean albatross population, as well
+DOC is responsible for the conservation of New Zealand’s native species. It
+needed to understand the future trajectory of the Antipodean albatross population, as well
  as the effect of different measures that could be taken to reverse the decline.
 
 Being able to model the effects of different management strategies (like reducing
@@ -62,7 +63,7 @@ is declining at about 5 percent per year.
 ### Good data collection and preparation
 
 Data for the model was collected by DOC scientists Kath Walker and Graeme Elliott.
-They have ensured Antipodes Island was visited for 4-6 weeks almost every summer
+They have ensured Antipodes Island was visited for 4–6 weeks almost every summer
 for the last 27 years. This modelling work would not have been possible without
 their dedication and support.
 
