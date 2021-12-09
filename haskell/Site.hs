@@ -12,7 +12,7 @@ import           WebSite.Compilers
 import           WebSite.Config
 import           WebSite.Context
 import           WebSite.SiteMap
-import qualified WebSite.Data         as Data
+import qualified WebSite.About        as About
 import qualified WebSite.Images       as Images
 import qualified WebSite.News         as News
 import qualified WebSite.People       as People
@@ -158,8 +158,8 @@ main = do
     -- Work section
     News.rules
 
-    -- Data section
-    -- Data.rules
+    -- About section
+    About.rules
 
     -- Publications section
     Publications.rules
