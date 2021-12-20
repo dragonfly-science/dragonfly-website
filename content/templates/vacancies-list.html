@@ -1,0 +1,47 @@
+$partial("templates/_page-header-small.html")$
+
+<section id="top-section" class="bg-light-peach">
+  <div class="article-container">
+    <article class="article border-b-2">
+      <div class="body-content body-content--article body-content--has-quote">
+        <p>$introduction$</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="bg-light-peach">
+  <div class="article-container pt-8">
+    <article class="article mb-16 mt-0">
+      $if(vacancies)$ $for(vacancies)$
+      <div
+        class="
+          body-content
+          body-content--article
+          body-content--no-introduction
+          body-content--has-quote
+          mb-16
+        "
+      >
+        <h1 class="text-2xl font-medium mb-4 md:text-3xl">$title$</h1>
+        <div class="body-content__body">$body$</div>
+      </div>
+      $endfor$ $endif$ $if(novacanciestitle)$ $if(novacancies)$
+      <div
+        class="
+          body-content
+          body-content--article
+          body-content--no-introduction
+          body-content--has-quote
+          mb-16
+        "
+      >
+        <h1 class="text-2xl font-medium mb-4 md:text-3xl">
+          $novacanciestitle$
+        </h1>
+        <div class="body-content__body">$novacancies$</div>
+      </div>
+      $endif$ $endif$
+    </article>
+  </div>
+</section>

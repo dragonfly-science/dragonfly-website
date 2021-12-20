@@ -25,10 +25,10 @@ all: .env .install build run
 # Build out .env file for docker-compose
 .env:
 ifneq ($(CI), true)
-	echo IMAGE=$(IMAGE) >> .env
-	echo DOCKER_CACHE=$(DOCKER_CACHE) >> .env
-	echo WEPACK_CACHE=$(WEPACK_CACHE) >> .env
-	echo WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) >> .env
+	@echo IMAGE=$(IMAGE) >> .env
+	@echo DOCKER_CACHE=$(DOCKER_CACHE) >> .env
+	@echo WEPACK_CACHE=$(WEPACK_CACHE) >> .env
+	@echo WEBPACK_CONTAINER_CACHE=$(WEBPACK_CONTAINER_CACHE) >> .env
 endif
 
 _site/assets:

@@ -39,7 +39,7 @@ const process = async (dir, filepath, filename, ext) => {
       plugins,
       glob: true,
     })
-    console.info(`Processing completed for ${processed[0].sourcePath}`)
+    // console.info(`Processing completed for ${processed[0].sourcePath}`)
   } catch (error) {
     console.warn(`Error processing ${filename}`)
   }

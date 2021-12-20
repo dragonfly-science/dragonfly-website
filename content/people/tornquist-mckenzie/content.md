@@ -8,6 +8,11 @@ tag: mckenzie
 description: >
   McKenzie is a fisheries scientist, who enjoys working on statistical models
   that help promote sustainable fishing practices.
+careersquote: >
+  I really like working at Dragonfly because of the atmosphere.
+  Everyone is really nice and there's no heirarchy – everyone is treated the
+  same. I really like that Phil, Edward and Finlay (in fact all the team) think
+  everyone's opinion is valid instead of shutting people down.
 banner: tornquist-mckenzie/mckenzie-tornquist.jpg
 nocite: |
 ---
@@ -27,5 +32,5 @@ McKenzie enjoys being in a job where she is continually learning and is
 motivated by a strong interest in sustainability.
 
 > People are never going to stop fishing so I want to do my bit to build
-practices that will enable the ocean and its resources to be enjoyed for many
-generations to come.
+> practices that will enable the ocean and its resources to be enjoyed for many
+> generations to come.

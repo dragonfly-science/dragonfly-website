@@ -131,7 +131,8 @@
     }
   }
 
-  &--no-introduction {
+  &--no-introduction,
+  &--no-introduction.body-content--article {
     .body-content__body {
       > p {
         @apply text-lg;

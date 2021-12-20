@@ -1,0 +1,36 @@
+<div class="numbered-section numbered-section--no-numbers bg-light-peach">
+  <div class="outer-container">
+    <div class="numbered-section__container">
+      <div class="numbered-section__content">
+        <div class="numbered-section__content-wrapper">
+          $if(careersquote)$
+          <quote class="numbered-section__text italic">
+            <p>$careersquote$</p>
+            <cite class="block mt-4"
+              >- $firstname$ $lastname$$if(role)$, $role$$endif$</cite
+            >
+          </quote>
+          $endif$
+
+          <p class="block pb-8">
+            Read
+            <a href="$pageurl$" class="underline hover:no-underline"
+              >$firstname$'s</a
+            >
+            profile
+          </p>
+        </div>
+      </div>
+      <div
+        class="
+          numbered-section__content numbered-section__content--img
+          scrollable
+        "
+      >
+        $if(teaserImage)$
+        <img src="$teaserImage$" class="lozad lozad-image w-full" />
+        $endif$
+      </div>
+    </div>
+  </div>
+</div>
