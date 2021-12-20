@@ -1,0 +1,30 @@
+$partial("templates/_page-header-small.html")$
+
+<section id="top-section" class="bg-light-peach">
+  <div class="article-container">
+    <article class="article">
+      <div class="body-content body-content--article body-content--has-quote">
+        $body$
+      </div>
+    </article>
+  </div>
+</section>
+
+$if(vacancies)$
+<section class="bg-light-peach">
+  $if(listtitle)$
+  <div class="article-container">
+    <h2>$listtitle$</h2>
+  </div>
+  $endif$
+  <div class="article-container">
+    <article class="article">
+      $for(vacancies)$
+      <div class="body-content body-content--article body-content--has-quote">
+        $body$
+      </div>
+      $endfor$
+    </article>
+  </div>
+</section>
+$endif$

@@ -19,6 +19,7 @@ executable website
                      , WebSite.Collection
                      , WebSite.Compilers
                      , WebSite.Config
+                     , WebSite.Careers
                      , WebSite.Context
                      , WebSite.Data
                      , WebSite.Images
@@ -26,6 +27,7 @@ executable website
                      , WebSite.People
                      , WebSite.Publications
                      , WebSite.Testimonials
+                     , WebSite.Vacancies
                      , WebSite.Work
                      , WebSite.WhatWeDo
                      , WebSite.Util
