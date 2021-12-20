@@ -2,7 +2,7 @@ $partial("templates/_page-header-small.html")$
 
 <section id="top-section" class="bg-light-peach">
   <div class="article-container">
-    <article class="article">
+    <article class="article mt-0">
       <div class="body-content body-content--article body-content--has-quote">
         $body$
       </div>
@@ -10,10 +10,14 @@ $partial("templates/_page-header-small.html")$
   </div>
 </section>
 
-$if(quotes)$
-<div class="numbered-sections pb-8">
-  $if(quotetitle)$
-  <h2>$quotetitle$</h2>
-  $endif$ $for(quotes)$ $partial("templates/_careerquote.html")$ $endfor$
+$if(quotes)$ $if(quotetitle)$
+<div class="related-content related-content--header">
+  <header class="related-content__header outer-container">
+    <h2 class="text-2xl font-medium lg:text-3xl">$quotetitle$</h2>
+  </header>
+</div>
+$endif$
+<div class="numbered-sections pb-16 bg-light-peach lg:pb-20">
+  $for(quotes)$ $partial("templates/_careerquote.html")$ $endfor$
 </div>
 $endif$

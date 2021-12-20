@@ -24,7 +24,7 @@ config = CollectionConfig
        , indexTemplate       = "vacancies/index.html"
        , indexPattern        = "vacancies.md"
        , collectionPattern   = "vacancies/**/content.md"
-       , collectionTemplate  = "templates/vacancies.html"
+       , collectionTemplate  = "templates/vacancies-list.html"
        , pageTemplate        = "templates/vacancies.html"
        }
 
@@ -38,7 +38,11 @@ rules = do
       base <- baseContext (baseName config)
       pages <- getList config 1000
 
-      let ctx = base <> pages
+      let ctx = base
+                <> teaserImage
+                <> socialImage
+                <> actualbodyField "actualbody"
+                <> pages
 
       scholmdCompiler
         >>= loadAndApplyTemplate (collectionTemplate config) ctx
@@ -55,7 +59,7 @@ rules = do
     compile $ do
       base <- baseContext (baseName config)
 
-      let ctx = base
+      let ctx = base <> actualbodyField "actualbody"
       scholmdCompiler
           >>= loadAndApplyTemplate (pageTemplate config) ctx
           >>= loadAndApplyTemplate "templates/default.html" ctx

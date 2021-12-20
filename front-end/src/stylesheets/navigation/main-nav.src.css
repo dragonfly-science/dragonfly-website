@@ -87,6 +87,9 @@
   &[data-section='people'] .main-nav__link[class*='section--people'],
   &[data-section='news'] .main-nav__link[class*='section--news'],
   &[data-section='data'] .main-nav__link[class*='section--data'],
+  &[data-section='about-us'] .main-nav__link[class*='section--about-us'],
+  &[data-section='careers'] .main-nav__link[class*='section--careers'],
+  &[data-section='vacancies'] .main-nav__link[class*='section--vacancies'],
   &[data-section='publications'] .main-nav__link[class*='section--publications'] {
     &::after {
       @apply w-full bg-cool-blue absolute top-0 block;
@@ -210,6 +213,9 @@
     &[data-section='people'] .main-nav__link[class*='section--people'],
     &[data-section='news'] .main-nav__link[class*='section--news'],
     &[data-section='data'] .main-nav__link[class*='section--data'],
+    &[data-section='about-us'] .main-nav__link[class*='section--about-us'],
+    &[data-section='careers'] .main-nav__link[class*='section--careers'],
+    &[data-section='vacancies'] .main-nav__link[class*='section--vacancies'],
     &[data-section='publications'] .main-nav__link[class*='section--publications'] {
       &::after {
         @apply h-1;
