@@ -1,14 +1,8 @@
 ---
 title: Vacancies
-listtitle: Current vacancies
-description: Vacancies
-novacanciestitle: >
-  We have no vacancies at present.
-novacancies: >
-  Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius
-  blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac,
-  vestibulum at eros.
+description: We advertise opportunities to join our team on this page.
 introduction: >
-  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Opportunities to join our team in specific roles are advertised below as they become available.
+
+
 ---
