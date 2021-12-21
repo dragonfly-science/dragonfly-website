@@ -2,18 +2,19 @@ $partial("templates/_page-header-small.html")$
 
 <section id="top-section" class="bg-light-peach">
   <div class="article-container">
-    <article class="article border-b-2">
+    <article class="article">
       <div class="body-content body-content--article body-content--has-quote">
-        <p>$introduction$</p>
+        $body$
       </div>
     </article>
   </div>
 </section>
 
+$if(vacancies)$
 <section class="bg-light-peach">
-  <div class="article-container pt-8">
-    <article class="article mb-16 mt-0">
-      $if(vacancies)$ $for(vacancies)$
+  $for(vacancies)$
+  <div class="article-container pt-0">
+    <article class="article mb-0 mt-0">
       <div
         class="
           body-content
@@ -26,22 +27,35 @@ $partial("templates/_page-header-small.html")$
         <h1 class="text-2xl font-medium mb-4 md:text-3xl">$title$</h1>
         <div class="body-content__body">$body$</div>
       </div>
-      $endfor$ $endif$ $if(novacanciestitle)$ $if(novacancies)$
-      <div
-        class="
-          body-content
-          body-content--article
-          body-content--no-introduction
-          body-content--has-quote
-          mb-16
-        "
-      >
-        <h1 class="text-2xl font-medium mb-4 md:text-3xl">
-          $novacanciestitle$
-        </h1>
-        <div class="body-content__body">$novacancies$</div>
-      </div>
-      $endif$ $endif$
     </article>
   </div>
+  $endfor$
 </section>
+$endif$
+
+<div class="relative">
+  $if(CTASection)$
+  <section
+    class="
+      call-to-action--single-column
+      math-paper--left
+      bg-light-peach
+      text-slate-grey
+      py-12
+      lg:py-16
+    "
+  >
+    <div class="call-to-action__container container">
+      $if(CTATitle)$
+      <p class="supplementary-header call-to-action__text">$CTATitle$</p>
+      $endif$ $if(CTAButtonTitle)$
+      <a
+        href="$if(CTAButtonLink)$$CTAButtonLink$$else$#$endif$"
+        class="button call-to-action__button call-to-action__button--slate-grey"
+        >$CTAButtonTitle$</a
+      >
+      $endif$
+    </div>
+  </section>
+  $endif$
+</div>

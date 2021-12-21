@@ -7,7 +7,7 @@ module WebSite.Careers (
 
 import           Data.List            (sortOn)
 import           Data.Maybe           (fromMaybe)
-import           Data.Monoid          ((<>))
+import           Data.Monoid          ((<>), mconcat)
 
 import           Hakyll
 
@@ -34,16 +34,9 @@ rules = do
     route $ constRoute (indexTemplate config)
     compile $ do
       base <- baseContext (baseName config)
+      pages <- getList config 1000
 
-      -- Quotes definition
-      let getQuotes itm = do
-            md <- getMetadata $ itemIdentifier itm
-            case lookupStringList "quotes" md of
-              Just quote -> mapM (load . fromFilePath) quote
-              Nothing -> return []
-          quotes = listFieldWith "quotes" itemCtx getQuotes
-
-      let ctx = base <> teaserImage <> quotes
+      let ctx = base <> pages <> teaserImage <> socialImage
 
       scholmdCompiler
         >>= loadAndApplyTemplate (pageTemplate config) ctx
@@ -59,9 +52,17 @@ rules = do
     route $ setExtension "html"
     compile $ do
         base <- baseContext (baseName config)
-        ref <- refContext
-        let ctx = base <> ref
-        scholmdCompiler
+        pandoc <- readScholmd
+
+        let getPerson itm = do
+              md <- getMetadata $ itemIdentifier itm
+              case lookupStringList "person" md of
+                Just person -> mapM (load . fromFilePath) person
+                Nothing -> return []
+            person = listFieldWith "person" itemCtx getPerson
+
+        let ctx = base <> person
+        writeScholmd pandoc
             >>= loadAndApplyTemplate (pageTemplate config) ctx
             >>= loadAndApplyTemplate "templates/default.html" ctx
 

@@ -1,11 +1,7 @@
 ---
-title: Careers
-quotes:
-  - people/tornquist-mckenzie/content.md
+title: Working at <br/>Dragonfly
 quotetitle: Our staff tell their stories
 ---
-
-## Working at Dragonfly
 
 We are a growing data science consultancy with a range of public and private
 sector clients. While our office is in Wellington, some of our staff work
@@ -25,3 +21,5 @@ all our work.
 
 Dragonfly is an inclusive and friendly company, with a focus on collaboration
 and innovation. We strive to provide an excellent work environment.
+
+[Find out more about the work we do](/work/)

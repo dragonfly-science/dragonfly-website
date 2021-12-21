@@ -1,17 +1,20 @@
 ---
 title: About us
-subtitle: >
-  About?
-description: >
-  About Dragonfly...
-CTASection: true
-CTATitle: Want to find out more?
-CTAButtonTitle: get in touch
-CTAButtonLink: "#contact"
 ---
 
-Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor
-fringilla. Vestibulum id ligula porta felis euismod semper. Nullam quis risus
-eget urna mollis ornare vel eu leo.
+Dragonfly Data Science is a consultancy specialising in contract data analysis,
+modelling, machine learning and reproducible report production. We have a wide
+range of business and government clients in Aotearoa New Zealand and
+internationally.
 
-dsfksdjhf
+The company was founded by Edward Abraham in 2006 to provide data analysis on a
+contract basis. Finlay Thompson joined in 2008 and was the first employee.
+
+In 2020 Edward brought in Finlay Thompson and Philipp Neubauer as fellow
+directors and shareholders. Finlay is also the chief executive, responsible for
+the day-to-day management of the company.
+
+Dragonfly Data Science is a limited liability company, trading as Dragonfly
+Limited.
+
+[Meet the people who keep Dragonfly humming](/people/).

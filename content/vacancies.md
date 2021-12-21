@@ -2,13 +2,14 @@
 title: Vacancies
 listtitle: Current vacancies
 description: Vacancies
-novacanciestitle: >
-  We have no vacancies at present.
-novacancies: >
-  Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius
-  blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac,
-  vestibulum at eros.
-introduction: >
-  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+CTASection: true
+CTATitle: Your dream role not listed?
+CTAButtonTitle: say hi :)
+CTAButtonLink: "#contact"
 ---
+
+We're always keen to meet new talented people, so please say hi if you have
+aspirations of becoming a Dragonfly one day.
+
+Opportunities to join our team in specific roles are advertised below as they
+become available.
