@@ -1,6 +1,5 @@
 ---
 title: Vacancies
-listtitle: Current vacancies
 description: Vacancies
 CTASection: true
 CTATitle: Your dream role not listed?
