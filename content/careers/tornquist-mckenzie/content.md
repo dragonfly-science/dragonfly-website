@@ -18,11 +18,7 @@ I've already done lots of different things. We can choose which projects we're
 involved in so you get to do what you're interested in and what makes you happy.
 I liked being given my own project that I could approach however I wanted."
 
-"I also like that there's lots of training here. When I first started I didn't
-know a lot of the practices that we use. It was overwhelming but now I've
-learned it all. It's such a great system."
-
-"We do training on programming and practices continuously and we also do a book
+"We do training on programming and research practices continuously, and we also do a book
 club for stats every second week. We read a chapter then someone takes the
 session. A mix of people are doing it from experts to people like me who are
 learning, but everyone is included in everything. We can ask questions and go
