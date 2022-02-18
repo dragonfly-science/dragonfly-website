@@ -1,11 +1,11 @@
 ---
-title: Kuyhan Kim
-email: Kuyhan@dragonfly.co.nz
-firstname: Kuyhan
+title: Kyuhan Kim
+email: Kyuhan@dragonfly.co.nz
+firstname: Kyuhan
 lastname: Kim
 role: Fisheries scientist
 mobile: ""
-tag: kuyhan
+tag: kyuhan
 description: >
   Kyuhan [Que-hann] is a fisheries scientist at Dragonfly. He relishes the opportunity to develop his skills and master new statistical software for investigating data.
 banner: kim-kuyhan/kuyhan-kim.jpg
