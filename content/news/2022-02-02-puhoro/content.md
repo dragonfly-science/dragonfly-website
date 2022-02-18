@@ -1,5 +1,5 @@
 ---
-title: Pūhoro intern digs into IT project
+title: Pūhoro intern digs into data analysis
 ---
 
 Hayley Wikeepa is working at Dragonfly this summer as an intern from Pūhoro STEMM Academy.
@@ -8,17 +8,17 @@ Hayley Wikeepa is working at Dragonfly this summer as an intern from Pūhoro STE
 
 [Pūhoro](https://www.puhoro.org.nz/) provides support to develop rangatahi (young people) in STEMM subjects – science, technology, engineering, maths and mātauranga Māori – to be future Māori engineers, entrepreneurs, scientists and innovators. It was launched in 2016 to help improve low Māori representation in the science and technology sectors.
 
-Hayley is 1 of 39 university and high school interns placed by Pūhoro this summer. She is currently studying for a bachelor of information sciences at Massey University.
+Hayley is one of thirty-nine university and high school interns placed by Pūhoro this summer. She is currently studying for a bachelor of information sciences at Massey University.
 
-“The internship matches up well with my degree. I’m also keeping my studies going with 3 papers while I work, so it’s goodbye summer, but I’m fitting everything in so far.”
+“The internship matches up well with my degree. I’m also keeping my studies going with three papers while I work, so it’s goodbye summer, but I’m fitting everything in so far.”
 
-Her project involves writing coded scripts to pull information from tables in WorkflowMax project management software. “I’m having to figure out the right questions to ask. The database query will tell me exactly the answer to the question I ask, but that might not be the answer I want!”
+Her project involves writing coded scripts to pull information from tables in the WorkflowMax project management software that Dragonfly uses. “I’m having to figure out the right questions to ask. The database query will tell me exactly the answer to the question I ask, but that might not be the answer I want!”
 
 Although Hayley joined Pūhoro just last year, connections are usually made with tauira (students) from Years 9 and 10, initially to create an interest an in signing up for the academy. Once part of the Pūhoro whānau, tauira receive cultural, pastoral and academic support through secondary and tertiary study, and into the workplace. 
 
 “It makes such a difference. Even now, I meet with all the other interns each week either in person or over Zoom – just to see how we’re doing and raise questions and concerns.”
 
-Rangatahi also have the opportunity to visit different science and technology workplaces in New Zealand and overseas. These have included Burnham Military Camp, NASA in Texas and various organisations in Hawai’i.
+Rangatahi also have the opportunity to visit different science and technology workplaces in New Zealand and overseas. These have included Burnham Military Camp, NASA in Texas and various organisations in Hawaiʻi.
 
 Before beginning study, Hayley spent 11 years at The Warehouse. “I started as a Christmas temp on checkouts and ended up working in head office as an implementation co-ordinator. I travelled the country refitting stores, which involved managing a local team and a lot of planning and logistics.”
 
