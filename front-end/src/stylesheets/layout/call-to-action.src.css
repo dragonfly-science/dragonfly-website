@@ -1,5 +1,5 @@
 .call-to-action {
-  @apply w-full bg-light-peach py-16 px-6 math-paper;
+  @apply w-full bg-light-peach py-12 px-6 math-paper;
 
   &__container {
     @apply mx-auto text-center;
@@ -91,7 +91,7 @@
 
 @screen lg {
   .call-to-action {
-    @apply py-32;
+    @apply py-24;
 
     &--single-column {
       .call-to-action__text {

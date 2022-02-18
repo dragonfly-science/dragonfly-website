@@ -1,0 +1,36 @@
+$partial("templates/_page-header-small.html")$
+
+<section id="top-section" class="bg-light-peach">
+  <div class="article-container">
+    <article class="article">
+      <div class="body-content body-content--article body-content--has-quote">
+        $body$
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="relative">
+  $if(CTASection)$
+  <section
+    class="
+      call-to-action call-to-action--single-column
+      math-paper math-paper--reverse
+      bg-cool-blue
+      text-white
+    "
+  >
+    <div class="call-to-action__container container">
+      $if(CTATitle)$
+      <p class="supplementary-header call-to-action__text">$CTATitle$</p>
+      $endif$ $if(CTAButtonTitle)$
+      <a
+        href="$if(CTAButtonLink)$$CTAButtonLink$$else$#$endif$"
+        class="button call-to-action__button call-to-action__button--white"
+        >$CTAButtonTitle$</a
+      >
+      $endif$
+    </div>
+  </section>
+  $endif$
+</div>

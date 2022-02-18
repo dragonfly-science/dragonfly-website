@@ -12,12 +12,14 @@ import           WebSite.Compilers
 import           WebSite.Config
 import           WebSite.Context
 import           WebSite.SiteMap
-import qualified WebSite.Data         as Data
+import qualified WebSite.About        as About
+import qualified WebSite.Careers      as Careers
 import qualified WebSite.Images       as Images
 import qualified WebSite.News         as News
 import qualified WebSite.People       as People
 import qualified WebSite.Publications as Publications
 import qualified WebSite.Testimonials as Testimonials
+import qualified WebSite.Vacancies       as Vacancies
 import           WebSite.Validate     (validatePage)
 import qualified WebSite.Work         as Work
 import qualified WebSite.WhatWeDo     as WhatWeDo
@@ -148,6 +150,8 @@ main = do
                 >>= loadAndApplyTemplate "templates/index.html" ctx
                 >>= loadAndApplyTemplate "templates/default.html" ctx
                 >>= validatePage
+    -- Careers
+    Careers.rules
 
     -- People section
     People.rules
@@ -158,8 +162,8 @@ main = do
     -- Work section
     News.rules
 
-    -- Data section
-    -- Data.rules
+    -- About section
+    About.rules
 
     -- Publications section
     Publications.rules
@@ -169,6 +173,9 @@ main = do
 
     -- Testimonials
     Testimonials.rules
+
+    -- Vacancies
+    Vacancies.rules
 
 
     -- Standalone pages

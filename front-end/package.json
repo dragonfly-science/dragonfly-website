@@ -108,7 +108,7 @@
     "staging": "serve -l 3000",
     "ts:lint": "tslint -c tslint.json 'src/js/**/*.ts'",
     "prewatch": "rm -f ../_site/assets/* && npm run fonts",
-    "watch": "webpack --env dev --watch --progress --config ./webpack.dev.js"
+    "watch": "webpack --env dev --watch --config ./webpack.dev.js"
   },
   "author": "Dragonfly Data Science",
   "license": "MIT",
