@@ -5,7 +5,7 @@ firstname: Henry
 lastname: Macdonald
 mobile: ""
 tag: henry
-banner: macdonald-henry/henry-macdonald-letterbox.jpg
+banner: macdonald-henry/macdonald-henry.jpg
 nocite: |
 ---
 

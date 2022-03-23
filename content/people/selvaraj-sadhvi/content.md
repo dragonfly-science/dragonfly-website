@@ -7,7 +7,7 @@ mobile: ""
 tag: sadhvi
 description: >
   Sadhvi [Sad-vee] is a data scientist at Dragonfly, based in Auckland.
-banner: selvaraj-sadhvi/sadhvi-selvaraj.jpg
+banner: selvaraj-sadhvi/selvaraj-sadhvi.jpg
 nocite: |
 ---
 
@@ -21,4 +21,4 @@ Sadhvi was previously employed by Williamson Water & Land Advisory in Auckland, 
 
 She also has a master of science in geographical information systems from the University of Leeds, England and a bachelor of engineering from the College of Engineering Guindy, India.
 
->I’ve worked with a range of remote sensing data, but the use of radar is where my interest is really growing. The combination of optical and radar data is that much more accurate for detailed mapping applications but is still quite under-explored. It’s definitely an interesting up-and-coming area especially because high resolution data is now becoming more available.
+> I’ve worked with a range of remote sensing data, but the use of radar is where my interest is really growing. The combination of optical and radar data is that much more accurate for detailed mapping applications but is still quite under-explored. It’s definitely an interesting up-and-coming area especially because high resolution data is now becoming more available.
