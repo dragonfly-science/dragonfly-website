@@ -12,7 +12,7 @@ Students worked in groups to prepare interactive presentations of the data. They
 
 Edward had previously met with the students to help interpret the data, offer guidance and answer questions. Ian Armitage from [Birds New Zealand](https://www.birdsnz.org.nz/) also attended the presentation.
 
-![Ian Armitage (back left) with Edward, tutor Petone Groom @peetoeknee and user experience design students. Other students were present online.](/news/2022-03-18-muxd/muxd-group.jpg)
+![Ian Armitage (back left) with Edward, tutor [Petone Groom](https://www.instagram.com/peetoeknee/) and user experience design students. Other students were present online.](/news/2022-03-18-muxd/muxd-group.jpg)
 
 “The beach patrol project is now 75 years old. A huge amount of data has been collected and is being used by academics at a number of universities for ornithological research into climate change, seabird mortality at sea from fishing longlines and nets”, Ian says.
 
