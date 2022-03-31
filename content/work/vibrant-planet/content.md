@@ -97,6 +97,8 @@ incorporated. These include new roads, landslides and forest fires. We have
 developed a process for regularly updating the predictions
  to reflect recent changes in an environment.
 
+ ![Individual trees identified from LiDAR.](/work/vibrant-planet/vibrant_trees.gif)
+
 ## Deforestation in tropical forests
 Vibrant Planet is developing a tool that uses carbon incentives to help reduce
 the deforestation of tropical forests. Remote sensing data will be used to
@@ -111,3 +113,5 @@ team of climate policy leaders, scientists, foresters and tech leaders
 (from Netflix, FaceBook, Lyft and Guidewire). The Land Tender platform was built
  to inform and accelerate natural resource management and protection with the
  goal of keeping forests and other natural landscapes intact.
+
+ Top image: False colour images of identified trees before and after a fire.
