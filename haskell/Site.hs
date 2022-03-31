@@ -49,6 +49,7 @@ main = do
           .||. "**/*.svg"
           .||. "**/*.csv"
           .||. "**/*.mp4"
+          .||. "**/*.gif"
           .||. "fonts/*"
           .||. "landing-pages/**/banner-images/*") $ do
         route idRoute
