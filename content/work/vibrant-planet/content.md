@@ -50,6 +50,8 @@ unresilient, with too many trees competing for resources. Add in the drying
 effects of climate change that create tinder-dry fuels and ‘normal’ wildfires
 become megafires.
 
+## Catastrophic megafires
+
 Today’s fires can be catastrophic with trees being destroyed across large areas
 rather than just being scorched. The Caldor fire in 2021 for example, covered an
  area of 90,000 hectares and burned for 2 months.
@@ -61,7 +63,7 @@ require expensive dredging to restore their function. The fires also release
 massive amounts of carbon into the atmosphere and become unstoppable as they
 burn into communities.
 
-### Land Tender is a decision-making tool
+## Land Tender is a decision-making tool
 Thinning trees and controlled fires  are effective ways to reduce the fuel load
 in a forest. They are commonly used by forest managers to increase the
 resilience of a forest.
@@ -77,7 +79,7 @@ happened in a fire with what was predicted, and monitor how quickly an area
 recovers. It will also help the development of strategies to restore forests
 after fires.
 
-### Mapping all the trees
+## Mapping all the trees
 Understanding the effect of a fire relies on having a detailed map of the trees
 in an area. This includes the location of the trees as well as their type, size
 and spacing. The map also needs to be kept up-to-date.
