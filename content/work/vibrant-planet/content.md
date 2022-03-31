@@ -1,10 +1,10 @@
 ---
 title: New tech builds climate change resilience
 short-title: New tech builds climate change resilience
-banner-image:
+banner-image: VibrantPlanet.jpg
 testimonial:
   - testimonials/vibrant-planet-testimonial/content.md
-logo:
+logo: DF_Clients_VibrantPlanet.png
 summary: Using satellite imagery and machine learning to monitor and adaptively
  manage forests at scale.
 tags: systems
