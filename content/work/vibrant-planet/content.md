@@ -1,6 +1,6 @@
 ---
-title: New tech builds climate change resilience
-short-title: New tech builds climate change resilience
+title: Climate change resilience of forests
+short-title:  Climate change resilience of forests
 banner-image: /work/vibrant-planet/VibrantPlanet.jpg
 testimonial:
   - testimonials/vibrant-planet-testimonial/content.md
@@ -19,9 +19,7 @@ CTAButton: read more
 ---
 
 Vibrant Planet develops tools for land management planning and monitoring to
-help increase the resilience of forests around the world. This includes
-increasing the confidence of forest financiers by providing a tree-level view of
- current conditions. Our work with Vibrant Planet is producing data to support
+help increase the resilience of forests around the world. Our work with Vibrant Planet is producing data to support
  these tools.
 
 <!--more-->
