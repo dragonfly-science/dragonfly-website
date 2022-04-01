@@ -9,7 +9,7 @@ summary: Using satellite imagery and machine learning to monitor and adaptively
  manage forests at scale.
 tags: systems
 project-link: https://www.vibrantplanet.net/landtender
-project-link-text: View project
+project-link-text: Visit Land Tender
 description: >
   Our work with Vibrant Planet is producing data to support their land
    management planning and monitoring tools. These tools are helping to increase
