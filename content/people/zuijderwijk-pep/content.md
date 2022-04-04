@@ -6,7 +6,6 @@ lastname: Zuijderwijk
 role: Designer
 bannerTitleLine1: Pep
 bannerTitleLine2: Zuijderwijk
-bannerTitleLine3: "[Zow-der-vaik]"
 mobile: ""
 tag: pep
 description: >

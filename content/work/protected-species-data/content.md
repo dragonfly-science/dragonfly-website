@@ -14,7 +14,7 @@ project-link: https://protectedspeciescaptures.nz/
 project-link-text: Access data
 CTADescriptor: some text
 CTAButton: read more
-sortorder: 3
+sortorder: 14
 ---
 
 We worked with the Ministry for Primary Industries and the Department of
