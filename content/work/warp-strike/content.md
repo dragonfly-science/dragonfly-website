@@ -12,6 +12,7 @@ description: >
   commercial fisheries provided critical information for government policy.
 CTADescriptor: some text
 CTAButton: read more
+sortorder: 0
 ---
 
 Our statistical analysis enabled fisheries managers to make a decision about which

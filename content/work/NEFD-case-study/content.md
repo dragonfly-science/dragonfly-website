@@ -14,7 +14,7 @@ project-link: https://www.mpi.govt.nz/dmsdocument/43540-2020-NEFD-report
 project-link-text: Download report
 CTADescriptor: some text
 CTAButton: read more
-sortorder: 4
+sortorder: 13
 ---
 
 Our work with the Ministry for Primary Industries replaced a manual production
@@ -89,5 +89,11 @@ Besides a PDF to publish online, we created code to create print-ready and Word
   images and future changes to the design can also be incorporated in the code
    simply and easily.
 
-MPI has estimated that the new approach has reduced the time taken to produce
+MPI estimated that the new approach reduced the time taken to produce
  the report by 4 weeks, which is a significant saving for the team.
+
+### Project team
+
+[Ignatius Menzies](/people/menzies.ignatius/content.md),
+[Yvan Richard](/people/richard-yvan/content.md),
+[Nikki Wilkinson](/people/wilkinson-nikki/content.md).

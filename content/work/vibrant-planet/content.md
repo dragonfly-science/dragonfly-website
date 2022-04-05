@@ -16,10 +16,12 @@ description: >
     the resilience of forests around the world.
 CTADescriptor: some text
 CTAButton: read more
+sortorder: 10
 ---
 
 Vibrant Planet develops tools for land management planning and monitoring to
-help increase the resilience of forests around the world. Our work with Vibrant Planet is producing data to support
+help increase the resilience of forests around the world. Our work with Vibrant
+Planet is producing data to support
  these tools.
 
 <!--more-->
@@ -107,6 +109,15 @@ monitor these areas for potential deforestation.
 [Sassan Saatchi from NASA](https://science.jpl.nasa.gov/people/Saatchi/) and the
  University of California, Los Angeles is an important collaborator in this work.
 
+## Project team
+
+[Edward Abraham](/people/abraham-edward/content.md), 
+[Fabian Döweler](/people/doweler-fabian/content.md),
+[Ignatius Menzies](/people/menzies-ignatius/content.md),
+[Kiarie Ndegwa](/people/ndegwa-kiarie/content.md),
+[Ian Reese](people/reese-ian/content.md),
+[Sadhvi Selvaraj](/people/selvaraj-sadhvi/content.md).
+
 ## About Vibrant Planet
 Vibrant Planet is a public benefit corporation based in Nevada. It is led by a
 team of climate policy leaders, scientists, foresters and tech leaders
@@ -114,4 +125,4 @@ team of climate policy leaders, scientists, foresters and tech leaders
  to inform and accelerate natural resource management and protection with the
  goal of keeping forests and other natural landscapes intact.
 
- Top image: False colour images of identified trees before and after a fire.
+ *Top image: False colour images of identified trees before and after a fire.*

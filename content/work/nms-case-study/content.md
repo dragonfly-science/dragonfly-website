@@ -15,6 +15,7 @@ description: >
   A reusable code-based system was developed to help collate data from the 40,000 resource consent applications that are made annually in New Zealand.
 CTADescriptor: some text
 CTAButton: read more
+sortorder: 15
 ---
 
 Each year, detailed data is collated by the 40,000 or so resource consent

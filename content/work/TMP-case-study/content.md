@@ -14,6 +14,7 @@ project-link: https://kokako.co
 project-link-text: View project
 CTADescriptor: some text
 CTAButton: read more
+sortorder: 16
 ---
 
 Machine learning methods are ideal for classifying streaming data rapidly. We

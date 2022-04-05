@@ -7,11 +7,11 @@ role: Fisheries scientist
 mobile: ""
 tag: kyuhan
 description: >
-  Kyuhan [Que-hann] is a fisheries scientist at Dragonfly. He relishes the opportunity to develop his skills and master new statistical software for investigating data.
+  Kyuhan is a fisheries scientist at Dragonfly. He relishes the opportunity to develop his skills and master new statistical software for investigating data.
 banner: kim-kyuhan/kyuhan-kim.jpg
 ---
 
-Kyuhan [Que-hann] is a fisheries scientist at Dragonfly. He relishes the opportunity to develop his skills and master new statistical software for investigating data.
+Kyuhan is a fisheries scientist at Dragonfly. He relishes the opportunity to develop his skills and master new statistical software for investigating data.
 
 <!--more-->
 
