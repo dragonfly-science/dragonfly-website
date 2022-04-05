@@ -16,6 +16,7 @@ description: >
   fisheries.
 CTADescriptor: some text
 CTAButton: read more
+sortorder: 17
 ---
 
 We created an online survey to map the distribution of four species of sea

@@ -14,7 +14,7 @@ project-link: https://docnewzealand.shinyapps.io/protectedspeciescatch/
 project-link-text: View app
 CTADescriptor: some text
 CTAButton: read more
-sortorder: 2
+sortorder: 12
 ---
 
 We created a pipeline to collect, verify, manage and visualise data about the

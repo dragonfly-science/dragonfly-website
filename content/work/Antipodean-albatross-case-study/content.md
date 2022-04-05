@@ -16,7 +16,7 @@ project-link: https://www.doc.govt.nz/our-work/conservation-services-programme/c
 project-link-text: Read more
 CTADescriptor: some text
 CTAButton: Read more
-sortorder: 1
+sortorder: 11
 ---
 
 Action to halt the estimated annual 5 percent decline of the Antipodean albatross
@@ -108,6 +108,10 @@ population trajectory for the birds remains dire.
 The results also indicate that many threats are working together to cause the
 serious population decline. This suggests that a more holistic approach to
 conservation at sea is required to safeguard the future of the species.
+
+### Project team
+
+[Yvan Richard](/people/richard-yvan/content.md), Laura Tremblay-Boyer
 
 ### More information
 

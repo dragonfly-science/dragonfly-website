@@ -1,17 +1,18 @@
 ---
-title: Sadhvi Selvaraj
+title: Sadhvi Selvaraj, PhD
 email: sadhvi@dragonfly.co.nz
 firstname: Sadhvi
 lastname: Selvaraj
 mobile: ""
 tag: sadhvi
+honour: PhD
 description: >
-  Sadhvi [Sad-vee] is a data scientist at Dragonfly, based in Auckland.
+  Sadhvi is a data scientist at Dragonfly, based in Auckland.
 banner: selvaraj-sadhvi/selvaraj-sadhvi.jpg
 nocite: |
 ---
 
-Sadhvi [Sad-vee] is a data scientist at Dragonfly, based in Auckland.
+Sadhvi is a data scientist at Dragonfly, based in Auckland.
 
 <!--more-->
 

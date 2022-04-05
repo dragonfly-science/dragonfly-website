@@ -12,6 +12,7 @@ description: >
   automatically assess each visa application and speed up processing.
 CTADescriptor: some text
 CTAButton: read more
+sortorder: 15
 ---
 
 We built a prediction service to allocate visa applications to either fast track
