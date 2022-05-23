@@ -24,7 +24,7 @@ The MOA dataset was on old tape drives that Amelia had to review using image-pro
 
 She was able to get good results for about 30 different asteroids as a part of the pilot study. These included a “lovely curve” of asteroid brightness and a sinusoidal curve that showed how they were rotating.
 
-![Asteroid 157 Dejanira as it appeared in some of the MOA-II images](/news/2022-05-20-amelia-cordwell/asteroid-track.gif).
+![Asteroid 157 Dejanira as it appeared in some of the MOA-II images.](/news/2022-05-20-amelia-cordwell/asteroid-track.gif)
 
 “Asteroids don’t tend to be spherical. They are often oblong, so reflect different amounts of light as they rotate. We used that feature to find out their shape and how fast they are rotating. Instead of rotating nicely, one was doing this weird tumbling motion! It was exciting to think that I was the first person to know that about a real object out there in space.”
 
