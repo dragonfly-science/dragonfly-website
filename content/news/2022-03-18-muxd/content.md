@@ -26,6 +26,6 @@ Volunteers are needed to carry out the patrols and collect records in areas wher
 
 The postgraduate students are part of the [Master of User Experience Design](https://www.wgtn.ac.nz/explore/postgraduate-programmes/master-of-user-experience-design/overview) degree programme run by the School of Design at Victoria University of Wellington. Examples of their work are shared below, with thanks.
 
-![Image by Emi Reed, Jacqui Khui and Brittany Harrison](/news/2022-03-18-muxd/group-kusal.jpg).
+![Image by Emi Reed, Jacqui Khui and Brittany Harrison.](/news/2022-03-18-muxd/group-kusal.jpg)
 
-![Image by Kusal Ekanayake, Charlotte Yates, Victor Wang and YinPei Wang](/news/2022-03-18-muxd/group-emi.jpg).
+![Image by Kusal Ekanayake, Charlotte Yates, Victor Wang and YinPei Wang.](/news/2022-03-18-muxd/group-emi.jpg)
