@@ -12,9 +12,11 @@ sections:
   - landing-pages/who-we-are/content.md
   - landing-pages/work/content.md
 testimonials:
+  - testimonials/vibrant-planet-testimonial/content.md
   - testimonials/Antipodean-albatross-testimonial/content.md
   - testimonials/tmp-testimonial/content.md
   - testimonials/delphi-testimonial/content.md
+  - testimonials/webrear-testimonial/content.md
   - testimonials/inz-testimonial/content.md
   - testimonials/navigating-complexity-testimonial/content.md
   - testimonials/nefd-testimonial/content.md
