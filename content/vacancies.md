@@ -5,10 +5,12 @@ CTASection: true
 CTATitle: Your dream role not listed?
 CTAButtonTitle: Say Hi
 CTAButtonLink: "#contact"
+vacancies:
+  - vacancies/intermediate-front-end-developer-2022-06-13/content.md
 ---
 
 We're always keen to meet new talented people, so please say hi if you have
-aspirations of becoming a Dragonfly. 
+aspirations of becoming a Dragonfly.
 
 Opportunities to join our team in specific roles are advertised below as they
 become available.
