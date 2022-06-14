@@ -8,36 +8,22 @@ honour: PhD
 mobile: ""
 tag: richard
 description: >
-  Richard is a developer who likes to create the most efficient system
-  to elegantly solve a client’s data problem.
+  Richard is a programmer who specialises in back-end web development, systems
+  and database administration.
 banner: mansfield-richard/richard-mansfield.jpg
 ---
 
-For Richard, simple is beautiful. He likes to create the most efficient system
-to elegantly solve a client’s data problem.
+Richard is a programmer who specialises in back-end web development, systems and
+ database administration.
 
 <!--more-->
 
-In his experience with databases and as a developer, Richard has become
-convinced of the benefits of good data collection and management. He believes
-that if clients set up a robust data collection process, take steps to secure
-their data and store it in an efficient format, they will be able to generate
-reliable information for decision making.
+Richard has a PhD in computer science from
+[Victoria University of Wellington](http://www.victoria.ac.nz/sms). Before
+joining Dragonfly in 2012, he worked at
+[Catalyst IT](http://catalyst.net.nz/) in Wellington.
 
-One current project is developing a web-based tool for building reports.
-The tool allows many users to write code and add it to a repository, and
-keeps track of who is doing what. Richard believes that such a complex project
-requires a simple, transparent approach to reduce duplication and unnecessary
-work.
 
-Richard gained his PhD in computer science from
-[Victoria University of Wellington](http://www.victoria.ac.nz/sms), applying
-game theory to the study of ecological systems. He worked at
-[Catalyst IT](http://catalyst.net.nz/) in Wellington
-for 5 years as a web developer and programmer before joining Dragonfly in
-2012.
-
-> What we build and release to a client should be fully developed and work
-smoothly without our input – we don’t want to waste people’s time by giving
-them something with bugs in it. For us, no news is good news, and if we don’t
-hear anything back from the client, that’s perfect.
+> Ideally what we build and release to our clients is fully developed and works
+smoothly. For me, it’s perfect if our tools can be used to solve their data
+problems without needing our ongoing input.
