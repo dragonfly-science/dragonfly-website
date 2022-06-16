@@ -4,6 +4,7 @@ email: Kyuhan@dragonfly.co.nz
 firstname: Kyuhan
 lastname: Kim
 role: Fisheries scientist
+honour: PhD
 mobile: ""
 tag: kyuhan
 description: >
