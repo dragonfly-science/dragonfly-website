@@ -7,7 +7,7 @@ After nearly 4 years as a fisheries scientist at Dragonfly, Laura Tremblay-Boyer
 
 During her time with us, she worked on sharks, rays, billfish, shellfish, seabirds and marine mammals. Analyses spanned data characterisations, catch per unit effort standardisation, spatio-temporal modelling and stock assessments.
 
-At [CSIRO(https://www.csiro.au/), Laura is a senior research scientist in the pelagic population dynamics and management strategy evaluation team. She will stay involved in fisheries science and focus on oceanic species, particularly tuna and billfish.   
+At [CSIRO](https://www.csiro.au/), Laura is a senior research scientist in the pelagic population dynamics and management strategy evaluation team. She will stay involved in fisheries science and focus on oceanic species, particularly tuna and billfish.   
 
 “I was attracted to the position in part because I wanted to grow my skills as a communicator. In this role I’ll produce science that will inform the management of domestic Australian fisheries as well as continue to contribute research for Regional Fisheries Management Organisations such as the Indian Ocean Tuna Commission and the Western and Central Pacific Fisheries Commission.”
 
