@@ -23,4 +23,4 @@ leadership roles. During her studies she mentored and tutored students and
 herself completed a [Pūhoro STEMM](https://www.puhoro.org.nz/) internship.
 
 > I don’t mind diving into something challenging as it provides the opportunity
-to try new things and continue learning and upskilling.”
+to try new things and continue learning and upskilling.
