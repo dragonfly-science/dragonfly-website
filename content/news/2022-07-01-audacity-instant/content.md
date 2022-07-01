@@ -1,7 +1,7 @@
 ---
 title: Dragonfly contributes to global COVID-19 response
 ---
-Audacity*Instant* is an interactive genome sequence analysis webtool developed by Dragonfly for GISAID.
+Audacity<emph>Instant</emph> is an interactive genome sequence analysis webtool developed by Dragonfly for GISAID.
 
 <!--more-->
 
