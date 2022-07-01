@@ -25,7 +25,8 @@ A feature in development displays a visualisation of any spike protein mutations
 
 “We regard Dragonfly’s team as a critical spoke in GISAID’s worldwide ecosystem. We hope the government of New Zealand will take note of the role Dragonfly plays through GISAID in global health security.”
 
-Since the first whole-genome sequences were made available through GISAID on 10th January 2020, nearly 12 million genomes of the pandemic coronavirus from 210 countries and territories have been shared via GISAID, enabling the development of lifesaving countermeasures to COVID-19 at unprecedented speed. These include the first vaccines (Polack et al N Engl J Med 2020) and the first diagnostic tests (Bohn et al Clin Chem Lab Med 2020). (Carter et al ACS Cent. Sci. 2020) WHO’s Chief Scientist called GISAID a “game-changer” (Swaminathan Nature 2020).
+Since the first whole-genome sequences were made available through GISAID on 10th January 2020, nearly 12 million genomes of the pandemic coronavirus from 210 countries and territories have been shared via GISAID, enabling the development of lifesaving countermeasures to COVID-19 at unprecedented speed. These include the first vaccines 
+([Polack et al 2020](https://doi.org/10.1056/NEJMoa2034577)) and the first diagnostic tests ([Bohn et al 2020](https://doi.org/10.1515/cclm-2020-1412), [Carter et al 2020](https://doi.org/10.1021/acscentsci.0c00501)). The World Health Organisation (WHO) Chief Scientist called GISAID a “game-changer” ([Swaminathan 2020](https://doi.org/10.1038/d41586-020-03556-y)).
 
 ---
 
@@ -36,3 +37,4 @@ The GISAID Initiative is an independent, non-profit, public-private partnership 
 GISAID receives public grants, for example from the WHO and Rockefeller Foundation, but also private and corporate donors.
 
 GISAID is an essential asset for the Global Influenza Surveillance and Response System (GISRS) and for post-regulatory quality control of manufacturer seed viruses relative to candidate vaccine viruses.
+
