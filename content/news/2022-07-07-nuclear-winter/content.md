@@ -11,7 +11,7 @@ The team simulated the climate effects of nuclear wars in a global Earth system
 model. Several scenarios of India-Pakistan and US-Russia wars were simulated.
 
 The report found that in all scenarios, firestorms would deliver soot to the
-upper atmosphere, block out the sun and causing global cooling. The sudden drop
+upper atmosphere, block out the sun and cause global cooling. The sudden drop
 in light and ocean temperatures would kill marine algae, which is the foundation
  of the marine food web. This would essentially create a famine in the ocean and
   halt most fishing and aquaculture.
