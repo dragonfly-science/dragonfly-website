@@ -20,7 +20,9 @@ years, effectively a "Nuclear Little Ice Age". Marine ecosystems would be highly
 perturbation and in the new ocean state, resulting in long-term, global impacts to ecosystem services such as
 fisheries.
 
-Plain language summary
+
+# Plain language summary
+
 If nuclear arsenals were used accidentally or intentionally, they would
 produce dire consequences for all life on Earth. We simulated climate impacts of nuclear wars in a global Earth
 system model, focusing on marine impacts. We simulated a US-Russia war and several India-Pakistan wars.
