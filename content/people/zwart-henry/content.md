@@ -24,10 +24,9 @@ artificial intelligence (AI) team at Xero.
 
 After graduating Henry worked at [Arcanum AI]( https://www.arcanum.ai/) on
 projects related to natural language processing and the performance of models in
- settings that change with time. Another interest is exploring ideas of fairness
-  and explainability in machine learning models.
+ settings that change with time. 
 
-> There's been some incredible progress in machine learning and AI research, 
+> There's been some incredible progress in machine learning and AI research,
 building tools to make sense of complex data systems. We're just starting to see
  the impact of this technology outside academia, but I believe it has a major
  role to play in solving the issues our planet is facing, from climate change to

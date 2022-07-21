@@ -6,6 +6,7 @@ CTATitle: Your dream role not listed?
 CTAButtonTitle: Say Hi
 CTAButtonLink: "#contact"
 vacancies:
+  - vacancies/project-managers-2022-07-12/content.md
   - vacancies/intermediate-front-end-developer-2022-06-13/content.md
 ---
 
