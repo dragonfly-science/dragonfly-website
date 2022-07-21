@@ -1,9 +1,10 @@
 ---
-pdf: neubauer__assessment5a_2020.pdf
+pdf: neubauer_assessment5a_2020.pdf
 tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
 title: The 2020 stock assessment of pāua (<i>Haliotis iris</i>) for PAU 5A
 ---
-The present study conducted a Bayesian length-based stock assessment for pāua (*Haliotis iris*) in pāua quota
+
+The present study conducted a Bayesian length-based stock assessment for pāua (_Haliotis iris_) in pāua quota
 management area PAU 5A. The assessment model used the same population dynamics model as previous
 assessments, but the data models that linked the population dynamics (process) model with different data
 types were significantly updated using changes that were first introduced for PAU 5D in 2018: unlike
