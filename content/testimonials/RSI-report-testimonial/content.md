@@ -6,7 +6,8 @@ quote_short: >
   with a mouse adds huge value.
 citation_name: Professor Shaun Hendy
 citation_position: Chief scientist and co-founder
-citation_organisation: [Toha](https://www.toha.nz/)
+citation_organisation: Toha
+citation_link: https://www.toha.nz/
 ---
 
 I thought the ability to interact with graphs in a browser

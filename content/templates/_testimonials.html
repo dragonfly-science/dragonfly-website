@@ -1,40 +1,19 @@
 $if(testimonials)$
 <section
-  class="
-    testimonials
-    relative
-    math-paper math-paper--reverse
-    bg-cool-blue
-    py-12
-    lg:pt-24
-  "
+  class="testimonials relative math-paper math-paper--reverse bg-cool-blue py-12 lg:pt-24"
 >
   <div class="outer-container outer-container--no-padding mx-auto">
     <div class="flex flex-col text-white lg:flex-row">
       <div class="hidden justify-center items-center lg:flex">
         <span
-          class="
-            swiper-button-prev
-            link-icon link-icon--xl
-            transform
-            origin-center
-            -rotate-180
-          "
+          class="swiper-button-prev link-icon link-icon--xl transform origin-center -rotate-180"
         >
           <span class="icon dragonfly-arrow"></span>
         </span>
       </div>
 
       <div
-        class="
-          flex-grow
-          text-center
-          swiper-container
-          slideshow-swiper
-          max-w-full
-          overflow-hidden
-          lg:px-12
-        "
+        class="flex-grow text-center swiper-container slideshow-swiper max-w-full overflow-hidden lg:px-12"
       >
         <div class="swiper-wrapper ease-in-out inline-flex">
           $for(testimonials)$
@@ -47,7 +26,11 @@ $if(testimonials)$
               <cite class="block pt-8 not-italic xl:text-lg">
                 - $citation_name$<br />
                 $if(citation_position)$$citation_position$, $endif$
-                $if(citation_organisation)$$citation_organisation$.$endif$
+                $if(citation_organisation)$ $if(citation_link)$<a
+                  target="_blank"
+                  href="$citation_link$"
+                  >$endif$ $citation_organisation$ $if(citation_link)$</a
+                >$endif$. $endif$
               </cite>
               $endif$
             </div>
@@ -65,13 +48,7 @@ $if(testimonials)$
       <div class="flex flex-row mx-auto mt-8 lg:hidden">
         <div class="flex justify-center items-center mr-8">
           <span
-            class="
-              swiper-button-prev
-              link-icon link-icon--xl
-              transform
-              origin-center
-              -rotate-180
-            "
+            class="swiper-button-prev link-icon link-icon--xl transform origin-center -rotate-180"
           >
             <span class="icon dragonfly-arrow"></span>
           </span>
