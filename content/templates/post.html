@@ -1,9 +1,5 @@
 <header
-  class="
-    page-header page-header--image-bg
-    lozad-container lozad-container--dark-jungle-green
-    text-white
-  "
+  class="page-header page-header--image-bg lozad-container lozad-container--dark-jungle-green text-white"
 >
   <div class="page-header__outer">
     <div class="page-header__container container">
@@ -21,7 +17,9 @@
         <span class="icon dragonfly-arrow"></span>
       </a>
       $if(banner-cite)$
-      <cite class="block text-sm italic mt-6 text-left sm:text-right">$banner-cite$</cite>
+      <cite class="block text-sm italic mt-6 text-left sm:text-right"
+        >$banner-cite$</cite
+      >
       $endif$
     </div>
   </div>
@@ -43,12 +41,7 @@
         <div class="sidebar__inner">
           <a href="/work/" class="navigation-button">
             <span
-              class="
-                navigation-button__icon
-                dragonfly-arrow
-                transform
-                rotate-180
-              "
+              class="navigation-button__icon dragonfly-arrow transform rotate-180"
             ></span>
             <span class="navigation-button__label">Back to projects</span>
           </a>
@@ -62,7 +55,11 @@
             <cite>
               $citation_name$<br />
               $citation_position$<br />
-              $citation_organisation$
+              $if(citation_organisation)$ $if(citation_link)$<a
+                target="_blank"
+                href="$citation_link$"
+                >$endif$ $citation_organisation$ $if(citation_link)$</a
+              >$endif$. $endif$
             </cite>
           </blockquote>
           $endfor$ $endif$
@@ -76,12 +73,7 @@
             class="navigation-button navigation-button--publications"
           >
             <span
-              class="
-                navigation-button__icon
-                dragonfly-arrow
-                transform
-                rotate-180
-              "
+              class="navigation-button__icon dragonfly-arrow transform rotate-180"
             ></span>
             <span class="navigation-button__label">Back to projects</span>
           </a>
@@ -107,13 +99,7 @@
                   work$endif$</span
                 >
                 <span
-                  class="
-                    button--icon__icon
-                    dragonfly-arrow
-                    transform
-                    inline-block
-                    -rotate-45
-                  "
+                  class="button--icon__icon dragonfly-arrow transform inline-block -rotate-45"
                 ></span>
               </div>
             </a>
