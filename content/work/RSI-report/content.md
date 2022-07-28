@@ -115,13 +115,13 @@ best practice.
 
 ## Project team
 
-[Ignatius Menzies](/people/menzies-ignatius/content.md),
-[Michael Parkin](/people/parkin-michael/content.md),
-[Yvan Richard](/people/richard-yvan/content.md),
-[Finlay Thompson](/people/thompson-finlay/content.md),
-[Sarah Wilcox](/people/wilcox-sarah/content.md),
-[Simon Winter](/people/winter-simon/content.md),
-[Pep Zuijderwijk](/people/zuijderwijk-pep/content.md).
+[Ignatius Menzies](/people/menzies-ignatius.html),
+[Michael Parkin](/people/parkin-michael.html),
+[Yvan Richard](/people/richard-yvan.html),
+[Finlay Thompson](/people/thompson-finlay.html),
+[Sarah Wilcox](/people/wilcox-sarah.html),
+[Simon Winter](/people/winter-simon.html),
+[Pep Zuijderwijk](/people/zuijderwijk-pep.html).
 
 ### About the report
 
