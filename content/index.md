@@ -12,6 +12,7 @@ sections:
   - landing-pages/who-we-are/content.md
   - landing-pages/work/content.md
 testimonials:
+  - testimonials/RSI-report-testimonial/content.md
   - testimonials/vibrant-planet-testimonial/content.md
   - testimonials/Antipodean-albatross-testimonial/content.md
   - testimonials/tmp-testimonial/content.md

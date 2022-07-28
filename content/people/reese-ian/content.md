@@ -1,44 +1,40 @@
 ---
 title: Ian Reese
-email: xycarto@gmail.com
+email: ian@dragonfly.co.nz
 firstname: Ian
 lastname: Reese
-role: Cartographer & geospatial data specialist
+role: Cartographer and geospatial data specialist
 mobile: ""
 tag: ian
 description: >
-  Ian is a cartographer and geospatial data specialist who enjoys translating
-  messy datasets into useful, manageable information.
+  Ian develops methods to process complex geospatial data into attractive
+  cartographic visualisations.  
 banner: reese-ian/ian-reese.jpg
 ---
 
-Ian is a cartographer and geospatial data specialist who enjoys translating
-messy datasets into useful, manageable information.
+Ian develops methods to process complex geospatial data into attractive
+cartographic visualisations.  
 
 <!--more-->
 
-He is skilled in both data processing and map making. Ian’s work ranges from the
- problem-solving aspects of processing large datasets all the way through to
- presenting data in maps and images. He aims to provide geospatial information
- in a way that highlights details and important insights and communicates to a
- wide audience.
+He has more than a decade of experience in GIS, spending 7 years at [Toitū Te
+Whenua ([LINZ](linz.govt.nz)]) working as a senior spatial analyst and web mapping developer.
+Other GIS roles include software development for
+ [Geographx](https://geographx.co.nz/) and analyst work
+in the [AidData](aiddata.org) research lab at the College of William and Mary in Virginia.
 
-Ian started [XYCarto](https://xycarto.com) in 2020 to provide contract geospatial
- and cartographic services. Before that he worked at
-  [Land Information New Zealand](linz.govt.nz) as a senior spatial analyst on
-  the proof of concept for their first national base map. Other roles have
-  included developing 3D software for [Geographx](https://geographx.co.nz/) and
-  work as an analyst in the [AidData](aiddata.org) research lab at the College
-  of William and Mary in Virginia.
+In 2020 Ian started [XYCarto Ltd.](https://xycarto.com) to provide contract geospatial
+ and cartographic services.
 
-Ian has a master of science in landscape architecture from Pennsylvania State
-University. He researched the use of natural methods to clean water in urban
-spaces, which required the use of hydrological mapping techniques. Ian also has
- a degree in mechanical engineering and credits his interest in green urban
- design with work for a structural engineering firm.
+His research explored the use of natural methods to clean water in urban spaces
+ with an emphasis on hydrology. This led to a career in GIS as the research
+ highlighted a need to better understand spatial data and communicate the data
+ to a wide audience. Ian also has a degree in mechanical engineering and has
+ worked in structural design.
 
+ He has a keen interest in ecological preservation and believes cartography can
+ help communicate the complex beauty of our environment.
 
-> Geospatial work is the perfect balance of art and science. No two problems are
- the same and I get great satisfaction from using my artistic side to present
- information beautifully. I have the pleasure of working across a multitude of
- fields, helping professionals deliver good science in compelling visualisations.
+> Geospatial is the perfect balance of art and science. There aren’t many
+professions where complex data is processed into an object that another person
+might hang on their wall. It is truly a unique and rewarding space to be in.
