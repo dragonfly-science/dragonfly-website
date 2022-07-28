@@ -3,7 +3,7 @@ title: Major science report presented online
 short-title: Major science report presented online
 banner-image: /work/RSI-report/RSIreport.jpg
 testimonial:
-  - testimonials/vibrant-planet-testimonial/content.md
+  - testimonials/RSI-report-testimonial/content.md
 logo: /work/RSI-report/mbie-logo.png
 summary: >
   A report for the Ministry of Business, Innovation and Employment (MBIE)
