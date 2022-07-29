@@ -7,7 +7,7 @@ CTAButtonTitle: Say Hi
 CTAButtonLink: "#contact"
 vacancies:
   - vacancies/project-managers-2022-07-12/content.md
-  ---
+---
 
 We're always keen to meet new talented people, so please say hi if you have
 aspirations of becoming a Dragonfly.

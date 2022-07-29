@@ -1,5 +1,6 @@
 ---
 title: Front-End Developer
+sortorder: 0
 ---
 
 We're searching for a talented Front-End Developer to join our team. If you
