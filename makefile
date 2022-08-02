@@ -8,6 +8,9 @@ RUN_WEB ?=
 UP ?=
 CI ?=
 
+UID := $(shell id -u)
+GID := $(shell id -g)
+
 # caching for npm & webpack
 DOCKER_CACHE ?= $$HOME/docker-cache
 WEPACK_CACHE ?= $(DOCKER_CACHE)/webpack-cache
@@ -17,7 +20,7 @@ WEBPACK_CONTAINER_CACHE ?= /root/webpack
 ifneq ($(CI), true)
 RUN = docker-compose --profile build run --rm npm
 RUN_WEB = docker-compose --profile build run --publish 3000:3000 --rm website
-UP = docker-compose up --remove-orphans --no-build
+UP = docker-compose up --remove-orphans
 endif
 
 all: .env .install build run
@@ -25,6 +28,8 @@ all: .env .install build run
 # Build out .env file for docker-compose
 .env:
 ifneq ($(CI), true)
+	@echo UID=$(UID) >> .env
+	@echo GID=$(GID) >> .env
 	@echo IMAGE=$(IMAGE) >> .env
 	@echo DOCKER_CACHE=$(DOCKER_CACHE) >> .env
 	@echo WEPACK_CACHE=$(WEPACK_CACHE) >> .env
@@ -32,12 +37,15 @@ ifneq ($(CI), true)
 endif
 
 _site/assets:
-	$(RUN) bash -c "mkdir -p _site/assets"
+	mkdir -p $@ && chown -R $(UID):$(GID) $@
+	mkdir -p _site/fonts && chown -R $(UID):$(GID) _site/fonts
+	mkdir -p content/fonts && chown -R $(UID):$(GID) content/fonts
+# $(RUN) bash -c "mkdir -p _site/assets && chown -R $(UID):$(GID) _site/assets"
 	touch $@/dragonfly-app.css
 
 # Runs in full develop mode - npm watching & rebuilding
 # as css & ts change.
-develop: .env .install _site/assets
+develop: .env _site/assets .install
 	$(UP)
 
 

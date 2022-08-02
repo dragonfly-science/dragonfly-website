@@ -1,5 +1,2 @@
-!haskell/stack.yaml
-!haskell/dragonfly-website.cabal
 docs
-_site
 .cache

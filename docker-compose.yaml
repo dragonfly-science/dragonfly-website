@@ -2,6 +2,7 @@ version: "3"
 services:
   npm:
     image: $IMAGE
+    user: "${UID}:${GID}"
     ports:
       - 8000:8000
       - 3000:3000
@@ -10,12 +11,13 @@ services:
       - $PWD/front-end:/work/front-end:cached
       - $PWD/_site:/work/_site
       - $PWD/deployment:/work/deployment
-      - nodemodules:/work/front-end/node_modules:cached
+      # - nodemodules:/work/front-end/node_modules:cached
     working_dir: /work/
     profiles:
       - build
   website:
     image: $IMAGE
+    user: "${UID}:${GID}"
     volumes:
       - $PWD:/work/
     working_dir: /work/
@@ -24,6 +26,7 @@ services:
   watch:
     image: $IMAGE
     restart: unless-stopped
+    user: "${UID}:${GID}"
     volumes:
       - $PWD/content:/work/content:cached
       - $PWD/deployment:/work/deployment
@@ -31,7 +34,7 @@ services:
       - $PWD/_site/assets:/work/_site/assets:cached
       - $DOCKER_CACHE/npm:/root/.npm:cached
       - $WEPACK_CACHE:$WEBPACK_CONTAINER_CACHE:cached
-      - nodemodules:/work/front-end/node_modules:cached
+      # - nodemodules:/work/front-end/node_modules:cached
     working_dir: /work
     depends_on:
       - website_haskell
@@ -47,6 +50,7 @@ services:
       "
   website_haskell:
     image: $IMAGE
+    user: "${UID}:${GID}"
     build:
       context: .
     restart: unless-stopped
