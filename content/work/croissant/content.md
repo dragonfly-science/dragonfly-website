@@ -124,6 +124,7 @@ would enable high level analysis to be presented in the consultation report.
 
 ## Project team
 
+[Richard Mansfield](/people/mansfield-richard.html),
 [Ignatius Menzies](/people/menzies-ignatius.html),
 [Yvan Richard](/people/richard-yvan.html),
 [Finlay Thompson](/people/thompson-finlay.html).
