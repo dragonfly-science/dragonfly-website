@@ -1,8 +1,8 @@
 ---
 title: People
 introduction: >
-  We are a friendly bunch of scientists, maths geeks,
-  and data nerds. We are experts at putting data to good use.
+  We’re a team of physicists, biologists, maths geeks, programmers and
+  communicators who care about doing good with data.
 sectionTitle: Meet the team
 banner: /landing-pages/who-we-are/banner-images/team_placeholder.jpeg
 teaserCTALink: /people/
@@ -11,8 +11,8 @@ bannerNamePattern: team_${index}.jpeg
 bannerCount: 10
 bannerIndexPadding: true
 description: >
-  We are a friendly bunch of scientists, maths geeks,
-  and data nerds. We are experts at putting data to good use.
+  We’re a team of physicists, biologists, maths geeks, programmers and
+  communicators who care about doing good with data.
 CTASection: true
 CTATitle: Do we seem like the people for you?
 CTAButtonTitle: Contact us
