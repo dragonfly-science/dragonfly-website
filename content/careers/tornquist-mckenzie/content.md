@@ -6,7 +6,7 @@ McKenzie Tornquist joined Dragonfly in 2020, having completed a master of
 science in marine biology.
 
 "I really like working at Dragonfly because of the atmosphere. Everyone is
-really nice and there's no heirarchy – everyone is treated the same. I really
+really nice and there's no hierarchy – everyone is treated the same. I really
 like that Phil, Edward and Finlay (in fact all the team) think everyone's
 opinion is valid instead of shutting people down."
 
