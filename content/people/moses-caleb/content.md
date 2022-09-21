@@ -17,6 +17,9 @@ interests are machine learning, language and automation.
 
 <!--more-->
 
+Caleb is currently studying for a
+[PhD at McGill University in Canada](/news/2022-09-06-caleb-phd.html).
+
 Before joining Dragonfly in 2018 he worked at Stats NZ in a
 statistical analyst role focused on privacy, data visualisation and
 automating routine tasks.
