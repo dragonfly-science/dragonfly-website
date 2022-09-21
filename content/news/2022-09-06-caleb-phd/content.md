@@ -63,3 +63,7 @@ Hiku Media on Māori speech recognition. I hope to return to Aotearoa when I hav
  completed my doctorate and continue working for my people.”
 
 [Read about the workshops Caleb attended in Hawai’i to document indigenous perspectives on AI.](/news/2019-09-10-caleb-hawaii-two.html)
+
+---
+
+Top image: Michael Running Wolf and Caleb outside the offices of Mila. Credit: Caleb Moses
