@@ -7,7 +7,7 @@ mobile: ""
 tag: kusal
 description: >
   Kusal is a front end developer and UX designer at Dragonfly.  
-banner: ekanayake-kusal/kusal-ekanayake.jpg
+banner: ekanayake-kusal/ekanayake-kusal.jpg
 nocite: |
 ---
 
