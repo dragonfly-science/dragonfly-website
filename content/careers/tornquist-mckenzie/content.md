@@ -2,7 +2,9 @@
 title: Mckenzie Career page
 ---
 
-McKenzie Tornquist joined Dragonfly in 2020, having completed a master of
+McKenzie Tornquist
+
+McKenzie joined Dragonfly as a fisheries scientist in 2020 after completing a master of
 science in marine biology.
 
 "I really like working at Dragonfly because of the atmosphere. Everyone is
