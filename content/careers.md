@@ -1,6 +1,6 @@
 ---
 title: Working <br/>here
-quotetitle: Our staff tell their stories
+quotetitle: Stories from our staff
 
 ---
 
@@ -44,4 +44,4 @@ study. Recognising the need for continuing development, we run training
 opportunities for newer staff and share best practice methods and data
 management across the team.
 
-[Check our current vacancies](/vacancies) or [Find out more about the work we do](/work/)
+[Check our current vacancies](/vacancies) or [find out more about the work we do.](/work/)

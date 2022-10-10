@@ -46,7 +46,8 @@
     }
 
     &.loaded {
-      @apply text-white;
+      @apply text-white h-full;
+      max-height: 900px;
 
       .background-image {
         @apply bg-dark-jungle-green;
