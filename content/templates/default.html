@@ -45,7 +45,7 @@
     $else$ $if(og-description)$
     <meta name="description" content="$og-description$" />
     $endif$ $endif$
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-441953-1"
@@ -113,15 +113,7 @@
   <body class="font-body">
     $partial("templates/_menu.html")$
     <main
-      class="
-        main
-        mt-12
-        relative
-        z-20
-        overflow-hidden
-        lg:mt-24
-        section-$section$
-      "
+      class="main mt-12 relative z-20 overflow-hidden lg:mt-24 section-$section$"
       id="main-container"
     >
       $body$
