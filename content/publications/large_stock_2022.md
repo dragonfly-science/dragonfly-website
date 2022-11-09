@@ -1,7 +1,6 @@
 ---
 pdf: large_stock_2022.pdf
-tags: kath, philipp, fisheries, dragonfly, assessment, WCPFC
-title: Stock assessment of Southwest Pacific Shortfin Mako shark
+tags: kath, philipp, fisheries, dragonfly, assessment
 ---
 This analysis assesses the southwest Pacific shortfin mako shark stock in the Western and Central Pacific Ocean (WCPO) hereafter referred to as the Southwest Pacific.
 
@@ -17,7 +16,7 @@ Together, these patterns suggest that the model inferences are highly dependent 
 
 Despite the documented shortcomings, we suggest that the present assessment delivers some useful metrics. Fishing mortality and associated reference point metrics, for example, were consistently estimated (Table 2). The assessment therefore provides preliminary indications that recent fishing mortality may have declined below critical (i.e., *F~crash,AS~*) levels. However, due to the inherent instability of the present model, we did not explore the sensitivity of these estimates to uncertainty in life-history, and the catch and discard assumptions. Our models used an estimate of natural mortality from New Zealand studies, that was noted as being high. As a consequence, F based reference points derived here may be overly optimistic. As alternative model runs did not succeed in providing plausible outputs, we therefore caution that the present analysis is preliminary and only gives ranges of values from a single assumption of life history, and our most-likely catch and discard scenarios only.
 
-**Main Assessment Conclusions**
+Main assessment conclusions
 
 - The assessment was un-stable, with high estimation uncertainty and sensitivity to a range of inputs. We therefore consider this assessment preliminary and suggest it should not be used for providing management advice.
 

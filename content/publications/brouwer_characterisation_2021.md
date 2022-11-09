@@ -1,7 +1,6 @@
 ---
 pdf: brouwer_characterisation_2021.pdf
-tags: kath, philipp, fisheries, dragonfly, report, WCPFC
-title: Characterisation of the fisheries catching South Pacific blue sharks (<i>Prionace glauca</i>) in the Western and Central Pacific Ocean
+tags: kath, philipp, fisheries, dragonfly, report
 ---
 South Pacific blue sharks (*Prionace glauca*) are thought to consist of a single stock separated from blue sharks in the north Pacific at the Equator. This paper describes the fisheries catching blue sharks in the Southwestern Pacific Ocean as well as the reported and observed data potentially available for use in a stock assessment.
 
@@ -11,12 +10,13 @@ There is a general increase in the number of observer samples of all kinds over 
 
 Longline gear attributes such as hooks between floats, hooks set, baskets set, bait used, branch line length and distance will likely be informative for CPUE standardisation. However, they are inconsistently reported, both among and within fleets. Generally, there is a trend for more hooks between floats, and a decreases in the hooks set and in the baskets set.
 
-Blue sharks are wide ranging across the South Pacific Ocean, and display weak size and seasonal movement pa􏰀erns which do not seem to cross the Equator into the north Pacific. Overall, there appears to be a reasonable amount of data from 1990-2019, but the data by fleet are incomplete and poorly reported throughout the history of the fishery for most fleets. Catch reporting has improved across all fleets over time, has resulted in more data being available in recent years. However, these trends are unlikely to be linked to changes in targeting or stock biomass, but are simply reflective of increased coverage rates.
+Blue sharks are wide ranging across the South Pacific Ocean, and display weak size and seasonal movement patterns which do not seem to cross the Equator into the north Pacific. Overall, there appears to be a reasonable amount of data from 1990-2019, but the data by fleet are incomplete and poorly reported throughout the history of the fishery for most fleets. Catch reporting has improved across all fleets over time, has resulted in more data being available in recent years. However, these trends are unlikely to be linked to changes in targeting or stock biomass, but are simply reflective of increased coverage rates.
 
 The following recommendations are proposed for the Scientific Committee to consider:
 
-1. The length data should only be used as fleet specific selectivity data and not used to interpret changes in length over time.
 
-2. Aggregated data are submitted as annual totals for the WCPFC area only, making them uninformative for a stock specific assessment. Therefore, blue shark (and probably other Key Sharks) aggregated data should be reported by ocean area not simply as WCPO and, where possible, these data should be retrospectively corrected.
+- The length data should only be used as fleet specific selectivity data and not used to interpret changes in length over time.
 
-3. Observers (or the vessel) should record number of shark lines deployed or the number of floats with shark lines.
+- Aggregated data are submitted as annual totals for the WCPFC area only, making them uninformative for a stock specific assessment. Therefore, blue shark (and probably other Key Sharks) aggregated data should be reported by ocean area not simply as WCPO and, where possible, these data should be retrospectively corrected.
+
+- Observers (or the vessel) should record number of shark lines deployed or the number of floats with shark lines.

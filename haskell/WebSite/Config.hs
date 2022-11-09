@@ -72,7 +72,11 @@ tagDictionary = [
     ("theoretical-physics", "Theoretical physics"),
     ("yvan", "Yvan Richard"),
     ("caleb", "Caleb Moses"),
-    ("fabian", "Fabian Döweler")
+    ("fabian", "Fabian Döweler"),
+    ("kath", "Kath Large"),
+    ("tyla", "Tyla Hill-Moana"),
+    ("kyuhan", "Kyuhan Kim"),
+    ("mckenzie", "McKenzie Tornquist")
     ]
 
 cslIdentifier, cslNoBibIdentifier :: Identifier
