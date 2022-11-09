@@ -1,18 +1,17 @@
 ---
 pdf: neubauer_report_2022.pdf
-tags: philipp, kath,  fisheries, dragonfly, assessment, WCPFC
-title: Improved stock assessment and structural uncertainty grid for Southwest Pacific blue shark
+tags: philipp, kath,  fisheries, dragonfly, assessment
 ---
 This analysis presents additional work in order to constrain the model grid employed for the 2021 south Pacific blue shark (BSH) stock assessment in the Western and Central Pacific Ocean (WCPO). The 2021 stock assessment for BSH was accepted by the Scientific Committee at SC17. However, due to a number of uncertainties about the relative merit (model fit, plausibility) of individual models within the large (3888) model grid, SC17 was hesitant about using such a large grid to provide management advice. The SC17 recommended improving the manner in which the grid was selected before approving the results for providing management advice.
 
 The present analysis attempted to address these concerns by running a number of standard diagnostics across all grid model runs to ensure that:
 
-1. models had sufficiently converged and results were robust to jittering of starting values;
+- models had sufficiently converged and results were robust to jittering of starting values;
 
-2. models were consistent and did not show large retrospective patterns (as evidenced by
+- models were consistent and did not show large retrospective patterns (as evidenced by
 Mohn’s $\rho$); and
 
-3. models had reasonable predictive skill.
+- models had reasonable predictive skill.
 
 Acknowledging that the stock was not unfished at the start of the assessment, and that references to unfished biomass may be misleading, as *B~0~* is likely poorly estimated; we also explored the results using an alternative reference point, namely *SB/SB~F=0~*.
 
@@ -30,7 +29,7 @@ We investigated a range of possible *a posteriori* weighting measures for the mo
 
 Taken together, these analyses restrict the number of candidate models from 3888 in the 2021 uncertainty grid, to 228 models in the revised uncertainty grid, and lead to lower uncertainty compared with the 2021 model grid. Nevertheless, the over-all model conclusions and recommendations from the 2021 blue shark assessment remain valid. Substantial uncertainties about inputs and biological parameters remain. Our analyses underscore that for low- to medium information stocks, such as most sharks, uncertainties in model outcomes are not necessarily reducible in the short-term. Only improved biological data collection and recording of interactions with bycatch species will lead to improved precision in stock assessment. Nevertheless, we suggest that consistency in estimated recent recovery trends, as well as robustness of these trends to alternative model assumptions provide evidence for effectiveness of recent non-retention measures for sharks, and BSH in particular.
 
-Although the sensitivity analysis highlighted a number of uncertainties, we found a number of consistent patterns in the outcomes. Based on these consistent trends, and using a restricted, weighted set of 228 uncertainty grid runs, we **conclude** that:
+Although the sensitivity analysis highlighted a number of uncertainties, we found a number of consistent patterns in the outcomes. Based on these consistent trends, and using a restricted, weighted set of 228 uncertainty grid runs, we conclude that:
 
 - The most influential axis within the reduced uncertainty grid was the initial F assumption.
 
@@ -43,6 +42,7 @@ Although the sensitivity analysis highlighted a number of uncertainties, we foun
 - Finally, considered against all conventional reference points the stock on average does not appear to be overfished and overfishing is not occurring.
 
 Given some of the uncertainties highlighted above, we recommend that SC18 consider:
+
 
 - Providing more time, either as inter-session projects, or by extending time-frames for shark analyses. This will allow more thorough investigation of input data quality and trends, which shape assessment choices. In addition, it would allow input analyses to be completed in time to be presented to the pre-assessment workshop prior to the stock assessment. In addition, allowing more time for the assessments themselves will allow a more thorough investigation of alternative model structures, which may include comparisons with low-information methods such as spatial risk assessments.
 
