@@ -7,7 +7,7 @@ role: Senior project manager
 mobile: ""
 tag: Emma
 description: >
-  Emma is a senior project manager at Dragonfly. She leads project management initiatives as well as managing a variety of client work.
+  Emma is a senior project manager at Dragonfly. She manages a variety of client work and leads company-wide project management initiatives.
 banner: hopkinson-emma/emma-hopkinson.jpg
 ---
 
