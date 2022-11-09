@@ -1,7 +1,6 @@
 ---
 pdf: brouwer_albacore_2021.pdf
-tags: mckenzie, kath, philipp, albacore, fisheries, dragonfly, report, WCPFC
-title: Characterisation and CPUE analyses of the New Zealand albacore fishery
+tags: mckenzie, kath, philipp, fisheries, dragonfly, report
 ---
 This paper presents an updated characterisation and CPUE analysis of the New Zealand albacore (*Thunnus alalunga*) fishery. In New Zealand, albacore are landed to a single Fishery Management Area (FMA) ALB 1. Landings vary from year to year, with an increasing trend from the early 1970s to the early 2000s followed by a decline after 2003, and have fluctuated around 2000 t to 3000 t since 2006. Albacore within the New Zealand fishery waters are part of the South Pacific Ocean stock which is distributed from the equator south to about 50$^\circ$S, and from the Australian east coast to the South American west coast. The broader stock is managed by two Regional Fisheries Management Organisations (RFMOs); the Inter American Tropical Tuna Commission (IATTC) manages the eastern part of the stock, while the western part is managed under the Western and Central Pacific Fisheries Commission (WCPFC). In the WCPFC Convention Area, albacore are landed in a number of fisheries but primarily from longline (94.6%) and troll (4.9%) fisheries, with 77% of the troll catch and <1% of the longline catch coming from New Zealand fishery waters.
 
