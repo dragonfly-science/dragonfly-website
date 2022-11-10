@@ -1,6 +1,7 @@
 ---
 pdf: brouwer_characterisation_2021.pdf
 tags: kath, philipp, fisheries, dragonfly, report
+title: Characterisation of the fisheries catching South Pacific blue sharks (<i>Prionace glauca</i>) in the Western and Central Pacific Ocean
 ---
 South Pacific blue sharks (*Prionace glauca*) are thought to consist of a single stock separated from blue sharks in the north Pacific at the Equator. This paper describes the fisheries catching blue sharks in the Southwestern Pacific Ocean as well as the reported and observed data potentially available for use in a stock assessment.
 

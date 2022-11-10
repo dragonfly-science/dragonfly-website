@@ -1,6 +1,7 @@
 ---
 pdf: neubauer_input_2021.pdf
 tags: kath, philipp, fisheries, dragonfly, assessment
+title: Input data for the 2021 South Pacific blue shark (<i>Prionace glauca</i>) stock assessment 
 ---
 Blue shark (*Prionace glauca*) are targeted and caught as bycatch in tuna and billfish fisheries in the WCPFC and globally. The present report details data inputs for the South Pacific stock assessment for blue shark, including length frequency information from regional observer programmes, reconstructed catch histories, and a number of alternative catch-rate (CPUE) series.
 

@@ -1,6 +1,7 @@
 ---
 pdf: brouwer_characterisation_2022.pdf
 tags: kath, philipp, fisheries, dragonfly, report
+title: Characterisation of the fisheries catching South Pacific shortfin mako sharks (<i>Isurus oxyrinchus</i>) in the Western and Central Pacific Ocean
 ---
 South Pacific shortfin mako sharks (*Isurus oxyrinchus*) are thought to consist of two stocks a southwest and southeastern stock which are both separated from those in the north Pacific at the Equator. This paper describes the fisheries catching shortfin mako sharks in the Southwestern Pacific Ocean as well as the reported and observed data potentially available for use in a stock assessment.
 
