@@ -1,6 +1,6 @@
 ---
 pdf: neubauer_stock_2021.pdf
-tags: philipp, kath, dragonfly, assessment, dragonfly, report
+tags: philipp, kath, dragonfly, assessment, report
 ---
 
 This analysis assesses the south Pacific blue shark stock in the Western and Central Pacific Ocean (WCPO) hereafter referred to as the Southwest Pacific.
