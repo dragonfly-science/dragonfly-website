@@ -46,4 +46,4 @@ At the end of the secondment, Maxi presented the results to date at a meeting wi
 
 Top image: Yvan Richard and Maxi (right) working together at Dragonfly. Credit: Sarah Wilcox
 
-Read about our collaborations with [Japanese]( https://www.dragonfly.co.nz/news/2017-12-21-japan-science.html) and [Chilean fisheries scientists]( https://www.dragonfly.co.nz/news/2018-11-20-luis-visit.html).
+Read about our collaborations with [Japanese](https://www.dragonfly.co.nz/news/2017-12-21-japan-science.html) and [Chilean fisheries scientists](https://www.dragonfly.co.nz/news/2018-11-20-luis-visit.html).
