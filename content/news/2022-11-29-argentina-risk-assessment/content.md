@@ -24,7 +24,7 @@ Maxi is studying at the Institute of Marine and Coastal Research, which is part 
 
 “The goal of my work is a seabird ecological risk assessment for species that interact with our fisheries”, says Maxi. “It will be the first time this has been done for Argentina so I think it’s very important.”
 
-![Black-browed albatross breed on the Falkland Islands/Islas Malvinas in large colonies. They are seen around the New Zealand coast, particularly in winter. Image [Maxi Hernandez](https://www.instagram.com/mardelplata_shooting/).](/news/2022-11-29/black-browed-albatross.jpg)
+![Black-browed albatross breed on the Falkland Islands/Islas Malvinas in large colonies. They are seen around the New Zealand coast, particularly in winter. Image [Maxi Hernandez](https://www.instagram.com/mardelplata_shooting/).](/news/2022-11-29-argentina-risk-assessment/black-browed-albatross.jpg)
 
 The coast of Argentina is close to a continental shelf and has very productive waters and plenty of fish. Different fisheries target species in the area and interact with various species of seabirds.
 
