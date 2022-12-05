@@ -35,6 +35,8 @@ members. I was surprised and pleased to be introduced as Dr Kim! I discussed the
 He also helped lead a software workshop for fisheries scientists and gave a
 presentation at South Korea’s National Institute of Fisheries Science (NIFS).
 
+![Kyuhan presenting a talk at the National Institute of Fisheries Science.](/news/2022-12-05-kyuhan-korea-trip/nifs.jpg)
+
 “My presentations started plenty of positive discussions, especially how the
 methods could contribute to Korean fisheries science and management. I talked
 about survey design and collecting data that’s appropriate for stock assessments
@@ -52,7 +54,7 @@ analysis and reporting.
 
 ---
 
-Top image: Presenting a talk at the National Institute of Fisheries Science.
+Top image: Taejongdae seaside park with the city of Busan in the distance.
 
 Kyuhan completed his PhD at Victoria University of Wellington in 2022. His
 research was supported by a Korea New Zealand Agricultural Cooperation
