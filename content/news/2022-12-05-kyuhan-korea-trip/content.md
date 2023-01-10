@@ -9,13 +9,13 @@ worked at Dragonfly as a fisheries scientist for a year.
 
 <!--more-->
 
-The visit in August was his first for nearly 3 years. Not only was it an
+The visit was his first for nearly 3 years. Not only was it an
 opportunity to see his family again, but also to share his research in
 best-practice fisheries science.
 
 Kyuhan presented part of his PhD research at the annual meeting of
-[PICES](https://meetings.pices.int/). PICES is an intergovernmental science
-organisation that coordinates marine research in the North Pacific. Member
+[PICES](https://meetings.pices.int/) in late September. PICES is an
+intergovernmental science organisation that coordinates marine research in the North Pacific. Member
 countries include China, Japan, Russia, US, Canada and South Korea. This year
 the meeting was conveniently held in his hometown of Busan.
 
