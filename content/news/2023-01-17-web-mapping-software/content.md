@@ -74,14 +74,14 @@ they’re working the same base image.”
 GeoTIFF format is pretty universal in the geospatial community and most software
 can handle it.”
 
-Ian presented this research at the [Pacific Geospatial Conference] (https://www.osgeo.org/events/pacific-geospatial-conference-2022/)
-in Fiji in November 2022. He is a member of the FOSS4G (free and open software
-  for geospatial) community and invites others to work with him on improving the
+Ian presented this research at the [Pacific Geospatial Conference](https://www.osgeo.org/events/pacific-geospatial-conference-2022/) in Fiji in November 2022. He is a member of the
+FOSS4G (free and open software for geospatial) community and invites others to work with him on improving the
   method.
 
 ---
 
 More information  
-- [Read a technical description of this work](https://xycarto.com/2022/11/26/qgis-to-stylized-cogs/).
-- [See a demonstration of the method](https://dragonfly-science.github.io/qgis-cog-tiler/).
-- [View the Github repository](https://github.com/dragonfly-science/qgis-cog-tiler).
+
+* [Read a technical description of this work](https://xycarto.com/2022/11/26/qgis-to-stylized-cogs/).
+* [See a demonstration of the method](https://dragonfly-science.github.io/qgis-cog-tiler/).
+* [View the Github repository](https://github.com/dragonfly-science/qgis-cog-tiler).
