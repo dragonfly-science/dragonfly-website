@@ -30,3 +30,5 @@ most-similar-documents.json
 unsupervised-text-analysis_*
 .ran
 deck-map.html
+*.DS_Store
+.vscode
