@@ -1,6 +1,6 @@
 ---
 title: Intermediate project manager
-sortorder: 1
+sortorder: 0
 ---
 
 We’re searching for an intermediate project manager to join our team. You’ll

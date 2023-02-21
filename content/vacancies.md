@@ -3,7 +3,7 @@ title: Vacancies
 description: Vacancies
 CTASection: true
 CTATitle: Your dream role not listed?
-CTAButtonTitle: Say Hi
+CTAButtonTitle: Say hi
 CTAButtonLink: "#contact"
 vacancies:
   - vacancies/intermediate-project-manager-2023-01-17/content.md
