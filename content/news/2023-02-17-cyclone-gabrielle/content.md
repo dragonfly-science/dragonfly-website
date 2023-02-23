@@ -1,44 +1,35 @@
 ---
-title: Mapping flooding from Cyclone Gabrielle with satellite data
+title: Cyclone Gabrielle flooding mapped
 ---
 
-Flooding from Cyclone Gabrielle has devastated regions of Hawke's Bay. Satellite
-data allow for an indicative assessment of the extent of the flooding at the time of image collection.
-We are releasing Hawke's Bay flooding data derived from a Copernicus Sentinel-1 satellite.
+The New Zealand Herald published a map of recent flooding in Hawke’s Bay using synthetic aperture radar data we prepared from the Sentinel-1 satellite. The data is available for download below.
+
 <!--more-->
 
-A map of the flooding from Cyclone Gabrielle in Hawke's Bay was published by [The Herald](https://www.nzherald.co.nz/nz/cyclone-gabrielle-floods-first-satellite-images-shows-extent-of-hawkes-bay-flooding/TX5QMIEM2JBRTKSH5PKTTECTSE/). 
-The data underlying this visualisation may be downloaded [here](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-2023-02-14.zip).
+Synthetic aperture radar (SAR) data isn’t affected by darkness or cloud cover. This enabled the water levels to be captured at 8.07pm on Tuesday – when the satellite happened to be overhead.
 
-<div class="flourish-embed flourish-photo-slider" data-src="visualisation/12464013" data-width="80%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+![Extent of flooding near Napier on Tuesday 14 February at 8.07 pm. Flooded areas are coloured blue.](/news/2023-02-17-cyclone-gabrielle/napier-flooding.jpg)
 
+Dragonfly data scientist [Sadhvi Selvaraj](/people/selvaraj-sadhvi.html) located and analysed the satellite data, which she says provides an indication of the extent of the flooding at the time.
 
-The flood extent layer was derived from SAR (synthetic aperture
-radar) data, collected by Sentinel-1 on Tuesday, February 14, at 8.07pm. 
-It does not indicate the full extent of the flooding: only the flooding that had occurred by the time of the 
-satellite image. The flood map has not been validated on the ground. The imagery
-was processed in Google Earth Engine, using methods based on those recommended by the [United Nations Platform for Space-based Information for Disaster Management and Emergency Response
-](https://www.un-spider.org/advisory-support/recommended-practices/recommended-practice-google-earth-engine-flood-mapping). 
+“The map doesn’t show the full extent of the flooding – only the flooding that had occurred by the time the satellite image was recorded. Also, the map hasn’t been validated by what we’ve seen on the ground.”
 
-SAR imagery is well suited for mapping floods since the data acquisition is possible regardless of the cloud cover 
-and SAR images can be captured day and night. This is not possible 
-when using multispectral (colour) data, such as imagery from the Sentinel-2 satellite. 
-While SAR data can be used for 
-mapping floods in open areas, flooding in urban areas may not be shown accurately. The 
-SAR data is acquired by sensors that send and receive microwave signals at a slant angle.
-This slant angle in SAR acquisition may mean there will be some buildings in the urban 
-areas that block the signals from passing through. 
-The analysis technique used for mapping floods in open areas has limited application for urban areas 
-unless the buildings were fully submerged. 
+[Ian Reese](/people/reese-ian.html) created the maps using QGIS. The imagery was processed in Google Earth Engine, using methods based on those recommended by the [United Nations Platform for Space-based Information for Disaster Management and Emergency Response](https://www.unoosa.org/oosa/en/ourwork/un-spider/index.html).
 
-The flood map data are provided seperately for urban and non-urban areas, in Shapefile and Geopackage formats. 
-The flood map dataset is released under a [Creative Commons Attribution-ShareAlike 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/) licence. 
+“SAR data is useful for mapping floods in open areas, but it may not accurately show flooding in urban areas. That’s because the data is acquired by sensors that send and receive microwave signals at a slant angle, so buildings can block the signals and create inaccuracies.”
 
-For more information about satellite imagery contact Dr Sadhvi Selvaraj [sadhvi@dragonfly.co.nz](mailto:sadhvi@dragonfly.co.nz).
+“Our hearts go out to those who have lost homes, livelihoods and incomes in the flooding. I experienced the unprecedented Auckland floods a couple of weeks ago, but what’s just happened in parts of Hawke’s Bay is absolutely devastating.
+
+"I can only hope that sharing this data and showcasing the technology will inform our planning for emergency rescue efforts and reduce the terrible effects of future storms like Gabrielle.”
+
+Email [Sadhvi Selvaraj](mailto:sadhvi@dragonfly.co.nz) to find out more about satellite imagery.
 
 ---
-More information  
+More information
 
-* [Download the Hawke's Bay flood map data](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-2023-02-14.zip)
-* [Read about the flood map in The Herald](https://www.nzherald.co.nz/nz/cyclone-gabrielle-floods-first-satellite-images-shows-extent-of-hawkes-bay-flooding/TX5QMIEM2JBRTKSH5PKTTECTSE/)
-* [Browse the Sentinel satellite data](https://apps.sentinel-hub.com/eo-browser/?zoom=11&lat=-39.59537&lng=176.71783&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Ff2068f4f-3c75-42cf-84a1-42948340a846&datasetId=S1_AWS_IW_VVVH&fromTime=2023-02-14T00%3A00%3A00.000Z&toTime=2023-02-14T23%3A59%3A59.999Z&layerId=IW-DV-VV-DECIBEL-GAMMA0-RADIOMETRIC-TERRAIN-CORRECTED&demSource3D=%22MAPZEN%22)
+* [Download the Hawke’s Bay flood map data](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-2023-02-14.zip).
+* [Read the story in the New Zealand Herald](https://www.nzherald.co.nz/nz/cyclone-gabrielle-floods-first-satellite-images-shows-extent-of-hawkes-bay-flooding/TX5QMIEM2JBRTKSH5PKTTECTSE/).
+* [Browse the Sentinel satellite data](https://apps.sentinel-hub.com/eo-browser/?zoom=11&lat=-39.59537&lng=176.71783&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Ff2068f4f-3c75-42cf-84a1-42948340a846&datasetId=S1_AWS_IW_VVVH&fromTime=2023-02-14T00%3A00%3A00.000Z&toTime=2023-02-14T23%3A59%3A59.999Z&layerId=IW-DV-VV-DECIBEL-GAMMA0-RADIOMETRIC-TERRAIN-CORRECTED&demSource3D=%22MAPZEN%22).
+* [Read more about QGIS mapping](news/2023-01-17-web-mapping-software.html).
+
+The flood map data for urban and non-urban areas is provided separately in Shapefile and Geopackage formats and released under a [Creative Commons Attribution-ShareAlike 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/)licence.

@@ -77,8 +77,8 @@ can handle it.”
 Ian presented this research at the [Pacific Geospatial Conference](https://www.osgeo.org/events/pacific-geospatial-conference-2022/) in Fiji in November 2022. He is a member of the
 FOSS4G (free and open software for geospatial) community and invites others to work with him on improving the
   method.
----
 
+---
 More information  
 
 * [Read a technical description of this work](https://xycarto.com/2022/11/26/qgis-to-stylized-cogs/).
