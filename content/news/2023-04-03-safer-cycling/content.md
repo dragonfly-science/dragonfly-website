@@ -19,8 +19,9 @@ Dragonfly’s founder and director [Edward Abraham](/people/abraham-edward.html)
 A new retro-styled e-bike appeared in the office today. It belongs to a Belmont resident who is delighted that it has cut their 90-minute public transport commute in half.  
 
 Our staff offered these comments in support of safer cycling and better public transport:
+
 * More cycleways and better public transport are definitely welcome. Most of the roads in the city should be made smaller and inaccessible to private motor vehicles.
-* Taking the bus is so frustrating! My commute takes longer than ever now and the over-full buses expose users to more sickness. Surely it can be better?
+* Taking the bus is increasingly difficult. My commute takes longer than it used to and the over-full buses expose users to more sickness. Improvements need to be made if we are to meet emission reduction targets.
 * I would bike way more often if it was safer. We need more cycleways and better cycleways.
 * I don't like getting knocked off my bike. It hurts!
 * I have family members who cycle, and I care a lot about them being able to get around the city safely.
