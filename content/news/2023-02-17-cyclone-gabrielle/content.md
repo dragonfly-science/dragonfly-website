@@ -7,6 +7,7 @@ An initial map of flooding in Hawke’s Bay used synthetic aperture radar data w
 <!--more-->
 
 **Sentinel-2 and Sentinel-1 data and map**
+
 The updated data was prepared using before and after images of vegetation, based on the normalised difference vegetation index. This index picks up changes in vegetation, soil and water, which highlighted new silt, slips and inundated areas.
 
 The before images were from 5 January–10 February 2023 and the after images were from 19 and 21 February 2023. Some areas of cloud may remain in the Sentinel-2 dataset despite our cloud removal processing.
@@ -14,6 +15,7 @@ The before images were from 5 January–10 February 2023 and the after images we
 The data is available for download below.
 
 **Sentinel-1 data and map**
+
 Synthetic aperture radar (SAR) data isn’t affected by darkness or cloud cover. This enabled the water levels to be captured at 8.07pm on Tuesday 14 February – when the satellite happened to be overhead.
 
 ![Extent of flooding near Napier on Tuesday 14 February at 8.07 pm. Flooded areas are coloured blue.](/news/2023-02-17-cyclone-gabrielle/napier-flooding.jpg)
@@ -33,6 +35,7 @@ Sadhvi says SAR data is useful for mapping floods in open areas, but may not acc
 "I can only hope that sharing this data and showcasing the technology will inform our planning for emergency rescue efforts and reduce the terrible effects of future storms like Gabrielle.”
 
 Email [Sadhvi Selvaraj](mailto:sadhvi@dragonfly.co.nz) to find out more about satellite imagery and technical details of the analyses.
+
 ---
 More information
 
