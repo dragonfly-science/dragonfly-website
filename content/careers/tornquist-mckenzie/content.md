@@ -31,5 +31,3 @@ really good because my commute is quite long. It's just good to have that
 flexibility so I can get to appointments and things near home when I need to.
 It's also nice to come into the office and have the social aspect of working
 around other people too."
-
-[See McKenzie's profile](/people/tornquist-mckenzie.html)
