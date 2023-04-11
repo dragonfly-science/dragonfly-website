@@ -2,11 +2,11 @@
 title: Cyclone Gabrielle flooding - updated data
 ---
 
-An initial map of flooding in Hawke’s Bay used synthetic aperture radar data was prepared from a snapshot taken during the cyclone, on Tuesday 14 February 2023. This data has now been updated with information collected after the cyclone, on February 19 and 21, 2023. The updated data shows the extent of silt and slips.  
+An initial map of flooding in Hawke’s Bay used synthetic aperture radar data from a snapshot taken on Tuesday 14 February 2023 during the cyclone. This data has now been updated with information collected after the cyclone, on February 19 and 21 2023. The updated data shows the extent of silt and slips in the region.  
 
 <!--more-->
 
-**Flooding extent, February 19 and 21, 2023**
+## Flooding extent: February 19 and 21 2023
 
 The updated data was prepared using before and after images of vegetation, based on the normalised difference vegetation index from imagery collected by the Sentinel-2 satellite. This index picks up changes in vegetation, soil and water. The differences in the index highlighted silt, slips and inundated areas and show the extent of the flooding.
 
@@ -14,9 +14,9 @@ The before images were from 5 January–10 February 2023 and the after images we
 
 The data is available for download below.
 
-**Flood snapshot, February 14, 2023**
+## Flooding snapshot: February 14 2023
 
-A snapshot of the flooding was taken during Cyclone Gabrielle, using Synthetic aperture radar (SAR) data data from the Sentinel-1 satellite. SAR isn’t affected by darkness or cloud cover. This enabled the water levels to be captured at 8.07pm on Tuesday 14 February – when the satellite happened to be overhead.
+A snapshot of the flooding was taken during Cyclone Gabrielle, using synthetic aperture radar (SAR) data from the Sentinel-1 satellite. SAR is not affected by darkness or cloud cover. This enabled the water levels to be captured at 8.07pm on Tuesday 14 February when the satellite happened to be overhead.
 
 ![Extent of flooding near Napier on Tuesday 14 February at 8.07 pm. Flooded areas are coloured blue.](/news/2023-02-17-cyclone-gabrielle/napier-flooding.jpg)
 
@@ -39,9 +39,9 @@ Email [Sadhvi Selvaraj](mailto:sadhvi@dragonfly.co.nz) to find out more about sa
 ---
 More information
 
-* [Download flood map data from February 19 and 21, 2023](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-silt-slip-2023-02-21.zip).
+* [Download flood map data from February 19 and 21](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-silt-slip-2023-02-21.zip).
 * [Download flood map data from February 14](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-2023-02-14.zip).
 * [Read the story in the New Zealand Herald](https://www.nzherald.co.nz/nz/cyclone-gabrielle-floods-first-satellite-images-shows-extent-of-hawkes-bay-flooding/TX5QMIEM2JBRTKSH5PKTTECTSE/).
 * [Read more about QGIS mapping](news/2023-01-17-web-mapping-software.html).
 
-The flood map data are released under a [Creative Commons Attribution-ShareAlike 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/) licence.
+The flood map data is released under a [Creative Commons Attribution-ShareAlike 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/) licence.
