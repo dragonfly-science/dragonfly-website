@@ -7,8 +7,8 @@ testimonial:
 logo: /work/cyclone-impact-map/SWA-logo.png
 summary: Innovative visualisation displays physical and infrastructure impacts.
 tags: systems
-project-link: https://d1econosvb0ksc.cloudfront.net/
-project-link-text: Explore Cyclone Gabrielle Impact Map
+project-link: https://swa-impactmap.dragonfly.co.nz/
+project-link-text: Explore map
 description: >
   In collaboration with the Social Wellbeing Agency Toi Hau Tāngata, we created
   an interactive map to show the impacts of the February 2023 cyclone on Hawke’s
@@ -40,10 +40,10 @@ Data from the Sentinel-2 satellite acquired between 19 and 21 February was used 
 
 We used the built-in analysis features of Google Earth Engine to identify changes, which reduced the time required for image processing significantly. Areas of cloud were removed using a mosaicking process. Sentinel-1 data was analysed for inundation based on methods recommended by UN-SPIDER. Demographic data was provided by the Social Wellbeing Agency.
 
+ ![Different layers display extent of flooding and percentage of area impacted.](/work/cyclone-impact-map/Gabrielle-impact-map.gif)
+
 ## Making the maps
 The maps were created using QGIS, with our recently developed method that exports a web-ready map with the specified features and zoom rules as a Cloud Optimized GeoTIFF.
-
- ![Different layers display extent of flooding and percentage of area impacted.](/work/cyclone-impact-map/Gabrielle-impact-map.gif)
 
 ## Designing for users
 Initially, the tool was intended for decision-makers but the client quickly realised how valuable it would be to local affected communities. This public audience was therefore reflected in the design.
