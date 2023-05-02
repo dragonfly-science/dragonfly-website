@@ -58,13 +58,13 @@ New Zealand’s active landscape and the effects of climate change are projected
 This project included development work to make the mapping of satellite images much smoother and more repeatable. This will speed up the production of impact maps after future severe weather events and natural disasters. Having information available in the hours – rather than weeks – after these events will support efforts to reach communities in need as quickly as possible.  
 
 ## Project team
-[Kusal Ekanayake](people/ekanayake-kusal/content.md),
-[Emma Hopkinson](people/hopkinson-emma/content.md),
-[Richard Mansfield](people/mansfield-richard/content.md),
-[Ian Reese](people/reese-ian/content.md),
-[Yvan Richard](people/yvan-richard/content.md),
-[Sadhvi Selvaraj](/people/selvaraj-sadhvi/content.md),
-[Simon Winter](people/winter-simon/content.md),
-[Pep Zuijderwijk](people/zuijderwijk-pep/content.md).
+[Kusal Ekanayake](/people/ekanayake-kusal.html),
+[Emma Hopkinson](/people/hopkinson-emma.html),
+[Richard Mansfield](/people/mansfield-richard.html),
+[Ian Reese](/people/reese-ian.html),
+[Yvan Richard](/people/yvan-richard.html),
+[Sadhvi Selvaraj](/people/selvaraj-sadhvi.html),
+[Simon Winter](/people/winter-simon.html),
+[Pep Zuijderwijk](/people/zuijderwijk-pep.html).
 
  *Top image: Silt-inundated apple orchard in Esk Valley, north of Napier. Sarah Wilcox.*
