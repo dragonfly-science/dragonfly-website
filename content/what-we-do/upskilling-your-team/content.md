@@ -25,9 +25,9 @@ teaserSVG: /what-we-do/upskilling-your-team/WWD_Skills1.svg
 bannerSVG: /what-we-do/upskilling-your-team/WWD_Skills2.svg
 sortorder: 4
 tiles:
+  - work/RSI-report/content.md
   - work/NEFD-case-study/content.md
   - work/nms-case-study/content.md
-  - work/reporting-case-study/content.md
   - work/technical-review-case-study/content.md
 ---
 

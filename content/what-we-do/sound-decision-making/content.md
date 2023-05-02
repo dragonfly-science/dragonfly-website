@@ -10,7 +10,7 @@ description: >
   Why we use Bayesian methods to help clients make the best possible decisions.   
 teaserTitle: Sound decision-making
 teaserIntro: >
-  All decisions are based on the best information available. Our ethos is to make sure people are able to use the 
+  All decisions are based on the best information available. Our ethos is to make sure people are able to use the
   information they have and are not basing their actions on hearsay.
 teaserCTAbutton: Read more
 teaserImageType: png
@@ -19,10 +19,10 @@ teaserSVG: /what-we-do/sound-decision-making/WWD_Decisions1.svg
 bannerSVG: /what-we-do/sound-decision-making/WWD_Decisions2.svg
 sortorder: 3
 tiles:
+  - work/cyclone-impact-map/content.md
+  - work/vibrant-planet/content.md
   - work/delphi-case-study/content.md
   - work/paua-management-case-study/content.md
-  - work/seabird-risk/content.md
-  - work/warp-strike/content.md
 ---
 
 Some of our work touches areas where different groups have conflicting values and opposing views. If people come to an issue with emotional arguments, they’re never going to align. We’ve found that providing information has been really constructive for bringing people together and providing a basis for moving forward.
