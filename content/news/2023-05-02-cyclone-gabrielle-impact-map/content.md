@@ -36,6 +36,6 @@ The impact map has been built to enable the impacts of future severe weather eve
 
 The team from Dragonfly and the Social Wellbeing Agency included data scientists, developers, policy analysts and a GIS specialist.
 
-[Read more about this project.](work/cyclone-impact-map.html)
+[Read more about this project.](/work/cyclone-impact-map.html)
 
  *Top image: Flood-damaged property Esk Valley. Sarah Wilcox*
