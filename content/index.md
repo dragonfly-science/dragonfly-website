@@ -13,6 +13,7 @@ sections:
   - landing-pages/work/content.md
 testimonials:
   - testimonials/croissant-testimonial/content.md
+  - testimonials/cyclone-impact-map-testimonial/content.md
   - testimonials/RSI-report-testimonial/content.md
   - testimonials/vibrant-planet-testimonial/content.md
   - testimonials/Antipodean-albatross-testimonial/content.md

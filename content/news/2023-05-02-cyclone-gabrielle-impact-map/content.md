@@ -3,13 +3,14 @@ title: Interactive map shows community impacts of adverse weather
 ---
 
 Our work with the Social Wellbeing Agency produced an interactive map of cyclone impacts overlaid with infrastructure and demographic data.
+
 [Explore Cyclone Gabrielle Impact Map](https://swa-impactmap.dragonfly.co.nz/)
 
 <!--more-->
 
 The map demonstrates the crucial role that data has played in identifying the land and community characteristics of areas impacted by adverse weather in early 2023. It's the first time these two approaches have been combined for New Zealand. The map is also supporting planning for the response and recovery.
 
-Aphra Green, Deputy Chief Executive, Policy, Data and Insights of the [Social Wellbeing Agency (SWA) Toi Hau Tāngata](https://swa.govt.nz/about/about-the-social-wellbeing-agency/)says the agency had built a demographic explorer with community information, but being able to combine this with geospatial data was a big advantage.
+Aphra Green, Deputy Chief Executive, Policy, Data and Insights of the [Social Wellbeing Agency (SWA) Toi Hau Tāngata](https://swa.govt.nz/about/about-the-social-wellbeing-agency/) says the agency had built a demographic explorer with community information, but being able to combine this with geospatial data was a big advantage.
 
 “By having satellite data mapped to a suburb level we can see the land impacts and match this with the wellbeing and demographic characteristics of a community”, she said.
 
@@ -36,3 +37,5 @@ The impact map has been built to enable the impacts of future severe weather eve
 The team from Dragonfly and the Social Wellbeing Agency included data scientists, developers, policy analysts and a GIS specialist.
 
 [Read more about this project.](work/cyclone-impact-map.html)
+
+ *Top image: Flood-damaged property Esk Valley. Sarah Wilcox*
