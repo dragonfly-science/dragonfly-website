@@ -28,6 +28,8 @@ The online tool uses a series of layers to visualise inundated areas, deposited 
 
 The areas are coloured according to the impact of the cyclone on particular features, which can be selected in the tool. These include the percentage of area impacted, and the length of roads, farmed area impacted, and buildings, schools, hospitals and supermarkets within an impacted area. Another layer displays the deprivation index (2018).
 
+![Views of the online tool showing different layers and scales.](/work/cyclone-impact-map/Impact-map-view2.jpg)
+
 ## About the cyclone and its effects
 Cyclone Gabrielle was a severe tropical cyclone that devastated the North Island of New Zealand from 12 to 15 February 2023. Its effects were widespread, but particularly intense in the Hawke’s Bay and Tairāwhiti regions, with large areas of flooding and damage to roads and other infrastructure.
 
@@ -40,7 +42,7 @@ Data from the Sentinel-2 satellite acquired between 19 and 21 February was used 
 
 We used the built-in analysis features of Google Earth Engine to identify changes, which reduced the time required for image processing significantly. Areas of cloud were removed using a mosaicking process. Sentinel-1 data was analysed for inundation based on methods recommended by UN-SPIDER. Demographic data was provided by the Social Wellbeing Agency.
 
- ![Different layers display extent of flooding and percentage of area impacted.](/work/cyclone-impact-map/Gabrielle-impact-map.gif)
+![Different layers display extent of flooding and percentage of area impacted.](/work/cyclone-impact-map/Gabrielle-impact-map.gif)
 
 ## Making the maps
 The maps were created using QGIS, with our recently developed method that exports a web-ready map with the specified features and zoom rules as a Cloud Optimized GeoTIFF.
