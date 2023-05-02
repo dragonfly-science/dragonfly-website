@@ -17,10 +17,10 @@ teaserCTAbutton: Read more
 teaserAnchorId: machine-learning
 sortorder: 1
 tiles:
+  - work/croissant/content.md
+  - work/vibrant-planet/content.md
   - work/TMP-case-study/content.md
-  - work/seabird-risk/content.md
   - work/technical-review-case-study/content.md
-  - work/warp-strike/content.md
 ---
 
 We are currently using machine learning with really diverse datasets, which are big and messy. Our customised models and methods are helping clients find themes in large amounts of text, analyse forest satellite data and work on speech recognition.
