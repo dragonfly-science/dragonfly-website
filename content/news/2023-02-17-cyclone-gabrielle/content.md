@@ -1,16 +1,18 @@
 ---
-title: Cyclone Gabrielle flooding - updated data
+title: Cyclone Gabrielle flooding - North Island data released
 ---
 
-An initial map of flooding in Hawke’s Bay used synthetic aperture radar data from a snapshot taken on Tuesday 14 February 2023 during the cyclone. This data has now been updated with information collected after the cyclone, on February 19 and 21 2023. The updated data shows the extent of silt and slips in the region.  
+An initial map of flooding in Hawke’s Bay used synthetic aperture radar data from a snapshot taken on Tuesday 14 February 2023 during the cyclone. It was updated with information collected on February 19 and 21, which showed the extent of silt and slips in the region. A further update shows impacts over the whole North Island.  
 
 <!--more-->
+
+Explore the [Cyclone Gabrielle Impact Map](https://swa-impactmap.dragonfly.co.nz/) we produced in collaboration with the Social Wellbeing Agency.
 
 ## Flooding extent: February 19 and 21 2023
 
 The updated data was prepared using before and after images of vegetation, based on the normalised difference vegetation index from imagery collected by the Sentinel-2 satellite. This index picks up changes in vegetation, soil and water. The differences in the index highlighted silt, slips and inundated areas and show the extent of the flooding.
 
-The before images were from 5 January–10 February 2023 and the after images were from 19 and 21 February 2023. Some areas of cloud may remain in the Sentinel-2 dataset despite our cloud removal processing.
+The before images were from 5 January–10 February and the after images were from 19 and 21 February. Some areas of cloud may remain in the Sentinel-2 dataset despite our cloud removal processing.
 
 The data is available for download below.
 
@@ -26,22 +28,18 @@ Dragonfly data scientist [Sadhvi Selvaraj](/people/selvaraj-sadhvi.html) located
 
 [Ian Reese](/people/reese-ian.html) created the maps using QGIS. The imagery was processed in Google Earth Engine, using methods based on those recommended by the [United Nations Platform for Space-based Information for Disaster Management and Emergency Response](https://www.unoosa.org/oosa/en/ourwork/un-spider/index.html).
 
-Sadhvi says SAR data is useful for mapping floods in open areas, but may not accurately show flooding in urban areas.
-
-"That’s because the data is acquired by sensors that send and receive microwave signals at a slant angle, so buildings can block the signals and create inaccuracies.”
-
-“Our hearts go out to those who have lost homes, livelihoods and incomes in the flooding. I experienced the unprecedented Auckland floods a couple of weeks ago, but what’s just happened in parts of Hawke’s Bay is absolutely devastating.
-
-"I can only hope that sharing this data and showcasing the technology will inform our planning for emergency rescue efforts and reduce the terrible effects of future storms like Gabrielle.”
+Sadhvi says SAR data is useful for mapping floods in open areas, but may not accurately show flooding in urban areas. "That’s because the data is acquired by sensors that send and receive microwave signals at a slant angle, so buildings can block the signals and create inaccuracies.”
 
 Email [Sadhvi Selvaraj](mailto:sadhvi@dragonfly.co.nz) to find out more about satellite imagery and technical details of the analyses.
 
 ---
+
 More information
 
-* [Download flood map data from February 19 and 21](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-silt-slip-2023-02-21.zip).
-* [Download flood map data from February 14](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-2023-02-14.zip).
-* [Read the story in the New Zealand Herald](https://www.nzherald.co.nz/nz/cyclone-gabrielle-floods-first-satellite-images-shows-extent-of-hawkes-bay-flooding/TX5QMIEM2JBRTKSH5PKTTECTSE/).
+* [Download North Island flood map data as SHP](https://files.dragonfly.co.nz/data/gabrielle-cyclone-impact/Cyclone-Gabrielle_impact_North-Island_SHP.zip).
+* [Download North Island flood map data as GPKG](https://files.dragonfly.co.nz/data/gabrielle-cyclone-impact/Cyclone-Gabrielle_impact_North-Island_GPKG.zip).
+* [Download Hawke's Bay flood map data from February 19 and 21](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-silt-slip-2023-02-21.zip).
+* [Download Hawke's Bay flood map data from February 14](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-2023-02-14.zip).
 * [Read more about QGIS mapping](news/2023-01-17-web-mapping-software.html).
 
 The flood map data is released under a [Creative Commons Attribution-ShareAlike 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/) licence.
