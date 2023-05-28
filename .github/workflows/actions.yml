@@ -17,7 +17,7 @@ on:
 
 jobs:
   website-checker:
-    name: Check links on uat.dragonfly.co.nz
+    name: Check links on www.dragonfly.co.nz
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -37,22 +37,22 @@ jobs:
             --check-extern \
             -t 100 \
             -o html \
-            https://uat.dragonfly.co.nz > ./logs/uat.dragonfly.co.nz.html
+            https://www.dragonfly.co.nz > ./logs/www.dragonfly.co.nz.html
 
       - name: Process Link Log
         if: always()
         continue-on-error: true
         run: |
-          echo LC_SUMMARY=$( awk '/\d* warnings found/' ./logs/uat.dragonfly.co.nz.html) >> $GITHUB_ENV
-          echo $(awk '/\d* warnings found/' ./logs/uat.dragonfly.co.nz.html )
+          echo LC_SUMMARY=$( awk '/\d* warnings found/' ./logs/www.dragonfly.co.nz.html) >> $GITHUB_ENV
+          echo $(awk '/\d* warnings found/' ./logs/www.dragonfly.co.nz.html )
           echo $GITHUB_ENV
 
       - name: Upload Artifact Logs
         uses: actions/upload-artifact@v2
         if: ${{ always() }}
         with:
-          name: uat.dragonfly.co.nz.html
-          path: ./logs/uat.dragonfly.co.nz.html
+          name: www.dragonfly.co.nz.html
+          path: ./logs/www.dragonfly.co.nz.html
 
       # # Slack Notification of broken links found
       # - name: Slack Notification
@@ -62,10 +62,10 @@ jobs:
       #     SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       #     SLACK_CHANNEL: channel_name
       #     SLACK_USERNAME: Link Checker Bot
-      #     SLACK_TITLE: WARNING - broken links found on uat.dragonfly.co.nz
+      #     SLACK_TITLE: WARNING - broken links found on www.dragonfly.co.nz
       #     MSG_MINIMAL: true
       #     SLACK_ICON_EMOJI: ':failed:'
       #     SLACK_MESSAGE: |
       #       `${{ env.LC_SUMMARY }}`
-      #       link check: broken links detected on uat.dragonfly.co.nz. Please see report artifact.
+      #       link check: broken links detected on www.dragonfly.co.nz. Please see report artifact.
 
