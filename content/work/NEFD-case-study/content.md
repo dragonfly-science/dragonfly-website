@@ -10,7 +10,7 @@ logo: /work/NEFD-case-study/MPI-logo.png
 description: >
   A manual process was replaced with a much faster coded, reproducible approach
    to the annual production of this data-rich report.
-project-link: https://www.mpi.govt.nz/dmsdocument/43540-2020-NEFD-report
+project-link: https://www.mpi.govt.nz/dmsdocument/55996-2022-NEFD-Report
 project-link-text: Download report
 CTADescriptor: some text
 CTAButton: read more
@@ -94,6 +94,6 @@ MPI estimated that the new approach reduced the time taken to produce
 
 ### Project team
 
-[Ignatius Menzies](/people/menzies.ignatius/content.md),
-[Yvan Richard](/people/richard-yvan/content.md),
-[Nikki Wilkinson](/people/wilkinson-nikki/content.md).
+[Ignatius Menzies](/people/menzies-ignatius.html),
+[Yvan Richard](/people/richard-yvan.html),
+[Nikki Wilkinson](/people/wilkinson-nikki.html).
