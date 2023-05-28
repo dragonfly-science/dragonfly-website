@@ -36,23 +36,23 @@ jobs:
             --no-warnings  \
             --check-extern \
             -t 100 \
-            -o html \
-            https://www.dragonfly.co.nz > ./logs/www.dragonfly.co.nz.html
+            -o csv \
+            https://www.dragonfly.co.nz > ./logs/www.dragonfly.co.nz.csv
 
       - name: Process Link Log
         if: always()
         continue-on-error: true
         run: |
-          echo LC_SUMMARY=$( awk '/\d* warnings found/' ./logs/www.dragonfly.co.nz.html) >> $GITHUB_ENV
-          echo $(awk '/\d* warnings found/' ./logs/www.dragonfly.co.nz.html )
+          echo LC_SUMMARY=$( awk '/\d* warnings found/' ./logs/www.dragonfly.co.nz.csv) >> $GITHUB_ENV
+          echo $(awk '/\d* warnings found/' ./logs/www.dragonfly.co.nz.csv )
           echo $GITHUB_ENV
 
       - name: Upload Artifact Logs
         uses: actions/upload-artifact@v2
         if: ${{ always() }}
         with:
-          name: www.dragonfly.co.nz.html
-          path: ./logs/www.dragonfly.co.nz.html
+          name: www.dragonfly.co.nz.csv
+          path: ./logs/www.dragonfly.co.nz.csv
 
       # # Slack Notification of broken links found
       # - name: Slack Notification
