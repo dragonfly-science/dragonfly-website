@@ -32,7 +32,7 @@ unobserved fishing.
 
 We built an interactive website so this information could be made available
 online. Users can filter the data by species, fishing method, area, year and
-vessel (see [white-chinned petrel](https://protectedspeciescaptures.nz/PSCv5a/released/white-chinned-petrel/trawl/all-vessels/eez/2018-19/) for example).
+vessel (see [white-chinned petrel](https://protectedspeciescaptures.nz/PSCv6/released/white-chinned-petrel/trawl/all-vessels/eez/2019-20/) for example).
 
 [Protected species bycatch in New Zealand fisheries](https://protectedspeciescaptures.nz/).
 
