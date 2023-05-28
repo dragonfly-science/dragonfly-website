@@ -34,9 +34,10 @@ jobs:
         run: |
           linkchecker \
             --no-warnings  \
+            --check-extern \
             -t 100 \
             -o html \
-            uat.dragonfly.co.nz > ./logs/uat.dragonfly.co.nz.html
+            https://uat.dragonfly.co.nz > ./logs/uat.dragonfly.co.nz.html
 
       - name: Process Link Log
         if: always()
