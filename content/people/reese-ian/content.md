@@ -18,10 +18,10 @@ cartographic visualisations.
 <!--more-->
 
 He has more than a decade of experience in GIS, spending 7 years at [Toitū Te
-Whenua ([LINZ](linz.govt.nz)]) working as a senior spatial analyst and web mapping developer.
+Whenua ([LINZ](https://www.linz.govt.nz)]) working as a senior spatial analyst and web mapping developer.
 Other GIS roles include software development for
  [Geographx](https://geographx.co.nz/) and analyst work
-in the [AidData](aiddata.org) research lab at the College of William and Mary in Virginia.
+in the [AidData](https://aiddata.org) research lab at the College of William and Mary in Virginia.
 
 In 2020 Ian started [XYCarto Ltd.](https://xycarto.com) to provide contract geospatial
  and cartographic services.

@@ -15,10 +15,10 @@ Finlay says although the new website looks quite straightforward to a user, it h
 
 “The advantage for us it that it’s all in the git code, so it always works and it deals with all the changes. Nothing is ever lost – as time goes by, you create a git log of the old versions, so you can always go back to exactly how your site was.” 
 
-The website has [new case studies](/work/) highlighting the range of Dragonfly’s work and [updated news](/news/) and [staff profiles](/people). A [data section](/data/) contains links to publically available information in searchable databases that the company has created. [Publications](/publications/) are still available for download from the site, and are now searchable.  
+The website has [new case studies](/work/) highlighting the range of Dragonfly’s work and [updated news](/news/) and [staff profiles](/people). [Publications](/publications/) are available for download from the site, and are now searchable.  
 
 “We’re involved in a much wider range of work now than was reflected by the old site. Our website is a place to showcase recent projects, but we’d also love people to come by and have a chat about how we could maybe help them with a data problem.”
 
 
-[Find out more about what we do](/work/) or [get in touch with us](/publications/#contact).
+[Find out more about what we do](/work/) or [get in touch with us](/#contact-dragonfly).
 

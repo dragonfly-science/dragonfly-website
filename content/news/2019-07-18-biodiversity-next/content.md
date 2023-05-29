@@ -9,7 +9,7 @@ She had a scholarship to cover her flights and accommodation costs for [Wikidata
 
 For the last 18 months Siobhan has been creating entries for New Zealand’s native moths in Wikipedia and Wikidata, along with other projects.
 
-“When I first queried Wikidata for endemic New Zealand moths, I got just 10 results. I thought that couldn’t be right because there are about 1600 known in New Zealand. Using a lovely dataset of images from [Manaaki Whenua](https://www.landcareresearch.co.nz/resources/identification/animals/large-moths/how-to-use-this-guide) that I downloaded and put into Wikimedia Commons, I have been adding them to Wikidata and expanding their Wikipedia articles ever since,” she says.
+“When I first queried Wikidata for endemic New Zealand moths, I got just 10 results. I thought that couldn’t be right because there are about 1600 known in New Zealand. Using a lovely dataset of images from [Manaaki Whenua](https://www.landcareresearch.co.nz/) that I downloaded and put into Wikimedia Commons, I have been adding them to Wikidata and expanding their Wikipedia articles ever since,” she says.
 
 Siobhan “curates these pages to death” making beautiful entries that are used by experts and lay people alike. “My problem is that I’m an ordinary person – I’m not geeky – so I don’t do it in bulk but I do manually add all kinds of information like their common name, Māori name, where the moth was found and the scientist who first described it. The good thing is that once it’s done, it’s there forever and never has to be done again.”
 

@@ -111,12 +111,12 @@ monitor these areas for potential deforestation.
 
 ## Project team
 
-[Edward Abraham](/people/abraham-edward/content.md), 
-[Fabian Döweler](/people/doweler-fabian/content.md),
-[Ignatius Menzies](/people/menzies-ignatius/content.md),
-[Kiarie Ndegwa](/people/ndegwa-kiarie/content.md),
-[Ian Reese](people/reese-ian/content.md),
-[Sadhvi Selvaraj](/people/selvaraj-sadhvi/content.md).
+[Edward Abraham](/people/abraham-edward.html), 
+[Fabian Döweler](/people/doweler-fabian.html),
+[Ignatius Menzies](/people/menzies-ignatius.html),
+[Kiarie Ndegwa](/people/ndegwa-kiarie.html),
+[Ian Reese](people/reese-ian.html),
+[Sadhvi Selvaraj](/people/selvaraj-sadhvi.html).
 
 ## About Vibrant Planet
 Vibrant Planet is a public benefit corporation based in Nevada. It is led by a

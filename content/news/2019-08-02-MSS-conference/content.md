@@ -23,4 +23,4 @@ Phil Neubauer also gave a talk at the conference called ‘Modelling effects of 
 
 [View the slides from Katrin’s talk](https://www.dragonfly.co.nz/publications/berkenbusch_regional_2019.html).
 
-[Read about our shellfish surveys in the upper North Island](https://www.dragonfly.co.nz/news/2016-01-10-shellfish-surveys.html).
+[Read about our shellfish surveys in the upper North Island](https://www.dragonfly.co.nz/news/2016-04-11-sample-smarter.html).
