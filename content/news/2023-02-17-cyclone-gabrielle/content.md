@@ -40,6 +40,6 @@ More information
 * [Download North Island flood map data as GPKG](https://files.dragonfly.co.nz/data/gabrielle-cyclone-impact/Cyclone-Gabrielle_impact_North-Island_GPKG.zip).
 * [Download Hawke's Bay flood map data from February 19 and 21](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-silt-slip-2023-02-21.zip).
 * [Download Hawke's Bay flood map data from February 14](https://files.dragonfly.co.nz/data/hawkes-bay-flood/hawkes-bay-flood-2023-02-14.zip).
-* [Read more about QGIS mapping](news/2023-01-17-web-mapping-software.html).
+* [Read more about QGIS mapping](/news/2023-01-17-web-mapping-software.html).
 
 The flood map data is released under a [Creative Commons Attribution-ShareAlike 3.0 IGO](https://creativecommons.org/licenses/by-sa/3.0/igo/) licence.

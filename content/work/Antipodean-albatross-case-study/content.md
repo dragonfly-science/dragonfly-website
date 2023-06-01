@@ -111,7 +111,7 @@ conservation at sea is required to safeguard the future of the species.
 
 ### Project team
 
-[Yvan Richard](/people/richard-yvan/content.md), Laura Tremblay-Boyer
+[Yvan Richard](/people/richard-yvan.html), Laura Tremblay-Boyer
 
 ### More information
 

@@ -8,7 +8,7 @@ Moses to head to McGill University in Montreal to study natural language process
 <!--more-->
 
 After a year of coursework, he will start a research project supervised by
-[Associate Professor Jackie Chi Kit Cheung](https://www.cs.mcgill.ca/~jcheung/).
+[Associate Professor Jackie Chi Kit Cheung](https://mila.quebec/en/person/jackie-cheung/).
 
 “Dr Cheung is an expert in evaluating language models”, says Caleb. “I’m really
 interested in some of his recent work on improving our understanding of what

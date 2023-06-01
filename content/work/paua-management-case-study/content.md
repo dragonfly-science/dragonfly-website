@@ -49,7 +49,7 @@ The information is of high commercial
 value to the fishers, and we have developed processes that maintain the privacy
  of individual fisher’s data, while allowing high level summaries to be shared
   across the industry. The system is deployed on the
-   [Catalyst Cloud](http://www.catalyst.net.nz/catalyst-cloud), an
+   [Catalyst Cloud](https://catalystcloud.nz/), an
 affordable and secure New Zealand cloud computing service.
 
 ### Ensuring sustainability

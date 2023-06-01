@@ -64,7 +64,7 @@ This project included development work to make the mapping of satellite images m
 [Emma Hopkinson](/people/hopkinson-emma.html),
 [Richard Mansfield](/people/mansfield-richard.html),
 [Ian Reese](/people/reese-ian.html),
-[Yvan Richard](/people/yvan-richard.html),
+[Yvan Richard](/people/richard-yvan.html),
 [Sadhvi Selvaraj](/people/selvaraj-sadhvi.html),
 [Simon Winter](/people/winter-simon.html),
 [Pep Zuijderwijk](/people/zuijderwijk-pep.html).

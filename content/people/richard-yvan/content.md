@@ -38,7 +38,7 @@ developed a machine-learning-based framework to analyse unstructured text. This
 tool has been used to analyse public submissions on parliamentary bills.
 
 Raised in France, Yvan moved to New Zealand in 2002 to study for a PhD and
-postdoc in ecology at [Massey University](http://www.massey.ac.nz/massey/learning/colleges/college-of-sciences/research/agriculture-environment-research/ecology/ecology.cfm). He
+postdoc in ecology at [Massey University](https://www.massey.ac.nz). He
 continues to apply the techniques and methods he learned, including Bayesian
 analysis, machine learning, R, spatial analysis and capture-recapture models to
 problem-solving in business, government and other contexts.
