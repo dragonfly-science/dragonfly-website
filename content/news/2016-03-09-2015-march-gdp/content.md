@@ -19,15 +19,11 @@ automatic. That’s the beauty of the system we built, that it can get the infor
 out to the public on the same day it’s released.” 
 
 The data is built onto a staging site at Dragonfly, checked by MBIE staff and then published. 
+
 According to Statistics NZ, Auckland’s contribution to total GDP for the year 
 ended March 2015 was 36.6 percent. Canterbury contributed 13.6 percent, with 
 Wellington narrowly behind at 13.5 percent. The smallest contribution was from 
 the West Coast region (0.7 percent). GDP in the Auckland region grew by 4.2% over the year to 
 March 2015, while GDP in Southland shrank by 10.5% over the same period.
 
-Explore the regional GDP below, visit the full [REAR website](http://webrear.mbie.govt.nz), 
-or read the Statistics NZ [media release](http://www.stats.govt.nz/browse_for_stats/economic_indicators/NationalAccounts/RegionalGDP_MRYeMar15.aspx).
-
-<style>iframe{width:100%}</style>
-<iframe src="https://teal-skua-dev.dragonfly.co.nz/theme/gdp-per-capita/map/a/2015/auckland/?embed=dynamic" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="600" height="1424"></iframe>
-<script>iFrameResize()</script>
+Visit the [REAR website](http://webrear.mbie.govt.nz).

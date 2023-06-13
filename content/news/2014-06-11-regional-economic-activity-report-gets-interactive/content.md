@@ -8,7 +8,7 @@ country's 66 territorial authorities for the Ministry of Business,
 Innovation and Employment (MBIE). 
 
 It is [available from the MBIE
-website](http://www.mbie.govt.nz/info-services/business/business-growth-agenda/regions/interactive-web-tool)
+website](http://webrear.mbie.govt.nz/summary/new-zealand)
 in desktop and tablet versions, and an app is planned.
 
 <!--more-->
@@ -23,7 +23,6 @@ integrated and easy to explore like this before. The level of detail
 was also requested by the territorial authorities, as it informs their
 policy and planning around resources, business management and
 permitting,” says Finlay.
-
 
 Chris led the project, with support from Yvan and Finlay, and
 incorporated some sophisticated data management into the tool.

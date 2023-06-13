@@ -22,7 +22,7 @@ The physical impacts of the cyclone ­– flooding, slips and silt – are displ
 
 SWA believes the Cyclone Gabrielle Impact Map and its Community Insights Explorer provide a shared understanding of community need and a high-level view of where and how recovery efforts could be targeted.
 
-“It’s a platform for community and government to collaborate in a recovery process. As a starting point, we hope it helps people ask better questions rather than providing all the answers.”
+“It's a platform for community and government to collaborate in a recovery process. As a starting point, we hope it helps people ask better questions rather than providing all the answers.”
 
 The combined explorer and map was released in April and feedback so far has been positive from those who are using it for community information.
 “We’ve promoted the explorer and it’s been picked up by many different users, all mining it for their own needs.”
