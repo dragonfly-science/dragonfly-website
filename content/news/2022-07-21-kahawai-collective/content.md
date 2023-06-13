@@ -36,7 +36,7 @@ The collective is developing tools to provide more timely and useful reporting
 of trends in fisheries. This work is intended to inform individual stock
 assessments and support management advice.
 
-![](/news/2022-07-21-kahawai-collective/Kahawai-logo.png)
+![](/news/2022-07-21-kahawai-collective/KC-logo.png)
 
 Another benefit for Adam is strengthening the working relationships with the
 other members of the collective. This includes opportunities for peer review of
