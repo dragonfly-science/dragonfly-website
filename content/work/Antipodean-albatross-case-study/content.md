@@ -115,6 +115,6 @@ conservation at sea is required to safeguard the future of the species.
 
 ### More information
 
-[Read the final project report and access the simulation tool](https://www.doc.govt.nz/our-work/conservation-services-programme/csp-reports/202021/integrated-population-model-of-antipodean-albatross-for-simulating-management-scenarios/).
-[Watch a video about Kath and Graeme’s data-collection work](https://www.youtube.com/watch?v=ZSLloHR7Izo).
-[Read a Beehive media release about the work](https://www.beehive.govt.nz/release/government-taking-action-protect-albatross).
+* [Read the final project report and access the simulation tool](https://www.doc.govt.nz/our-work/conservation-services-programme/csp-reports/202021/integrated-population-model-of-antipodean-albatross-for-simulating-management-scenarios/).
+* [Watch a video about Kath and Graeme’s data-collection work](https://www.youtube.com/watch?v=ZSLloHR7Izo).
+* [Read a Beehive media release about the work](https://www.beehive.govt.nz/release/government-taking-action-protect-albatross).
