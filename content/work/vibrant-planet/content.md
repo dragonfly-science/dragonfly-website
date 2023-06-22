@@ -115,7 +115,7 @@ monitor these areas for potential deforestation.
 [Fabian Döweler](/people/doweler-fabian.html),
 [Ignatius Menzies](/people/menzies-ignatius.html),
 [Kiarie Ndegwa](/people/ndegwa-kiarie.html),
-[Ian Reese](people/reese-ian.html),
+[Ian Reese](/people/reese-ian.html),
 [Sadhvi Selvaraj](/people/selvaraj-sadhvi.html).
 
 ## About Vibrant Planet
