@@ -1,5 +1,5 @@
 ---
-title: Tech makes a difference
+title: Learning tech makes a difference
 ---
 
 Dev Academy Aotearoa is a training institution that offers a 17-week hands-on coding course. A couple of our staff have benefitted from the course, which has allowed them to move onto a new career path.
