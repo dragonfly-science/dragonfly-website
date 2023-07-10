@@ -3,20 +3,19 @@ title: Finlay Thompson, PhD
 email: finlay@dragonfly.co.nz
 firstname: Finlay
 lastname: Thompson
-role: Operations manager
+role: Director Data Science
 phone: +64 21 426 878
 tag: finlay
 title: Finlay Thompson, PhD
 honour: PhD
 description: >
-  Finlay is the CEO and a director of Dragonfly. As a mathematician, he brings an
+  Finlay is Director Data Science at Dragonfly. As a mathematician, he brings an
   insightful rigour to solving analytical and technical problems.
 banner: thompson-finlay/finlay-thompson.jpg
-sortorder: "2"
 nocite: 
 ---
 
-Finlay is the CEO and a director of Dragonfly. As a mathematician, he brings an
+Finlay is Director Data Science at Dragonfly. As a mathematician, he brings an
 insightful rigour to solving analytical and technical problems.
 
 <!--more-->
