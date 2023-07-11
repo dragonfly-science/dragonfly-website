@@ -9,7 +9,6 @@ mobile: ''
 tag: philipp
 title: Philipp Neubauer, PhD
 banner: neubauer-philipp/philipp-neubauer.jpg
-sortorder: "4"
 nocite: |
   @neubauer_thermal_2019
   @neubauer_alternative_2019

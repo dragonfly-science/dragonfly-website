@@ -1,6 +1,6 @@
 ---
-pdf: berkenbusch_intertidal_2020.pdf
-tags: katrin, philipp, tyla, fisheries, dragonfly, benthic, report, shellfish
+pdf: berkenbusch_intertidal_2023.pdf
+tags: katrin, tyla, fisheries, dragonfly, benthic, report, shellfish
 ---
 Marine coastal invertebrates that are targeted in non-commercial fishing activities throughout New Zealand include
  littleneck clam (or cockle, tuangi/tuaki; *Austrovenus stuchburyi*) and pipi (*Paphies australis*).  Both species
