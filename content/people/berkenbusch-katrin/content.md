@@ -7,7 +7,6 @@ mobile: ""
 tag: katrin
 honour: PhD
 title: Katrin Berkenbusch, PhD
-sortorder: "4"
 description: >
   Katrin is a marine scientist who specialises in benthic ecology. She is
   responsible for the quality of our reports and publications.
