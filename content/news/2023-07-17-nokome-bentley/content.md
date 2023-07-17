@@ -4,7 +4,7 @@ title: Kindred spirit joins our team
 
 Nokome Bentley joined Dragonfly as a principal data scientist earlier this
 month. He has many years of experience in fisheries science, data analysis and
-software engineering and is a versatile addition to our team
+software engineering.
 
 <!--more-->
 
