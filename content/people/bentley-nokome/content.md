@@ -15,7 +15,7 @@ statistical modelling and software engineering.
 <!--more-->
 
 Before joining Dragonfly he worked as an independent fisheries modeller at
-Trophia Ltd, which he founded in 1996. He also researched seagrass and abalone
+Trophia, which he founded in 1996. He also researched seagrass and abalone
 ecology in Australia. 
 
 He founded [Stencila](https://stencila.io/) in 2012, because of an ongoing interest in

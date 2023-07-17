@@ -23,7 +23,7 @@ a natural step to study marine biology and fisheries science. But during my
 study, and on into my working career, I became more and more interested in fish
 population dynamics, statistical modelling, and computer programming.”
 
-In 1996, Nokome founded Trophia Ltd, a fisheries research company. He worked on
+In 1996, Nokome founded Trophia, a fisheries research company. He worked on
 fisheries data analysis, modelling and stock assessment of many species for 20
 years including New Zealand rock lobster and Indian Ocean tuna.
 
@@ -33,7 +33,7 @@ generally and in fisheries science in particular. Like Dragonfly, I thought
 that applying modern software engineering practices to that work would be
 beneficial more broadly.”
 
-That led to Nokome founding Stencila Ltd, a company developing software for
+That led to Nokome founding [Stencila](https://stencila.io), a company developing software for
 authoring, collaborating on, and publishing reproducible research. He is
 continuing to work on Stencila and hopes he and others at Dragonfly can make
 use of it in their work.
@@ -52,6 +52,10 @@ skills in ways that are most useful to our clients.
 opportunity to learn about new domains and work out how best to apply my skills
 to them is very appealing.”
 
+---
+More information  
+
+* [Nokome's profile page](/people/bentley-nokome.html).
 
 
 
