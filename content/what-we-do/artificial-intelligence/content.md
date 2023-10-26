@@ -1,12 +1,12 @@
 ---
 title: Artificial intelligence
 subtitle: >
-  When it comes to identifying  , chances are you’ll need to use artificial intelligence.
+  Recent progress toward artificial intelligence has enabled a host of new research, and augmented or improved existing approaches in several existing domains. At Dragonfly, we have a considerable history of applying contemporary techniques to a range of projects.
 author:
-  - people/henry-macdonald/content.md
+  - people/henry-zwart/content.md
 quote: >
-  This is a rapidly developing area – it’s an exciting time to be working in the field. It’s also essential for us to keep up with the state of the art and continue to innovate and push the field forward.
-teaserTitle: Artificial intelligence
+  Insert a brilliant quote.
+teaserTitle: Artificial inelligence
 teaserSVG: /what-we-do/artificial-intelligence/WWD_Learning1.svg
 bannerSVG: /what-we-do/martificial-intelligence/WWD_Learning2.svg
 description: >
