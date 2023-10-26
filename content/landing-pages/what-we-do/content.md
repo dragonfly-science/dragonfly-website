@@ -1,17 +1,17 @@
 ---
 title: What we do
 subtitle: >
-  We specialise in data science, statistical analysis, and machine learning, 
+  We specialise in data science, statistical analysis, and artificial intelligence, 
   supported by robust software engineering, 
   clear communication, and a sprinkle of creative flair.
 introduction: >
-  We specialise in data science, statistical analysis, and machine learning, 
+  We specialise in data science, statistical analysis, and artificial intelligence, 
   supported by robust software engineering, 
   clear communication, and a sprinkle of creative flair.
 banner: /landing-pages/what-we-do/banner.jpg
 teaserSVG: /what-we-do/statistical-analysis/WWD_Statistical1.svg
 description: >
-  We specialise in data science, statistical analysis, and machine learning, 
+  We specialise in data science, statistical analysis, and artificial intelligence, 
   supported by robust software engineering, 
   clear communication, and a sprinkle of creative flair.
 toolsTitle: We love good tools
