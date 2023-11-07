@@ -3,8 +3,8 @@ title: Kākāpō conservation on Whenua Hou
 ---
 
 Emma Crawford spent 2 weeks on Whenua Hou volunteering with the Kākāpō Recovery Programme.
-<!--more-->
 
+<!--more-->
 
 Our newest team member, Emma Crawford, has had a passion for ecology for as long as she can remember.
 “When I was little I was always out in the garden lifting up logs and rocks, searching for insects
@@ -40,5 +40,3 @@ were getting suitable nutrition for breeding.”
 Despite spending time in the kākāpō capital, Emma only spotted two of the elusive parrots.
 “All of our hundreds of other kākāpō sightings ended with a disappointed sigh of,
 ‘Oh, it’s just a ball of moss…’ but no offence to any bryologists out there!”
-
-[Read more or contact Emma.](/people/crawford-emma.html)
