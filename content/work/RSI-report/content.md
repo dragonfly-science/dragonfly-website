@@ -115,7 +115,7 @@ best practice.
 
 ## Project team
 
-[Ignatius Menzies](/people/menzies-ignatius.html),
+Ignatius Menzies,
 [Michael Parkin](/people/parkin-michael.html),
 [Yvan Richard](/people/richard-yvan.html),
 [Finlay Thompson](/people/thompson-finlay.html),

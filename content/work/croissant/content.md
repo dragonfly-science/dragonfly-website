@@ -36,12 +36,12 @@ Croissant was built by the Department of Internal Affairs, the Ministry
 for the Environment (MfE) and [Ackama](https://www.ackama.com/) to streamline
 and standardise the analysis of submissions. It holds all the submissions
 related to each consultation and allows their text to be analysed. While robust,
- efficient and useful in its current form, MfE is continually working to improve
-  the tool.
+efficient and useful in its current form, MfE is continually working to improve
+the tool.
 
 Croissant was designed to be an all-of-government platform. It is currently
 hosted by MfE and has been made available to a limited number of other agencies.
- Its use could be extended to all government agencies in the future.
+Its use could be extended to all government agencies in the future.
 
 ## Tagging submissions for analysis
 
@@ -59,9 +59,9 @@ produced to add to the consultation report.
 ## Meeting a niche need
 
 Applying tags to submission text within Croissant has historically been a slow,
- manual process. MfE identified a need to improve this process but found no
- suitable applications – only expensive, stand-alone tools lacking transparency
- were available.
+manual process. MfE identified a need to improve this process but found no
+suitable applications – only expensive, stand-alone tools lacking transparency
+were available.
 
 Dragonfly Data Science was then approached to develop a machine learning
 (artificial intelligence) module to automate the tagging. What we built fits
@@ -125,7 +125,7 @@ would enable high level analysis to be presented in the consultation report.
 ## Project team
 
 [Richard Mansfield](/people/mansfield-richard.html),
-[Ignatius Menzies](/people/menzies-ignatius.html),
+Ignatius Menzies,
 [Yvan Richard](/people/richard-yvan.html),
 [Finlay Thompson](/people/thompson-finlay.html).
 
