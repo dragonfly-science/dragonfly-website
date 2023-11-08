@@ -2,10 +2,6 @@
 title: Machine learning
 subtitle: >
   When you’re trying to extract information from large amounts of complex, real-world data, chances are you’ll need to use machine learning.
-author:
-  - people/ndegwa-kiarie/content.md
-quote: >
-  This is a rapidly developing area – it’s an exciting time to be working in the field. It’s also essential for us to keep up with the state of the art and continue to innovate and push the field forward.
 teaserTitle: Machine learning
 teaserSVG: /what-we-do/machine-learning/WWD_Learning1.svg
 bannerSVG: /what-we-do/machine-learning/WWD_Learning2.svg

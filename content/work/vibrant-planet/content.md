@@ -119,7 +119,7 @@ University of California, Los Angeles is an important collaborator in this work.
 [Edward Abraham](/people/abraham-edward.html),
 [Fabian Döweler](/people/doweler-fabian.html),
 Ignatius Menzies,
-[Kiarie Ndegwa](/people/ndegwa-kiarie.html),
+Kiarie Ndegwa,
 [Ian Reese](/people/reese-ian.html),
 [Sadhvi Selvaraj](/people/selvaraj-sadhvi.html).
 
