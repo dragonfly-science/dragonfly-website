@@ -19,7 +19,7 @@ if [[ -v AWS_ACCESS_KEY_ID && -v AWS_BUCKET && -v AWS_SECRET_ACCESS_KEY ]]; then
     --only-show-errors
 
   if [[ -v AWS_CLOUDFRONT_ID ]]; then
-    @aws cloudfront create-invalidation \
+    aws cloudfront create-invalidation \
         --distribution-id ${AWS_CLOUDFRONT_ID} \
         --paths "/*"
   fi
