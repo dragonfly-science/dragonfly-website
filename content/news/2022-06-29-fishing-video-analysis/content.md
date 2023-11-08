@@ -1,6 +1,7 @@
 ---
 title: Catching birds on film
 ---
+
 Having video cameras on fishing boats to detect accidental captures of seabirds isn’t a new idea. It’s potentially a very useful, cost-effective way to supplement or replace the use of human observers on vessels, and increase coverage across a fleet.
 
 <!--more-->
@@ -23,7 +24,7 @@ Abel wanted to find out if a machine learning algorithm could be used instead of
 
 “With the permission of the vessel operators, they were able to provide existing human-analysed footage that I could label when the capture events took place. This has given us a dataset that we’ve used to train the machine learning algorithm what a capture looks like.”
 
-“It’s been fantastic to work with the talented staff at Dragonfly, especially [Kiarie Ndegwa](https://www.dragonfly.co.nz/people/ndegwa-kiarie.html) and [Henry Zwart](https://www.dragonfly.co.nz/people/zwart-henry.html) who’ve made huge progress with the machine learning in a short space of time.”
+“It’s been fantastic to work with the talented staff at Dragonfly, especially Kiarie Ndegwa and [Henry Zwart](https://www.dragonfly.co.nz/people/zwart-henry.html) who’ve made huge progress with the machine learning in a short space of time.”
 
 Initial results are promising, with the model identifying captures with accuracy comparable to that of human reviewers. While there remains work to do to fine-tune the model to improve its precision, the speed of automated review is remarkable.
 
@@ -33,14 +34,14 @@ Initial results are promising, with the model identifying captures with accuracy
 
 Abel is grateful for the opportunity to contribute to the project. He plans to work with Dragonfly to further refine the model before retesting it on some new footage.
 
-“Starting out, we really didn’t know if this would work.  To get to this point where we have some solid proof of concept and the potential to apply it in working practice, is the best progress I could have hoped for.”
+“Starting out, we really didn’t know if this would work. To get to this point where we have some solid proof of concept and the potential to apply it in working practice, is the best progress I could have hoped for.”
 
 The project team would like to acknowledge and thank the participating fishers for their ongoing, valuable contributions, and recognise the early funding from Southern Seabird Solutions and DOC which kicked off the project in 2015.
 
 ---
 
-* More information: [Summary and evaluation of the electronic monitoring programmes in the SNA 1 trawl and bottom longline fisheries](https://www.mpi.govt.nz/dmsdocument/45928-FAR-202137-Summary-and-evaluation-of-the-electronic-monitoring-programmes-in-the-SNA-1-trawl-and-bottom-longline-fisheries)
+- More information: [Summary and evaluation of the electronic monitoring programmes in the SNA 1 trawl and bottom longline fisheries](https://www.mpi.govt.nz/dmsdocument/45928-FAR-202137-Summary-and-evaluation-of-the-electronic-monitoring-programmes-in-the-SNA-1-trawl-and-bottom-longline-fisheries)
 
-* Contract details: Dragonfly Data Science has been contracted by the Ministry for Primary Industries (MPI) since 2019 to deliver the video observation programme for the bottom longline fishery in Fisheries Management Area 1. Pisces is subcontracted to Dragonfly to manage the project. Prior to 2019, the programme was directly contracted from Trident Systems by Leigh Fisheries, Moana New Zealand and Sanford Ltd, with MPI and DOC additionally funding parts of the analysis.
+- Contract details: Dragonfly Data Science has been contracted by the Ministry for Primary Industries (MPI) since 2019 to deliver the video observation programme for the bottom longline fishery in Fisheries Management Area 1. Pisces is subcontracted to Dragonfly to manage the project. Prior to 2019, the programme was directly contracted from Trident Systems by Leigh Fisheries, Moana New Zealand and Sanford Ltd, with MPI and DOC additionally funding parts of the analysis.
 
-* Top image: View of the line hauling area of a vessel showing a woven object used to mimic a seabird. These proxies were used to test the viability of video observation in this fishery and the footage was reused during the initial training of the algorithm. Image used with permission of the footage owner, please contact Dragonfly before any re-use.
+- Top image: View of the line hauling area of a vessel showing a woven object used to mimic a seabird. These proxies were used to test the viability of video observation in this fishery and the footage was reused during the initial training of the algorithm. Image used with permission of the footage owner, please contact Dragonfly before any re-use.

@@ -1,7 +1,5 @@
 ---
 title: Working <br/>here
-quotetitle: Stories from our staff
-
 ---
 
 We’re an inclusive and welcoming company, valuing the diverse strengths,
@@ -30,14 +28,14 @@ Data is valuable and we take confidentiality seriously. We also promote open
 data and sharing code where appropriate.
 
 Some aspects of data science can be misused and the methods we use can make bias
- in an existing dataset more explicit. This can enhance and perpetuate
- discrimination, so we have to be hyper-aware of ways we might be seeing or
- creating bias.
+in an existing dataset more explicit. This can enhance and perpetuate
+discrimination, so we have to be hyper-aware of ways we might be seeing or
+creating bias.
 
 ## We support real lives
 
 Our office is in Wellington but some of our staff work remotely from other parts
- of the country, from Dunedin to Auckland. The ability to work flexibly is a given.
+of the country, from Dunedin to Auckland. The ability to work flexibly is a given.
 
 We take on interns and summer students and support staff who want to do further
 study. Recognising the need for continuing development, we run training
