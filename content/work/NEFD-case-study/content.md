@@ -96,4 +96,4 @@ the report by 4 weeks, which is a significant saving for the team.
 
 Ignatius Menzies,
 [Yvan Richard](/people/richard-yvan.html),
-[Nikki Wilkinson](/people/wilkinson-nikki.html).
+Nikki Wilkinson.
