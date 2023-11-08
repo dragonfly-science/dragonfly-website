@@ -3,14 +3,14 @@ title: In-house innovation creates more useful, beautiful maps
 ---
 
 Frustrated with the limitations of current web mapping software, Dragonfly’s
-digital cartographer [Ian Reese](/people/reese-ian.html) set about making
+digital cartographer Ian Reese set about making
 something better. Now this new method is being rolled out to our clients.
 
 <!--more-->
 
 Ian says he was irritated at being stuck using outdated and unsupported software
- to handle raster data. (Raster data is pixelated data where each pixel
-   represents a specific geographical location.)
+to handle raster data. (Raster data is pixelated data where each pixel
+represents a specific geographical location.)
 
 “In the last 10 years, web mapping software has moved on from stacked raster
 tiles to [vector tiles](https://en.wikipedia.org/wiki/Vector_tiles). In this
@@ -31,15 +31,15 @@ bringing vector and raster data together while effectively blending the two data
 types for use on the web.”
 
 Ian says he looked at a lot of commercial web mapping software but couldn't find
- anything to replace the old method for creating raster tiles with blending
- capabilities. For a while he contemplated writing code to do it himself.
+anything to replace the old method for creating raster tiles with blending
+capabilities. For a while he contemplated writing code to do it himself.
 
 “Solving this problem was the hardest part of the project. In the end, I decided
 I didn't need to reinvent the wheel and looked to [QGIS](https://qgis.org/en/site/)
 and [GDAL](https://gdal.org) to make it work. QGIS did most of what I needed in
- visualisation, setting zoom rules and blending data, and the Cloud Optimized
- GeoTIFF (COG) format looked like it could potentially replace the need for raster
-  tiles. I just needed to devise a method to turn QGIS rules into a COG."
+visualisation, setting zoom rules and blending data, and the Cloud Optimized
+GeoTIFF (COG) format looked like it could potentially replace the need for raster
+tiles. I just needed to devise a method to turn QGIS rules into a COG."
 
 ![Screenshot of the set-up in QGIS.](/news/2023-01-17-web-mapping-software/mapping-screenshot.jpg)
 
@@ -49,7 +49,7 @@ to the old mbTile format.
 “COGs are not really meant to act in this way and it was new territory for me.
 COGs were developed to take a single raster and prep them for the web by
 restructuring the internal format of the file.(The file is rebuilt internally
-  with a tiled pyramid structure that looks like the old raster tile cache.)
+with a tiled pyramid structure that looks like the old raster tile cache.)
 
 “However, COGs work exceptionally well with aerial imagery, so my reasoning was
 that if COGs can handle RGB images, it shouldn’t matter what that image is, as
@@ -76,11 +76,12 @@ can handle it.”
 
 Ian presented this research at the [Pacific Geospatial Conference](https://www.osgeo.org/events/pacific-geospatial-conference-2022/) in Fiji in November 2022. He is a member of the
 FOSS4G (free and open software for geospatial) community and invites others to work with him on improving the
-  method.
+method.
 
 ---
-More information  
 
-* [Read a technical description of this work](https://xycarto.com/2022/11/26/qgis-to-stylized-cogs/).
-* [See a demonstration of the method](https://dragonfly-science.github.io/qgis-cog-tiler/).
-* [View the Github repository](https://github.com/dragonfly-science/qgis-cog-tiler).
+More information
+
+- [Read a technical description of this work](https://xycarto.com/2022/11/26/qgis-to-stylized-cogs/).
+- [See a demonstration of the method](https://dragonfly-science.github.io/qgis-cog-tiler/).
+- [View the Github repository](https://github.com/dragonfly-science/qgis-cog-tiler).

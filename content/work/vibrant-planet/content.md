@@ -120,7 +120,7 @@ University of California, Los Angeles is an important collaborator in this work.
 [Fabian Döweler](/people/doweler-fabian.html),
 Ignatius Menzies,
 Kiarie Ndegwa,
-[Ian Reese](/people/reese-ian.html),
+Ian Reese,
 [Sadhvi Selvaraj](/people/selvaraj-sadhvi.html).
 
 ## About Vibrant Planet
