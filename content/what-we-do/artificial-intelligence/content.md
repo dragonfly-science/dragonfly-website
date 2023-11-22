@@ -19,9 +19,9 @@ tiles:
   - work/technical-review-case-study/content.md
 ---
 
-Whether you need AI for analysing satellite imagery, genomic sequences, field-recorded birdsong or underwater video, our innovative algorithms and models can help accelerate your research. Partnering with us gives you access to the latest AI capabilities so you can extend the boundaries of what can be achieved with your data.
+Whether you need AI for analysing satellite imagery, genomic sequences, field-recorded birdsong, or underwater video, our innovative algorithms and models can help accelerate your research. Partnering with us gives you access to the latest AI capabilities so you can extend the boundaries of what can be achieved with your data.
 
-While we enjoy prototyping bespoke models from scratch, we are equally adept at finetuning, engineering and production. Our team trains models on specialised GPU clusters, and runs inference on everything from API-equipped servers to mobile devices. When it comes to 'ML Ops' -- including keeping track of experiments, datasets, pipelines and models -- our 'reproducible' philosophy is a significant asset. 
+While we enjoy prototyping bespoke models from scratch, we are equally adept at finetuning, engineering, and production. Our team trains models on specialised GPU clusters, and runs inference on everything from API-equipped servers to mobile devices. When it comes to 'ML Ops' -- including keeping track of experiments, datasets, pipelines and models -- our 'reproducible' philosophy is a significant asset. 
 
 The below sections highlight some of our work to date in selected areas.
 
@@ -39,7 +39,7 @@ We have also been using computer vision to analyse underwater video for Environm
 
 # Speech Recognition
 
-AI has made major inroads into speech recognition (also known as speech-to-text or STT); the days of Hidden Markov models and separate phonetic, acoustic and language models are long gone. In the latest generation of models, such as OpenAI's Whisper, significant progress has even been made on the tricky problem of understanding the New Zealand accent!
+AI has made major inroads into speech recognition (also known as speech-to-text or STT); the days of Hidden Markov models and separate phonetic, acoustic, and language models are long gone. In the latest generation of models, such as OpenAI's Whisper, significant progress has even been made on the tricky problem of understanding the New Zealand accent!
 
 Dragonfly first became involved in neural network-based speech recognition back in 2015, when we built the Kōkako platform for Te Māngai Pāho, New Zealand’s Māori broadcasting agency. This allowed iwi radio stations to have segments of spoken and sung te reo Māori automatically detected in their programme material, sparing the considerable manual analysis that was previously necessary to meet their funding conditions.
 
