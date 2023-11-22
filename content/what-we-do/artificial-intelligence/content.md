@@ -25,7 +25,7 @@ While we enjoy prototyping bespoke models from scratch, we are equally adept at 
 
 The below sections highlight some of our work to date in selected areas.
 
-# Computer Vision
+## Computer Vision
 
 The use of AI to solve computer vision problems has become ubiquitious in the era of GPU acceleration. Bespoke deep neural networks to solve standard problems (object detection, segmentation, classification etc.) are now being replaced by transformer-based multimodal models that allow vision tasks to incorporate text or even audio prompts.
 
@@ -37,7 +37,7 @@ Another project involved using computer vision to identify black petrel in video
 We have also been using computer vision to analyse underwater video for Environment Agency - Abu Dhabi (EAD), as part of the Fisheries Resources Assessment Survey (FRAS). Hundreds of hours of underwater video data have been collected by EAD during trawl surveys, which presents an opportunity to develop novel, non-lethal methods for estimating fish populations in the Arabian Sea and Gulf of Oman. We have engaged a team of subject matter experts to detect fish in the video and identify individual species of interest, and are using the resulting dataset to train object detection and object tracking models - the latter of which enables counting samples without human intervention. This work is ongoing.
 
 
-# Speech Recognition
+## Speech Recognition
 
 AI has made major inroads into speech recognition (also known as speech-to-text or STT); the days of Hidden Markov models and separate phonetic, acoustic, and language models are long gone. In the latest generation of models, such as OpenAI's Whisper, significant progress has even been made on the tricky problem of understanding the New Zealand accent!
 
@@ -47,7 +47,7 @@ Continuing the te reo Māori theme, Dragonfly partnered with Northland-based Te 
 
 In 2022, Dragonfly built a New Zealand English speech recognition prototype with the Ministry of Transport, supported by a government Innovation Fund award. This involved working with our front-end team to build an app, Aotearoa Speaks, that could be used for verbal public consultations. The underlying model was shown to understand a range of recordings in NZ English, including loanwords and placenames from te reo Māori.
 
-# Language Models and NLP
+## Language Models and NLP
 
 Large language models (LLMs) have been at the heart of the most recent surge of interest in AI, described as a 'boom' by market analysts. These are huge generative models (with over 100 million parameters) trained on petabytes of text data, which can be used for a plethora of NLP tasks - from predicting missing words, to chat (e.g. ChatGPT), to freeform creative writing.
 
