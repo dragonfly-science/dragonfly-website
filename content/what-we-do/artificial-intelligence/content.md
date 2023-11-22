@@ -49,7 +49,7 @@ In 2022, Dragonfly built a New Zealand English speech recognition prototype with
 
 ## Language Models and NLP
 
-Large language models (LLMs) have been at the heart of the most recent surge of interest in AI, described as a 'boom' by market analysts. These are huge generative models (with over 100 million parameters) trained on petabytes of text data, which can be used for a plethora of NLP tasks - from predicting missing words, to chat (e.g. ChatGPT), to freeform creative writing.
+Large language models (LLMs) have been at the heart of the most recent surge of interest in AI, described as a 'boom' by market analysts. These are huge generative models (with over 100 million parameters) trained on petabytes of text data, which can be used for a plethora of Natural Language Processing (NLP) tasks - from predicting missing words, to chat (e.g. ChatGPT), to freeform creative writing.
 
 Dragonfly's work on language models precedes this recent flurry of public attention. In our work with Te Hiku Media, we trained language models on freely available te reo Māori data. Dragonfly Yvan Richard has also applied machine learning to public submission analysis for the Ministry for the Environment. The tools he developed - which integrate with Croissant, a submissions analysis tool with all-of-government potential - allow for automated tagging of submissions, with both unsupervised and supervised modes.
 
