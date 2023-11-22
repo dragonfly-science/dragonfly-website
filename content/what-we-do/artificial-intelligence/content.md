@@ -2,8 +2,6 @@
 title: Artificial intelligence
 subtitle: >
   Recent progress toward artificial intelligence has enabled a host of new research, and augmented or improved existing approaches in several existing domains. Dragonfly has spent many years keeping abreast of the latest machine learning techniques, and applying them across a range of interesting projects.
-author:
-  - people/henry-macdonald/content.md
 teaserTitle: Artificial inelligence
 teaserSVG: /what-we-do/artificial-intelligence/WWD_Learning1.svg
 bannerSVG: /what-we-do/martificial-intelligence/WWD_Learning2.svg
