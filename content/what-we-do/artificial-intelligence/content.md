@@ -45,7 +45,7 @@ Dragonfly first became involved in neural network-based speech recognition back 
 
 Continuing the te reo Māori theme, Dragonfly partnered with Northland-based Te Hiku Media in 2019 to develop a state-of-the-art Māori speech recognition model. This involved hundreds of hours of labelled te reo speech data, contributed by native speakers in Te Hiku's rohe, and used the then-bleeding edge Deepspeech architecture. This model and partnership created a future basis for research into pronunciation, under the umbrella of the MBIE-funded Papa Reo data science platform.
 
-In 2022, Dragonfly built a New Zealand English speech recognition prototype with the Ministry of Transport, supported by a government Innovation Fund award. This involved working with our front-end team to build an app, Aotearoa Speaks, that could be used for verbal public consultations. The underlying model was shown to understand a range of recordings in NZ English, including loan words and placenames from te reo Māori.
+In 2022, Dragonfly built a New Zealand English speech recognition prototype with the Ministry of Transport, supported by a government Innovation Fund award. This involved working with our front-end team to build an app, Aotearoa Speaks, that could be used for verbal public consultations. The underlying model was shown to understand a range of recordings in NZ English, including loanwords and placenames from te reo Māori.
 
 # Language Models and NLP
 
