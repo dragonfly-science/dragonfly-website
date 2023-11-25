@@ -33,7 +33,8 @@ She then had to re-organise the entire second trip to start again after cyclone 
 There is now 10 years of consistent data, with GPS coordinates for every sampling point.  
 Other staff at Dragonfly have streamlined the data entry process and set up reproducible reporting of the results.
 
-“We record the data into field books with waterproof pages. The formatting in the books is the same as the data entry system, so when people come to enter the data electronically during the survey trips they don’t have to think about it.  The data are then backed up
+“We record the data into field books with waterproof pages. The formatting in the books is the same as the data entry system, so 
+when people come to enter the data electronically during the survey trips they don’t have to think about it.  The data are then backed up
 to the database. That’s been a game changer.''
 
 It means that Katrin and Tyla come home with the data all entered and backed up. 
