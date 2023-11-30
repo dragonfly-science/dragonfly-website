@@ -44,7 +44,11 @@
     <meta name="description" content="$description$" />
     $else$ $if(og-description)$
     <meta name="description" content="$og-description$" />
-    $endif$ $endif$
+    $endif$ $endif$ $if(canonical)$
+    <link rel="canonical" href="$canonical$" />
+    $else$
+    <link rel="canonical" href="https://www.dragonfly.co.nz$url$" />
+    $endif$
     <!-- Google tag (gtag.js) -->
     <script
       async

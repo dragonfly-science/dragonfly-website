@@ -29,4 +29,5 @@ sectionTitle: Latest news
 sectionLeft: true
 video: /images/video/HomeMixFinal2.mp4
 videoPoster: /images/video/homepage-video-placeholder.jpg
+canonical: https://www.dragonfly.co.nz/
 ---
