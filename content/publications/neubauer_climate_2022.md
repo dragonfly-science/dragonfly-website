@@ -1,7 +1,6 @@
 ---
 pdf: neubauer_climate_2022.pdf
 tags: philipp, teresa, fisheries, dragonfly, report, bayesian
-title:  Climate impacts on fished populations. Part 1: Simulating bottom-up, physiological, and fishery-induced changes in production potential
 ---
 Climate influences fish stocks via direct physiological effects from
 changes in temperature, dissolved oxygen, and acidity. Nevertheless,
