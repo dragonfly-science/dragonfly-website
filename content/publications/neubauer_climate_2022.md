@@ -38,4 +38,5 @@ changes determined by direct temperature impacts on focal species.
 Our results
 suggest that climate responses of productivity parameters need
 to be considered in combination with density-dependent responses. For many stocks,
-it may not be possible to separate these processes, owing to the limitations of available data. 
+it may not be possible to separate these processes, owing to the limitations of 
+available data. 

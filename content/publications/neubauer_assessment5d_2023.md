@@ -1,6 +1,6 @@
 ---
 pdf: neubauer_assessment5d_2023.pdf
-tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
+tags: philipp, kyuhan, paua, fisheries, dragonfly, benthic, report, bayesian
 title:  The 2023 stock assessment and management procedure evaluation for pāua (<i>Haliotis iris</i>) fisheries in PAU 5D
 ---
 Management procedures for the pāua  (<i>Haliotis iris</i>) fishery in 
