@@ -1,7 +1,6 @@
 ---
 pdf: neubauer_addressing_2023.pdf
 tags: kath, philipp, kyuhan, teresa, fisheries, dragonfly, report
-title: Addressing uncertainty in WCPFC stock assessments: Review and recommendations from WCPFC Project 113
 ---
 Model weighting is a central challenge in stock assessments, because
  the retention
