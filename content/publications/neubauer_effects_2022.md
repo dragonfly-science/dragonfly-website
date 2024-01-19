@@ -1,7 +1,6 @@
 ---
 pdf: neubauer_effects_2022.pdf
 tags: philipp, teresa, fisheries, dragonfly, report, bayesian
-title:  Climate impacts on fished populations. Part 2: Effects of climate and environmental variability on fishery stock assessment accuracy
 ---
 Fish stocks are influenced through direct physiological effects from
 changes in their marine habitat, such as temperature, dissolved oxygen, 
