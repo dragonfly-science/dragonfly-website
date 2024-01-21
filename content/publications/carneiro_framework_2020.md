@@ -1,5 +1,5 @@
 ---
-tags: yvan, seabird, article
+tags: yvan, edward, seabird, article
 title: "A framework for mapping the distribution of seabirds by integrating tracking, demography and phenology"
 ---
 
