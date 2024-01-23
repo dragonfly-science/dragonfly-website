@@ -2,6 +2,7 @@
 tags: yvan, seabird, article
 title: "Estimating the impact of marine threats to seabird recovery after predator eradication"
 ---
+
 Pelagic seabirds are one of the most threatened taxa due to sustained and intensifying threats 
 at their breeding sites on land and when foraging at sea. Predator eradication at seabird 
 breeding sites has become a key strategy for the long-term conservation and viability of seabird
