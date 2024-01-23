@@ -24,37 +24,39 @@ presentation of stock assessment and management advice uncertainty by
 the WCPFC scientific committee. The terms of reference for the general
 review were to:
 
-1. Review and summarise the different approaches used for characterising 
+1.	Review and summarise the different approaches used for characterising 
 uncertainty in WCPFC stock assessments for tuna, billfish and sharks 
 over the last five years.
-2. Describe how uncertainty was communicated in the context of management risks 
+2.	Describe how uncertainty was communicated in the context of management risks 
 and its influence on decision-making processes used by the WCPFC.
-3. Comment on the suitability of the recent approaches to characterising uncertainty 
+3.	Comment on the suitability of the recent approaches to characterising uncertainty 
 for the management systems, including the harvest strategy approach.
+
 
 The specific review aimed to:
 
-1.  Critically review the ensemble approach that was applied for the
+1.	Critically review the ensemble approach that was applied for the
 assessment of southwest Pacific Ocean swordfish assessment in 2021
 (SC17-SA-WP-04, Ducharme-Barth et al. 2021)
  to capture both "structural" and
 "estimation'' uncertainty.
-2. Conduct a similar review of the approaches used in the analysis pertaining 
+2.	Conduct a similar review of the approaches used in the analysis pertaining 
 to the stock assessment  of southwest Pacific Ocean blue shark (SC18-SA-WP-03,
 Neubauer et al. 2022).  
-3. Based on these reviews, provide recommendations for model 
+3.	Based on these reviews, provide recommendations for model 
 ensemble construction, model retention, and weighting of models included 
 within ensembles in the context of the WCPFC tuna, billfish, and shark assessments.
 
+
 The expected outcomes of the project were to provide:
 
-1. a basis for stock assessment teams to consider and apply
+1.	a basis for stock assessment teams to consider and apply
  alternative approaches for characterising stock assessment uncertainty
   (including model selection and weighting) across the WCPFC tuna, billfish, 
   and shark assessments;
-2. guidance for the Scientific Committee (SC) about the approaches 
+2.	guidance for the Scientific Committee (SC) about the approaches 
 for capturing assessment uncertainty in the provision of management advice; and
-3. improved understanding for managers and stakeholders of the 
+3.	improved understanding for managers and stakeholders of the 
 implications of alternative approaches to characterising uncertainty 
 for their perception of risk.
 
@@ -110,44 +112,46 @@ advice, and for the communication of assessment uncertainty.
  
 **Model ensembles and weighting**
 
-1. Develop joint priors and explicit rationales for grid axes and their values.
-2. Either draw from, or weight axes over parameters according
+1.	Develop joint priors and explicit rationales for grid axes and their values.
+2.	Either draw from, or weight axes over parameters according
   to the joint prior
-3. Consider  observation error, structural, parameter, and estimation uncertainty in
+3.	Consider  observation error, structural, parameter, and estimation uncertainty in
 management advice.
-4. Where possible, express priors for model outcome space to avoid
+4.	Where possible, express priors for model outcome space to avoid
 post-hoc selection/weighting.
-5. Where post-hoc weighting is necessary (unexpected outcomes), this 
+5.	Where post-hoc weighting is necessary (unexpected outcomes), this 
 weighting should be proposed by analysts.
-6. Clarity about uncertainties addressed by the grids address, including clear and
+6.	Clarity about uncertainties addressed by the grids address, including clear and
 consistent terminology around uncertainty.
+
 
 **Communicating uncertainty and risk**
 
 
-1. Develop a template for reporting management advice and
+1.	Develop a template for reporting management advice and
 uncertainties; ideally this template is a standardised table format to help managers
 and stakeholders locate key quantities easily.
-2. Agree on terminology and the set of required measures
+2.	Agree on terminology and the set of required measures
  (ideally probabilities relative to reference points).
-3. Clear communication about quality of information determining stock status
+3.	Clear communication about quality of information determining stock status
   and management advice:
       - Qualification and quantification of uncertainties.
-         1. Data quality. 
-         2. Model/population: structural uncertainty. (Note the use of "structural" 
+         1. 	Data quality. 
+         2. 	Model/population: structural uncertainty. (Note the use of "structural" 
   here refers to models with different likelihoods, rather than different 
   parameter values.)
-          3. Key parameters (parameter and estimation uncertainty).
+          3. 	Key parameters (parameter and estimation uncertainty).
      - Key uncertainties and potential impacts.
-4. With respect to item 3, 
+4.	With respect to item 3, 
 develop a set of research recommendations 
 to address key uncertainties.
-5. A review of timelines and capacity for tuna stock assessments may
+5.	A review of timelines and capacity for tuna stock assessments may
 be necessary to allow sufficient time and capacity to adequately
 address uncertainty. Sufficient time is also needed to enable the provision of 
 management advice that is
 consistent with the application of the precautionary approach as
 outlined in the WCPFC convention text.
+
 
 **Further development and future research**
 
