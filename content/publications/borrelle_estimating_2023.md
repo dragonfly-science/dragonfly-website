@@ -26,5 +26,5 @@ monitoring population recovery  for seabirds is a critical elementof seabird isl
 Our conclusions can shape how managers implement additional  conservation actions for species that
 fail to recover following predator eradication.
 
-[Available here] (https://ora.ox.ac.uk/objects/uuid:469dec3a-0e72-4a54-a4ea-59415bf0090d/download_file?file_format=application%2Fpdf&safe_filename=Borrelle_et_al_2023_Estimating_the_impactV.pdf&type_of_
+[Available here](https://ora.ox.ac.uk/objects/uuid:469dec3a-0e72-4a54-a4ea-59415bf0090d/download_file?file_format=application%2Fpdf&safe_filename=Borrelle_et_al_2023_Estimating_the_impactV.pdf&type_of_
 work=Journal+article)
