@@ -47,3 +47,5 @@ that the Ashburton sub‑region had the greatest reduction in nitrogen loss, whe
 Waimakariri sub‑region had the weakest evidence of a reduction. The South Canterbury
 sub‑region had lower nitrogen loss than the other regions, after taking into account farm
 size.
+
+[Available here](https://assets.ctfassets.net/bo1h2c9cbxaf/16kKeBpg01Vob91kLtP1qC/2c0fdf968b99da9c91c96573aacc1464/2023-11_Trends_in_nitrogen_loss_from_Canterbury_Dairy_Farms.pdf)
