@@ -25,14 +25,14 @@ productivity.
 The model outcomes showed that fishing led to rapid and expected density-dependent
 per-capita declines in natural mortality (<i>M</i>) and growth (periodically faster
 growth and larger body size) over the period of initial depletion; there was higher 
-average<i>M</i> due to age- and size-structure truncation from
+average <i>M</i> due to age- and size-structure truncation from
 fishing. Climate responses were relatively small, but changed in the
-opposite direction to fishing for<i>M</i> (increasing per-capita <i>M</i>) and body size
-(smaller individuals). Increased growth rates at higher temperatures
-in climate scenarios further enhanced density-dependent changes from
-fishing. Nevertheless, the present approach also suggests that even
-moderate changes in environmental suitability are sufficient to offset
-changes determined by direct temperature impacts on focal species.
+opposite direction to fishing for <i>M</i> (increasing per-capita <i>M</i>) and body size
+ (smaller individuals). Increased growth rates at higher temperatures
+ in climate scenarios further enhanced density-dependent changes from
+ fishing. Nevertheless, the present approach also suggests that even
+ moderate changes in environmental suitability are sufficient to offset
+ changes determined by direct temperature impacts on focal species.
 
 Our results
 suggest that climate responses of productivity parameters need
