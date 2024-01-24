@@ -8,31 +8,34 @@ title: Nokome Bentley
 banner: bentley-nokome/nokome-bentley.jpg
 nocite: |
 ---
-Nokome is a principal data scientist with expertise in data visualisation,
+Nokome is a scientist with expertise in data visualisation,
 statistical modelling and software engineering. 
 
 
 <!--more-->
 
-Before joining Dragonfly he worked as an independent fisheries modeller at
-Trophia, which he founded in 1996. He also researched seagrass and abalone
-ecology in Australia. 
+Before joining Dragonfly, he researched seagrass and abalone ecology in Australia,
+and worked as a fisheries scientist and modeller at Trophia, which he founded in 1996.
 
-He founded [Stencila](https://stencila.io/) in 2012, because of an ongoing interest in
-software to make computationally intensive research easier and more efficient.
-He remains its CEO. 
+Following an ongoing interest in software to make reproducible research easier, more efficient, and more 
+accessible to scientists without extensive coding skills, Nokome founded [Stencila](https://stencila.io/) in 2012.
 
-Nokome is interested in exploring and understanding large data sets. He values
-the opportunity to communicate his findings and enable clients to explore data
-using elegant visualisations.
- 
+In December 2023, he took a year off from Dragonfly to take up a role as Science Entrepreneur-in-Residence at 
+[Astera Institute](https://astera.org/). During the residence he is exploring ways in which scientists can use 
+generative AI to be more productive, whilst maintaining transparency and reproducibility by tracking the provenance of scientific content.
+
 Nokome has a bachelor of science degree in marine biology from James Cook
 University in Queensland and a postgraduate diploma in fisheries science and
-management at the Australian Maritime College, University of Tasmania. 
+management from the Australian Maritime College, University of Tasmania.
 
-> I really like creating models of varied biological, economic and social
-> systems, fitting them to real-world data – then we can use them to help inform
-> real-world decision making.
+He is interested in exploring and understanding large data sets through modelling and enjoys the 
+opportunity to communicate his findings, and enable client understanding,
+through elegant visualisations.
+
+> I enjoy creating models of complex real-world biological, economic and social
+> systems, fitting them to real-world data - all to help inform
+> real-world, evidence-based decision making.
+
 
 
 
