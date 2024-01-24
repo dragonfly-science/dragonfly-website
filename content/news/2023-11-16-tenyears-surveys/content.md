@@ -37,6 +37,7 @@ enough so that we can sample the cockle and pipi beds. I also have to plan the
 driving schedule, leave time for stops and meal breaks, and book accommodation
 for the field team. It all adds up.”
 
+
 There is now 10 years of consistent data, with GPS coordinates for every sampling point.  
 Other staff at Dragonfly have streamlined the data entry process and set up reproducible reporting of the results.
 
@@ -44,6 +45,7 @@ Other staff at Dragonfly have streamlined the data entry process and set up repr
 to the database. That’s been a game changer."
 
 It means that Katrin and Tyla come home with the data all entered and backed up.
+
 
 Considering the challenges last summer, Katrin is grateful to have completed another round of
 surveys.  “What we got done was amazing – I’m pretty happy with how it went, and that’s absolutely down
@@ -53,6 +55,5 @@ surveys.  “What we got done was amazing – I’m pretty happy with how it wen
  Katrin and Tyla are now getting ready for another round of surveys in 2024.
 
 ![Members of the field team counting and measuring bivalves](/news/2023-11-16-tenyears-surveys/field-team.jpg)
-
 
 For more information see the 2022–23 report [Intertidal shellfish monitoring in the northern North Island region, 2022–23.](/publications/berkenbusch_intertidal_2023.html) or read a [previous stories about the monitoring surveys](https://www.dragonfly.co.nz/news/2021-10-26-bivalve-update.html).

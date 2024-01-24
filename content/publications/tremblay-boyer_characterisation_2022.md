@@ -1,5 +1,5 @@
 ---
-pdf: tremblay-boyer_characterisation_2020.pdf
+pdf: tremblay-boyer_characterisation_2022.pdf
 tags: laura, katrin, dragonfly, marine-mammals, bycatch, mitigation, report
 ---
 
@@ -40,8 +40,9 @@ a significant impact on the population (e.g., Hector's and Māui dolphins).  In 
 adequately high to provide reliable capture estimates for species that are observed sufficiently often to inform a
 model in systematic bycatch assessments. The current analysis revealed that  observer coverage was low overall
 across gears, although there were increases in some fisheries with high marine mammal capture rates in recent years.
-Low observer coverage in inshore trawl fisheries is concerning, given the high level of effort overlap with the habitat of
-many coastal marine mammal species.
+Observer coverage was particularly  low in inshore trawl fisheries, which are characterised by high effort, while 
+overlapping with the habitat of many coastal marine mammal species. This scarcity of observer data impedes a 
+reliable assessment of interactions of marine mammal species with these fisheries.
 
 Mitigation efforts in New Zealand and elsewhere have focused on technical and
 other approaches to reduce or prevent incidental captures of marine mammals in
@@ -54,17 +55,16 @@ Mitigation techniques for New Zealand fisheries include exclusion devices that a
 use in subantarctic trawl fisheries to mitigate the bycatch of New Zealand sea lion.
 Exclusion devices have also been trialled in other New Zealand trawl fisheries to reduce
 incidental captures of New Zealand fur seal.  Although these limited trials did not indicate
-the suitability of exclusion devices,
-the high number of incidental captures of New Zealand fur seal in trawl fisheries
-warrants further research into this mitigation technique.
+the suitability of exclusion devices, their effectiveness in trawl fisheries elsewhere and for New Zealand
+sea lion warrant further research into this mitigation technique for New Zealand fur seal.
 
-In northern North Island trawl fisheries, acoustic deterrent devices are currently being used on night-tows to
-prevent common dolphin bycatch.  The lack of systematic data of their use and of associated
+In northern North Island trawl fisheries, acoustic deterrent devices are currently being used 
+to prevent common dolphin bycatch.  The lack of systematic data of their use and of associated
 operational aspects means that their effectiveness remains untested.  Furthermore, the acoustic deterrent devices
 are  used in combination with other measures in this fishery, precluding the assessment of individual measures.
 
 For longline, set-net, pot (and trap) and purse-seine fisheries, bycatch mitigation options remain limited, and
 research to date has been unable to identify technical approaches and gear modifications that would have potential
-in a New Zealand context. Although acoustic deterrent devices have been shown to be effective in preventing
+in a New Zealand context. Although acoustic devices have been shown to be effective in preventing
 bycatch of some small cetacean species in set-net fisheries, research to date does not support their use as a mitigation
 device for Hector's dolphin bycatch.
