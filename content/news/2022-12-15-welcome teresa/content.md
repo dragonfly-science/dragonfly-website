@@ -1,7 +1,8 @@
 ---
 title: Welcome Teresa!
 ---
-We are delighted to welcome Dr Teresa A’mar to Dragonfly. She has an impressive 
+
+We are delighted to welcome Dr Teresa A’mar to Dragonfly. She has an impressive
 background in fisheries science, software development and statistical modelling.
 
 <!--more-->
@@ -16,12 +17,12 @@ Phil was. Phil, Matt, and I were able to communicate well, explore a range of
 ideas and implementations, and get a lot of things done.”
 
 Teresa also worked with [Kath Large](/people/large-kath.html) at NIWA, mainly on
- the first release of the [Casal2](https://niwa.co.nz/fisheries/tools-resources/casal-2-niwas-next-generation-fisheries-population-modelling-software ) population modelling
- software package.
+the first release of the [Casal2](https://niwa.co.nz/fisheries/tools-resources/casal-2-niwas-next-generation-fisheries-population-modelling-software) population modelling
+software package.
 
 When Kath took up a senior fisheries scientist role with Dragonfly in 2021,
 Teresa watched her progress with interest. “I was curious about her move, and it
- was clear that Kath was thriving at Dragonfly.”
+was clear that Kath was thriving at Dragonfly.”
 
 Teresa was also a co-supervisor for [Kyuhan Kim’s](/people/kim-kyuhan.html) PhD
 thesis, along with academic staff from Victoria University of Wellington.
@@ -47,7 +48,7 @@ stock to see how the management strategy performed under a range of scenarios.�
 
 “The projection process needed a lot of computing time. At one point I went out
 and bought a gaming computer in order to have dedicated computing resources. It
- took 42 sets of weeklong runs to get through all of the projections.”
+took 42 sets of weeklong runs to get through all of the projections.”
 
 After her studies, Teresa worked as an operations research analyst at
 [NOAA Fisheries](https://www.fisheries.noaa.gov/) and as a statistical research
@@ -73,5 +74,3 @@ components and interfaces. It’s something that’s also part of her role at Dr
 processes and guidelines, and generalising existing frameworks. When things are
 set up well, it’s more efficient because you don’t have to start every project
 from scratch.”
-
-Read more about [Teresa](/people/amar-teresa.html).  
