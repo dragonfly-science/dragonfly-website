@@ -16,7 +16,6 @@ Kusal says he enjoyed the project, especially the opportunity to wrangle a long-
 
 “There’s never a perfect answer. It’s about looking at what’s best for a particular situation. Being able to apply different UX tools gives you confidence that you’re doing the right thing.”
 
-
 The field of UX design is about helping identify and solve genuine problems for people interacting with technology.
 
 “To get a good result, you have to keep the user in mind and engage with them in the design process. If you don’t engage the people with the problem in the solution, you’re not really doing the problem justice.”
@@ -33,5 +32,4 @@ Since he started, Kusal has leapt into training and project work across the team
 
 “Everyone has been really eager to bring me in and help me understand their work. That’s surprised me, but has made me feel welcome. Even in the first few weeks I’ve seen so many areas where we’re already practising UX design well and other areas where we could apply it more explicitly. I’m looking forward to helping make a difference.”
 
-
-Read more about [the seabird project](/news/2022-03-18-muxd.html) or about [Kusal](/people/ekanayake-kusal.html).  
+Read more about [the seabird project](/news/2022-03-18-muxd.html).

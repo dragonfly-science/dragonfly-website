@@ -67,7 +67,7 @@ This project included development work to make the mapping of satellite images m
 
 ## Project team
 
-[Kusal Ekanayake](/people/ekanayake-kusal.html),
+Kusal Ekanayake,
 [Emma Hopkinson](/people/hopkinson-emma.html),
 [Richard Mansfield](/people/mansfield-richard.html),
 Ian Reese,
