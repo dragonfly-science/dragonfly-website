@@ -72,7 +72,7 @@ Kusal Ekanayake,
 [Richard Mansfield](/people/mansfield-richard.html),
 Ian Reese,
 [Yvan Richard](/people/richard-yvan.html),
-[Sadhvi Selvaraj](/people/selvaraj-sadhvi.html),
+Sadhvi Selvaraj,
 [Simon Winter](/people/winter-simon.html),
 [Pep Zuijderwijk](/people/zuijderwijk-pep.html).
 
