@@ -121,7 +121,7 @@ University of California, Los Angeles is an important collaborator in this work.
 Ignatius Menzies,
 Kiarie Ndegwa,
 Ian Reese,
-[Sadhvi Selvaraj](/people/selvaraj-sadhvi.html).
+Sadhvi Selvaraj.
 
 ## About Vibrant Planet
 

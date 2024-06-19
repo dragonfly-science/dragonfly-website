@@ -22,7 +22,7 @@ A snapshot of the flooding was taken during Cyclone Gabrielle, using synthetic a
 
 ![Extent of flooding near Napier on Tuesday 14 February at 8.07 pm. Flooded areas are coloured blue.](/news/2023-02-17-cyclone-gabrielle/napier-flooding.jpg)
 
-Dragonfly data scientist [Sadhvi Selvaraj](/people/selvaraj-sadhvi.html) located and analysed the Sentinel-1 and Sentinel-2 data.
+Dragonfly data scientist Sadhvi Selvaraj located and analysed the Sentinel-1 and Sentinel-2 data.
 
 “The initial map doesn’t show the full extent of the flooding – only the flooding that had occurred by the time the satellite image was recorded. Also, the map hasn’t been validated by what we’ve seen on the ground.”
 
@@ -30,7 +30,7 @@ Ian Reese created the maps using QGIS. The imagery was processed in Google Earth
 
 Sadhvi says SAR data is useful for mapping floods in open areas, but may not accurately show flooding in urban areas. "That’s because the data is acquired by sensors that send and receive microwave signals at a slant angle, so buildings can block the signals and create inaccuracies.”
 
-Email [Sadhvi Selvaraj](mailto:sadhvi@dragonfly.co.nz) to find out more about satellite imagery and technical details of the analyses.
+Email [Dragonfly Data Science](mailto:hello@dragonfly.co.nz) to find out more about satellite imagery and technical details of the analyses.
 
 ---
 
