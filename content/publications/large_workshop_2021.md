@@ -19,9 +19,6 @@ and fisheries.
 
 In view of existing studies,  the current project was aimed at identifying
 gaps in current bycatch mitigation within the context of New Zealand's commercial fisheries.  
-%It was based on a stakeholder workshop that sought to capture
-%By increasing the understanding of mitigation gaps,
-%the project was also focused on  potential improvements and innovations for reducing protected species captures.  
 The initial goals of the project were an assessment of existing mitigation tools,  the identification of significant gaps in
 mitigation techniques and practices, and an appraisal of potential new technologies that may be used to support reductions in protected species bycatch.
 Within these goals, the project was predominantly based on stakeholder engagement to capture knowledge and input through stakeholder participation in two workshops. The workshops had the
