@@ -1,5 +1,5 @@
 ---
-pdf: richard_antipodean_2024.pdf
+pdf: richard_assessing_2023.pdf
 tags: yvan, katrin, risk-assessment, seabird, fisheries, dragonfly, report
 ---
 This study assessed the temporal variability in seabird distributions estimated from tracking data and its
