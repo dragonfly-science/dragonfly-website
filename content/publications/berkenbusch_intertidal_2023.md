@@ -1,5 +1,5 @@
 ---
-pdf: berkenbusch_intertidal_2021.pdf
+pdf: berkenbusch_intertidal_2023.pdf
 tags: katrin, tyla, fisheries, dragonfly, benthic, report, shellfish
 ---
 Culturally important marine species in New Zealand include cockles 
