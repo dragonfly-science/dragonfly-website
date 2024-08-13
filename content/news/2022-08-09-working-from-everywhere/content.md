@@ -4,22 +4,21 @@ title: Working from everywhere
 
 After a long wait, many Dragonflies are enjoying the opportunity to catch up
 with family and friends around the world. Most of the travellers are choosing to
- take their work with them.
+take their work with them.
 
 <!--more-->
 
 We currently have people working from Germany, France, Italy, the Netherlands
 and England. Others regularly work from home in Whanganui, Waiheke, Wairarapa
-and Wainuiomata as well as in our Wellington office.  
+and Wainuiomata as well as in our Wellington office.
 
-[Sadhvi Selvaraj](https://www.dragonfly.co.nz/people/selvaraj-sadhvi.html)
-usually works from her home in Auckland but this month she’s heading back to
+Sadhvi Selvaraj usually works from her home in Auckland but this month she’s heading back to
 India again to spend some more time with her family and friends.
 
 “It was great to go back in April. I usually make a trip every year, so that was
- the longest time I’d ever been away. I’m from Chennai in South India – it’s
- noisy, it’s crowded and it’s what I grew up with. I miss the tooting horns, the
-  busyness, and my Mum’s cooking, which is just the best!”
+the longest time I’d ever been away. I’m from Chennai in South India – it’s
+noisy, it’s crowded and it’s what I grew up with. I miss the tooting horns, the
+busyness, and my Mum’s cooking, which is just the best!”
 
 Sadhvi likes to visit for several weeks at a time but says she doesn’t have
 enough leave to stay away for that long. It would also be disruptive for the
@@ -42,5 +41,5 @@ This month she’s heading back for the wedding of a close cousin. Besides her
 laptop and headphones, her luggage will contain a small folding desk.
 
 “I don’t have a comfortable desk in India so it’s better to take one with me. My
- parents like to be able to put everything away, so I’ll be able to leave this
- for next time – it’s perfect.”
+parents like to be able to put everything away, so I’ll be able to leave this
+for next time – it’s perfect.”
