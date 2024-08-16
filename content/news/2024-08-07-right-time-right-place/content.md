@@ -5,7 +5,7 @@ title: Go fishing at the right time, in the right place
 The ocean is changing, and the trade-offs involved with fishing are becoming
 more complex. Dragonfly director and fisheries scientist, Philipp Neubauer, is
 currently in the proof of concept stage for a new platform 'Right Time, Right
-Place'. 
+Place'.
 
 
 <!--more-->
