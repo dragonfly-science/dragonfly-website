@@ -67,12 +67,12 @@ This project included development work to make the mapping of satellite images m
 
 ## Project team
 
-Kusal Ekanayake,
+[Kusal Ekanayake](/people/ekanayake-kusal.html),
 [Emma Hopkinson](/people/hopkinson-emma.html),
 [Richard Mansfield](/people/mansfield-richard.html),
 Ian Reese,
 [Yvan Richard](/people/richard-yvan.html),
-Sadhvi Selvaraj,
+[Sadhvi Selvaraj](/people/selvaraj-sadhvi.html),
 [Simon Winter](/people/winter-simon.html),
 [Pep Zuijderwijk](/people/zuijderwijk-pep.html).
 
