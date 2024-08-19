@@ -1,6 +1,6 @@
 ---
 pdf: doeweler_linking_2024.md
-tags: fabian, bayesian, geospatial, ecology
+tags: fabian, bayesian, geospatial, ecology, article
 ---
 Unravelling slow ecosystem migration patterns requires a fundamental understanding 
 of the broad-scale climatic drivers, which are further modulated by fine-scale heterogeneities just
