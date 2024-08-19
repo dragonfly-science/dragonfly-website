@@ -7,13 +7,13 @@ marine species in coastal environments. Two of the main target species in these 
 fisheries are cockle (*Austrovenus stutchburyi*) and  pipi (*Paphies australis*), which occur throughout the
  country, often in close proximity to urban centres. This accessibility means that both species are
 vulnerable to overexploitation, and their presence in coastal environments makes them also susceptible
-to other human impacts.
+to other human impacts. 
 
 To monitor cockle and pipi populations in northern New Zealand, Fisheries New Zealand initiated
 regular population assessments in the early 1990s. Following refinements and the spatial extension of
 this programme, the intertidal surveys currently assess bivalve populations at a range of sites in
 Auckland, Northland, Waikato, and Bay of Plenty. The surveys collect demographic data and document
-population trends across the northern North Island regions.
+population trends across the northern North Island regions. 
 
 This study presents the findings from the most recent survey in the northern North Island monitoring
 series, providing data from the 2023–24 fishing year. The survey sites were (in alphabetical order):
@@ -21,7 +21,7 @@ Bowentown Beach, Little Waihi Estuary, Mangawhai Harbour, Marsden Bank, Ngunguru
 Raglan Harbour, Ruakākā Estuary, Tairua Harbour, Te Haumi Bay, Te Mata Bay (Waipatukahu),
 Umupuia Beach, and Whangateau Harbour. At five of the sites, Marsden Bank, Ngunguru Estuary, Te
 Mata Bay, Umupuia Beach, and Whangateau Harbour, existing fishery restrictions prevent the take of
-cockles and pipi.
+cockles and pipi. 
 
 Nine of the 2023–24 sites contained cockle populations, which varied in total abundance and density,
 depending on the site. The highest total population abundance was at Whangateau Harbour with an
@@ -30,19 +30,19 @@ estimate of 27.60 (CV: 4.65%) million cockles was at Bowentown Beach. At the sam
 Bowentown Beach cockle population had the highest density with 1843 cockles per m<sup>2</sup>. Two other sites
 had similar high-density estimates (>1000 individuals per m<sup>2</sup>), Ngunguru Estuary and Raglan Harbour.
 In contrast, the lowest total cockle density was at Umupuia Beach, estimated at 132 (CV: 19.47%)
-cockles per m<sup>2</sup>.
+cockles per m<sup>2</sup>. 
 
 At the same time, Umupuia Beach was the only site with a high proportion and relatively high density of
 large individuals (30 mm shell length). At this beach, large cockles made up over 50% of the population,
 and occurred at an estimated density of 71 (CV: 22.23%) large cockles per m<sup>2</sup>. Other cockle populations
 contained few large individuals, and their density estimates were markedly lower, typically with high
-uncertainty (including CV values above 40%).
+uncertainty (including CV values above 40%). 
 
 Length-frequency distributions documented the prevalence of medium-sized cockles (sizes >15 mm and
 <30 mm shell length) across the northern populations. This size class largely determined the population
 size structure with varying proportions of recruits (15 mm shell length) contributing to the population
 overall. In 2023–24, the proportion of recruits varied between 19 and 63% at most sites (i.e., excepting
-Umupuia Beach), reflecting a marked influx of individuals to existing cockle populations.
+Umupuia Beach), reflecting a marked influx of individuals to existing cockle populations. 
 
 Pipi populations were surveyed at ten of the northern sites. Their total population sizes ranged from 0.45
 (CV: 15.66%) million pipi at Marsden Bank to 121.15 (CV: 13.48%) million individuals at Ruakākā
