@@ -1,5 +1,6 @@
 TAG := lts-ubuntu-12.26-v7
 IMAGE := dragonflyscience/dragonfly-website:$(TAG)
+NPM_CACHE := /tmp/.npm
 
 HS := $(shell find haskell/WebSite -name *.hs)
 
@@ -71,19 +72,19 @@ endif
 
 # NPM Commands
 .install:
-	$(RUN) bash -c "cd front-end && npm install"
+	$(RUN) -e npm_config_cache=$(NPM_CACHE) bash -c "cd front-end && npm install"
 	touch $@
 
 .build-npm: .install
-	$(RUN) bash -c 'cd front-end && npm run build'
+	$(RUN) -e npm_config_cache=$(NPM_CACHE) bash -c 'cd front-end && npm run build'
 	touch $@
 
 .build-static: .install
-	$(RUN) bash -c 'cd front-end && npm run build:static'
+	$(RUN) -e npm_config_cache=$(NPM_CACHE) bash -c 'cd front-end && npm run build:static'
 	touch $@
 
 static: _site/assets
-	$(RUN_WEB) bash -c 'cd front-end && npm run staging'
+	$(RUN_WEB) -e npm_config_cache=$(NPM_CACHE) bash -c 'cd front-end && npm run staging'
 
 # Build commands
 website: $(HS) haskell/Site.hs
@@ -93,7 +94,7 @@ website: $(HS) haskell/Site.hs
 
 .build-website: .install website _site/assets
 	$(RUN_WEB) bash -c 'cd ./content && ../website build'
-	$(RUN) bash -c 'cd front-end && npm run build'
+	$(RUN) -e npm_config_cache=$(NPM_CACHE) bash -c 'cd front-end && npm run build'
 	$(RUN) bash -c 'cp -rf ./content/fonts ./_site'
 	touch $@
 
@@ -108,7 +109,7 @@ endif
 build: .env .build-website .robots
 
 .images: .install
-	$(RUN) bash -c 'cd front-end && npm run imagemin'
+	$(RUN) -e npm_config_cache=$(NPM_CACHE) bash -c 'cd front-end && npm run imagemin'
 	touch $@
 
 compress: .images

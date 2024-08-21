@@ -5,6 +5,8 @@ services:
     ports:
       - 8000:8000
       - 3000:3000
+    environment:
+      - npm_config_cache=/tmp/.npm
     volumes:
       - $PWD/content:/work/content:cached
       - $PWD/front-end:/work/front-end:cached
