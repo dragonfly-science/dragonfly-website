@@ -5,6 +5,7 @@ set -ex
 export RUN=
 export RUN_WEB=
 export CI=true
+export npm_config_cache=/tmp/.npm
 
 make clean
 make build
