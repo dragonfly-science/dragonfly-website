@@ -3,13 +3,15 @@ pdf: doeweler_linking_2024.md
 tags: fabian, bayesian, geospatial, ecology, article
 ---
 Unravelling slow ecosystem migration patterns requires a fundamental understanding  
-of the broad-scale climatic drivers, which are further modulated by fine-scale heterogeneities just 
- outside established ecosystem boundaries. While modern Unoccupied Aerial Vehicle (UAV) remote  
-sensing approaches enable us to monitor local scale ecotone dynamics in unprecedented detail, they  
-are often underutilised as a temporal snapshot of the conditions on site. In this study in the Southern  
-Alps of New Zealand, we demonstrate how the combination of multispectral and thermal data, as 
-well as LiDAR data (2019), supplemented by three decades (1991–2021) of treeline transect data can   
-add great value to field monitoring campaigns by putting seedling regeneration patterns at treeline  
+of the broad-scale climatic drivers, which are further modulated by fine-scale 
+heterogeneities just outside established ecosystem boundaries. While modern 
+Unoccupied Aerial Vehicle (UAV) remote sensing approaches enable us to 
+monitor local scale ecotone dynamics in unprecedented detail, they are often 
+underutilised as a temporal snapshot of the conditions on site. In this study in 
+the Southern  Alps of New Zealand, we demonstrate how the combination of 
+multispectral and thermal data, as well as LiDAR data (2019), supplemented 
+by three decades (1991–2021) of treeline transect data can add great value 
+to field monitoring campaigns by putting seedling regeneration patterns at treeline  
 into a spatially explicit context.  
 
 Orthorectification and mosaicking of RGB and multispectral imagery  
