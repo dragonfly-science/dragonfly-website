@@ -33,20 +33,20 @@ In contrast, the lowest total cockle density was at Umupuia Beach, estimated at 
 cockles per m<sup>2</sup>.  
 
 At the same time, Umupuia Beach was the only site with a high proportion and relatively high density of 
-large individuals (≥30 mm shell length). At this beach, large cockles made up over 50% of the population, 
+large individuals (&ge;30 mm shell length). At this beach, large cockles made up over 50% of the population, 
 and occurred at an estimated density of 71 (CV: 22.23%) large cockles per m<sup>2</sup>. Other cockle populations 
 contained few large individuals, and their density estimates were markedly lower, typically with high 
 uncertainty (including CV values above 40%).  
 
 Length-frequency distributions documented the prevalence of medium-sized cockles 
 (sizes >15 mm and <30 mm shell length) across the northern populations. This size class largely 
-determined the population size structure with varying proportions of recruits (≤15 mm shell length) 
+determined the population size structure with varying proportions of recruits (&le;15 mm shell length) 
  contributing to the population overall. In 2023--24, the proportion of recruits varied between 19 and 63%   
  at most sites (i.e., excepting Umupuia Beach), reflecting a marked influx of individuals to existing cockle populations.  
 
 Pipi populations were surveyed at ten of the northern sites. Their total population sizes ranged from  
 0.45  (CV: 15.66%) million pipi at Marsden Bank to 121.15 (CV: 13.48%) million individuals at Ruakākā  Estuary.  
-The highest density estimate was also at Ruakākā  Estuary  
+The highest density estimate was also at Ruakākā  Estuary 
 with 5857 individuals per m<sup>2</sup>, largely 
 caused by a significant recruitment event. The only other site with high pipi 
 densities was Te Mata Bay, where this species exceeded 1000 individuals
@@ -55,7 +55,7 @@ The lowest density estimates
  were at Whangateau Harbour and Raglan Harbour, at 20 individuals per m<sup>2</sup> 
  and 27 individuals per m<sup>2</sup>, respectively. 
  
-Few of the pipi populations contained notable numbers of large pipi  (≥50 mm shell length), and 
+Few of the pipi populations contained notable numbers of large pipi  (&ge;50 mm shell length), and 
 estimates for this size class frequently had high uncertainty. The only site where estimates for large pipi 
  had low uncertainty (i.e., a CV of less than 20%) was  Te Mata Bay. At this site,  
  over 10% of the total population consisted of large individuals, and their estimated density was  
@@ -65,7 +65,7 @@ The general scarcity of large-sized pipi was also evident in the length-frequenc
 which were dominated by the medium pipi size class (>20 mm and <50 mm shell length), 
 forming a strong cohort in unimodal populations.  Exceptions to this population size structure
 were three of the four Northland sites, where substantial recruitment led to the prevalence of recruits 
- (≤20 mm shell length) 
+ (&le;20 mm shell length) 
 in the populations.  At Te Haumi Bay, Ruakākā Estuary, and Marsden Bank, the proportion of
  recruits varied from 75  to 87%. At Marsden Bank, the strong recruitment indicated some population 
  recovery, following the loss of the pipi population in \mbox{2021--22}. 
@@ -74,7 +74,7 @@ Sediment in the cockle strata was characterised by a low organic content (less t
 fractions. The most prevalent grain sizes were fine sand (grain size >125 μm), 
 followed by medium and very fine sands (>250 and >63 μm).   A number of 
 sites had relatively high proportions of sediment fines 
-(silt and clay; ≤63 μm grain size), which may impact 
+(silt and clay; &le;63 μm grain size), which may impact 
 suspension-feeding cockles through increased 
 sediment resuspension.   These sites were 
 Ngunguru Estuary, Raglan Harbour, Tairua Harbour, Te Haumi Bay, and Umupuia Beach, where  
