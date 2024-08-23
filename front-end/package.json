@@ -100,7 +100,7 @@
     "eslint": "eslint \"./src/js/**/*.ts\"",
     "eslint:check": "eslint --print-config \"./src/js/**/*.ts\" | eslint-config-prettier-check",
     "eslint:fix": "eslint --fix \"./src/js/**/*.ts\"",
-    "fonts": "mkdir -p ../content/fonts & glyphs2font fonts.yaml",
+    "fonts": "pwd & mkdir -p ../content/fonts & ls -al ../content/fonts & glyphs2font fonts.yaml",
     "postfonts": "mkdir -p ../_site/fonts && postcss ../content/fonts/dragonfly.css --env production --no-map -o ../_site/fonts/dragonfly.css",
     "imagemin": "chmod -R 775 ../_site && node imagemin.js",
     "prettier:fix": "prettier --write \"./src/js/**/*.ts\"",
