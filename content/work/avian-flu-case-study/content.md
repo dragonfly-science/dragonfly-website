@@ -66,10 +66,12 @@ implemented for COVID-19 samples by ESR.
 ### The technology
 
 To enable rapid analysis, 
-we wrote a python script to process the data as it streams the Nanopore sequencer. 
-By using information theory measures, we are able to the
+we wrote a python script to process the data as it streams from the Nanopore sequencer. 
+By using information theory measures, we are able to compare the
 distribution of k-mers from the raw reads with the distribution from
-reference sequences. Because the script has a simple text interface, it is
+reference sequences. This allows us to identify the 
+virus subtype and to stop the sequencer before it is complete.
+ Because the script has a simple text interface, it is
 able to run on remote computures, such as on the New Zealand scientific
 computing infrastructure (NESI).
 
