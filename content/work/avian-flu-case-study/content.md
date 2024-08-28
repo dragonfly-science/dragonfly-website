@@ -76,6 +76,10 @@ able to run on remote computures, such as on the New Zealand scientific
 computing infrastructure (NESI). This will let us rapidly subtype large databases
 of flu viruses. 
 
-## Project team
+### Project team
 
 [Brett Calcott](/people/calcott-brett.html)
+
+### Read more
+
+[Our work with GISAID on COVID-19](/news/2022-07-01-audacity-instant.html), 
