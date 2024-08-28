@@ -22,8 +22,8 @@ Finlay Thompson joined in 2008 and was Dragonfly’s first employee.  Since then
 
 ## A new model
 
-In 2020 Edward brought in Finlay and Philipp Neubauer as fellow directors and
-shareholders. Finlay is now also the chief executive and is responsible for the
+In 2020, Edward brought in Finlay and Philipp Neubauer as fellow directors and
+shareholders. Edward is managing director and responsible for the
  day-to-day management of the company.
 
 Dragonfly Data Science is a limited liability company, [Dragonfly Limited](https://app.companiesoffice.govt.nz/companies/app/ui/pages/companies/1805310/),
