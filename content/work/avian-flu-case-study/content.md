@@ -8,6 +8,9 @@ logo: /work/avian-flu-case-study/MPI-logo.png
 summary: 
 tags: systems
 description: We are building the systems that will help New Zealand respond rapidly to an avian flu outbreak. 
+CTADescriptor: some text
+CTAButton: read more
+sortorder: 1
 ---
 
 Understanding Avian Influenza variants in New Zealand: a collaborative project between 
