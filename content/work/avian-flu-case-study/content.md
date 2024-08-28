@@ -3,7 +3,7 @@ title: Rapid identification of avian flu viruses
 short-title: Avian flu
 banner-image: /work/avian-flu-case-study/avian-flu-header.jpg
 testimonial:
-  - testimonials/avian-flu-testimonial/avian-flu-tile.md
+  - testimonials/avian-flu-testimonial/content.md
 logo: /work/avian-flu-case-study/MPI-logo.png
 summary: 
 tags: systems
@@ -18,7 +18,7 @@ Dragonfly Data Science and the Ministry for Primary Industries
 
 <!--more-->
 
-###Avian flu
+### Avian flu
 
 High pathogenicity avian influenza (HPAI)—also known as avian flu–is a
 viral disease that is affecting domestic and wild birds around the world. 
@@ -32,7 +32,7 @@ To address this knowledge gap, a new project has been launched by the Ministry
 of Primary Industries (MPI) and Dragonfly, aimed at sequencing 300 virus
 isolates collected by the MPI since the 1970s. 
 
-###Building a database of New Zealand variants
+### Building a database of New Zealand variants
 
 This project uses modern genomic sequencing methods to map the genetic
 landscape of virus variants in New Zealand, providing crucial data on the
@@ -50,7 +50,7 @@ distinguishing between an imported high pathogenic strain and one that may
 arise from mutation or recombination of existing low pathogenic variants. 
 
 
-###Tools for rapid identification
+### Tools for rapid identification
 
 Given that new pathogenic variants can potentially infect new hosts, including
 mammals and humans, this project is particularly timely. For instance, a
@@ -72,3 +72,7 @@ distribution of k-mers from the raw reads with the distribution from
 reference sequences. Because the script has a simple text interface, it is
 able to run on remote computures, such as on the New Zealand scientific
 computing infrastructure (NESI).
+
+## Project team
+
+[Brett Calcott](/people/calcott-brett.html),
