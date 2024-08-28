@@ -29,8 +29,8 @@ distribution and genetic structure of the variants present in New Zealand
 remain largely unknown.
 
 To address this knowledge gap, a new project has been launched by the Ministry
-of Primary Industries (MPI) and Dragonfly, aimed at sequencing 300 virus
-isolates collected by the MPI since the 1970s. 
+for Primary Industries (MPI) and Dragonfly, aimed at sequencing 300 virus
+isolates collected by MPI since the 1970s. 
 
 ### Building a database of New Zealand variants
 
@@ -77,4 +77,4 @@ computing infrastructure (NESI).
 
 ## Project team
 
-[Brett Calcott](/people/calcott-brett.html),
+[Brett Calcott](/people/calcott-brett.html)
