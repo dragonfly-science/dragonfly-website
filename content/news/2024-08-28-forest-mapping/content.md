@@ -25,12 +25,12 @@ LiDAR data is currently the gold standard for building forest structure models
 uses light. Picture sending out millions of tiny laser pulses, like thousands
 of ping-pong balls bouncing off the forest canopy. Some of these balls hit the
 treetops, while others penetrate through branches and leaves, eventually
-reaching the ground”, Fabian says.
+reaching the ground,” Fabian says.
 
 “By measuring how long it takes each ball to bounce back, we can create a 
 three-dimensional map of the forest, revealing not just the height of the trees, but
 also the density and structure of the canopy—like peeling back the layers of
-a complex, living puzzle”.
+a complex, living puzzle.”
 
 ### Monitoring forest carbon
 
@@ -72,7 +72,7 @@ improve (this pest is particularly destructive to trees). Fabian’s
 mapping work will be one of the ways the team can monitor the benefits of pest control.
 
 The second application is on the Caldor fire zone in California, which was
-significantly damaged during the 2021 wildfires. There is no pre-fire LiDAR
+significantly damaged during the 2021 wildfires. There are no pre-fire LiDAR
 data, so the team is using NEX satellite-based historical maps in combination
 with airborne imagery to create the canopy models.
 
