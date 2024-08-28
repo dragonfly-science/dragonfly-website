@@ -72,7 +72,7 @@ distribution of k-mers from the raw reads with the distribution from
 reference sequences. This allows us to identify the 
 virus subtype as soon as enough of the sample has been processed.
  Because the script has a simple text interface, it is
-able to run on remote computures, such as on the New Zealand scientific
+able to run on remote computers, such as on the New Zealand scientific
 computing infrastructure (NESI). This will let us rapidly subtype large databases
 of flu viruses. 
 
