@@ -64,26 +64,31 @@ implemented for COVID-19 samples by ESR.
 
 ### The technology
 
-MPI uses a [Nanopore](https://nanoporetech.com/about/) sequencer, which processes multiple prepared virus samples at the same time.
-Over several hours, the sequencing program dumps reads of DNA from the samples into a folder on an attached computer.
+MPI uses a [Nanopore](https://nanoporetech.com/about/) sequencer, 
+which processes multiple prepared virus samples at the same time.
+Over several hours, the sequencing programme streams reads of DNA strands 
+from the samples into a folder on an attached computer.
 These reads can ultimately be assembled into entire virus genomes.
 But this assembly process is complex and time-consuming.
 Our challenge was to recognise the particular subtype of virus *in real time*,
-quickly alerting us to any highly pathogenic variants.
+quickly alerting us to any highly-pathogenic variants.
 
 We decided to use a k-mer based approach.
-A k-mer is a short, fixed size (say 10-30 base-pairs) section of overlapping DNA.
-Any section of DNA can be converted set of k-mers,
+A k-mer is a short, fixed-size (say 10-30 base-pairs) section of overlapping DNA.
+Any section of DNA can be converted into a set of k-mers,
 and counting the number of unique k-mers in all the incoming reads produces a k-mer distribution.
-By comparing this to k-mer distributions from viruses that have already recognised,
+By comparing it to k-mer distributions from viruses that have 
+already been recognised,
 we could quickly establish which virus the reads most resembled.
 
-We wrote text user interface (TUI) that watches the incoming files and updates the results in only a few seconds.
-The program can be run on the sequencing computer via a remote login,
+We wrote text user interface (TUI) that screens the incoming files and 
+updates the results in only a few seconds.
+The programme can be run on the sequencing computer via a remote login,
 and also works on the New Zealand scientific
-computing infrastructure (NESI), where MPI store and process many of their results.
+computing infrastructure (NESI), where MPI stores and processes many of the results.
 
-The program is written in Python, and makes use of a number of open-source packages to produce the user-interface and process the k-mers.
+The programme is written in Python, and makes use of a number of 
+open-source packages to produce the user interface and process the k-mers.
 
 ### Project team
 
