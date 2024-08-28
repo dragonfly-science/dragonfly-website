@@ -79,13 +79,7 @@ with airborne imagery to create the canopy models.
 This Catalyst project is expecting first results in the coming months.
 
 
-
-
-
 ### Read more
 
 [Our work with Vibrant Planet](/work/vibrant-planet.html)
 
-*Using GEDI to map the world's forests from the space station*
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qpzFn5bqhl4?si=u1g9IqDNXUvtBINV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
