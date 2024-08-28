@@ -11,7 +11,8 @@ citation_organisation: Dragonfly Data Science
 
 The team at Dragonfly is really excited to get started on this project with
 MPI. One of the key reasons we were brought on board was our experience scaling
-up genome processing for our COVID-19 work with GISAID, so they could process
+up genome processing for our [COVID-19 work with GISAID](/news/2022-07-01-audacity-instant.html), 
+so they could process
 millions of sequences as opposed to tens of thousands.
 
 Our knowledge of algorithms, combined with our background in biology and our
