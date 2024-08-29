@@ -82,17 +82,6 @@ of flu viruses.
 The programme is written in Python, and makes use of a number of 
 open-source packages to produce the user interface and process the k-mers.
 
-%To enable rapid analysis, 
-%we wrote a python script to process the data as it streams from the Nanopore sequencer. 
-%By using information theory measures, we are able to compare the
-%distribution of k-mers from the raw reads with the distribution from
-%reference sequences. This comparison allows us to identify the 
-%virus subtype as soon as enough of the sample has been processed.
-% Because the script has a simple text interface, it is
-%able to run on remote computers, such as on the New Zealand scientific
-%computing infrastructure (NESI). This approach will let us rapidly subtype large databases
-%of flu viruses. 
-
 ### Read more
 
 [Our work with GISAID on COVID-19](/news/2022-07-01-audacity-instant.html), 
