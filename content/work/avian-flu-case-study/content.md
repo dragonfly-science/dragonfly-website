@@ -23,8 +23,8 @@ Dragonfly Data Science and the Ministry for Primary Industries
 High pathogenicity avian influenza (HPAI)—also known as avian flu–is a
 viral disease that is affecting domestic and wild birds around the world.
 
-New Zealand remains free from high pathogenicity avian flu, while low
-pathogenicity avian influenza is endemic within the country. However, the full
+New Zealand remains free from high pathogenicity avian flu, while its 
+low-pathogenic counterpart is endemic within the country. However, the full
 distribution and genetic structure of the variants present in New Zealand
 remain largely unknown.
 
@@ -42,12 +42,12 @@ Dragonfly has been engaged to build a comprehensive searchable database for
 this project and to create an automated classification
 system to quickly identify subtypes from new samples. This system will enhance
 our understanding of the variants endemic to New Zealand and allow for rapid
-identification and response in the event of an incursion by a high pathogenic
+identification and response in the event of an incursion by a highly-pathogenic
 variant.
 
 The availability of this detailed database will be invaluable for
-distinguishing between an imported high pathogenic strain and one that may
-arise from mutation or recombination of existing low pathogenic variants.
+distinguishing between an imported highly-pathogenic strain and one that may
+arise from mutation or recombination of existing low-pathogenic variants.
 
 ### Tools for rapid identification
 
@@ -74,7 +74,7 @@ Our challenge was to recognise the particular subtype of virus *in real time*,
 quickly alerting us to any highly-pathogenic variants.
 
 We decided to use a k-mer based approach.
-A k-mer is a short, fixed-size (say 10-30 base-pairs) section of overlapping DNA.
+A k-mer is a short, fixed-size (say 10-30 base pairs) section of overlapping DNA.
 Any section of DNA can be converted into a set of k-mers,
 and counting the number of unique k-mers in all the incoming reads produces a k-mer distribution.
 By comparing it to k-mer distributions from viruses that have 
