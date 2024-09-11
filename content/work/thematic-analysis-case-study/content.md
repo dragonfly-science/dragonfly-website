@@ -32,7 +32,10 @@ OTBNZ are planning to use this analysis as a base for measuring best practice, w
 
 ### Project team
 
-[Finlay Thompson](/people/thompson-finlay.html)
 
 [Yvan Richard](/people/richard-yvan.html)
+
+[Henry Macdonald](/people/macdownald-henry.html)
+
+[Finlay Thompson](/people/thompson-finlay.html)
 
