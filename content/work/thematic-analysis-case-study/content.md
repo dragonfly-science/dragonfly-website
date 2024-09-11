@@ -5,7 +5,7 @@ banner-image: /work/thematic-analysis-case-study/thematic-header.jpg
 testimonial:
   - testimonials/otb-testimonial/content.md
 logo: /work/thematic-analysis-case-study/OTB-logo.png
-summary: We used modern text analysis techniques to identify the common themes in the portfolios of occupational therapists
+summary: We used modern text analysis techniques to identify common themes in the portfolios of occupational therapists
 tags: stats
 description:
 CTADescriptor: some text
@@ -28,7 +28,7 @@ This year, the OTBNZ wanted to investigate whether assessing their members again
 The map allowed the Board to quickly and efficiently identify all the themes their members wrote about, from little-known topics to the most popular ones. 
 
 As a result of this analysis, OTBNZ was able to validate the efficacy of the competency framework and start work on a new code of ethics.
-OTBNZ are planning to use this analysis as a base for measuring best practice, with a view to a re-assessment in two years' time. 
+OTBNZ is planning to use this analysis as a base for measuring best practice, with a view for a re-assessment in two years' time. 
 
 ### Project team
 
