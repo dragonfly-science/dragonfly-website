@@ -35,7 +35,7 @@ OTBNZ is planning to use this analysis as a base for measuring best practice, wi
 
 [Yvan Richard](/people/richard-yvan.html)
 
-[Henry Macdonald](/people/macdownald-henry.html)
+[Henry Macdonald](/people/macdonald-henry.html)
 
 [Finlay Thompson](/people/thompson-finlay.html)
 
