@@ -7,6 +7,8 @@ the topics in documents can be summarised, clustered, and analysed.
 
 <!--more-->
 
+### Embeddings: text as numbers
+
 Large Language Models like ChatGPT have burst onto the scene, bringing
 Artificial Intelligence (AI) to everybody’s fingertips. Language models generate text in a
 way that is almost miraculous. In order to carry out this trick, they first
@@ -22,6 +24,8 @@ different contexts, generating this embedding is a tricky process. It
 needs to be able to understand that while ‘dog’ might often go with ‘canine’,
 ‘hot dog’ is more likely to be close to ‘hamburger’.
 
+### Using embeddings to find themes in text
+
 Many organisations have large amounts of written text: maybe shared drives full
 of documents, or websites with articles written over many years. It can be hard
 to figure out what all these documents are talking about. 
@@ -35,6 +39,8 @@ collection in text, this allows for analysis of changes in the themes over
 time, by author, through different parts of a business, or in relation to any
 other metadata that is associated with the documents. 
 
+### Improving our capability
+
 Over the last few years, Dragonfly has been working on our capability in 
 natural language processing.  
 The development of language models has stimulated improvement in the skill of
@@ -42,6 +48,8 @@ embeddings, making them increasingly powerful at recognising the
 underlying concepts in text. There are many ins and outs with making the embeddings
 practically useful, and we have been gaining expertise at using embeddings to
 understand the topics that are referred to in text. 
+
+### Submissions analysis
 
 One area that we have worked on is using
 embeddings to analyse data in public submissions to select committees. This is
