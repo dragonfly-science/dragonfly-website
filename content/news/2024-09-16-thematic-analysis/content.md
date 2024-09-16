@@ -1,5 +1,5 @@
 ---
-title: From text to topics: thematic analysis in the age of AI
+title: From text to topics—thematic analysis in the age of AI
 ---
 
 Many organisations have large amounts of written text: maybe shared drives full
