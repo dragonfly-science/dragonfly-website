@@ -2,40 +2,48 @@
 title: From text to topics—thematic analysis in the age of AI
 ---
 
-Many organisations have large amounts of written text: maybe shared drives full
-of documents, or websites with articles written over many years. It can be hard
-to figure out what all these documents are talking about. Thematic analysis allows
-the concepts in documents can be summarised, clustered, and mapped, allowing a 
-coherent view of what the documents are referring to.
+Many organisations have large amounts of written text. Thematic analysis allows
+the topics in documents can be summarised, clustered, and analysed.
 
 <!--more-->
 
-Large Language Models (LLMs) like ChatGPT have burst onto the scene, bringing
-Artificial Intelligence (AI) to everybody’s fingertips. LLMs generate text in a
+Large Language Models like ChatGPT have burst onto the scene, bringing
+Artificial Intelligence (AI) to everybody’s fingertips. Language models generate text in a
 way that is almost miraculous. In order to carry out this trick, they first
-need to learn about text by reading it. To process text, LLMs rely on an
-underlying technology that translates text into numbers. Called a vector
-embedding, this represents sentences or paragraphs as numeric vectors, in a way
-that similar concepts end up numerically close to each other. The vector
-embedding provides a mapping from concepts or themes into numbers.  Because of
+need to learn about text by reading it. To process text, language models rely on an
+underlying technology that translates text into numbers. Called an
+embedding, this represents sentences or paragraphs as numbers, in a way
+that similar concepts end up numerically close to each other. The
+embedding provides a mapping from concepts or themes into numbers.  
+
+Because of
 the richness of language, with the same word having different meanings in
-different contexts, generating this vector embedding is a tricky process. It
+different contexts, generating this embedding is a tricky process. It
 needs to be able to understand that while ‘dog’ might often go with ‘canine’,
 ‘hot dog’ is more likely to be close to ‘hamburger’.
 
-
+Many organisations have large amounts of written text: maybe shared drives full
+of documents, or websites with articles written over many years. It can be hard
+to figure out what all these documents are talking about. 
 Manually analysing text to
-identify themes is a time-consuming and specialist job. The vector embeddings
+identify themes is a time-consuming and specialist job. 
+
+Embeddings
 allow for themes that are discussed in text to be analysed rapidly and consistently.
 Because thematic analysis can be carried out over a whole
 collection in text, this allows for analysis of changes in the themes over
 time, by author, through different parts of a business, or in relation to any
 other metadata that is associated with the documents. 
 
-Over the last few years, Dragonfly has been working on our capability in this
-area.  The development of LLMs has stimulated improvement in the skill of
-vector embeddings, making them increasingly powerful at recognising the
-underlying concepts in text. One area that we have worked on is using vector
+Over the last few years, Dragonfly has been working on our capability in 
+natural language processing.  
+The development of language models has stimulated improvement in the skill of
+embeddings, making them increasingly powerful at recognising the
+underlying concepts in text. There are many ins and outs with making the embeddings
+practically useful, and we have been gaining expertise at using embeddings to
+understand the topics that are referred to in text. 
+
+One area that we have worked on is using
 embeddings to analyse data in public submissions to select committees. This is
 able to provide a broad overview of the submitters’ concerns. It is
 complementary to manual approaches, and is useful at the beginning of the
@@ -47,7 +55,7 @@ it is best used as a tool to augment or inform manual processes.
 
 We recently worked with the Occupational Therapy Board, using thematic analysis
 to help understand the common themes referenced in practitioners portfolios.
-[Read more about our work with OTB here](https://www.dragonfly.co.nz/work/thematic-analysis-case-study.html).
+[Read more about our portfolio analysis work here](https://www.dragonfly.co.nz/work/thematic-analysis-case-study.html).
 
 
 
