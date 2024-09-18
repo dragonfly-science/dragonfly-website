@@ -3,7 +3,7 @@ title: From text to topics—thematic analysis in the age of AI
 ---
 
 Many organisations have large amounts of written text. Thematic analysis allows
-the topics in documents can be summarised, clustered, and analysed.
+the topics in documents to be summarised, clustered, and analysed.
 
 <!--more-->
 
