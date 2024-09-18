@@ -1,7 +1,7 @@
 ---
 pdf: neubauer_quantifying_2023.pdf
 tags: philipp, paua, fisheries, dragonfly, benthic, report, review
-title: "Quantifying effects of reporting changes for pāua  (<i>Haliotis iris</i>) catch-per-unit-effort"
+title: Quantifying effects of reporting changes for pāua  (<i>Haliotis iris</i>) catch-per-unit-effort
 ---
 Pāua  (<i>Haliotis iris</i>)  fisheries
 in New Zealand are largely managed based on the outcome 
