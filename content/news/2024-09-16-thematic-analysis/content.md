@@ -14,7 +14,7 @@ Artificial Intelligence (AI) to everybody’s fingertips. Language models genera
 way that is almost miraculous. In order to carry out this trick, they first
 need to learn about text by reading it. To process text, language models rely on an
 underlying technology that translates text into numbers. Called an
-embedding, this represents sentences or paragraphs as numbers, in a way
+embedding, this technology represents sentences or paragraphs as numbers, in a way
 that similar concepts end up numerically close to each other. The
 embedding provides a mapping from concepts or themes into numbers.  
 
@@ -27,7 +27,7 @@ needs to be able to understand that while ‘dog’ might often go with ‘canin
 ### Using embeddings to find themes in text
 
 Many organisations have large amounts of written text: maybe shared drives full
-of documents, or websites with articles written over many years. It can be hard
+of documents, or websites with articles written over many years. It can be difficult 
 to figure out what all these documents are talking about. 
 Manually analysing text to
 identify themes is a time-consuming and specialist job. 
@@ -35,7 +35,7 @@ identify themes is a time-consuming and specialist job.
 Embeddings
 allow for themes that are discussed in text to be analysed rapidly and consistently.
 Because thematic analysis can be carried out over a whole
-collection in text, this allows for analysis of changes in the themes over
+collection in text, this process allows for analysis of changes in the themes over
 time, by author, through different parts of a business, or in relation to any
 other metadata that is associated with the documents. 
 
@@ -52,17 +52,18 @@ understand the topics that are referred to in text.
 ### Submissions analysis
 
 One area that we have worked on is using
-embeddings to analyse data in public submissions to select committees. This is
+embeddings to analyse data in public submissions to government select committees. 
+This analysis is
 able to provide a broad overview of the submitters’ concerns. It is
 complementary to manual approaches, and is useful at the beginning of the
-analysis process as it can provide a rapid overview of the submissions. This is
+analysis process as it can provide a rapid overview of the submissions. This overview is
 helpful for developing the analytical framework. Like many applications of AI,
 it is best used as a tool to augment or inform manual processes. 
 
 ### Read more
 
 We recently worked with the Occupational Therapy Board, using thematic analysis
-to help understand the common themes referenced in practitioners portfolios.
+to help understand the common themes referenced in practitioners' portfolios.
 [Read more about our portfolio analysis work here](https://www.dragonfly.co.nz/work/thematic-analysis-case-study.html).
 
 
