@@ -1,6 +1,6 @@
 ---
 pdf: neubauer_pau7_2023.pdf
-tags: philipp, kyuhan, paua, fisheries, dragonfly, benthic, report, bayesian
+tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
 title:  The 2022 stock assessment of pāua (<i>Haliotis iris</i>) for PAU 7
 ---
 Most pāua (<i>Haliotis iris</i>)  fisheries

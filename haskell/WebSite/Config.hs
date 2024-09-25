@@ -63,7 +63,6 @@ tagDictionary = [
     ("report", "Report"),
     ("richard", "Richard Mansfield"),
     ("risk-assessment", "Risk assessment"),
-    ("risto", "Christopher Knox"),
     ("robin", "Robin"),
     ("sea-urchin", "Sea urchin"),
     ("seabird", "Seabirds"),
@@ -75,8 +74,6 @@ tagDictionary = [
     ("fabian", "Fabian Döweler"),
     ("kath", "Kath Large"),
     ("tyla", "Tyla Hill-Moana"),
-    ("kyuhan", "Kyuhan Kim"),
-    ("mckenzie", "McKenzie Tornquist")
     ]
 
 cslIdentifier, cslNoBibIdentifier :: Identifier

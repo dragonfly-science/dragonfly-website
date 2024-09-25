@@ -1,6 +1,6 @@
 ---
 pdf:  neubauer_management_2023.pdf
-tags: philipp, kyuhan, paua, fisheries, dragonfly, benthic, report, bayesian
+tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
 title: Operating model and management procedure evaluation for pāua (<i>Haliotis iris</i>) fisheries in PAU 3A
 ---
 The pāua (<i>Haliotis iris</i>) stock in quota management area (QMA) PAU 3 was 

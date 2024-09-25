@@ -1,6 +1,6 @@
 ---
 pdf: neubauer_analysing_2023.pdf
-tags: kath, philipp, kyuhan, fisheries, bayesian dragonfly, report
+tags: kath, philipp,  fisheries, bayesian dragonfly, report
 title: Analysing potential inputs to the 2024 stock assessment of Western and Central Pacific silky shark (<i>Carcharhinus falciformis</i>) 
 ---
 Silky shark (<i>Carcharhinus falciformis</i>) are caught in longline and purse-seine fisheries in
