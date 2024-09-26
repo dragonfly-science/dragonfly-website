@@ -34,10 +34,11 @@ the reporting of uncertainty is not consistently adequate across all assessments
 - Uncertainty is recognized as an important aspect of stock assessments, both for
 stocks with and without explicit management strategies.
 - The communication of uncertainty and its consideration in management decisions
-could be improved to beĴer support the application of the precautionary principle.
+could be improved to better support the application of the precautionary principle.
 - There is a need for a more structured and standardized approach to reporting,
-including consistent terminology and formaĴing across different stock
+including consistent terminology and formatting across different stock
 assessments.
+
 
 
 Based on these findings and a review of best practices, the study proposes several key
@@ -53,12 +54,13 @@ Status and Management Advice”.
 including specific elements like assessment structure, uncertainties, catch
 estimates, and management quantities.
 3. Use consistent language for describing uncertainty:
+
   - Apply a 3-level confidence scale (high, medium, low) in the ”Stock
 Assessment and Trends” section, where confidence relates to the assessment’s
 ability to capture key uncertainties.
   - Use IPCC likelihood categories with corresponding probability statements in
 the ”Stock Status and Management Advice” section.
-
+    
 4. Tabulate main sources of uncertainty in the assessment, including rationale,
 impact, and confidence level.
 
