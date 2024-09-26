@@ -73,7 +73,7 @@ tagDictionary = [
     ("caleb", "Caleb Moses"),
     ("fabian", "Fabian Döweler"),
     ("kath", "Kath Large"),
-    ("tyla", "Tyla Hill-Moana"),
+    ("tyla", "Tyla Hill-Moana")
     ]
 
 cslIdentifier, cslNoBibIdentifier :: Identifier
