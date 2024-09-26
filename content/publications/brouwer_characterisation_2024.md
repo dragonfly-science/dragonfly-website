@@ -11,10 +11,10 @@ This paper describes the longline gear designs that catch oceanic whitetip shark
 
 The following recommendations are proposed for the Scientific Committee to consider:
 
-1. CPUE and length analysis used for the 2025 stock assessment should include vessel flag and gear characteristics as variables when undertaking standardisations.
+  1. CPUE and length analysis used for the 2025 stock assessment should include vessel flag and gear characteristics as variables when undertaking standardisations.
 
-2. Noting that very little detailed information exists on the life status of oceanic whitetip sharks released from the catch on purse seine vessels, it is recommended that observers on purse seine vessels be encouraged to prioritise the collection of detailed life status data at both capture and release.
+  2. Noting that very little detailed information exists on the life status of oceanic whitetip sharks released from the catch on purse seine vessels, it is recommended that observers on purse seine vessels be encouraged to prioritise the collection of detailed life status data at both capture and release.
 
-3. Release survival work should be undertaken, and while this work is currently in the SC work plan, the start date is currently unscheduled.
+  3. Release survival work should be undertaken, and while this work is currently in the SC work plan, the start date is currently unscheduled.
 
-4. It is recommended that the 2025 stock assessment explicitly provide commentary on the recent trends in fishing mortality since the inception of CMM2019-04 and its stock specific predecessor CMM2011-04.
+  4. It is recommended that the 2025 stock assessment explicitly provide commentary on the recent trends in fishing mortality since the inception of CMM2019-04 and its stock specific predecessor CMM2011-04.
