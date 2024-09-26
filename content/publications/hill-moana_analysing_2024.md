@@ -1,8 +1,9 @@
 ---
 pdf: hill-moana_analysing_2024.pdf
 tags: kath, philipp, tyla, fisheries, dragonfly, report
+title: Characterisation of the fisheries catching oceanic whitetip sharks (<i>Carcharhinus longimanus</i>) in the Western and Central Pacific Ocean
 ---
-Oceanic whitetip sharks (*Carcharhinus longimanus*) are caught as bycatch in longline and purse seine fisheries in the Western and Central Pacific ocean 
+Oceanic whitetip sharks (*Carcharhinus longimanus*) are caught as bycatch in longline and purse seine fisheries in the Western and Central Pacific Ocean 
 (WCPO). Previous assessments indicated the stock was overfished and overfishing was occurring, and the recent assessment highlighted issues associated with some of the inputs.
 
 This report documents Phase 1 of the current project which investigates the potential methods for catch reconstruction, CPUE and length compositions for use in the stock assessment for oceanic whitetip shark in 2025 (Phase 2). This study used model developments made in the context of other shark assessments to develop a set of potential inputs for the upcoming assessment.
@@ -25,7 +26,7 @@ of input data should be compared with previous assessment models in a stepwise
 fashion.
 
 - As year effects are relatively minor in the longline fisheries, future catch
-reconstruction aĴempts could extrapolate interactions further back in time to
+reconstruction attempts could extrapolate interactions further back in time to
 avoid complications with assuming or estimating initial fishing mortalities in the assessments.
 
 - Alternative assessment methods (for example surplus production assessments)
