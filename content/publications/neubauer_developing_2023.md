@@ -1,6 +1,6 @@
 ---
 pdf: neubauer_developing_2023.pdf
-tags: philipp, kyuhan, paua, fisheries, dragonfly, benthic, report, bayesian
+tags: philipp,  paua, fisheries, dragonfly, benthic, report, bayesian
 title: Developing an operating model and testing management procedures for pāua (<i>Haliotis iris</i>) fisheries in PAU 4
 ---
 Quota management area (QMA) PAU 4 (Chatham Islands) is currently the largest pāua (<i>Haliotis iris</i>) fishery in New

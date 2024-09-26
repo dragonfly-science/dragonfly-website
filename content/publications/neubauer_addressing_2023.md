@@ -1,6 +1,6 @@
 ---
 pdf: neubauer_addressing_2023.pdf
-tags: kath, philipp, kyuhan, teresa, fisheries, dragonfly, report
+tags: kath, philipp, teresa, fisheries, dragonfly, report
 ---
 Model weighting is a central challenge in stock assessments, because
  the retention
