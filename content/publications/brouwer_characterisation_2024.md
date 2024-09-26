@@ -5,11 +5,12 @@ title: Characterisation of the fisheries catching oceanic whitetip sharks (<i>Ca
 ---
 The next stock assessment for oceanic whitetip shark (*Carcharhinus longimanus*) is scheduled for 2025. The work for the assessment will be undertaken over two years. This paper, as well as Hill-Moana et al. (2024), represent the background work for the SC20's consideration and information for feedback into the SC21 assessment.
 
-Oceanic whitetip sharks are caught as bycatch in longline fisheries targeting tuna, billfish and blue sharks between 35&deg;N and 40&deg;S, and as bycatch in the tropical purse seine fisheries of the WCPO. No target fisheries exist for oceanic whitetip sharks and since 1st January 2013 their retention has been prohibited within the WCPO. While there was a lag in its implementation, by 2015 almost all oceanic whitetip sharks have been discarded or cut-free from longline sets, and more than half of those are released alive and healthy. In the purse seine fishery oceanic whitetip shark’s retention rates have declined over time, and by 2015 all are released. However, release condition lacks detail and this data collection could be improved.
+Oceanic whitetip sharks are caught as bycatch in longline fisheries targeting tuna, billfish and blue sharks between 35° N and 40° S, and as bycatch in the tropical purse seine fisheries of the WCPO. No target fisheries exist for oceanic whitetip sharks and since 1st January 2013 their retention has been prohibited within the WCPO. While there was a lag in its implementation, by 2015 almost all oceanic whitetip sharks have been discarded or cut-free from longline sets, and more than half of those are released alive and healthy. In the purse seine fishery oceanic whitetip shark’s retention rates have declined over time, and by 2015 all are released. However, release condition lacks detail and this data collection could be improved.
 
 This paper describes the longline gear designs that catch oceanic whitetip sharks; presents information on fate and condition, as well as length data; discusses the impact of vessel flag; presents the spatio-temporal distribution of the catch; and provides recommendations for the 2025 stock assessment.
 
 The following recommendations are proposed for the Scientific Committee to consider:
+
 
   1. CPUE and length analysis used for the 2025 stock assessment should include vessel flag and gear characteristics as variables when undertaking standardisations.
 
