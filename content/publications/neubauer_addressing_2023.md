@@ -25,8 +25,7 @@ presentation of stock assessment and management advice uncertainty by
 the WCPFC scientific committee. The terms of reference for the general
 review were to:
 
-
-1.	Review and summarise the different approaches used for characterising 
+1. Review and summarise the different approaches used for characterising 
 uncertainty in WCPFC stock assessments for tuna, billfish and sharks 
 over the last five years.
 2.	Describe how uncertainty was communicated in the context of management risks 
@@ -34,7 +33,7 @@ and its influence on decision-making processes used by the WCPFC.
 3.	Comment on the suitability of the recent approaches to characterising uncertainty 
 for the management systems, including the harvest strategy approach.
 
-
+    
 The specific review aimed to:
 
 
@@ -50,7 +49,7 @@ Neubauer et al. 2022).
 ensemble construction, model retention, and weighting of models included 
 within ensembles in the context of the WCPFC tuna, billfish, and shark assessments.
 
-
+    
 The expected outcomes of the project were to provide:
 
  1.  a basis for stock assessment teams to consider and apply
@@ -136,8 +135,7 @@ and stakeholders locate key quantities easily.
  (ideally probabilities relative to reference points).
  3.  Clear communication about quality of information determining stock status
   and management advice:
-     
-      - Qualification and quantification of uncertainties.
+     - Qualification and quantification of uncertainties.
          (a) 	Data quality. 
          (b) 	Model/population: structural uncertainty. (Note the use of "structural" 
   here refers to models with different likelihoods, rather than different 
@@ -154,6 +152,7 @@ address uncertainty. Sufficient time is also needed to enable the provision of
 management advice that is
 consistent with the application of the precautionary approach as
 outlined in the WCPFC convention text.  
+
 
 **Further development and future research**
 
