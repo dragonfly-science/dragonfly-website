@@ -1,6 +1,7 @@
 ---
 pdf: brouwer_characterisation_2024.pdf
 tags: kath, philipp, tyla, fisheries, dragonfly, report
+title: Characterisation of the fisheries catching oceanic whitetip sharks (<i>Carcharhinus longimanus</i>) in the Western and Central Pacific Ocean
 ---
 The next stock assessment for oceanic whitetip shark (*Carcharhinus longimanus*) is scheduled for 2025. The work for the assessment will be undertaken over two years. This paper, as well as Hill-Moana et al. (2024), represent the background work for the SC20's consideration and information for feedback into the SC21 assessment.
 
