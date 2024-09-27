@@ -3,7 +3,7 @@ title: Dr Kim takes a trip to Korea
 ---
 
 It’s been nearly 5 years since
-[Kyuhan Kim](https://www.dragonfly.co.nz/people/kim-kyuhan.html) left home to
+Kyuhan Kim left home to
 study for a statistics PhD in New Zealand. In that time he has become a Dr and
 worked at Dragonfly as a fisheries scientist for a year.
 

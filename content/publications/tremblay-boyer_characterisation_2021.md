@@ -4,7 +4,7 @@ tags: laura, characterisation, fisheries, dragonfly, report
 ---
 Striped marlin (*Kajikia audax*) supports a popular and valuable recreational fishery in New Zealand.
 They are occasionally caught by the surface-longline fleet, but retention of commercial catches has
-been prohibited since 1987. Striped marlin prefer warm waters between 20◦C and 24◦C and primarily
+been prohibited since 1987. Striped marlin prefer warm waters between 20°C and 24°C and primarily
 occupy the mixed layer near the surface. They are found in New Zealand during austral summer
 months especially, with large, mature individuals moving from spawning grounds in the Coral Sea to
 feed in New Zealand and neighbouring waters.

@@ -99,8 +99,21 @@
     }
   }
 
+  ul,
+  ol {
+    @apply m-4 mr-0;
+
+    > li {
+      @apply pl-2 mb-2;
+    }
+  }
+
   ul {
-    @apply list-disc my-2 mx-4;
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
   }
 
   > hr {

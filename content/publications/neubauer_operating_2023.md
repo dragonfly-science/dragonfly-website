@@ -1,6 +1,6 @@
 ---
 pdf: neubauer_operating_2023.pdf
-tags: philipp, kyuhan, paua, fisheries, dragonfly, benthic, report, bayesian
+tags: philipp, paua, fisheries, dragonfly, benthic, report, bayesian
 title: Developing an operating model and testing management procedures for pāua (<i>Haliotis iris</i>) fisheries in PAU 3B
 ---
 Pāua (<i>Haliotis iris</i>) quota management area (QMA) PAU 3B was established in 2021 as the
