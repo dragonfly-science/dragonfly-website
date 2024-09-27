@@ -136,11 +136,11 @@ and stakeholders locate key quantities easily.
  3.  Clear communication about quality of information determining stock status
   and management advice:
      - Qualification and quantification of uncertainties.
-         (a) 	Data quality. 
-         (b) 	Model/population: structural uncertainty. (Note the use of "structural" 
+         (a) Data quality. 
+         (b) Model/population: structural uncertainty. (Note the use of "structural" 
   here refers to models with different likelihoods, rather than different 
   parameter values.)
-          (c) 	Key parameters (parameter and estimation uncertainty).
+        (c) Key parameters (parameter and estimation uncertainty).
     - Key uncertainties and potential impacts.
 
  4.  With respect to item 3, 

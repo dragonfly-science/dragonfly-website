@@ -47,7 +47,6 @@ recommendations to improve the reporting of stock status and management advice:
 
 Key recommendations:
 
-
 1. Rename report sections for clarity: ”Stock Assessment and Trends” and ”Stock
 Status and Management Advice”.
 
