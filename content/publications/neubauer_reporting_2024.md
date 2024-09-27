@@ -50,9 +50,11 @@ Key recommendations:
 
 1. Rename report sections for clarity: ”Stock Assessment and Trends” and ”Stock
 Status and Management Advice”.
+
 2. Implement consistent section content structures for both renamed sections,
 including specific elements like assessment structure, uncertainties, catch
 estimates, and management quantities.
+
 3. Use consistent language for describing uncertainty:
 
   - Apply a 3-level confidence scale (high, medium, low) in the ”Stock
