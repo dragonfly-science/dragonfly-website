@@ -3,7 +3,7 @@ pdf: berkenbusch_approaches_2024.pdf
 tags: katrin, benthic, dragonfly, report
 ---
 
-The purpose of this document is to provide information for regional councils and unitary
+This report provides information for regional councils and unitary
 authorities about options for the integrated monitoring of estuaries at the catchment
 level.
 
